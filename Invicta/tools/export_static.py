@@ -137,10 +137,12 @@ def main():
     shim = "<script>var PUBLISHED = %s;</script>\n%s" % (json.dumps(published), SHIM)
     html = html.replace('<script src="static/app.js">', shim + '<script src="static/app.js">', 1)
     html = html.replace('<button id="rescan"', '<button id="rescan" hidden', 1)
-    # The site chat (talks to /api/chat on Cloudflare); the local app has no chat.
-    if os.path.isfile(os.path.join(WEB, "chat.js")):
-        html = html.replace("</head>", '<link rel="stylesheet" href="static/chat.css">\n</head>', 1)
-        html = html.replace("</body>", '<script src="static/chat.js"></script>\n</body>', 1)
+    # Site-only extras that need the Cloudflare functions: the Claude chat (/api/chat)
+    # and the shared helpers chat (/api/room). The local app has neither.
+    for extra in ("chat", "room"):
+        if os.path.isfile(os.path.join(WEB, extra + ".js")):
+            html = html.replace("</head>", '<link rel="stylesheet" href="static/%s.css">\n</head>' % extra, 1)
+            html = html.replace("</body>", '<script src="static/%s.js"></script>\n</body>' % extra, 1)
     with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
 

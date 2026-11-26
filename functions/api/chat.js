@@ -15,6 +15,7 @@
 // Binding: KV namespace LIMITS (daily counters). The chat refuses to run without it.
 
 import Anthropic from "@anthropic-ai/sdk";
+import { announce } from "../_lib/announce.js";
 
 const MAX_TURNS = 12;               // tool-use rounds per message
 const MAX_PROPOSALS_PER_MESSAGE = 2;
@@ -190,6 +191,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
               out = await proposeChange(gh, use.input, name);
               proposals++;
               send("proposal", { url: out.url, title: use.input.title });
+              try { await announce(env, name, `proposed a change: ${use.input.title}`, out.url); } catch (e) { /* the room is optional */ }
             } else {
               out = await runTool(gh, use.name, use.input, request);
             }
