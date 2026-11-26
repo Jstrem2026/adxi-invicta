@@ -49,6 +49,12 @@ district until Jordan designs it.
 Architecture fields, left out until designed (the app shows "not designed yet"):
 `height_m`, `floors`, `structure`, `entrances`, `look`, `capacity`, `services`, `interior`.
 
+### Blocks
+
+Blocks are not stored. The app works them out from the streets and buildings each time
+(see CLAUDE.md). Give every building and street a name; use a generic one (Warehouse 3,
+Street A) when it has no real name yet.
+
 ### Street
 
 `{"name": "Terminal Road", "width_m": 40.0, "rect_km": [x0, x1, y0, y1]}`

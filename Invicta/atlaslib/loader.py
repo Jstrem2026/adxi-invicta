@@ -267,27 +267,9 @@ class Loader:
             p["area_calc"] = round(area, 2)
             bx = G.bbox(shape) if shape else p["bounds_km"]
             p["bbox_km"] = bx
-            # blocks: 500 m between two frame lines x one 500 m lane band
-            blocks = []
-            f0 = int(math.floor(bx[0] / G.FRAME_KM + 1e-9))
-            f1 = int(math.ceil(bx[1] / G.FRAME_KM - 1e-9))
-            i0 = int(math.floor((bx[2] + 0.25) / 0.5 + 1e-9)) + 12
-            i1 = int(math.ceil((bx[3] + 0.25) / 0.5 - 1e-9)) + 12
-            for f in range(f0, f1):
-                for i in range(i0, i1):
-                    if not 0 <= i < len(G.LANES):
-                        continue
-                    lane = G.LANES[i]
-                    yc = (i - 12) * 0.5
-                    cell = [f * 0.5, (f + 1) * 0.5, yc - 0.25, yc + 0.25]
-                    part = G.clip(shape, G.rect_poly(cell))
-                    a = G.polygon_area(part) if len(part) >= 3 else 0
-                    if a and excl:
-                        a -= sum(G.circle_overlap_area(part, c[0], c[1], c[2], 0.01) for c in excl)
-                    if a < 0.0005:
-                        continue
-                    blocks.append({"id": "D%d-F%d-%s" % (n, f, lane), "frame": f, "lane": lane, "cell_km": cell,
-                                   "part_km": [list(q) for q in part], "area_km2": round(a, 4), "contents": []})
+            # blocks: start from the 500 m frame x lane grid, but a grid line only becomes a
+            # block edge where it crosses no building. Blocks never cut through a building.
+            blocks = make_blocks(n, shape, bx, p["buildings"], excl, p.get("streets", []))
             # buildings
             for b in p["buildings"]:
                 b["uid"] = "%s-%s" % (p["uid"].rsplit("-", 1)[0], b["id"])
@@ -302,7 +284,14 @@ class Loader:
                         ov = sum(G.rect_overlap(s, blk["cell_km"]) for s in shapes)
                         if ov > 1e-7:
                             b["blocks"].append(blk["id"])
-                            blk["contents"].append({"id": b["id"], "share": round(ov / max(b["footprint_km2"], 1e-9), 3)})
+                            ct = {"id": b["id"], "share": round(ov / max(b["footprint_km2"], 1e-9), 3)}
+                            if b.get("bays_km"):
+                                ct["parts"] = sum(1 for s in b["bays_km"] if G.rect_overlap(s, blk["cell_km"]) > 0.999 * (s[1] - s[0]) * (s[3] - s[2]))
+                                ct["of"] = len(b["bays_km"])
+                            blk["contents"].append(ct)
+                    b["block"] = b["blocks"][0] if len(b["blocks"]) == 1 else None
+                    if b.get("bays_km"):
+                        b["bay_label"] = bay_label(b)
             for st in p.get("streets", []):
                 st["blocks"] = [blk["id"] for blk in blocks if G.rect_overlap(st["rect_km"], blk["cell_km"]) > 1e-8]
             p["blocks"] = blocks
@@ -354,6 +343,131 @@ def _glob(d, ext):
     out = []
     for base, _, files in os.walk(d):
         out += [os.path.join(base, f) for f in files if f.endswith(ext)]
+    return out
+
+
+ROAD_WORDS = re.compile(r"road|street|boulevard|concourse|lane|taxiway|apron|promenade|cross-line", re.I)
+
+
+def is_road(b):
+    """Roads and walkways listed among the buildings. Blocks may be cut by these."""
+    return b.get("kind") == "transport" and bool(ROAD_WORDS.search(b.get("name", "")))
+
+
+def block_obstacles(buildings):
+    """Footprints that a block edge must not cut: each building, or each bay of a bay row."""
+    out = []
+    for b in buildings:
+        if not b.get("rect_km") or is_road(b):
+            continue
+        out.extend(b.get("bays_km") or [b["rect_km"]])
+    return out
+
+
+BAY_WORDS = [("berth", "Berth"), ("hangar", "Hangar"), ("gate", "Gate"), ("marina", "Slip"), ("shaft", "Shaft"),
+             ("garden", "Garden"), ("street", "Street"), ("depot", "Bay")]
+
+
+def bay_label(b):
+    """Generic name for one bay of a row, e.g. 'Berth' for 'Corvette Berths' (shown as Berth 1, Berth 2 ...)."""
+    name = b.get("name", "").lower()
+    return next((v for k, v in BAY_WORDS if k in name), "Bay")
+
+
+def make_blocks(n, shape, bx, buildings, excl, streets=()):
+    """City blocks. The precinct is cut first along its streets and roads (both edges of
+    each, so the roadway itself is not part of any block), then blocks longer than
+    1 km are cut again on frame or lane grid lines. A cut is only made where it runs
+    clear of every building, so a building always sits wholly inside one block."""
+    eps = 1e-6
+    obst = block_obstacles(buildings)
+    roads = [s["rect_km"] for s in streets if s.get("rect_km")]
+    for b in buildings:
+        if b.get("rect_km") and is_road(b):
+            roads.extend(b.get("bays_km") or [b["rect_km"]])
+    roads = [r for r in roads if min(r[1] - r[0], r[3] - r[2]) <= 0.3]   # linear roads only
+    cuts = []
+    for r in roads:
+        if r[1] - r[0] >= r[3] - r[2]:
+            cuts += [("y", r[2]), ("y", r[3])]
+        else:
+            cuts += [("x", r[0]), ("x", r[1])]
+    grid_x = [k * G.FRAME_KM for k in range(int(bx[0] / G.FRAME_KM) - 1, int(bx[1] / G.FRAME_KM) + 2)]
+    grid_y = [(i - 12) * 0.5 + 0.25 for i in range(-1, len(G.LANES))]
+    MIN = 0.12   # an empty strip thinner than 120 m (about 400 ft) is not made a block
+
+    def is_roadway(reg):
+        return any(r[0] - eps <= reg[0] and reg[1] <= r[1] + eps and r[2] - eps <= reg[2] and reg[3] <= r[3] + eps for r in roads)
+
+    def has_building(reg):
+        return any(o[0] >= reg[0] - eps and o[1] <= reg[1] + eps and o[2] >= reg[2] - eps and o[3] <= reg[3] + eps for o in obst)
+
+    def ok_piece(reg):
+        w, h = reg[1] - reg[0], reg[3] - reg[2]
+        return min(w, h) >= MIN or is_roadway(reg) or has_building(reg)
+
+    def clear(ax, c, reg):
+        x0, x1, y0, y1 = reg
+        lo, hi = (x0, x1) if ax == "x" else (y0, y1)
+        if not (lo + eps < c < hi - eps):
+            return False
+        a, b = cut(reg, ax, c)
+        if not (ok_piece(a) and ok_piece(b)):
+            return False
+        for o in obst:
+            if o[0] < x1 - eps and o[1] > x0 + eps and o[2] < y1 - eps and o[3] > y0 + eps:
+                a, b = (o[0], o[1]) if ax == "x" else (o[2], o[3])
+                if a < c - eps and b > c + eps:
+                    return False
+        return True
+
+    def cut(reg, ax, c):
+        x0, x1, y0, y1 = reg
+        return ([x0, c, y0, y1], [c, x1, y0, y1]) if ax == "x" else ([x0, x1, y0, c], [x0, x1, c, y1])
+
+    def split(reg):
+        for ax, c in cuts:
+            if clear(ax, c, reg):
+                a, b = cut(reg, ax, c)
+                return split(a) + split(b)
+        for ax, lines in (("x", grid_x), ("y", grid_y)):
+            lo, hi = (reg[0], reg[1]) if ax == "x" else (reg[2], reg[3])
+            if hi - lo <= 1.0 + eps:
+                continue
+            mid = (lo + hi) / 2
+            for c in sorted(lines, key=lambda v: abs(v - mid)):
+                if clear(ax, c, reg):
+                    a, b = cut(reg, ax, c)
+                    return split(a) + split(b)
+        return [reg]
+
+    out, seen = [], {}
+    for cell in split(list(bx)):
+        if is_roadway(cell):
+            continue
+        part = G.clip(shape, G.rect_poly(cell))
+        a = G.polygon_area(part) if len(part) >= 3 else 0
+        if a and excl:
+            a -= sum(G.circle_overlap_area(part, c[0], c[1], c[2], 0.01) for c in excl)
+        if a < 0.002:
+            continue
+        f = int(math.floor(cell[0] / G.FRAME_KM + 1e-6))
+        f_end = max(f + 1, int(math.ceil(cell[1] / G.FRAME_KM - 1e-6)))
+        i = max(0, min(len(G.LANES) - 1, int(math.floor((cell[2] + 0.25) / 0.5 + 1e-6)) + 12))
+        i_end = max(i, min(len(G.LANES) - 1, int(math.ceil((cell[3] + 0.25) / 0.5 - 1e-6)) + 12 - 1))
+        bid = "D%d-F%d-%s" % (n, f, G.LANES[i])
+        seen[bid] = seen.get(bid, 0) + 1
+        out.append({"id": bid, "frame": f, "frame_end": f_end, "lane": G.LANES[i], "lane_end": G.LANES[i_end],
+                    "cell_km": [round(v, 4) for v in cell], "part_km": [list(q) for q in part],
+                    "area_km2": round(a, 4), "contents": []})
+    # ids: frame and lane of the block's bow-port corner; a letter is added when two share one
+    count = {}
+    out.sort(key=lambda b: (b["cell_km"][0], b["cell_km"][2]))
+    for k, b in enumerate(out):
+        if seen[b["id"]] > 1:
+            count[b["id"]] = count.get(b["id"], 0) + 1
+            b["id"] += "abcdefghijklmnopqrstuvwxyz"[count[b["id"]] - 1]
+        b["name"] = "Block %d" % (k + 1)
     return out
 
 

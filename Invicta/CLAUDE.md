@@ -44,8 +44,14 @@ to keep in sync and no build step.
   Frames F0 to F68 are 500 m apart. Lanes A to Y are 500 m bands, M on the centreline, A at port.
 - Give measurements in US units first with metric alongside, for example
   `2,953 × 2,034 ft (900 × 620 m)`. Data files store metric (`_m`, `_km`, `_km2`).
-- Block names (approved by Jordan, 26 Nov 2026): `D5-F43-F` is the 500 m square between
-  frame lines F43 and F44 in lane F.
+- Blocks (Jordan, 26 Nov 2026): a block is a city block, the land between streets. The app
+  cuts each precinct along its streets, then on 500 m frame or lane grid lines where a block
+  is longer than 1 km, but never through a building: every building sits wholly inside one
+  block (the scan reports an error otherwise). Block ids name the frame and lane of the
+  bow-port corner (`D5-F43-F`, with a letter added when two share a corner); each block also
+  gets a plain name (Block 1, Block 2 ...). When placing buildings, keep them clear of streets.
+- Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
+  Berth 2. Real names always win.
 - Keep game data separate from website data.
 
 See `data/README.md` for the data file format.

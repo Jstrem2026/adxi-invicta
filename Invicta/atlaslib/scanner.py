@@ -50,7 +50,7 @@ class Scan:
         checks = [self.ship_checks, self.deck_checks, self.district_checks, self.transit_checks,
                   self.zone_checks, self.game_checks, self.precinct_checks, self.building_checks,
                   self.docs_vs_data, self.reference_checks, self.unit_checks, self.mirror_checks,
-                  self.link_checks, self.term_checks, self.decision_checks, self.gap_checks]
+                  self.link_checks, self.term_checks, self.decision_checks, self.block_checks, self.gap_checks]
         for c in checks:
             try:
                 c()
@@ -672,6 +672,27 @@ class Scan:
                      "invicta_geometry.py ARRIVAL has %d placeholder values: %s." % (len(tune), ", ".join("%s = %s" % (k, arr.get(k)) for k in tune)), "D5", FIXED["game_geometry_py"])
 
     # ------------------------------------------------------------------ not designed yet
+    def block_checks(self):
+        """Blocks must never cut through a building (Jordan, 26 Nov 2026)."""
+        from .loader import is_road
+        eps = 1e-6
+        for did, ps in self.m["precinct_sets"].items():
+            for p in ps["precincts"]:
+                blocks = p.get("blocks", [])
+                for b in p["buildings"]:
+                    if not b.get("rect_km") or is_road(b):
+                        continue
+                    for k, part in enumerate(b.get("bays_km") or [b["rect_km"]]):
+                        holders = [blk["id"] for blk in blocks if G.rect_overlap(part, blk["cell_km"]) > 1e-7]
+                        inside = [blk["id"] for blk in blocks if blk["cell_km"][0] - eps <= part[0] and part[1] <= blk["cell_km"][1] + eps
+                                  and blk["cell_km"][2] - eps <= part[2] and part[3] <= blk["cell_km"][3] + eps]
+                        if not inside:
+                            what = "%s %s" % (b["id"], b["name"]) + (" (%s %d)" % (b.get("bay_label", "bay"), k + 1) if b.get("bays_km") else "")
+                            self.add("error", "geometry", "Block cuts through a building",
+                                     "%s is split across blocks %s. A building must sit wholly inside one block." % (what, ", ".join(holders) or "none"),
+                                     b["uid"], ps["file"], fix="Move or resize the building so it clears the block edge, or move the street that bounds the block.")
+                            break
+
     def gap_checks(self):
         for d in self.m["decks"]:
             undesigned = [x for x in d["districts"] if x["design_status"] == "not designed yet"]

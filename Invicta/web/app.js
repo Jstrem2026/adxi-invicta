@@ -215,13 +215,13 @@ function helpPage() {
   <li><b>Ship</b>: click a deck in the side view (vertical scale ×2.5) or in the list.</li>
   <li><b>Deck city</b>: click a district. Districts with a precinct plan are solid; hatched ones are not designed yet.</li>
   <li><b>District</b>: click a precinct.</li>
-  <li><b>Precinct</b>: in <i>Blocks</i> mode, click a 500 × 500 m block; in <i>Buildings</i> mode, click a building directly.</li>
+  <li><b>Precinct</b>: in <i>Blocks</i> mode, click a block (the land between streets); in <i>Buildings</i> mode, click a building directly.</li>
   <li><b>Block</b>: click a building to see everything known about it. Unknown details say <i>not designed yet</i>.</li>
   <li>Scroll to zoom, drag to move, <i>Fit</i> to reset.</li></ul>
   <h2>Conventions</h2><ul>
   <li>Every plan is a true top view: <b>bow right, port up</b>, matching the Unreal level. The canon sheets draw bow left (a mirror); the app flips them.</li>
   <li>Measurements: US units first, metric in brackets.</li>
-  <li>Addresses (D5-F43-F) name the nearest frame line and the lane, as canon does. A <b>block</b> is the 500 m between two frame lines in one lane; block <code>D5-F43-A</code> runs from F43 to F44 in lane A. This block naming is the app's own convention until Jordan settles it.</li>
+  <li>Addresses (D5-F43-F) name the nearest frame line and the lane, as canon does. A <b>block</b> is a city block: the land between streets. Blocks follow the 500 m frame and lane grid where they can, but a block edge never cuts through a building, so each building sits wholly inside one block. Each block has a plain name (Block 1, Block 2 …) and an id from the frame and lane at its bow-port corner, for example <code>D5-F43-A</code>. Anything without its own name gets a generic one (Street A, Berth 3, Hangar 12).</li>
   <li>Lanes A to Y are 500 m bands centred every 500 m; M is on the centreline, A is the port edge.</li></ul>
   <h2>Scanner</h2><ul>
   <li><span class="sev-error">Error</span>: broken or contradictory data (missing file, building through the hull, game and canon disagree).</li>
@@ -253,6 +253,19 @@ function vbFor(b, padKm) {             // viewBox for a ship-frame bbox
 function label(x, y, text, size, opts) {
   opts = opts || {};
   return `<text x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="${opts.anchor || "middle"}" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
+}
+function labelR(x, y, text, size, opts) {
+  opts = opts || {};
+  return `<text transform="rotate(-90 ${X(x).toFixed(1)} ${Y(y).toFixed(1)})" x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="middle" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
+}
+// fit a label in a box, turning it sideways when the box is tall; never drops a label
+function boxLabel(r, text, fs, opts) {
+  const w = (r[1] - r[0]) * 1000, h = (r[3] - r[2]) * 1000, cx = (r[0] + r[1]) / 2, cy = (r[2] + r[3]) / 2;
+  const tall = h > w * 1.3;
+  const along = tall ? h : w, across = tall ? w : h;
+  let s = Math.min(fs, (along * 0.92) / Math.max(1, text.length * 0.58), across * 0.8);
+  s = Math.max(s, fs * 0.12);
+  return tall ? labelR(cx, cy, text, s, opts) : label(cx, cy, text, s, opts);
 }
 function fitText(name, wKm, hKm, fs) {
   const w = wKm * 1000, h = hKm * 1000;
@@ -537,14 +550,20 @@ function drawPrecinct(p, fs, opts) {
     for (const dr of b.doors_km || []) g += rectEl(dr, `fill="#ff8a3d"`);
     g += "</g>";
     if (opts.labels !== false) {
-      const r = b.rect_km;
-      const s = fitText(b.name.toUpperCase(), r[1] - r[0], r[3] - r[2], fs * 0.75);
-      if (s && !b.bays_km) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, b.name.toUpperCase(), s, {});
+      if (b.bays_km) {
+        // each bay gets its own name, or a numbered generic one
+        const base = b.bay_label || "Bay";
+        const tag = i => base === "Street" ? String.fromCharCode(65 + i) : i + 1;   // Street A, Street B … ; Berth 1, Berth 2 …
+        b.bays_km.forEach((s, i) => { g += boxLabel(s, (b.bay_names && b.bay_names[i]) || `${base} ${tag(i)}`, fs * 0.4, { weight: 400 }); });
+        const r = b.rect_km, wide = (r[1] - r[0]) >= (r[3] - r[2]);
+        if (b.bays_km.length > 3 && !b.bay_names) g += wide ? label((r[0] + r[1]) / 2, r[2] - fs * 0.0006, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" })
+                  : labelR(r[0] - fs * 0.0006, (r[2] + r[3]) / 2, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" });
+      } else g += boxLabel(b.rect_km, b.name.toUpperCase(), fs * 0.75, {});
     }
   }
   if (opts.labels !== false) for (const st of p.streets || []) {
     const r = st.rect_km, w = r[1] - r[0], h = r[3] - r[2];
-    if (w > h && w > 0.8) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, st.name, Math.min(fs * 0.55, h * 1000 * 0.8), { fill: "#cfd8e3", weight: 400 });
+    g += boxLabel(r, st.name, fs * 0.55, { fill: "#cfd8e3", weight: 400 });
   }
   return g;
 }
@@ -552,7 +571,9 @@ function blocksLayer(p, fs, clickable, selected) {
   let g = "";
   for (const blk of p.blocks || []) {
     const sel = blk.id === selected;
-    g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : ""} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}"><title>Block ${blk.id} · ${blk.contents.length} item(s)</title></path>`;
+    g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : ""} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}"><title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title></path>`;
+    const c = blk.cell_km;
+    g += `<text x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600">${esc(blk.name)}</text>`;
   }
   return g;
 }
@@ -569,7 +590,7 @@ function precinctView(uid) {
   g += drawPrecinct(p, fs, { buildingsClickable: precinctMode === "buildings" });
   g += blocksLayer(p, fs, precinctMode === "blocks");
   const tools = `<button class="${precinctMode === "blocks" ? "on" : ""}" onclick="setMode('blocks')">Select blocks</button><button class="${precinctMode === "buildings" ? "on" : ""}" onclick="setMode('buildings')">Select buildings</button>`;
-  const legend = Object.entries(KIND_FILL).map(([k, c]) => `<span><i style="background:${c}"></i>${k}</span>`).join("") + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>500 m block</span>`;
+  const legend = Object.entries(KIND_FILL).map(([k, c]) => `<span><i style="background:${c}"></i>${k}</span>`).join("") + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>block</span>`;
   const groups = {};
   for (const bd of p.buildings) (groups[bd.kind] = groups[bd.kind] || []).push(bd);
   const bl = Object.entries(groups).map(([k, list]) => `<h3>${esc(k)} (${list.length})</h3><ul class="list">` + list.map(bd =>
@@ -585,7 +606,7 @@ function precinctView(uid) {
     <div>Sources</div><div>${fileLink(ps.doc, "precinct plans doc")} · ${fileLink(p.blueprint, "blueprint PNG")} · ${fileLink(p.blueprint_svg, "SVG")} · ${fileLink(ps.file, "app data")}</div></div>
     ${bl}${issueBlock(uid, "Issues in this precinct")}`;
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, ""]],
-    mapShell(g, vb, tools, legend, precinctMode === "blocks" ? "Click a block (500 × 500 m) · or switch to Select buildings" : "Click a building"), panel);
+    mapShell(g, vb, tools, legend, precinctMode === "blocks" ? "Click a block (blocks are bounded by streets and never cut through a building) · or switch to Select buildings" : "Click a building"), panel);
 }
 window.setMode = m => { precinctMode = m; route(); };
 
@@ -604,21 +625,22 @@ function blockView(puid, bid) {
   const outer = `M${vb[0] - 4 * vb[2]},${vb[1] - 4 * vb[3]}h${9 * vb[2]}v${9 * vb[3]}h${-9 * vb[2]}Z`;
   g += `<path d="${outer} ${pathOf(blk.part_km)}" fill="rgba(5,12,22,.55)" fill-rule="evenodd" pointer-events="none"/>`;
   // bow right: the lower frame number is on the right
-  g += label(c[0], c[2] - 0.04, `F${blk.frame}`, fs * 0.7, { fill: "#ffc266" }) + label(c[1], c[2] - 0.04, `F${blk.frame + 1}`, fs * 0.7, { fill: "#ffc266" });
-  g += label(c[1] + 0.03, (c[2] + c[3]) / 2, `lane ${blk.lane}`, fs * 0.6, { fill: "#ffc266", anchor: "end" });
+  g += label(c[0], c[2] - 0.04, `${nd(c[0], 2)} km`, fs * 0.6, { fill: "#ffc266" }) + label(c[1], c[2] - 0.04, `${nd(c[1], 2)} km`, fs * 0.6, { fill: "#ffc266" });
+  g += label(c[1] + 0.03, (c[2] + c[3]) / 2, blk.lane === blk.lane_end ? `lane ${blk.lane}` : `lanes ${blk.lane}–${blk.lane_end}`, fs * 0.6, { fill: "#ffc266", anchor: "end" });
   const items = blk.contents.map(ct => {
     const bd = p.buildings.find(q => q.id === ct.id);
-    return `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b> <span class="small muted">${esc(bd.kind)}</span></span><span class="small">${Math.round(ct.share * 100)}% of it here ${badge(bd.status)}</span></li>`;
+    return `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b> <span class="small muted">${esc(bd.kind)}</span></span><span class="small">${ct.of ? (ct.parts < ct.of ? `${ct.parts} of ${ct.of} ${esc((bd.bay_label || "bay").toLowerCase())}s here ` : "") : ct.share < 0.995 ? Math.round(ct.share * 100) + "% of it here " : ""}${badge(bd.status)}</span></li>`;
   }).join("");
   const streets = (p.streets || []).filter(s => (s.blocks || []).includes(bid)).map(s => esc(s.name)).join(", ");
-  const panel = `<h1>Block ${esc(blk.id)}</h1><div class="small muted">${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n}</div>
-    <div class="kv" style="margin-top:8px"><div>Between</div><div>frames F${blk.frame} and F${blk.frame + 1} (${nd(c[0], 1)} to ${nd(c[1], 1)} km from the prow)</div>
-    <div>Lane</div><div>${blk.lane} (${nd(c[2], 2)} to ${nd(c[3], 2)} km ${c[3] <= 0 ? "to port" : c[2] >= 0 ? "to starboard" : "across the centreline"})</div>
-    <div>Usable area</div><div>${area(blk.area_km2)} <span class="small muted">of a full ${area(0.25)} block</span></div>
+  const panel = `<h1>${esc(blk.name)} <span class="muted small">${esc(blk.id)}</span></h1><div class="small muted">${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n}</div>
+    <div class="kv" style="margin-top:8px"><div>Size</div><div>${dims((c[1] - c[0]) * 1000, (c[3] - c[2]) * 1000)}</div>
+    <div>Frames</div><div>F${blk.frame} to F${blk.frame_end} (${nd(c[0], 2)} to ${nd(c[1], 2)} km from the prow)</div>
+    <div>Lanes</div><div>${blk.lane === blk.lane_end ? blk.lane : blk.lane + " to " + blk.lane_end} (${nd(c[2], 2)} to ${nd(c[3], 2)} km ${c[3] <= 0 ? "to port" : c[2] >= 0 ? "to starboard" : "across the centreline"})</div>
+    <div>Usable area</div><div>${area(blk.area_km2)}</div>
     <div>Streets</div><div>${streets || "<span class='muted'>none</span>"}</div></div>
     <h3>In this block (${blk.contents.length})</h3>${items ? `<ul class="list">${items}</ul>` : `<div class="note">Nothing placed in this block yet: not designed yet.</div>`}
     <div class="small muted" style="margin-top:8px">Click a building on the map or in the list for its details.</div>`;
-  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [`Block ${blk.id}`, ""]],
+  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [`${blk.name} · ${blk.id}`, ""]],
     mapShell(g, vb, "", "", "Click a building"), panel);
 }
 
@@ -637,7 +659,7 @@ function buildingView(uid) {
   const arch = [["Height", b.height_m != null ? len(b.height_m) : null], ["Floors", b.floors], ["Structure", b.structure], ["Entrances", b.entrances],
     ["Materials / look", b.look], ["Capacity", b.capacity], ["Services", b.services], ["Interior layout", b.interior]]
     .map(([k, v]) => `<div>${k}</div><div>${v != null && v !== "" ? esc(v) : ND}</div>`).join("");
-  const blocks = (b.blocks || []).map(k => `<a href="#/block/${p.uid}/${k}">${k}</a>`).join(", ");
+  const blocks = (b.blocks || []).map(k => { const bk = (p.blocks || []).find(q => q.id === k); return `<a href="#/block/${p.uid}/${k}">${esc(bk ? bk.name : "")} · ${k}</a>`; }).join(", ");
   const firstBlock = (b.blocks || [])[0];
   const panel = `<h1>${esc(b.name)}</h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
@@ -648,7 +670,7 @@ function buildingView(uid) {
       <div>Ground area</div><div>${b.footprint_km2 != null ? area(b.footprint_km2) : ND}</div>
       <div>Listed as</div><div>${esc(b.size_text || "")}</div>
       <div>Notes</div><div>${esc(b.notes || "") || "<span class='muted'>—</span>"}</div>
-      <div>Blocks</div><div>${blocks || ND}</div>
+      <div>${(b.blocks || []).length > 1 ? "Blocks" : "Block"}</div><div>${blocks || ND}</div>
       ${b.bay_names ? `<div>Parts</div><div>${b.bay_names.map(esc).join(", ")}</div>` : ""}
       ${b.doors_km ? `<div>Dock doors</div><div>${b.doors_km.length} in the hull, ${dims((b.doors_km[0][1] - b.doors_km[0][0]) * 1000, (b.doors_km[0][3] - b.doors_km[0][2]) * 1000)} as drawn</div>` : ""}
       <div>Position</div><div>${r ? `${nd(r[0], 2)}–${nd(r[1], 2)} km from the prow, ${nd(r[2], 2)} to ${nd(r[3], 2)} km across` : ND}</div></div>
