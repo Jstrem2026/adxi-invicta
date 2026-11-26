@@ -34,3 +34,24 @@ python Invicta/atlas.py --scan    runs the scanner and writes Invicta/reports/sc
 3. Every pull request runs the scan. Errors block it. Jordan approves every change.
 
 The game itself and the Arcane Drift website are separate projects and are not in this repo.
+
+## The site chat
+
+The panel on the right of invicta.arcanedrift.net lets anyone talk to Claude about the ship and
+ask it to make a change. Claude reads this repo and opens a pull request for each agreed change.
+Nothing goes live until Jordan merges it. It can't change canon, the site's own code or CI files.
+Helpers can add an optional name, which is credited on their pull requests. There are no accounts.
+
+Code: `functions/api/chat.js` (Cloudflare Pages Function) and `Invicta/web/chat.js`.
+
+Cloudflare Pages settings:
+
+| Setting | Value |
+|---|---|
+| Build command | `bash Invicta/tools/cloudflare_build.sh` |
+| Build output folder | `Invicta/site` |
+| Secret `ANTHROPIC_API_KEY` | the Anthropic API key that pays for the chat |
+| Secret `GITHUB_TOKEN` | fine-grained token for this repo only: Contents and Pull requests, read and write |
+| Variable `GITHUB_REPO` | `Jstrem2026/adxi-invicta` |
+| Optional `CLAUDE_MODEL`, `DAILY_LIMIT_PER_VISITOR` (40), `DAILY_LIMIT_TOTAL` (600) | |
+| KV binding `LIMITS` | a KV namespace for the daily message counters |
