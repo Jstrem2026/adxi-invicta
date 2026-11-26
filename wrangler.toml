@@ -1,0 +1,13 @@
+# Cloudflare Pages project for invicta.arcanedrift.net (ADXI: Invicta).
+# Deploy: bash Invicta/tools/cloudflare_build.sh && npx wrangler pages deploy
+name = "adxi-invicta"
+pages_build_output_dir = "Invicta/site"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GITHUB_REPO = "Jstrem2026/adxi-invicta"
+
+[[kv_namespaces]]
+binding = "LIMITS"
+id = "f2537ab1ce7947f1a28487ca18f80081"
