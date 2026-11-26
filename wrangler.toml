@@ -1,8 +1,8 @@
 # Cloudflare Pages project for invicta.arcanedrift.net (ADXI: Invicta).
-# Lives in the Arcane Drift Cloudflare account only.
+# Lives in the Arcane Drift Cloudflare account only (account ac6e9f7ba848384ed2b7db74449312da;
+# deploy with CLOUDFLARE_ACCOUNT_ID set to it).
 # Deploy: python Invicta/tools/export_static.py --out Invicta/site && npx wrangler pages deploy --branch main
 name = "adxi-invicta"
-account_id = "ac6e9f7ba848384ed2b7db74449312da"
 pages_build_output_dir = "Invicta/site"
 compatibility_date = "2026-11-01"
 compatibility_flags = ["nodejs_compat"]
@@ -10,4 +10,12 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 GITHUB_REPO = "Jstrem2026/adxi-invicta"
 
-# KV (LIMITS) and D1 (DB) bindings are added once they exist in the Arcane Drift account.
+[[kv_namespaces]]
+binding = "LIMITS"
+id = "56b981b0acd34c3fbc00d7f91b3f12af"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "adxi-invicta-db"
+database_id = "0517f748-0a9f-4b5a-bb8c-873abc50428b"
+migrations_dir = "migrations"
