@@ -1,0 +1,57 @@
+name: Scan and publish the site
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan
+        run: python Invicta/atlas.py --scan
+      - name: Report
+        if: always()
+        run: cat Invicta/reports/scan_report.md >> "$GITHUB_STEP_SUMMARY"
+  publish:
+    # Every merge to main rebuilds invicta.arcanedrift.net.
+    # Skips quietly until the CLOUDFLARE_API_TOKEN repo secret exists.
+    needs: scan
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      HAS_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - name: Waiting for the Cloudflare token
+        if: env.HAS_TOKEN != 'true'
+        run: echo "CLOUDFLARE_API_TOKEN is not set yet, so the site was not published." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/checkout@v4
+        if: env.HAS_TOKEN == 'true'
+      - uses: actions/setup-python@v5
+        if: env.HAS_TOKEN == 'true'
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        if: env.HAS_TOKEN == 'true'
+        with:
+          node-version: "22"
+      - run: npm ci
+        if: env.HAS_TOKEN == 'true'
+      - name: Build the site
+        if: env.HAS_TOKEN == 'true'
+        run: python Invicta/tools/export_static.py --out Invicta/site
+      - name: Publish to Cloudflare Pages
+        if: env.HAS_TOKEN == 'true'
+        run: npx wrangler@4 pages deploy --branch main --commit-hash "$GITHUB_SHA"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ac6e9f7ba848384ed2b7db74449312da
