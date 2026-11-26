@@ -1,0 +1,22 @@
+name: Invicta scan
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan
+        run: python Invicta/atlas.py --scan
+      - name: Report
+        if: always()
+        run: cat Invicta/reports/scan_report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Build the site
+        run: python Invicta/tools/export_static.py --out Invicta/site
