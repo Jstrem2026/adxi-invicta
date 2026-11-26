@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADXI: Invicta</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">◆</span> ADXI: Invicta <span class="sub">Arcane Drift · ship blueprints &amp; progress</span></div>
+  <nav class="tabs" id="tabs">
+    <a href="#/dashboard" data-tab="dashboard">Progress</a>
+    <a href="#/ship" data-tab="explore">Explore</a>
+    <a href="#/issues" data-tab="issues">Issues <span class="pill" id="issue-pill"></span></a>
+    <a href="#/sources" data-tab="sources">Sources</a>
+    <a href="#/help" data-tab="help">Help</a>
+  </nav>
+  <div class="actions">
+    <span class="muted" id="scan-time"></span>
+    <button id="rescan" title="Read every file again and rescan">Rescan</button>
+  </div>
+</header>
+<main id="app"><div class="loading">Reading the Invicta files…</div></main>
+<script src="/static/app.js"></script>
+</body>
+</html>

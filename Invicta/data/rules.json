@@ -1,0 +1,64 @@
+{
+  "about": "Rules the scanner applies. Edit freely. Each acknowledged issue stays listed but is greyed out as 'known'.",
+  "revB_overrides": {
+    "D5-strike-hangars": {
+      "area_km2": 109.1,
+      "source": "02_Canon_Errata.md C2, decided 20 Nov 2026 (110 to 109.1 km²)"
+    }
+  },
+  "retired_terms": [
+    {
+      "term": "Supreme Commander",
+      "use": "Captain",
+      "source": "Errata A1, decided 20 Nov 2026",
+      "where": [
+        "Docs/1_Canon_Source/Invicta/datasheets",
+        "Game/Docs"
+      ],
+      "ignore_files": [
+        "02_Canon_Errata.md",
+        "01_Canon_Review.md"
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "a": "Game/Docs",
+      "b": "Docs/2_Design_Docs",
+      "patterns": [
+        "*.md",
+        "geometry_revB/*",
+        "art/blueprints/*",
+        "art/blueprints/precincts/*",
+        "art/*.html"
+      ]
+    }
+  ],
+  "tolerances": {
+    "area_pct": 2.0,
+    "area_abs_km2": 0.15,
+    "length_m": 15,
+    "conversion_pct": 1.5
+  },
+  "not_the_invicta": {
+    "EX101": "4,000 x 1,504 x 708 m (website ship)"
+  },
+  "acknowledged": [
+    {
+      "match": "zone_reservations_km.csv",
+      "reason": "Known: the zone CSV is still Revision A (its README says so)."
+    },
+    {
+      "match": "Strike Hangars Keelway stop",
+      "reason": "Known since 26 Nov 2026 (Ship Reference §6): Sheet S5 draws the stop about 1.2 km from the deck bow, the game uses F3. Waiting on Jordan."
+    },
+    {
+      "match": "District label drawn in the wrong place",
+      "reason": "Logged as errata C7 on 26 Nov 2026. The canon sheets are read-only; the app uses the shape whose area matches."
+    },
+    {
+      "match": "'Supreme Commander' appears 2 times in Docs/1_Canon_Source/Invicta/datasheets/09-Crown-Bridge.html",
+      "reason": "Known since 26 Nov 2026: the Crown sheet is read-only canon. Errata A1 (decided 20 Nov 2026) already replaces every use with 'Captain'."
+    }
+  ]
+}

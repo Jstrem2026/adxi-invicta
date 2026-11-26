@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luxuria Invicta Blueprints</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: a row of sheet tabs, one wide drawing per sheet, then that sheet's data panel. Single dark theme taken from the ship renders. */
+  color-scheme: dark;
+  --void:#0b0f16;
+  --plate:#18202c;
+  --plate-hi:#2b384a;
+  --ink:#dfe6ee;
+  --ink-dim:#93a1b3;
+  --amber:#f2a53a;
+  --glass:#4aa3ff;
+  --display:"Michroma","Eurostile","Segoe UI",sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--void);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+main{max-width:1240px;margin:0 auto;padding:28px 20px 48px;display:flex;flex-direction:column;gap:18px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(20px,3vw,30px);letter-spacing:.08em;margin:0;text-wrap:balance}
+.sub{color:var(--ink-dim);margin:6px 0 0;max-width:65ch}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{font:500 14px var(--body);color:var(--ink);background:var(--plate);border:1px solid var(--plate-hi);border-radius:4px;padding:8px 12px;cursor:pointer}
+.tabs button:hover{border-color:var(--ink-dim)}
+.tabs button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tabs button[aria-pressed="true"]{background:#4a3513;border-color:var(--amber);color:#ffd9a0}
+.sheet{display:flex;flex-direction:column;gap:16px}
+.sheet[hidden]{display:none}
+.sheet h2{font-family:var(--display);font-weight:400;font-size:16px;letter-spacing:.1em;margin:0;color:var(--amber)}
+figure{margin:0;background:linear-gradient(180deg,#0e141d,#0b0f16);border:1px solid var(--plate-hi);border-radius:6px;padding:12px}
+.scroll{overflow-x:auto}
+svg{display:block;width:100%;min-width:820px;height:auto;color:var(--ink)}
+figcaption{color:var(--ink-dim);font-size:13px;padding:8px 4px 0}
+.hull{fill:var(--plate);stroke:var(--plate-hi);stroke-width:2}
+.line{fill:none;stroke:var(--plate-hi);stroke-width:1.5}
+.part{cursor:pointer;outline:none}
+.part .fill,.zone{fill:#1f2a39;stroke:#3a4c64;stroke-width:1}
+.zone.alt{fill:#243042}
+.zone.alt2{fill:#2a2a30}
+.part .lights{stroke:var(--amber);stroke-width:1.5;stroke-dasharray:3 5;opacity:.75}
+.lbl{fill:var(--ink);font-family:var(--display);font-size:10px;letter-spacing:.05em;pointer-events:none}
+.part:focus-visible .fill{stroke:var(--ink);stroke-width:2}
+.part.on .fill{fill:#4a3513;stroke:var(--amber);stroke-width:2}
+.part.on .lbl{fill:#ffd9a0}
+.glass{fill:var(--glass)}
+.gline{fill:none;stroke:var(--glass);stroke-width:3}
+.aline{fill:none;stroke:var(--amber);stroke-width:2}
+.dash{stroke-dasharray:6 5}
+.lance{stroke:var(--amber);stroke-width:5}
+.note{fill:var(--ink-dim);font-family:var(--body);font-size:12px}
+.lead{stroke:var(--ink-dim);stroke-width:1;fill:none}
+.box{fill:#1f2a39;stroke:#3a4c64;stroke-width:1.5}
+.box.hot{stroke:var(--amber)}
+.btxt{fill:var(--ink);font-family:var(--body);font-size:13px;font-weight:500}
+.panel{background:var(--plate);border:1px solid var(--plate-hi);border-left:4px solid var(--amber);border-radius:6px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.panel h3{font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:.06em;margin:0}
+.panel .tag{color:var(--amber);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0}
+.panel p{margin:0;max-width:65ch}
+.phead{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.phead img{width:120px;height:120px;object-fit:contain;flex:none}
+.phead img.npc{object-fit:cover;border-radius:6px;border:1px solid var(--plate-hi)}
+.phead div{display:flex;flex-direction:column;gap:8px;min-width:0}
+dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px 20px;margin:0}
+dt{color:var(--ink-dim);font-size:13px}
+dd{margin:0;font-variant-numeric:tabular-nums;font-weight:500}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--plate-hi);vertical-align:top}
+th{color:var(--ink-dim);font-weight:500;font-size:13px}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.drones{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.drone{background:#1f2a39;border:1px solid var(--plate-hi);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.drone img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.drone b{font-size:13px;font-weight:600;padding:6px 8px 0}
+.drone span{font-size:12px;color:var(--ink-dim);padding:0 8px 8px}
+.panel h4{font-family:var(--display);font-weight:400;font-size:13px;letter-spacing:.1em;margin:4px 0 0;color:var(--amber)}
+
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:12px}
+.pcard{background:#1f2a39;border:1px solid var(--plate-hi);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;padding-bottom:8px}
+.pcard img{width:100%;height:150px;object-fit:contain;background:#1f2a39}
+.pcard b{font-size:13px;font-weight:600;padding:4px 6px 0}
+.pcard span{font-size:12px;color:var(--ink-dim);padding:2px 6px 0}
+.depot{fill:#4a3513;stroke:var(--amber);stroke-width:1.5}
+.road{fill:none;stroke:#5b6b82;stroke-width:2}
+.ring{fill:none;stroke:var(--amber);stroke-width:2;opacity:.8}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>LUXURIA INVICTA BLUEPRINTS</h1>
+    <p class="sub">Eleven drawing sheets for the 34 km battlecruiser. Pick a sheet, then select parts of the drawing or use the buttons to see the details.</p>
+  </header>
+
+  <nav class="tabs" id="sheets" aria-label="Drawing sheets"></nav>
+
+  <!-- SHEET 1 -->
+  <section class="sheet" id="sheet-side">
+    <h2>SHEET 1 · SIDE CUTAWAY</h2>
+    <figure>
+      <div class="scroll">
+      <svg viewBox="0 0 1200 520" role="img" aria-label="Side cutaway showing the Crown, eight stacked deck-cities, the Spine Atrium, the Invicta Lance along the keel and the engines at the stern">
+        <defs><clipPath id="hullclip"><path d="M40 380 L320 130 L1100 130 Q1160 130 1160 200 L1160 400 Q1160 467 1100 467 L200 467 Z"/></clipPath></defs>
+        <line x1="40" y1="500" x2="369.4" y2="500" stroke="currentColor"/><line x1="40" y1="495" x2="40" y2="505" stroke="currentColor"/><line x1="369.4" y1="495" x2="369.4" y2="505" stroke="currentColor"/>
+        <text class="note" x="378" y="504">10 km</text>
+        <text class="note" x="1160" y="504" text-anchor="end">Total length 34 km</text>
+        <rect class="glass" x="1160" y="240" width="28" height="120" opacity=".85"/>
+        <rect class="glass" x="1160" y="380" width="22" height="60" opacity=".85"/>
+        <path class="hull" d="M40 380 L320 130 L1100 130 Q1160 130 1160 200 L1160 400 Q1160 467 1100 467 L200 467 Z"/>
+        <g class="part" data-id="crown" tabindex="0" role="button" aria-label="The Crown and Crown Bridge">
+          <path class="fill" d="M376 130 L396 100 L625 100 L645 130 Z"/>
+          <rect class="fill" x="490" y="84" width="40" height="16"/>
+          <rect class="glass" x="400" y="110" width="221" height="5" opacity=".9" pointer-events="none"/>
+          <text class="lbl" x="510.5" y="127" text-anchor="middle">THE CROWN</text>
+        </g>
+        <rect x="290" y="150" width="70" height="8" fill="#2b384a" stroke="#3a4c64" transform="rotate(-41.8 290 158)"/>
+        <rect x="667" y="118" width="207" height="12" fill="#2b384a" stroke="#3a4c64"/>
+        <g id="sideDecks" clip-path="url(#hullclip)"></g>
+        <g class="part" data-id="atrium" tabindex="0" role="button" aria-label="Spine Atrium and Lumen Crown">
+          <path class="fill" d="M870 130 A26 26 0 0 1 922 130 Z"/>
+          <rect class="fill" x="870" y="130" width="52" height="318" fill-opacity=".9"/>
+          <line class="gline" x1="896" y1="112" x2="896" y2="448" pointer-events="none"/>
+        </g>
+        <g class="part" data-id="power" tabindex="0" role="button" aria-label="Reactors and engines">
+          <rect class="fill" x="940" y="347" width="206" height="26" rx="3"/>
+          <g pointer-events="none" fill="none" stroke="#4aa3ff" stroke-width="2">
+            <circle cx="962" cy="360" r="8"/><circle cx="994" cy="360" r="8"/><circle cx="1026" cy="360" r="8"/>
+            <circle cx="1058" cy="360" r="8"/><circle cx="1090" cy="360" r="8"/><circle cx="1122" cy="360" r="8"/>
+          </g>
+        </g>
+        <g class="part" data-id="lance" tabindex="0" role="button" aria-label="Invicta Lance">
+          <rect class="fill" x="200" y="454" width="922" height="12" fill-opacity="0" stroke-opacity="0"/>
+          <line class="lance" x1="200" y1="460" x2="1122" y2="460" pointer-events="none"/>
+        </g>
+        <line class="lead" x1="510" y1="84" x2="510" y2="58"/><text class="note" x="510" y="50" text-anchor="middle">Crown Bridge (detachable)</text>
+        <line class="lead" x1="300" y1="140" x2="270" y2="100"/><text class="note" x="268" y="92" text-anchor="middle">Forward Grids</text>
+        <line class="lead" x1="760" y1="118" x2="760" y2="84"/><text class="note" x="760" y="76" text-anchor="middle">Vent pods</text>
+        <line class="lead" x1="896" y1="104" x2="896" y2="58"/><text class="note" x="896" y="50" text-anchor="middle">Lumen Crown</text>
+        <text class="note" x="1150" y="76" text-anchor="end">Main engines</text><line class="lead" x1="1172" y1="240" x2="1140" y2="84"/>
+        <text class="note" x="188" y="484" text-anchor="end">Lance muzzle</text>
+      </svg>
+      </div>
+      <figcaption>Heights are drawn 2.5 times taller than true scale so the decks can be read. The hull outline is simplified from the side profile in the four-view reference sheet.</figcaption>
+    </figure>
+    <nav class="tabs" id="sideNav" aria-label="Ship sections"></nav>
+    <div class="panel" id="sidePanel" aria-live="polite"></div>
+  </section>
+
+  <!-- SHEET 2 -->
+  <section class="sheet" id="sheet-top" hidden>
+    <h2>SHEET 2 · TOP PLAN</h2>
+    <figure>
+      <div class="scroll">
+      <svg viewBox="0 0 1200 520" role="img" aria-label="Top plan of the hull showing the prow, Forward Grids, the Crown, vent pods, Lumen Crown, stern blades and engines">
+        <path class="hull" d="M40 262 L400 110 L640 58 L1010 58 Q1160 58 1160 262 Q1160 466 1010 466 L640 466 L400 414 Z"/>
+        <line class="lead" x1="40" y1="262" x2="398" y2="262" stroke-dasharray="4 6"/>
+        <g id="grids"></g>
+        <path class="gline" stroke-width="6" d="M645 190 L470 190 A72 72 0 0 0 470 334 L645 334"/>
+        <path class="line" d="M645 215 L480 215 A47 47 0 0 0 480 309 L645 309"/>
+        <rect x="490" y="254" width="40" height="16" fill="#4a3513" stroke="#f2a53a" stroke-width="1.5"/>
+        <text class="note" x="540" y="266">Crown Bridge</text>
+        <polygon class="box" points="667,182 700,150 850,150 874,182 850,215 700,215"/>
+        <polygon class="box" points="667,342 700,309 850,309 874,342 850,374 700,374"/>
+        <g id="louvres"></g>
+        <circle cx="896" cy="262" r="26" fill="#18202c" stroke="#4aa3ff" stroke-width="3"/>
+        <circle class="glass" cx="896" cy="262" r="5"/>
+        <line x1="922" y1="262" x2="1150" y2="262" stroke="#3a4c64" stroke-width="10"/>
+        <line class="line" x1="880" y1="95" x2="1110" y2="95"/><line class="line" x1="880" y1="429" x2="1110" y2="429"/>
+        <line class="line" x1="900" y1="128" x2="1130" y2="128"/><line class="line" x1="900" y1="396" x2="1130" y2="396"/>
+        <rect class="glass" x="1150" y="163" width="14" height="24" opacity=".85"/><rect class="glass" x="1158" y="202" width="16" height="36" opacity=".85"/>
+        <rect class="glass" x="1160" y="238" width="20" height="48" opacity=".85"/>
+        <rect class="glass" x="1158" y="286" width="16" height="36" opacity=".85"/><rect class="glass" x="1150" y="337" width="14" height="24" opacity=".85"/>
+        <text class="note" x="40" y="316">Prow</text>
+        <text class="note" x="250" y="80" text-anchor="middle">Forward Grids (32 launch bays)</text><line class="lead" x1="290" y1="88" x2="350" y2="160"/>
+        <text class="note" x="510" y="40" text-anchor="middle">The Crown (about 8 km long)</text><line class="lead" x1="510" y1="46" x2="510" y2="187"/>
+        <text class="note" x="770" y="40" text-anchor="middle">Vent pods</text><line class="lead" x1="770" y1="46" x2="770" y2="150"/>
+        <text class="note" x="1040" y="40" text-anchor="middle">Stern blades</text><line class="lead" x1="1040" y1="46" x2="1040" y2="95"/>
+        <text class="note" x="896" y="500" text-anchor="middle">Lumen Crown (top of the Spine Atrium)</text><line class="lead" x1="896" y1="486" x2="896" y2="288"/>
+        <text class="note" x="1190" y="500" text-anchor="end">5 main engines</text><line class="lead" x1="1160" y1="486" x2="1168" y2="326"/>
+        <line x1="40" y1="500" x2="369.4" y2="500" stroke="currentColor"/><line x1="40" y1="495" x2="40" y2="505" stroke="currentColor"/><line x1="369.4" y1="495" x2="369.4" y2="505" stroke="currentColor"/>
+        <text class="note" x="378" y="504">10 km</text>
+      </svg>
+      </div>
+      <figcaption>True scale. Length 34 km, widest beam 12.4 km. Outline and features follow the top-view reference render.</figcaption>
+    </figure>
+    <div class="panel">
+      <p class="tag">Exterior</p><h3>Hull dimensions</h3>
+      <dl>
+        <div><dt>Length</dt><dd>34.0 km</dd></div><div><dt>Beam</dt><dd>12.4 km</dd></div>
+        <div><dt>Hull height</dt><dd>4.1 km</dd></div><div><dt>Height with Crown and fins</dt><dd>about 5.5 km</dd></div>
+        <div><dt>Interior volume</dt><dd>about 950 km³ (about 1,100 km³ with armor)</dd></div><div><dt>Mass</dt><dd>about 530 billion tonnes</dd></div>
+        <div><dt>Frames</dt><dd>F0 at the prow to F68 at the stern, 500 m apart</dd></div><div><dt>Spine Atrium</dt><dd>Frame 52, 26 km from the prow</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SHEET 3 -->
+  <section class="sheet" id="sheet-section" hidden>
+    <h2>SHEET 3 · CROSS-SECTION AT FRAME 52</h2>
+    <figure>
+      <div class="scroll"><svg id="secSvg" viewBox="0 0 1200 470" role="img" aria-label="Cross-section through the Spine Atrium showing the eight decks stacked with their widths and floor heights"></svg></div>
+      <figcaption>True scale, looking forward from the stern. The slice passes through the Spine Atrium. Thin vertical lines are the sky columns that hold up each deck's ceiling, one per kilometer.</figcaption>
+    </figure>
+    <div class="panel">
+      <p class="tag">Structure</p><h3>Deck stack, keel to top</h3>
+      <div class="tw"><table id="stackTable"></table></div>
+    </div>
+  </section>
+
+  <!-- SHEET 4 -->
+  <section class="sheet" id="sheet-deck" hidden>
+    <h2 id="deckTitle">SHEET 4 · DECK PLAN</h2>
+    <nav class="tabs" id="deckNav" aria-label="Decks"></nav>
+    <figure>
+      <div class="scroll"><svg id="deckSvg" viewBox="0 0 1200 520" role="img" aria-label="Deck plan"></svg></div>
+      <img id="deckRender" alt="" style="width:100%;margin-top:14px;border-radius:6px;display:block">
+      <p class="note" id="deckRenderCap" style="margin-top:6px;font-size:12px;opacity:.75"></p>
+      <figcaption>True scale, bow at left, port side at top. Blue line: Keelway maglev. Dashed blue line: cross-line. Dots: stations. Amber hexagon with D: drone depot, one beside each Atrium Plaza, plus the barracks depots on Deck 4, the hangar depot on Deck 5 and the hull-crawler dock on Deck 6. Frame numbers run along the top, one frame every 500 m.</figcaption>
+    </figure>
+    <div class="panel" id="deckPanel" aria-live="polite"></div>
+  </section>
+
+  <!-- SHEET 5 -->
+  <section class="sheet" id="sheet-bridge" hidden>
+    <h2>SHEET 5 · CROWN BRIDGE LEVELS</h2>
+    <figure>
+      <div class="scroll"><svg id="bridgeSvg" viewBox="0 0 1200 430" role="img" aria-label="The 14 levels of the Crown Bridge from engineering at the bottom to the observatory at the top"></svg></div>
+      <img src="decks/r9.jpg" alt="Canon cutaway render of the Crown Bridge" style="width:100%;margin-top:14px;border-radius:6px;display:block"><p class="note" style="margin-top:6px;font-size:12px;opacity:.75">Canon cutaway render of the Crown Bridge. The drawing above is the engineering level diagram.</p>
+      <figcaption>Side view of the detachable command ship, bow at left. 1.2 km long, 480 m wide, 150 m tall. Level heights are stretched so the names can be read.</figcaption>
+    </figure>
+    <div class="panel">
+      <div class="phead"><img src="emblems/brg.png" alt="Crown Bridge emblem"><div><p class="tag">Command ship</p><h3>Crown Bridge</h3></div><img class="npc" src="npc/brg.jpg" alt="Portrait of Avalon"><div><p class="tag">Lead NPC</p><h3>Avalon</h3></div><img class="npc" src="npc/max.jpg" alt="Portrait of Maximilian"><div><p class="tag">Supreme Commander</p><h3>Maximilian</h3></div></div>
+      <dl>
+        <div><dt>Staff</dt><dd>about 3,500</dd></div><div><dt>Escape capacity</dt><dd>3,500 for 90 days, or 12,000 for 10 days</dd></div>
+        <div><dt>Separation</dt><dd>40 seconds</dd></div><div><dt>Propulsion</dt><dd>4 fusion torches, short-range Drift Engine</dd></div>
+        <div><dt>Throne Deck</dt><dd>120 m amphitheater, about 200 stations</dd></div><div><dt>Link to the ship</dt><dd>Level 2 gangways, then the Crown Causeway maglev</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SHEET 6 -->
+  <section class="sheet" id="sheet-power" hidden>
+    <h2>SHEET 6 · POWER GRID</h2>
+    <figure>
+      <div class="scroll">
+      <svg viewBox="0 0 1200 400" role="img" aria-label="Power flows from the Void Reactor, the Fusion Reactor and the Dark Matter Drive through the Spine Bus to eight deck ring mains, zone substations and buildings, with a separate branch charging the Invicta Lance">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#93a1b3"/></marker></defs>
+        <rect class="box hot" x="30" y="120" width="190" height="80" rx="4"/><text class="btxt" x="125" y="152" text-anchor="middle">Fusion Reactor</text><text class="note" x="125" y="174" text-anchor="middle">6 cores, 15 TW, Deck 6</text>
+        <rect class="box hot" x="30" y="30" width="190" height="56" rx="4"/><text class="btxt" x="125" y="54" text-anchor="middle">Void Reactor</text><text class="note" x="125" y="73" text-anchor="middle">everyday power, Deck 6</text>
+        <rect class="box hot" x="30" y="234" width="190" height="56" rx="4"/><text class="btxt" x="125" y="258" text-anchor="middle">Dark Matter Drive</text><text class="note" x="125" y="277" text-anchor="middle">main engines, Deck 6</text>
+        <path class="lead" d="M220 262 L260 262 L260 185 L298 185" marker-end="url(#ah)"/>
+        <rect class="box" x="300" y="120" width="170" height="80" rx="4"/><text class="btxt" x="385" y="152" text-anchor="middle">Spine Bus</text><text class="note" x="385" y="174" text-anchor="middle">1 MV DC, 3 lines</text>
+        <rect class="box" x="550" y="120" width="170" height="80" rx="4"/><text class="btxt" x="635" y="152" text-anchor="middle">8 deck ring mains</text><text class="note" x="635" y="174" text-anchor="middle">100 kV, one per city</text>
+        <rect class="box" x="800" y="120" width="170" height="80" rx="4"/><text class="btxt" x="885" y="152" text-anchor="middle">Zone substations</text><text class="note" x="885" y="174" text-anchor="middle">10 kV, one per frame zone</text>
+        <rect class="box" x="1040" y="120" width="130" height="80" rx="4"/><text class="btxt" x="1105" y="152" text-anchor="middle">Buildings</text><text class="note" x="1105" y="174" text-anchor="middle">400 V</text>
+        <rect class="box" x="300" y="290" width="170" height="70" rx="4"/><text class="btxt" x="385" y="320" text-anchor="middle">Surge vaults</text><text class="note" x="385" y="341" text-anchor="middle">store one Lance shot</text>
+        <rect class="box hot" x="550" y="290" width="170" height="70" rx="4"/><text class="btxt" x="635" y="320" text-anchor="middle">Invicta Lance</text><text class="note" x="635" y="341" text-anchor="middle">6 TW while charging</text>
+        <rect class="box" x="800" y="290" width="170" height="70" rx="4"/><text class="btxt" x="885" y="320" text-anchor="middle">Aegis Lattice</text><text class="note" x="885" y="341" text-anchor="middle">up to 3 TW</text>
+        <line class="lead" x1="220" y1="160" x2="298" y2="160" marker-end="url(#ah)"/>
+        <path class="lead" d="M220 58 L385 58 L385 118" marker-end="url(#ah)"/>
+        <line class="lead" x1="470" y1="160" x2="548" y2="160" marker-end="url(#ah)"/>
+        <line class="lead" x1="720" y1="160" x2="798" y2="160" marker-end="url(#ah)"/>
+        <line class="lead" x1="970" y1="160" x2="1038" y2="160" marker-end="url(#ah)"/>
+        <line class="lead" x1="385" y1="200" x2="385" y2="288" marker-end="url(#ah)"/>
+        <line class="lead" x1="470" y1="325" x2="548" y2="325" marker-end="url(#ah)"/>
+        <path class="lead" d="M430 200 L430 250 L885 250 L885 288" marker-end="url(#ah)"/>
+        <text class="note" x="259" y="150" text-anchor="middle">feeds</text>
+        <text class="note" x="395" y="250">charges</text>
+        <text class="note" x="509" y="315" text-anchor="middle">fires</text>
+        <text class="note" x="660" y="242">powers shields</text>
+      </svg>
+      </div>
+      <figcaption>Left: the three core systems, which can all feed the Spine Bus and stand in for one another. Top row: everyday power, stepped down to the buildings. Bottom row: battle loads, fed straight from the Spine Bus. Two 0.5 TW backup cores sit under the Crown and under Bastion.</figcaption>
+    </figure>
+    <div class="panel">
+      <p class="tag">Electrical</p><h3>Power budget</h3>
+      <div class="tw"><table>
+        <tr><th>Load</th><th>Power</th><th>Notes</th></tr>
+        <tr><td>Sky ceilings and the Lumen</td><td class="num">25 GW</td><td>Daylight for the cities with a sky</td></tr>
+        <tr><td>Verdance grow lights</td><td class="num">15 GW</td><td>Farms and forest on Deck 3</td></tr>
+        <tr><td>Hangar operations</td><td class="num">7 GW</td><td>Launch shafts, docks and flight control on Deck 5</td></tr>
+        <tr><td>Gravity plates</td><td class="num">40 GW</td><td>1 g on every deck</td></tr>
+        <tr><td>Homes, hotels and services</td><td class="num">18 GW</td><td>About 10 kW per person</td></tr>
+        <tr><td>Ferrum</td><td class="num">30 GW</td><td>Foundries, shipyard, fabrication</td></tr>
+        <tr><td>Air, water and cooling</td><td class="num">10 GW</td><td>Life support plant on every deck</td></tr>
+        <tr><td>Computing and sensors</td><td class="num">5 GW</td><td>The Lantern, deck cores, scanners</td></tr>
+        <tr><td><strong>Peacetime total</strong></td><td class="num"><strong>150 GW</strong></td><td>Carried by the Void Reactor</td></tr>
+        <tr><td>Battle total</td><td class="num">about 9.7 TW</td><td>Lance 6 TW, Aegis 3 TW, guns 0.5 TW, ship 0.15 TW. Four fusion cores give 10 TW.</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- SHEET 7 -->
+  <section class="sheet" id="sheet-ranks" hidden>
+    <h2>SHEET 7 · RANKS AND INSIGNIA</h2>
+    <div class="panel" id="rankPanel"></div>
+  </section>
+
+  <!-- SHEET 8 -->
+  <section class="sheet" id="sheet-streets" hidden>
+    <h2 id="streetTitle">SHEET 8 · STREET MAP</h2>
+    <nav class="tabs" id="streetNav" aria-label="City street maps"></nav>
+    <figure>
+      <div class="scroll"><svg id="streetSvg" viewBox="0 0 1200 560" role="img" aria-label="Street map of a deck-city"></svg></div>
+      <figcaption>Outlines and districts follow the technical data sheets; the drawing is stretched sideways to fill the sheet, so distances are not to scale. Blue line: Keelway maglev. Dashed blue line: cross-line. Amber ring: Atrium Plaza ring road with eight avenues. Amber hexagon: drone depot. Amber dots: district charging alcoves. Fine grid: local streets.</figcaption>
+    </figure>
+    <div class="panel" id="streetPanel" aria-live="polite"></div>
+  </section>
+
+  <!-- SHEET 9 -->
+  <section class="sheet" id="sheet-cruiser" hidden>
+    <h2>SHEET 9 · 2 KM ESCORT CRUISER</h2>
+    <figure>
+      <div class="scroll"><svg id="cruiserSvg" viewBox="0 0 1200 420" role="img" aria-label="Side view of a 2 km escort cruiser"></svg></div>
+      <figcaption>Side view, bow at left. Drawn to one scale across the hull; heights are stretched so the parts can be read. Berthed at the Cruiser Docks on Deck 5 and built in Drydock Prime on Deck 8.</figcaption>
+    </figure>
+    <div class="panel" id="cruiserPanel"></div>
+  </section>
+
+  <!-- SHEET 10 -->
+  <section class="sheet" id="sheet-grids" hidden>
+    <h2>SHEET 10 · FORWARD GRIDS AND HANGAR</h2>
+    <figure>
+      <div class="scroll"><svg id="gridsSvg" viewBox="0 0 1200 520" role="img" aria-label="The two Forward Grids with 32 launch bays fed by launch shafts from the Deck 5 Strike Hangars"></svg></div>
+      <figcaption>Left: the port and starboard Forward Grids on the hull shoulders, 16 bays each. Below: the 32 launch shafts that run down to the Strike Hangars on Deck 5. Not to scale.</figcaption>
+    </figure>
+    <div class="panel" id="gridsPanel"></div>
+  </section>
+
+  <!-- SHEET 11 -->
+  <section class="sheet" id="sheet-drift" hidden>
+    <h2>SHEET 11 · DRIFT ENGINE AND AEGIS LATTICE</h2>
+    <figure>
+      <div class="scroll"><svg id="driftSvg" viewBox="0 0 1200 460" role="img" aria-label="The Aegis Lattice and armor layers around the hull, and the 30 minute Drift jump sequence"></svg></div>
+      <figcaption>Left: cross-section of the defensive layers, outside in. Right: the stages of a Drift jump. The exact physics of the Drift Engine is unknown to the ship and stays unexplained.</figcaption>
+    </figure>
+    <div class="panel" id="driftPanel"></div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var NS="http://www.w3.org/2000/svg";
+  var NPC={brg:"Avalon",d1:"Aurelia",d2:"Lyra",d3:"Mira",d4:"Sentinel",d5:"Vector",d6:"Tessera",d7:"Vesper",d8:"Orin"};
+  function S(tag,a,parent,text){var e=document.createElementNS(NS,tag);for(var k in a)e.setAttribute(k,a[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+  function H(tag,cls,text,parent){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+  function fmt(n){return n.toLocaleString("en-US");}
+
+  // zone: [name,u0,u1,v0,v1,area km2,people,what]
+  var DRONES={builder:["Builder","Constructs and fits out districts"],hauler:["Hauler","Carries cargo along the Keelway and docks"],farmer:["Farmer","Tends farms and hydroponics"],fabricator:["Fabricator","Manufacturing and Void Ore refining"],lab:["Lab assistant","Samples and lab equipment"],residential:["Residential","Home help and deliveries"],crawler:["Hull crawler","Armor belt and exterior repair"],systems:["Systems technician","Power, air, water, gravity"],cleaner:["Cleaner","Streets, atriums and ducts"],medical:["Medical responder","First aid and supplies"],fire:["Fire and rescue","Fires and trapped people"],sentry:["Sentry","Patrols and guards key sites"],shield:["Shield guardian","Hexagonal shield emitters"],intercept:["Intercept","Shoots down missiles and fighters"],strike:["Strike","Attacks enemy ships"],boarding:["Boarding","Clears boarding parties"]};
+  var ALLD=["builder","cleaner","medical","fire"];
+  var DECKDRONES={1:ALLD.concat(["residential"]),2:ALLD.concat(["lab","residential"]),3:ALLD.concat(["farmer","residential"]),4:ALLD.concat(["sentry","shield","boarding"]),5:ALLD.concat(["hauler","intercept","strike"]),6:ALLD.concat(["systems","crawler"]),7:ALLD,8:ALLD.concat(["hauler","fabricator"])};
+  var JOBS={"Atrium Plaza":"Governor's staff, clerks, guards, transit crews","Core Plaza":"Engineers, grid controllers, clerks","Concord Plaza":"Council clerks, Governor's staff, guides, guards","Embassy Row":"Diplomats, interpreters, protocol officers, embassy guards","Aurum Terrace":"Stewards, gardeners, performers, opera staff, private cooks","Grand Hotels":"Hotel managers, concierges, chefs, porters","The Chancery":"Clerks, judges, archivists, civil servants, lawyers","Concourse Gardens":"Gardeners, cleaners, park wardens","Stewards' Quarter":"Teachers, shopkeepers, transit crews, home helpers",
+"Observatory Park":"Astronomers, guides, park staff","Research Towers":"Researchers, professors, lab technicians, students","Medical Crescent":"Doctors, nurses, paramedics, hospital administrators","Restoration Spire":"Records staff, recovery therapists, security","Cybernetics Foundry":"Cybernetics engineers, surgeons, fitters","Healers' Quarter":"Doctors, nurses, researchers, shopkeepers",
+"Verdance":"Farmers, foresters, biosphere technicians, guides","Old Quarter":"Craftspeople, tavern keepers, teachers, home helpers","Grand Bazaar":"Traders, shop owners, warehouse workers, accountants","Neon Mile":"Dealers, performers, bartenders, security staff, club owners","Canal Gardens":"Chefs, waiters, boat pilots, gardeners","Arena District":"Athletes, coaches, stadium crews, vendors, referees",
+"Proving Grounds":"Instructors, range officers, marines, recruits","Armory Ring":"Armorers, mechanics, quartermasters","The Academy":"Instructors, cadets, officers, simulator technicians","The Brig":"Judges, wardens, defenders, prosecutors","Command Block":"Watch officers, scanner operators, analysts","Garrison Quarter":"Cooks, teachers, home helpers, medics",
+"Strike Hangars":"Pilots, deck crews, mechanics, armorers, launch controllers","Port of Arrivals":"Customs officers, greeters, porters, guides, clerks","Cruiser Docks":"Dockworkers, cruiser crews, loaders, inspectors","Flight Control":"Controllers, flight officers, dispatchers, analysts","Pilots' Quarter":"Flight instructors, trainee pilots, shopkeepers, home helpers",
+"Systems Yards":"Technicians, fitters, depot workers, inspectors","Waterworks":"Water engineers, chemists, plant operators","Air Plant":"Air engineers, climate technicians, plant operators","Grid Control":"Grid controllers, shield technicians, electricians","Engineers' Quarter":"Engineers' families, shopkeepers, home helpers","Reactor Halls":"Reactor engineers, safety officers, certified operators","Drift Root":"Drift engineers, navigators, safety officers",
+"Lock Court":"Wardens, clerks, decontamination staff","Outer Ward":"Hazmat handlers, fuel crews, inspectors","Middle Ward":"Medical staff, biosafety officers, vault technicians","Wardens' Quarter":"Wardens, instructors, home helpers","Inner Ward":"Containment crews and inspectors","Null Fields":"Inspection crews",
+"Anvil Square":"Guild officers, clerks, foremen","Deep Holds":"Hold crews, stock clerks, cold store workers","Foundry Line":"Smelters, millers, fabricators, welders","Stockyards":"Recyclers, parts clerks, sorters","Drydock Prime":"Shipwrights, welders, crane operators, naval architects","Worker Quarters":"Cooks, union stewards, teachers, shopkeepers","Culture Vats":"Food technicians, packers, quality inspectors"};
+  var DECKGEO={"1":{"gross":[[7.5,-2.109],[10.929,-3.074],[18.215,-4.125],[29.447,-4.125],[29.672,-4.123],[29.891,-4.115],[30.105,-4.102],[30.313,-4.084],[30.515,-4.061],[30.711,-4.033],[30.902,-3.999],[31.087,-3.96],[31.266,-3.916],[31.44,-3.867],[31.608,-3.813],[31.77,-3.754],[31.926,-3.69],[32.077,-3.62],[32.222,-3.545],[32.362,-3.465],[32.496,-3.38],[32.624,-3.29],[32.746,-3.195],[32.863,-3.094],[32.974,-2.988],[33.079,-2.877],[33.179,-2.761],[33.273,-2.64],[33.361,-2.514],[33.443,-2.382],[33.5,-2.282],[33.5,2.282],[33.443,2.382],[33.361,2.514],[33.273,2.64],[33.179,2.761],[33.079,2.877],[32.974,2.988],[32.863,3.094],[32.746,3.195],[32.624,3.29],[32.496,3.38],[32.362,3.465],[32.222,3.545],[32.077,3.62],[31.926,3.69],[31.77,3.754],[31.608,3.813],[31.44,3.867],[31.266,3.916],[31.087,3.96],[30.902,3.999],[30.711,4.033],[30.515,4.061],[30.313,4.084],[30.105,4.102],[29.891,4.115],[29.672,4.123],[29.447,4.125],[18.215,4.125],[10.929,3.074],[7.5,2.109]],"net":[[8.038,-1.702],[11.041,-2.547],[18.254,-3.588],[29.444,-3.588],[29.66,-3.585],[29.866,-3.578],[30.065,-3.566],[30.259,-3.549],[30.446,-3.528],[30.626,-3.502],[30.8,-3.471],[30.968,-3.436],[31.129,-3.397],[31.284,-3.353],[31.433,-3.305],[31.575,-3.253],[31.711,-3.197],[31.841,-3.137],[31.966,-3.073],[32.084,-3.005],[32.196,-2.933],[32.303,-2.858],[32.405,-2.779],[32.502,-2.696],[32.593,-2.608],[32.68,-2.517],[32.762,-2.421],[32.84,-2.321],[32.913,-2.217],[32.962,-2.137],[32.962,2.137],[32.913,2.217],[32.84,2.321],[32.762,2.421],[32.68,2.517],[32.593,2.608],[32.502,2.696],[32.405,2.779],[32.303,2.858],[32.196,2.933],[32.084,3.005],[31.966,3.073],[31.841,3.137],[31.711,3.197],[31.575,3.253],[31.433,3.305],[31.284,3.353],[31.129,3.397],[30.968,3.436],[30.8,3.471],[30.626,3.502],[30.446,3.528],[30.259,3.549],[30.065,3.566],[29.866,3.578],[29.66,3.585],[29.444,3.588],[18.254,3.588],[11.041,2.547],[8.038,1.702]],"zones":{"Embassy Row":{"poly":[[8.038,-1.702],[11.041,-2.547],[14.151,-2.996],[14.151,2.996],[11.041,2.547],[8.038,1.702]],"cx":11.076,"cy":-0.0,"net":30.0},"Aurum Terrace":{"poly":[[14.151,-2.996],[18.254,-3.588],[23.548,-3.588],[23.548,1.33],[14.151,1.33]],"cx":18.73,"cy":-1.502,"net":45.0},"Grand Hotels":{"poly":[[23.548,1.33],[23.548,3.588],[18.254,3.588],[14.151,2.996],[14.151,1.33]],"cx":18.73,"cy":2.566,"net":20.0},"The Chancery":{"poly":[[23.548,-3.588],[28.426,-3.588],[28.426,1.434],[23.548,1.434]],"cx":25.987,"cy":-1.077,"net":15.0},"Concourse Gardens":{"poly":[[28.426,1.434],[28.426,3.588],[23.548,3.588],[23.548,1.434]],"cx":25.987,"cy":2.511,"net":10.0},"Stewards' Quarter":{"poly":[[28.426,-3.588],[29.444,-3.588],[29.66,-3.585],[29.866,-3.578],[30.065,-3.566],[30.259,-3.549],[30.446,-3.528],[30.626,-3.502],[30.8,-3.471],[30.968,-3.436],[31.129,-3.397],[31.284,-3.353],[31.433,-3.305],[31.575,-3.253],[31.711,-3.197],[31.841,-3.137],[31.966,-3.073],[32.084,-3.005],[32.196,-2.933],[32.303,-2.858],[32.405,-2.779],[32.502,-2.696],[32.593,-2.608],[32.68,-2.517],[32.762,-2.421],[32.84,-2.321],[32.913,-2.217],[32.962,-2.137],[32.962,2.137],[32.913,2.217],[32.84,2.321],[32.762,2.421],[32.68,2.517],[32.593,2.608],[32.502,2.696],[32.405,2.779],[32.303,2.858],[32.196,2.933],[32.084,3.005],[31.966,3.073],[31.841,3.137],[31.711,3.197],[31.575,3.253],[31.433,3.305],[31.284,3.353],[31.129,3.397],[30.968,3.436],[30.8,3.471],[30.626,3.502],[30.446,3.528],[30.259,3.549],[30.065,3.566],[29.866,3.578],[29.66,3.585],[29.444,3.588],[28.426,3.588]],"cx":31.419,"cy":0.0,"net":30.0}}},"2":{"gross":[[3.5,-1.227],[10.929,-3.833],[18.215,-5.144],[29.447,-5.144],[29.672,-5.141],[29.891,-5.131],[30.105,-5.115],[30.313,-5.092],[30.515,-5.064],[30.711,-5.028],[30.902,-4.986],[31.087,-4.938],[31.266,-4.884],[31.44,-4.822],[31.608,-4.755],[31.77,-4.681],[31.926,-4.601],[32.077,-4.514],[32.222,-4.421],[32.362,-4.321],[32.496,-4.215],[32.624,-4.102],[32.746,-3.983],[32.863,-3.858],[32.974,-3.726],[33.079,-3.588],[33.179,-3.443],[33.273,-3.292],[33.361,-3.135],[33.443,-2.971],[33.5,-2.845],[33.5,2.845],[33.443,2.971],[33.361,3.135],[33.273,3.292],[33.179,3.443],[33.079,3.588],[32.974,3.726],[32.863,3.858],[32.746,3.983],[32.624,4.102],[32.496,4.215],[32.362,4.321],[32.222,4.421],[32.077,4.514],[31.926,4.601],[31.77,4.681],[31.608,4.755],[31.44,4.822],[31.266,4.884],[31.087,4.938],[30.902,4.986],[30.711,5.028],[30.515,5.064],[30.313,5.092],[30.105,5.115],[29.891,5.131],[29.672,5.141],[29.447,5.144],[18.215,5.144],[10.929,3.833],[3.5,1.227]],"net":[[3.866,-0.968],[11.023,-3.477],[18.248,-4.778],[29.445,-4.778],[29.662,-4.775],[29.87,-4.765],[30.071,-4.75],[30.267,-4.729],[30.456,-4.702],[30.639,-4.669],[30.816,-4.63],[30.987,-4.586],[31.152,-4.535],[31.311,-4.48],[31.463,-4.418],[31.61,-4.351],[31.751,-4.279],[31.887,-4.201],[32.017,-4.117],[32.141,-4.028],[32.261,-3.934],[32.375,-3.833],[32.484,-3.727],[32.588,-3.615],[32.688,-3.497],[32.782,-3.373],[32.872,-3.243],[32.957,-3.106],[33.037,-2.963],[33.113,-2.813],[33.134,-2.766],[33.134,2.766],[33.113,2.813],[33.037,2.963],[32.957,3.106],[32.872,3.243],[32.782,3.373],[32.688,3.497],[32.588,3.615],[32.484,3.727],[32.375,3.833],[32.261,3.934],[32.141,4.028],[32.017,4.117],[31.887,4.201],[31.751,4.279],[31.61,4.351],[31.463,4.418],[31.311,4.48],[31.152,4.535],[30.987,4.586],[30.816,4.63],[30.639,4.669],[30.456,4.702],[30.267,4.729],[30.071,4.75],[29.87,4.765],[29.662,4.775],[29.445,4.778],[18.248,4.778],[11.023,3.477],[3.866,0.968]],"zones":{"Observatory Park":{"poly":[[3.866,-0.968],[11.023,-3.477],[13.481,-3.92],[13.481,3.92],[11.023,3.477],[3.866,0.968]],"cx":9.457,"cy":-0.0,"net":50.0},"Research Towers":{"poly":[[19.142,-4.778],[28.561,-4.778],[28.561,-0.0],[19.142,-0.0]],"cx":23.851,"cy":-2.389,"net":40.0},"Medical Crescent":{"poly":[[13.481,-3.92],[18.248,-4.778],[19.142,-4.778],[19.142,1.767],[13.481,1.767]],"cx":16.699,"cy":-1.988,"net":35.0},"Restoration Spire":{"poly":[[19.142,1.767],[19.142,4.778],[18.248,4.778],[13.481,3.92],[13.481,1.767]],"cx":16.699,"cy":3.402,"net":15.0},"Cybernetics Foundry":{"poly":[[28.561,-0.0],[28.561,4.778],[19.142,4.778],[19.142,-0.0]],"cx":23.851,"cy":2.389,"net":40.0},"Healers' Quarter":{"poly":[[28.561,-4.778],[29.445,-4.778],[29.662,-4.775],[29.87,-4.765],[30.071,-4.75],[30.267,-4.729],[30.456,-4.702],[30.639,-4.669],[30.816,-4.63],[30.987,-4.586],[31.152,-4.535],[31.311,-4.48],[31.463,-4.418],[31.61,-4.351],[31.751,-4.279],[31.887,-4.201],[32.017,-4.117],[32.141,-4.028],[32.261,-3.934],[32.375,-3.833],[32.484,-3.727],[32.588,-3.615],[32.688,-3.497],[32.782,-3.373],[32.872,-3.243],[32.957,-3.106],[33.037,-2.963],[33.113,-2.813],[33.134,-2.766],[33.134,2.766],[33.113,2.813],[33.037,2.963],[32.957,3.106],[32.872,3.243],[32.782,3.373],[32.688,3.497],[32.588,3.615],[32.484,3.727],[32.375,3.833],[32.261,3.934],[32.141,4.028],[32.017,4.117],[31.887,4.201],[31.751,4.279],[31.61,4.351],[31.463,4.418],[31.311,4.48],[31.152,4.535],[30.987,4.586],[30.816,4.63],[30.639,4.669],[30.456,4.702],[30.267,4.729],[30.071,4.75],[29.87,4.765],[29.662,4.775],[29.445,4.778],[28.561,4.778]],"cx":31.531,"cy":0.0,"net":40.0}}},"3":{"gross":[[1.5,-0.589],[10.929,-4.288],[18.215,-5.755],[29.447,-5.755],[29.672,-5.751],[29.891,-5.741],[30.105,-5.723],[30.313,-5.698],[30.515,-5.665],[30.711,-5.626],[30.902,-5.579],[31.087,-5.525],[31.266,-5.464],[31.44,-5.395],[31.608,-5.32],[31.77,-5.237],[31.926,-5.147],[32.077,-5.05],[32.222,-4.946],[32.362,-4.834],[32.496,-4.716],[32.624,-4.59],[32.746,-4.457],[32.863,-4.316],[32.974,-4.169],[33.079,-4.014],[33.179,-3.852],[33.273,-3.683],[33.361,-3.507],[33.443,-3.324],[33.5,-3.183],[33.5,3.183],[33.443,3.324],[33.361,3.507],[33.273,3.683],[33.179,3.852],[33.079,4.014],[32.974,4.169],[32.863,4.316],[32.746,4.457],[32.624,4.59],[32.496,4.716],[32.362,4.834],[32.222,4.946],[32.077,5.05],[31.926,5.147],[31.77,5.237],[31.608,5.32],[31.44,5.395],[31.266,5.464],[31.087,5.525],[30.902,5.579],[30.711,5.626],[30.515,5.665],[30.313,5.698],[30.105,5.723],[29.891,5.741],[29.672,5.751],[29.447,5.755],[18.215,5.755],[10.929,4.288],[1.5,0.589]],"net":[[1.767,-0.407],[11.005,-4.031],[18.242,-5.488],[29.445,-5.488],[29.664,-5.485],[29.874,-5.475],[30.078,-5.457],[30.276,-5.433],[30.467,-5.403],[30.653,-5.365],[30.833,-5.321],[31.006,-5.271],[31.174,-5.213],[31.336,-5.15],[31.492,-5.079],[31.643,-5.003],[31.788,-4.919],[31.927,-4.83],[32.061,-4.733],[32.19,-4.63],[32.314,-4.521],[32.432,-4.404],[32.545,-4.281],[32.654,-4.151],[32.757,-4.014],[32.855,-3.869],[32.948,-3.718],[33.037,-3.559],[33.12,-3.393],[33.198,-3.219],[33.233,-3.131],[33.233,3.131],[33.198,3.219],[33.12,3.393],[33.037,3.559],[32.948,3.718],[32.855,3.869],[32.757,4.014],[32.654,4.151],[32.545,4.281],[32.432,4.404],[32.314,4.521],[32.19,4.63],[32.061,4.733],[31.927,4.83],[31.788,4.919],[31.643,5.003],[31.492,5.079],[31.336,5.15],[31.174,5.213],[31.006,5.271],[30.833,5.321],[30.653,5.365],[30.467,5.403],[30.276,5.433],[30.078,5.457],[29.874,5.475],[29.664,5.485],[29.445,5.488],[18.242,5.488],[11.005,4.031],[1.767,0.407]],"zones":{"Verdance":{"poly":[[1.767,-0.407],[11.005,-4.031],[18.242,-5.488],[19.163,-5.488],[19.163,5.488],[18.242,5.488],[11.005,4.031],[1.767,0.407]],"cx":12.544,"cy":0.0,"net":120.0},"Old Quarter":{"poly":[[19.163,-5.488],[26.66,-5.488],[26.66,0.492],[19.163,0.492]],"cx":22.911,"cy":-2.498,"net":40.0},"Grand Bazaar":{"poly":[[26.66,0.492],[26.66,5.488],[19.163,5.488],[19.163,0.492]],"cx":22.911,"cy":2.99,"net":35.0},"Neon Mile":{"poly":[[26.66,-5.488],[29.445,-5.488],[29.639,-5.485],[29.639,0.0],[26.66,0.0]],"cx":28.409,"cy":-3.292,"net":15.0},"Canal Gardens":{"poly":[[29.639,0.0],[29.639,5.485],[29.445,5.488],[26.66,5.488],[26.66,0.0]],"cx":28.409,"cy":3.292,"net":15.0},"Arena District":{"poly":[[29.639,-5.485],[29.664,-5.485],[29.874,-5.475],[30.078,-5.457],[30.276,-5.433],[30.467,-5.403],[30.653,-5.365],[30.833,-5.321],[31.006,-5.271],[31.174,-5.213],[31.336,-5.15],[31.492,-5.079],[31.643,-5.003],[31.788,-4.919],[31.927,-4.83],[32.061,-4.733],[32.19,-4.63],[32.314,-4.521],[32.432,-4.404],[32.545,-4.281],[32.654,-4.151],[32.757,-4.014],[32.855,-3.869],[32.948,-3.718],[33.037,-3.559],[33.12,-3.393],[33.198,-3.219],[33.233,-3.131],[33.233,3.131],[33.198,3.219],[33.12,3.393],[33.037,3.559],[32.948,3.718],[32.855,3.869],[32.757,4.014],[32.654,4.151],[32.545,4.281],[32.432,4.404],[32.314,4.521],[32.19,4.63],[32.061,4.733],[31.927,4.83],[31.788,4.919],[31.643,5.003],[31.492,5.079],[31.336,5.15],[31.174,5.213],[31.006,5.271],[30.833,5.321],[30.653,5.365],[30.467,5.403],[30.276,5.433],[30.078,5.457],[29.874,5.475],[29.664,5.485],[29.639,5.485]],"cx":31.685,"cy":-0.0,"net":35.0}}},"4":{"gross":[[0.5,-0.207],[10.929,-4.516],[18.215,-6.061],[29.447,-6.061],[29.672,-6.057],[29.891,-6.046],[30.105,-6.027],[30.313,-6.0],[30.515,-5.966],[30.711,-5.924],[30.902,-5.875],[31.087,-5.818],[31.266,-5.754],[31.44,-5.682],[31.608,-5.602],[31.77,-5.515],[31.926,-5.421],[32.077,-5.318],[32.222,-5.208],[32.362,-5.091],[32.496,-4.966],[32.624,-4.833],[32.746,-4.693],[32.863,-4.545],[32.974,-4.39],[33.079,-4.227],[33.179,-4.057],[33.273,-3.879],[33.361,-3.693],[33.443,-3.5],[33.5,-3.352],[33.5,3.352],[33.443,3.5],[33.361,3.693],[33.273,3.879],[33.179,4.057],[33.079,4.227],[32.974,4.39],[32.863,4.545],[32.746,4.693],[32.624,4.833],[32.496,4.966],[32.362,5.091],[32.222,5.208],[32.077,5.318],[31.926,5.421],[31.77,5.515],[31.608,5.602],[31.44,5.682],[31.266,5.754],[31.087,5.818],[30.902,5.875],[30.711,5.924],[30.515,5.966],[30.313,6.0],[30.105,6.027],[29.891,6.046],[29.672,6.057],[29.447,6.061],[18.215,6.061],[10.929,4.516],[0.5,0.207]],"net":[[0.775,-0.022],[11.011,-4.252],[18.244,-5.785],[29.445,-5.785],[29.663,-5.782],[29.872,-5.771],[30.075,-5.753],[30.272,-5.728],[30.463,-5.695],[30.648,-5.656],[30.827,-5.61],[31.0,-5.557],[31.167,-5.497],[31.328,-5.43],[31.483,-5.356],[31.633,-5.276],[31.778,-5.189],[31.917,-5.094],[32.051,-4.993],[32.179,-4.885],[32.302,-4.77],[32.421,-4.647],[32.534,-4.517],[32.643,-4.38],[32.746,-4.235],[32.844,-4.083],[32.938,-3.923],[33.026,-3.755],[33.11,-3.58],[33.188,-3.397],[33.225,-3.301],[33.225,3.301],[33.188,3.397],[33.11,3.58],[33.026,3.755],[32.938,3.923],[32.844,4.083],[32.746,4.235],[32.643,4.38],[32.534,4.517],[32.421,4.647],[32.302,4.77],[32.179,4.885],[32.051,4.993],[31.917,5.094],[31.778,5.189],[31.633,5.276],[31.483,5.356],[31.328,5.43],[31.167,5.497],[31.0,5.557],[30.827,5.61],[30.648,5.656],[30.463,5.695],[30.272,5.728],[30.075,5.753],[29.872,5.771],[29.663,5.782],[29.445,5.785],[18.244,5.785],[11.011,4.252],[0.775,0.022]],"zones":{"Proving Grounds":{"poly":[[0.775,-0.022],[11.011,-4.252],[14.898,-5.076],[14.898,5.076],[11.011,4.252],[0.775,0.022]],"cx":8.895,"cy":0.0,"net":80.0},"Armory Ring":{"poly":[[14.898,-5.076],[18.244,-5.785],[19.424,-5.785],[19.424,5.785],[18.244,5.785],[14.898,5.076]],"cx":17.522,"cy":0.0,"net":50.0},"The Academy":{"poly":[[19.424,-5.785],[23.745,-5.785],[23.745,3.471],[19.424,3.471]],"cx":21.585,"cy":-1.157,"net":40.0},"The Brig":{"poly":[[23.745,3.471],[23.745,5.785],[19.424,5.785],[19.424,3.471]],"cx":21.585,"cy":4.628,"net":10.0},"Command Block":{"poly":[[23.745,-5.785],[27.62,-5.785],[27.62,5.785],[23.745,5.785]],"cx":25.683,"cy":0.0,"net":35.0},"Garrison Quarter":{"poly":[[27.62,-5.785],[29.445,-5.785],[29.663,-5.782],[29.872,-5.771],[30.075,-5.753],[30.272,-5.728],[30.463,-5.695],[30.648,-5.656],[30.827,-5.61],[31.0,-5.557],[31.167,-5.497],[31.328,-5.43],[31.483,-5.356],[31.633,-5.276],[31.778,-5.189],[31.917,-5.094],[32.051,-4.993],[32.179,-4.885],[32.302,-4.77],[32.421,-4.647],[32.534,-4.517],[32.643,-4.38],[32.746,-4.235],[32.844,-4.083],[32.938,-3.923],[33.026,-3.755],[33.11,-3.58],[33.188,-3.397],[33.225,-3.301],[33.225,3.301],[33.188,3.397],[33.11,3.58],[33.026,3.755],[32.938,3.923],[32.844,4.083],[32.746,4.235],[32.643,4.38],[32.534,4.517],[32.421,4.647],[32.302,4.77],[32.179,4.885],[32.051,4.993],[31.917,5.094],[31.778,5.189],[31.633,5.276],[31.483,5.356],[31.328,5.43],[31.167,5.497],[31.0,5.557],[30.827,5.61],[30.648,5.656],[30.463,5.695],[30.272,5.728],[30.075,5.753],[29.872,5.771],[29.663,5.782],[29.445,5.785],[27.62,5.785]],"cx":31.531,"cy":0.0,"net":60.0}}},"5":{"gross":[[0.5,-0.21],[10.929,-4.592],[18.215,-6.163],[29.447,-6.163],[29.672,-6.159],[29.891,-6.147],[30.105,-6.128],[30.313,-6.101],[30.515,-6.066],[30.711,-6.024],[30.902,-5.974],[31.087,-5.916],[31.266,-5.851],[31.44,-5.777],[31.608,-5.696],[31.77,-5.608],[31.926,-5.512],[32.077,-5.408],[32.222,-5.296],[32.362,-5.177],[32.496,-5.049],[32.624,-4.915],[32.746,-4.772],[32.863,-4.622],[32.974,-4.464],[33.079,-4.298],[33.179,-4.125],[33.273,-3.944],[33.361,-3.755],[33.443,-3.559],[33.5,-3.408],[33.5,3.408],[33.443,3.559],[33.361,3.755],[33.273,3.944],[33.179,4.125],[33.079,4.298],[32.974,4.464],[32.863,4.622],[32.746,4.772],[32.624,4.915],[32.496,5.049],[32.362,5.177],[32.222,5.296],[32.077,5.408],[31.926,5.512],[31.77,5.608],[31.608,5.696],[31.44,5.777],[31.266,5.851],[31.087,5.916],[30.902,5.974],[30.711,6.024],[30.515,6.066],[30.313,6.101],[30.105,6.128],[29.891,6.147],[29.672,6.159],[29.447,6.163],[18.215,6.163],[10.929,4.592],[0.5,0.21]],"net":[[0.581,-0.157],[10.953,-4.515],[18.224,-6.082],[29.447,-6.082],[29.67,-6.078],[29.886,-6.067],[30.096,-6.048],[30.301,-6.021],[30.499,-5.987],[30.692,-5.945],[30.88,-5.896],[31.061,-5.84],[31.237,-5.776],[31.407,-5.704],[31.571,-5.625],[31.729,-5.538],[31.882,-5.444],[32.03,-5.342],[32.172,-5.233],[32.308,-5.117],[32.439,-4.992],[32.564,-4.861],[32.684,-4.721],[32.798,-4.574],[32.907,-4.419],[33.01,-4.257],[33.108,-4.086],[33.2,-3.908],[33.287,-3.723],[33.369,-3.529],[33.419,-3.394],[33.419,3.394],[33.369,3.529],[33.287,3.723],[33.2,3.908],[33.108,4.086],[33.01,4.257],[32.907,4.419],[32.798,4.574],[32.684,4.721],[32.564,4.861],[32.439,4.992],[32.308,5.117],[32.172,5.233],[32.03,5.342],[31.882,5.444],[31.729,5.538],[31.571,5.625],[31.407,5.704],[31.237,5.776],[31.061,5.84],[30.88,5.896],[30.692,5.945],[30.499,5.987],[30.301,6.021],[30.096,6.048],[29.886,6.067],[29.67,6.078],[29.447,6.082],[18.224,6.082],[10.953,4.515],[0.581,0.157]],"zones":{"Strike Hangars":{"poly":[[0.581,-0.157],[10.953,-4.515],[16.92,-5.801],[16.92,5.801],[10.953,4.515],[0.581,0.157]],"cx":9.485,"cy":-0.0,"net":110.0},"Port of Arrivals":{"poly":[[16.92,-5.801],[18.224,-6.082],[27.624,-6.082],[27.624,-0.0],[16.92,-0.0]],"cx":21.462,"cy":-3.593,"net":60.0},"Cruiser Docks":{"poly":[[27.624,-0.0],[27.624,6.082],[18.224,6.082],[16.92,5.801],[16.92,-0.0]],"cx":21.462,"cy":3.593,"net":60.0},"Flight Control":{"poly":[[27.624,-6.082],[29.282,-6.082],[29.282,6.082],[27.624,6.082]],"cx":28.453,"cy":0.0,"net":20.0},"Pilots' Quarter":{"poly":[[29.282,-6.082],[29.447,-6.082],[29.67,-6.078],[29.886,-6.067],[30.096,-6.048],[30.301,-6.021],[30.499,-5.987],[30.692,-5.945],[30.88,-5.896],[31.061,-5.84],[31.237,-5.776],[31.407,-5.704],[31.571,-5.625],[31.729,-5.538],[31.882,-5.444],[32.03,-5.342],[32.172,-5.233],[32.308,-5.117],[32.439,-4.992],[32.564,-4.861],[32.684,-4.721],[32.798,-4.574],[32.907,-4.419],[33.01,-4.257],[33.108,-4.086],[33.2,-3.908],[33.287,-3.723],[33.369,-3.529],[33.419,-3.394],[33.419,3.394],[33.369,3.529],[33.287,3.723],[33.2,3.908],[33.108,4.086],[33.01,4.257],[32.907,4.419],[32.798,4.574],[32.684,4.721],[32.564,4.861],[32.439,4.992],[32.308,5.117],[32.172,5.233],[32.03,5.342],[31.882,5.444],[31.729,5.538],[31.571,5.625],[31.407,5.704],[31.237,5.776],[31.061,5.84],[30.88,5.896],[30.692,5.945],[30.499,5.987],[30.301,6.021],[30.096,6.048],[29.886,6.067],[29.67,6.078],[29.447,6.082],[29.282,6.082]],"cx":31.687,"cy":0.0,"net":45.0}}},"6":{"gross":[[1.5,-0.604],[10.929,-4.402],[18.215,-5.908],[29.447,-5.908],[29.672,-5.904],[29.891,-5.893],[30.105,-5.875],[30.313,-5.849],[30.515,-5.816],[30.711,-5.775],[30.902,-5.727],[31.087,-5.672],[31.266,-5.609],[31.44,-5.539],[31.608,-5.461],[31.77,-5.376],[31.926,-5.284],[32.077,-5.184],[32.222,-5.077],[32.362,-4.963],[32.496,-4.841],[32.624,-4.712],[32.746,-4.575],[32.863,-4.431],[32.974,-4.28],[33.079,-4.121],[33.179,-3.955],[33.273,-3.781],[33.361,-3.6],[33.443,-3.412],[33.5,-3.268],[33.5,3.268],[33.443,3.412],[33.361,3.6],[33.273,3.781],[33.179,3.955],[33.079,4.121],[32.974,4.28],[32.863,4.431],[32.746,4.575],[32.624,4.712],[32.496,4.841],[32.362,4.963],[32.222,5.077],[32.077,5.184],[31.926,5.284],[31.77,5.376],[31.608,5.461],[31.44,5.539],[31.266,5.609],[31.087,5.672],[30.902,5.727],[30.711,5.775],[30.515,5.816],[30.313,5.849],[30.105,5.875],[29.891,5.893],[29.672,5.904],[29.447,5.908],[18.215,5.908],[10.929,4.402],[1.5,0.604]],"net":[[1.802,-0.4],[11.017,-4.112],[18.246,-5.606],[29.445,-5.606],[29.662,-5.603],[29.871,-5.592],[30.073,-5.574],[30.27,-5.55],[30.46,-5.519],[30.644,-5.481],[30.822,-5.436],[30.994,-5.384],[31.16,-5.326],[31.32,-5.262],[31.474,-5.19],[31.623,-5.112],[31.766,-5.028],[31.904,-4.937],[32.037,-4.839],[32.164,-4.734],[32.287,-4.623],[32.404,-4.504],[32.516,-4.379],[32.624,-4.247],[32.726,-4.107],[32.824,-3.96],[32.916,-3.805],[33.004,-3.643],[33.087,-3.473],[33.165,-3.296],[33.198,-3.21],[33.198,3.21],[33.165,3.296],[33.087,3.473],[33.004,3.643],[32.916,3.805],[32.824,3.96],[32.726,4.107],[32.624,4.247],[32.516,4.379],[32.404,4.504],[32.287,4.623],[32.164,4.734],[32.037,4.839],[31.904,4.937],[31.766,5.028],[31.623,5.112],[31.474,5.19],[31.32,5.262],[31.16,5.326],[30.994,5.384],[30.822,5.436],[30.644,5.481],[30.46,5.519],[30.27,5.55],[30.073,5.574],[29.871,5.592],[29.662,5.603],[29.445,5.606],[18.246,5.606],[11.017,4.112],[1.802,0.4]],"zones":{"Systems Yards":{"poly":[[1.802,-0.4],[11.017,-4.112],[12.587,-4.436],[12.587,4.436],[11.017,4.112],[1.802,0.4]],"cx":8.468,"cy":-0.0,"net":55.0},"Waterworks":{"poly":[[12.587,-4.436],[18.246,-5.606],[19.866,-5.606],[19.866,0.343],[12.587,0.343]],"cx":16.63,"cy":-2.992,"net":40.0},"Air Plant":{"poly":[[19.866,0.343],[19.866,5.606],[18.246,5.606],[12.587,4.436],[12.587,0.343]],"cx":16.63,"cy":3.267,"net":35.0},"Grid Control":{"poly":[[19.866,-5.606],[25.509,-5.606],[25.509,-0.0],[19.866,-0.0]],"cx":22.688,"cy":-2.803,"net":30.0},"Engineers' Quarter":{"poly":[[25.509,-0.0],[25.509,5.606],[19.866,5.606],[19.866,-0.0]],"cx":22.688,"cy":2.803,"net":30.0},"Reactor Halls":{"poly":[[25.509,-5.606],[29.445,-5.606],[29.662,-5.603],[29.871,-5.592],[30.073,-5.574],[30.27,-5.55],[30.46,-5.519],[30.644,-5.481],[30.822,-5.436],[30.994,-5.384],[31.16,-5.326],[31.32,-5.262],[31.474,-5.19],[31.623,-5.112],[31.766,-5.028],[31.904,-4.937],[32.037,-4.839],[32.164,-4.734],[32.287,-4.623],[32.404,-4.504],[32.516,-4.379],[32.624,-4.247],[32.726,-4.107],[32.824,-3.96],[32.916,-3.805],[33.004,-3.643],[33.087,-3.473],[33.165,-3.296],[33.198,-3.21],[33.198,2.063],[25.509,2.063]],"cx":31.311,"cy":-4.352,"net":50.0},"Drift Root":{"poly":[[33.198,2.063],[33.198,3.21],[33.165,3.296],[33.087,3.473],[33.004,3.643],[32.916,3.805],[32.824,3.96],[32.726,4.107],[32.624,4.247],[32.516,4.379],[32.404,4.504],[32.287,4.623],[32.164,4.734],[32.037,4.839],[31.904,4.937],[31.766,5.028],[31.623,5.112],[31.474,5.19],[31.32,5.262],[31.16,5.326],[30.994,5.384],[30.822,5.436],[30.644,5.481],[30.46,5.519],[30.27,5.55],[30.073,5.574],[29.871,5.592],[29.662,5.603],[29.445,5.606],[25.509,5.606],[25.509,2.063]],"cx":31.311,"cy":4.618,"net":25.0}}},"7":{"gross":[[3.5,-1.276],[10.929,-3.985],[18.215,-5.348],[29.447,-5.348],[29.672,-5.344],[29.891,-5.334],[30.105,-5.318],[30.313,-5.294],[30.515,-5.264],[30.711,-5.227],[30.902,-5.184],[31.087,-5.134],[31.266,-5.077],[31.44,-5.013],[31.608,-4.943],[31.77,-4.866],[31.926,-4.783],[32.077,-4.693],[32.222,-4.596],[32.362,-4.492],[32.496,-4.382],[32.624,-4.265],[32.746,-4.141],[32.863,-4.011],[32.974,-3.874],[33.079,-3.73],[33.179,-3.58],[33.273,-3.422],[33.361,-3.259],[33.443,-3.088],[33.5,-2.958],[33.5,2.958],[33.443,3.088],[33.361,3.259],[33.273,3.422],[33.179,3.58],[33.079,3.73],[32.974,3.874],[32.863,4.011],[32.746,4.141],[32.624,4.265],[32.496,4.382],[32.362,4.492],[32.222,4.596],[32.077,4.693],[31.926,4.783],[31.77,4.866],[31.608,4.943],[31.44,5.013],[31.266,5.077],[31.087,5.134],[30.902,5.184],[30.711,5.227],[30.515,5.264],[30.313,5.294],[30.105,5.318],[29.891,5.334],[29.672,5.344],[29.447,5.348],[18.215,5.348],[10.929,3.985],[3.5,1.276]],"net":[[3.938,-0.97],[11.045,-3.561],[18.256,-4.91],[29.444,-4.91],[29.659,-4.907],[29.864,-4.897],[30.063,-4.882],[30.256,-4.86],[30.442,-4.832],[30.622,-4.799],[30.796,-4.759],[30.963,-4.714],[31.125,-4.663],[31.28,-4.606],[31.429,-4.543],[31.573,-4.475],[31.711,-4.402],[31.843,-4.323],[31.97,-4.238],[32.092,-4.147],[32.209,-4.051],[32.32,-3.949],[32.427,-3.841],[32.529,-3.727],[32.627,-3.606],[32.72,-3.48],[32.808,-3.346],[32.892,-3.206],[32.971,-3.059],[33.045,-2.906],[33.062,-2.867],[33.062,2.867],[33.045,2.906],[32.971,3.059],[32.892,3.206],[32.808,3.346],[32.72,3.48],[32.627,3.606],[32.529,3.727],[32.427,3.841],[32.32,3.949],[32.209,4.051],[32.092,4.147],[31.97,4.238],[31.843,4.323],[31.711,4.402],[31.573,4.475],[31.429,4.543],[31.28,4.606],[31.125,4.663],[30.963,4.714],[30.796,4.759],[30.622,4.799],[30.442,4.832],[30.256,4.86],[30.063,4.882],[29.864,4.897],[29.659,4.907],[29.444,4.91],[18.256,4.91],[11.045,3.561],[3.938,0.97]],"zones":{"Outer Ward":{"poly":[[3.938,-0.97],[11.045,-3.561],[15.767,-4.444],[15.767,4.444],[11.045,3.561],[3.938,0.97]],"cx":10.25,"cy":-0.0,"net":70.0},"Middle Ward":{"poly":[[15.767,-4.444],[18.256,-4.91],[25.317,-4.91],[25.317,1.708],[15.767,1.708]],"cx":20.085,"cy":-2.17,"net":60.0},"Wardens' Quarter":{"poly":[[25.317,1.708],[25.317,4.91],[18.256,4.91],[15.767,4.444],[15.767,1.708]],"cx":20.085,"cy":3.536,"net":30.0},"Inner Ward":{"poly":[[25.317,-4.91],[28.105,-4.91],[28.105,4.91],[25.317,4.91]],"cx":26.711,"cy":0.0,"net":20.0},"Null Fields":{"poly":[[28.105,-4.91],[29.444,-4.91],[29.659,-4.907],[29.864,-4.897],[30.063,-4.882],[30.256,-4.86],[30.442,-4.832],[30.622,-4.799],[30.796,-4.759],[30.963,-4.714],[31.125,-4.663],[31.28,-4.606],[31.429,-4.543],[31.573,-4.475],[31.711,-4.402],[31.843,-4.323],[31.97,-4.238],[32.092,-4.147],[32.209,-4.051],[32.32,-3.949],[32.427,-3.841],[32.529,-3.727],[32.627,-3.606],[32.72,-3.48],[32.808,-3.346],[32.892,-3.206],[32.971,-3.059],[33.045,-2.906],[33.062,-2.867],[33.062,2.867],[33.045,2.906],[32.971,3.059],[32.892,3.206],[32.808,3.346],[32.72,3.48],[32.627,3.606],[32.529,3.727],[32.427,3.841],[32.32,3.949],[32.209,4.051],[32.092,4.147],[31.97,4.238],[31.843,4.323],[31.711,4.402],[31.573,4.475],[31.429,4.543],[31.28,4.606],[31.125,4.663],[30.963,4.714],[30.796,4.759],[30.622,4.799],[30.442,4.832],[30.256,4.86],[30.063,4.882],[29.864,4.897],[29.659,4.907],[29.444,4.91],[28.105,4.91]],"cx":31.478,"cy":0.0,"net":45.0}}},"8":{"gross":[[6.5,-1.986],[10.929,-3.339],[18.215,-4.482],[29.447,-4.482],[29.672,-4.479],[29.891,-4.471],[30.105,-4.457],[30.313,-4.437],[30.515,-4.412],[30.711,-4.381],[30.902,-4.345],[31.087,-4.303],[31.266,-4.255],[31.44,-4.202],[31.608,-4.143],[31.77,-4.078],[31.926,-4.008],[32.077,-3.933],[32.222,-3.852],[32.362,-3.765],[32.496,-3.672],[32.624,-3.574],[32.746,-3.471],[32.863,-3.361],[32.974,-3.247],[33.079,-3.126],[33.179,-3.0],[33.273,-2.868],[33.361,-2.731],[33.443,-2.588],[33.5,-2.479],[33.5,2.479],[33.443,2.588],[33.361,2.731],[33.273,2.868],[33.179,3.0],[33.079,3.126],[32.974,3.247],[32.863,3.361],[32.746,3.471],[32.624,3.574],[32.496,3.672],[32.362,3.765],[32.222,3.852],[32.077,3.933],[31.926,4.008],[31.77,4.078],[31.608,4.143],[31.44,4.202],[31.266,4.255],[31.087,4.303],[30.902,4.345],[30.711,4.381],[30.515,4.412],[30.313,4.437],[30.105,4.457],[29.891,4.471],[29.672,4.479],[29.447,4.482],[18.215,4.482],[10.929,3.339],[6.5,1.986]],"net":[[6.869,-1.713],[11.012,-2.979],[18.244,-4.113],[29.445,-4.113],[29.663,-4.11],[29.872,-4.102],[30.075,-4.089],[30.272,-4.07],[30.463,-4.046],[30.648,-4.017],[30.826,-3.983],[30.999,-3.944],[31.165,-3.9],[31.325,-3.851],[31.478,-3.797],[31.626,-3.738],[31.768,-3.675],[31.904,-3.607],[32.035,-3.534],[32.159,-3.456],[32.278,-3.374],[32.392,-3.287],[32.501,-3.195],[32.604,-3.098],[32.702,-2.997],[32.795,-2.89],[32.883,-2.778],[32.967,-2.661],[33.046,-2.539],[33.119,-2.411],[33.131,-2.389],[33.131,2.389],[33.119,2.411],[33.046,2.539],[32.967,2.661],[32.883,2.778],[32.795,2.89],[32.702,2.997],[32.604,3.098],[32.501,3.195],[32.392,3.287],[32.278,3.374],[32.159,3.456],[32.035,3.534],[31.904,3.607],[31.768,3.675],[31.626,3.738],[31.478,3.797],[31.325,3.851],[31.165,3.9],[30.999,3.944],[30.826,3.983],[30.648,4.017],[30.463,4.046],[30.272,4.07],[30.075,4.089],[29.872,4.102],[29.663,4.11],[29.445,4.113],[18.244,4.113],[11.012,2.979],[6.869,1.713]],"zones":{"Deep Holds":{"poly":[[6.869,-1.713],[11.012,-2.979],[16.257,-3.801],[16.257,3.801],[11.012,2.979],[6.869,1.713]],"cx":11.379,"cy":0.0,"net":55.0},"Foundry Line":{"poly":[[16.257,-3.801],[18.244,-4.113],[22.411,-4.113],[22.411,0.812],[16.257,0.812]],"cx":19.116,"cy":-2.08,"net":30.0},"Stockyards":{"poly":[[22.411,0.812],[22.411,4.113],[18.244,4.113],[16.257,3.801],[16.257,0.812]],"cx":19.116,"cy":2.73,"net":20.0},"Drydock Prime":{"poly":[[22.411,-4.113],[25.064,-4.113],[25.064,4.113],[22.411,4.113]],"cx":23.738,"cy":0.0,"net":20.0},"Worker Quarters":{"poly":[[25.064,-4.113],[29.445,-4.113],[29.663,-4.11],[29.872,-4.102],[30.075,-4.089],[30.272,-4.07],[30.463,-4.046],[30.648,-4.017],[30.826,-3.983],[30.999,-3.944],[31.165,-3.9],[31.325,-3.851],[31.478,-3.797],[31.626,-3.738],[31.768,-3.675],[31.904,-3.607],[32.035,-3.534],[32.159,-3.456],[32.278,-3.374],[32.392,-3.287],[32.501,-3.195],[32.604,-3.098],[32.702,-2.997],[32.795,-2.89],[32.883,-2.778],[32.967,-2.661],[33.046,-2.539],[33.119,-2.411],[33.131,-2.389],[33.131,1.354],[25.064,1.354]],"cx":31.271,"cy":-3.195,"net":35.0},"Culture Vats":{"poly":[[33.131,1.354],[33.131,2.389],[33.119,2.411],[33.046,2.539],[32.967,2.661],[32.883,2.778],[32.795,2.89],[32.702,2.997],[32.604,3.098],[32.501,3.195],[32.392,3.287],[32.278,3.374],[32.159,3.456],[32.035,3.534],[31.904,3.607],[31.768,3.675],[31.626,3.738],[31.478,3.797],[31.325,3.851],[31.165,3.9],[30.999,3.944],[30.826,3.983],[30.648,4.017],[30.463,4.046],[30.272,4.07],[30.075,4.089],[29.872,4.102],[29.663,4.11],[29.445,4.113],[25.064,4.113],[25.064,1.354]],"cx":31.271,"cy":3.37,"net":20.0}}}};
+  function PTS(P,fx,fy){return P.map(function(p){return fx(p[0]).toFixed(1)+','+fy(p[1]).toFixed(1);}).join(' ');}
+  var DECKS=[
+   {n:1,name:"Solenne",concept:"Executive",role:"Government, diplomacy, embassies, elite residences",L:26,W:8.1,area:160,pop:200000,floor:3540,clear:380,landmark:"The Hall of Keys",
+    text:"Where the ship is governed. The eight Governors meet here as the Grand Council, and each holds the key to one city.",
+    kw:["Embassy Gate","Aurum Terrace","Atrium Central","Stewards' End"],cl:["The Chancery","Atrium Central","Grand Hotels"],
+    plaza:["Concord Plaza",10,20000,"Governor's Hall, the Hall of Keys, Atrium Central station"],
+    zones:[["Embassy Row",0,.30,0,1,30,20000,"Walled embassy estates and treaty halls"],
+           ["Aurum Terrace",.30,.60,0,.72,45,45000,"Terraced sky-villas, private gardens, the Aurum Opera House"],
+           ["Grand Hotels",.30,.86,.72,1,20,40000,"Hotel towers and terraces along the skyglass"],
+           ["The Chancery",.60,.86,0,.22,15,25000,"Ministries, courts, archives"],
+           ["Concourse Gardens",.60,.86,.22,.40,10,0,"Formal gardens and pools beside the Grand Concourse"],
+           ["Stewards' Quarter",.86,1,0,1,30,50000,"Homes, schools and markets for staff"]]},
+   {n:2,name:"Halcyon",concept:"Science",role:"Research, medicine, cybernetics",L:30,W:10.1,area:230,pop:240000,floor:3100,clear:380,landmark:"The Restoration Spire",
+    text:"A city built to research, heal and discover, with hospitals, laboratories and the most advanced cybernetics labs in known space.",
+    kw:["Observatory","Crescent","Atrium Central","Healers' End"],cl:["Academy","Atrium Central","Foundry Quay"],
+    plaza:["Atrium Plaza",10,20000,"Governor's Hall, public clinics, the Hall of Records"],
+    zones:[["Observatory Park",0,.34,0,1,50,5000,"Telescopes, planetarium, quiet parkland"],
+           ["Research Towers",.34,.86,0,.28,40,60000,"Laboratories, lecture halls, the science academy"],
+           ["Medical Crescent",.34,.64,.28,.56,35,70000,"14 hospitals with 60,000 beds in all"],
+           ["Restoration Spire",.34,.64,.56,.76,15,5000,"White tower of recovery wards and records"],
+           ["Cybernetics Foundry",.34,.86,.76,1,40,40000,"Implant design, prosthetics and augmentation labs"],
+           ["Healers' Quarter",.86,1,0,1,40,40000,"Homes for doctors, nurses and researchers"]]},
+   {n:3,name:"Meridian",concept:"Social",role:"Homes, markets, entertainment, and the Verdance biosphere",L:32,W:11.3,area:270,pop:520000,floor:2660,clear:380,landmark:"The Colosseum Invicta",
+    text:"Where most people live, trade and play. Its forward 120 km² is Verdance, the forest, lakes and farms that feed the ship and renew its air.",
+    kw:["Verdance","Old Quarter","Atrium Central","Arena"],cl:["Neon Mile","Atrium Central","Canal Gate"],
+    plaza:["Atrium Plaza",10,30000,"Governor's Hall, the Exchange, the Midnight Market"],
+    zones:[["Verdance",0,.42,0,1,120,20000,"Old Forest, the Glass Lakes, the Terrace Farms and the Mother Tree"],
+           ["Old Quarter",.42,.66,0,.5,40,190000,"Dense streets, workshops, taverns, family homes"],
+           ["Grand Bazaar",.42,.66,.5,1,35,120000,"Covered markets and trading houses"],
+           ["Neon Mile",.66,.88,0,.26,15,60000,"Casinos, clubs, theaters, all-night arcades"],
+           ["Canal Gardens",.66,.88,.74,1,15,20000,"Waterways, restaurants and garden squares"],
+           ["Arena District",.88,1,0,1,35,80000,"The 80,000-seat Colosseum Invicta and stadiums"]]},
+   {n:4,name:"Bastion",concept:"Security",role:"Security, military command, training",L:33,W:11.9,area:285,pop:180000,floor:2220,clear:380,landmark:"The Watchtower",
+    text:"The security and military city. Its command center watches every deck, and a backup fusion core sits under its floor.",
+    kw:["Proving Grounds","Armory","Academy","Atrium Central","Garrison"],cl:["Command Block","Atrium Central","South Gate"],
+    plaza:["Atrium Plaza",10,10000,"Governor's Hall, parade square, checkpoint lifts"],
+    zones:[["Proving Grounds",0,.30,0,1,80,5000,"Live-fire ranges, drill fields, mock streets"],
+           ["Armory Ring",.30,.50,0,1,50,25000,"Weapon vaults, vehicle parks, workshops"],
+           ["The Academy",.50,.67,0,.7,40,15000,"Officer school, simulators, war rooms"],
+           ["The Brig",.50,.67,.7,1,10,5000,"Detention blocks and the tribunal"],
+           ["Command Block",.67,.88,0,.27,35,30000,"The Watchtower and ship-wide scanner control"],
+           ["Garrison Quarter",.88,1,0,1,60,90000,"Barracks, family housing, mess halls"]]},
+   {n:5,name:"Aerion",concept:"Hangar",role:"Strike wings, passenger port, cruiser docks",L:33,W:12.1,area:305,pop:200000,floor:1560,clear:600,landmark:"The Hall of Arrivals",
+    text:"The ship's port and flight deck, under the tallest ceiling aboard. Every visitor arrives here, and launch shafts carry strike craft up to the Forward Grids.",
+    kw:["Strike Hangars","Port","Atrium Central","Pilots' Quarter"],cl:["Flight Control","Atrium Central","Dockside"],
+    plaza:["Atrium Plaza",10,10000,"Governor's Hall, pilots' guild, Atrium Central station"],
+    zones:[["Strike Hangars",0,.34,0,1,110,60000,"Racks for 3,600 craft and 32 launch shafts to the Forward Grids"],
+           ["Port of Arrivals",.34,.67,0,.5,60,40000,"The Hall of Arrivals, passenger docks, customs"],
+           ["Cruiser Docks",.34,.67,.5,1,60,30000,"Berths for the six 2 km escort cruisers"],
+           ["Flight Control",.67,.86,0,.27,20,15000,"The Beacon tower, traffic control, briefing halls"],
+           ["Pilots' Quarter",.86,1,0,1,45,45000,"Housing, simulators, flight school"]]},
+   {n:6,name:"Machina",concept:"Engineering",role:"Reactors, power, water, air, Drift Engine",L:32,W:11.6,area:275,pop:160000,floor:1120,clear:380,landmark:"The Hex",
+    text:"The city that keeps the ship alive: power, water, air, gravity and the Drift Engine. It has no sky ceiling.",
+    kw:["Systems Yards","Waterworks","Atrium Central","Reactor Halls"],cl:["North Lock","Atrium Central","South Lock"],
+    plaza:["Core Plaza",10,10000,"Governor's Hall, engineers' guild, Spine Bus control"],
+    zones:[["Systems Yards",0,.26,0,1,55,20000,"Gravity plate works, maintenance depots, spare systems"],
+           ["Waterworks",.26,.48,0,.55,40,20000,"Water reclamation for the whole ship"],
+           ["Air Plant",.26,.48,.55,1,35,15000,"Air scrubbing, oxygen make-up, climate control"],
+           ["Grid Control",.48,.66,0,.5,30,15000,"Power distribution, the Aegis Lattice generators"],
+           ["Engineers' Quarter",.48,.66,.5,1,30,60000,"Housing built among the pipe galleries"],
+           ["Reactor Halls",.86,1,0,.62,50,15000,"The Void Reactor, the Fusion Reactor's six cores and the Dark Matter Drive"],
+           ["Drift Root",.86,1,.62,1,25,5000,"Base of the Drift Engine"]]},
+   {n:7,name:"Claustra",concept:"Containment",role:"Sealed vaults, quarantine, hazardous stores",L:30,W:10.5,area:235,pop:40000,floor:680,clear:380,landmark:"Maximum-containment block",
+    text:"Holds whatever must be kept apart from the rest of the ship, in three containment layers sealed one inside the next. It has no sky ceiling.",
+    kw:["Outer Ward","Middle Ward","Lock Court","Null Fields"],cl:["Inner Ward","Lock Court","Wardens' Gate"],
+    plaza:["Lock Court",10,5000,"Governor's Hall, the only public way in or out"],
+    zones:[["Outer Ward",0,.30,0,1,70,15000,"Layer 03: hazardous materials stores, fuel handling, decontamination"],
+           ["Middle Ward",.30,.64,0,.6,60,10000,"Layer 02: quarantine wards, biological and radiological vaults"],
+           ["Wardens' Quarter",.30,.64,.6,1,30,10000,"Housing and training for the containment wardens"],
+           ["Inner Ward",.64,.86,0,.27,20,0,"Layer 01: maximum-containment cells"],
+           ["Null Fields",.86,1,0,1,45,0,"Empty cells kept ready, and the buffer to the hull"]]},
+   {n:8,name:"Ferrum",concept:"Industrial",role:"Foundries, shipyard, cargo holds, recycling",L:27,W:8.8,area:190,pop:280000,floor:240,clear:380,landmark:"Drydock Prime",
+    text:"Makes and stores everything the ship needs, from refined ore to finished escort cruisers.",
+    kw:["Deep Holds","Foundry","Anvil Square","Worker Quarters"],cl:["Drydock Prime","Anvil Square","Vat Gate"],
+    plaza:["Anvil Square",10,20000,"Governor's Hall, guild halls, the base of the Lumen"],
+    zones:[["Deep Holds",0,.36,0,1,55,25000,"Cargo holds, raw ore and stock, cold stores"],
+           ["Foundry Line",.36,.60,0,.5,30,60000,"Smelters, mills and fabrication plants"],
+           ["Stockyards",.36,.60,.5,1,20,15000,"Spare parts and recycling"],
+           ["Drydock Prime",.60,.84,0,.26,20,25000,"Shipyard able to build 2 km escort cruisers"],
+           ["Worker Quarters",.84,1,0,.62,35,120000,"Housing blocks, canteens, union halls"],
+           ["Culture Vats",.84,1,.62,1,20,15000,"Grown protein and staple foods"]]}
+  ];
+  DECKS.forEach(function(d){d.ceil=d.floor+d.clear;});
+
+  /* ---------- Sheet 1: side cutaway ---------- */
+  var sideG=document.getElementById("sideDecks"),PM=0.08235;
+  DECKS.forEach(function(d){
+    var y=130+(4100-d.ceil)*PM,h=d.clear*PM;
+    var g=S("g",{"class":"part","data-id":"d"+d.n,tabindex:"0",role:"button","aria-label":"Deck "+d.n+", "+d.name},sideG);
+    S("rect",{"class":"fill",x:30,y:y,width:1140,height:h},g);
+    S("line",{"class":"lights",x1:30,x2:860,y1:y+h-4,y2:y+h-4,"pointer-events":"none"},g);
+    S("text",{"class":"lbl",x:420,y:y+h/2+2},g,d.n+"  "+d.name.toUpperCase());
+  });
+  var SIDE={};
+  DECKS.forEach(function(d){SIDE["d"+d.n]={label:"Deck "+d.n,tag:"Deck "+d.n+" of 8 · "+d.concept,name:d.name+", the "+d.concept+" city",img:"d"+d.n,npc:NPC["d"+d.n],text:d.text,
+    drones:DECKDRONES[d.n],facts:[["Role",d.role],["Floor area","~"+d.area+" km²"],["Size",d.L+" × "+d.W+" km"],["Design population",fmt(d.pop)],["Landmark",d.landmark],["Floor height above keel",fmt(d.floor)+" m"]]};});
+  [{id:"crown",label:"Crown",tag:"Upper hull, amidships",img:"brg",npc:"Avalon",name:"The Crown and Crown Bridge",
+    text:"The Crown is the horseshoe superstructure ringed with blue glass galleries. The Crown Bridge sits at its center, commands the whole ship and can detach as an escape vessel.",
+    facts:[["Crown length","about 8 km"],["Crown Bridge","1.2 km long, 14 levels"],["Bridge staff","~3,500"],["Separation time","40 seconds"]]},
+   {id:"atrium",label:"Spine Atrium",tag:"Vertical shaft through all eight decks",name:"Spine Atrium and Lumen Crown",
+    text:"One round shaft from the Lumen Crown dome down to the keel. On every deck it forms that city's central plaza. The Lumen, a column of light at its center, is the ship's sun.",
+    facts:[["Atrium width","1.6 km"],["Lumen width","120 m"],["Lifts","24 around the atrium wall"],["Deck to deck","20 to 40 seconds"]]},
+   {id:"lance",label:"Invicta Lance",tag:"Main gun, along the keel",name:"Invicta Lance",
+    text:"A particle lance that runs in a channel along the keel and fires from a muzzle beneath the prow. It can split a capital ship, and a full-power release breaks worlds.",
+    facts:[["Length","28 km"],["Recharge","4 minutes for everyday shots; a month after a full-power release"],["Energy per everyday shot","about 340 megatons"],["Also aboard","64 broadside batteries, 16 torpedo vaults, ~1,200 point-defense turrets"]]},
+   {id:"power",label:"Reactors and engines",tag:"Deck 6 and the stern",name:"Reactors and engines",
+    text:"Three core systems sit in Machina. The Void Reactor powers everyday life, the Fusion Reactor's six cores cover battle and backup, and the Dark Matter Propulsion Drive runs the five main engines. All three can feed the power grid. The Drift Engine handles travel between star systems.",
+    facts:[["Void Reactor","a spoonful of Void Ore powers a deck for a year"],["Fusion Reactor","6 cores at 2.5 TW, plus 2 backup cores"],["Main engines","5, run by the Dark Matter Drive"],["Thrust","0.5 g sustained"],["Drift Engine spool","about 30 minutes"]]}
+  ].forEach(function(o){SIDE[o.id]=o;});
+  var sideOrder=["crown","d1","d2","d3","d4","d5","d6","d7","d8","atrium","lance","power"];
+  var sideNav=document.getElementById("sideNav"),sidePanel=document.getElementById("sidePanel");
+  function fillPanel(panel,o){
+    panel.textContent="";
+    var head=H("div","phead",null,panel);
+    if(o.img){var im=H("img",null,null,head);im.src="emblems/"+o.img+".png";im.alt=o.name+" emblem";}
+    var hd=H("div",null,null,head);H("p","tag",o.tag,hd);H("h3",null,o.name,hd);
+    if(o.npc){var ni=H("img","npc",null,head);ni.src="npc/"+o.img+".jpg";ni.alt="Portrait of "+o.npc;var nd=H("div",null,null,head);H("p","tag","Deck administrator",nd);H("h3",null,o.npc,nd);}
+    H("p",null,o.text,panel);
+    var dl=H("dl",null,null,panel);
+    o.facts.forEach(function(f){var w=H("div",null,null,dl);H("dt",null,f[0],w);H("dd",null,f[1],w);});
+    if(o.drones){H("h4",null,"Drones stationed here",panel);var g=H("div","drones",null,panel);o.drones.forEach(function(k){var c=H("div","drone",null,g),im=H("img",null,null,c);im.src="drones/"+k+".jpg";im.alt=DRONES[k][0]+" drone";im.loading="lazy";H("b",null,DRONES[k][0],c);H("span",null,DRONES[k][1],c);});}
+  }
+  function selectSide(id){
+    var o=SIDE[id];if(!o)return;
+    document.querySelectorAll("#sheet-side .part").forEach(function(p){p.classList.toggle("on",p.getAttribute("data-id")===id);});
+    sideNav.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-id")===id?"true":"false");});
+    fillPanel(sidePanel,o);
+  }
+  sideOrder.forEach(function(id){var b=H("button",null,SIDE[id].label,sideNav);b.type="button";b.setAttribute("data-id",id);b.addEventListener("click",function(){selectSide(id);});});
+  document.querySelectorAll("#sheet-side .part").forEach(function(p){
+    var id=p.getAttribute("data-id");
+    p.addEventListener("click",function(){selectSide(id);});
+    p.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();selectSide(id);}});
+  });
+  selectSide("d1");
+
+  /* ---------- Sheet 2: top plan details ---------- */
+  (function(){
+    var g=document.getElementById("grids");
+    [160,309].forEach(function(y0){
+      S("rect",{"class":"box",x:330,y:y0,width:100,height:55},g);
+      for(var i=0;i<4;i++)for(var j=0;j<4;j++)S("rect",{x:338+i*23,y:y0+6+j*12,width:16,height:7,fill:"#f2a53a",opacity:.85},g);
+    });
+    var lv=document.getElementById("louvres");
+    [[160,205],[319,364]].forEach(function(r){for(var x=715;x<=835;x+=15)S("line",{"class":"line",x1:x,y1:r[0],x2:x,y2:r[1]},lv);});
+  })();
+
+  /* ---------- Sheet 3: cross-section ---------- */
+  (function(){
+    var svg=document.getElementById("secSvg"),K=70,M=0.07,yT=110,cx=560;
+    function Y(el){return yT+(4100-el)*M;}
+    var left=[],right=[];
+    DECKS.forEach(function(d,i){
+      var hw=(d.W/2+0.15)*K,yt=i===0?Y(4100):Y(d.ceil),yb=i===7?Y(0):Y(d.floor-60);
+      left.push([cx-hw,yt],[cx-hw,yb]);right.push([cx+hw,yt],[cx+hw,yb]);
+    });
+    var pts=left.concat(right.reverse()).map(function(p){return p[0].toFixed(1)+","+p[1].toFixed(1);}).join(" ");
+    S("path",{"class":"fill box",d:"M"+(cx-56)+" "+yT+" A56 30 0 0 1 "+(cx+56)+" "+yT+" Z"},svg);
+    S("polygon",{"class":"hull",points:pts},svg);
+    DECKS.forEach(function(d){
+      var w=d.W*K,x=cx-w/2,y=Y(d.ceil),h=d.clear*M;
+      S("rect",{"class":"zone",x:x,y:y,width:w,height:h},svg);
+      for(var k=-6;k<=6;k++){if(Math.abs(k)<1)continue;var px=cx+k*K;if(px>x+6&&px<x+w-6)S("line",{"class":"line",x1:px,y1:y,x2:px,y2:y+h,"stroke-width":1},svg);}
+      S("text",{"class":"lbl",x:x+12,y:y+h/2+4},svg,d.n+"  "+d.name.toUpperCase());
+      S("line",{"class":"lead",x1:x+w,y1:y+h,x2:1010,y2:y+h,"stroke-dasharray":"2 5"},svg);
+      S("text",{"class":"note",x:1016,y:y+h+1},svg,"Floor "+fmt(d.floor)+" m · "+d.W+" km wide");
+    });
+    S("rect",{x:cx-56,y:yT,width:112,height:Y(240)-yT,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":1.5,opacity:.92},svg);
+    S("line",{"class":"gline",x1:cx,y1:yT-26,x2:cx,y2:Y(240)},svg);
+    S("circle",{cx:cx,cy:Y(90),r:5,fill:"#f2a53a"},svg);
+    S("text",{"class":"note",x:cx,y:yT-40,"text-anchor":"middle"},svg,"Lumen Crown");
+    S("text",{"class":"note",x:cx+66,y:yT+14},svg,"Spine Atrium, 1.6 km");
+    S("line",{"class":"lead",x1:cx,y1:Y(90)+6,x2:cx,y2:Y(0)+22},svg);
+    S("text",{"class":"note",x:cx,y:Y(0)+36,"text-anchor":"middle"},svg,"Invicta Lance in the keel channel");
+    S("text",{"class":"note",x:40,y:yT+14},svg,"Port");
+    S("text",{"class":"note",x:960,y:yT-12,"text-anchor":"end"},svg,"Starboard");
+    S("line",{x1:40,y1:445,x2:180,y2:445,stroke:"currentColor"},svg);S("line",{x1:40,y1:440,x2:40,y2:450,stroke:"currentColor"},svg);S("line",{x1:180,y1:440,x2:180,y2:450,stroke:"currentColor"},svg);
+    S("text",{"class":"note",x:188,y:449},svg,"2 km");
+
+    var t=document.getElementById("stackTable");
+    var hr=H("tr",null,null,t);["Layer","From (m above keel)","To","Thickness","Notes"].forEach(function(h){H("th",null,h,hr);});
+    function row(a,b,c,dd,e){var r=H("tr",null,null,t);H("td",null,a,r);H("td","num",fmt(b),r);H("td","num",fmt(c),r);H("td","num",fmt(c-b)+" m",r);H("td",null,dd||"",r);}
+    row("Top armor",3920,4100,"Dorsal plating, hull lights, turrets");
+    DECKS.forEach(function(d){
+      row("Deck "+d.n+" "+d.name,d.floor,d.ceil,d.clear===600?"Hangar city, tallest deck":"City space, floor to ceiling");
+      row("Service layer under Deck "+d.n,d.floor-60,d.floor,"Gravity plates, utilities, service tunnels");
+    });
+    row("Keel armor",0,180,"Ventral plating and the Lance channel");
+  })();
+
+  /* ---------- Sheet 4: deck plans ---------- */
+  var deckSvg=document.getElementById("deckSvg"),deckNav=document.getElementById("deckNav"),deckPanel=document.getElementById("deckPanel"),deckTitle=document.getElementById("deckTitle");
+  var PK=32.94;function X(km){return 40+km*PK;}
+  function drawDeck(n){
+    var d=DECKS[n-1];deckSvg.textContent="";
+    deckSvg.setAttribute("aria-label","Plan of Deck "+d.n+", "+d.name);
+    var rr=document.getElementById("deckRender");rr.src="decks/r"+n+".jpg";rr.alt="Concept render of Deck "+n+", "+d.name;document.getElementById("deckRenderCap").textContent="Canon concept render of Deck "+n+", "+d.name+" (plan view, bow at left). The drawing above is the engineering plan.";
+    deckTitle.textContent="SHEET 4 · DECK "+d.n+" PLAN · "+d.name.toUpperCase()+" · "+d.concept.toUpperCase();
+    var x0=X(33.5-d.L),x1=X(33.5),len=x1-x0,w=d.W*PK,cy=272,top=cy-w/2,bot=cy+w/2,xt=x0+0.28*len,r=w*0.3,ax=X(26);
+    var G=DECKGEO[n],fx=function(k){return X(k);},fy=function(k){return cy+k*PK;};
+    var path="M"+G.gross.map(function(p){return fx(p[0]).toFixed(1)+" "+fy(p[1]).toFixed(1);}).join(" L")+" Z";
+    for(var f=0;f<=68;f+=4){var fx2=X(f*0.5);S("line",{"class":"lead",x1:fx2,y1:22,x2:fx2,y2:30},deckSvg);S("text",{"class":"note",x:fx2,y:16,"text-anchor":"middle"},deckSvg,"F"+f);}
+    S("polygon",{"class":"hull",points:PTS(G.gross,fx,fy)},deckSvg);
+    d.zones.forEach(function(z,i){var Z=G.zones[z[0]];if(!Z)return;
+      S("polygon",{"class":"zone"+(i%3===1?" alt":i%3===2?" alt2":""),points:PTS(Z.poly,fx,fy)},deckSvg);});
+    S("polygon",{points:PTS(G.net,fx,fy),fill:"none",stroke:"#e8f1fb","stroke-width":1.6},deckSvg);
+    S("line",{"class":"gline",x1:x0+14,y1:cy,x2:x1-4,y2:cy},deckSvg);
+    S("line",{"class":"gline dash",x1:ax,y1:top+2,x2:ax,y2:bot-2,"stroke-width":2},deckSvg);
+    d.zones.forEach(function(z){
+      var Z=G.zones[z[0]];if(!Z)return;var lx=fx(Z.cx),ly=fy(Z.cy),zw=120;
+      if(Math.hypot(Z.cx-26,Z.cy)<2.4){lx=ax+(Z.cx>=26?1:-1)*100;ly=fy(Z.cy)+(Z.cy>=0?30:-30);}
+      if(Math.abs(ly-cy)<10)ly=cy-18;
+      var name=z[0].toUpperCase(),sp=name.lastIndexOf(" ");
+      if(name.length*8.4>zw&&sp>0){
+        var t=S("text",{"class":"lbl",x:lx,y:ly-4,"text-anchor":"middle"},deckSvg);
+        S("tspan",{x:lx},t,name.slice(0,sp));S("tspan",{x:lx,dy:13},t,name.slice(sp+1));
+      }else S("text",{"class":"lbl",x:lx,y:ly+4,"text-anchor":"middle"},deckSvg,name);
+    });
+    S("circle",{cx:ax,cy:cy,r:59,fill:"#18202c",stroke:"#f2a53a","stroke-width":1.5,"stroke-dasharray":"5 4"},deckSvg);
+    S("circle",{cx:ax,cy:cy,r:26.4,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":2},deckSvg);
+    S("circle",{"class":"glass",cx:ax,cy:cy,r:4},deckSvg);
+    S("text",{"class":"lbl",x:ax,y:cy+47,"text-anchor":"middle"},deckSvg,"PLAZA");
+    (function(){var dh=function(cx,cyy){var a=[];for(var i=0;i<6;i++)a.push((cx+9*Math.cos(Math.PI/3*i)).toFixed(1)+","+(cyy+9*Math.sin(Math.PI/3*i)).toFixed(1));S("polygon",{"class":"depot",points:a.join(" ")},deckSvg);S("text",{"class":"note",x:cx,y:cyy+4,"text-anchor":"middle",fill:"#ffd9a0"},deckSvg,"D");};dh(ax+38,cy-34);if(n===4)dh(x0+0.5*len,top+0.12*w);if(n===5)dh(x0+0.15*len,cy+40);if(n===6)dh(x1-0.1*len,cy-40);}());
+    var nk=d.kw.length,ai=d.kw.length-2;
+    d.kw.forEach(function(s,i){
+      var sx=i===ai?ax:(i>ai?x1-0.07*len:x0+(0.12+i*(0.5/(Math.max(ai,1))))*len);
+      if(i!==ai)S("circle",{cx:sx,cy:cy,r:5,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":2},deckSvg);
+    });
+    [top+0.1*w,bot-0.1*w].forEach(function(sy){S("circle",{cx:ax,cy:sy,r:5,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":2},deckSvg);});
+    S("text",{"class":"note",x:x0-8,y:cy+4,"text-anchor":"end"},deckSvg,"Bow");
+    S("text",{"class":"note",x:x1+8,y:cy+4},deckSvg,"Stern");
+    S("text",{"class":"note",x:xt,y:top-8},deckSvg,"Port");
+    S("text",{"class":"note",x:xt,y:bot+18},deckSvg,"Starboard");
+    S("line",{x1:40,y1:505,x2:40+5*PK,y2:505,stroke:"currentColor"},deckSvg);S("line",{x1:40,y1:500,x2:40,y2:510,stroke:"currentColor"},deckSvg);S("line",{x1:40+5*PK,y1:500,x2:40+5*PK,y2:510,stroke:"currentColor"},deckSvg);
+    S("text",{"class":"note",x:48+5*PK,y:509},deckSvg,"5 km");
+
+    deckNav.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-n")===String(n)?"true":"false");});
+    fillPanel(deckPanel,{tag:"Deck "+d.n+" of 8 · "+d.concept,img:"d"+d.n,npc:NPC["d"+d.n],name:d.name+", the "+d.concept+" city",text:d.text,drones:DECKDRONES[d.n],facts:[
+      ["Role",d.role],["Size",d.L+" × "+d.W+" km"],["Floor area","~"+d.area+" km²"],["Design population",fmt(d.pop)],
+      ["Sky ceiling",d.clear+" m"],["Floor height above keel",fmt(d.floor)+" m"],["Landmark",d.landmark],
+      ["Keelway stops, bow to stern",d.kw.join(", ")],["Cross-line stops, port to starboard",d.cl.join(", ")]]});
+    var tw=H("div","tw",null,deckPanel),t=H("table",null,null,tw),hr=H("tr",null,null,t);
+    ["District","Area","People","What is there","Who works here"].forEach(function(h){H("th",null,h,hr);});
+    [[d.plaza[0],0,0,0,0,d.plaza[1],d.plaza[2],d.plaza[3]]].concat(d.zones).forEach(function(z){
+      var r=H("tr",null,null,t);H("td",null,z[0],r);H("td","num","~"+z[5]+" km²",r);H("td","num",z[6]?fmt(z[6]):"None",r);H("td",null,z[7],r);H("td",null,JOBS[z[0]]||"",r);
+    });
+  }
+  DECKS.forEach(function(d){var b=H("button",null,d.n+" "+d.name,deckNav);b.type="button";b.setAttribute("data-n",d.n);b.addEventListener("click",function(){go("deck-"+d.n);});});
+
+  /* ---------- Sheet 5: Crown Bridge ---------- */
+  (function(){
+    var svg=document.getElementById("bridgeSvg");
+    var L=[[14,"The Observatory","Captain's private dome",.30,.52],[13,"The Sovereign Suite","Supreme Commander's quarters and study",.26,.58],
+      [12,"The Throne Deck","Command amphitheater under the dome",.20,.66],[11,"Tactical","Weapons, shields, flight control",.15,.74],
+      [10,"Navigation","Helm and Drift plotting",.11,.80],[9,"Signals","Communications and sensors",.08,.85],
+      [8,"The Lantern","Ship-wide AI core, armored vault",.06,.89],[7,"The Council Chamber","Governors' round table, briefing rooms",.04,.92],
+      [6,"Officers' Row","Senior quarters and wardroom",.03,.95],[5,"Crew Quarters","Bunks, mess, recreation",.02,.97],
+      [4,"Medical and Security","Sick bay, armory, brig",.02,.98],[3,"Stores","Life support and 90 days of supplies",.03,.98],
+      [2,"The Boat Deck","Shuttles, escape pods, gangways to the Crown",.05,.97],[1,"Engineering","Fusion torches, Drift Engine, Separation Collar",.09,.94]];
+    var x0=60,W=760,y0=30,h=26;
+    L.forEach(function(l,i){
+      var y=y0+i*h,hot=l[0]===12;
+      S("rect",{"class":"box"+(hot?" hot":""),x:x0+l[3]*W,y:y,width:(l[4]-l[3])*W,height:h-3,rx:2},svg);
+      S("text",{"class":"lbl",x:x0+0.34*W,y:y+h/2+2},svg,l[0]+"  "+l[1].toUpperCase());
+      S("line",{"class":"lead",x1:x0+l[4]*W,y1:y+h/2-1,x2:850,y2:y+h/2-1,"stroke-dasharray":"2 5"},svg);
+      S("text",{"class":"note",x:856,y:y+h/2+3},svg,l[2]);
+    });
+    S("rect",{"class":"glass",x:x0+0.94*W,y:y0+13*h+2,width:22,height:h-7,opacity:.85},svg);
+    S("text",{"class":"note",x:x0,y:y0+14*h+22},svg,"Bow");
+    S("text",{"class":"note",x:x0+W,y:y0+14*h+22,"text-anchor":"end"},svg,"Stern: 4 fusion torches");
+  })();
+
+
+  /* ---------- Sheet 7: ranks ---------- */
+  (function(){
+    var P=document.getElementById("rankPanel");
+    H("p","tag","23 crew ranks",P);H("h3",null,"Rank insignia and authority",P);
+    H("p",null,"Crew ranks belong to real players. Gold patches mark the top of each group; silver marks the rest of the command officers and the enlisted ranks. Max, as Supreme Commander, stands above all of them. No one holds these posts at launch. A person is first approved to board, by giving their information and life choices and completing the approval steps, and only then may apply for a post.",P);
+    var R=[["Command officers",[["Captain","captain","Outranks everyone but Max"],["Executive Officer","xo","Second in command"],["Chief Operations Officer","coo","Power, supply, drones"],["Tactical Officer","tactical","Weapons and defense"],["Navigation Officer","navigation","Courses and jumps"],["Communications Officer","communications","Signals and notices"],["Flight Control Officer","flight","Launches and docks"],["Intelligence Officer","intel","Threat assessment"],["Watch Officer","watch","Holds the bridge watch"]]],
+      ["Deck chiefs",[["Deck Chief Executive","dc-exec","Solenne"],["Deck Chief Science","dc-science","Halcyon"],["Deck Chief Hub","dc-hub","Meridian"],["Deck Chief Security","dc-security","Bastion"],["Deck Chief Hangar","dc-hangar","Aerion"],["Deck Chief Engineer","dc-engineer","Machina"],["Deck Chief Hazmat","dc-hazmat","Claustra"],["Deck Chief Industry","dc-industry","Ferrum"]]],
+      ["Enlisted",[["Cadet","cadet","Entry rank"],["Crewman","crewman","Regular work"],["Specialist","specialist","Skilled trade"],["Sergeant","sergeant","Leads a team"],["First Sergeant","first-sgt","Runs a section"],["Master Sergeant","master-sgt","Leads a department"]]]];
+    R.forEach(function(g){H("h4",null,g[0],P);var gr=H("div","pgrid",null,P);g[1].forEach(function(r){var c=H("div","pcard",null,gr),im=H("img",null,null,c);im.src="ranks/"+r[1]+".jpg";im.alt=r[0]+" insignia";im.loading="lazy";H("b",null,r[0],c);H("span",null,r[2],c);});});
+    H("h4",null,"How ranks work",P);
+    var tw=H("div","tw",null,P),t=H("table",null,null,tw),hr=H("tr",null,null,t);["Group","Gets the rank by","Authority"].forEach(function(h){H("th",null,h,hr);});
+    [["Captain","Game owner names the first; then a community vote every 4 years","Outranks everyone but Max. Cannot declare war or fire the Lance."],["Other command officers","Appointed by the Captain","Run their own field under the Captain's orders."],["Deck chiefs","Assigned by the Captain and the Executive Officer","Run one city beside its NPC governor."],["Enlisted","Service Points earned doing the job, plus time in rank and a sign-off","Cadet: none. Master Sergeant: leads a department."]].forEach(function(r){var tr=H("tr",null,null,t);r.forEach(function(c){H("td",null,c,tr);});});
+  })();
+
+  /* ---------- Sheet 8: street maps ---------- */
+  (function(){
+    var svg=document.getElementById("streetSvg"),nav=document.getElementById("streetNav"),ttl=document.getElementById("streetTitle"),pan=document.getElementById("streetPanel");
+    var x0=60,x1=1140,y0=50,y1=500,w=x1-x0,h=y1-y0,cy=(y0+y1)/2;
+    function hex(cx,cyy,r){var a=[];for(var i=0;i<6;i++){a.push((cx+r*Math.cos(Math.PI/3*i)).toFixed(1)+","+(cyy+r*Math.sin(Math.PI/3*i)).toFixed(1));}return a.join(" ");}
+    function draw(n){
+      var d=DECKS[n-1];svg.textContent="";
+      ttl.textContent="SHEET 8 · STREET MAP · DECK "+d.n+" · "+d.name.toUpperCase();
+      var defs=S("defs",{},svg),pt=S("pattern",{id:"sgrid",width:14,height:14,patternUnits:"userSpaceOnUse"},defs);
+      S("path",{d:"M14 0 L0 0 L0 14",fill:"none",stroke:"#33445a","stroke-width":1},pt);
+      var G=DECKGEO[n],xs=33.5-d.L,fx=function(k){return x0+(k-xs)/d.L*w;},fy=function(k){return y0+(k+d.W/2)/d.W*h;};
+      S("polygon",{"class":"hull",points:PTS(G.gross,fx,fy)},svg);
+      d.zones.forEach(function(z,i){var Z=G.zones[z[0]];if(!Z)return;var pp=PTS(Z.poly,fx,fy);
+        S("polygon",{"class":"zone"+(i%3===1?" alt":i%3===2?" alt2":""),points:pp},svg);
+        if(z[6]>0)S("polygon",{points:pp,fill:"url(#sgrid)",opacity:.9},svg);
+        S("polygon",{points:pp,fill:"none",stroke:"#5b6b82","stroke-width":3},svg);
+        for(var k=0;k<4;k++){var ax2=fx(Z.cx)+(k-1.5)*26+((i*7+k*11)%9)-4,ay2=fy(Z.cy)+((k%2)?24:-24)+((i*5+k*3)%7)-3;if(z[6]>0)S("circle",{cx:ax2,cy:ay2,r:2.6,fill:"#f2a53a",opacity:.9},svg);}
+      });
+      S("polygon",{points:PTS(G.net,fx,fy),fill:"none",stroke:"#e8f1fb","stroke-width":1.6},svg);
+      var pu=(26-(33.5-d.L))/d.L,px=x0+pu*w;
+      S("line",{"class":"gline",x1:x0+10,y1:cy,x2:x1-6,y2:cy},svg);
+      S("line",{"class":"gline dash",x1:px,y1:y0+6,x2:px,y2:y1-6,"stroke-width":2},svg);
+      for(var a=0;a<8;a++){var an=Math.PI/4*a+Math.PI/8;S("line",{"class":"road",x1:px+50*Math.cos(an),y1:cy+50*Math.sin(an),x2:px+130*Math.cos(an),y2:cy+130*Math.sin(an)},svg);}
+      S("circle",{cx:px,cy:cy,r:62,fill:"#18202c",stroke:"#5b6b82","stroke-width":1},svg);
+      S("circle",{"class":"ring",cx:px,cy:cy,r:50},svg);
+      S("circle",{cx:px,cy:cy,r:22,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":2},svg);
+      S("circle",{"class":"glass",cx:px,cy:cy,r:4},svg);
+      S("polygon",{"class":"depot",points:hex(px+34,cy-34,11)},svg);S("text",{"class":"note",x:px+34,y:cy-30,"text-anchor":"middle",fill:"#ffd9a0"},svg,"D");
+      S("text",{"class":"lbl",x:px,y:cy+76,"text-anchor":"middle"},svg,d.plaza[0].toUpperCase());
+      var ai=d.kw.length-2;
+      d.kw.forEach(function(st,i){var u=i===ai?pu:(i>ai?0.93:0.12+i*(0.5/Math.max(ai,1))),sx=x0+u*w;if(i!==ai){S("circle",{cx:sx,cy:cy,r:5,fill:"#0b0f16",stroke:"#4aa3ff","stroke-width":2},svg);S("text",{"class":"note",x:sx,y:cy+(i%2?22:-12),"text-anchor":"middle"},svg,st);}});
+      d.zones.forEach(function(z){
+        var Z=G.zones[z[0]];if(!Z)return;var lx=fx(Z.cx),ly=fy(Z.cy)-14,zw=150;
+        if(Math.hypot((Z.cx-26)/d.L*w,(Z.cy)/d.W*h)<120){lx=px+(Z.cx>=26?1:-1)*150;ly=fy(Z.cy)+(Z.cy>=0?40:-40);}
+        if(Math.abs(ly-cy)<16)ly=cy-34;
+        var nm=z[0].toUpperCase(),sp=nm.lastIndexOf(" ");
+        if(nm.length*8>zw&&sp>0){var t=S("text",{"class":"lbl",x:lx,y:ly-4,"text-anchor":"middle"},svg);S("tspan",{x:lx},t,nm.slice(0,sp));S("tspan",{x:lx,dy:13},t,nm.slice(sp+1));}else S("text",{"class":"lbl",x:lx,y:ly+4,"text-anchor":"middle"},svg,nm);
+      });
+      S("text",{"class":"note",x:x0,y:y0-18},svg,"Bow");S("text",{"class":"note",x:x1,y:y0-18,"text-anchor":"end"},svg,"Stern");
+      S("text",{"class":"note",x:x0,y:y1+30},svg,"Port at top, starboard at bottom. Landmark: "+d.landmark+", by the plaza.");
+      nav.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-n")===String(n)?"true":"false");});
+      pan.textContent="";
+      var hd=H("div","phead",null,pan),im=H("img",null,null,hd);im.src="emblems/d"+n+".png";im.alt=d.name+" emblem";var hdd=H("div",null,null,hd);H("p","tag",null,hdd);hdd.firstChild.textContent="Deck "+n+" streets";H("h3",null,d.name+", the "+d.concept+" city",hdd);
+      var dl=H("dl",null,null,pan);
+      [["Main road","Keelway maglev boulevard, bow to stern"],["Cross road","Cross-line, port to starboard"],["Plaza","The Atrium ring road and eight avenues around "+d.plaza[0]],["Drone depot","Beside "+d.plaza[0]+", with a maintenance bay"],["Keelway stops",d.kw.join(", ")],["Cross-line stops",d.cl.join(", ")],["Landmark",d.landmark]].forEach(function(f){var wv=H("div",null,null,dl);H("dt",null,f[0],wv);H("dd",null,f[1],wv);});
+      var tw=H("div","tw",null,pan),t=H("table",null,null,tw),hr=H("tr",null,null,t);["District","What is there","Who works here"].forEach(function(x){H("th",null,x,hr);});
+      [[d.plaza[0],d.plaza[3]]].concat(d.zones.map(function(z){return [z[0],z[7]];})).forEach(function(z){var tr=H("tr",null,null,t);H("td",null,z[0],tr);H("td",null,z[1],tr);H("td",null,JOBS[z[0]]||"",tr);});
+    }
+    DECKS.forEach(function(d){var b=H("button",null,d.n+" "+d.name,nav);b.type="button";b.setAttribute("data-n",d.n);b.addEventListener("click",function(){draw(d.n);});});
+    draw(1);window.__streetDraw=draw;
+  })();
+
+  /* ---------- Sheet 9: escort cruiser ---------- */
+  (function(){
+    var svg=document.getElementById("cruiserSvg");
+    S("path",{"class":"hull",d:"M60 215 L240 168 L880 158 L1050 180 L1085 215 L1050 250 L880 272 L240 262 Z"},svg);
+    S("path",{"class":"line",d:"M240 215 L1040 215"},svg);
+    S("rect",{"class":"box hot",x:690,y:128,width:130,height:32,rx:3},svg);S("text",{"class":"btxt",x:755,y:149,"text-anchor":"middle"},svg,"Bridge");
+    S("rect",{"class":"box",x:420,y:200,width:170,height:30,rx:3},svg);S("text",{"class":"btxt",x:505,y:220,"text-anchor":"middle"},svg,"Craft hangar");
+    for(var i=0;i<5;i++)S("rect",{"class":"glass",x:1075,y:187+i*12,width:16,height:8,opacity:.9},svg);
+    [300,350,400,640,860,930].forEach(function(x){S("circle",{cx:x,cy:164+(x>500?0:4),r:6,"class":"box"},svg);});
+    for(var j=0;j<24;j++)S("circle",{cx:260+j*32,cy:262,r:2.4,fill:"#93a1b3"},svg);
+    function call(x,y,tx,ty,label,sub,anchor){S("line",{"class":"lead",x1:x,y1:y,x2:tx,y2:ty-6},svg);S("text",{"class":"btxt",x:tx,y:ty+8,"text-anchor":anchor||"middle"},svg,label);S("text",{"class":"note",x:tx,y:ty+24,"text-anchor":anchor||"middle"},svg,sub);}
+    call(130,215,130,310,"Prow","armored, faceted","middle");
+    call(350,164,350,340,"Dorsal turrets","12 beam turrets","middle");
+    call(505,230,505,310,"Craft hangar","60 strike craft","middle");
+    call(755,160,755,340,"Bridge and Command","Captain's chair","middle");
+    call(910,262,910,310,"Point defense","200 turrets","middle");
+    call(1083,215,1083,345,"5 engines","","middle");
+    S("text",{"class":"note",x:60,y:60},svg,"Length 2,000 m · beam 400 m · height 220 m (drawn stretched)");
+    S("line",{x1:60,y1:395,x2:60+500,y2:395,stroke:"currentColor"},svg);S("text",{"class":"note",x:566,y:399},svg,"500 m");
+    var P=document.getElementById("cruiserPanel");
+    H("p","tag","Screening fleet",P);H("h3",null,"The six escort cruisers",P);
+    H("p",null,"Six 2 km ships launch from the Cruiser Docks as a screening fleet. Each is commanded by a player captain who answers to the Fleet Admiral, whom the Supreme Commander appoints. Captains finish assigned missions on their own but cannot declare war or override the Lance rules. The Fleet Admiral and the six captains are player careers. Every post is vacant until a player joins, applies and is accepted; no character fills them in advance.",P);
+    var dl=H("dl",null,null,P);
+    [["Length","2 km"],["Crew","room for about 2,500 each; player crew only, empty until players join"],["Built at","Drydock Prime, Ferrum (Deck 8)"],["Berthed at","Cruiser Docks, Deck 5, starboard"],["Weapons","12 beam turrets, 200 point-defense turrets"],["Shield","Aegis-type shield, a fraction of the Invicta's"],["Craft","60 strike craft in a small hangar"],["Command","Player captain, answering to the Fleet Admiral (vacant until filled)"]].forEach(function(f){var wv=H("div",null,null,dl);H("dt",null,f[0],wv);H("dd",null,f[1],wv);});
+    var tw=H("div","tw",null,P),t=H("table",null,null,tw),hr=H("tr",null,null,t);["Berth","Cruiser","Captain"].forEach(function(x){H("th",null,x,hr);});
+    ["Vanguard","Bulwark","Paragon","Resolute","Tempest","Halberd"].forEach(function(nm,i){var tr=H("tr",null,null,t);H("td","num",String(i+1),tr);H("td",null,nm,tr);H("td",null,"Vacant until a player is accepted",tr);});
+    H("p",null,"Fleet Admiral: appointed by the Supreme Commander from accepted players; vacant at launch. The cruisers stay under the Invicta's command structure and cannot fire the Invicta Lance.",P);
+  })();
+
+  /* ---------- Sheet 10: Forward Grids and hangar ---------- */
+  (function(){
+    var svg=document.getElementById("gridsSvg");
+    function grid(gx,gy,label,start){
+      S("rect",{"class":"box hot",x:gx-10,y:gy-10,width:300,height:300,rx:6},svg);
+      for(var r=0;r<4;r++)for(var c=0;c<4;c++){var n=start+r*4+c;S("rect",{"class":"box",x:gx+c*72,y:gy+r*72,width:64,height:64,rx:4},svg);S("text",{"class":"btxt",x:gx+c*72+32,y:gy+r*72+38,"text-anchor":"middle"},svg,"B"+n);}
+      S("text",{"class":"lbl",x:gx+140,y:gy-24,"text-anchor":"middle"},svg,label);
+    }
+    grid(60,60,"PORT FORWARD GRID · BAYS 1-16",1);grid(400,60,"STARBOARD FORWARD GRID · BAYS 17-32",17);
+    for(var i=0;i<32;i++)S("line",{"class":"lead",x1:75+i*(10.7)+ (i>15?30:0),y1:354,x2:75+i*(10.7)+(i>15?30:0),y2:420},svg);
+    S("text",{"class":"note",x:720,y:395},svg,"32 launch shafts");
+    S("rect",{"class":"box hot",x:60,y:424,width:640,height:70,rx:5},svg);
+    S("text",{"class":"btxt",x:380,y:454,"text-anchor":"middle"},svg,"Deck 5 Strike Hangars · racks for 3,600 craft");
+    S("text",{"class":"note",x:380,y:476,"text-anchor":"middle"},svg,"Forward third of Aerion, about 110 km², 60,000 people");
+    var fx=770;
+    S("text",{"class":"lbl",x:fx,y:60},svg,"LAUNCH SEQUENCE");
+    ["Pilot and deck crew board at the rack","Craft rides the launch lift to its shaft","Shaft carries it up to the Forward Grid","Flight Control clears the bay","Bay opens and the craft launches","Recovery: same path in reverse"].forEach(function(t,i){
+      S("rect",{"class":"box"+(i===3?" hot":""),x:fx,y:80+i*62,width:380,height:46,rx:4},svg);S("text",{"class":"btxt",x:fx+14,y:108+i*62},svg,(i+1)+".  "+t);
+    });
+    var P=document.getElementById("gridsPanel");
+    H("p","tag","Launch system",P);H("h3",null,"Forward Grids and the Strike Hangars",P);
+    H("p",null,"The Forward Grids are two angled panels on the port and starboard shoulders of the hull. Each is a 4 by 4 grid of bays, 32 launch bays in all. They are fed by launch shafts from the Strike Hangars on Deck 5, so craft never cross the open hull to reach them. Every bay door closes flush when not in use.",P);
+    var dl=H("dl",null,null,P);
+    [["Launch bays","32 (16 per grid)"],["Launch shafts","32, one to each bay"],["Craft","about 3,600"],["Craft types","Fighters, bombers, interceptors, shuttles"],["Hangar area","about 110 km² in Aerion"],["Controlled by","Flight Control (Deck 5)"],["Chief","Deck Chief Hangar and Vector"],["Stationed drones","Hauler, Strike, Intercept"]].forEach(function(f){var wv=H("div",null,null,dl);H("dt",null,f[0],wv);H("dd",null,f[1],wv);});
+    H("p",null,"A shaft carries roughly 112 craft in rotation. Recommended: strike wings launch in waves of 32, one craft per bay, and the ship can put the whole screen out in about two minutes.",P);
+  })();
+
+  /* ---------- Sheet 11: Drift Engine and Aegis Lattice ---------- */
+  (function(){
+    var svg=document.getElementById("driftSvg");
+    function hex(cx,cy,r){var a=[];for(var i=0;i<6;i++)a.push((cx+r*Math.cos(Math.PI/3*i)).toFixed(1)+","+(cy+r*Math.sin(Math.PI/3*i)).toFixed(1));return a.join(" ");}
+    var cx=300,cy=210;
+    var L=[["Aegis Lattice","hex cells, gold shimmer where hit",200,"#4a3513","#f2a53a"],["Armor belt","120 m flanks, 180 m above and below",150,"#1f2a39","#5b6b82"],["Void Ore hull","the ship itself",110,"#243042","#5b6b82"],["Decks and cities","8 decks, Crown on top",62,"#18202c","#3a4c64"]];
+    L.forEach(function(l){S("ellipse",{cx:cx,cy:cy,rx:l[2]*1.0,ry:l[2]*0.8,fill:l[3],stroke:l[4],"stroke-width":2},svg);});
+    for(var a=0;a<12;a++){var an=Math.PI/6*a;S("polygon",{points:hex(cx+200*Math.cos(an),cy+160*Math.sin(an),16),fill:"none",stroke:"#f2a53a","stroke-width":1.5,opacity:.8},svg);}
+    L.forEach(function(l,i){S("text",{"class":"lbl","text-anchor":"middle",x:cx,y:cy-l[2]*0.8+(i===0?-10:16)},svg,l[0].toUpperCase());});
+    var ly=412;
+    L.forEach(function(l,i){S("rect",{x:40+i*140,y:ly,width:14,height:14,fill:l[3],stroke:l[4]},svg);S("text",{"class":"note",x:60+i*140,y:ly+12},svg,l[0]);});
+    var tx=620;
+    S("text",{"class":"lbl",x:tx,y:40},svg,"DRIFT JUMP · ABOUT 30 MINUTES TO SPOOL");
+    var steps=[["Request","Navigation plots; high-level authorization and risk assessment"],["Clear","Flight Control recalls craft; the Bridge may separate if ordered"],["Spool","Drift Engine in the stern core rooted in Deck 6 charges (about 30 min)"],["Fold","A channel folds open ahead of the hull"],["Drift","The ship drifts through; the skyglass shows a blue-gold current"],["Exit","Channel closes; the ship returns to normal space"]];
+    steps.forEach(function(st,i){var y=62+i*56;S("rect",{"class":"box"+(i===2?" hot":""),x:tx,y:y,width:520,height:44,rx:4},svg);S("text",{"class":"btxt",x:tx+12,y:y+19},svg,(i+1)+".  "+st[0]);S("text",{"class":"note",x:tx+12,y:y+36},svg,st[1]);if(i<5)S("line",{"class":"lead",x1:tx+260,y1:y+44,x2:tx+260,y2:y+56},svg);});
+    var P=document.getElementById("driftPanel");
+    H("p","tag","Propulsion and defense",P);H("h3",null,"Drift Engine and Aegis Lattice",P);
+    H("p",null,"The Drift Engine does not push the ship. It folds a channel ahead of the hull and the ship drifts through it, which is where the name Arcane Drift comes from. It is a stern core rooted in Deck 6, and dimensional manoeuvres need high-level authorization and a risk assessment. The Aegis Lattice is the outermost defense, a layered energy shield of hexagonal cells fed by generators in Machina.",P);
+    var dl=H("dl",null,null,P);
+    [["Drift Engine","Stern core, rooted in Deck 6"],["Jump spool","about 30 minutes"],["Main engines","5, run by the Dark Matter Drive at 0.5 g"],["Aegis Lattice power","up to 3 TW"],["Aegis generators","Machina power distribution (Deck 6)"],["Armor belt","120 m flanks, 180 m above and below"],["Lattice design","Hexagonal cells, gold shimmer when hit"],["Crown Bridge","Has its own short-range Drift Engine"]].forEach(function(f){var wv=H("div",null,null,dl);H("dt",null,f[0],wv);H("dd",null,f[1],wv);});
+    H("p",null,"The jump stages are recommended and can be tuned. The engine's exact physics is unknown to the ship, and Void Ore stays a mystery.",P);
+  })();
+
+  /* ---------- Sheet routing ---------- */
+  var SHEETS=[["side","1 Side cutaway"],["top","2 Top plan"],["section","3 Cross-section"],["deck","4 Deck plans"],["bridge","5 Crown Bridge"],["power","6 Power grid"],["ranks","7 Ranks"],["streets","8 Street maps"],["cruiser","9 Escort cruiser"],["grids","10 Forward Grids"],["drift","11 Drift and Aegis"]];
+  var sheetNav=document.getElementById("sheets");
+  SHEETS.forEach(function(s){var b=H("button",null,s[1],sheetNav);b.type="button";b.setAttribute("data-s",s[0]);b.addEventListener("click",function(){go(s[0]==="deck"?"deck-"+curDeck:s[0]);});});
+  var curDeck=1;
+  function show(name){
+    var m=/^deck-([1-8])$/.exec(name),sheet=m?"deck":name;
+    if(!SHEETS.some(function(s){return s[0]===sheet;})||name==="deck"){sheet="side";}
+    if(m){curDeck=+m[1];drawDeck(curDeck);}
+    SHEETS.forEach(function(s){document.getElementById("sheet-"+s[0]).hidden=s[0]!==sheet;});
+    sheetNav.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-s")===sheet?"true":"false");});
+  }
+  function go(name){show(name);try{history.replaceState(null,"","#"+name);}catch(e){try{location.hash=name;}catch(e2){}}}
+  window.addEventListener("hashchange",function(){show(location.hash.slice(1)||"side");});
+  drawDeck(1);
+  show(location.hash.slice(1)||"side");
+})();
+</script>
+</body>
+</html>
