@@ -2,7 +2,7 @@
    Talks to /api/chat (functions/api/chat.js in the adxi-invicta repo). */
 (function () {
   "use strict";
-  const KEY_NAME = "adxi.name", KEY_ASKED = "adxi.nameAsked", KEY_CHAT = "adxi.chat", KEY_OPEN = "adxi.chatOpen";
+  const KEY_HELPER = "adxi.helperKey", KEY_NAME = "adxi.name", KEY_ASKED = "adxi.nameAsked", KEY_CHAT = "adxi.chat", KEY_OPEN = "adxi.chatOpen";
   let history = [];   // full API conversation, sent back with each message
   let busy = false;
 
@@ -81,12 +81,20 @@
       const ok = el("button", "chat-send", "Save");
       ok.type = "submit";
       row.append(skip, ok);
-      box.append(nameIn, row);
+      const keyIn = el("input");
+      keyIn.type = "password";
+      keyIn.autocomplete = "off";
+      keyIn.placeholder = "Helper key (only if Jordan gave you one)";
+      keyIn.value = localStorage.getItem(KEY_HELPER) || "";
+      box.append(nameIn, keyIn, row);
       back.append(box);
       document.body.append(back);
       nameIn.focus();
       const done = (save) => {
-        if (save) localStorage.setItem(KEY_NAME, nameIn.value.trim());
+        if (save) {
+          localStorage.setItem(KEY_NAME, nameIn.value.trim());
+          if (keyIn.value.trim()) localStorage.setItem(KEY_HELPER, keyIn.value.trim()); else localStorage.removeItem(KEY_HELPER);
+        }
         localStorage.setItem(KEY_ASKED, "1");
         back.remove();
         resolve();
@@ -156,7 +164,7 @@
     try {
       const r = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem(KEY_HELPER) || "" },
         body: JSON.stringify({ messages: history, text, name: localStorage.getItem(KEY_NAME) || "", view: location.hash }),
       });
       if (!r.ok || !r.body) {
@@ -192,7 +200,7 @@
             card.href = data.url;
             card.target = "_blank";
             card.rel = "noopener";
-            card.innerHTML = `<strong>Proposal sent to Jordan</strong><span>${esc(data.title)}</span>`;
+            card.innerHTML = `<strong>${data.merged ? "Change published" : "Proposal sent to Jordan"}</strong><span>${esc(data.title)}</span>`;
             log.insertBefore(card, out);
           } else if (ev === "done") {
             history = data.messages;

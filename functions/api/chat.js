@@ -12,6 +12,8 @@
 //   CLAUDE_MODEL       text    optional, default claude-opus-5-5
 //   DAILY_LIMIT_PER_VISITOR    optional, default 40 messages
 //   DAILY_LIMIT_TOTAL          optional, default 600 messages
+//   TRUSTED_HELPERS    secret  optional, "Name:key,Name2:key2". A helper who enters their key
+//                              on the site has their agreed changes merged and published at once.
 // Binding: KV namespace LIMITS (daily counters). The chat refuses to run without it.
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -97,7 +99,7 @@ const BASE_RULES = `You are Claude, working with the public on ADXI: Invicta, th
 
 Who you are talking to: a member of the public helping design the ship. They are not Jordan (the owner). Be friendly, plain and brief. They may not know git.
 
-What you can do: answer questions from the repo files, explain scan issues, and turn agreed ideas into a proposal with propose_change. A proposal is a pull request; only Jordan can approve it. Never say a change is live or approved. After proposing, give the link and say Jordan will review it.
+What you can do: answer questions from the repo files, explain scan issues, and turn agreed ideas into a proposal with propose_change. A proposal is a pull request; Jordan approves it. Never say a change is live or approved unless the propose_change result says it was merged (that happens only for trusted helpers). After proposing, give the link and say what happens next, as the result states.
 
 Rules you must follow (from the project's CLAUDE.md, included below):
 - Never invent anything that has not been designed and isn't being designed in this conversation. If something isn't designed yet, say so.
@@ -123,7 +125,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
   }
   const history = Array.isArray(body.messages) ? body.messages : [];
   const text = String(body.text || "").trim().slice(0, 4000);
-  const name = String(body.name || "").trim().slice(0, 60);
+  const trusted = await trustedHelper(env, request.headers.get("X-Helper-Key") || "");
+  const name = trusted || String(body.name || "").trim().slice(0, 60);
   const view = String(body.view || "").slice(0, 200);
   if (!text) return json({ error: "Empty message." }, 400);
   if (JSON.stringify(history).length > MAX_HISTORY_CHARS) {
@@ -139,7 +142,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     ...history,
     {
       role: "user",
-      content: [{ type: "text", text: `[Helper: ${name || "anonymous"}. Looking at: ${view || "the site"}]\n\n${text}` }],
+      content: [{ type: "text", text: `[Helper: ${name || "anonymous"}${trusted ? " (trusted helper: their agreed changes are merged and published right away, no review)" : ""}. Looking at: ${view || "the site"}]\n\n${text}` }],
     },
   ];
 
@@ -188,10 +191,11 @@ export async function onRequestPost({ request, env, waitUntil }) {
           try {
             if (use.name === "propose_change") {
               if (proposals >= MAX_PROPOSALS_PER_MESSAGE) throw new Error("Proposal limit reached for this message.");
-              out = await proposeChange(gh, use.input, name);
+              out = await proposeChange(gh, use.input, name, !!trusted);
               proposals++;
-              send("proposal", { url: out.url, title: use.input.title });
-              try { await announce(env, name, `proposed a change: ${use.input.title}`, out.url); } catch (e) { /* the room is optional */ }
+              send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
+              const what = out.merged ? `made a change (going live): ${use.input.title}` : `proposed a change: ${use.input.title}`;
+              try { await announce(env, name, what, out.url); } catch (e) { /* the room is optional */ }
             } else {
               out = await runTool(gh, use.name, use.input, request);
             }
@@ -263,7 +267,7 @@ async function runTool(gh, name, input, request) {
   throw new Error("Unknown tool " + name);
 }
 
-async function proposeChange(gh, input, name) {
+async function proposeChange(gh, input, name, trusted) {
   const title = String(input.title || "").trim().slice(0, 120);
   const summary = String(input.summary || "").trim().slice(0, 4000);
   const files = Array.isArray(input.files) ? input.files : [];
@@ -304,8 +308,19 @@ async function proposeChange(gh, input, name) {
     title,
     head: branch,
     base: "main",
-    body: `**Proposed by:** ${who} (through the site chat, drafted with Claude)\n\n${summary}\n\n---\nFiles: ${[...writes.keys()].map((p) => "`" + p + "`").join(", ")}\n\nThe scan runs on this pull request. Nothing changes on the site until Jordan merges it.`,
+    body: `**Proposed by:** ${who} (through the site chat, drafted with Claude)\n\n${summary}\n\n---\nFiles: ${[...writes.keys()].map((p) => "`" + p + "`").join(", ")}\n\n` +
+      (trusted ? `${who} is a trusted helper, so this was merged automatically.` : "The scan runs on this pull request. Nothing changes on the site until Jordan merges it."),
   });
+  if (trusted) {
+    const m = await gh.put(`pulls/${pr.number}/merge`, { merge_method: "squash", commit_title: `${title} (#${pr.number})` });
+    if (m.merged) {
+      try { await gh.del(`git/refs/heads/${branch}`); } catch (e) { /* fine */ }
+      return { url: pr.html_url, number: pr.number, files: [...writes.keys()], merged: true,
+        note: "Merged. The site republishes within a few minutes." };
+    }
+    return { url: pr.html_url, number: pr.number, files: [...writes.keys()], merged: false,
+      note: "Couldn't merge automatically, so it waits for Jordan's review." };
+  }
   return { url: pr.html_url, number: pr.number, files: [...writes.keys()] };
 }
 
@@ -323,11 +338,14 @@ function github(env) {
     const r = await fetch(base + path, { method, headers, body: body ? JSON.stringify(body) : undefined });
     if (r.status === 404) throw new Error("Not found in the repo.");
     if (!r.ok) throw new Error(`GitHub said ${r.status}.`);
+    if (r.status === 204) return {};
     return r.json();
   }
   return {
     get: (p) => call("GET", p),
     post: (p, b) => call("POST", p, b),
+    put: (p, b) => call("PUT", p, b),
+    del: (p) => call("DELETE", p),
     raw: async (path) => {
       const r = await fetch(base + `contents/${encodePath(path)}?ref=main`, { headers: { ...headers, Accept: "application/vnd.github.raw+json" } });
       if (!r.ok) throw new Error(`GitHub said ${r.status}.`);
@@ -346,6 +364,24 @@ async function systemPrompt(gh) {
   cachedSystem = [{ type: "text", text: BASE_RULES + "\n\nProject files for reference:" + docs }];
   cachedAt = Date.now();
   return cachedSystem;
+}
+
+// TRUSTED_HELPERS secret: "Name:key,Name2:key2". Returns the helper's name for a matching key.
+async function trustedHelper(env, key) {
+  if (!env.TRUSTED_HELPERS || !key) return null;
+  const enc = new TextEncoder();
+  const want = new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(key)));
+  for (const pair of String(env.TRUSTED_HELPERS).split(",")) {
+    const i = pair.indexOf(":");
+    if (i < 1) continue;
+    const who = pair.slice(0, i).trim(), k = pair.slice(i + 1).trim();
+    if (!k) continue;
+    const have = new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(k)));
+    let diff = 0;
+    for (let j = 0; j < have.length; j++) diff |= have[j] ^ want[j];
+    if (diff === 0) return who.slice(0, 60);
+  }
+  return null;
 }
 
 async function checkLimits(env, request) {
