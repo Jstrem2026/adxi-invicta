@@ -139,6 +139,9 @@ def main():
     html = html.replace('<button id="rescan"', '<button id="rescan" hidden', 1)
     # Site-only extras that need the Cloudflare functions: the Claude chat (/api/chat)
     # and the shared helpers chat (/api/room). The local app has neither.
+    # Jordan's private review page (needs /api/review and the ADMIN_KEY secret).
+    if os.path.isfile(os.path.join(WEB, "review.html")):
+        shutil.copy2(os.path.join(WEB, "review.html"), os.path.join(out, "review.html"))
     for extra in ("chat", "room"):
         if os.path.isfile(os.path.join(WEB, extra + ".js")):
             html = html.replace("</head>", '<link rel="stylesheet" href="static/%s.css">\n</head>' % extra, 1)

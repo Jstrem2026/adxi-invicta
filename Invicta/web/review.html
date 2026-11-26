@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Review proposals · ADXI: Invicta</title>
+<link rel="stylesheet" href="static/style.css">
+<style>
+  body { overflow-y: auto; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 60px; }
+  .bar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .bar h1 { flex: 1; margin: 0; font-size: 22px; }
+  .muted { color: var(--muted); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+  .card h2 { margin: 0 0 4px; font-size: 17px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .body { white-space: pre-wrap; font-size: 13px; margin: 8px 0; }
+  details { margin: 6px 0; border: 1px solid var(--line); border-radius: 8px; }
+  summary { cursor: pointer; padding: 6px 10px; font-size: 13px; }
+  pre.diff { margin: 0; padding: 8px 10px; overflow-x: auto; font-size: 12px; line-height: 1.45; background: rgba(0,0,0,.25); }
+  .add { color: var(--ok); } .del { color: var(--err); } .hunk { color: var(--dec); }
+  .actions { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+  .actions input { flex: 1; min-width: 200px; font: inherit; color: var(--ink); background: rgba(0,0,0,.25); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; }
+  button { font: inherit; border-radius: 8px; padding: 7px 14px; cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+  button.ok { background: var(--ok); color: #071425; border: 0; font-weight: 600; }
+  button.no { border-color: var(--err); color: var(--err); }
+  button:disabled { opacity: .5; cursor: default; }
+  .login { max-width: 380px; margin: 80px auto; }
+  .login input { width: 100%; font: inherit; color: var(--ink); background: rgba(0,0,0,.25); border: 1px solid var(--line); border-radius: 8px; padding: 9px; margin: 10px 0; box-sizing: border-box; }
+  .msg { padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); margin-bottom: 14px; }
+  .msg.err { border-color: var(--err); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script>
+(function () {
+  "use strict";
+  const KEY = "adxi.adminKey";
+  const app = document.getElementById("app");
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const when = (t) => new Date(t).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+
+  function login(error) {
+    app.innerHTML = `<div class="login card"><h2>Owner review</h2>
+      <p class="muted">Enter your review key (the ADMIN_KEY you set in Cloudflare). It stays in this browser only.</p>
+      ${error ? `<div class="msg err">${esc(error)}</div>` : ""}
+      <form id="f"><input id="k" type="password" autocomplete="current-password" placeholder="Review key"><button class="ok">Open</button></form></div>`;
+    document.getElementById("f").onsubmit = (e) => {
+      e.preventDefault();
+      localStorage.setItem(KEY, document.getElementById("k").value.trim());
+      load();
+    };
+  }
+
+  async function api(method, body) {
+    const r = await fetch("/api/review", {
+      method,
+      headers: { "Content-Type": "application/json", "X-Admin-Key": localStorage.getItem(KEY) || "" },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    const d = await r.json().catch(() => ({}));
+    if (r.status === 403) { localStorage.removeItem(KEY); login("That key didn't work."); throw new Error("auth"); }
+    if (!r.ok) throw new Error(d.error || "Something went wrong.");
+    return d;
+  }
+
+  function diff(patch) {
+    return patch.split("\n").map((l) => {
+      const c = l.startsWith("@@") ? "hunk" : l.startsWith("+") ? "add" : l.startsWith("-") ? "del" : "";
+      return `<span class="${c}">${esc(l)}</span>`;
+    }).join("\n");
+  }
+
+  async function load(flash) {
+    if (!localStorage.getItem(KEY)) return login();
+    app.innerHTML = `<p class="muted">Loading proposals…</p>`;
+    let d;
+    try { d = await api("GET"); } catch (e) { if (e.message !== "auth") app.innerHTML = `<div class="msg err">${esc(e.message)}</div>`; return; }
+    const ps = d.proposals;
+    app.innerHTML = `<div class="bar"><h1>Proposals waiting for you (${ps.length})</h1>
+        <a href="/">Back to the site</a><button id="out">Sign out</button></div>
+      ${flash ? `<div class="msg">${esc(flash)}</div>` : ""}
+      ${ps.length ? "" : `<p class="muted">Nothing waiting. New proposals from the site chat will show up here.</p>`}
+      ${ps.map((p) => `<div class="card" data-n="${p.number}">
+        <h2>${esc(p.title)}</h2>
+        <div class="meta">#${p.number} · by ${esc(p.by)} · ${when(p.created)} · <a href="${esc(p.url)}" target="_blank" rel="noopener">open on GitHub</a></div>
+        <div class="body">${esc(p.body.replace(/\n---[\s\S]*$/, ""))}</div>
+        ${p.files.map((f) => `<details><summary>${esc(f.path)} <span class="add">+${f.additions}</span> <span class="del">-${f.deletions}</span></summary>
+          <pre class="diff">${f.patch ? diff(f.patch) : '<span class="muted">No text changes to show.</span>'}</pre></details>`).join("")}
+        <div class="actions"><input placeholder="Optional note to the helper" maxlength="2000">
+          <button class="ok" data-a="approve">Approve and publish</button><button class="no" data-a="reject">Reject</button></div>
+      </div>`).join("")}`;
+    document.getElementById("out").onclick = () => { localStorage.removeItem(KEY); login(); };
+    app.querySelectorAll("button[data-a]").forEach((b) => {
+      b.onclick = async () => {
+        const card = b.closest(".card");
+        const n = card.dataset.n, action = b.dataset.a;
+        const title = card.querySelector("h2").textContent;
+        if (action === "reject" && !window.confirm(`Reject "${title}"?`)) return;
+        card.querySelectorAll("button").forEach((x) => (x.disabled = true));
+        try {
+          await api("POST", { number: n, action, note: card.querySelector("input").value });
+          load(action === "approve" ? `Approved "${title}". The site updates in a few minutes.` : `Rejected "${title}".`);
+        } catch (e) {
+          if (e.message === "auth") return;
+          card.querySelectorAll("button").forEach((x) => (x.disabled = false));
+          alert(e.message);
+        }
+      };
+    });
+  }
+  load();
+})();
+</script>
+</body>
+</html>
