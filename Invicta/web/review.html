@@ -9,8 +9,8 @@
 <style>
   body { overflow-y: auto; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 60px; }
-  .bar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-  .bar h1 { flex: 1; margin: 0; font-size: 22px; }
+  .rbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .rbar h1 { flex: 1; margin: 0; font-size: 22px; }
   .muted { color: var(--muted); }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
   .card h2 { margin: 0 0 4px; font-size: 17px; }
@@ -80,7 +80,7 @@
     let d;
     try { d = await api("GET"); } catch (e) { if (e.message !== "auth") app.innerHTML = `<div class="msg err">${esc(e.message)}</div>`; return; }
     const ps = d.proposals;
-    app.innerHTML = `<div class="bar"><h1>Proposals waiting for you (${ps.length})</h1>
+    app.innerHTML = `<div class="rbar"><h1>Proposals waiting for you (${ps.length})</h1>
         <a href="/">Back to the site</a><button id="out">Sign out</button></div>
       ${flash ? `<div class="msg">${esc(flash)}</div>` : ""}
       ${ps.length ? "" : `<p class="muted">Nothing waiting. New proposals from the site chat will show up here.</p>`}
