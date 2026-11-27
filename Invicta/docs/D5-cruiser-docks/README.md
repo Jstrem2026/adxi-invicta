@@ -1,6 +1,6 @@
 # Deck 5 · Cruiser Docks
 
-Status: proposed · data: `Invicta/data/decks/D5/cruiser-docks.json` · design doc: `Game/Docs/Cruiser_Docks_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/cruiser-docks.json` · design doc: `Game/Docs/Cruiser_Docks_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
