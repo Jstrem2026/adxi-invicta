@@ -607,12 +607,12 @@ function districtView(id) {
       g += `<path class="hit" onclick="go('#/precinct/${p.uid}')" d="${pathOf(p.shape_km)}" fill="${p.status === "canon" ? "#2a6a4a" : "#1f5f99"}" fill-opacity=".85" stroke="#e8f1fb" stroke-width="${fs / 6}"><title>${p.id} ${esc(p.name)}</title></path>`;
       for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
       // Every building in the precinct, so the district view shows what is designed: bright = height and plan stored, dim = footprint only.
-      for (const st of p.streets || []) if (st.rect_km) { const r = st.rect_km; g += `<rect x="${X(r[0])}" y="${Y(r[2])}" width="${(r[1] - r[0]) * 1000}" height="${(r[3] - r[2]) * 1000}" fill="#0b2140" fill-opacity=".7" pointer-events="none"/>`; }
+      for (const st of p.streets || []) if (st.rect_km) { g += rectEl(st.rect_km, `fill="#0b2140" fill-opacity=".7" pointer-events="none"`); }
       for (const bd of p.buildings || []) {
         const done = bd.height_m != null, open = ["plaza", "park"].includes(bd.kind) || /open/i.test(bd.open_ground || "");
         const fill = open ? "#2f6b45" : done ? "#cfe3f7" : "#5a7a99", op = open ? 0.55 : done ? 0.8 : 0.5;
         for (const r of bd.bays_km || (bd.rect_km ? [bd.rect_km] : [])) {
-          g += `<rect class="hit" onclick="event.stopPropagation();go('#/building/${bd.uid}')" x="${X(r[0])}" y="${Y(r[2])}" width="${(r[1] - r[0]) * 1000}" height="${(r[3] - r[2]) * 1000}" fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"><title>${esc(designation(bd))} ${esc(bd.name)}${done ? ` · ${esc(len(bd.height_m))} tall` : open ? " · open ground" : " · footprint only"}</title></rect>`;
+          g += rectEl(r, `class="hit" onclick="event.stopPropagation();go('#/building/${bd.uid}')" fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`).replace("/>", `><title>${esc(designation(bd))} ${esc(bd.name)}${done ? ` · ${esc(len(bd.height_m))} tall` : open ? " · open ground" : " · footprint only"}</title></rect>`);
         }
         const r = bd.rect_km;
         if (r && !bd.bays_km) {
