@@ -164,7 +164,7 @@
     try {
       const r = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem(KEY_HELPER) || "" },
+        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem(KEY_HELPER) || localStorage.getItem("adxi.adminKey") || "" },
         body: JSON.stringify({ messages: history, text, name: localStorage.getItem(KEY_NAME) || "", view: location.hash }),
       });
       if (!r.ok || !r.body) {

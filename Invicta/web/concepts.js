@@ -46,7 +46,7 @@
         if (name) localStorage.setItem("adxi.name", name);
         const r = await fetch("/api/concept", {
           method: "POST",
-          headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "" },
+          headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || localStorage.getItem("adxi.adminKey") || "" },
           body: JSON.stringify({ uid, label, title: form.querySelector(".t").value.trim(), name, image: await shrink(file) }),
         });
         const d = await r.json().catch(() => ({}));
