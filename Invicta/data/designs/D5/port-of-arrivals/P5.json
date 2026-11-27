@@ -1,0 +1,2099 @@
+{
+  "about": "P5 Terminals building designs, one per building, written 27 Nov 2026 (proposed). Front row (P5-01 to P5-05) sits between the Dock Road (low y) and the Terminal Road (high y, the landside kerb). Back row sits between the Terminal Road (low y) and the Concourse Road (high y). Coordinates in metres from each lot's bow-port corner.",
+  "buildings": [
+    {
+      "id": "P5-01",
+      "name": "Transfer Hall",
+      "levels": [
+        [
+          "LB1",
+          "Lift and baggage level",
+          -6,
+          6
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Level 2",
+          8,
+          7
+        ],
+        [
+          "L3",
+          "Hall upper",
+          15,
+          7
+        ],
+        [
+          "L4",
+          "Dome",
+          22,
+          10
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Great hall",
+          "x": 300,
+          "y": 160,
+          "w": 300,
+          "d": 300,
+          "layout": "hall",
+          "room": "Great transfer hall (domed)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Bow arm",
+          "x": 60,
+          "y": 250,
+          "w": 240,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 16,
+          "cores": 2,
+          "corridor_name": "Arm concourse",
+          "rooms": {
+            "L1": [
+              [
+                "Deck transfer desks",
+                3000
+              ],
+              [
+                "Ticketing",
+                2500
+              ],
+              [
+                "Waiting lounge",
+                4000
+              ],
+              [
+                "Shops",
+                300,
+                6
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Food court",
+                6000
+              ],
+              [
+                "Quiet lounge",
+                3000
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Stern arm",
+          "x": 600,
+          "y": 250,
+          "w": 240,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 16,
+          "cores": 2,
+          "corridor_name": "Arm concourse",
+          "rooms": {
+            "L1": [
+              [
+                "Shuttle booking hall",
+                4000
+              ],
+              [
+                "Baggage transfer desk",
+                2000
+              ],
+              [
+                "Waiting lounge",
+                4000
+              ],
+              [
+                "Cafés",
+                400,
+                4
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Business lounge",
+                5000
+              ],
+              [
+                "Family lounge",
+                2500
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Port arm (to the gates)",
+          "x": 390,
+          "y": 40,
+          "w": 120,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 12,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Arrivals link from P2",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Staff offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Kerb arm",
+          "x": 390,
+          "y": 460,
+          "w": 120,
+          "d": 110,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 12,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Kerb entrance hall",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Lounges",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Lift and baggage level",
+          "x": 300,
+          "y": 160,
+          "w": 300,
+          "d": 300,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Deck lift lobby",
+            "Baggage transfer belts",
+            "Service road"
+          ],
+          "levels": [
+            "LB1"
+          ]
+        },
+        {
+          "name": "Corner garden (bow-port)",
+          "x": 60,
+          "y": 40,
+          "w": 300,
+          "d": 190,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Corner garden (stern-port)",
+          "x": 540,
+          "y": 40,
+          "w": 300,
+          "d": 190,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Kerb and drop-off",
+          "x": 0,
+          "y": 580,
+          "w": 900,
+          "d": 40,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Kerb entrance",
+          [
+            430,
+            570
+          ],
+          [
+            470,
+            570
+          ]
+        ],
+        [
+          "Gates link",
+          [
+            430,
+            40
+          ],
+          [
+            470,
+            40
+          ]
+        ]
+      ],
+      "structure": "A steel lattice dome, 32 m (105 ft) high and 300 m (984 ft) across, on a concrete ring; concrete arms around it.",
+      "look": "A cross-shaped terminal with a great shallow dome of triangulated glass and titanium at its centre, glowing amber at night like a beacon for travellers from other decks; the four arms are low and dark.",
+      "entrances": "Kerb entrance from the Terminal Road; link from the arrival gates on the port side; deck lifts below the dome.",
+      "capacity": "About 12,000 transfer travellers an hour.",
+      "services": "Deck lifts under the dome, baggage transfer belts, 6 stair and lift cores.",
+      "interior": "A domed great hall at the crossing of four arms: deck transfer desks, ticketing and lounges in the bow arm, shuttle booking and baggage transfer in the stern arm, the link to the gates on the port side and the kerb hall on the landside. Food court and business lounges upstairs; deck lifts and baggage belts below."
+    },
+    {
+      "id": "P5-02",
+      "name": "Arrivals Terminal",
+      "levels": [
+        [
+          "LB1",
+          "Baggage level",
+          -6,
+          6
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          9
+        ],
+        [
+          "L2",
+          "Mezzanine",
+          9,
+          6
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Arrivals walkway (from the gates)",
+          "x": 60,
+          "y": 20,
+          "w": 760,
+          "d": 30,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Immigration hall",
+          "x": 60,
+          "y": 60,
+          "w": 760,
+          "d": 170,
+          "layout": "bays",
+          "bays": 4,
+          "bay_names": [
+            "Passport control (ship citizens)",
+            "Passport control (visitors)",
+            "Automated gates",
+            "Secondary checks"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Reclaim and customs",
+          "x": 60,
+          "y": 240,
+          "w": 760,
+          "d": 180,
+          "layout": "bays",
+          "bays": 5,
+          "bay_names": [
+            "Reclaim belts 1–4",
+            "Reclaim belts 5–8",
+            "Oversize and lost luggage",
+            "Customs green channel",
+            "Customs red channel"
+          ],
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Arrivals meeting hall",
+          "x": 60,
+          "y": 430,
+          "w": 760,
+          "d": 130,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 20,
+          "cores": 3,
+          "corridor_name": "Meeting hall",
+          "rooms": {
+            "L1": [
+              [
+                "Meeting point",
+                4000
+              ],
+              [
+                "Welcome desks",
+                1500
+              ],
+              [
+                "Pod and taxi desks",
+                1500
+              ],
+              [
+                "Currency exchange",
+                400
+              ],
+              [
+                "Shops",
+                300,
+                8
+              ],
+              [
+                "Cafés",
+                500,
+                4
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Arrivals lounge",
+                5000
+              ],
+              [
+                "Showers",
+                800
+              ],
+              [
+                "Hotel booking",
+                600
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Reclaim feed level",
+          "x": 60,
+          "y": 240,
+          "w": 760,
+          "d": 180,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Bag feed belts",
+            "Baggage tunnel (from P4)"
+          ],
+          "levels": [
+            "LB1"
+          ]
+        },
+        {
+          "name": "Arrivals kerb",
+          "x": 0,
+          "y": 580,
+          "w": 880,
+          "d": 60,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Kerb doors",
+          [
+            400,
+            560
+          ],
+          [
+            480,
+            560
+          ]
+        ]
+      ],
+      "structure": "Steel roof on tree columns on a 36 m grid, 15 m (49 ft) clear, over a concrete baggage level.",
+      "look": "A long, calm terminal under a rippling white roof held up by branching steel columns; glass walls along the kerb, warm timber ceilings and a lit wall of welcome messages in many languages.",
+      "entrances": "Arrivals walk in from the gates on the port side; exits to the arrivals kerb on the Terminal Road.",
+      "capacity": "About 6,000 arrivals an hour; 8 reclaim belts.",
+      "services": "Baggage by tunnel from P4, 3 stair and lift cores.",
+      "interior": "Three halls in sequence from the gates to the kerb: immigration (passport control, automated gates, secondary checks), reclaim and customs, and the arrivals meeting hall with welcome desks, pod and taxi desks, shops and cafés, and an arrivals lounge upstairs."
+    },
+    {
+      "id": "P5-03",
+      "name": "Departures Terminal",
+      "levels": [
+        [
+          "LB1",
+          "Baggage level",
+          -6,
+          6
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Departures level",
+          8,
+          8
+        ],
+        [
+          "L3",
+          "Lounge level",
+          16,
+          6
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Departure lounges",
+          "x": 60,
+          "y": 30,
+          "w": 760,
+          "d": 200,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 24,
+          "cores": 3,
+          "corridor_name": "Departures street",
+          "rooms": {
+            "L1": [
+              [
+                "Gate lounges",
+                2500,
+                8
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Duty-free shops",
+                6000
+              ],
+              [
+                "Restaurants",
+                800,
+                6
+              ],
+              [
+                "Shops",
+                300,
+                10
+              ],
+              [
+                "Children's play area",
+                1500
+              ],
+              [
+                "Seating",
+                "rest"
+              ]
+            ],
+            "L3": [
+              [
+                "First-class lounge",
+                5000
+              ],
+              [
+                "Business lounge",
+                6000
+              ],
+              [
+                "Quiet lounge",
+                3000
+              ],
+              [
+                "Spa",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Security hall",
+          "x": 60,
+          "y": 250,
+          "w": 760,
+          "d": 150,
+          "layout": "bays",
+          "bays": 6,
+          "bay_names": [
+            "Security lanes 1–8",
+            "Security lanes 9–16",
+            "Fast-track security",
+            "Passport exit control",
+            "Passport exit control",
+            "Staff security"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Check-in hall",
+          "x": 60,
+          "y": 410,
+          "w": 760,
+          "d": 160,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 30,
+          "cores": 2,
+          "corridor_name": "Check-in hall",
+          "rooms": {
+            "L1": [
+              [
+                "Check-in islands",
+                3000,
+                6
+              ],
+              [
+                "Bag drop",
+                2000
+              ],
+              [
+                "Ticket desks",
+                1500
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Viewing gallery",
+                4000
+              ],
+              [
+                "Cafés",
+                500,
+                4
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Baggage make-up",
+          "x": 60,
+          "y": 250,
+          "w": 760,
+          "d": 320,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Bag make-up hall",
+            "Baggage tunnel (to P4)"
+          ],
+          "levels": [
+            "LB1"
+          ]
+        },
+        {
+          "name": "Departures kerb",
+          "x": 0,
+          "y": 580,
+          "w": 880,
+          "d": 60,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Kerb doors",
+          [
+            400,
+            570
+          ],
+          [
+            480,
+            570
+          ]
+        ]
+      ],
+      "structure": "Long-span steel wave roof, 22 m (72 ft) high over the check-in hall, on a concrete departures deck.",
+      "look": "A soaring wave-shaped roof that rises over the check-in hall and dips toward the gates, clad in titanium with a sawtooth of rooflights; the kerb front is a 760 m (2,493 ft) glass wall.",
+      "entrances": "Departures kerb on the Terminal Road; travellers leave toward the gates on the port side.",
+      "capacity": "About 6,000 departing travellers an hour; 16 security lanes.",
+      "services": "Baggage tunnel to P4, 5 stair and lift cores.",
+      "interior": "From the kerb to the gates: a check-in hall with six check-in islands and bag drop, a security and passport exit hall, and the departure lounges with gate lounges, a departures street of duty-free shops and restaurants, and first-class, business and quiet lounges on the top level."
+    },
+    {
+      "id": "P5-04",
+      "name": "Cargo Customs",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          10
+        ],
+        [
+          "L2",
+          "Level 2",
+          10,
+          4.5
+        ],
+        [
+          "L3",
+          "Level 3",
+          14.5,
+          4.5
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Truck queue (Dock Road side)",
+          "x": 40,
+          "y": 20,
+          "w": 800,
+          "d": 80,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Inspection shed",
+          "x": 40,
+          "y": 110,
+          "w": 560,
+          "d": 320,
+          "layout": "bays",
+          "bays": 8,
+          "bay_name": "Inspection lane",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Scanner hall",
+          "x": 620,
+          "y": 110,
+          "w": 220,
+          "d": 320,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Container X-ray portal",
+            "Radiation and sniffer portal"
+          ],
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Customs office block",
+          "x": 40,
+          "y": 450,
+          "w": 800,
+          "d": 50,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Declarations hall",
+                4000
+              ],
+              [
+                "Brokers' counters",
+                2000
+              ],
+              [
+                "Sample lab",
+                1500
+              ],
+              [
+                "Seized goods vault",
+                1500
+              ],
+              [
+                "Detector dog unit",
+                800
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Customs offices",
+                8000
+              ],
+              [
+                "Risk and targeting room",
+                1500
+              ],
+              [
+                "Meeting rooms",
+                100,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Released cargo yard",
+          "x": 40,
+          "y": 510,
+          "w": 800,
+          "d": 100,
+          "layout": "outdoor"
+        }
+      ],
+      "structure": "Steel portal frames, 10 m (33 ft) clear, over the inspection lanes; shielded concrete scanner hall.",
+      "look": "A long low inspection shed in customs-blue metal with numbered lanes lit above each door, a heavy concrete scanner hall at one end and a three-storey office block along the landside.",
+      "entrances": "Trucks queue from the Dock Road side and leave released into the cargo yard; brokers and staff enter the office block from the Terminal Road.",
+      "capacity": "8 inspection lanes and 2 scanners; about 400 trucks a day; 500 staff.",
+      "services": "Container X-ray, radiation portals, detector dogs, 3 stair cores.",
+      "interior": "A truck queue, an eight-lane inspection shed, a scanner hall with a container X-ray and a radiation portal, and an office block with declarations hall, brokers' counters, sample lab, seized goods vault and customs offices."
+    },
+    {
+      "id": "P5-05",
+      "name": "Terminals Private Flights Lounge",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          4.5
+        ],
+        [
+          "L3",
+          "Roof terrace",
+          10.5,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Garden court",
+          "x": 60,
+          "y": 40,
+          "w": 280,
+          "d": 220,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Lounge house",
+          "x": 60,
+          "y": 270,
+          "w": 280,
+          "d": 60,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 6,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Private check-in",
+                1200
+              ],
+              [
+                "Private customs",
+                1000
+              ],
+              [
+                "Main lounge",
+                4000
+              ],
+              [
+                "Dining room",
+                2500
+              ],
+              [
+                "Kitchen",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Private suites",
+                120,
+                10
+              ],
+              [
+                "Spa",
+                1500
+              ],
+              [
+                "Staff",
+                "rest"
+              ]
+            ],
+            "L3": [
+              [
+                "Roof bar",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Car court",
+          "x": 60,
+          "y": 340,
+          "w": 280,
+          "d": 220,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Valet kerb",
+          "x": 0,
+          "y": 570,
+          "w": 400,
+          "d": 50,
+          "layout": "outdoor"
+        }
+      ],
+      "structure": "Steel frame with stone cladding; timber roof terrace.",
+      "look": "A long low house of honey-coloured stone and bronze-framed glass between a garden court and a car court, with a roof bar under a light canopy.",
+      "entrances": "Valet kerb on the Terminal Road; private transfer to the Stern Docks private berths.",
+      "capacity": "About 200 guests at a time.",
+      "services": "Private customs, valet, 2 stair and lift cores.",
+      "interior": "Private check-in and customs, main lounge and dining room on the ground floor, private suites and spa above, a roof bar on top, with a garden court on one side and a car court on the other."
+    },
+    {
+      "id": "P5-06",
+      "name": "Travel Office",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Ticket hall",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "d": 60,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 8,
+          "cores": 2,
+          "corridor_name": "Arcade",
+          "rooms": {
+            "L1": [
+              [
+                "Ticket counters",
+                2500
+              ],
+              [
+                "Travel information",
+                1500
+              ],
+              [
+                "Self-service kiosks",
+                800
+              ],
+              [
+                "Café",
+                800
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Booking offices",
+                4000
+              ],
+              [
+                "Call centre",
+                3000
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden",
+          "x": 60,
+          "y": 130,
+          "w": 280,
+          "d": 200,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Street front",
+          "x": 60,
+          "y": 0,
+          "w": 280,
+          "d": 50,
+          "layout": "outdoor"
+        }
+      ],
+      "structure": "Concrete frame with a glass arcade roof.",
+      "look": "A three-storey block of cream panels with a glass-roofed arcade running through it and big departure boards visible from the street.",
+      "entrances": "Arcade entrances from the Terminal Road and from the garden.",
+      "capacity": "About 3,000 visitors a day; 400 staff including the call centre.",
+      "services": "2 stair and lift cores.",
+      "interior": "A ticket hall with ticket counters, travel information and kiosks along an arcade, with booking offices and a call centre on the upper floors."
+    },
+    {
+      "id": "P5-07",
+      "name": "Terminals Pod Depot",
+      "levels": [
+        [
+          "L1",
+          "Ground deck",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Deck 2",
+          4.5,
+          4
+        ],
+        [
+          "L3",
+          "Deck 3",
+          8.5,
+          4
+        ],
+        [
+          "L4",
+          "Deck 4",
+          12.5,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Pod decks",
+          "x": 40,
+          "y": 40,
+          "w": 370,
+          "d": 420,
+          "layout": "bays",
+          "bays": 4,
+          "bay_name": "Pod parking and charging",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Dispatch",
+          "x": 40,
+          "y": 470,
+          "w": 370,
+          "d": 40,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Pod dispatch desk",
+                1000
+              ],
+              [
+                "Drivers' room",
+                1500
+              ],
+              [
+                "Pod wash",
+                4000
+              ],
+              [
+                "Battery swap",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Pod lanes",
+          "x": 0,
+          "y": 520,
+          "w": 450,
+          "d": 60,
+          "layout": "outdoor"
+        }
+      ],
+      "structure": "Post-tensioned concrete parking decks.",
+      "look": "A four-deck pod garage with angled gunmetal screens and green charging lights.",
+      "entrances": "Pod lanes on the Concourse Road side.",
+      "capacity": "About 2,000 pods.",
+      "services": "Charging at every space, pod wash, battery swap.",
+      "interior": "Four decks of pod parking and charging and a dispatch strip with pod wash and battery swap."
+    },
+    {
+      "id": "P5-08",
+      "name": "Customs & Border Hq",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4
+        ],
+        [
+          "L4",
+          "Level 4",
+          13,
+          4
+        ],
+        [
+          "L5",
+          "Level 5",
+          17,
+          4
+        ],
+        [
+          "L6",
+          "Level 6",
+          21,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Bow block",
+          "x": 80,
+          "y": 60,
+          "w": 46,
+          "d": 430,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Border police station",
+                4000
+              ],
+              [
+                "Custody suite",
+                2000
+              ],
+              [
+                "Vehicle bay",
+                "rest"
+              ]
+            ],
+            "L2-L6": [
+              [
+                "Border police offices",
+                "rest"
+              ],
+              [
+                "Briefing rooms",
+                150,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Stern block",
+          "x": 534,
+          "y": 60,
+          "w": 46,
+          "d": 430,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Customs intelligence",
+                3000
+              ],
+              [
+                "Evidence store",
+                2000
+              ],
+              [
+                "Labs",
+                "rest"
+              ]
+            ],
+            "L2-L6": [
+              [
+                "Customs offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                100,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Link block",
+          "x": 126,
+          "y": 250,
+          "w": 408,
+          "d": 50,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 6,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Entrance hall",
+                3000
+              ],
+              [
+                "Public enquiries",
+                2000
+              ],
+              [
+                "Café",
+                1000
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Joint operations centre",
+                6000
+              ],
+              [
+                "Comms room",
+                "rest"
+              ]
+            ],
+            "L3-L4": [
+              [
+                "Command offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Front court",
+          "x": 126,
+          "y": 310,
+          "w": 408,
+          "d": 180,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Secure court",
+          "x": 126,
+          "y": 60,
+          "w": 408,
+          "d": 180,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            320,
+            300
+          ],
+          [
+            340,
+            300
+          ]
+        ]
+      ],
+      "structure": "Concrete frame with blast-resistant facades on a 9 m grid.",
+      "look": "An H-shaped six-storey headquarters in dark granite-coloured panels with deep narrow windows, the link block glowing behind a glass front with the border service crest.",
+      "entrances": "Main entrance from the front court on the Concourse Road side; secure vehicle access through the secure court.",
+      "capacity": "About 2,500 staff.",
+      "services": "5 stair and lift cores, joint operations centre, custody suite, backup power.",
+      "interior": "Two six-storey blocks joined by a link: border police station and custody suite in the bow block, customs intelligence and labs in the stern block, the entrance hall and public enquiries in the link, with the joint operations centre above it. Offices on the upper floors; a front court and a secure court."
+    },
+    {
+      "id": "P5-10",
+      "name": "Licensing & Permits",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          4
+        ],
+        [
+          "L3",
+          "Level 3",
+          10,
+          4
+        ],
+        [
+          "L4",
+          "Level 4",
+          14,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Public service hall",
+          "x": 160,
+          "y": 330,
+          "w": 340,
+          "d": 120,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 16,
+          "cores": 2,
+          "corridor_name": "Service hall",
+          "rooms": {
+            "L1": [
+              [
+                "Ticket and queue area",
+                4000
+              ],
+              [
+                "Service counters",
+                40,
+                30
+              ],
+              [
+                "Interview rooms",
+                20,
+                10
+              ],
+              [
+                "Cashier",
+                400
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring north",
+          "x": 100,
+          "y": 80,
+          "w": 460,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Flight permits office",
+                "rest"
+              ]
+            ],
+            "L2-L4": [
+              [
+                "Licensing offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring bow",
+          "x": 100,
+          "y": 120,
+          "w": 40,
+          "d": 200,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 3,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Cargo permits office",
+                "rest"
+              ]
+            ],
+            "L2-L4": [
+              [
+                "Licensing offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring stern",
+          "x": 520,
+          "y": 120,
+          "w": 40,
+          "d": 200,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 3,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Travel permits office",
+                "rest"
+              ]
+            ],
+            "L2-L4": [
+              [
+                "Licensing offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Courtyard",
+          "x": 140,
+          "y": 120,
+          "w": 380,
+          "d": 200,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Entrance plaza",
+          "x": 100,
+          "y": 460,
+          "w": 460,
+          "d": 80,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Public entrance",
+          [
+            320,
+            450
+          ],
+          [
+            340,
+            450
+          ]
+        ]
+      ],
+      "structure": "Concrete frame round a courtyard; a long-span timber roof over the public service hall.",
+      "look": "A four-storey ring of pale terracotta-coloured panels around a courtyard, fronted by a single-storey public hall with a sweeping timber roof and a clear queue display wall.",
+      "entrances": "Public entrance from the plaza on the Concourse Road side.",
+      "capacity": "About 5,000 visitors a day; 900 staff.",
+      "services": "4 stair and lift cores, online queue system.",
+      "interior": "A public service hall with queue area, 30 service counters, interview rooms and cashier; behind it a ring of offices round a courtyard, with the flight, cargo and travel permit offices on the ground floor and licensing offices above."
+    },
+    {
+      "id": "P5-11",
+      "name": "Terminal Admin",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Podium",
+          6,
+          5
+        ],
+        [
+          "L3",
+          "Tower",
+          11,
+          4
+        ],
+        [
+          "L4",
+          "Tower",
+          15,
+          4
+        ],
+        [
+          "L5",
+          "Tower",
+          19,
+          4
+        ],
+        [
+          "L6",
+          "Tower",
+          23,
+          4
+        ],
+        [
+          "L7",
+          "Tower",
+          27,
+          4
+        ],
+        [
+          "L8",
+          "Tower",
+          31,
+          4
+        ],
+        [
+          "L9",
+          "Tower",
+          35,
+          4
+        ],
+        [
+          "L10",
+          "Tower",
+          39,
+          4
+        ],
+        [
+          "L11",
+          "Tower",
+          43,
+          4
+        ],
+        [
+          "L12",
+          "Board floor",
+          47,
+          5
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Podium",
+          "x": 60,
+          "y": 60,
+          "w": 320,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 10,
+          "cores": 2,
+          "corridor_name": "Atrium",
+          "rooms": {
+            "L1": [
+              [
+                "Port authority reception",
+                3000
+              ],
+              [
+                "Exhibition hall",
+                4000
+              ],
+              [
+                "Café",
+                1500
+              ],
+              [
+                "Mail room",
+                800
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Conference hall",
+                6000
+              ],
+              [
+                "Meeting rooms",
+                120,
+                8
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Port authority tower",
+          "x": 160,
+          "y": 80,
+          "w": 120,
+          "d": 50,
+          "levels": [
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L8",
+            "L9",
+            "L10",
+            "L11",
+            "L12"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L3-L11": [
+              [
+                "Port authority offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                80,
+                3
+              ]
+            ],
+            "L12": [
+              [
+                "Board room",
+                800
+              ],
+              [
+                "Executive offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Authority garden",
+          "x": 60,
+          "y": 200,
+          "w": 320,
+          "d": 260,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            210,
+            180
+          ],
+          [
+            230,
+            180
+          ]
+        ]
+      ],
+      "structure": "Concrete core and steel frame tower on a two-storey podium.",
+      "look": "A slim 12-storey tower of pale glass with vertical bronze ribs rising from a stone podium, its top floor ringed with a gold light band; the port authority seal over the entrance.",
+      "entrances": "Main entrance from the garden side; podium entrance from the Terminal Road.",
+      "capacity": "About 1,300 port authority staff.",
+      "services": "4 stair and lift cores, conference hall.",
+      "interior": "A podium with the port authority reception, an exhibition hall and a conference hall, and a ten-storey office tower above with the board room and executive offices on top."
+    },
+    {
+      "id": "P5-12",
+      "name": "Terminals Utility Plant",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Upper plant",
+          8,
+          6
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Plant house",
+          "x": 20,
+          "y": 20,
+          "w": 160,
+          "d": 160,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 6,
+          "rooms": {
+            "L1": [
+              [
+                "Transformer bays",
+                500,
+                6
+              ],
+              [
+                "Switch room",
+                3000
+              ],
+              [
+                "Control room",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Air handling",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Chiller hall",
+          "x": 20,
+          "y": 200,
+          "w": 160,
+          "d": 110,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Chiller hall",
+            "Water pumps"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "structure": "Concrete plant house; steel chiller hall.",
+      "look": "A plain graphite plant house with louvred walls.",
+      "entrances": "Service doors on the Terminal Road side.",
+      "capacity": "Power, cooling and water for P5; about 25 staff per shift.",
+      "services": "Six transformers, air handling, chillers and water pumps.",
+      "interior": "A plant house with transformer bays, switch and control rooms and air handling, and a chiller and pump hall."
+    },
+    {
+      "id": "P5-13",
+      "name": "Terminals Service Shaft",
+      "levels": [
+        [
+          "LB1",
+          "Shaft head",
+          -10,
+          10
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          7
+        ],
+        [
+          "L2",
+          "Lift machine level",
+          7,
+          6
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Control house",
+          "x": 20,
+          "y": 30,
+          "w": 100,
+          "d": 30,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Shaft control room",
+                700
+              ],
+              [
+                "Crew room",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Shaft hall",
+          "x": 20,
+          "y": 70,
+          "w": 100,
+          "d": 260,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Vehicle lift",
+            "Goods lift hall",
+            "Baggage lift"
+          ],
+          "levels": [
+            "LB1",
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Vehicle queue",
+          "x": 20,
+          "y": 340,
+          "w": 100,
+          "d": 230,
+          "layout": "outdoor"
+        }
+      ],
+      "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house.",
+      "look": "A narrow graphite head house with yellow-striped lift doors.",
+      "entrances": "Vehicle queue on the Concourse Road side; staff door into the control house.",
+      "capacity": "A vehicle lift, a goods lift and a baggage lift.",
+      "services": "Lift machinery and shaft ventilation.",
+      "interior": "A control house and a shaft hall with vehicle, goods and baggage lifts down to the service layer."
+    },
+    {
+      "id": "P5-14",
+      "name": "Medical Centre",
+      "levels": [
+        [
+          "LB1",
+          "Service level",
+          -5,
+          5
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4.5
+        ],
+        [
+          "L3",
+          "Ward tower",
+          9.5,
+          4
+        ],
+        [
+          "L4",
+          "Ward tower",
+          13.5,
+          4
+        ],
+        [
+          "L5",
+          "Ward tower",
+          17.5,
+          4
+        ],
+        [
+          "L6",
+          "Ward tower",
+          21.5,
+          4
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Clinic podium",
+          "x": 50,
+          "y": 60,
+          "w": 300,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Emergency department",
+                6000
+              ],
+              [
+                "First aid",
+                1500
+              ],
+              [
+                "Imaging",
+                3000
+              ],
+              [
+                "Pharmacy",
+                800
+              ],
+              [
+                "Waiting",
+                2000
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Operating theatres",
+                400,
+                4
+              ],
+              [
+                "Recovery",
+                1500
+              ],
+              [
+                "Outpatient clinics",
+                40,
+                20
+              ],
+              [
+                "Lab",
+                1200
+              ],
+              [
+                "Staff",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ward tower",
+          "x": 100,
+          "y": 80,
+          "w": 200,
+          "d": 22,
+          "levels": [
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "rooms": {
+            "all": [
+              [
+                "Patient room",
+                24,
+                30
+              ],
+              [
+                "Nurses' station",
+                60
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Service level",
+          "x": 50,
+          "y": 60,
+          "w": 300,
+          "d": 120,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Central stores",
+            "Plant rooms",
+            "Morgue"
+          ],
+          "levels": [
+            "LB1"
+          ]
+        },
+        {
+          "name": "Ambulance court",
+          "x": 50,
+          "y": 190,
+          "w": 300,
+          "d": 70,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Healing garden",
+          "x": 50,
+          "y": 270,
+          "w": 300,
+          "d": 180,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Emergency entrance",
+          [
+            190,
+            180
+          ],
+          [
+            210,
+            180
+          ]
+        ]
+      ],
+      "structure": "Concrete frame on a 9 m grid with a four-storey ward slab on the clinic podium.",
+      "look": "A white clinic podium with a slim ward slab above it, its windows shaded by pale vertical fins; a red-and-white lit emergency canopy facing the ambulance court.",
+      "entrances": "Emergency entrance from the ambulance court; outpatient entrance from the Terminal Road.",
+      "capacity": "About 120 beds and 4 operating theatres.",
+      "services": "4 stair and lift cores, bed lifts, medical gases, backup power.",
+      "interior": "A two-storey clinic podium with the emergency department, first aid, imaging and pharmacy below and operating theatres, outpatient clinics and lab above; a four-storey ward slab on top; stores, plant and morgue below deck; an ambulance court and a healing garden."
+    }
+  ]
+}
