@@ -1,6 +1,6 @@
-# Cruiser Docks — Precinct Plans (⏳ proposed, 27 Nov 2026, awaiting Jordan)
+# Cruiser Docks — Precinct Plans (✅ canon, approved by Jordan)
 
-Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Cruiser Docks is the starboard half of Deck 5's middle, F34 to F55, from the Keelway to the starboard hull. Canon (Sheet S5, errata C5, Q115): 23.2 sq mi (60.0 km²), berths for the six 2 km escort cruisers (6,562 × 1,378 × 984 ft / 2,000 × 420 × 300 m), three Aerion Cruiser Gates in the starboard hull at F38–F48, 30,000 people (dockworkers, cruiser crews, loaders, inspectors), centre address D5-F43-T, cross-line stop Dockside at F52, 3.2 mi (5.1 km) to starboard. Aerion and Ferrum share fleet logistics (fuel, ammunition, stores, parts). The Atrium Plaza (canon) cuts the stern-port corner. Everything here is a proposal unless marked canon. Plans are true top views: **bow right, port up**.
+Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Cruiser Docks is the starboard half of Deck 5's middle, F34 to F55, from the Keelway to the starboard hull. Canon (Sheet S5, errata C5, Q115): 23.2 sq mi (60.0 km²), berths for the six 2 km escort cruisers (6,562 × 1,378 × 984 ft / 2,000 × 420 × 300 m), three Aerion Cruiser Gates in the starboard hull at F38–F48, 30,000 people (dockworkers, cruiser crews, loaders, inspectors), centre address D5-F43-T, cross-line stop Dockside at F52, 3.2 mi (5.1 km) to starboard. Aerion and Ferrum share fleet logistics (fuel, ammunition, stores, parts). The Atrium Plaza (canon) cuts the stern-port corner. Jordan approved this plan as canon. Plans are true top views: **bow right, port up**.
 
 Layout rule: the berths sit against the hull behind their gates, stores at the bow end, repairs at the stern end, freight and the fleet offices along the Keelway. Proposed: each gate is 3,281 ft (1,000 m) wide and opens onto two berths side by side, so cruisers come in nose first across the beam.
 
@@ -23,7 +23,7 @@ Total 23.12 sq mi (59.89 km²).
 
 ## P1 · Cruiser Gates — F38 to F48, lanes T–Y
 
-16,404 × 9,262 ft (5.00 × 2.82 km), 5.45 sq mi (14.12 km²). The three canon Cruiser Gates in the starboard hull and the six berths behind them, with supply quays between the gates. Status: proposed.
+16,404 × 9,262 ft (5.00 × 2.82 km), 5.45 sq mi (14.12 km²). The three canon Cruiser Gates in the starboard hull and the six berths behind them, with supply quays between the gates. Status: canon.
 
 Streets: Quay Road, 131 ft (40 m); F41 Street, 98 ft (30 m); F45 Street, 98 ft (30 m).
 
@@ -63,7 +63,7 @@ Streets: Quay Road, 131 ft (40 m); F41 Street, 98 ft (30 m); F45 Street, 98 ft (
 
 ## P2 · Fleet Stores — F34 to F38, lanes T–Y
 
-6,824 × 9,262 ft (2.08 × 2.82 km), 2.20 sq mi (5.69 km²). Fuel, ammunition, stores and repair parts for the six cruisers, shared with Ferrum (canon Q115). Status: proposed.
+6,824 × 9,262 ft (2.08 × 2.82 km), 2.20 sq mi (5.69 km²). Fuel, ammunition, stores and repair parts for the six cruisers, shared with Ferrum (canon Q115). Status: canon.
 
 Streets: Stores Road, 98 ft (30 m); F36 Street, 98 ft (30 m).
 
@@ -95,7 +95,7 @@ Streets: Stores Road, 98 ft (30 m); F36 Street, 98 ft (30 m).
 
 ## P3 · Cruiser Repair Yards — F48 to F55, lanes T–Y
 
-11,888 × 9,262 ft (3.62 × 2.82 km), 3.95 sq mi (10.23 km²). Cruiser modules (engines, turrets, shields) are lifted out at the berths and rebuilt here; full refits go to Drydock Prime on Deck 8 (canon). The cross-line Dockside stop (canon, F52) is here. Status: proposed.
+11,888 × 9,262 ft (3.62 × 2.82 km), 3.95 sq mi (10.23 km²). Cruiser modules (engines, turrets, shields) are lifted out at the berths and rebuilt here; full refits go to Drydock Prime on Deck 8 (canon). The cross-line Dockside stop (canon, F52) is here. Status: canon.
 
 Streets: Yard Road, 131 ft (40 m); F50 Street, 98 ft (30 m); Cross-line, 164 ft (50 m); F54 Street, 98 ft (30 m).
 
@@ -136,7 +136,7 @@ Streets: Yard Road, 131 ft (40 m); F50 Street, 98 ft (30 m); Cross-line, 164 ft 
 
 ## P4 · Dock Freight — F34 to F42, lanes M–S
 
-13,386 × 10,663 ft (4.08 × 3.25 km), 5.12 sq mi (13.26 km²). Everything the cruisers take on board passes through here first, checked by the inspectors. Status: proposed.
+13,386 × 10,663 ft (4.08 × 3.25 km), 5.12 sq mi (13.26 km²). Everything the cruisers take on board passes through here first, checked by the inspectors. Status: canon.
 
 Streets: Keelway, 328 ft (100 m); Freight Road, 131 ft (40 m); F36 Street, 98 ft (30 m); F38 Street, 98 ft (30 m).
 
@@ -179,7 +179,7 @@ Streets: Keelway, 328 ft (100 m); Freight Road, 131 ft (40 m); F36 Street, 98 ft
 
 ## P5 · Fleet Quarter — F42 to F48, lanes M–S
 
-9,843 × 10,663 ft (3.00 × 3.25 km), 3.76 sq mi (9.75 km²). The shore base of the escort fleet: six cruiser captains under the Fleet Admiral (canon), and the halls of the crews and dockworkers. Status: proposed.
+9,843 × 10,663 ft (3.00 × 3.25 km), 3.76 sq mi (9.75 km²). The shore base of the escort fleet: six cruiser captains under the Fleet Admiral (canon), and the halls of the crews and dockworkers. Status: canon.
 
 Streets: Keelway, 328 ft (100 m); Fleet Road, 131 ft (40 m); F45 Street, 98 ft (30 m).
 
@@ -220,7 +220,7 @@ Streets: Keelway, 328 ft (100 m); Fleet Road, 131 ft (40 m); F45 Street, 98 ft (
 
 ## P6 · Dockside — F48 to F55, lanes M–S
 
-11,888 × 10,663 ft (3.62 × 3.25 km), 2.64 sq mi (6.85 km²). The dockside streets around the Atrium Plaza (canon, not part of the precinct): shops, an inn and the shipping agents' offices. Status: proposed.
+11,888 × 10,663 ft (3.62 × 3.25 km), 2.64 sq mi (6.85 km²). The dockside streets around the Atrium Plaza (canon, not part of the precinct): shops, an inn and the shipping agents' offices. Status: canon.
 
 Streets: Dockside Road, 131 ft (40 m); Cross-line, 164 ft (50 m).
 
