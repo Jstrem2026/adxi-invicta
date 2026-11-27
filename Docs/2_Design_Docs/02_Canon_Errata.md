@@ -17,6 +17,7 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | 20 Nov 2026 | F2 | **No simulated characters.** The 260,000 drones handle upkeep. Only the nine NPCs (for now). |
 | 20 Nov 2026 | G1 | **Players elect City Councils (5 per city) and an Assembly (24 delegates, 3 per city) each season.** They set taxes and laws within the Charter and have **no power over Max's command**. |
 | 20 Nov 2026 | C2 | Aerion's extra **0.9 km² is taken from the Strike Hangars** (110 → 109.1 km²). |
+| 27 Nov 2026 | C8 | **The Keelway stop frames are right.** Where a sheet's "from deck bow" distance differs, the frame wins. |
 
 ## 1. Command and government
 
@@ -57,6 +58,7 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | C5 | Cruisers | 2,000 × 420 × 300 m; 3 Aerion Cruiser Gates (starboard, F38–F48); Drydock Prime port door 2.2 km × 340 m | ⏳ |
 | C6 | Bridge interior | Superseded by A2: the main bridge is forward-facing with a window; the overhead-dome conflict goes away. The Throne Deck becomes 30 m tall (Level 12 grows 20 → 30 m, bridge height 150 → 160 m) to fit the tactical sphere. | ⏳ |
 | C7 | Plan labels on Sheets S1, S4, S7 | The plans print **The Chancery** (S1), **Command Block** (S4) and **Inner Ward** (S7) inside a neighbouring district's shape. The district areas show which shape is which (15, 35 and 20 km² / 5.8, 13.5 and 7.7 sq mi). Revision B uses the shape whose area matches. Only the labels move; no areas or boundaries change. Found by the Invicta Atlas scan, 26 Nov 2026. | ⏳ |
+| C8 | Keelway stop distances on the deck sheets | **The frames are right.** Each stop sits at its frame (x = frame × 0.5 km). The sheets' "from deck bow" figures are off by 0.2 km and are replaced by the frame distance: Deck 1 Embassy Gate F17 0.62 mi (1.0 km, sheet 1.2); Deck 2 Observatory F9 0.62 mi (1.0 km, sheet 1.2); Deck 3 Verdance F5 0.62 mi (1.0 km, sheet 1.2); Deck 4 Proving Grounds F3 0.62 mi (1.0 km, sheet 1.2); Deck 4 Armory F25 7.46 mi (12.0 km, sheet 11.8); Deck 6 Systems Yards F5 0.62 mi (1.0 km, sheet 1.2); Deck 7 Outer Ward F9 0.62 mi (1.0 km, sheet 1.2); Deck 8 Deep Holds F15 0.62 mi (1.0 km, sheet 1.2). Sheet S5's Strike Hangars stop (F3) follows the same rule. Decided by Jordan, 27 Nov 2026. | ✅ |
 
 ## 4. Cities, systems, naming
 
