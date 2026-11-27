@@ -60,5 +60,8 @@ Canon datasheets and geometry in `Docs/1_Canon_Source/Invicta`, the design docs 
 - `data/`: precinct and building data, and scanner rules. See `data/README.md`.
 - `tools/`: one-time import scripts (precinct SVG reader, Port of Arrivals seed).
 - `reports/`: scan reports (generated).
+- `docs/`: readable docs for every district, precinct and building plan, generated from the data by
+  `python tools/gen_docs.py` (a few seconds). Not kept in git; the published copy is at
+  invicta.arcanedrift.net/docs/README.md.
 
 Rules for Claude design sessions are in `CLAUDE.md`.
