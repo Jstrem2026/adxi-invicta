@@ -199,20 +199,38 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const work = (async () => {
     let proposals = 0;
     try {
-      for (let turn = 0; turn < MAX_TURNS; turn++) {
-        const stream = client.beta.messages.stream({
+      // Earlier thinking blocks are bound to the exact system prompt and history that produced them.
+      // The site's system prompt changes when the project files change, so old blocks can stop
+      // matching: drop_block tells the API to drop those blocks instead of failing the request.
+      const ask = (msgs, streamText) => {
+        const s = client.beta.messages.stream({
           model: env.CLAUDE_MODEL || "claude-opus-5-5",
           max_tokens: 32000,
-          betas: ["server-side-fallback-2026-07-01"],
+          betas: ["server-side-fallback-2026-07-01", "thinking-binding-controls-2026-08-01"],
           fallbacks: "default",
+          thinking: { type: "adaptive", block_binding: { prefix_mismatch_behavior: "drop_block" } },
           output_config: { effort: "medium" },
           cache_control: { type: "ephemeral" },
           system,
           tools: TOOLS,
-          messages,
+          messages: msgs,
         });
-        stream.on("text", (delta) => send("text", { delta }));
-        const message = await stream.finalMessage();
+        if (streamText) s.on("text", (delta) => send("text", { delta }));
+        return s.finalMessage();
+      };
+      for (let turn = 0; turn < MAX_TURNS; turn++) {
+        let message;
+        try {
+          message = await ask(messages, true);
+        } catch (err) {
+          // One repair attempt for a bad request: remove every thinking block from the history and retry.
+          if (!(err instanceof Anthropic.BadRequestError)) throw err;
+          console.error("chat 400, retrying without thinking blocks:", err.message);
+          for (const m of messages) {
+            if (m.role === "assistant" && Array.isArray(m.content)) m.content = m.content.filter((c) => c.type !== "thinking" && c.type !== "redacted_thinking");
+          }
+          message = await ask(messages, true);
+        }
         messages.push({ role: "assistant", content: message.content });
 
         if (message.stop_reason === "refusal") {
@@ -268,7 +286,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       const msg = err instanceof Anthropic.RateLimitError
         ? "Claude is busy right now. Try again in a minute."
         : err instanceof Anthropic.APIError
-          ? "Claude had a problem answering. Try again."
+          ? `Claude couldn't answer (${err.status || "error"}: ${String(err.message || "").replace(/^\d+\s*/, "").slice(0, 200)}). Press New chat and try again.`
           : "Something went wrong: " + String(err.message || err);
       send("error", { error: msg });
     } finally {
