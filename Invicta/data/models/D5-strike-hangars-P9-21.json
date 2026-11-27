@@ -1,0 +1,185 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P9-21",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  520.6,
+  339.8
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Crane lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     74.4,
+     0.0
+    ],
+    [
+     74.4,
+     339.8
+    ],
+    [
+     0.0,
+     339.8
+    ]
+   ],
+   "about": "Mobile cranes.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Foreman's hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.8,
+     171.4
+    ],
+    [
+     43.8,
+     171.4
+    ],
+    [
+     43.8,
+     179.4
+    ],
+    [
+     31.8,
+     179.4
+    ]
+   ],
+   "about": "The yard foreman.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Work stands",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.4,
+     0.0
+    ],
+    [
+     297.5,
+     0.0
+    ],
+    [
+     297.5,
+     339.8
+    ],
+    [
+     74.4,
+     339.8
+    ]
+   ],
+   "about": "Craft on stands for big outdoor jobs.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Engine carts",
+   "level": "L1",
+   "outline_m": [
+    [
+     297.5,
+     0.0
+    ],
+    [
+     371.9,
+     0.0
+    ],
+    [
+     371.9,
+     339.8
+    ],
+    [
+     297.5,
+     339.8
+    ]
+   ],
+   "about": "Engine carts.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Parts staging",
+   "level": "L1",
+   "outline_m": [
+    [
+     371.9,
+     0.0
+    ],
+    [
+     446.2,
+     0.0
+    ],
+    [
+     446.2,
+     339.8
+    ],
+    [
+     371.9,
+     339.8
+    ]
+   ],
+   "about": "Parts waiting to go on.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Access lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     446.2,
+     0.0
+    ],
+    [
+     520.6,
+     0.0
+    ],
+    [
+     520.6,
+     339.8
+    ],
+    [
+     446.2,
+     339.8
+    ]
+   ],
+   "about": "Lane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

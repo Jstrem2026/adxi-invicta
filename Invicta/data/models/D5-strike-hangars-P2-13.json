@@ -1,0 +1,157 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P2-13",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  925.0,
+  660.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Fuel tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     660.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     660.7,
+     0.0
+    ],
+    [
+     660.7,
+     660.0
+    ]
+   ],
+   "about": "Double-walled tanks of craft fuel inside bund walls.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Pump house",
+   "level": "L1",
+   "outline_m": [
+    [
+     567.9,
+     493.2
+    ],
+    [
+     583.9,
+     493.2
+    ],
+    [
+     583.9,
+     505.2
+    ],
+    [
+     567.9,
+     505.2
+    ]
+   ],
+   "about": "Pumps fuel to the racks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Farm control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     583.9,
+     493.2
+    ],
+    [
+     591.9,
+     493.2
+    ],
+    [
+     591.9,
+     505.2
+    ],
+    [
+     583.9,
+     505.2
+    ]
+   ],
+   "about": "Watches every tank.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Pipe rack",
+   "level": "L1",
+   "outline_m": [
+    [
+     660.7,
+     0.0
+    ],
+    [
+     792.9,
+     0.0
+    ],
+    [
+     792.9,
+     660.0
+    ],
+    [
+     660.7,
+     660.0
+    ]
+   ],
+   "about": "Pipes to the rack halls.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Fire water ring",
+   "level": "L1",
+   "outline_m": [
+    [
+     792.9,
+     0.0
+    ],
+    [
+     925.0,
+     0.0
+    ],
+    [
+     925.0,
+     660.0
+    ],
+    [
+     792.9,
+     660.0
+    ]
+   ],
+   "about": "Hydrants and foam monitors.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,13675 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P8-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  640.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 6.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Main briefing theatre",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     24.0,
+     24.0
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     416.0,
+     54.6
+    ],
+    [
+     24.0,
+     54.6
+    ]
+   ],
+   "about": "A theatre where whole wings get threat briefings.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     416.0,
+     54.6
+    ],
+    [
+     416.0,
+     616.0
+    ],
+    [
+     244.0,
+     616.0
+    ],
+    [
+     244.0,
+     296.0
+    ],
+    [
+     24.0,
+     296.0
+    ],
+    [
+     24.0,
+     54.6
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.4,
+     10.5
+    ],
+    [
+     132.6,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.4,
+     10.5
+    ],
+    [
+     252.2,
+     10.5
+    ],
+    [
+     251.8,
+     13.5
+    ],
+    [
+     132.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.2,
+     10.5
+    ],
+    [
+     373.1,
+     10.5
+    ],
+    [
+     370.9,
+     13.5
+    ],
+    [
+     251.8,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     373.1,
+     10.5
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     429.5,
+     74.8
+    ],
+    [
+     426.5,
+     77.2
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     370.9,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     74.8
+    ],
+    [
+     429.5,
+     195.4
+    ],
+    [
+     426.5,
+     196.6
+    ],
+    [
+     426.5,
+     77.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     195.4
+    ],
+    [
+     429.5,
+     316.0
+    ],
+    [
+     426.5,
+     316.0
+    ],
+    [
+     426.5,
+     196.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     316.0
+    ],
+    [
+     429.5,
+     436.6
+    ],
+    [
+     426.5,
+     435.4
+    ],
+    [
+     426.5,
+     316.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     436.6
+    ],
+    [
+     429.5,
+     557.1
+    ],
+    [
+     426.5,
+     554.9
+    ],
+    [
+     426.5,
+     435.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     557.1
+    ],
+    [
+     429.5,
+     629.5
+    ],
+    [
+     380.8,
+     629.5
+    ],
+    [
+     379.2,
+     626.5
+    ],
+    [
+     426.5,
+     626.5
+    ],
+    [
+     426.5,
+     554.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     380.8,
+     629.5
+    ],
+    [
+     258.9,
+     629.5
+    ],
+    [
+     261.1,
+     626.5
+    ],
+    [
+     379.2,
+     626.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     258.9,
+     629.5
+    ],
+    [
+     230.5,
+     629.5
+    ],
+    [
+     230.5,
+     537.5
+    ],
+    [
+     233.5,
+     534.5
+    ],
+    [
+     233.5,
+     626.5
+    ],
+    [
+     261.1,
+     626.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     230.5,
+     537.5
+    ],
+    [
+     230.5,
+     417.5
+    ],
+    [
+     233.5,
+     414.5
+    ],
+    [
+     233.5,
+     534.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     230.5,
+     417.5
+    ],
+    [
+     230.5,
+     309.5
+    ],
+    [
+     218.5,
+     309.5
+    ],
+    [
+     221.5,
+     306.5
+    ],
+    [
+     233.5,
+     306.5
+    ],
+    [
+     233.5,
+     414.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.5,
+     309.5
+    ],
+    [
+     98.5,
+     309.5
+    ],
+    [
+     101.5,
+     306.5
+    ],
+    [
+     221.5,
+     306.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     98.5,
+     309.5
+    ],
+    [
+     10.5,
+     309.5
+    ],
+    [
+     10.5,
+     277.2
+    ],
+    [
+     13.5,
+     274.8
+    ],
+    [
+     13.5,
+     306.5
+    ],
+    [
+     101.5,
+     306.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     277.2
+    ],
+    [
+     10.5,
+     156.0
+    ],
+    [
+     13.5,
+     156.0
+    ],
+    [
+     13.5,
+     274.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     156.0
+    ],
+    [
+     10.5,
+     34.7
+    ],
+    [
+     13.5,
+     37.3
+    ],
+    [
+     13.5,
+     156.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     34.7
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     37.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.2,
+     13.5
+    ],
+    [
+     61.6,
+     24.0
+    ],
+    [
+     53.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     116.1,
+     13.5
+    ],
+    [
+     124.3,
+     13.5
+    ],
+    [
+     129.1,
+     24.0
+    ],
+    [
+     121.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     187.2,
+     13.5
+    ],
+    [
+     195.4,
+     13.5
+    ],
+    [
+     196.7,
+     24.0
+    ],
+    [
+     188.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     258.3,
+     13.5
+    ],
+    [
+     266.5,
+     13.5
+    ],
+    [
+     264.2,
+     24.0
+    ],
+    [
+     256.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     329.4,
+     13.5
+    ],
+    [
+     337.6,
+     13.5
+    ],
+    [
+     331.7,
+     24.0
+    ],
+    [
+     323.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     400.5,
+     13.5
+    ],
+    [
+     408.8,
+     13.5
+    ],
+    [
+     399.2,
+     24.0
+    ],
+    [
+     391.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     58.3
+    ],
+    [
+     426.5,
+     66.4
+    ],
+    [
+     416.0,
+     75.1
+    ],
+    [
+     416.0,
+     67.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     128.8
+    ],
+    [
+     426.5,
+     136.9
+    ],
+    [
+     416.0,
+     143.2
+    ],
+    [
+     416.0,
+     135.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     199.3
+    ],
+    [
+     426.5,
+     207.5
+    ],
+    [
+     416.0,
+     211.3
+    ],
+    [
+     416.0,
+     203.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     269.8
+    ],
+    [
+     426.5,
+     278.0
+    ],
+    [
+     416.0,
+     279.4
+    ],
+    [
+     416.0,
+     271.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     340.4
+    ],
+    [
+     426.5,
+     348.5
+    ],
+    [
+     416.0,
+     347.5
+    ],
+    [
+     416.0,
+     339.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     410.9
+    ],
+    [
+     426.5,
+     419.0
+    ],
+    [
+     416.0,
+     415.6
+    ],
+    [
+     416.0,
+     407.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     481.4
+    ],
+    [
+     426.5,
+     489.5
+    ],
+    [
+     416.0,
+     483.7
+    ],
+    [
+     416.0,
+     475.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     551.9
+    ],
+    [
+     426.5,
+     560.1
+    ],
+    [
+     416.0,
+     551.8
+    ],
+    [
+     416.0,
+     544.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     622.4
+    ],
+    [
+     426.5,
+     626.5
+    ],
+    [
+     422.3,
+     626.5
+    ],
+    [
+     412.2,
+     616.0
+    ],
+    [
+     416.0,
+     616.0
+    ],
+    [
+     416.0,
+     612.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     357.4,
+     626.5
+    ],
+    [
+     349.0,
+     626.5
+    ],
+    [
+     346.9,
+     616.0
+    ],
+    [
+     354.4,
+     616.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     626.5
+    ],
+    [
+     275.7,
+     626.5
+    ],
+    [
+     281.6,
+     616.0
+    ],
+    [
+     289.1,
+     616.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     605.1
+    ],
+    [
+     233.5,
+     597.1
+    ],
+    [
+     244.0,
+     586.6
+    ],
+    [
+     244.0,
+     594.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     535.8
+    ],
+    [
+     233.5,
+     527.8
+    ],
+    [
+     244.0,
+     517.3
+    ],
+    [
+     244.0,
+     525.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     466.4
+    ],
+    [
+     233.5,
+     458.4
+    ],
+    [
+     244.0,
+     447.9
+    ],
+    [
+     244.0,
+     455.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     397.1
+    ],
+    [
+     233.5,
+     389.1
+    ],
+    [
+     244.0,
+     378.6
+    ],
+    [
+     244.0,
+     386.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     327.8
+    ],
+    [
+     233.5,
+     319.8
+    ],
+    [
+     244.0,
+     309.3
+    ],
+    [
+     244.0,
+     317.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     185.5,
+     306.5
+    ],
+    [
+     177.5,
+     306.5
+    ],
+    [
+     188.0,
+     296.0
+    ],
+    [
+     196.0,
+     296.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     116.2,
+     306.5
+    ],
+    [
+     108.2,
+     306.5
+    ],
+    [
+     118.7,
+     296.0
+    ],
+    [
+     126.7,
+     296.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     46.9,
+     306.5
+    ],
+    [
+     38.9,
+     306.5
+    ],
+    [
+     49.4,
+     296.0
+    ],
+    [
+     57.4,
+     296.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     269.3
+    ],
+    [
+     13.5,
+     261.0
+    ],
+    [
+     24.0,
+     253.7
+    ],
+    [
+     24.0,
+     261.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     197.4
+    ],
+    [
+     13.5,
+     189.1
+    ],
+    [
+     24.0,
+     187.0
+    ],
+    [
+     24.0,
+     194.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     125.5
+    ],
+    [
+     13.5,
+     117.2
+    ],
+    [
+     24.0,
+     120.2
+    ],
+    [
+     24.0,
+     128.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     53.6
+    ],
+    [
+     13.5,
+     45.3
+    ],
+    [
+     24.0,
+     53.5
+    ],
+    [
+     24.0,
+     61.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Secure entrance",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     7.8,
+     0.0
+    ],
+    [
+     17.9,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Cleared crews only.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.8,
+     0.0
+    ],
+    [
+     13.7,
+     0.0
+    ],
+    [
+     23.5,
+     10.5
+    ],
+    [
+     17.9,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.7,
+     0.0
+    ],
+    [
+     37.1,
+     0.0
+    ],
+    [
+     45.8,
+     10.5
+    ],
+    [
+     23.5,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.1,
+     0.0
+    ],
+    [
+     60.5,
+     0.0
+    ],
+    [
+     68.1,
+     10.5
+    ],
+    [
+     45.8,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.5,
+     0.0
+    ],
+    [
+     83.9,
+     0.0
+    ],
+    [
+     90.4,
+     10.5
+    ],
+    [
+     68.1,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.9,
+     0.0
+    ],
+    [
+     107.3,
+     0.0
+    ],
+    [
+     112.7,
+     10.5
+    ],
+    [
+     90.4,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.3,
+     0.0
+    ],
+    [
+     130.7,
+     0.0
+    ],
+    [
+     135.0,
+     10.5
+    ],
+    [
+     112.7,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.7,
+     0.0
+    ],
+    [
+     154.2,
+     0.0
+    ],
+    [
+     157.3,
+     10.5
+    ],
+    [
+     135.0,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.2,
+     0.0
+    ],
+    [
+     177.6,
+     0.0
+    ],
+    [
+     179.6,
+     10.5
+    ],
+    [
+     157.3,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.6,
+     0.0
+    ],
+    [
+     201.0,
+     0.0
+    ],
+    [
+     201.9,
+     10.5
+    ],
+    [
+     179.6,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.0,
+     0.0
+    ],
+    [
+     224.4,
+     0.0
+    ],
+    [
+     224.2,
+     10.5
+    ],
+    [
+     201.9,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.4,
+     0.0
+    ],
+    [
+     247.8,
+     0.0
+    ],
+    [
+     246.5,
+     10.5
+    ],
+    [
+     224.2,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     247.8,
+     0.0
+    ],
+    [
+     271.2,
+     0.0
+    ],
+    [
+     268.8,
+     10.5
+    ],
+    [
+     246.5,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     271.2,
+     0.0
+    ],
+    [
+     294.7,
+     0.0
+    ],
+    [
+     291.1,
+     10.5
+    ],
+    [
+     268.8,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     294.7,
+     0.0
+    ],
+    [
+     318.1,
+     0.0
+    ],
+    [
+     313.4,
+     10.5
+    ],
+    [
+     291.1,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     318.1,
+     0.0
+    ],
+    [
+     341.5,
+     0.0
+    ],
+    [
+     335.7,
+     10.5
+    ],
+    [
+     313.4,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     341.5,
+     0.0
+    ],
+    [
+     364.9,
+     0.0
+    ],
+    [
+     358.0,
+     10.5
+    ],
+    [
+     335.7,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     364.9,
+     0.0
+    ],
+    [
+     388.3,
+     0.0
+    ],
+    [
+     380.3,
+     10.5
+    ],
+    [
+     358.0,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     388.3,
+     0.0
+    ],
+    [
+     411.7,
+     0.0
+    ],
+    [
+     402.6,
+     10.5
+    ],
+    [
+     380.3,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.7,
+     0.0
+    ],
+    [
+     435.1,
+     0.0
+    ],
+    [
+     424.9,
+     10.5
+    ],
+    [
+     402.6,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     435.1,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     18.4
+    ],
+    [
+     429.5,
+     28.3
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     424.9,
+     10.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     18.4
+    ],
+    [
+     440.0,
+     41.7
+    ],
+    [
+     429.5,
+     50.8
+    ],
+    [
+     429.5,
+     28.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     41.7
+    ],
+    [
+     440.0,
+     64.9
+    ],
+    [
+     429.5,
+     73.3
+    ],
+    [
+     429.5,
+     50.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     64.9
+    ],
+    [
+     440.0,
+     88.1
+    ],
+    [
+     429.5,
+     95.7
+    ],
+    [
+     429.5,
+     73.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     88.1
+    ],
+    [
+     440.0,
+     111.4
+    ],
+    [
+     429.5,
+     118.2
+    ],
+    [
+     429.5,
+     95.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     111.4
+    ],
+    [
+     440.0,
+     134.6
+    ],
+    [
+     429.5,
+     140.7
+    ],
+    [
+     429.5,
+     118.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     134.6
+    ],
+    [
+     440.0,
+     157.9
+    ],
+    [
+     429.5,
+     163.2
+    ],
+    [
+     429.5,
+     140.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     157.9
+    ],
+    [
+     440.0,
+     181.1
+    ],
+    [
+     429.5,
+     185.6
+    ],
+    [
+     429.5,
+     163.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     181.1
+    ],
+    [
+     440.0,
+     204.3
+    ],
+    [
+     429.5,
+     208.1
+    ],
+    [
+     429.5,
+     185.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     204.3
+    ],
+    [
+     440.0,
+     227.6
+    ],
+    [
+     429.5,
+     230.6
+    ],
+    [
+     429.5,
+     208.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     227.6
+    ],
+    [
+     440.0,
+     250.8
+    ],
+    [
+     429.5,
+     253.1
+    ],
+    [
+     429.5,
+     230.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     250.8
+    ],
+    [
+     440.0,
+     274.0
+    ],
+    [
+     429.5,
+     275.6
+    ],
+    [
+     429.5,
+     253.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     274.0
+    ],
+    [
+     440.0,
+     297.3
+    ],
+    [
+     429.5,
+     298.0
+    ],
+    [
+     429.5,
+     275.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     297.3
+    ],
+    [
+     440.0,
+     320.5
+    ],
+    [
+     429.5,
+     320.5
+    ],
+    [
+     429.5,
+     298.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     320.5
+    ],
+    [
+     440.0,
+     343.8
+    ],
+    [
+     429.5,
+     343.0
+    ],
+    [
+     429.5,
+     320.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     343.8
+    ],
+    [
+     440.0,
+     367.0
+    ],
+    [
+     429.5,
+     365.5
+    ],
+    [
+     429.5,
+     343.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     367.0
+    ],
+    [
+     440.0,
+     390.2
+    ],
+    [
+     429.5,
+     387.9
+    ],
+    [
+     429.5,
+     365.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     390.2
+    ],
+    [
+     440.0,
+     413.5
+    ],
+    [
+     429.5,
+     410.4
+    ],
+    [
+     429.5,
+     387.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     413.5
+    ],
+    [
+     440.0,
+     436.7
+    ],
+    [
+     429.5,
+     432.9
+    ],
+    [
+     429.5,
+     410.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     436.7
+    ],
+    [
+     440.0,
+     460.0
+    ],
+    [
+     429.5,
+     455.4
+    ],
+    [
+     429.5,
+     432.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     460.0
+    ],
+    [
+     440.0,
+     483.2
+    ],
+    [
+     429.5,
+     477.8
+    ],
+    [
+     429.5,
+     455.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     483.2
+    ],
+    [
+     440.0,
+     506.4
+    ],
+    [
+     429.5,
+     500.3
+    ],
+    [
+     429.5,
+     477.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     506.4
+    ],
+    [
+     440.0,
+     529.7
+    ],
+    [
+     429.5,
+     522.8
+    ],
+    [
+     429.5,
+     500.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     529.7
+    ],
+    [
+     440.0,
+     552.9
+    ],
+    [
+     429.5,
+     545.3
+    ],
+    [
+     429.5,
+     522.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     552.9
+    ],
+    [
+     440.0,
+     576.1
+    ],
+    [
+     429.5,
+     567.7
+    ],
+    [
+     429.5,
+     545.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     576.1
+    ],
+    [
+     440.0,
+     599.4
+    ],
+    [
+     429.5,
+     590.2
+    ],
+    [
+     429.5,
+     567.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     599.4
+    ],
+    [
+     440.0,
+     622.6
+    ],
+    [
+     429.5,
+     612.7
+    ],
+    [
+     429.5,
+     590.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     622.6
+    ],
+    [
+     440.0,
+     640.0
+    ],
+    [
+     433.9,
+     640.0
+    ],
+    [
+     424.0,
+     629.5
+    ],
+    [
+     429.5,
+     629.5
+    ],
+    [
+     429.5,
+     612.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     433.9,
+     640.0
+    ],
+    [
+     409.9,
+     640.0
+    ],
+    [
+     402.3,
+     629.5
+    ],
+    [
+     424.0,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     409.9,
+     640.0
+    ],
+    [
+     385.9,
+     640.0
+    ],
+    [
+     380.6,
+     629.5
+    ],
+    [
+     402.3,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     385.9,
+     640.0
+    ],
+    [
+     361.9,
+     640.0
+    ],
+    [
+     358.9,
+     629.5
+    ],
+    [
+     380.6,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     361.9,
+     640.0
+    ],
+    [
+     337.9,
+     640.0
+    ],
+    [
+     337.2,
+     629.5
+    ],
+    [
+     358.9,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     337.9,
+     640.0
+    ],
+    [
+     313.9,
+     640.0
+    ],
+    [
+     315.5,
+     629.5
+    ],
+    [
+     337.2,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     313.9,
+     640.0
+    ],
+    [
+     289.9,
+     640.0
+    ],
+    [
+     293.8,
+     629.5
+    ],
+    [
+     315.5,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     289.9,
+     640.0
+    ],
+    [
+     265.9,
+     640.0
+    ],
+    [
+     272.0,
+     629.5
+    ],
+    [
+     293.8,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     265.9,
+     640.0
+    ],
+    [
+     241.9,
+     640.0
+    ],
+    [
+     250.3,
+     629.5
+    ],
+    [
+     272.0,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     241.9,
+     640.0
+    ],
+    [
+     220.0,
+     640.0
+    ],
+    [
+     220.0,
+     638.0
+    ],
+    [
+     230.5,
+     627.5
+    ],
+    [
+     230.5,
+     629.5
+    ],
+    [
+     250.3,
+     629.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     638.0
+    ],
+    [
+     220.0,
+     615.2
+    ],
+    [
+     230.5,
+     604.7
+    ],
+    [
+     230.5,
+     627.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     615.2
+    ],
+    [
+     220.0,
+     592.3
+    ],
+    [
+     230.5,
+     581.8
+    ],
+    [
+     230.5,
+     604.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     592.3
+    ],
+    [
+     220.0,
+     569.5
+    ],
+    [
+     230.5,
+     559.0
+    ],
+    [
+     230.5,
+     581.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     569.5
+    ],
+    [
+     220.0,
+     546.6
+    ],
+    [
+     230.5,
+     536.1
+    ],
+    [
+     230.5,
+     559.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     546.6
+    ],
+    [
+     220.0,
+     523.7
+    ],
+    [
+     230.5,
+     513.2
+    ],
+    [
+     230.5,
+     536.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     523.7
+    ],
+    [
+     220.0,
+     500.9
+    ],
+    [
+     230.5,
+     490.4
+    ],
+    [
+     230.5,
+     513.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     500.9
+    ],
+    [
+     220.0,
+     478.0
+    ],
+    [
+     230.5,
+     467.5
+    ],
+    [
+     230.5,
+     490.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     478.0
+    ],
+    [
+     220.0,
+     455.2
+    ],
+    [
+     230.5,
+     444.7
+    ],
+    [
+     230.5,
+     467.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     455.2
+    ],
+    [
+     220.0,
+     432.3
+    ],
+    [
+     230.5,
+     421.8
+    ],
+    [
+     230.5,
+     444.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     432.3
+    ],
+    [
+     220.0,
+     409.5
+    ],
+    [
+     230.5,
+     399.0
+    ],
+    [
+     230.5,
+     421.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     409.5
+    ],
+    [
+     220.0,
+     386.6
+    ],
+    [
+     230.5,
+     376.1
+    ],
+    [
+     230.5,
+     399.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     386.6
+    ],
+    [
+     220.0,
+     363.7
+    ],
+    [
+     230.5,
+     353.2
+    ],
+    [
+     230.5,
+     376.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     363.7
+    ],
+    [
+     220.0,
+     340.9
+    ],
+    [
+     230.5,
+     330.4
+    ],
+    [
+     230.5,
+     353.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     340.9
+    ],
+    [
+     220.0,
+     320.0
+    ],
+    [
+     218.0,
+     320.0
+    ],
+    [
+     228.5,
+     309.5
+    ],
+    [
+     230.5,
+     309.5
+    ],
+    [
+     230.5,
+     330.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.0,
+     320.0
+    ],
+    [
+     195.2,
+     320.0
+    ],
+    [
+     205.7,
+     309.5
+    ],
+    [
+     228.5,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     195.2,
+     320.0
+    ],
+    [
+     172.3,
+     320.0
+    ],
+    [
+     182.8,
+     309.5
+    ],
+    [
+     205.7,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     172.3,
+     320.0
+    ],
+    [
+     149.5,
+     320.0
+    ],
+    [
+     160.0,
+     309.5
+    ],
+    [
+     182.8,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     149.5,
+     320.0
+    ],
+    [
+     126.6,
+     320.0
+    ],
+    [
+     137.1,
+     309.5
+    ],
+    [
+     160.0,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.6,
+     320.0
+    ],
+    [
+     103.7,
+     320.0
+    ],
+    [
+     114.2,
+     309.5
+    ],
+    [
+     137.1,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.7,
+     320.0
+    ],
+    [
+     80.9,
+     320.0
+    ],
+    [
+     91.4,
+     309.5
+    ],
+    [
+     114.2,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.9,
+     320.0
+    ],
+    [
+     58.0,
+     320.0
+    ],
+    [
+     68.5,
+     309.5
+    ],
+    [
+     91.4,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.0,
+     320.0
+    ],
+    [
+     35.2,
+     320.0
+    ],
+    [
+     45.7,
+     309.5
+    ],
+    [
+     68.5,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.2,
+     320.0
+    ],
+    [
+     12.3,
+     320.0
+    ],
+    [
+     22.8,
+     309.5
+    ],
+    [
+     45.7,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.3,
+     320.0
+    ],
+    [
+     0.0,
+     320.0
+    ],
+    [
+     0.0,
+     309.1
+    ],
+    [
+     10.5,
+     299.3
+    ],
+    [
+     10.5,
+     309.5
+    ],
+    [
+     22.8,
+     309.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     309.1
+    ],
+    [
+     0.0,
+     285.5
+    ],
+    [
+     10.5,
+     277.2
+    ],
+    [
+     10.5,
+     299.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     285.5
+    ],
+    [
+     0.0,
+     261.8
+    ],
+    [
+     10.5,
+     255.1
+    ],
+    [
+     10.5,
+     277.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     261.8
+    ],
+    [
+     0.0,
+     238.2
+    ],
+    [
+     10.5,
+     233.1
+    ],
+    [
+     10.5,
+     255.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     238.2
+    ],
+    [
+     0.0,
+     214.6
+    ],
+    [
+     10.5,
+     211.0
+    ],
+    [
+     10.5,
+     233.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     214.6
+    ],
+    [
+     0.0,
+     190.9
+    ],
+    [
+     10.5,
+     188.9
+    ],
+    [
+     10.5,
+     211.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     190.9
+    ],
+    [
+     0.0,
+     167.3
+    ],
+    [
+     10.5,
+     166.8
+    ],
+    [
+     10.5,
+     188.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     167.3
+    ],
+    [
+     0.0,
+     143.7
+    ],
+    [
+     10.5,
+     144.7
+    ],
+    [
+     10.5,
+     166.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     143.7
+    ],
+    [
+     0.0,
+     120.0
+    ],
+    [
+     10.5,
+     122.7
+    ],
+    [
+     10.5,
+     144.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     120.0
+    ],
+    [
+     0.0,
+     96.4
+    ],
+    [
+     10.5,
+     100.6
+    ],
+    [
+     10.5,
+     122.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     96.4
+    ],
+    [
+     0.0,
+     72.8
+    ],
+    [
+     10.5,
+     78.5
+    ],
+    [
+     10.5,
+     100.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     72.8
+    ],
+    [
+     0.0,
+     49.1
+    ],
+    [
+     10.5,
+     56.4
+    ],
+    [
+     10.5,
+     78.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     49.1
+    ],
+    [
+     0.0,
+     25.5
+    ],
+    [
+     10.5,
+     34.3
+    ],
+    [
+     10.5,
+     56.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     25.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     34.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.9,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.2,
+     13.5
+    ],
+    [
+     76.6,
+     13.5
+    ],
+    [
+     83.9,
+     24.0
+    ],
+    [
+     61.6,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     76.6,
+     13.5
+    ],
+    [
+     100.1,
+     13.5
+    ],
+    [
+     106.2,
+     24.0
+    ],
+    [
+     83.9,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.1,
+     13.5
+    ],
+    [
+     116.1,
+     13.5
+    ],
+    [
+     121.4,
+     24.0
+    ],
+    [
+     106.2,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.3,
+     13.5
+    ],
+    [
+     147.7,
+     13.5
+    ],
+    [
+     151.4,
+     24.0
+    ],
+    [
+     129.1,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.7,
+     13.5
+    ],
+    [
+     171.2,
+     13.5
+    ],
+    [
+     173.7,
+     24.0
+    ],
+    [
+     151.4,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.2,
+     13.5
+    ],
+    [
+     187.2,
+     13.5
+    ],
+    [
+     188.9,
+     24.0
+    ],
+    [
+     173.7,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     195.4,
+     13.5
+    ],
+    [
+     218.9,
+     13.5
+    ],
+    [
+     218.9,
+     24.0
+    ],
+    [
+     196.7,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.9,
+     13.5
+    ],
+    [
+     242.3,
+     13.5
+    ],
+    [
+     241.2,
+     24.0
+    ],
+    [
+     218.9,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     242.3,
+     13.5
+    ],
+    [
+     258.3,
+     13.5
+    ],
+    [
+     256.4,
+     24.0
+    ],
+    [
+     241.2,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     266.5,
+     13.5
+    ],
+    [
+     290.0,
+     13.5
+    ],
+    [
+     286.4,
+     24.0
+    ],
+    [
+     264.2,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     290.0,
+     13.5
+    ],
+    [
+     313.4,
+     13.5
+    ],
+    [
+     308.7,
+     24.0
+    ],
+    [
+     286.4,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     313.4,
+     13.5
+    ],
+    [
+     329.4,
+     13.5
+    ],
+    [
+     323.9,
+     24.0
+    ],
+    [
+     308.7,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     337.6,
+     13.5
+    ],
+    [
+     361.1,
+     13.5
+    ],
+    [
+     353.9,
+     24.0
+    ],
+    [
+     331.7,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     361.1,
+     13.5
+    ],
+    [
+     384.5,
+     13.5
+    ],
+    [
+     376.2,
+     24.0
+    ],
+    [
+     353.9,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     384.5,
+     13.5
+    ],
+    [
+     400.5,
+     13.5
+    ],
+    [
+     391.4,
+     24.0
+    ],
+    [
+     376.2,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     408.8,
+     13.5
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     426.5,
+     19.2
+    ],
+    [
+     416.0,
+     29.5
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     399.2,
+     24.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     19.2
+    ],
+    [
+     426.5,
+     42.4
+    ],
+    [
+     416.0,
+     51.9
+    ],
+    [
+     416.0,
+     29.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     42.4
+    ],
+    [
+     426.5,
+     58.3
+    ],
+    [
+     416.0,
+     67.3
+    ],
+    [
+     416.0,
+     51.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     66.4
+    ],
+    [
+     426.5,
+     89.7
+    ],
+    [
+     416.0,
+     97.6
+    ],
+    [
+     416.0,
+     75.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     89.7
+    ],
+    [
+     426.5,
+     112.9
+    ],
+    [
+     416.0,
+     120.0
+    ],
+    [
+     416.0,
+     97.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     112.9
+    ],
+    [
+     426.5,
+     128.8
+    ],
+    [
+     416.0,
+     135.4
+    ],
+    [
+     416.0,
+     120.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     136.9
+    ],
+    [
+     426.5,
+     160.2
+    ],
+    [
+     416.0,
+     165.7
+    ],
+    [
+     416.0,
+     143.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     160.2
+    ],
+    [
+     426.5,
+     183.5
+    ],
+    [
+     416.0,
+     188.1
+    ],
+    [
+     416.0,
+     165.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     183.5
+    ],
+    [
+     426.5,
+     199.3
+    ],
+    [
+     416.0,
+     203.5
+    ],
+    [
+     416.0,
+     188.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     207.5
+    ],
+    [
+     426.5,
+     230.7
+    ],
+    [
+     416.0,
+     233.8
+    ],
+    [
+     416.0,
+     211.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     230.7
+    ],
+    [
+     426.5,
+     254.0
+    ],
+    [
+     416.0,
+     256.2
+    ],
+    [
+     416.0,
+     233.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     254.0
+    ],
+    [
+     426.5,
+     269.8
+    ],
+    [
+     416.0,
+     271.6
+    ],
+    [
+     416.0,
+     256.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     278.0
+    ],
+    [
+     426.5,
+     301.2
+    ],
+    [
+     416.0,
+     301.9
+    ],
+    [
+     416.0,
+     279.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     301.2
+    ],
+    [
+     426.5,
+     324.5
+    ],
+    [
+     416.0,
+     324.3
+    ],
+    [
+     416.0,
+     301.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     324.5
+    ],
+    [
+     426.5,
+     340.4
+    ],
+    [
+     416.0,
+     339.7
+    ],
+    [
+     416.0,
+     324.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     348.5
+    ],
+    [
+     426.5,
+     371.8
+    ],
+    [
+     416.0,
+     370.0
+    ],
+    [
+     416.0,
+     347.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     371.8
+    ],
+    [
+     426.5,
+     395.0
+    ],
+    [
+     416.0,
+     392.4
+    ],
+    [
+     416.0,
+     370.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     395.0
+    ],
+    [
+     426.5,
+     410.9
+    ],
+    [
+     416.0,
+     407.8
+    ],
+    [
+     416.0,
+     392.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     419.0
+    ],
+    [
+     426.5,
+     442.3
+    ],
+    [
+     416.0,
+     438.1
+    ],
+    [
+     416.0,
+     415.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     442.3
+    ],
+    [
+     426.5,
+     465.5
+    ],
+    [
+     416.0,
+     460.5
+    ],
+    [
+     416.0,
+     438.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     465.5
+    ],
+    [
+     426.5,
+     481.4
+    ],
+    [
+     416.0,
+     475.9
+    ],
+    [
+     416.0,
+     460.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     489.5
+    ],
+    [
+     426.5,
+     512.8
+    ],
+    [
+     416.0,
+     506.2
+    ],
+    [
+     416.0,
+     483.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     512.8
+    ],
+    [
+     426.5,
+     536.0
+    ],
+    [
+     416.0,
+     528.6
+    ],
+    [
+     416.0,
+     506.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     536.0
+    ],
+    [
+     426.5,
+     551.9
+    ],
+    [
+     416.0,
+     544.0
+    ],
+    [
+     416.0,
+     528.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     560.1
+    ],
+    [
+     426.5,
+     583.3
+    ],
+    [
+     416.0,
+     574.3
+    ],
+    [
+     416.0,
+     551.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     583.3
+    ],
+    [
+     426.5,
+     606.6
+    ],
+    [
+     416.0,
+     596.7
+    ],
+    [
+     416.0,
+     574.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     606.6
+    ],
+    [
+     426.5,
+     622.4
+    ],
+    [
+     416.0,
+     612.1
+    ],
+    [
+     416.0,
+     596.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     422.3,
+     626.5
+    ],
+    [
+     398.1,
+     626.5
+    ],
+    [
+     390.7,
+     616.0
+    ],
+    [
+     412.2,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     398.1,
+     626.5
+    ],
+    [
+     373.9,
+     626.5
+    ],
+    [
+     369.1,
+     616.0
+    ],
+    [
+     390.7,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     373.9,
+     626.5
+    ],
+    [
+     357.4,
+     626.5
+    ],
+    [
+     354.4,
+     616.0
+    ],
+    [
+     369.1,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     349.0,
+     626.5
+    ],
+    [
+     324.8,
+     626.5
+    ],
+    [
+     325.4,
+     616.0
+    ],
+    [
+     346.9,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     324.8,
+     626.5
+    ],
+    [
+     300.6,
+     626.5
+    ],
+    [
+     303.8,
+     616.0
+    ],
+    [
+     325.4,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.6,
+     626.5
+    ],
+    [
+     284.1,
+     626.5
+    ],
+    [
+     289.1,
+     616.0
+    ],
+    [
+     303.8,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     275.7,
+     626.5
+    ],
+    [
+     251.5,
+     626.5
+    ],
+    [
+     260.0,
+     616.0
+    ],
+    [
+     281.6,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     251.5,
+     626.5
+    ],
+    [
+     233.5,
+     626.5
+    ],
+    [
+     233.5,
+     620.7
+    ],
+    [
+     244.0,
+     610.2
+    ],
+    [
+     244.0,
+     616.0
+    ],
+    [
+     260.0,
+     616.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     620.7
+    ],
+    [
+     233.5,
+     605.1
+    ],
+    [
+     244.0,
+     594.6
+    ],
+    [
+     244.0,
+     610.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     597.1
+    ],
+    [
+     233.5,
+     574.2
+    ],
+    [
+     244.0,
+     563.7
+    ],
+    [
+     244.0,
+     586.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     574.2
+    ],
+    [
+     233.5,
+     551.4
+    ],
+    [
+     244.0,
+     540.9
+    ],
+    [
+     244.0,
+     563.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     551.4
+    ],
+    [
+     233.5,
+     535.8
+    ],
+    [
+     244.0,
+     525.3
+    ],
+    [
+     244.0,
+     540.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     527.8
+    ],
+    [
+     233.5,
+     504.9
+    ],
+    [
+     244.0,
+     494.4
+    ],
+    [
+     244.0,
+     517.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     504.9
+    ],
+    [
+     233.5,
+     482.0
+    ],
+    [
+     244.0,
+     471.5
+    ],
+    [
+     244.0,
+     494.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     482.0
+    ],
+    [
+     233.5,
+     466.4
+    ],
+    [
+     244.0,
+     455.9
+    ],
+    [
+     244.0,
+     471.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     458.4
+    ],
+    [
+     233.5,
+     435.6
+    ],
+    [
+     244.0,
+     425.1
+    ],
+    [
+     244.0,
+     447.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     435.6
+    ],
+    [
+     233.5,
+     412.7
+    ],
+    [
+     244.0,
+     402.2
+    ],
+    [
+     244.0,
+     425.1
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     412.7
+    ],
+    [
+     233.5,
+     397.1
+    ],
+    [
+     244.0,
+     386.6
+    ],
+    [
+     244.0,
+     402.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     389.1
+    ],
+    [
+     233.5,
+     366.3
+    ],
+    [
+     244.0,
+     355.8
+    ],
+    [
+     244.0,
+     378.6
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     366.3
+    ],
+    [
+     233.5,
+     343.4
+    ],
+    [
+     244.0,
+     332.9
+    ],
+    [
+     244.0,
+     355.8
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     343.4
+    ],
+    [
+     233.5,
+     327.8
+    ],
+    [
+     244.0,
+     317.3
+    ],
+    [
+     244.0,
+     332.9
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     319.8
+    ],
+    [
+     233.5,
+     306.5
+    ],
+    [
+     224.0,
+     306.5
+    ],
+    [
+     234.5,
+     296.0
+    ],
+    [
+     244.0,
+     296.0
+    ],
+    [
+     244.0,
+     309.3
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.0,
+     306.5
+    ],
+    [
+     201.1,
+     306.5
+    ],
+    [
+     211.6,
+     296.0
+    ],
+    [
+     234.5,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.1,
+     306.5
+    ],
+    [
+     185.5,
+     306.5
+    ],
+    [
+     196.0,
+     296.0
+    ],
+    [
+     211.6,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.5,
+     306.5
+    ],
+    [
+     154.7,
+     306.5
+    ],
+    [
+     165.2,
+     296.0
+    ],
+    [
+     188.0,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.7,
+     306.5
+    ],
+    [
+     131.8,
+     306.5
+    ],
+    [
+     142.3,
+     296.0
+    ],
+    [
+     165.2,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.8,
+     306.5
+    ],
+    [
+     116.2,
+     306.5
+    ],
+    [
+     126.7,
+     296.0
+    ],
+    [
+     142.3,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.2,
+     306.5
+    ],
+    [
+     85.3,
+     306.5
+    ],
+    [
+     95.8,
+     296.0
+    ],
+    [
+     118.7,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.3,
+     306.5
+    ],
+    [
+     62.5,
+     306.5
+    ],
+    [
+     73.0,
+     296.0
+    ],
+    [
+     95.8,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.5,
+     306.5
+    ],
+    [
+     46.9,
+     306.5
+    ],
+    [
+     57.4,
+     296.0
+    ],
+    [
+     73.0,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.9,
+     306.5
+    ],
+    [
+     16.0,
+     306.5
+    ],
+    [
+     26.5,
+     296.0
+    ],
+    [
+     49.4,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.0,
+     306.5
+    ],
+    [
+     13.5,
+     306.5
+    ],
+    [
+     13.5,
+     285.4
+    ],
+    [
+     24.0,
+     276.4
+    ],
+    [
+     24.0,
+     296.0
+    ],
+    [
+     26.5,
+     296.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     285.4
+    ],
+    [
+     13.5,
+     269.3
+    ],
+    [
+     24.0,
+     261.4
+    ],
+    [
+     24.0,
+     276.4
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     261.0
+    ],
+    [
+     13.5,
+     237.2
+    ],
+    [
+     24.0,
+     231.7
+    ],
+    [
+     24.0,
+     253.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     237.2
+    ],
+    [
+     13.5,
+     213.5
+    ],
+    [
+     24.0,
+     209.7
+    ],
+    [
+     24.0,
+     231.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     213.5
+    ],
+    [
+     13.5,
+     197.4
+    ],
+    [
+     24.0,
+     194.7
+    ],
+    [
+     24.0,
+     209.7
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     189.1
+    ],
+    [
+     13.5,
+     165.4
+    ],
+    [
+     24.0,
+     165.0
+    ],
+    [
+     24.0,
+     187.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     165.4
+    ],
+    [
+     13.5,
+     141.7
+    ],
+    [
+     24.0,
+     143.0
+    ],
+    [
+     24.0,
+     165.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     141.7
+    ],
+    [
+     13.5,
+     125.5
+    ],
+    [
+     24.0,
+     128.0
+    ],
+    [
+     24.0,
+     143.0
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     117.2
+    ],
+    [
+     13.5,
+     93.5
+    ],
+    [
+     24.0,
+     98.2
+    ],
+    [
+     24.0,
+     120.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     93.5
+    ],
+    [
+     13.5,
+     69.8
+    ],
+    [
+     24.0,
+     76.2
+    ],
+    [
+     24.0,
+     98.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     69.8
+    ],
+    [
+     13.5,
+     53.6
+    ],
+    [
+     24.0,
+     61.2
+    ],
+    [
+     24.0,
+     76.2
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Threat briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     45.3
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     53.5
+    ]
+   ],
+   "about": "Crews are briefed on enemy threats before a sortie.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.4,
+     10.5
+    ],
+    [
+     132.6,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     131.4,
+     10.5
+    ],
+    [
+     252.2,
+     10.5
+    ],
+    [
+     251.8,
+     13.5
+    ],
+    [
+     132.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     252.2,
+     10.5
+    ],
+    [
+     373.1,
+     10.5
+    ],
+    [
+     370.9,
+     13.5
+    ],
+    [
+     251.8,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     373.1,
+     10.5
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     429.5,
+     74.8
+    ],
+    [
+     426.5,
+     77.2
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     370.9,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     429.5,
+     74.8
+    ],
+    [
+     429.5,
+     195.4
+    ],
+    [
+     426.5,
+     196.6
+    ],
+    [
+     426.5,
+     77.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     429.5,
+     195.4
+    ],
+    [
+     429.5,
+     316.0
+    ],
+    [
+     426.5,
+     316.0
+    ],
+    [
+     426.5,
+     196.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     429.5,
+     316.0
+    ],
+    [
+     429.5,
+     436.6
+    ],
+    [
+     426.5,
+     435.4
+    ],
+    [
+     426.5,
+     316.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     429.5,
+     436.6
+    ],
+    [
+     429.5,
+     557.1
+    ],
+    [
+     426.5,
+     554.9
+    ],
+    [
+     426.5,
+     435.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     429.5,
+     557.1
+    ],
+    [
+     429.5,
+     629.5
+    ],
+    [
+     380.8,
+     629.5
+    ],
+    [
+     379.2,
+     626.5
+    ],
+    [
+     426.5,
+     626.5
+    ],
+    [
+     426.5,
+     554.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     380.8,
+     629.5
+    ],
+    [
+     258.9,
+     629.5
+    ],
+    [
+     261.1,
+     626.5
+    ],
+    [
+     379.2,
+     626.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     258.9,
+     629.5
+    ],
+    [
+     230.5,
+     629.5
+    ],
+    [
+     230.5,
+     537.5
+    ],
+    [
+     233.5,
+     534.5
+    ],
+    [
+     233.5,
+     626.5
+    ],
+    [
+     261.1,
+     626.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     230.5,
+     537.5
+    ],
+    [
+     230.5,
+     417.5
+    ],
+    [
+     233.5,
+     414.5
+    ],
+    [
+     233.5,
+     534.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     230.5,
+     417.5
+    ],
+    [
+     230.5,
+     309.5
+    ],
+    [
+     218.5,
+     309.5
+    ],
+    [
+     221.5,
+     306.5
+    ],
+    [
+     233.5,
+     306.5
+    ],
+    [
+     233.5,
+     414.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     218.5,
+     309.5
+    ],
+    [
+     98.5,
+     309.5
+    ],
+    [
+     101.5,
+     306.5
+    ],
+    [
+     221.5,
+     306.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     98.5,
+     309.5
+    ],
+    [
+     10.5,
+     309.5
+    ],
+    [
+     10.5,
+     277.2
+    ],
+    [
+     13.5,
+     274.8
+    ],
+    [
+     13.5,
+     306.5
+    ],
+    [
+     101.5,
+     306.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     277.2
+    ],
+    [
+     10.5,
+     156.0
+    ],
+    [
+     13.5,
+     156.0
+    ],
+    [
+     13.5,
+     274.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     156.0
+    ],
+    [
+     10.5,
+     34.7
+    ],
+    [
+     13.5,
+     37.3
+    ],
+    [
+     13.5,
+     156.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     34.7
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     37.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Intelligence office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.5,
+     0.0
+    ],
+    [
+     29.1,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Analysts prepare threat briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.5,
+     0.0
+    ],
+    [
+     23.3,
+     0.0
+    ],
+    [
+     32.7,
+     10.5
+    ],
+    [
+     29.1,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.3,
+     0.0
+    ],
+    [
+     30.1,
+     0.0
+    ],
+    [
+     39.2,
+     10.5
+    ],
+    [
+     32.7,
+     10.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.1,
+     0.0
+    ],
+    [
+     44.7,
+     0.0
+    ],
+    [
+     53.1,
+     10.5
+    ],
+    [
+     39.2,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     44.7,
+     0.0
+    ],
+    [
+     59.4,
+     0.0
+    ],
+    [
+     67.0,
+     10.5
+    ],
+    [
+     53.1,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     59.4,
+     0.0
+    ],
+    [
+     74.0,
+     0.0
+    ],
+    [
+     81.0,
+     10.5
+    ],
+    [
+     67.0,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.0,
+     0.0
+    ],
+    [
+     88.6,
+     0.0
+    ],
+    [
+     94.9,
+     10.5
+    ],
+    [
+     81.0,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     88.6,
+     0.0
+    ],
+    [
+     103.3,
+     0.0
+    ],
+    [
+     108.9,
+     10.5
+    ],
+    [
+     94.9,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.3,
+     0.0
+    ],
+    [
+     117.9,
+     0.0
+    ],
+    [
+     122.8,
+     10.5
+    ],
+    [
+     108.9,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     117.9,
+     0.0
+    ],
+    [
+     132.6,
+     0.0
+    ],
+    [
+     136.7,
+     10.5
+    ],
+    [
+     122.8,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     132.6,
+     0.0
+    ],
+    [
+     147.2,
+     0.0
+    ],
+    [
+     150.7,
+     10.5
+    ],
+    [
+     136.7,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     147.2,
+     0.0
+    ],
+    [
+     161.8,
+     0.0
+    ],
+    [
+     164.6,
+     10.5
+    ],
+    [
+     150.7,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.8,
+     0.0
+    ],
+    [
+     176.5,
+     0.0
+    ],
+    [
+     178.5,
+     10.5
+    ],
+    [
+     164.6,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     176.5,
+     0.0
+    ],
+    [
+     191.1,
+     0.0
+    ],
+    [
+     192.5,
+     10.5
+    ],
+    [
+     178.5,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     191.1,
+     0.0
+    ],
+    [
+     205.7,
+     0.0
+    ],
+    [
+     206.4,
+     10.5
+    ],
+    [
+     192.5,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     205.7,
+     0.0
+    ],
+    [
+     220.4,
+     0.0
+    ],
+    [
+     220.3,
+     10.5
+    ],
+    [
+     206.4,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.4,
+     0.0
+    ],
+    [
+     235.0,
+     0.0
+    ],
+    [
+     234.3,
+     10.5
+    ],
+    [
+     220.3,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     0.0
+    ],
+    [
+     249.6,
+     0.0
+    ],
+    [
+     248.2,
+     10.5
+    ],
+    [
+     234.3,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     249.6,
+     0.0
+    ],
+    [
+     264.3,
+     0.0
+    ],
+    [
+     262.2,
+     10.5
+    ],
+    [
+     248.2,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     264.3,
+     0.0
+    ],
+    [
+     278.9,
+     0.0
+    ],
+    [
+     276.1,
+     10.5
+    ],
+    [
+     262.2,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     278.9,
+     0.0
+    ],
+    [
+     293.5,
+     0.0
+    ],
+    [
+     290.0,
+     10.5
+    ],
+    [
+     276.1,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     293.5,
+     0.0
+    ],
+    [
+     308.2,
+     0.0
+    ],
+    [
+     304.0,
+     10.5
+    ],
+    [
+     290.0,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     308.2,
+     0.0
+    ],
+    [
+     322.8,
+     0.0
+    ],
+    [
+     317.9,
+     10.5
+    ],
+    [
+     304.0,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     322.8,
+     0.0
+    ],
+    [
+     337.4,
+     0.0
+    ],
+    [
+     331.8,
+     10.5
+    ],
+    [
+     317.9,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     337.4,
+     0.0
+    ],
+    [
+     352.1,
+     0.0
+    ],
+    [
+     345.8,
+     10.5
+    ],
+    [
+     331.8,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     352.1,
+     0.0
+    ],
+    [
+     366.7,
+     0.0
+    ],
+    [
+     359.7,
+     10.5
+    ],
+    [
+     345.8,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     366.7,
+     0.0
+    ],
+    [
+     381.3,
+     0.0
+    ],
+    [
+     373.6,
+     10.5
+    ],
+    [
+     359.7,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     381.3,
+     0.0
+    ],
+    [
+     396.0,
+     0.0
+    ],
+    [
+     387.6,
+     10.5
+    ],
+    [
+     373.6,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     396.0,
+     0.0
+    ],
+    [
+     410.6,
+     0.0
+    ],
+    [
+     401.5,
+     10.5
+    ],
+    [
+     387.6,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     410.6,
+     0.0
+    ],
+    [
+     425.3,
+     0.0
+    ],
+    [
+     415.5,
+     10.5
+    ],
+    [
+     401.5,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     425.3,
+     0.0
+    ],
+    [
+     439.9,
+     0.0
+    ],
+    [
+     429.4,
+     10.5
+    ],
+    [
+     415.5,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     439.9,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     14.4
+    ],
+    [
+     429.5,
+     24.4
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     429.4,
+     10.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     14.4
+    ],
+    [
+     440.0,
+     28.9
+    ],
+    [
+     429.5,
+     38.5
+    ],
+    [
+     429.5,
+     24.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     28.9
+    ],
+    [
+     440.0,
+     43.5
+    ],
+    [
+     429.5,
+     52.5
+    ],
+    [
+     429.5,
+     38.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     43.5
+    ],
+    [
+     440.0,
+     58.0
+    ],
+    [
+     429.5,
+     66.6
+    ],
+    [
+     429.5,
+     52.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     58.0
+    ],
+    [
+     440.0,
+     72.5
+    ],
+    [
+     429.5,
+     80.6
+    ],
+    [
+     429.5,
+     66.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     72.5
+    ],
+    [
+     440.0,
+     87.0
+    ],
+    [
+     429.5,
+     94.7
+    ],
+    [
+     429.5,
+     80.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     87.0
+    ],
+    [
+     440.0,
+     101.6
+    ],
+    [
+     429.5,
+     108.7
+    ],
+    [
+     429.5,
+     94.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     101.6
+    ],
+    [
+     440.0,
+     116.1
+    ],
+    [
+     429.5,
+     122.8
+    ],
+    [
+     429.5,
+     108.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     116.1
+    ],
+    [
+     440.0,
+     130.6
+    ],
+    [
+     429.5,
+     136.8
+    ],
+    [
+     429.5,
+     122.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     130.6
+    ],
+    [
+     440.0,
+     145.1
+    ],
+    [
+     429.5,
+     150.9
+    ],
+    [
+     429.5,
+     136.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     145.1
+    ],
+    [
+     440.0,
+     159.7
+    ],
+    [
+     429.5,
+     164.9
+    ],
+    [
+     429.5,
+     150.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     159.7
+    ],
+    [
+     440.0,
+     174.2
+    ],
+    [
+     429.5,
+     179.0
+    ],
+    [
+     429.5,
+     164.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     174.2
+    ],
+    [
+     440.0,
+     188.7
+    ],
+    [
+     429.5,
+     193.0
+    ],
+    [
+     429.5,
+     179.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     188.7
+    ],
+    [
+     440.0,
+     203.2
+    ],
+    [
+     429.5,
+     207.1
+    ],
+    [
+     429.5,
+     193.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     203.2
+    ],
+    [
+     440.0,
+     217.7
+    ],
+    [
+     429.5,
+     221.1
+    ],
+    [
+     429.5,
+     207.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     217.7
+    ],
+    [
+     440.0,
+     232.3
+    ],
+    [
+     429.5,
+     235.2
+    ],
+    [
+     429.5,
+     221.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     232.3
+    ],
+    [
+     440.0,
+     246.8
+    ],
+    [
+     429.5,
+     249.2
+    ],
+    [
+     429.5,
+     235.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     246.8
+    ],
+    [
+     440.0,
+     261.3
+    ],
+    [
+     429.5,
+     263.2
+    ],
+    [
+     429.5,
+     249.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     261.3
+    ],
+    [
+     440.0,
+     275.8
+    ],
+    [
+     429.5,
+     277.3
+    ],
+    [
+     429.5,
+     263.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     275.8
+    ],
+    [
+     440.0,
+     290.4
+    ],
+    [
+     429.5,
+     291.3
+    ],
+    [
+     429.5,
+     277.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     290.4
+    ],
+    [
+     440.0,
+     304.9
+    ],
+    [
+     429.5,
+     305.4
+    ],
+    [
+     429.5,
+     291.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     304.9
+    ],
+    [
+     440.0,
+     319.4
+    ],
+    [
+     429.5,
+     319.4
+    ],
+    [
+     429.5,
+     305.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     319.4
+    ],
+    [
+     440.0,
+     333.9
+    ],
+    [
+     429.5,
+     333.5
+    ],
+    [
+     429.5,
+     319.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     333.9
+    ],
+    [
+     440.0,
+     348.5
+    ],
+    [
+     429.5,
+     347.5
+    ],
+    [
+     429.5,
+     333.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     348.5
+    ],
+    [
+     440.0,
+     363.0
+    ],
+    [
+     429.5,
+     361.6
+    ],
+    [
+     429.5,
+     347.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     363.0
+    ],
+    [
+     440.0,
+     377.5
+    ],
+    [
+     429.5,
+     375.6
+    ],
+    [
+     429.5,
+     361.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     377.5
+    ],
+    [
+     440.0,
+     392.0
+    ],
+    [
+     429.5,
+     389.7
+    ],
+    [
+     429.5,
+     375.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     392.0
+    ],
+    [
+     440.0,
+     406.6
+    ],
+    [
+     429.5,
+     403.7
+    ],
+    [
+     429.5,
+     389.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     406.6
+    ],
+    [
+     440.0,
+     421.1
+    ],
+    [
+     429.5,
+     417.8
+    ],
+    [
+     429.5,
+     403.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     421.1
+    ],
+    [
+     440.0,
+     435.6
+    ],
+    [
+     429.5,
+     431.8
+    ],
+    [
+     429.5,
+     417.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     435.6
+    ],
+    [
+     440.0,
+     450.1
+    ],
+    [
+     429.5,
+     445.9
+    ],
+    [
+     429.5,
+     431.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     450.1
+    ],
+    [
+     440.0,
+     464.7
+    ],
+    [
+     429.5,
+     459.9
+    ],
+    [
+     429.5,
+     445.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     464.7
+    ],
+    [
+     440.0,
+     479.2
+    ],
+    [
+     429.5,
+     474.0
+    ],
+    [
+     429.5,
+     459.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     479.2
+    ],
+    [
+     440.0,
+     493.7
+    ],
+    [
+     429.5,
+     488.0
+    ],
+    [
+     429.5,
+     474.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     493.7
+    ],
+    [
+     440.0,
+     508.2
+    ],
+    [
+     429.5,
+     502.1
+    ],
+    [
+     429.5,
+     488.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     508.2
+    ],
+    [
+     440.0,
+     522.8
+    ],
+    [
+     429.5,
+     516.1
+    ],
+    [
+     429.5,
+     502.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     522.8
+    ],
+    [
+     440.0,
+     537.3
+    ],
+    [
+     429.5,
+     530.1
+    ],
+    [
+     429.5,
+     516.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     537.3
+    ],
+    [
+     440.0,
+     551.8
+    ],
+    [
+     429.5,
+     544.2
+    ],
+    [
+     429.5,
+     530.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     551.8
+    ],
+    [
+     440.0,
+     566.3
+    ],
+    [
+     429.5,
+     558.2
+    ],
+    [
+     429.5,
+     544.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     566.3
+    ],
+    [
+     440.0,
+     580.8
+    ],
+    [
+     429.5,
+     572.3
+    ],
+    [
+     429.5,
+     558.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     580.8
+    ],
+    [
+     440.0,
+     595.4
+    ],
+    [
+     429.5,
+     586.3
+    ],
+    [
+     429.5,
+     572.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     595.4
+    ],
+    [
+     440.0,
+     609.9
+    ],
+    [
+     429.5,
+     600.4
+    ],
+    [
+     429.5,
+     586.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     609.9
+    ],
+    [
+     440.0,
+     624.4
+    ],
+    [
+     429.5,
+     614.4
+    ],
+    [
+     429.5,
+     600.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     624.4
+    ],
+    [
+     440.0,
+     638.9
+    ],
+    [
+     429.5,
+     628.5
+    ],
+    [
+     429.5,
+     614.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     440.0,
+     638.9
+    ],
+    [
+     440.0,
+     640.0
+    ],
+    [
+     426.1,
+     640.0
+    ],
+    [
+     416.9,
+     629.5
+    ],
+    [
+     429.5,
+     629.5
+    ],
+    [
+     429.5,
+     628.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.1,
+     640.0
+    ],
+    [
+     411.1,
+     640.0
+    ],
+    [
+     403.3,
+     629.5
+    ],
+    [
+     416.9,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     411.1,
+     640.0
+    ],
+    [
+     396.1,
+     640.0
+    ],
+    [
+     389.8,
+     629.5
+    ],
+    [
+     403.3,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     396.1,
+     640.0
+    ],
+    [
+     381.1,
+     640.0
+    ],
+    [
+     376.2,
+     629.5
+    ],
+    [
+     389.8,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     381.1,
+     640.0
+    ],
+    [
+     366.1,
+     640.0
+    ],
+    [
+     362.6,
+     629.5
+    ],
+    [
+     376.2,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     366.1,
+     640.0
+    ],
+    [
+     351.1,
+     640.0
+    ],
+    [
+     349.1,
+     629.5
+    ],
+    [
+     362.6,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     351.1,
+     640.0
+    ],
+    [
+     336.1,
+     640.0
+    ],
+    [
+     335.5,
+     629.5
+    ],
+    [
+     349.1,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     336.1,
+     640.0
+    ],
+    [
+     321.1,
+     640.0
+    ],
+    [
+     321.9,
+     629.5
+    ],
+    [
+     335.5,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     321.1,
+     640.0
+    ],
+    [
+     306.1,
+     640.0
+    ],
+    [
+     308.4,
+     629.5
+    ],
+    [
+     321.9,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     306.1,
+     640.0
+    ],
+    [
+     291.1,
+     640.0
+    ],
+    [
+     294.8,
+     629.5
+    ],
+    [
+     308.4,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     291.1,
+     640.0
+    ],
+    [
+     276.1,
+     640.0
+    ],
+    [
+     281.2,
+     629.5
+    ],
+    [
+     294.8,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     276.1,
+     640.0
+    ],
+    [
+     261.1,
+     640.0
+    ],
+    [
+     267.7,
+     629.5
+    ],
+    [
+     281.2,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E335",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     261.1,
+     640.0
+    ],
+    [
+     246.1,
+     640.0
+    ],
+    [
+     254.1,
+     629.5
+    ],
+    [
+     267.7,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E336",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     246.1,
+     640.0
+    ],
+    [
+     231.1,
+     640.0
+    ],
+    [
+     240.5,
+     629.5
+    ],
+    [
+     254.1,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E337",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     231.1,
+     640.0
+    ],
+    [
+     220.0,
+     640.0
+    ],
+    [
+     220.0,
+     636.3
+    ],
+    [
+     230.5,
+     625.8
+    ],
+    [
+     230.5,
+     629.5
+    ],
+    [
+     240.5,
+     629.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E338",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     636.3
+    ],
+    [
+     220.0,
+     622.0
+    ],
+    [
+     230.5,
+     611.5
+    ],
+    [
+     230.5,
+     625.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E339",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     622.0
+    ],
+    [
+     220.0,
+     607.7
+    ],
+    [
+     230.5,
+     597.2
+    ],
+    [
+     230.5,
+     611.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E340",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     607.7
+    ],
+    [
+     220.0,
+     593.4
+    ],
+    [
+     230.5,
+     582.9
+    ],
+    [
+     230.5,
+     597.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E341",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     593.4
+    ],
+    [
+     220.0,
+     579.1
+    ],
+    [
+     230.5,
+     568.6
+    ],
+    [
+     230.5,
+     582.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E342",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     579.1
+    ],
+    [
+     220.0,
+     564.8
+    ],
+    [
+     230.5,
+     554.3
+    ],
+    [
+     230.5,
+     568.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E343",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     564.8
+    ],
+    [
+     220.0,
+     550.5
+    ],
+    [
+     230.5,
+     540.0
+    ],
+    [
+     230.5,
+     554.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E344",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     550.5
+    ],
+    [
+     220.0,
+     536.3
+    ],
+    [
+     230.5,
+     525.8
+    ],
+    [
+     230.5,
+     540.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E345",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     536.3
+    ],
+    [
+     220.0,
+     522.0
+    ],
+    [
+     230.5,
+     511.5
+    ],
+    [
+     230.5,
+     525.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E346",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     522.0
+    ],
+    [
+     220.0,
+     507.7
+    ],
+    [
+     230.5,
+     497.2
+    ],
+    [
+     230.5,
+     511.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E347",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     507.7
+    ],
+    [
+     220.0,
+     493.4
+    ],
+    [
+     230.5,
+     482.9
+    ],
+    [
+     230.5,
+     497.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E348",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     493.4
+    ],
+    [
+     220.0,
+     479.1
+    ],
+    [
+     230.5,
+     468.6
+    ],
+    [
+     230.5,
+     482.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E349",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     479.1
+    ],
+    [
+     220.0,
+     464.8
+    ],
+    [
+     230.5,
+     454.3
+    ],
+    [
+     230.5,
+     468.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E350",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     464.8
+    ],
+    [
+     220.0,
+     450.5
+    ],
+    [
+     230.5,
+     440.0
+    ],
+    [
+     230.5,
+     454.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E351",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     450.5
+    ],
+    [
+     220.0,
+     436.3
+    ],
+    [
+     230.5,
+     425.8
+    ],
+    [
+     230.5,
+     440.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E352",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     436.3
+    ],
+    [
+     220.0,
+     422.0
+    ],
+    [
+     230.5,
+     411.5
+    ],
+    [
+     230.5,
+     425.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E353",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     422.0
+    ],
+    [
+     220.0,
+     407.7
+    ],
+    [
+     230.5,
+     397.2
+    ],
+    [
+     230.5,
+     411.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E354",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     407.7
+    ],
+    [
+     220.0,
+     393.4
+    ],
+    [
+     230.5,
+     382.9
+    ],
+    [
+     230.5,
+     397.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E355",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     393.4
+    ],
+    [
+     220.0,
+     379.1
+    ],
+    [
+     230.5,
+     368.6
+    ],
+    [
+     230.5,
+     382.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E356",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     379.1
+    ],
+    [
+     220.0,
+     364.8
+    ],
+    [
+     230.5,
+     354.3
+    ],
+    [
+     230.5,
+     368.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E357",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     364.8
+    ],
+    [
+     220.0,
+     350.5
+    ],
+    [
+     230.5,
+     340.0
+    ],
+    [
+     230.5,
+     354.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E358",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     350.5
+    ],
+    [
+     220.0,
+     336.3
+    ],
+    [
+     230.5,
+     325.8
+    ],
+    [
+     230.5,
+     340.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E359",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     336.3
+    ],
+    [
+     220.0,
+     322.0
+    ],
+    [
+     230.5,
+     311.5
+    ],
+    [
+     230.5,
+     325.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E360",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.0,
+     322.0
+    ],
+    [
+     220.0,
+     320.0
+    ],
+    [
+     207.7,
+     320.0
+    ],
+    [
+     218.2,
+     309.5
+    ],
+    [
+     230.5,
+     309.5
+    ],
+    [
+     230.5,
+     311.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E361",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     207.7,
+     320.0
+    ],
+    [
+     193.4,
+     320.0
+    ],
+    [
+     203.9,
+     309.5
+    ],
+    [
+     218.2,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E362",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     193.4,
+     320.0
+    ],
+    [
+     179.1,
+     320.0
+    ],
+    [
+     189.6,
+     309.5
+    ],
+    [
+     203.9,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E363",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     179.1,
+     320.0
+    ],
+    [
+     164.8,
+     320.0
+    ],
+    [
+     175.3,
+     309.5
+    ],
+    [
+     189.6,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E364",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.8,
+     320.0
+    ],
+    [
+     150.5,
+     320.0
+    ],
+    [
+     161.0,
+     309.5
+    ],
+    [
+     175.3,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E365",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     150.5,
+     320.0
+    ],
+    [
+     136.3,
+     320.0
+    ],
+    [
+     146.8,
+     309.5
+    ],
+    [
+     161.0,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E366",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     136.3,
+     320.0
+    ],
+    [
+     122.0,
+     320.0
+    ],
+    [
+     132.5,
+     309.5
+    ],
+    [
+     146.8,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E367",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     122.0,
+     320.0
+    ],
+    [
+     107.7,
+     320.0
+    ],
+    [
+     118.2,
+     309.5
+    ],
+    [
+     132.5,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E368",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     107.7,
+     320.0
+    ],
+    [
+     93.4,
+     320.0
+    ],
+    [
+     103.9,
+     309.5
+    ],
+    [
+     118.2,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E369",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     93.4,
+     320.0
+    ],
+    [
+     79.1,
+     320.0
+    ],
+    [
+     89.6,
+     309.5
+    ],
+    [
+     103.9,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E370",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.1,
+     320.0
+    ],
+    [
+     64.8,
+     320.0
+    ],
+    [
+     75.3,
+     309.5
+    ],
+    [
+     89.6,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E371",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.8,
+     320.0
+    ],
+    [
+     50.5,
+     320.0
+    ],
+    [
+     61.0,
+     309.5
+    ],
+    [
+     75.3,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E372",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.5,
+     320.0
+    ],
+    [
+     36.3,
+     320.0
+    ],
+    [
+     46.8,
+     309.5
+    ],
+    [
+     61.0,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E373",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     36.3,
+     320.0
+    ],
+    [
+     22.0,
+     320.0
+    ],
+    [
+     32.5,
+     309.5
+    ],
+    [
+     46.8,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E374",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     22.0,
+     320.0
+    ],
+    [
+     7.7,
+     320.0
+    ],
+    [
+     18.2,
+     309.5
+    ],
+    [
+     32.5,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E375",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     7.7,
+     320.0
+    ],
+    [
+     0.0,
+     320.0
+    ],
+    [
+     0.0,
+     313.2
+    ],
+    [
+     10.5,
+     303.1
+    ],
+    [
+     10.5,
+     309.5
+    ],
+    [
+     18.2,
+     309.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E376",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     313.2
+    ],
+    [
+     0.0,
+     298.4
+    ],
+    [
+     10.5,
+     289.3
+    ],
+    [
+     10.5,
+     303.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E377",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     298.4
+    ],
+    [
+     0.0,
+     283.6
+    ],
+    [
+     10.5,
+     275.5
+    ],
+    [
+     10.5,
+     289.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E378",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     283.6
+    ],
+    [
+     0.0,
+     268.9
+    ],
+    [
+     10.5,
+     261.7
+    ],
+    [
+     10.5,
+     275.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E379",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     268.9
+    ],
+    [
+     0.0,
+     254.1
+    ],
+    [
+     10.5,
+     247.9
+    ],
+    [
+     10.5,
+     261.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E380",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     254.1
+    ],
+    [
+     0.0,
+     239.3
+    ],
+    [
+     10.5,
+     234.1
+    ],
+    [
+     10.5,
+     247.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E381",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     239.3
+    ],
+    [
+     0.0,
+     224.6
+    ],
+    [
+     10.5,
+     220.3
+    ],
+    [
+     10.5,
+     234.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E382",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     224.6
+    ],
+    [
+     0.0,
+     209.8
+    ],
+    [
+     10.5,
+     206.5
+    ],
+    [
+     10.5,
+     220.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E383",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     209.8
+    ],
+    [
+     0.0,
+     195.0
+    ],
+    [
+     10.5,
+     192.7
+    ],
+    [
+     10.5,
+     206.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E384",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     195.0
+    ],
+    [
+     0.0,
+     180.2
+    ],
+    [
+     10.5,
+     178.9
+    ],
+    [
+     10.5,
+     192.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E385",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     180.2
+    ],
+    [
+     0.0,
+     165.5
+    ],
+    [
+     10.5,
+     165.1
+    ],
+    [
+     10.5,
+     178.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E386",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     165.5
+    ],
+    [
+     0.0,
+     150.7
+    ],
+    [
+     10.5,
+     151.3
+    ],
+    [
+     10.5,
+     165.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E387",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     150.7
+    ],
+    [
+     0.0,
+     135.9
+    ],
+    [
+     10.5,
+     137.5
+    ],
+    [
+     10.5,
+     151.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E388",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     135.9
+    ],
+    [
+     0.0,
+     121.2
+    ],
+    [
+     10.5,
+     123.7
+    ],
+    [
+     10.5,
+     137.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E389",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     121.2
+    ],
+    [
+     0.0,
+     106.4
+    ],
+    [
+     10.5,
+     109.9
+    ],
+    [
+     10.5,
+     123.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E390",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     106.4
+    ],
+    [
+     0.0,
+     91.6
+    ],
+    [
+     10.5,
+     96.1
+    ],
+    [
+     10.5,
+     109.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E391",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     91.6
+    ],
+    [
+     0.0,
+     76.8
+    ],
+    [
+     10.5,
+     82.3
+    ],
+    [
+     10.5,
+     96.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E392",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     76.8
+    ],
+    [
+     0.0,
+     62.1
+    ],
+    [
+     10.5,
+     68.5
+    ],
+    [
+     10.5,
+     82.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E393",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     62.1
+    ],
+    [
+     0.0,
+     47.3
+    ],
+    [
+     10.5,
+     54.7
+    ],
+    [
+     10.5,
+     68.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E394",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     47.3
+    ],
+    [
+     0.0,
+     32.5
+    ],
+    [
+     10.5,
+     40.9
+    ],
+    [
+     10.5,
+     54.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E395",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     32.5
+    ],
+    [
+     0.0,
+     17.8
+    ],
+    [
+     10.5,
+     27.1
+    ],
+    [
+     10.5,
+     40.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E396",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     17.8
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     27.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E397",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     28.2,
+     13.5
+    ],
+    [
+     37.9,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E398",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     28.2,
+     13.5
+    ],
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.9,
+     24.0
+    ],
+    [
+     37.9,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E399",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     53.2,
+     13.5
+    ],
+    [
+     67.8,
+     13.5
+    ],
+    [
+     75.6,
+     24.0
+    ],
+    [
+     61.6,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E400",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     67.8,
+     13.5
+    ],
+    [
+     82.5,
+     13.5
+    ],
+    [
+     89.5,
+     24.0
+    ],
+    [
+     75.6,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E401",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     82.5,
+     13.5
+    ],
+    [
+     97.1,
+     13.5
+    ],
+    [
+     103.4,
+     24.0
+    ],
+    [
+     89.5,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E402",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.1,
+     13.5
+    ],
+    [
+     116.1,
+     13.5
+    ],
+    [
+     121.4,
+     24.0
+    ],
+    [
+     103.4,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E403",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     124.3,
+     13.5
+    ],
+    [
+     138.9,
+     13.5
+    ],
+    [
+     143.1,
+     24.0
+    ],
+    [
+     129.1,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E404",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     138.9,
+     13.5
+    ],
+    [
+     153.6,
+     13.5
+    ],
+    [
+     157.0,
+     24.0
+    ],
+    [
+     143.1,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E405",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     153.6,
+     13.5
+    ],
+    [
+     168.3,
+     13.5
+    ],
+    [
+     170.9,
+     24.0
+    ],
+    [
+     157.0,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E406",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.3,
+     13.5
+    ],
+    [
+     187.2,
+     13.5
+    ],
+    [
+     188.9,
+     24.0
+    ],
+    [
+     170.9,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E407",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     195.4,
+     13.5
+    ],
+    [
+     210.1,
+     13.5
+    ],
+    [
+     210.6,
+     24.0
+    ],
+    [
+     196.7,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E408",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     210.1,
+     13.5
+    ],
+    [
+     224.7,
+     13.5
+    ],
+    [
+     224.5,
+     24.0
+    ],
+    [
+     210.6,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E409",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     224.7,
+     13.5
+    ],
+    [
+     239.4,
+     13.5
+    ],
+    [
+     238.4,
+     24.0
+    ],
+    [
+     224.5,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E410",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     239.4,
+     13.5
+    ],
+    [
+     258.3,
+     13.5
+    ],
+    [
+     256.4,
+     24.0
+    ],
+    [
+     238.4,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E411",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     266.5,
+     13.5
+    ],
+    [
+     281.2,
+     13.5
+    ],
+    [
+     278.1,
+     24.0
+    ],
+    [
+     264.2,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E412",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     281.2,
+     13.5
+    ],
+    [
+     295.8,
+     13.5
+    ],
+    [
+     292.0,
+     24.0
+    ],
+    [
+     278.1,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E413",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     295.8,
+     13.5
+    ],
+    [
+     310.5,
+     13.5
+    ],
+    [
+     305.9,
+     24.0
+    ],
+    [
+     292.0,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E414",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     310.5,
+     13.5
+    ],
+    [
+     329.4,
+     13.5
+    ],
+    [
+     323.9,
+     24.0
+    ],
+    [
+     305.9,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E415",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     337.6,
+     13.5
+    ],
+    [
+     352.3,
+     13.5
+    ],
+    [
+     345.6,
+     24.0
+    ],
+    [
+     331.7,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E416",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     352.3,
+     13.5
+    ],
+    [
+     367.0,
+     13.5
+    ],
+    [
+     359.5,
+     24.0
+    ],
+    [
+     345.6,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E417",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     367.0,
+     13.5
+    ],
+    [
+     381.6,
+     13.5
+    ],
+    [
+     373.4,
+     24.0
+    ],
+    [
+     359.5,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E418",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     381.6,
+     13.5
+    ],
+    [
+     400.5,
+     13.5
+    ],
+    [
+     391.4,
+     24.0
+    ],
+    [
+     373.4,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E419",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     408.8,
+     13.5
+    ],
+    [
+     423.4,
+     13.5
+    ],
+    [
+     413.1,
+     24.0
+    ],
+    [
+     399.2,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E420",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     423.4,
+     13.5
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     426.5,
+     25.0
+    ],
+    [
+     416.0,
+     35.1
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     413.1,
+     24.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E421",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     25.0
+    ],
+    [
+     426.5,
+     39.5
+    ],
+    [
+     416.0,
+     49.1
+    ],
+    [
+     416.0,
+     35.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E422",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     39.5
+    ],
+    [
+     426.5,
+     58.3
+    ],
+    [
+     416.0,
+     67.3
+    ],
+    [
+     416.0,
+     49.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E423",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     66.4
+    ],
+    [
+     426.5,
+     81.0
+    ],
+    [
+     416.0,
+     89.1
+    ],
+    [
+     416.0,
+     75.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E424",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     81.0
+    ],
+    [
+     426.5,
+     95.5
+    ],
+    [
+     416.0,
+     103.2
+    ],
+    [
+     416.0,
+     89.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E425",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     95.5
+    ],
+    [
+     426.5,
+     110.0
+    ],
+    [
+     416.0,
+     117.2
+    ],
+    [
+     416.0,
+     103.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E426",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     110.0
+    ],
+    [
+     426.5,
+     128.8
+    ],
+    [
+     416.0,
+     135.4
+    ],
+    [
+     416.0,
+     117.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E427",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     136.9
+    ],
+    [
+     426.5,
+     151.5
+    ],
+    [
+     416.0,
+     157.2
+    ],
+    [
+     416.0,
+     143.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E428",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     151.5
+    ],
+    [
+     426.5,
+     166.0
+    ],
+    [
+     416.0,
+     171.3
+    ],
+    [
+     416.0,
+     157.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E429",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     166.0
+    ],
+    [
+     426.5,
+     180.5
+    ],
+    [
+     416.0,
+     185.3
+    ],
+    [
+     416.0,
+     171.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E430",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     180.5
+    ],
+    [
+     426.5,
+     199.3
+    ],
+    [
+     416.0,
+     203.5
+    ],
+    [
+     416.0,
+     185.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E431",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     207.5
+    ],
+    [
+     426.5,
+     222.0
+    ],
+    [
+     416.0,
+     225.4
+    ],
+    [
+     416.0,
+     211.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E432",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     222.0
+    ],
+    [
+     426.5,
+     236.5
+    ],
+    [
+     416.0,
+     239.4
+    ],
+    [
+     416.0,
+     225.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E433",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     236.5
+    ],
+    [
+     426.5,
+     251.1
+    ],
+    [
+     416.0,
+     253.4
+    ],
+    [
+     416.0,
+     239.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E434",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     251.1
+    ],
+    [
+     426.5,
+     269.8
+    ],
+    [
+     416.0,
+     271.6
+    ],
+    [
+     416.0,
+     253.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E435",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     278.0
+    ],
+    [
+     426.5,
+     292.5
+    ],
+    [
+     416.0,
+     293.5
+    ],
+    [
+     416.0,
+     279.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E436",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     292.5
+    ],
+    [
+     426.5,
+     307.0
+    ],
+    [
+     416.0,
+     307.5
+    ],
+    [
+     416.0,
+     293.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E437",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     307.0
+    ],
+    [
+     426.5,
+     321.6
+    ],
+    [
+     416.0,
+     321.5
+    ],
+    [
+     416.0,
+     307.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E438",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     321.6
+    ],
+    [
+     426.5,
+     340.4
+    ],
+    [
+     416.0,
+     339.7
+    ],
+    [
+     416.0,
+     321.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E439",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     348.5
+    ],
+    [
+     426.5,
+     363.0
+    ],
+    [
+     416.0,
+     361.6
+    ],
+    [
+     416.0,
+     347.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E440",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     363.0
+    ],
+    [
+     426.5,
+     377.6
+    ],
+    [
+     416.0,
+     375.6
+    ],
+    [
+     416.0,
+     361.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E441",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     377.6
+    ],
+    [
+     426.5,
+     392.1
+    ],
+    [
+     416.0,
+     389.6
+    ],
+    [
+     416.0,
+     375.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E442",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     392.1
+    ],
+    [
+     426.5,
+     410.9
+    ],
+    [
+     416.0,
+     407.8
+    ],
+    [
+     416.0,
+     389.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E443",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     419.0
+    ],
+    [
+     426.5,
+     433.5
+    ],
+    [
+     416.0,
+     429.7
+    ],
+    [
+     416.0,
+     415.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E444",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     433.5
+    ],
+    [
+     426.5,
+     448.1
+    ],
+    [
+     416.0,
+     443.7
+    ],
+    [
+     416.0,
+     429.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E445",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     448.1
+    ],
+    [
+     426.5,
+     462.6
+    ],
+    [
+     416.0,
+     457.7
+    ],
+    [
+     416.0,
+     443.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E446",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     462.6
+    ],
+    [
+     426.5,
+     481.4
+    ],
+    [
+     416.0,
+     475.9
+    ],
+    [
+     416.0,
+     457.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E447",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     489.5
+    ],
+    [
+     426.5,
+     504.1
+    ],
+    [
+     416.0,
+     497.8
+    ],
+    [
+     416.0,
+     483.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E448",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     504.1
+    ],
+    [
+     426.5,
+     518.6
+    ],
+    [
+     416.0,
+     511.8
+    ],
+    [
+     416.0,
+     497.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E449",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     518.6
+    ],
+    [
+     426.5,
+     533.1
+    ],
+    [
+     416.0,
+     525.8
+    ],
+    [
+     416.0,
+     511.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E450",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     533.1
+    ],
+    [
+     426.5,
+     551.9
+    ],
+    [
+     416.0,
+     544.0
+    ],
+    [
+     416.0,
+     525.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E451",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     560.1
+    ],
+    [
+     426.5,
+     574.6
+    ],
+    [
+     416.0,
+     565.9
+    ],
+    [
+     416.0,
+     551.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E452",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     574.6
+    ],
+    [
+     426.5,
+     589.1
+    ],
+    [
+     416.0,
+     579.9
+    ],
+    [
+     416.0,
+     565.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E453",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     589.1
+    ],
+    [
+     426.5,
+     603.7
+    ],
+    [
+     416.0,
+     593.9
+    ],
+    [
+     416.0,
+     579.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E454",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     426.5,
+     603.7
+    ],
+    [
+     426.5,
+     622.4
+    ],
+    [
+     416.0,
+     612.1
+    ],
+    [
+     416.0,
+     593.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E455",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     422.3,
+     626.5
+    ],
+    [
+     407.2,
+     626.5
+    ],
+    [
+     398.8,
+     616.0
+    ],
+    [
+     412.2,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E456",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     407.2,
+     626.5
+    ],
+    [
+     392.1,
+     626.5
+    ],
+    [
+     385.3,
+     616.0
+    ],
+    [
+     398.8,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E457",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     392.1,
+     626.5
+    ],
+    [
+     376.9,
+     626.5
+    ],
+    [
+     371.8,
+     616.0
+    ],
+    [
+     385.3,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E458",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     376.9,
+     626.5
+    ],
+    [
+     357.4,
+     626.5
+    ],
+    [
+     354.4,
+     616.0
+    ],
+    [
+     371.8,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E459",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     349.0,
+     626.5
+    ],
+    [
+     333.9,
+     626.5
+    ],
+    [
+     333.4,
+     616.0
+    ],
+    [
+     346.9,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E460",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     333.9,
+     626.5
+    ],
+    [
+     318.8,
+     626.5
+    ],
+    [
+     320.0,
+     616.0
+    ],
+    [
+     333.4,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E461",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     318.8,
+     626.5
+    ],
+    [
+     303.6,
+     626.5
+    ],
+    [
+     306.5,
+     616.0
+    ],
+    [
+     320.0,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E462",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     303.6,
+     626.5
+    ],
+    [
+     284.1,
+     626.5
+    ],
+    [
+     289.1,
+     616.0
+    ],
+    [
+     306.5,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E463",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     275.7,
+     626.5
+    ],
+    [
+     260.6,
+     626.5
+    ],
+    [
+     268.1,
+     616.0
+    ],
+    [
+     281.6,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E464",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     260.6,
+     626.5
+    ],
+    [
+     245.5,
+     626.5
+    ],
+    [
+     254.7,
+     616.0
+    ],
+    [
+     268.1,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E465",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     245.5,
+     626.5
+    ],
+    [
+     233.5,
+     626.5
+    ],
+    [
+     233.5,
+     623.5
+    ],
+    [
+     244.0,
+     613.0
+    ],
+    [
+     244.0,
+     616.0
+    ],
+    [
+     254.7,
+     616.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E466",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     623.5
+    ],
+    [
+     233.5,
+     605.1
+    ],
+    [
+     244.0,
+     594.6
+    ],
+    [
+     244.0,
+     613.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E467",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     597.1
+    ],
+    [
+     233.5,
+     582.8
+    ],
+    [
+     244.0,
+     572.3
+    ],
+    [
+     244.0,
+     586.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E468",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     582.8
+    ],
+    [
+     233.5,
+     568.5
+    ],
+    [
+     244.0,
+     558.0
+    ],
+    [
+     244.0,
+     572.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E469",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     568.5
+    ],
+    [
+     233.5,
+     554.2
+    ],
+    [
+     244.0,
+     543.7
+    ],
+    [
+     244.0,
+     558.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E470",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     554.2
+    ],
+    [
+     233.5,
+     535.8
+    ],
+    [
+     244.0,
+     525.3
+    ],
+    [
+     244.0,
+     543.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E471",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     527.8
+    ],
+    [
+     233.5,
+     513.5
+    ],
+    [
+     244.0,
+     503.0
+    ],
+    [
+     244.0,
+     517.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E472",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     513.5
+    ],
+    [
+     233.5,
+     499.2
+    ],
+    [
+     244.0,
+     488.7
+    ],
+    [
+     244.0,
+     503.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E473",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     499.2
+    ],
+    [
+     233.5,
+     484.9
+    ],
+    [
+     244.0,
+     474.4
+    ],
+    [
+     244.0,
+     488.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E474",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     484.9
+    ],
+    [
+     233.5,
+     466.4
+    ],
+    [
+     244.0,
+     455.9
+    ],
+    [
+     244.0,
+     474.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E475",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     458.4
+    ],
+    [
+     233.5,
+     444.2
+    ],
+    [
+     244.0,
+     433.7
+    ],
+    [
+     244.0,
+     447.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E476",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     444.2
+    ],
+    [
+     233.5,
+     429.9
+    ],
+    [
+     244.0,
+     419.4
+    ],
+    [
+     244.0,
+     433.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E477",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     429.9
+    ],
+    [
+     233.5,
+     415.6
+    ],
+    [
+     244.0,
+     405.1
+    ],
+    [
+     244.0,
+     419.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E478",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     415.6
+    ],
+    [
+     233.5,
+     397.1
+    ],
+    [
+     244.0,
+     386.6
+    ],
+    [
+     244.0,
+     405.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E479",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     389.1
+    ],
+    [
+     233.5,
+     374.9
+    ],
+    [
+     244.0,
+     364.4
+    ],
+    [
+     244.0,
+     378.6
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E480",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     374.9
+    ],
+    [
+     233.5,
+     360.6
+    ],
+    [
+     244.0,
+     350.1
+    ],
+    [
+     244.0,
+     364.4
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E481",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     360.6
+    ],
+    [
+     233.5,
+     346.3
+    ],
+    [
+     244.0,
+     335.8
+    ],
+    [
+     244.0,
+     350.1
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E482",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     346.3
+    ],
+    [
+     233.5,
+     327.8
+    ],
+    [
+     244.0,
+     317.3
+    ],
+    [
+     244.0,
+     335.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E483",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     233.5,
+     319.8
+    ],
+    [
+     233.5,
+     306.5
+    ],
+    [
+     232.5,
+     306.5
+    ],
+    [
+     243.0,
+     296.0
+    ],
+    [
+     244.0,
+     296.0
+    ],
+    [
+     244.0,
+     309.3
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E484",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     232.5,
+     306.5
+    ],
+    [
+     218.3,
+     306.5
+    ],
+    [
+     228.8,
+     296.0
+    ],
+    [
+     243.0,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E485",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     218.3,
+     306.5
+    ],
+    [
+     204.0,
+     306.5
+    ],
+    [
+     214.5,
+     296.0
+    ],
+    [
+     228.8,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E486",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     204.0,
+     306.5
+    ],
+    [
+     185.5,
+     306.5
+    ],
+    [
+     196.0,
+     296.0
+    ],
+    [
+     214.5,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E487",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     177.5,
+     306.5
+    ],
+    [
+     163.2,
+     306.5
+    ],
+    [
+     173.7,
+     296.0
+    ],
+    [
+     188.0,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E488",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     163.2,
+     306.5
+    ],
+    [
+     148.9,
+     306.5
+    ],
+    [
+     159.4,
+     296.0
+    ],
+    [
+     173.7,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E489",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.9,
+     306.5
+    ],
+    [
+     134.7,
+     306.5
+    ],
+    [
+     145.2,
+     296.0
+    ],
+    [
+     159.4,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E490",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     134.7,
+     306.5
+    ],
+    [
+     116.2,
+     306.5
+    ],
+    [
+     126.7,
+     296.0
+    ],
+    [
+     145.2,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E491",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.2,
+     306.5
+    ],
+    [
+     93.9,
+     306.5
+    ],
+    [
+     104.4,
+     296.0
+    ],
+    [
+     118.7,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E492",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     93.9,
+     306.5
+    ],
+    [
+     79.6,
+     306.5
+    ],
+    [
+     90.1,
+     296.0
+    ],
+    [
+     104.4,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E493",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.6,
+     306.5
+    ],
+    [
+     65.3,
+     306.5
+    ],
+    [
+     75.8,
+     296.0
+    ],
+    [
+     90.1,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E494",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.3,
+     306.5
+    ],
+    [
+     46.9,
+     306.5
+    ],
+    [
+     57.4,
+     296.0
+    ],
+    [
+     75.8,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E495",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.9,
+     306.5
+    ],
+    [
+     24.6,
+     306.5
+    ],
+    [
+     35.1,
+     296.0
+    ],
+    [
+     49.4,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E496",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     24.6,
+     306.5
+    ],
+    [
+     13.5,
+     306.5
+    ],
+    [
+     13.5,
+     303.2
+    ],
+    [
+     24.0,
+     292.9
+    ],
+    [
+     24.0,
+     296.0
+    ],
+    [
+     35.1,
+     296.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E497",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     303.2
+    ],
+    [
+     13.5,
+     288.4
+    ],
+    [
+     24.0,
+     279.2
+    ],
+    [
+     24.0,
+     292.9
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E498",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     288.4
+    ],
+    [
+     13.5,
+     269.3
+    ],
+    [
+     24.0,
+     261.4
+    ],
+    [
+     24.0,
+     279.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E499",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     261.0
+    ],
+    [
+     13.5,
+     246.1
+    ],
+    [
+     24.0,
+     240.0
+    ],
+    [
+     24.0,
+     253.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E500",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     246.1
+    ],
+    [
+     13.5,
+     231.3
+    ],
+    [
+     24.0,
+     226.2
+    ],
+    [
+     24.0,
+     240.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E501",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     231.3
+    ],
+    [
+     13.5,
+     216.5
+    ],
+    [
+     24.0,
+     212.5
+    ],
+    [
+     24.0,
+     226.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E502",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     216.5
+    ],
+    [
+     13.5,
+     197.4
+    ],
+    [
+     24.0,
+     194.7
+    ],
+    [
+     24.0,
+     212.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E503",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     189.1
+    ],
+    [
+     13.5,
+     174.3
+    ],
+    [
+     24.0,
+     173.2
+    ],
+    [
+     24.0,
+     187.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E504",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     174.3
+    ],
+    [
+     13.5,
+     159.4
+    ],
+    [
+     24.0,
+     159.5
+    ],
+    [
+     24.0,
+     173.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E505",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     159.4
+    ],
+    [
+     13.5,
+     144.6
+    ],
+    [
+     24.0,
+     145.7
+    ],
+    [
+     24.0,
+     159.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E506",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     144.6
+    ],
+    [
+     13.5,
+     125.5
+    ],
+    [
+     24.0,
+     128.0
+    ],
+    [
+     24.0,
+     145.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E507",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     117.2
+    ],
+    [
+     13.5,
+     102.4
+    ],
+    [
+     24.0,
+     106.5
+    ],
+    [
+     24.0,
+     120.2
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E508",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     102.4
+    ],
+    [
+     13.5,
+     87.5
+    ],
+    [
+     24.0,
+     92.7
+    ],
+    [
+     24.0,
+     106.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E509",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     87.5
+    ],
+    [
+     13.5,
+     72.7
+    ],
+    [
+     24.0,
+     79.0
+    ],
+    [
+     24.0,
+     92.7
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E510",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     72.7
+    ],
+    [
+     13.5,
+     53.6
+    ],
+    [
+     24.0,
+     61.2
+    ],
+    [
+     24.0,
+     79.0
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E511",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     45.3
+    ],
+    [
+     13.5,
+     30.5
+    ],
+    [
+     24.0,
+     39.8
+    ],
+    [
+     24.0,
+     53.5
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E512",
+   "type": "room",
+   "name": "Analysts' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     30.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     39.8
+    ]
+   ],
+   "about": "Analysts.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

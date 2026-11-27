@@ -1,0 +1,105 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P2-30",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  925.0,
+  420.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Earth berm",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     420.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     616.7,
+     0.0
+    ],
+    [
+     616.7,
+     420.0
+    ]
+   ],
+   "about": "An earth and armour berm that keeps a blast in one magazine from reaching the next.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Armour wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     616.7,
+     0.0
+    ],
+    [
+     770.8,
+     0.0
+    ],
+    [
+     770.8,
+     420.0
+    ],
+    [
+     616.7,
+     420.0
+    ]
+   ],
+   "about": "An armoured wall in the berm.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Berm path",
+   "level": "L1",
+   "outline_m": [
+    [
+     770.8,
+     0.0
+    ],
+    [
+     925.0,
+     0.0
+    ],
+    [
+     925.0,
+     420.0
+    ],
+    [
+     770.8,
+     420.0
+    ]
+   ],
+   "about": "A patrol path along the top.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

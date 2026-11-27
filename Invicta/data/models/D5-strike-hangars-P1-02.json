@@ -1,0 +1,9656 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P1-02",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  425.0,
+  612.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Concourse floor",
+   "z_m": 0.0,
+   "height_m": 7.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor 1",
+   "z_m": 7.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Upper floor 2",
+   "z_m": 11.2,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Crew concourse",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.5,
+     136.8
+    ],
+    [
+     401.0,
+     36.2
+    ],
+    [
+     401.0,
+     136.8
+    ]
+   ],
+   "about": "The great hall every strike crew member crosses at the start and end of a shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     588.2
+    ],
+    [
+     24.0,
+     195.2
+    ],
+    [
+     162.5,
+     136.8
+    ],
+    [
+     401.0,
+     136.8
+    ],
+    [
+     401.0,
+     588.2
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     601.7
+    ],
+    [
+     10.5,
+     481.0
+    ],
+    [
+     13.5,
+     479.4
+    ],
+    [
+     13.5,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     481.0
+    ],
+    [
+     10.5,
+     360.2
+    ],
+    [
+     13.5,
+     360.2
+    ],
+    [
+     13.5,
+     479.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     360.2
+    ],
+    [
+     10.5,
+     239.5
+    ],
+    [
+     13.5,
+     240.9
+    ],
+    [
+     13.5,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     239.5
+    ],
+    [
+     10.5,
+     186.3
+    ],
+    [
+     72.8,
+     160.0
+    ],
+    [
+     74.8,
+     162.4
+    ],
+    [
+     13.5,
+     188.3
+    ],
+    [
+     13.5,
+     240.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.8,
+     160.0
+    ],
+    [
+     184.1,
+     113.0
+    ],
+    [
+     184.6,
+     116.1
+    ],
+    [
+     74.8,
+     162.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.1,
+     113.0
+    ],
+    [
+     295.5,
+     66.0
+    ],
+    [
+     294.3,
+     69.8
+    ],
+    [
+     184.6,
+     116.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     295.5,
+     66.0
+    ],
+    [
+     406.9,
+     19.0
+    ],
+    [
+     404.0,
+     23.5
+    ],
+    [
+     294.3,
+     69.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     406.9,
+     19.0
+    ],
+    [
+     414.5,
+     15.8
+    ],
+    [
+     414.5,
+     128.4
+    ],
+    [
+     411.5,
+     131.5
+    ],
+    [
+     411.5,
+     20.3
+    ],
+    [
+     404.0,
+     23.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     414.5,
+     128.4
+    ],
+    [
+     414.5,
+     249.2
+    ],
+    [
+     411.5,
+     250.7
+    ],
+    [
+     411.5,
+     131.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     414.5,
+     249.2
+    ],
+    [
+     414.5,
+     369.9
+    ],
+    [
+     411.5,
+     369.9
+    ],
+    [
+     411.5,
+     250.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     414.5,
+     369.9
+    ],
+    [
+     414.5,
+     490.7
+    ],
+    [
+     411.5,
+     489.1
+    ],
+    [
+     411.5,
+     369.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     414.5,
+     490.7
+    ],
+    [
+     414.5,
+     601.7
+    ],
+    [
+     404.7,
+     601.7
+    ],
+    [
+     401.8,
+     598.7
+    ],
+    [
+     411.5,
+     598.7
+    ],
+    [
+     411.5,
+     489.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     404.7,
+     601.7
+    ],
+    [
+     283.8,
+     601.7
+    ],
+    [
+     282.7,
+     598.7
+    ],
+    [
+     401.8,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     283.8,
+     601.7
+    ],
+    [
+     162.9,
+     601.7
+    ],
+    [
+     163.6,
+     598.7
+    ],
+    [
+     282.7,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.9,
+     601.7
+    ],
+    [
+     42.0,
+     601.7
+    ],
+    [
+     44.5,
+     598.7
+    ],
+    [
+     163.6,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.0,
+     601.7
+    ],
+    [
+     10.5,
+     601.7
+    ],
+    [
+     13.5,
+     598.7
+    ],
+    [
+     44.5,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     566.5
+    ],
+    [
+     13.5,
+     558.3
+    ],
+    [
+     24.0,
+     549.6
+    ],
+    [
+     24.0,
+     557.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     494.0
+    ],
+    [
+     13.5,
+     485.8
+    ],
+    [
+     24.0,
+     480.1
+    ],
+    [
+     24.0,
+     487.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     421.4
+    ],
+    [
+     13.5,
+     413.3
+    ],
+    [
+     24.0,
+     410.6
+    ],
+    [
+     24.0,
+     418.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     348.9
+    ],
+    [
+     13.5,
+     340.7
+    ],
+    [
+     24.0,
+     341.2
+    ],
+    [
+     24.0,
+     349.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     276.3
+    ],
+    [
+     13.5,
+     268.2
+    ],
+    [
+     24.0,
+     271.7
+    ],
+    [
+     24.0,
+     279.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     203.8
+    ],
+    [
+     13.5,
+     195.6
+    ],
+    [
+     24.0,
+     202.3
+    ],
+    [
+     24.0,
+     210.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     66.3,
+     166.0
+    ],
+    [
+     73.9,
+     162.8
+    ],
+    [
+     81.2,
+     171.1
+    ],
+    [
+     74.0,
+     174.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     133.5,
+     137.6
+    ],
+    [
+     141.0,
+     134.4
+    ],
+    [
+     144.8,
+     144.3
+    ],
+    [
+     137.6,
+     147.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     200.7,
+     109.3
+    ],
+    [
+     208.2,
+     106.1
+    ],
+    [
+     208.5,
+     117.4
+    ],
+    [
+     201.3,
+     120.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     267.9,
+     80.9
+    ],
+    [
+     275.4,
+     77.8
+    ],
+    [
+     272.1,
+     90.6
+    ],
+    [
+     264.9,
+     93.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     335.0,
+     52.6
+    ],
+    [
+     342.6,
+     49.4
+    ],
+    [
+     335.7,
+     63.7
+    ],
+    [
+     328.6,
+     66.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     402.2,
+     24.3
+    ],
+    [
+     409.8,
+     21.1
+    ],
+    [
+     399.4,
+     36.9
+    ],
+    [
+     392.2,
+     39.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     83.0
+    ],
+    [
+     411.5,
+     91.2
+    ],
+    [
+     401.0,
+     103.8
+    ],
+    [
+     401.0,
+     96.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     155.6
+    ],
+    [
+     411.5,
+     163.8
+    ],
+    [
+     401.0,
+     173.1
+    ],
+    [
+     401.0,
+     165.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     228.3
+    ],
+    [
+     411.5,
+     236.5
+    ],
+    [
+     401.0,
+     242.5
+    ],
+    [
+     401.0,
+     234.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     300.9
+    ],
+    [
+     411.5,
+     309.1
+    ],
+    [
+     401.0,
+     311.8
+    ],
+    [
+     401.0,
+     304.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     373.6
+    ],
+    [
+     411.5,
+     381.8
+    ],
+    [
+     401.0,
+     381.1
+    ],
+    [
+     401.0,
+     373.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     446.2
+    ],
+    [
+     411.5,
+     454.4
+    ],
+    [
+     401.0,
+     450.5
+    ],
+    [
+     401.0,
+     442.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     518.9
+    ],
+    [
+     411.5,
+     527.1
+    ],
+    [
+     401.0,
+     519.8
+    ],
+    [
+     401.0,
+     512.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     591.5
+    ],
+    [
+     411.5,
+     598.7
+    ],
+    [
+     410.5,
+     598.7
+    ],
+    [
+     400.0,
+     588.2
+    ],
+    [
+     401.0,
+     588.2
+    ],
+    [
+     401.0,
+     581.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     345.8,
+     598.7
+    ],
+    [
+     337.5,
+     598.7
+    ],
+    [
+     330.9,
+     588.2
+    ],
+    [
+     338.7,
+     588.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     272.8,
+     598.7
+    ],
+    [
+     264.6,
+     598.7
+    ],
+    [
+     261.9,
+     588.2
+    ],
+    [
+     269.7,
+     588.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     199.9,
+     598.7
+    ],
+    [
+     191.7,
+     598.7
+    ],
+    [
+     192.8,
+     588.2
+    ],
+    [
+     200.6,
+     588.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     127.0,
+     598.7
+    ],
+    [
+     118.8,
+     598.7
+    ],
+    [
+     123.7,
+     588.2
+    ],
+    [
+     131.5,
+     588.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     54.1,
+     598.7
+    ],
+    [
+     45.9,
+     598.7
+    ],
+    [
+     54.6,
+     588.2
+    ],
+    [
+     62.4,
+     588.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Duty check-in barriers",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     612.2
+    ],
+    [
+     0.0,
+     573.3
+    ],
+    [
+     10.5,
+     564.4
+    ],
+    [
+     10.5,
+     601.7
+    ]
+   ],
+   "about": "Every strike crew member badges in and out of duty here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Alert boards",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     573.3
+    ],
+    [
+     0.0,
+     553.9
+    ],
+    [
+     10.5,
+     545.7
+    ],
+    [
+     10.5,
+     564.4
+    ]
+   ],
+   "about": "Giant boards showing which squadrons are on alert, flying or stood down.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Kit issue counters",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     553.9
+    ],
+    [
+     0.0,
+     524.7
+    ],
+    [
+     10.5,
+     517.8
+    ],
+    [
+     10.5,
+     545.7
+    ]
+   ],
+   "about": "Crews collect flight suits, helmets and survival vests for their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     524.7
+    ],
+    [
+     0.0,
+     518.9
+    ],
+    [
+     10.5,
+     512.2
+    ],
+    [
+     10.5,
+     517.8
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "First-aid room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     518.9
+    ],
+    [
+     0.0,
+     515.1
+    ],
+    [
+     10.5,
+     508.6
+    ],
+    [
+     10.5,
+     512.2
+    ]
+   ],
+   "about": "A couch, first-aid kit and defibrillator for anyone taken ill.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     515.1
+    ],
+    [
+     0.0,
+     480.1
+    ],
+    [
+     10.5,
+     475.0
+    ],
+    [
+     10.5,
+     508.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     480.1
+    ],
+    [
+     0.0,
+     445.2
+    ],
+    [
+     10.5,
+     441.4
+    ],
+    [
+     10.5,
+     475.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     445.2
+    ],
+    [
+     0.0,
+     410.2
+    ],
+    [
+     10.5,
+     407.8
+    ],
+    [
+     10.5,
+     441.4
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     410.2
+    ],
+    [
+     0.0,
+     375.2
+    ],
+    [
+     10.5,
+     374.2
+    ],
+    [
+     10.5,
+     407.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     375.2
+    ],
+    [
+     0.0,
+     340.2
+    ],
+    [
+     10.5,
+     340.7
+    ],
+    [
+     10.5,
+     374.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     340.2
+    ],
+    [
+     0.0,
+     305.2
+    ],
+    [
+     10.5,
+     307.1
+    ],
+    [
+     10.5,
+     340.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     305.2
+    ],
+    [
+     0.0,
+     270.2
+    ],
+    [
+     10.5,
+     273.5
+    ],
+    [
+     10.5,
+     307.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     270.2
+    ],
+    [
+     0.0,
+     235.2
+    ],
+    [
+     10.5,
+     239.9
+    ],
+    [
+     10.5,
+     273.5
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     235.2
+    ],
+    [
+     0.0,
+     200.2
+    ],
+    [
+     10.5,
+     206.3
+    ],
+    [
+     10.5,
+     239.9
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     200.2
+    ],
+    [
+     0.0,
+     179.3
+    ],
+    [
+     13.0,
+     173.8
+    ],
+    [
+     22.9,
+     181.0
+    ],
+    [
+     10.5,
+     186.3
+    ],
+    [
+     10.5,
+     206.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.0,
+     173.8
+    ],
+    [
+     45.4,
+     160.1
+    ],
+    [
+     53.7,
+     168.1
+    ],
+    [
+     22.9,
+     181.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.4,
+     160.1
+    ],
+    [
+     77.8,
+     146.5
+    ],
+    [
+     84.5,
+     155.1
+    ],
+    [
+     53.7,
+     168.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.8,
+     146.5
+    ],
+    [
+     110.2,
+     132.8
+    ],
+    [
+     115.3,
+     142.1
+    ],
+    [
+     84.5,
+     155.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.2,
+     132.8
+    ],
+    [
+     142.6,
+     119.1
+    ],
+    [
+     146.0,
+     129.1
+    ],
+    [
+     115.3,
+     142.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     142.6,
+     119.1
+    ],
+    [
+     175.0,
+     105.5
+    ],
+    [
+     176.8,
+     116.1
+    ],
+    [
+     146.0,
+     129.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     105.5
+    ],
+    [
+     207.4,
+     91.8
+    ],
+    [
+     207.6,
+     103.1
+    ],
+    [
+     176.8,
+     116.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.4,
+     91.8
+    ],
+    [
+     239.8,
+     78.1
+    ],
+    [
+     238.4,
+     90.1
+    ],
+    [
+     207.6,
+     103.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     239.8,
+     78.1
+    ],
+    [
+     272.1,
+     64.5
+    ],
+    [
+     269.2,
+     77.1
+    ],
+    [
+     238.4,
+     90.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     272.1,
+     64.5
+    ],
+    [
+     304.5,
+     50.8
+    ],
+    [
+     300.0,
+     64.1
+    ],
+    [
+     269.2,
+     77.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     304.5,
+     50.8
+    ],
+    [
+     336.9,
+     37.2
+    ],
+    [
+     330.8,
+     51.1
+    ],
+    [
+     300.0,
+     64.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     336.9,
+     37.2
+    ],
+    [
+     369.3,
+     23.5
+    ],
+    [
+     361.6,
+     38.2
+    ],
+    [
+     330.8,
+     51.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     369.3,
+     23.5
+    ],
+    [
+     401.7,
+     9.8
+    ],
+    [
+     392.4,
+     25.2
+    ],
+    [
+     361.6,
+     38.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     401.7,
+     9.8
+    ],
+    [
+     425.0,
+     0.0
+    ],
+    [
+     425.0,
+     9.8
+    ],
+    [
+     414.5,
+     25.2
+    ],
+    [
+     414.5,
+     15.8
+    ],
+    [
+     392.4,
+     25.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     9.8
+    ],
+    [
+     425.0,
+     44.9
+    ],
+    [
+     414.5,
+     58.8
+    ],
+    [
+     414.5,
+     25.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     44.9
+    ],
+    [
+     425.0,
+     79.9
+    ],
+    [
+     414.5,
+     92.3
+    ],
+    [
+     414.5,
+     58.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     79.9
+    ],
+    [
+     425.0,
+     115.0
+    ],
+    [
+     414.5,
+     125.8
+    ],
+    [
+     414.5,
+     92.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     115.0
+    ],
+    [
+     425.0,
+     150.0
+    ],
+    [
+     414.5,
+     159.4
+    ],
+    [
+     414.5,
+     125.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     150.0
+    ],
+    [
+     425.0,
+     185.0
+    ],
+    [
+     414.5,
+     192.9
+    ],
+    [
+     414.5,
+     159.4
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     185.0
+    ],
+    [
+     425.0,
+     220.1
+    ],
+    [
+     414.5,
+     226.4
+    ],
+    [
+     414.5,
+     192.9
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     220.1
+    ],
+    [
+     425.0,
+     255.1
+    ],
+    [
+     414.5,
+     260.0
+    ],
+    [
+     414.5,
+     226.4
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     255.1
+    ],
+    [
+     425.0,
+     290.2
+    ],
+    [
+     414.5,
+     293.5
+    ],
+    [
+     414.5,
+     260.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     290.2
+    ],
+    [
+     425.0,
+     325.2
+    ],
+    [
+     414.5,
+     327.0
+    ],
+    [
+     414.5,
+     293.5
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     325.2
+    ],
+    [
+     425.0,
+     360.2
+    ],
+    [
+     414.5,
+     360.6
+    ],
+    [
+     414.5,
+     327.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     360.2
+    ],
+    [
+     425.0,
+     395.3
+    ],
+    [
+     414.5,
+     394.1
+    ],
+    [
+     414.5,
+     360.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     395.3
+    ],
+    [
+     425.0,
+     430.3
+    ],
+    [
+     414.5,
+     427.6
+    ],
+    [
+     414.5,
+     394.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     430.3
+    ],
+    [
+     425.0,
+     465.4
+    ],
+    [
+     414.5,
+     461.2
+    ],
+    [
+     414.5,
+     427.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     465.4
+    ],
+    [
+     425.0,
+     500.4
+    ],
+    [
+     414.5,
+     494.7
+    ],
+    [
+     414.5,
+     461.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     500.4
+    ],
+    [
+     425.0,
+     535.4
+    ],
+    [
+     414.5,
+     528.2
+    ],
+    [
+     414.5,
+     494.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     535.4
+    ],
+    [
+     425.0,
+     570.5
+    ],
+    [
+     414.5,
+     561.8
+    ],
+    [
+     414.5,
+     528.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     570.5
+    ],
+    [
+     425.0,
+     605.5
+    ],
+    [
+     414.5,
+     595.3
+    ],
+    [
+     414.5,
+     561.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     425.0,
+     605.5
+    ],
+    [
+     425.0,
+     612.2
+    ],
+    [
+     396.6,
+     612.2
+    ],
+    [
+     387.5,
+     601.7
+    ],
+    [
+     414.5,
+     601.7
+    ],
+    [
+     414.5,
+     595.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     396.6,
+     612.2
+    ],
+    [
+     361.4,
+     612.2
+    ],
+    [
+     354.0,
+     601.7
+    ],
+    [
+     387.5,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     361.4,
+     612.2
+    ],
+    [
+     326.3,
+     612.2
+    ],
+    [
+     320.6,
+     601.7
+    ],
+    [
+     354.0,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     326.3,
+     612.2
+    ],
+    [
+     291.1,
+     612.2
+    ],
+    [
+     287.2,
+     601.7
+    ],
+    [
+     320.6,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     291.1,
+     612.2
+    ],
+    [
+     255.9,
+     612.2
+    ],
+    [
+     253.8,
+     601.7
+    ],
+    [
+     287.2,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     255.9,
+     612.2
+    ],
+    [
+     220.8,
+     612.2
+    ],
+    [
+     220.4,
+     601.7
+    ],
+    [
+     253.8,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.8,
+     612.2
+    ],
+    [
+     185.6,
+     612.2
+    ],
+    [
+     187.0,
+     601.7
+    ],
+    [
+     220.4,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.6,
+     612.2
+    ],
+    [
+     150.5,
+     612.2
+    ],
+    [
+     153.5,
+     601.7
+    ],
+    [
+     187.0,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.5,
+     612.2
+    ],
+    [
+     115.3,
+     612.2
+    ],
+    [
+     120.1,
+     601.7
+    ],
+    [
+     153.5,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.3,
+     612.2
+    ],
+    [
+     80.2,
+     612.2
+    ],
+    [
+     86.7,
+     601.7
+    ],
+    [
+     120.1,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.2,
+     612.2
+    ],
+    [
+     45.0,
+     612.2
+    ],
+    [
+     53.3,
+     601.7
+    ],
+    [
+     86.7,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.0,
+     612.2
+    ],
+    [
+     0.0,
+     612.2
+    ],
+    [
+     10.5,
+     601.7
+    ],
+    [
+     53.3,
+     601.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     598.7
+    ],
+    [
+     13.5,
+     566.5
+    ],
+    [
+     24.0,
+     557.4
+    ],
+    [
+     24.0,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     558.3
+    ],
+    [
+     13.5,
+     523.3
+    ],
+    [
+     24.0,
+     516.0
+    ],
+    [
+     24.0,
+     549.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     523.3
+    ],
+    [
+     13.5,
+     494.0
+    ],
+    [
+     24.0,
+     487.9
+    ],
+    [
+     24.0,
+     516.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     485.8
+    ],
+    [
+     13.5,
+     450.8
+    ],
+    [
+     24.0,
+     446.6
+    ],
+    [
+     24.0,
+     480.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     450.8
+    ],
+    [
+     13.5,
+     421.4
+    ],
+    [
+     24.0,
+     418.5
+    ],
+    [
+     24.0,
+     446.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     413.3
+    ],
+    [
+     13.5,
+     378.2
+    ],
+    [
+     24.0,
+     377.1
+    ],
+    [
+     24.0,
+     410.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     378.2
+    ],
+    [
+     13.5,
+     348.9
+    ],
+    [
+     24.0,
+     349.0
+    ],
+    [
+     24.0,
+     377.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     340.7
+    ],
+    [
+     13.5,
+     305.7
+    ],
+    [
+     24.0,
+     307.7
+    ],
+    [
+     24.0,
+     341.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     305.7
+    ],
+    [
+     13.5,
+     276.3
+    ],
+    [
+     24.0,
+     279.6
+    ],
+    [
+     24.0,
+     307.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     268.2
+    ],
+    [
+     13.5,
+     233.1
+    ],
+    [
+     24.0,
+     238.2
+    ],
+    [
+     24.0,
+     271.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     233.1
+    ],
+    [
+     13.5,
+     203.8
+    ],
+    [
+     24.0,
+     210.1
+    ],
+    [
+     24.0,
+     238.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     195.6
+    ],
+    [
+     13.5,
+     188.3
+    ],
+    [
+     39.1,
+     177.4
+    ],
+    [
+     48.3,
+     185.0
+    ],
+    [
+     24.0,
+     195.2
+    ],
+    [
+     24.0,
+     202.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     39.1,
+     177.4
+    ],
+    [
+     66.3,
+     166.0
+    ],
+    [
+     74.0,
+     174.1
+    ],
+    [
+     48.3,
+     185.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     73.9,
+     162.8
+    ],
+    [
+     106.3,
+     149.1
+    ],
+    [
+     111.9,
+     158.1
+    ],
+    [
+     81.2,
+     171.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     106.3,
+     149.1
+    ],
+    [
+     133.5,
+     137.6
+    ],
+    [
+     137.6,
+     147.3
+    ],
+    [
+     111.9,
+     158.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.0,
+     134.4
+    ],
+    [
+     173.5,
+     120.8
+    ],
+    [
+     175.6,
+     131.3
+    ],
+    [
+     144.8,
+     144.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.5,
+     120.8
+    ],
+    [
+     200.7,
+     109.3
+    ],
+    [
+     201.3,
+     120.4
+    ],
+    [
+     175.6,
+     131.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.2,
+     106.1
+    ],
+    [
+     240.7,
+     92.4
+    ],
+    [
+     239.2,
+     104.4
+    ],
+    [
+     208.5,
+     117.4
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.7,
+     92.4
+    ],
+    [
+     267.9,
+     80.9
+    ],
+    [
+     264.9,
+     93.6
+    ],
+    [
+     239.2,
+     104.4
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     275.4,
+     77.8
+    ],
+    [
+     307.9,
+     64.1
+    ],
+    [
+     302.8,
+     77.6
+    ],
+    [
+     272.1,
+     90.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     307.9,
+     64.1
+    ],
+    [
+     335.0,
+     52.6
+    ],
+    [
+     328.6,
+     66.7
+    ],
+    [
+     302.8,
+     77.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     342.6,
+     49.4
+    ],
+    [
+     375.1,
+     35.7
+    ],
+    [
+     366.5,
+     50.7
+    ],
+    [
+     335.7,
+     63.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     375.1,
+     35.7
+    ],
+    [
+     402.2,
+     24.3
+    ],
+    [
+     392.2,
+     39.9
+    ],
+    [
+     366.5,
+     50.7
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     409.8,
+     21.1
+    ],
+    [
+     411.5,
+     20.3
+    ],
+    [
+     411.5,
+     53.6
+    ],
+    [
+     401.0,
+     67.9
+    ],
+    [
+     401.0,
+     36.2
+    ],
+    [
+     399.4,
+     36.9
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     53.6
+    ],
+    [
+     411.5,
+     83.0
+    ],
+    [
+     401.0,
+     96.0
+    ],
+    [
+     401.0,
+     67.9
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     91.2
+    ],
+    [
+     411.5,
+     126.2
+    ],
+    [
+     401.0,
+     137.3
+    ],
+    [
+     401.0,
+     103.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     126.2
+    ],
+    [
+     411.5,
+     155.6
+    ],
+    [
+     401.0,
+     165.3
+    ],
+    [
+     401.0,
+     137.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     163.8
+    ],
+    [
+     411.5,
+     198.9
+    ],
+    [
+     401.0,
+     206.6
+    ],
+    [
+     401.0,
+     173.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     198.9
+    ],
+    [
+     411.5,
+     228.3
+    ],
+    [
+     401.0,
+     234.6
+    ],
+    [
+     401.0,
+     206.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     236.5
+    ],
+    [
+     411.5,
+     271.6
+    ],
+    [
+     401.0,
+     275.9
+    ],
+    [
+     401.0,
+     242.5
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     271.6
+    ],
+    [
+     411.5,
+     300.9
+    ],
+    [
+     401.0,
+     304.0
+    ],
+    [
+     401.0,
+     275.9
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     309.1
+    ],
+    [
+     411.5,
+     344.2
+    ],
+    [
+     401.0,
+     345.3
+    ],
+    [
+     401.0,
+     311.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     344.2
+    ],
+    [
+     411.5,
+     373.6
+    ],
+    [
+     401.0,
+     373.3
+    ],
+    [
+     401.0,
+     345.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     381.8
+    ],
+    [
+     411.5,
+     416.9
+    ],
+    [
+     401.0,
+     414.6
+    ],
+    [
+     401.0,
+     381.1
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     416.9
+    ],
+    [
+     411.5,
+     446.2
+    ],
+    [
+     401.0,
+     442.7
+    ],
+    [
+     401.0,
+     414.6
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     454.4
+    ],
+    [
+     411.5,
+     489.5
+    ],
+    [
+     401.0,
+     484.0
+    ],
+    [
+     401.0,
+     450.5
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     489.5
+    ],
+    [
+     411.5,
+     518.9
+    ],
+    [
+     401.0,
+     512.0
+    ],
+    [
+     401.0,
+     484.0
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     527.1
+    ],
+    [
+     411.5,
+     562.2
+    ],
+    [
+     401.0,
+     553.3
+    ],
+    [
+     401.0,
+     519.8
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.5,
+     562.2
+    ],
+    [
+     411.5,
+     591.5
+    ],
+    [
+     401.0,
+     581.4
+    ],
+    [
+     401.0,
+     553.3
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     410.5,
+     598.7
+    ],
+    [
+     375.3,
+     598.7
+    ],
+    [
+     366.7,
+     588.2
+    ],
+    [
+     400.0,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     375.3,
+     598.7
+    ],
+    [
+     345.8,
+     598.7
+    ],
+    [
+     338.7,
+     588.2
+    ],
+    [
+     366.7,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     337.5,
+     598.7
+    ],
+    [
+     302.3,
+     598.7
+    ],
+    [
+     297.6,
+     588.2
+    ],
+    [
+     330.9,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.3,
+     598.7
+    ],
+    [
+     272.8,
+     598.7
+    ],
+    [
+     269.7,
+     588.2
+    ],
+    [
+     297.6,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     264.6,
+     598.7
+    ],
+    [
+     229.4,
+     598.7
+    ],
+    [
+     228.5,
+     588.2
+    ],
+    [
+     261.9,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.4,
+     598.7
+    ],
+    [
+     199.9,
+     598.7
+    ],
+    [
+     200.6,
+     588.2
+    ],
+    [
+     228.5,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     191.7,
+     598.7
+    ],
+    [
+     156.5,
+     598.7
+    ],
+    [
+     159.4,
+     588.2
+    ],
+    [
+     192.8,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.5,
+     598.7
+    ],
+    [
+     127.0,
+     598.7
+    ],
+    [
+     131.5,
+     588.2
+    ],
+    [
+     159.4,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.8,
+     598.7
+    ],
+    [
+     83.6,
+     598.7
+    ],
+    [
+     90.4,
+     588.2
+    ],
+    [
+     123.7,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.6,
+     598.7
+    ],
+    [
+     54.1,
+     598.7
+    ],
+    [
+     62.4,
+     588.2
+    ],
+    [
+     90.4,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Squadron muster point",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.9,
+     598.7
+    ],
+    [
+     13.5,
+     598.7
+    ],
+    [
+     24.0,
+     588.2
+    ],
+    [
+     54.6,
+     588.2
+    ]
+   ],
+   "about": "A marked area where one squadron's crews gather before heading to their rack hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     601.7
+    ],
+    [
+     10.5,
+     481.0
+    ],
+    [
+     13.5,
+     479.4
+    ],
+    [
+     13.5,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     481.0
+    ],
+    [
+     10.5,
+     360.2
+    ],
+    [
+     13.5,
+     360.2
+    ],
+    [
+     13.5,
+     479.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     360.2
+    ],
+    [
+     10.5,
+     239.5
+    ],
+    [
+     13.5,
+     240.9
+    ],
+    [
+     13.5,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     239.5
+    ],
+    [
+     10.5,
+     186.3
+    ],
+    [
+     72.8,
+     160.0
+    ],
+    [
+     74.8,
+     162.4
+    ],
+    [
+     13.5,
+     188.3
+    ],
+    [
+     13.5,
+     240.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     72.8,
+     160.0
+    ],
+    [
+     184.1,
+     113.0
+    ],
+    [
+     184.6,
+     116.1
+    ],
+    [
+     74.8,
+     162.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     184.1,
+     113.0
+    ],
+    [
+     295.5,
+     66.0
+    ],
+    [
+     294.3,
+     69.8
+    ],
+    [
+     184.6,
+     116.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     295.5,
+     66.0
+    ],
+    [
+     406.9,
+     19.0
+    ],
+    [
+     404.0,
+     23.5
+    ],
+    [
+     294.3,
+     69.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     406.9,
+     19.0
+    ],
+    [
+     414.5,
+     15.8
+    ],
+    [
+     414.5,
+     128.4
+    ],
+    [
+     411.5,
+     131.5
+    ],
+    [
+     411.5,
+     20.3
+    ],
+    [
+     404.0,
+     23.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     414.5,
+     128.4
+    ],
+    [
+     414.5,
+     249.2
+    ],
+    [
+     411.5,
+     250.7
+    ],
+    [
+     411.5,
+     131.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     414.5,
+     249.2
+    ],
+    [
+     414.5,
+     369.9
+    ],
+    [
+     411.5,
+     369.9
+    ],
+    [
+     411.5,
+     250.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     414.5,
+     369.9
+    ],
+    [
+     414.5,
+     490.7
+    ],
+    [
+     411.5,
+     489.1
+    ],
+    [
+     411.5,
+     369.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     414.5,
+     490.7
+    ],
+    [
+     414.5,
+     601.7
+    ],
+    [
+     404.7,
+     601.7
+    ],
+    [
+     401.8,
+     598.7
+    ],
+    [
+     411.5,
+     598.7
+    ],
+    [
+     411.5,
+     489.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     404.7,
+     601.7
+    ],
+    [
+     283.8,
+     601.7
+    ],
+    [
+     282.7,
+     598.7
+    ],
+    [
+     401.8,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     283.8,
+     601.7
+    ],
+    [
+     162.9,
+     601.7
+    ],
+    [
+     163.6,
+     598.7
+    ],
+    [
+     282.7,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     162.9,
+     601.7
+    ],
+    [
+     42.0,
+     601.7
+    ],
+    [
+     44.5,
+     598.7
+    ],
+    [
+     163.6,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     42.0,
+     601.7
+    ],
+    [
+     10.5,
+     601.7
+    ],
+    [
+     13.5,
+     598.7
+    ],
+    [
+     44.5,
+     598.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Shift managers' room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     612.2
+    ],
+    [
+     0.0,
+     604.4
+    ],
+    [
+     10.5,
+     594.2
+    ],
+    [
+     10.5,
+     601.7
+    ]
+   ],
+   "about": "Managers watch arrivals and call in reserves.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     604.4
+    ],
+    [
+     0.0,
+     600.7
+    ],
+    [
+     10.5,
+     590.6
+    ],
+    [
+     10.5,
+     594.2
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Toilets",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     600.7
+    ],
+    [
+     0.0,
+     594.8
+    ],
+    [
+     10.5,
+     585.0
+    ],
+    [
+     10.5,
+     590.6
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     594.8
+    ],
+    [
+     0.0,
+     577.3
+    ],
+    [
+     10.5,
+     568.3
+    ],
+    [
+     10.5,
+     585.0
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     577.3
+    ],
+    [
+     0.0,
+     554.0
+    ],
+    [
+     10.5,
+     545.9
+    ],
+    [
+     10.5,
+     568.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     554.0
+    ],
+    [
+     0.0,
+     536.5
+    ],
+    [
+     10.5,
+     529.1
+    ],
+    [
+     10.5,
+     545.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     536.5
+    ],
+    [
+     0.0,
+     513.2
+    ],
+    [
+     10.5,
+     506.7
+    ],
+    [
+     10.5,
+     529.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     513.2
+    ],
+    [
+     0.0,
+     495.7
+    ],
+    [
+     10.5,
+     489.9
+    ],
+    [
+     10.5,
+     506.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     495.7
+    ],
+    [
+     0.0,
+     472.4
+    ],
+    [
+     10.5,
+     467.5
+    ],
+    [
+     10.5,
+     489.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     472.4
+    ],
+    [
+     0.0,
+     454.9
+    ],
+    [
+     10.5,
+     450.7
+    ],
+    [
+     10.5,
+     467.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     454.9
+    ],
+    [
+     0.0,
+     431.5
+    ],
+    [
+     10.5,
+     428.3
+    ],
+    [
+     10.5,
+     450.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     431.5
+    ],
+    [
+     0.0,
+     414.1
+    ],
+    [
+     10.5,
+     411.5
+    ],
+    [
+     10.5,
+     428.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     414.1
+    ],
+    [
+     0.0,
+     390.7
+    ],
+    [
+     10.5,
+     389.2
+    ],
+    [
+     10.5,
+     411.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     390.7
+    ],
+    [
+     0.0,
+     373.2
+    ],
+    [
+     10.5,
+     372.4
+    ],
+    [
+     10.5,
+     389.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     373.2
+    ],
+    [
+     0.0,
+     349.9
+    ],
+    [
+     10.5,
+     350.0
+    ],
+    [
+     10.5,
+     372.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     349.9
+    ],
+    [
+     0.0,
+     332.4
+    ],
+    [
+     10.5,
+     333.2
+    ],
+    [
+     10.5,
+     350.0
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     332.4
+    ],
+    [
+     0.0,
+     309.1
+    ],
+    [
+     10.5,
+     310.8
+    ],
+    [
+     10.5,
+     333.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     309.1
+    ],
+    [
+     0.0,
+     291.6
+    ],
+    [
+     10.5,
+     294.0
+    ],
+    [
+     10.5,
+     310.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     291.6
+    ],
+    [
+     0.0,
+     268.3
+    ],
+    [
+     10.5,
+     271.6
+    ],
+    [
+     10.5,
+     294.0
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     268.3
+    ],
+    [
+     0.0,
+     250.8
+    ],
+    [
+     10.5,
+     254.8
+    ],
+    [
+     10.5,
+     271.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     250.8
+    ],
+    [
+     0.0,
+     227.4
+    ],
+    [
+     10.5,
+     232.5
+    ],
+    [
+     10.5,
+     254.8
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     227.4
+    ],
+    [
+     0.0,
+     209.9
+    ],
+    [
+     10.5,
+     215.7
+    ],
+    [
+     10.5,
+     232.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     209.9
+    ],
+    [
+     0.0,
+     186.6
+    ],
+    [
+     10.5,
+     193.3
+    ],
+    [
+     10.5,
+     215.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     186.6
+    ],
+    [
+     0.0,
+     179.3
+    ],
+    [
+     9.4,
+     175.3
+    ],
+    [
+     19.5,
+     182.5
+    ],
+    [
+     10.5,
+     186.3
+    ],
+    [
+     10.5,
+     193.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     9.4,
+     175.3
+    ],
+    [
+     31.0,
+     166.2
+    ],
+    [
+     40.0,
+     173.8
+    ],
+    [
+     19.5,
+     182.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     31.0,
+     166.2
+    ],
+    [
+     47.2,
+     159.4
+    ],
+    [
+     55.4,
+     167.3
+    ],
+    [
+     40.0,
+     173.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     47.2,
+     159.4
+    ],
+    [
+     68.8,
+     150.3
+    ],
+    [
+     75.9,
+     158.7
+    ],
+    [
+     55.4,
+     167.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     68.8,
+     150.3
+    ],
+    [
+     85.0,
+     143.4
+    ],
+    [
+     91.3,
+     152.2
+    ],
+    [
+     75.9,
+     158.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     85.0,
+     143.4
+    ],
+    [
+     106.6,
+     134.3
+    ],
+    [
+     111.8,
+     143.5
+    ],
+    [
+     91.3,
+     152.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     106.6,
+     134.3
+    ],
+    [
+     122.8,
+     127.5
+    ],
+    [
+     127.2,
+     137.0
+    ],
+    [
+     111.8,
+     143.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     122.8,
+     127.5
+    ],
+    [
+     144.4,
+     118.4
+    ],
+    [
+     147.8,
+     128.4
+    ],
+    [
+     127.2,
+     137.0
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     144.4,
+     118.4
+    ],
+    [
+     160.6,
+     111.6
+    ],
+    [
+     163.1,
+     121.9
+    ],
+    [
+     147.8,
+     128.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     160.6,
+     111.6
+    ],
+    [
+     182.2,
+     102.4
+    ],
+    [
+     183.7,
+     113.2
+    ],
+    [
+     163.1,
+     121.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     182.2,
+     102.4
+    ],
+    [
+     198.4,
+     95.6
+    ],
+    [
+     199.1,
+     106.7
+    ],
+    [
+     183.7,
+     113.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     198.4,
+     95.6
+    ],
+    [
+     220.0,
+     86.5
+    ],
+    [
+     219.6,
+     98.1
+    ],
+    [
+     199.1,
+     106.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     86.5
+    ],
+    [
+     236.2,
+     79.7
+    ],
+    [
+     235.0,
+     91.6
+    ],
+    [
+     219.6,
+     98.1
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     236.2,
+     79.7
+    ],
+    [
+     257.8,
+     70.6
+    ],
+    [
+     255.5,
+     82.9
+    ],
+    [
+     235.0,
+     91.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     257.8,
+     70.6
+    ],
+    [
+     273.9,
+     63.7
+    ],
+    [
+     270.9,
+     76.4
+    ],
+    [
+     255.5,
+     82.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     273.9,
+     63.7
+    ],
+    [
+     295.5,
+     54.6
+    ],
+    [
+     291.4,
+     67.7
+    ],
+    [
+     270.9,
+     76.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     295.5,
+     54.6
+    ],
+    [
+     311.7,
+     47.8
+    ],
+    [
+     306.8,
+     61.2
+    ],
+    [
+     291.4,
+     67.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     311.7,
+     47.8
+    ],
+    [
+     333.3,
+     38.7
+    ],
+    [
+     327.4,
+     52.6
+    ],
+    [
+     306.8,
+     61.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     333.3,
+     38.7
+    ],
+    [
+     349.5,
+     31.8
+    ],
+    [
+     342.8,
+     46.1
+    ],
+    [
+     327.4,
+     52.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     349.5,
+     31.8
+    ],
+    [
+     371.1,
+     22.7
+    ],
+    [
+     363.3,
+     37.4
+    ],
+    [
+     342.8,
+     46.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     371.1,
+     22.7
+    ],
+    [
+     387.3,
+     15.9
+    ],
+    [
+     378.7,
+     30.9
+    ],
+    [
+     363.3,
+     37.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     387.3,
+     15.9
+    ],
+    [
+     408.9,
+     6.8
+    ],
+    [
+     399.2,
+     22.3
+    ],
+    [
+     378.7,
+     30.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     408.9,
+     6.8
+    ],
+    [
+     425.0,
+     0.0
+    ],
+    [
+     425.0,
+     0.1
+    ],
+    [
+     414.5,
+     15.9
+    ],
+    [
+     414.5,
+     15.8
+    ],
+    [
+     399.2,
+     22.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     0.1
+    ],
+    [
+     425.0,
+     23.5
+    ],
+    [
+     414.5,
+     38.3
+    ],
+    [
+     414.5,
+     15.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     23.5
+    ],
+    [
+     425.0,
+     41.0
+    ],
+    [
+     414.5,
+     55.1
+    ],
+    [
+     414.5,
+     38.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     41.0
+    ],
+    [
+     425.0,
+     64.3
+    ],
+    [
+     414.5,
+     77.4
+    ],
+    [
+     414.5,
+     55.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     64.3
+    ],
+    [
+     425.0,
+     81.9
+    ],
+    [
+     414.5,
+     94.2
+    ],
+    [
+     414.5,
+     77.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     81.9
+    ],
+    [
+     425.0,
+     105.2
+    ],
+    [
+     414.5,
+     116.5
+    ],
+    [
+     414.5,
+     94.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     105.2
+    ],
+    [
+     425.0,
+     122.7
+    ],
+    [
+     414.5,
+     133.3
+    ],
+    [
+     414.5,
+     116.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     122.7
+    ],
+    [
+     425.0,
+     146.1
+    ],
+    [
+     414.5,
+     155.6
+    ],
+    [
+     414.5,
+     133.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     146.1
+    ],
+    [
+     425.0,
+     163.6
+    ],
+    [
+     414.5,
+     172.4
+    ],
+    [
+     414.5,
+     155.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     163.6
+    ],
+    [
+     425.0,
+     187.0
+    ],
+    [
+     414.5,
+     194.8
+    ],
+    [
+     414.5,
+     172.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     187.0
+    ],
+    [
+     425.0,
+     204.5
+    ],
+    [
+     414.5,
+     211.5
+    ],
+    [
+     414.5,
+     194.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     204.5
+    ],
+    [
+     425.0,
+     227.9
+    ],
+    [
+     414.5,
+     233.9
+    ],
+    [
+     414.5,
+     211.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     227.9
+    ],
+    [
+     425.0,
+     245.4
+    ],
+    [
+     414.5,
+     250.7
+    ],
+    [
+     414.5,
+     233.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     245.4
+    ],
+    [
+     425.0,
+     268.7
+    ],
+    [
+     414.5,
+     273.0
+    ],
+    [
+     414.5,
+     250.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     268.7
+    ],
+    [
+     425.0,
+     286.3
+    ],
+    [
+     414.5,
+     289.8
+    ],
+    [
+     414.5,
+     273.0
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     286.3
+    ],
+    [
+     425.0,
+     309.6
+    ],
+    [
+     414.5,
+     312.1
+    ],
+    [
+     414.5,
+     289.8
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     309.6
+    ],
+    [
+     425.0,
+     327.1
+    ],
+    [
+     414.5,
+     328.9
+    ],
+    [
+     414.5,
+     312.1
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     327.1
+    ],
+    [
+     425.0,
+     350.5
+    ],
+    [
+     414.5,
+     351.3
+    ],
+    [
+     414.5,
+     328.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     350.5
+    ],
+    [
+     425.0,
+     368.0
+    ],
+    [
+     414.5,
+     368.0
+    ],
+    [
+     414.5,
+     351.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     368.0
+    ],
+    [
+     425.0,
+     391.4
+    ],
+    [
+     414.5,
+     390.4
+    ],
+    [
+     414.5,
+     368.0
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     391.4
+    ],
+    [
+     425.0,
+     408.9
+    ],
+    [
+     414.5,
+     407.1
+    ],
+    [
+     414.5,
+     390.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     408.9
+    ],
+    [
+     425.0,
+     432.3
+    ],
+    [
+     414.5,
+     429.5
+    ],
+    [
+     414.5,
+     407.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     432.3
+    ],
+    [
+     425.0,
+     449.8
+    ],
+    [
+     414.5,
+     446.3
+    ],
+    [
+     414.5,
+     429.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     449.8
+    ],
+    [
+     425.0,
+     473.1
+    ],
+    [
+     414.5,
+     468.6
+    ],
+    [
+     414.5,
+     446.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     473.1
+    ],
+    [
+     425.0,
+     490.7
+    ],
+    [
+     414.5,
+     485.4
+    ],
+    [
+     414.5,
+     468.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     490.7
+    ],
+    [
+     425.0,
+     514.0
+    ],
+    [
+     414.5,
+     507.7
+    ],
+    [
+     414.5,
+     485.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     514.0
+    ],
+    [
+     425.0,
+     531.5
+    ],
+    [
+     414.5,
+     524.5
+    ],
+    [
+     414.5,
+     507.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     531.5
+    ],
+    [
+     425.0,
+     554.9
+    ],
+    [
+     414.5,
+     546.9
+    ],
+    [
+     414.5,
+     524.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     554.9
+    ],
+    [
+     425.0,
+     572.4
+    ],
+    [
+     414.5,
+     563.6
+    ],
+    [
+     414.5,
+     546.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     572.4
+    ],
+    [
+     425.0,
+     595.8
+    ],
+    [
+     414.5,
+     586.0
+    ],
+    [
+     414.5,
+     563.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     425.0,
+     595.8
+    ],
+    [
+     425.0,
+     612.2
+    ],
+    [
+     423.9,
+     612.2
+    ],
+    [
+     413.5,
+     601.7
+    ],
+    [
+     414.5,
+     601.7
+    ],
+    [
+     414.5,
+     586.0
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     423.9,
+     612.2
+    ],
+    [
+     400.5,
+     612.2
+    ],
+    [
+     391.2,
+     601.7
+    ],
+    [
+     413.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     400.5,
+     612.2
+    ],
+    [
+     382.9,
+     612.2
+    ],
+    [
+     374.5,
+     601.7
+    ],
+    [
+     391.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     382.9,
+     612.2
+    ],
+    [
+     359.5,
+     612.2
+    ],
+    [
+     352.2,
+     601.7
+    ],
+    [
+     374.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     359.5,
+     612.2
+    ],
+    [
+     341.9,
+     612.2
+    ],
+    [
+     335.5,
+     601.7
+    ],
+    [
+     352.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     341.9,
+     612.2
+    ],
+    [
+     318.4,
+     612.2
+    ],
+    [
+     313.2,
+     601.7
+    ],
+    [
+     335.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     318.4,
+     612.2
+    ],
+    [
+     300.9,
+     612.2
+    ],
+    [
+     296.5,
+     601.7
+    ],
+    [
+     313.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     300.9,
+     612.2
+    ],
+    [
+     277.4,
+     612.2
+    ],
+    [
+     274.2,
+     601.7
+    ],
+    [
+     296.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     277.4,
+     612.2
+    ],
+    [
+     259.9,
+     612.2
+    ],
+    [
+     257.5,
+     601.7
+    ],
+    [
+     274.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     259.9,
+     612.2
+    ],
+    [
+     236.4,
+     612.2
+    ],
+    [
+     235.2,
+     601.7
+    ],
+    [
+     257.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     236.4,
+     612.2
+    ],
+    [
+     218.8,
+     612.2
+    ],
+    [
+     218.5,
+     601.7
+    ],
+    [
+     235.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     218.8,
+     612.2
+    ],
+    [
+     195.4,
+     612.2
+    ],
+    [
+     196.2,
+     601.7
+    ],
+    [
+     218.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     195.4,
+     612.2
+    ],
+    [
+     177.8,
+     612.2
+    ],
+    [
+     179.5,
+     601.7
+    ],
+    [
+     196.2,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     177.8,
+     612.2
+    ],
+    [
+     154.4,
+     612.2
+    ],
+    [
+     157.3,
+     601.7
+    ],
+    [
+     179.5,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     154.4,
+     612.2
+    ],
+    [
+     136.8,
+     612.2
+    ],
+    [
+     140.6,
+     601.7
+    ],
+    [
+     157.3,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     136.8,
+     612.2
+    ],
+    [
+     113.4,
+     612.2
+    ],
+    [
+     118.3,
+     601.7
+    ],
+    [
+     140.6,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     113.4,
+     612.2
+    ],
+    [
+     95.8,
+     612.2
+    ],
+    [
+     101.6,
+     601.7
+    ],
+    [
+     118.3,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     95.8,
+     612.2
+    ],
+    [
+     72.4,
+     612.2
+    ],
+    [
+     79.3,
+     601.7
+    ],
+    [
+     101.6,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     72.4,
+     612.2
+    ],
+    [
+     54.8,
+     612.2
+    ],
+    [
+     62.6,
+     601.7
+    ],
+    [
+     79.3,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     54.8,
+     612.2
+    ],
+    [
+     31.3,
+     612.2
+    ],
+    [
+     40.3,
+     601.7
+    ],
+    [
+     62.6,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     31.3,
+     612.2
+    ],
+    [
+     13.8,
+     612.2
+    ],
+    [
+     23.6,
+     601.7
+    ],
+    [
+     40.3,
+     601.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.8,
+     612.2
+    ],
+    [
+     0.0,
+     612.2
+    ],
+    [
+     10.5,
+     601.7
+    ],
+    [
+     23.6,
+     601.7
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     598.7
+    ],
+    [
+     13.5,
+     581.2
+    ],
+    [
+     24.0,
+     571.4
+    ],
+    [
+     24.0,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     581.2
+    ],
+    [
+     13.5,
+     566.5
+    ],
+    [
+     24.0,
+     557.4
+    ],
+    [
+     24.0,
+     571.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     558.3
+    ],
+    [
+     13.5,
+     540.8
+    ],
+    [
+     24.0,
+     532.8
+    ],
+    [
+     24.0,
+     549.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     540.8
+    ],
+    [
+     13.5,
+     517.5
+    ],
+    [
+     24.0,
+     510.4
+    ],
+    [
+     24.0,
+     532.8
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     517.5
+    ],
+    [
+     13.5,
+     494.0
+    ],
+    [
+     24.0,
+     487.9
+    ],
+    [
+     24.0,
+     510.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     485.8
+    ],
+    [
+     13.5,
+     462.4
+    ],
+    [
+     24.0,
+     457.7
+    ],
+    [
+     24.0,
+     480.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     462.4
+    ],
+    [
+     13.5,
+     444.9
+    ],
+    [
+     24.0,
+     441.0
+    ],
+    [
+     24.0,
+     457.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     444.9
+    ],
+    [
+     13.5,
+     421.6
+    ],
+    [
+     24.0,
+     418.6
+    ],
+    [
+     24.0,
+     441.0
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     413.3
+    ],
+    [
+     13.5,
+     395.7
+    ],
+    [
+     24.0,
+     393.9
+    ],
+    [
+     24.0,
+     410.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     395.7
+    ],
+    [
+     13.5,
+     372.4
+    ],
+    [
+     24.0,
+     371.5
+    ],
+    [
+     24.0,
+     393.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     372.4
+    ],
+    [
+     13.5,
+     348.9
+    ],
+    [
+     24.0,
+     349.0
+    ],
+    [
+     24.0,
+     371.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     340.7
+    ],
+    [
+     13.5,
+     317.4
+    ],
+    [
+     24.0,
+     318.8
+    ],
+    [
+     24.0,
+     341.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     317.4
+    ],
+    [
+     13.5,
+     299.8
+    ],
+    [
+     24.0,
+     302.1
+    ],
+    [
+     24.0,
+     318.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     299.8
+    ],
+    [
+     13.5,
+     276.5
+    ],
+    [
+     24.0,
+     279.7
+    ],
+    [
+     24.0,
+     302.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     268.2
+    ],
+    [
+     13.5,
+     250.7
+    ],
+    [
+     24.0,
+     255.0
+    ],
+    [
+     24.0,
+     271.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     250.7
+    ],
+    [
+     13.5,
+     227.3
+    ],
+    [
+     24.0,
+     232.6
+    ],
+    [
+     24.0,
+     255.0
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     227.3
+    ],
+    [
+     13.5,
+     203.8
+    ],
+    [
+     24.0,
+     210.1
+    ],
+    [
+     24.0,
+     232.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     195.6
+    ],
+    [
+     13.5,
+     188.3
+    ],
+    [
+     28.3,
+     182.0
+    ],
+    [
+     38.0,
+     189.3
+    ],
+    [
+     24.0,
+     195.2
+    ],
+    [
+     24.0,
+     202.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.3,
+     182.0
+    ],
+    [
+     44.5,
+     175.2
+    ],
+    [
+     53.4,
+     182.8
+    ],
+    [
+     38.0,
+     189.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     44.5,
+     175.2
+    ],
+    [
+     66.2,
+     166.0
+    ],
+    [
+     73.9,
+     174.2
+    ],
+    [
+     53.4,
+     182.8
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     73.9,
+     162.8
+    ],
+    [
+     90.1,
+     155.9
+    ],
+    [
+     96.5,
+     164.6
+    ],
+    [
+     81.2,
+     171.1
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     90.1,
+     155.9
+    ],
+    [
+     111.7,
+     146.8
+    ],
+    [
+     117.0,
+     156.0
+    ],
+    [
+     96.5,
+     164.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.7,
+     146.8
+    ],
+    [
+     133.5,
+     137.6
+    ],
+    [
+     137.6,
+     147.3
+    ],
+    [
+     117.0,
+     156.0
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     141.0,
+     134.4
+    ],
+    [
+     162.7,
+     125.3
+    ],
+    [
+     165.3,
+     135.6
+    ],
+    [
+     144.8,
+     144.3
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     162.7,
+     125.3
+    ],
+    [
+     178.9,
+     118.5
+    ],
+    [
+     180.7,
+     129.1
+    ],
+    [
+     165.3,
+     135.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     178.9,
+     118.5
+    ],
+    [
+     200.5,
+     109.4
+    ],
+    [
+     201.2,
+     120.5
+    ],
+    [
+     180.7,
+     129.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.2,
+     106.1
+    ],
+    [
+     224.5,
+     99.3
+    ],
+    [
+     223.8,
+     110.9
+    ],
+    [
+     208.5,
+     117.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     224.5,
+     99.3
+    ],
+    [
+     246.1,
+     90.1
+    ],
+    [
+     244.3,
+     102.3
+    ],
+    [
+     223.8,
+     110.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     246.1,
+     90.1
+    ],
+    [
+     267.9,
+     80.9
+    ],
+    [
+     264.9,
+     93.6
+    ],
+    [
+     244.3,
+     102.3
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     275.4,
+     77.8
+    ],
+    [
+     297.1,
+     68.6
+    ],
+    [
+     292.6,
+     81.9
+    ],
+    [
+     272.1,
+     90.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     297.1,
+     68.6
+    ],
+    [
+     313.3,
+     61.8
+    ],
+    [
+     308.0,
+     75.4
+    ],
+    [
+     292.6,
+     81.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     313.3,
+     61.8
+    ],
+    [
+     334.9,
+     52.7
+    ],
+    [
+     328.4,
+     66.8
+    ],
+    [
+     308.0,
+     75.4
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     342.6,
+     49.4
+    ],
+    [
+     358.8,
+     42.6
+    ],
+    [
+     351.1,
+     57.2
+    ],
+    [
+     335.7,
+     63.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     358.8,
+     42.6
+    ],
+    [
+     380.5,
+     33.4
+    ],
+    [
+     371.6,
+     48.6
+    ],
+    [
+     351.1,
+     57.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     380.5,
+     33.4
+    ],
+    [
+     402.2,
+     24.3
+    ],
+    [
+     392.2,
+     39.9
+    ],
+    [
+     371.6,
+     48.6
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     409.8,
+     21.1
+    ],
+    [
+     411.5,
+     20.3
+    ],
+    [
+     411.5,
+     41.9
+    ],
+    [
+     401.0,
+     56.7
+    ],
+    [
+     401.0,
+     36.2
+    ],
+    [
+     399.4,
+     36.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     41.9
+    ],
+    [
+     411.5,
+     59.4
+    ],
+    [
+     401.0,
+     73.5
+    ],
+    [
+     401.0,
+     56.7
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     59.4
+    ],
+    [
+     411.5,
+     82.8
+    ],
+    [
+     401.0,
+     95.8
+    ],
+    [
+     401.0,
+     73.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     91.2
+    ],
+    [
+     411.5,
+     108.7
+    ],
+    [
+     401.0,
+     120.5
+    ],
+    [
+     401.0,
+     103.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     108.7
+    ],
+    [
+     411.5,
+     132.1
+    ],
+    [
+     401.0,
+     142.8
+    ],
+    [
+     401.0,
+     120.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     132.1
+    ],
+    [
+     411.5,
+     155.6
+    ],
+    [
+     401.0,
+     165.3
+    ],
+    [
+     401.0,
+     142.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     163.8
+    ],
+    [
+     411.5,
+     187.2
+    ],
+    [
+     401.0,
+     195.4
+    ],
+    [
+     401.0,
+     173.1
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     187.2
+    ],
+    [
+     411.5,
+     204.7
+    ],
+    [
+     401.0,
+     212.2
+    ],
+    [
+     401.0,
+     195.4
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     204.7
+    ],
+    [
+     411.5,
+     228.1
+    ],
+    [
+     401.0,
+     234.5
+    ],
+    [
+     401.0,
+     212.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     236.5
+    ],
+    [
+     411.5,
+     254.0
+    ],
+    [
+     401.0,
+     259.2
+    ],
+    [
+     401.0,
+     242.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     254.0
+    ],
+    [
+     411.5,
+     277.4
+    ],
+    [
+     401.0,
+     281.5
+    ],
+    [
+     401.0,
+     259.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     277.4
+    ],
+    [
+     411.5,
+     300.9
+    ],
+    [
+     401.0,
+     304.0
+    ],
+    [
+     401.0,
+     281.5
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     309.1
+    ],
+    [
+     411.5,
+     332.5
+    ],
+    [
+     401.0,
+     334.1
+    ],
+    [
+     401.0,
+     311.8
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     332.5
+    ],
+    [
+     411.5,
+     350.1
+    ],
+    [
+     401.0,
+     350.9
+    ],
+    [
+     401.0,
+     334.1
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     350.1
+    ],
+    [
+     411.5,
+     373.4
+    ],
+    [
+     401.0,
+     373.2
+    ],
+    [
+     401.0,
+     350.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     381.8
+    ],
+    [
+     411.5,
+     399.3
+    ],
+    [
+     401.0,
+     397.9
+    ],
+    [
+     401.0,
+     381.1
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     399.3
+    ],
+    [
+     411.5,
+     422.7
+    ],
+    [
+     401.0,
+     420.2
+    ],
+    [
+     401.0,
+     397.9
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     422.7
+    ],
+    [
+     411.5,
+     446.2
+    ],
+    [
+     401.0,
+     442.7
+    ],
+    [
+     401.0,
+     420.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     454.4
+    ],
+    [
+     411.5,
+     477.8
+    ],
+    [
+     401.0,
+     472.8
+    ],
+    [
+     401.0,
+     450.5
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     477.8
+    ],
+    [
+     411.5,
+     495.4
+    ],
+    [
+     401.0,
+     489.6
+    ],
+    [
+     401.0,
+     472.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     495.4
+    ],
+    [
+     411.5,
+     518.7
+    ],
+    [
+     401.0,
+     511.9
+    ],
+    [
+     401.0,
+     489.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     527.1
+    ],
+    [
+     411.5,
+     544.6
+    ],
+    [
+     401.0,
+     536.6
+    ],
+    [
+     401.0,
+     519.8
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     544.6
+    ],
+    [
+     411.5,
+     568.0
+    ],
+    [
+     401.0,
+     558.9
+    ],
+    [
+     401.0,
+     536.6
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     411.5,
+     568.0
+    ],
+    [
+     411.5,
+     591.5
+    ],
+    [
+     401.0,
+     581.4
+    ],
+    [
+     401.0,
+     558.9
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     410.5,
+     598.7
+    ],
+    [
+     387.0,
+     598.7
+    ],
+    [
+     377.8,
+     588.2
+    ],
+    [
+     400.0,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     387.0,
+     598.7
+    ],
+    [
+     369.4,
+     598.7
+    ],
+    [
+     361.1,
+     588.2
+    ],
+    [
+     377.8,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     369.4,
+     598.7
+    ],
+    [
+     345.9,
+     598.7
+    ],
+    [
+     338.9,
+     588.2
+    ],
+    [
+     361.1,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     337.5,
+     598.7
+    ],
+    [
+     319.9,
+     598.7
+    ],
+    [
+     314.3,
+     588.2
+    ],
+    [
+     330.9,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     319.9,
+     598.7
+    ],
+    [
+     296.5,
+     598.7
+    ],
+    [
+     292.0,
+     588.2
+    ],
+    [
+     314.3,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     296.5,
+     598.7
+    ],
+    [
+     272.8,
+     598.7
+    ],
+    [
+     269.7,
+     588.2
+    ],
+    [
+     292.0,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     264.6,
+     598.7
+    ],
+    [
+     241.1,
+     598.7
+    ],
+    [
+     239.6,
+     588.2
+    ],
+    [
+     261.9,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     241.1,
+     598.7
+    ],
+    [
+     223.5,
+     598.7
+    ],
+    [
+     223.0,
+     588.2
+    ],
+    [
+     239.6,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     598.7
+    ],
+    [
+     200.1,
+     598.7
+    ],
+    [
+     200.7,
+     588.2
+    ],
+    [
+     223.0,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     191.7,
+     598.7
+    ],
+    [
+     174.1,
+     598.7
+    ],
+    [
+     176.1,
+     588.2
+    ],
+    [
+     192.8,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     174.1,
+     598.7
+    ],
+    [
+     150.6,
+     598.7
+    ],
+    [
+     153.9,
+     588.2
+    ],
+    [
+     176.1,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     150.6,
+     598.7
+    ],
+    [
+     127.0,
+     598.7
+    ],
+    [
+     131.5,
+     588.2
+    ],
+    [
+     153.9,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E335",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     118.8,
+     598.7
+    ],
+    [
+     95.3,
+     598.7
+    ],
+    [
+     101.5,
+     588.2
+    ],
+    [
+     123.7,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E336",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     95.3,
+     598.7
+    ],
+    [
+     77.7,
+     598.7
+    ],
+    [
+     84.8,
+     588.2
+    ],
+    [
+     101.5,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E337",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     77.7,
+     598.7
+    ],
+    [
+     54.2,
+     598.7
+    ],
+    [
+     62.6,
+     588.2
+    ],
+    [
+     84.8,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E338",
+   "type": "room",
+   "name": "Briefing room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     45.9,
+     598.7
+    ],
+    [
+     28.2,
+     598.7
+    ],
+    [
+     38.0,
+     588.2
+    ],
+    [
+     54.6,
+     588.2
+    ]
+   ],
+   "about": "Short shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E339",
+   "type": "room",
+   "name": "Kit store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.2,
+     598.7
+    ],
+    [
+     13.5,
+     598.7
+    ],
+    [
+     24.0,
+     588.2
+    ],
+    [
+     38.0,
+     588.2
+    ]
+   ],
+   "about": "Spare flight kit.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

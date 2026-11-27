@@ -1,0 +1,158 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P4-20",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  46.5,
+  405.4
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Holding bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     46.5,
+     0.0
+    ],
+    [
+     46.5,
+     114.4
+    ],
+    [
+     0.0,
+     114.4
+    ]
+   ],
+   "about": "Craft waiting for a slot.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Marshal's hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.7,
+     25.4
+    ],
+    [
+     20.7,
+     25.4
+    ],
+    [
+     20.7,
+     33.4
+    ],
+    [
+     8.7,
+     33.4
+    ]
+   ],
+   "about": "The marshal's hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Fuel point",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.5,
+     114.4
+    ],
+    [
+     46.5,
+     171.6
+    ],
+    [
+     0.0,
+     171.6
+    ],
+    [
+     0.0,
+     114.4
+    ]
+   ],
+   "about": "Quick refuelling.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Launch line",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.5,
+     171.6
+    ],
+    [
+     46.5,
+     343.2
+    ],
+    [
+     0.0,
+     343.2
+    ],
+    [
+     0.0,
+     171.6
+    ]
+   ],
+   "about": "Craft lined up for the shafts.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Taxi lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.5,
+     343.2
+    ],
+    [
+     46.5,
+     405.4
+    ],
+    [
+     0.0,
+     395.3
+    ],
+    [
+     0.0,
+     343.2
+    ]
+   ],
+   "about": "The taxi lane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

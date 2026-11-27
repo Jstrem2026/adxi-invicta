@@ -1,0 +1,10067 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P8-05",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  373.7
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor 1",
+   "z_m": 5.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Upper floor 2",
+   "z_m": 9.2,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     24.0
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     416.0,
+     349.7
+    ],
+    [
+     244.0,
+     349.7
+    ],
+    [
+     244.0,
+     162.8
+    ],
+    [
+     24.0,
+     162.8
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.4,
+     10.5
+    ],
+    [
+     132.6,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.4,
+     10.5
+    ],
+    [
+     252.2,
+     10.5
+    ],
+    [
+     251.8,
+     13.5
+    ],
+    [
+     132.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.2,
+     10.5
+    ],
+    [
+     373.1,
+     10.5
+    ],
+    [
+     370.9,
+     13.5
+    ],
+    [
+     251.8,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     373.1,
+     10.5
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     429.5,
+     75.0
+    ],
+    [
+     426.5,
+     77.0
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     370.9,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     75.0
+    ],
+    [
+     429.5,
+     196.1
+    ],
+    [
+     426.5,
+     195.9
+    ],
+    [
+     426.5,
+     77.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     196.1
+    ],
+    [
+     429.5,
+     317.1
+    ],
+    [
+     426.5,
+     314.9
+    ],
+    [
+     426.5,
+     195.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     429.5,
+     317.1
+    ],
+    [
+     429.5,
+     363.2
+    ],
+    [
+     354.1,
+     363.2
+    ],
+    [
+     353.3,
+     360.2
+    ],
+    [
+     426.5,
+     360.2
+    ],
+    [
+     426.5,
+     314.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     354.1,
+     363.2
+    ],
+    [
+     232.2,
+     363.2
+    ],
+    [
+     235.2,
+     360.2
+    ],
+    [
+     353.3,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.2,
+     363.2
+    ],
+    [
+     230.5,
+     363.2
+    ],
+    [
+     230.5,
+     244.9
+    ],
+    [
+     233.5,
+     241.9
+    ],
+    [
+     233.5,
+     360.2
+    ],
+    [
+     235.2,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     230.5,
+     244.9
+    ],
+    [
+     230.5,
+     176.3
+    ],
+    [
+     179.1,
+     176.3
+    ],
+    [
+     182.1,
+     173.3
+    ],
+    [
+     233.5,
+     173.3
+    ],
+    [
+     233.5,
+     241.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     179.1,
+     176.3
+    ],
+    [
+     59.1,
+     176.3
+    ],
+    [
+     62.1,
+     173.3
+    ],
+    [
+     182.1,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.1,
+     176.3
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     10.5,
+     103.6
+    ],
+    [
+     13.5,
+     103.2
+    ],
+    [
+     13.5,
+     173.3
+    ],
+    [
+     62.1,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     103.6
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     103.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     45.5,
+     13.5
+    ],
+    [
+     53.7,
+     13.5
+    ],
+    [
+     62.2,
+     24.0
+    ],
+    [
+     54.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     117.7,
+     13.5
+    ],
+    [
+     125.9,
+     13.5
+    ],
+    [
+     130.7,
+     24.0
+    ],
+    [
+     122.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     189.9,
+     13.5
+    ],
+    [
+     198.1,
+     13.5
+    ],
+    [
+     199.2,
+     24.0
+    ],
+    [
+     191.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     262.1,
+     13.5
+    ],
+    [
+     270.3,
+     13.5
+    ],
+    [
+     267.7,
+     24.0
+    ],
+    [
+     259.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     334.2,
+     13.5
+    ],
+    [
+     342.4,
+     13.5
+    ],
+    [
+     336.2,
+     24.0
+    ],
+    [
+     328.4,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     406.4,
+     13.5
+    ],
+    [
+     414.6,
+     13.5
+    ],
+    [
+     404.7,
+     24.0
+    ],
+    [
+     396.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     65.9
+    ],
+    [
+     426.5,
+     74.1
+    ],
+    [
+     416.0,
+     81.0
+    ],
+    [
+     416.0,
+     73.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     138.4
+    ],
+    [
+     426.5,
+     146.7
+    ],
+    [
+     416.0,
+     149.1
+    ],
+    [
+     416.0,
+     141.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     211.0
+    ],
+    [
+     426.5,
+     219.2
+    ],
+    [
+     416.0,
+     217.3
+    ],
+    [
+     416.0,
+     209.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     283.5
+    ],
+    [
+     426.5,
+     291.8
+    ],
+    [
+     416.0,
+     285.4
+    ],
+    [
+     416.0,
+     277.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     356.1
+    ],
+    [
+     426.5,
+     360.2
+    ],
+    [
+     422.3,
+     360.2
+    ],
+    [
+     412.2,
+     349.7
+    ],
+    [
+     416.0,
+     349.7
+    ],
+    [
+     416.0,
+     345.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     356.3,
+     360.2
+    ],
+    [
+     347.9,
+     360.2
+    ],
+    [
+     345.9,
+     349.7
+    ],
+    [
+     353.5,
+     349.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     281.9,
+     360.2
+    ],
+    [
+     273.5,
+     360.2
+    ],
+    [
+     279.6,
+     349.7
+    ],
+    [
+     287.2,
+     349.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     335.6
+    ],
+    [
+     233.5,
+     327.6
+    ],
+    [
+     244.0,
+     317.1
+    ],
+    [
+     244.0,
+     325.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     265.3
+    ],
+    [
+     233.5,
+     257.3
+    ],
+    [
+     244.0,
+     246.8
+    ],
+    [
+     244.0,
+     254.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     194.9
+    ],
+    [
+     233.5,
+     186.9
+    ],
+    [
+     244.0,
+     176.4
+    ],
+    [
+     244.0,
+     184.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     184.8,
+     173.3
+    ],
+    [
+     176.8,
+     173.3
+    ],
+    [
+     187.3,
+     162.8
+    ],
+    [
+     195.3,
+     162.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     114.4,
+     173.3
+    ],
+    [
+     106.4,
+     173.3
+    ],
+    [
+     116.9,
+     162.8
+    ],
+    [
+     124.9,
+     162.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     44.1,
+     173.3
+    ],
+    [
+     36.1,
+     173.3
+    ],
+    [
+     46.6,
+     162.8
+    ],
+    [
+     54.6,
+     162.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     130.7
+    ],
+    [
+     13.5,
+     122.2
+    ],
+    [
+     24.0,
+     118.4
+    ],
+    [
+     24.0,
+     125.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     55.4
+    ],
+    [
+     13.5,
+     46.9
+    ],
+    [
+     24.0,
+     53.0
+    ],
+    [
+     24.0,
+     60.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Secure entrance",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     5.9,
+     0.0
+    ],
+    [
+     16.1,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     5.9,
+     0.0
+    ],
+    [
+     11.7,
+     0.0
+    ],
+    [
+     21.6,
+     10.5
+    ],
+    [
+     16.1,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.7,
+     0.0
+    ],
+    [
+     35.1,
+     0.0
+    ],
+    [
+     43.9,
+     10.5
+    ],
+    [
+     21.6,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.1,
+     0.0
+    ],
+    [
+     58.5,
+     0.0
+    ],
+    [
+     66.2,
+     10.5
+    ],
+    [
+     43.9,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.5,
+     0.0
+    ],
+    [
+     82.0,
+     0.0
+    ],
+    [
+     88.5,
+     10.5
+    ],
+    [
+     66.2,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.0,
+     0.0
+    ],
+    [
+     105.4,
+     0.0
+    ],
+    [
+     110.8,
+     10.5
+    ],
+    [
+     88.5,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.4,
+     0.0
+    ],
+    [
+     128.8,
+     0.0
+    ],
+    [
+     133.1,
+     10.5
+    ],
+    [
+     110.8,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     128.8,
+     0.0
+    ],
+    [
+     152.2,
+     0.0
+    ],
+    [
+     155.4,
+     10.5
+    ],
+    [
+     133.1,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.2,
+     0.0
+    ],
+    [
+     175.6,
+     0.0
+    ],
+    [
+     177.7,
+     10.5
+    ],
+    [
+     155.4,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.6,
+     0.0
+    ],
+    [
+     199.0,
+     0.0
+    ],
+    [
+     200.0,
+     10.5
+    ],
+    [
+     177.7,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.0,
+     0.0
+    ],
+    [
+     222.5,
+     0.0
+    ],
+    [
+     222.3,
+     10.5
+    ],
+    [
+     200.0,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     0.0
+    ],
+    [
+     245.9,
+     0.0
+    ],
+    [
+     244.6,
+     10.5
+    ],
+    [
+     222.3,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     245.9,
+     0.0
+    ],
+    [
+     269.3,
+     0.0
+    ],
+    [
+     266.9,
+     10.5
+    ],
+    [
+     244.6,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     269.3,
+     0.0
+    ],
+    [
+     292.7,
+     0.0
+    ],
+    [
+     289.2,
+     10.5
+    ],
+    [
+     266.9,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     292.7,
+     0.0
+    ],
+    [
+     316.1,
+     0.0
+    ],
+    [
+     311.5,
+     10.5
+    ],
+    [
+     289.2,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     316.1,
+     0.0
+    ],
+    [
+     339.5,
+     0.0
+    ],
+    [
+     333.8,
+     10.5
+    ],
+    [
+     311.5,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     339.5,
+     0.0
+    ],
+    [
+     362.9,
+     0.0
+    ],
+    [
+     356.1,
+     10.5
+    ],
+    [
+     333.8,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     362.9,
+     0.0
+    ],
+    [
+     386.4,
+     0.0
+    ],
+    [
+     378.4,
+     10.5
+    ],
+    [
+     356.1,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     386.4,
+     0.0
+    ],
+    [
+     409.8,
+     0.0
+    ],
+    [
+     400.7,
+     10.5
+    ],
+    [
+     378.4,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     409.8,
+     0.0
+    ],
+    [
+     433.2,
+     0.0
+    ],
+    [
+     423.0,
+     10.5
+    ],
+    [
+     400.7,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     433.2,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     16.7
+    ],
+    [
+     429.5,
+     26.2
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     423.0,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     16.7
+    ],
+    [
+     440.0,
+     40.2
+    ],
+    [
+     429.5,
+     48.4
+    ],
+    [
+     429.5,
+     26.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     40.2
+    ],
+    [
+     440.0,
+     63.7
+    ],
+    [
+     429.5,
+     70.6
+    ],
+    [
+     429.5,
+     48.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     63.7
+    ],
+    [
+     440.0,
+     87.2
+    ],
+    [
+     429.5,
+     92.8
+    ],
+    [
+     429.5,
+     70.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     87.2
+    ],
+    [
+     440.0,
+     110.8
+    ],
+    [
+     429.5,
+     115.0
+    ],
+    [
+     429.5,
+     92.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     110.8
+    ],
+    [
+     440.0,
+     134.3
+    ],
+    [
+     429.5,
+     137.2
+    ],
+    [
+     429.5,
+     115.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     134.3
+    ],
+    [
+     440.0,
+     157.8
+    ],
+    [
+     429.5,
+     159.4
+    ],
+    [
+     429.5,
+     137.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     157.8
+    ],
+    [
+     440.0,
+     181.3
+    ],
+    [
+     429.5,
+     181.6
+    ],
+    [
+     429.5,
+     159.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     181.3
+    ],
+    [
+     440.0,
+     204.8
+    ],
+    [
+     429.5,
+     203.8
+    ],
+    [
+     429.5,
+     181.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     204.8
+    ],
+    [
+     440.0,
+     228.3
+    ],
+    [
+     429.5,
+     226.0
+    ],
+    [
+     429.5,
+     203.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     228.3
+    ],
+    [
+     440.0,
+     251.9
+    ],
+    [
+     429.5,
+     248.2
+    ],
+    [
+     429.5,
+     226.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     251.9
+    ],
+    [
+     440.0,
+     275.4
+    ],
+    [
+     429.5,
+     270.4
+    ],
+    [
+     429.5,
+     248.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     275.4
+    ],
+    [
+     440.0,
+     298.9
+    ],
+    [
+     429.5,
+     292.6
+    ],
+    [
+     429.5,
+     270.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     298.9
+    ],
+    [
+     440.0,
+     322.4
+    ],
+    [
+     429.5,
+     314.8
+    ],
+    [
+     429.5,
+     292.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     322.4
+    ],
+    [
+     440.0,
+     345.9
+    ],
+    [
+     429.5,
+     337.0
+    ],
+    [
+     429.5,
+     314.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     345.9
+    ],
+    [
+     440.0,
+     369.5
+    ],
+    [
+     429.5,
+     359.2
+    ],
+    [
+     429.5,
+     337.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     369.5
+    ],
+    [
+     440.0,
+     373.7
+    ],
+    [
+     420.3,
+     373.7
+    ],
+    [
+     411.7,
+     363.2
+    ],
+    [
+     429.5,
+     363.2
+    ],
+    [
+     429.5,
+     359.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     420.3,
+     373.7
+    ],
+    [
+     396.3,
+     373.7
+    ],
+    [
+     390.0,
+     363.2
+    ],
+    [
+     411.7,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     396.3,
+     373.7
+    ],
+    [
+     372.3,
+     373.7
+    ],
+    [
+     368.3,
+     363.2
+    ],
+    [
+     390.0,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     372.3,
+     373.7
+    ],
+    [
+     348.3,
+     373.7
+    ],
+    [
+     346.6,
+     363.2
+    ],
+    [
+     368.3,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     348.3,
+     373.7
+    ],
+    [
+     324.3,
+     373.7
+    ],
+    [
+     324.9,
+     363.2
+    ],
+    [
+     346.6,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     324.3,
+     373.7
+    ],
+    [
+     300.3,
+     373.7
+    ],
+    [
+     303.2,
+     363.2
+    ],
+    [
+     324.9,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.3,
+     373.7
+    ],
+    [
+     276.3,
+     373.7
+    ],
+    [
+     281.4,
+     363.2
+    ],
+    [
+     303.2,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     276.3,
+     373.7
+    ],
+    [
+     252.3,
+     373.7
+    ],
+    [
+     259.7,
+     363.2
+    ],
+    [
+     281.4,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.3,
+     373.7
+    ],
+    [
+     228.3,
+     373.7
+    ],
+    [
+     238.0,
+     363.2
+    ],
+    [
+     259.7,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     228.3,
+     373.7
+    ],
+    [
+     220.0,
+     373.7
+    ],
+    [
+     220.0,
+     358.8
+    ],
+    [
+     230.5,
+     348.3
+    ],
+    [
+     230.5,
+     363.2
+    ],
+    [
+     238.0,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     358.8
+    ],
+    [
+     220.0,
+     335.9
+    ],
+    [
+     230.5,
+     325.4
+    ],
+    [
+     230.5,
+     348.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     335.9
+    ],
+    [
+     220.0,
+     313.0
+    ],
+    [
+     230.5,
+     302.5
+    ],
+    [
+     230.5,
+     325.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     313.0
+    ],
+    [
+     220.0,
+     290.2
+    ],
+    [
+     230.5,
+     279.7
+    ],
+    [
+     230.5,
+     302.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     290.2
+    ],
+    [
+     220.0,
+     267.3
+    ],
+    [
+     230.5,
+     256.8
+    ],
+    [
+     230.5,
+     279.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     267.3
+    ],
+    [
+     220.0,
+     244.5
+    ],
+    [
+     230.5,
+     234.0
+    ],
+    [
+     230.5,
+     256.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     244.5
+    ],
+    [
+     220.0,
+     221.6
+    ],
+    [
+     230.5,
+     211.1
+    ],
+    [
+     230.5,
+     234.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     221.6
+    ],
+    [
+     220.0,
+     198.8
+    ],
+    [
+     230.5,
+     188.3
+    ],
+    [
+     230.5,
+     211.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.0,
+     198.8
+    ],
+    [
+     220.0,
+     186.8
+    ],
+    [
+     209.1,
+     186.8
+    ],
+    [
+     219.6,
+     176.3
+    ],
+    [
+     230.5,
+     176.3
+    ],
+    [
+     230.5,
+     188.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.1,
+     186.8
+    ],
+    [
+     186.2,
+     186.8
+    ],
+    [
+     196.7,
+     176.3
+    ],
+    [
+     219.6,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.2,
+     186.8
+    ],
+    [
+     163.4,
+     186.8
+    ],
+    [
+     173.9,
+     176.3
+    ],
+    [
+     196.7,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.4,
+     186.8
+    ],
+    [
+     140.5,
+     186.8
+    ],
+    [
+     151.0,
+     176.3
+    ],
+    [
+     173.9,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.5,
+     186.8
+    ],
+    [
+     117.7,
+     186.8
+    ],
+    [
+     128.2,
+     176.3
+    ],
+    [
+     151.0,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.7,
+     186.8
+    ],
+    [
+     94.8,
+     186.8
+    ],
+    [
+     105.3,
+     176.3
+    ],
+    [
+     128.2,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.8,
+     186.8
+    ],
+    [
+     72.0,
+     186.8
+    ],
+    [
+     82.5,
+     176.3
+    ],
+    [
+     105.3,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.0,
+     186.8
+    ],
+    [
+     49.1,
+     186.8
+    ],
+    [
+     59.6,
+     176.3
+    ],
+    [
+     82.5,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     49.1,
+     186.8
+    ],
+    [
+     26.2,
+     186.8
+    ],
+    [
+     36.7,
+     176.3
+    ],
+    [
+     59.6,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.2,
+     186.8
+    ],
+    [
+     3.4,
+     186.8
+    ],
+    [
+     13.9,
+     176.3
+    ],
+    [
+     36.7,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.4,
+     186.8
+    ],
+    [
+     0.0,
+     186.8
+    ],
+    [
+     0.0,
+     166.2
+    ],
+    [
+     10.5,
+     158.0
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     13.9,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     166.2
+    ],
+    [
+     0.0,
+     142.0
+    ],
+    [
+     10.5,
+     136.5
+    ],
+    [
+     10.5,
+     158.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     142.0
+    ],
+    [
+     0.0,
+     117.7
+    ],
+    [
+     10.5,
+     115.0
+    ],
+    [
+     10.5,
+     136.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     117.7
+    ],
+    [
+     0.0,
+     93.5
+    ],
+    [
+     10.5,
+     93.5
+    ],
+    [
+     10.5,
+     115.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     93.5
+    ],
+    [
+     0.0,
+     69.3
+    ],
+    [
+     10.5,
+     72.0
+    ],
+    [
+     10.5,
+     93.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     69.3
+    ],
+    [
+     0.0,
+     45.1
+    ],
+    [
+     10.5,
+     50.5
+    ],
+    [
+     10.5,
+     72.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     45.1
+    ],
+    [
+     0.0,
+     20.9
+    ],
+    [
+     10.5,
+     29.0
+    ],
+    [
+     10.5,
+     50.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     20.9
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     29.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     45.5,
+     13.5
+    ],
+    [
+     54.4,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.7,
+     13.5
+    ],
+    [
+     77.2,
+     13.5
+    ],
+    [
+     84.4,
+     24.0
+    ],
+    [
+     62.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.2,
+     13.5
+    ],
+    [
+     100.6,
+     13.5
+    ],
+    [
+     106.7,
+     24.0
+    ],
+    [
+     84.4,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.6,
+     13.5
+    ],
+    [
+     117.7,
+     13.5
+    ],
+    [
+     122.9,
+     24.0
+    ],
+    [
+     106.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     125.9,
+     13.5
+    ],
+    [
+     149.3,
+     13.5
+    ],
+    [
+     152.9,
+     24.0
+    ],
+    [
+     130.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     149.3,
+     13.5
+    ],
+    [
+     172.8,
+     13.5
+    ],
+    [
+     175.2,
+     24.0
+    ],
+    [
+     152.9,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     172.8,
+     13.5
+    ],
+    [
+     189.9,
+     13.5
+    ],
+    [
+     191.4,
+     24.0
+    ],
+    [
+     175.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     198.1,
+     13.5
+    ],
+    [
+     221.5,
+     13.5
+    ],
+    [
+     221.4,
+     24.0
+    ],
+    [
+     199.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     221.5,
+     13.5
+    ],
+    [
+     245.0,
+     13.5
+    ],
+    [
+     243.7,
+     24.0
+    ],
+    [
+     221.4,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     245.0,
+     13.5
+    ],
+    [
+     262.1,
+     13.5
+    ],
+    [
+     259.9,
+     24.0
+    ],
+    [
+     243.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     270.3,
+     13.5
+    ],
+    [
+     293.7,
+     13.5
+    ],
+    [
+     290.0,
+     24.0
+    ],
+    [
+     267.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     293.7,
+     13.5
+    ],
+    [
+     317.2,
+     13.5
+    ],
+    [
+     312.2,
+     24.0
+    ],
+    [
+     290.0,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     317.2,
+     13.5
+    ],
+    [
+     334.2,
+     13.5
+    ],
+    [
+     328.4,
+     24.0
+    ],
+    [
+     312.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     342.4,
+     13.5
+    ],
+    [
+     365.9,
+     13.5
+    ],
+    [
+     358.5,
+     24.0
+    ],
+    [
+     336.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     365.9,
+     13.5
+    ],
+    [
+     389.4,
+     13.5
+    ],
+    [
+     380.7,
+     24.0
+    ],
+    [
+     358.5,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     389.4,
+     13.5
+    ],
+    [
+     406.4,
+     13.5
+    ],
+    [
+     396.9,
+     24.0
+    ],
+    [
+     380.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     414.6,
+     13.5
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     426.5,
+     25.1
+    ],
+    [
+     416.0,
+     34.9
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     404.7,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     25.1
+    ],
+    [
+     426.5,
+     48.7
+    ],
+    [
+     416.0,
+     57.1
+    ],
+    [
+     416.0,
+     34.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     48.7
+    ],
+    [
+     426.5,
+     65.9
+    ],
+    [
+     416.0,
+     73.2
+    ],
+    [
+     416.0,
+     57.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     74.1
+    ],
+    [
+     426.5,
+     97.7
+    ],
+    [
+     416.0,
+     103.1
+    ],
+    [
+     416.0,
+     81.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     97.7
+    ],
+    [
+     426.5,
+     121.3
+    ],
+    [
+     416.0,
+     125.2
+    ],
+    [
+     416.0,
+     103.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     121.3
+    ],
+    [
+     426.5,
+     138.4
+    ],
+    [
+     416.0,
+     141.4
+    ],
+    [
+     416.0,
+     125.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     146.7
+    ],
+    [
+     426.5,
+     170.2
+    ],
+    [
+     416.0,
+     171.3
+    ],
+    [
+     416.0,
+     149.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     170.2
+    ],
+    [
+     426.5,
+     193.8
+    ],
+    [
+     416.0,
+     193.4
+    ],
+    [
+     416.0,
+     171.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     193.8
+    ],
+    [
+     426.5,
+     211.0
+    ],
+    [
+     416.0,
+     209.5
+    ],
+    [
+     416.0,
+     193.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     219.2
+    ],
+    [
+     426.5,
+     242.8
+    ],
+    [
+     416.0,
+     239.4
+    ],
+    [
+     416.0,
+     217.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     242.8
+    ],
+    [
+     426.5,
+     266.4
+    ],
+    [
+     416.0,
+     261.6
+    ],
+    [
+     416.0,
+     239.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     266.4
+    ],
+    [
+     426.5,
+     283.5
+    ],
+    [
+     416.0,
+     277.7
+    ],
+    [
+     416.0,
+     261.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     291.8
+    ],
+    [
+     426.5,
+     315.3
+    ],
+    [
+     416.0,
+     307.6
+    ],
+    [
+     416.0,
+     285.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     315.3
+    ],
+    [
+     426.5,
+     338.9
+    ],
+    [
+     416.0,
+     329.7
+    ],
+    [
+     416.0,
+     307.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     426.5,
+     338.9
+    ],
+    [
+     426.5,
+     356.1
+    ],
+    [
+     416.0,
+     345.8
+    ],
+    [
+     416.0,
+     329.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     422.3,
+     360.2
+    ],
+    [
+     398.1,
+     360.2
+    ],
+    [
+     390.7,
+     349.7
+    ],
+    [
+     412.2,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     398.1,
+     360.2
+    ],
+    [
+     373.9,
+     360.2
+    ],
+    [
+     369.1,
+     349.7
+    ],
+    [
+     390.7,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     373.9,
+     360.2
+    ],
+    [
+     356.3,
+     360.2
+    ],
+    [
+     353.5,
+     349.7
+    ],
+    [
+     369.1,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     347.9,
+     360.2
+    ],
+    [
+     323.7,
+     360.2
+    ],
+    [
+     324.4,
+     349.7
+    ],
+    [
+     345.9,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     323.7,
+     360.2
+    ],
+    [
+     299.5,
+     360.2
+    ],
+    [
+     302.8,
+     349.7
+    ],
+    [
+     324.4,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     299.5,
+     360.2
+    ],
+    [
+     281.9,
+     360.2
+    ],
+    [
+     287.2,
+     349.7
+    ],
+    [
+     302.8,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     273.5,
+     360.2
+    ],
+    [
+     249.3,
+     360.2
+    ],
+    [
+     258.1,
+     349.7
+    ],
+    [
+     279.6,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.3,
+     360.2
+    ],
+    [
+     233.5,
+     360.2
+    ],
+    [
+     233.5,
+     352.3
+    ],
+    [
+     244.0,
+     341.8
+    ],
+    [
+     244.0,
+     349.7
+    ],
+    [
+     258.1,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     352.3
+    ],
+    [
+     233.5,
+     335.6
+    ],
+    [
+     244.0,
+     325.1
+    ],
+    [
+     244.0,
+     341.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     327.6
+    ],
+    [
+     233.5,
+     304.8
+    ],
+    [
+     244.0,
+     294.3
+    ],
+    [
+     244.0,
+     317.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     304.8
+    ],
+    [
+     233.5,
+     281.9
+    ],
+    [
+     244.0,
+     271.4
+    ],
+    [
+     244.0,
+     294.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     281.9
+    ],
+    [
+     233.5,
+     265.3
+    ],
+    [
+     244.0,
+     254.8
+    ],
+    [
+     244.0,
+     271.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     257.3
+    ],
+    [
+     233.5,
+     234.4
+    ],
+    [
+     244.0,
+     223.9
+    ],
+    [
+     244.0,
+     246.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     234.4
+    ],
+    [
+     233.5,
+     211.6
+    ],
+    [
+     244.0,
+     201.1
+    ],
+    [
+     244.0,
+     223.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     211.6
+    ],
+    [
+     233.5,
+     194.9
+    ],
+    [
+     244.0,
+     184.4
+    ],
+    [
+     244.0,
+     201.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.5,
+     186.9
+    ],
+    [
+     233.5,
+     173.3
+    ],
+    [
+     224.3,
+     173.3
+    ],
+    [
+     234.8,
+     162.8
+    ],
+    [
+     244.0,
+     162.8
+    ],
+    [
+     244.0,
+     176.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.3,
+     173.3
+    ],
+    [
+     201.4,
+     173.3
+    ],
+    [
+     211.9,
+     162.8
+    ],
+    [
+     234.8,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.4,
+     173.3
+    ],
+    [
+     184.8,
+     173.3
+    ],
+    [
+     195.3,
+     162.8
+    ],
+    [
+     211.9,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.8,
+     173.3
+    ],
+    [
+     153.9,
+     173.3
+    ],
+    [
+     164.4,
+     162.8
+    ],
+    [
+     187.3,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.9,
+     173.3
+    ],
+    [
+     131.1,
+     173.3
+    ],
+    [
+     141.6,
+     162.8
+    ],
+    [
+     164.4,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.1,
+     173.3
+    ],
+    [
+     114.4,
+     173.3
+    ],
+    [
+     124.9,
+     162.8
+    ],
+    [
+     141.6,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     106.4,
+     173.3
+    ],
+    [
+     83.6,
+     173.3
+    ],
+    [
+     94.1,
+     162.8
+    ],
+    [
+     116.9,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.6,
+     173.3
+    ],
+    [
+     60.7,
+     173.3
+    ],
+    [
+     71.2,
+     162.8
+    ],
+    [
+     94.1,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.7,
+     173.3
+    ],
+    [
+     44.1,
+     173.3
+    ],
+    [
+     54.6,
+     162.8
+    ],
+    [
+     71.2,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.1,
+     173.3
+    ],
+    [
+     13.5,
+     173.3
+    ],
+    [
+     13.5,
+     173.0
+    ],
+    [
+     24.0,
+     162.5
+    ],
+    [
+     24.0,
+     162.8
+    ],
+    [
+     46.6,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     173.0
+    ],
+    [
+     13.5,
+     148.5
+    ],
+    [
+     24.0,
+     141.3
+    ],
+    [
+     24.0,
+     162.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     148.5
+    ],
+    [
+     13.5,
+     130.7
+    ],
+    [
+     24.0,
+     125.8
+    ],
+    [
+     24.0,
+     141.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     122.2
+    ],
+    [
+     13.5,
+     97.7
+    ],
+    [
+     24.0,
+     97.1
+    ],
+    [
+     24.0,
+     118.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     97.7
+    ],
+    [
+     13.5,
+     73.2
+    ],
+    [
+     24.0,
+     75.9
+    ],
+    [
+     24.0,
+     97.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     73.2
+    ],
+    [
+     13.5,
+     55.4
+    ],
+    [
+     24.0,
+     60.4
+    ],
+    [
+     24.0,
+     75.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Mission planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     46.9
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     53.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.4,
+     10.5
+    ],
+    [
+     132.6,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     131.4,
+     10.5
+    ],
+    [
+     252.2,
+     10.5
+    ],
+    [
+     251.8,
+     13.5
+    ],
+    [
+     132.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     252.2,
+     10.5
+    ],
+    [
+     373.1,
+     10.5
+    ],
+    [
+     370.9,
+     13.5
+    ],
+    [
+     251.8,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     373.1,
+     10.5
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     429.5,
+     75.0
+    ],
+    [
+     426.5,
+     77.0
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     370.9,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     429.5,
+     75.0
+    ],
+    [
+     429.5,
+     196.1
+    ],
+    [
+     426.5,
+     195.9
+    ],
+    [
+     426.5,
+     77.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     429.5,
+     196.1
+    ],
+    [
+     429.5,
+     317.1
+    ],
+    [
+     426.5,
+     314.9
+    ],
+    [
+     426.5,
+     195.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     429.5,
+     317.1
+    ],
+    [
+     429.5,
+     363.2
+    ],
+    [
+     354.1,
+     363.2
+    ],
+    [
+     353.3,
+     360.2
+    ],
+    [
+     426.5,
+     360.2
+    ],
+    [
+     426.5,
+     314.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     354.1,
+     363.2
+    ],
+    [
+     232.2,
+     363.2
+    ],
+    [
+     235.2,
+     360.2
+    ],
+    [
+     353.3,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     232.2,
+     363.2
+    ],
+    [
+     230.5,
+     363.2
+    ],
+    [
+     230.5,
+     244.9
+    ],
+    [
+     233.5,
+     241.9
+    ],
+    [
+     233.5,
+     360.2
+    ],
+    [
+     235.2,
+     360.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     230.5,
+     244.9
+    ],
+    [
+     230.5,
+     176.3
+    ],
+    [
+     179.1,
+     176.3
+    ],
+    [
+     182.1,
+     173.3
+    ],
+    [
+     233.5,
+     173.3
+    ],
+    [
+     233.5,
+     241.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     179.1,
+     176.3
+    ],
+    [
+     59.1,
+     176.3
+    ],
+    [
+     62.1,
+     173.3
+    ],
+    [
+     182.1,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     59.1,
+     176.3
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     10.5,
+     103.6
+    ],
+    [
+     13.5,
+     103.2
+    ],
+    [
+     13.5,
+     173.3
+    ],
+    [
+     62.1,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     103.6
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     103.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     3.8,
+     0.0
+    ],
+    [
+     14.1,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Toilets",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     3.8,
+     0.0
+    ],
+    [
+     9.6,
+     0.0
+    ],
+    [
+     19.7,
+     10.5
+    ],
+    [
+     14.1,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     9.6,
+     0.0
+    ],
+    [
+     33.0,
+     0.0
+    ],
+    [
+     42.0,
+     10.5
+    ],
+    [
+     19.7,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     33.0,
+     0.0
+    ],
+    [
+     47.7,
+     0.0
+    ],
+    [
+     55.9,
+     10.5
+    ],
+    [
+     42.0,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     47.7,
+     0.0
+    ],
+    [
+     71.1,
+     0.0
+    ],
+    [
+     78.2,
+     10.5
+    ],
+    [
+     55.9,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     71.1,
+     0.0
+    ],
+    [
+     85.7,
+     0.0
+    ],
+    [
+     92.1,
+     10.5
+    ],
+    [
+     78.2,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     85.7,
+     0.0
+    ],
+    [
+     109.1,
+     0.0
+    ],
+    [
+     114.4,
+     10.5
+    ],
+    [
+     92.1,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     109.1,
+     0.0
+    ],
+    [
+     123.8,
+     0.0
+    ],
+    [
+     128.4,
+     10.5
+    ],
+    [
+     114.4,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     123.8,
+     0.0
+    ],
+    [
+     147.2,
+     0.0
+    ],
+    [
+     150.7,
+     10.5
+    ],
+    [
+     128.4,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     147.2,
+     0.0
+    ],
+    [
+     161.8,
+     0.0
+    ],
+    [
+     164.6,
+     10.5
+    ],
+    [
+     150.7,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     161.8,
+     0.0
+    ],
+    [
+     185.2,
+     0.0
+    ],
+    [
+     186.9,
+     10.5
+    ],
+    [
+     164.6,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     185.2,
+     0.0
+    ],
+    [
+     199.9,
+     0.0
+    ],
+    [
+     200.8,
+     10.5
+    ],
+    [
+     186.9,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     199.9,
+     0.0
+    ],
+    [
+     223.3,
+     0.0
+    ],
+    [
+     223.1,
+     10.5
+    ],
+    [
+     200.8,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     223.3,
+     0.0
+    ],
+    [
+     237.9,
+     0.0
+    ],
+    [
+     237.1,
+     10.5
+    ],
+    [
+     223.1,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     237.9,
+     0.0
+    ],
+    [
+     261.3,
+     0.0
+    ],
+    [
+     259.4,
+     10.5
+    ],
+    [
+     237.1,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     261.3,
+     0.0
+    ],
+    [
+     276.0,
+     0.0
+    ],
+    [
+     273.3,
+     10.5
+    ],
+    [
+     259.4,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     276.0,
+     0.0
+    ],
+    [
+     299.4,
+     0.0
+    ],
+    [
+     295.6,
+     10.5
+    ],
+    [
+     273.3,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     299.4,
+     0.0
+    ],
+    [
+     314.0,
+     0.0
+    ],
+    [
+     309.5,
+     10.5
+    ],
+    [
+     295.6,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     314.0,
+     0.0
+    ],
+    [
+     337.4,
+     0.0
+    ],
+    [
+     331.8,
+     10.5
+    ],
+    [
+     309.5,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     337.4,
+     0.0
+    ],
+    [
+     352.1,
+     0.0
+    ],
+    [
+     345.8,
+     10.5
+    ],
+    [
+     331.8,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     352.1,
+     0.0
+    ],
+    [
+     375.5,
+     0.0
+    ],
+    [
+     368.1,
+     10.5
+    ],
+    [
+     345.8,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     375.5,
+     0.0
+    ],
+    [
+     390.1,
+     0.0
+    ],
+    [
+     382.0,
+     10.5
+    ],
+    [
+     368.1,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     390.1,
+     0.0
+    ],
+    [
+     413.5,
+     0.0
+    ],
+    [
+     404.3,
+     10.5
+    ],
+    [
+     382.0,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     413.5,
+     0.0
+    ],
+    [
+     428.2,
+     0.0
+    ],
+    [
+     418.2,
+     10.5
+    ],
+    [
+     404.3,
+     10.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     428.2,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     11.6
+    ],
+    [
+     429.5,
+     21.5
+    ],
+    [
+     429.5,
+     10.5
+    ],
+    [
+     418.2,
+     10.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     11.6
+    ],
+    [
+     440.0,
+     26.3
+    ],
+    [
+     429.5,
+     35.4
+    ],
+    [
+     429.5,
+     21.5
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     26.3
+    ],
+    [
+     440.0,
+     49.9
+    ],
+    [
+     429.5,
+     57.6
+    ],
+    [
+     429.5,
+     35.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     49.9
+    ],
+    [
+     440.0,
+     64.6
+    ],
+    [
+     429.5,
+     71.4
+    ],
+    [
+     429.5,
+     57.6
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     64.6
+    ],
+    [
+     440.0,
+     88.1
+    ],
+    [
+     429.5,
+     93.6
+    ],
+    [
+     429.5,
+     71.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     88.1
+    ],
+    [
+     440.0,
+     102.8
+    ],
+    [
+     429.5,
+     107.5
+    ],
+    [
+     429.5,
+     93.6
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     102.8
+    ],
+    [
+     440.0,
+     126.3
+    ],
+    [
+     429.5,
+     129.7
+    ],
+    [
+     429.5,
+     107.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     126.3
+    ],
+    [
+     440.0,
+     141.0
+    ],
+    [
+     429.5,
+     143.6
+    ],
+    [
+     429.5,
+     129.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     141.0
+    ],
+    [
+     440.0,
+     164.5
+    ],
+    [
+     429.5,
+     165.8
+    ],
+    [
+     429.5,
+     143.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     164.5
+    ],
+    [
+     440.0,
+     179.2
+    ],
+    [
+     429.5,
+     179.6
+    ],
+    [
+     429.5,
+     165.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     179.2
+    ],
+    [
+     440.0,
+     202.7
+    ],
+    [
+     429.5,
+     201.8
+    ],
+    [
+     429.5,
+     179.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     202.7
+    ],
+    [
+     440.0,
+     217.4
+    ],
+    [
+     429.5,
+     215.7
+    ],
+    [
+     429.5,
+     201.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     217.4
+    ],
+    [
+     440.0,
+     240.9
+    ],
+    [
+     429.5,
+     237.9
+    ],
+    [
+     429.5,
+     215.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     240.9
+    ],
+    [
+     440.0,
+     255.6
+    ],
+    [
+     429.5,
+     251.8
+    ],
+    [
+     429.5,
+     237.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     255.6
+    ],
+    [
+     440.0,
+     279.2
+    ],
+    [
+     429.5,
+     274.0
+    ],
+    [
+     429.5,
+     251.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     279.2
+    ],
+    [
+     440.0,
+     293.9
+    ],
+    [
+     429.5,
+     287.8
+    ],
+    [
+     429.5,
+     274.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     293.9
+    ],
+    [
+     440.0,
+     317.4
+    ],
+    [
+     429.5,
+     310.0
+    ],
+    [
+     429.5,
+     287.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     317.4
+    ],
+    [
+     440.0,
+     332.1
+    ],
+    [
+     429.5,
+     323.9
+    ],
+    [
+     429.5,
+     310.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     332.1
+    ],
+    [
+     440.0,
+     355.6
+    ],
+    [
+     429.5,
+     346.1
+    ],
+    [
+     429.5,
+     323.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     355.6
+    ],
+    [
+     440.0,
+     370.3
+    ],
+    [
+     429.5,
+     360.0
+    ],
+    [
+     429.5,
+     346.1
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     440.0,
+     370.3
+    ],
+    [
+     440.0,
+     373.7
+    ],
+    [
+     419.5,
+     373.7
+    ],
+    [
+     410.9,
+     363.2
+    ],
+    [
+     429.5,
+     363.2
+    ],
+    [
+     429.5,
+     360.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     419.5,
+     373.7
+    ],
+    [
+     404.5,
+     373.7
+    ],
+    [
+     397.4,
+     363.2
+    ],
+    [
+     410.9,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     404.5,
+     373.7
+    ],
+    [
+     380.5,
+     373.7
+    ],
+    [
+     375.7,
+     363.2
+    ],
+    [
+     397.4,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     380.5,
+     373.7
+    ],
+    [
+     365.5,
+     373.7
+    ],
+    [
+     362.1,
+     363.2
+    ],
+    [
+     375.7,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     365.5,
+     373.7
+    ],
+    [
+     341.5,
+     373.7
+    ],
+    [
+     340.4,
+     363.2
+    ],
+    [
+     362.1,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     341.5,
+     373.7
+    ],
+    [
+     326.5,
+     373.7
+    ],
+    [
+     326.8,
+     363.2
+    ],
+    [
+     340.4,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     326.5,
+     373.7
+    ],
+    [
+     302.5,
+     373.7
+    ],
+    [
+     305.1,
+     363.2
+    ],
+    [
+     326.8,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.5,
+     373.7
+    ],
+    [
+     287.5,
+     373.7
+    ],
+    [
+     291.5,
+     363.2
+    ],
+    [
+     305.1,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     287.5,
+     373.7
+    ],
+    [
+     263.5,
+     373.7
+    ],
+    [
+     269.8,
+     363.2
+    ],
+    [
+     291.5,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     263.5,
+     373.7
+    ],
+    [
+     248.5,
+     373.7
+    ],
+    [
+     256.2,
+     363.2
+    ],
+    [
+     269.8,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     248.5,
+     373.7
+    ],
+    [
+     224.5,
+     373.7
+    ],
+    [
+     234.5,
+     363.2
+    ],
+    [
+     256.2,
+     363.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     224.5,
+     373.7
+    ],
+    [
+     220.0,
+     373.7
+    ],
+    [
+     220.0,
+     363.7
+    ],
+    [
+     230.5,
+     353.2
+    ],
+    [
+     230.5,
+     363.2
+    ],
+    [
+     234.5,
+     363.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     363.7
+    ],
+    [
+     220.0,
+     340.8
+    ],
+    [
+     230.5,
+     330.3
+    ],
+    [
+     230.5,
+     353.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     340.8
+    ],
+    [
+     220.0,
+     326.5
+    ],
+    [
+     230.5,
+     316.0
+    ],
+    [
+     230.5,
+     330.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     326.5
+    ],
+    [
+     220.0,
+     303.7
+    ],
+    [
+     230.5,
+     293.2
+    ],
+    [
+     230.5,
+     316.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     303.7
+    ],
+    [
+     220.0,
+     289.4
+    ],
+    [
+     230.5,
+     278.9
+    ],
+    [
+     230.5,
+     293.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     289.4
+    ],
+    [
+     220.0,
+     266.5
+    ],
+    [
+     230.5,
+     256.0
+    ],
+    [
+     230.5,
+     278.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     266.5
+    ],
+    [
+     220.0,
+     252.2
+    ],
+    [
+     230.5,
+     241.7
+    ],
+    [
+     230.5,
+     256.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     252.2
+    ],
+    [
+     220.0,
+     229.4
+    ],
+    [
+     230.5,
+     218.9
+    ],
+    [
+     230.5,
+     241.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     229.4
+    ],
+    [
+     220.0,
+     215.1
+    ],
+    [
+     230.5,
+     204.6
+    ],
+    [
+     230.5,
+     218.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     215.1
+    ],
+    [
+     220.0,
+     192.2
+    ],
+    [
+     230.5,
+     181.7
+    ],
+    [
+     230.5,
+     204.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     220.0,
+     192.2
+    ],
+    [
+     220.0,
+     186.8
+    ],
+    [
+     211.1,
+     186.8
+    ],
+    [
+     221.6,
+     176.3
+    ],
+    [
+     230.5,
+     176.3
+    ],
+    [
+     230.5,
+     181.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     211.1,
+     186.8
+    ],
+    [
+     188.3,
+     186.8
+    ],
+    [
+     198.8,
+     176.3
+    ],
+    [
+     221.6,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     188.3,
+     186.8
+    ],
+    [
+     174.0,
+     186.8
+    ],
+    [
+     184.5,
+     176.3
+    ],
+    [
+     198.8,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     174.0,
+     186.8
+    ],
+    [
+     151.1,
+     186.8
+    ],
+    [
+     161.6,
+     176.3
+    ],
+    [
+     184.5,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     186.8
+    ],
+    [
+     136.9,
+     186.8
+    ],
+    [
+     147.4,
+     176.3
+    ],
+    [
+     161.6,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     136.9,
+     186.8
+    ],
+    [
+     114.0,
+     186.8
+    ],
+    [
+     124.5,
+     176.3
+    ],
+    [
+     147.4,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     114.0,
+     186.8
+    ],
+    [
+     99.7,
+     186.8
+    ],
+    [
+     110.2,
+     176.3
+    ],
+    [
+     124.5,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     99.7,
+     186.8
+    ],
+    [
+     76.9,
+     186.8
+    ],
+    [
+     87.4,
+     176.3
+    ],
+    [
+     110.2,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     76.9,
+     186.8
+    ],
+    [
+     62.6,
+     186.8
+    ],
+    [
+     73.1,
+     176.3
+    ],
+    [
+     87.4,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     62.6,
+     186.8
+    ],
+    [
+     39.7,
+     186.8
+    ],
+    [
+     50.2,
+     176.3
+    ],
+    [
+     73.1,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     39.7,
+     186.8
+    ],
+    [
+     25.4,
+     186.8
+    ],
+    [
+     35.9,
+     176.3
+    ],
+    [
+     50.2,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     25.4,
+     186.8
+    ],
+    [
+     2.6,
+     186.8
+    ],
+    [
+     13.1,
+     176.3
+    ],
+    [
+     35.9,
+     176.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     2.6,
+     186.8
+    ],
+    [
+     0.0,
+     186.8
+    ],
+    [
+     0.0,
+     174.4
+    ],
+    [
+     10.5,
+     165.3
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     13.1,
+     176.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     174.4
+    ],
+    [
+     0.0,
+     150.2
+    ],
+    [
+     10.5,
+     143.8
+    ],
+    [
+     10.5,
+     165.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     150.2
+    ],
+    [
+     0.0,
+     135.0
+    ],
+    [
+     10.5,
+     130.3
+    ],
+    [
+     10.5,
+     143.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     135.0
+    ],
+    [
+     0.0,
+     110.8
+    ],
+    [
+     10.5,
+     108.9
+    ],
+    [
+     10.5,
+     130.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     110.8
+    ],
+    [
+     0.0,
+     95.7
+    ],
+    [
+     10.5,
+     95.4
+    ],
+    [
+     10.5,
+     108.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     95.7
+    ],
+    [
+     0.0,
+     71.5
+    ],
+    [
+     10.5,
+     73.9
+    ],
+    [
+     10.5,
+     95.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     71.5
+    ],
+    [
+     0.0,
+     56.3
+    ],
+    [
+     10.5,
+     60.5
+    ],
+    [
+     10.5,
+     73.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     56.3
+    ],
+    [
+     0.0,
+     32.1
+    ],
+    [
+     10.5,
+     39.0
+    ],
+    [
+     10.5,
+     60.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     32.1
+    ],
+    [
+     0.0,
+     17.0
+    ],
+    [
+     10.5,
+     25.6
+    ],
+    [
+     10.5,
+     39.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     17.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     25.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     28.2,
+     13.5
+    ],
+    [
+     37.9,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.2,
+     13.5
+    ],
+    [
+     45.5,
+     13.5
+    ],
+    [
+     54.4,
+     24.0
+    ],
+    [
+     37.9,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     53.7,
+     13.5
+    ],
+    [
+     68.4,
+     13.5
+    ],
+    [
+     76.1,
+     24.0
+    ],
+    [
+     62.2,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     68.4,
+     13.5
+    ],
+    [
+     91.8,
+     13.5
+    ],
+    [
+     98.3,
+     24.0
+    ],
+    [
+     76.1,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     91.8,
+     13.5
+    ],
+    [
+     106.5,
+     13.5
+    ],
+    [
+     112.2,
+     24.0
+    ],
+    [
+     98.3,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     106.5,
+     13.5
+    ],
+    [
+     117.7,
+     13.5
+    ],
+    [
+     122.9,
+     24.0
+    ],
+    [
+     112.2,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     125.9,
+     13.5
+    ],
+    [
+     140.5,
+     13.5
+    ],
+    [
+     144.6,
+     24.0
+    ],
+    [
+     130.7,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     140.5,
+     13.5
+    ],
+    [
+     164.0,
+     13.5
+    ],
+    [
+     166.8,
+     24.0
+    ],
+    [
+     144.6,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     164.0,
+     13.5
+    ],
+    [
+     178.7,
+     13.5
+    ],
+    [
+     180.8,
+     24.0
+    ],
+    [
+     166.8,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     178.7,
+     13.5
+    ],
+    [
+     189.9,
+     13.5
+    ],
+    [
+     191.4,
+     24.0
+    ],
+    [
+     180.8,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     198.1,
+     13.5
+    ],
+    [
+     212.7,
+     13.5
+    ],
+    [
+     213.1,
+     24.0
+    ],
+    [
+     199.2,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     212.7,
+     13.5
+    ],
+    [
+     236.2,
+     13.5
+    ],
+    [
+     235.4,
+     24.0
+    ],
+    [
+     213.1,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     236.2,
+     13.5
+    ],
+    [
+     250.8,
+     13.5
+    ],
+    [
+     249.3,
+     24.0
+    ],
+    [
+     235.4,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     250.8,
+     13.5
+    ],
+    [
+     262.1,
+     13.5
+    ],
+    [
+     259.9,
+     24.0
+    ],
+    [
+     249.3,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     270.3,
+     13.5
+    ],
+    [
+     284.9,
+     13.5
+    ],
+    [
+     281.6,
+     24.0
+    ],
+    [
+     267.7,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.9,
+     13.5
+    ],
+    [
+     308.4,
+     13.5
+    ],
+    [
+     303.9,
+     24.0
+    ],
+    [
+     281.6,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     308.4,
+     13.5
+    ],
+    [
+     323.0,
+     13.5
+    ],
+    [
+     317.8,
+     24.0
+    ],
+    [
+     303.9,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     323.0,
+     13.5
+    ],
+    [
+     334.2,
+     13.5
+    ],
+    [
+     328.4,
+     24.0
+    ],
+    [
+     317.8,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     342.4,
+     13.5
+    ],
+    [
+     357.1,
+     13.5
+    ],
+    [
+     350.1,
+     24.0
+    ],
+    [
+     336.2,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     357.1,
+     13.5
+    ],
+    [
+     380.6,
+     13.5
+    ],
+    [
+     372.4,
+     24.0
+    ],
+    [
+     350.1,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     380.6,
+     13.5
+    ],
+    [
+     395.2,
+     13.5
+    ],
+    [
+     386.3,
+     24.0
+    ],
+    [
+     372.4,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     395.2,
+     13.5
+    ],
+    [
+     406.4,
+     13.5
+    ],
+    [
+     396.9,
+     24.0
+    ],
+    [
+     386.3,
+     24.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     414.6,
+     13.5
+    ],
+    [
+     426.5,
+     13.5
+    ],
+    [
+     426.5,
+     16.3
+    ],
+    [
+     416.0,
+     26.6
+    ],
+    [
+     416.0,
+     24.0
+    ],
+    [
+     404.7,
+     24.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     16.3
+    ],
+    [
+     426.5,
+     39.9
+    ],
+    [
+     416.0,
+     48.8
+    ],
+    [
+     416.0,
+     26.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     39.9
+    ],
+    [
+     426.5,
+     54.6
+    ],
+    [
+     416.0,
+     62.6
+    ],
+    [
+     416.0,
+     48.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     54.6
+    ],
+    [
+     426.5,
+     65.9
+    ],
+    [
+     416.0,
+     73.2
+    ],
+    [
+     416.0,
+     62.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     74.1
+    ],
+    [
+     426.5,
+     88.9
+    ],
+    [
+     416.0,
+     94.8
+    ],
+    [
+     416.0,
+     81.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     88.9
+    ],
+    [
+     426.5,
+     112.4
+    ],
+    [
+     416.0,
+     116.9
+    ],
+    [
+     416.0,
+     94.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     112.4
+    ],
+    [
+     426.5,
+     127.2
+    ],
+    [
+     416.0,
+     130.8
+    ],
+    [
+     416.0,
+     116.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     127.2
+    ],
+    [
+     426.5,
+     138.4
+    ],
+    [
+     416.0,
+     141.4
+    ],
+    [
+     416.0,
+     130.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     146.7
+    ],
+    [
+     426.5,
+     161.4
+    ],
+    [
+     416.0,
+     162.9
+    ],
+    [
+     416.0,
+     149.1
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     161.4
+    ],
+    [
+     426.5,
+     185.0
+    ],
+    [
+     416.0,
+     185.1
+    ],
+    [
+     416.0,
+     162.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     185.0
+    ],
+    [
+     426.5,
+     199.7
+    ],
+    [
+     416.0,
+     198.9
+    ],
+    [
+     416.0,
+     185.1
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     199.7
+    ],
+    [
+     426.5,
+     211.0
+    ],
+    [
+     416.0,
+     209.5
+    ],
+    [
+     416.0,
+     198.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     219.2
+    ],
+    [
+     426.5,
+     234.0
+    ],
+    [
+     416.0,
+     231.1
+    ],
+    [
+     416.0,
+     217.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     234.0
+    ],
+    [
+     426.5,
+     257.5
+    ],
+    [
+     416.0,
+     253.2
+    ],
+    [
+     416.0,
+     231.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     257.5
+    ],
+    [
+     426.5,
+     272.3
+    ],
+    [
+     416.0,
+     267.1
+    ],
+    [
+     416.0,
+     253.2
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     272.3
+    ],
+    [
+     426.5,
+     283.5
+    ],
+    [
+     416.0,
+     277.7
+    ],
+    [
+     416.0,
+     267.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     291.8
+    ],
+    [
+     426.5,
+     306.5
+    ],
+    [
+     416.0,
+     299.3
+    ],
+    [
+     416.0,
+     285.4
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     306.5
+    ],
+    [
+     426.5,
+     330.1
+    ],
+    [
+     416.0,
+     321.4
+    ],
+    [
+     416.0,
+     299.3
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     330.1
+    ],
+    [
+     426.5,
+     344.8
+    ],
+    [
+     416.0,
+     335.2
+    ],
+    [
+     416.0,
+     321.4
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     426.5,
+     344.8
+    ],
+    [
+     426.5,
+     356.1
+    ],
+    [
+     416.0,
+     345.8
+    ],
+    [
+     416.0,
+     335.2
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     422.3,
+     360.2
+    ],
+    [
+     407.2,
+     360.2
+    ],
+    [
+     398.8,
+     349.7
+    ],
+    [
+     412.2,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     407.2,
+     360.2
+    ],
+    [
+     383.0,
+     360.2
+    ],
+    [
+     377.2,
+     349.7
+    ],
+    [
+     398.8,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     383.0,
+     360.2
+    ],
+    [
+     367.9,
+     360.2
+    ],
+    [
+     363.8,
+     349.7
+    ],
+    [
+     377.2,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     367.9,
+     360.2
+    ],
+    [
+     356.3,
+     360.2
+    ],
+    [
+     353.5,
+     349.7
+    ],
+    [
+     363.8,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     347.9,
+     360.2
+    ],
+    [
+     332.8,
+     360.2
+    ],
+    [
+     332.5,
+     349.7
+    ],
+    [
+     345.9,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     332.8,
+     360.2
+    ],
+    [
+     308.6,
+     360.2
+    ],
+    [
+     310.9,
+     349.7
+    ],
+    [
+     332.5,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     308.6,
+     360.2
+    ],
+    [
+     293.5,
+     360.2
+    ],
+    [
+     297.5,
+     349.7
+    ],
+    [
+     310.9,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     293.5,
+     360.2
+    ],
+    [
+     281.9,
+     360.2
+    ],
+    [
+     287.2,
+     349.7
+    ],
+    [
+     297.5,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     273.5,
+     360.2
+    ],
+    [
+     258.4,
+     360.2
+    ],
+    [
+     266.2,
+     349.7
+    ],
+    [
+     279.6,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     258.4,
+     360.2
+    ],
+    [
+     234.2,
+     360.2
+    ],
+    [
+     244.6,
+     349.7
+    ],
+    [
+     266.2,
+     349.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     234.2,
+     360.2
+    ],
+    [
+     233.5,
+     360.2
+    ],
+    [
+     233.5,
+     346.6
+    ],
+    [
+     244.0,
+     336.1
+    ],
+    [
+     244.0,
+     349.7
+    ],
+    [
+     244.6,
+     349.7
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     346.6
+    ],
+    [
+     233.5,
+     335.6
+    ],
+    [
+     244.0,
+     325.1
+    ],
+    [
+     244.0,
+     336.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     327.6
+    ],
+    [
+     233.5,
+     313.4
+    ],
+    [
+     244.0,
+     302.9
+    ],
+    [
+     244.0,
+     317.1
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     313.4
+    ],
+    [
+     233.5,
+     290.5
+    ],
+    [
+     244.0,
+     280.0
+    ],
+    [
+     244.0,
+     302.9
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     290.5
+    ],
+    [
+     233.5,
+     276.2
+    ],
+    [
+     244.0,
+     265.7
+    ],
+    [
+     244.0,
+     280.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     276.2
+    ],
+    [
+     233.5,
+     265.3
+    ],
+    [
+     244.0,
+     254.8
+    ],
+    [
+     244.0,
+     265.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     257.3
+    ],
+    [
+     233.5,
+     243.0
+    ],
+    [
+     244.0,
+     232.5
+    ],
+    [
+     244.0,
+     246.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     243.0
+    ],
+    [
+     233.5,
+     220.1
+    ],
+    [
+     244.0,
+     209.6
+    ],
+    [
+     244.0,
+     232.5
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     220.1
+    ],
+    [
+     233.5,
+     205.9
+    ],
+    [
+     244.0,
+     195.4
+    ],
+    [
+     244.0,
+     209.6
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     205.9
+    ],
+    [
+     233.5,
+     194.9
+    ],
+    [
+     244.0,
+     184.4
+    ],
+    [
+     244.0,
+     195.4
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.5,
+     186.9
+    ],
+    [
+     233.5,
+     173.3
+    ],
+    [
+     232.9,
+     173.3
+    ],
+    [
+     243.4,
+     162.8
+    ],
+    [
+     244.0,
+     162.8
+    ],
+    [
+     244.0,
+     176.4
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     232.9,
+     173.3
+    ],
+    [
+     210.0,
+     173.3
+    ],
+    [
+     220.5,
+     162.8
+    ],
+    [
+     243.4,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     210.0,
+     173.3
+    ],
+    [
+     195.7,
+     173.3
+    ],
+    [
+     206.2,
+     162.8
+    ],
+    [
+     220.5,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     195.7,
+     173.3
+    ],
+    [
+     184.8,
+     173.3
+    ],
+    [
+     195.3,
+     162.8
+    ],
+    [
+     206.2,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E335",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     176.8,
+     173.3
+    ],
+    [
+     162.5,
+     173.3
+    ],
+    [
+     173.0,
+     162.8
+    ],
+    [
+     187.3,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E336",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     162.5,
+     173.3
+    ],
+    [
+     139.6,
+     173.3
+    ],
+    [
+     150.1,
+     162.8
+    ],
+    [
+     173.0,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E337",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     139.6,
+     173.3
+    ],
+    [
+     125.4,
+     173.3
+    ],
+    [
+     135.9,
+     162.8
+    ],
+    [
+     150.1,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E338",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     125.4,
+     173.3
+    ],
+    [
+     114.4,
+     173.3
+    ],
+    [
+     124.9,
+     162.8
+    ],
+    [
+     135.9,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E339",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     106.4,
+     173.3
+    ],
+    [
+     92.1,
+     173.3
+    ],
+    [
+     102.6,
+     162.8
+    ],
+    [
+     116.9,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E340",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     92.1,
+     173.3
+    ],
+    [
+     69.3,
+     173.3
+    ],
+    [
+     79.8,
+     162.8
+    ],
+    [
+     102.6,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E341",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     69.3,
+     173.3
+    ],
+    [
+     55.0,
+     173.3
+    ],
+    [
+     65.5,
+     162.8
+    ],
+    [
+     79.8,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E342",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     55.0,
+     173.3
+    ],
+    [
+     44.1,
+     173.3
+    ],
+    [
+     54.6,
+     162.8
+    ],
+    [
+     65.5,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E343",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     36.1,
+     173.3
+    ],
+    [
+     21.8,
+     173.3
+    ],
+    [
+     32.3,
+     162.8
+    ],
+    [
+     46.6,
+     162.8
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E344",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     21.8,
+     173.3
+    ],
+    [
+     13.5,
+     173.3
+    ],
+    [
+     13.5,
+     157.7
+    ],
+    [
+     24.0,
+     149.3
+    ],
+    [
+     24.0,
+     162.8
+    ],
+    [
+     32.3,
+     162.8
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E345",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     157.7
+    ],
+    [
+     13.5,
+     142.4
+    ],
+    [
+     24.0,
+     136.0
+    ],
+    [
+     24.0,
+     149.3
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E346",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     142.4
+    ],
+    [
+     13.5,
+     130.7
+    ],
+    [
+     24.0,
+     125.8
+    ],
+    [
+     24.0,
+     136.0
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E347",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     122.2
+    ],
+    [
+     13.5,
+     106.9
+    ],
+    [
+     24.0,
+     105.1
+    ],
+    [
+     24.0,
+     118.4
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E348",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     106.9
+    ],
+    [
+     13.5,
+     82.4
+    ],
+    [
+     24.0,
+     83.9
+    ],
+    [
+     24.0,
+     105.1
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E349",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     82.4
+    ],
+    [
+     13.5,
+     67.1
+    ],
+    [
+     24.0,
+     70.6
+    ],
+    [
+     24.0,
+     83.9
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E350",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     67.1
+    ],
+    [
+     13.5,
+     55.4
+    ],
+    [
+     24.0,
+     60.4
+    ],
+    [
+     24.0,
+     70.6
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E351",
+   "type": "room",
+   "name": "Target study room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     46.9
+    ],
+    [
+     13.5,
+     31.6
+    ],
+    [
+     24.0,
+     39.7
+    ],
+    [
+     24.0,
+     53.0
+    ]
+   ],
+   "about": "Crews study images of targets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E352",
+   "type": "room",
+   "name": "Mission planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     31.6
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     39.7
+    ]
+   ],
+   "about": "A crew plans routes, targets and timings on a big table screen.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

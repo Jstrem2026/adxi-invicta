@@ -1,0 +1,158 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P5-36",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  350.2,
+  520.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Quick-turn bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     74.3
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     350.2,
+     0.0
+    ],
+    [
+     350.2,
+     74.3
+    ]
+   ],
+   "about": "Quick refuel and rearm.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Crew chief's hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.9,
+     26.4
+    ],
+    [
+     14.9,
+     26.4
+    ],
+    [
+     14.9,
+     34.4
+    ],
+    [
+     2.9,
+     34.4
+    ]
+   ],
+   "about": "Ground crew hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Parking rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     371.4
+    ],
+    [
+     0.0,
+     74.3
+    ],
+    [
+     350.2,
+     74.3
+    ],
+    [
+     350.2,
+     371.4
+    ]
+   ],
+   "about": "Craft parked between sorties.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Tug lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     445.7
+    ],
+    [
+     0.0,
+     371.4
+    ],
+    [
+     350.2,
+     371.4
+    ],
+    [
+     350.2,
+     445.7
+    ]
+   ],
+   "about": "Tugs.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Taxi lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     350.2,
+     520.0
+    ],
+    [
+     0.0,
+     520.0
+    ],
+    [
+     0.0,
+     445.7
+    ],
+    [
+     350.2,
+     445.7
+    ]
+   ],
+   "about": "Lane to the apron.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

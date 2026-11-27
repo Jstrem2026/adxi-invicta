@@ -1,0 +1,7226 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P8-07",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  175.0,
+  237.4
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.5,
+     24.0
+    ],
+    [
+     151.0,
+     24.0
+    ],
+    [
+     151.0,
+     213.4
+    ],
+    [
+     24.0,
+     213.4
+    ],
+    [
+     24.0,
+     142.7
+    ],
+    [
+     111.5,
+     142.7
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     98.0,
+     10.5
+    ],
+    [
+     164.5,
+     10.5
+    ],
+    [
+     164.5,
+     67.8
+    ],
+    [
+     161.5,
+     69.2
+    ],
+    [
+     161.5,
+     13.5
+    ],
+    [
+     101.0,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.5,
+     67.8
+    ],
+    [
+     164.5,
+     189.5
+    ],
+    [
+     161.5,
+     187.5
+    ],
+    [
+     161.5,
+     69.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.5,
+     189.5
+    ],
+    [
+     164.5,
+     226.9
+    ],
+    [
+     79.7,
+     226.9
+    ],
+    [
+     80.1,
+     223.9
+    ],
+    [
+     161.5,
+     223.9
+    ],
+    [
+     161.5,
+     187.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.7,
+     226.9
+    ],
+    [
+     10.5,
+     226.9
+    ],
+    [
+     10.5,
+     173.1
+    ],
+    [
+     13.5,
+     173.5
+    ],
+    [
+     13.5,
+     223.9
+    ],
+    [
+     80.1,
+     223.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     173.1
+    ],
+    [
+     10.5,
+     129.2
+    ],
+    [
+     87.9,
+     129.2
+    ],
+    [
+     90.9,
+     132.2
+    ],
+    [
+     13.5,
+     132.2
+    ],
+    [
+     13.5,
+     173.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.9,
+     129.2
+    ],
+    [
+     98.0,
+     129.2
+    ],
+    [
+     98.0,
+     19.3
+    ],
+    [
+     101.0,
+     22.3
+    ],
+    [
+     101.0,
+     132.2
+    ],
+    [
+     90.9,
+     132.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     98.0,
+     19.3
+    ],
+    [
+     98.0,
+     10.5
+    ],
+    [
+     101.0,
+     13.5
+    ],
+    [
+     101.0,
+     22.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     137.0,
+     13.5
+    ],
+    [
+     146.7,
+     13.5
+    ],
+    [
+     141.3,
+     24.0
+    ],
+    [
+     135.0,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     161.5,
+     63.2
+    ],
+    [
+     161.5,
+     71.6
+    ],
+    [
+     151.0,
+     76.3
+    ],
+    [
+     151.0,
+     68.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     161.5,
+     134.2
+    ],
+    [
+     161.5,
+     142.6
+    ],
+    [
+     151.0,
+     140.3
+    ],
+    [
+     151.0,
+     132.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     161.5,
+     205.2
+    ],
+    [
+     161.5,
+     213.7
+    ],
+    [
+     151.0,
+     204.2
+    ],
+    [
+     151.0,
+     196.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     107.9,
+     223.9
+    ],
+    [
+     99.3,
+     223.9
+    ],
+    [
+     97.7,
+     213.4
+    ],
+    [
+     105.0,
+     213.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     35.3,
+     223.9
+    ],
+    [
+     26.7,
+     223.9
+    ],
+    [
+     35.3,
+     213.4
+    ],
+    [
+     42.7,
+     213.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     170.6
+    ],
+    [
+     13.5,
+     161.5
+    ],
+    [
+     24.0,
+     165.3
+    ],
+    [
+     24.0,
+     172.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     47.0,
+     132.2
+    ],
+    [
+     55.0,
+     132.2
+    ],
+    [
+     65.5,
+     142.7
+    ],
+    [
+     57.5,
+     142.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     101.0,
+     118.7
+    ],
+    [
+     101.0,
+     110.7
+    ],
+    [
+     111.5,
+     121.2
+    ],
+    [
+     111.5,
+     129.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     101.0,
+     51.2
+    ],
+    [
+     101.0,
+     43.2
+    ],
+    [
+     111.5,
+     53.7
+    ],
+    [
+     111.5,
+     61.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Forecast room",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     0.0
+    ],
+    [
+     100.5,
+     0.0
+    ],
+    [
+     107.9,
+     10.5
+    ],
+    [
+     98.0,
+     10.5
+    ]
+   ],
+   "about": "Forecasts space weather, debris and radiation for flight crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.5,
+     0.0
+    ],
+    [
+     107.0,
+     0.0
+    ],
+    [
+     112.8,
+     10.5
+    ],
+    [
+     107.9,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.0,
+     0.0
+    ],
+    [
+     120.0,
+     0.0
+    ],
+    [
+     122.7,
+     10.5
+    ],
+    [
+     112.8,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.0,
+     0.0
+    ],
+    [
+     133.0,
+     0.0
+    ],
+    [
+     132.5,
+     10.5
+    ],
+    [
+     122.7,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     133.0,
+     0.0
+    ],
+    [
+     145.9,
+     0.0
+    ],
+    [
+     142.4,
+     10.5
+    ],
+    [
+     132.5,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.9,
+     0.0
+    ],
+    [
+     158.9,
+     0.0
+    ],
+    [
+     152.3,
+     10.5
+    ],
+    [
+     142.4,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     158.9,
+     0.0
+    ],
+    [
+     171.9,
+     0.0
+    ],
+    [
+     162.2,
+     10.5
+    ],
+    [
+     152.3,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.9,
+     0.0
+    ],
+    [
+     175.0,
+     0.0
+    ],
+    [
+     175.0,
+     9.1
+    ],
+    [
+     164.5,
+     18.8
+    ],
+    [
+     164.5,
+     10.5
+    ],
+    [
+     162.2,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     9.1
+    ],
+    [
+     175.0,
+     21.1
+    ],
+    [
+     164.5,
+     29.7
+    ],
+    [
+     164.5,
+     18.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     21.1
+    ],
+    [
+     175.0,
+     33.0
+    ],
+    [
+     164.5,
+     40.6
+    ],
+    [
+     164.5,
+     29.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     33.0
+    ],
+    [
+     175.0,
+     45.0
+    ],
+    [
+     164.5,
+     51.5
+    ],
+    [
+     164.5,
+     40.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     45.0
+    ],
+    [
+     175.0,
+     56.9
+    ],
+    [
+     164.5,
+     62.4
+    ],
+    [
+     164.5,
+     51.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     56.9
+    ],
+    [
+     175.0,
+     68.9
+    ],
+    [
+     164.5,
+     73.3
+    ],
+    [
+     164.5,
+     62.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     68.9
+    ],
+    [
+     175.0,
+     80.9
+    ],
+    [
+     164.5,
+     84.2
+    ],
+    [
+     164.5,
+     73.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     80.9
+    ],
+    [
+     175.0,
+     92.8
+    ],
+    [
+     164.5,
+     95.1
+    ],
+    [
+     164.5,
+     84.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     92.8
+    ],
+    [
+     175.0,
+     104.8
+    ],
+    [
+     164.5,
+     106.0
+    ],
+    [
+     164.5,
+     95.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     104.8
+    ],
+    [
+     175.0,
+     116.7
+    ],
+    [
+     164.5,
+     116.9
+    ],
+    [
+     164.5,
+     106.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     116.7
+    ],
+    [
+     175.0,
+     128.7
+    ],
+    [
+     164.5,
+     127.8
+    ],
+    [
+     164.5,
+     116.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     128.7
+    ],
+    [
+     175.0,
+     140.6
+    ],
+    [
+     164.5,
+     138.7
+    ],
+    [
+     164.5,
+     127.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     140.6
+    ],
+    [
+     175.0,
+     152.6
+    ],
+    [
+     164.5,
+     149.6
+    ],
+    [
+     164.5,
+     138.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     152.6
+    ],
+    [
+     175.0,
+     164.6
+    ],
+    [
+     164.5,
+     160.5
+    ],
+    [
+     164.5,
+     149.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     164.6
+    ],
+    [
+     175.0,
+     176.5
+    ],
+    [
+     164.5,
+     171.4
+    ],
+    [
+     164.5,
+     160.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     176.5
+    ],
+    [
+     175.0,
+     188.5
+    ],
+    [
+     164.5,
+     182.3
+    ],
+    [
+     164.5,
+     171.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     188.5
+    ],
+    [
+     175.0,
+     200.4
+    ],
+    [
+     164.5,
+     193.2
+    ],
+    [
+     164.5,
+     182.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     200.4
+    ],
+    [
+     175.0,
+     212.4
+    ],
+    [
+     164.5,
+     204.1
+    ],
+    [
+     164.5,
+     193.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     212.4
+    ],
+    [
+     175.0,
+     224.4
+    ],
+    [
+     164.5,
+     215.0
+    ],
+    [
+     164.5,
+     204.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     224.4
+    ],
+    [
+     175.0,
+     236.3
+    ],
+    [
+     164.5,
+     225.9
+    ],
+    [
+     164.5,
+     215.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.0,
+     236.3
+    ],
+    [
+     175.0,
+     237.4
+    ],
+    [
+     164.0,
+     237.4
+    ],
+    [
+     154.8,
+     226.9
+    ],
+    [
+     164.5,
+     226.9
+    ],
+    [
+     164.5,
+     225.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.0,
+     237.4
+    ],
+    [
+     151.8,
+     237.4
+    ],
+    [
+     144.1,
+     226.9
+    ],
+    [
+     154.8,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.8,
+     237.4
+    ],
+    [
+     139.6,
+     237.4
+    ],
+    [
+     133.4,
+     226.9
+    ],
+    [
+     144.1,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.6,
+     237.4
+    ],
+    [
+     127.5,
+     237.4
+    ],
+    [
+     122.7,
+     226.9
+    ],
+    [
+     133.4,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.5,
+     237.4
+    ],
+    [
+     115.3,
+     237.4
+    ],
+    [
+     112.0,
+     226.9
+    ],
+    [
+     122.7,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.3,
+     237.4
+    ],
+    [
+     103.2,
+     237.4
+    ],
+    [
+     101.3,
+     226.9
+    ],
+    [
+     112.0,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.2,
+     237.4
+    ],
+    [
+     91.0,
+     237.4
+    ],
+    [
+     90.6,
+     226.9
+    ],
+    [
+     101.3,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.0,
+     237.4
+    ],
+    [
+     78.8,
+     237.4
+    ],
+    [
+     79.9,
+     226.9
+    ],
+    [
+     90.6,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     78.8,
+     237.4
+    ],
+    [
+     66.7,
+     237.4
+    ],
+    [
+     69.2,
+     226.9
+    ],
+    [
+     79.9,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.7,
+     237.4
+    ],
+    [
+     54.5,
+     237.4
+    ],
+    [
+     58.5,
+     226.9
+    ],
+    [
+     69.2,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.5,
+     237.4
+    ],
+    [
+     42.4,
+     237.4
+    ],
+    [
+     47.8,
+     226.9
+    ],
+    [
+     58.5,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.4,
+     237.4
+    ],
+    [
+     30.2,
+     237.4
+    ],
+    [
+     37.1,
+     226.9
+    ],
+    [
+     47.8,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.2,
+     237.4
+    ],
+    [
+     18.1,
+     237.4
+    ],
+    [
+     26.4,
+     226.9
+    ],
+    [
+     37.1,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.1,
+     237.4
+    ],
+    [
+     5.9,
+     237.4
+    ],
+    [
+     15.7,
+     226.9
+    ],
+    [
+     26.4,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     5.9,
+     237.4
+    ],
+    [
+     0.0,
+     237.4
+    ],
+    [
+     0.0,
+     230.9
+    ],
+    [
+     10.5,
+     221.6
+    ],
+    [
+     10.5,
+     226.9
+    ],
+    [
+     15.7,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     230.9
+    ],
+    [
+     0.0,
+     218.4
+    ],
+    [
+     10.5,
+     211.3
+    ],
+    [
+     10.5,
+     221.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     218.4
+    ],
+    [
+     0.0,
+     205.9
+    ],
+    [
+     10.5,
+     200.9
+    ],
+    [
+     10.5,
+     211.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     205.9
+    ],
+    [
+     0.0,
+     193.3
+    ],
+    [
+     10.5,
+     190.6
+    ],
+    [
+     10.5,
+     200.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     193.3
+    ],
+    [
+     0.0,
+     180.8
+    ],
+    [
+     10.5,
+     180.3
+    ],
+    [
+     10.5,
+     190.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     180.8
+    ],
+    [
+     0.0,
+     168.3
+    ],
+    [
+     10.5,
+     170.0
+    ],
+    [
+     10.5,
+     180.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     168.3
+    ],
+    [
+     0.0,
+     155.7
+    ],
+    [
+     10.5,
+     159.7
+    ],
+    [
+     10.5,
+     170.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     155.7
+    ],
+    [
+     0.0,
+     143.2
+    ],
+    [
+     10.5,
+     149.3
+    ],
+    [
+     10.5,
+     159.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     143.2
+    ],
+    [
+     0.0,
+     130.6
+    ],
+    [
+     10.5,
+     139.0
+    ],
+    [
+     10.5,
+     149.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     130.6
+    ],
+    [
+     0.0,
+     118.7
+    ],
+    [
+     0.5,
+     118.7
+    ],
+    [
+     11.0,
+     129.2
+    ],
+    [
+     10.5,
+     129.2
+    ],
+    [
+     10.5,
+     139.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.5,
+     118.7
+    ],
+    [
+     12.0,
+     118.7
+    ],
+    [
+     22.5,
+     129.2
+    ],
+    [
+     11.0,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.0,
+     118.7
+    ],
+    [
+     23.4,
+     118.7
+    ],
+    [
+     33.9,
+     129.2
+    ],
+    [
+     22.5,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.4,
+     118.7
+    ],
+    [
+     34.8,
+     118.7
+    ],
+    [
+     45.3,
+     129.2
+    ],
+    [
+     33.9,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.8,
+     118.7
+    ],
+    [
+     46.3,
+     118.7
+    ],
+    [
+     56.8,
+     129.2
+    ],
+    [
+     45.3,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.3,
+     118.7
+    ],
+    [
+     57.7,
+     118.7
+    ],
+    [
+     68.2,
+     129.2
+    ],
+    [
+     56.8,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.7,
+     118.7
+    ],
+    [
+     69.1,
+     118.7
+    ],
+    [
+     79.6,
+     129.2
+    ],
+    [
+     68.2,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     69.1,
+     118.7
+    ],
+    [
+     80.5,
+     118.7
+    ],
+    [
+     91.0,
+     129.2
+    ],
+    [
+     79.6,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     118.7
+    ],
+    [
+     87.5,
+     118.7
+    ],
+    [
+     87.5,
+     114.2
+    ],
+    [
+     98.0,
+     124.7
+    ],
+    [
+     98.0,
+     129.2
+    ],
+    [
+     91.0,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     114.2
+    ],
+    [
+     87.5,
+     102.8
+    ],
+    [
+     98.0,
+     113.3
+    ],
+    [
+     98.0,
+     124.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     102.8
+    ],
+    [
+     87.5,
+     91.4
+    ],
+    [
+     98.0,
+     101.9
+    ],
+    [
+     98.0,
+     113.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     91.4
+    ],
+    [
+     87.5,
+     79.9
+    ],
+    [
+     98.0,
+     90.4
+    ],
+    [
+     98.0,
+     101.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     79.9
+    ],
+    [
+     87.5,
+     68.5
+    ],
+    [
+     98.0,
+     79.0
+    ],
+    [
+     98.0,
+     90.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     68.5
+    ],
+    [
+     87.5,
+     57.1
+    ],
+    [
+     98.0,
+     67.6
+    ],
+    [
+     98.0,
+     79.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     57.1
+    ],
+    [
+     87.5,
+     45.7
+    ],
+    [
+     98.0,
+     56.2
+    ],
+    [
+     98.0,
+     67.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     45.7
+    ],
+    [
+     87.5,
+     34.2
+    ],
+    [
+     98.0,
+     44.7
+    ],
+    [
+     98.0,
+     56.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     34.2
+    ],
+    [
+     87.5,
+     22.8
+    ],
+    [
+     98.0,
+     33.3
+    ],
+    [
+     98.0,
+     44.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     22.8
+    ],
+    [
+     87.5,
+     11.4
+    ],
+    [
+     98.0,
+     21.9
+    ],
+    [
+     98.0,
+     33.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.5,
+     11.4
+    ],
+    [
+     87.5,
+     0.0
+    ],
+    [
+     98.0,
+     10.5
+    ],
+    [
+     98.0,
+     21.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     13.5
+    ],
+    [
+     114.8,
+     13.5
+    ],
+    [
+     120.5,
+     24.0
+    ],
+    [
+     111.5,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.8,
+     13.5
+    ],
+    [
+     128.7,
+     13.5
+    ],
+    [
+     129.6,
+     24.0
+    ],
+    [
+     120.5,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     128.7,
+     13.5
+    ],
+    [
+     137.0,
+     13.5
+    ],
+    [
+     135.0,
+     24.0
+    ],
+    [
+     129.6,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     146.7,
+     13.5
+    ],
+    [
+     160.5,
+     13.5
+    ],
+    [
+     150.3,
+     24.0
+    ],
+    [
+     141.3,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.5,
+     13.5
+    ],
+    [
+     161.5,
+     13.5
+    ],
+    [
+     161.5,
+     24.7
+    ],
+    [
+     151.0,
+     34.0
+    ],
+    [
+     151.0,
+     24.0
+    ],
+    [
+     150.3,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     24.7
+    ],
+    [
+     161.5,
+     36.7
+    ],
+    [
+     151.0,
+     44.9
+    ],
+    [
+     151.0,
+     34.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     36.7
+    ],
+    [
+     161.5,
+     48.7
+    ],
+    [
+     151.0,
+     55.7
+    ],
+    [
+     151.0,
+     44.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     48.7
+    ],
+    [
+     161.5,
+     63.2
+    ],
+    [
+     151.0,
+     68.7
+    ],
+    [
+     151.0,
+     55.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     71.6
+    ],
+    [
+     161.5,
+     83.6
+    ],
+    [
+     151.0,
+     87.1
+    ],
+    [
+     151.0,
+     76.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     83.6
+    ],
+    [
+     161.5,
+     95.7
+    ],
+    [
+     151.0,
+     98.0
+    ],
+    [
+     151.0,
+     87.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     95.7
+    ],
+    [
+     161.5,
+     107.7
+    ],
+    [
+     151.0,
+     108.8
+    ],
+    [
+     151.0,
+     98.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     107.7
+    ],
+    [
+     161.5,
+     119.7
+    ],
+    [
+     151.0,
+     119.6
+    ],
+    [
+     151.0,
+     108.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     119.7
+    ],
+    [
+     161.5,
+     134.2
+    ],
+    [
+     151.0,
+     132.7
+    ],
+    [
+     151.0,
+     119.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     142.6
+    ],
+    [
+     161.5,
+     154.7
+    ],
+    [
+     151.0,
+     151.1
+    ],
+    [
+     151.0,
+     140.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     154.7
+    ],
+    [
+     161.5,
+     166.7
+    ],
+    [
+     151.0,
+     161.9
+    ],
+    [
+     151.0,
+     151.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     166.7
+    ],
+    [
+     161.5,
+     178.7
+    ],
+    [
+     151.0,
+     172.7
+    ],
+    [
+     151.0,
+     161.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     178.7
+    ],
+    [
+     161.5,
+     190.8
+    ],
+    [
+     151.0,
+     183.6
+    ],
+    [
+     151.0,
+     172.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     190.8
+    ],
+    [
+     161.5,
+     205.2
+    ],
+    [
+     151.0,
+     196.6
+    ],
+    [
+     151.0,
+     183.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.5,
+     213.7
+    ],
+    [
+     161.5,
+     223.9
+    ],
+    [
+     159.7,
+     223.9
+    ],
+    [
+     149.4,
+     213.4
+    ],
+    [
+     151.0,
+     213.4
+    ],
+    [
+     151.0,
+     204.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.7,
+     223.9
+    ],
+    [
+     147.4,
+     223.9
+    ],
+    [
+     138.9,
+     213.4
+    ],
+    [
+     149.4,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.4,
+     223.9
+    ],
+    [
+     135.1,
+     223.9
+    ],
+    [
+     128.3,
+     213.4
+    ],
+    [
+     138.9,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.1,
+     223.9
+    ],
+    [
+     122.8,
+     223.9
+    ],
+    [
+     117.8,
+     213.4
+    ],
+    [
+     128.3,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     122.8,
+     223.9
+    ],
+    [
+     107.9,
+     223.9
+    ],
+    [
+     105.0,
+     213.4
+    ],
+    [
+     117.8,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.3,
+     223.9
+    ],
+    [
+     87.0,
+     223.9
+    ],
+    [
+     87.1,
+     213.4
+    ],
+    [
+     97.7,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.0,
+     223.9
+    ],
+    [
+     74.7,
+     223.9
+    ],
+    [
+     76.5,
+     213.4
+    ],
+    [
+     87.1,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.7,
+     223.9
+    ],
+    [
+     62.4,
+     223.9
+    ],
+    [
+     66.0,
+     213.4
+    ],
+    [
+     76.5,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.4,
+     223.9
+    ],
+    [
+     50.1,
+     223.9
+    ],
+    [
+     55.4,
+     213.4
+    ],
+    [
+     66.0,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.1,
+     223.9
+    ],
+    [
+     35.3,
+     223.9
+    ],
+    [
+     42.7,
+     213.4
+    ],
+    [
+     55.4,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.7,
+     223.9
+    ],
+    [
+     14.4,
+     223.9
+    ],
+    [
+     24.8,
+     213.4
+    ],
+    [
+     35.3,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.4,
+     223.9
+    ],
+    [
+     13.5,
+     223.9
+    ],
+    [
+     13.5,
+     211.9
+    ],
+    [
+     24.0,
+     204.2
+    ],
+    [
+     24.0,
+     213.4
+    ],
+    [
+     24.8,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     211.9
+    ],
+    [
+     13.5,
+     199.0
+    ],
+    [
+     24.0,
+     194.2
+    ],
+    [
+     24.0,
+     204.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     199.0
+    ],
+    [
+     13.5,
+     186.1
+    ],
+    [
+     24.0,
+     184.3
+    ],
+    [
+     24.0,
+     194.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     186.1
+    ],
+    [
+     13.5,
+     170.6
+    ],
+    [
+     24.0,
+     172.3
+    ],
+    [
+     24.0,
+     184.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     161.5
+    ],
+    [
+     13.5,
+     148.6
+    ],
+    [
+     24.0,
+     155.4
+    ],
+    [
+     24.0,
+     165.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     148.6
+    ],
+    [
+     13.5,
+     135.7
+    ],
+    [
+     24.0,
+     145.4
+    ],
+    [
+     24.0,
+     155.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     135.7
+    ],
+    [
+     13.5,
+     132.2
+    ],
+    [
+     21.8,
+     132.2
+    ],
+    [
+     32.3,
+     142.7
+    ],
+    [
+     24.0,
+     142.7
+    ],
+    [
+     24.0,
+     145.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.8,
+     132.2
+    ],
+    [
+     33.2,
+     132.2
+    ],
+    [
+     43.7,
+     142.7
+    ],
+    [
+     32.3,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     33.2,
+     132.2
+    ],
+    [
+     47.0,
+     132.2
+    ],
+    [
+     57.5,
+     142.7
+    ],
+    [
+     43.7,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.0,
+     132.2
+    ],
+    [
+     66.4,
+     132.2
+    ],
+    [
+     76.9,
+     142.7
+    ],
+    [
+     65.5,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.4,
+     132.2
+    ],
+    [
+     77.9,
+     132.2
+    ],
+    [
+     88.4,
+     142.7
+    ],
+    [
+     76.9,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.9,
+     132.2
+    ],
+    [
+     89.3,
+     132.2
+    ],
+    [
+     99.8,
+     142.7
+    ],
+    [
+     88.4,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.3,
+     132.2
+    ],
+    [
+     100.7,
+     132.2
+    ],
+    [
+     111.2,
+     142.7
+    ],
+    [
+     99.8,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.7,
+     132.2
+    ],
+    [
+     101.0,
+     132.2
+    ],
+    [
+     101.0,
+     118.7
+    ],
+    [
+     111.5,
+     129.2
+    ],
+    [
+     111.5,
+     142.7
+    ],
+    [
+     111.2,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     110.7
+    ],
+    [
+     101.0,
+     99.3
+    ],
+    [
+     111.5,
+     109.8
+    ],
+    [
+     111.5,
+     121.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     99.3
+    ],
+    [
+     101.0,
+     87.9
+    ],
+    [
+     111.5,
+     98.4
+    ],
+    [
+     111.5,
+     109.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     87.9
+    ],
+    [
+     101.0,
+     76.4
+    ],
+    [
+     111.5,
+     86.9
+    ],
+    [
+     111.5,
+     98.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     76.4
+    ],
+    [
+     101.0,
+     65.0
+    ],
+    [
+     111.5,
+     75.5
+    ],
+    [
+     111.5,
+     86.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     65.0
+    ],
+    [
+     101.0,
+     51.2
+    ],
+    [
+     111.5,
+     61.7
+    ],
+    [
+     111.5,
+     75.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     43.2
+    ],
+    [
+     101.0,
+     31.8
+    ],
+    [
+     111.5,
+     42.3
+    ],
+    [
+     111.5,
+     53.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     31.8
+    ],
+    [
+     101.0,
+     20.4
+    ],
+    [
+     111.5,
+     30.9
+    ],
+    [
+     111.5,
+     42.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.0,
+     20.4
+    ],
+    [
+     101.0,
+     13.5
+    ],
+    [
+     111.5,
+     24.0
+    ],
+    [
+     111.5,
+     30.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     98.0,
+     10.5
+    ],
+    [
+     164.5,
+     10.5
+    ],
+    [
+     164.5,
+     67.8
+    ],
+    [
+     161.5,
+     69.2
+    ],
+    [
+     161.5,
+     13.5
+    ],
+    [
+     101.0,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.5,
+     67.8
+    ],
+    [
+     164.5,
+     189.5
+    ],
+    [
+     161.5,
+     187.5
+    ],
+    [
+     161.5,
+     69.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.5,
+     189.5
+    ],
+    [
+     164.5,
+     226.9
+    ],
+    [
+     79.7,
+     226.9
+    ],
+    [
+     80.1,
+     223.9
+    ],
+    [
+     161.5,
+     223.9
+    ],
+    [
+     161.5,
+     187.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.7,
+     226.9
+    ],
+    [
+     10.5,
+     226.9
+    ],
+    [
+     10.5,
+     173.1
+    ],
+    [
+     13.5,
+     173.5
+    ],
+    [
+     13.5,
+     223.9
+    ],
+    [
+     80.1,
+     223.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     173.1
+    ],
+    [
+     10.5,
+     129.2
+    ],
+    [
+     87.9,
+     129.2
+    ],
+    [
+     90.9,
+     132.2
+    ],
+    [
+     13.5,
+     132.2
+    ],
+    [
+     13.5,
+     173.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.9,
+     129.2
+    ],
+    [
+     98.0,
+     129.2
+    ],
+    [
+     98.0,
+     19.3
+    ],
+    [
+     101.0,
+     22.3
+    ],
+    [
+     101.0,
+     132.2
+    ],
+    [
+     90.9,
+     132.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     98.0,
+     19.3
+    ],
+    [
+     98.0,
+     10.5
+    ],
+    [
+     101.0,
+     13.5
+    ],
+    [
+     101.0,
+     22.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     0.0
+    ],
+    [
+     91.7,
+     0.0
+    ],
+    [
+     101.2,
+     10.5
+    ],
+    [
+     98.0,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.7,
+     0.0
+    ],
+    [
+     99.3,
+     0.0
+    ],
+    [
+     106.9,
+     10.5
+    ],
+    [
+     101.2,
+     10.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     99.3,
+     0.0
+    ],
+    [
+     112.2,
+     0.0
+    ],
+    [
+     116.8,
+     10.5
+    ],
+    [
+     106.9,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     112.2,
+     0.0
+    ],
+    [
+     125.2,
+     0.0
+    ],
+    [
+     126.7,
+     10.5
+    ],
+    [
+     116.8,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     125.2,
+     0.0
+    ],
+    [
+     138.2,
+     0.0
+    ],
+    [
+     136.5,
+     10.5
+    ],
+    [
+     126.7,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     138.2,
+     0.0
+    ],
+    [
+     151.2,
+     0.0
+    ],
+    [
+     146.4,
+     10.5
+    ],
+    [
+     136.5,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.2,
+     0.0
+    ],
+    [
+     164.2,
+     0.0
+    ],
+    [
+     156.3,
+     10.5
+    ],
+    [
+     146.4,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.2,
+     0.0
+    ],
+    [
+     175.0,
+     0.0
+    ],
+    [
+     175.0,
+     2.0
+    ],
+    [
+     164.5,
+     12.3
+    ],
+    [
+     164.5,
+     10.5
+    ],
+    [
+     156.3,
+     10.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     2.0
+    ],
+    [
+     175.0,
+     14.0
+    ],
+    [
+     164.5,
+     23.2
+    ],
+    [
+     164.5,
+     12.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     14.0
+    ],
+    [
+     175.0,
+     25.9
+    ],
+    [
+     164.5,
+     34.1
+    ],
+    [
+     164.5,
+     23.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     25.9
+    ],
+    [
+     175.0,
+     37.9
+    ],
+    [
+     164.5,
+     45.0
+    ],
+    [
+     164.5,
+     34.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     37.9
+    ],
+    [
+     175.0,
+     49.8
+    ],
+    [
+     164.5,
+     55.9
+    ],
+    [
+     164.5,
+     45.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     49.8
+    ],
+    [
+     175.0,
+     61.8
+    ],
+    [
+     164.5,
+     66.8
+    ],
+    [
+     164.5,
+     55.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     61.8
+    ],
+    [
+     175.0,
+     73.7
+    ],
+    [
+     164.5,
+     77.7
+    ],
+    [
+     164.5,
+     66.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     73.7
+    ],
+    [
+     175.0,
+     85.7
+    ],
+    [
+     164.5,
+     88.6
+    ],
+    [
+     164.5,
+     77.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     85.7
+    ],
+    [
+     175.0,
+     97.7
+    ],
+    [
+     164.5,
+     99.5
+    ],
+    [
+     164.5,
+     88.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     97.7
+    ],
+    [
+     175.0,
+     109.6
+    ],
+    [
+     164.5,
+     110.4
+    ],
+    [
+     164.5,
+     99.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     109.6
+    ],
+    [
+     175.0,
+     121.6
+    ],
+    [
+     164.5,
+     121.3
+    ],
+    [
+     164.5,
+     110.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     121.6
+    ],
+    [
+     175.0,
+     133.5
+    ],
+    [
+     164.5,
+     132.2
+    ],
+    [
+     164.5,
+     121.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     133.5
+    ],
+    [
+     175.0,
+     145.5
+    ],
+    [
+     164.5,
+     143.1
+    ],
+    [
+     164.5,
+     132.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     145.5
+    ],
+    [
+     175.0,
+     157.4
+    ],
+    [
+     164.5,
+     154.0
+    ],
+    [
+     164.5,
+     143.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     157.4
+    ],
+    [
+     175.0,
+     169.4
+    ],
+    [
+     164.5,
+     164.9
+    ],
+    [
+     164.5,
+     154.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     169.4
+    ],
+    [
+     175.0,
+     181.4
+    ],
+    [
+     164.5,
+     175.8
+    ],
+    [
+     164.5,
+     164.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     181.4
+    ],
+    [
+     175.0,
+     193.3
+    ],
+    [
+     164.5,
+     186.7
+    ],
+    [
+     164.5,
+     175.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     193.3
+    ],
+    [
+     175.0,
+     205.3
+    ],
+    [
+     164.5,
+     197.6
+    ],
+    [
+     164.5,
+     186.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     205.3
+    ],
+    [
+     175.0,
+     217.2
+    ],
+    [
+     164.5,
+     208.5
+    ],
+    [
+     164.5,
+     197.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     217.2
+    ],
+    [
+     175.0,
+     229.2
+    ],
+    [
+     164.5,
+     219.4
+    ],
+    [
+     164.5,
+     208.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.0,
+     229.2
+    ],
+    [
+     175.0,
+     237.4
+    ],
+    [
+     171.2,
+     237.4
+    ],
+    [
+     161.1,
+     226.9
+    ],
+    [
+     164.5,
+     226.9
+    ],
+    [
+     164.5,
+     219.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.2,
+     237.4
+    ],
+    [
+     159.0,
+     237.4
+    ],
+    [
+     150.4,
+     226.9
+    ],
+    [
+     161.1,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     159.0,
+     237.4
+    ],
+    [
+     146.9,
+     237.4
+    ],
+    [
+     139.7,
+     226.9
+    ],
+    [
+     150.4,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     146.9,
+     237.4
+    ],
+    [
+     134.7,
+     237.4
+    ],
+    [
+     129.0,
+     226.9
+    ],
+    [
+     139.7,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     134.7,
+     237.4
+    ],
+    [
+     122.6,
+     237.4
+    ],
+    [
+     118.3,
+     226.9
+    ],
+    [
+     129.0,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     122.6,
+     237.4
+    ],
+    [
+     110.4,
+     237.4
+    ],
+    [
+     107.6,
+     226.9
+    ],
+    [
+     118.3,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     110.4,
+     237.4
+    ],
+    [
+     98.2,
+     237.4
+    ],
+    [
+     96.9,
+     226.9
+    ],
+    [
+     107.6,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     98.2,
+     237.4
+    ],
+    [
+     86.1,
+     237.4
+    ],
+    [
+     86.3,
+     226.9
+    ],
+    [
+     96.9,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     86.1,
+     237.4
+    ],
+    [
+     73.9,
+     237.4
+    ],
+    [
+     75.6,
+     226.9
+    ],
+    [
+     86.3,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     73.9,
+     237.4
+    ],
+    [
+     61.8,
+     237.4
+    ],
+    [
+     64.9,
+     226.9
+    ],
+    [
+     75.6,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     61.8,
+     237.4
+    ],
+    [
+     49.6,
+     237.4
+    ],
+    [
+     54.2,
+     226.9
+    ],
+    [
+     64.9,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     49.6,
+     237.4
+    ],
+    [
+     37.4,
+     237.4
+    ],
+    [
+     43.5,
+     226.9
+    ],
+    [
+     54.2,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     37.4,
+     237.4
+    ],
+    [
+     25.3,
+     237.4
+    ],
+    [
+     32.8,
+     226.9
+    ],
+    [
+     43.5,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     25.3,
+     237.4
+    ],
+    [
+     13.1,
+     237.4
+    ],
+    [
+     22.1,
+     226.9
+    ],
+    [
+     32.8,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.1,
+     237.4
+    ],
+    [
+     1.0,
+     237.4
+    ],
+    [
+     11.4,
+     226.9
+    ],
+    [
+     22.1,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     1.0,
+     237.4
+    ],
+    [
+     0.0,
+     237.4
+    ],
+    [
+     0.0,
+     225.9
+    ],
+    [
+     10.5,
+     217.4
+    ],
+    [
+     10.5,
+     226.9
+    ],
+    [
+     11.4,
+     226.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     225.9
+    ],
+    [
+     0.0,
+     213.3
+    ],
+    [
+     10.5,
+     207.1
+    ],
+    [
+     10.5,
+     217.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     213.3
+    ],
+    [
+     0.0,
+     200.8
+    ],
+    [
+     10.5,
+     196.8
+    ],
+    [
+     10.5,
+     207.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     200.8
+    ],
+    [
+     0.0,
+     188.3
+    ],
+    [
+     10.5,
+     186.4
+    ],
+    [
+     10.5,
+     196.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     188.3
+    ],
+    [
+     0.0,
+     175.7
+    ],
+    [
+     10.5,
+     176.1
+    ],
+    [
+     10.5,
+     186.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     175.7
+    ],
+    [
+     0.0,
+     163.2
+    ],
+    [
+     10.5,
+     165.8
+    ],
+    [
+     10.5,
+     176.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     163.2
+    ],
+    [
+     0.0,
+     150.6
+    ],
+    [
+     10.5,
+     155.5
+    ],
+    [
+     10.5,
+     165.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     150.6
+    ],
+    [
+     0.0,
+     138.1
+    ],
+    [
+     10.5,
+     145.2
+    ],
+    [
+     10.5,
+     155.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     138.1
+    ],
+    [
+     0.0,
+     125.6
+    ],
+    [
+     10.5,
+     134.9
+    ],
+    [
+     10.5,
+     145.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     125.6
+    ],
+    [
+     0.0,
+     118.7
+    ],
+    [
+     5.2,
+     118.7
+    ],
+    [
+     15.7,
+     129.2
+    ],
+    [
+     10.5,
+     129.2
+    ],
+    [
+     10.5,
+     134.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     5.2,
+     118.7
+    ],
+    [
+     16.6,
+     118.7
+    ],
+    [
+     27.1,
+     129.2
+    ],
+    [
+     15.7,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     16.6,
+     118.7
+    ],
+    [
+     28.0,
+     118.7
+    ],
+    [
+     38.5,
+     129.2
+    ],
+    [
+     27.1,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     28.0,
+     118.7
+    ],
+    [
+     39.5,
+     118.7
+    ],
+    [
+     50.0,
+     129.2
+    ],
+    [
+     38.5,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.5,
+     118.7
+    ],
+    [
+     50.9,
+     118.7
+    ],
+    [
+     61.4,
+     129.2
+    ],
+    [
+     50.0,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.9,
+     118.7
+    ],
+    [
+     62.3,
+     118.7
+    ],
+    [
+     72.8,
+     129.2
+    ],
+    [
+     61.4,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     62.3,
+     118.7
+    ],
+    [
+     73.7,
+     118.7
+    ],
+    [
+     84.2,
+     129.2
+    ],
+    [
+     72.8,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     73.7,
+     118.7
+    ],
+    [
+     85.2,
+     118.7
+    ],
+    [
+     95.7,
+     129.2
+    ],
+    [
+     84.2,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.2,
+     118.7
+    ],
+    [
+     87.5,
+     118.7
+    ],
+    [
+     87.5,
+     109.6
+    ],
+    [
+     98.0,
+     120.1
+    ],
+    [
+     98.0,
+     129.2
+    ],
+    [
+     95.7,
+     129.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     109.6
+    ],
+    [
+     87.5,
+     98.2
+    ],
+    [
+     98.0,
+     108.7
+    ],
+    [
+     98.0,
+     120.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     98.2
+    ],
+    [
+     87.5,
+     86.7
+    ],
+    [
+     98.0,
+     97.2
+    ],
+    [
+     98.0,
+     108.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     86.7
+    ],
+    [
+     87.5,
+     75.3
+    ],
+    [
+     98.0,
+     85.8
+    ],
+    [
+     98.0,
+     97.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     75.3
+    ],
+    [
+     87.5,
+     63.9
+    ],
+    [
+     98.0,
+     74.4
+    ],
+    [
+     98.0,
+     85.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     63.9
+    ],
+    [
+     87.5,
+     52.5
+    ],
+    [
+     98.0,
+     63.0
+    ],
+    [
+     98.0,
+     74.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     52.5
+    ],
+    [
+     87.5,
+     41.0
+    ],
+    [
+     98.0,
+     51.5
+    ],
+    [
+     98.0,
+     63.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     41.0
+    ],
+    [
+     87.5,
+     29.6
+    ],
+    [
+     98.0,
+     40.1
+    ],
+    [
+     98.0,
+     51.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     29.6
+    ],
+    [
+     87.5,
+     18.2
+    ],
+    [
+     98.0,
+     28.7
+    ],
+    [
+     98.0,
+     40.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     18.2
+    ],
+    [
+     87.5,
+     6.7
+    ],
+    [
+     98.0,
+     17.2
+    ],
+    [
+     98.0,
+     28.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     6.7
+    ],
+    [
+     87.5,
+     0.0
+    ],
+    [
+     98.0,
+     10.5
+    ],
+    [
+     98.0,
+     17.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     13.5
+    ],
+    [
+     114.8,
+     13.5
+    ],
+    [
+     120.5,
+     24.0
+    ],
+    [
+     111.5,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.8,
+     13.5
+    ],
+    [
+     128.7,
+     13.5
+    ],
+    [
+     129.6,
+     24.0
+    ],
+    [
+     120.5,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     128.7,
+     13.5
+    ],
+    [
+     137.0,
+     13.5
+    ],
+    [
+     135.0,
+     24.0
+    ],
+    [
+     129.6,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     146.7,
+     13.5
+    ],
+    [
+     160.5,
+     13.5
+    ],
+    [
+     150.3,
+     24.0
+    ],
+    [
+     141.3,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.5,
+     13.5
+    ],
+    [
+     161.5,
+     13.5
+    ],
+    [
+     161.5,
+     24.7
+    ],
+    [
+     151.0,
+     34.0
+    ],
+    [
+     151.0,
+     24.0
+    ],
+    [
+     150.3,
+     24.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     24.7
+    ],
+    [
+     161.5,
+     36.7
+    ],
+    [
+     151.0,
+     44.9
+    ],
+    [
+     151.0,
+     34.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     36.7
+    ],
+    [
+     161.5,
+     48.7
+    ],
+    [
+     151.0,
+     55.7
+    ],
+    [
+     151.0,
+     44.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     48.7
+    ],
+    [
+     161.5,
+     63.2
+    ],
+    [
+     151.0,
+     68.7
+    ],
+    [
+     151.0,
+     55.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     71.6
+    ],
+    [
+     161.5,
+     83.6
+    ],
+    [
+     151.0,
+     87.1
+    ],
+    [
+     151.0,
+     76.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     83.6
+    ],
+    [
+     161.5,
+     95.7
+    ],
+    [
+     151.0,
+     98.0
+    ],
+    [
+     151.0,
+     87.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     95.7
+    ],
+    [
+     161.5,
+     107.7
+    ],
+    [
+     151.0,
+     108.8
+    ],
+    [
+     151.0,
+     98.0
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     107.7
+    ],
+    [
+     161.5,
+     119.7
+    ],
+    [
+     151.0,
+     119.6
+    ],
+    [
+     151.0,
+     108.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     119.7
+    ],
+    [
+     161.5,
+     134.2
+    ],
+    [
+     151.0,
+     132.7
+    ],
+    [
+     151.0,
+     119.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     142.6
+    ],
+    [
+     161.5,
+     154.7
+    ],
+    [
+     151.0,
+     151.1
+    ],
+    [
+     151.0,
+     140.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     154.7
+    ],
+    [
+     161.5,
+     166.7
+    ],
+    [
+     151.0,
+     161.9
+    ],
+    [
+     151.0,
+     151.1
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     166.7
+    ],
+    [
+     161.5,
+     178.7
+    ],
+    [
+     151.0,
+     172.7
+    ],
+    [
+     151.0,
+     161.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     178.7
+    ],
+    [
+     161.5,
+     190.8
+    ],
+    [
+     151.0,
+     183.6
+    ],
+    [
+     151.0,
+     172.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     190.8
+    ],
+    [
+     161.5,
+     205.2
+    ],
+    [
+     151.0,
+     196.6
+    ],
+    [
+     151.0,
+     183.6
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.5,
+     213.7
+    ],
+    [
+     161.5,
+     223.9
+    ],
+    [
+     159.7,
+     223.9
+    ],
+    [
+     149.4,
+     213.4
+    ],
+    [
+     151.0,
+     213.4
+    ],
+    [
+     151.0,
+     204.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     159.7,
+     223.9
+    ],
+    [
+     147.4,
+     223.9
+    ],
+    [
+     138.9,
+     213.4
+    ],
+    [
+     149.4,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     147.4,
+     223.9
+    ],
+    [
+     135.1,
+     223.9
+    ],
+    [
+     128.3,
+     213.4
+    ],
+    [
+     138.9,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     135.1,
+     223.9
+    ],
+    [
+     122.8,
+     223.9
+    ],
+    [
+     117.8,
+     213.4
+    ],
+    [
+     128.3,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     122.8,
+     223.9
+    ],
+    [
+     107.9,
+     223.9
+    ],
+    [
+     105.0,
+     213.4
+    ],
+    [
+     117.8,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     99.3,
+     223.9
+    ],
+    [
+     87.0,
+     223.9
+    ],
+    [
+     87.1,
+     213.4
+    ],
+    [
+     97.7,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.0,
+     223.9
+    ],
+    [
+     74.7,
+     223.9
+    ],
+    [
+     76.5,
+     213.4
+    ],
+    [
+     87.1,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.7,
+     223.9
+    ],
+    [
+     62.4,
+     223.9
+    ],
+    [
+     66.0,
+     213.4
+    ],
+    [
+     76.5,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     62.4,
+     223.9
+    ],
+    [
+     50.1,
+     223.9
+    ],
+    [
+     55.4,
+     213.4
+    ],
+    [
+     66.0,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.1,
+     223.9
+    ],
+    [
+     35.3,
+     223.9
+    ],
+    [
+     42.7,
+     213.4
+    ],
+    [
+     55.4,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.7,
+     223.9
+    ],
+    [
+     14.4,
+     223.9
+    ],
+    [
+     24.8,
+     213.4
+    ],
+    [
+     35.3,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.4,
+     223.9
+    ],
+    [
+     13.5,
+     223.9
+    ],
+    [
+     13.5,
+     211.9
+    ],
+    [
+     24.0,
+     204.2
+    ],
+    [
+     24.0,
+     213.4
+    ],
+    [
+     24.8,
+     213.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     211.9
+    ],
+    [
+     13.5,
+     199.0
+    ],
+    [
+     24.0,
+     194.2
+    ],
+    [
+     24.0,
+     204.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     199.0
+    ],
+    [
+     13.5,
+     186.1
+    ],
+    [
+     24.0,
+     184.3
+    ],
+    [
+     24.0,
+     194.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     186.1
+    ],
+    [
+     13.5,
+     170.6
+    ],
+    [
+     24.0,
+     172.3
+    ],
+    [
+     24.0,
+     184.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     161.5
+    ],
+    [
+     13.5,
+     148.6
+    ],
+    [
+     24.0,
+     155.4
+    ],
+    [
+     24.0,
+     165.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     148.6
+    ],
+    [
+     13.5,
+     135.7
+    ],
+    [
+     24.0,
+     145.4
+    ],
+    [
+     24.0,
+     155.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     135.7
+    ],
+    [
+     13.5,
+     132.2
+    ],
+    [
+     21.8,
+     132.2
+    ],
+    [
+     32.3,
+     142.7
+    ],
+    [
+     24.0,
+     142.7
+    ],
+    [
+     24.0,
+     145.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.8,
+     132.2
+    ],
+    [
+     33.2,
+     132.2
+    ],
+    [
+     43.7,
+     142.7
+    ],
+    [
+     32.3,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.2,
+     132.2
+    ],
+    [
+     47.0,
+     132.2
+    ],
+    [
+     57.5,
+     142.7
+    ],
+    [
+     43.7,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     55.0,
+     132.2
+    ],
+    [
+     66.4,
+     132.2
+    ],
+    [
+     76.9,
+     142.7
+    ],
+    [
+     65.5,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     66.4,
+     132.2
+    ],
+    [
+     77.9,
+     132.2
+    ],
+    [
+     88.4,
+     142.7
+    ],
+    [
+     76.9,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     77.9,
+     132.2
+    ],
+    [
+     89.3,
+     132.2
+    ],
+    [
+     99.8,
+     142.7
+    ],
+    [
+     88.4,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.3,
+     132.2
+    ],
+    [
+     100.7,
+     132.2
+    ],
+    [
+     111.2,
+     142.7
+    ],
+    [
+     99.8,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     100.7,
+     132.2
+    ],
+    [
+     101.0,
+     132.2
+    ],
+    [
+     101.0,
+     118.7
+    ],
+    [
+     111.5,
+     129.2
+    ],
+    [
+     111.5,
+     142.7
+    ],
+    [
+     111.2,
+     142.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     110.7
+    ],
+    [
+     101.0,
+     99.3
+    ],
+    [
+     111.5,
+     109.8
+    ],
+    [
+     111.5,
+     121.2
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     99.3
+    ],
+    [
+     101.0,
+     87.9
+    ],
+    [
+     111.5,
+     98.4
+    ],
+    [
+     111.5,
+     109.8
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     87.9
+    ],
+    [
+     101.0,
+     76.4
+    ],
+    [
+     111.5,
+     86.9
+    ],
+    [
+     111.5,
+     98.4
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     76.4
+    ],
+    [
+     101.0,
+     65.0
+    ],
+    [
+     111.5,
+     75.5
+    ],
+    [
+     111.5,
+     86.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     65.0
+    ],
+    [
+     101.0,
+     51.2
+    ],
+    [
+     111.5,
+     61.7
+    ],
+    [
+     111.5,
+     75.5
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     43.2
+    ],
+    [
+     101.0,
+     31.8
+    ],
+    [
+     111.5,
+     42.3
+    ],
+    [
+     111.5,
+     53.7
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     31.8
+    ],
+    [
+     101.0,
+     20.4
+    ],
+    [
+     111.5,
+     30.9
+    ],
+    [
+     111.5,
+     42.3
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Forecasters' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     20.4
+    ],
+    [
+     101.0,
+     13.5
+    ],
+    [
+     111.5,
+     24.0
+    ],
+    [
+     111.5,
+     30.9
+    ]
+   ],
+   "about": "Forecasters.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
