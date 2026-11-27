@@ -183,7 +183,9 @@
     try {
       const r = await fetch("/api/whoami", { headers: { "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" } });
       const d = await r.json();
-      who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "";
+      who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "For the design team only: Jordan or Kylee, click Name / password to sign in.";
+      input.disabled = send.disabled = attach.disabled = !d.name;
+      input.placeholder = d.name ? "Ask about a deck or building, or suggest a change…" : "The Claude chat is for the design team. You can still browse and use the Helpers chat.";
       if (d.name && /kylee/i.test(d.name) && !localStorage.getItem("adxi.units")) {  // Kylee works in metric (Western Australia)
         localStorage.setItem("adxi.units", "metric");
         if (window.adxiUnitsLabel) window.adxiUnitsLabel();

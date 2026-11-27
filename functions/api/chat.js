@@ -211,6 +211,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
     return json({ error: "This conversation is too long. Start a new chat." }, 413);
   }
 
+  // The Claude chat is for the design team only (Jordan and Kylee); the public can browse and use the helpers chat.
+  if (!trusted) return json({ error: "The Claude chat is for the design team. Jordan or Kylee: click Name / password and enter your password." }, 403);
   const limit = trusted ? null : await checkLimits(env, request);  // no limit for Jordan and Kylee
   if (limit) return json({ error: limit }, 429);
 
