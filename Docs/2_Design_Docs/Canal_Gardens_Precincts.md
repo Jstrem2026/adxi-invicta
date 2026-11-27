@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Block B1 Port Gateway is laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway and B2 Waterfront Reach I are laid out (proposed); the other blocks are not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -62,7 +62,29 @@ Area check (m²): plots 263,250 (nine plots, 131,625 each side), canal 83,050, p
 
 How the app shows it: the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 750 m, 0.3833 km²) as the block, still addressed D3-F56-M. Because that block now starts 18 m in from the others, the app numbers it Block 8 instead of Block 1. The map draws the canal widenings and the promenades as rectangles; their exact outlines are in the 2D plans. The canal meets the B2 edge (Y 750) at 100 m wide, x 28.3125 to 28.4125 km.
 
-Not designed yet: what the other seven blocks and the other precincts hold, streets other than B1's two access roads, bridges other than B1's two, where the canal water comes from and goes, individual buildings.
+B2 Waterfront Reach I (D3-F56-O) layout, proposed. The block is 547 × 500 m (273,500 m²), Y 750 to 1,250 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 0.75 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and the bridge only; no individual buildings are designed.
+
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Grand Canal | 328 × 1,640 ft (100 × 500 m); 538,196 sq ft (50,000 m²) | WR-01. X 223.5–323.5, Y 0–500. Straight 100 m channel; carries on from B1 and runs on into B3 | D3F6P1B2A1 |
+| Riverside Dining | 576 × 525 ft (175.5 × 160 m) | WR-02. X 18–193.5, Y 0–160. Plot only | D3F6P1B2A2 |
+| Culinary Market | 576 × 427 ft (175.5 × 130 m) | WR-03. X 18–193.5, Y 160–290. Plot only | D3F6P1B2A3 |
+| Waterfront Social Gardens | 576 × 459 ft (175.5 × 140 m) | WR-04. X 18–193.5, Y 290–430. Plot only | D3F6P1B2A4 |
+| Public Boat Stop | 576 × 230 ft (175.5 × 70 m) | WR-05. X 18–193.5, Y 430–500. Plot only | D3F6P1B2A5 |
+| Canal Terrace Gardens | 576 × 361 ft (175.5 × 110 m) | WR-06. X 353.5–529, Y 0–110. Plot only | D3F6P1B2A6 |
+| Waterfront Restaurants | 576 × 607 ft (175.5 × 185 m) | WR-07. X 353.5–529, Y 110–295. Plot only | D3F6P1B2A7 |
+| Fountain Square | 576 × 377 ft (175.5 × 115 m) | WR-08. X 353.5–529, Y 295–410. Plot only | D3F6P1B2A8 |
+| Sunset Terraces | 576 × 295 ft (175.5 × 90 m) | WR-09. X 353.5–529, Y 410–500. Plot only | D3F6P1B2A9 |
+| Promenades | 98 × 1,640 ft (30 × 500 m) each side; 322,917 sq ft (30,000 m²) | WR-10A X 193.5–223.5 and WR-10B X 323.5–353.5, both Y 0–500. Carry on from B1 and run on into B3 | D3F6P1B2A10 |
+| Access Road A | 59 × 1,640 ft (18 × 500 m) | WR-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B | 59 × 1,640 ft (18 × 500 m) | WR-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
+| Social Bridge | 591 × 52 ft (180 × 16 m) | Pedestrian bridge. X 183.5–363.5, Y 250–266. Each end overlaps its plot by 10 m (WR-03, WR-07) | D3F6P1B2A11 |
+
+Area check (m²): plots 175,500 (nine plots: 87,750 each side), canal 50,000, promenades 30,000, access roads 18,000. Total 273,500, which is the whole block. The bridge sits over the canal and plots and is not counted again.
+
+How the app shows it: as in B1, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-O. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B1 at Y 0 and B3 at Y 500 with the same widths, so each runs unbroken.
+
+Not designed yet: what the other six blocks and the other precincts hold, streets other than the access roads of B1 and B2, bridges other than B1's two and the Social Bridge, where the canal water comes from and goes, individual buildings.
 
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
