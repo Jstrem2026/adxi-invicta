@@ -1,0 +1,344 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P6-08",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  900.0,
+  440.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Lawn",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.4,
+     34.3
+    ],
+    [
+     3.6,
+     23.4
+    ],
+    [
+     9.8,
+     13.8
+    ],
+    [
+     18.4,
+     6.3
+    ],
+    [
+     28.7,
+     1.6
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     270.7,
+     0.1
+    ],
+    [
+     270.7,
+     439.7
+    ],
+    [
+     34.3,
+     439.6
+    ],
+    [
+     23.4,
+     436.4
+    ],
+    [
+     13.8,
+     430.2
+    ],
+    [
+     6.3,
+     421.6
+    ],
+    [
+     1.6,
+     411.3
+    ],
+    [
+     0.0,
+     400.0
+    ]
+   ],
+   "about": "Open grass for sitting, picnics and games.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.7,
+     200.0
+    ],
+    [
+     101.7,
+     200.0
+    ],
+    [
+     101.7,
+     212.0
+    ],
+    [
+     93.7,
+     212.0
+    ]
+   ],
+   "about": "Sells drinks, ice cream and snacks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.7,
+     200.0
+    ],
+    [
+     109.7,
+     200.0
+    ],
+    [
+     109.7,
+     212.0
+    ],
+    [
+     101.7,
+     212.0
+    ]
+   ],
+   "about": "Public toilets for garden visitors.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Gardeners' store",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.7,
+     200.0
+    ],
+    [
+     117.7,
+     200.0
+    ],
+    [
+     117.7,
+     212.0
+    ],
+    [
+     109.7,
+     212.0
+    ]
+   ],
+   "about": "Tools and mowers for the garden crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Tree grove",
+   "level": "L1",
+   "outline_m": [
+    [
+     270.7,
+     0.1
+    ],
+    [
+     450.0,
+     0.2
+    ],
+    [
+     450.0,
+     439.8
+    ],
+    [
+     270.7,
+     439.7
+    ]
+   ],
+   "about": "Shady trees with benches underneath.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Paths and benches",
+   "level": "L1",
+   "outline_m": [
+    [
+     450.0,
+     0.2
+    ],
+    [
+     539.6,
+     0.2
+    ],
+    [
+     539.6,
+     439.8
+    ],
+    [
+     450.0,
+     439.8
+    ]
+   ],
+   "about": "Paved paths with benches and lamps that lead through the park through the concourse.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Children's playground",
+   "level": "L1",
+   "outline_m": [
+    [
+     539.6,
+     0.2
+    ],
+    [
+     629.3,
+     0.3
+    ],
+    [
+     629.3,
+     439.9
+    ],
+    [
+     539.6,
+     439.8
+    ]
+   ],
+   "about": "Swings, slides and climbing frames for children waiting to travel.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Water garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     629.3,
+     0.3
+    ],
+    [
+     718.9,
+     0.3
+    ],
+    [
+     718.9,
+     439.9
+    ],
+    [
+     629.3,
+     439.9
+    ]
+   ],
+   "about": "Shallow pools and fountains with stepping stones.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Promenade",
+   "level": "L1",
+   "outline_m": [
+    [
+     718.9,
+     0.3
+    ],
+    [
+     865.7,
+     0.4
+    ],
+    [
+     876.6,
+     3.6
+    ],
+    [
+     886.2,
+     9.8
+    ],
+    [
+     893.7,
+     18.4
+    ],
+    [
+     898.4,
+     28.7
+    ],
+    [
+     900.0,
+     40.0
+    ],
+    [
+     899.6,
+     405.7
+    ],
+    [
+     896.4,
+     416.6
+    ],
+    [
+     890.2,
+     426.2
+    ],
+    [
+     881.6,
+     433.7
+    ],
+    [
+     871.3,
+     438.4
+    ],
+    [
+     860.0,
+     440.0
+    ],
+    [
+     718.9,
+     439.9
+    ]
+   ],
+   "about": "A wide tree-lined walk through the park for travellers stretching their legs between flights.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

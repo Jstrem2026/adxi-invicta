@@ -82,6 +82,8 @@ def scene(data, p, b, did):
             h = c.get("height_m") or (0.3 if kind in ("park", "plaza", "yard", "transport", "bays") else 14)
             if kind in ("park", "plaza", "yard", "transport", "bays"):
                 h = 0.3
+            if kind == "transport":
+                h = 0.05   # road lots can overlap parks and squares in the data; keep them just under, so they don't flicker
             nb.append({"rings": [km_ring(o, ox, oy) for o in (c.get("outline_km") or [rect_ring(cr)])],
                        "holes": [km_ring(hh, ox, oy) for hh in (c.get("holes_km") or [])],
                        "h": h, "kind": kind, "cat": c.get("category") or "industry"})

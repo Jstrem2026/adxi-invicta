@@ -1,0 +1,862 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P2-02",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  80.0,
+  60.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Hangar floor",
+   "z_m": 0.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor 1",
+   "z_m": 5.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Upper floor 2",
+   "z_m": 10.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Arrival hangar bay",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     80.0,
+     0.0
+    ],
+    [
+     80.0,
+     44.0
+    ],
+    [
+     0.0,
+     44.0
+    ]
+   ],
+   "about": "One covered bay where an arriving shuttle comes in through the hull dock door, lands on the pad and is unloaded under cover.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Shuttle pad",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.0,
+     3.1
+    ],
+    [
+     60.0,
+     3.1
+    ],
+    [
+     60.0,
+     42.7
+    ],
+    [
+     20.0,
+     42.7
+    ]
+   ],
+   "about": "The 131 ft (40 m) square landing pad (TUNE) with its touchdown lights.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Dock door",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.0,
+     0.0
+    ],
+    [
+     60.0,
+     0.0
+    ],
+    [
+     60.0,
+     2.2
+    ],
+    [
+     20.0,
+     2.2
+    ]
+   ],
+   "about": "The 131 × 33 ft (40 × 10 m) door in the hull that the shuttle flies in through (canon).",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     49.1,
+     60.0
+    ],
+    [
+     40.2,
+     60.0
+    ],
+    [
+     40.2,
+     52.4
+    ],
+    [
+     47.3,
+     52.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     30.9,
+     44.0
+    ],
+    [
+     39.8,
+     44.0
+    ],
+    [
+     39.8,
+     51.6
+    ],
+    [
+     32.7,
+     51.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Unloading office",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.0,
+     44.0
+    ],
+    [
+     80.0,
+     54.0
+    ],
+    [
+     72.4,
+     52.1
+    ],
+    [
+     72.4,
+     51.6
+    ]
+   ],
+   "about": "The crew chief plans each unload and signs for the cargo.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Baggage transfer room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.0,
+     54.0
+    ],
+    [
+     80.0,
+     60.0
+    ],
+    [
+     71.8,
+     60.0
+    ],
+    [
+     65.8,
+     52.4
+    ],
+    [
+     72.4,
+     52.4
+    ],
+    [
+     72.4,
+     52.1
+    ]
+   ],
+   "about": "Bags come off the shuttle and are loaded onto carts for the Hall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Ground crew room",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.8,
+     60.0
+    ],
+    [
+     63.1,
+     60.0
+    ],
+    [
+     58.7,
+     52.4
+    ],
+    [
+     65.8,
+     52.4
+    ]
+   ],
+   "about": "The hangar's ground crew wait here between arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "room",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     63.1,
+     60.0
+    ],
+    [
+     57.3,
+     60.0
+    ],
+    [
+     54.0,
+     52.4
+    ],
+    [
+     58.7,
+     52.4
+    ]
+   ],
+   "about": "Tools and spares for turning the shuttle round.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.3,
+     60.0
+    ],
+    [
+     49.1,
+     60.0
+    ],
+    [
+     47.3,
+     52.4
+    ],
+    [
+     54.0,
+     52.4
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.2,
+     60.0
+    ],
+    [
+     22.8,
+     60.0
+    ],
+    [
+     26.0,
+     52.4
+    ],
+    [
+     40.2,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.8,
+     60.0
+    ],
+    [
+     5.3,
+     60.0
+    ],
+    [
+     11.9,
+     52.4
+    ],
+    [
+     26.0,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     5.3,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ],
+    [
+     0.0,
+     44.0
+    ],
+    [
+     2.9,
+     44.0
+    ],
+    [
+     9.9,
+     51.6
+    ],
+    [
+     7.6,
+     51.6
+    ],
+    [
+     7.6,
+     52.4
+    ],
+    [
+     11.9,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.9,
+     44.0
+    ],
+    [
+     20.3,
+     44.0
+    ],
+    [
+     24.1,
+     51.6
+    ],
+    [
+     9.9,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.3,
+     44.0
+    ],
+    [
+     30.9,
+     44.0
+    ],
+    [
+     32.7,
+     51.6
+    ],
+    [
+     24.1,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     39.8,
+     44.0
+    ],
+    [
+     57.2,
+     44.0
+    ],
+    [
+     54.0,
+     51.6
+    ],
+    [
+     39.8,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.2,
+     44.0
+    ],
+    [
+     80.0,
+     44.0
+    ],
+    [
+     72.4,
+     51.6
+    ],
+    [
+     54.0,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Hangar control room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.0,
+     44.0
+    ],
+    [
+     80.0,
+     56.5
+    ],
+    [
+     72.4,
+     52.2
+    ],
+    [
+     72.4,
+     51.6
+    ]
+   ],
+   "about": "Opens and closes the dock door and guides the shuttle onto the pad.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Crew rest room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.0,
+     56.5
+    ],
+    [
+     80.0,
+     60.0
+    ],
+    [
+     74.7,
+     60.0
+    ],
+    [
+     68.1,
+     52.4
+    ],
+    [
+     72.4,
+     52.4
+    ],
+    [
+     72.4,
+     52.2
+    ]
+   ],
+   "about": "Shuttle crews rest here while their craft is turned round.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Plant room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     74.7,
+     60.0
+    ],
+    [
+     57.3,
+     60.0
+    ],
+    [
+     54.0,
+     52.4
+    ],
+    [
+     68.1,
+     52.4
+    ]
+   ],
+   "about": "Air handling units, pumps and electrical boards that keep this floor running.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     57.3,
+     60.0
+    ],
+    [
+     49.1,
+     60.0
+    ],
+    [
+     47.3,
+     52.4
+    ],
+    [
+     54.0,
+     52.4
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     40.2,
+     60.0
+    ],
+    [
+     22.8,
+     60.0
+    ],
+    [
+     26.0,
+     52.4
+    ],
+    [
+     40.2,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     22.8,
+     60.0
+    ],
+    [
+     5.3,
+     60.0
+    ],
+    [
+     11.9,
+     52.4
+    ],
+    [
+     26.0,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     5.3,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ],
+    [
+     0.0,
+     44.0
+    ],
+    [
+     2.9,
+     44.0
+    ],
+    [
+     9.9,
+     51.6
+    ],
+    [
+     7.6,
+     51.6
+    ],
+    [
+     7.6,
+     52.4
+    ],
+    [
+     11.9,
+     52.4
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     2.9,
+     44.0
+    ],
+    [
+     20.3,
+     44.0
+    ],
+    [
+     24.1,
+     51.6
+    ],
+    [
+     9.9,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     20.3,
+     44.0
+    ],
+    [
+     30.9,
+     44.0
+    ],
+    [
+     32.7,
+     51.6
+    ],
+    [
+     24.1,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     39.8,
+     44.0
+    ],
+    [
+     57.2,
+     44.0
+    ],
+    [
+     54.0,
+     51.6
+    ],
+    [
+     39.8,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     57.2,
+     44.0
+    ],
+    [
+     80.0,
+     44.0
+    ],
+    [
+     72.4,
+     51.6
+    ],
+    [
+     54.0,
+     51.6
+    ]
+   ],
+   "about": "Offices for the people who work in the building.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
