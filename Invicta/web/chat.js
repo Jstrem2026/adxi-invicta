@@ -53,19 +53,50 @@
   // Attach images (resized in the browser) and show what the person is looking at.
   const attach = el("button", "chat-attach", "+");
   attach.type = "button";
-  attach.title = "Attach an image";
+  attach.title = "Attach an image, PDF or Word document";
   const picker = el("input");
   picker.type = "file";
-  picker.accept = "image/png,image/jpeg,image/webp";
+  picker.accept = "image/png,image/jpeg,image/webp,application/pdf,.pdf,.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document";
   picker.multiple = true;
   picker.hidden = true;
   const tray = el("div", "chat-tray");
   const here = el("div", "chat-here");
-  let pending = [];  // base64 JPEGs
+  let pending = [];  // images: base64 JPEG strings
+  let pendingDocs = [];  // {name, pdf: base64} or {name, text}
+  const PDF_MAX = 8 * 1024 * 1024, DOCX_MAX = 10 * 1024 * 1024, TEXT_MAX = 150000;
   attach.onclick = () => picker.click();
+  const readB64 = (f) => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1]); r.onerror = rej; r.readAsDataURL(f); });
+  let mammothReady = null;
+  const loadMammoth = () => mammothReady || (mammothReady = new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js";
+    s.onload = () => res(window.mammoth); s.onerror = () => rej(new Error("Couldn't load the Word reader."));
+    document.head.append(s);
+  }));
   picker.onchange = async () => {
-    for (const f of [...picker.files].slice(0, 3 - pending.length)) {
-      try { pending.push(await shrinkImage(f)); } catch (e) { note("Couldn't read that image.", "msg-error"); }
+    for (const f of [...picker.files]) {
+      const n = f.name.toLowerCase();
+      try {
+        if (n.endsWith(".pdf") || f.type === "application/pdf") {
+          if (pendingDocs.length >= 2) { note("Up to 2 documents per message."); continue; }
+          if (f.size > PDF_MAX) { note(`${f.name} is ${(f.size / 1048576).toFixed(1)} MB. PDFs can be up to 8 MB (about 100 pages).`, "msg-error"); continue; }
+          pendingDocs.push({ name: f.name, pdf: await readB64(f) });
+        } else if (n.endsWith(".docx")) {
+          if (pendingDocs.length >= 2) { note("Up to 2 documents per message."); continue; }
+          if (f.size > DOCX_MAX) { note(`${f.name} is too big (Word files up to 10 MB).`, "msg-error"); continue; }
+          const m = await loadMammoth();
+          const out = await m.extractRawText({ arrayBuffer: await f.arrayBuffer() });
+          let text = (out.value || "").trim();
+          if (!text) { note(`${f.name} has no readable text.`, "msg-error"); continue; }
+          if (text.length > TEXT_MAX) { text = text.slice(0, TEXT_MAX); note(`${f.name} is long, so only the first ${TEXT_MAX.toLocaleString()} characters were attached.`); }
+          pendingDocs.push({ name: f.name, text });
+        } else if (n.endsWith(".doc")) {
+          note("Old .doc files can't be read. Save it as .docx or PDF and try again.", "msg-error");
+        } else {
+          if (pending.length >= 3) { note("Up to 3 images per message."); continue; }
+          pending.push(await shrinkImage(f));
+        }
+      } catch (e) { note(`Couldn't read ${f.name}.`, "msg-error"); }
     }
     picker.value = "";
     drawTray();
@@ -78,7 +109,13 @@
       t.querySelector("button").onclick = () => { pending.splice(i, 1); drawTray(); };
       tray.append(t);
     });
-    tray.hidden = !pending.length;
+    pendingDocs.forEach((d, i) => {
+      const t = el("span", "chat-thumb chat-doc");
+      t.innerHTML = `<span>📄 ${esc(d.name)}</span><button type="button" title="Remove">×</button>`;
+      t.querySelector("button").onclick = () => { pendingDocs.splice(i, 1); drawTray(); };
+      tray.append(t);
+    });
+    tray.hidden = !pending.length && !pendingDocs.length;
   }
   tray.hidden = true;
   form.append(attach, picker, input, send);
@@ -254,22 +291,22 @@
 
   form.onsubmit = async (e) => {
     e.preventDefault();
-    const text = input.value.trim() || (pending.length ? "(see the attached image)" : "");
+    const text = input.value.trim() || (pendingDocs.length ? "(see the attached document)" : pending.length ? "(see the attached image)" : "");
     if (!text || busy) return;
-    const imgs = pending.slice();
-    pending = []; drawTray();
+    const imgs = pending.slice(), docs = pendingDocs.slice();
+    pending = []; pendingDocs = []; drawTray();
     if (!localStorage.getItem(KEY_ASKED)) await askName();
     busy = true;
     send.disabled = true;
     input.value = "";
-    bubble("user", imgs.map((b) => `<img class="chat-img" src="data:image/jpeg;base64,${b}" alt="">`).join("") + esc(text).replace(/\n/g, "<br>"));
+    bubble("user", imgs.map((b) => `<img class="chat-img" src="data:image/jpeg;base64,${b}" alt="">`).join("") + docs.map((d) => `<div class="chat-docline">📄 ${esc(d.name)}</div>`).join("") + esc(text).replace(/\n/g, "<br>"));
     const out = bubble("assistant", '<span class="chat-typing">Thinking…</span>');
     let acc = "";
     try {
       const r = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" },
-        body: JSON.stringify({ messages: history, text, images: imgs, name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
+        body: JSON.stringify({ messages: history, text, images: imgs, docs, name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
       });
       if (!r.ok || !r.body) {
         let msg = "The chat isn't available right now.";

@@ -172,6 +172,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
   // Images attached to this message (base64 JPEG/PNG/WebP), at most 3, each up to about 1.5 MB.
   const images = (Array.isArray(body.images) ? body.images : []).slice(0, 3).map((b) => String(b).replace(/\s/g, ""))
     .filter((b) => b && b.length <= 2_000_000 && imageExt(b));
+  // Documents: PDFs (base64, up to about 8 MB) and text pulled from Word files in the browser. At most 2.
+  const docs = (Array.isArray(body.docs) ? body.docs : []).slice(0, 2).map((d) => ({
+    name: String((d && d.name) || "document").slice(0, 120),
+    pdf: d && typeof d.pdf === "string" && d.pdf.length <= 11_500_000 && d.pdf.startsWith("JVBER") ? d.pdf : null,
+    text: d && typeof d.text === "string" ? d.text.slice(0, 150_000) : null,
+  })).filter((d) => d.pdf || d.text);
   if (!text) return json({ error: "Empty message." }, 400);
   if (JSON.stringify(history).length > MAX_HISTORY_CHARS) {
     return json({ error: "This conversation is too long. Start a new chat." }, 413);
@@ -186,7 +192,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
     ...history,
     {
       role: "user",
-      content: [...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${trusted ? " (trusted helper: their agreed changes are merged and published right away, no review)" : ""}. Looking at: ${view || "the site"}]\n\n${text}` }],
+      content: [...docs.map((d) => d.pdf
+        ? { type: "document", source: { type: "base64", media_type: "application/pdf", data: d.pdf }, title: d.name }
+        : { type: "document", source: { type: "text", media_type: "text/plain", data: d.text }, title: d.name }),
+      ...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${docs.length ? `[Attached document(s): ${docs.map((d) => d.name).join(", ")}] ` : ""}${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${trusted ? " (trusted helper: their agreed changes are merged and published right away, no review)" : ""}. Looking at: ${view || "the site"}]\n\n${text}` }],
     },
   ];
 
@@ -279,8 +288,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
       }
       // The browser keeps the conversation and sends it back with the next message.
       // Images are not sent back: the browser keeps a short note instead, to keep the history small.
-      send("done", { messages: messages.map((m) => Array.isArray(m.content) && m.content.some((c) => c.type === "image")
-        ? { ...m, content: m.content.map((c) => (c.type === "image" ? { type: "text", text: "[image attached earlier]" } : c)) } : m) });
+      send("done", { messages: messages.map((m) => Array.isArray(m.content) && m.content.some((c) => c.type === "image" || c.type === "document")
+        ? { ...m, content: m.content.map((c) => (c.type === "image" ? { type: "text", text: "[image attached earlier]" }
+          : c.type === "document" ? { type: "text", text: `[document attached earlier: ${c.title || "document"}]` } : c)) } : m) });
     } catch (err) {
       console.error("chat error", err && err.status, err && err.message);
       const msg = err instanceof Anthropic.RateLimitError
