@@ -28,81 +28,87 @@
  "elements": [
   {
    "id": "E001",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     15.0,
+     57.0
+    ],
+    [
+     15.0,
+     20.0
+    ],
+    [
+     25.0,
+     20.0
+    ],
+    [
+     25.0,
+     57.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E002",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     125.0,
+     57.0
+    ],
+    [
+     125.0,
+     20.0
+    ],
+    [
+     135.0,
+     20.0
+    ],
+    [
+     135.0,
+     57.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E003",
    "type": "zone",
    "name": "Corridor",
    "level": "L1",
    "outline_m": [
     [
      15.0,
-     57.0
-    ],
-    [
-     135.0,
-     57.0
-    ],
-    [
-     135.0,
      63.0
     ],
     [
      15.0,
+     57.0
+    ],
+    [
+     135.0,
+     57.0
+    ],
+    [
+     135.0,
      63.0
     ]
    ],
    "status": "proposed",
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E002",
-   "type": "room",
-   "name": "Transformer bays",
-   "level": "L1",
-   "outline_m": [
-    [
-     15.0,
-     20.0
-    ],
-    [
-     45.0,
-     20.0
-    ],
-    [
-     45.0,
-     57.0
-    ],
-    [
-     15.0,
-     57.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Transformers that step the ship's power down for the precinct."
-  },
-  {
-   "id": "E003",
-   "type": "room",
-   "name": "Transformer bays",
-   "level": "L1",
-   "outline_m": [
-    [
-     45.0,
-     20.0
-    ],
-    [
-     75.0,
-     20.0
-    ],
-    [
-     75.0,
-     57.0
-    ],
-    [
-     45.0,
-     57.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Transformers that step the ship's power down for the precinct."
   },
   {
    "id": "E004",
@@ -111,19 +117,19 @@
    "level": "L1",
    "outline_m": [
     [
-     75.0,
-     20.0
-    ],
-    [
-     105.0,
-     20.0
-    ],
-    [
-     105.0,
+     25.0,
      57.0
     ],
     [
-     75.0,
+     25.0,
+     20.0
+    ],
+    [
+     50.0,
+     20.0
+    ],
+    [
+     50.0,
      57.0
     ]
    ],
@@ -137,19 +143,19 @@
    "level": "L1",
    "outline_m": [
     [
-     105.0,
-     20.0
-    ],
-    [
-     135.0,
-     20.0
-    ],
-    [
-     135.0,
+     50.0,
      57.0
     ],
     [
-     105.0,
+     50.0,
+     20.0
+    ],
+    [
+     75.0,
+     20.0
+    ],
+    [
+     75.0,
      57.0
     ]
    ],
@@ -159,23 +165,75 @@
   {
    "id": "E006",
    "type": "room",
+   "name": "Transformer bays",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.0,
+     57.0
+    ],
+    [
+     75.0,
+     20.0
+    ],
+    [
+     100.0,
+     20.0
+    ],
+    [
+     100.0,
+     57.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Transformers that step the ship's power down for the precinct."
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Transformer bays",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.0,
+     57.0
+    ],
+    [
+     100.0,
+     20.0
+    ],
+    [
+     125.0,
+     20.0
+    ],
+    [
+     125.0,
+     57.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Transformers that step the ship's power down for the precinct."
+  },
+  {
+   "id": "E008",
+   "type": "room",
    "name": "Switch room",
    "level": "L1",
    "outline_m": [
     [
      15.0,
-     63.0
-    ],
-    [
-     55.5,
-     63.0
-    ],
-    [
-     55.5,
      100.0
     ],
     [
      15.0,
+     63.0
+    ],
+    [
+     55.5,
+     63.0
+    ],
+    [
+     55.5,
      100.0
     ]
    ],
@@ -183,25 +241,25 @@
    "about": "Electrical switchgear for the pumps."
   },
   {
-   "id": "E007",
+   "id": "E009",
    "type": "room",
    "name": "Water pumps",
    "level": "L1",
    "outline_m": [
     [
      55.5,
-     63.0
-    ],
-    [
-     88.0,
-     63.0
-    ],
-    [
-     88.0,
      100.0
     ],
     [
      55.5,
+     63.0
+    ],
+    [
+     88.0,
+     63.0
+    ],
+    [
+     88.0,
      100.0
     ]
    ],
@@ -209,25 +267,25 @@
    "about": "Pumps that keep water flowing to the precinct."
   },
   {
-   "id": "E008",
+   "id": "E010",
    "type": "room",
    "name": "Control room",
    "level": "L1",
    "outline_m": [
     [
      88.0,
-     63.0
-    ],
-    [
-     135.0,
-     63.0
-    ],
-    [
-     135.0,
      100.0
     ],
     [
      88.0,
+     63.0
+    ],
+    [
+     135.0,
+     63.0
+    ],
+    [
+     135.0,
      100.0
     ]
    ],
@@ -235,25 +293,25 @@
    "about": "Operators watch and control the building's systems."
   },
   {
-   "id": "E009",
+   "id": "E011",
    "type": "zone",
    "name": "Corridor",
    "level": "L2",
    "outline_m": [
     [
      15.0,
-     57.0
-    ],
-    [
-     135.0,
-     57.0
-    ],
-    [
-     135.0,
      63.0
     ],
     [
      15.0,
+     57.0
+    ],
+    [
+     135.0,
+     57.0
+    ],
+    [
+     135.0,
      63.0
     ]
    ],
@@ -261,25 +319,25 @@
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
   },
   {
-   "id": "E010",
+   "id": "E012",
    "type": "room",
    "name": "Air handling",
    "level": "L2",
    "outline_m": [
     [
-     15.0,
-     20.0
-    ],
-    [
-     135.0,
-     20.0
-    ],
-    [
-     135.0,
+     25.0,
      57.0
     ],
     [
-     15.0,
+     25.0,
+     20.0
+    ],
+    [
+     125.0,
+     20.0
+    ],
+    [
+     125.0,
      57.0
     ]
    ],
@@ -287,25 +345,25 @@
    "about": "Fans and filters that supply fresh air."
   },
   {
-   "id": "E011",
+   "id": "E013",
    "type": "room",
    "name": "Stores",
    "level": "L2",
    "outline_m": [
     [
      15.0,
-     63.0
-    ],
-    [
-     135.0,
-     63.0
-    ],
-    [
-     135.0,
      100.0
     ],
     [
      15.0,
+     63.0
+    ],
+    [
+     135.0,
+     63.0
+    ],
+    [
+     135.0,
      100.0
     ]
    ],
@@ -313,7 +371,7 @@
    "about": "Lockable stores for supplies, spares and equipment."
   },
   {
-   "id": "E012",
+   "id": "E014",
    "type": "room",
    "name": "Cooling tower 1",
    "levels": [
@@ -323,18 +381,18 @@
    "outline_m": [
     [
      25.0,
-     115.0
-    ],
-    [
-     70.0,
-     115.0
-    ],
-    [
-     70.0,
      160.0
     ],
     [
      25.0,
+     115.0
+    ],
+    [
+     70.0,
+     115.0
+    ],
+    [
+     70.0,
      160.0
     ]
    ],
@@ -343,7 +401,7 @@
    "about": "Towers that throw off heat from the cooling water."
   },
   {
-   "id": "E013",
+   "id": "E015",
    "type": "room",
    "name": "Cooling tower 2",
    "levels": [
@@ -353,18 +411,18 @@
    "outline_m": [
     [
      80.0,
-     115.0
-    ],
-    [
-     125.0,
-     115.0
-    ],
-    [
-     125.0,
      160.0
     ],
     [
      80.0,
+     115.0
+    ],
+    [
+     125.0,
+     115.0
+    ],
+    [
+     125.0,
      160.0
     ]
    ],

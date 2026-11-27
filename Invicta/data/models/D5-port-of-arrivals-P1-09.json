@@ -35,8 +35,8 @@
  "elements": [
   {
    "id": "E001",
-   "type": "zone",
-   "name": "Corridor",
+   "type": "core",
+   "name": "Stairs and lifts",
    "level": "L1",
    "outline_m": [
     [
@@ -44,15 +44,67 @@
      22.5
     ],
     [
+     15.0,
+     10.0
+    ],
+    [
+     25.0,
+     10.0
+    ],
+    [
+     25.0,
+     22.5
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E002",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.0,
+     22.5
+    ],
+    [
+     95.0,
+     10.0
+    ],
+    [
+     105.0,
+     10.0
+    ],
+    [
+     105.0,
+     22.5
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.0,
+     25.5
+    ],
+    [
+     15.0,
+     22.5
+    ],
+    [
      105.0,
      22.5
     ],
     [
      105.0,
-     25.5
-    ],
-    [
-     15.0,
      25.5
     ]
    ],
@@ -60,25 +112,25 @@
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
   },
   {
-   "id": "E002",
+   "id": "E004",
    "type": "room",
    "name": "Shaft control room",
    "level": "L1",
    "outline_m": [
     [
-     15.0,
-     10.0
-    ],
-    [
-     105.0,
-     10.0
-    ],
-    [
-     105.0,
+     25.0,
      22.5
     ],
     [
-     15.0,
+     25.0,
+     10.0
+    ],
+    [
+     95.0,
+     10.0
+    ],
+    [
+     95.0,
      22.5
     ]
    ],
@@ -86,25 +138,25 @@
    "about": "Controls the lifts and doors of the service shaft."
   },
   {
-   "id": "E003",
+   "id": "E005",
    "type": "room",
    "name": "Crew room",
    "level": "L1",
    "outline_m": [
     [
      15.0,
-     25.5
-    ],
-    [
-     105.0,
-     25.5
-    ],
-    [
-     105.0,
      38.0
     ],
     [
      15.0,
+     25.5
+    ],
+    [
+     105.0,
+     25.5
+    ],
+    [
+     105.0,
      38.0
     ]
    ],
@@ -112,7 +164,7 @@
    "about": "A room where the crew rest and take breaks."
   },
   {
-   "id": "E004",
+   "id": "E006",
    "type": "room",
    "name": "Vehicle lift",
    "levels": [
@@ -122,20 +174,36 @@
    ],
    "outline_m": [
     [
-     15.0,
+     105.0,
+     95.0
+    ],
+    [
+     42.5,
+     95.0
+    ],
+    [
+     42.5,
+     71.5
+    ],
+    [
+     47.5,
+     71.5
+    ],
+    [
+     47.5,
+     63.5
+    ],
+    [
+     42.5,
+     63.5
+    ],
+    [
+     42.5,
      40.0
     ],
     [
      105.0,
      40.0
-    ],
-    [
-     105.0,
-     95.0
-    ],
-    [
-     15.0,
-     95.0
     ]
    ],
    "full_height": true,
@@ -143,7 +211,7 @@
    "about": "A lift big enough to carry vehicles down to the service layer."
   },
   {
-   "id": "E005",
+   "id": "E007",
    "type": "room",
    "name": "Goods lift hall",
    "levels": [
@@ -154,18 +222,18 @@
    "outline_m": [
     [
      15.0,
-     95.0
-    ],
-    [
-     105.0,
-     95.0
-    ],
-    [
-     105.0,
      150.0
     ],
     [
      15.0,
+     95.0
+    ],
+    [
+     105.0,
+     95.0
+    ],
+    [
+     105.0,
      150.0
     ]
    ],
@@ -174,7 +242,7 @@
    "about": "Lifts for goods going down to and up from the service layer."
   },
   {
-   "id": "E006",
+   "id": "E008",
    "type": "zone",
    "name": "Vehicle queue",
    "level": "L1",
@@ -199,6 +267,83 @@
    "outdoor": true,
    "status": "proposed",
    "about": "A lane where vehicles wait for the lift."
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1"
+   ],
+   "outline_m": [
+    [
+     37.5,
+     71.5
+    ],
+    [
+     37.5,
+     63.5
+    ],
+    [
+     47.5,
+     63.5
+    ],
+    [
+     47.5,
+     71.5
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E010",
+   "type": "room",
+   "name": "Vehicle lift",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     42.5,
+     40.0
+    ],
+    [
+     42.5,
+     63.5
+    ],
+    [
+     37.5,
+     63.5
+    ],
+    [
+     37.5,
+     71.5
+    ],
+    [
+     42.5,
+     71.5
+    ],
+    [
+     42.5,
+     95.0
+    ],
+    [
+     15.0,
+     95.0
+    ],
+    [
+     15.0,
+     40.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed",
+   "piece_of": "E006",
+   "about": "A lift big enough to carry vehicles down to the service layer."
   }
  ],
  "updated": "2026-11-27"

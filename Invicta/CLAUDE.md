@@ -70,8 +70,9 @@ to keep in sync and no build step.
 - Room checks (Jordan, 27 Nov 2026: "Yes, use Shapely"): the scan checks every room plan in `data/models`
   with exact geometry (`atlaslib/rooms.py`): overlaps, shapes that cross themselves, rooms outside the
   building or in its courtyard, rooms under 5 ft (1.5 m) wide, floors with no stairs or lift, floors that
-  don't stack. The plans made before this have these as warnings; the room designer is being reworked to
-  fix them (plan step 4). A new or changed plan must not add any. Install Shapely once:
+  don't stack. Plan step 4 (27 Nov 2026) reworked both room designers to make clean plans (exact wall bands that
+  follow curves and courtyards, then `atlaslib/plan_repair.py`), so a new or changed plan must not add any. The
+  old plans are kept in git history and in the project files (`step4-backup/room-plans-before-step4-2026-11-27.zip`). Install Shapely once:
   `python -m pip install -r requirements.txt`. Tests: `python -m unittest discover -s tests -t .`
 - Walls, doors, windows and stairs (Jordan, 27 Nov 2026, plan step 3): never write them into a plan file. They are
   worked out from the rooms by `atlaslib/fabric.py` and added when a plan is shown or exported (model@2, see

@@ -19,6 +19,14 @@ jobs:
           python-version: "3.12"
       - name: Install Shapely
         run: python -m pip install -r Invicta/requirements.txt
+      - name: Reuse saved room-check results
+        # The room checks keep their results per plan file (keyed on the file's content), so a scan only re-checks
+        # plans that changed. Saving them between runs keeps the scan quick here and in the publish build.
+        uses: actions/cache@v4
+        with:
+          path: Invicta/reports/room_check_cache.json
+          key: room-checks-${{ hashFiles('Invicta/atlaslib/**/*.py', 'Invicta/data/models/**', 'Invicta/data/decks/**') }}
+          restore-keys: room-checks-
       - name: Test the geometry and room checks
         run: python -m unittest discover -s Invicta/tests -t Invicta -v
       - name: Scan
@@ -52,6 +60,15 @@ jobs:
         if: env.HAS_TOKEN == 'true'
       - run: python -m pip install -r Invicta/requirements.txt
         if: env.HAS_TOKEN == 'true'
+      - name: Reuse saved room-check results
+        if: env.HAS_TOKEN == 'true'
+        # The room checks keep their results per plan file (keyed on the file's content), so a scan only re-checks
+        # plans that changed. Saving them between runs keeps the scan quick here and in the publish build.
+        uses: actions/cache@v4
+        with:
+          path: Invicta/reports/room_check_cache.json
+          key: room-checks-${{ hashFiles('Invicta/atlaslib/**/*.py', 'Invicta/data/models/**', 'Invicta/data/decks/**') }}
+          restore-keys: room-checks-
       - name: Build the site
         if: env.HAS_TOKEN == 'true'
         run: |

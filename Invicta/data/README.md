@@ -70,6 +70,14 @@ room panel and in the district's `Game/Docs/<District>_Rooms.md`. Buildings are 
 `tools/design_rooms.py` from programs written per district in `tools/room_programs/`; `bash tools/design_district.sh D5/<district>`
 redoes a whole district (plans, doc, renders).
 
+Plan step 4 (Jordan, 27 Nov 2026: "go"): both room designers (`tools/design_rooms.py` and `tools/build_designs.py`) end
+with `atlaslib/plan_repair.py`, which makes every plan buildable with exact maths: no two spaces share floor (stair
+cores first, then corridors, then the smaller room), nothing reaches past the walls or into a courtyard, no outline
+crosses itself, and slivers narrower than 5 ft (1.5 m) join their neighbour. A space cut in two keeps its id on the
+bigger piece; the other piece is a new element with the same name and `about`, and `"piece_of": "<id>"`. Outlines
+are stored to the centimetre. `tools/build_designs.py` also carries every stair core down to the ground floor and
+gives any floor people stand on without stairs a core of its own.
+
 ### Walls, doors, windows, stairs and floors (model@2)
 
 Jordan, 27 Nov 2026 (plan step 3): the plan files hold the rooms, zones and stair cores, plus any door that was
@@ -86,7 +94,7 @@ The website and the exports get the plan with its fabric added (`"schema": "invi
 | `walls` | one per floor and kind: `kind` (`exterior` 1 ft (0.30 m), `core` 10 in (0.25 m), `interior` 6 in (0.15 m)), `thickness_m`, `height_m`, `lines_m` = `[[x1, y1, x2, y2], ...]` (centre lines) |
 | `door`, `opening` | `line_m` (where it sits in its wall), `width_m`, `height_m`, `name` (`Door`, `Stair door`, `Entrance`, `Outside door`, `Opening`) |
 | `windows` | one per floor: `sill_m`, `head_m`, `pane_width_m`, `spacing_m`, `lines_m` = `[[x1, y1, x2, y2, panes], ...]` |
-| `stair` | `level` to `to_level`, `outline_m`, `risers`, `riser_m` (at most 7 in (0.18 m)), `tread_m` 11 in (0.28 m), `flights` 2, `flight_width_m`, `landing_m`, `fits`, `core` |
+| `stair` | `level` to `to_level`, `outline_m`, `risers`, `riser_m` (at most 7 in (0.18 m)), `tread_m` 11 in (0.28 m), `turns` (half-turns within the floor: 1 normally, more for a tall floor), `flights` (2 per turn, at least 3 risers each), `flight_width_m` (3 ft 11 in (1.2 m), down to 3 ft 8 in (1.12 m) in a tight core), `landing_m`, `fits`, `core` |
 | `lift` | `levels`, `outline_m` (8 ft 6 in (2.6 m) square), `core` |
 | `slab` | `level`, `z_m`, `outline_m`, `holes_m` (stairs and lifts), `thickness_m` 1 ft (0.30 m) |
 

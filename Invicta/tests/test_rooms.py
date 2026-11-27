@@ -70,6 +70,13 @@ class RoomChecks(unittest.TestCase):
         m = plan([room("A", rect(0, 0, 10, 10)), room("B", rect(0, 0, 10, 10), level="L2")], lv)
         self.assertIn("Floors with no stairs or lift", titles(m))
 
+    def test_upper_levels_of_a_full_height_hall_need_no_stairs(self):
+        # a tank or hangar two levels tall has no floor to stand on at the top level
+        lv = [{"id": "L1", "z_m": 0, "height_m": 4}, {"id": "L2", "z_m": 4, "height_m": 4}]
+        m = plan([room("T", rect(0, 0, 10, 10), levels=["L1", "L2"], level=None, full_height=True),
+                  room("O", rect(10, 0, 20, 10))], lv)
+        self.assertNotIn("Floors with no stairs or lift", titles(m))
+
     def test_floors_that_do_not_stack(self):
         lv = [{"id": "L1", "z_m": 0, "height_m": 4}, {"id": "L2", "z_m": 5, "height_m": 4}]
         m = plan([room("S", rect(0, 0, 3, 3), kind="core", levels=["L1", "L2"])], lv)
