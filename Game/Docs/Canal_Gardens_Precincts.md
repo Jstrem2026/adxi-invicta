@@ -21,4 +21,21 @@ Total 5.79 sq mi (15.0 km²).
 
 Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, stern band 28.636 to 29.638. Bow band splits across the beam at y 2.345 and 4.090; stern band at y 2.495.
 
+## P1 Grand Canal: blocks
+
+P1 is 547 × 5,488 m (x 28.089 to 28.636 km). It has eight blocks, port to starboard. They are cut on the lane lines, so none is over 1 km and the app's 1 km block rule is unchanged. All blocks are proposed. No streets or buildings yet. Block addresses are the frame and lane of the bow-port corner, the way the app names them. The names are design names; the app itself labels the blocks Block 1 to Block 8.
+
+| # | Block | Address | Lanes | y from–to (km) | Size | Area | Share of P1 |
+|---|---|---|---|---|---|---|---|
+| B1 | Port Gateway | D3-F56-M | M–N | 0.000 to 0.750 | 547 × 750 m | 0.4103 km² | 13.7% |
+| B2 | Waterfront Reach I | D3-F56-O | O | 0.750 to 1.250 | 547 × 500 m | 0.2735 km² | 9.1% |
+| B3 | Waterfront Reach II | D3-F56-P | P | 1.250 to 1.750 | 547 × 500 m | 0.2735 km² | 9.1% |
+| B4 | Central Canal I | D3-F56-Q | Q–R | 1.750 to 2.750 | 547 × 1,000 m | 0.5470 km² | 18.2% |
+| B5 | Central Canal II | D3-F56-S | S | 2.750 to 3.250 | 547 × 500 m | 0.2735 km² | 9.1% |
+| B6 | Garden Reach I | D3-F56-T | T–U | 3.250 to 4.250 | 547 × 1,000 m | 0.5470 km² | 18.2% |
+| B7 | Garden Reach II | D3-F56-V | V | 4.250 to 4.750 | 547 × 500 m | 0.2735 km² | 9.1% |
+| B8 | Village Gateway | D3-F56-W | W–X | 4.750 to 5.488 | 547 × 738 m | 0.4037 km² | 13.5% |
+
+Total 3.0 km² (547 × 5,488 m). Each block runs the full 547 m from F56 to F57 (x 28.089 to 28.636 km).
+
 Not designed yet: what each precinct holds, streets, bridges over the canal, where the canal water comes from and goes, buildings.
