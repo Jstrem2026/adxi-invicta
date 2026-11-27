@@ -159,6 +159,11 @@ def main():
             html = html.replace("</head>", '<link rel="stylesheet" href="static/%s.css">\n</head>' % extra, 1)
         if os.path.isfile(os.path.join(WEB, extra + ".js")):
             html = html.replace("</body>", '<script src="static/%s.js"></script>\n</body>' % extra, 1)
+    # Cache-busting: a new version tag on every build, so browsers always load the latest scripts.
+    import hashlib
+    ver = hashlib.sha1(("%s" % os.path.getmtime(WEB) + "".join(sorted(os.listdir(WEB)))).encode()).hexdigest()[:8]
+    ver = hashlib.sha1((ver + json.dumps(published) + str(len(html))).encode() + b"".join(open(os.path.join(WEB, n), "rb").read() for n in sorted(os.listdir(WEB)) if n.endswith((".js", ".css")))).hexdigest()[:10]
+    html = re.sub(r'((?:src|href)="static/[^"?]+\.(?:js|css))"', lambda m: m.group(1) + '?v=%s"' % ver, html)
     with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
 

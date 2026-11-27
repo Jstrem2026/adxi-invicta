@@ -255,6 +255,10 @@
         if (cs) ctx.building.concept_art = cs.map((c) => c.title);
         label = `${bd.id} ${bd.name}`;
       }
+      if (window.adxiRoom && kind === "building") {
+        ctx.room = window.adxiRoom;
+        label = `${window.adxiRoom.name} · ${window.adxiRoom.level_name || ""}`;
+      }
       const svg = document.getElementById("map");
       if (svg) ctx.map_view_km = svg.getAttribute("viewBox");
     } catch (e) { /* keep what we have */ }

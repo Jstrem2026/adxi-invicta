@@ -93,7 +93,8 @@ const TOOLS = [
       "Coordinates are metres in the building's own frame: x from its bow edge toward the stern, y from its port edge toward starboard, " +
       "so the footprint runs from (0,0) to (length, width) as in its rect_km. Levels have z_m (floor height above deck) and height_m. " +
       "Elements: room (outline_m polygon), wall (line_m [[x,y],[x,y]] + thickness_m), door / opening (line_m along a wall + width_m), " +
-      "core (outline_m: stairs and lifts), mass (outline_m of a volume such as a tower). Every element has id, type, level (or levels), name, status. " +
+      "core (outline_m: stairs and lifts), mass (outline_m of a volume such as a tower), zone (an area inside a room) and fixture (furniture or equipment, outline_m). " +
+      "Things inside a room set parent to that room's id. Every element has id, type, level (or levels), name, status. When a room is selected (\"room\" in Looking at), design inside it. " +
       "Use exact numbers; never guess. For Jordan and Kylee, right away; for others, after they agree. Opens a proposal, or publishes at once for Jordan and trusted helpers.",
     input_schema: {
       type: "object",
@@ -541,7 +542,7 @@ async function viewDetails(gh, view) {
 }
 
 // edit_plan: build or change Invicta/data/models/<uid>.json, checked against the building's footprint.
-const ELEMENT_TYPES = ["room", "wall", "door", "opening", "core", "mass"];
+const ELEMENT_TYPES = ["room", "zone", "fixture", "wall", "door", "opening", "core", "mass"];
 async function planPatch(gh, input) {
   const uid = String(input.building_uid || "");
   if (!UID_RE.test(uid)) throw new Error("building_uid must look like D5-port-of-arrivals-P2-19.");
