@@ -72,6 +72,36 @@
     textAt(g, (A[0] + B[0]) / 2 + nx * 0.6, (A[1] + B[1]) / 2 + ny * 0.6, label, fs, { fill: c, rot });
   }
 
+  // Draw one level of a building's plan (rooms, fixtures, cores, walls, doors) into g. Shared by the
+  // building page and the block page, so both show exactly the same drawing.
+  function drawEls(g, els, toS, fs, o) {
+    const poly = (pts) => pts.map(toS).map((q) => q.join(",")).join(" ");
+    for (const e of els.filter((x) => x.type === "mass")) g.append(el("polygon", { points: poly(e.outline_m), fill: "none", stroke: "#b99cff", "stroke-width": fs / 8, "stroke-dasharray": `${fs / 2} ${fs / 3}` }));
+    for (const e of els.filter((x) => x.type === "room" || x.type === "zone")) {
+      const on = o.selRoom === e.id;
+      const pg = el("polygon", { points: poly(e.outline_m), class: "hit", "pointer-events": "all",
+        fill: on ? "rgba(255,194,102,.22)" : e.status === "canon" ? "rgba(95,211,154,.18)" : "rgba(111,208,255,.14)",
+        stroke: on ? "#ffc266" : "#cfe8ff", "stroke-width": on ? fs / 8 : fs / 22 });
+      pg.append(el("title", {}, e.name || e.id));
+      pg.addEventListener("click", (ev) => { ev.stopPropagation(); if (o.onRoom) o.onRoom(e); });
+      g.append(pg);
+    }
+    for (const e of els.filter((x) => x.type === "fixture")) {
+      g.append(el("polygon", { points: poly(e.outline_m), fill: "rgba(232,241,251,.12)", stroke: "#e8f1fb", "stroke-width": fs / 30 }));
+    }
+    for (const e of els.filter((x) => x.type === "core")) {
+      g.append(el("polygon", { points: poly(e.outline_m), fill: "rgba(255,184,77,.35)", stroke: "#ffb84d", "stroke-width": fs / 14 }));
+    }
+    for (const e of els.filter((x) => x.type === "wall")) {
+      const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
+      g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#e8f1fb", "stroke-width": Math.max((e.thickness_m || 0.3), fs / 6), "stroke-linecap": "square" }));
+    }
+    for (const e of els.filter((x) => x.type === "door" || x.type === "opening")) {
+      const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
+      g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#5fd39a", "stroke-width": fs / 4 }));
+    }
+  }
+
   async function drawBuilding(uid, sel, keepView) {
     const svg = document.getElementById("map");
     const b = typeof IX !== "undefined" && IX.buildings && IX.buildings[uid];
@@ -79,7 +109,8 @@
     const r = b.rect_km, Lm = (r[1] - r[0]) * 1000, Wm = (r[3] - r[2]) * 1000, toS = mapper(r);
     const fs = Math.max(Lm, Wm) / 32;
     const g = el("g", { id: "plan2d", "pointer-events": "none" });
-    current = { uid, r, Lm, Wm, toS, els: [] };
+    current = { uid, r, Lm, Wm, toS, els: [], dims: true };
+    plans = [current];
 
     const token = (drawToken = (drawToken || 0) + 1);
     const model = await getModel(uid);
@@ -112,35 +143,10 @@
         for (let x = 0; x <= Lm + 0.01; x += model.grid_m) { const a = toS([x, 0]), c = toS([x, Wm]); g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#6fd0ff", "stroke-opacity": 0.12, "stroke-width": fs / 20 })); }
         for (let y = 0; y <= Wm + 0.01; y += model.grid_m) { const a = toS([0, y]), c = toS([Lm, y]); g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#6fd0ff", "stroke-opacity": 0.12, "stroke-width": fs / 20 })); }
       }
-      const poly = (pts) => pts.map(toS).map((q) => q.join(",")).join(" ");
-      for (const e of els.filter((x) => x.type === "mass")) g.append(el("polygon", { points: poly(e.outline_m), fill: "none", stroke: "#b99cff", "stroke-width": fs / 8, "stroke-dasharray": `${fs / 2} ${fs / 3}` }));
-      for (const e of els.filter((x) => x.type === "room" || x.type === "zone")) {
-        const on = sel && sel.room === e.id;
-        const pg = el("polygon", { points: poly(e.outline_m), class: "hit", "pointer-events": "all",
-          fill: on ? "rgba(255,194,102,.22)" : e.status === "canon" ? "rgba(95,211,154,.18)" : "rgba(111,208,255,.14)",
-          stroke: on ? "#ffc266" : "#cfe8ff", "stroke-width": on ? fs / 8 : fs / 22 });
-        pg.append(el("title", {}, e.name || e.id));
-        pg.addEventListener("click", (ev) => {
-          ev.stopPropagation();
-          history.replaceState(null, "", `#/building/${uid}/${level}:${encodeURIComponent(e.id)}`);
-          drawBuilding(uid, { level, room: e.id }, true);
-        });
-        g.append(pg);
-      }
-      for (const e of els.filter((x) => x.type === "fixture")) {
-        g.append(el("polygon", { points: poly(e.outline_m), fill: "rgba(232,241,251,.12)", stroke: "#e8f1fb", "stroke-width": fs / 30 }));
-      }
-      for (const e of els.filter((x) => x.type === "core")) {
-        g.append(el("polygon", { points: poly(e.outline_m), fill: "rgba(255,184,77,.35)", stroke: "#ffb84d", "stroke-width": fs / 14 }));
-      }
-      for (const e of els.filter((x) => x.type === "wall")) {
-        const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
-        g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#e8f1fb", "stroke-width": Math.max((e.thickness_m || 0.3), fs / 6), "stroke-linecap": "square" }));
-      }
-      for (const e of els.filter((x) => x.type === "door" || x.type === "opening")) {
-        const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
-        g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#5fd39a", "stroke-width": fs / 4 }));
-      }
+      drawEls(g, els, toS, fs, { selRoom: sel && sel.room, onRoom: (e) => {
+        history.replaceState(null, "", `#/building/${uid}/${level}:${encodeURIComponent(e.id)}`);
+        drawBuilding(uid, { level, room: e.id }, true);
+      } });
       current.els = els;
       current.empty = !els.length;
       current.level = level;
@@ -212,7 +218,7 @@
   }
 
   // ---- Labels: same size on screen at any zoom; shown only where they fit; repeated rooms grouped.
-  let current = null, labelTimer = null, drawToken = 0;
+  let current = null, plans = [], labelTimer = null, drawToken = 0;
   function groupRooms(rooms) {
     // "Quarter 1".."Quarter 10" of the same size in one row become one group.
     const groups = [], used = new Set();
@@ -241,17 +247,23 @@
   }
   function drawLabels() {
     const svg = document.getElementById("map");
-    if (!svg || !current) return;
+    if (!svg || !plans.length) return;
     const old = svg.querySelector("#plan2d-labels"); if (old) old.remove();
     const vb = svg.getAttribute("viewBox").split(/\s+/).map(Number);
     const px = vb[2] / Math.max(1, svg.getBoundingClientRect().width);  // map units per screen pixel
     const F = 12 * px;  // 12 px text on screen
-    const { toS, Lm, Wm } = current;
     const g = el("g", { id: "plan2d-labels", "pointer-events": "none" });
     if (!labelsOn) { svg.append(g); return; }
-    // Footprint measurements, once, at a steady size.
-    dimLine(g, toS([0, 0]), toS([Lm, 0]), both(Lm), F, F * 2.2);
-    dimLine(g, toS([0, Wm]), toS([0, 0]), both(Wm), F, F * 2.2);
+    for (const pl of plans) labelPlan(g, pl, px, F);
+    svg.append(g);
+  }
+  function labelPlan(g, pl, px, F) {
+    const { toS, Lm, Wm } = pl;
+    // Footprint measurements, once, at a steady size (building page only).
+    if (pl.dims) {
+      dimLine(g, toS([0, 0]), toS([Lm, 0]), both(Lm), F, F * 2.2);
+      dimLine(g, toS([0, Wm]), toS([0, 0]), both(Wm), F, F * 2.2);
+    }
     // Each label is sized to fit inside its own room: it grows as you zoom in, up to 16 px on screen,
     // and is hidden when it would be smaller than 8 px. It never spills outside the room.
     const MAXPX = 16, MINPX = 8;
@@ -269,7 +281,7 @@
       else if (s1 >= MINPX * px) textAt(g, c[0], c[1], name, s1, { fill: color });
     };
     const bbox = (e) => { const xs = e.outline_m.map((p) => p[0]), ys = e.outline_m.map((p) => p[1]); return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)]; };
-    const rooms = current.els.filter((e) => e.type === "room" || e.type === "zone");
+    const rooms = pl.els.filter((e) => e.type === "room" || e.type === "zone");
     const { groups, used } = groupRooms(rooms);
     for (const e of rooms) {
       const b = bbox(e);
@@ -281,15 +293,18 @@
       const anyShown = gr.members.some((e) => fits(bbox(e), [e.name]));
       if (!anyShown) put(gr.box, gr.label, gr.sub, "#e8f1fb");
     }
-    for (const e of current.els.filter((x) => x.type === "core")) put(bbox(e), "Stairs & lifts", null, "#ffb84d");
-    for (const e of current.els.filter((x) => x.type === "door" || x.type === "opening")) {
+    for (const e of pl.els.filter((x) => x.type === "core")) put(bbox(e), "Stairs & lifts", null, "#ffb84d");
+    for (const e of pl.els.filter((x) => x.type === "door" || x.type === "opening")) {
       const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
       textAt(g, (a[0] + c[0]) / 2, (a[1] + c[1]) / 2 - F * 1.1, `${e.name || (e.type === "door" ? "Door" : "Opening")}${e.width_m ? " · " + one(e.width_m) : ""}`, F * 0.9, { fill: "#5fd39a" });
     }
     const mid = toS([Lm / 2, Wm / 2]);
-    if (current.noPlan) textAt(g, mid[0], mid[1] + F * 2, "Floor plan not designed yet · ask the chat to draw it", F, { fill: "#8fb0d3" });
-    if (current.empty) textAt(g, mid[0], mid[1], "Nothing drawn on this level yet", F, { fill: "#8fb0d3" });
-    svg.append(g);
+    const fitIn = (t, f) => { const a = toS([0, 0]), b = toS([Lm, Wm]); return Math.min(f, Math.abs(b[0] - a[0]) * 0.9 / (t.length * 0.56)); };
+    const msg = (t, dy) => { const f = fitIn(t, F); if (f >= 6 * px) textAt(g, mid[0], mid[1] + dy * f, t, f, { fill: "#8fb0d3" }); };
+    if (pl.title) { const f = fitIn(pl.title, F * 1.1), top = toS([Lm / 2, 0]); if (f >= 6 * px) textAt(g, top[0], top[1] - f * 0.9, pl.title, f, { fill: "#ffc266" }); }
+    if (pl.noPlan) msg(pl.dims ? "Floor plan not designed yet · ask the chat to draw it" : "Floor plan not designed yet", pl.dims ? 2 : 0);
+    if (pl.notHere) msg(pl.notHere, 0);
+    if (pl.empty) msg("Nothing drawn on this level yet", 0);
   }
   // Redraw labels when the map is zoomed or moved.
   new MutationObserver((ms) => {
@@ -316,10 +331,68 @@
     svg.append(g);
   }
 
+  // ---- Block page: every building in the block drawn with its real plan, one floor at a time.
+  // Floors are matched by level code (LB2, LB1, L1, L2 ...), the same codes the building pages use.
+  const tagOf = (model, l) => levelTag(model, l.id) || "L1";
+  const tagKey = (t) => (/^LB(\d+)$/.test(t) ? -+t.slice(2) : +t.slice(1));
+  async function drawBlock(puid, bid, want) {
+    const svg = document.getElementById("map");
+    const p = typeof IX !== "undefined" && IX.precincts && IX.precincts[puid];
+    const blk = p && (p.blocks || []).find((k) => k.id === bid);
+    if (!svg || !blk) return;
+    const token = (drawToken = (drawToken || 0) + 1);
+    const list = blk.contents.map((ct) => p.buildings.find((q) => q.id === ct.id)).filter((b) => b && b.rect_km);
+    const models = await Promise.all(list.map((b) => getModel(b.uid)));
+    if (token !== drawToken) return;
+    const tags = new Set();
+    models.forEach((m) => m && (m.levels || []).forEach((l) => tags.add(tagOf(m, l))));
+    const all = [...tags].sort((a, b) => tagKey(a) - tagKey(b));
+    const tag = all.includes(want) ? want : all.includes("L1") ? "L1" : all[0];
+    const g = el("g", { id: "plan2d", "pointer-events": "none" });
+    plans = [];
+    list.forEach((b, i) => {
+      const r = b.rect_km, Lm = (r[1] - r[0]) * 1000, Wm = (r[3] - r[2]) * 1000, toS = mapper(r), m = models[i];
+      const pl = { uid: b.uid, r, Lm, Wm, toS, els: [], title: `${b.id} ${b.name}` };
+      plans.push(pl);
+      if (!m || !(m.levels || []).length) { pl.noPlan = true; return; }
+      const lv = m.levels.find((l) => tagOf(m, l) === tag);
+      const a = toS([0, 0]), c = toS([Lm, Wm]);
+      g.append(el("rect", { x: Math.min(a[0], c[0]), y: Math.min(a[1], c[1]), width: Math.abs(c[0] - a[0]), height: Math.abs(c[1] - a[1]), fill: "#0b2140", stroke: "#e8f1fb", "stroke-width": Math.max(Lm, Wm) / 200 }));
+      if (!lv) { pl.notHere = `No ${tag} in this building`; return; }
+      pl.els = (m.elements || []).filter((e) => (e.levels || [e.level]).includes(lv.id));
+      pl.empty = !pl.els.length;
+      drawEls(g, pl.els, toS, Math.max(Lm, Wm) / 32, { onRoom: (e) => go(`#/building/${b.uid}/${lv.id}:${encodeURIComponent(e.id)}`) });
+    });
+    const tools = document.querySelector(".mapwrap .maptools");
+    document.querySelectorAll(".plan-lv").forEach((x) => x.remove());
+    if (tools && all.length) {
+      all.slice().reverse().forEach((t) => {
+        const bt = document.createElement("button");
+        bt.className = "plan-lv" + (t === tag ? " on" : "");
+        bt.textContent = t;
+        const names = list.map((b, i) => { const m = models[i], l = m && m.levels.find((q) => tagOf(m, q) === t); return l ? `${b.name}: ${l.name}` : null; }).filter(Boolean);
+        bt.title = `Show floor ${t} of every building in this block\n` + names.join("\n");
+        bt.onclick = () => { location.hash = `#/block/${puid}/${bid}/${t}`; };
+        tools.prepend(bt);
+      });
+      const lb = document.createElement("button");
+      lb.className = "plan-lv plan-labels" + (labelsOn ? " on" : "");
+      lb.textContent = labelsOn ? "Labels: on" : "Labels: off";
+      lb.title = "Show or hide all the writing on the plan";
+      lb.onclick = () => { labelsOn = !labelsOn; localStorage.setItem("adxi.labels", labelsOn ? "on" : "off"); lb.textContent = labelsOn ? "Labels: on" : "Labels: off"; lb.classList.toggle("on", labelsOn); drawLabels(); };
+      tools.prepend(lb);
+    }
+    const old = svg.querySelector("#plan2d"); if (old) old.remove();
+    svg.append(g);
+    drawLabels();
+  }
+
   function hook() {
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, a] = h.split("/").map(decodeURIComponent);
     desigLegend();
+    if (kind !== "building" && kind !== "block") { current = null; plans = []; drawToken++; }
+    if (kind === "block") drawBlock(a, decodeURIComponent(h.split("/")[2] || ""), decodeURIComponent(h.split("/")[3] || ""));
     if (kind === "building") {
       const extra = h.split("/")[2] || "";
       const [lv, room] = decodeURIComponent(extra).split(":");
