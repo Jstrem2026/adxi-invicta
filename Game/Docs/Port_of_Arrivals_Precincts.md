@@ -38,6 +38,8 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) |
 | Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks |
 
+**Crew Lodge (P2-19) architecture, proposed 26 Nov 2026:** height 125 ft (38 m) at the tower tops and 79 ft (24 m) for the main block. Floors: Level −1 below deck, Levels 1–3 in the main block, Levels 4–5 in the towers. Capacity: 640 cabins (480 standard + 160 tower quarters), rated for 1,280 crew on rotating shifts. Entrances: Prow Entrance; Bow Corridor Links (skybridges across F45 Street); Starboard Service Access; none on the stern side. Structure, look, services and interior are not designed yet.
+
 ## P5 · Terminals — F39 to F48, lanes D–F
 
 ![P5 Terminals](art/blueprints/precincts/p5-terminals.png)
