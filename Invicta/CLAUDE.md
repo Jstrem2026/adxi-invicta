@@ -67,6 +67,12 @@ to keep in sync and no build step.
   Deck 5 buildings are designed with `tools/design_rooms.py` from hand-written programs in `tools/room_programs/`
   (change the program, then `bash tools/design_district.sh D5/<district> --redo`); the district's `<District>_Rooms.md`
   doc lists every building, floor and room. Each building has a concept render from its 3D plan (`concept_render`).
+- Room checks (Jordan, 27 Nov 2026: "Yes, use Shapely"): the scan checks every room plan in `data/models`
+  with exact geometry (`atlaslib/rooms.py`): overlaps, shapes that cross themselves, rooms outside the
+  building or in its courtyard, rooms under 5 ft (1.5 m) wide, floors with no stairs or lift, floors that
+  don't stack. The plans made before this have these as warnings; the room designer is being reworked to
+  fix them (plan step 4). A new or changed plan must not add any. Install Shapely once:
+  `python -m pip install -r requirements.txt`. Tests: `python -m unittest discover -s tests -t .`
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.
