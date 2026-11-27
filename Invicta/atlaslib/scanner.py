@@ -459,6 +459,11 @@ class Scan:
                     continue
                 text = open(full, encoding="utf-8").read()
             secs = {}
+            # A precinct section counts even before it has a building table ("What it holds is not designed yet").
+            for n, ln in enumerate(text.splitlines(), 1):
+                hm = re.match(r"#+\s*((P\d+) · (.+?) — (F\d+) to (F\d+), lanes ([A-Y])–([A-Y]))", ln)
+                if hm:
+                    secs.setdefault(hm.group(2), (re.match(r"(P\d+) · (.+?) — (F\d+) to (F\d+), lanes ([A-Y])–([A-Y])", hm.group(1)), [], n))
             for heading, header, rows, line in P.md_tables(text):
                 m = re.match(r"(P\d+) · (.+?) — (F\d+) to (F\d+), lanes ([A-Y])–([A-Y])", heading)
                 if m:

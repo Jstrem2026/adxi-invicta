@@ -21,11 +21,13 @@ def report_md(data):
     for sev in ("error", "warning", "decision", "gap"):
         c = counts.get(sev, [0, 0])
         out.append("- %s: %d%s" % (SEV_NAME[sev], c[0], " (+%d known)" % c[1] if c[1] else ""))
-    for sev in ("error", "warning", "decision", "gap"):
-        rows = [i for i in issues if i["severity"] == sev]
+    # Open items first, by severity; items already accepted as known go in one section at the end.
+    groups = [(SEV_NAME[sev], [i for i in issues if i["severity"] == sev and not i.get("known")]) for sev in ("error", "warning", "decision", "gap")]
+    groups.append(("Accepted as known (no action needed)", [i for i in issues if i.get("known")]))
+    for title, rows in groups:
         if not rows:
             continue
-        out += ["", "### %s" % SEV_NAME[sev], ""]
+        out += ["", "### %s" % title, ""]
         for i in rows:
             line = "- **%s** — %s" % (i["title"], i["detail"])
             if i.get("path"):

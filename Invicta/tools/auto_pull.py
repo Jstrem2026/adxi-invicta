@@ -52,6 +52,8 @@ def git(repo, *args, binary=False):
 def in_scope(rel):
     if rel.startswith(CANON):
         return False
+    if rel.endswith("_Precincts.md") and rel.count("/") == 2 and rel.startswith(("Game/Docs/", "Docs/2_Design_Docs/")):
+        return True
     return rel in FILES or any(rel.startswith(f + "/") for f in FOLDERS)
 
 

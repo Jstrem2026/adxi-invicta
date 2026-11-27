@@ -12,31 +12,31 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 8,202 × 4,341 ft (2.5 × 1.32 km). Where every arrival steps aboard.
 
-| Item | Size | Notes |
-|---|---|---|
-| Hall of Arrivals | 1,969 × 656 × 98 ft (600 × 200 × 30 m) | **Canon**, centred on F43 |
-| Arrival hangar | 262 × 197 × 49 ft (80 × 60 × 15 m) | **Canon**, bow side of the Hall |
-| Shuttle gates G1–G16 | 262 × 197 ft each, every 328 ft (100 m) | G1–G5 bow side, G6–G16 stern side, each with its own dock door |
-| Gate Concourse | 98 ft (30 m) wide covered walkway | Behind the gates, links every gate to the Hall |
-| Apron yards | between the concourse and Gate Road | Baggage, fuel, ground handling |
-| Gate Road | 131 ft (40 m) | Service road behind the Hall, full length of the precinct |
-| Arrivals Forecourt | 984 × 656 ft (300 × 200 m) | Plaza at the Hall's main entrance |
-| Pickup lanes | two, 197 × 656 ft (60 × 200 m) | Pods and taxis, either side of the boulevard |
-| Arrivals Boulevard | 197 ft (60 m) wide | From the forecourt inland along F43 to P5 Terminals |
-| Streets | F42, F44, F45 Streets, 98 ft (30 m) | Gate Road to Dock Road |
-| Dock Road | 131 ft (40 m) | Precinct edge (lanes C/D), arterial to Bow and Stern Docks |
-| Port Health | 1,214 × 1,083 ft (370 × 330 m) | Screening and quarantine ward |
-| Fire & Rescue | 886 × 984 ft (270 × 300 m) | Crash-fire-rescue station |
-| Baggage Hall | 886 × 820 ft (270 × 250 m) | Reclaim, lost luggage |
-| Visitor Centre | 1,115 × 722 ft (340 × 220 m) | Welcome, guides, maps |
-| Police Post | 656 × 591 ft (200 × 180 m) | Port security |
-| Gate Operations | 1,378 × 984 ft (420 × 300 m) | Gate control, dispatch |
-| Staff Centre | 1,378 × 886 ft (420 × 270 m) | Crew rest, canteen, lockers |
-| Crew Lodge | 1,378 × 1,148 ft (420 × 350 m) | Rest for shuttle crews |
-| Utility | 656 × 820 ft (200 × 250 m) | Substation, air, water |
-| Service Shaft 1 | 328 × 1,476 ft (100 × 450 m) | Access to the 60 m service layer (bow shaft) |
-| Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) |
-| Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Hall of Arrivals | 1,969 × 656 × 98 ft (600 × 200 × 30 m) | **Canon**, centred on F43 | D5F3P2B1A1 |
+| Arrival hangar | 262 × 197 × 49 ft (80 × 60 × 15 m) | **Canon**, bow side of the Hall | D5F3P2B1A2 |
+| Shuttle gates G1–G16 | 262 × 197 ft each, every 328 ft (100 m) | G1–G5 bow side, G6–G16 stern side, each with its own dock door | D5F3P2B1A3 |
+| Gate Concourse | 98 ft (30 m) wide covered walkway | Behind the gates, links every gate to the Hall | D5F3P2B1A4 |
+| Apron yards | between the concourse and Gate Road | Baggage, fuel, ground handling | D5F3P2B1A5 |
+| Gate Road | 131 ft (40 m) | Service road behind the Hall, full length of the precinct | D5F3P2 |
+| Arrivals Forecourt | 984 × 656 ft (300 × 200 m) | Plaza at the Hall's main entrance | D5F3P2B3A1 |
+| Pickup lanes | two, 197 × 656 ft (60 × 200 m) | Pods and taxis, either side of the boulevard | D5F3P2B3A2 |
+| Arrivals Boulevard | 197 ft (60 m) wide | From the forecourt inland along F43 to P5 Terminals | D5F3P2B3A3 |
+| Streets | F42, F44, F45 Streets, 98 ft (30 m) | Gate Road to Dock Road | D5F3P2 |
+| Dock Road | 131 ft (40 m) | Precinct edge (lanes C/D), arterial to Bow and Stern Docks | D5F3P2 |
+| Port Health | 1,214 × 1,083 ft (370 × 330 m) | Screening and quarantine ward | D5F3P2B2A1 |
+| Fire & Rescue | 886 × 984 ft (270 × 300 m) | Crash-fire-rescue station | D5F3P2B2A2 |
+| Baggage Hall | 886 × 820 ft (270 × 250 m) | Reclaim, lost luggage | D5F3P2B3A4 |
+| Visitor Centre | 1,115 × 722 ft (340 × 220 m) | Welcome, guides, maps | D5F3P2B3A5 |
+| Police Post | 656 × 591 ft (200 × 180 m) | Port security | D5F3P2B4A1 |
+| Gate Operations | 1,378 × 984 ft (420 × 300 m) | Gate control, dispatch | D5F3P2B4A2 |
+| Staff Centre | 1,378 × 886 ft (420 × 270 m) | Crew rest, canteen, lockers | D5F3P2B4A3 |
+| Crew Lodge | 1,378 × 1,148 ft (420 × 350 m) | Rest for shuttle crews | D5F3P2B5A1 |
+| Utility | 656 × 820 ft (200 × 250 m) | Substation, air, water | D5F3P2B5A2 |
+| Service Shaft 1 | 328 × 1,476 ft (100 × 450 m) | Access to the 60 m service layer (bow shaft) | D5F3P2B2A3 |
+| Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) | D5F3P2B5A3 |
+| Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks | D5F3P2B3A6 |
 
 **Crew Lodge (P2-19) architecture, proposed 26 Nov 2026:** height 125 ft (38 m) at the tower tops and 79 ft (24 m) for the main block. Floors: Level −1 below deck, Levels 1–3 in the main block, Levels 4–5 in the towers. Capacity: 640 cabins (480 standard + 160 tower quarters), rated for 1,280 crew on rotating shifts. Entrances: Prow Entrance; Starboard Service Access; none on the stern side. Structure: steel frame on a 39 × 39 ft (12 × 12 m) grid, composite slabs, bearing on the deck plating. Main block (Levels 1–3) covers the full footprint at 26 ft (8 m) floor to floor. Four corner towers, each about 262 × 197 ft (80 × 60 m), add Levels 4–5 at 23 ft (7 m) to 125 ft (38 m). Stair and lift cores about every 328 ft (100 m), plus one core per tower from Level −1 to the roof. Level −1, the Crew Undercroft, is 20 ft (6 m) deep in the top of the 197 ft (60 m) service layer, clear of the gravity plates, with plant, laundry, stores and a crew-only tunnel door into the service-layer tunnels. Sits wholly within one pressure zone (F45–F46). Look, services and interior are not designed yet.
 
@@ -48,22 +48,22 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 14,764 × 4,921 ft (4.5 × 1.5 km). Departures and arrivals for the whole ship. Arrivals Boulevard runs through the middle; people movers link both terminals to the P2 gate concourse.
 
-| Item | Size | Notes |
-|---|---|---|
-| Transfer Hall | 2,953 × 2,034 ft (900 × 620 m) | travellers from other decks · shuttle bookings |
-| Arrivals Terminal | 2,887 × 2,100 ft (880 × 640 m) | passport and customs control · baggage claim |
-| Departures Terminal | 2,887 × 2,100 ft (880 × 640 m) | check-in · security screening · lounges |
-| Cargo Customs | 2,887 × 2,034 ft (880 × 620 m) | bonded inspection · declarations |
-| Private Flights | 1,312 × 2,034 ft (400 × 620 m) | terminal for Stern Docks |
-| Travel Office | 1,312 × 1,411 ft (400 × 430 m) | tickets · info |
-| Pod Depot | 1,476 × 1,903 ft (450 × 580 m) | ground pods · taxis |
-| Customs & Border Hq | 2,165 × 1,804 ft (660 × 550 m) | main police and border station |
-| Terminal Plaza | 1,312 × 1,181 ft (400 × 360 m) |  |
-| Licensing & Permits | 2,165 × 1,804 ft (660 × 550 m) | flight, cargo and travel permits |
-| Terminal Admin | 1,444 × 1,575 ft (440 × 480 m) | port authority offices |
-| Utility | 656 × 1,083 ft (200 × 330 m) | substation · air |
-| Service shaft site | 459 × 1,903 ft (140 × 580 m) |  |
-| Medical Centre | 1,312 × 1,575 ft (400 × 480 m) | first aid · clinic |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Transfer Hall | 2,953 × 2,034 ft (900 × 620 m) | travellers from other decks · shuttle bookings | D5F3P5B1A1 |
+| Arrivals Terminal | 2,887 × 2,100 ft (880 × 640 m) | passport and customs control · baggage claim | D5F3P5B3A1 |
+| Departures Terminal | 2,887 × 2,100 ft (880 × 640 m) | check-in · security screening · lounges | D5F3P5B5A1 |
+| Cargo Customs | 2,887 × 2,034 ft (880 × 620 m) | bonded inspection · declarations | D5F3P5B6A1 |
+| Private Flights | 1,312 × 2,034 ft (400 × 620 m) | terminal for Stern Docks | D5F3P5B8A1 |
+| Travel Office | 1,312 × 1,411 ft (400 × 430 m) | tickets · info | D5F3P5B2A1 |
+| Pod Depot | 1,476 × 1,903 ft (450 × 580 m) | ground pods · taxis | D5F3P5B2A2 |
+| Customs & Border Hq | 2,165 × 1,804 ft (660 × 550 m) | main police and border station | D5F3P5B4A1 |
+| Terminal Plaza | 1,312 × 1,181 ft (400 × 360 m) |  | D5F3P5B4A2 |
+| Licensing & Permits | 2,165 × 1,804 ft (660 × 550 m) | flight, cargo and travel permits | D5F3P5B4A3 |
+| Terminal Admin | 1,444 × 1,575 ft (440 × 480 m) | port authority offices | D5F3P5B7A1 |
+| Utility | 656 × 1,083 ft (200 × 330 m) | substation · air | D5F3P5B7A2 |
+| Service shaft site | 459 × 1,903 ft (140 × 580 m) |  | D5F3P5B7A3 |
+| Medical Centre | 1,312 × 1,575 ft (400 × 480 m) | first aid · clinic | D5F3P5B9A1 |
 
 ## P6 · Concourse — F39 to F48, lanes G–I
 
@@ -71,23 +71,23 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 14,764 × 4,921 ft (4.5 × 1.5 km). Where travellers wait, eat and sleep. The boulevard becomes the 394 ft (120 m) tree-lined Concourse Promenade. Hotel room counts are placeholders.
 
-| Item | Size | Notes |
-|---|---|---|
-| Greeters' Hall | 1,476 × 2,100 ft (450 × 640 m) | meeting point · welcome desks |
-| Shop Arcade | 1,312 × 2,100 ft (400 × 640 m) | travel goods · duty-free |
-| Transit Lounges | 2,756 × 2,100 ft (840 × 640 m) | waiting · rest pods · showers |
-| Market Hall | 2,756 × 2,100 ft (840 × 640 m) | food court · daily shops |
-| Restaurant Row | 2,887 × 2,100 ft (880 × 640 m) | dining for travellers |
-| Travellers' Clinic | 1,312 × 1,312 ft (400 × 400 m) | clinic |
-| Police Post | 1,312 × 623 ft (400 × 190 m) |  |
-| Promenade Park | 2,953 × 1,444 ft (900 × 440 m) | 98 acres |
-| Pod Stop | 2,953 × 525 ft (900 × 160 m) |  |
-| Grand Port Hotel | 2,756 × 2,034 ft (840 × 620 m) | flagship hotel · 1,200 rooms |
-| Harbour Hotel | 2,756 × 2,034 ft (840 × 620 m) | mid-range · 900 rooms |
-| Crew Hotel | 1,444 × 2,034 ft (440 × 620 m) | shuttle and ship crews |
-| Hostel | 1,280 × 2,034 ft (390 × 620 m) | budget · capsule rooms |
-| Utility | 656 × 2,034 ft (200 × 620 m) |  |
-| Service shaft site | 525 × 2,034 ft (160 × 620 m) |  |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Greeters' Hall | 1,476 × 2,100 ft (450 × 640 m) | meeting point · welcome desks | D5F3P6B1A1 |
+| Shop Arcade | 1,312 × 2,100 ft (400 × 640 m) | travel goods · duty-free | D5F3P6B1A2 |
+| Transit Lounges | 2,756 × 2,100 ft (840 × 640 m) | waiting · rest pods · showers | D5F3P6B3A1 |
+| Market Hall | 2,756 × 2,100 ft (840 × 640 m) | food court · daily shops | D5F3P6B5A1 |
+| Restaurant Row | 2,887 × 2,100 ft (880 × 640 m) | dining for travellers | D5F3P6B7A1 |
+| Travellers' Clinic | 1,312 × 1,312 ft (400 × 400 m) | clinic | D5F3P6B9A1 |
+| Police Post | 1,312 × 623 ft (400 × 190 m) |  | D5F3P6B9A2 |
+| Promenade Park | 2,953 × 1,444 ft (900 × 440 m) | 98 acres | D5F3P6B2A1 |
+| Pod Stop | 2,953 × 525 ft (900 × 160 m) |  | D5F3P6B2A2 |
+| Grand Port Hotel | 2,756 × 2,034 ft (840 × 620 m) | flagship hotel · 1,200 rooms | D5F3P6B4A1 |
+| Harbour Hotel | 2,756 × 2,034 ft (840 × 620 m) | mid-range · 900 rooms | D5F3P6B6A1 |
+| Crew Hotel | 1,444 × 2,034 ft (440 × 620 m) | shuttle and ship crews | D5F3P6B8A1 |
+| Hostel | 1,280 × 2,034 ft (390 × 620 m) | budget · capsule rooms | D5F3P6B8A2 |
+| Utility | 656 × 2,034 ft (200 × 620 m) |  | D5F3P6B10A1 |
+| Service shaft site | 525 × 2,034 ft (160 × 620 m) |  | D5F3P6B10A2 |
 
 ## P7 · Station — F39 to F48, lanes J–M
 
@@ -95,21 +95,21 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 14,764 × 5,741 ft (4.5 × 1.75 km). The interchange. Keelway Port station (canon stop at F46) with its platforms, Keelway Square where the boulevard ends, pods and taxis. Deck-transfer lifts approved as canon by Jordan.
 
-| Item | Size | Notes |
-|---|---|---|
-| Porters' Hall | 1,476 × 2,100 ft (450 × 640 m) | porters · lost and found |
-| Shops | 1,312 × 2,100 ft (400 × 640 m) | grocery · daily needs |
-| Interchange Hall | 2,756 × 2,100 ft (840 × 640 m) | pods · taxis · ground transport |
-| Clinic | 1,312 × 2,100 ft (400 × 640 m) |  |
-| Station Offices | 1,280 × 2,100 ft (390 × 640 m) | transit control |
-| Deck-Transfer Lifts | 2,887 × 2,100 ft (880 × 640 m) | lifts to the other decks |
-| Pod Depot | 1,312 × 2,100 ft (400 × 640 m) |  |
-| Pod & Taxi Rank | 2,953 × 2,526 ft (900 × 770 m) |  |
-| Utility | 1,115 × 1,411 ft (340 × 430 m) | substation · air |
-| Service shaft site | 1,115 × 951 ft (340 × 290 m) |  |
-| Keelway Square | 1,969 × 2,723 ft (600 × 830 m) |  |
-| Station Walk | 1,312 × 197 ft (400 × 60 m) | covered moving walkway |
-| Keelway Port Station | 5,249 × 2,723 ft (1600 × 830 m) | platforms on the Keelway · centred on F46 |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Porters' Hall | 1,476 × 2,100 ft (450 × 640 m) | porters · lost and found | D5F3P7B1A1 |
+| Shops | 1,312 × 2,100 ft (400 × 640 m) | grocery · daily needs | D5F3P7B1A2 |
+| Interchange Hall | 2,756 × 2,100 ft (840 × 640 m) | pods · taxis · ground transport | D5F3P7B4A1 |
+| Clinic | 1,312 × 2,100 ft (400 × 640 m) |  | D5F3P7B6A1 |
+| Station Offices | 1,280 × 2,100 ft (390 × 640 m) | transit control | D5F3P7B6A2 |
+| Deck-Transfer Lifts | 2,887 × 2,100 ft (880 × 640 m) | lifts to the other decks | D5F3P7B7A1 |
+| Pod Depot | 1,312 × 2,100 ft (400 × 640 m) |  | D5F3P7B8A1 |
+| Pod & Taxi Rank | 2,953 × 2,526 ft (900 × 770 m) |  | D5F3P7B2A1 |
+| Utility | 1,115 × 1,411 ft (340 × 430 m) | substation · air | D5F3P7B3A1 |
+| Service shaft site | 1,115 × 951 ft (340 × 290 m) |  | D5F3P7B3A2 |
+| Keelway Square | 1,969 × 2,723 ft (600 × 830 m) |  | D5F3P7B5A1 |
+| Station Walk | 1,312 × 197 ft (400 × 60 m) | covered moving walkway | D5F3P7B5A2 |
+| Keelway Port Station | 5,249 × 2,723 ft (1600 × 830 m) | platforms on the Keelway · centred on F46 | D5F3P7B5A3 |
 
 ## P1 · Bow Docks — F34 to F41, lanes A–C
 
@@ -117,20 +117,20 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 11,743 × 4,341 ft (3.58 × 1.32 km). Flank berths for civilian and private ships (04 §7.3). Medium berths M1–M15 along the straight hull; a 25-bay skiff marina steps along the hull where it tapers forward of F36.
 
-| Item | Size | Notes |
-|---|---|---|
-| Harbourmaster | 1,476 × 1,148 ft (450 × 350 m) | berth assignment · dock control |
-| Fire & Rescue | 1,312 × 984 ft (400 × 300 m) | crash-fire-rescue |
-| Chandlery | 1,476 × 1,148 ft (450 × 350 m) | ship parts · supplies |
-| Police Post | 1,312 × 820 ft (400 × 250 m) | dock security |
-| Repair Yard | 2,953 × 1,837 ft (900 × 560 m) | dry bays for small ship repairs |
-| Fuel Depot | 2,953 × 1,083 ft (900 × 330 m) | bunkering for berths |
-| Pilot Lounge | 1,804 × 591 ft (550 × 180 m) | crew rest · canteen |
-| Utility | 492 × 591 ft (150 × 180 m) |  |
-| Service shaft site | 394 × 591 ft (120 × 180 m) |  |
-| Marina Park | 3,445 × 1,575 ft (1050 × 480 m) | pocket park · 125 acres |
-| Medium Berths | 15 bays, each 394 × 262 ft (120 × 80 m) | |
-| Skiff Marina | 25 bays, each 131 × 131 ft (40 × 40 m) | |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Harbourmaster | 1,476 × 1,148 ft (450 × 350 m) | berth assignment · dock control | D5F3P1B4A1 |
+| Fire & Rescue | 1,312 × 984 ft (400 × 300 m) | crash-fire-rescue | D5F3P1B4A2 |
+| Chandlery | 1,476 × 1,148 ft (450 × 350 m) | ship parts · supplies | D5F3P1B5A1 |
+| Police Post | 1,312 × 820 ft (400 × 250 m) | dock security | D5F3P1B5A2 |
+| Repair Yard | 2,953 × 1,837 ft (900 × 560 m) | dry bays for small ship repairs | D5F3P1B5A3 |
+| Fuel Depot | 2,953 × 1,083 ft (900 × 330 m) | bunkering for berths | D5F3P1B4A3 |
+| Pilot Lounge | 1,804 × 591 ft (550 × 180 m) | crew rest · canteen | D5F3P1B4A4 |
+| Utility | 492 × 591 ft (150 × 180 m) |  | D5F3P1B4A5 |
+| Service shaft site | 394 × 591 ft (120 × 180 m) |  | D5F3P1B4A6 |
+| Marina Park | 3,445 × 1,575 ft (1050 × 480 m) | pocket park · 125 acres | D5F3P1B2A1 |
+| Medium Berths | 15 bays, each 394 × 262 ft (120 × 80 m) |  | D5F3P1B1A1 |
+| Skiff Marina | 25 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P1B1A2 |
 
 ## P3 · Stern Docks — F46 to F55, lanes A–C
 
@@ -138,26 +138,26 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 15,169 × 4,341 ft (4.62 × 1.32 km). The big berths: corvettes C1–C8 and frigates F1–F5 (frigate berth rights, 04). The Yard Locks let P8's small craft out to space. The cross-line Flight Control stop at F52 is canon.
 
-| Item | Size | Notes |
-|---|---|---|
-| Cross-Line Stop | 984 × 984 ft (300 × 300 m) | canon F52, 5.1 km to port |
-| Private Flights | 1,312 × 1,148 ft (400 × 350 m) | lounge · berth check-in |
-| Fire & Rescue | 1,312 × 1,837 ft (400 × 560 m) | crash-fire-rescue |
-| Police Post | 1,476 × 1,148 ft (450 × 350 m) | dock security |
-| Chandlery | 1,476 × 1,837 ft (450 × 560 m) | parts · supplies |
-| Corvette Service | 1,936 × 1,640 ft (590 × 500 m) | repair and refit |
-| Fuel Depot | 1,936 × 1,312 ft (590 × 400 m) | bunkering |
-| Frigate Service Yard | 2,953 × 1,640 ft (900 × 500 m) | heavy repair · cranes |
-| Company Berth Offices | 2,461 × 1,312 ft (750 × 400 m) | leases · frigate berth rights |
-| Stern Harbourmaster | 2,461 × 1,476 ft (750 × 450 m) | berth control |
-| Dock Park | 2,461 × 1,411 ft (750 × 430 m) | 62 acres |
-| Utility | 820 × 1,312 ft (250 × 400 m) |  |
-| Service shaft site | 656 × 1,312 ft (200 × 400 m) |  |
-| Crew Rest | 1,640 × 1,575 ft (500 × 480 m) | canteen · lockers |
-| Corvette Berths | 8 bays, each 525 × 328 ft (160 × 100 m) | |
-| Frigate Berths | 5 bays, each 1,312 × 492 ft (400 × 150 m) | |
-| Yard Locks | 1,969 × 492 ft (600 × 150 m) |  |
-| Yard Taxiway | 853 × 3,675 ft (260 × 1120 m) |  |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Cross-Line Stop | 984 × 984 ft (300 × 300 m) | canon F52, 5.1 km to port | D5F3P3B9A1 |
+| Private Flights | 1,312 × 1,148 ft (400 × 350 m) | lounge · berth check-in | D5F3P3B2A1 |
+| Fire & Rescue | 1,312 × 1,837 ft (400 × 560 m) | crash-fire-rescue | D5F3P3B2A2 |
+| Police Post | 1,476 × 1,148 ft (450 × 350 m) | dock security | D5F3P3B3A1 |
+| Chandlery | 1,476 × 1,837 ft (450 × 560 m) | parts · supplies | D5F3P3B3A2 |
+| Corvette Service | 1,936 × 1,640 ft (590 × 500 m) | repair and refit | D5F3P3B4A1 |
+| Fuel Depot | 1,936 × 1,312 ft (590 × 400 m) | bunkering | D5F3P3B5A1 |
+| Frigate Service Yard | 2,953 × 1,640 ft (900 × 500 m) | heavy repair · cranes | D5F3P3B7A1 |
+| Company Berth Offices | 2,461 × 1,312 ft (750 × 400 m) | leases · frigate berth rights | D5F3P3B8A1 |
+| Stern Harbourmaster | 2,461 × 1,476 ft (750 × 450 m) | berth control | D5F3P3B12A1 |
+| Dock Park | 2,461 × 1,411 ft (750 × 430 m) | 62 acres | D5F3P3B13A1 |
+| Utility | 820 × 1,312 ft (250 × 400 m) |  | D5F3P3B15A1 |
+| Service shaft site | 656 × 1,312 ft (200 × 400 m) |  | D5F3P3B15A2 |
+| Crew Rest | 1,640 × 1,575 ft (500 × 480 m) | canteen · lockers | D5F3P3B15A3 |
+| Corvette Berths | 8 bays, each 525 × 328 ft (160 × 100 m) |  | D5F3P3B1A1 |
+| Frigate Berths | 5 bays, each 1,312 × 492 ft (400 × 150 m) |  | D5F3P3B6A2 |
+| Yard Locks | 1,969 × 492 ft (600 × 150 m) |  | D5F3P3B1A2 |
+| Yard Taxiway | 853 × 3,675 ft (260 × 1120 m) |  | D5F3P3 |
 
 ## P4 · Freight — F34 to F39, lanes D–M
 
@@ -165,24 +165,24 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 8,463 × 15,584 ft (2.58 × 4.75 km). Cargo and baggage for the whole port, the district's waste, water and air plant, and a freight siding on the Keelway.
 
-| Item | Size | Notes |
-|---|---|---|
-| Bonded Warehouse A | 1,575 × 3,609 ft (480 × 1100 m) |  |
-| Bonded Warehouse B | 1,575 × 3,445 ft (480 × 1050 m) |  |
-| Cargo Sorting Hub | 2,953 × 3,281 ft (900 × 1000 m) | inbound and outbound freight |
-| Baggage Logistics | 2,953 × 3,773 ft (900 × 1150 m) | all passenger luggage · links P2 and P5 |
-| Fire & Rescue | 1,312 × 1,312 ft (400 × 400 m) |  |
-| Tug Park | 1,476 × 1,969 ft (450 × 600 m) | tugs · haulers |
-| Cold Store | 2,953 × 2,297 ft (900 × 700 m) | food · medical |
-| Warehouse C | 2,953 × 2,461 ft (900 × 750 m) |  |
-| Waste | 1,575 × 3,445 ft (480 × 1050 m) | transfer · recycling |
-| Utility | 755 × 1,969 ft (230 × 600 m) |  |
-| Service shaft site | 689 × 1,969 ft (210 × 600 m) |  |
-| Service Plant | 2,953 × 3,773 ft (900 × 1150 m) | water pumping · air handling (service layer) |
-| Ground Vehicle Depot | 2,953 × 2,887 ft (900 × 880 m) | port vehicles · pods · trucks |
-| Forwarders | 2,953 × 1,476 ft (900 × 450 m) | freight offices |
-| Vehicle Workshop | 2,953 × 2,297 ft (900 × 700 m) | maintenance |
-| Container Yard | 2,953 × 2,559 ft (900 × 780 m) | on the Keelway siding |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Bonded Warehouse A | 1,575 × 3,609 ft (480 × 1100 m) |  | D5F3P4B1A1 |
+| Bonded Warehouse B | 1,575 × 3,445 ft (480 × 1050 m) |  | D5F3P4B1A2 |
+| Cargo Sorting Hub | 2,953 × 3,281 ft (900 × 1000 m) | inbound and outbound freight | D5F3P4B4A1 |
+| Baggage Logistics | 2,953 × 3,773 ft (900 × 1150 m) | all passenger luggage · links P2 and P5 | D5F3P4B4A2 |
+| Fire & Rescue | 1,312 × 1,312 ft (400 × 400 m) |  | D5F3P4B6A1 |
+| Tug Park | 1,476 × 1,969 ft (450 × 600 m) | tugs · haulers | D5F3P4B6A2 |
+| Cold Store | 2,953 × 2,297 ft (900 × 700 m) | food · medical | D5F3P4B6A3 |
+| Warehouse C | 2,953 × 2,461 ft (900 × 750 m) |  | D5F3P4B7A1 |
+| Waste | 1,575 × 3,445 ft (480 × 1050 m) | transfer · recycling | D5F3P4B2A1 |
+| Utility | 755 × 1,969 ft (230 × 600 m) |  | D5F3P4B3A1 |
+| Service shaft site | 689 × 1,969 ft (210 × 600 m) |  | D5F3P4B3A2 |
+| Service Plant | 2,953 × 3,773 ft (900 × 1150 m) | water pumping · air handling (service layer) | D5F3P4B5A1 |
+| Ground Vehicle Depot | 2,953 × 2,887 ft (900 × 880 m) | port vehicles · pods · trucks | D5F3P4B5A2 |
+| Forwarders | 2,953 × 1,476 ft (900 × 450 m) | freight offices | D5F3P4B8A1 |
+| Vehicle Workshop | 2,953 × 2,297 ft (900 × 700 m) | maintenance | D5F3P4B8A2 |
+| Container Yard | 2,953 × 2,559 ft (900 × 780 m) | on the Keelway siding | D5F3P4B8A3 |
 
 ## P8 · Shuttle Yards — F48 to F55, lanes D–M (less the Atrium Plaza)
 
@@ -190,22 +190,22 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 11,888 × 15,584 ft (3.62 × 4.75 km). Public hangars for everyone's small craft and the shuttle depot. Craft taxi north along the Yard Taxiway to the Yard Locks in P3. The Atrium Plaza (canon) is not part of the precinct.
 
-| Item | Size | Notes |
-|---|---|---|
-| Maintenance Shops | 5,085 × 1,969 ft (1550 × 600 m) | engines · avionics · inspections |
-| Shuttle Ops | 2,297 × 1,804 ft (700 × 550 m) | dispatch · schedules |
-| Fuel Farm | 2,297 × 1,804 ft (700 × 550 m) |  |
-| Owner Hangars | 3,281 × 3,609 ft (1000 × 1100 m) | 256 leased bays |
-| Fire & Rescue | 1,312 × 1,148 ft (400 × 350 m) |  |
-| Police Post | 1,312 × 820 ft (400 × 250 m) |  |
-| Parts & Avionics | 2,625 × 1,640 ft (800 × 500 m) |  |
-| Paint & Refit | 1,969 × 1,640 ft (600 × 500 m) |  |
-| Yard Offices | 1,640 × 1,476 ft (500 × 450 m) |  |
-| Utility | 656 × 1,476 ft (200 × 450 m) |  |
-| Service shaft site | 492 × 1,476 ft (150 × 450 m) |  |
-| Crew Rest | 1,312 × 1,476 ft (400 × 450 m) |  |
-| Atrium Edge Park | 10,171 × 1,476 ft (3100 × 450 m) | 345 acres |
-| Pod Depot | 1,050 × 3,281 ft (320 × 1000 m) | ends 1,969 ft (600 m) short of the Keelway to stay clear of the Atrium Plaza |
-| Hangar Row A | 31 bays, each 131 × 131 ft (40 × 40 m) | |
-| Shuttle Depot | 16 bays, each 262 × 197 ft (80 × 60 m) | |
-| Hangar Row B | 62 bays, each 131 × 131 ft (40 × 40 m) | |
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Maintenance Shops | 5,085 × 1,969 ft (1550 × 600 m) | engines · avionics · inspections | D5F3P8B8A1 |
+| Shuttle Ops | 2,297 × 1,804 ft (700 × 550 m) | dispatch · schedules | D5F3P8B15A1 |
+| Fuel Farm | 2,297 × 1,804 ft (700 × 550 m) |  | D5F3P8B15A2 |
+| Owner Hangars | 3,281 × 3,609 ft (1000 × 1100 m) | 256 leased bays | D5F3P8B9A1 |
+| Fire & Rescue | 1,312 × 1,148 ft (400 × 350 m) |  | D5F3P8B12A1 |
+| Police Post | 1,312 × 820 ft (400 × 250 m) |  | D5F3P8B13A1 |
+| Parts & Avionics | 2,625 × 1,640 ft (800 × 500 m) |  | D5F3P8B16A1 |
+| Paint & Refit | 1,969 × 1,640 ft (600 × 500 m) |  | D5F3P8B16A2 |
+| Yard Offices | 1,640 × 1,476 ft (500 × 450 m) |  | D5F3P8B16A3 |
+| Utility | 656 × 1,476 ft (200 × 450 m) |  | D5F3P8B16A4 |
+| Service shaft site | 492 × 1,476 ft (150 × 450 m) |  | D5F3P8B16A5 |
+| Crew Rest | 1,312 × 1,476 ft (400 × 450 m) |  | D5F3P8B16A6 |
+| Atrium Edge Park | 10,171 × 1,476 ft (3100 × 450 m) | 345 acres | D5F3P8B10A1 |
+| Pod Depot | 1,050 × 3,281 ft (320 × 1000 m) | ends 1,969 ft (600 m) short of the Keelway to stay clear of the Atrium Plaza | D5F3P8B6A1 |
+| Hangar Row A | 31 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B8A2 |
+| Shuttle Depot | 16 bays, each 262 × 197 ft (80 × 60 m) |  | D5F3P8B15A3 |
+| Hangar Row B | 62 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B9A2 |

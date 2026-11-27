@@ -518,7 +518,8 @@ def make_blocks(n, shape, bx, buildings, excl, streets=()):
                     "area_km2": round(a, 4), "contents": []})
     # ids: frame and lane of the block's bow-port corner; a letter is added when two share one
     count = {}
-    out.sort(key=lambda b: (b["cell_km"][0], b["cell_km"][2]))
+    # number by grid cell (frame, then lane), so a block trimmed by an edge street keeps its place
+    out.sort(key=lambda b: (b["frame"], round(b["cell_km"][0] / 0.05), b["cell_km"][2]))
     for k, b in enumerate(out):
         if seen[b["id"]] > 1:
             count[b["id"]] = count.get(b["id"], 0) + 1
