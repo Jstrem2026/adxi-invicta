@@ -412,9 +412,10 @@ function crumbs(parts) {
     if (kind === "street" && p) { const st = (p.streets || [])[+b]; out.push([`S${+b + 1}`, "", st ? st.name : "Street"]); }
     if (bd) out.push([`A${blk ? blockNo(p, blk.id, bd) : "?"}`, `#/building/${bd.uid}`, `${bd.id} ${bd.name}`]);
   } catch (e) { /* fall back to names */ }
-  if (!out.length) out.push(...parts.map(q => [q[0], q[1], q[0]]));
+  if (!out.length) out.push(...parts.slice(1).map(q => [q[0], q[1], q[0]]));
+  out.unshift(["Invicta", "#/ship", "The whole ship"]);
   return `<div class="crumbs">` + out.map((q, i) => {
-    const mid = i > 0 && i < out.length - 2 ? " mid" : "";
+    const mid = i > 1 && i < out.length - 2 ? " mid" : "";
     return i === out.length - 1 ? `<b title="${esc(q[2])}">${esc(q[0])}</b>` : `<a class="crumb${mid}" href="${q[1]}" title="${esc(q[2])}">${esc(q[0])}</a><span class="sep${mid}">›</span>`;
   }).join("") + `</div>`;
 }
