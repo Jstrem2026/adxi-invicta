@@ -248,7 +248,7 @@
       }
       if (kind === "building" && ix.buildings[a]) {
         const bd = ix.buildings[a];
-        ctx.building = { uid: bd.uid, id: bd.id, name: bd.name, status: bd.status, kind: bd.kind, size: bd.size_text, address: bd.address,
+        ctx.building = { designation: window.designation ? window.designation(bd) : undefined, uid: bd.uid, id: bd.id, name: bd.name, status: bd.status, kind: bd.kind, size: bd.size_text, address: bd.address,
           blocks: bd.blocks, rect_km: bd.rect_km, height_m: bd.height_m, floors: bd.floors, capacity: bd.capacity, entrances: bd.entrances,
           structure: bd.structure, look: bd.look, services: bd.services, interior: bd.interior, notes: bd.notes };
         const cs = ((typeof D !== "undefined" && D && D.concepts && D.concepts.buildings) || {})[bd.uid];

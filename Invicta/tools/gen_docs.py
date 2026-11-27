@@ -100,6 +100,8 @@ def main():
         ddir = os.path.join(OUT, did)
         os.makedirs(ddir, exist_ok=True)
         dname = ps.get("district", did)
+        deck = next((dk for dk in data["model"]["decks"] if dk["n"] == ps.get("deck")), {})
+        fnum = next((i + 1 for i, x in enumerate(deck.get("districts", [])) if x.get("name") == dname or x.get("id") == did.split("-", 1)[-1]), "?")
         index.append(f"- [Deck {ps.get('deck')} · {dname}]({did}/README.md): {len(ps['precincts'])} precincts")
         dpage = [f"# Deck {ps.get('deck')} · {dname}", "", f"Status: {ps.get('status')} · data: `{ps.get('file')}` · design doc: `{ps.get('doc')}`", "",
                  "| Precinct | Frames | Lanes | Area | Buildings |", "|---|---|---|---|---|"]
@@ -108,7 +110,7 @@ def main():
             dpage.append(f"| [{p['id']} {p['name']}]({p['id']}.md) | {cell(p.get('frames'))} | {cell(p.get('lanes'))} | {a * 247.105:,.1f} acres ({a:,.3f} km²) | {len(p.get('buildings', []))} |")
             pp = [f"# {p['id']} {p['name']}", "", f"Deck {ps.get('deck')} · {dname} · status {p.get('status')}", "", cell(p.get("intro")), "",
                   f"Bounds: x {p['bounds_km'][0]}–{p['bounds_km'][1]} km, y {p['bounds_km'][2]} to {p['bounds_km'][3]} km", "",
-                  "| ID | Building | Address | Status | Size | Ground area | Position (x, y km) | Height | Floors | Capacity |", "|---|---|---|---|---|---|---|---|---|---|"]
+                  "| ID | Designation | Building | Address | Status | Size | Ground area | Position (x, y km) | Height | Floors | Capacity |", "|---|---|---|---|---|---|---|---|---|---|---|"]
             for b in p.get("buildings", []):
                 r = b.get("rect_km")
                 size = f"{ft((r[1] - r[0]) * 1000)} × {ft((r[3] - r[2]) * 1000)} ({(r[1] - r[0]) * 1000:,.0f} × {(r[3] - r[2]) * 1000:,.0f} m)" if r else cell(b.get("size_text"))
@@ -117,13 +119,15 @@ def main():
                 name = b["name"]
                 if b.get("uid") in models:
                     name = f"[{name}]({p['id']}/{b['id']}.md)"
-                addr = "—"
+                addr, desig = "—", f"D{ps.get('deck')}-F{fnum}-P{str(p['id']).lstrip('P')}"
                 for blk in p.get("blocks") or []:
                     ids = [c.get("id") for c in blk.get("contents", [])]
                     if b["id"] in ids:
                         addr = f"{blk['id']}, building {ids.index(b['id']) + 1}"
+                        bn = "".join(ch for ch in blk.get("name", "") if ch.isdigit())
+                        desig += (f"-B{bn}" if bn else "") + f"-A{ids.index(b['id']) + 1}"
                         break
-                pp.append(f"| {b['id']} | {name} | {addr} | {b.get('status')} | {size} | {ga} | {pos} | {both(b['height_m']) if b.get('height_m') else 'not designed yet'} | {cell(b.get('floors'))} | {cell(b.get('capacity'))} |")
+                pp.append(f"| {b['id']} | {desig} | {name} | {addr} | {b.get('status')} | {size} | {ga} | {pos} | {both(b['height_m']) if b.get('height_m') else 'not designed yet'} | {cell(b.get('floors'))} | {cell(b.get('capacity'))} |")
                 m = models.get(b.get("uid"))
                 if m:
                     bdir = os.path.join(ddir, p["id"]); os.makedirs(bdir, exist_ok=True)
@@ -133,7 +137,8 @@ def main():
                     for lv in m.get("levels", []):
                         rooms = [e for e in m.get("elements", []) if e["type"] == "room" and lv["id"] in (e.get("levels") or [e.get("level")])]
                         bp.append(f"| {lv['name']} | {both(lv['z_m']) if lv['z_m'] >= 0 else '−' + both(-lv['z_m'])} | {both(lv['height_m'])} | {area_m2(sum(poly_area(e['outline_m']) for e in rooms)) if rooms else '—'} |")
-                    bp += ["", "## Elements", "", "| ID | Type | Name | Level(s) | Size / length | Area | Status |", "|---|---|---|---|---|---|---|"]
+                    bp += ["", "## Elements", "", "| ID | Designation | Type | Name | Level(s) | Size / length | Area | Status |", "|---|---|---|---|---|---|---|---|"]
+                    numbered = [x for x in m.get("elements", []) if x["type"] in ("room", "zone", "core")]
                     for e in m.get("elements", []):
                         if e.get("outline_m"):
                             xs = [q[0] for q in e["outline_m"]]; ys = [q[1] for q in e["outline_m"]]
@@ -141,7 +146,8 @@ def main():
                         else:
                             a_, b_ = e["line_m"][0], e["line_m"][-1]
                             sz = both(((a_[0] - b_[0]) ** 2 + (a_[1] - b_[1]) ** 2) ** 0.5) + (f", {both(e['width_m'])} wide" if e.get("width_m") else ""); ar = "—"
-                        bp.append(f"| {e['id']} | {e['type']} | {cell(e.get('name'))} | {', '.join(e.get('levels') or [e.get('level')])} | {sz} | {ar} | {e.get('status')} |")
+                        dz = f"{desig}-R{numbered.index(e) + 1}" if e in numbered else ""
+                        bp.append(f"| {e['id']} | {dz} | {e['type']} | {cell(e.get('name'))} | {', '.join(e.get('levels') or [e.get('level')])} | {sz} | {ar} | {e.get('status')} |")
                     bp += ["", "## Drawings", ""]
                     for lv in m.get("levels", []):
                         fn = f"{b['id']}-{lv['id']}.svg"

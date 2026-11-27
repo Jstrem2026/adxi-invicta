@@ -752,6 +752,20 @@ function streetView(puid, i) {
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [st.name, ""]],
     mapShell(g, vb, "", "", "Click any building, block or street"), panel);
 }
+// Designation (Jordan, 27 Nov 2026): D<deck>-F<district>-P<precinct>-B<block>-A<building>-R<room>,
+// e.g. D5-F1-P1-B1-A1-R1. District = its place in the deck's canon list; precinct = its P number;
+// block = its Block number; building = its place in the block; room = its place in the building's plan.
+function designation(b, room) {
+  const p = IX.precincts[b.precinct_uid], d = IX.decks[p.deck];
+  const f = (d.districts || []).findIndex(x => x.id === p.district_id) + 1;
+  const bid = (b.blocks || [])[0], blk = (p.blocks || []).find(q => q.id === bid);
+  const bn = blk ? (/(\d+)/.exec(blk.name || "") || [])[1] : null;
+  const an = bid ? blockNo(p, bid, b) : null;
+  let out = `D${p.deck}-F${f || "?"}-P${String(p.id).replace(/^P/, "")}` + (bn ? `-B${bn}` : "") + (an && an !== "—" ? `-A${an}` : "");
+  if (room != null) out += `-R${room}`;
+  return out;
+}
+window.designation = designation;
 // Address = the street-bounded block plus the building's number in it; grid position = frame and lane at its centre.
 function blockNo(p, bid, b) {
   const blk = (p.blocks || []).find(q => q.id === bid);
@@ -786,6 +800,7 @@ function buildingView(uid) {
   const panel = `<h1>${esc(b.name)} <button class="cp cp-all" title="Copy all building information" onclick="copyBuilding(this)">⧉</button></h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
     <div class="kv">
+      <div>Designation</div><div><b>${esc(designation(b))}</b> <span class="small muted">(deck · district · precinct · block · building)</span></div>
       <div>Address</div><div>${firstBlock ? `${esc(firstBlock)}, building ${blockNo(p, firstBlock, b)}` : esc(b.address || "—")}</div>
       <div>Grid position</div><div>${b.address ? `${esc(gridPos(b.address))} <span class="small muted">(frame line and lane at the centre)</span>` : ND}</div>
       <div>Footprint</div><div>${sz ? dims(sz[0], sz[1]) : r ? dims(w, h) : ND}${b.bay_count ? ` <span class="small muted">each, × ${b.bay_count}</span>` : ""}</div>

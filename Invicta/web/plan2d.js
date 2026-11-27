@@ -150,6 +150,14 @@
   }
 
   // ---- A selected room: zoom to it, add it to the breadcrumb, show its details, and tell the chat.
+  function roomNumber(model, room) {
+    const list = (model.elements || []).filter((e) => e.type === "room" || e.type === "zone" || e.type === "core");
+    return list.indexOf(room) + 1;
+  }
+  function roomDesignation(uid, model, room) {
+    const b = typeof IX !== "undefined" && IX.buildings && IX.buildings[uid];
+    return b && window.designation ? window.designation(b, roomNumber(model, room)) : `R${roomNumber(model, room)}`;
+  }
   function showRoom(uid, model, room) {
     window.adxiRoom = null;
     document.querySelectorAll(".room-card").forEach((x) => x.remove());
@@ -158,7 +166,8 @@
     const xs = room.outline_m.map((p) => p[0]), ys = room.outline_m.map((p) => p[1]);
     const w = Math.max(...xs) - Math.min(...xs), h = Math.max(...ys) - Math.min(...ys), a = area(room.outline_m);
     const inside = (model.elements || []).filter((e) => e.parent === room.id);
-    window.adxiRoom = { building_uid: uid, level: lv.id, level_name: lv.name, id: room.id, name: room.name, type: room.type,
+    const desig = roomDesignation(uid, model, room);
+    window.adxiRoom = { designation: desig, building_uid: uid, level: lv.id, level_name: lv.name, id: room.id, name: room.name, type: room.type,
       outline_m: room.outline_m, size_m: [w, h], area_m2: Math.round(a), status: room.status, contains: inside.map((e) => `${e.id} ${e.name || e.type}`) };
     // zoom the map to the room
     const svg = document.getElementById("map");
@@ -174,12 +183,12 @@
       if (last) {
         const a1 = document.createElement("a"); a1.href = `#/building/${uid}`; a1.textContent = last.textContent;
         last.replaceWith(a1);
-        cr.insertAdjacentHTML("beforeend", `<span class="sep">›</span><a href="#/building/${uid}/${lv.id}">${esc(lv.name || lv.id)}</a><span class="sep">›</span><b class="crumb-room">${esc(room.name || room.id)}</b>`);
+        cr.insertAdjacentHTML("beforeend", `<span class="sep">›</span><a href="#/building/${uid}/${lv.id}">${esc(lv.name || lv.id)}</a><span class="sep">›</span><b class="crumb-room">${esc(room.name || room.id)} · ${esc(desig)}</b>`);
       }
     }
     const panel = document.querySelector(".panel");
     if (panel) {
-      panel.insertAdjacentHTML("afterbegin", `<div class="room-card"><div class="small muted">Room · ${esc(lv.name || "")}</div><h2>${esc(room.name || room.id)}</h2>
+      panel.insertAdjacentHTML("afterbegin", `<div class="room-card"><div class="small muted">Room · ${esc(lv.name || "")}</div><h2>${esc(room.name || room.id)}</h2><div class="small" style="margin:-4px 0 8px"><b>${esc(desig)}</b></div>
         <div class="kv"><div>Size</div><div>${both(w)} × ${both(h)}</div><div>Floor area</div><div>${sqft(a)}</div>
         <div>Ceiling height</div><div>${lv.height_m ? both(lv.height_m) : "not designed yet"}</div><div>Status</div><div>${esc(room.status || "proposed")}</div>
         <div>Inside</div><div>${inside.length ? inside.map((e) => esc(e.name || e.id)).join(", ") : "nothing designed yet"}</div></div>
