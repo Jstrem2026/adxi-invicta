@@ -54,7 +54,7 @@ Canon datasheets and geometry in `Docs/1_Canon_Source/Invicta`, the design docs 
 ## Folders
 
 - `atlas.py`: start here.
-- `atlaslib/`: loader, geometry (exact, with Shapely), scanner, room-plan checks (`rooms.py`), progress, server.
+- `atlaslib/`: loader, geometry (exact, with Shapely), scanner, room-plan checks (`rooms.py`), walls/doors/windows/stairs worked out from the rooms (`fabric.py`), progress, server.
 - `tests/`: tests for the geometry and the room checks.
 - `web/`: the browser app.
 - `data/`: precinct and building data, and scanner rules. See `data/README.md`.

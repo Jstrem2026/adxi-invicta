@@ -10,7 +10,8 @@ import time
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-from .loader import Loader, APP_DIR
+from .loader import Loader, APP_DIR, DATA_DIR
+from . import fabric as FB
 from .scanner import scan
 from .progress import progress
 from .report import report_md
@@ -62,6 +63,15 @@ def make_handler(root):
                 if u.path == "/api/report.md":
                     data = build(root)
                     return self.send(200, report_md(data), "text/markdown; charset=utf-8")
+                if u.path == "/api/model":  # a building's plan with its fabric (walls, doors, windows, stairs)
+                    uid = q.get("uid", [""])[0]
+                    p = os.path.join(DATA_DIR, "models", os.path.basename(uid) + ".json")
+                    if not uid or not os.path.isfile(p):
+                        return self.send(404, "No plan for %s" % uid)
+                    with open(p, encoding="utf-8") as f:
+                        m = json.load(f)
+                    return self.send(200, json.dumps(FB.with_fabric(m), ensure_ascii=False, separators=(",", ":")),
+                                     "application/json; charset=utf-8")
                 if u.path == "/file":
                     return self.file(q.get("path", [""])[0])
             except Exception as e:  # show the problem instead of a blank page

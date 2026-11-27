@@ -73,6 +73,11 @@ to keep in sync and no build step.
   don't stack. The plans made before this have these as warnings; the room designer is being reworked to
   fix them (plan step 4). A new or changed plan must not add any. Install Shapely once:
   `python -m pip install -r requirements.txt`. Tests: `python -m unittest discover -s tests -t .`
+- Walls, doors, windows and stairs (Jordan, 27 Nov 2026, plan step 3): never write them into a plan file. They are
+  worked out from the rooms by `atlaslib/fabric.py` and added when a plan is shown or exported (model@2, see
+  `data/README.md`). To change them for one building, draw the door in the plan (it wins), or change a room; to
+  change them everywhere, change the rules in `fabric.py` (Jordan approves). The scan lists spaces with no way in
+  and stairs too big for their core.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.

@@ -91,6 +91,43 @@
     return m;
   }
 
+  // Many boxes in one draw call (walls, doors, window panes, stair treads): each item is
+  // {a: [x, y], b: [x, y], z, h, t} — a box from a to b, t thick, from height z up by h.
+  function boxes(items, mat) {
+    if (!items.length) return null;
+    const im = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), mat, items.length);
+    const o = new THREE.Object3D();
+    items.forEach((it, i) => {
+      const dx = it.b[0] - it.a[0], dy = it.b[1] - it.a[1];
+      o.position.set((it.a[0] + it.b[0]) / 2, it.z + it.h / 2, (it.a[1] + it.b[1]) / 2);
+      o.rotation.set(0, -Math.atan2(dy, dx), 0);
+      o.scale.set(Math.max(Math.hypot(dx, dy), 0.01), Math.max(it.h, 0.01), Math.max(it.t, 0.01));
+      o.updateMatrix();
+      im.setMatrixAt(i, o.matrix);
+    });
+    im.instanceMatrix.needsUpdate = true;
+    return im;
+  }
+  // The treads of a half-turn stair (plan step 3): two flights side by side in the stair's outline.
+  function stairTreads(e, z0) {
+    const o = e.outline_m, out = [];
+    const u = [o[1][0] - o[0][0], o[1][1] - o[0][1]], v = [o[3][0] - o[0][0], o[3][1] - o[0][1]];
+    const Lu = Math.hypot(...u), Lv = Math.hypot(...v);
+    if (!Lu || !Lv) return out;
+    const uu = [u[0] / Lu, u[1] / Lu], vv = [v[0] / Lv, v[1] / Lv];
+    const at = (s, t) => [o[0][0] + uu[0] * s + vv[0] * t, o[0][1] + uu[1] * s + vv[1] * t];
+    const per = Math.ceil(e.risers / 2), w = Math.min(e.flight_width_m, Lv / 2), land = e.landing_m;
+    for (let i = 0; i < e.risers; i++) {
+      const up = i < per;                       // first flight runs along u, the second comes back
+      const k = up ? i : i - per;
+      const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
+      const t0 = up ? w / 2 : Lv - w / 2;
+      out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + (i + 1) * e.riser_m - 0.05, h: 0.05, t: w });
+    }
+    out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: z0 + per * e.riser_m - 0.05, h: 0.05, t: Lv });  // half landing
+    return out;
+  }
+
   function buildBuilding(b, model, origin) {
     const g = new THREE.Group();
     const r = b.rect_km;
@@ -131,11 +168,39 @@
     const edge = new THREE.LineBasicMaterial({ color: 0x1b2633, transparent: true, opacity: 0.45 });
     matRoom.opacity = 0.85;
     const roomMat = matRoom, massMat = f.glass ? matGlass : matRoom;
+    const fab = !!model.fabric;  // walls, doors, windows, stairs and slabs worked out from the rooms
     for (const l of lv) {
       const lg = new THREE.Group();
       lg.userData = { id: l.id, name: l.name, z: l.z_m, h: l.height_m };
       const on = (e) => (e.levels || [e.level]).includes(l.id);
       const els = (model.elements || []).filter(on);
+      if (fab) {
+        // A building with its fabric: floors, walls, doors, window panes and stairs instead of room volumes.
+        const wallIt = [], doorIt = [], paneIt = [], treadIt = [];
+        for (const e of els) {
+          if (e.type === "slab") lg.add(prism(e.outline_m, l.z_m, e.thickness_m || 0.3, matSlab, null, e.holes_m || []));
+          else if (e.type === "walls") for (const q of e.lines_m) wallIt.push({ a: [q[0], q[1]], b: [q[2], q[3]], z: l.z_m + 0.3, h: Math.max((e.height_m || l.height_m) - 0.3, 0.1), t: e.thickness_m });
+          else if ((e.type === "door" || e.type === "opening") && e.line_m && e.type === "door") doorIt.push({ a: e.line_m[0], b: e.line_m[e.line_m.length - 1], z: l.z_m + 0.3, h: Math.min(e.height_m || 2.1, l.height_m), t: 0.35 });
+          else if (e.type === "windows") for (const q of e.lines_m) {
+            const A = [q[0], q[1]], B = [q[2], q[3]], n = q[4], L = Math.hypot(B[0] - A[0], B[1] - A[1]);
+            for (let i = 0; i < n; i++) {
+              const s0 = n > 1 ? i * (L - e.pane_width_m) / (n - 1) : (L - e.pane_width_m) / 2, f0 = s0 / L, f1 = (s0 + e.pane_width_m) / L;
+              paneIt.push({ a: [A[0] + (B[0] - A[0]) * f0, A[1] + (B[1] - A[1]) * f0], b: [A[0] + (B[0] - A[0]) * f1, A[1] + (B[1] - A[1]) * f1], z: l.z_m + 0.3 + e.sill_m, h: e.head_m - e.sill_m, t: 0.36 });
+            }
+          }
+          else if (e.type === "stair") treadIt.push(...stairTreads(e, l.z_m + 0.3));
+          else if (e.type === "lift" && e.levels && e.levels[0] === l.id) {
+            const ls = e.levels.map((id) => byId[id]).filter(Boolean), top = ls[ls.length - 1];
+            lg.add(prism(e.outline_m, l.z_m, top.z_m + top.height_m - l.z_m, matCore, edge));
+          }
+          else if (e.outdoor) lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
+          else if (e.type === "fixture" && e.outline_m) lg.add(prism(e.outline_m, l.z_m + 0.3, Math.min(e.height_m || 1.1, l.height_m), matFix, edge));
+        }
+        for (const m of [boxes(wallIt, matWall), boxes(doorIt, matDoor), boxes(paneIt, matGlass), boxes(treadIt, matCore)]) if (m) lg.add(m);
+        g.add(lg);
+        info.levels.push(lg);
+        continue;
+      }
       for (const e of els) {
         if (e.type === "mass") {
           // A mass spans its levels; draw its part on this level so levels can be hidden one by one.

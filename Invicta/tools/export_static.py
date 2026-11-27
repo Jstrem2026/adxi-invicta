@@ -31,6 +31,7 @@ sys.path.insert(0, APP)
 from atlaslib.sources import find_root  # noqa: E402
 from atlaslib.server import build, SERVE_EXT, WEB  # noqa: E402
 from atlaslib.report import report_md  # noqa: E402
+from atlaslib import fabric as FB  # noqa: E402
 
 # Only files under these folders may be published. Everything else the model
 # mentions (for example Game/Tools/...) is listed in the app but not copied.
@@ -135,8 +136,10 @@ def main():
                     m = json.load(f)
                 uid = m.get("building_uid") or n[:-5]
                 data["model_index"][uid] = [len(m.get("levels", [])), len(m.get("elements", []))]
+                # Published with its fabric (walls, doors, windows, stairs, slabs) worked out from the rooms
+                # (atlaslib/fabric.py, plan step 3); the plan file itself is unchanged.
                 with open(os.path.join(out, "api", "models", uid + ".json"), "w", encoding="utf-8") as f:
-                    json.dump(m, f, ensure_ascii=False, separators=(",", ":"))
+                    json.dump(FB.with_fabric(m), f, ensure_ascii=False, separators=(",", ":"))
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 
