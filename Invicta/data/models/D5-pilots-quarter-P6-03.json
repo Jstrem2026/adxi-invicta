@@ -1,0 +1,9305 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P6-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  329.3,
+  269.6
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.5,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Flat floor 1",
+   "z_m": 4.5,
+   "height_m": 3.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Flat floor 2",
+   "z_m": 7.7,
+   "height_m": 3.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Flat floor 3",
+   "z_m": 10.9,
+   "height_m": 3.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L5",
+   "name": "Level 5 · Flat floor 4",
+   "z_m": 14.1,
+   "height_m": 3.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Residents' courtyard",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     24.0
+    ],
+    [
+     305.3,
+     24.0
+    ],
+    [
+     305.3,
+     56.9
+    ],
+    [
+     140.6,
+     56.9
+    ],
+    [
+     140.6,
+     212.7
+    ],
+    [
+     305.3,
+     212.7
+    ],
+    [
+     305.3,
+     245.6
+    ],
+    [
+     24.0,
+     245.6
+    ]
+   ],
+   "about": "A shared courtyard garden for the families.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.7,
+     10.5
+    ],
+    [
+     132.3,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.7,
+     10.5
+    ],
+    [
+     252.9,
+     10.5
+    ],
+    [
+     251.1,
+     13.5
+    ],
+    [
+     132.3,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.9,
+     10.5
+    ],
+    [
+     318.8,
+     10.5
+    ],
+    [
+     318.8,
+     68.1
+    ],
+    [
+     315.8,
+     65.3
+    ],
+    [
+     315.8,
+     13.5
+    ],
+    [
+     251.1,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     318.8,
+     68.1
+    ],
+    [
+     318.8,
+     70.4
+    ],
+    [
+     201.0,
+     70.4
+    ],
+    [
+     198.0,
+     67.4
+    ],
+    [
+     315.8,
+     67.4
+    ],
+    [
+     315.8,
+     65.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.0,
+     70.4
+    ],
+    [
+     154.1,
+     70.4
+    ],
+    [
+     154.1,
+     141.8
+    ],
+    [
+     151.1,
+     142.2
+    ],
+    [
+     151.1,
+     67.4
+    ],
+    [
+     198.0,
+     67.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.1,
+     141.8
+    ],
+    [
+     154.1,
+     199.2
+    ],
+    [
+     215.4,
+     199.2
+    ],
+    [
+     212.4,
+     202.2
+    ],
+    [
+     151.1,
+     202.2
+    ],
+    [
+     151.1,
+     142.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.4,
+     199.2
+    ],
+    [
+     318.8,
+     199.2
+    ],
+    [
+     318.8,
+     216.7
+    ],
+    [
+     315.8,
+     217.9
+    ],
+    [
+     315.8,
+     202.2
+    ],
+    [
+     212.4,
+     202.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     318.8,
+     216.7
+    ],
+    [
+     318.8,
+     259.1
+    ],
+    [
+     238.3,
+     259.1
+    ],
+    [
+     236.9,
+     256.1
+    ],
+    [
+     315.8,
+     256.1
+    ],
+    [
+     315.8,
+     217.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     238.3,
+     259.1
+    ],
+    [
+     117.1,
+     259.1
+    ],
+    [
+     118.1,
+     256.1
+    ],
+    [
+     236.9,
+     256.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.1,
+     259.1
+    ],
+    [
+     10.5,
+     259.1
+    ],
+    [
+     10.5,
+     244.5
+    ],
+    [
+     13.5,
+     241.9
+    ],
+    [
+     13.5,
+     256.1
+    ],
+    [
+     118.1,
+     256.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     244.5
+    ],
+    [
+     10.5,
+     123.1
+    ],
+    [
+     13.5,
+     123.3
+    ],
+    [
+     13.5,
+     241.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     123.1
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     123.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.3,
+     13.5
+    ],
+    [
+     61.0,
+     24.0
+    ],
+    [
+     53.3,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     116.4,
+     13.5
+    ],
+    [
+     124.7,
+     13.5
+    ],
+    [
+     127.4,
+     24.0
+    ],
+    [
+     119.7,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     187.7,
+     13.5
+    ],
+    [
+     196.0,
+     13.5
+    ],
+    [
+     193.8,
+     24.0
+    ],
+    [
+     186.1,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     259.0,
+     13.5
+    ],
+    [
+     267.3,
+     13.5
+    ],
+    [
+     260.2,
+     24.0
+    ],
+    [
+     252.5,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     315.8,
+     31.0
+    ],
+    [
+     315.8,
+     40.9
+    ],
+    [
+     305.3,
+     40.7
+    ],
+    [
+     305.3,
+     34.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     276.3,
+     67.4
+    ],
+    [
+     268.3,
+     67.4
+    ],
+    [
+     257.8,
+     56.9
+    ],
+    [
+     265.8,
+     56.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     207.4,
+     67.4
+    ],
+    [
+     199.4,
+     67.4
+    ],
+    [
+     188.9,
+     56.9
+    ],
+    [
+     196.9,
+     56.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     79.0
+    ],
+    [
+     151.1,
+     86.5
+    ],
+    [
+     140.6,
+     78.9
+    ],
+    [
+     140.6,
+     70.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     142.9
+    ],
+    [
+     151.1,
+     150.3
+    ],
+    [
+     140.6,
+     152.8
+    ],
+    [
+     140.6,
+     144.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     156.1,
+     202.2
+    ],
+    [
+     164.1,
+     202.2
+    ],
+    [
+     153.6,
+     212.7
+    ],
+    [
+     145.6,
+     212.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     224.9,
+     202.2
+    ],
+    [
+     232.9,
+     202.2
+    ],
+    [
+     222.4,
+     212.7
+    ],
+    [
+     214.4,
+     212.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     293.8,
+     202.2
+    ],
+    [
+     301.8,
+     202.2
+    ],
+    [
+     291.3,
+     212.7
+    ],
+    [
+     283.3,
+     212.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     312.2,
+     256.1
+    ],
+    [
+     303.9,
+     256.1
+    ],
+    [
+     294.3,
+     245.6
+    ],
+    [
+     302.0,
+     245.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     240.9,
+     256.1
+    ],
+    [
+     232.6,
+     256.1
+    ],
+    [
+     227.9,
+     245.6
+    ],
+    [
+     235.6,
+     245.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     169.6,
+     256.1
+    ],
+    [
+     161.3,
+     256.1
+    ],
+    [
+     161.5,
+     245.6
+    ],
+    [
+     169.2,
+     245.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     98.2,
+     256.1
+    ],
+    [
+     89.9,
+     256.1
+    ],
+    [
+     95.1,
+     245.6
+    ],
+    [
+     102.8,
+     245.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     26.9,
+     256.1
+    ],
+    [
+     18.6,
+     256.1
+    ],
+    [
+     28.7,
+     245.6
+    ],
+    [
+     36.4,
+     245.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     197.6
+    ],
+    [
+     13.5,
+     189.3
+    ],
+    [
+     24.0,
+     184.5
+    ],
+    [
+     24.0,
+     192.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     125.6
+    ],
+    [
+     13.5,
+     117.3
+    ],
+    [
+     24.0,
+     118.8
+    ],
+    [
+     24.0,
+     126.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     53.7
+    ],
+    [
+     13.5,
+     45.3
+    ],
+    [
+     24.0,
+     53.1
+    ],
+    [
+     24.0,
+     60.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Entrance lobby",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     7.9,
+     0.0
+    ],
+    [
+     17.9,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Post boxes and the lift lobby.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Bike and pram store",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.9,
+     0.0
+    ],
+    [
+     13.8,
+     0.0
+    ],
+    [
+     23.4,
+     10.5
+    ],
+    [
+     17.9,
+     10.5
+    ]
+   ],
+   "about": "Bikes and prams.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Bin store",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.8,
+     0.0
+    ],
+    [
+     17.6,
+     0.0
+    ],
+    [
+     26.9,
+     10.5
+    ],
+    [
+     23.4,
+     10.5
+    ]
+   ],
+   "about": "Rubbish and recycling.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     17.6,
+     0.0
+    ],
+    [
+     42.7,
+     0.0
+    ],
+    [
+     50.4,
+     10.5
+    ],
+    [
+     26.9,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.7,
+     0.0
+    ],
+    [
+     67.7,
+     0.0
+    ],
+    [
+     73.9,
+     10.5
+    ],
+    [
+     50.4,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.7,
+     0.0
+    ],
+    [
+     82.5,
+     0.0
+    ],
+    [
+     87.7,
+     10.5
+    ],
+    [
+     73.9,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.5,
+     0.0
+    ],
+    [
+     107.6,
+     0.0
+    ],
+    [
+     111.2,
+     10.5
+    ],
+    [
+     87.7,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.6,
+     0.0
+    ],
+    [
+     132.7,
+     0.0
+    ],
+    [
+     134.7,
+     10.5
+    ],
+    [
+     111.2,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.7,
+     0.0
+    ],
+    [
+     147.4,
+     0.0
+    ],
+    [
+     148.5,
+     10.5
+    ],
+    [
+     134.7,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.4,
+     0.0
+    ],
+    [
+     172.5,
+     0.0
+    ],
+    [
+     172.0,
+     10.5
+    ],
+    [
+     148.5,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     172.5,
+     0.0
+    ],
+    [
+     197.6,
+     0.0
+    ],
+    [
+     195.5,
+     10.5
+    ],
+    [
+     172.0,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.6,
+     0.0
+    ],
+    [
+     212.4,
+     0.0
+    ],
+    [
+     209.3,
+     10.5
+    ],
+    [
+     195.5,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     212.4,
+     0.0
+    ],
+    [
+     237.4,
+     0.0
+    ],
+    [
+     232.8,
+     10.5
+    ],
+    [
+     209.3,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.4,
+     0.0
+    ],
+    [
+     262.5,
+     0.0
+    ],
+    [
+     256.3,
+     10.5
+    ],
+    [
+     232.8,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     262.5,
+     0.0
+    ],
+    [
+     277.3,
+     0.0
+    ],
+    [
+     270.1,
+     10.5
+    ],
+    [
+     256.3,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     277.3,
+     0.0
+    ],
+    [
+     302.4,
+     0.0
+    ],
+    [
+     293.6,
+     10.5
+    ],
+    [
+     270.1,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.4,
+     0.0
+    ],
+    [
+     327.4,
+     0.0
+    ],
+    [
+     317.1,
+     10.5
+    ],
+    [
+     293.6,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     327.4,
+     0.0
+    ],
+    [
+     329.3,
+     0.0
+    ],
+    [
+     329.3,
+     14.4
+    ],
+    [
+     318.8,
+     21.1
+    ],
+    [
+     318.8,
+     10.5
+    ],
+    [
+     317.1,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     14.4
+    ],
+    [
+     329.3,
+     42.3
+    ],
+    [
+     318.8,
+     41.8
+    ],
+    [
+     318.8,
+     21.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     42.3
+    ],
+    [
+     329.3,
+     70.2
+    ],
+    [
+     318.8,
+     62.5
+    ],
+    [
+     318.8,
+     41.8
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     70.2
+    ],
+    [
+     329.3,
+     80.9
+    ],
+    [
+     324.3,
+     80.9
+    ],
+    [
+     313.8,
+     70.4
+    ],
+    [
+     318.8,
+     70.4
+    ],
+    [
+     318.8,
+     62.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     324.3,
+     80.9
+    ],
+    [
+     300.1,
+     80.9
+    ],
+    [
+     289.6,
+     70.4
+    ],
+    [
+     313.8,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.1,
+     80.9
+    ],
+    [
+     275.8,
+     80.9
+    ],
+    [
+     265.3,
+     70.4
+    ],
+    [
+     289.6,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     275.8,
+     80.9
+    ],
+    [
+     261.5,
+     80.9
+    ],
+    [
+     251.0,
+     70.4
+    ],
+    [
+     265.3,
+     70.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     261.5,
+     80.9
+    ],
+    [
+     237.2,
+     80.9
+    ],
+    [
+     226.7,
+     70.4
+    ],
+    [
+     251.0,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.2,
+     80.9
+    ],
+    [
+     212.9,
+     80.9
+    ],
+    [
+     202.4,
+     70.4
+    ],
+    [
+     226.7,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     212.9,
+     80.9
+    ],
+    [
+     198.6,
+     80.9
+    ],
+    [
+     188.1,
+     70.4
+    ],
+    [
+     202.4,
+     70.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     198.6,
+     80.9
+    ],
+    [
+     174.3,
+     80.9
+    ],
+    [
+     163.8,
+     70.4
+    ],
+    [
+     188.1,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     174.3,
+     80.9
+    ],
+    [
+     164.6,
+     80.9
+    ],
+    [
+     164.6,
+     94.1
+    ],
+    [
+     154.1,
+     86.2
+    ],
+    [
+     154.1,
+     70.4
+    ],
+    [
+     163.8,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     94.1
+    ],
+    [
+     164.6,
+     107.2
+    ],
+    [
+     154.1,
+     101.8
+    ],
+    [
+     154.1,
+     86.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     107.2
+    ],
+    [
+     164.6,
+     129.3
+    ],
+    [
+     154.1,
+     128.2
+    ],
+    [
+     154.1,
+     101.8
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     129.3
+    ],
+    [
+     164.6,
+     151.4
+    ],
+    [
+     154.1,
+     154.7
+    ],
+    [
+     154.1,
+     128.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     151.4
+    ],
+    [
+     164.6,
+     164.4
+    ],
+    [
+     154.1,
+     170.2
+    ],
+    [
+     154.1,
+     154.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     164.4
+    ],
+    [
+     164.6,
+     186.6
+    ],
+    [
+     154.1,
+     196.7
+    ],
+    [
+     154.1,
+     170.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     186.6
+    ],
+    [
+     164.6,
+     188.7
+    ],
+    [
+     186.6,
+     188.7
+    ],
+    [
+     176.1,
+     199.2
+    ],
+    [
+     154.1,
+     199.2
+    ],
+    [
+     154.1,
+     196.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.6,
+     188.7
+    ],
+    [
+     200.8,
+     188.7
+    ],
+    [
+     190.3,
+     199.2
+    ],
+    [
+     176.1,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.8,
+     188.7
+    ],
+    [
+     225.1,
+     188.7
+    ],
+    [
+     214.6,
+     199.2
+    ],
+    [
+     190.3,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.1,
+     188.7
+    ],
+    [
+     249.4,
+     188.7
+    ],
+    [
+     238.9,
+     199.2
+    ],
+    [
+     214.6,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.4,
+     188.7
+    ],
+    [
+     263.7,
+     188.7
+    ],
+    [
+     253.2,
+     199.2
+    ],
+    [
+     238.9,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     263.7,
+     188.7
+    ],
+    [
+     288.0,
+     188.7
+    ],
+    [
+     277.5,
+     199.2
+    ],
+    [
+     253.2,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     288.0,
+     188.7
+    ],
+    [
+     312.3,
+     188.7
+    ],
+    [
+     301.8,
+     199.2
+    ],
+    [
+     277.5,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     312.3,
+     188.7
+    ],
+    [
+     326.6,
+     188.7
+    ],
+    [
+     316.1,
+     199.2
+    ],
+    [
+     301.8,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     326.6,
+     188.7
+    ],
+    [
+     329.3,
+     188.7
+    ],
+    [
+     329.3,
+     213.4
+    ],
+    [
+     318.8,
+     217.5
+    ],
+    [
+     318.8,
+     199.2
+    ],
+    [
+     316.1,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     213.4
+    ],
+    [
+     329.3,
+     241.4
+    ],
+    [
+     318.8,
+     238.2
+    ],
+    [
+     318.8,
+     217.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     241.4
+    ],
+    [
+     329.3,
+     257.8
+    ],
+    [
+     318.8,
+     250.3
+    ],
+    [
+     318.8,
+     238.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     329.3,
+     257.8
+    ],
+    [
+     329.3,
+     269.6
+    ],
+    [
+     314.8,
+     269.6
+    ],
+    [
+     305.3,
+     259.1
+    ],
+    [
+     318.8,
+     259.1
+    ],
+    [
+     318.8,
+     250.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     314.8,
+     269.6
+    ],
+    [
+     289.8,
+     269.6
+    ],
+    [
+     281.8,
+     259.1
+    ],
+    [
+     305.3,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     289.8,
+     269.6
+    ],
+    [
+     275.0,
+     269.6
+    ],
+    [
+     268.0,
+     259.1
+    ],
+    [
+     281.8,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     275.0,
+     269.6
+    ],
+    [
+     249.9,
+     269.6
+    ],
+    [
+     244.5,
+     259.1
+    ],
+    [
+     268.0,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.9,
+     269.6
+    ],
+    [
+     224.8,
+     269.6
+    ],
+    [
+     221.0,
+     259.1
+    ],
+    [
+     244.5,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.8,
+     269.6
+    ],
+    [
+     210.1,
+     269.6
+    ],
+    [
+     207.2,
+     259.1
+    ],
+    [
+     221.0,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     210.1,
+     269.6
+    ],
+    [
+     185.0,
+     269.6
+    ],
+    [
+     183.7,
+     259.1
+    ],
+    [
+     207.2,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.0,
+     269.6
+    ],
+    [
+     159.9,
+     269.6
+    ],
+    [
+     160.2,
+     259.1
+    ],
+    [
+     183.7,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.9,
+     269.6
+    ],
+    [
+     145.1,
+     269.6
+    ],
+    [
+     146.4,
+     259.1
+    ],
+    [
+     160.2,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.1,
+     269.6
+    ],
+    [
+     120.1,
+     269.6
+    ],
+    [
+     122.9,
+     259.1
+    ],
+    [
+     146.4,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.1,
+     269.6
+    ],
+    [
+     95.0,
+     269.6
+    ],
+    [
+     99.4,
+     259.1
+    ],
+    [
+     122.9,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.0,
+     269.6
+    ],
+    [
+     80.2,
+     269.6
+    ],
+    [
+     85.6,
+     259.1
+    ],
+    [
+     99.4,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.2,
+     269.6
+    ],
+    [
+     55.1,
+     269.6
+    ],
+    [
+     62.1,
+     259.1
+    ],
+    [
+     85.6,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.1,
+     269.6
+    ],
+    [
+     30.0,
+     269.6
+    ],
+    [
+     38.6,
+     259.1
+    ],
+    [
+     62.1,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.0,
+     269.6
+    ],
+    [
+     15.3,
+     269.6
+    ],
+    [
+     24.8,
+     259.1
+    ],
+    [
+     38.6,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.3,
+     269.6
+    ],
+    [
+     0.0,
+     269.6
+    ],
+    [
+     0.0,
+     259.7
+    ],
+    [
+     10.5,
+     250.0
+    ],
+    [
+     10.5,
+     259.1
+    ],
+    [
+     24.8,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     259.7
+    ],
+    [
+     0.0,
+     234.5
+    ],
+    [
+     10.5,
+     226.7
+    ],
+    [
+     10.5,
+     250.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     234.5
+    ],
+    [
+     0.0,
+     219.6
+    ],
+    [
+     10.5,
+     213.0
+    ],
+    [
+     10.5,
+     226.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     219.6
+    ],
+    [
+     0.0,
+     194.3
+    ],
+    [
+     10.5,
+     189.7
+    ],
+    [
+     10.5,
+     213.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     194.3
+    ],
+    [
+     0.0,
+     169.1
+    ],
+    [
+     10.5,
+     166.4
+    ],
+    [
+     10.5,
+     189.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     169.1
+    ],
+    [
+     0.0,
+     154.2
+    ],
+    [
+     10.5,
+     152.7
+    ],
+    [
+     10.5,
+     166.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     154.2
+    ],
+    [
+     0.0,
+     128.9
+    ],
+    [
+     10.5,
+     129.4
+    ],
+    [
+     10.5,
+     152.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     128.9
+    ],
+    [
+     0.0,
+     103.7
+    ],
+    [
+     10.5,
+     106.1
+    ],
+    [
+     10.5,
+     129.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     103.7
+    ],
+    [
+     0.0,
+     88.8
+    ],
+    [
+     10.5,
+     92.4
+    ],
+    [
+     10.5,
+     106.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     88.8
+    ],
+    [
+     0.0,
+     63.5
+    ],
+    [
+     10.5,
+     69.1
+    ],
+    [
+     10.5,
+     92.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     63.5
+    ],
+    [
+     0.0,
+     38.3
+    ],
+    [
+     10.5,
+     45.8
+    ],
+    [
+     10.5,
+     69.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     38.3
+    ],
+    [
+     0.0,
+     23.4
+    ],
+    [
+     10.5,
+     32.1
+    ],
+    [
+     10.5,
+     45.8
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     23.4
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     32.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.3,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.3,
+     13.5
+    ],
+    [
+     68.1,
+     13.5
+    ],
+    [
+     74.8,
+     24.0
+    ],
+    [
+     61.0,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.1,
+     13.5
+    ],
+    [
+     93.3,
+     13.5
+    ],
+    [
+     98.2,
+     24.0
+    ],
+    [
+     74.8,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.3,
+     13.5
+    ],
+    [
+     116.4,
+     13.5
+    ],
+    [
+     119.7,
+     24.0
+    ],
+    [
+     98.2,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.7,
+     13.5
+    ],
+    [
+     139.5,
+     13.5
+    ],
+    [
+     141.2,
+     24.0
+    ],
+    [
+     127.4,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.5,
+     13.5
+    ],
+    [
+     164.6,
+     13.5
+    ],
+    [
+     164.6,
+     24.0
+    ],
+    [
+     141.2,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     13.5
+    ],
+    [
+     187.7,
+     13.5
+    ],
+    [
+     186.1,
+     24.0
+    ],
+    [
+     164.6,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     196.0,
+     13.5
+    ],
+    [
+     210.8,
+     13.5
+    ],
+    [
+     207.6,
+     24.0
+    ],
+    [
+     193.8,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     210.8,
+     13.5
+    ],
+    [
+     235.9,
+     13.5
+    ],
+    [
+     231.0,
+     24.0
+    ],
+    [
+     207.6,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.9,
+     13.5
+    ],
+    [
+     259.0,
+     13.5
+    ],
+    [
+     252.5,
+     24.0
+    ],
+    [
+     231.0,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     267.3,
+     13.5
+    ],
+    [
+     282.1,
+     13.5
+    ],
+    [
+     274.0,
+     24.0
+    ],
+    [
+     260.2,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     282.1,
+     13.5
+    ],
+    [
+     307.3,
+     13.5
+    ],
+    [
+     297.4,
+     24.0
+    ],
+    [
+     274.0,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     307.3,
+     13.5
+    ],
+    [
+     315.8,
+     13.5
+    ],
+    [
+     315.8,
+     31.0
+    ],
+    [
+     305.3,
+     34.7
+    ],
+    [
+     305.3,
+     24.0
+    ],
+    [
+     297.4,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     315.8,
+     40.9
+    ],
+    [
+     315.8,
+     58.7
+    ],
+    [
+     305.3,
+     51.6
+    ],
+    [
+     305.3,
+     40.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     315.8,
+     58.7
+    ],
+    [
+     315.8,
+     67.4
+    ],
+    [
+     298.6,
+     67.4
+    ],
+    [
+     288.1,
+     56.9
+    ],
+    [
+     305.3,
+     56.9
+    ],
+    [
+     305.3,
+     51.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     298.6,
+     67.4
+    ],
+    [
+     276.3,
+     67.4
+    ],
+    [
+     265.8,
+     56.9
+    ],
+    [
+     288.1,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     268.3,
+     67.4
+    ],
+    [
+     254.0,
+     67.4
+    ],
+    [
+     243.5,
+     56.9
+    ],
+    [
+     257.8,
+     56.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     254.0,
+     67.4
+    ],
+    [
+     229.7,
+     67.4
+    ],
+    [
+     219.2,
+     56.9
+    ],
+    [
+     243.5,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.7,
+     67.4
+    ],
+    [
+     207.4,
+     67.4
+    ],
+    [
+     196.9,
+     56.9
+    ],
+    [
+     219.2,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.4,
+     67.4
+    ],
+    [
+     185.1,
+     67.4
+    ],
+    [
+     174.6,
+     56.9
+    ],
+    [
+     188.9,
+     56.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.1,
+     67.4
+    ],
+    [
+     160.8,
+     67.4
+    ],
+    [
+     150.3,
+     56.9
+    ],
+    [
+     174.6,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.8,
+     67.4
+    ],
+    [
+     151.1,
+     67.4
+    ],
+    [
+     151.1,
+     79.0
+    ],
+    [
+     140.6,
+     70.4
+    ],
+    [
+     140.6,
+     56.9
+    ],
+    [
+     150.3,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     86.5
+    ],
+    [
+     151.1,
+     99.7
+    ],
+    [
+     140.6,
+     94.3
+    ],
+    [
+     140.6,
+     78.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     99.7
+    ],
+    [
+     151.1,
+     122.2
+    ],
+    [
+     140.6,
+     120.3
+    ],
+    [
+     140.6,
+     94.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     122.2
+    ],
+    [
+     151.1,
+     142.9
+    ],
+    [
+     140.6,
+     144.2
+    ],
+    [
+     140.6,
+     120.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     150.3
+    ],
+    [
+     151.1,
+     163.6
+    ],
+    [
+     140.6,
+     168.1
+    ],
+    [
+     140.6,
+     152.8
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     163.6
+    ],
+    [
+     151.1,
+     186.1
+    ],
+    [
+     140.6,
+     194.1
+    ],
+    [
+     140.6,
+     168.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.1,
+     186.1
+    ],
+    [
+     151.1,
+     202.2
+    ],
+    [
+     156.1,
+     202.2
+    ],
+    [
+     145.6,
+     212.7
+    ],
+    [
+     140.6,
+     212.7
+    ],
+    [
+     140.6,
+     194.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.1,
+     202.2
+    ],
+    [
+     178.4,
+     202.2
+    ],
+    [
+     167.9,
+     212.7
+    ],
+    [
+     153.6,
+     212.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     178.4,
+     202.2
+    ],
+    [
+     202.6,
+     202.2
+    ],
+    [
+     192.1,
+     212.7
+    ],
+    [
+     167.9,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.6,
+     202.2
+    ],
+    [
+     224.9,
+     202.2
+    ],
+    [
+     214.4,
+     212.7
+    ],
+    [
+     192.1,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.9,
+     202.2
+    ],
+    [
+     247.2,
+     202.2
+    ],
+    [
+     236.7,
+     212.7
+    ],
+    [
+     222.4,
+     212.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     247.2,
+     202.2
+    ],
+    [
+     271.5,
+     202.2
+    ],
+    [
+     261.0,
+     212.7
+    ],
+    [
+     236.7,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     271.5,
+     202.2
+    ],
+    [
+     293.8,
+     202.2
+    ],
+    [
+     283.3,
+     212.7
+    ],
+    [
+     261.0,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     301.8,
+     202.2
+    ],
+    [
+     315.8,
+     202.2
+    ],
+    [
+     315.8,
+     202.5
+    ],
+    [
+     305.3,
+     212.9
+    ],
+    [
+     305.3,
+     212.7
+    ],
+    [
+     291.3,
+     212.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     315.8,
+     202.5
+    ],
+    [
+     315.8,
+     232.7
+    ],
+    [
+     305.3,
+     231.3
+    ],
+    [
+     305.3,
+     212.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     315.8,
+     232.7
+    ],
+    [
+     315.8,
+     256.1
+    ],
+    [
+     312.2,
+     256.1
+    ],
+    [
+     302.0,
+     245.6
+    ],
+    [
+     305.3,
+     245.6
+    ],
+    [
+     305.3,
+     231.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     303.9,
+     256.1
+    ],
+    [
+     289.1,
+     256.1
+    ],
+    [
+     280.5,
+     245.6
+    ],
+    [
+     294.3,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     289.1,
+     256.1
+    ],
+    [
+     264.0,
+     256.1
+    ],
+    [
+     257.1,
+     245.6
+    ],
+    [
+     280.5,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     264.0,
+     256.1
+    ],
+    [
+     240.9,
+     256.1
+    ],
+    [
+     235.6,
+     245.6
+    ],
+    [
+     257.1,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.6,
+     256.1
+    ],
+    [
+     217.8,
+     256.1
+    ],
+    [
+     214.1,
+     245.6
+    ],
+    [
+     227.9,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     217.8,
+     256.1
+    ],
+    [
+     192.6,
+     256.1
+    ],
+    [
+     190.7,
+     245.6
+    ],
+    [
+     214.1,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     192.6,
+     256.1
+    ],
+    [
+     169.6,
+     256.1
+    ],
+    [
+     169.2,
+     245.6
+    ],
+    [
+     190.7,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.3,
+     256.1
+    ],
+    [
+     146.5,
+     256.1
+    ],
+    [
+     147.7,
+     245.6
+    ],
+    [
+     161.5,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     146.5,
+     256.1
+    ],
+    [
+     121.3,
+     256.1
+    ],
+    [
+     124.3,
+     245.6
+    ],
+    [
+     147.7,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.3,
+     256.1
+    ],
+    [
+     98.2,
+     256.1
+    ],
+    [
+     102.8,
+     245.6
+    ],
+    [
+     124.3,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.9,
+     256.1
+    ],
+    [
+     75.1,
+     256.1
+    ],
+    [
+     81.3,
+     245.6
+    ],
+    [
+     95.1,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.1,
+     256.1
+    ],
+    [
+     50.0,
+     256.1
+    ],
+    [
+     57.9,
+     245.6
+    ],
+    [
+     81.3,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.0,
+     256.1
+    ],
+    [
+     26.9,
+     256.1
+    ],
+    [
+     36.4,
+     245.6
+    ],
+    [
+     57.9,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.6,
+     256.1
+    ],
+    [
+     13.5,
+     256.1
+    ],
+    [
+     13.5,
+     246.3
+    ],
+    [
+     24.0,
+     236.6
+    ],
+    [
+     24.0,
+     245.6
+    ],
+    [
+     28.7,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     246.3
+    ],
+    [
+     13.5,
+     220.9
+    ],
+    [
+     24.0,
+     213.5
+    ],
+    [
+     24.0,
+     236.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     220.9
+    ],
+    [
+     13.5,
+     197.6
+    ],
+    [
+     24.0,
+     192.2
+    ],
+    [
+     24.0,
+     213.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     189.3
+    ],
+    [
+     13.5,
+     174.3
+    ],
+    [
+     24.0,
+     170.9
+    ],
+    [
+     24.0,
+     184.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     174.3
+    ],
+    [
+     13.5,
+     148.9
+    ],
+    [
+     24.0,
+     147.7
+    ],
+    [
+     24.0,
+     170.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     148.9
+    ],
+    [
+     13.5,
+     125.6
+    ],
+    [
+     24.0,
+     126.4
+    ],
+    [
+     24.0,
+     147.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     117.3
+    ],
+    [
+     13.5,
+     102.3
+    ],
+    [
+     24.0,
+     105.2
+    ],
+    [
+     24.0,
+     118.8
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     102.3
+    ],
+    [
+     13.5,
+     77.0
+    ],
+    [
+     24.0,
+     82.0
+    ],
+    [
+     24.0,
+     105.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     77.0
+    ],
+    [
+     13.5,
+     53.7
+    ],
+    [
+     24.0,
+     60.7
+    ],
+    [
+     24.0,
+     82.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     45.3
+    ],
+    [
+     13.5,
+     30.4
+    ],
+    [
+     24.0,
+     39.4
+    ],
+    [
+     24.0,
+     53.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     30.4
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     39.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     131.7,
+     10.5
+    ],
+    [
+     132.3,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     131.7,
+     10.5
+    ],
+    [
+     252.9,
+     10.5
+    ],
+    [
+     251.1,
+     13.5
+    ],
+    [
+     132.3,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     252.9,
+     10.5
+    ],
+    [
+     318.8,
+     10.5
+    ],
+    [
+     318.8,
+     68.1
+    ],
+    [
+     315.8,
+     65.3
+    ],
+    [
+     315.8,
+     13.5
+    ],
+    [
+     251.1,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     318.8,
+     68.1
+    ],
+    [
+     318.8,
+     70.4
+    ],
+    [
+     201.0,
+     70.4
+    ],
+    [
+     198.0,
+     67.4
+    ],
+    [
+     315.8,
+     67.4
+    ],
+    [
+     315.8,
+     65.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     201.0,
+     70.4
+    ],
+    [
+     154.1,
+     70.4
+    ],
+    [
+     154.1,
+     141.8
+    ],
+    [
+     151.1,
+     142.2
+    ],
+    [
+     151.1,
+     67.4
+    ],
+    [
+     198.0,
+     67.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     154.1,
+     141.8
+    ],
+    [
+     154.1,
+     199.2
+    ],
+    [
+     215.4,
+     199.2
+    ],
+    [
+     212.4,
+     202.2
+    ],
+    [
+     151.1,
+     202.2
+    ],
+    [
+     151.1,
+     142.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     215.4,
+     199.2
+    ],
+    [
+     318.8,
+     199.2
+    ],
+    [
+     318.8,
+     216.7
+    ],
+    [
+     315.8,
+     217.9
+    ],
+    [
+     315.8,
+     202.2
+    ],
+    [
+     212.4,
+     202.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     318.8,
+     216.7
+    ],
+    [
+     318.8,
+     259.1
+    ],
+    [
+     238.3,
+     259.1
+    ],
+    [
+     236.9,
+     256.1
+    ],
+    [
+     315.8,
+     256.1
+    ],
+    [
+     315.8,
+     217.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     238.3,
+     259.1
+    ],
+    [
+     117.1,
+     259.1
+    ],
+    [
+     118.1,
+     256.1
+    ],
+    [
+     236.9,
+     256.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     117.1,
+     259.1
+    ],
+    [
+     10.5,
+     259.1
+    ],
+    [
+     10.5,
+     244.5
+    ],
+    [
+     13.5,
+     241.9
+    ],
+    [
+     13.5,
+     256.1
+    ],
+    [
+     118.1,
+     256.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     244.5
+    ],
+    [
+     10.5,
+     123.1
+    ],
+    [
+     13.5,
+     123.3
+    ],
+    [
+     13.5,
+     241.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     123.1
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     123.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Cleaners' room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     3.8,
+     0.0
+    ],
+    [
+     14.1,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Cleaning machines, supplies and a sink for the building's cleaning crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     3.8,
+     0.0
+    ],
+    [
+     28.9,
+     0.0
+    ],
+    [
+     37.5,
+     10.5
+    ],
+    [
+     14.1,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     28.9,
+     0.0
+    ],
+    [
+     54.0,
+     0.0
+    ],
+    [
+     61.0,
+     10.5
+    ],
+    [
+     37.5,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     54.0,
+     0.0
+    ],
+    [
+     68.7,
+     0.0
+    ],
+    [
+     74.8,
+     10.5
+    ],
+    [
+     61.0,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     68.7,
+     0.0
+    ],
+    [
+     93.8,
+     0.0
+    ],
+    [
+     98.3,
+     10.5
+    ],
+    [
+     74.8,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     93.8,
+     0.0
+    ],
+    [
+     118.9,
+     0.0
+    ],
+    [
+     121.8,
+     10.5
+    ],
+    [
+     98.3,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     118.9,
+     0.0
+    ],
+    [
+     133.7,
+     0.0
+    ],
+    [
+     135.6,
+     10.5
+    ],
+    [
+     121.8,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     133.7,
+     0.0
+    ],
+    [
+     158.7,
+     0.0
+    ],
+    [
+     159.1,
+     10.5
+    ],
+    [
+     135.6,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     158.7,
+     0.0
+    ],
+    [
+     183.8,
+     0.0
+    ],
+    [
+     182.6,
+     10.5
+    ],
+    [
+     159.1,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     183.8,
+     0.0
+    ],
+    [
+     198.6,
+     0.0
+    ],
+    [
+     196.4,
+     10.5
+    ],
+    [
+     182.6,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     198.6,
+     0.0
+    ],
+    [
+     223.7,
+     0.0
+    ],
+    [
+     219.9,
+     10.5
+    ],
+    [
+     196.4,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     223.7,
+     0.0
+    ],
+    [
+     248.7,
+     0.0
+    ],
+    [
+     243.4,
+     10.5
+    ],
+    [
+     219.9,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     248.7,
+     0.0
+    ],
+    [
+     263.5,
+     0.0
+    ],
+    [
+     257.2,
+     10.5
+    ],
+    [
+     243.4,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     263.5,
+     0.0
+    ],
+    [
+     288.6,
+     0.0
+    ],
+    [
+     280.7,
+     10.5
+    ],
+    [
+     257.2,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     288.6,
+     0.0
+    ],
+    [
+     313.7,
+     0.0
+    ],
+    [
+     304.2,
+     10.5
+    ],
+    [
+     280.7,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     313.7,
+     0.0
+    ],
+    [
+     328.4,
+     0.0
+    ],
+    [
+     318.0,
+     10.5
+    ],
+    [
+     304.2,
+     10.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     328.4,
+     0.0
+    ],
+    [
+     329.3,
+     0.0
+    ],
+    [
+     329.3,
+     26.9
+    ],
+    [
+     318.8,
+     30.4
+    ],
+    [
+     318.8,
+     10.5
+    ],
+    [
+     318.0,
+     10.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     26.9
+    ],
+    [
+     329.3,
+     54.9
+    ],
+    [
+     318.8,
+     51.1
+    ],
+    [
+     318.8,
+     30.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     54.9
+    ],
+    [
+     329.3,
+     71.3
+    ],
+    [
+     318.8,
+     63.3
+    ],
+    [
+     318.8,
+     51.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     71.3
+    ],
+    [
+     329.3,
+     80.9
+    ],
+    [
+     313.4,
+     80.9
+    ],
+    [
+     302.9,
+     70.4
+    ],
+    [
+     318.8,
+     70.4
+    ],
+    [
+     318.8,
+     63.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     313.4,
+     80.9
+    ],
+    [
+     289.1,
+     80.9
+    ],
+    [
+     278.6,
+     70.4
+    ],
+    [
+     302.9,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     289.1,
+     80.9
+    ],
+    [
+     274.8,
+     80.9
+    ],
+    [
+     264.3,
+     70.4
+    ],
+    [
+     278.6,
+     70.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     274.8,
+     80.9
+    ],
+    [
+     250.5,
+     80.9
+    ],
+    [
+     240.0,
+     70.4
+    ],
+    [
+     264.3,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     250.5,
+     80.9
+    ],
+    [
+     226.3,
+     80.9
+    ],
+    [
+     215.8,
+     70.4
+    ],
+    [
+     240.0,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     226.3,
+     80.9
+    ],
+    [
+     212.0,
+     80.9
+    ],
+    [
+     201.5,
+     70.4
+    ],
+    [
+     215.8,
+     70.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     212.0,
+     80.9
+    ],
+    [
+     187.7,
+     80.9
+    ],
+    [
+     177.2,
+     70.4
+    ],
+    [
+     201.5,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     187.7,
+     80.9
+    ],
+    [
+     164.6,
+     80.9
+    ],
+    [
+     164.6,
+     82.0
+    ],
+    [
+     154.1,
+     71.7
+    ],
+    [
+     154.1,
+     70.4
+    ],
+    [
+     177.2,
+     70.4
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     82.0
+    ],
+    [
+     164.6,
+     95.0
+    ],
+    [
+     154.1,
+     87.3
+    ],
+    [
+     154.1,
+     71.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     95.0
+    ],
+    [
+     164.6,
+     117.1
+    ],
+    [
+     154.1,
+     113.7
+    ],
+    [
+     154.1,
+     87.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     117.1
+    ],
+    [
+     164.6,
+     139.3
+    ],
+    [
+     154.1,
+     140.1
+    ],
+    [
+     154.1,
+     113.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     139.3
+    ],
+    [
+     164.6,
+     152.3
+    ],
+    [
+     154.1,
+     155.7
+    ],
+    [
+     154.1,
+     140.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     152.3
+    ],
+    [
+     164.6,
+     174.4
+    ],
+    [
+     154.1,
+     182.1
+    ],
+    [
+     154.1,
+     155.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     174.4
+    ],
+    [
+     164.6,
+     188.7
+    ],
+    [
+     173.2,
+     188.7
+    ],
+    [
+     162.7,
+     199.2
+    ],
+    [
+     154.1,
+     199.2
+    ],
+    [
+     154.1,
+     182.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     173.2,
+     188.7
+    ],
+    [
+     187.5,
+     188.7
+    ],
+    [
+     177.0,
+     199.2
+    ],
+    [
+     162.7,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     187.5,
+     188.7
+    ],
+    [
+     211.8,
+     188.7
+    ],
+    [
+     201.3,
+     199.2
+    ],
+    [
+     177.0,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     211.8,
+     188.7
+    ],
+    [
+     236.1,
+     188.7
+    ],
+    [
+     225.6,
+     199.2
+    ],
+    [
+     201.3,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     236.1,
+     188.7
+    ],
+    [
+     250.4,
+     188.7
+    ],
+    [
+     239.9,
+     199.2
+    ],
+    [
+     225.6,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     250.4,
+     188.7
+    ],
+    [
+     274.6,
+     188.7
+    ],
+    [
+     264.1,
+     199.2
+    ],
+    [
+     239.9,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     274.6,
+     188.7
+    ],
+    [
+     298.9,
+     188.7
+    ],
+    [
+     288.4,
+     199.2
+    ],
+    [
+     264.1,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     298.9,
+     188.7
+    ],
+    [
+     313.2,
+     188.7
+    ],
+    [
+     302.7,
+     199.2
+    ],
+    [
+     288.4,
+     199.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     313.2,
+     188.7
+    ],
+    [
+     329.3,
+     188.7
+    ],
+    [
+     329.3,
+     198.1
+    ],
+    [
+     318.8,
+     206.2
+    ],
+    [
+     318.8,
+     199.2
+    ],
+    [
+     302.7,
+     199.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     198.1
+    ],
+    [
+     329.3,
+     226.0
+    ],
+    [
+     318.8,
+     226.8
+    ],
+    [
+     318.8,
+     206.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     226.0
+    ],
+    [
+     329.3,
+     242.5
+    ],
+    [
+     318.8,
+     239.0
+    ],
+    [
+     318.8,
+     226.8
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     329.3,
+     242.5
+    ],
+    [
+     329.3,
+     269.6
+    ],
+    [
+     328.6,
+     269.6
+    ],
+    [
+     318.2,
+     259.1
+    ],
+    [
+     318.8,
+     259.1
+    ],
+    [
+     318.8,
+     239.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     328.6,
+     269.6
+    ],
+    [
+     303.5,
+     269.6
+    ],
+    [
+     294.7,
+     259.1
+    ],
+    [
+     318.2,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     303.5,
+     269.6
+    ],
+    [
+     288.8,
+     269.6
+    ],
+    [
+     280.9,
+     259.1
+    ],
+    [
+     294.7,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     288.8,
+     269.6
+    ],
+    [
+     263.7,
+     269.6
+    ],
+    [
+     257.4,
+     259.1
+    ],
+    [
+     280.9,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     263.7,
+     269.6
+    ],
+    [
+     238.6,
+     269.6
+    ],
+    [
+     233.9,
+     259.1
+    ],
+    [
+     257.4,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     238.6,
+     269.6
+    ],
+    [
+     223.8,
+     269.6
+    ],
+    [
+     220.1,
+     259.1
+    ],
+    [
+     233.9,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     223.8,
+     269.6
+    ],
+    [
+     198.8,
+     269.6
+    ],
+    [
+     196.6,
+     259.1
+    ],
+    [
+     220.1,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     198.8,
+     269.6
+    ],
+    [
+     173.7,
+     269.6
+    ],
+    [
+     173.1,
+     259.1
+    ],
+    [
+     196.6,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     173.7,
+     269.6
+    ],
+    [
+     158.9,
+     269.6
+    ],
+    [
+     159.3,
+     259.1
+    ],
+    [
+     173.1,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     158.9,
+     269.6
+    ],
+    [
+     133.8,
+     269.6
+    ],
+    [
+     135.8,
+     259.1
+    ],
+    [
+     159.3,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     133.8,
+     269.6
+    ],
+    [
+     108.7,
+     269.6
+    ],
+    [
+     112.3,
+     259.1
+    ],
+    [
+     135.8,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     108.7,
+     269.6
+    ],
+    [
+     94.0,
+     269.6
+    ],
+    [
+     98.5,
+     259.1
+    ],
+    [
+     112.3,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     94.0,
+     269.6
+    ],
+    [
+     68.9,
+     269.6
+    ],
+    [
+     75.0,
+     259.1
+    ],
+    [
+     98.5,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     68.9,
+     269.6
+    ],
+    [
+     43.8,
+     269.6
+    ],
+    [
+     51.5,
+     259.1
+    ],
+    [
+     75.0,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     43.8,
+     269.6
+    ],
+    [
+     29.1,
+     269.6
+    ],
+    [
+     37.7,
+     259.1
+    ],
+    [
+     51.5,
+     259.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     29.1,
+     269.6
+    ],
+    [
+     4.0,
+     269.6
+    ],
+    [
+     14.2,
+     259.1
+    ],
+    [
+     37.7,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     4.0,
+     269.6
+    ],
+    [
+     0.0,
+     269.6
+    ],
+    [
+     0.0,
+     248.3
+    ],
+    [
+     10.5,
+     239.5
+    ],
+    [
+     10.5,
+     259.1
+    ],
+    [
+     14.2,
+     259.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     248.3
+    ],
+    [
+     0.0,
+     233.5
+    ],
+    [
+     10.5,
+     225.8
+    ],
+    [
+     10.5,
+     239.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     233.5
+    ],
+    [
+     0.0,
+     208.2
+    ],
+    [
+     10.5,
+     202.5
+    ],
+    [
+     10.5,
+     225.8
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     208.2
+    ],
+    [
+     0.0,
+     182.9
+    ],
+    [
+     10.5,
+     179.2
+    ],
+    [
+     10.5,
+     202.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     182.9
+    ],
+    [
+     0.0,
+     168.1
+    ],
+    [
+     10.5,
+     165.5
+    ],
+    [
+     10.5,
+     179.2
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     168.1
+    ],
+    [
+     0.0,
+     142.8
+    ],
+    [
+     10.5,
+     142.2
+    ],
+    [
+     10.5,
+     165.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     142.8
+    ],
+    [
+     0.0,
+     117.5
+    ],
+    [
+     10.5,
+     118.9
+    ],
+    [
+     10.5,
+     142.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     117.5
+    ],
+    [
+     0.0,
+     102.7
+    ],
+    [
+     10.5,
+     105.2
+    ],
+    [
+     10.5,
+     118.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     102.7
+    ],
+    [
+     0.0,
+     77.4
+    ],
+    [
+     10.5,
+     81.9
+    ],
+    [
+     10.5,
+     105.2
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     77.4
+    ],
+    [
+     0.0,
+     52.1
+    ],
+    [
+     10.5,
+     58.6
+    ],
+    [
+     10.5,
+     81.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     52.1
+    ],
+    [
+     0.0,
+     37.3
+    ],
+    [
+     10.5,
+     44.9
+    ],
+    [
+     10.5,
+     58.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     37.3
+    ],
+    [
+     0.0,
+     12.0
+    ],
+    [
+     10.5,
+     21.6
+    ],
+    [
+     10.5,
+     44.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     12.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     21.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     28.3,
+     13.5
+    ],
+    [
+     37.8,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     28.3,
+     13.5
+    ],
+    [
+     45.0,
+     13.5
+    ],
+    [
+     53.3,
+     24.0
+    ],
+    [
+     37.8,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     53.3,
+     13.5
+    ],
+    [
+     78.5,
+     13.5
+    ],
+    [
+     84.5,
+     24.0
+    ],
+    [
+     61.0,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     78.5,
+     13.5
+    ],
+    [
+     93.3,
+     13.5
+    ],
+    [
+     98.2,
+     24.0
+    ],
+    [
+     84.5,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     93.3,
+     13.5
+    ],
+    [
+     116.4,
+     13.5
+    ],
+    [
+     119.7,
+     24.0
+    ],
+    [
+     98.2,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     124.7,
+     13.5
+    ],
+    [
+     149.8,
+     13.5
+    ],
+    [
+     150.8,
+     24.0
+    ],
+    [
+     127.4,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     149.8,
+     13.5
+    ],
+    [
+     164.6,
+     13.5
+    ],
+    [
+     164.6,
+     24.0
+    ],
+    [
+     150.8,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.6,
+     13.5
+    ],
+    [
+     187.7,
+     13.5
+    ],
+    [
+     186.1,
+     24.0
+    ],
+    [
+     164.6,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     196.0,
+     13.5
+    ],
+    [
+     221.1,
+     13.5
+    ],
+    [
+     217.2,
+     24.0
+    ],
+    [
+     193.8,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     221.1,
+     13.5
+    ],
+    [
+     235.9,
+     13.5
+    ],
+    [
+     231.0,
+     24.0
+    ],
+    [
+     217.2,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     235.9,
+     13.5
+    ],
+    [
+     259.0,
+     13.5
+    ],
+    [
+     252.5,
+     24.0
+    ],
+    [
+     231.0,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     267.3,
+     13.5
+    ],
+    [
+     292.5,
+     13.5
+    ],
+    [
+     283.6,
+     24.0
+    ],
+    [
+     260.2,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     292.5,
+     13.5
+    ],
+    [
+     307.3,
+     13.5
+    ],
+    [
+     297.4,
+     24.0
+    ],
+    [
+     283.6,
+     24.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     307.3,
+     13.5
+    ],
+    [
+     315.8,
+     13.5
+    ],
+    [
+     315.8,
+     31.0
+    ],
+    [
+     305.3,
+     34.7
+    ],
+    [
+     305.3,
+     24.0
+    ],
+    [
+     297.4,
+     24.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     315.8,
+     40.9
+    ],
+    [
+     315.8,
+     67.4
+    ],
+    [
+     312.8,
+     67.4
+    ],
+    [
+     302.3,
+     56.9
+    ],
+    [
+     305.3,
+     56.9
+    ],
+    [
+     305.3,
+     40.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     312.8,
+     67.4
+    ],
+    [
+     298.6,
+     67.4
+    ],
+    [
+     288.1,
+     56.9
+    ],
+    [
+     302.3,
+     56.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     298.6,
+     67.4
+    ],
+    [
+     276.3,
+     67.4
+    ],
+    [
+     265.8,
+     56.9
+    ],
+    [
+     288.1,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     268.3,
+     67.4
+    ],
+    [
+     244.0,
+     67.4
+    ],
+    [
+     233.5,
+     56.9
+    ],
+    [
+     257.8,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     244.0,
+     67.4
+    ],
+    [
+     229.7,
+     67.4
+    ],
+    [
+     219.2,
+     56.9
+    ],
+    [
+     233.5,
+     56.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     229.7,
+     67.4
+    ],
+    [
+     207.4,
+     67.4
+    ],
+    [
+     196.9,
+     56.9
+    ],
+    [
+     219.2,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     199.4,
+     67.4
+    ],
+    [
+     175.1,
+     67.4
+    ],
+    [
+     164.6,
+     56.9
+    ],
+    [
+     188.9,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     175.1,
+     67.4
+    ],
+    [
+     160.8,
+     67.4
+    ],
+    [
+     150.3,
+     56.9
+    ],
+    [
+     164.6,
+     56.9
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     160.8,
+     67.4
+    ],
+    [
+     151.1,
+     67.4
+    ],
+    [
+     151.1,
+     79.0
+    ],
+    [
+     140.6,
+     70.4
+    ],
+    [
+     140.6,
+     56.9
+    ],
+    [
+     150.3,
+     56.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     86.5
+    ],
+    [
+     151.1,
+     109.0
+    ],
+    [
+     140.6,
+     105.0
+    ],
+    [
+     140.6,
+     78.9
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     109.0
+    ],
+    [
+     151.1,
+     122.2
+    ],
+    [
+     140.6,
+     120.3
+    ],
+    [
+     140.6,
+     105.0
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     122.2
+    ],
+    [
+     151.1,
+     142.9
+    ],
+    [
+     140.6,
+     144.2
+    ],
+    [
+     140.6,
+     120.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     150.3
+    ],
+    [
+     151.1,
+     172.9
+    ],
+    [
+     140.6,
+     178.8
+    ],
+    [
+     140.6,
+     152.8
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     172.9
+    ],
+    [
+     151.1,
+     186.1
+    ],
+    [
+     140.6,
+     194.1
+    ],
+    [
+     140.6,
+     178.8
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     186.1
+    ],
+    [
+     151.1,
+     202.2
+    ],
+    [
+     156.1,
+     202.2
+    ],
+    [
+     145.6,
+     212.7
+    ],
+    [
+     140.6,
+     212.7
+    ],
+    [
+     140.6,
+     194.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     164.1,
+     202.2
+    ],
+    [
+     188.4,
+     202.2
+    ],
+    [
+     177.9,
+     212.7
+    ],
+    [
+     153.6,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     188.4,
+     202.2
+    ],
+    [
+     202.6,
+     202.2
+    ],
+    [
+     192.1,
+     212.7
+    ],
+    [
+     177.9,
+     212.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     202.6,
+     202.2
+    ],
+    [
+     224.9,
+     202.2
+    ],
+    [
+     214.4,
+     212.7
+    ],
+    [
+     192.1,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     232.9,
+     202.2
+    ],
+    [
+     257.2,
+     202.2
+    ],
+    [
+     246.7,
+     212.7
+    ],
+    [
+     222.4,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     257.2,
+     202.2
+    ],
+    [
+     271.5,
+     202.2
+    ],
+    [
+     261.0,
+     212.7
+    ],
+    [
+     246.7,
+     212.7
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     271.5,
+     202.2
+    ],
+    [
+     293.8,
+     202.2
+    ],
+    [
+     283.3,
+     212.7
+    ],
+    [
+     261.0,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     301.8,
+     202.2
+    ],
+    [
+     315.8,
+     202.2
+    ],
+    [
+     315.8,
+     215.0
+    ],
+    [
+     305.3,
+     220.5
+    ],
+    [
+     305.3,
+     212.7
+    ],
+    [
+     291.3,
+     212.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     315.8,
+     215.0
+    ],
+    [
+     315.8,
+     232.7
+    ],
+    [
+     305.3,
+     231.3
+    ],
+    [
+     305.3,
+     220.5
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     315.8,
+     232.7
+    ],
+    [
+     315.8,
+     256.1
+    ],
+    [
+     312.2,
+     256.1
+    ],
+    [
+     302.0,
+     245.6
+    ],
+    [
+     305.3,
+     245.6
+    ],
+    [
+     305.3,
+     231.3
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     303.9,
+     256.1
+    ],
+    [
+     278.8,
+     256.1
+    ],
+    [
+     270.9,
+     245.6
+    ],
+    [
+     294.3,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     278.8,
+     256.1
+    ],
+    [
+     264.0,
+     256.1
+    ],
+    [
+     257.1,
+     245.6
+    ],
+    [
+     270.9,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     264.0,
+     256.1
+    ],
+    [
+     240.9,
+     256.1
+    ],
+    [
+     235.6,
+     245.6
+    ],
+    [
+     257.1,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     232.6,
+     256.1
+    ],
+    [
+     207.4,
+     256.1
+    ],
+    [
+     204.5,
+     245.6
+    ],
+    [
+     227.9,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     207.4,
+     256.1
+    ],
+    [
+     192.6,
+     256.1
+    ],
+    [
+     190.7,
+     245.6
+    ],
+    [
+     204.5,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     192.6,
+     256.1
+    ],
+    [
+     169.6,
+     256.1
+    ],
+    [
+     169.2,
+     245.6
+    ],
+    [
+     190.7,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     161.3,
+     256.1
+    ],
+    [
+     136.1,
+     256.1
+    ],
+    [
+     138.1,
+     245.6
+    ],
+    [
+     161.5,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     136.1,
+     256.1
+    ],
+    [
+     121.3,
+     256.1
+    ],
+    [
+     124.3,
+     245.6
+    ],
+    [
+     138.1,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     121.3,
+     256.1
+    ],
+    [
+     98.2,
+     256.1
+    ],
+    [
+     102.8,
+     245.6
+    ],
+    [
+     124.3,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     89.9,
+     256.1
+    ],
+    [
+     64.8,
+     256.1
+    ],
+    [
+     71.7,
+     245.6
+    ],
+    [
+     95.1,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     64.8,
+     256.1
+    ],
+    [
+     50.0,
+     256.1
+    ],
+    [
+     57.9,
+     245.6
+    ],
+    [
+     71.7,
+     245.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     50.0,
+     256.1
+    ],
+    [
+     26.9,
+     256.1
+    ],
+    [
+     36.4,
+     245.6
+    ],
+    [
+     57.9,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     18.6,
+     256.1
+    ],
+    [
+     13.5,
+     256.1
+    ],
+    [
+     13.5,
+     235.8
+    ],
+    [
+     24.0,
+     227.1
+    ],
+    [
+     24.0,
+     245.6
+    ],
+    [
+     28.7,
+     245.6
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     235.8
+    ],
+    [
+     13.5,
+     220.9
+    ],
+    [
+     24.0,
+     213.5
+    ],
+    [
+     24.0,
+     227.1
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     220.9
+    ],
+    [
+     13.5,
+     197.6
+    ],
+    [
+     24.0,
+     192.2
+    ],
+    [
+     24.0,
+     213.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     189.3
+    ],
+    [
+     13.5,
+     163.9
+    ],
+    [
+     24.0,
+     161.4
+    ],
+    [
+     24.0,
+     184.5
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     163.9
+    ],
+    [
+     13.5,
+     148.9
+    ],
+    [
+     24.0,
+     147.7
+    ],
+    [
+     24.0,
+     161.4
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     148.9
+    ],
+    [
+     13.5,
+     125.6
+    ],
+    [
+     24.0,
+     126.4
+    ],
+    [
+     24.0,
+     147.7
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     117.3
+    ],
+    [
+     13.5,
+     91.9
+    ],
+    [
+     24.0,
+     95.6
+    ],
+    [
+     24.0,
+     118.8
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "One-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     91.9
+    ],
+    [
+     13.5,
+     77.0
+    ],
+    [
+     24.0,
+     82.0
+    ],
+    [
+     24.0,
+     95.6
+    ]
+   ],
+   "about": "A flat for a couple or one person.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Two-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     77.0
+    ],
+    [
+     13.5,
+     53.7
+    ],
+    [
+     24.0,
+     60.7
+    ],
+    [
+     24.0,
+     82.0
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Three-bedroom flat",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     45.3
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     53.1
+    ]
+   ],
+   "about": "A family flat with its own share of the roof garden.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

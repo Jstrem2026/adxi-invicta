@@ -1,0 +1,5229 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P4-15",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  120.1,
+  188.3
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Healing garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.8,
+     26.0
+    ],
+    [
+     82.3,
+     26.0
+    ],
+    [
+     66.2,
+     68.2
+    ],
+    [
+     53.9,
+     68.2
+    ]
+   ],
+   "about": "A planted courtyard where patients wait in quiet and recover in fresh air.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.7,
+     11.5
+    ],
+    [
+     103.4,
+     11.5
+    ],
+    [
+     89.4,
+     48.2
+    ],
+    [
+     86.2,
+     48.1
+    ],
+    [
+     99.0,
+     14.5
+    ],
+    [
+     21.1,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.4,
+     48.2
+    ],
+    [
+     76.2,
+     82.7
+    ],
+    [
+     43.9,
+     82.7
+    ],
+    [
+     23.6,
+     29.6
+    ],
+    [
+     27.4,
+     31.1
+    ],
+    [
+     46.0,
+     79.7
+    ],
+    [
+     74.1,
+     79.7
+    ],
+    [
+     86.2,
+     48.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.6,
+     29.6
+    ],
+    [
+     16.7,
+     11.5
+    ],
+    [
+     21.1,
+     14.5
+    ],
+    [
+     27.4,
+     31.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     57.6,
+     14.5
+    ],
+    [
+     67.8,
+     14.5
+    ],
+    [
+     64.5,
+     26.0
+    ],
+    [
+     58.7,
+     26.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     84.7,
+     51.9
+    ],
+    [
+     81.3,
+     61.0
+    ],
+    [
+     70.8,
+     56.1
+    ],
+    [
+     73.1,
+     50.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     37.0,
+     56.2
+    ],
+    [
+     33.5,
+     47.1
+    ],
+    [
+     45.8,
+     47.1
+    ],
+    [
+     48.1,
+     53.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Entrance and reception",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.1,
+     0.0
+    ],
+    [
+     25.5,
+     11.5
+    ],
+    [
+     16.7,
+     11.5
+    ]
+   ],
+   "about": "Patients check in at the front desk and are directed to the right room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "room",
+   "name": "Waiting area",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.1,
+     0.0
+    ],
+    [
+     27.3,
+     0.0
+    ],
+    [
+     36.4,
+     11.5
+    ],
+    [
+     25.5,
+     11.5
+    ]
+   ],
+   "about": "Seats, water and a children's corner for patients waiting to be seen.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "room",
+   "name": "Triage room",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.3,
+     0.0
+    ],
+    [
+     31.9,
+     0.0
+    ],
+    [
+     39.8,
+     11.5
+    ],
+    [
+     36.4,
+     11.5
+    ]
+   ],
+   "about": "A nurse checks each patient first and decides how urgently they need treatment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Triage room",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.9,
+     0.0
+    ],
+    [
+     36.6,
+     0.0
+    ],
+    [
+     43.1,
+     11.5
+    ],
+    [
+     39.8,
+     11.5
+    ]
+   ],
+   "about": "A nurse checks each patient first and decides how urgently they need treatment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.6,
+     0.0
+    ],
+    [
+     41.3,
+     0.0
+    ],
+    [
+     46.5,
+     11.5
+    ],
+    [
+     43.1,
+     11.5
+    ]
+   ],
+   "about": "A room with a couch, lights and supplies for treating injuries and illnesses.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.3,
+     0.0
+    ],
+    [
+     46.0,
+     0.0
+    ],
+    [
+     49.9,
+     11.5
+    ],
+    [
+     46.5,
+     11.5
+    ]
+   ],
+   "about": "A room with a couch, lights and supplies for treating injuries and illnesses.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.0,
+     0.0
+    ],
+    [
+     50.6,
+     0.0
+    ],
+    [
+     53.3,
+     11.5
+    ],
+    [
+     49.9,
+     11.5
+    ]
+   ],
+   "about": "A room with a couch, lights and supplies for treating injuries and illnesses.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Resuscitation bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.6,
+     0.0
+    ],
+    [
+     55.3,
+     0.0
+    ],
+    [
+     56.6,
+     11.5
+    ],
+    [
+     53.3,
+     11.5
+    ]
+   ],
+   "about": "A fully equipped bay for patients in a life-threatening state.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Pharmacy",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.3,
+     0.0
+    ],
+    [
+     61.4,
+     0.0
+    ],
+    [
+     61.0,
+     11.5
+    ],
+    [
+     56.6,
+     11.5
+    ]
+   ],
+   "about": "Medicines are dispensed to patients after their visit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Ambulance bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     61.4,
+     0.0
+    ],
+    [
+     69.5,
+     0.0
+    ],
+    [
+     66.8,
+     11.5
+    ],
+    [
+     61.0,
+     11.5
+    ]
+   ],
+   "about": "A covered bay where ambulances drop off and pick up patients.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Baby clinic",
+   "level": "L1",
+   "outline_m": [
+    [
+     69.5,
+     0.0
+    ],
+    [
+     74.1,
+     0.0
+    ],
+    [
+     70.2,
+     11.5
+    ],
+    [
+     66.8,
+     11.5
+    ]
+   ],
+   "about": "Check-ups for babies.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.1,
+     0.0
+    ],
+    [
+     80.2,
+     0.0
+    ],
+    [
+     74.6,
+     11.5
+    ],
+    [
+     70.2,
+     11.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Clean utility",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.2,
+     0.0
+    ],
+    [
+     84.9,
+     0.0
+    ],
+    [
+     78.0,
+     11.5
+    ],
+    [
+     74.6,
+     11.5
+    ]
+   ],
+   "about": "Sterile supplies and dressings ready for use.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Dirty utility",
+   "level": "L1",
+   "outline_m": [
+    [
+     84.9,
+     0.0
+    ],
+    [
+     89.6,
+     0.0
+    ],
+    [
+     81.3,
+     11.5
+    ],
+    [
+     78.0,
+     11.5
+    ]
+   ],
+   "about": "Where used equipment is cleaned and clinical waste is sealed for removal.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.6,
+     0.0
+    ],
+    [
+     95.0,
+     0.0
+    ],
+    [
+     85.3,
+     11.5
+    ],
+    [
+     81.3,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.0,
+     0.0
+    ],
+    [
+     104.1,
+     0.0
+    ],
+    [
+     91.8,
+     11.5
+    ],
+    [
+     85.3,
+     11.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.1,
+     0.0
+    ],
+    [
+     109.6,
+     0.0
+    ],
+    [
+     95.8,
+     11.5
+    ],
+    [
+     91.8,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.6,
+     0.0
+    ],
+    [
+     118.6,
+     0.0
+    ],
+    [
+     102.3,
+     11.5
+    ],
+    [
+     95.8,
+     11.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.6,
+     0.0
+    ],
+    [
+     120.1,
+     0.0
+    ],
+    [
+     118.7,
+     3.7
+    ],
+    [
+     102.3,
+     14.3
+    ],
+    [
+     103.4,
+     11.5
+    ],
+    [
+     102.3,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.7,
+     3.7
+    ],
+    [
+     115.5,
+     12.0
+    ],
+    [
+     99.9,
+     20.6
+    ],
+    [
+     102.3,
+     14.3
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.5,
+     12.0
+    ],
+    [
+     113.6,
+     17.0
+    ],
+    [
+     98.5,
+     24.3
+    ],
+    [
+     99.9,
+     20.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.6,
+     17.0
+    ],
+    [
+     110.4,
+     25.3
+    ],
+    [
+     96.1,
+     30.6
+    ],
+    [
+     98.5,
+     24.3
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.4,
+     25.3
+    ],
+    [
+     108.5,
+     30.3
+    ],
+    [
+     94.6,
+     34.4
+    ],
+    [
+     96.1,
+     30.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.5,
+     30.3
+    ],
+    [
+     105.3,
+     38.6
+    ],
+    [
+     92.2,
+     40.7
+    ],
+    [
+     94.6,
+     34.4
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.3,
+     38.6
+    ],
+    [
+     103.4,
+     43.6
+    ],
+    [
+     90.8,
+     44.5
+    ],
+    [
+     92.2,
+     40.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.4,
+     43.6
+    ],
+    [
+     100.2,
+     52.0
+    ],
+    [
+     88.4,
+     50.8
+    ],
+    [
+     90.8,
+     44.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.2,
+     52.0
+    ],
+    [
+     98.3,
+     57.0
+    ],
+    [
+     86.9,
+     54.5
+    ],
+    [
+     88.4,
+     50.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     98.3,
+     57.0
+    ],
+    [
+     95.2,
+     65.3
+    ],
+    [
+     84.5,
+     60.8
+    ],
+    [
+     86.9,
+     54.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.2,
+     65.3
+    ],
+    [
+     93.2,
+     70.3
+    ],
+    [
+     83.1,
+     64.6
+    ],
+    [
+     84.5,
+     60.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.2,
+     70.3
+    ],
+    [
+     90.1,
+     78.6
+    ],
+    [
+     80.7,
+     70.9
+    ],
+    [
+     83.1,
+     64.6
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.1,
+     78.6
+    ],
+    [
+     88.2,
+     83.6
+    ],
+    [
+     79.2,
+     74.7
+    ],
+    [
+     80.7,
+     70.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.2,
+     83.6
+    ],
+    [
+     85.0,
+     91.9
+    ],
+    [
+     76.8,
+     81.0
+    ],
+    [
+     79.2,
+     74.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.0,
+     91.9
+    ],
+    [
+     84.1,
+     94.2
+    ],
+    [
+     81.0,
+     94.2
+    ],
+    [
+     74.1,
+     82.7
+    ],
+    [
+     76.2,
+     82.7
+    ],
+    [
+     76.8,
+     81.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.0,
+     94.2
+    ],
+    [
+     71.7,
+     94.2
+    ],
+    [
+     67.8,
+     82.7
+    ],
+    [
+     74.1,
+     82.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.7,
+     94.2
+    ],
+    [
+     66.0,
+     94.2
+    ],
+    [
+     64.1,
+     82.7
+    ],
+    [
+     67.8,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.0,
+     94.2
+    ],
+    [
+     56.7,
+     94.2
+    ],
+    [
+     57.8,
+     82.7
+    ],
+    [
+     64.1,
+     82.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     56.7,
+     94.2
+    ],
+    [
+     51.1,
+     94.2
+    ],
+    [
+     54.0,
+     82.7
+    ],
+    [
+     57.8,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.1,
+     94.2
+    ],
+    [
+     41.7,
+     94.2
+    ],
+    [
+     47.7,
+     82.7
+    ],
+    [
+     54.0,
+     82.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.7,
+     94.2
+    ],
+    [
+     36.1,
+     94.2
+    ],
+    [
+     44.0,
+     82.7
+    ],
+    [
+     47.7,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.1,
+     94.2
+    ],
+    [
+     36.0,
+     94.2
+    ],
+    [
+     32.8,
+     85.9
+    ],
+    [
+     41.5,
+     76.5
+    ],
+    [
+     43.9,
+     82.7
+    ],
+    [
+     44.0,
+     82.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     32.8,
+     85.9
+    ],
+    [
+     30.9,
+     80.9
+    ],
+    [
+     40.1,
+     72.7
+    ],
+    [
+     41.5,
+     76.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.9,
+     80.9
+    ],
+    [
+     27.8,
+     72.6
+    ],
+    [
+     37.7,
+     66.4
+    ],
+    [
+     40.1,
+     72.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.8,
+     72.6
+    ],
+    [
+     25.8,
+     67.6
+    ],
+    [
+     36.2,
+     62.6
+    ],
+    [
+     37.7,
+     66.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     25.8,
+     67.6
+    ],
+    [
+     22.7,
+     59.3
+    ],
+    [
+     33.8,
+     56.3
+    ],
+    [
+     36.2,
+     62.6
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.7,
+     59.3
+    ],
+    [
+     20.7,
+     54.3
+    ],
+    [
+     32.4,
+     52.5
+    ],
+    [
+     33.8,
+     56.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.7,
+     54.3
+    ],
+    [
+     17.6,
+     46.0
+    ],
+    [
+     30.0,
+     46.2
+    ],
+    [
+     32.4,
+     52.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     17.6,
+     46.0
+    ],
+    [
+     15.7,
+     41.0
+    ],
+    [
+     28.5,
+     42.5
+    ],
+    [
+     30.0,
+     46.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.7,
+     41.0
+    ],
+    [
+     12.5,
+     32.6
+    ],
+    [
+     26.1,
+     36.2
+    ],
+    [
+     28.5,
+     42.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     32.6
+    ],
+    [
+     10.6,
+     27.6
+    ],
+    [
+     24.7,
+     32.4
+    ],
+    [
+     26.1,
+     36.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.6,
+     27.6
+    ],
+    [
+     7.4,
+     19.3
+    ],
+    [
+     22.3,
+     26.1
+    ],
+    [
+     24.7,
+     32.4
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.4,
+     19.3
+    ],
+    [
+     5.5,
+     14.3
+    ],
+    [
+     20.8,
+     22.3
+    ],
+    [
+     22.3,
+     26.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     5.5,
+     14.3
+    ],
+    [
+     2.3,
+     6.0
+    ],
+    [
+     18.4,
+     16.0
+    ],
+    [
+     20.8,
+     22.3
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.3,
+     6.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     16.7,
+     11.5
+    ],
+    [
+     18.4,
+     16.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.1,
+     14.5
+    ],
+    [
+     31.0,
+     14.5
+    ],
+    [
+     43.5,
+     26.0
+    ],
+    [
+     37.8,
+     26.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.0,
+     14.5
+    ],
+    [
+     37.0,
+     14.5
+    ],
+    [
+     46.9,
+     26.0
+    ],
+    [
+     43.5,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.0,
+     14.5
+    ],
+    [
+     47.0,
+     14.5
+    ],
+    [
+     52.6,
+     26.0
+    ],
+    [
+     46.9,
+     26.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     47.0,
+     14.5
+    ],
+    [
+     52.9,
+     14.5
+    ],
+    [
+     56.0,
+     26.0
+    ],
+    [
+     52.6,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     52.9,
+     14.5
+    ],
+    [
+     57.6,
+     14.5
+    ],
+    [
+     58.7,
+     26.0
+    ],
+    [
+     56.0,
+     26.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.8,
+     14.5
+    ],
+    [
+     73.8,
+     14.5
+    ],
+    [
+     67.9,
+     26.0
+    ],
+    [
+     64.5,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     73.8,
+     14.5
+    ],
+    [
+     83.8,
+     14.5
+    ],
+    [
+     73.6,
+     26.0
+    ],
+    [
+     67.9,
+     26.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.8,
+     14.5
+    ],
+    [
+     89.7,
+     14.5
+    ],
+    [
+     77.0,
+     26.0
+    ],
+    [
+     73.6,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.7,
+     14.5
+    ],
+    [
+     99.0,
+     14.5
+    ],
+    [
+     98.8,
+     15.1
+    ],
+    [
+     82.2,
+     26.4
+    ],
+    [
+     82.3,
+     26.0
+    ],
+    [
+     77.0,
+     26.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     98.8,
+     15.1
+    ],
+    [
+     96.8,
+     20.4
+    ],
+    [
+     80.9,
+     29.8
+    ],
+    [
+     82.2,
+     26.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.8,
+     20.4
+    ],
+    [
+     93.4,
+     29.3
+    ],
+    [
+     78.7,
+     35.6
+    ],
+    [
+     80.9,
+     29.8
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.4,
+     29.3
+    ],
+    [
+     91.3,
+     34.6
+    ],
+    [
+     77.4,
+     39.0
+    ],
+    [
+     78.7,
+     35.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.3,
+     34.6
+    ],
+    [
+     88.0,
+     43.5
+    ],
+    [
+     75.2,
+     44.8
+    ],
+    [
+     77.4,
+     39.0
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.0,
+     43.5
+    ],
+    [
+     84.7,
+     51.9
+    ],
+    [
+     73.1,
+     50.2
+    ],
+    [
+     75.2,
+     44.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.3,
+     61.0
+    ],
+    [
+     77.9,
+     69.8
+    ],
+    [
+     68.6,
+     61.8
+    ],
+    [
+     70.8,
+     56.1
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.9,
+     69.8
+    ],
+    [
+     75.9,
+     75.2
+    ],
+    [
+     67.3,
+     65.3
+    ],
+    [
+     68.6,
+     61.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.9,
+     75.2
+    ],
+    [
+     74.1,
+     79.7
+    ],
+    [
+     68.8,
+     79.7
+    ],
+    [
+     63.9,
+     68.2
+    ],
+    [
+     66.2,
+     68.2
+    ],
+    [
+     67.3,
+     65.3
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.8,
+     79.7
+    ],
+    [
+     62.3,
+     79.7
+    ],
+    [
+     61.0,
+     68.2
+    ],
+    [
+     63.9,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.3,
+     79.7
+    ],
+    [
+     51.4,
+     79.7
+    ],
+    [
+     56.3,
+     68.2
+    ],
+    [
+     61.0,
+     68.2
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.4,
+     79.7
+    ],
+    [
+     46.0,
+     79.7
+    ],
+    [
+     45.6,
+     78.8
+    ],
+    [
+     53.7,
+     67.6
+    ],
+    [
+     53.9,
+     68.2
+    ],
+    [
+     56.3,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.6,
+     78.8
+    ],
+    [
+     42.2,
+     69.9
+    ],
+    [
+     51.5,
+     61.9
+    ],
+    [
+     53.7,
+     67.6
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.2,
+     69.9
+    ],
+    [
+     40.2,
+     64.6
+    ],
+    [
+     50.2,
+     58.4
+    ],
+    [
+     51.5,
+     61.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.2,
+     64.6
+    ],
+    [
+     37.0,
+     56.2
+    ],
+    [
+     48.1,
+     53.0
+    ],
+    [
+     50.2,
+     58.4
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     33.5,
+     47.1
+    ],
+    [
+     31.5,
+     41.8
+    ],
+    [
+     44.5,
+     43.7
+    ],
+    [
+     45.8,
+     47.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.5,
+     41.8
+    ],
+    [
+     28.1,
+     32.9
+    ],
+    [
+     42.3,
+     37.9
+    ],
+    [
+     44.5,
+     43.7
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.1,
+     32.9
+    ],
+    [
+     26.1,
+     27.6
+    ],
+    [
+     41.0,
+     34.5
+    ],
+    [
+     42.3,
+     37.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.1,
+     27.6
+    ],
+    [
+     22.7,
+     18.7
+    ],
+    [
+     38.8,
+     28.7
+    ],
+    [
+     41.0,
+     34.5
+    ]
+   ],
+   "about": "Dressings, injections and checks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.7,
+     18.7
+    ],
+    [
+     21.1,
+     14.5
+    ],
+    [
+     37.8,
+     26.0
+    ],
+    [
+     38.8,
+     28.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     16.7,
+     11.5
+    ],
+    [
+     103.4,
+     11.5
+    ],
+    [
+     89.4,
+     48.2
+    ],
+    [
+     86.2,
+     48.1
+    ],
+    [
+     99.0,
+     14.5
+    ],
+    [
+     21.1,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.4,
+     48.2
+    ],
+    [
+     76.2,
+     82.7
+    ],
+    [
+     43.9,
+     82.7
+    ],
+    [
+     23.6,
+     29.6
+    ],
+    [
+     27.4,
+     31.1
+    ],
+    [
+     46.0,
+     79.7
+    ],
+    [
+     74.1,
+     79.7
+    ],
+    [
+     86.2,
+     48.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.6,
+     29.6
+    ],
+    [
+     16.7,
+     11.5
+    ],
+    [
+     21.1,
+     14.5
+    ],
+    [
+     27.4,
+     31.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Observation ward",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.1,
+     0.0
+    ],
+    [
+     25.5,
+     11.5
+    ],
+    [
+     16.7,
+     11.5
+    ]
+   ],
+   "about": "A few beds where patients are watched for some hours before going home or to hospital.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Nurses' station",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.1,
+     0.0
+    ],
+    [
+     16.8,
+     0.0
+    ],
+    [
+     28.8,
+     11.5
+    ],
+    [
+     25.5,
+     11.5
+    ]
+   ],
+   "about": "The nurses' desk, with views of the ward beds.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "X-ray room",
+   "level": "L2",
+   "outline_m": [
+    [
+     16.8,
+     0.0
+    ],
+    [
+     21.5,
+     0.0
+    ],
+    [
+     32.2,
+     11.5
+    ],
+    [
+     28.8,
+     11.5
+    ]
+   ],
+   "about": "Takes X-ray images of broken bones and chests.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Staff room",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.5,
+     0.0
+    ],
+    [
+     26.1,
+     0.0
+    ],
+    [
+     35.6,
+     11.5
+    ],
+    [
+     32.2,
+     11.5
+    ]
+   ],
+   "about": "Where clinic staff take their breaks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Clinic manager's office",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.1,
+     0.0
+    ],
+    [
+     30.8,
+     0.0
+    ],
+    [
+     39.0,
+     11.5
+    ],
+    [
+     35.6,
+     11.5
+    ]
+   ],
+   "about": "The clinic manager runs rotas, supplies and records from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.8,
+     0.0
+    ],
+    [
+     37.9,
+     0.0
+    ],
+    [
+     44.1,
+     11.5
+    ],
+    [
+     39.0,
+     11.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     37.9,
+     0.0
+    ],
+    [
+     43.3,
+     0.0
+    ],
+    [
+     48.0,
+     11.5
+    ],
+    [
+     44.1,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     43.3,
+     0.0
+    ],
+    [
+     48.8,
+     0.0
+    ],
+    [
+     51.9,
+     11.5
+    ],
+    [
+     48.0,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     48.8,
+     0.0
+    ],
+    [
+     54.3,
+     0.0
+    ],
+    [
+     55.9,
+     11.5
+    ],
+    [
+     51.9,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     54.3,
+     0.0
+    ],
+    [
+     59.7,
+     0.0
+    ],
+    [
+     59.8,
+     11.5
+    ],
+    [
+     55.9,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     59.7,
+     0.0
+    ],
+    [
+     65.2,
+     0.0
+    ],
+    [
+     63.7,
+     11.5
+    ],
+    [
+     59.8,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.2,
+     0.0
+    ],
+    [
+     70.6,
+     0.0
+    ],
+    [
+     67.7,
+     11.5
+    ],
+    [
+     63.7,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     70.6,
+     0.0
+    ],
+    [
+     76.1,
+     0.0
+    ],
+    [
+     71.6,
+     11.5
+    ],
+    [
+     67.7,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     76.1,
+     0.0
+    ],
+    [
+     81.5,
+     0.0
+    ],
+    [
+     75.6,
+     11.5
+    ],
+    [
+     71.6,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     81.5,
+     0.0
+    ],
+    [
+     87.0,
+     0.0
+    ],
+    [
+     79.5,
+     11.5
+    ],
+    [
+     75.6,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.0,
+     0.0
+    ],
+    [
+     92.4,
+     0.0
+    ],
+    [
+     83.4,
+     11.5
+    ],
+    [
+     79.5,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.4,
+     0.0
+    ],
+    [
+     97.9,
+     0.0
+    ],
+    [
+     87.4,
+     11.5
+    ],
+    [
+     83.4,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.9,
+     0.0
+    ],
+    [
+     103.3,
+     0.0
+    ],
+    [
+     91.3,
+     11.5
+    ],
+    [
+     87.4,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.3,
+     0.0
+    ],
+    [
+     108.8,
+     0.0
+    ],
+    [
+     95.2,
+     11.5
+    ],
+    [
+     91.3,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.8,
+     0.0
+    ],
+    [
+     114.3,
+     0.0
+    ],
+    [
+     99.2,
+     11.5
+    ],
+    [
+     95.2,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.3,
+     0.0
+    ],
+    [
+     119.7,
+     0.0
+    ],
+    [
+     103.1,
+     11.5
+    ],
+    [
+     99.2,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     119.7,
+     0.0
+    ],
+    [
+     120.1,
+     0.0
+    ],
+    [
+     118.3,
+     4.6
+    ],
+    [
+     102.1,
+     15.0
+    ],
+    [
+     103.4,
+     11.5
+    ],
+    [
+     103.1,
+     11.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     118.3,
+     4.6
+    ],
+    [
+     116.4,
+     9.6
+    ],
+    [
+     100.6,
+     18.8
+    ],
+    [
+     102.1,
+     15.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     116.4,
+     9.6
+    ],
+    [
+     114.5,
+     14.6
+    ],
+    [
+     99.2,
+     22.6
+    ],
+    [
+     100.6,
+     18.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.5,
+     14.6
+    ],
+    [
+     112.6,
+     19.6
+    ],
+    [
+     97.7,
+     26.3
+    ],
+    [
+     99.2,
+     22.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     112.6,
+     19.6
+    ],
+    [
+     110.7,
+     24.6
+    ],
+    [
+     96.3,
+     30.1
+    ],
+    [
+     97.7,
+     26.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     110.7,
+     24.6
+    ],
+    [
+     108.8,
+     29.6
+    ],
+    [
+     94.8,
+     33.9
+    ],
+    [
+     96.3,
+     30.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.8,
+     29.6
+    ],
+    [
+     106.9,
+     34.6
+    ],
+    [
+     93.4,
+     37.7
+    ],
+    [
+     94.8,
+     33.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     106.9,
+     34.6
+    ],
+    [
+     105.0,
+     39.6
+    ],
+    [
+     92.0,
+     41.4
+    ],
+    [
+     93.4,
+     37.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.0,
+     39.6
+    ],
+    [
+     103.1,
+     44.6
+    ],
+    [
+     90.5,
+     45.2
+    ],
+    [
+     92.0,
+     41.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.1,
+     44.6
+    ],
+    [
+     101.1,
+     49.6
+    ],
+    [
+     89.1,
+     49.0
+    ],
+    [
+     90.5,
+     45.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.1,
+     49.6
+    ],
+    [
+     99.2,
+     54.6
+    ],
+    [
+     87.6,
+     52.8
+    ],
+    [
+     89.1,
+     49.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     99.2,
+     54.6
+    ],
+    [
+     97.3,
+     59.6
+    ],
+    [
+     86.2,
+     56.5
+    ],
+    [
+     87.6,
+     52.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.3,
+     59.6
+    ],
+    [
+     95.4,
+     64.6
+    ],
+    [
+     84.7,
+     60.3
+    ],
+    [
+     86.2,
+     56.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.4,
+     64.6
+    ],
+    [
+     93.5,
+     69.6
+    ],
+    [
+     83.3,
+     64.1
+    ],
+    [
+     84.7,
+     60.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     93.5,
+     69.6
+    ],
+    [
+     91.6,
+     74.6
+    ],
+    [
+     81.8,
+     67.9
+    ],
+    [
+     83.3,
+     64.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.6,
+     74.6
+    ],
+    [
+     89.7,
+     79.6
+    ],
+    [
+     80.4,
+     71.6
+    ],
+    [
+     81.8,
+     67.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.7,
+     79.6
+    ],
+    [
+     87.8,
+     84.6
+    ],
+    [
+     79.0,
+     75.4
+    ],
+    [
+     80.4,
+     71.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.8,
+     84.6
+    ],
+    [
+     85.9,
+     89.6
+    ],
+    [
+     77.5,
+     79.2
+    ],
+    [
+     79.0,
+     75.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.9,
+     89.6
+    ],
+    [
+     84.1,
+     94.2
+    ],
+    [
+     83.7,
+     94.2
+    ],
+    [
+     75.9,
+     82.7
+    ],
+    [
+     76.2,
+     82.7
+    ],
+    [
+     77.5,
+     79.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     83.7,
+     94.2
+    ],
+    [
+     78.1,
+     94.2
+    ],
+    [
+     72.1,
+     82.7
+    ],
+    [
+     75.9,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     78.1,
+     94.2
+    ],
+    [
+     72.4,
+     94.2
+    ],
+    [
+     68.4,
+     82.7
+    ],
+    [
+     72.1,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     72.4,
+     94.2
+    ],
+    [
+     66.8,
+     94.2
+    ],
+    [
+     64.6,
+     82.7
+    ],
+    [
+     68.4,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     66.8,
+     94.2
+    ],
+    [
+     61.2,
+     94.2
+    ],
+    [
+     60.8,
+     82.7
+    ],
+    [
+     64.6,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     61.2,
+     94.2
+    ],
+    [
+     55.6,
+     94.2
+    ],
+    [
+     57.1,
+     82.7
+    ],
+    [
+     60.8,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     55.6,
+     94.2
+    ],
+    [
+     50.0,
+     94.2
+    ],
+    [
+     53.3,
+     82.7
+    ],
+    [
+     57.1,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.0,
+     94.2
+    ],
+    [
+     44.3,
+     94.2
+    ],
+    [
+     49.5,
+     82.7
+    ],
+    [
+     53.3,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     44.3,
+     94.2
+    ],
+    [
+     38.7,
+     94.2
+    ],
+    [
+     45.7,
+     82.7
+    ],
+    [
+     49.5,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.7,
+     94.2
+    ],
+    [
+     36.0,
+     94.2
+    ],
+    [
+     35.0,
+     91.6
+    ],
+    [
+     43.2,
+     80.8
+    ],
+    [
+     43.9,
+     82.7
+    ],
+    [
+     45.7,
+     82.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     35.0,
+     91.6
+    ],
+    [
+     33.1,
+     86.6
+    ],
+    [
+     41.7,
+     77.0
+    ],
+    [
+     43.2,
+     80.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.1,
+     86.6
+    ],
+    [
+     31.2,
+     81.6
+    ],
+    [
+     40.3,
+     73.2
+    ],
+    [
+     41.7,
+     77.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     31.2,
+     81.6
+    ],
+    [
+     29.3,
+     76.6
+    ],
+    [
+     38.8,
+     69.4
+    ],
+    [
+     40.3,
+     73.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.3,
+     76.6
+    ],
+    [
+     27.4,
+     71.6
+    ],
+    [
+     37.4,
+     65.6
+    ],
+    [
+     38.8,
+     69.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.4,
+     71.6
+    ],
+    [
+     25.5,
+     66.6
+    ],
+    [
+     36.0,
+     61.9
+    ],
+    [
+     37.4,
+     65.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     25.5,
+     66.6
+    ],
+    [
+     23.6,
+     61.6
+    ],
+    [
+     34.5,
+     58.1
+    ],
+    [
+     36.0,
+     61.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.6,
+     61.6
+    ],
+    [
+     21.6,
+     56.6
+    ],
+    [
+     33.1,
+     54.3
+    ],
+    [
+     34.5,
+     58.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.6,
+     56.6
+    ],
+    [
+     19.7,
+     51.7
+    ],
+    [
+     31.6,
+     50.5
+    ],
+    [
+     33.1,
+     54.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.7,
+     51.7
+    ],
+    [
+     17.8,
+     46.7
+    ],
+    [
+     30.2,
+     46.8
+    ],
+    [
+     31.6,
+     50.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     17.8,
+     46.7
+    ],
+    [
+     15.9,
+     41.7
+    ],
+    [
+     28.7,
+     43.0
+    ],
+    [
+     30.2,
+     46.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.9,
+     41.7
+    ],
+    [
+     14.0,
+     36.7
+    ],
+    [
+     27.3,
+     39.2
+    ],
+    [
+     28.7,
+     43.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.0,
+     36.7
+    ],
+    [
+     12.1,
+     31.7
+    ],
+    [
+     25.9,
+     35.4
+    ],
+    [
+     27.3,
+     39.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.1,
+     31.7
+    ],
+    [
+     10.2,
+     26.7
+    ],
+    [
+     24.4,
+     31.7
+    ],
+    [
+     25.9,
+     35.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.2,
+     26.7
+    ],
+    [
+     8.3,
+     21.7
+    ],
+    [
+     23.0,
+     27.9
+    ],
+    [
+     24.4,
+     31.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     8.3,
+     21.7
+    ],
+    [
+     6.4,
+     16.7
+    ],
+    [
+     21.5,
+     24.1
+    ],
+    [
+     23.0,
+     27.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     6.4,
+     16.7
+    ],
+    [
+     4.5,
+     11.7
+    ],
+    [
+     20.1,
+     20.3
+    ],
+    [
+     21.5,
+     24.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.5,
+     11.7
+    ],
+    [
+     2.6,
+     6.7
+    ],
+    [
+     18.6,
+     16.6
+    ],
+    [
+     20.1,
+     20.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     2.6,
+     6.7
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     16.7,
+     11.5
+    ],
+    [
+     18.6,
+     16.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.1,
+     14.5
+    ],
+    [
+     27.0,
+     14.5
+    ],
+    [
+     41.2,
+     26.0
+    ],
+    [
+     37.8,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.0,
+     14.5
+    ],
+    [
+     33.0,
+     14.5
+    ],
+    [
+     44.6,
+     26.0
+    ],
+    [
+     41.2,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.0,
+     14.5
+    ],
+    [
+     39.0,
+     14.5
+    ],
+    [
+     48.0,
+     26.0
+    ],
+    [
+     44.6,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.0,
+     14.5
+    ],
+    [
+     45.0,
+     14.5
+    ],
+    [
+     51.4,
+     26.0
+    ],
+    [
+     48.0,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     45.0,
+     14.5
+    ],
+    [
+     50.9,
+     14.5
+    ],
+    [
+     54.8,
+     26.0
+    ],
+    [
+     51.4,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.9,
+     14.5
+    ],
+    [
+     57.6,
+     14.5
+    ],
+    [
+     58.7,
+     26.0
+    ],
+    [
+     54.8,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     67.8,
+     14.5
+    ],
+    [
+     73.8,
+     14.5
+    ],
+    [
+     67.9,
+     26.0
+    ],
+    [
+     64.5,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     73.8,
+     14.5
+    ],
+    [
+     79.8,
+     14.5
+    ],
+    [
+     71.3,
+     26.0
+    ],
+    [
+     67.9,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.8,
+     14.5
+    ],
+    [
+     85.8,
+     14.5
+    ],
+    [
+     74.7,
+     26.0
+    ],
+    [
+     71.3,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.8,
+     14.5
+    ],
+    [
+     91.7,
+     14.5
+    ],
+    [
+     78.2,
+     26.0
+    ],
+    [
+     74.7,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.7,
+     14.5
+    ],
+    [
+     97.7,
+     14.5
+    ],
+    [
+     81.6,
+     26.0
+    ],
+    [
+     78.2,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.7,
+     14.5
+    ],
+    [
+     99.0,
+     14.5
+    ],
+    [
+     97.5,
+     18.6
+    ],
+    [
+     81.3,
+     28.7
+    ],
+    [
+     82.3,
+     26.0
+    ],
+    [
+     81.6,
+     26.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.5,
+     18.6
+    ],
+    [
+     95.4,
+     24.0
+    ],
+    [
+     80.0,
+     32.1
+    ],
+    [
+     81.3,
+     28.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.4,
+     24.0
+    ],
+    [
+     93.4,
+     29.3
+    ],
+    [
+     78.7,
+     35.6
+    ],
+    [
+     80.0,
+     32.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     93.4,
+     29.3
+    ],
+    [
+     91.3,
+     34.6
+    ],
+    [
+     77.4,
+     39.0
+    ],
+    [
+     78.7,
+     35.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.3,
+     34.6
+    ],
+    [
+     89.3,
+     39.9
+    ],
+    [
+     76.0,
+     42.5
+    ],
+    [
+     77.4,
+     39.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.3,
+     39.9
+    ],
+    [
+     87.3,
+     45.3
+    ],
+    [
+     74.7,
+     45.9
+    ],
+    [
+     76.0,
+     42.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.3,
+     45.3
+    ],
+    [
+     84.7,
+     51.9
+    ],
+    [
+     73.1,
+     50.2
+    ],
+    [
+     74.7,
+     45.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     81.3,
+     61.0
+    ],
+    [
+     79.2,
+     66.3
+    ],
+    [
+     69.5,
+     59.5
+    ],
+    [
+     70.8,
+     56.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.2,
+     66.3
+    ],
+    [
+     77.2,
+     71.6
+    ],
+    [
+     68.2,
+     63.0
+    ],
+    [
+     69.5,
+     59.5
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     77.2,
+     71.6
+    ],
+    [
+     75.2,
+     76.9
+    ],
+    [
+     66.9,
+     66.4
+    ],
+    [
+     68.2,
+     63.0
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.2,
+     76.9
+    ],
+    [
+     74.1,
+     79.7
+    ],
+    [
+     71.0,
+     79.7
+    ],
+    [
+     64.8,
+     68.2
+    ],
+    [
+     66.2,
+     68.2
+    ],
+    [
+     66.9,
+     66.4
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     71.0,
+     79.7
+    ],
+    [
+     64.4,
+     79.7
+    ],
+    [
+     62.0,
+     68.2
+    ],
+    [
+     64.8,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.4,
+     79.7
+    ],
+    [
+     57.9,
+     79.7
+    ],
+    [
+     59.1,
+     68.2
+    ],
+    [
+     62.0,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     57.9,
+     79.7
+    ],
+    [
+     51.4,
+     79.7
+    ],
+    [
+     56.3,
+     68.2
+    ],
+    [
+     59.1,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     51.4,
+     79.7
+    ],
+    [
+     46.0,
+     79.7
+    ],
+    [
+     45.6,
+     78.8
+    ],
+    [
+     53.7,
+     67.6
+    ],
+    [
+     53.9,
+     68.2
+    ],
+    [
+     56.3,
+     68.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     45.6,
+     78.8
+    ],
+    [
+     43.6,
+     73.4
+    ],
+    [
+     52.3,
+     64.1
+    ],
+    [
+     53.7,
+     67.6
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     43.6,
+     73.4
+    ],
+    [
+     41.6,
+     68.1
+    ],
+    [
+     51.0,
+     60.7
+    ],
+    [
+     52.3,
+     64.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     41.6,
+     68.1
+    ],
+    [
+     39.5,
+     62.8
+    ],
+    [
+     49.7,
+     57.3
+    ],
+    [
+     51.0,
+     60.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.5,
+     62.8
+    ],
+    [
+     37.0,
+     56.2
+    ],
+    [
+     48.1,
+     53.0
+    ],
+    [
+     49.7,
+     57.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.5,
+     47.1
+    ],
+    [
+     31.5,
+     41.8
+    ],
+    [
+     44.5,
+     43.7
+    ],
+    [
+     45.8,
+     47.1
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     31.5,
+     41.8
+    ],
+    [
+     29.5,
+     36.4
+    ],
+    [
+     43.2,
+     40.2
+    ],
+    [
+     44.5,
+     43.7
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.5,
+     36.4
+    ],
+    [
+     27.4,
+     31.1
+    ],
+    [
+     41.9,
+     36.8
+    ],
+    [
+     43.2,
+     40.2
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.4,
+     31.1
+    ],
+    [
+     25.4,
+     25.8
+    ],
+    [
+     40.6,
+     33.3
+    ],
+    [
+     41.9,
+     36.8
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     25.4,
+     25.8
+    ],
+    [
+     23.3,
+     20.5
+    ],
+    [
+     39.2,
+     29.9
+    ],
+    [
+     40.6,
+     33.3
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Consulting room",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.3,
+     20.5
+    ],
+    [
+     21.1,
+     14.5
+    ],
+    [
+     37.8,
+     26.0
+    ],
+    [
+     39.2,
+     29.9
+    ]
+   ],
+   "about": "A doctor's room for appointments and check-ups.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

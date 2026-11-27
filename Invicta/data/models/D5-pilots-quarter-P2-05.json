@@ -1,0 +1,11105 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P2-05",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  253.1,
+  300.3
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Centrifuge floor",
+   "z_m": 0.0,
+   "height_m": 10.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Support floor",
+   "z_m": 10.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Centrifuge hall",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     29.8,
+     109.2
+    ],
+    [
+     32.3,
+     100.7
+    ],
+    [
+     38.6,
+     85.7
+    ],
+    [
+     46.4,
+     71.8
+    ],
+    [
+     55.5,
+     59.5
+    ],
+    [
+     65.7,
+     48.8
+    ],
+    [
+     76.9,
+     40.0
+    ],
+    [
+     88.7,
+     33.0
+    ],
+    [
+     101.1,
+     28.1
+    ],
+    [
+     113.7,
+     25.1
+    ],
+    [
+     126.6,
+     24.1
+    ],
+    [
+     139.4,
+     25.1
+    ],
+    [
+     152.0,
+     28.1
+    ],
+    [
+     164.4,
+     33.0
+    ],
+    [
+     176.2,
+     40.0
+    ],
+    [
+     187.4,
+     48.8
+    ],
+    [
+     197.6,
+     59.5
+    ],
+    [
+     206.7,
+     71.8
+    ],
+    [
+     214.5,
+     85.7
+    ],
+    [
+     220.8,
+     100.7
+    ],
+    [
+     223.3,
+     109.2
+    ]
+   ],
+   "about": "A long arm with a cockpit on the end that spins pilots round to build their tolerance to high g-forces.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.1,
+     150.1
+    ],
+    [
+     228.1,
+     167.1
+    ],
+    [
+     225.3,
+     183.7
+    ],
+    [
+     220.8,
+     199.6
+    ],
+    [
+     214.5,
+     214.6
+    ],
+    [
+     206.7,
+     228.4
+    ],
+    [
+     197.6,
+     240.8
+    ],
+    [
+     187.4,
+     251.5
+    ],
+    [
+     176.2,
+     260.3
+    ],
+    [
+     164.4,
+     267.3
+    ],
+    [
+     152.0,
+     272.2
+    ],
+    [
+     139.4,
+     275.2
+    ],
+    [
+     126.6,
+     276.2
+    ],
+    [
+     113.7,
+     275.2
+    ],
+    [
+     101.1,
+     272.2
+    ],
+    [
+     88.7,
+     267.3
+    ],
+    [
+     76.9,
+     260.3
+    ],
+    [
+     65.7,
+     251.5
+    ],
+    [
+     55.5,
+     240.8
+    ],
+    [
+     46.4,
+     228.4
+    ],
+    [
+     38.6,
+     214.6
+    ],
+    [
+     32.3,
+     199.6
+    ],
+    [
+     27.8,
+     183.7
+    ],
+    [
+     25.0,
+     167.1
+    ],
+    [
+     24.0,
+     150.1
+    ],
+    [
+     25.0,
+     133.2
+    ],
+    [
+     27.8,
+     116.6
+    ],
+    [
+     29.8,
+     109.2
+    ],
+    [
+     223.3,
+     109.2
+    ],
+    [
+     225.3,
+     116.6
+    ],
+    [
+     228.1,
+     133.2
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     242.6,
+     150.1
+    ],
+    [
+     241.5,
+     168.5
+    ],
+    [
+     238.5,
+     186.7
+    ],
+    [
+     233.6,
+     204.1
+    ],
+    [
+     226.7,
+     220.6
+    ],
+    [
+     218.1,
+     235.8
+    ],
+    [
+     207.9,
+     249.5
+    ],
+    [
+     198.4,
+     259.5
+    ],
+    [
+     196.3,
+     257.4
+    ],
+    [
+     205.6,
+     247.6
+    ],
+    [
+     215.5,
+     234.2
+    ],
+    [
+     224.0,
+     219.2
+    ],
+    [
+     230.7,
+     203.1
+    ],
+    [
+     235.6,
+     186.0
+    ],
+    [
+     238.6,
+     168.2
+    ],
+    [
+     239.6,
+     150.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     198.4,
+     259.5
+    ],
+    [
+     196.5,
+     261.5
+    ],
+    [
+     183.9,
+     271.5
+    ],
+    [
+     170.4,
+     279.4
+    ],
+    [
+     156.1,
+     285.2
+    ],
+    [
+     141.5,
+     288.6
+    ],
+    [
+     126.6,
+     289.8
+    ],
+    [
+     111.6,
+     288.6
+    ],
+    [
+     97.0,
+     285.2
+    ],
+    [
+     85.9,
+     280.7
+    ],
+    [
+     87.2,
+     278.0
+    ],
+    [
+     97.9,
+     282.3
+    ],
+    [
+     112.1,
+     285.6
+    ],
+    [
+     126.6,
+     286.8
+    ],
+    [
+     141.0,
+     285.6
+    ],
+    [
+     155.2,
+     282.3
+    ],
+    [
+     169.0,
+     276.7
+    ],
+    [
+     182.2,
+     269.0
+    ],
+    [
+     194.5,
+     259.3
+    ],
+    [
+     196.3,
+     257.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.9,
+     280.7
+    ],
+    [
+     82.7,
+     279.4
+    ],
+    [
+     69.2,
+     271.5
+    ],
+    [
+     56.6,
+     261.5
+    ],
+    [
+     45.2,
+     249.5
+    ],
+    [
+     35.0,
+     235.8
+    ],
+    [
+     26.4,
+     220.6
+    ],
+    [
+     19.5,
+     204.1
+    ],
+    [
+     14.8,
+     187.6
+    ],
+    [
+     17.7,
+     186.9
+    ],
+    [
+     22.4,
+     203.1
+    ],
+    [
+     29.1,
+     219.2
+    ],
+    [
+     37.6,
+     234.2
+    ],
+    [
+     47.5,
+     247.6
+    ],
+    [
+     58.6,
+     259.3
+    ],
+    [
+     70.9,
+     269.0
+    ],
+    [
+     84.1,
+     276.7
+    ],
+    [
+     87.2,
+     278.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.8,
+     187.6
+    ],
+    [
+     14.6,
+     186.7
+    ],
+    [
+     11.6,
+     168.5
+    ],
+    [
+     10.5,
+     150.1
+    ],
+    [
+     11.6,
+     131.7
+    ],
+    [
+     14.6,
+     113.6
+    ],
+    [
+     19.5,
+     96.2
+    ],
+    [
+     26.4,
+     79.7
+    ],
+    [
+     31.6,
+     70.5
+    ],
+    [
+     34.2,
+     72.0
+    ],
+    [
+     29.1,
+     81.0
+    ],
+    [
+     22.4,
+     97.2
+    ],
+    [
+     17.5,
+     114.3
+    ],
+    [
+     14.5,
+     132.0
+    ],
+    [
+     13.5,
+     150.1
+    ],
+    [
+     14.5,
+     168.2
+    ],
+    [
+     17.5,
+     186.0
+    ],
+    [
+     17.7,
+     186.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.6,
+     70.5
+    ],
+    [
+     35.0,
+     64.4
+    ],
+    [
+     45.1,
+     50.8
+    ],
+    [
+     56.6,
+     38.8
+    ],
+    [
+     69.2,
+     28.8
+    ],
+    [
+     82.7,
+     20.9
+    ],
+    [
+     97.0,
+     15.1
+    ],
+    [
+     111.6,
+     11.7
+    ],
+    [
+     126.6,
+     10.5
+    ],
+    [
+     130.5,
+     10.8
+    ],
+    [
+     130.4,
+     13.8
+    ],
+    [
+     126.6,
+     13.5
+    ],
+    [
+     112.1,
+     14.7
+    ],
+    [
+     97.9,
+     18.0
+    ],
+    [
+     84.1,
+     23.6
+    ],
+    [
+     70.9,
+     31.3
+    ],
+    [
+     58.6,
+     41.0
+    ],
+    [
+     47.4,
+     52.7
+    ],
+    [
+     37.6,
+     66.1
+    ],
+    [
+     34.2,
+     72.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.5,
+     10.8
+    ],
+    [
+     141.5,
+     11.7
+    ],
+    [
+     156.1,
+     15.1
+    ],
+    [
+     170.4,
+     20.9
+    ],
+    [
+     183.9,
+     28.8
+    ],
+    [
+     196.5,
+     38.8
+    ],
+    [
+     208.0,
+     50.8
+    ],
+    [
+     218.1,
+     64.4
+    ],
+    [
+     225.3,
+     77.4
+    ],
+    [
+     222.7,
+     78.8
+    ],
+    [
+     215.5,
+     66.1
+    ],
+    [
+     205.7,
+     52.7
+    ],
+    [
+     194.5,
+     41.0
+    ],
+    [
+     182.2,
+     31.3
+    ],
+    [
+     169.0,
+     23.6
+    ],
+    [
+     155.2,
+     18.0
+    ],
+    [
+     141.0,
+     14.7
+    ],
+    [
+     130.4,
+     13.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.3,
+     77.4
+    ],
+    [
+     226.7,
+     79.7
+    ],
+    [
+     233.6,
+     96.2
+    ],
+    [
+     238.5,
+     113.6
+    ],
+    [
+     241.5,
+     131.7
+    ],
+    [
+     242.6,
+     150.1
+    ],
+    [
+     239.6,
+     150.1
+    ],
+    [
+     238.6,
+     132.0
+    ],
+    [
+     235.6,
+     114.3
+    ],
+    [
+     230.7,
+     97.2
+    ],
+    [
+     224.0,
+     81.0
+    ],
+    [
+     222.7,
+     78.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     236.4,
+     181.1
+    ],
+    [
+     235.6,
+     186.0
+    ],
+    [
+     234.7,
+     189.2
+    ],
+    [
+     224.5,
+     186.6
+    ],
+    [
+     225.3,
+     183.7
+    ],
+    [
+     226.1,
+     179.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     207.5,
+     245.1
+    ],
+    [
+     205.6,
+     247.6
+    ],
+    [
+     202.1,
+     251.4
+    ],
+    [
+     194.3,
+     244.3
+    ],
+    [
+     197.6,
+     240.8
+    ],
+    [
+     199.3,
+     238.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     148.7,
+     283.8
+    ],
+    [
+     141.0,
+     285.6
+    ],
+    [
+     140.4,
+     285.7
+    ],
+    [
+     138.9,
+     275.3
+    ],
+    [
+     139.4,
+     275.2
+    ],
+    [
+     146.2,
+     273.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     78.9,
+     273.7
+    ],
+    [
+     71.7,
+     269.5
+    ],
+    [
+     77.5,
+     260.7
+    ],
+    [
+     84.1,
+     264.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     30.9,
+     222.3
+    ],
+    [
+     29.1,
+     219.2
+    ],
+    [
+     27.3,
+     214.9
+    ],
+    [
+     36.9,
+     210.5
+    ],
+    [
+     38.6,
+     214.6
+    ],
+    [
+     40.2,
+     217.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.8,
+     154.3
+    ],
+    [
+     13.5,
+     150.1
+    ],
+    [
+     13.7,
+     146.1
+    ],
+    [
+     24.2,
+     146.3
+    ],
+    [
+     24.0,
+     150.1
+    ],
+    [
+     24.3,
+     154.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     27.3,
+     85.5
+    ],
+    [
+     29.1,
+     81.0
+    ],
+    [
+     30.8,
+     78.1
+    ],
+    [
+     40.1,
+     82.9
+    ],
+    [
+     38.6,
+     85.7
+    ],
+    [
+     36.8,
+     89.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     71.6,
+     30.9
+    ],
+    [
+     78.8,
+     26.6
+    ],
+    [
+     84.0,
+     35.8
+    ],
+    [
+     77.5,
+     39.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     140.3,
+     14.6
+    ],
+    [
+     141.0,
+     14.7
+    ],
+    [
+     148.6,
+     16.5
+    ],
+    [
+     146.1,
+     26.7
+    ],
+    [
+     139.4,
+     25.1
+    ],
+    [
+     138.8,
+     25.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     202.0,
+     48.9
+    ],
+    [
+     205.7,
+     52.7
+    ],
+    [
+     207.5,
+     55.2
+    ],
+    [
+     199.3,
+     61.7
+    ],
+    [
+     197.6,
+     59.5
+    ],
+    [
+     194.3,
+     56.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     234.7,
+     111.0
+    ],
+    [
+     235.6,
+     114.3
+    ],
+    [
+     236.4,
+     119.1
+    ],
+    [
+     226.1,
+     121.1
+    ],
+    [
+     225.3,
+     116.6
+    ],
+    [
+     224.5,
+     113.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Centrifuge control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     253.1,
+     150.1
+    ],
+    [
+     252.7,
+     157.9
+    ],
+    [
+     242.2,
+     157.5
+    ],
+    [
+     242.6,
+     150.1
+    ]
+   ],
+   "about": "Controls the spin and watches the rider on camera.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Medical room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.7,
+     157.9
+    ],
+    [
+     252.2,
+     165.8
+    ],
+    [
+     241.8,
+     164.9
+    ],
+    [
+     242.2,
+     157.5
+    ]
+   ],
+   "about": "Doctors check each rider before and after.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Recovery room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.2,
+     165.8
+    ],
+    [
+     252.0,
+     169.7
+    ],
+    [
+     241.5,
+     168.5
+    ],
+    [
+     241.8,
+     164.9
+    ]
+   ],
+   "about": "Riders rest after a session.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Recovery room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.0,
+     169.7
+    ],
+    [
+     251.4,
+     173.6
+    ],
+    [
+     240.9,
+     172.2
+    ],
+    [
+     241.5,
+     168.5
+    ]
+   ],
+   "about": "Riders rest after a session.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Locker room",
+   "level": "L1",
+   "outline_m": [
+    [
+     251.4,
+     173.6
+    ],
+    [
+     249.9,
+     182.3
+    ],
+    [
+     239.6,
+     180.4
+    ],
+    [
+     240.9,
+     172.2
+    ]
+   ],
+   "about": "Lockers and changing benches for staff arriving for their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.9,
+     182.3
+    ],
+    [
+     249.0,
+     188.1
+    ],
+    [
+     238.7,
+     185.8
+    ],
+    [
+     239.6,
+     180.4
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.0,
+     188.1
+    ],
+    [
+     248.8,
+     189.0
+    ],
+    [
+     246.6,
+     196.6
+    ],
+    [
+     236.5,
+     193.8
+    ],
+    [
+     238.5,
+     186.7
+    ],
+    [
+     238.7,
+     185.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     246.6,
+     196.6
+    ],
+    [
+     244.2,
+     205.1
+    ],
+    [
+     234.2,
+     201.8
+    ],
+    [
+     236.5,
+     193.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     244.2,
+     205.1
+    ],
+    [
+     243.5,
+     207.6
+    ],
+    [
+     241.1,
+     213.4
+    ],
+    [
+     231.3,
+     209.5
+    ],
+    [
+     233.6,
+     204.1
+    ],
+    [
+     234.2,
+     201.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     241.1,
+     213.4
+    ],
+    [
+     237.6,
+     221.6
+    ],
+    [
+     228.1,
+     217.2
+    ],
+    [
+     231.3,
+     209.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.6,
+     221.6
+    ],
+    [
+     236.1,
+     225.2
+    ],
+    [
+     233.7,
+     229.5
+    ],
+    [
+     224.4,
+     224.6
+    ],
+    [
+     226.7,
+     220.6
+    ],
+    [
+     228.1,
+     217.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.7,
+     229.5
+    ],
+    [
+     229.3,
+     237.2
+    ],
+    [
+     220.3,
+     231.8
+    ],
+    [
+     224.4,
+     224.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.3,
+     237.2
+    ],
+    [
+     226.9,
+     241.5
+    ],
+    [
+     224.6,
+     244.7
+    ],
+    [
+     215.9,
+     238.7
+    ],
+    [
+     218.1,
+     235.8
+    ],
+    [
+     220.3,
+     231.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.6,
+     244.7
+    ],
+    [
+     219.3,
+     251.8
+    ],
+    [
+     211.0,
+     245.4
+    ],
+    [
+     215.9,
+     238.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     219.3,
+     251.8
+    ],
+    [
+     216.0,
+     256.3
+    ],
+    [
+     213.7,
+     258.7
+    ],
+    [
+     205.8,
+     251.8
+    ],
+    [
+     207.9,
+     249.5
+    ],
+    [
+     211.0,
+     245.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.7,
+     258.7
+    ],
+    [
+     207.5,
+     265.2
+    ],
+    [
+     200.1,
+     257.7
+    ],
+    [
+     205.8,
+     251.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.5,
+     265.2
+    ],
+    [
+     203.6,
+     269.3
+    ],
+    [
+     201.1,
+     271.3
+    ],
+    [
+     194.2,
+     263.4
+    ],
+    [
+     196.5,
+     261.5
+    ],
+    [
+     200.1,
+     257.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.1,
+     271.3
+    ],
+    [
+     194.0,
+     276.9
+    ],
+    [
+     187.7,
+     268.4
+    ],
+    [
+     194.2,
+     263.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.0,
+     276.9
+    ],
+    [
+     189.8,
+     280.2
+    ],
+    [
+     186.7,
+     282.0
+    ],
+    [
+     181.1,
+     273.2
+    ],
+    [
+     183.9,
+     271.5
+    ],
+    [
+     187.7,
+     268.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.7,
+     282.0
+    ],
+    [
+     179.0,
+     286.5
+    ],
+    [
+     174.0,
+     277.3
+    ],
+    [
+     181.1,
+     273.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     179.0,
+     286.5
+    ],
+    [
+     175.0,
+     288.9
+    ],
+    [
+     171.0,
+     290.5
+    ],
+    [
+     166.7,
+     280.9
+    ],
+    [
+     170.4,
+     279.4
+    ],
+    [
+     174.0,
+     277.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.0,
+     290.5
+    ],
+    [
+     162.6,
+     293.9
+    ],
+    [
+     159.2,
+     283.9
+    ],
+    [
+     166.7,
+     280.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.6,
+     293.9
+    ],
+    [
+     159.3,
+     295.2
+    ],
+    [
+     154.0,
+     296.4
+    ],
+    [
+     151.4,
+     286.3
+    ],
+    [
+     156.1,
+     285.2
+    ],
+    [
+     159.2,
+     283.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.0,
+     296.4
+    ],
+    [
+     145.3,
+     298.5
+    ],
+    [
+     143.4,
+     288.1
+    ],
+    [
+     151.4,
+     286.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.3,
+     298.5
+    ],
+    [
+     143.1,
+     299.0
+    ],
+    [
+     136.3,
+     299.5
+    ],
+    [
+     135.4,
+     289.1
+    ],
+    [
+     141.5,
+     288.6
+    ],
+    [
+     143.4,
+     288.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     136.3,
+     299.5
+    ],
+    [
+     127.4,
+     300.2
+    ],
+    [
+     127.3,
+     289.7
+    ],
+    [
+     135.4,
+     289.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.4,
+     300.2
+    ],
+    [
+     126.6,
+     300.3
+    ],
+    [
+     118.4,
+     299.7
+    ],
+    [
+     119.2,
+     289.2
+    ],
+    [
+     126.6,
+     289.8
+    ],
+    [
+     127.3,
+     289.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.4,
+     299.7
+    ],
+    [
+     110.0,
+     299.0
+    ],
+    [
+     109.4,
+     298.9
+    ],
+    [
+     111.1,
+     288.5
+    ],
+    [
+     111.6,
+     288.6
+    ],
+    [
+     119.2,
+     289.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.4,
+     298.9
+    ],
+    [
+     100.6,
+     296.8
+    ],
+    [
+     103.2,
+     286.6
+    ],
+    [
+     111.1,
+     288.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.6,
+     296.8
+    ],
+    [
+     93.8,
+     295.2
+    ],
+    [
+     92.0,
+     294.5
+    ],
+    [
+     95.3,
+     284.5
+    ],
+    [
+     97.0,
+     285.2
+    ],
+    [
+     103.2,
+     286.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     92.0,
+     294.5
+    ],
+    [
+     83.6,
+     291.1
+    ],
+    [
+     87.7,
+     281.5
+    ],
+    [
+     95.3,
+     284.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.6,
+     291.1
+    ],
+    [
+     78.1,
+     288.9
+    ],
+    [
+     75.5,
+     287.4
+    ],
+    [
+     80.4,
+     278.0
+    ],
+    [
+     82.7,
+     279.4
+    ],
+    [
+     87.7,
+     281.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.5,
+     287.4
+    ],
+    [
+     67.8,
+     282.8
+    ],
+    [
+     73.3,
+     273.9
+    ],
+    [
+     80.4,
+     278.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.8,
+     282.8
+    ],
+    [
+     63.3,
+     280.2
+    ],
+    [
+     60.3,
+     277.9
+    ],
+    [
+     66.5,
+     269.4
+    ],
+    [
+     69.2,
+     271.5
+    ],
+    [
+     73.3,
+     273.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.3,
+     277.9
+    ],
+    [
+     53.3,
+     272.3
+    ],
+    [
+     60.1,
+     264.3
+    ],
+    [
+     66.5,
+     269.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.3,
+     272.3
+    ],
+    [
+     49.5,
+     269.3
+    ],
+    [
+     46.7,
+     266.3
+    ],
+    [
+     54.0,
+     258.8
+    ],
+    [
+     56.6,
+     261.5
+    ],
+    [
+     60.1,
+     264.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.7,
+     266.3
+    ],
+    [
+     40.5,
+     259.9
+    ],
+    [
+     48.3,
+     252.8
+    ],
+    [
+     54.0,
+     258.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.5,
+     259.9
+    ],
+    [
+     37.1,
+     256.3
+    ],
+    [
+     34.8,
+     253.1
+    ],
+    [
+     43.0,
+     246.6
+    ],
+    [
+     45.2,
+     249.5
+    ],
+    [
+     48.3,
+     252.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.8,
+     253.1
+    ],
+    [
+     29.5,
+     246.0
+    ],
+    [
+     38.1,
+     239.9
+    ],
+    [
+     43.0,
+     246.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.5,
+     246.0
+    ],
+    [
+     26.2,
+     241.5
+    ],
+    [
+     24.6,
+     238.6
+    ],
+    [
+     33.5,
+     233.1
+    ],
+    [
+     35.0,
+     235.8
+    ],
+    [
+     38.1,
+     239.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.6,
+     238.6
+    ],
+    [
+     20.2,
+     230.9
+    ],
+    [
+     29.4,
+     225.9
+    ],
+    [
+     33.5,
+     233.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.2,
+     230.9
+    ],
+    [
+     17.0,
+     225.2
+    ],
+    [
+     16.1,
+     223.0
+    ],
+    [
+     25.6,
+     218.6
+    ],
+    [
+     26.4,
+     220.6
+    ],
+    [
+     29.4,
+     225.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.1,
+     223.0
+    ],
+    [
+     12.7,
+     214.9
+    ],
+    [
+     22.4,
+     210.9
+    ],
+    [
+     25.6,
+     218.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.7,
+     214.9
+    ],
+    [
+     9.6,
+     207.6
+    ],
+    [
+     9.3,
+     206.7
+    ],
+    [
+     19.3,
+     203.2
+    ],
+    [
+     19.5,
+     204.1
+    ],
+    [
+     22.4,
+     210.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.3,
+     206.7
+    ],
+    [
+     6.9,
+     198.2
+    ],
+    [
+     17.0,
+     195.3
+    ],
+    [
+     19.3,
+     203.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     6.9,
+     198.2
+    ],
+    [
+     4.5,
+     189.6
+    ],
+    [
+     14.7,
+     187.3
+    ],
+    [
+     17.0,
+     195.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     4.5,
+     189.6
+    ],
+    [
+     4.3,
+     189.0
+    ],
+    [
+     3.0,
+     180.9
+    ],
+    [
+     13.3,
+     179.1
+    ],
+    [
+     14.6,
+     186.7
+    ],
+    [
+     14.7,
+     187.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.0,
+     180.9
+    ],
+    [
+     1.5,
+     172.2
+    ],
+    [
+     11.9,
+     170.9
+    ],
+    [
+     13.3,
+     179.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1.5,
+     172.2
+    ],
+    [
+     1.1,
+     169.7
+    ],
+    [
+     0.7,
+     163.4
+    ],
+    [
+     11.2,
+     162.7
+    ],
+    [
+     11.6,
+     168.5
+    ],
+    [
+     11.9,
+     170.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.7,
+     163.4
+    ],
+    [
+     0.3,
+     154.6
+    ],
+    [
+     10.8,
+     154.4
+    ],
+    [
+     11.2,
+     162.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.3,
+     154.6
+    ],
+    [
+     0.0,
+     150.1
+    ],
+    [
+     0.2,
+     145.8
+    ],
+    [
+     10.7,
+     146.1
+    ],
+    [
+     10.5,
+     150.1
+    ],
+    [
+     10.8,
+     154.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.2,
+     145.8
+    ],
+    [
+     0.7,
+     137.0
+    ],
+    [
+     11.2,
+     137.8
+    ],
+    [
+     10.7,
+     146.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.7,
+     137.0
+    ],
+    [
+     1.1,
+     130.5
+    ],
+    [
+     1.5,
+     128.2
+    ],
+    [
+     11.9,
+     129.5
+    ],
+    [
+     11.6,
+     131.7
+    ],
+    [
+     11.2,
+     137.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1.5,
+     128.2
+    ],
+    [
+     2.9,
+     119.5
+    ],
+    [
+     13.3,
+     121.3
+    ],
+    [
+     11.9,
+     129.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.9,
+     119.5
+    ],
+    [
+     4.3,
+     111.3
+    ],
+    [
+     4.4,
+     110.8
+    ],
+    [
+     14.7,
+     113.1
+    ],
+    [
+     14.6,
+     113.6
+    ],
+    [
+     13.3,
+     121.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     4.4,
+     110.8
+    ],
+    [
+     6.9,
+     102.3
+    ],
+    [
+     17.0,
+     105.1
+    ],
+    [
+     14.7,
+     113.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     6.9,
+     102.3
+    ],
+    [
+     9.3,
+     93.8
+    ],
+    [
+     19.2,
+     97.2
+    ],
+    [
+     17.0,
+     105.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.3,
+     93.8
+    ],
+    [
+     9.6,
+     92.7
+    ],
+    [
+     12.6,
+     85.5
+    ],
+    [
+     22.3,
+     89.5
+    ],
+    [
+     19.5,
+     96.2
+    ],
+    [
+     19.2,
+     97.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.6,
+     85.5
+    ],
+    [
+     16.0,
+     77.4
+    ],
+    [
+     25.6,
+     81.9
+    ],
+    [
+     22.3,
+     89.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.0,
+     77.4
+    ],
+    [
+     17.0,
+     75.1
+    ],
+    [
+     20.1,
+     69.5
+    ],
+    [
+     29.4,
+     74.5
+    ],
+    [
+     26.4,
+     79.7
+    ],
+    [
+     25.6,
+     81.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.1,
+     69.5
+    ],
+    [
+     24.5,
+     61.8
+    ],
+    [
+     33.4,
+     67.3
+    ],
+    [
+     29.4,
+     74.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.5,
+     61.8
+    ],
+    [
+     26.2,
+     58.7
+    ],
+    [
+     29.4,
+     54.4
+    ],
+    [
+     38.0,
+     60.4
+    ],
+    [
+     35.0,
+     64.4
+    ],
+    [
+     33.4,
+     67.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.4,
+     54.4
+    ],
+    [
+     34.7,
+     47.3
+    ],
+    [
+     42.9,
+     53.8
+    ],
+    [
+     38.0,
+     60.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.7,
+     47.3
+    ],
+    [
+     37.1,
+     44.0
+    ],
+    [
+     40.4,
+     40.5
+    ],
+    [
+     48.2,
+     47.5
+    ],
+    [
+     45.1,
+     50.8
+    ],
+    [
+     42.9,
+     53.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.4,
+     40.5
+    ],
+    [
+     46.6,
+     34.1
+    ],
+    [
+     53.9,
+     41.6
+    ],
+    [
+     48.2,
+     47.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.6,
+     34.1
+    ],
+    [
+     49.5,
+     31.0
+    ],
+    [
+     53.2,
+     28.1
+    ],
+    [
+     60.0,
+     36.1
+    ],
+    [
+     56.6,
+     38.8
+    ],
+    [
+     53.9,
+     41.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.2,
+     28.1
+    ],
+    [
+     60.2,
+     22.5
+    ],
+    [
+     66.4,
+     31.0
+    ],
+    [
+     60.0,
+     36.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.2,
+     22.5
+    ],
+    [
+     63.3,
+     20.1
+    ],
+    [
+     67.6,
+     17.6
+    ],
+    [
+     73.2,
+     26.5
+    ],
+    [
+     69.2,
+     28.8
+    ],
+    [
+     66.4,
+     31.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.6,
+     17.6
+    ],
+    [
+     75.4,
+     13.0
+    ],
+    [
+     80.2,
+     22.3
+    ],
+    [
+     73.2,
+     26.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.4,
+     13.0
+    ],
+    [
+     78.1,
+     11.4
+    ],
+    [
+     83.5,
+     9.2
+    ],
+    [
+     87.6,
+     18.9
+    ],
+    [
+     82.7,
+     20.9
+    ],
+    [
+     80.2,
+     22.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.5,
+     9.2
+    ],
+    [
+     91.8,
+     5.9
+    ],
+    [
+     95.2,
+     15.9
+    ],
+    [
+     87.6,
+     18.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.8,
+     5.9
+    ],
+    [
+     93.8,
+     5.1
+    ],
+    [
+     100.5,
+     3.5
+    ],
+    [
+     103.0,
+     13.7
+    ],
+    [
+     97.0,
+     15.1
+    ],
+    [
+     95.2,
+     15.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.5,
+     3.5
+    ],
+    [
+     109.3,
+     1.5
+    ],
+    [
+     111.0,
+     11.9
+    ],
+    [
+     103.0,
+     13.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.3,
+     1.5
+    ],
+    [
+     110.0,
+     1.3
+    ],
+    [
+     118.2,
+     0.7
+    ],
+    [
+     119.0,
+     11.1
+    ],
+    [
+     111.6,
+     11.7
+    ],
+    [
+     111.0,
+     11.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.2,
+     0.7
+    ],
+    [
+     126.6,
+     0.0
+    ],
+    [
+     127.2,
+     0.0
+    ],
+    [
+     127.2,
+     10.6
+    ],
+    [
+     126.6,
+     10.5
+    ],
+    [
+     119.0,
+     11.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.2,
+     0.0
+    ],
+    [
+     136.2,
+     0.8
+    ],
+    [
+     135.3,
+     11.2
+    ],
+    [
+     127.2,
+     10.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     136.2,
+     0.8
+    ],
+    [
+     143.1,
+     1.3
+    ],
+    [
+     145.1,
+     1.8
+    ],
+    [
+     143.3,
+     12.1
+    ],
+    [
+     141.5,
+     11.7
+    ],
+    [
+     135.3,
+     11.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.1,
+     1.8
+    ],
+    [
+     153.9,
+     3.8
+    ],
+    [
+     151.2,
+     14.0
+    ],
+    [
+     143.3,
+     12.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.9,
+     3.8
+    ],
+    [
+     159.3,
+     5.1
+    ],
+    [
+     162.5,
+     6.4
+    ],
+    [
+     159.0,
+     16.3
+    ],
+    [
+     156.1,
+     15.1
+    ],
+    [
+     151.2,
+     14.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.5,
+     6.4
+    ],
+    [
+     170.9,
+     9.7
+    ],
+    [
+     166.6,
+     19.3
+    ],
+    [
+     159.0,
+     16.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.9,
+     9.7
+    ],
+    [
+     175.0,
+     11.4
+    ],
+    [
+     178.9,
+     13.7
+    ],
+    [
+     173.9,
+     22.9
+    ],
+    [
+     170.4,
+     20.9
+    ],
+    [
+     166.6,
+     19.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     178.9,
+     13.7
+    ],
+    [
+     186.6,
+     18.2
+    ],
+    [
+     181.0,
+     27.1
+    ],
+    [
+     173.9,
+     22.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.6,
+     18.2
+    ],
+    [
+     189.8,
+     20.1
+    ],
+    [
+     193.9,
+     23.4
+    ],
+    [
+     187.6,
+     31.8
+    ],
+    [
+     183.9,
+     28.8
+    ],
+    [
+     181.0,
+     27.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     193.9,
+     23.4
+    ],
+    [
+     200.9,
+     28.9
+    ],
+    [
+     194.1,
+     36.9
+    ],
+    [
+     187.6,
+     31.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.9,
+     28.9
+    ],
+    [
+     203.6,
+     31.0
+    ],
+    [
+     207.4,
+     35.0
+    ],
+    [
+     200.0,
+     42.5
+    ],
+    [
+     196.5,
+     38.8
+    ],
+    [
+     194.1,
+     36.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.4,
+     35.0
+    ],
+    [
+     213.6,
+     41.5
+    ],
+    [
+     205.7,
+     48.4
+    ],
+    [
+     200.0,
+     42.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.6,
+     41.5
+    ],
+    [
+     216.0,
+     44.0
+    ],
+    [
+     219.2,
+     48.3
+    ],
+    [
+     210.9,
+     54.8
+    ],
+    [
+     208.0,
+     50.8
+    ],
+    [
+     205.7,
+     48.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     219.2,
+     48.3
+    ],
+    [
+     224.5,
+     55.5
+    ],
+    [
+     215.8,
+     61.4
+    ],
+    [
+     210.9,
+     54.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     224.5,
+     55.5
+    ],
+    [
+     226.9,
+     58.7
+    ],
+    [
+     229.3,
+     62.9
+    ],
+    [
+     220.3,
+     68.4
+    ],
+    [
+     218.1,
+     64.4
+    ],
+    [
+     215.8,
+     61.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.3,
+     62.9
+    ],
+    [
+     233.6,
+     70.7
+    ],
+    [
+     224.3,
+     75.6
+    ],
+    [
+     220.3,
+     68.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.6,
+     70.7
+    ],
+    [
+     236.1,
+     75.1
+    ],
+    [
+     237.6,
+     78.6
+    ],
+    [
+     228.0,
+     83.0
+    ],
+    [
+     226.7,
+     79.7
+    ],
+    [
+     224.3,
+     75.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.6,
+     78.6
+    ],
+    [
+     241.0,
+     86.8
+    ],
+    [
+     231.2,
+     90.6
+    ],
+    [
+     228.0,
+     83.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     241.0,
+     86.8
+    ],
+    [
+     243.5,
+     92.7
+    ],
+    [
+     244.2,
+     95.0
+    ],
+    [
+     234.2,
+     98.4
+    ],
+    [
+     233.6,
+     96.2
+    ],
+    [
+     231.2,
+     90.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     244.2,
+     95.0
+    ],
+    [
+     246.6,
+     103.5
+    ],
+    [
+     236.5,
+     106.3
+    ],
+    [
+     234.2,
+     98.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     246.6,
+     103.5
+    ],
+    [
+     248.8,
+     111.3
+    ],
+    [
+     248.9,
+     112.1
+    ],
+    [
+     238.7,
+     114.3
+    ],
+    [
+     238.5,
+     113.6
+    ],
+    [
+     236.5,
+     106.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     248.9,
+     112.1
+    ],
+    [
+     250.4,
+     120.8
+    ],
+    [
+     240.0,
+     122.5
+    ],
+    [
+     238.7,
+     114.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     250.4,
+     120.8
+    ],
+    [
+     251.8,
+     129.5
+    ],
+    [
+     241.4,
+     130.7
+    ],
+    [
+     240.0,
+     122.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     251.8,
+     129.5
+    ],
+    [
+     252.0,
+     130.5
+    ],
+    [
+     252.4,
+     138.3
+    ],
+    [
+     242.0,
+     139.0
+    ],
+    [
+     241.5,
+     131.7
+    ],
+    [
+     241.4,
+     130.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.4,
+     138.3
+    ],
+    [
+     253.1,
+     150.1
+    ],
+    [
+     242.6,
+     150.1
+    ],
+    [
+     242.0,
+     139.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     239.6,
+     150.1
+    ],
+    [
+     239.1,
+     158.9
+    ],
+    [
+     228.6,
+     158.4
+    ],
+    [
+     229.1,
+     150.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     239.1,
+     158.9
+    ],
+    [
+     238.6,
+     167.8
+    ],
+    [
+     228.1,
+     166.7
+    ],
+    [
+     228.6,
+     158.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     238.6,
+     167.8
+    ],
+    [
+     238.6,
+     168.2
+    ],
+    [
+     237.2,
+     176.5
+    ],
+    [
+     226.8,
+     174.8
+    ],
+    [
+     228.1,
+     167.1
+    ],
+    [
+     228.1,
+     166.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.2,
+     176.5
+    ],
+    [
+     236.4,
+     181.1
+    ],
+    [
+     226.1,
+     179.1
+    ],
+    [
+     226.8,
+     174.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     234.7,
+     189.2
+    ],
+    [
+     232.3,
+     197.7
+    ],
+    [
+     222.3,
+     194.6
+    ],
+    [
+     224.5,
+     186.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.3,
+     197.7
+    ],
+    [
+     230.7,
+     203.1
+    ],
+    [
+     229.5,
+     206.1
+    ],
+    [
+     219.6,
+     202.4
+    ],
+    [
+     220.8,
+     199.6
+    ],
+    [
+     222.3,
+     194.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.5,
+     206.1
+    ],
+    [
+     226.0,
+     214.3
+    ],
+    [
+     216.4,
+     210.0
+    ],
+    [
+     219.6,
+     202.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     226.0,
+     214.3
+    ],
+    [
+     224.0,
+     219.2
+    ],
+    [
+     222.2,
+     222.3
+    ],
+    [
+     212.9,
+     217.5
+    ],
+    [
+     214.5,
+     214.6
+    ],
+    [
+     216.4,
+     210.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.2,
+     222.3
+    ],
+    [
+     217.8,
+     230.1
+    ],
+    [
+     208.8,
+     224.7
+    ],
+    [
+     212.9,
+     217.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     217.8,
+     230.1
+    ],
+    [
+     215.5,
+     234.2
+    ],
+    [
+     213.0,
+     237.6
+    ],
+    [
+     204.4,
+     231.6
+    ],
+    [
+     206.7,
+     228.4
+    ],
+    [
+     208.8,
+     224.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.0,
+     237.6
+    ],
+    [
+     207.8,
+     244.7
+    ],
+    [
+     199.5,
+     238.2
+    ],
+    [
+     204.4,
+     231.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.1,
+     251.4
+    ],
+    [
+     195.9,
+     257.8
+    ],
+    [
+     188.7,
+     250.2
+    ],
+    [
+     194.3,
+     244.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     195.9,
+     257.8
+    ],
+    [
+     194.5,
+     259.3
+    ],
+    [
+     189.0,
+     263.6
+    ],
+    [
+     182.4,
+     255.4
+    ],
+    [
+     187.4,
+     251.5
+    ],
+    [
+     188.7,
+     250.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     189.0,
+     263.6
+    ],
+    [
+     182.2,
+     269.0
+    ],
+    [
+     181.9,
+     269.2
+    ],
+    [
+     176.0,
+     260.5
+    ],
+    [
+     176.2,
+     260.3
+    ],
+    [
+     182.4,
+     255.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.9,
+     269.2
+    ],
+    [
+     174.2,
+     273.7
+    ],
+    [
+     169.0,
+     264.6
+    ],
+    [
+     176.0,
+     260.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     174.2,
+     273.7
+    ],
+    [
+     169.0,
+     276.7
+    ],
+    [
+     166.2,
+     277.9
+    ],
+    [
+     161.8,
+     268.3
+    ],
+    [
+     164.4,
+     267.3
+    ],
+    [
+     169.0,
+     264.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.2,
+     277.9
+    ],
+    [
+     157.8,
+     281.3
+    ],
+    [
+     154.3,
+     271.3
+    ],
+    [
+     161.8,
+     268.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.8,
+     281.3
+    ],
+    [
+     155.2,
+     282.3
+    ],
+    [
+     149.1,
+     283.7
+    ],
+    [
+     146.6,
+     273.5
+    ],
+    [
+     152.0,
+     272.2
+    ],
+    [
+     154.3,
+     271.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.4,
+     285.7
+    ],
+    [
+     131.4,
+     286.4
+    ],
+    [
+     130.8,
+     275.9
+    ],
+    [
+     138.9,
+     275.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.4,
+     286.4
+    ],
+    [
+     126.6,
+     286.8
+    ],
+    [
+     122.3,
+     286.4
+    ],
+    [
+     122.8,
+     275.9
+    ],
+    [
+     126.6,
+     276.2
+    ],
+    [
+     130.8,
+     275.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     122.3,
+     286.4
+    ],
+    [
+     113.3,
+     285.7
+    ],
+    [
+     114.8,
+     275.3
+    ],
+    [
+     122.8,
+     275.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.3,
+     285.7
+    ],
+    [
+     112.1,
+     285.6
+    ],
+    [
+     104.4,
+     283.8
+    ],
+    [
+     106.9,
+     273.6
+    ],
+    [
+     113.7,
+     275.2
+    ],
+    [
+     114.8,
+     275.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.4,
+     283.8
+    ],
+    [
+     97.9,
+     282.3
+    ],
+    [
+     95.7,
+     281.4
+    ],
+    [
+     99.1,
+     271.5
+    ],
+    [
+     101.1,
+     272.2
+    ],
+    [
+     106.9,
+     273.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.7,
+     281.4
+    ],
+    [
+     87.3,
+     278.0
+    ],
+    [
+     91.6,
+     268.5
+    ],
+    [
+     99.1,
+     271.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.3,
+     278.0
+    ],
+    [
+     84.1,
+     276.7
+    ],
+    [
+     79.3,
+     273.9
+    ],
+    [
+     84.4,
+     264.8
+    ],
+    [
+     88.7,
+     267.3
+    ],
+    [
+     91.6,
+     268.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.7,
+     269.5
+    ],
+    [
+     70.9,
+     269.0
+    ],
+    [
+     64.6,
+     264.0
+    ],
+    [
+     71.1,
+     255.8
+    ],
+    [
+     76.9,
+     260.3
+    ],
+    [
+     77.5,
+     260.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     64.6,
+     264.0
+    ],
+    [
+     58.6,
+     259.3
+    ],
+    [
+     57.6,
+     258.3
+    ],
+    [
+     64.8,
+     250.6
+    ],
+    [
+     65.7,
+     251.5
+    ],
+    [
+     71.1,
+     255.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.6,
+     258.3
+    ],
+    [
+     51.5,
+     251.8
+    ],
+    [
+     59.2,
+     244.7
+    ],
+    [
+     64.8,
+     250.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.5,
+     251.8
+    ],
+    [
+     47.5,
+     247.6
+    ],
+    [
+     45.6,
+     245.1
+    ],
+    [
+     53.8,
+     238.5
+    ],
+    [
+     55.5,
+     240.8
+    ],
+    [
+     59.2,
+     244.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.6,
+     245.1
+    ],
+    [
+     40.3,
+     237.9
+    ],
+    [
+     48.9,
+     231.9
+    ],
+    [
+     53.8,
+     238.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.3,
+     237.9
+    ],
+    [
+     37.6,
+     234.2
+    ],
+    [
+     35.4,
+     230.4
+    ],
+    [
+     44.4,
+     225.0
+    ],
+    [
+     46.4,
+     228.4
+    ],
+    [
+     48.9,
+     231.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.4,
+     230.4
+    ],
+    [
+     31.1,
+     222.7
+    ],
+    [
+     40.4,
+     217.8
+    ],
+    [
+     44.4,
+     225.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.3,
+     214.9
+    ],
+    [
+     23.9,
+     206.7
+    ],
+    [
+     33.7,
+     202.9
+    ],
+    [
+     36.9,
+     210.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.9,
+     206.7
+    ],
+    [
+     22.4,
+     203.1
+    ],
+    [
+     21.0,
+     198.3
+    ],
+    [
+     31.0,
+     195.1
+    ],
+    [
+     32.3,
+     199.6
+    ],
+    [
+     33.7,
+     202.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.0,
+     198.3
+    ],
+    [
+     18.5,
+     189.7
+    ],
+    [
+     28.7,
+     187.2
+    ],
+    [
+     31.0,
+     195.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.5,
+     189.7
+    ],
+    [
+     17.5,
+     186.0
+    ],
+    [
+     16.7,
+     181.1
+    ],
+    [
+     27.0,
+     179.1
+    ],
+    [
+     27.8,
+     183.7
+    ],
+    [
+     28.7,
+     187.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.7,
+     181.1
+    ],
+    [
+     15.2,
+     172.3
+    ],
+    [
+     25.6,
+     170.9
+    ],
+    [
+     27.0,
+     179.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.2,
+     172.3
+    ],
+    [
+     14.5,
+     168.2
+    ],
+    [
+     14.3,
+     163.6
+    ],
+    [
+     24.7,
+     162.7
+    ],
+    [
+     25.0,
+     167.1
+    ],
+    [
+     25.6,
+     170.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.3,
+     163.6
+    ],
+    [
+     13.8,
+     154.7
+    ],
+    [
+     24.3,
+     154.4
+    ],
+    [
+     24.7,
+     162.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.7,
+     146.1
+    ],
+    [
+     14.2,
+     137.2
+    ],
+    [
+     24.7,
+     138.1
+    ],
+    [
+     24.2,
+     146.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.2,
+     137.2
+    ],
+    [
+     14.5,
+     132.0
+    ],
+    [
+     15.1,
+     128.4
+    ],
+    [
+     25.5,
+     129.8
+    ],
+    [
+     25.0,
+     133.2
+    ],
+    [
+     24.7,
+     138.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.1,
+     128.4
+    ],
+    [
+     16.6,
+     119.7
+    ],
+    [
+     26.9,
+     121.6
+    ],
+    [
+     25.5,
+     129.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.6,
+     119.7
+    ],
+    [
+     17.5,
+     114.3
+    ],
+    [
+     18.4,
+     111.0
+    ],
+    [
+     28.6,
+     113.6
+    ],
+    [
+     27.8,
+     116.6
+    ],
+    [
+     26.9,
+     121.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.4,
+     111.0
+    ],
+    [
+     20.8,
+     102.5
+    ],
+    [
+     30.9,
+     105.6
+    ],
+    [
+     28.6,
+     113.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.8,
+     102.5
+    ],
+    [
+     22.4,
+     97.2
+    ],
+    [
+     23.7,
+     94.1
+    ],
+    [
+     33.5,
+     97.8
+    ],
+    [
+     32.3,
+     100.7
+    ],
+    [
+     30.9,
+     105.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.7,
+     94.1
+    ],
+    [
+     27.1,
+     85.9
+    ],
+    [
+     36.7,
+     90.2
+    ],
+    [
+     33.5,
+     97.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.8,
+     78.1
+    ],
+    [
+     35.2,
+     70.3
+    ],
+    [
+     44.2,
+     75.7
+    ],
+    [
+     40.1,
+     82.9
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.2,
+     70.3
+    ],
+    [
+     37.6,
+     66.1
+    ],
+    [
+     40.0,
+     62.8
+    ],
+    [
+     48.6,
+     68.8
+    ],
+    [
+     46.4,
+     71.8
+    ],
+    [
+     44.2,
+     75.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.0,
+     62.8
+    ],
+    [
+     45.3,
+     55.6
+    ],
+    [
+     53.5,
+     62.2
+    ],
+    [
+     48.6,
+     68.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.3,
+     55.6
+    ],
+    [
+     47.4,
+     52.7
+    ],
+    [
+     51.1,
+     48.9
+    ],
+    [
+     58.8,
+     56.0
+    ],
+    [
+     55.5,
+     59.5
+    ],
+    [
+     53.5,
+     62.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.1,
+     48.9
+    ],
+    [
+     57.3,
+     42.4
+    ],
+    [
+     64.5,
+     50.1
+    ],
+    [
+     58.8,
+     56.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.3,
+     42.4
+    ],
+    [
+     58.6,
+     41.0
+    ],
+    [
+     64.2,
+     36.6
+    ],
+    [
+     70.7,
+     44.8
+    ],
+    [
+     65.7,
+     48.8
+    ],
+    [
+     64.5,
+     50.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     64.2,
+     36.6
+    ],
+    [
+     70.9,
+     31.3
+    ],
+    [
+     71.2,
+     31.1
+    ],
+    [
+     77.2,
+     39.8
+    ],
+    [
+     76.9,
+     40.0
+    ],
+    [
+     70.7,
+     44.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     78.8,
+     26.6
+    ],
+    [
+     84.1,
+     23.6
+    ],
+    [
+     86.8,
+     22.4
+    ],
+    [
+     91.2,
+     32.0
+    ],
+    [
+     88.7,
+     33.0
+    ],
+    [
+     84.0,
+     35.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.8,
+     22.4
+    ],
+    [
+     95.2,
+     19.1
+    ],
+    [
+     98.7,
+     29.0
+    ],
+    [
+     91.2,
+     32.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.2,
+     19.1
+    ],
+    [
+     97.9,
+     18.0
+    ],
+    [
+     103.9,
+     16.6
+    ],
+    [
+     106.4,
+     26.8
+    ],
+    [
+     101.1,
+     28.1
+    ],
+    [
+     98.7,
+     29.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.9,
+     16.6
+    ],
+    [
+     112.1,
+     14.7
+    ],
+    [
+     112.8,
+     14.6
+    ],
+    [
+     114.3,
+     25.0
+    ],
+    [
+     113.7,
+     25.1
+    ],
+    [
+     106.4,
+     26.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     112.8,
+     14.6
+    ],
+    [
+     121.8,
+     13.9
+    ],
+    [
+     122.4,
+     24.4
+    ],
+    [
+     114.3,
+     25.0
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.8,
+     13.9
+    ],
+    [
+     126.6,
+     13.5
+    ],
+    [
+     130.9,
+     13.9
+    ],
+    [
+     130.4,
+     24.4
+    ],
+    [
+     126.6,
+     24.1
+    ],
+    [
+     122.4,
+     24.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.9,
+     13.9
+    ],
+    [
+     139.9,
+     14.6
+    ],
+    [
+     138.4,
+     25.0
+    ],
+    [
+     130.4,
+     24.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.6,
+     16.5
+    ],
+    [
+     155.2,
+     18.0
+    ],
+    [
+     157.3,
+     18.8
+    ],
+    [
+     153.9,
+     28.8
+    ],
+    [
+     152.0,
+     28.1
+    ],
+    [
+     146.1,
+     26.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.3,
+     18.8
+    ],
+    [
+     165.7,
+     22.2
+    ],
+    [
+     161.4,
+     31.8
+    ],
+    [
+     153.9,
+     28.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.7,
+     22.2
+    ],
+    [
+     169.0,
+     23.6
+    ],
+    [
+     173.7,
+     26.3
+    ],
+    [
+     168.6,
+     35.5
+    ],
+    [
+     164.4,
+     33.0
+    ],
+    [
+     161.4,
+     31.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.7,
+     26.3
+    ],
+    [
+     181.5,
+     30.9
+    ],
+    [
+     175.6,
+     39.6
+    ],
+    [
+     168.6,
+     35.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.5,
+     30.9
+    ],
+    [
+     182.2,
+     31.3
+    ],
+    [
+     188.6,
+     36.4
+    ],
+    [
+     182.1,
+     44.6
+    ],
+    [
+     176.2,
+     40.0
+    ],
+    [
+     175.6,
+     39.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     188.6,
+     36.4
+    ],
+    [
+     194.5,
+     41.0
+    ],
+    [
+     195.5,
+     42.1
+    ],
+    [
+     188.4,
+     49.8
+    ],
+    [
+     187.4,
+     48.8
+    ],
+    [
+     182.1,
+     44.6
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     195.5,
+     42.1
+    ],
+    [
+     201.7,
+     48.6
+    ],
+    [
+     194.0,
+     55.7
+    ],
+    [
+     188.4,
+     49.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.5,
+     55.2
+    ],
+    [
+     212.8,
+     62.3
+    ],
+    [
+     204.2,
+     68.3
+    ],
+    [
+     199.3,
+     61.7
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     212.8,
+     62.3
+    ],
+    [
+     215.5,
+     66.1
+    ],
+    [
+     217.6,
+     69.8
+    ],
+    [
+     208.6,
+     75.2
+    ],
+    [
+     206.7,
+     71.8
+    ],
+    [
+     204.2,
+     68.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     217.6,
+     69.8
+    ],
+    [
+     222.0,
+     77.5
+    ],
+    [
+     212.7,
+     82.4
+    ],
+    [
+     208.6,
+     75.2
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     77.5
+    ],
+    [
+     224.0,
+     81.0
+    ],
+    [
+     225.8,
+     85.5
+    ],
+    [
+     216.3,
+     89.8
+    ],
+    [
+     214.5,
+     85.7
+    ],
+    [
+     212.7,
+     82.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.8,
+     85.5
+    ],
+    [
+     229.3,
+     93.7
+    ],
+    [
+     219.5,
+     97.4
+    ],
+    [
+     216.3,
+     89.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     229.3,
+     93.7
+    ],
+    [
+     230.7,
+     97.2
+    ],
+    [
+     232.1,
+     102.1
+    ],
+    [
+     222.1,
+     105.3
+    ],
+    [
+     220.8,
+     100.7
+    ],
+    [
+     219.5,
+     97.4
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.1,
+     102.1
+    ],
+    [
+     234.6,
+     110.6
+    ],
+    [
+     224.4,
+     113.2
+    ],
+    [
+     222.1,
+     105.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     236.4,
+     119.1
+    ],
+    [
+     237.9,
+     127.8
+    ],
+    [
+     227.5,
+     129.3
+    ],
+    [
+     226.1,
+     121.1
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.9,
+     127.8
+    ],
+    [
+     238.6,
+     132.0
+    ],
+    [
+     238.8,
+     136.6
+    ],
+    [
+     228.4,
+     137.5
+    ],
+    [
+     228.1,
+     133.2
+    ],
+    [
+     227.5,
+     129.3
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     238.8,
+     136.6
+    ],
+    [
+     239.3,
+     145.5
+    ],
+    [
+     228.8,
+     145.8
+    ],
+    [
+     228.4,
+     137.5
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Debrief room",
+   "level": "L1",
+   "outline_m": [
+    [
+     239.3,
+     145.5
+    ],
+    [
+     239.6,
+     150.1
+    ],
+    [
+     229.1,
+     150.1
+    ],
+    [
+     228.8,
+     145.8
+    ]
+   ],
+   "about": "Debriefs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     242.6,
+     150.1
+    ],
+    [
+     241.5,
+     168.5
+    ],
+    [
+     238.5,
+     186.7
+    ],
+    [
+     233.6,
+     204.1
+    ],
+    [
+     226.7,
+     220.6
+    ],
+    [
+     218.1,
+     235.8
+    ],
+    [
+     207.9,
+     249.5
+    ],
+    [
+     198.4,
+     259.5
+    ],
+    [
+     196.3,
+     257.4
+    ],
+    [
+     205.6,
+     247.6
+    ],
+    [
+     215.5,
+     234.2
+    ],
+    [
+     224.0,
+     219.2
+    ],
+    [
+     230.7,
+     203.1
+    ],
+    [
+     235.6,
+     186.0
+    ],
+    [
+     238.6,
+     168.2
+    ],
+    [
+     239.6,
+     150.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     198.4,
+     259.5
+    ],
+    [
+     196.5,
+     261.5
+    ],
+    [
+     183.9,
+     271.5
+    ],
+    [
+     170.4,
+     279.4
+    ],
+    [
+     156.1,
+     285.2
+    ],
+    [
+     141.5,
+     288.6
+    ],
+    [
+     126.6,
+     289.8
+    ],
+    [
+     111.6,
+     288.6
+    ],
+    [
+     97.0,
+     285.2
+    ],
+    [
+     85.9,
+     280.7
+    ],
+    [
+     87.2,
+     278.0
+    ],
+    [
+     97.9,
+     282.3
+    ],
+    [
+     112.1,
+     285.6
+    ],
+    [
+     126.6,
+     286.8
+    ],
+    [
+     141.0,
+     285.6
+    ],
+    [
+     155.2,
+     282.3
+    ],
+    [
+     169.0,
+     276.7
+    ],
+    [
+     182.2,
+     269.0
+    ],
+    [
+     194.5,
+     259.3
+    ],
+    [
+     196.3,
+     257.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.9,
+     280.7
+    ],
+    [
+     82.7,
+     279.4
+    ],
+    [
+     69.2,
+     271.5
+    ],
+    [
+     56.6,
+     261.5
+    ],
+    [
+     45.2,
+     249.5
+    ],
+    [
+     35.0,
+     235.8
+    ],
+    [
+     26.4,
+     220.6
+    ],
+    [
+     19.5,
+     204.1
+    ],
+    [
+     14.8,
+     187.6
+    ],
+    [
+     17.7,
+     186.9
+    ],
+    [
+     22.4,
+     203.1
+    ],
+    [
+     29.1,
+     219.2
+    ],
+    [
+     37.6,
+     234.2
+    ],
+    [
+     47.5,
+     247.6
+    ],
+    [
+     58.6,
+     259.3
+    ],
+    [
+     70.9,
+     269.0
+    ],
+    [
+     84.1,
+     276.7
+    ],
+    [
+     87.2,
+     278.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.8,
+     187.6
+    ],
+    [
+     14.6,
+     186.7
+    ],
+    [
+     11.6,
+     168.5
+    ],
+    [
+     10.5,
+     150.1
+    ],
+    [
+     11.6,
+     131.7
+    ],
+    [
+     14.6,
+     113.6
+    ],
+    [
+     19.5,
+     96.2
+    ],
+    [
+     26.4,
+     79.7
+    ],
+    [
+     31.6,
+     70.5
+    ],
+    [
+     34.2,
+     72.0
+    ],
+    [
+     29.1,
+     81.0
+    ],
+    [
+     22.4,
+     97.2
+    ],
+    [
+     17.5,
+     114.3
+    ],
+    [
+     14.5,
+     132.0
+    ],
+    [
+     13.5,
+     150.1
+    ],
+    [
+     14.5,
+     168.2
+    ],
+    [
+     17.5,
+     186.0
+    ],
+    [
+     17.7,
+     186.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     31.6,
+     70.5
+    ],
+    [
+     35.0,
+     64.4
+    ],
+    [
+     45.1,
+     50.8
+    ],
+    [
+     56.6,
+     38.8
+    ],
+    [
+     69.2,
+     28.8
+    ],
+    [
+     82.7,
+     20.9
+    ],
+    [
+     97.0,
+     15.1
+    ],
+    [
+     111.6,
+     11.7
+    ],
+    [
+     126.6,
+     10.5
+    ],
+    [
+     130.5,
+     10.8
+    ],
+    [
+     130.4,
+     13.8
+    ],
+    [
+     126.6,
+     13.5
+    ],
+    [
+     112.1,
+     14.7
+    ],
+    [
+     97.9,
+     18.0
+    ],
+    [
+     84.1,
+     23.6
+    ],
+    [
+     70.9,
+     31.3
+    ],
+    [
+     58.6,
+     41.0
+    ],
+    [
+     47.4,
+     52.7
+    ],
+    [
+     37.6,
+     66.1
+    ],
+    [
+     34.2,
+     72.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     130.5,
+     10.8
+    ],
+    [
+     141.5,
+     11.7
+    ],
+    [
+     156.1,
+     15.1
+    ],
+    [
+     170.4,
+     20.9
+    ],
+    [
+     183.9,
+     28.8
+    ],
+    [
+     196.5,
+     38.8
+    ],
+    [
+     208.0,
+     50.8
+    ],
+    [
+     218.1,
+     64.4
+    ],
+    [
+     225.3,
+     77.4
+    ],
+    [
+     222.7,
+     78.8
+    ],
+    [
+     215.5,
+     66.1
+    ],
+    [
+     205.7,
+     52.7
+    ],
+    [
+     194.5,
+     41.0
+    ],
+    [
+     182.2,
+     31.3
+    ],
+    [
+     169.0,
+     23.6
+    ],
+    [
+     155.2,
+     18.0
+    ],
+    [
+     141.0,
+     14.7
+    ],
+    [
+     130.4,
+     13.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.3,
+     77.4
+    ],
+    [
+     226.7,
+     79.7
+    ],
+    [
+     233.6,
+     96.2
+    ],
+    [
+     238.5,
+     113.6
+    ],
+    [
+     241.5,
+     131.7
+    ],
+    [
+     242.6,
+     150.1
+    ],
+    [
+     239.6,
+     150.1
+    ],
+    [
+     238.6,
+     132.0
+    ],
+    [
+     235.6,
+     114.3
+    ],
+    [
+     230.7,
+     97.2
+    ],
+    [
+     224.0,
+     81.0
+    ],
+    [
+     222.7,
+     78.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     253.1,
+     150.1
+    ],
+    [
+     252.9,
+     153.9
+    ],
+    [
+     242.4,
+     153.7
+    ],
+    [
+     242.6,
+     150.1
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L2",
+   "outline_m": [
+    [
+     252.9,
+     153.9
+    ],
+    [
+     252.6,
+     159.8
+    ],
+    [
+     242.1,
+     159.2
+    ],
+    [
+     242.4,
+     153.7
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     252.6,
+     159.8
+    ],
+    [
+     252.0,
+     169.7
+    ],
+    [
+     251.7,
+     171.5
+    ],
+    [
+     241.3,
+     170.2
+    ],
+    [
+     241.5,
+     168.5
+    ],
+    [
+     242.1,
+     159.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     251.7,
+     171.5
+    ],
+    [
+     249.8,
+     183.1
+    ],
+    [
+     239.5,
+     181.2
+    ],
+    [
+     241.3,
+     170.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     249.8,
+     183.1
+    ],
+    [
+     248.8,
+     189.0
+    ],
+    [
+     247.2,
+     194.6
+    ],
+    [
+     237.0,
+     191.9
+    ],
+    [
+     238.5,
+     186.7
+    ],
+    [
+     239.5,
+     181.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     247.2,
+     194.6
+    ],
+    [
+     244.0,
+     206.0
+    ],
+    [
+     234.0,
+     202.6
+    ],
+    [
+     237.0,
+     191.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     244.0,
+     206.0
+    ],
+    [
+     243.5,
+     207.6
+    ],
+    [
+     239.6,
+     216.9
+    ],
+    [
+     229.9,
+     212.8
+    ],
+    [
+     233.6,
+     204.1
+    ],
+    [
+     234.0,
+     202.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     239.6,
+     216.9
+    ],
+    [
+     236.1,
+     225.2
+    ],
+    [
+     234.7,
+     227.7
+    ],
+    [
+     225.4,
+     222.9
+    ],
+    [
+     226.7,
+     220.6
+    ],
+    [
+     229.9,
+     212.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     234.7,
+     227.7
+    ],
+    [
+     228.9,
+     238.0
+    ],
+    [
+     219.9,
+     232.5
+    ],
+    [
+     225.4,
+     222.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     228.9,
+     238.0
+    ],
+    [
+     226.9,
+     241.5
+    ],
+    [
+     222.3,
+     247.8
+    ],
+    [
+     213.8,
+     241.6
+    ],
+    [
+     218.1,
+     235.8
+    ],
+    [
+     219.9,
+     232.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.3,
+     247.8
+    ],
+    [
+     216.0,
+     256.3
+    ],
+    [
+     215.1,
+     257.2
+    ],
+    [
+     207.2,
+     250.4
+    ],
+    [
+     207.9,
+     249.5
+    ],
+    [
+     213.8,
+     241.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     215.1,
+     257.2
+    ],
+    [
+     206.9,
+     265.8
+    ],
+    [
+     199.6,
+     258.3
+    ],
+    [
+     207.2,
+     250.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     265.8
+    ],
+    [
+     203.6,
+     269.3
+    ],
+    [
+     198.0,
+     273.7
+    ],
+    [
+     191.4,
+     265.5
+    ],
+    [
+     196.5,
+     261.5
+    ],
+    [
+     199.6,
+     258.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     198.0,
+     273.7
+    ],
+    [
+     189.8,
+     280.2
+    ],
+    [
+     188.6,
+     280.9
+    ],
+    [
+     182.7,
+     272.2
+    ],
+    [
+     183.9,
+     271.5
+    ],
+    [
+     191.4,
+     265.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     188.6,
+     280.9
+    ],
+    [
+     178.3,
+     287.0
+    ],
+    [
+     173.3,
+     277.7
+    ],
+    [
+     182.7,
+     272.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     178.3,
+     287.0
+    ],
+    [
+     175.0,
+     288.9
+    ],
+    [
+     167.4,
+     291.9
+    ],
+    [
+     163.5,
+     282.2
+    ],
+    [
+     170.4,
+     279.4
+    ],
+    [
+     173.3,
+     277.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     167.4,
+     291.9
+    ],
+    [
+     159.3,
+     295.2
+    ],
+    [
+     156.1,
+     295.9
+    ],
+    [
+     153.3,
+     285.8
+    ],
+    [
+     156.1,
+     285.2
+    ],
+    [
+     163.5,
+     282.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     156.1,
+     295.9
+    ],
+    [
+     144.4,
+     298.7
+    ],
+    [
+     142.7,
+     288.3
+    ],
+    [
+     153.3,
+     285.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     144.4,
+     298.7
+    ],
+    [
+     143.1,
+     299.0
+    ],
+    [
+     132.5,
+     299.8
+    ],
+    [
+     131.9,
+     289.3
+    ],
+    [
+     141.5,
+     288.6
+    ],
+    [
+     142.7,
+     288.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     132.5,
+     299.8
+    ],
+    [
+     126.6,
+     300.3
+    ],
+    [
+     120.5,
+     299.8
+    ],
+    [
+     121.1,
+     289.3
+    ],
+    [
+     126.6,
+     289.8
+    ],
+    [
+     131.9,
+     289.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     120.5,
+     299.8
+    ],
+    [
+     110.0,
+     299.0
+    ],
+    [
+     108.6,
+     298.7
+    ],
+    [
+     110.3,
+     288.3
+    ],
+    [
+     111.6,
+     288.6
+    ],
+    [
+     121.1,
+     289.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.6,
+     298.7
+    ],
+    [
+     96.9,
+     295.9
+    ],
+    [
+     99.8,
+     285.8
+    ],
+    [
+     110.3,
+     288.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     96.9,
+     295.9
+    ],
+    [
+     93.8,
+     295.2
+    ],
+    [
+     85.6,
+     291.9
+    ],
+    [
+     89.5,
+     282.2
+    ],
+    [
+     97.0,
+     285.2
+    ],
+    [
+     99.8,
+     285.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.6,
+     291.9
+    ],
+    [
+     78.1,
+     288.9
+    ],
+    [
+     74.7,
+     286.9
+    ],
+    [
+     79.7,
+     277.7
+    ],
+    [
+     82.7,
+     279.4
+    ],
+    [
+     89.5,
+     282.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.7,
+     286.9
+    ],
+    [
+     64.4,
+     280.9
+    ],
+    [
+     70.3,
+     272.1
+    ],
+    [
+     79.7,
+     277.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.4,
+     280.9
+    ],
+    [
+     63.3,
+     280.2
+    ],
+    [
+     55.0,
+     273.6
+    ],
+    [
+     61.6,
+     265.5
+    ],
+    [
+     69.2,
+     271.5
+    ],
+    [
+     70.3,
+     272.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     55.0,
+     273.6
+    ],
+    [
+     49.5,
+     269.3
+    ],
+    [
+     46.1,
+     265.7
+    ],
+    [
+     53.5,
+     258.2
+    ],
+    [
+     56.6,
+     261.5
+    ],
+    [
+     61.6,
+     265.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     46.1,
+     265.7
+    ],
+    [
+     37.9,
+     257.1
+    ],
+    [
+     45.9,
+     250.3
+    ],
+    [
+     53.5,
+     258.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     37.9,
+     257.1
+    ],
+    [
+     37.1,
+     256.3
+    ],
+    [
+     30.7,
+     247.7
+    ],
+    [
+     39.3,
+     241.5
+    ],
+    [
+     45.2,
+     249.5
+    ],
+    [
+     45.9,
+     250.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.7,
+     247.7
+    ],
+    [
+     26.2,
+     241.5
+    ],
+    [
+     24.2,
+     237.9
+    ],
+    [
+     33.1,
+     232.4
+    ],
+    [
+     35.0,
+     235.8
+    ],
+    [
+     39.3,
+     241.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     24.2,
+     237.9
+    ],
+    [
+     18.3,
+     227.6
+    ],
+    [
+     27.7,
+     222.8
+    ],
+    [
+     33.1,
+     232.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     18.3,
+     227.6
+    ],
+    [
+     17.0,
+     225.2
+    ],
+    [
+     13.5,
+     216.8
+    ],
+    [
+     23.1,
+     212.7
+    ],
+    [
+     26.4,
+     220.6
+    ],
+    [
+     27.7,
+     222.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     216.8
+    ],
+    [
+     9.6,
+     207.6
+    ],
+    [
+     9.1,
+     205.9
+    ],
+    [
+     19.1,
+     202.5
+    ],
+    [
+     19.5,
+     204.1
+    ],
+    [
+     23.1,
+     212.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.1,
+     205.9
+    ],
+    [
+     5.9,
+     194.5
+    ],
+    [
+     16.0,
+     191.9
+    ],
+    [
+     19.1,
+     202.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     5.9,
+     194.5
+    ],
+    [
+     4.3,
+     189.0
+    ],
+    [
+     3.3,
+     183.0
+    ],
+    [
+     13.6,
+     181.1
+    ],
+    [
+     14.6,
+     186.7
+    ],
+    [
+     16.0,
+     191.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     3.3,
+     183.0
+    ],
+    [
+     1.4,
+     171.4
+    ],
+    [
+     11.8,
+     170.1
+    ],
+    [
+     13.6,
+     181.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     1.4,
+     171.4
+    ],
+    [
+     1.1,
+     169.7
+    ],
+    [
+     0.5,
+     159.7
+    ],
+    [
+     11.0,
+     159.1
+    ],
+    [
+     11.6,
+     168.5
+    ],
+    [
+     11.8,
+     170.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.5,
+     159.7
+    ],
+    [
+     0.0,
+     150.1
+    ],
+    [
+     0.1,
+     147.9
+    ],
+    [
+     10.6,
+     148.0
+    ],
+    [
+     10.5,
+     150.1
+    ],
+    [
+     11.0,
+     159.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.1,
+     147.9
+    ],
+    [
+     0.8,
+     136.1
+    ],
+    [
+     11.3,
+     137.0
+    ],
+    [
+     10.6,
+     148.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.8,
+     136.1
+    ],
+    [
+     1.1,
+     130.5
+    ],
+    [
+     2.1,
+     124.5
+    ],
+    [
+     12.5,
+     126.0
+    ],
+    [
+     11.6,
+     131.7
+    ],
+    [
+     11.3,
+     137.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     2.1,
+     124.5
+    ],
+    [
+     4.0,
+     112.8
+    ],
+    [
+     14.3,
+     115.1
+    ],
+    [
+     12.5,
+     126.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.0,
+     112.8
+    ],
+    [
+     4.3,
+     111.3
+    ],
+    [
+     7.1,
+     101.5
+    ],
+    [
+     17.2,
+     104.4
+    ],
+    [
+     14.6,
+     113.6
+    ],
+    [
+     14.3,
+     115.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     7.1,
+     101.5
+    ],
+    [
+     9.6,
+     92.7
+    ],
+    [
+     10.6,
+     90.2
+    ],
+    [
+     20.5,
+     93.9
+    ],
+    [
+     19.5,
+     96.2
+    ],
+    [
+     17.2,
+     104.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.6,
+     90.2
+    ],
+    [
+     15.2,
+     79.3
+    ],
+    [
+     24.8,
+     83.7
+    ],
+    [
+     20.5,
+     93.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.2,
+     79.3
+    ],
+    [
+     17.0,
+     75.1
+    ],
+    [
+     20.5,
+     68.8
+    ],
+    [
+     29.8,
+     73.8
+    ],
+    [
+     26.4,
+     79.7
+    ],
+    [
+     24.8,
+     83.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     20.5,
+     68.8
+    ],
+    [
+     26.2,
+     58.7
+    ],
+    [
+     26.4,
+     58.5
+    ],
+    [
+     35.2,
+     64.2
+    ],
+    [
+     35.0,
+     64.4
+    ],
+    [
+     29.8,
+     73.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.4,
+     58.5
+    ],
+    [
+     33.4,
+     49.0
+    ],
+    [
+     41.7,
+     55.4
+    ],
+    [
+     35.2,
+     64.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.4,
+     49.0
+    ],
+    [
+     37.1,
+     44.0
+    ],
+    [
+     41.0,
+     39.9
+    ],
+    [
+     48.8,
+     47.0
+    ],
+    [
+     45.1,
+     50.8
+    ],
+    [
+     41.7,
+     55.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     41.0,
+     39.9
+    ],
+    [
+     49.2,
+     31.3
+    ],
+    [
+     56.3,
+     39.0
+    ],
+    [
+     48.8,
+     47.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     49.2,
+     31.3
+    ],
+    [
+     49.5,
+     31.0
+    ],
+    [
+     58.5,
+     23.9
+    ],
+    [
+     64.9,
+     32.2
+    ],
+    [
+     56.6,
+     38.8
+    ],
+    [
+     56.3,
+     39.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     58.5,
+     23.9
+    ],
+    [
+     63.3,
+     20.1
+    ],
+    [
+     68.4,
+     17.1
+    ],
+    [
+     73.9,
+     26.1
+    ],
+    [
+     69.2,
+     28.8
+    ],
+    [
+     64.9,
+     32.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     68.4,
+     17.1
+    ],
+    [
+     78.1,
+     11.4
+    ],
+    [
+     78.7,
+     11.2
+    ],
+    [
+     83.3,
+     20.6
+    ],
+    [
+     82.7,
+     20.9
+    ],
+    [
+     73.9,
+     26.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     78.7,
+     11.2
+    ],
+    [
+     89.8,
+     6.7
+    ],
+    [
+     93.4,
+     16.6
+    ],
+    [
+     83.3,
+     20.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.8,
+     6.7
+    ],
+    [
+     93.8,
+     5.1
+    ],
+    [
+     101.3,
+     3.3
+    ],
+    [
+     103.8,
+     13.5
+    ],
+    [
+     97.0,
+     15.1
+    ],
+    [
+     93.4,
+     16.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.3,
+     3.3
+    ],
+    [
+     110.0,
+     1.3
+    ],
+    [
+     113.1,
+     1.1
+    ],
+    [
+     114.4,
+     11.5
+    ],
+    [
+     111.6,
+     11.7
+    ],
+    [
+     103.8,
+     13.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     113.1,
+     1.1
+    ],
+    [
+     125.1,
+     0.1
+    ],
+    [
+     125.2,
+     10.6
+    ],
+    [
+     114.4,
+     11.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     125.1,
+     0.1
+    ],
+    [
+     126.6,
+     0.0
+    ],
+    [
+     137.1,
+     0.8
+    ],
+    [
+     136.0,
+     11.3
+    ],
+    [
+     126.6,
+     10.5
+    ],
+    [
+     125.2,
+     10.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.1,
+     0.8
+    ],
+    [
+     143.1,
+     1.3
+    ],
+    [
+     148.9,
+     2.7
+    ],
+    [
+     146.7,
+     12.9
+    ],
+    [
+     141.5,
+     11.7
+    ],
+    [
+     136.0,
+     11.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.9,
+     2.7
+    ],
+    [
+     159.3,
+     5.1
+    ],
+    [
+     160.5,
+     5.6
+    ],
+    [
+     157.2,
+     15.6
+    ],
+    [
+     156.1,
+     15.1
+    ],
+    [
+     146.7,
+     12.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.5,
+     5.6
+    ],
+    [
+     171.6,
+     10.1
+    ],
+    [
+     167.3,
+     19.6
+    ],
+    [
+     157.2,
+     15.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.6,
+     10.1
+    ],
+    [
+     175.0,
+     11.4
+    ],
+    [
+     182.2,
+     15.6
+    ],
+    [
+     176.9,
+     24.7
+    ],
+    [
+     170.4,
+     20.9
+    ],
+    [
+     167.3,
+     19.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     182.2,
+     15.6
+    ],
+    [
+     189.8,
+     20.1
+    ],
+    [
+     192.3,
+     22.0
+    ],
+    [
+     186.1,
+     30.6
+    ],
+    [
+     183.9,
+     28.8
+    ],
+    [
+     176.9,
+     24.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     192.3,
+     22.0
+    ],
+    [
+     201.6,
+     29.4
+    ],
+    [
+     194.7,
+     37.3
+    ],
+    [
+     186.1,
+     30.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     201.6,
+     29.4
+    ],
+    [
+     203.6,
+     31.0
+    ],
+    [
+     210.1,
+     37.8
+    ],
+    [
+     202.5,
+     45.0
+    ],
+    [
+     196.5,
+     38.8
+    ],
+    [
+     194.7,
+     37.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     210.1,
+     37.8
+    ],
+    [
+     216.0,
+     44.0
+    ],
+    [
+     218.0,
+     46.6
+    ],
+    [
+     209.8,
+     53.2
+    ],
+    [
+     208.0,
+     50.8
+    ],
+    [
+     202.5,
+     45.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     218.0,
+     46.6
+    ],
+    [
+     225.0,
+     56.2
+    ],
+    [
+     216.3,
+     62.1
+    ],
+    [
+     209.8,
+     53.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.0,
+     56.2
+    ],
+    [
+     226.9,
+     58.7
+    ],
+    [
+     231.1,
+     66.3
+    ],
+    [
+     222.0,
+     71.5
+    ],
+    [
+     218.1,
+     64.4
+    ],
+    [
+     216.3,
+     62.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     231.1,
+     66.3
+    ],
+    [
+     236.1,
+     75.1
+    ],
+    [
+     236.8,
+     76.7
+    ],
+    [
+     227.3,
+     81.2
+    ],
+    [
+     226.7,
+     79.7
+    ],
+    [
+     222.0,
+     71.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     236.8,
+     76.7
+    ],
+    [
+     241.3,
+     87.5
+    ],
+    [
+     231.5,
+     91.4
+    ],
+    [
+     227.3,
+     81.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     241.3,
+     87.5
+    ],
+    [
+     243.5,
+     92.7
+    ],
+    [
+     245.2,
+     98.7
+    ],
+    [
+     235.2,
+     101.8
+    ],
+    [
+     233.6,
+     96.2
+    ],
+    [
+     231.5,
+     91.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     245.2,
+     98.7
+    ],
+    [
+     248.4,
+     110.0
+    ],
+    [
+     238.2,
+     112.4
+    ],
+    [
+     235.2,
+     101.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     248.4,
+     110.0
+    ],
+    [
+     248.8,
+     111.3
+    ],
+    [
+     250.5,
+     121.6
+    ],
+    [
+     240.2,
+     123.3
+    ],
+    [
+     238.5,
+     113.6
+    ],
+    [
+     238.2,
+     112.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     250.5,
+     121.6
+    ],
+    [
+     252.0,
+     130.5
+    ],
+    [
+     252.2,
+     133.3
+    ],
+    [
+     241.7,
+     134.3
+    ],
+    [
+     241.5,
+     131.7
+    ],
+    [
+     240.2,
+     123.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     252.2,
+     133.3
+    ],
+    [
+     253.1,
+     150.1
+    ],
+    [
+     242.6,
+     150.1
+    ],
+    [
+     241.7,
+     134.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     239.6,
+     150.1
+    ],
+    [
+     238.9,
+     161.9
+    ],
+    [
+     228.4,
+     161.1
+    ],
+    [
+     229.1,
+     150.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     238.9,
+     161.9
+    ],
+    [
+     238.6,
+     168.2
+    ],
+    [
+     237.7,
+     173.6
+    ],
+    [
+     227.3,
+     172.1
+    ],
+    [
+     228.1,
+     167.1
+    ],
+    [
+     228.4,
+     161.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     237.7,
+     173.6
+    ],
+    [
+     236.4,
+     181.1
+    ],
+    [
+     226.1,
+     179.1
+    ],
+    [
+     227.3,
+     172.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     234.7,
+     189.2
+    ],
+    [
+     231.5,
+     200.6
+    ],
+    [
+     221.5,
+     197.2
+    ],
+    [
+     224.5,
+     186.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     231.5,
+     200.6
+    ],
+    [
+     230.7,
+     203.1
+    ],
+    [
+     227.2,
+     211.6
+    ],
+    [
+     217.5,
+     207.5
+    ],
+    [
+     220.8,
+     199.6
+    ],
+    [
+     221.5,
+     197.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     227.2,
+     211.6
+    ],
+    [
+     224.0,
+     219.2
+    ],
+    [
+     222.2,
+     222.3
+    ],
+    [
+     212.9,
+     217.5
+    ],
+    [
+     214.5,
+     214.6
+    ],
+    [
+     217.5,
+     207.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.2,
+     222.3
+    ],
+    [
+     216.4,
+     232.7
+    ],
+    [
+     207.5,
+     227.0
+    ],
+    [
+     212.9,
+     217.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     216.4,
+     232.7
+    ],
+    [
+     215.5,
+     234.2
+    ],
+    [
+     207.5,
+     245.1
+    ],
+    [
+     199.3,
+     238.5
+    ],
+    [
+     206.7,
+     228.4
+    ],
+    [
+     207.5,
+     227.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     202.1,
+     251.4
+    ],
+    [
+     194.5,
+     259.3
+    ],
+    [
+     193.7,
+     259.9
+    ],
+    [
+     186.7,
+     252.1
+    ],
+    [
+     187.4,
+     251.5
+    ],
+    [
+     194.3,
+     244.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     193.7,
+     259.9
+    ],
+    [
+     184.3,
+     267.3
+    ],
+    [
+     178.2,
+     258.8
+    ],
+    [
+     186.7,
+     252.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     184.3,
+     267.3
+    ],
+    [
+     182.2,
+     269.0
+    ],
+    [
+     174.2,
+     273.7
+    ],
+    [
+     169.0,
+     264.6
+    ],
+    [
+     176.2,
+     260.3
+    ],
+    [
+     178.2,
+     258.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     174.2,
+     273.7
+    ],
+    [
+     169.0,
+     276.7
+    ],
+    [
+     163.4,
+     279.0
+    ],
+    [
+     159.3,
+     269.3
+    ],
+    [
+     164.4,
+     267.3
+    ],
+    [
+     169.0,
+     264.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     163.4,
+     279.0
+    ],
+    [
+     155.2,
+     282.3
+    ],
+    [
+     148.7,
+     283.8
+    ],
+    [
+     146.2,
+     273.6
+    ],
+    [
+     152.0,
+     272.2
+    ],
+    [
+     159.3,
+     269.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.4,
+     285.7
+    ],
+    [
+     128.4,
+     286.6
+    ],
+    [
+     128.2,
+     276.1
+    ],
+    [
+     138.9,
+     275.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     128.4,
+     286.6
+    ],
+    [
+     126.6,
+     286.8
+    ],
+    [
+     116.3,
+     286.0
+    ],
+    [
+     117.4,
+     275.5
+    ],
+    [
+     126.6,
+     276.2
+    ],
+    [
+     128.2,
+     276.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     116.3,
+     286.0
+    ],
+    [
+     112.1,
+     285.6
+    ],
+    [
+     104.4,
+     283.8
+    ],
+    [
+     106.9,
+     273.6
+    ],
+    [
+     113.7,
+     275.2
+    ],
+    [
+     117.4,
+     275.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.4,
+     283.8
+    ],
+    [
+     97.9,
+     282.3
+    ],
+    [
+     92.9,
+     280.3
+    ],
+    [
+     96.6,
+     270.5
+    ],
+    [
+     101.1,
+     272.2
+    ],
+    [
+     106.9,
+     273.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.9,
+     280.3
+    ],
+    [
+     84.1,
+     276.7
+    ],
+    [
+     78.9,
+     273.7
+    ],
+    [
+     84.1,
+     264.6
+    ],
+    [
+     88.7,
+     267.3
+    ],
+    [
+     96.6,
+     270.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     71.7,
+     269.5
+    ],
+    [
+     70.9,
+     269.0
+    ],
+    [
+     62.2,
+     262.1
+    ],
+    [
+     69.0,
+     254.1
+    ],
+    [
+     76.9,
+     260.3
+    ],
+    [
+     77.5,
+     260.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     62.2,
+     262.1
+    ],
+    [
+     58.6,
+     259.3
+    ],
+    [
+     53.5,
+     253.9
+    ],
+    [
+     61.0,
+     246.6
+    ],
+    [
+     65.7,
+     251.5
+    ],
+    [
+     69.0,
+     254.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     53.5,
+     253.9
+    ],
+    [
+     47.5,
+     247.6
+    ],
+    [
+     45.6,
+     245.1
+    ],
+    [
+     53.8,
+     238.5
+    ],
+    [
+     55.5,
+     240.8
+    ],
+    [
+     61.0,
+     246.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     45.6,
+     245.1
+    ],
+    [
+     38.5,
+     235.5
+    ],
+    [
+     47.3,
+     229.7
+    ],
+    [
+     53.8,
+     238.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.5,
+     235.5
+    ],
+    [
+     37.6,
+     234.2
+    ],
+    [
+     30.9,
+     222.3
+    ],
+    [
+     40.2,
+     217.5
+    ],
+    [
+     46.4,
+     228.4
+    ],
+    [
+     47.3,
+     229.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.3,
+     214.9
+    ],
+    [
+     22.7,
+     203.9
+    ],
+    [
+     32.6,
+     200.4
+    ],
+    [
+     36.9,
+     210.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     22.7,
+     203.9
+    ],
+    [
+     22.4,
+     203.1
+    ],
+    [
+     19.4,
+     192.6
+    ],
+    [
+     29.5,
+     189.8
+    ],
+    [
+     32.3,
+     199.6
+    ],
+    [
+     32.6,
+     200.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.4,
+     192.6
+    ],
+    [
+     17.5,
+     186.0
+    ],
+    [
+     16.7,
+     181.1
+    ],
+    [
+     27.0,
+     179.1
+    ],
+    [
+     27.8,
+     183.7
+    ],
+    [
+     29.5,
+     189.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     16.7,
+     181.1
+    ],
+    [
+     14.7,
+     169.4
+    ],
+    [
+     25.2,
+     168.2
+    ],
+    [
+     27.0,
+     179.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.7,
+     169.4
+    ],
+    [
+     14.5,
+     168.2
+    ],
+    [
+     13.8,
+     154.3
+    ],
+    [
+     24.3,
+     154.1
+    ],
+    [
+     25.0,
+     167.1
+    ],
+    [
+     25.2,
+     168.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.7,
+     146.1
+    ],
+    [
+     14.4,
+     134.3
+    ],
+    [
+     24.9,
+     135.3
+    ],
+    [
+     24.2,
+     146.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.4,
+     134.3
+    ],
+    [
+     14.5,
+     132.0
+    ],
+    [
+     16.1,
+     122.6
+    ],
+    [
+     26.5,
+     124.4
+    ],
+    [
+     25.0,
+     133.2
+    ],
+    [
+     24.9,
+     135.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     16.1,
+     122.6
+    ],
+    [
+     17.5,
+     114.3
+    ],
+    [
+     18.4,
+     111.0
+    ],
+    [
+     28.6,
+     113.6
+    ],
+    [
+     27.8,
+     116.6
+    ],
+    [
+     26.5,
+     124.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     18.4,
+     111.0
+    ],
+    [
+     21.7,
+     99.6
+    ],
+    [
+     31.6,
+     103.0
+    ],
+    [
+     28.6,
+     113.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.7,
+     99.6
+    ],
+    [
+     22.4,
+     97.2
+    ],
+    [
+     27.3,
+     85.5
+    ],
+    [
+     36.8,
+     89.8
+    ],
+    [
+     32.3,
+     100.7
+    ],
+    [
+     31.6,
+     103.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.8,
+     78.1
+    ],
+    [
+     36.6,
+     67.7
+    ],
+    [
+     45.5,
+     73.3
+    ],
+    [
+     40.1,
+     82.9
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     36.6,
+     67.7
+    ],
+    [
+     37.6,
+     66.1
+    ],
+    [
+     43.5,
+     58.0
+    ],
+    [
+     51.9,
+     64.4
+    ],
+    [
+     46.4,
+     71.8
+    ],
+    [
+     45.5,
+     73.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     43.5,
+     58.0
+    ],
+    [
+     47.4,
+     52.7
+    ],
+    [
+     51.1,
+     48.9
+    ],
+    [
+     58.8,
+     56.0
+    ],
+    [
+     55.5,
+     59.5
+    ],
+    [
+     51.9,
+     64.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     51.1,
+     48.9
+    ],
+    [
+     58.6,
+     41.0
+    ],
+    [
+     59.5,
+     40.3
+    ],
+    [
+     66.5,
+     48.2
+    ],
+    [
+     65.7,
+     48.8
+    ],
+    [
+     58.8,
+     56.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     59.5,
+     40.3
+    ],
+    [
+     70.9,
+     31.3
+    ],
+    [
+     71.6,
+     30.9
+    ],
+    [
+     77.5,
+     39.6
+    ],
+    [
+     76.9,
+     40.0
+    ],
+    [
+     66.5,
+     48.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     78.8,
+     26.6
+    ],
+    [
+     84.1,
+     23.6
+    ],
+    [
+     89.6,
+     21.3
+    ],
+    [
+     93.7,
+     31.0
+    ],
+    [
+     88.7,
+     33.0
+    ],
+    [
+     84.0,
+     35.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.6,
+     21.3
+    ],
+    [
+     97.9,
+     18.0
+    ],
+    [
+     101.0,
+     17.3
+    ],
+    [
+     103.8,
+     27.4
+    ],
+    [
+     101.1,
+     28.1
+    ],
+    [
+     93.7,
+     31.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.0,
+     17.3
+    ],
+    [
+     112.1,
+     14.7
+    ],
+    [
+     112.8,
+     14.6
+    ],
+    [
+     114.3,
+     25.0
+    ],
+    [
+     113.7,
+     25.1
+    ],
+    [
+     103.8,
+     27.4
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     112.8,
+     14.6
+    ],
+    [
+     124.8,
+     13.7
+    ],
+    [
+     125.0,
+     24.2
+    ],
+    [
+     114.3,
+     25.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     124.8,
+     13.7
+    ],
+    [
+     126.6,
+     13.5
+    ],
+    [
+     140.3,
+     14.6
+    ],
+    [
+     138.8,
+     25.0
+    ],
+    [
+     126.6,
+     24.1
+    ],
+    [
+     125.0,
+     24.2
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.6,
+     16.5
+    ],
+    [
+     155.2,
+     18.0
+    ],
+    [
+     160.1,
+     20.0
+    ],
+    [
+     156.4,
+     29.8
+    ],
+    [
+     152.0,
+     28.1
+    ],
+    [
+     146.1,
+     26.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.1,
+     20.0
+    ],
+    [
+     169.0,
+     23.6
+    ],
+    [
+     171.1,
+     24.8
+    ],
+    [
+     166.3,
+     34.1
+    ],
+    [
+     164.4,
+     33.0
+    ],
+    [
+     156.4,
+     29.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.1,
+     24.8
+    ],
+    [
+     181.5,
+     30.9
+    ],
+    [
+     175.6,
+     39.6
+    ],
+    [
+     166.3,
+     34.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     181.5,
+     30.9
+    ],
+    [
+     182.2,
+     31.3
+    ],
+    [
+     191.0,
+     38.2
+    ],
+    [
+     184.2,
+     46.3
+    ],
+    [
+     176.2,
+     40.0
+    ],
+    [
+     175.6,
+     39.6
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     191.0,
+     38.2
+    ],
+    [
+     194.5,
+     41.0
+    ],
+    [
+     202.0,
+     48.9
+    ],
+    [
+     194.3,
+     56.0
+    ],
+    [
+     187.4,
+     48.8
+    ],
+    [
+     184.2,
+     46.3
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     207.5,
+     55.2
+    ],
+    [
+     214.6,
+     64.7
+    ],
+    [
+     205.8,
+     70.5
+    ],
+    [
+     199.3,
+     61.7
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     214.6,
+     64.7
+    ],
+    [
+     215.5,
+     66.1
+    ],
+    [
+     220.5,
+     74.9
+    ],
+    [
+     211.3,
+     80.0
+    ],
+    [
+     206.7,
+     71.8
+    ],
+    [
+     205.8,
+     70.5
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.5,
+     74.9
+    ],
+    [
+     224.0,
+     81.0
+    ],
+    [
+     225.8,
+     85.5
+    ],
+    [
+     216.3,
+     89.8
+    ],
+    [
+     214.5,
+     85.7
+    ],
+    [
+     211.3,
+     80.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.8,
+     85.5
+    ],
+    [
+     230.4,
+     96.4
+    ],
+    [
+     220.5,
+     100.0
+    ],
+    [
+     216.3,
+     89.8
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     230.4,
+     96.4
+    ],
+    [
+     230.7,
+     97.2
+    ],
+    [
+     234.7,
+     111.0
+    ],
+    [
+     224.5,
+     113.6
+    ],
+    [
+     220.8,
+     100.7
+    ],
+    [
+     220.5,
+     100.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     236.4,
+     119.1
+    ],
+    [
+     238.4,
+     130.8
+    ],
+    [
+     227.9,
+     132.0
+    ],
+    [
+     226.1,
+     121.1
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     238.4,
+     130.8
+    ],
+    [
+     238.6,
+     132.0
+    ],
+    [
+     239.2,
+     142.5
+    ],
+    [
+     228.7,
+     143.0
+    ],
+    [
+     228.1,
+     133.2
+    ],
+    [
+     227.9,
+     132.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Researchers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     239.2,
+     142.5
+    ],
+    [
+     239.6,
+     150.1
+    ],
+    [
+     229.1,
+     150.1
+    ],
+    [
+     228.7,
+     143.0
+    ]
+   ],
+   "about": "Studies how pilots cope with g-forces.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -89,8 +89,8 @@ function scatter(ring, n, R, holes) {
 }
 
 const KW = {
-  green: /lawn|garden|grass|green|field|park|grove|wood|tree|hedge|parterre|flower|herb|planted|meadow|orchard|pitch|sports/i,
-  trees: /grove|wood|tree|garden|park|orchard|avenue|shade|rim|walk|quiet/i,
+  green: /lawn|garden|grass|green|field|park(?!ing)|grove|wood|tree|hedge|parterre|flower|herb|planted|meadow|orchard|pitch|sports/i,
+  trees: /grove|wood|tree|garden|park(?!ing)|orchard|avenue|shade|rim|walk|quiet/i,
   water: /lake|pool|water|rill|fountain|pond|reflect|splash/i,
   container: /container|stack|crate|module yard|stores yard|cargo|pallet|loading lane|marshalling|modules|turret mounts|parts|empties|returns|inspection hold/i,
   mast: /antenna|mast|sensor|aerial|beacon|radar/i,

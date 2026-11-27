@@ -1,0 +1,4316 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P6-04",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  215.9,
+  338.4
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.5,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Flat floor 1",
+   "z_m": 4.5,
+   "height_m": 3.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Flat floor 2",
+   "z_m": 7.7,
+   "height_m": 3.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Flat floor 3",
+   "z_m": 10.9,
+   "height_m": 3.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Residents' courtyard",
+   "level": "L1",
+   "outline_m": [
+    [
+     191.9,
+     24.0
+    ],
+    [
+     191.9,
+     314.4
+    ],
+    [
+     24.0,
+     314.4
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A shared courtyard garden for the loft residents.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     205.4,
+     10.5
+    ],
+    [
+     205.4,
+     131.6
+    ],
+    [
+     202.4,
+     132.4
+    ],
+    [
+     202.4,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     205.4,
+     131.6
+    ],
+    [
+     205.4,
+     252.8
+    ],
+    [
+     202.4,
+     251.2
+    ],
+    [
+     202.4,
+     132.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     205.4,
+     252.8
+    ],
+    [
+     205.4,
+     327.9
+    ],
+    [
+     159.1,
+     327.9
+    ],
+    [
+     157.5,
+     324.9
+    ],
+    [
+     202.4,
+     324.9
+    ],
+    [
+     202.4,
+     251.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.1,
+     327.9
+    ],
+    [
+     37.2,
+     327.9
+    ],
+    [
+     39.4,
+     324.9
+    ],
+    [
+     157.5,
+     324.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.2,
+     327.9
+    ],
+    [
+     10.5,
+     327.9
+    ],
+    [
+     10.5,
+     233.3
+    ],
+    [
+     13.5,
+     232.1
+    ],
+    [
+     13.5,
+     324.9
+    ],
+    [
+     39.4,
+     324.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     233.3
+    ],
+    [
+     10.5,
+     112.2
+    ],
+    [
+     13.5,
+     113.2
+    ],
+    [
+     13.5,
+     232.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     112.2
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     30.1,
+     10.5
+    ],
+    [
+     32.5,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     113.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.1,
+     10.5
+    ],
+    [
+     152.0,
+     10.5
+    ],
+    [
+     150.6,
+     13.5
+    ],
+    [
+     32.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.0,
+     10.5
+    ],
+    [
+     205.4,
+     10.5
+    ],
+    [
+     202.4,
+     13.5
+    ],
+    [
+     150.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     44.8
+    ],
+    [
+     202.4,
+     53.1
+    ],
+    [
+     191.9,
+     60.9
+    ],
+    [
+     191.9,
+     53.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     115.7
+    ],
+    [
+     202.4,
+     123.9
+    ],
+    [
+     191.9,
+     127.0
+    ],
+    [
+     191.9,
+     119.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     186.5
+    ],
+    [
+     202.4,
+     194.8
+    ],
+    [
+     191.9,
+     193.1
+    ],
+    [
+     191.9,
+     185.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     257.4
+    ],
+    [
+     202.4,
+     265.7
+    ],
+    [
+     191.9,
+     259.1
+    ],
+    [
+     191.9,
+     251.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     199.0,
+     324.9
+    ],
+    [
+     190.5,
+     324.9
+    ],
+    [
+     181.3,
+     314.4
+    ],
+    [
+     188.9,
+     314.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     126.5,
+     324.9
+    ],
+    [
+     118.0,
+     324.9
+    ],
+    [
+     116.9,
+     314.4
+    ],
+    [
+     124.4,
+     314.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     54.0,
+     324.9
+    ],
+    [
+     45.5,
+     324.9
+    ],
+    [
+     52.5,
+     314.4
+    ],
+    [
+     60.0,
+     314.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     293.6
+    ],
+    [
+     13.5,
+     285.3
+    ],
+    [
+     24.0,
+     277.5
+    ],
+    [
+     24.0,
+     285.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     222.7
+    ],
+    [
+     13.5,
+     214.5
+    ],
+    [
+     24.0,
+     211.4
+    ],
+    [
+     24.0,
+     219.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     151.9
+    ],
+    [
+     13.5,
+     143.6
+    ],
+    [
+     24.0,
+     145.3
+    ],
+    [
+     24.0,
+     153.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     81.0
+    ],
+    [
+     13.5,
+     72.7
+    ],
+    [
+     24.0,
+     79.3
+    ],
+    [
+     24.0,
+     87.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.9,
+     13.5
+    ],
+    [
+     25.4,
+     13.5
+    ],
+    [
+     34.6,
+     24.0
+    ],
+    [
+     27.0,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     89.4,
+     13.5
+    ],
+    [
+     97.9,
+     13.5
+    ],
+    [
+     99.0,
+     24.0
+    ],
+    [
+     91.5,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     161.9,
+     13.5
+    ],
+    [
+     170.4,
+     13.5
+    ],
+    [
+     163.4,
+     24.0
+    ],
+    [
+     155.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Entrance lobby",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     0.0
+    ],
+    [
+     215.9,
+     7.9
+    ],
+    [
+     205.4,
+     17.9
+    ],
+    [
+     205.4,
+     10.5
+    ]
+   ],
+   "about": "Post boxes and the lift lobby.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Bike and pram store",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     7.9
+    ],
+    [
+     215.9,
+     13.8
+    ],
+    [
+     205.4,
+     23.4
+    ],
+    [
+     205.4,
+     17.9
+    ]
+   ],
+   "about": "Bikes and prams.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Bin store",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     13.8
+    ],
+    [
+     215.9,
+     17.6
+    ],
+    [
+     205.4,
+     27.0
+    ],
+    [
+     205.4,
+     23.4
+    ]
+   ],
+   "about": "Rubbish and recycling.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     17.6
+    ],
+    [
+     215.9,
+     58.8
+    ],
+    [
+     205.4,
+     65.7
+    ],
+    [
+     205.4,
+     27.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     58.8
+    ],
+    [
+     215.9,
+     100.1
+    ],
+    [
+     205.4,
+     104.4
+    ],
+    [
+     205.4,
+     65.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     100.1
+    ],
+    [
+     215.9,
+     141.4
+    ],
+    [
+     205.4,
+     143.1
+    ],
+    [
+     205.4,
+     104.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     141.4
+    ],
+    [
+     215.9,
+     182.7
+    ],
+    [
+     205.4,
+     181.8
+    ],
+    [
+     205.4,
+     143.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     182.7
+    ],
+    [
+     215.9,
+     224.0
+    ],
+    [
+     205.4,
+     220.6
+    ],
+    [
+     205.4,
+     181.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     224.0
+    ],
+    [
+     215.9,
+     265.2
+    ],
+    [
+     205.4,
+     259.3
+    ],
+    [
+     205.4,
+     220.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     265.2
+    ],
+    [
+     215.9,
+     306.5
+    ],
+    [
+     205.4,
+     298.0
+    ],
+    [
+     205.4,
+     259.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     306.5
+    ],
+    [
+     215.9,
+     338.4
+    ],
+    [
+     206.3,
+     338.4
+    ],
+    [
+     196.8,
+     327.9
+    ],
+    [
+     205.4,
+     327.9
+    ],
+    [
+     205.4,
+     298.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.3,
+     338.4
+    ],
+    [
+     164.3,
+     338.4
+    ],
+    [
+     158.8,
+     327.9
+    ],
+    [
+     196.8,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.3,
+     338.4
+    ],
+    [
+     122.2,
+     338.4
+    ],
+    [
+     120.8,
+     327.9
+    ],
+    [
+     158.8,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     122.2,
+     338.4
+    ],
+    [
+     80.2,
+     338.4
+    ],
+    [
+     82.9,
+     327.9
+    ],
+    [
+     120.8,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.2,
+     338.4
+    ],
+    [
+     38.1,
+     338.4
+    ],
+    [
+     44.9,
+     327.9
+    ],
+    [
+     82.9,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.1,
+     338.4
+    ],
+    [
+     0.0,
+     338.4
+    ],
+    [
+     0.0,
+     334.6
+    ],
+    [
+     10.5,
+     324.3
+    ],
+    [
+     10.5,
+     327.9
+    ],
+    [
+     44.9,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     334.6
+    ],
+    [
+     0.0,
+     293.3
+    ],
+    [
+     10.5,
+     285.6
+    ],
+    [
+     10.5,
+     324.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     293.3
+    ],
+    [
+     0.0,
+     252.0
+    ],
+    [
+     10.5,
+     246.9
+    ],
+    [
+     10.5,
+     285.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     252.0
+    ],
+    [
+     0.0,
+     210.7
+    ],
+    [
+     10.5,
+     208.2
+    ],
+    [
+     10.5,
+     246.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     210.7
+    ],
+    [
+     0.0,
+     169.4
+    ],
+    [
+     10.5,
+     169.4
+    ],
+    [
+     10.5,
+     208.2
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     169.4
+    ],
+    [
+     0.0,
+     128.2
+    ],
+    [
+     10.5,
+     130.7
+    ],
+    [
+     10.5,
+     169.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     128.2
+    ],
+    [
+     0.0,
+     86.9
+    ],
+    [
+     10.5,
+     92.0
+    ],
+    [
+     10.5,
+     130.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     86.9
+    ],
+    [
+     0.0,
+     45.6
+    ],
+    [
+     10.5,
+     53.3
+    ],
+    [
+     10.5,
+     92.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     45.6
+    ],
+    [
+     0.0,
+     4.3
+    ],
+    [
+     10.5,
+     14.6
+    ],
+    [
+     10.5,
+     53.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     4.3
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     37.6,
+     0.0
+    ],
+    [
+     44.5,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     14.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.6,
+     0.0
+    ],
+    [
+     79.7,
+     0.0
+    ],
+    [
+     82.4,
+     10.5
+    ],
+    [
+     44.5,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.7,
+     0.0
+    ],
+    [
+     121.7,
+     0.0
+    ],
+    [
+     120.4,
+     10.5
+    ],
+    [
+     82.4,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.7,
+     0.0
+    ],
+    [
+     163.8,
+     0.0
+    ],
+    [
+     158.3,
+     10.5
+    ],
+    [
+     120.4,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.8,
+     0.0
+    ],
+    [
+     215.9,
+     0.0
+    ],
+    [
+     205.4,
+     10.5
+    ],
+    [
+     158.3,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     13.5
+    ],
+    [
+     202.4,
+     44.8
+    ],
+    [
+     191.9,
+     53.2
+    ],
+    [
+     191.9,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     53.1
+    ],
+    [
+     202.4,
+     94.5
+    ],
+    [
+     191.9,
+     99.5
+    ],
+    [
+     191.9,
+     60.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     94.5
+    ],
+    [
+     202.4,
+     115.7
+    ],
+    [
+     191.9,
+     119.3
+    ],
+    [
+     191.9,
+     99.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     123.9
+    ],
+    [
+     202.4,
+     165.3
+    ],
+    [
+     191.9,
+     165.6
+    ],
+    [
+     191.9,
+     127.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     165.3
+    ],
+    [
+     202.4,
+     186.5
+    ],
+    [
+     191.9,
+     185.3
+    ],
+    [
+     191.9,
+     165.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     194.8
+    ],
+    [
+     202.4,
+     236.2
+    ],
+    [
+     191.9,
+     231.7
+    ],
+    [
+     191.9,
+     193.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     236.2
+    ],
+    [
+     202.4,
+     257.4
+    ],
+    [
+     191.9,
+     251.4
+    ],
+    [
+     191.9,
+     231.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     265.7
+    ],
+    [
+     202.4,
+     307.0
+    ],
+    [
+     191.9,
+     297.8
+    ],
+    [
+     191.9,
+     259.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.4,
+     307.0
+    ],
+    [
+     202.4,
+     324.9
+    ],
+    [
+     199.0,
+     324.9
+    ],
+    [
+     188.9,
+     314.4
+    ],
+    [
+     191.9,
+     314.4
+    ],
+    [
+     191.9,
+     297.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.5,
+     324.9
+    ],
+    [
+     148.2,
+     324.9
+    ],
+    [
+     143.7,
+     314.4
+    ],
+    [
+     181.3,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.2,
+     324.9
+    ],
+    [
+     126.5,
+     324.9
+    ],
+    [
+     124.4,
+     314.4
+    ],
+    [
+     143.7,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.0,
+     324.9
+    ],
+    [
+     75.7,
+     324.9
+    ],
+    [
+     79.3,
+     314.4
+    ],
+    [
+     116.9,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.7,
+     324.9
+    ],
+    [
+     54.0,
+     324.9
+    ],
+    [
+     60.0,
+     314.4
+    ],
+    [
+     79.3,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.5,
+     324.9
+    ],
+    [
+     13.5,
+     324.9
+    ],
+    [
+     13.5,
+     314.8
+    ],
+    [
+     24.0,
+     305.0
+    ],
+    [
+     24.0,
+     314.4
+    ],
+    [
+     52.5,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     314.8
+    ],
+    [
+     13.5,
+     293.6
+    ],
+    [
+     24.0,
+     285.2
+    ],
+    [
+     24.0,
+     305.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     285.3
+    ],
+    [
+     13.5,
+     243.9
+    ],
+    [
+     24.0,
+     238.9
+    ],
+    [
+     24.0,
+     277.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     243.9
+    ],
+    [
+     13.5,
+     222.7
+    ],
+    [
+     24.0,
+     219.1
+    ],
+    [
+     24.0,
+     238.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     214.5
+    ],
+    [
+     13.5,
+     173.1
+    ],
+    [
+     24.0,
+     172.8
+    ],
+    [
+     24.0,
+     211.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     173.1
+    ],
+    [
+     13.5,
+     151.9
+    ],
+    [
+     24.0,
+     153.1
+    ],
+    [
+     24.0,
+     172.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     143.6
+    ],
+    [
+     13.5,
+     102.2
+    ],
+    [
+     24.0,
+     106.7
+    ],
+    [
+     24.0,
+     145.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     102.2
+    ],
+    [
+     13.5,
+     81.0
+    ],
+    [
+     24.0,
+     87.0
+    ],
+    [
+     24.0,
+     106.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     72.7
+    ],
+    [
+     13.5,
+     31.4
+    ],
+    [
+     24.0,
+     40.6
+    ],
+    [
+     24.0,
+     79.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     31.4
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.9,
+     13.5
+    ],
+    [
+     27.0,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     40.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     25.4,
+     13.5
+    ],
+    [
+     67.7,
+     13.5
+    ],
+    [
+     72.2,
+     24.0
+    ],
+    [
+     34.6,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.7,
+     13.5
+    ],
+    [
+     89.4,
+     13.5
+    ],
+    [
+     91.5,
+     24.0
+    ],
+    [
+     72.2,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     97.9,
+     13.5
+    ],
+    [
+     140.2,
+     13.5
+    ],
+    [
+     136.6,
+     24.0
+    ],
+    [
+     99.0,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.2,
+     13.5
+    ],
+    [
+     161.9,
+     13.5
+    ],
+    [
+     155.9,
+     24.0
+    ],
+    [
+     136.6,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Loft",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.4,
+     13.5
+    ],
+    [
+     202.4,
+     13.5
+    ],
+    [
+     191.9,
+     24.0
+    ],
+    [
+     163.4,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     205.4,
+     10.5
+    ],
+    [
+     205.4,
+     131.6
+    ],
+    [
+     202.4,
+     132.4
+    ],
+    [
+     202.4,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     205.4,
+     131.6
+    ],
+    [
+     205.4,
+     252.8
+    ],
+    [
+     202.4,
+     251.2
+    ],
+    [
+     202.4,
+     132.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     205.4,
+     252.8
+    ],
+    [
+     205.4,
+     327.9
+    ],
+    [
+     159.1,
+     327.9
+    ],
+    [
+     157.5,
+     324.9
+    ],
+    [
+     202.4,
+     324.9
+    ],
+    [
+     202.4,
+     251.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     159.1,
+     327.9
+    ],
+    [
+     37.2,
+     327.9
+    ],
+    [
+     39.4,
+     324.9
+    ],
+    [
+     157.5,
+     324.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     37.2,
+     327.9
+    ],
+    [
+     10.5,
+     327.9
+    ],
+    [
+     10.5,
+     233.3
+    ],
+    [
+     13.5,
+     232.1
+    ],
+    [
+     13.5,
+     324.9
+    ],
+    [
+     39.4,
+     324.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     233.3
+    ],
+    [
+     10.5,
+     112.2
+    ],
+    [
+     13.5,
+     113.2
+    ],
+    [
+     13.5,
+     232.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     112.2
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     30.1,
+     10.5
+    ],
+    [
+     32.5,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     113.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     30.1,
+     10.5
+    ],
+    [
+     152.0,
+     10.5
+    ],
+    [
+     150.6,
+     13.5
+    ],
+    [
+     32.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     152.0,
+     10.5
+    ],
+    [
+     205.4,
+     10.5
+    ],
+    [
+     202.4,
+     13.5
+    ],
+    [
+     150.6,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Cleaners' room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     0.0
+    ],
+    [
+     215.9,
+     3.8
+    ],
+    [
+     205.4,
+     14.1
+    ],
+    [
+     205.4,
+     10.5
+    ]
+   ],
+   "about": "Cleaning machines, supplies and a sink for the building's cleaning crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     3.8
+    ],
+    [
+     215.9,
+     45.1
+    ],
+    [
+     205.4,
+     52.8
+    ],
+    [
+     205.4,
+     14.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     45.1
+    ],
+    [
+     215.9,
+     86.4
+    ],
+    [
+     205.4,
+     91.5
+    ],
+    [
+     205.4,
+     52.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     86.4
+    ],
+    [
+     215.9,
+     127.6
+    ],
+    [
+     205.4,
+     130.2
+    ],
+    [
+     205.4,
+     91.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     127.6
+    ],
+    [
+     215.9,
+     168.9
+    ],
+    [
+     205.4,
+     168.9
+    ],
+    [
+     205.4,
+     130.2
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     168.9
+    ],
+    [
+     215.9,
+     210.2
+    ],
+    [
+     205.4,
+     207.7
+    ],
+    [
+     205.4,
+     168.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     210.2
+    ],
+    [
+     215.9,
+     251.5
+    ],
+    [
+     205.4,
+     246.4
+    ],
+    [
+     205.4,
+     207.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     251.5
+    ],
+    [
+     215.9,
+     292.8
+    ],
+    [
+     205.4,
+     285.1
+    ],
+    [
+     205.4,
+     246.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     292.8
+    ],
+    [
+     215.9,
+     334.0
+    ],
+    [
+     205.4,
+     323.8
+    ],
+    [
+     205.4,
+     285.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     215.9,
+     334.0
+    ],
+    [
+     215.9,
+     338.4
+    ],
+    [
+     178.3,
+     338.4
+    ],
+    [
+     171.5,
+     327.9
+    ],
+    [
+     205.4,
+     327.9
+    ],
+    [
+     205.4,
+     323.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     178.3,
+     338.4
+    ],
+    [
+     136.3,
+     338.4
+    ],
+    [
+     133.5,
+     327.9
+    ],
+    [
+     171.5,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     136.3,
+     338.4
+    ],
+    [
+     94.2,
+     338.4
+    ],
+    [
+     95.5,
+     327.9
+    ],
+    [
+     133.5,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     94.2,
+     338.4
+    ],
+    [
+     52.2,
+     338.4
+    ],
+    [
+     57.6,
+     327.9
+    ],
+    [
+     95.5,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     52.2,
+     338.4
+    ],
+    [
+     10.1,
+     338.4
+    ],
+    [
+     19.6,
+     327.9
+    ],
+    [
+     57.6,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.1,
+     338.4
+    ],
+    [
+     0.0,
+     338.4
+    ],
+    [
+     0.0,
+     307.1
+    ],
+    [
+     10.5,
+     298.5
+    ],
+    [
+     10.5,
+     327.9
+    ],
+    [
+     19.6,
+     327.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     307.1
+    ],
+    [
+     0.0,
+     265.8
+    ],
+    [
+     10.5,
+     259.8
+    ],
+    [
+     10.5,
+     298.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     265.8
+    ],
+    [
+     0.0,
+     224.5
+    ],
+    [
+     10.5,
+     221.1
+    ],
+    [
+     10.5,
+     259.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     224.5
+    ],
+    [
+     0.0,
+     183.2
+    ],
+    [
+     10.5,
+     182.3
+    ],
+    [
+     10.5,
+     221.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     183.2
+    ],
+    [
+     0.0,
+     141.9
+    ],
+    [
+     10.5,
+     143.6
+    ],
+    [
+     10.5,
+     182.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     141.9
+    ],
+    [
+     0.0,
+     100.6
+    ],
+    [
+     10.5,
+     104.9
+    ],
+    [
+     10.5,
+     143.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     100.6
+    ],
+    [
+     0.0,
+     59.4
+    ],
+    [
+     10.5,
+     66.2
+    ],
+    [
+     10.5,
+     104.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     59.4
+    ],
+    [
+     0.0,
+     18.1
+    ],
+    [
+     10.5,
+     27.5
+    ],
+    [
+     10.5,
+     66.2
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     18.1
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     23.6,
+     0.0
+    ],
+    [
+     31.8,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     27.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     23.6,
+     0.0
+    ],
+    [
+     65.7,
+     0.0
+    ],
+    [
+     69.8,
+     10.5
+    ],
+    [
+     31.8,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     65.7,
+     0.0
+    ],
+    [
+     107.7,
+     0.0
+    ],
+    [
+     107.7,
+     10.5
+    ],
+    [
+     69.8,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     107.7,
+     0.0
+    ],
+    [
+     149.8,
+     0.0
+    ],
+    [
+     145.7,
+     10.5
+    ],
+    [
+     107.7,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     149.8,
+     0.0
+    ],
+    [
+     191.8,
+     0.0
+    ],
+    [
+     183.6,
+     10.5
+    ],
+    [
+     145.7,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     191.8,
+     0.0
+    ],
+    [
+     215.9,
+     0.0
+    ],
+    [
+     205.4,
+     10.5
+    ],
+    [
+     183.6,
+     10.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     13.5
+    ],
+    [
+     202.4,
+     44.8
+    ],
+    [
+     191.9,
+     53.2
+    ],
+    [
+     191.9,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     53.1
+    ],
+    [
+     202.4,
+     94.5
+    ],
+    [
+     191.9,
+     99.5
+    ],
+    [
+     191.9,
+     60.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     94.5
+    ],
+    [
+     202.4,
+     115.7
+    ],
+    [
+     191.9,
+     119.3
+    ],
+    [
+     191.9,
+     99.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     123.9
+    ],
+    [
+     202.4,
+     165.3
+    ],
+    [
+     191.9,
+     165.6
+    ],
+    [
+     191.9,
+     127.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     165.3
+    ],
+    [
+     202.4,
+     186.5
+    ],
+    [
+     191.9,
+     185.3
+    ],
+    [
+     191.9,
+     165.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     194.8
+    ],
+    [
+     202.4,
+     236.2
+    ],
+    [
+     191.9,
+     231.7
+    ],
+    [
+     191.9,
+     193.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     236.2
+    ],
+    [
+     202.4,
+     257.4
+    ],
+    [
+     191.9,
+     251.4
+    ],
+    [
+     191.9,
+     231.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     265.7
+    ],
+    [
+     202.4,
+     307.0
+    ],
+    [
+     191.9,
+     297.8
+    ],
+    [
+     191.9,
+     259.1
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     202.4,
+     307.0
+    ],
+    [
+     202.4,
+     324.9
+    ],
+    [
+     199.0,
+     324.9
+    ],
+    [
+     188.9,
+     314.4
+    ],
+    [
+     191.9,
+     314.4
+    ],
+    [
+     191.9,
+     297.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     190.5,
+     324.9
+    ],
+    [
+     148.2,
+     324.9
+    ],
+    [
+     143.7,
+     314.4
+    ],
+    [
+     181.3,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     148.2,
+     324.9
+    ],
+    [
+     126.5,
+     324.9
+    ],
+    [
+     124.4,
+     314.4
+    ],
+    [
+     143.7,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     118.0,
+     324.9
+    ],
+    [
+     75.7,
+     324.9
+    ],
+    [
+     79.3,
+     314.4
+    ],
+    [
+     116.9,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     75.7,
+     324.9
+    ],
+    [
+     54.0,
+     324.9
+    ],
+    [
+     60.0,
+     314.4
+    ],
+    [
+     79.3,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     45.5,
+     324.9
+    ],
+    [
+     13.5,
+     324.9
+    ],
+    [
+     13.5,
+     314.8
+    ],
+    [
+     24.0,
+     305.0
+    ],
+    [
+     24.0,
+     314.4
+    ],
+    [
+     52.5,
+     314.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     314.8
+    ],
+    [
+     13.5,
+     293.6
+    ],
+    [
+     24.0,
+     285.2
+    ],
+    [
+     24.0,
+     305.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     285.3
+    ],
+    [
+     13.5,
+     243.9
+    ],
+    [
+     24.0,
+     238.9
+    ],
+    [
+     24.0,
+     277.5
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     243.9
+    ],
+    [
+     13.5,
+     222.7
+    ],
+    [
+     24.0,
+     219.1
+    ],
+    [
+     24.0,
+     238.9
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     214.5
+    ],
+    [
+     13.5,
+     173.1
+    ],
+    [
+     24.0,
+     172.8
+    ],
+    [
+     24.0,
+     211.4
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     173.1
+    ],
+    [
+     13.5,
+     151.9
+    ],
+    [
+     24.0,
+     153.1
+    ],
+    [
+     24.0,
+     172.8
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     143.6
+    ],
+    [
+     13.5,
+     102.2
+    ],
+    [
+     24.0,
+     106.7
+    ],
+    [
+     24.0,
+     145.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     102.2
+    ],
+    [
+     13.5,
+     81.0
+    ],
+    [
+     24.0,
+     87.0
+    ],
+    [
+     24.0,
+     106.7
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     72.7
+    ],
+    [
+     13.5,
+     31.4
+    ],
+    [
+     24.0,
+     40.6
+    ],
+    [
+     24.0,
+     79.3
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     31.4
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.9,
+     13.5
+    ],
+    [
+     27.0,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     40.6
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     25.4,
+     13.5
+    ],
+    [
+     67.7,
+     13.5
+    ],
+    [
+     72.2,
+     24.0
+    ],
+    [
+     34.6,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     67.7,
+     13.5
+    ],
+    [
+     89.4,
+     13.5
+    ],
+    [
+     91.5,
+     24.0
+    ],
+    [
+     72.2,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     97.9,
+     13.5
+    ],
+    [
+     140.2,
+     13.5
+    ],
+    [
+     136.6,
+     24.0
+    ],
+    [
+     99.0,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     140.2,
+     13.5
+    ],
+    [
+     161.9,
+     13.5
+    ],
+    [
+     155.9,
+     24.0
+    ],
+    [
+     136.6,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Loft",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     170.4,
+     13.5
+    ],
+    [
+     202.4,
+     13.5
+    ],
+    [
+     191.9,
+     24.0
+    ],
+    [
+     163.4,
+     24.0
+    ]
+   ],
+   "about": "A big open loft with high ceilings, for crews who want flexible space.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P1-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  660.0,
+  408.5
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Line",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Craft parking",
+   "level": "L1",
+   "outline_m": [
+    [
+     377.1,
+     408.5
+    ],
+    [
+     0.0,
+     408.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     377.1,
+     0.0
+    ]
+   ],
+   "about": "Training craft parked in rows, chocked and tied down, between lessons.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Flight line hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     39.9,
+     385.3
+    ],
+    [
+     53.2,
+     385.3
+    ],
+    [
+     53.2,
+     395.3
+    ],
+    [
+     39.9,
+     395.3
+    ]
+   ],
+   "about": "Line staff sign craft out and in.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Trainees' shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.2,
+     385.3
+    ],
+    [
+     59.9,
+     385.3
+    ],
+    [
+     59.9,
+     395.3
+    ],
+    [
+     53.2,
+     395.3
+    ]
+   ],
+   "about": "Trainees wait for their craft here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Fuelling apron",
+   "level": "L1",
+   "outline_m": [
+    [
+     471.4,
+     408.5
+    ],
+    [
+     377.1,
+     408.5
+    ],
+    [
+     377.1,
+     0.0
+    ],
+    [
+     471.4,
+     0.0
+    ]
+   ],
+   "about": "Fuel bowsers and power carts service craft between flights.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Start-up line",
+   "level": "L1",
+   "outline_m": [
+    [
+     565.7,
+     408.5
+    ],
+    [
+     471.4,
+     408.5
+    ],
+    [
+     471.4,
+     0.0
+    ],
+    [
+     565.7,
+     0.0
+    ]
+   ],
+   "about": "Where trainees start their engines and run final checks before taxiing out.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Taxi lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     660.0,
+     408.5
+    ],
+    [
+     565.7,
+     408.5
+    ],
+    [
+     565.7,
+     0.0
+    ],
+    [
+     660.0,
+     0.0
+    ]
+   ],
+   "about": "The lane craft taxi along to and from the flight deck.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
