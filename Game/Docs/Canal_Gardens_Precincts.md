@@ -21,7 +21,33 @@ Total 5.79 sq mi (15.0 km²).
 
 Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, stern band 28.636 to 29.638. Bow band splits across the beam at y 2.345 and 4.090; stern band at y 2.495.
 
-Not designed yet: what each precinct holds, streets, bridges over the canal, where the canal water comes from and goes, buildings.
+## P1 · Grand Canal — F56 to F57, lanes M–X
+
+B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
+
+| Item | Size | Notes |
+|---|---|---|
+| Grand Canal | 100 m wide, 750 m long, widening to 140 m (83,050 m²) | PG-01. 100 m channel at X 223.5–323.5, widening to 140 m (X 203.5–343.5) between Y 155–425 on the west side and Y 155–365 on the east. Continues into B2 at 100 m wide. Outline (X,Y): (223.5,0) (323.5,0) (323.5,155) (343.5,195) (343.5,330) (323.5,365) (323.5,750) (223.5,750) (223.5,425) (203.5,390) (203.5,200) (223.5,155) |
+| Grand Entrance Plaza | 175.5 × 195 m | PG-02. X 18–193.5, Y 0–195. Plot only |
+| Main Passenger Terminal | 175.5 × 215 m | PG-03. X 18–193.5, Y 195–410. Plot only |
+| Gateway Gardens | 175.5 × 200 m | PG-04. X 18–193.5, Y 410–610. Plot only |
+| Canal Operations | 175.5 × 140 m | PG-05. X 18–193.5, Y 610–750. Plot only |
+| Welcome Gardens | 175.5 × 155 m | PG-06. X 353.5–529, Y 0–155. Plot only |
+| Waterfront Dining | 175.5 × 175 m | PG-07. X 353.5–529, Y 155–330. Plot only |
+| Public Boat Stop | 175.5 × 100 m | PG-08. X 353.5–529, Y 330–430. Plot only |
+| Recreation Park | 175.5 × 235 m | PG-09. X 353.5–529, Y 430–665. Plot only |
+| Emergency Services | 175.5 × 85 m | PG-10. X 353.5–529, Y 665–750. Plot only |
+| Promenades | 30 m wide along the canal, 10 m at the widenings (36,950 m²) | PG-11. Land between the canal and the plots at X 193.5 and X 353.5 |
+| Access Road A | 18 × 750 m | PG-12A. X 0–18, Y 0–750, bow edge. Proposed infrastructure |
+| Access Road B | 18 × 750 m | PG-12B. X 529–547, Y 0–750, stern edge. Proposed infrastructure |
+| Gateway Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 135–155. Each end overlaps its plot by 10 m (PG-02, PG-06) |
+| Garden Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 550–570. Each end overlaps its plot by 10 m (PG-04, PG-09) |
+
+Area check (m²): plots 263,250 (nine plots, 131,625 each side), canal 83,050, promenades 36,950, access roads 27,000. Total 410,250, which is the whole block.
+
+How the app shows it: the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 750 m, 0.3833 km²) as the block, still addressed D3-F56-M. Because that block now starts 18 m in from the others, the app numbers it Block 8 instead of Block 1. The map draws the canal widenings and the promenades as rectangles; their exact outlines are in the 2D plans. The canal meets the B2 edge (Y 750) at 100 m wide, x 28.3125 to 28.4125 km.
+
+Not designed yet: what the other seven blocks and the other precincts hold, streets other than B1's two access roads, bridges other than B1's two, where the canal water comes from and goes, individual buildings.
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
