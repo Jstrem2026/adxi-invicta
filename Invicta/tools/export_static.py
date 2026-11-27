@@ -40,6 +40,7 @@ ALLOWED = (
     "Game/Docs/02_Canon_Errata.md",
     "Game/Docs/Invicta_Ship_Reference.md",
     "Game/Docs/Port_of_Arrivals_Precincts.md",
+    "Game/Docs/Canal_Gardens_Precincts.md",
     "Game/Docs/geometry_revB/",
     "Game/Docs/art/blueprints/",
 )

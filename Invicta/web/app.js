@@ -106,7 +106,30 @@ function issuesFor(id) {
   if (!id) return [];
   return D.issues.filter(i => i.entity && (i.entity === id || i.entity.startsWith(id + "-")));
 }
+function decisionQuestion(i) {
+  const t = i.title, d = i.detail || "";
+  if (t === "Precinct plan waiting for approval") return { q: `Approve this precinct plan as canon? ${d}`, a: ["Yes, approve it as canon", "Not yet, keep it proposed"] };
+  if (t === "Building rests on an assumption") return { q: `Keep this as designed? ${d}`, a: ["Yes, approve it", "Keep it as an assumption for now", "Change it (I'll say how)"] };
+  if (t === "Canon errata waiting for a decision") return { q: `${d.split(". Waiting")[0]}. What should happen to the waiting ones?`, a: ["Approve them all", "Go through them one at a time", "Leave them for later"] };
+  if (t === "Game sizes still marked TUNE") return { q: `Some game sizes are still placeholders. ${d.slice(0, 160)}${d.length > 160 ? "…" : ""} Keep them?`, a: ["Keep them as they are (mark settled)", "Go through them one at a time", "Leave them for later"] };
+  if (/Revision B|Rev B|Revision A/i.test(t + d)) return { q: `Use the Revision B number? ${d}`, a: ["Yes, use Revision B", "No, keep the sheet number"] };
+  return { q: d, a: ["Yes", "No", "Explain it first"] };
+}
+function answerDecision(id, n) {
+  const i = D.issues.find(x => x.id === id);
+  if (!i || !window.adxiAsk) return;
+  const pick = decisionQuestion(i).a[n];
+  window.adxiAsk(`Scan item [${i.id}] ${i.title}: ${i.detail}${i.path ? ` (${i.path})` : ""}${String.fromCharCode(10)}My answer: ${pick}. Make the change now.`);
+}
 function issueHTML(i) {
+  if (i.severity === "decision" && !i.known && window.adxiAsk) {
+    const dq = decisionQuestion(i);
+    return `<div class="issue decision">
+    <div class="t"><span class="sev-decision">Question for Jordan</span> · ${esc(i.title)}</div>
+    <div class="dq">${esc(dq.q)}</div>
+    <div class="issue-act">${dq.a.map((a, n) => `<button onclick="answerDecision('${i.id}', ${n})">${esc(a)}</button>`).join(" ")}</div>
+    <div class="meta">${i.path ? fileLink(i.path, i.path) : ""}${i.entity && entityHref(i.entity) ? ` · <a href="${entityHref(i.entity)}">show on map</a>` : ""} · ${i.id}</div></div>`;
+  }
   return `<div class="issue ${i.severity}${i.known ? " known" : ""}">
     <div class="t"><span class="sev-${i.severity}">${sevName(i.severity)}</span> · ${esc(i.title)}</div>
     <div>${esc(i.detail)}</div>
@@ -813,6 +836,27 @@ function gridPos(addr) {
   const m = /^D\d+-F(\d+)-([A-Z])$/.exec(addr || "");
   return m ? `F${m[1]} lane ${m[2]}` : addr;
 }
+// "What it looks like": a short summary built only from the building's stored architecture fields.
+function firstSentences(t, n, max) {
+  const parts = String(t || "").replace(/\s+/g, " ").trim().match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [];
+  let out = parts.slice(0, n).join("").trim();
+  if (out.length > max) out = out.slice(0, max).replace(/\s+\S*$/, "") + "…";
+  return out;
+}
+function looksLike(uid, b) {
+  const bits = [];
+  const size = b.size_m ? dims(b.size_m[0], b.size_m[1]) : b.rect_km ? dims((b.rect_km[1] - b.rect_km[0]) * 1000, (b.rect_km[3] - b.rect_km[2]) * 1000) : "";
+  const hf = [b.height_m != null ? `${len(b.height_m)} tall` : "", b.floors ? `${b.floors} floors` : ""].filter(Boolean).join(", ");
+  if (hf || size) bits.push(`<p>${esc([hf, size ? `on a ${size} footprint` : ""].filter(Boolean).join(", "))}.</p>`);
+  if (b.look) bits.push(`<p>${esc(firstSentences(b.look, 3, 420))}</p>`);
+  if (b.structure) bits.push(`<p class="small muted">Built as: ${esc(firstSentences(b.structure, 1, 200))}</p>`);
+  const plan = D.models && D.models[uid];
+  const has = !!(b.look || b.height_m != null || b.floors || b.structure);
+  return `<details class="sect looks" open><summary><h3>What it looks like</h3></summary>
+    ${has ? bits.join("") : `<p class="muted">Not designed yet: no look, height or floors are stored. Tell Claude what it should look like and it will add them.</p>`}
+    <div class="small muted">${!D.models ? "" : plan ? `Full plan stored: ${plan.levels.length} levels, ${plan.elements.length} parts.` : "No room plan yet, so 3D shows the footprint only."} <button class="v3d-open" onclick="window.adxi3D && adxi3D.open()">Open in 3D</button></div></details>`;
+}
+
 function buildingView(uid) {
   const b = IX.buildings[uid];
   if (!b) return `<div class="note">Unknown building ${esc(uid)}.</div>`;
@@ -835,6 +879,7 @@ function buildingView(uid) {
   const firstBlock = (b.blocks || [])[0];
   const panel = `<h1>${esc(b.name)} <button class="cp cp-all" title="Copy all building information" onclick="copyBuilding(this)">⧉</button></h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
+    ${looksLike(uid, b)}
     <div class="kv">
       <div>Designation</div><div><b>${esc(designation(b))}</b> <span class="small muted">(deck · district · precinct · block · building)</span></div>
       <div>Address</div><div>${firstBlock ? `${esc(firstBlock)}, building ${blockNo(p, firstBlock, b)}` : esc(b.address || "—")}</div>

@@ -140,3 +140,26 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 .mapwrap .maphint { display: none; }
 
 .issue-act { margin-top: 6px; } .issue-act button { font-size: 12px; padding: 3px 10px; }
+
+/* What it looks like */
+.looks p { margin: 4px 0; line-height: 1.45; }
+.v3d-open, .v3d-btn { background: #1d4a6e; color: #e8f1fb; border: 1px solid #3d84b8; border-radius: 4px; padding: 2px 9px; cursor: pointer; font-weight: 600; }
+.issue .dq { margin: 4px 0 2px; }
+/* 3D viewer */
+.v3d { position: fixed; inset: 0; z-index: 9000; background: #0b1a2c; display: flex; flex-direction: column; }
+.v3d-bar { display: flex; gap: 12px; align-items: center; padding: 8px 12px; background: #0f2237; border-bottom: 1px solid #23415f; color: #e8f1fb; flex-wrap: wrap; }
+.v3d-bar b { margin-right: auto; }
+.v3d-bar button, .v3d-bar select { background: #17324d; color: #e8f1fb; border: 1px solid #2f5a80; border-radius: 4px; padding: 3px 10px; cursor: pointer; }
+.v3d-modes button.on { background: #2f6fa0; }
+.v3d-x { font-size: 16px; }
+.v3d-stage { flex: 1; position: relative; min-height: 0; }
+.v3d-stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.v3d-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #9fb4c8; }
+.v3d-key { padding: 6px 12px; font-size: 12.5px; color: #b9cadb; background: #0f2237; border-top: 1px solid #23415f; }
+.v3d-key .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin: 0 4px -1px 6px; }
+.v3d-key .sw.core { background: #e0a24a; } .v3d-key .sw.door { background: #5fd39a; } .v3d-key .sw.none { background: #6b7480; border: 1px dashed #b8c2cc; }
+.v3d-walkpad { position: absolute; right: 14px; bottom: 54px; display: grid; grid-template-columns: repeat(3, 44px); gap: 4px; }
+.v3d-walkpad button { height: 40px; background: rgba(23,50,77,.85); color: #e8f1fb; border: 1px solid #2f5a80; border-radius: 6px; font-size: 15px; }
+.v3d-walkpad [data-k=f] { grid-column: 2; } .v3d-walkpad [data-k=l] { grid-column: 1; grid-row: 2; } .v3d-walkpad [data-k=b] { grid-column: 2; grid-row: 2; } .v3d-walkpad [data-k=r] { grid-column: 3; grid-row: 2; }
+.v3d-walkpad [data-k=u] { grid-column: 3; grid-row: 1; font-size: 12px; } .v3d-walkpad [data-k=d] { grid-column: 1; grid-row: 1; font-size: 12px; }
+.v3d-walkpad[hidden], .v3d-cut[hidden] { display: none; }

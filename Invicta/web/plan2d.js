@@ -34,6 +34,7 @@
     return xs.size === 2 && ys.size === 2;
   }
 
+  window.adxiGetModel = (uid) => getModel(uid);
   async function getModel(uid) {
     const D_ = typeof D !== "undefined" ? D : null;
     if (D_ && D_.models && D_.models[uid]) return D_.models[uid];

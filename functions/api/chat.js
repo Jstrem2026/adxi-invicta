@@ -36,6 +36,7 @@ const WRITABLE = [
   "Invicta/README.md",
   "Invicta/CLAUDE.md",
   "Game/Docs/",
+  "Docs/2_Design_Docs/",
   "Game/Tools/InvictaGraybox/invicta_geometry.py",
   "README.md",
 ];
@@ -169,6 +170,23 @@ const TOOLS = [
     },
   },
   {
+    name: "copy_files",
+    description:
+      "Copy files byte for byte inside the repo, including images, PDFs and other binary files (for example a newer blueprint PNG or SVG " +
+      "from Game/Docs to Docs/2_Design_Docs to fix a 'Mirrored copies differ' scan issue). The copy overwrites the target. " +
+      "Use this whenever a scan issue says two copies differ; never ask the person to copy files by hand. For Jordan and Kylee it is published at once.",
+    input_schema: {
+      type: "object",
+      properties: {
+        title: { type: "string" },
+        summary: { type: "string" },
+        copies: { type: "array", items: { type: "object", properties: { from: { type: "string" }, to: { type: "string" } }, required: ["from", "to"], additionalProperties: false } },
+      },
+      required: ["title", "summary", "copies"],
+      additionalProperties: false,
+    },
+  },
+  {
     name: "propose_change",
     description:
       "Write whole files. Only for NEW files or a full rewrite of a small file; for edits use edit_files. Give the FULL new content of every file. " +
@@ -199,7 +217,7 @@ const BASE_RULES = `You are Claude, working with the public on ADXI: Invicta, th
 
 Who you are talking to: each message says who it is. Jordan is the owner and lead designer; Kylee and other trusted helpers work with him. Everyone else is a member of the public helping. Be plain and brief, and treat this as real design work: work out exact numbers, check them against the data, and do the work. Don't list limitations or say what you can't do unless a tool actually failed.
 
-What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with edit_files (exact small edits to any data or doc file, several files in one go), update_building (one building's fields), edit_plan (2D plans) or propose_change (new files only). For Jordan and Kylee (recognised, see each message), never ask for confirmation and never ask which item they mean when there is a reasonable reading: pick the most likely meaning, make the change straight away with the tools (it is committed and published at once), then say what you did and which reading you took. Only ask when a choice truly changes the design and there's no sensible default. Never say a file is too big to change: use edit_files. For everyone else, confirm the change with them first; it then becomes a proposal that Jordan or Kylee approves. After a change, say plainly what the tool result says (published, or waiting for Jordan).
+What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with copy_files (byte-for-byte copies, images too), edit_files (exact small edits to any data or doc file, several files in one go), update_building (one building's fields), edit_plan (2D plans) or propose_change (new files only). For Jordan and Kylee (recognised, see each message), never ask for confirmation and never ask which item they mean when there is a reasonable reading: pick the most likely meaning, make the change straight away with the tools (it is committed and published at once), then say what you did and which reading you took. Only ask when a choice truly changes the design and there's no sensible default. Never say a file is too big to change: use edit_files. For everyone else, confirm the change with them first; it then becomes a proposal that Jordan or Kylee approves. After a change, say plainly what the tool result says (published, or waiting for Jordan).
 
 Rules you must follow (from the project's CLAUDE.md, included below):
 - Never invent anything that has not been designed and isn't being designed in this conversation. If something isn't designed yet, say so.
@@ -285,7 +303,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       // Jordan's rule: Claude Haiku 5.5 answers questions; Claude Sonnet 5.5 makes design changes.
       const QUESTION_MODEL = env.QUESTION_MODEL || "claude-haiku-5-5";
       const DESIGN_MODEL = env.DESIGN_MODEL || "claude-sonnet-5-5";
-      const WRITE_TOOLS = new Set(["edit_files", "update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
+      const WRITE_TOOLS = new Set(["copy_files", "edit_files", "update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
       let model = QUESTION_MODEL;
       const ask = (msgs, streamText) => {
         const design = model === DESIGN_MODEL;
@@ -360,10 +378,11 @@ export async function onRequestPost({ request, env, waitUntil }) {
               proposals++;
               send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
               try { await announce(env, name, `${out.merged ? "changed a plan (going live)" : "proposed a plan change"}: ${use.input.title}`, out.url); } catch (e) { /* optional */ }
-            } else if (use.name === "propose_change" || use.name === "update_building" || use.name === "edit_files") {
+            } else if (use.name === "propose_change" || use.name === "update_building" || use.name === "edit_files" || use.name === "copy_files") {
               if (proposals >= MAX_PROPOSALS_PER_MESSAGE) throw new Error("Proposal limit reached for this message.");
               const input = use.name === "update_building" ? await buildingPatch(gh, use.input, trusted)
-                : use.name === "edit_files" ? await filesPatch(gh, use.input, trusted) : use.input;
+                : use.name === "edit_files" ? await filesPatch(gh, use.input, trusted)
+                : use.name === "copy_files" ? await copyPatch(gh, use.input) : use.input;
               out = await proposeChange(gh, input, name, !!trusted);
               proposals++;
               send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
@@ -454,6 +473,11 @@ async function proposeChange(gh, input, name, trusted) {
     const path = cleanPath(f.path);
     if (NEVER.some((p) => path === p || path.startsWith(p))) throw new Error(`${path} can't be changed from the site.`);
     if (!WRITABLE.some((p) => path === p || (p.endsWith("/") && path.startsWith(p)))) throw new Error(`${path} is outside the files the site may change.`);
+    if (f.sha) {
+      writes.set(path, { sha: f.sha });
+      if (path.startsWith("Game/Docs/")) writes.set("Docs/2_Design_Docs/" + path.slice("Game/Docs/".length), { sha: f.sha });
+      continue;
+    }
     const content = String(f.content);
     if (path.endsWith(".json")) {
       try { JSON.parse(content); } catch (e) { throw new Error(`${path} is not valid JSON: ${e.message}`); }
@@ -469,7 +493,7 @@ async function proposeChange(gh, input, name, trusted) {
   const baseCommit = await gh.get(`git/commits/${baseSha}`);
   const tree = await gh.post("git/trees", {
     base_tree: baseCommit.tree.sha,
-    tree: [...writes].map(([path, content]) => ({ path, mode: "100644", type: "blob", content })),
+    tree: [...writes].map(([path, c]) => (typeof c === "string" ? { path, mode: "100644", type: "blob", content: c } : { path, mode: "100644", type: "blob", sha: c.sha })),
   });
   const who = name || "an anonymous helper";
   const commit = await gh.post("git/commits", {
@@ -709,6 +733,18 @@ function applyOp(data, op) {
   if (i >= node.length) throw new Error(`${op.path}: there is no item ${i}.`);
   if (op.op === "delete") node.splice(i, 1); else node[i] = op.value;
 }
+async function copyPatch(gh, input) {
+  const files = [];
+  for (const c of input.copies || []) {
+    const from = cleanPath(c.from), to = cleanPath(c.to);
+    if (to.startsWith("Docs/1_Canon_Source")) throw new Error("Canon is read-only.");
+    const meta = await gh.get(`contents/${encodePath(from)}?ref=main`);
+    if (!meta || !meta.sha || meta.type !== "file") throw new Error(`${from} is not a file in the repo.`);
+    files.push({ path: to, sha: meta.sha });
+  }
+  if (!files.length) throw new Error("No copies given.");
+  return { title: input.title, summary: input.summary, files };
+}
 async function filesPatch(gh, input, trusted) {
   const files = [];
   for (const ch of input.changes || []) {
@@ -775,6 +811,7 @@ function toolLabel(use) {
   if (use.name === "list_files") return `Looking in ${p || "the repo"}`;
   if (use.name === "get_scan") return "Checking the scan";
   if (use.name === "propose_change") return "Saving the change";
+  if (use.name === "copy_files") return `Copying ${((use.input && use.input.copies) || []).map((c) => String(c.from).split("/").pop()).join(", ")}`;
   if (use.name === "edit_files") return `Editing ${((use.input && use.input.changes) || []).map((c) => String(c.file).split("/").pop()).join(", ")}`;
   if (use.name === "save_image_as_concept") return "Saving the image as concept art";
   if (use.name === "edit_plan") return `Editing the plan of ${use.input && use.input.building_uid}`;
