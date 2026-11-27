@@ -560,8 +560,9 @@ function deckView(n) {
   const pl = d.districts.find(x => x.is_plaza);
   if (pl && pl.circle_km) {
     const [cx, cy, r] = pl.circle_km;
-    g += `<circle class="hit" onclick="go('#/district/${pl.id}')" cx="${X(cx)}" cy="${Y(cy)}" r="${r * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"><title>${esc(pl.name)}</title></circle>
-      <circle cx="${X(cx)}" cy="${Y(cy)}" r="800" fill="#06182f" stroke="#6fd0ff" stroke-width="${fs / 6}"/>`;
+    g += `<circle class="hit" onclick="go('#/district/${pl.id}')" cx="${X(cx)}" cy="${Y(cy)}" r="${r * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"><title>${esc(pl.name)}</title></circle>`;
+    if (IX.psets[pl.id]) g += precinctsContext(IX.psets[pl.id], fs / 4);   // drawn only; the circle above takes the click
+    g += `<circle pointer-events="none" cx="${X(cx)}" cy="${Y(cy)}" r="800" fill="#06182f" stroke="#6fd0ff" stroke-width="${fs / 6}"/>`;
   }
   // Keelway and stops
   const stops = (d.keelway || []).map(s => parseInt(String(s.frame).replace(/\D/g, ""), 10)).filter(v => !isNaN(v));
