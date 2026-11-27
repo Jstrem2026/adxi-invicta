@@ -172,3 +172,8 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 
 /* Map rule: text on the map never takes clicks or hovers; only the next level down is clickable. */
 #map text { pointer-events: none; }
+.swatch { display: inline-block; width: 12px; height: 10px; vertical-align: middle; border: 1px solid #cfe3f7; }
+.emblem-head { display: flex; align-items: center; gap: 12px; }
+.emblem-head h1 { margin: 0; }
+.emblem { display: block; flex: none; }
+.emblem-sm { width: 26px; height: 26px; vertical-align: middle; margin-right: 8px; }

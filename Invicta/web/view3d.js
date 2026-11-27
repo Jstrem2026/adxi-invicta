@@ -52,15 +52,29 @@
 
   // ---- Building geometry. Ship frame: x km from the prow (toward the stern), y km across (starboard +).
   // Scene: X = ship x in metres, Z = ship y in metres, Y = up. Model frame: metres from the building's bow-port corner.
-  function polyShape(pts) {
+  function polyShape(pts, holes) {
     const s = new THREE.Shape();
     pts.forEach((p, i) => (i ? s.lineTo(p[0], p[1]) : s.moveTo(p[0], p[1])));
     s.closePath();
+    for (const hl of holes || []) {            // courtyards and other open space inside the outline
+      const hp = new THREE.Path();
+      hl.forEach((p, i) => (i ? hp.lineTo(p[0], p[1]) : hp.moveTo(p[0], p[1])));
+      hp.closePath();
+      s.holes.push(hp);
+    }
     return s;
   }
-  function prism(pts, z0, h, mat, edges) {
+  function inPoly(q, pts) {
+    let inside = false;
+    for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+      const [xi, yi] = pts[i], [xj, yj] = pts[j];
+      if ((yi > q[1]) !== (yj > q[1]) && q[0] < ((xj - xi) * (q[1] - yi)) / (yj - yi || 1e-12) + xi) inside = !inside;
+    }
+    return inside;
+  }
+  function prism(pts, z0, h, mat, edges, holes) {
     // Extrude a plan outline (x, y metres) from height z0 up by h. Shape is drawn in X/Y then laid flat.
-    const geo = new THREE.ExtrudeGeometry(polyShape(pts), { depth: Math.max(h, 0.05), bevelEnabled: false });
+    const geo = new THREE.ExtrudeGeometry(polyShape(pts, holes), { depth: Math.max(h, 0.05), bevelEnabled: false });
     geo.rotateX(Math.PI / 2);         // shape y -> scene z, extrusion -> down
     geo.translate(0, z0 + Math.max(h, 0.05), 0);
     const g = new THREE.Group();
@@ -84,14 +98,21 @@
     const f = finishes(b.look);
     const info = { levels: [], designed: !!(model && model.levels && model.levels.length), finishes: f };
     if (!info.designed) {
-      // Not designed: footprint box, grey and dashed.
+      // Not designed: its footprint (shaped outline with courtyards, or its box), in its map colour, dashed edges.
       const Lm = (r[1] - r[0]) * 1000, Wm = (r[3] - r[2]) * 1000;
       const h = typeof b.height_m === "number" ? b.height_m : 3;
-      const mat = new THREE.MeshStandardMaterial({ color: 0x6b7480, transparent: true, opacity: 0.35, roughness: 1 });
+      const cat = window.adxiCat ? window.adxiCat(b) : null;
+      const mat = new THREE.MeshStandardMaterial({ color: cat ? new THREE.Color(cat.fill) : 0x6b7480, transparent: true, opacity: 0.55, roughness: 1 });
       const line = new THREE.LineDashedMaterial({ color: 0xb8c2cc, dashSize: Math.max(Lm, Wm) / 40, gapSize: Math.max(Lm, Wm) / 60 });
-      const box = prism([[0, 0], [Lm, 0], [Lm, Wm], [0, Wm]], 0, h, mat, line);
-      box.children[1].computeLineDistances();
-      g.add(box);
+      const loc = (q) => [(q[0] - r[0]) * 1000, (q[1] - r[2]) * 1000];
+      const parts = b.outline_km && !b.bays_km ? b.outline_km.map((o) => o.map(loc)) : (b.bays_km || [r]).map((q) => [[q[0], q[2]], [q[1], q[2]], [q[1], q[3]], [q[0], q[3]]].map(loc));
+      const holes = (b.holes_km || []).map((o) => o.map(loc));
+      for (const pts of parts) {
+        const mine = holes.filter((hl) => inPoly(hl[0], pts));
+        const box = prism(pts, 0, h, mat, line, mine);
+        box.children[1].computeLineDistances();
+        g.add(box);
+      }
       info.placeholderHeight = typeof b.height_m !== "number";
       return { group: g, info };
     }
@@ -230,7 +251,8 @@
       const q = st.rect_km.map((v, i) => (v - origin[i < 2 ? 0 : 1]) * 1000);
       const x0 = Math.max(q[0], -pad), x1 = Math.min(q[1], Lm + pad), y0 = Math.max(q[2], -pad), y1 = Math.min(q[3], Wm + pad);
       if (x1 <= x0 || y1 <= y0) continue;
-      scene.add(prism([[x0, y0], [x1, y0], [x1, y1], [x0, y1]], -0.02, 0.03, new THREE.MeshStandardMaterial({ color: 0x3b4450, roughness: 1 }), null));
+      const sc2 = window.adxiStreetCat ? window.adxiStreetCat(st) : null;
+      scene.add(prism([[x0, y0], [x1, y0], [x1, y1], [x0, y1]], -0.02, 0.03, new THREE.MeshStandardMaterial({ color: sc2 ? new THREE.Color(sc2.fill) : 0x3b4450, roughness: 1 }), null));
     }
 
     // Buildings.
@@ -262,7 +284,7 @@
     ov.querySelector(".v3d-key").innerHTML = [
       sc.kind === "building" && f ? (f.fromLook ? `Finishes from the Architecture "look": ${esc(f.names.join(", "))}.` : `No finishes in the Architecture "look" yet, so walls are plain grey.`) : "",
       designed.length ? `<span class="sw core"></span>stairs and lifts <span class="sw door"></span>doors` : "",
-      notDesigned.length ? `<span class="sw none"></span>${notDesigned.length === built.length && sc.kind === "building" ? "No plan yet: footprint only" : `${notDesigned.length} of ${built.length} buildings have no plan yet (footprint only)`}${notDesigned.some((x) => x.info.placeholderHeight) ? ", flat where no height is set" : ""}.` : "",
+      notDesigned.length ? `Footprints are coloured by use, as on the map legend. <span class="sw none"></span>${notDesigned.length === built.length && sc.kind === "building" ? "No plan yet: footprint only" : `${notDesigned.length} of ${built.length} buildings have no plan yet (footprint only)`}${notDesigned.some((x) => x.info.placeholderHeight) ? ", flat where no height is set" : ""}.` : "",
     ].filter(Boolean).join(" · ");
 
     // Camera and controls.

@@ -118,7 +118,7 @@ District (Sheet S3): 5.8 sq mi (15.0 km²), starboard of the Keelway, about F53 
 
 Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each district now has a precinct plan in the Port of Arrivals pattern: precincts on frame and lane lines, named streets, and every block holding something, with names and codes. All proposed. Canon kept: Strike Hangars' 32 launch shafts (errata C4, F16–F28, lanes D–F and T–V) and the Strike Hangars Keelway stop (F3); the three Cruiser Gates (C5, F38–F48) with two 2 km cruiser berths behind each; the cross-line Dockside stop (F52); the Beacon (F57); the Pilots' Quarter stop (F65); the Governor's Hall, pilots' guild and Atrium Central in the Atrium Plaza. Homes and family services are in the Pilots' Quarter (design rule above). Building heights, floors and interiors are not designed yet. Made by `Invicta/tools/seed_deck5_districts.py`.
 
-**Strike Hangars** (9 precincts, 241 items, 42.23 sq mi (109.37 km²)). Details: `Strike_Hangars_Precincts.md`.
+**Strike Hangars** (9 precincts, 324 items, 42.23 sq mi (109.37 km²)). Details: `Strike_Hangars_Precincts.md`.
 
 | # | Precinct | Frames | Lanes | Area | What is there |
 |---|---|---|---|---|---|
@@ -132,7 +132,7 @@ Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each 
 | P8 | Wing Command | F28–F34 | G–S | 7.33 sq mi (18.98 km²) | Strike wing headquarters, operations, briefings, duty lodges, mess, medical |
 | P9 | Starboard Repair Yards | F28–F34 | T–Y | 2.51 sq mi (6.50 km²) | Battle-damage rebuilds, weapons fit, shields, drone repairs |
 
-**Cruiser Docks** (6 precincts, 133 items, 23.13 sq mi (59.90 km²)). Details: `Cruiser_Docks_Precincts.md`.
+**Cruiser Docks** (6 precincts, 180 items, 23.13 sq mi (59.90 km²)). Details: `Cruiser_Docks_Precincts.md`.
 
 | # | Precinct | Frames | Lanes | Area | What is there |
 |---|---|---|---|---|---|
@@ -143,7 +143,7 @@ Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each 
 | P5 | Fleet Quarter | F42–F48 | M–S | 3.76 sq mi (9.75 km²) | Fleet Admiral's office, captains' and crews' halls, clinic, Keelway Port entrance |
 | P6 | Dockside | F48–F55 | M–S | 2.64 sq mi (6.85 km²) | Shops, inn, offices and gardens for the dock workforce; cross-line |
 
-**Flight Control** (5 precincts, 69 items, 7.71 sq mi (19.96 km²)). Details: `Flight_Control_Precincts.md`.
+**Flight Control** (5 precincts, 105 items, 7.71 sq mi (19.96 km²)). Details: `Flight_Control_Precincts.md`.
 
 | # | Precinct | Frames | Lanes | Area | What is there |
 |---|---|---|---|---|---|
@@ -153,7 +153,7 @@ Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each 
 | P4 | Dispatch | F55–F59 | O–S | 1.60 sq mi (4.14 km²) | Dispatch centre, schedules, analysts, controller training |
 | P5 | Starboard Approach | F55–F59 | T–Y | 1.81 sq mi (4.68 km²) | Approach control for the Cruiser Gates, rescue coordination, evacuation craft |
 
-**Pilots' Quarter** (6 precincts, 133 items, 17.36 sq mi (44.97 km²)). Details: `Pilots_Quarter_Precincts.md`.
+**Pilots' Quarter** (6 precincts, 202 items, 17.36 sq mi (44.97 km²)). Details: `Pilots_Quarter_Precincts.md`.
 
 | # | Precinct | Frames | Lanes | Area | What is there |
 |---|---|---|---|---|---|
@@ -174,3 +174,5 @@ Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each 
 | P4 | Rim Gardens | F52–F56 | M–Q | 0.77 sq mi (2.00 km²) | Gardens and overlook on the rim of the Spine Atrium, cafés |
 
 Notes: the Strike Hangars precincts measure 42.23 sq mi (109.37 km²) on the Rev B outline against errata C2's 109.1 km²; Flight Control's and the Pilots' Quarter's shared edge (29.28 km) and the Atrium Plaza circle fall between frames; the Spine Atrium shaft (0.78 sq mi, 2.01 km²) is an opening and in no precinct. All four are logged as known in the app's rules (`Invicta/data/rules.json`).
+
+Building shapes and map colours (Jordan, 27 Nov 2026): Deck 5 buildings follow their blocks, with curved edges along the Spine Atrium, the Atrium Plaza rim and the hull, and courtyards, L and U shapes, curved fronts and rounded corners where they fit. Port of Arrivals buildings that have a building plan show that plan's outline. Every building is coloured by use on the map and in 3D: roads and transit dark grey, the Keelway light blue, police and security blue, fire and emergency red, medical white with a red edge, homes warm tan, shops and food orange, offices and government purple, industry, hangars and docks steel grey, utilities and services yellow, parks and plazas green, schools and training teal.

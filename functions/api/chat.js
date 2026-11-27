@@ -117,7 +117,7 @@ const TOOLS = [
     name: "update_building",
     description:
       "Change fields of ONE building in a precinct data file (Invicta/data/decks/D<n>/<district>.json) without rewriting the file. " +
-      "Use it for architecture details (height_m, floors, structure, entrances, look, capacity, services, interior), notes, name, size_text or status. " +
+      "Use it for architecture details (height_m, floors, structure, entrances, look, capacity, services, interior), notes, name, size_text, status or category (its map colour: transit, keelway, police, fire, medical, homes, shops, offices, industry, utilities, parks or schools). " +
       "Data stores metric (height_m in metres). Text fields may give US units first with metric alongside. For Jordan and Kylee, call it right away; for others, after they agree. " +
       "It opens a proposal, or publishes at once for trusted helpers.",
     input_schema: {
@@ -658,7 +658,10 @@ async function planPatch(gh, input) {
 
 // update_building: patch one building's fields and hand the whole file to proposeChange.
 const BUILDING_FIELDS = ["name", "status", "kind", "notes", "size_text", "height_m", "floors", "structure", "entrances",
-  "look", "capacity", "services", "interior"];
+  "look", "capacity", "services", "interior", "category"];
+// Map colour legend (Jordan, 27 Nov 2026), same keys as Invicta/atlaslib/categories.py.
+const CATEGORY_KEYS = ["transit", "keelway", "police", "fire", "medical", "homes", "shops", "offices", "industry",
+  "utilities", "parks", "schools"];
 async function buildingPatch(gh, input, trusted) {
   const file = cleanPath(input.file);
   if (!/^Invicta\/data\/decks\/D\d\/[a-z0-9-]+\.json$/.test(file)) throw new Error("file must be a precinct data file under Invicta/data/decks.");
@@ -672,6 +675,7 @@ async function buildingPatch(gh, input, trusted) {
     if (!BUILDING_FIELDS.includes(k)) throw new Error(`${k} can't be set here. Allowed: ${BUILDING_FIELDS.join(", ")}.`);
     if (k === "status" && !["proposed", "assumption", "canon"].includes(v)) throw new Error("status must be proposed, assumption or canon.");
     if (k === "status" && v === "canon" && trusted !== "Jordan") throw new Error("Only Jordan can mark something canon.");
+    if (k === "category" && !CATEGORY_KEYS.includes(v)) throw new Error(`category must be one of ${CATEGORY_KEYS.join(", ")}.`);
     if (k === "height_m" && typeof v !== "number") throw new Error("height_m must be a number of metres.");
     found[k] = v;
   }

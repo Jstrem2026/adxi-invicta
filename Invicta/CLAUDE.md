@@ -50,6 +50,13 @@ to keep in sync and no build step.
   block (the scan reports an error otherwise). Block ids name the frame and lane of the
   bow-port corner (`D5-F43-F`, with a letter added when two share a corner); each block also
   gets a plain name (Block 1, Block 2 ...). When placing buildings, keep them clear of streets.
+- Building shapes (Jordan, 27 Nov 2026): buildings follow their blocks, with curved edges along the
+  atrium, the plaza rim and the hull, and courtyards, L and U shapes where they fit. Store the shape in
+  `outline_km` / `holes_km` and keep `rect_km` as the overall box (see `data/README.md`).
+- Map colours (Jordan, 27 Nov 2026): every building has a `category` (roads and transit dark grey, the
+  Keelway light blue, police blue, fire red, medical white with a red edge, homes tan, shops orange,
+  offices and government purple, industry, hangars and docks steel grey, utilities yellow, parks green,
+  schools teal). Set it on every new building; `atlaslib/categories.py` holds the legend.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.
