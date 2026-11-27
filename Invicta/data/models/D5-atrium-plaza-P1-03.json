@@ -1,0 +1,3605 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P1-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  117.3,
+  299.9
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Operations floor",
+   "z_m": 0.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Office floor 1",
+   "z_m": 6.0,
+   "height_m": 4.4,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Office floor 2",
+   "z_m": 10.4,
+   "height_m": 4.4,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Office floor 3",
+   "z_m": 14.8,
+   "height_m": 4.4,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Deck operations room",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     89.7,
+     275.9
+    ],
+    [
+     30.2,
+     275.9
+    ],
+    [
+     31.1,
+     272.0
+    ],
+    [
+     64.0,
+     163.6
+    ],
+    [
+     71.1,
+     144.8
+    ]
+   ],
+   "about": "A wall of screens showing every crew, repair job and system across Deck 5; the Deck Chief's team sends crews where they are needed.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.2,
+     289.4
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     21.6,
+     256.9
+    ],
+    [
+     24.5,
+     257.7
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     101.8,
+     286.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.6,
+     256.9
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     58.2,
+     140.9
+    ],
+    [
+     59.9,
+     144.8
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     24.5,
+     257.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.2,
+     140.9
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     87.3,
+     163.2
+    ],
+    [
+     85.2,
+     169.8
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     59.9,
+     144.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.3,
+     163.2
+    ],
+    [
+     104.8,
+     286.7
+    ],
+    [
+     101.4,
+     283.9
+    ],
+    [
+     85.2,
+     169.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.8,
+     286.7
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     101.4,
+     283.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     67.6,
+     286.4
+    ],
+    [
+     58.2,
+     286.4
+    ],
+    [
+     59.1,
+     275.9
+    ],
+    [
+     65.7,
+     275.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     24.5,
+     257.6
+    ],
+    [
+     26.8,
+     249.9
+    ],
+    [
+     37.0,
+     252.7
+    ],
+    [
+     34.6,
+     260.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     43.8,
+     194.2
+    ],
+    [
+     46.1,
+     186.5
+    ],
+    [
+     56.1,
+     189.7
+    ],
+    [
+     53.8,
+     197.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     70.4,
+     116.9
+    ],
+    [
+     74.6,
+     105.7
+    ],
+    [
+     70.7,
+     145.8
+    ],
+    [
+     69.4,
+     149.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     84.9,
+     167.3
+    ],
+    [
+     86.2,
+     176.5
+    ],
+    [
+     78.6,
+     197.5
+    ],
+    [
+     77.6,
+     190.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     95.7,
+     243.6
+    ],
+    [
+     97.0,
+     252.8
+    ],
+    [
+     86.3,
+     252.0
+    ],
+    [
+     85.3,
+     245.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "room",
+   "name": "Front office",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.3,
+     299.9
+    ],
+    [
+     108.8,
+     299.9
+    ],
+    [
+     98.5,
+     289.4
+    ],
+    [
+     105.2,
+     289.4
+    ]
+   ],
+   "about": "Where residents and crews report faults and ask for repairs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "room",
+   "name": "Crew dispatch desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.8,
+     299.9
+    ],
+    [
+     102.4,
+     299.9
+    ],
+    [
+     93.5,
+     289.4
+    ],
+    [
+     98.5,
+     289.4
+    ]
+   ],
+   "about": "Assigns maintenance crews to jobs reported across the deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Briefing room",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.4,
+     299.9
+    ],
+    [
+     94.9,
+     299.9
+    ],
+    [
+     87.6,
+     289.4
+    ],
+    [
+     93.5,
+     289.4
+    ]
+   ],
+   "about": "Morning briefing for the shift's crew leaders.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Radio room",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.9,
+     299.9
+    ],
+    [
+     90.6,
+     299.9
+    ],
+    [
+     84.3,
+     289.4
+    ],
+    [
+     87.6,
+     289.4
+    ]
+   ],
+   "about": "Talks to crews out on the deck by radio.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.6,
+     299.9
+    ],
+    [
+     84.2,
+     299.9
+    ],
+    [
+     79.3,
+     289.4
+    ],
+    [
+     84.3,
+     289.4
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     84.2,
+     299.9
+    ],
+    [
+     42.7,
+     299.9
+    ],
+    [
+     46.7,
+     289.4
+    ],
+    [
+     79.3,
+     289.4
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.7,
+     299.9
+    ],
+    [
+     1.3,
+     299.9
+    ],
+    [
+     14.2,
+     289.4
+    ],
+    [
+     46.7,
+     289.4
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     1.3,
+     299.9
+    ],
+    [
+     0.0,
+     299.9
+    ],
+    [
+     7.9,
+     265.8
+    ],
+    [
+     10.1,
+     258.5
+    ],
+    [
+     20.3,
+     261.2
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     14.2,
+     289.4
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.1,
+     258.5
+    ],
+    [
+     20.9,
+     223.0
+    ],
+    [
+     31.0,
+     226.0
+    ],
+    [
+     20.3,
+     261.2
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.9,
+     223.0
+    ],
+    [
+     31.7,
+     187.5
+    ],
+    [
+     41.7,
+     190.7
+    ],
+    [
+     31.0,
+     226.0
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.7,
+     187.5
+    ],
+    [
+     41.3,
+     155.9
+    ],
+    [
+     43.0,
+     151.3
+    ],
+    [
+     52.4,
+     156.3
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     41.7,
+     190.7
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     43.0,
+     151.3
+    ],
+    [
+     58.9,
+     109.0
+    ],
+    [
+     62.5,
+     129.3
+    ],
+    [
+     52.4,
+     156.3
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.9,
+     109.0
+    ],
+    [
+     74.8,
+     66.8
+    ],
+    [
+     72.7,
+     102.3
+    ],
+    [
+     62.5,
+     129.3
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.8,
+     66.8
+    ],
+    [
+     81.7,
+     48.4
+    ],
+    [
+     85.0,
+     71.5
+    ],
+    [
+     79.7,
+     108.9
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     72.7,
+     102.3
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.0,
+     71.5
+    ],
+    [
+     90.8,
+     112.4
+    ],
+    [
+     84.2,
+     141.2
+    ],
+    [
+     79.7,
+     108.9
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.8,
+     112.4
+    ],
+    [
+     96.6,
+     153.4
+    ],
+    [
+     88.8,
+     173.5
+    ],
+    [
+     84.2,
+     141.2
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.6,
+     153.4
+    ],
+    [
+     102.3,
+     194.3
+    ],
+    [
+     93.4,
+     205.9
+    ],
+    [
+     88.8,
+     173.5
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.3,
+     194.3
+    ],
+    [
+     108.1,
+     235.2
+    ],
+    [
+     98.0,
+     238.2
+    ],
+    [
+     93.4,
+     205.9
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.1,
+     235.2
+    ],
+    [
+     113.9,
+     276.1
+    ],
+    [
+     102.5,
+     270.6
+    ],
+    [
+     98.0,
+     238.2
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.9,
+     276.1
+    ],
+    [
+     117.3,
+     299.9
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     102.5,
+     270.6
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.8,
+     286.4
+    ],
+    [
+     67.6,
+     286.4
+    ],
+    [
+     65.7,
+     275.9
+    ],
+    [
+     89.7,
+     275.9
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.2,
+     286.4
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     17.7,
+     283.4
+    ],
+    [
+     30.4,
+     275.2
+    ],
+    [
+     30.2,
+     275.9
+    ],
+    [
+     59.1,
+     275.9
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     17.7,
+     283.4
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     24.5,
+     257.6
+    ],
+    [
+     34.6,
+     260.4
+    ],
+    [
+     31.1,
+     272.0
+    ],
+    [
+     30.4,
+     275.2
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.8,
+     249.9
+    ],
+    [
+     37.6,
+     214.4
+    ],
+    [
+     47.7,
+     217.5
+    ],
+    [
+     37.0,
+     252.7
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.6,
+     214.4
+    ],
+    [
+     43.8,
+     194.2
+    ],
+    [
+     53.8,
+     197.4
+    ],
+    [
+     47.7,
+     217.5
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.1,
+     186.5
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     59.2,
+     146.7
+    ],
+    [
+     65.7,
+     159.2
+    ],
+    [
+     64.0,
+     163.6
+    ],
+    [
+     56.1,
+     189.7
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.2,
+     146.7
+    ],
+    [
+     70.4,
+     116.9
+    ],
+    [
+     69.4,
+     149.5
+    ],
+    [
+     65.7,
+     159.2
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.6,
+     105.7
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     81.4,
+     142.9
+    ],
+    [
+     75.2,
+     173.5
+    ],
+    [
+     71.1,
+     144.8
+    ],
+    [
+     70.7,
+     145.8
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.4,
+     142.9
+    ],
+    [
+     84.9,
+     167.3
+    ],
+    [
+     77.6,
+     190.9
+    ],
+    [
+     75.2,
+     173.5
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.2,
+     176.5
+    ],
+    [
+     92.2,
+     219.3
+    ],
+    [
+     82.9,
+     228.0
+    ],
+    [
+     78.6,
+     197.5
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     92.2,
+     219.3
+    ],
+    [
+     95.7,
+     243.6
+    ],
+    [
+     85.3,
+     245.4
+    ],
+    [
+     82.9,
+     228.0
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Supervisors' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     97.0,
+     252.8
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     89.7,
+     275.9
+    ],
+    [
+     86.3,
+     252.0
+    ]
+   ],
+   "about": "Shift supervisors who manage the maintenance crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.2,
+     289.4
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     21.6,
+     256.9
+    ],
+    [
+     24.5,
+     257.7
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     101.8,
+     286.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.6,
+     256.9
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     58.2,
+     140.9
+    ],
+    [
+     59.9,
+     144.8
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     24.5,
+     257.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     58.2,
+     140.9
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     87.3,
+     163.2
+    ],
+    [
+     85.2,
+     169.8
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     59.9,
+     144.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.3,
+     163.2
+    ],
+    [
+     104.8,
+     286.7
+    ],
+    [
+     101.4,
+     283.9
+    ],
+    [
+     85.2,
+     169.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.8,
+     286.7
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     101.4,
+     283.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Deck Chief's office",
+   "level": "L2",
+   "outline_m": [
+    [
+     117.3,
+     299.9
+    ],
+    [
+     109.8,
+     299.9
+    ],
+    [
+     99.3,
+     289.4
+    ],
+    [
+     105.2,
+     289.4
+    ]
+   ],
+   "about": "The Deck Chief's own office; the Deck Chief runs Deck 5's day-to-day operations for the Governor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Deputy chief's office",
+   "level": "L2",
+   "outline_m": [
+    [
+     109.8,
+     299.9
+    ],
+    [
+     105.6,
+     299.9
+    ],
+    [
+     96.0,
+     289.4
+    ],
+    [
+     99.3,
+     289.4
+    ]
+   ],
+   "about": "The deputy who runs the night shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Planning room",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.6,
+     299.9
+    ],
+    [
+     95.9,
+     299.9
+    ],
+    [
+     88.5,
+     289.4
+    ],
+    [
+     96.0,
+     289.4
+    ]
+   ],
+   "about": "Planners schedule inspections, repairs and refits for the whole deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Drawing archive",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.9,
+     299.9
+    ],
+    [
+     87.4,
+     299.9
+    ],
+    [
+     81.8,
+     289.4
+    ],
+    [
+     88.5,
+     289.4
+    ]
+   ],
+   "about": "Drawings of every building, pipe and cable on the deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.4,
+     299.9
+    ],
+    [
+     83.3,
+     299.9
+    ],
+    [
+     78.5,
+     289.4
+    ],
+    [
+     81.8,
+     289.4
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     83.3,
+     299.9
+    ],
+    [
+     75.8,
+     299.9
+    ],
+    [
+     72.7,
+     289.4
+    ],
+    [
+     78.5,
+     289.4
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.8,
+     299.9
+    ],
+    [
+     34.6,
+     299.9
+    ],
+    [
+     40.4,
+     289.4
+    ],
+    [
+     72.7,
+     289.4
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     34.6,
+     299.9
+    ],
+    [
+     0.0,
+     299.9
+    ],
+    [
+     1.6,
+     292.8
+    ],
+    [
+     14.2,
+     285.1
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     40.4,
+     289.4
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     1.6,
+     292.8
+    ],
+    [
+     7.9,
+     265.8
+    ],
+    [
+     12.1,
+     252.0
+    ],
+    [
+     22.2,
+     254.8
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     14.2,
+     285.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.1,
+     252.0
+    ],
+    [
+     22.8,
+     216.7
+    ],
+    [
+     32.9,
+     219.7
+    ],
+    [
+     22.2,
+     254.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     22.8,
+     216.7
+    ],
+    [
+     33.5,
+     181.5
+    ],
+    [
+     43.5,
+     184.7
+    ],
+    [
+     32.9,
+     219.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.5,
+     181.5
+    ],
+    [
+     41.3,
+     155.9
+    ],
+    [
+     45.6,
+     144.3
+    ],
+    [
+     54.0,
+     151.9
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     43.5,
+     184.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     45.6,
+     144.3
+    ],
+    [
+     61.4,
+     102.4
+    ],
+    [
+     64.1,
+     125.1
+    ],
+    [
+     54.0,
+     151.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     61.4,
+     102.4
+    ],
+    [
+     77.2,
+     60.4
+    ],
+    [
+     74.2,
+     98.2
+    ],
+    [
+     64.1,
+     125.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     77.2,
+     60.4
+    ],
+    [
+     81.7,
+     48.4
+    ],
+    [
+     85.8,
+     77.4
+    ],
+    [
+     80.3,
+     113.5
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     74.2,
+     98.2
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.8,
+     77.4
+    ],
+    [
+     91.6,
+     118.1
+    ],
+    [
+     84.9,
+     145.7
+    ],
+    [
+     80.3,
+     113.5
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.6,
+     118.1
+    ],
+    [
+     97.3,
+     158.7
+    ],
+    [
+     89.4,
+     177.8
+    ],
+    [
+     84.9,
+     145.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.3,
+     158.7
+    ],
+    [
+     103.1,
+     199.4
+    ],
+    [
+     94.0,
+     209.9
+    ],
+    [
+     89.4,
+     177.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.1,
+     199.4
+    ],
+    [
+     108.8,
+     240.0
+    ],
+    [
+     98.5,
+     242.1
+    ],
+    [
+     94.0,
+     209.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.8,
+     240.0
+    ],
+    [
+     114.6,
+     280.7
+    ],
+    [
+     103.1,
+     274.2
+    ],
+    [
+     98.5,
+     242.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.6,
+     280.7
+    ],
+    [
+     117.3,
+     299.9
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     103.1,
+     274.2
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.8,
+     286.4
+    ],
+    [
+     67.6,
+     286.4
+    ],
+    [
+     65.7,
+     275.9
+    ],
+    [
+     89.7,
+     275.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     58.2,
+     286.4
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     17.6,
+     283.8
+    ],
+    [
+     30.3,
+     275.3
+    ],
+    [
+     30.2,
+     275.9
+    ],
+    [
+     59.1,
+     275.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     17.6,
+     283.8
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     24.5,
+     257.6
+    ],
+    [
+     34.6,
+     260.4
+    ],
+    [
+     31.1,
+     272.0
+    ],
+    [
+     30.3,
+     275.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.8,
+     249.9
+    ],
+    [
+     37.6,
+     214.6
+    ],
+    [
+     47.6,
+     217.7
+    ],
+    [
+     37.0,
+     252.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     37.6,
+     214.6
+    ],
+    [
+     43.8,
+     194.2
+    ],
+    [
+     53.8,
+     197.4
+    ],
+    [
+     47.6,
+     217.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     46.1,
+     186.5
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     59.1,
+     147.0
+    ],
+    [
+     65.7,
+     159.3
+    ],
+    [
+     64.0,
+     163.6
+    ],
+    [
+     56.1,
+     189.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     59.1,
+     147.0
+    ],
+    [
+     70.4,
+     116.9
+    ],
+    [
+     69.4,
+     149.5
+    ],
+    [
+     65.7,
+     159.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.6,
+     105.7
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     81.4,
+     142.6
+    ],
+    [
+     75.1,
+     173.3
+    ],
+    [
+     71.1,
+     144.8
+    ],
+    [
+     70.7,
+     145.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     81.4,
+     142.6
+    ],
+    [
+     84.9,
+     167.3
+    ],
+    [
+     77.6,
+     190.9
+    ],
+    [
+     75.1,
+     173.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     86.2,
+     176.5
+    ],
+    [
+     92.2,
+     219.0
+    ],
+    [
+     82.9,
+     227.8
+    ],
+    [
+     78.6,
+     197.5
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.2,
+     219.0
+    ],
+    [
+     95.7,
+     243.6
+    ],
+    [
+     85.3,
+     245.4
+    ],
+    [
+     82.9,
+     227.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Engineers' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.0,
+     252.8
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     89.7,
+     275.9
+    ],
+    [
+     86.3,
+     252.0
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     105.2,
+     289.4
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     21.6,
+     256.9
+    ],
+    [
+     24.5,
+     257.7
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     101.8,
+     286.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     21.6,
+     256.9
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     58.2,
+     140.9
+    ],
+    [
+     59.9,
+     144.8
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     24.5,
+     257.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     58.2,
+     140.9
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     87.3,
+     163.2
+    ],
+    [
+     85.2,
+     169.8
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     59.9,
+     144.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     87.3,
+     163.2
+    ],
+    [
+     104.8,
+     286.7
+    ],
+    [
+     101.4,
+     283.9
+    ],
+    [
+     85.2,
+     169.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.8,
+     286.7
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     101.4,
+     283.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Deck Chief's office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     117.3,
+     299.9
+    ],
+    [
+     109.8,
+     299.9
+    ],
+    [
+     99.3,
+     289.4
+    ],
+    [
+     105.2,
+     289.4
+    ]
+   ],
+   "about": "The Deck Chief's own office; the Deck Chief runs Deck 5's day-to-day operations for the Governor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Deputy chief's office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     109.8,
+     299.9
+    ],
+    [
+     105.6,
+     299.9
+    ],
+    [
+     96.0,
+     289.4
+    ],
+    [
+     99.3,
+     289.4
+    ]
+   ],
+   "about": "The deputy who runs the night shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Planning room",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     105.6,
+     299.9
+    ],
+    [
+     95.9,
+     299.9
+    ],
+    [
+     88.5,
+     289.4
+    ],
+    [
+     96.0,
+     289.4
+    ]
+   ],
+   "about": "Planners schedule inspections, repairs and refits for the whole deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Drawing archive",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     95.9,
+     299.9
+    ],
+    [
+     87.4,
+     299.9
+    ],
+    [
+     81.8,
+     289.4
+    ],
+    [
+     88.5,
+     289.4
+    ]
+   ],
+   "about": "Drawings of every building, pipe and cable on the deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     87.4,
+     299.9
+    ],
+    [
+     83.3,
+     299.9
+    ],
+    [
+     78.5,
+     289.4
+    ],
+    [
+     81.8,
+     289.4
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     83.3,
+     299.9
+    ],
+    [
+     75.8,
+     299.9
+    ],
+    [
+     72.7,
+     289.4
+    ],
+    [
+     78.5,
+     289.4
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     75.8,
+     299.9
+    ],
+    [
+     34.6,
+     299.9
+    ],
+    [
+     40.4,
+     289.4
+    ],
+    [
+     72.7,
+     289.4
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     34.6,
+     299.9
+    ],
+    [
+     0.0,
+     299.9
+    ],
+    [
+     1.6,
+     292.8
+    ],
+    [
+     14.2,
+     285.1
+    ],
+    [
+     13.2,
+     289.4
+    ],
+    [
+     40.4,
+     289.4
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     1.6,
+     292.8
+    ],
+    [
+     7.9,
+     265.8
+    ],
+    [
+     12.1,
+     252.0
+    ],
+    [
+     22.2,
+     254.8
+    ],
+    [
+     18.0,
+     268.5
+    ],
+    [
+     14.2,
+     285.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     12.1,
+     252.0
+    ],
+    [
+     22.8,
+     216.7
+    ],
+    [
+     32.9,
+     219.7
+    ],
+    [
+     22.2,
+     254.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     22.8,
+     216.7
+    ],
+    [
+     33.5,
+     181.5
+    ],
+    [
+     43.5,
+     184.7
+    ],
+    [
+     32.9,
+     219.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     33.5,
+     181.5
+    ],
+    [
+     41.3,
+     155.9
+    ],
+    [
+     45.6,
+     144.3
+    ],
+    [
+     54.0,
+     151.9
+    ],
+    [
+     51.2,
+     159.3
+    ],
+    [
+     43.5,
+     184.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     45.6,
+     144.3
+    ],
+    [
+     61.4,
+     102.4
+    ],
+    [
+     64.1,
+     125.1
+    ],
+    [
+     54.0,
+     151.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     61.4,
+     102.4
+    ],
+    [
+     77.2,
+     60.4
+    ],
+    [
+     74.2,
+     98.2
+    ],
+    [
+     64.1,
+     125.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     77.2,
+     60.4
+    ],
+    [
+     81.7,
+     48.4
+    ],
+    [
+     85.8,
+     77.4
+    ],
+    [
+     80.3,
+     113.5
+    ],
+    [
+     77.1,
+     90.6
+    ],
+    [
+     74.2,
+     98.2
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     85.8,
+     77.4
+    ],
+    [
+     91.6,
+     118.1
+    ],
+    [
+     84.9,
+     145.7
+    ],
+    [
+     80.3,
+     113.5
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     91.6,
+     118.1
+    ],
+    [
+     97.3,
+     158.7
+    ],
+    [
+     89.4,
+     177.8
+    ],
+    [
+     84.9,
+     145.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     97.3,
+     158.7
+    ],
+    [
+     103.1,
+     199.4
+    ],
+    [
+     94.0,
+     209.9
+    ],
+    [
+     89.4,
+     177.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     103.1,
+     199.4
+    ],
+    [
+     108.8,
+     240.0
+    ],
+    [
+     98.5,
+     242.1
+    ],
+    [
+     94.0,
+     209.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     108.8,
+     240.0
+    ],
+    [
+     114.6,
+     280.7
+    ],
+    [
+     103.1,
+     274.2
+    ],
+    [
+     98.5,
+     242.1
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     114.6,
+     280.7
+    ],
+    [
+     117.3,
+     299.9
+    ],
+    [
+     105.2,
+     289.4
+    ],
+    [
+     103.1,
+     274.2
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     101.8,
+     286.4
+    ],
+    [
+     67.6,
+     286.4
+    ],
+    [
+     65.7,
+     275.9
+    ],
+    [
+     89.7,
+     275.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     58.2,
+     286.4
+    ],
+    [
+     17.0,
+     286.4
+    ],
+    [
+     17.6,
+     283.8
+    ],
+    [
+     30.3,
+     275.3
+    ],
+    [
+     30.2,
+     275.9
+    ],
+    [
+     59.1,
+     275.9
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     17.6,
+     283.8
+    ],
+    [
+     20.9,
+     269.3
+    ],
+    [
+     24.5,
+     257.6
+    ],
+    [
+     34.6,
+     260.4
+    ],
+    [
+     31.1,
+     272.0
+    ],
+    [
+     30.3,
+     275.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     26.8,
+     249.9
+    ],
+    [
+     37.6,
+     214.6
+    ],
+    [
+     47.6,
+     217.7
+    ],
+    [
+     37.0,
+     252.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     37.6,
+     214.6
+    ],
+    [
+     43.8,
+     194.2
+    ],
+    [
+     53.8,
+     197.4
+    ],
+    [
+     47.6,
+     217.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     46.1,
+     186.5
+    ],
+    [
+     54.1,
+     160.2
+    ],
+    [
+     59.1,
+     147.0
+    ],
+    [
+     65.7,
+     159.3
+    ],
+    [
+     64.0,
+     163.6
+    ],
+    [
+     56.1,
+     189.7
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     59.1,
+     147.0
+    ],
+    [
+     70.4,
+     116.9
+    ],
+    [
+     69.4,
+     149.5
+    ],
+    [
+     65.7,
+     159.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     74.6,
+     105.7
+    ],
+    [
+     75.7,
+     102.6
+    ],
+    [
+     81.4,
+     142.6
+    ],
+    [
+     75.1,
+     173.3
+    ],
+    [
+     71.1,
+     144.8
+    ],
+    [
+     70.7,
+     145.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     81.4,
+     142.6
+    ],
+    [
+     84.9,
+     167.3
+    ],
+    [
+     77.6,
+     190.9
+    ],
+    [
+     75.1,
+     173.3
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     86.2,
+     176.5
+    ],
+    [
+     92.2,
+     219.0
+    ],
+    [
+     82.9,
+     227.8
+    ],
+    [
+     78.6,
+     197.5
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     92.2,
+     219.0
+    ],
+    [
+     95.7,
+     243.6
+    ],
+    [
+     85.3,
+     245.4
+    ],
+    [
+     82.9,
+     227.8
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Engineers' office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     97.0,
+     252.8
+    ],
+    [
+     101.8,
+     286.4
+    ],
+    [
+     89.7,
+     275.9
+    ],
+    [
+     86.3,
+     252.0
+    ]
+   ],
+   "about": "Engineers who plan repairs and approve changes to buildings.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

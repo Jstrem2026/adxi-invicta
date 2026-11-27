@@ -1,0 +1,1288 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P4-06",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  169.3,
+  139.8
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "LB1",
+   "name": "Level B1 · Service layer landing",
+   "z_m": -6.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L1",
+   "name": "Level 1 · Lift landing",
+   "z_m": 0.0,
+   "height_m": 9.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Winding room",
+   "z_m": 9.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Shaft and lift landing",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     154.3,
+     14.0
+    ],
+    [
+     127.1,
+     39.5
+    ],
+    [
+     38.4,
+     112.3
+    ],
+    [
+     0.0,
+     139.8
+    ],
+    [
+     0.0,
+     14.0
+    ]
+   ],
+   "about": "The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     30.7,
+     0.0
+    ],
+    [
+     39.3,
+     0.0
+    ],
+    [
+     40.5,
+     6.6
+    ],
+    [
+     33.1,
+     6.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     100.6,
+     0.0
+    ],
+    [
+     109.2,
+     0.0
+    ],
+    [
+     100.7,
+     6.6
+    ],
+    [
+     93.3,
+     6.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     167.7,
+     1.5
+    ],
+    [
+     156.6,
+     11.9
+    ],
+    [
+     151.8,
+     7.2
+    ],
+    [
+     152.4,
+     6.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     97.2,
+     14.0
+    ],
+    [
+     88.9,
+     14.0
+    ],
+    [
+     90.2,
+     7.4
+    ],
+    [
+     98.0,
+     7.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     30.1,
+     14.0
+    ],
+    [
+     21.8,
+     14.0
+    ],
+    [
+     27.2,
+     7.4
+    ],
+    [
+     34.9,
+     7.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Lift control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     8.1,
+     0.0
+    ],
+    [
+     13.6,
+     6.6
+    ],
+    [
+     6.6,
+     6.6
+    ]
+   ],
+   "about": "Operators run the goods lifts and watch the shaft cameras from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Loading bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.1,
+     0.0
+    ],
+    [
+     30.7,
+     0.0
+    ],
+    [
+     33.1,
+     6.6
+    ],
+    [
+     13.6,
+     6.6
+    ]
+   ],
+   "about": "Trucks back in here to load and unload goods going to or from the service layer.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "room",
+   "name": "Crew check-in",
+   "level": "L1",
+   "outline_m": [
+    [
+     39.3,
+     0.0
+    ],
+    [
+     45.7,
+     0.0
+    ],
+    [
+     46.0,
+     6.6
+    ],
+    [
+     40.5,
+     6.6
+    ]
+   ],
+   "about": "Crews going down sign out, pick up radios and gas detectors and sign back in when they return.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "room",
+   "name": "Tool store",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.7,
+     0.0
+    ],
+    [
+     58.7,
+     0.0
+    ],
+    [
+     57.2,
+     6.6
+    ],
+    [
+     46.0,
+     6.6
+    ]
+   ],
+   "about": "Tools, harnesses and lamps for work in the service layer.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.7,
+     0.0
+    ],
+    [
+     70.0,
+     0.0
+    ],
+    [
+     66.9,
+     6.6
+    ],
+    [
+     57.2,
+     6.6
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     70.0,
+     0.0
+    ],
+    [
+     89.4,
+     0.0
+    ],
+    [
+     83.7,
+     6.6
+    ],
+    [
+     66.9,
+     6.6
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.4,
+     0.0
+    ],
+    [
+     100.6,
+     0.0
+    ],
+    [
+     93.3,
+     6.6
+    ],
+    [
+     83.7,
+     6.6
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.2,
+     0.0
+    ],
+    [
+     128.6,
+     0.0
+    ],
+    [
+     117.4,
+     6.6
+    ],
+    [
+     100.7,
+     6.6
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     128.6,
+     0.0
+    ],
+    [
+     148.0,
+     0.0
+    ],
+    [
+     134.1,
+     6.6
+    ],
+    [
+     117.4,
+     6.6
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.0,
+     0.0
+    ],
+    [
+     169.3,
+     0.0
+    ],
+    [
+     167.7,
+     1.5
+    ],
+    [
+     152.4,
+     6.7
+    ],
+    [
+     152.5,
+     6.6
+    ],
+    [
+     134.1,
+     6.6
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.6,
+     11.9
+    ],
+    [
+     154.3,
+     14.0
+    ],
+    [
+     137.4,
+     14.0
+    ],
+    [
+     135.8,
+     7.4
+    ],
+    [
+     151.7,
+     7.4
+    ],
+    [
+     151.8,
+     7.2
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     137.4,
+     14.0
+    ],
+    [
+     118.8,
+     14.0
+    ],
+    [
+     118.3,
+     7.4
+    ],
+    [
+     135.8,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.8,
+     14.0
+    ],
+    [
+     97.2,
+     14.0
+    ],
+    [
+     98.0,
+     7.4
+    ],
+    [
+     118.3,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.9,
+     14.0
+    ],
+    [
+     70.3,
+     14.0
+    ],
+    [
+     72.7,
+     7.4
+    ],
+    [
+     90.2,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     70.3,
+     14.0
+    ],
+    [
+     51.7,
+     14.0
+    ],
+    [
+     55.2,
+     7.4
+    ],
+    [
+     72.7,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.7,
+     14.0
+    ],
+    [
+     30.1,
+     14.0
+    ],
+    [
+     34.9,
+     7.4
+    ],
+    [
+     55.2,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.8,
+     14.0
+    ],
+    [
+     3.2,
+     14.0
+    ],
+    [
+     9.7,
+     7.4
+    ],
+    [
+     27.2,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Holding store",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.2,
+     14.0
+    ],
+    [
+     0.0,
+     14.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     6.6,
+     6.6
+    ],
+    [
+     6.6,
+     7.4
+    ],
+    [
+     9.7,
+     7.4
+    ]
+   ],
+   "about": "Short-term storage for goods waiting for the lift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Winding machinery",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     30.7,
+     0.0
+    ],
+    [
+     33.1,
+     6.6
+    ],
+    [
+     6.6,
+     6.6
+    ]
+   ],
+   "about": "The motors, brakes and cables that drive the shaft lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Shaft ventilation fans",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.3,
+     0.0
+    ],
+    [
+     58.7,
+     0.0
+    ],
+    [
+     57.2,
+     6.6
+    ],
+    [
+     40.5,
+     6.6
+    ]
+   ],
+   "about": "Fans that push fresh air down the shaft and the service tunnels.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     58.7,
+     0.0
+    ],
+    [
+     75.1,
+     0.0
+    ],
+    [
+     71.3,
+     6.6
+    ],
+    [
+     57.2,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.1,
+     0.0
+    ],
+    [
+     91.5,
+     0.0
+    ],
+    [
+     85.5,
+     6.6
+    ],
+    [
+     71.3,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.5,
+     0.0
+    ],
+    [
+     100.6,
+     0.0
+    ],
+    [
+     93.3,
+     6.6
+    ],
+    [
+     85.5,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     109.2,
+     0.0
+    ],
+    [
+     125.6,
+     0.0
+    ],
+    [
+     114.9,
+     6.6
+    ],
+    [
+     100.7,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     125.6,
+     0.0
+    ],
+    [
+     142.1,
+     0.0
+    ],
+    [
+     129.0,
+     6.6
+    ],
+    [
+     114.9,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     142.1,
+     0.0
+    ],
+    [
+     158.5,
+     0.0
+    ],
+    [
+     143.2,
+     6.6
+    ],
+    [
+     129.0,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     158.5,
+     0.0
+    ],
+    [
+     169.3,
+     0.0
+    ],
+    [
+     167.7,
+     1.5
+    ],
+    [
+     152.4,
+     6.7
+    ],
+    [
+     152.5,
+     6.6
+    ],
+    [
+     143.2,
+     6.6
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     156.6,
+     11.9
+    ],
+    [
+     154.3,
+     14.0
+    ],
+    [
+     140.3,
+     14.0
+    ],
+    [
+     138.5,
+     7.4
+    ],
+    [
+     151.7,
+     7.4
+    ],
+    [
+     151.8,
+     7.2
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.3,
+     14.0
+    ],
+    [
+     124.5,
+     14.0
+    ],
+    [
+     123.7,
+     7.4
+    ],
+    [
+     138.5,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     124.5,
+     14.0
+    ],
+    [
+     108.7,
+     14.0
+    ],
+    [
+     108.8,
+     7.4
+    ],
+    [
+     123.7,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     108.7,
+     14.0
+    ],
+    [
+     97.2,
+     14.0
+    ],
+    [
+     98.0,
+     7.4
+    ],
+    [
+     108.8,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     88.9,
+     14.0
+    ],
+    [
+     73.2,
+     14.0
+    ],
+    [
+     75.4,
+     7.4
+    ],
+    [
+     90.2,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     73.2,
+     14.0
+    ],
+    [
+     57.4,
+     14.0
+    ],
+    [
+     60.6,
+     7.4
+    ],
+    [
+     75.4,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     57.4,
+     14.0
+    ],
+    [
+     41.6,
+     14.0
+    ],
+    [
+     45.8,
+     7.4
+    ],
+    [
+     60.6,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     41.6,
+     14.0
+    ],
+    [
+     30.1,
+     14.0
+    ],
+    [
+     34.9,
+     7.4
+    ],
+    [
+     45.8,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     21.8,
+     14.0
+    ],
+    [
+     6.1,
+     14.0
+    ],
+    [
+     12.3,
+     7.4
+    ],
+    [
+     27.2,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Machine gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     6.1,
+     14.0
+    ],
+    [
+     0.0,
+     14.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     6.6,
+     6.6
+    ],
+    [
+     6.6,
+     7.4
+    ],
+    [
+     12.3,
+     7.4
+    ]
+   ],
+   "about": "Walkways around the lift machinery for inspection.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Service layer landing",
+   "level": "LB1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     51.1,
+     0.0
+    ],
+    [
+     51.1,
+     101.9
+    ],
+    [
+     38.4,
+     112.3
+    ],
+    [
+     0.0,
+     139.8
+    ]
+   ],
+   "about": "The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Tunnel portal",
+   "level": "LB1",
+   "outline_m": [
+    [
+     51.1,
+     0.0
+    ],
+    [
+     169.3,
+     0.0
+    ],
+    [
+     127.1,
+     39.5
+    ],
+    [
+     51.1,
+     101.9
+    ]
+   ],
+   "about": "Where the service tunnels meet the shaft.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

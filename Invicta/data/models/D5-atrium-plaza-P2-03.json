@@ -1,0 +1,260 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P2-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  300.0,
+  640.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Station forecourt",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     469.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     2.6,
+     0.0
+    ],
+    [
+     4.7,
+     22.0
+    ],
+    [
+     13.9,
+     79.7
+    ],
+    [
+     27.1,
+     136.5
+    ],
+    [
+     44.3,
+     192.4
+    ],
+    [
+     65.3,
+     246.9
+    ],
+    [
+     90.1,
+     299.7
+    ],
+    [
+     118.6,
+     350.7
+    ],
+    [
+     150.6,
+     399.6
+    ],
+    [
+     185.9,
+     446.1
+    ],
+    [
+     206.0,
+     469.0
+    ]
+   ],
+   "about": "The paved square right outside Atrium Central, where travellers come out of the station.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Information kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.9,
+     230.5
+    ],
+    [
+     52.9,
+     230.5
+    ],
+    [
+     52.9,
+     244.5
+    ],
+    [
+     38.9,
+     244.5
+    ]
+   ],
+   "about": "Staff point travellers to the right street, pod stop or building.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Meeting point",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     519.9
+    ],
+    [
+     0.0,
+     469.0
+    ],
+    [
+     206.0,
+     469.0
+    ],
+    [
+     224.5,
+     490.0
+    ],
+    [
+     254.7,
+     519.9
+    ]
+   ],
+   "about": "A marked spot under the big clock where people arrange to meet arrivals.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Station clock",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.9,
+     489.4
+    ],
+    [
+     152.8,
+     489.4
+    ],
+    [
+     152.8,
+     499.5
+    ],
+    [
+     101.9,
+     499.5
+    ]
+   ],
+   "about": "A tall clock tower with departure boards on all four sides.",
+   "parent": "E003",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Pod and taxi kerb",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     562.1
+    ],
+    [
+     0.0,
+     519.9
+    ],
+    [
+     254.7,
+     519.9
+    ],
+    [
+     265.9,
+     531.0
+    ],
+    [
+     300.0,
+     560.9
+    ],
+    [
+     300.0,
+     562.1
+    ]
+   ],
+   "about": "Kerb where pods and taxis pick up and drop off travellers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Planted islands",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     601.0
+    ],
+    [
+     0.0,
+     562.1
+    ],
+    [
+     300.0,
+     562.1
+    ],
+    [
+     300.0,
+     601.0
+    ]
+   ],
+   "about": "Trees and benches in planters that break up the square.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Bike and scooter racks",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.0,
+     640.0
+    ],
+    [
+     0.0,
+     640.0
+    ],
+    [
+     0.0,
+     601.0
+    ],
+    [
+     300.0,
+     601.0
+    ]
+   ],
+   "about": "Racks and charging points for bikes and scooters.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

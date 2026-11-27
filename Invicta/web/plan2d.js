@@ -89,7 +89,7 @@
       const pg = el("polygon", { points: poly(e.outline_m), ...(o.onRoom ? { class: "hit", "pointer-events": "all" } : { "pointer-events": "none" }),
         fill: on ? "rgba(255,194,102,.22)" : e.status === "canon" ? "rgba(95,211,154,.18)" : "rgba(111,208,255,.14)",
         stroke: on ? "#ffc266" : "#cfe8ff", "stroke-width": on ? fs / 8 : fs / 22 });
-      if (o.onRoom) pg.append(el("title", {}, e.name || e.id));
+      if (o.onRoom) pg.append(el("title", {}, (e.name || e.id) + (e.about ? "\n" + e.about : "")));
       pg.addEventListener("click", (ev) => { ev.stopPropagation(); if (o.onRoom) o.onRoom(e); });
       g.append(pg);
     }
@@ -200,7 +200,7 @@
     const inside = (model.elements || []).filter((e) => e.parent === room.id);
     const desig = roomDesignation(uid, model, room);
     window.adxiRoom = { designation: desig, building_uid: uid, level: lv.id, level_name: lv.name, id: room.id, name: room.name, type: room.type,
-      outline_m: room.outline_m, size_m: [w, h], area_m2: Math.round(a), status: room.status, contains: inside.map((e) => `${e.id} ${e.name || e.type}`) };
+      outline_m: room.outline_m, size_m: [w, h], area_m2: Math.round(a), status: room.status, contains: inside.map((e) => `${e.id} ${e.name || e.type}`), about: room.about || null };
     // breadcrumb: Building › Level › Room
     const cr = document.querySelector(".crumbs");
     if (cr) {
@@ -216,6 +216,7 @@
     const panel = document.querySelector(".panel");
     if (panel) {
       panel.insertAdjacentHTML("afterbegin", `<div class="room-card"><div class="small muted">Room · ${esc(lv.name || "")}</div><h2>${esc(room.name || room.id)}</h2><div class="small" style="margin:-4px 0 8px"><b>${esc(desig)}</b></div>
+        ${room.about ? `<div class="room-about"><b>What it does</b> ${esc(room.about)}</div>` : ""}
         <div class="kv"><div>Size</div><div>${both(w)} × ${both(h)}</div><div>Floor area</div><div>${sqft(a)}</div>
         <div>Ceiling height</div><div>${lv.height_m ? both(lv.height_m) : "not designed yet"}</div><div>Status</div><div>${esc(room.status || "proposed")}</div>
         <div>Inside</div><div>${inside.length ? inside.map((e) => esc(e.name || e.id)).join(", ") : "nothing designed yet"}</div></div>

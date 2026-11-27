@@ -1010,12 +1010,14 @@ function fileSrc(rel) {
   return window.ADXI_STATIC ? "file/" + rel.split("/").map(encodeURIComponent).join("/") : "/file?path=" + encodeURIComponent(rel);
 }
 function conceptBlock(uid, b) {
-  const list = ((D.concepts || {}).buildings || {})[uid] || [];
+  const list = (((D.concepts || {}).buildings || {})[uid] || []).slice();
+  // Concept render made from the building's own 3D plan (tools/concepts, Jordan 27 Nov 2026): shown first.
+  if (b.concept_render) list.unshift({ file: b.concept_render, title: "Concept render from the 3D plan", by: "ADXI renderer", render: true });
   const add = window.adxiAddConcept ? `<button class="concept-add" onclick="adxiAddConcept('${uid}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Add concept art</button>` : "";
   if (!list.length && !add) return "";
   return `<h3>Concept art</h3>
     ${list.map(c => `<figure class="concept"><a href="${fileSrc(c.file)}" target="_blank" rel="noopener"><img src="${fileSrc(c.file)}" alt="${esc(c.title || "Concept art")}" loading="lazy"></a>
-      <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span>${window.adxiDeleteConcept ? ` <button class="concept-del" onclick="adxiDeleteConcept('${uid}', '${esc(c.file)}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Delete</button>` : ""}</figcaption></figure>`).join("")}
+      <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span>${window.adxiDeleteConcept && !c.render ? ` <button class="concept-del" onclick="adxiDeleteConcept('${uid}', '${esc(c.file)}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Delete</button>` : ""}</figcaption></figure>`).join("")}
     ${list.length ? "" : `<div class="small muted">No concept art yet.</div>`}${add}`;
 }
 // Copy helpers for the building panel.

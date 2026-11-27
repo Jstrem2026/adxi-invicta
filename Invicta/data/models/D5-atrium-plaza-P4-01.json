@@ -1,0 +1,471 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P4-01",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  465.4,
+  640.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Great lawn",
+   "level": "L1",
+   "outline_m": [
+    [
+     431.1,
+     0.4
+    ],
+    [
+     442.0,
+     3.6
+    ],
+    [
+     451.6,
+     9.8
+    ],
+    [
+     459.1,
+     18.4
+    ],
+    [
+     463.8,
+     28.7
+    ],
+    [
+     465.4,
+     40.0
+    ],
+    [
+     465.2,
+     286.0
+    ],
+    [
+     241.6,
+     286.0
+    ],
+    [
+     253.8,
+     261.2
+    ],
+    [
+     275.9,
+     206.9
+    ],
+    [
+     294.2,
+     151.3
+    ],
+    [
+     308.5,
+     94.5
+    ],
+    [
+     320.6,
+     27.7
+    ],
+    [
+     325.5,
+     17.7
+    ],
+    [
+     332.9,
+     9.4
+    ],
+    [
+     342.4,
+     3.5
+    ],
+    [
+     353.1,
+     0.4
+    ]
+   ],
+   "about": "The deck's biggest lawn, where residents picnic and play at weekends.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Garden café",
+   "level": "L1",
+   "outline_m": [
+    [
+     328.3,
+     102.1
+    ],
+    [
+     346.3,
+     102.1
+    ],
+    [
+     346.3,
+     116.1
+    ],
+    [
+     328.3,
+     116.1
+    ]
+   ],
+   "about": "Café with tables looking over the lawn.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     346.3,
+     102.1
+    ],
+    [
+     355.3,
+     102.1
+    ],
+    [
+     355.3,
+     116.1
+    ],
+    [
+     346.3,
+     116.1
+    ]
+   ],
+   "about": "Public toilets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Gardeners' depot",
+   "level": "L1",
+   "outline_m": [
+    [
+     355.3,
+     102.1
+    ],
+    [
+     364.3,
+     102.1
+    ],
+    [
+     364.3,
+     116.1
+    ],
+    [
+     355.3,
+     116.1
+    ]
+   ],
+   "about": "Mowers, tools and potting benches for the garden crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Rim promenade",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.2,
+     286.0
+    ],
+    [
+     465.2,
+     384.0
+    ],
+    [
+     185.0,
+     384.0
+    ],
+    [
+     198.4,
+     364.3
+    ],
+    [
+     227.9,
+     313.7
+    ],
+    [
+     241.6,
+     286.0
+    ]
+   ],
+   "about": "A wide walk along the shaft edge with railings, benches and views down through the decks.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Woodland walk",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.2,
+     384.0
+    ],
+    [
+     465.1,
+     497.7
+    ],
+    [
+     93.3,
+     497.7
+    ],
+    [
+     129.0,
+     458.6
+    ],
+    [
+     165.4,
+     412.7
+    ],
+    [
+     185.0,
+     384.0
+    ]
+   ],
+   "about": "A grove of tall trees with a winding path, the deck's quietest place.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Lake",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.1,
+     497.7
+    ],
+    [
+     465.0,
+     558.5
+    ],
+    [
+     27.5,
+     558.5
+    ],
+    [
+     47.1,
+     542.3
+    ],
+    [
+     89.5,
+     501.9
+    ],
+    [
+     93.3,
+     497.7
+    ]
+   ],
+   "about": "A shallow lake with a fountain and stepping stones; children sail model boats here.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Play park",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.0,
+     558.5
+    ],
+    [
+     465.0,
+     585.6
+    ],
+    [
+     3.0,
+     585.6
+    ],
+    [
+     6.8,
+     577.7
+    ],
+    [
+     14.5,
+     569.2
+    ],
+    [
+     27.5,
+     558.5
+    ]
+   ],
+   "about": "Climbing frames, swings and a splash pad for children.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "room",
+   "name": "Parents' shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     226.0,
+     568.4
+    ],
+    [
+     238.0,
+     568.4
+    ],
+    [
+     238.0,
+     576.4
+    ],
+    [
+     226.0,
+     576.4
+    ]
+   ],
+   "about": "Seats and shade for parents watching children play.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Bandstand lawn",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.0,
+     585.6
+    ],
+    [
+     465.0,
+     605.7
+    ],
+    [
+     463.1,
+     612.0
+    ],
+    [
+     2.0,
+     612.0
+    ],
+    [
+     1.5,
+     610.8
+    ],
+    [
+     0.0,
+     599.4
+    ],
+    [
+     1.8,
+     588.0
+    ],
+    [
+     3.0,
+     585.6
+    ]
+   ],
+   "about": "A lawn around a bandstand where bands play on rest days.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Bandstand",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.2,
+     589.0
+    ],
+    [
+     274.2,
+     589.0
+    ],
+    [
+     274.2,
+     603.0
+    ],
+    [
+     260.2,
+     603.0
+    ]
+   ],
+   "about": "A round covered stage for music.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Flower garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     463.1,
+     612.0
+    ],
+    [
+     461.8,
+     616.6
+    ],
+    [
+     455.6,
+     626.2
+    ],
+    [
+     447.0,
+     633.7
+    ],
+    [
+     436.7,
+     638.4
+    ],
+    [
+     425.4,
+     640.0
+    ],
+    [
+     34.2,
+     639.6
+    ],
+    [
+     23.2,
+     636.3
+    ],
+    [
+     13.6,
+     630.0
+    ],
+    [
+     6.1,
+     621.3
+    ],
+    [
+     2.0,
+     612.0
+    ]
+   ],
+   "about": "Formal flower beds changed with the ship's seasons.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

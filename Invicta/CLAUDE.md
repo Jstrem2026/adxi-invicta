@@ -63,6 +63,10 @@ to keep in sync and no build step.
 - Map reading (Jordan, 27 Nov 2026): building names sit inside their own shape (shortened to the code, or left off,
   when they can't be read); the clickable next-level areas get an outline, with a red ring on hover; the colour
   legend is a "Legend" button beside "Codes", with a tick box per colour.
+- Rooms (Jordan, 27 Nov 2026): every room and zone in a building's plan has `about`, one plain sentence on what it does.
+  Deck 5 buildings are designed with `tools/design_rooms.py` from hand-written programs in `tools/room_programs/`
+  (change the program, then `bash tools/design_district.sh D5/<district> --redo`); the district's `<District>_Rooms.md`
+  doc lists every building, floor and room. Each building has a concept render from its 3D plan (`concept_render`).
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.

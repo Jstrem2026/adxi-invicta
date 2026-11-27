@@ -1,0 +1,2192 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P3-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  302.2,
+  222.8
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "LB1",
+   "name": "Level B1 · Vault",
+   "z_m": -4.5,
+   "height_m": 4.5,
+   "status": "proposed"
+  },
+  {
+   "id": "L1",
+   "name": "Level 1 · Reading floor",
+   "z_m": 0.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Stacks 1",
+   "z_m": 5.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Stacks 2",
+   "z_m": 9.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Reading room",
+   "level": "L1",
+   "outline_m": [
+    [
+     262.9,
+     207.0
+    ],
+    [
+     227.3,
+     192.6
+    ],
+    [
+     213.1,
+     176.5
+    ],
+    [
+     234.4,
+     150.6
+    ],
+    [
+     247.0,
+     164.8
+    ],
+    [
+     257.5,
+     169.1
+    ]
+   ],
+   "about": "A quiet reading room where pilots, investigators and historians study logbooks and records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     287.1,
+     200.5
+    ],
+    [
+     260.4,
+     189.7
+    ],
+    [
+     259.9,
+     186.3
+    ],
+    [
+     284.1,
+     196.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.8,
+     164.7
+    ],
+    [
+     199.5,
+     138.2
+    ],
+    [
+     170.3,
+     109.5
+    ],
+    [
+     209.2,
+     82.6
+    ],
+    [
+     211.4,
+     84.8
+    ],
+    [
+     175.0,
+     109.9
+    ],
+    [
+     201.7,
+     136.2
+    ],
+    [
+     224.7,
+     162.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.2,
+     82.6
+    ],
+    [
+     287.1,
+     28.7
+    ],
+    [
+     287.1,
+     58.0
+    ],
+    [
+     284.1,
+     62.0
+    ],
+    [
+     284.1,
+     34.4
+    ],
+    [
+     211.4,
+     84.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     287.1,
+     58.0
+    ],
+    [
+     287.1,
+     181.6
+    ],
+    [
+     284.1,
+     178.3
+    ],
+    [
+     284.1,
+     62.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     287.1,
+     181.6
+    ],
+    [
+     287.1,
+     200.5
+    ],
+    [
+     284.1,
+     196.0
+    ],
+    [
+     284.1,
+     178.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     187.7,
+     122.4
+    ],
+    [
+     180.3,
+     115.1
+    ],
+    [
+     201.3,
+     114.7
+    ],
+    [
+     205.3,
+     118.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     234.2,
+     69.0
+    ],
+    [
+     242.2,
+     63.5
+    ],
+    [
+     242.0,
+     81.9
+    ],
+    [
+     236.8,
+     85.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     61.6
+    ],
+    [
+     284.1,
+     71.1
+    ],
+    [
+     269.1,
+     88.2
+    ],
+    [
+     269.1,
+     81.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     148.1
+    ],
+    [
+     284.1,
+     157.6
+    ],
+    [
+     269.1,
+     147.4
+    ],
+    [
+     269.1,
+     140.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Enquiry desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     222.8
+    ],
+    [
+     296.4,
+     220.5
+    ],
+    [
+     283.2,
+     198.9
+    ],
+    [
+     287.1,
+     200.5
+    ]
+   ],
+   "about": "Archivists find a pilot's logbook or licence history on request.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "room",
+   "name": "Data room",
+   "level": "L1",
+   "outline_m": [
+    [
+     296.4,
+     220.5
+    ],
+    [
+     290.5,
+     218.1
+    ],
+    [
+     279.2,
+     197.3
+    ],
+    [
+     283.2,
+     198.9
+    ]
+   ],
+   "about": "Servers holding every pilot's digital logbook and rating record.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "room",
+   "name": "Conservation lab",
+   "level": "L1",
+   "outline_m": [
+    [
+     290.5,
+     218.1
+    ],
+    [
+     284.7,
+     215.7
+    ],
+    [
+     275.2,
+     195.7
+    ],
+    [
+     279.2,
+     197.3
+    ]
+   ],
+   "about": "Old paper logbooks and charts are cleaned and repaired.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.7,
+     215.7
+    ],
+    [
+     266.1,
+     208.2
+    ],
+    [
+     262.6,
+     190.6
+    ],
+    [
+     275.2,
+     195.7
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     214.7,
+     178.2
+    ],
+    [
+     193.1,
+     153.8
+    ],
+    [
+     203.8,
+     143.1
+    ],
+    [
+     224.3,
+     166.3
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     193.1,
+     153.8
+    ],
+    [
+     188.6,
+     148.6
+    ],
+    [
+     167.5,
+     127.9
+    ],
+    [
+     184.8,
+     123.8
+    ],
+    [
+     199.5,
+     138.2
+    ],
+    [
+     203.8,
+     143.1
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.5,
+     127.9
+    ],
+    [
+     146.8,
+     107.5
+    ],
+    [
+     153.4,
+     102.9
+    ],
+    [
+     175.3,
+     106.1
+    ],
+    [
+     170.3,
+     109.5
+    ],
+    [
+     184.8,
+     123.8
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.4,
+     102.9
+    ],
+    [
+     183.2,
+     82.3
+    ],
+    [
+     197.7,
+     90.6
+    ],
+    [
+     175.3,
+     106.1
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     183.2,
+     82.3
+    ],
+    [
+     213.1,
+     61.7
+    ],
+    [
+     220.1,
+     75.1
+    ],
+    [
+     197.7,
+     90.6
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.1,
+     61.7
+    ],
+    [
+     242.9,
+     41.0
+    ],
+    [
+     242.6,
+     59.6
+    ],
+    [
+     220.1,
+     75.1
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     242.9,
+     41.0
+    ],
+    [
+     272.7,
+     20.4
+    ],
+    [
+     265.0,
+     44.1
+    ],
+    [
+     242.6,
+     59.6
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     272.7,
+     20.4
+    ],
+    [
+     302.2,
+     0.0
+    ],
+    [
+     302.2,
+     0.4
+    ],
+    [
+     287.1,
+     29.0
+    ],
+    [
+     287.1,
+     28.7
+    ],
+    [
+     265.0,
+     44.1
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     0.4
+    ],
+    [
+     302.2,
+     36.2
+    ],
+    [
+     287.1,
+     56.7
+    ],
+    [
+     287.1,
+     29.0
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     36.2
+    ],
+    [
+     302.2,
+     72.1
+    ],
+    [
+     287.1,
+     84.3
+    ],
+    [
+     287.1,
+     56.7
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     72.1
+    ],
+    [
+     302.2,
+     108.0
+    ],
+    [
+     287.1,
+     112.0
+    ],
+    [
+     287.1,
+     84.3
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     108.0
+    ],
+    [
+     302.2,
+     143.8
+    ],
+    [
+     287.1,
+     139.6
+    ],
+    [
+     287.1,
+     112.0
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     143.8
+    ],
+    [
+     302.2,
+     179.7
+    ],
+    [
+     287.1,
+     167.3
+    ],
+    [
+     287.1,
+     139.6
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     302.2,
+     179.7
+    ],
+    [
+     302.2,
+     222.8
+    ],
+    [
+     287.1,
+     200.5
+    ],
+    [
+     287.1,
+     167.3
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.1,
+     196.0
+    ],
+    [
+     256.4,
+     184.8
+    ],
+    [
+     255.8,
+     168.4
+    ],
+    [
+     269.1,
+     173.7
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.2,
+     160.6
+    ],
+    [
+     201.7,
+     136.2
+    ],
+    [
+     201.6,
+     136.1
+    ],
+    [
+     212.6,
+     125.8
+    ],
+    [
+     212.7,
+     125.8
+    ],
+    [
+     233.0,
+     148.9
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.6,
+     136.1
+    ],
+    [
+     187.7,
+     122.4
+    ],
+    [
+     205.3,
+     118.6
+    ],
+    [
+     212.6,
+     125.8
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     115.1
+    ],
+    [
+     175.0,
+     109.9
+    ],
+    [
+     201.2,
+     91.9
+    ],
+    [
+     215.5,
+     100.3
+    ],
+    [
+     198.6,
+     112.0
+    ],
+    [
+     201.3,
+     114.7
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.2,
+     91.9
+    ],
+    [
+     234.2,
+     69.0
+    ],
+    [
+     236.8,
+     85.5
+    ],
+    [
+     215.5,
+     100.3
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     242.2,
+     63.5
+    ],
+    [
+     273.9,
+     41.5
+    ],
+    [
+     262.5,
+     67.7
+    ],
+    [
+     242.0,
+     81.9
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     273.9,
+     41.5
+    ],
+    [
+     284.1,
+     34.4
+    ],
+    [
+     284.1,
+     61.6
+    ],
+    [
+     269.1,
+     81.7
+    ],
+    [
+     269.1,
+     63.2
+    ],
+    [
+     262.5,
+     67.7
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.1,
+     71.1
+    ],
+    [
+     284.1,
+     108.8
+    ],
+    [
+     269.1,
+     114.0
+    ],
+    [
+     269.1,
+     88.2
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.1,
+     108.8
+    ],
+    [
+     284.1,
+     148.1
+    ],
+    [
+     269.1,
+     140.9
+    ],
+    [
+     269.1,
+     114.0
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Archivists' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.1,
+     157.6
+    ],
+    [
+     284.1,
+     196.0
+    ],
+    [
+     269.1,
+     173.7
+    ],
+    [
+     269.1,
+     147.4
+    ]
+   ],
+   "about": "Archivists' desks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     287.1,
+     200.5
+    ],
+    [
+     236.2,
+     180.0
+    ],
+    [
+     199.5,
+     138.2
+    ],
+    [
+     190.3,
+     129.1
+    ],
+    [
+     193.3,
+     127.9
+    ],
+    [
+     201.7,
+     136.2
+    ],
+    [
+     238.0,
+     177.5
+    ],
+    [
+     284.1,
+     196.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     190.3,
+     129.1
+    ],
+    [
+     170.3,
+     109.5
+    ],
+    [
+     249.6,
+     54.7
+    ],
+    [
+     249.1,
+     58.7
+    ],
+    [
+     175.0,
+     109.9
+    ],
+    [
+     193.3,
+     127.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     249.6,
+     54.7
+    ],
+    [
+     287.1,
+     28.7
+    ],
+    [
+     287.1,
+     106.9
+    ],
+    [
+     284.1,
+     108.0
+    ],
+    [
+     284.1,
+     34.4
+    ],
+    [
+     249.1,
+     58.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     287.1,
+     106.9
+    ],
+    [
+     287.1,
+     200.5
+    ],
+    [
+     284.1,
+     196.0
+    ],
+    [
+     284.1,
+     108.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Logbook stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     222.8
+    ],
+    [
+     280.2,
+     213.9
+    ],
+    [
+     272.2,
+     194.5
+    ],
+    [
+     287.1,
+     200.5
+    ]
+   ],
+   "about": "Rolling shelves of pilots' paper logbooks, by year and squadron.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Map and chart store",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     280.2,
+     213.9
+    ],
+    [
+     271.4,
+     210.4
+    ],
+    [
+     266.2,
+     192.1
+    ],
+    [
+     272.2,
+     194.5
+    ]
+   ],
+   "about": "Flat drawers of old flight charts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     271.4,
+     210.4
+    ],
+    [
+     233.0,
+     194.9
+    ],
+    [
+     240.1,
+     181.5
+    ],
+    [
+     266.2,
+     192.1
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     233.0,
+     194.9
+    ],
+    [
+     227.3,
+     192.6
+    ],
+    [
+     207.3,
+     169.8
+    ],
+    [
+     217.2,
+     158.4
+    ],
+    [
+     236.2,
+     180.0
+    ],
+    [
+     240.1,
+     181.5
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     207.3,
+     169.8
+    ],
+    [
+     188.6,
+     148.6
+    ],
+    [
+     182.5,
+     142.7
+    ],
+    [
+     195.3,
+     134.1
+    ],
+    [
+     199.5,
+     138.2
+    ],
+    [
+     217.2,
+     158.4
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     182.5,
+     142.7
+    ],
+    [
+     153.4,
+     114.0
+    ],
+    [
+     174.9,
+     114.1
+    ],
+    [
+     195.3,
+     134.1
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     153.4,
+     114.0
+    ],
+    [
+     146.8,
+     107.5
+    ],
+    [
+     172.1,
+     90.0
+    ],
+    [
+     189.3,
+     96.4
+    ],
+    [
+     170.3,
+     109.5
+    ],
+    [
+     174.9,
+     114.1
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     172.1,
+     90.0
+    ],
+    [
+     204.7,
+     67.5
+    ],
+    [
+     213.8,
+     79.4
+    ],
+    [
+     189.3,
+     96.4
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     204.7,
+     67.5
+    ],
+    [
+     237.3,
+     44.9
+    ],
+    [
+     238.4,
+     62.5
+    ],
+    [
+     213.8,
+     79.4
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     237.3,
+     44.9
+    ],
+    [
+     269.9,
+     22.3
+    ],
+    [
+     262.9,
+     45.5
+    ],
+    [
+     238.4,
+     62.5
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     269.9,
+     22.3
+    ],
+    [
+     302.2,
+     0.0
+    ],
+    [
+     302.2,
+     0.4
+    ],
+    [
+     287.1,
+     29.0
+    ],
+    [
+     287.1,
+     28.7
+    ],
+    [
+     262.9,
+     45.5
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     0.4
+    ],
+    [
+     302.2,
+     39.6
+    ],
+    [
+     287.1,
+     59.3
+    ],
+    [
+     287.1,
+     29.0
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     39.6
+    ],
+    [
+     302.2,
+     78.9
+    ],
+    [
+     287.1,
+     89.5
+    ],
+    [
+     287.1,
+     59.3
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     78.9
+    ],
+    [
+     302.2,
+     118.1
+    ],
+    [
+     287.1,
+     119.8
+    ],
+    [
+     287.1,
+     89.5
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     118.1
+    ],
+    [
+     302.2,
+     157.3
+    ],
+    [
+     287.1,
+     150.0
+    ],
+    [
+     287.1,
+     119.8
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     157.3
+    ],
+    [
+     302.2,
+     196.6
+    ],
+    [
+     287.1,
+     180.3
+    ],
+    [
+     287.1,
+     150.0
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     302.2,
+     196.6
+    ],
+    [
+     302.2,
+     222.8
+    ],
+    [
+     287.1,
+     200.5
+    ],
+    [
+     287.1,
+     180.3
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     196.0
+    ],
+    [
+     243.5,
+     179.7
+    ],
+    [
+     249.6,
+     165.9
+    ],
+    [
+     269.1,
+     173.7
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     235.6,
+     174.7
+    ],
+    [
+     212.0,
+     147.8
+    ],
+    [
+     222.3,
+     136.8
+    ],
+    [
+     244.6,
+     162.2
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     212.0,
+     147.8
+    ],
+    [
+     201.7,
+     136.2
+    ],
+    [
+     187.7,
+     122.4
+    ],
+    [
+     205.3,
+     118.6
+    ],
+    [
+     212.7,
+     125.8
+    ],
+    [
+     222.3,
+     136.8
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     115.1
+    ],
+    [
+     175.0,
+     109.9
+    ],
+    [
+     204.1,
+     89.8
+    ],
+    [
+     217.4,
+     98.9
+    ],
+    [
+     198.6,
+     112.0
+    ],
+    [
+     201.3,
+     114.7
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     204.1,
+     89.8
+    ],
+    [
+     234.2,
+     69.0
+    ],
+    [
+     236.8,
+     85.5
+    ],
+    [
+     217.4,
+     98.9
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     242.2,
+     63.5
+    ],
+    [
+     276.9,
+     39.5
+    ],
+    [
+     264.4,
+     66.4
+    ],
+    [
+     242.0,
+     81.9
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     276.9,
+     39.5
+    ],
+    [
+     284.1,
+     34.4
+    ],
+    [
+     284.1,
+     61.6
+    ],
+    [
+     269.1,
+     81.7
+    ],
+    [
+     269.1,
+     63.2
+    ],
+    [
+     264.4,
+     66.4
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     71.1
+    ],
+    [
+     284.1,
+     112.3
+    ],
+    [
+     269.1,
+     116.5
+    ],
+    [
+     269.1,
+     88.2
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     112.3
+    ],
+    [
+     284.1,
+     148.1
+    ],
+    [
+     269.1,
+     140.9
+    ],
+    [
+     269.1,
+     116.5
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Record stacks",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     284.1,
+     157.6
+    ],
+    [
+     284.1,
+     196.0
+    ],
+    [
+     269.1,
+     173.7
+    ],
+    [
+     269.1,
+     147.4
+    ]
+   ],
+   "about": "Shelves of licence files and rating records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Fireproof vault",
+   "level": "LB1",
+   "outline_m": [
+    [
+     219.5,
+     183.7
+    ],
+    [
+     188.6,
+     148.6
+    ],
+    [
+     146.8,
+     107.5
+    ],
+    [
+     102.3,
+     69.4
+    ],
+    [
+     55.3,
+     34.6
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     219.5,
+     0.0
+    ]
+   ],
+   "about": "A sealed, inert-gas-protected vault for the guild's founding records and the oldest logbooks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Deep store",
+   "level": "LB1",
+   "outline_m": [
+    [
+     302.2,
+     222.8
+    ],
+    [
+     250.4,
+     222.8
+    ],
+    [
+     227.3,
+     192.6
+    ],
+    [
+     219.5,
+     183.7
+    ],
+    [
+     219.5,
+     0.0
+    ],
+    [
+     302.2,
+     0.0
+    ]
+   ],
+   "about": "Long-term storage for records no longer in daily use.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
