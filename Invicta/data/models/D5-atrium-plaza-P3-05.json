@@ -1,0 +1,164 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P3-05",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  103.9,
+  440.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Assembly court",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.4,
+     220.1
+    ],
+    [
+     0.2,
+     13.4
+    ],
+    [
+     3.8,
+     5.4
+    ],
+    [
+     11.2,
+     0.6
+    ],
+    [
+     90.5,
+     0.2
+    ],
+    [
+     98.5,
+     3.8
+    ],
+    [
+     103.3,
+     11.2
+    ],
+    [
+     103.6,
+     220.1
+    ]
+   ],
+   "about": "A paved court where the guild holds open-air ceremonies, such as the yearly wings parade.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Flagstaff",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.7,
+     99.1
+    ],
+    [
+     57.0,
+     99.1
+    ],
+    [
+     57.0,
+     121.1
+    ],
+    [
+     46.7,
+     121.1
+    ]
+   ],
+   "about": "Flies the guild banner and the Aerion flag.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Memorial wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.5,
+     292.9
+    ],
+    [
+     0.4,
+     220.1
+    ],
+    [
+     103.6,
+     220.1
+    ],
+    [
+     103.6,
+     292.9
+    ]
+   ],
+   "about": "A wall carrying the names of pilots lost in service, with a place to leave flowers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Quiet garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.8,
+     426.6
+    ],
+    [
+     100.1,
+     434.6
+    ],
+    [
+     92.7,
+     439.4
+    ],
+    [
+     13.4,
+     439.8
+    ],
+    [
+     5.4,
+     436.2
+    ],
+    [
+     0.6,
+     428.8
+    ],
+    [
+     0.5,
+     292.9
+    ],
+    [
+     103.6,
+     292.9
+    ]
+   ],
+   "about": "Benches among low trees for members to sit and talk.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

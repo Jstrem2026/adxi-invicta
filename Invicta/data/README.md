@@ -56,6 +56,20 @@ the maps and 3D draw the outline, and the scan checks the outline against the hu
 plaza circles. Ground area is the outline minus its courtyards. Shapes are made by `atlaslib/footprints.py`
 (`tools/seed_deck5_districts.py` for the Deck 5 districts it lays out, `tools/shape_buildings.py` for others).
 
+Room plans and concept renders (Jordan, 27 Nov 2026: "scan all buildings down to each room ... I want to know what
+each room does ... build a concept image for each building"):
+
+| Field | Meaning |
+|---|---|
+| `design_status` | status of the architecture and room plan (`proposed` until Jordan approves), separate from the footprint's `status` |
+| `floor_area_m2` | total floor area of all rooms on all floors |
+| `concept_render` | path of the building's concept render (`Invicta/data/renders/D<n>/<district>/<id>.webp`), made from its 3D plan by `tools/concepts/` |
+
+Every room and zone in `data/models/<uid>.json` carries `about`: one plain sentence on what the room does, shown in the
+room panel and in the district's `Game/Docs/<District>_Rooms.md`. Buildings are designed room by room with
+`tools/design_rooms.py` from programs written per district in `tools/room_programs/`; `bash tools/design_district.sh D5/<district>`
+redoes a whole district (plans, doc, renders).
+
 Architecture fields, left out until designed (the app shows "not designed yet"):
 `height_m`, `floors`, `structure`, `entrances`, `look`, `capacity`, `services`, `interior`.
 

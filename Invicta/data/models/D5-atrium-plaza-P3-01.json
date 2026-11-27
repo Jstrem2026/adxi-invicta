@@ -1,0 +1,4828 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-atrium-plaza-P3-01",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  180.3,
+  473.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Hall floor",
+   "z_m": 0.0,
+   "height_m": 7.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Guild floor 1",
+   "z_m": 7.0,
+   "height_m": 4.4,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Guild floor 2",
+   "z_m": 11.4,
+   "height_m": 4.4,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Guild floor 3",
+   "z_m": 15.8,
+   "height_m": 4.4,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Guild Hall",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     116.2,
+     26.0
+    ],
+    [
+     154.3,
+     26.0
+    ],
+    [
+     154.3,
+     290.4
+    ],
+    [
+     26.0,
+     290.4
+    ],
+    [
+     26.0,
+     262.6
+    ],
+    [
+     116.2,
+     262.6
+    ]
+   ],
+   "about": "The guild's great hall, hung with the badges of every squadron; pilots meet here for guild assemblies, elections and to honour pilots lost in service.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Hall of Wings",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.3,
+     290.4
+    ],
+    [
+     154.3,
+     388.4
+    ],
+    [
+     26.0,
+     388.4
+    ],
+    [
+     26.0,
+     290.4
+    ]
+   ],
+   "about": "A gallery of famous craft and pilots' portraits, open to visitors.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Cloister",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.3,
+     388.4
+    ],
+    [
+     154.3,
+     447.2
+    ],
+    [
+     26.0,
+     447.2
+    ],
+    [
+     26.0,
+     388.4
+    ]
+   ],
+   "about": "A quiet cloister garden for members.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.7,
+     11.5
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     168.8,
+     67.8
+    ],
+    [
+     165.8,
+     70.0
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     104.7,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.8,
+     67.8
+    ],
+    [
+     168.8,
+     188.6
+    ],
+    [
+     165.8,
+     189.2
+    ],
+    [
+     165.8,
+     70.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.8,
+     188.6
+    ],
+    [
+     168.8,
+     309.4
+    ],
+    [
+     165.8,
+     308.4
+    ],
+    [
+     165.8,
+     189.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.8,
+     309.4
+    ],
+    [
+     168.8,
+     430.2
+    ],
+    [
+     165.8,
+     427.6
+    ],
+    [
+     165.8,
+     308.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.8,
+     430.2
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     78.4,
+     461.7
+    ],
+    [
+     78.8,
+     458.7
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     165.8,
+     427.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     78.4,
+     461.7
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     11.5,
+     406.5
+    ],
+    [
+     14.5,
+     405.1
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     78.8,
+     458.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     406.5
+    ],
+    [
+     11.5,
+     284.8
+    ],
+    [
+     14.5,
+     286.8
+    ],
+    [
+     14.5,
+     405.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     284.8
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     95.3,
+     248.1
+    ],
+    [
+     98.3,
+     251.1
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     14.5,
+     286.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.3,
+     248.1
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     101.7,
+     134.5
+    ],
+    [
+     104.7,
+     137.5
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     98.3,
+     251.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.7,
+     134.5
+    ],
+    [
+     101.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ],
+    [
+     104.7,
+     137.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.7,
+     14.5
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     143.8,
+     14.5
+    ],
+    [
+     153.7,
+     14.5
+    ],
+    [
+     146.8,
+     26.0
+    ],
+    [
+     140.6,
+     26.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     69.7
+    ],
+    [
+     165.8,
+     77.9
+    ],
+    [
+     154.3,
+     86.1
+    ],
+    [
+     154.3,
+     78.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     143.1
+    ],
+    [
+     165.8,
+     151.3
+    ],
+    [
+     154.3,
+     155.8
+    ],
+    [
+     154.3,
+     148.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     216.6
+    ],
+    [
+     165.8,
+     224.8
+    ],
+    [
+     154.3,
+     225.4
+    ],
+    [
+     154.3,
+     217.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     290.1
+    ],
+    [
+     165.8,
+     298.3
+    ],
+    [
+     154.3,
+     295.1
+    ],
+    [
+     154.3,
+     287.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     363.5
+    ],
+    [
+     165.8,
+     371.7
+    ],
+    [
+     154.3,
+     364.7
+    ],
+    [
+     154.3,
+     357.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     437.0
+    ],
+    [
+     165.8,
+     445.2
+    ],
+    [
+     154.3,
+     434.4
+    ],
+    [
+     154.3,
+     426.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     111.2,
+     458.7
+    ],
+    [
+     102.6,
+     458.7
+    ],
+    [
+     100.7,
+     447.2
+    ],
+    [
+     108.0,
+     447.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     33.8,
+     458.7
+    ],
+    [
+     25.1,
+     458.7
+    ],
+    [
+     35.0,
+     447.2
+    ],
+    [
+     42.4,
+     447.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     401.8
+    ],
+    [
+     14.5,
+     393.3
+    ],
+    [
+     26.0,
+     389.1
+    ],
+    [
+     26.0,
+     396.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     326.0
+    ],
+    [
+     14.5,
+     317.6
+    ],
+    [
+     26.0,
+     321.7
+    ],
+    [
+     26.0,
+     329.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     15.3,
+     251.1
+    ],
+    [
+     23.3,
+     251.1
+    ],
+    [
+     34.8,
+     262.6
+    ],
+    [
+     26.8,
+     262.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     86.8,
+     251.1
+    ],
+    [
+     94.8,
+     251.1
+    ],
+    [
+     106.3,
+     262.6
+    ],
+    [
+     98.3,
+     262.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     197.4
+    ],
+    [
+     104.7,
+     189.4
+    ],
+    [
+     116.2,
+     200.9
+    ],
+    [
+     116.2,
+     208.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     125.8
+    ],
+    [
+     104.7,
+     117.8
+    ],
+    [
+     116.2,
+     129.3
+    ],
+    [
+     116.2,
+     137.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     54.3
+    ],
+    [
+     104.7,
+     46.3
+    ],
+    [
+     116.2,
+     57.8
+    ],
+    [
+     116.2,
+     65.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Guild entrance hall",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.2,
+     0.0
+    ],
+    [
+     110.1,
+     0.0
+    ],
+    [
+     116.5,
+     11.5
+    ],
+    [
+     101.7,
+     11.5
+    ]
+   ],
+   "about": "The entrance, with the roll of guild masters carved in the wall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Members' desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.1,
+     0.0
+    ],
+    [
+     116.1,
+     0.0
+    ],
+    [
+     121.0,
+     11.5
+    ],
+    [
+     116.5,
+     11.5
+    ]
+   ],
+   "about": "Pilots join the guild, pay dues and ask for help here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Welfare office",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.1,
+     0.0
+    ],
+    [
+     120.7,
+     0.0
+    ],
+    [
+     124.4,
+     11.5
+    ],
+    [
+     121.0,
+     11.5
+    ]
+   ],
+   "about": "Helps pilots and their families with injury, money and family problems.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Guild shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.7,
+     0.0
+    ],
+    [
+     125.7,
+     0.0
+    ],
+    [
+     128.1,
+     11.5
+    ],
+    [
+     124.4,
+     11.5
+    ]
+   ],
+   "about": "Guild badges, flight jackets and books.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     125.7,
+     0.0
+    ],
+    [
+     131.7,
+     0.0
+    ],
+    [
+     132.6,
+     11.5
+    ],
+    [
+     128.1,
+     11.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.7,
+     0.0
+    ],
+    [
+     180.3,
+     0.0
+    ],
+    [
+     180.3,
+     52.3
+    ],
+    [
+     168.8,
+     61.3
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     132.6,
+     11.5
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     52.3
+    ],
+    [
+     180.3,
+     148.1
+    ],
+    [
+     168.8,
+     152.4
+    ],
+    [
+     168.8,
+     61.3
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     148.1
+    ],
+    [
+     180.3,
+     243.8
+    ],
+    [
+     168.8,
+     243.5
+    ],
+    [
+     168.8,
+     152.4
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     243.8
+    ],
+    [
+     180.3,
+     339.6
+    ],
+    [
+     168.8,
+     334.6
+    ],
+    [
+     168.8,
+     243.5
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     339.6
+    ],
+    [
+     180.3,
+     435.3
+    ],
+    [
+     168.8,
+     425.7
+    ],
+    [
+     168.8,
+     334.6
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.3,
+     435.3
+    ],
+    [
+     180.3,
+     473.2
+    ],
+    [
+     120.0,
+     473.2
+    ],
+    [
+     116.2,
+     461.7
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     168.8,
+     425.7
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.0,
+     473.2
+    ],
+    [
+     20.2,
+     473.2
+    ],
+    [
+     29.1,
+     461.7
+    ],
+    [
+     116.2,
+     461.7
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.2,
+     473.2
+    ],
+    [
+     0.0,
+     473.2
+    ],
+    [
+     0.0,
+     394.8
+    ],
+    [
+     11.5,
+     391.0
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     29.1,
+     461.7
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     394.8
+    ],
+    [
+     0.0,
+     296.6
+    ],
+    [
+     11.5,
+     302.3
+    ],
+    [
+     11.5,
+     391.0
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     296.6
+    ],
+    [
+     0.0,
+     236.6
+    ],
+    [
+     36.3,
+     236.6
+    ],
+    [
+     47.8,
+     248.1
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     11.5,
+     302.3
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.3,
+     236.6
+    ],
+    [
+     90.2,
+     236.6
+    ],
+    [
+     90.2,
+     197.1
+    ],
+    [
+     101.7,
+     208.6
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     47.8,
+     248.1
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.2,
+     197.1
+    ],
+    [
+     90.2,
+     103.6
+    ],
+    [
+     101.7,
+     115.1
+    ],
+    [
+     101.7,
+     208.6
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.2,
+     103.6
+    ],
+    [
+     90.2,
+     0.0
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     101.7,
+     115.1
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.7,
+     14.5
+    ],
+    [
+     143.8,
+     14.5
+    ],
+    [
+     140.6,
+     26.0
+    ],
+    [
+     116.2,
+     26.0
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.7,
+     14.5
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     165.8,
+     69.7
+    ],
+    [
+     154.3,
+     78.3
+    ],
+    [
+     154.3,
+     26.0
+    ],
+    [
+     146.8,
+     26.0
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     77.9
+    ],
+    [
+     165.8,
+     143.1
+    ],
+    [
+     154.3,
+     148.0
+    ],
+    [
+     154.3,
+     86.1
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     151.3
+    ],
+    [
+     165.8,
+     216.6
+    ],
+    [
+     154.3,
+     217.6
+    ],
+    [
+     154.3,
+     155.8
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     224.8
+    ],
+    [
+     165.8,
+     290.1
+    ],
+    [
+     154.3,
+     287.3
+    ],
+    [
+     154.3,
+     225.4
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     298.3
+    ],
+    [
+     165.8,
+     363.5
+    ],
+    [
+     154.3,
+     357.0
+    ],
+    [
+     154.3,
+     295.1
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     371.7
+    ],
+    [
+     165.8,
+     437.0
+    ],
+    [
+     154.3,
+     426.6
+    ],
+    [
+     154.3,
+     364.7
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     445.2
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     111.2,
+     458.7
+    ],
+    [
+     108.0,
+     447.2
+    ],
+    [
+     154.3,
+     447.2
+    ],
+    [
+     154.3,
+     434.4
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.6,
+     458.7
+    ],
+    [
+     33.8,
+     458.7
+    ],
+    [
+     42.4,
+     447.2
+    ],
+    [
+     100.7,
+     447.2
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     25.1,
+     458.7
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     14.5,
+     401.8
+    ],
+    [
+     26.0,
+     396.6
+    ],
+    [
+     26.0,
+     447.2
+    ],
+    [
+     35.0,
+     447.2
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     393.3
+    ],
+    [
+     14.5,
+     326.0
+    ],
+    [
+     26.0,
+     329.2
+    ],
+    [
+     26.0,
+     389.1
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     317.6
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     15.3,
+     251.1
+    ],
+    [
+     26.8,
+     262.6
+    ],
+    [
+     26.0,
+     262.6
+    ],
+    [
+     26.0,
+     321.7
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.3,
+     251.1
+    ],
+    [
+     86.8,
+     251.1
+    ],
+    [
+     98.3,
+     262.6
+    ],
+    [
+     34.8,
+     262.6
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.8,
+     251.1
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     104.7,
+     197.4
+    ],
+    [
+     116.2,
+     208.9
+    ],
+    [
+     116.2,
+     262.6
+    ],
+    [
+     106.3,
+     262.6
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.7,
+     189.4
+    ],
+    [
+     104.7,
+     125.8
+    ],
+    [
+     116.2,
+     137.3
+    ],
+    [
+     116.2,
+     200.9
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.7,
+     117.8
+    ],
+    [
+     104.7,
+     54.3
+    ],
+    [
+     116.2,
+     65.8
+    ],
+    [
+     116.2,
+     129.3
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Members' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.7,
+     46.3
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     116.2,
+     26.0
+    ],
+    [
+     116.2,
+     57.8
+    ]
+   ],
+   "about": "Small rooms members can book to meet.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.7,
+     11.5
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     168.8,
+     67.8
+    ],
+    [
+     165.8,
+     70.0
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     104.7,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.8,
+     67.8
+    ],
+    [
+     168.8,
+     188.6
+    ],
+    [
+     165.8,
+     189.2
+    ],
+    [
+     165.8,
+     70.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.8,
+     188.6
+    ],
+    [
+     168.8,
+     309.4
+    ],
+    [
+     165.8,
+     308.4
+    ],
+    [
+     165.8,
+     189.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.8,
+     309.4
+    ],
+    [
+     168.8,
+     430.2
+    ],
+    [
+     165.8,
+     427.6
+    ],
+    [
+     165.8,
+     308.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.8,
+     430.2
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     78.4,
+     461.7
+    ],
+    [
+     78.8,
+     458.7
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     165.8,
+     427.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     78.4,
+     461.7
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     11.5,
+     406.5
+    ],
+    [
+     14.5,
+     405.1
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     78.8,
+     458.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     406.5
+    ],
+    [
+     11.5,
+     284.8
+    ],
+    [
+     14.5,
+     286.8
+    ],
+    [
+     14.5,
+     405.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     284.8
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     95.3,
+     248.1
+    ],
+    [
+     98.3,
+     251.1
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     14.5,
+     286.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.3,
+     248.1
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     101.7,
+     134.5
+    ],
+    [
+     104.7,
+     137.5
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     98.3,
+     251.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.7,
+     134.5
+    ],
+    [
+     101.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ],
+    [
+     104.7,
+     137.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     101.7,
+     14.5
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Guild Master's office",
+   "level": "L2",
+   "outline_m": [
+    [
+     90.2,
+     0.0
+    ],
+    [
+     96.2,
+     0.0
+    ],
+    [
+     106.2,
+     11.5
+    ],
+    [
+     101.7,
+     11.5
+    ]
+   ],
+   "about": "The elected Guild Master leads the guild and speaks for pilots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Council room",
+   "level": "L2",
+   "outline_m": [
+    [
+     96.2,
+     0.0
+    ],
+    [
+     106.1,
+     0.0
+    ],
+    [
+     113.6,
+     11.5
+    ],
+    [
+     106.2,
+     11.5
+    ]
+   ],
+   "about": "The guild council meets here to set policy and standards.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Standards office",
+   "level": "L2",
+   "outline_m": [
+    [
+     106.1,
+     0.0
+    ],
+    [
+     114.1,
+     0.0
+    ],
+    [
+     119.5,
+     11.5
+    ],
+    [
+     113.6,
+     11.5
+    ]
+   ],
+   "about": "Sets the skills and hours pilots must reach for each rating.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Legal office",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.1,
+     0.0
+    ],
+    [
+     120.1,
+     0.0
+    ],
+    [
+     124.0,
+     11.5
+    ],
+    [
+     119.5,
+     11.5
+    ]
+   ],
+   "about": "Advises and defends pilots in disputes and investigations.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Pay and contracts office",
+   "level": "L2",
+   "outline_m": [
+    [
+     120.1,
+     0.0
+    ],
+    [
+     126.1,
+     0.0
+    ],
+    [
+     128.4,
+     11.5
+    ],
+    [
+     124.0,
+     11.5
+    ]
+   ],
+   "about": "Negotiates pilots' pay and working hours.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.1,
+     0.0
+    ],
+    [
+     130.7,
+     0.0
+    ],
+    [
+     131.9,
+     11.5
+    ],
+    [
+     128.4,
+     11.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     130.7,
+     0.0
+    ],
+    [
+     137.7,
+     0.0
+    ],
+    [
+     137.1,
+     11.5
+    ],
+    [
+     131.9,
+     11.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.7,
+     0.0
+    ],
+    [
+     180.3,
+     0.0
+    ],
+    [
+     180.3,
+     57.5
+    ],
+    [
+     168.8,
+     66.2
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     137.1,
+     11.5
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.3,
+     57.5
+    ],
+    [
+     180.3,
+     153.1
+    ],
+    [
+     168.8,
+     157.2
+    ],
+    [
+     168.8,
+     66.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.3,
+     153.1
+    ],
+    [
+     180.3,
+     248.7
+    ],
+    [
+     168.8,
+     248.1
+    ],
+    [
+     168.8,
+     157.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.3,
+     248.7
+    ],
+    [
+     180.3,
+     344.3
+    ],
+    [
+     168.8,
+     339.1
+    ],
+    [
+     168.8,
+     248.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.3,
+     344.3
+    ],
+    [
+     180.3,
+     439.9
+    ],
+    [
+     168.8,
+     430.1
+    ],
+    [
+     168.8,
+     339.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.3,
+     439.9
+    ],
+    [
+     180.3,
+     473.2
+    ],
+    [
+     115.3,
+     473.2
+    ],
+    [
+     112.1,
+     461.7
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     168.8,
+     430.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     115.3,
+     473.2
+    ],
+    [
+     15.7,
+     473.2
+    ],
+    [
+     25.2,
+     461.7
+    ],
+    [
+     112.1,
+     461.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.7,
+     473.2
+    ],
+    [
+     0.0,
+     473.2
+    ],
+    [
+     0.0,
+     390.6
+    ],
+    [
+     11.5,
+     387.1
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     25.2,
+     461.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     390.6
+    ],
+    [
+     0.0,
+     292.5
+    ],
+    [
+     11.5,
+     298.6
+    ],
+    [
+     11.5,
+     387.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     292.5
+    ],
+    [
+     0.0,
+     236.6
+    ],
+    [
+     40.1,
+     236.6
+    ],
+    [
+     51.6,
+     248.1
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     11.5,
+     298.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     40.1,
+     236.6
+    ],
+    [
+     90.2,
+     236.6
+    ],
+    [
+     90.2,
+     193.4
+    ],
+    [
+     101.7,
+     204.9
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     51.6,
+     248.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     90.2,
+     193.4
+    ],
+    [
+     90.2,
+     100.1
+    ],
+    [
+     101.7,
+     111.6
+    ],
+    [
+     101.7,
+     204.9
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     90.2,
+     100.1
+    ],
+    [
+     90.2,
+     0.0
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     101.7,
+     111.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.7,
+     14.5
+    ],
+    [
+     143.8,
+     14.5
+    ],
+    [
+     140.6,
+     26.0
+    ],
+    [
+     116.2,
+     26.0
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     153.7,
+     14.5
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     165.8,
+     69.7
+    ],
+    [
+     154.3,
+     78.3
+    ],
+    [
+     154.3,
+     26.0
+    ],
+    [
+     146.8,
+     26.0
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     77.9
+    ],
+    [
+     165.8,
+     143.1
+    ],
+    [
+     154.3,
+     148.0
+    ],
+    [
+     154.3,
+     86.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     151.3
+    ],
+    [
+     165.8,
+     216.6
+    ],
+    [
+     154.3,
+     217.6
+    ],
+    [
+     154.3,
+     155.8
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     224.8
+    ],
+    [
+     165.8,
+     290.1
+    ],
+    [
+     154.3,
+     287.3
+    ],
+    [
+     154.3,
+     225.4
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     298.3
+    ],
+    [
+     165.8,
+     363.5
+    ],
+    [
+     154.3,
+     357.0
+    ],
+    [
+     154.3,
+     295.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     371.7
+    ],
+    [
+     165.8,
+     437.0
+    ],
+    [
+     154.3,
+     426.6
+    ],
+    [
+     154.3,
+     364.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.8,
+     445.2
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     111.2,
+     458.7
+    ],
+    [
+     108.0,
+     447.2
+    ],
+    [
+     154.3,
+     447.2
+    ],
+    [
+     154.3,
+     434.4
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     102.6,
+     458.7
+    ],
+    [
+     33.8,
+     458.7
+    ],
+    [
+     42.4,
+     447.2
+    ],
+    [
+     100.7,
+     447.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     25.1,
+     458.7
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     14.5,
+     401.8
+    ],
+    [
+     26.0,
+     396.6
+    ],
+    [
+     26.0,
+     447.2
+    ],
+    [
+     35.0,
+     447.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     393.3
+    ],
+    [
+     14.5,
+     326.0
+    ],
+    [
+     26.0,
+     329.2
+    ],
+    [
+     26.0,
+     389.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     317.6
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     15.3,
+     251.1
+    ],
+    [
+     26.8,
+     262.6
+    ],
+    [
+     26.0,
+     262.6
+    ],
+    [
+     26.0,
+     321.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.3,
+     251.1
+    ],
+    [
+     86.8,
+     251.1
+    ],
+    [
+     98.3,
+     262.6
+    ],
+    [
+     34.8,
+     262.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     94.8,
+     251.1
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     104.7,
+     197.4
+    ],
+    [
+     116.2,
+     208.9
+    ],
+    [
+     116.2,
+     262.6
+    ],
+    [
+     106.3,
+     262.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.7,
+     189.4
+    ],
+    [
+     104.7,
+     125.8
+    ],
+    [
+     116.2,
+     137.3
+    ],
+    [
+     116.2,
+     200.9
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.7,
+     117.8
+    ],
+    [
+     104.7,
+     54.3
+    ],
+    [
+     116.2,
+     65.8
+    ],
+    [
+     116.2,
+     129.3
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Guild office",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.7,
+     46.3
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     116.2,
+     26.0
+    ],
+    [
+     116.2,
+     57.8
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     101.7,
+     11.5
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     168.8,
+     67.8
+    ],
+    [
+     165.8,
+     70.0
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     104.7,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.8,
+     67.8
+    ],
+    [
+     168.8,
+     188.6
+    ],
+    [
+     165.8,
+     189.2
+    ],
+    [
+     165.8,
+     70.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.8,
+     188.6
+    ],
+    [
+     168.8,
+     309.4
+    ],
+    [
+     165.8,
+     308.4
+    ],
+    [
+     165.8,
+     189.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.8,
+     309.4
+    ],
+    [
+     168.8,
+     430.2
+    ],
+    [
+     165.8,
+     427.6
+    ],
+    [
+     165.8,
+     308.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.8,
+     430.2
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     78.4,
+     461.7
+    ],
+    [
+     78.8,
+     458.7
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     165.8,
+     427.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     78.4,
+     461.7
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     11.5,
+     406.5
+    ],
+    [
+     14.5,
+     405.1
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     78.8,
+     458.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     11.5,
+     406.5
+    ],
+    [
+     11.5,
+     284.8
+    ],
+    [
+     14.5,
+     286.8
+    ],
+    [
+     14.5,
+     405.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     11.5,
+     284.8
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     95.3,
+     248.1
+    ],
+    [
+     98.3,
+     251.1
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     14.5,
+     286.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     95.3,
+     248.1
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     101.7,
+     134.5
+    ],
+    [
+     104.7,
+     137.5
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     98.3,
+     251.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     101.7,
+     134.5
+    ],
+    [
+     101.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ],
+    [
+     104.7,
+     137.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     101.7,
+     14.5
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     104.7,
+     17.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Guild Master's office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     90.2,
+     0.0
+    ],
+    [
+     96.2,
+     0.0
+    ],
+    [
+     106.2,
+     11.5
+    ],
+    [
+     101.7,
+     11.5
+    ]
+   ],
+   "about": "The elected Guild Master leads the guild and speaks for pilots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Council room",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     96.2,
+     0.0
+    ],
+    [
+     106.1,
+     0.0
+    ],
+    [
+     113.6,
+     11.5
+    ],
+    [
+     106.2,
+     11.5
+    ]
+   ],
+   "about": "The guild council meets here to set policy and standards.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Standards office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     106.1,
+     0.0
+    ],
+    [
+     114.1,
+     0.0
+    ],
+    [
+     119.5,
+     11.5
+    ],
+    [
+     113.6,
+     11.5
+    ]
+   ],
+   "about": "Sets the skills and hours pilots must reach for each rating.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Legal office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     114.1,
+     0.0
+    ],
+    [
+     120.1,
+     0.0
+    ],
+    [
+     124.0,
+     11.5
+    ],
+    [
+     119.5,
+     11.5
+    ]
+   ],
+   "about": "Advises and defends pilots in disputes and investigations.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Pay and contracts office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     120.1,
+     0.0
+    ],
+    [
+     126.1,
+     0.0
+    ],
+    [
+     128.4,
+     11.5
+    ],
+    [
+     124.0,
+     11.5
+    ]
+   ],
+   "about": "Negotiates pilots' pay and working hours.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     126.1,
+     0.0
+    ],
+    [
+     130.7,
+     0.0
+    ],
+    [
+     131.9,
+     11.5
+    ],
+    [
+     128.4,
+     11.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     130.7,
+     0.0
+    ],
+    [
+     137.7,
+     0.0
+    ],
+    [
+     137.1,
+     11.5
+    ],
+    [
+     131.9,
+     11.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     137.7,
+     0.0
+    ],
+    [
+     180.3,
+     0.0
+    ],
+    [
+     180.3,
+     57.5
+    ],
+    [
+     168.8,
+     66.2
+    ],
+    [
+     168.8,
+     11.5
+    ],
+    [
+     137.1,
+     11.5
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     57.5
+    ],
+    [
+     180.3,
+     153.1
+    ],
+    [
+     168.8,
+     157.2
+    ],
+    [
+     168.8,
+     66.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     153.1
+    ],
+    [
+     180.3,
+     248.7
+    ],
+    [
+     168.8,
+     248.1
+    ],
+    [
+     168.8,
+     157.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     248.7
+    ],
+    [
+     180.3,
+     344.3
+    ],
+    [
+     168.8,
+     339.1
+    ],
+    [
+     168.8,
+     248.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     344.3
+    ],
+    [
+     180.3,
+     439.9
+    ],
+    [
+     168.8,
+     430.1
+    ],
+    [
+     168.8,
+     339.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     180.3,
+     439.9
+    ],
+    [
+     180.3,
+     473.2
+    ],
+    [
+     115.3,
+     473.2
+    ],
+    [
+     112.1,
+     461.7
+    ],
+    [
+     168.8,
+     461.7
+    ],
+    [
+     168.8,
+     430.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     115.3,
+     473.2
+    ],
+    [
+     15.7,
+     473.2
+    ],
+    [
+     25.2,
+     461.7
+    ],
+    [
+     112.1,
+     461.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     15.7,
+     473.2
+    ],
+    [
+     0.0,
+     473.2
+    ],
+    [
+     0.0,
+     390.6
+    ],
+    [
+     11.5,
+     387.1
+    ],
+    [
+     11.5,
+     461.7
+    ],
+    [
+     25.2,
+     461.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     390.6
+    ],
+    [
+     0.0,
+     292.5
+    ],
+    [
+     11.5,
+     298.6
+    ],
+    [
+     11.5,
+     387.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     292.5
+    ],
+    [
+     0.0,
+     236.6
+    ],
+    [
+     40.1,
+     236.6
+    ],
+    [
+     51.6,
+     248.1
+    ],
+    [
+     11.5,
+     248.1
+    ],
+    [
+     11.5,
+     298.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     40.1,
+     236.6
+    ],
+    [
+     90.2,
+     236.6
+    ],
+    [
+     90.2,
+     193.4
+    ],
+    [
+     101.7,
+     204.9
+    ],
+    [
+     101.7,
+     248.1
+    ],
+    [
+     51.6,
+     248.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     90.2,
+     193.4
+    ],
+    [
+     90.2,
+     100.1
+    ],
+    [
+     101.7,
+     111.6
+    ],
+    [
+     101.7,
+     204.9
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     90.2,
+     100.1
+    ],
+    [
+     90.2,
+     0.0
+    ],
+    [
+     101.7,
+     11.5
+    ],
+    [
+     101.7,
+     111.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     14.5
+    ],
+    [
+     143.8,
+     14.5
+    ],
+    [
+     140.6,
+     26.0
+    ],
+    [
+     116.2,
+     26.0
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     153.7,
+     14.5
+    ],
+    [
+     165.8,
+     14.5
+    ],
+    [
+     165.8,
+     69.7
+    ],
+    [
+     154.3,
+     78.3
+    ],
+    [
+     154.3,
+     26.0
+    ],
+    [
+     146.8,
+     26.0
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     77.9
+    ],
+    [
+     165.8,
+     143.1
+    ],
+    [
+     154.3,
+     148.0
+    ],
+    [
+     154.3,
+     86.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     151.3
+    ],
+    [
+     165.8,
+     216.6
+    ],
+    [
+     154.3,
+     217.6
+    ],
+    [
+     154.3,
+     155.8
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     224.8
+    ],
+    [
+     165.8,
+     290.1
+    ],
+    [
+     154.3,
+     287.3
+    ],
+    [
+     154.3,
+     225.4
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     298.3
+    ],
+    [
+     165.8,
+     363.5
+    ],
+    [
+     154.3,
+     357.0
+    ],
+    [
+     154.3,
+     295.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     371.7
+    ],
+    [
+     165.8,
+     437.0
+    ],
+    [
+     154.3,
+     426.6
+    ],
+    [
+     154.3,
+     364.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     445.2
+    ],
+    [
+     165.8,
+     458.7
+    ],
+    [
+     111.2,
+     458.7
+    ],
+    [
+     108.0,
+     447.2
+    ],
+    [
+     154.3,
+     447.2
+    ],
+    [
+     154.3,
+     434.4
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     102.6,
+     458.7
+    ],
+    [
+     33.8,
+     458.7
+    ],
+    [
+     42.4,
+     447.2
+    ],
+    [
+     100.7,
+     447.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     25.1,
+     458.7
+    ],
+    [
+     14.5,
+     458.7
+    ],
+    [
+     14.5,
+     401.8
+    ],
+    [
+     26.0,
+     396.6
+    ],
+    [
+     26.0,
+     447.2
+    ],
+    [
+     35.0,
+     447.2
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     393.3
+    ],
+    [
+     14.5,
+     326.0
+    ],
+    [
+     26.0,
+     329.2
+    ],
+    [
+     26.0,
+     389.1
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     317.6
+    ],
+    [
+     14.5,
+     251.1
+    ],
+    [
+     15.3,
+     251.1
+    ],
+    [
+     26.8,
+     262.6
+    ],
+    [
+     26.0,
+     262.6
+    ],
+    [
+     26.0,
+     321.7
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     23.3,
+     251.1
+    ],
+    [
+     86.8,
+     251.1
+    ],
+    [
+     98.3,
+     262.6
+    ],
+    [
+     34.8,
+     262.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     94.8,
+     251.1
+    ],
+    [
+     104.7,
+     251.1
+    ],
+    [
+     104.7,
+     197.4
+    ],
+    [
+     116.2,
+     208.9
+    ],
+    [
+     116.2,
+     262.6
+    ],
+    [
+     106.3,
+     262.6
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     189.4
+    ],
+    [
+     104.7,
+     125.8
+    ],
+    [
+     116.2,
+     137.3
+    ],
+    [
+     116.2,
+     200.9
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     117.8
+    ],
+    [
+     104.7,
+     54.3
+    ],
+    [
+     116.2,
+     65.8
+    ],
+    [
+     116.2,
+     129.3
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Guild office",
+   "levels": [
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     104.7,
+     46.3
+    ],
+    [
+     104.7,
+     14.5
+    ],
+    [
+     116.2,
+     26.0
+    ],
+    [
+     116.2,
+     57.8
+    ]
+   ],
+   "about": "Guild staff offices.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
