@@ -1,6 +1,6 @@
 # Deck 5 · Port of Arrivals
 
-Status: proposed · data: `Invicta/data/decks/D5/port-of-arrivals.json` · design doc: `Game/Docs/Port_of_Arrivals_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/port-of-arrivals.json` · design doc: `Game/Docs/Port_of_Arrivals_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|

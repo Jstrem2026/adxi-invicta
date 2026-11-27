@@ -1,6 +1,6 @@
 # Deck 3 · Canal Gardens
 
-Status: proposed · data: `Invicta/data/decks/D3/canal-gardens.json` · design doc: `Game/Docs/Canal_Gardens_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D3/canal-gardens.json` · design doc: `Game/Docs/Canal_Gardens_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
