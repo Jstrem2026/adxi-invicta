@@ -395,7 +395,9 @@ def subtract_circles(part, excl, steps=360):
             dx, dy = b[0] - a[0], b[1] - a[1]
             fx, fy = a[0] - cx, a[1] - cy
             A, B, C = dx * dx + dy * dy, 2 * (fx * dx + fy * dy), fx * fx + fy * fy - r * r
-            disc = max(0.0, B * B - 4 * A * C) ** 0.5
+            if A < 1e-18 or B * B - 4 * A * C <= 0:
+                return []   # the segment's line misses (or only touches) the circle: no crossing
+            disc = (B * B - 4 * A * C) ** 0.5
             ts = sorted(t for t in ((-B - disc) / (2 * A), (-B + disc) / (2 * A)) if 0 <= t <= 1)
             return [(a[0] + t * dx, a[1] + t * dy) for t in ts]
 

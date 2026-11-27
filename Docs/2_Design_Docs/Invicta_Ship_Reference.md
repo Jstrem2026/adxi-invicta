@@ -113,3 +113,64 @@ Detailed plans of each precinct: `Port_of_Arrivals_Precincts.md`.
 ## 7. Canal Gardens precincts, Deck 3 (⏳ proposed, 27 Nov 2026, Kylee)
 
 District (Sheet S3): 5.8 sq mi (15.0 km²), starboard of the Keelway, about F53 to F59; edges read from the S3 plan at 26.658 to 29.638 km from the prow and 0 to 5.488 km to starboard (9,777 × 18,005 ft). Six precincts in three bands, bow to stern: P4 Garden Squares 2.0 km², P5 Lakeside Retreat 2.5 km², P6 Canal Village 2.0 km² (bow band, port to starboard); P1 Grand Canal 3.0 km², 1,795 ft (547 m) wide across the full district; P2 Waterfront Quarter 2.5 km² and P3 Botanical Gardens 3.0 km² (stern band, port to starboard). The canon Atrium Plaza cuts the corner of P4. Details: `Canal_Gardens_Precincts.md`.
+
+## 8. Deck 5 precincts for the other districts (⏳ proposed, 27 Nov 2026, awaiting Jordan)
+
+Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each district now has a precinct plan in the Port of Arrivals pattern: precincts on frame and lane lines, named streets, and every block holding something, with names and codes. All proposed. Canon kept: Strike Hangars' 32 launch shafts (errata C4, F16–F28, lanes D–F and T–V) and the Strike Hangars Keelway stop (F3); the three Cruiser Gates (C5, F38–F48) with two 2 km cruiser berths behind each; the cross-line Dockside stop (F52); the Beacon (F57); the Pilots' Quarter stop (F65); the Governor's Hall, pilots' guild and Atrium Central in the Atrium Plaza. Homes and family services are in the Pilots' Quarter (design rule above). Building heights, floors and interiors are not designed yet. Made by `Invicta/tools/seed_deck5_districts.py`.
+
+**Strike Hangars** (9 precincts, 241 items, 42.23 sq mi (109.37 km²)). Details: `Strike_Hangars_Precincts.md`.
+
+| # | Precinct | Frames | Lanes | Area | What is there |
+|---|---|---|---|---|---|
+| P1 | Keelway Gate | F1–F8 | K–O | 2.24 sq mi (5.79 km²) | Strike Hangars Keelway station (F3), crew check-in, lifts, clinic |
+| P2 | Ordnance Yards | F8–F16 | G–S | 7.44 sq mi (19.28 km²) | Magazines, armorers, weapons assembly, fuel, drone racks |
+| P3 | Port Launch Wing | F16–F28 | A–F | 2.57 sq mi (6.66 km²) | Launch shafts 1–16 to the port Forward Grid, launch control, arming aprons |
+| P4 | Starboard Launch Wing | F16–F28 | T–Y | 2.57 sq mi (6.66 km²) | Launch shafts 17–32 to the starboard Forward Grid, recovery apron, damage triage |
+| P5 | Port Rack Halls | F16–F28 | G–M | 7.53 sq mi (19.50 km²) | 1st and 2nd Strike Wings: rack halls 1–12 (1,800 craft) |
+| P6 | Starboard Rack Halls | F16–F28 | M–S | 7.53 sq mi (19.50 km²) | 3rd and 4th Strike Wings: rack halls 13–24 (1,800 craft) |
+| P7 | Port Repair Yards | F28–F34 | A–F | 2.51 sq mi (6.50 km²) | Heavy repairs, engines, airframes, coatings, salvage |
+| P8 | Wing Command | F28–F34 | G–S | 7.33 sq mi (18.98 km²) | Strike wing headquarters, operations, briefings, duty lodges, mess, medical |
+| P9 | Starboard Repair Yards | F28–F34 | T–Y | 2.51 sq mi (6.50 km²) | Battle-damage rebuilds, weapons fit, shields, drone repairs |
+
+**Cruiser Docks** (6 precincts, 133 items, 23.13 sq mi (59.90 km²)). Details: `Cruiser_Docks_Precincts.md`.
+
+| # | Precinct | Frames | Lanes | Area | What is there |
+|---|---|---|---|---|---|
+| P1 | Cruiser Gates | F38–F48 | T–Y | 5.45 sq mi (14.12 km²) | The three Cruiser Gates and six cruiser berths, supply quays |
+| P2 | Fleet Stores | F34–F38 | T–Y | 2.20 sq mi (5.69 km²) | Cruiser fuel, munitions, stores and repair parts (with Ferrum) |
+| P3 | Cruiser Repair Yards | F48–F55 | T–Y | 3.95 sq mi (10.23 km²) | Module repairs, turrets, engines, armour plate; cross-line Dockside stop |
+| P4 | Dock Freight | F34–F42 | M–S | 5.12 sq mi (13.26 km²) | Cargo for the fleet: freight siding, container yard, bonded and cold stores |
+| P5 | Fleet Quarter | F42–F48 | M–S | 3.76 sq mi (9.75 km²) | Fleet Admiral's office, captains' and crews' halls, clinic, Keelway Port entrance |
+| P6 | Dockside | F48–F55 | M–S | 2.64 sq mi (6.85 km²) | Shops, inn, offices and gardens for the dock workforce; cross-line |
+
+**Flight Control** (5 precincts, 69 items, 7.71 sq mi (19.96 km²)). Details: `Flight_Control_Precincts.md`.
+
+| # | Precinct | Frames | Lanes | Area | What is there |
+|---|---|---|---|---|---|
+| P1 | Port Approach | F55–F59 | A–F | 1.81 sq mi (4.68 km²) | Approach control and sensors for the port docks and the Hall of Arrivals |
+| P2 | Briefing Halls | F55–F59 | G–L | 1.60 sq mi (4.14 km²) | Main briefing hall, flight plans, space weather, investigations |
+| P3 | Beacon | F55–F59 | L–N | 0.90 sq mi (2.32 km²) | The Beacon tower (canon), master traffic control room, Keelway |
+| P4 | Dispatch | F55–F59 | O–S | 1.60 sq mi (4.14 km²) | Dispatch centre, schedules, analysts, controller training |
+| P5 | Starboard Approach | F55–F59 | T–Y | 1.81 sq mi (4.68 km²) | Approach control for the Cruiser Gates, rescue coordination, evacuation craft |
+
+**Pilots' Quarter** (6 precincts, 133 items, 17.36 sq mi (44.97 km²)). Details: `Pilots_Quarter_Precincts.md`.
+
+| # | Precinct | Frames | Lanes | Area | What is there |
+|---|---|---|---|---|---|
+| P1 | Flight School | F59–F63 | A–H | 3.17 sq mi (8.22 km²) | Flight school, training hangar, trainee halls |
+| P2 | Simulator Halls | F59–F63 | S–Y | 3.17 sq mi (8.22 km²) | Flight and bridge simulators, zero-g tank, centrifuge, public flight arcade |
+| P3 | Pilots' Commons | F59–F63 | I–Q | 3.86 sq mi (9.99 km²) | Town centre: town hall, schools, hospital, market, park, museum |
+| P4 | Port Homes | F63–F67 | A–L | 3.02 sq mi (7.83 km²) | Homes: family apartments, towers, terraces, courtyard homes |
+| P5 | Quarter Station | F63–F67 | L–N | 1.11 sq mi (2.88 km²) | Pilots' Quarter Keelway station (F65), deck lifts, Keelway depot |
+| P6 | Starboard Homes | F63–F67 | N–Y | 3.02 sq mi (7.83 km²) | Homes: garden apartments, lofts, towers, family courts |
+
+**Atrium Plaza** (4 precincts, 35 items, 3.09 sq mi (8.00 km²)). Details: `Atrium_Plaza_Precincts.md`.
+
+| # | Precinct | Frames | Lanes | Area | What is there |
+|---|---|---|---|---|---|
+| P1 | Governor's Quarter | F48–F52 | I–M | 0.77 sq mi (2.00 km²) | Governor's Hall (canon), City Council, Deck Chief, records |
+| P2 | Station Quarter | F48–F52 | M–Q | 0.77 sq mi (2.00 km²) | Atrium Central station (canon), interchange, transit crews |
+| P3 | Guild Quarter | F52–F56 | I–M | 0.77 sq mi (2.00 km²) | The pilots' guild (canon), licensing, guild archive |
+| P4 | Rim Gardens | F52–F56 | M–Q | 0.77 sq mi (2.00 km²) | Gardens and overlook on the rim of the Spine Atrium, cafés |
+
+Notes: the Strike Hangars precincts measure 42.23 sq mi (109.37 km²) on the Rev B outline against errata C2's 109.1 km²; Flight Control's and the Pilots' Quarter's shared edge (29.28 km) and the Atrium Plaza circle fall between frames; the Spine Atrium shaft (0.78 sq mi, 2.01 km²) is an opening and in no precinct. All four are logged as known in the app's rules (`Invicta/data/rules.json`).

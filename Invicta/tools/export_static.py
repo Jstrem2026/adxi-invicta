@@ -41,6 +41,11 @@ ALLOWED = (
     "Game/Docs/Invicta_Ship_Reference.md",
     "Game/Docs/Port_of_Arrivals_Precincts.md",
     "Game/Docs/Canal_Gardens_Precincts.md",
+    "Game/Docs/Strike_Hangars_Precincts.md",
+    "Game/Docs/Cruiser_Docks_Precincts.md",
+    "Game/Docs/Flight_Control_Precincts.md",
+    "Game/Docs/Pilots_Quarter_Precincts.md",
+    "Game/Docs/Atrium_Plaza_Precincts.md",
     "Game/Docs/geometry_revB/",
     "Game/Docs/art/blueprints/",
 )
