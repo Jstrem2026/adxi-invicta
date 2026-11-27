@@ -39,7 +39,7 @@
   const title = el("div", "chat-title");
   title.innerHTML = '<strong>Work on the Invicta with Claude</strong><span>Ask questions or propose changes. Jordan reviews every change.</span>';
   const btnNew = el("button", "chat-btn", "New chat");
-  const btnName = el("button", "chat-btn", "Name");
+  const btnName = el("button", "chat-btn", "Name / password");
   const btnClose = el("button", "chat-btn chat-x", "×");
   btnClose.title = "Hide chat";
   head.append(title, btnName, btnNew, btnClose);
@@ -141,7 +141,7 @@
     return new Promise((resolve) => {
       const back = el("div", "chat-modal");
       const box = el("form", "chat-modal-box");
-      box.innerHTML = '<h3>Your name (optional)</h3><p>If you want credit for your ideas, add a name. It appears on the proposals you make. No account or password.</p>';
+      box.innerHTML = '<h3>Your name</h3><p>Add a name for credit on your ideas (optional). Jordan and Kylee: enter your password below so your changes go live right away.</p>';
       const nameIn = el("input");
       nameIn.maxLength = 60;
       nameIn.placeholder = "Name";
@@ -155,7 +155,7 @@
       const keyIn = el("input");
       keyIn.type = "password";
       keyIn.autocomplete = "off";
-      keyIn.placeholder = "Helper key, or Jordan's owner key";
+      keyIn.placeholder = "Password (Jordan and Kylee only)";
       keyIn.value = localStorage.getItem(KEY_HELPER) || "";
       box.append(nameIn, keyIn, row);
       back.append(box);
