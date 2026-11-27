@@ -227,7 +227,7 @@
     try {
       if (kind === "deck" && ix.decks && ix.decks[+a]) { const d = ix.decks[+a]; ctx.deck = `Deck ${d.n} ${d.name}`; label = ctx.deck; }
       if (kind === "district" && ix.districts && ix.districts[a]) { const x = ix.districts[a]; ctx.deck = `Deck ${x.deck}`; ctx.district = x.name; ctx.district_id = a; label = x.name; }
-      const pr = kind === "precinct" ? ix.precincts[a] : kind === "block" ? ix.precincts[a] : kind === "building" && ix.buildings[a] ? ix.precincts[ix.buildings[a].precinct_uid] : null;
+      const pr = kind === "precinct" || kind === "block" || kind === "street" ? ix.precincts[a] : kind === "building" && ix.buildings[a] ? ix.precincts[ix.buildings[a].precinct_uid] : null;
       if (pr) {
         const x = ix.districts[pr.district_id], ps = ix.psets && ix.psets[pr.district_id];
         Object.assign(ctx, { deck: `Deck ${pr.deck}`, district: x && x.name, precinct: `${pr.id} ${pr.name}`, precinct_uid: pr.uid, data_file: ps && ps.file, design_doc: ps && ps.doc });
@@ -238,6 +238,11 @@
         ctx.block = blk ? `${blk.name} (${blk.id})` : b;
         if (blk) ctx.block_contents = (blk.contents || []).map((c) => c.id || c.name || c).slice(0, 30);
         label = blk ? `${blk.name} · ${blk.id}` : `Block ${b}`;
+      }
+      if (kind === "street" && pr && (pr.streets || [])[+b]) {
+        const st = pr.streets[+b];
+        ctx.street = { name: st.name, width_m: st.width_m, rect_km: st.rect_km, blocks: st.blocks };
+        label = st.name;
       }
       if (kind === "building" && ix.buildings[a]) {
         const bd = ix.buildings[a];
@@ -286,7 +291,7 @@
     return n;
   }
   function welcome() {
-    bubble("assistant", md("Hi! I can answer questions about the **Luxuria Invicta** and help you design it. Tell me what you'd like to add or change, and I'll turn it into a proposal for Jordan to review.\n\nTry: *What's designed on Deck 5 so far?*"));
+    bubble("assistant", md("Hi! I can answer questions about the **Luxuria Invicta** and help you design it. Tell me what you'd like to add or change, and I'll make the change (Jordan and Kylee: straight away; everyone else: Jordan or Kylee approves it).\n\nTry: *What's designed on Deck 5 so far?*"));
   }
 
   function render() {

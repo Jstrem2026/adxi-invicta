@@ -18,7 +18,7 @@
   const sqft = (m2) => isMetric() ? `${Math.round(m2).toLocaleString()} m²` : `${Math.round(m2 * FT * FT).toLocaleString()} sq ft`;
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const NS = "http://www.w3.org/2000/svg";
-  let level = null, sizesOn = false, cache = {};
+  let level = null, sizesOn = localStorage.getItem("adxi.measure") !== "off", cache = {};
 
   function area(poly) {
     let a = 0;
@@ -92,7 +92,7 @@
           const bt = document.createElement("button");
           bt.className = "plan-lv" + (l.id === level ? " on" : "");
           bt.textContent = l.name.split("·")[0].trim();
-          bt.title = `${l.name}: floor ${both(l.z_m)} above deck, ${both(l.height_m)} high`;
+          bt.title = `Show the plan of ${l.name}: floor ${both(l.z_m)} above deck, ${both(l.height_m)} high`;
           bt.onclick = () => { level = l.id; drawBuilding(uid); };
           tools.prepend(bt);
         });
@@ -156,14 +156,15 @@
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, a] = h.split("/").map(decodeURIComponent);
     if (kind === "building") drawBuilding(a);
-    if (kind === "precinct" || kind === "block" || kind === "district") {
+    if (kind === "precinct" || kind === "block" || kind === "district" || kind === "street") {
       const tools = document.querySelector(".mapwrap .maptools");
       if (tools && !tools.querySelector(".plan-sizes")) {
         const bt = document.createElement("button");
         bt.className = "plan-sizes" + (sizesOn ? " on" : "");
-        bt.textContent = "Sizes";
-        bt.title = "Show each building's size";
-        bt.onclick = () => { sizesOn = !sizesOn; bt.classList.toggle("on", sizesOn); drawSizes(); };
+        const lab = () => (bt.textContent = sizesOn ? "Measurements: on" : "Measurements: off");
+        lab();
+        bt.title = "Show or hide the length and width of every building on the map";
+        bt.onclick = () => { sizesOn = !sizesOn; localStorage.setItem("adxi.measure", sizesOn ? "on" : "off"); bt.classList.toggle("on", sizesOn); lab(); drawSizes(); };
         tools.prepend(bt);
       }
       drawSizes();

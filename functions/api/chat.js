@@ -211,7 +211,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     return json({ error: "This conversation is too long. Start a new chat." }, 413);
   }
 
-  const limit = await checkLimits(env, request);
+  const limit = trusted ? null : await checkLimits(env, request);  // no limit for Jordan and Kylee
   if (limit) return json({ error: limit }, 429);
 
   const gh = github(env);
@@ -600,12 +600,12 @@ async function buildingPatch(gh, input, trusted) {
 async function checkLimits(env, request) {
   const day = new Date().toISOString().slice(0, 10);
   const ip = request.headers.get("CF-Connecting-IP") || "unknown";
-  const perVisitor = Number(env.DAILY_LIMIT_PER_VISITOR || 40);
-  const perDay = Number(env.DAILY_LIMIT_TOTAL || 600);
+  const perVisitor = Number(env.DAILY_LIMIT_PER_VISITOR || 150);
+  const perDay = Number(env.DAILY_LIMIT_TOTAL || 2000);
   const vKey = `v:${day}:${ip}`, tKey = `t:${day}`;
   const [v, t] = await Promise.all([env.LIMITS.get(vKey), env.LIMITS.get(tKey)]);
   if (Number(t || 0) >= perDay) return "The chat has reached today's limit. Please come back tomorrow.";
-  if (Number(v || 0) >= perVisitor) return "You've reached today's message limit. Please come back tomorrow.";
+  if (Number(v || 0) >= perVisitor) return "You've reached today's message limit. Jordan or Kylee: click Name / password and enter your password, and the limit won't apply to you.";
   await Promise.all([
     env.LIMITS.put(vKey, String(Number(v || 0) + 1), { expirationTtl: 172800 }),
     env.LIMITS.put(tKey, String(Number(t || 0) + 1), { expirationTtl: 172800 }),

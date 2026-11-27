@@ -401,6 +401,7 @@ function explore(kind, a, b) {
   else if (kind === "precinct") html = precinctView(a);
   else if (kind === "block") html = blockView(a, b);
   else if (kind === "building") html = buildingView(a);
+  else if (kind === "street") html = streetView(a, +b);
   else if (kind === "crown") html = crownView();
   else html = shipView();
   document.getElementById("app").innerHTML = html;
@@ -584,7 +585,13 @@ function drawPrecinct(p, fs, opts) {
   let g = `<path d="${pathOf(d.outline_net)}" fill="#0b2140" stroke="#cfe3f7" stroke-width="${fs / 5}"/>`;
   g += `<path d="${pathOf(p.shape_km)}" fill="#123d63" stroke="#fff" stroke-width="${fs / 4}"/>`;
   for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 5}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
-  for (const st of p.streets || []) g += rectEl(st.rect_km, `fill="${/keelway/i.test(st.name) ? "#0f2f4f" : /boulevard|promenade/i.test(st.name) ? "#4a3f2a" : "#2c3440"}"`) ;
+  (p.streets || []).forEach((st, i) => {
+    const sel = opts.selectedStreet === i;
+    g += `<g class="hit" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` +
+      rectEl(st.rect_km, `fill="${/keelway/i.test(st.name) ? "#0f2f4f" : /boulevard|promenade/i.test(st.name) ? "#4a3f2a" : "#2c3440"}"${sel ? ` stroke="#ffc266" stroke-width="${fs / 3}"` : ""}`) + "</g>";
+  });
+  // blocks sit under the buildings, so both can be clicked
+  if (opts.blocks) g += blocksLayer(p, fs, true, opts.blocks.selected);
   // buildings
   for (const b of p.buildings) {
     if (!b.rect_km) continue;
@@ -593,7 +600,7 @@ function drawPrecinct(p, fs, opts) {
     const sw = b.uid === opts.selected ? fs / 2.5 : fs / 9;
     const hit = opts.buildingsClickable ? `class="hit" onclick="go('#/building/${b.uid}')"` : "";
     const shapes = b.bays_km || [b.rect_km];
-    g += `<g ${hit}><title>${b.id} ${esc(b.name)}</title>` + shapes.map(s => rectEl(s, `fill="${fill}" stroke="${stroke}" stroke-width="${sw}"`)).join("");
+    g += `<g ${hit}><title>${b.id} ${esc(b.name)}${opts.buildingsClickable ? " · click for details" : ""}</title>` + shapes.map(s => rectEl(s, `fill="${fill}" stroke="${stroke}" stroke-width="${sw}"`)).join("");
     for (const dr of b.doors_km || []) g += rectEl(dr, `fill="#ff8a3d"`);
     g += "</g>";
     if (opts.labels !== false) {
@@ -620,7 +627,7 @@ function blocksLayer(p, fs, clickable, selected) {
     const sel = blk.id === selected;
     g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : ""} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}"><title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title></path>`;
     const c = blk.cell_km;
-    g += `<text x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600">${esc(blk.name)}</text>`;
+    g += `<text x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600" pointer-events="none">${esc(blk.name)}</text>`;
   }
   return g;
 }
@@ -666,8 +673,7 @@ function blockView(puid, bid) {
   const c = blk.cell_km;
   const vb = vbFor(c, 0.12);
   const fs = vb[2] / 40;
-  let g = drawPrecinct(p, fs, { buildingsClickable: true, labels: true });
-  g += blocksLayer(p, fs, true, bid);
+  let g = drawPrecinct(p, fs, { buildingsClickable: true, labels: true, blocks: { selected: bid } });
   // dim everything outside this block
   const outer = `M${vb[0] - 4 * vb[2]},${vb[1] - 4 * vb[3]}h${9 * vb[2]}v${9 * vb[3]}h${-9 * vb[2]}Z`;
   g += `<path d="${outer} ${pathOf(blk.part_km)}" fill="rgba(5,12,22,.55)" fill-rule="evenodd" pointer-events="none"/>`;
@@ -727,6 +733,25 @@ function copyBuilding(btn) {
   copyText(lines.join(String.fromCharCode(10)), btn);
 }
 window.copyFrom = copyFrom; window.copyBuilding = copyBuilding;
+function streetView(puid, i) {
+  const p = IX.precincts[puid];
+  const st = p && (p.streets || [])[i];
+  if (!st) return `<div class="note">Unknown street.</div>`;
+  const x = IX.districts[p.district_id], d = IX.decks[p.deck], r = st.rect_km;
+  const vb = vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.4));
+  const fs = vb[2] / 45;
+  const g = drawPrecinct(p, fs, { buildingsClickable: true, selectedStreet: i, blocks: { selected: null } });
+  const L = Math.max(r[1] - r[0], r[3] - r[2]) * 1000, Wd = Math.min(r[1] - r[0], r[3] - r[2]) * 1000;
+  const panel = `<h1>${esc(st.name)}</h1><div class="small muted">Street · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
+    <div class="kv" style="margin-top:8px">
+      <div>Length</div><div>${len(L)}</div>
+      <div>Width</div><div>${st.width_m != null ? len(st.width_m) : len(Wd)}</div>
+      <div>Area</div><div>${area((r[1] - r[0]) * (r[3] - r[2]))}</div>
+      <div>Blocks</div><div>${(st.blocks || []).map(k => `<a href="#/block/${p.uid}/${k}">${esc(k)}</a>`).join(", ") || ND}</div>
+      <div>Position</div><div>${nd(r[0], 2)}–${nd(r[1], 2)} km from the prow, ${nd(r[2], 2)} to ${nd(r[3], 2)} km across</div></div>`;
+  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [st.name, ""]],
+    mapShell(g, vb, "", "", "Click any building, block or street"), panel);
+}
 function buildingView(uid) {
   const b = IX.buildings[uid];
   if (!b) return `<div class="note">Unknown building ${esc(uid)}.</div>`;
@@ -734,7 +759,7 @@ function buildingView(uid) {
   const r = b.rect_km;
   const vb = r ? vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.6)) : vbFor(p.bbox_km);
   const fs = vb[2] / 45;
-  let g = drawPrecinct(p, fs, { buildingsClickable: true, selected: uid });
+  let g = drawPrecinct(p, fs, { buildingsClickable: true, selected: uid, blocks: { selected: null } });
   g += blocksLayer(p, fs, false);
   const w = r ? (r[1] - r[0]) * 1000 : null, h = r ? (r[3] - r[2]) * 1000 : null;
   const sz = b.size_m;
