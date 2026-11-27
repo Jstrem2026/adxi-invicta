@@ -112,6 +112,14 @@ def main():
     if os.path.isfile(cp):
         with open(cp, encoding="utf-8") as f:
             data["concepts"] = json.load(f)
+    md = os.path.join(APP, "data", "models")  # exact 2D plans per building
+    if os.path.isdir(md):
+        data["models"] = {}
+        for n in sorted(os.listdir(md)):
+            if n.endswith(".json"):
+                with open(os.path.join(md, n), encoding="utf-8") as f:
+                    m = json.load(f)
+                data["models"][m.get("building_uid") or n[:-5]] = m
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 

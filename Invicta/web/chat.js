@@ -184,6 +184,11 @@
       const r = await fetch("/api/whoami", { headers: { "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" } });
       const d = await r.json();
       who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "";
+      if (d.name && /kylee/i.test(d.name) && !localStorage.getItem("adxi.units")) {  // Kylee works in metric (Western Australia)
+        localStorage.setItem("adxi.units", "metric");
+        if (window.adxiUnitsLabel) window.adxiUnitsLabel();
+        if (typeof route === "function") route();
+      }
     } catch (e) { who.textContent = ""; }
   }
   whoami();
@@ -328,7 +333,7 @@
       const r = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" },
-        body: JSON.stringify({ messages: history, text, images: imgs, docs, name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
+        body: JSON.stringify({ messages: history, text, images: imgs, docs, units: localStorage.getItem("adxi.units") === "metric" ? "metric" : "us", name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
       });
       if (!r.ok || !r.body) {
         let msg = "The chat isn't available right now.";

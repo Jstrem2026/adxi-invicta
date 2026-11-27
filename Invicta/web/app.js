@@ -17,18 +17,25 @@ let issueFilter = { sev: "all", q: "" };
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const n0 = v => Math.round(v).toLocaleString("en-US");
 const nd = (v, d) => Number(v).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
-function len(m) {                   // US first, metric in brackets
+// Units: "us" (feet first, metres in brackets) or "metric" (Australian practice: m, mm for small sizes).
+const metric = () => { try { return localStorage.getItem("adxi.units") === "metric"; } catch (e) { return false; } };
+const mm = v => v < 10 ? `${n0(v * 1000)} mm` : `${v >= 100 ? n0(v) : nd(v, 1)} m`;
+function len(m) {                   // US first, metric in brackets (or metric only)
   if (m == null || isNaN(m)) return "—";
+  if (metric()) return m >= 1600 ? `${nd(m / 1000, 2)} km` : mm(m);
   if (m >= 1600) return `${nd(m / 1609.344, 2)} mi (${nd(m / 1000, 2)} km)`;
   return `${n0(m * M_FT)} ft (${m >= 10 ? n0(m) : nd(m, 1)} m)`;
 }
 function dims(w, h, ht) {
-  const ft = [w, h, ht].filter(v => v != null).map(v => n0(v * M_FT)).join(" × ");
-  const m = [w, h, ht].filter(v => v != null).map(v => n0(v)).join(" × ");
+  const vals = [w, h, ht].filter(v => v != null);
+  if (metric()) return vals.every(v => v < 10) ? `${vals.map(v => n0(v * 1000)).join(" × ")} mm` : `${vals.map(v => n0(v)).join(" × ")} m`;
+  const ft = vals.map(v => n0(v * M_FT)).join(" × ");
+  const m = vals.map(v => n0(v)).join(" × ");
   return `${ft} ft (${m} m)`;
 }
 function area(km2) {
   if (km2 == null || isNaN(km2)) return "—";
+  if (metric()) return km2 >= 0.5 ? `${nd(km2, 2)} km²` : km2 * 1e6 >= 10000 ? `${nd(km2 * 100, 1)} ha (${n0(km2 * 1e6)} m²)` : `${n0(km2 * 1e6)} m²`;
   if (km2 >= 0.5) return `${nd(km2 * KM2_SQMI, 2)} sq mi (${nd(km2, 2)} km²)`;
   return `${nd(km2 * 1e6 * M2_ACRE, 1)} acres (${n0(km2 * 1e6)} m²)`;
 }

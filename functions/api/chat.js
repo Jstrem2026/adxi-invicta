@@ -87,6 +87,31 @@ const TOOLS = [
     },
   },
   {
+    name: "edit_plan",
+    description:
+      "Create or edit a building's exact 2D plan (Invicta/data/models/<building uid>.json), drawn on the map. " +
+      "Coordinates are metres in the building's own frame: x from its bow edge toward the stern, y from its port edge toward starboard, " +
+      "so the footprint runs from (0,0) to (length, width) as in its rect_km. Levels have z_m (floor height above deck) and height_m. " +
+      "Elements: room (outline_m polygon), wall (line_m [[x,y],[x,y]] + thickness_m), door / opening (line_m along a wall + width_m), " +
+      "core (outline_m: stairs and lifts), mass (outline_m of a volume such as a tower). Every element has id, type, level (or levels), name, status. " +
+      "Use exact numbers; never guess. Only after the person agrees. Opens a proposal, or publishes at once for Jordan and trusted helpers.",
+    input_schema: {
+      type: "object",
+      properties: {
+        building_uid: { type: "string", description: "e.g. D5-port-of-arrivals-P2-19" },
+        set_levels: { type: "array", items: { type: "object" }, description: "Replace the level list: [{id, name, z_m, height_m}]" },
+        add: { type: "array", items: { type: "object" }, description: "Elements to add" },
+        update: { type: "array", items: { type: "object" }, description: "Elements to change, matched by id; only the given fields change" },
+        remove: { type: "array", items: { type: "string" }, description: "Element ids to remove" },
+        grid_m: { type: "number", description: "Structural grid spacing in metres, if known" },
+        title: { type: "string" },
+        summary: { type: "string" },
+      },
+      required: ["building_uid", "title", "summary"],
+      additionalProperties: false,
+    },
+  },
+  {
     name: "update_building",
     description:
       "Change fields of ONE building in a precinct data file (Invicta/data/decks/D<n>/<district>.json) without rewriting the file. " +
@@ -144,10 +169,12 @@ Rules you must follow (from the project's CLAUDE.md, included below):
 - Canon (Docs/1_Canon_Source) is read-only. Canon changes are proposed as errata in Game/Docs/02_Canon_Errata.md.
 - When a precinct, building or street changes, change BOTH the data file (Invicta/data/decks/D<n>/<district>.json) and its design doc in Game/Docs/ in the same proposal.
 - Mark each new or changed building's status "proposed" unless Jordan says it is canon. Only Jordan can make something canon.
-- Give measurements in US units first with metric alongside, for example 2,953 × 2,034 ft (900 × 620 m). Data files store metric.
+- Give measurements in the units each message asks for: US (feet and inches first, metric in brackets, e.g. 2,953 × 2,034 ft (900 × 620 m)) or metric (Australian practice: m, and mm for building parts). Data files always store metric.
+- Use everyday words, not architecture or CAD jargon. Keep plans and explanations simple.
 - Ship frame: x km from the prow tip (0 to 34), y km across the beam, port negative. Frames F0 to F68 are 500 m apart. Lanes A to Y are 500 m bands, M on the centreline, A at port. Plans are top views, bow right, port up.
 - Read the files you change before proposing, and keep their existing format exactly (JSON stays valid; tables keep their columns).
 - To change one building's details, use update_building instead of rewriting the whole data file with propose_change.
+- Exact 2D plans (levels, rooms, walls, doors, cores, masses) are made with edit_plan and drawn on the map. A 3D view built from the same plan data is being added; if asked for 3D, say it's coming.
 - After any change, say plainly whether it was published or is waiting for Jordan, exactly as the tool result says. If a tool fails, say so; never claim a change happened when it didn't.
 - The game itself and the Arcane Drift website are separate and not part of this repo. The EX101 is a different ship.
 - Each message says what the person is looking at on the map ("Looking at": route, deck, district, precinct, block, building with its uid and details). "This", "here" and "this building" mean that.
@@ -169,6 +196,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const trusted = await trustedFrom(env, request);
   const name = trusted || String(body.name || "").trim().slice(0, 60);
   const view = String(body.view || "").slice(0, 3000);
+  const units = body.units === "metric" ? "metric" : "us";
   // Images attached to this message (base64 JPEG/PNG/WebP), at most 3, each up to about 1.5 MB.
   const images = (Array.isArray(body.images) ? body.images : []).slice(0, 3).map((b) => String(b).replace(/\s/g, ""))
     .filter((b) => b && b.length <= 2_000_000 && imageExt(b));
@@ -198,7 +226,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       content: [...docs.map((d) => d.pdf
         ? { type: "document", source: { type: "base64", media_type: "application/pdf", data: d.pdf }, title: d.name }
         : { type: "document", source: { type: "text", media_type: "text/plain", data: d.text }, title: d.name }),
-      ...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${docs.length ? `[Attached document(s): ${docs.map((d) => d.name).join(", ")}] ` : ""}${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${nameNote}. Looking at: ${view || "the site"}]${inView}\n\n${text}` }],
+      ...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${docs.length ? `[Attached document(s): ${docs.map((d) => d.name).join(", ")}] ` : ""}${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${nameNote}. Units: ${units === "metric" ? "metric (Australian practice: metres, and millimetres for building parts; no feet)" : "US (feet and inches first, metric in brackets)"}. Looking at: ${view || "the site"}]${inView}\n\n${text}` }],
     },
   ];
 
@@ -271,6 +299,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
                 title: String(use.input.title || "Concept art").slice(0, 80), name: name || "Anonymous helper", b64: images[i] }, trusted);
               send("proposal", { url: out.url, title: `Concept art: ${use.input.building_label || use.input.building_uid}`, merged: !!out.merged });
               out.note = out.merged ? "Saved and published. It appears on the building in a few minutes." : "Sent to Jordan for review.";
+            } else if (use.name === "edit_plan") {
+              if (proposals >= MAX_PROPOSALS_PER_MESSAGE) throw new Error("Proposal limit reached for this message.");
+              out = await proposeChange(gh, await planPatch(gh, use.input), name, !!trusted);
+              proposals++;
+              send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
+              try { await announce(env, name, `${out.merged ? "changed a plan (going live)" : "proposed a plan change"}: ${use.input.title}`, out.url); } catch (e) { /* optional */ }
             } else if (use.name === "propose_change" || use.name === "update_building") {
               if (proposals >= MAX_PROPOSALS_PER_MESSAGE) throw new Error("Proposal limit reached for this message.");
               const input = use.name === "update_building" ? await buildingPatch(gh, use.input, trusted) : use.input;
@@ -489,6 +523,59 @@ async function viewDetails(gh, view) {
   }
 }
 
+// edit_plan: build or change Invicta/data/models/<uid>.json, checked against the building's footprint.
+const ELEMENT_TYPES = ["room", "wall", "door", "opening", "core", "mass"];
+async function planPatch(gh, input) {
+  const uid = String(input.building_uid || "");
+  if (!UID_RE.test(uid)) throw new Error("building_uid must look like D5-port-of-arrivals-P2-19.");
+  const parts = uid.split("-");
+  const dataFile = `Invicta/data/decks/${parts[0]}/${parts.slice(1, -2).join("-")}.json`;
+  const data = JSON.parse(await gh.raw(dataFile));
+  const bid = parts.slice(-2).join("-");
+  let b = null;
+  for (const pr of data.precincts || []) for (const x of pr.buildings || []) if (x.id === bid) b = x;
+  if (!b || !b.rect_km) throw new Error(`Building ${bid} has no footprint in ${dataFile}, so it can't have a plan yet.`);
+  const L = Math.round((b.rect_km[1] - b.rect_km[0]) * 100000) / 100, W = Math.round((b.rect_km[3] - b.rect_km[2]) * 100000) / 100;
+  const path = `Invicta/data/models/${uid}.json`;
+  let model;
+  try { model = JSON.parse(await gh.raw(path)); } catch (e) {
+    model = { schema: "invicta-atlas/model@1", building_uid: uid, units: "m",
+      frame: "Metres from the building's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+      footprint_m: [L, W], levels: [], elements: [] };
+  }
+  model.footprint_m = [L, W];
+  if (input.grid_m != null) model.grid_m = Number(input.grid_m);
+  if (Array.isArray(input.set_levels)) {
+    model.levels = input.set_levels.map((l) => ({ id: String(l.id), name: String(l.name || l.id), z_m: Number(l.z_m), height_m: Number(l.height_m), status: l.status || "proposed" }));
+  }
+  const levelIds = new Set(model.levels.map((l) => l.id));
+  const inside = (pt) => pt[0] >= -0.01 && pt[1] >= -0.01 && pt[0] <= L + 0.01 && pt[1] <= W + 0.01;
+  const check = (el) => {
+    if (!ELEMENT_TYPES.includes(el.type)) throw new Error(`Element ${el.id}: type must be one of ${ELEMENT_TYPES.join(", ")}.`);
+    const lv = el.levels || (el.level ? [el.level] : []);
+    if (!lv.length || lv.some((x) => !levelIds.has(x))) throw new Error(`Element ${el.id}: level must be one of ${[...levelIds].join(", ") || "(set levels first)"}.`);
+    const pts = el.outline_m || el.line_m;
+    if (!Array.isArray(pts) || pts.length < 2 || pts.some((q) => !Array.isArray(q) || q.length !== 2 || q.some((n) => typeof n !== "number"))) throw new Error(`Element ${el.id}: needs outline_m or line_m as [[x, y], ...] in metres.`);
+    if (pts.some((q) => !inside(q))) throw new Error(`Element ${el.id} goes outside the footprint (0 to ${L} m by 0 to ${W} m).`);
+    if (!el.status) el.status = "proposed";
+  };
+  for (const id of input.remove || []) model.elements = model.elements.filter((e) => e.id !== id);
+  for (const u of input.update || []) {
+    const el = model.elements.find((e) => e.id === u.id);
+    if (!el) throw new Error(`No element ${u.id} to update.`);
+    Object.assign(el, u);
+    check(el);
+  }
+  for (const a of input.add || []) {
+    if (!a.id) throw new Error("Every new element needs an id.");
+    if (model.elements.some((e) => e.id === a.id)) throw new Error(`Element ${a.id} already exists; use update.`);
+    check(a);
+    model.elements.push(a);
+  }
+  model.updated = new Date().toISOString().slice(0, 10);
+  return { title: input.title, summary: input.summary, files: [{ path, content: JSON.stringify(model, null, 2) + "\n" }] };
+}
+
 // update_building: patch one building's fields and hand the whole file to proposeChange.
 const BUILDING_FIELDS = ["name", "status", "kind", "notes", "size_text", "height_m", "floors", "structure", "entrances",
   "look", "capacity", "services", "interior"];
@@ -548,6 +635,7 @@ function toolLabel(use) {
   if (use.name === "get_scan") return "Checking the scan";
   if (use.name === "propose_change") return "Opening a proposal for Jordan";
   if (use.name === "save_image_as_concept") return "Saving the image as concept art";
+  if (use.name === "edit_plan") return `Editing the plan of ${use.input && use.input.building_uid}`;
   if (use.name === "update_building") return `Updating ${use.input && use.input.building_id}`;
   return use.name;
 }

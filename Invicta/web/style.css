@@ -121,3 +121,8 @@ details.sect > summary h3 { display: inline-block; }
 details.sect > summary h3::before { content: "▾ "; color: var(--muted); }
 details.sect:not([open]) > summary h3::before { content: "▸ "; }
 @media (max-width: 700px) { .cp { font-size: 16px; padding: 0 4px; } }
+
+/* 2D plans and units */
+.maptools .plan-lv, .maptools .plan-sizes { background: rgba(15,36,64,.9); }
+.maptools .plan-lv.on, .maptools .plan-sizes.on { border-color: var(--amber); color: var(--amber); }
+.top .units { font-size: 12px; padding: 3px 9px; }
