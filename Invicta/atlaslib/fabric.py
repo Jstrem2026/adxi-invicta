@@ -25,8 +25,10 @@ Rules (US first, metric alongside):
   sill 2 ft 11 in (0.9 m).
 - Stairs: in every core, between each floor and the next. Risers at most 7 in (0.18 m),
   treads 11 in (0.28 m), two flights 3 ft 11 in (1.2 m) wide with landings 4 ft 11 in
-  (1.5 m) deep (a half-turn stair). If it can't fit in the core, it is marked "fits": false
-  and the scan says so. A lift shaft 8 ft 6 in (2.6 m) square goes beside it where there
+  (1.5 m) deep (a half-turn stair). A tall floor whose stair is too long for its core
+  turns back on itself more times on the way up (as many half-turns as it needs, "turns"), the way
+  real stairs climb tall halls. If it still can't fit in the core, it is marked
+  "fits": false and the scan says so. A lift shaft 8 ft 6 in (2.6 m) square goes beside it where there
   is room.
 - Floor slabs 1 ft (0.30 m) thick under every floor's rooms, with holes for stairs and lifts.
 """
@@ -43,7 +45,11 @@ DOOR_W, DOOR_H, DOUBLE_W, DOUBLE_H, BIG_ROOM_M2 = 0.9, 2.1, 1.8, 2.4, 150.0
 ENTRANCE_W = 1.8
 WIN_W, WIN_STEP, WIN_SILL, WIN_HEAD = 1.2, 1.8, 0.9, 2.4
 RISER_MAX, TREAD, FLIGHT_W, LANDING = 0.18, 0.28, 1.2, 1.5
+FLIGHT_W_MIN = 1.12
+MIN_FLIGHT_RISERS = 3
 LIFT = 2.6
+OUTSIDE_DOORS_MAX = 400  # a row of hangar bays can need one each
+MAX_TURNS = 40  # half-turns a stair may make within one floor (a stair tower in a tall hall makes many)
 SLAB_T = 0.30
 NO_WINDOWS = ("vault", "store", "storage", "plant", "server", "magazine", "strongroom", "riser",
               "toilet", "wc", "washroom", "shower", "changing", "cold room", "freezer")
@@ -313,7 +319,7 @@ def build(m):
     seen = grow()
     # a ground-floor part still cut off (a kiosk in a park, a wing with its own way in) gets its own
     # outside door, biggest space first, until everything on the ground floor that can have one does
-    for _ in range(50):
+    for _ in range(OUTSIDE_DOORS_MAX):
         cut = [x for x, L in nodes if L == ground and (x, L) not in seen and by_id[x]["type"] != "core"
                and any(None in w[0] for w in walls_at.get((x, L), []))]
         if not cut:
@@ -391,15 +397,21 @@ def build(m):
             if h <= 0:
                 continue
             risers = math.ceil(h / RISER_MAX - 1e-9)
-            per = math.ceil(risers / 2)
-            length = (per - 1) * TREAD + 2 * LANDING
-            width = 2 * FLIGHT_W + 0.1
-            fits = length <= lenL + 1e-6 and width <= lenD + 1e-6
+            # flights 3 ft 11 in (1.2 m) wide, or down to 3 ft 8 in (1.12 m, the narrowest a building code allows) in a tight core
+            fw = FLIGHT_W if lenD >= 2 * FLIGHT_W + 0.1 else max(FLIGHT_W_MIN, (lenD - 0.1) / 2)
+            width = 2 * fw + 0.1
+            # more half-turns per floor make a shorter stair, keeping at least 3 risers in every flight
+            for turns in range(1, max(1, min(MAX_TURNS, risers // (2 * MIN_FLIGHT_RISERS))) + 1):
+                per = math.ceil(risers / (2 * turns))
+                length = (per - 1) * TREAD + 2 * LANDING
+                fits = length <= lenL + 1e-6 and width <= lenD + 1e-6
+                if fits or width > lenD + 1e-6:
+                    break
             stair_len = max(stair_len, min(length, lenL))
             o = rect(0, min(length, lenL), 0, min(width, lenD))
             out.append({"id": nid("S"), "type": "stair", "name": "Stairs", "level": a_, "to_level": b_, "outline_m": o,
-                        "risers": risers, "riser_m": _r(h / risers), "tread_m": TREAD, "flights": 2,
-                        "flight_width_m": FLIGHT_W, "landing_m": LANDING, "fits": fits, "core": e["id"],
+                        "risers": risers, "riser_m": _r(h / risers), "tread_m": TREAD, "flights": 2 * turns, "turns": turns,
+                        "flight_width_m": _r(fw), "landing_m": LANDING, "fits": fits, "core": e["id"],
                         "status": "proposed", "derived": True})
             holes.setdefault(b_, []).append(Polygon(o))
             if not fits:

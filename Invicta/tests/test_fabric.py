@@ -102,6 +102,27 @@ class Stairs(unittest.TestCase):
         self.assertFalse(of(extra, "stair")[0]["fits"])
         self.assertEqual(len(rep["stairs_not_fitting"]), 1)
 
+    def test_a_tall_floor_gets_a_stair_that_turns_more_often(self):
+        # 20 m to climb in a core 8 m long: one half-turn would need 29 m, so the stair turns back several times
+        lv = [{"id": "L1", "z_m": 0, "height_m": 20}, {"id": "L2", "z_m": 20, "height_m": 4}]
+        m = plan([sp("C", 0, 0, 20, 4, "zone", levels=["L1", "L2"], level=None),
+                  sp("S", 0, 4, 8, 10, "core", levels=["L1", "L2"], level=None)], lv)
+        extra, rep = FB.build(m)
+        s = of(extra, "stair")[0]
+        self.assertTrue(s["fits"])
+        self.assertGreater(s["turns"], 1)
+        self.assertEqual(s["flights"], 2 * s["turns"])
+        self.assertGreaterEqual(s["risers"] / s["flights"], FB.MIN_FLIGHT_RISERS - 1e-9)
+        self.assertEqual(rep["stairs_not_fitting"], [])
+
+    def test_a_tight_core_gets_narrower_flights_but_not_too_narrow(self):
+        m = plan([sp("C", 0, 0, 20, 4, "zone", levels=["L1", "L2"], level=None),
+                  sp("S", 0, 4, 9, 6.4, "core", levels=["L1", "L2"], level=None)], self.TWO)
+        s = of(FB.build(m)[0], "stair")[0]
+        self.assertTrue(s["fits"])
+        self.assertGreaterEqual(s["flight_width_m"], FB.FLIGHT_W_MIN)
+        self.assertLess(s["flight_width_m"], FB.FLIGHT_W)
+
     def test_a_floor_with_no_stairs_is_cut_off(self):
         m = plan([sp("C", 0, 0, 20, 4, "zone"), sp("U", 0, 0, 20, 4, "zone", level="L2")], self.TWO)
         _, rep = FB.build(m)

@@ -12,6 +12,7 @@ Plan frame: metres from the building lot's bow-port corner, x toward the stern,
 y toward starboard (the corner of rect_km at x0, y0).
 """
 
+import hashlib
 import json
 import os
 
@@ -155,17 +156,35 @@ def check_plan(m, b=None):
         out.append(("Rooms overlap", "%d overlap(s) between rooms, corridors or stair cores on the same floor: %s." % (len(over), _examples(over)),
                     "Move or trim the rooms so each piece of floor belongs to one room."))
 
-    # Every floor of a multi-storey building reached by stairs or a lift
-    if len(levels) > 1:
+    # Every floor people stand on, in a building with more than one, reached by stairs or a lift.
+    # The upper levels of a full-height hall (a tank, a hangar, a drill tower) have no floor to stand on.
+    order = [l["id"] for l in ls]
+    standing = set()
+    for e in els:
+        if e["type"] not in SPACES or e.get("outdoor"):
+            continue
+        lv = [L for L in order if L in _levels(e)]
+        standing.update(lv[:1] if e.get("full_height") else lv)
+    if len(standing) > 1:
         served = {L for e in els if e["type"] == "core" for L in _levels(e)}
-        dry = [l["id"] for l in ls if l["id"] not in served]
+        dry = [L for L in order if L in standing and L not in served]
         if dry:
-            out.append(("Floors with no stairs or lift", "%d of %d floors have no stair or lift core: %s." % (len(dry), len(levels), ", ".join(dry)),
+            out.append(("Floors with no stairs or lift", "%d of %d floors people stand on have no stair or lift core: %s." % (len(dry), len(standing), ", ".join(dry)),
                         "Add a core that serves these floors."))
     return out
 
 
-CHECK_VERSION = 2  # raise when a check changes, so cached results are redone
+CHECK_VERSION = 7  # raise when a check changes, so cached results are redone
+
+
+def _version():
+    """Saved results are redone when CHECK_VERSION or the code of the checks or the fabric rules changes."""
+    h = hashlib.sha1(str(CHECK_VERSION).encode())
+    here = os.path.dirname(os.path.abspath(__file__))
+    for name in ("rooms.py", "fabric.py", "geometry.py"):
+        with open(os.path.join(here, name), "rb") as f:
+            h.update(f.read().replace(b"\r\n", b"\n"))
+    return h.hexdigest()
 
 
 def scan_plans(model, models_dir, add, cache_path=None):
@@ -184,7 +203,7 @@ def scan_plans(model, models_dir, add, cache_path=None):
         try:
             with open(cache_path, encoding="utf-8") as f:
                 cache = json.load(f)
-            if cache.get("version") != CHECK_VERSION:
+            if cache.get("version") != _version():
                 cache = {}
         except (OSError, ValueError):
             cache = {}
@@ -192,24 +211,26 @@ def scan_plans(model, models_dir, add, cache_path=None):
     fresh = {}
     n_plans = 0
     totals = {}
-    for name in sorted(os.listdir(models_dir)):
-        if not name.endswith(".json"):
-            continue
-        rel = "Invicta/data/models/" + name
+    names = sorted(n for n in os.listdir(models_dir) if n.endswith(".json"))
+    keys, todo = {}, []
+    for name in names:
         path = os.path.join(models_dir, name)
-        st = os.stat(path)
         uid = name[:-5]
         b = buildings.get(uid)
         bkey = json.dumps([b.get(k) for k in ("id", "name", "rect_km", "outline_km", "holes_km", "bays_km")] if b else None)
-        key = [st.st_mtime_ns, st.st_size, bkey]
+        # keyed on the file's content, not its date, so a fresh copy (the publish build) can reuse saved results
+        with open(path, "rb") as f:
+            digest = hashlib.sha1(f.read()).hexdigest()
+        keys[name] = [digest, bkey]
         hit = plans.get(name)
-        if hit and hit["key"] == key:
-            res = hit["res"]
-        else:
-            res = _check_file(path, name, buildings)
-        fresh[name] = {"key": key, "res": res}
+        if not (hit and hit["key"] == keys[name]):
+            todo.append(name)
+    done = _check_many(models_dir, todo, buildings)
+    for name in names:
+        res = done[name] if name in done else plans[name]["res"]
+        fresh[name] = {"key": keys[name], "res": res}
         for sev, title, detail, entity, fix in res["issues"]:
-            add(sev, "rooms" if sev != "error" else "data", title, detail, entity, rel, fix)
+            add(sev, "rooms" if sev != "error" else "data", title, detail, entity, "Invicta/data/models/" + name, fix)
         if res.get("ok"):
             n_plans += 1
             for k, v in res["fabric"].items():
@@ -218,7 +239,7 @@ def scan_plans(model, models_dir, add, cache_path=None):
         try:
             os.makedirs(os.path.dirname(cache_path), exist_ok=True)
             with open(cache_path, "w", encoding="utf-8") as f:
-                json.dump({"version": CHECK_VERSION, "plans": fresh}, f)
+                json.dump({"version": _version(), "plans": fresh}, f)
         except OSError:
             pass  # a cache that can't be written only makes the next scan slower
     if n_plans:
@@ -228,6 +249,28 @@ def scan_plans(model, models_dir, add, cache_path=None):
             "They are shown in the 2D plans and 3D view; the plan files are unchanged. Approve the rules or say what to change." % (
                 n_plans, *("{:,}".format(totals.get(k, 0)) for k in ("wall", "door", "opening", "window", "stair", "lift", "slab"))),
             None, "Invicta/atlaslib/fabric.py", None)
+
+PARALLEL_FROM = 24   # plans to check before it is worth starting helper processes
+
+
+def _check_one(args):
+    path, name, b = args
+    return name, _check_file(path, name, {name[:-5]: b} if b else {})
+
+
+def _check_many(models_dir, names, buildings):
+    """Check these plans, side by side on every processor when there are many (the first scan on a new
+    computer, or the publish build); one by one if helper processes can't start."""
+    jobs = [(os.path.join(models_dir, n), n, buildings.get(n[:-5])) for n in names]
+    if len(jobs) >= PARALLEL_FROM and (os.cpu_count() or 1) > 1:
+        try:
+            from concurrent.futures import ProcessPoolExecutor
+            with ProcessPoolExecutor() as ex:
+                return dict(ex.map(_check_one, jobs, chunksize=8))
+        except Exception:  # noqa: BLE001  (no helper processes here: fall back to one by one)
+            pass
+    return dict(_check_one(j) for j in jobs)
+
 
 def _check_file(path, name, buildings):
     try:

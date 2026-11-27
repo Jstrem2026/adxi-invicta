@@ -1,8 +1,18 @@
 """Polygon helpers for tools/design_rooms.py: wings that follow every wall of a building (straight, slanted or
-curved), bands of rooms along them, and cutting halls and yards into pieces. Pure Python, metres."""
+curved), bands of rooms along them, and cutting halls and yards into pieces. Metres.
+
+Plan step 4 (27 Nov 2026): the bands (Ribbon), the inset for the middle of a building and the inradius use exact
+offsets from Shapely. The old hand-made offsets dropped corners of curved outlines, so whole wings cut across
+buildings, and they ignored courtyard walls. Now the bands follow every wall, the outside and each courtyard.
+"""
 import math
 import os
 import sys
+
+import shapely
+from shapely.geometry import LineString as _Line, Polygon as _Poly
+from shapely.geometry.polygon import orient as _orient
+from shapely.ops import substring as _substring
 
 APP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, APP)
@@ -115,150 +125,126 @@ def simplify(p, tol=1.0):
     return list(FP.simplify([tuple(q) for q in p], tol))
 
 
-# ------------------------------------------------------------------ mitred offsets with matching vertices
+# ------------------------------------------------------------------ exact offsets (Shapely)
 
-def _lines(P, d):
-    n = len(P)
-    L = []
-    for i in range(n):
-        (x1, y1), (x2, y2) = P[i], P[(i + 1) % n]
-        dx, dy = x2 - x1, y2 - y1
-        ln = math.hypot(dx, dy) or 1e-9
-        nx, ny = -dy / ln, dx / ln  # left normal: inward for a counter-clockwise ring
-        L.append(((x1 + nx * d, y1 + ny * d), (dx / ln, dy / ln)))
-    return L
-
-
-def _meet(l1, l2):
-    (p, r), (q, s) = l1, l2
-    den = r[0] * s[1] - r[1] * s[0]
-    if abs(den) < 1e-9:
-        return (q[0], q[1])
-    t = ((q[0] - p[0]) * s[1] - (q[1] - p[1]) * s[0]) / den
-    return (p[0] + t * r[0], p[1] + t * r[1])
+def _region(P, holes=()):
+    """The floor of a ring with its courtyards, as one valid polygon (the biggest part if it falls apart)."""
+    if len(P) < 3:
+        return _Poly()
+    g = _Poly([tuple(q[:2]) for q in P], [[tuple(q[:2]) for q in h] for h in holes if len(h) >= 3])
+    if not g.is_valid:
+        g = shapely.make_valid(g)
+    parts = [p for p in shapely.get_parts(g) if p.geom_type == "Polygon" and not p.is_empty]
+    return max(parts, key=lambda p: p.area) if parts else _Poly()
 
 
-def mitre(P, d):
-    """Vertices of P (ccw) moved inward by d, one per vertex of P (vertex i is where edges i-1 and i meet)."""
-    L = _lines(P, d)
-    n = len(P)
-    return [_meet(L[i - 1], L[i]) for i in range(n)]
+def _parts(g):
+    return [p for p in shapely.get_parts(g) if p.geom_type == "Polygon" and not p.is_empty]
 
 
-def _convex(P, i):
-    n = len(P)
-    a, b, c = P[i - 1], P[i], P[(i + 1) % n]
-    return (b[0] - a[0]) * (c[1] - b[1]) - (b[1] - a[1]) * (c[0] - b[0]) > 0
+def _offset(g, d):
+    """g moved inward by d (exact; square corners stay square)."""
+    if d <= 0:
+        return g
+    return g.buffer(-d, join_style="mitre", mitre_limit=5.0)
 
 
-def clean(P, d):
-    """Drop vertices until every edge of P keeps its direction when moved inward by d."""
-    P = list(P)
-    for _ in range(len(P)):
-        if len(P) < 3:
-            return None
-        V = mitre(P, d)
-        n = len(P)
-        bad = None
-        for i in range(n):
-            e0 = (P[(i + 1) % n][0] - P[i][0], P[(i + 1) % n][1] - P[i][1])
-            e1 = (V[(i + 1) % n][0] - V[i][0], V[(i + 1) % n][1] - V[i][1])
-            if e0[0] * e1[0] + e0[1] * e1[1] <= 0.05 * (e0[0] ** 2 + e0[1] ** 2):
-                if bad is None or math.hypot(*e0) < bad[1]:
-                    bad = (i, math.hypot(*e0))
-        if bad is None:
-            return P
-        i = bad[0]
-        j = (i + 1) % n
-        drop = j if _convex(P, j) else i
-        P.pop(drop)
-    return None
+def inset(P, d, holes=()):
+    """Ring P moved inward by d as a counter-clockwise point list (the biggest part), or None if nothing is left."""
+    parts = _parts(_offset(_region(P, holes), d))
+    if not parts:
+        return None
+    p = max(parts, key=lambda q: q.area)
+    if p.area <= 1.0:
+        return None
+    return [(x, y) for x, y in _orient(p, 1.0).exterior.coords[:-1]]
 
 
 def offset_ok(P, d):
-    Q = clean(P, d)
-    if not Q:
-        return None
-    V = mitre(Q, d)
-    if area(V) <= 1.0 or FP.self_intersects(V):
-        return None
-    return Q
+    """P if it can be moved inward by d and still be a floor, else None."""
+    return P if inset(P, d) else None
 
 
-def inradius(P, hi=None):
-    x0, x1, y0, y1 = bbox(P)
-    lo, hi = 0.0, hi or min(x1 - x0, y1 - y0) / 2
-    for _ in range(18):
-        mid = (lo + hi) / 2
-        if offset_ok(P, mid):
-            lo = mid
-        else:
-            hi = mid
-    return lo
+def inradius(P, hi=None, holes=()):
+    """How far the deepest point of the floor is from its nearest wall (radius of the biggest circle inside)."""
+    g = _region(P, holes)
+    if g.is_empty:
+        return 0.0
+    r = shapely.maximum_inscribed_circle(g, 0.05).length
+    return min(r, hi) if hi else r
 
 
-# ------------------------------------------------------------------ a ribbon of bands round a ring
+# ------------------------------------------------------------------ a ribbon of bands along every wall
+
+EXTEND_MAX = 6.0   # m
+
 
 class Ribbon:
-    """Bands of rooms and corridors following a ring (an outer wall, or a courtyard wall) inward.
-    layers: [(kind, d0, d1)], kind 'rooms' or 'corridor'. Positions along the ribbon are metres along
-    each layer's middle line, from vertex 0."""
+    """Bands of rooms and corridors following the walls of a floor inward: the outside wall and, when holes are
+    given, every courtyard wall too. layers: [(kind, d0, d1)], kind 'rooms' or 'corridor', d0 and d1 the band's
+    distance from the wall. Positions along the ribbon are metres along each layer's middle line, from the start of
+    the outside wall, then round each courtyard in turn. A piece is the part of its band between two positions, cut
+    square to the middle line, so neighbouring pieces share their cut and no piece leaves its band."""
 
-    def __init__(self, P, depth_total, layers):
-        Q = None
-        for _ in range(2):
-            Q = clean(ccw(P), depth_total)
-            if Q:
-                break
-        self.ok = bool(Q) and len(Q) >= 3
-        if not self.ok:
-            return
-        self.P = Q
+    def __init__(self, P, depth_total, layers, holes=(), fill_to=None):
+        """fill_to: the last layer reaches this deep where the floor is wider than depth_total, so a building
+        whose width varies has no empty strip down its middle (its innermost corridor gets wider there)."""
+        self.region = _region(ccw(P), holes)
         self.layers = layers
-        depths = sorted({d for _, a, b in layers for d in (a, b)})
-        self.V = {d: mitre(Q, d) for d in depths}
-        n = len(Q)
-        self.n = n
-        self.cum = {}
-        for (_, a, b) in layers:
-            key = (a, b)
-            if key in self.cum:
-                continue
-            Va, Vb = self.V[a], self.V[b]
-            m = [(math.dist(Va[i], Va[(i + 1) % n]) + math.dist(Vb[i], Vb[(i + 1) % n])) / 2 for i in range(n)]
-            c = [0.0]
-            for v in m:
-                c.append(c[-1] + v)
-            self.cum[key] = (m, c)
+        self._buf, self._mid = {}, {}
+        self._deep = {}
+        if fill_to and layers and fill_to > layers[-1][2]:
+            self._deep[(round(layers[-1][1], 6), round(layers[-1][2], 6))] = fill_to
+        self.ok = bool(layers) and depth_total > 0 and not self.region.is_empty and self.length(layers[0][1], layers[0][2]) > 1.0
+
+    def _offset(self, d):
+        d = round(d, 6)
+        if d not in self._buf:
+            self._buf[d] = _offset(self.region, d)
+        return self._buf[d]
+
+    def _middle(self, a, b):
+        key = (round(a, 6), round(b, 6))
+        if key not in self._mid:
+            rings = []
+            for p in sorted(_parts(self._offset((a + b) / 2)), key=lambda q: -q.area):
+                p = _orient(p, 1.0)
+                rings.append(_Line(p.exterior.coords))
+                rings += [_Line(h.coords) for h in p.interiors]
+            rings = [r for r in rings if r.length > 1.0]
+            cum = [0.0]
+            for r in rings:
+                cum.append(cum[-1] + r.length)
+            deep = self._deep.get(key, b)
+            band = self._offset(a).difference(self._offset(deep)) if b > a else _Poly()
+            shapely.prepare(band)
+            # a piece reaches across its band (and, for the deepened last layer, up to EXTEND_MAX further in;
+            # reaching further would cross the middle of the floor into the bands from the opposite wall)
+            self._mid[key] = (rings, cum, band, min(max((b - a) / 2, deep - (a + b) / 2), (b - a) / 2 + EXTEND_MAX) + 0.05)
+        return self._mid[key]
 
     def length(self, a, b):
-        return self.cum[(a, b)][1][-1]
-
-    def _at(self, a, b, s):
-        m, c = self.cum[(a, b)]
-        s = max(0.0, min(c[-1], s))
-        i = 0
-        while i < self.n - 1 and c[i + 1] < s:
-            i += 1
-        f = 0.0 if m[i] < 1e-9 else (s - c[i]) / m[i]
-        Va, Vb = self.V[a], self.V[b]
-        j = (i + 1) % self.n
-        pa = (Va[i][0] + f * (Va[j][0] - Va[i][0]), Va[i][1] + f * (Va[j][1] - Va[i][1]))
-        pb = (Vb[i][0] + f * (Vb[j][0] - Vb[i][0]), Vb[i][1] + f * (Vb[j][1] - Vb[i][1]))
-        return i, pa, pb
+        return self._middle(a, b)[1][-1]
 
     def piece(self, a, b, s0, s1):
-        """Polygon of layer (a, b) between positions s0 and s1."""
-        m, c = self.cum[(a, b)]
-        i0, pa0, pb0 = self._at(a, b, s0)
-        i1, pa1, pb1 = self._at(a, b, s1)
-        outer, inner = [pa0], [pb0]
-        for i in range(i0 + 1, i1 + 1):
-            outer.append(self.V[a][i])
-            inner.append(self.V[b][i])
-        outer.append(pa1)
-        inner.append(pb1)
-        return rpoly(outer + list(reversed(inner)))
+        """Polygon of layer (a, b) between positions s0 and s1 (an empty list if nothing is there)."""
+        rings, cum, band, half = self._middle(a, b)
+        geoms = []
+        for k, r in enumerate(rings):
+            lo, hi = max(s0, cum[k]), min(s1, cum[k + 1])
+            if hi - lo < 0.05:
+                continue
+            seg = _substring(r, lo - cum[k], hi - cum[k])
+            geoms.append(seg.buffer(half, cap_style="flat", join_style="mitre", mitre_limit=5.0))
+        if not geoms:
+            return []
+        g = shapely.union_all(geoms)
+        g = g.intersection(shapely.clip_by_rect(band, *g.bounds))
+        parts = _parts(g)
+        if not parts:
+            return []
+        p = max(parts, key=lambda q: q.area)
+        return rpoly([(x, y) for x, y in _orient(p, 1.0).exterior.coords[:-1]])
 
 
 def band_layers(D, room_depth=12.0, corridor=3.0, two_sided_inner=False):
@@ -291,8 +277,9 @@ def band_layers(D, room_depth=12.0, corridor=3.0, two_sided_inner=False):
     return layers
 
 
-def fit_rect(poly, w, d, rng, tries=40):
-    """A w x d rectangle (axis-aligned) fully inside poly, or a smaller one; None if nothing fits."""
+def fit_rect(poly, w, d, rng, tries=40, within=None):
+    """A w x d rectangle (axis-aligned) fully inside poly (and inside the Shapely shape `within`, the building's
+    real footprint, when given), or a smaller one; None if nothing fits."""
     x0, x1, y0, y1 = bbox(poly)
     for scale in (1.0, 0.8, 0.6, 0.45, 0.3):
         ww, dd = w * scale, d * scale
@@ -303,6 +290,7 @@ def fit_rect(poly, w, d, rng, tries=40):
             y = rng.uniform(y0, y1 - dd)
             pts = [(x, y), (x + ww, y), (x + ww, y + dd), (x, y + dd), (x + ww / 2, y + dd / 2),
                    (x + ww / 2, y), (x + ww / 2, y + dd), (x, y + dd / 2), (x + ww, y + dd / 2)]
-            if all(point_in(px, py, poly) for px, py in pts):
+            if all(point_in(px, py, poly) for px, py in pts) and (
+                    within is None or within.covers(shapely.box(x, y, x + ww, y + dd))):
                 return x, y, ww, dd
     return None

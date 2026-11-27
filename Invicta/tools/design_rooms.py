@@ -44,6 +44,8 @@ APP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(APP, "data")
 sys.path.insert(0, os.path.join(APP, "tools"))
 import plan_geometry as G  # noqa: E402
+sys.path.insert(0, APP)
+from atlaslib import plan_repair  # noqa: E402
 TODAY = "2026-11-27"
 SOURCE_TAG = "tools/design_rooms.py"
 FT = 3.28084
@@ -182,7 +184,7 @@ def design(b, uid, prog, rng):
     Lx, Wy, rings, holes = lot_geometry(b)
     plan = Plan(uid, (Lx, Wy))
     levels = expand_floors(prog["floors"], rng)
-    ctx = {"name": b["name"], "rng": rng, "b": b}
+    ctx = {"name": b["name"], "rng": rng, "b": b, "foot": plan_repair.building_frame_shape(b)}
     mode = prog.get("mode", "ring")
     rings = [G.ccw(G.simplify(r, 0.8)) for r in rings]
     holes = [G.cw(G.simplify(h, 0.8)) for h in holes]
@@ -208,6 +210,9 @@ def design(b, uid, prog, rng):
              "levels": [{"id": l[0], "name": ("Level B%s · %s" % (l[0][2:], l[1])) if l[0].startswith("LB") else "Level %s · %s" % (l[0][1:], l[1]),
                          "z_m": l[2], "height_m": l[3], "status": "proposed"} for l in levels],
              "elements": plan.els, "updated": TODAY}
+    # trim overlaps, rooms past the walls and crossed outlines with exact maths (plan step 4)
+    plan_repair.repair(model, b)
+    plan.els = model["elements"]
     fields = text_fields(b, prog, levels, plan, rng, stats, top)
     return fields, model
 
@@ -245,20 +250,21 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
     court = prog.get("court")
     A = abs(G.area(P)) - sum(abs(G.area(h)) for h in holes)
     if holes:
-        per = sum(math.dist(P[i], P[(i + 1) % len(P)]) for i in range(len(P))) + \
-              sum(math.dist(h[i], h[(i + 1) % len(h)]) for h in holes for i in range(len(h)))
-        thick = 2 * A / per
-        rib = [(P, thick, False)]
+        # wings along the outside wall and along every courtyard wall, meeting in the middle
+        # (as deep as the floor's usual half-width; where it is wider, the middle corridor widens)
+        ir = G.inradius(P, holes=holes)
+        per = sum(math.dist(r_[i], r_[(i + 1) % len(r_)]) for r_ in [P] + list(holes) for i in range(len(r_)))
+        # back to back in the middle, as deep as the floor's usual half-width (the middle rooms are deeper where it is wider)
+        rib = [(P, min(ir, A / per) * 0.999, False, holes)]
         inner = None
     else:
         ir = G.inradius(P)
         if ir <= wing + 6 or (not halls and not court):
-            rib = [(P, ir * 0.999, True)]
+            rib = [(P, ir * 0.999, True, [])]
             inner = None
         else:
-            rib = [(P, wing, False)]
-            Q = G.offset_ok(P, wing)
-            inner = G.mitre(Q, wing) if Q else None
+            rib = [(P, wing, False, [])]
+            inner = G.inset(P, wing)
     # halls in the middle, or (no middle) as full-depth pieces of the wings
     in_ribbon = []
     hall_pieces = []
@@ -287,8 +293,9 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
     else:
         in_ribbon = [h for h in halls if not h.get("outdoor")]
     ribbons = []
-    for ring, D, mid in rib:
-        r = G.Ribbon(ring, D, G.band_layers(D, rd, cor, two_sided_inner=mid))
+    for ring, D, mid, hs_ in rib:
+        r = G.Ribbon(ring, D, G.band_layers(D, rd, cor, two_sided_inner=mid), holes=hs_,
+                     fill_to=G.inradius(ring, holes=hs_) if (mid or hs_) else None)
         if r.ok:
             ribbons.append(r)
     lv_ids = [l[0] for l in levels if l[2] >= 0]
@@ -312,17 +319,6 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
     for h, s0, s1 in ribbon_halls:
         r0 = ribbons[0]
         D = r0.layers[-1][2]
-        r0.cum.setdefault((0.0, D), None)
-        if r0.cum[(0.0, D)] is None:
-            r0.V.setdefault(0.0, G.mitre(r0.P, 0.0))
-            r0.V.setdefault(D, G.mitre(r0.P, D))
-            Va, Vb = r0.V[0.0], r0.V[D]
-            n = r0.n
-            m = [(math.dist(Va[i], Va[(i + 1) % n]) + math.dist(Vb[i], Vb[(i + 1) % n])) / 2 for i in range(n)]
-            c = [0.0]
-            for v in m:
-                c.append(c[-1] + v)
-            r0.cum[(0.0, D)] = (m, c)
         lay = r0.layers[0]
         k = r0.length(0.0, D) / r0.length(lay[1], lay[2])
         poly = r0.piece(0.0, D, s0 * k, s1 * k)
@@ -587,7 +583,7 @@ def layout_open(plan, P, prog, levels, rng, ctx):
         if not e:
             continue
         for bld in (z[3] if len(z) > 3 else []):
-            fr = G.fit_rect(poly, bld["size"][0], bld["size"][1], rng)
+            fr = G.fit_rect(poly, bld["size"][0], bld["size"][1], rng, within=ctx.get("foot"))
             if not fr:
                 continue
             bx, by, bw, bd = fr
@@ -610,7 +606,7 @@ def layout_open(plan, P, prog, levels, rng, ctx):
             if all(G.point_in(x, y, poly) for x, y in rect):
                 plan.add("fixture", fx[0], rect, [L1], fx[1], parent=e["id"])
             else:
-                fr = G.fit_rect(poly, (x1 - x0) * cw, (y1 - y0) * cd, rng)
+                fr = G.fit_rect(poly, (x1 - x0) * cw, (y1 - y0) * cd, rng, within=ctx.get("foot"))
                 if fr:
                     plan.add("fixture", fx[0], poly_rect(*fr), [L1], fx[1], parent=e["id"])
 
@@ -711,6 +707,9 @@ def dump_like(raw, data):
     return txt + ("\n" if raw.endswith("\n") else "")
 
 
+KEEP_TEXT = ("structure", "look", "entrances", "services")
+
+
 def model_path(uid):
     return os.path.join(DATA, "models", uid + ".json")
 
@@ -757,6 +756,8 @@ def main():
             rng = random.Random(seed_for(uid))
             fields, model = design(b, uid, prog, rng)
             for k, v in fields.items():
+                if k in KEEP_TEXT and b.get(k) and b.get("design_status") == "proposed":
+                    continue   # a redo keeps the building's description; only the numbers and room lists follow the plan
                 if v is not None:
                     b[k] = v
             with open(model_path(uid), "w", encoding="utf-8", newline="\n") as f:

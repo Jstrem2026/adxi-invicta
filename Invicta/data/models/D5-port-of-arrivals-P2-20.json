@@ -28,81 +28,87 @@
  "elements": [
   {
    "id": "E001",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     20.0,
+     77.0
+    ],
+    [
+     20.0,
+     20.0
+    ],
+    [
+     30.0,
+     20.0
+    ],
+    [
+     30.0,
+     77.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E002",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     170.0,
+     77.0
+    ],
+    [
+     170.0,
+     20.0
+    ],
+    [
+     180.0,
+     20.0
+    ],
+    [
+     180.0,
+     77.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E003",
    "type": "zone",
    "name": "Corridor",
    "level": "L1",
    "outline_m": [
     [
      20.0,
-     77.0
-    ],
-    [
-     180.0,
-     77.0
-    ],
-    [
-     180.0,
      83.0
     ],
     [
      20.0,
+     77.0
+    ],
+    [
+     180.0,
+     77.0
+    ],
+    [
+     180.0,
      83.0
     ]
    ],
    "status": "proposed",
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E002",
-   "type": "room",
-   "name": "Transformer bays",
-   "level": "L1",
-   "outline_m": [
-    [
-     20.0,
-     20.0
-    ],
-    [
-     46.7,
-     20.0
-    ],
-    [
-     46.7,
-     77.0
-    ],
-    [
-     20.0,
-     77.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Transformers that step the ship's power down for the precinct."
-  },
-  {
-   "id": "E003",
-   "type": "room",
-   "name": "Transformer bays",
-   "level": "L1",
-   "outline_m": [
-    [
-     46.7,
-     20.0
-    ],
-    [
-     73.3,
-     20.0
-    ],
-    [
-     73.3,
-     77.0
-    ],
-    [
-     46.7,
-     77.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Transformers that step the ship's power down for the precinct."
   },
   {
    "id": "E004",
@@ -111,19 +117,19 @@
    "level": "L1",
    "outline_m": [
     [
-     73.3,
-     20.0
-    ],
-    [
-     100.0,
-     20.0
-    ],
-    [
-     100.0,
+     30.0,
      77.0
     ],
     [
-     73.3,
+     30.0,
+     20.0
+    ],
+    [
+     53.3,
+     20.0
+    ],
+    [
+     53.3,
      77.0
     ]
    ],
@@ -137,19 +143,19 @@
    "level": "L1",
    "outline_m": [
     [
-     100.0,
-     20.0
-    ],
-    [
-     126.7,
-     20.0
-    ],
-    [
-     126.7,
+     53.3,
      77.0
     ],
     [
-     100.0,
+     53.3,
+     20.0
+    ],
+    [
+     76.7,
+     20.0
+    ],
+    [
+     76.7,
      77.0
     ]
    ],
@@ -163,19 +169,19 @@
    "level": "L1",
    "outline_m": [
     [
-     126.7,
-     20.0
-    ],
-    [
-     153.3,
-     20.0
-    ],
-    [
-     153.3,
+     76.7,
      77.0
     ],
     [
-     126.7,
+     76.7,
+     20.0
+    ],
+    [
+     100.0,
+     20.0
+    ],
+    [
+     100.0,
      77.0
     ]
    ],
@@ -189,19 +195,19 @@
    "level": "L1",
    "outline_m": [
     [
-     153.3,
-     20.0
-    ],
-    [
-     180.0,
-     20.0
-    ],
-    [
-     180.0,
+     100.0,
      77.0
     ],
     [
-     153.3,
+     100.0,
+     20.0
+    ],
+    [
+     123.3,
+     20.0
+    ],
+    [
+     123.3,
      77.0
     ]
    ],
@@ -211,23 +217,75 @@
   {
    "id": "E008",
    "type": "room",
+   "name": "Transformer bays",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.3,
+     77.0
+    ],
+    [
+     123.3,
+     20.0
+    ],
+    [
+     146.7,
+     20.0
+    ],
+    [
+     146.7,
+     77.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Transformers that step the ship's power down for the precinct."
+  },
+  {
+   "id": "E009",
+   "type": "room",
+   "name": "Transformer bays",
+   "level": "L1",
+   "outline_m": [
+    [
+     146.7,
+     77.0
+    ],
+    [
+     146.7,
+     20.0
+    ],
+    [
+     170.0,
+     20.0
+    ],
+    [
+     170.0,
+     77.0
+    ]
+   ],
+   "status": "proposed",
+   "about": "Transformers that step the ship's power down for the precinct."
+  },
+  {
+   "id": "E010",
+   "type": "room",
    "name": "Switch room",
    "level": "L1",
    "outline_m": [
     [
      20.0,
-     83.0
-    ],
-    [
-     63.9,
-     83.0
-    ],
-    [
-     63.9,
      140.0
     ],
     [
      20.0,
+     83.0
+    ],
+    [
+     63.9,
+     83.0
+    ],
+    [
+     63.9,
      140.0
     ]
    ],
@@ -235,25 +293,25 @@
    "about": "Electrical switchgear for the pumps."
   },
   {
-   "id": "E009",
+   "id": "E011",
    "type": "room",
    "name": "Water pumps",
    "level": "L1",
    "outline_m": [
     [
      63.9,
-     83.0
-    ],
-    [
-     98.9,
-     83.0
-    ],
-    [
-     98.9,
      140.0
     ],
     [
      63.9,
+     83.0
+    ],
+    [
+     98.9,
+     83.0
+    ],
+    [
+     98.9,
      140.0
     ]
    ],
@@ -261,25 +319,25 @@
    "about": "Pumps that keep water flowing to the precinct."
   },
   {
-   "id": "E010",
+   "id": "E012",
    "type": "room",
    "name": "Control room",
    "level": "L1",
    "outline_m": [
     [
      98.9,
-     83.0
-    ],
-    [
-     180.0,
-     83.0
-    ],
-    [
-     180.0,
      140.0
     ],
     [
      98.9,
+     83.0
+    ],
+    [
+     180.0,
+     83.0
+    ],
+    [
+     180.0,
      140.0
     ]
    ],
@@ -287,25 +345,25 @@
    "about": "Operators watch and control the building's systems."
   },
   {
-   "id": "E011",
+   "id": "E013",
    "type": "zone",
    "name": "Corridor",
    "level": "L2",
    "outline_m": [
     [
      20.0,
-     77.0
-    ],
-    [
-     180.0,
-     77.0
-    ],
-    [
-     180.0,
      83.0
     ],
     [
      20.0,
+     77.0
+    ],
+    [
+     180.0,
+     77.0
+    ],
+    [
+     180.0,
      83.0
     ]
    ],
@@ -313,25 +371,25 @@
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
   },
   {
-   "id": "E012",
+   "id": "E014",
    "type": "room",
    "name": "Air handling",
    "level": "L2",
    "outline_m": [
     [
-     20.0,
-     20.0
-    ],
-    [
-     180.0,
-     20.0
-    ],
-    [
-     180.0,
+     30.0,
      77.0
     ],
     [
-     20.0,
+     30.0,
+     20.0
+    ],
+    [
+     170.0,
+     20.0
+    ],
+    [
+     170.0,
      77.0
     ]
    ],
@@ -339,25 +397,25 @@
    "about": "Fans and filters that supply fresh air."
   },
   {
-   "id": "E013",
+   "id": "E015",
    "type": "room",
    "name": "Stores",
    "level": "L2",
    "outline_m": [
     [
      20.0,
-     83.0
-    ],
-    [
-     180.0,
-     83.0
-    ],
-    [
-     180.0,
      140.0
     ],
     [
      20.0,
+     83.0
+    ],
+    [
+     180.0,
+     83.0
+    ],
+    [
+     180.0,
      140.0
     ]
    ],
@@ -365,25 +423,25 @@
    "about": "Lockable stores for supplies, spares and equipment."
   },
   {
-   "id": "E014",
+   "id": "E016",
    "type": "room",
    "name": "Chiller 1",
    "level": "L1",
    "outline_m": [
     [
      20.0,
-     160.0
-    ],
-    [
-     73.3,
-     160.0
-    ],
-    [
-     73.3,
      230.0
     ],
     [
      20.0,
+     160.0
+    ],
+    [
+     73.3,
+     160.0
+    ],
+    [
+     73.3,
      230.0
     ]
    ],
@@ -391,25 +449,25 @@
    "about": "A chiller that makes cold water for air conditioning."
   },
   {
-   "id": "E015",
+   "id": "E017",
    "type": "room",
    "name": "Chiller 2",
    "level": "L1",
    "outline_m": [
     [
      73.3,
-     160.0
-    ],
-    [
-     126.7,
-     160.0
-    ],
-    [
-     126.7,
      230.0
     ],
     [
      73.3,
+     160.0
+    ],
+    [
+     126.7,
+     160.0
+    ],
+    [
+     126.7,
      230.0
     ]
    ],
@@ -417,25 +475,25 @@
    "about": "A chiller that makes cold water for air conditioning."
   },
   {
-   "id": "E016",
+   "id": "E018",
    "type": "room",
    "name": "Chiller 3",
    "level": "L1",
    "outline_m": [
     [
      126.7,
-     160.0
-    ],
-    [
-     180.0,
-     160.0
-    ],
-    [
-     180.0,
      230.0
     ],
     [
      126.7,
+     160.0
+    ],
+    [
+     180.0,
+     160.0
+    ],
+    [
+     180.0,
      230.0
     ]
    ],

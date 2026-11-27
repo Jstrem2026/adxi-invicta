@@ -35,24 +35,82 @@
  "elements": [
   {
    "id": "E001",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
    "outline_m": [
     [
      30.0,
      53.5
     ],
     [
+     30.0,
+     40.0
+    ],
+    [
+     40.0,
+     40.0
+    ],
+    [
+     40.0,
+     53.5
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E002",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     170.0,
+     53.5
+    ],
+    [
+     170.0,
+     40.0
+    ],
+    [
+     180.0,
+     40.0
+    ],
+    [
+     180.0,
+     53.5
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.0,
+     56.5
+    ],
+    [
+     30.0,
+     53.5
+    ],
+    [
      180.0,
      53.5
     ],
     [
      180.0,
-     56.5
-    ],
-    [
-     30.0,
      56.5
     ]
    ],
@@ -60,25 +118,25 @@
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
   },
   {
-   "id": "E002",
+   "id": "E004",
    "type": "room",
    "name": "Shaft control room",
    "level": "L1",
    "outline_m": [
     [
-     30.0,
-     40.0
-    ],
-    [
-     180.0,
-     40.0
-    ],
-    [
-     180.0,
+     40.0,
      53.5
     ],
     [
-     30.0,
+     40.0,
+     40.0
+    ],
+    [
+     170.0,
+     40.0
+    ],
+    [
+     170.0,
      53.5
     ]
    ],
@@ -86,25 +144,25 @@
    "about": "Controls the lifts and doors of the service shaft."
   },
   {
-   "id": "E003",
+   "id": "E005",
    "type": "room",
    "name": "Crew room",
    "level": "L1",
    "outline_m": [
     [
      30.0,
-     56.5
-    ],
-    [
-     67.0,
-     56.5
-    ],
-    [
-     67.0,
      70.0
     ],
     [
      30.0,
+     56.5
+    ],
+    [
+     67.0,
+     56.5
+    ],
+    [
+     67.0,
      70.0
     ]
    ],
@@ -112,25 +170,25 @@
    "about": "A room where the crew rest and take breaks."
   },
   {
-   "id": "E004",
+   "id": "E006",
    "type": "room",
    "name": "Stores",
    "level": "L1",
    "outline_m": [
     [
      67.0,
-     56.5
-    ],
-    [
-     180.0,
-     56.5
-    ],
-    [
-     180.0,
      70.0
     ],
     [
      67.0,
+     56.5
+    ],
+    [
+     180.0,
+     56.5
+    ],
+    [
+     180.0,
      70.0
     ]
    ],
@@ -138,25 +196,25 @@
    "about": "Lockable stores for supplies, spares and equipment."
   },
   {
-   "id": "E005",
+   "id": "E007",
    "type": "zone",
    "name": "Corridor",
    "level": "L2",
    "outline_m": [
     [
      30.0,
-     53.5
-    ],
-    [
-     180.0,
-     53.5
-    ],
-    [
-     180.0,
      56.5
     ],
     [
      30.0,
+     53.5
+    ],
+    [
+     180.0,
+     53.5
+    ],
+    [
+     180.0,
      56.5
     ]
    ],
@@ -164,25 +222,25 @@
    "about": "The corridor linking the rooms on this floor to the stairs and lifts."
   },
   {
-   "id": "E006",
+   "id": "E008",
    "type": "room",
    "name": "Ventilation fans",
    "level": "L2",
    "outline_m": [
     [
-     30.0,
-     40.0
-    ],
-    [
-     180.0,
-     40.0
-    ],
-    [
-     180.0,
+     40.0,
      53.5
     ],
     [
-     30.0,
+     40.0,
+     40.0
+    ],
+    [
+     170.0,
+     40.0
+    ],
+    [
+     170.0,
      53.5
     ]
    ],
@@ -190,25 +248,25 @@
    "about": "Big fans that move air through the shaft."
   },
   {
-   "id": "E007",
+   "id": "E009",
    "type": "room",
    "name": "Stores",
    "level": "L2",
    "outline_m": [
     [
      30.0,
-     56.5
-    ],
-    [
-     180.0,
-     56.5
-    ],
-    [
-     180.0,
      70.0
     ],
     [
      30.0,
+     56.5
+    ],
+    [
+     180.0,
+     56.5
+    ],
+    [
+     180.0,
      70.0
     ]
    ],
@@ -216,7 +274,7 @@
    "about": "Lockable stores for supplies, spares and equipment."
   },
   {
-   "id": "E008",
+   "id": "E010",
    "type": "room",
    "name": "Heavy freight lift",
    "levels": [
@@ -226,20 +284,36 @@
    ],
    "outline_m": [
     [
-     30.0,
+     180.0,
+     166.7
+    ],
+    [
+     73.3,
+     166.7
+    ],
+    [
+     73.3,
+     127.3
+    ],
+    [
+     78.3,
+     127.3
+    ],
+    [
+     78.3,
+     119.3
+    ],
+    [
+     73.3,
+     119.3
+    ],
+    [
+     73.3,
      80.0
     ],
     [
      180.0,
      80.0
-    ],
-    [
-     180.0,
-     166.7
-    ],
-    [
-     30.0,
-     166.7
     ]
    ],
    "full_height": true,
@@ -247,7 +321,7 @@
    "about": "A lift for heavy freight."
   },
   {
-   "id": "E009",
+   "id": "E011",
    "type": "room",
    "name": "Container lift",
    "levels": [
@@ -258,18 +332,18 @@
    "outline_m": [
     [
      30.0,
-     166.7
-    ],
-    [
-     180.0,
-     166.7
-    ],
-    [
-     180.0,
      253.3
     ],
     [
      30.0,
+     166.7
+    ],
+    [
+     180.0,
+     166.7
+    ],
+    [
+     180.0,
      253.3
     ]
    ],
@@ -278,7 +352,7 @@
    "about": "A lift big enough for a shipping container."
   },
   {
-   "id": "E010",
+   "id": "E012",
    "type": "room",
    "name": "Vehicle lift",
    "levels": [
@@ -289,18 +363,18 @@
    "outline_m": [
     [
      30.0,
-     253.3
-    ],
-    [
-     180.0,
-     253.3
-    ],
-    [
-     180.0,
      340.0
     ],
     [
      30.0,
+     253.3
+    ],
+    [
+     180.0,
+     253.3
+    ],
+    [
+     180.0,
      340.0
     ]
    ],
@@ -309,7 +383,7 @@
    "about": "A lift big enough to carry vehicles down to the service layer."
   },
   {
-   "id": "E011",
+   "id": "E013",
    "type": "zone",
    "name": "Truck queue",
    "level": "L1",
@@ -334,6 +408,83 @@
    "outdoor": true,
    "status": "proposed",
    "about": "A lane where trucks wait their turn."
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1"
+   ],
+   "outline_m": [
+    [
+     68.3,
+     127.3
+    ],
+    [
+     68.3,
+     119.3
+    ],
+    [
+     78.3,
+     119.3
+    ],
+    [
+     78.3,
+     127.3
+    ]
+   ],
+   "status": "proposed",
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+  },
+  {
+   "id": "E015",
+   "type": "room",
+   "name": "Heavy freight lift",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     73.3,
+     80.0
+    ],
+    [
+     73.3,
+     119.3
+    ],
+    [
+     68.3,
+     119.3
+    ],
+    [
+     68.3,
+     127.3
+    ],
+    [
+     73.3,
+     127.3
+    ],
+    [
+     73.3,
+     166.7
+    ],
+    [
+     30.0,
+     166.7
+    ],
+    [
+     30.0,
+     80.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed",
+   "piece_of": "E010",
+   "about": "A lift for heavy freight."
   }
  ],
  "updated": "2026-11-27"

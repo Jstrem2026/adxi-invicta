@@ -108,7 +108,8 @@
     im.instanceMatrix.needsUpdate = true;
     return im;
   }
-  // The treads of a half-turn stair (plan step 3): two flights side by side in the stair's outline.
+  // The treads of a half-turn stair (plan step 3): two flights side by side in the stair's outline. A tall floor's
+  // stair makes several half-turns ("turns") on the way up, one above the other.
   function stairTreads(e, z0) {
     const o = e.outline_m, out = [];
     const u = [o[1][0] - o[0][0], o[1][1] - o[0][1]], v = [o[3][0] - o[0][0], o[3][1] - o[0][1]];
@@ -116,15 +117,22 @@
     if (!Lu || !Lv) return out;
     const uu = [u[0] / Lu, u[1] / Lu], vv = [v[0] / Lv, v[1] / Lv];
     const at = (s, t) => [o[0][0] + uu[0] * s + vv[0] * t, o[0][1] + uu[1] * s + vv[1] * t];
-    const per = Math.ceil(e.risers / 2), w = Math.min(e.flight_width_m, Lv / 2), land = e.landing_m;
-    for (let i = 0; i < e.risers; i++) {
-      const up = i < per;                       // first flight runs along u, the second comes back
-      const k = up ? i : i - per;
-      const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
-      const t0 = up ? w / 2 : Lv - w / 2;
-      out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + (i + 1) * e.riser_m - 0.05, h: 0.05, t: w });
+    const turns = e.turns || 1, perTurn = Math.ceil(e.risers / turns);
+    const w = Math.min(e.flight_width_m, Lv / 2), land = e.landing_m;
+    let i = 0;
+    for (let tn = 0; tn < turns && i < e.risers; tn++) {
+      const n = Math.min(perTurn, e.risers - i), per = Math.ceil(n / 2);
+      for (let j = 0; j < n; j++, i++) {
+        const up = j < per;                       // first flight runs along u, the second comes back
+        const k = up ? j : j - per;
+        const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
+        const t0 = up ? w / 2 : Lv - w / 2;
+        out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + (i + 1) * e.riser_m - 0.05, h: 0.05, t: w });
+      }
+      const zl = z0 + (i - n + per) * e.riser_m - 0.05;
+      out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl, h: 0.05, t: Lv });  // half landing
+      if (tn < turns - 1) out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - 0.05, h: 0.05, t: Lv });  // landing between turns
     }
-    out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: z0 + per * e.riser_m - 0.05, h: 0.05, t: Lv });  // half landing
     return out;
   }
 
