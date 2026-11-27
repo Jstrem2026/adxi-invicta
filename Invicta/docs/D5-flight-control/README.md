@@ -1,6 +1,6 @@
 # Deck 5 · Flight Control
 
-Status: proposed · data: `Invicta/data/decks/D5/flight-control.json` · design doc: `Game/Docs/Flight_Control_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/flight-control.json` · design doc: `Game/Docs/Flight_Control_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
