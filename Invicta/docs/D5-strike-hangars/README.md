@@ -1,6 +1,6 @@
 # Deck 5 · Strike Hangars
 
-Status: proposed · data: `Invicta/data/decks/D5/strike-hangars.json` · design doc: `Game/Docs/Strike_Hangars_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/strike-hangars.json` · design doc: `Game/Docs/Strike_Hangars_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Deck 5 · Pilots' Quarter
 
-Status: proposed · data: `Invicta/data/decks/D5/pilots-quarter.json` · design doc: `Game/Docs/Pilots_Quarter_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/pilots-quarter.json` · design doc: `Game/Docs/Pilots_Quarter_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
