@@ -47,7 +47,12 @@ tr.click:hover td { background: #16365c; }
 .b-not { color: var(--gap); border-style: dashed; } .b-started { color: var(--amber); }
 .sev-error { color: var(--err); } .sev-warning { color: var(--warn); } .sev-decision { color: var(--dec); } .sev-gap { color: var(--gap); }
 .explore { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 14px; align-items: start; }
-@media (max-width: 1000px) { .explore { grid-template-columns: 1fr; } }
+/* Map beside the panel only when there is room for both; otherwise the panel goes under the map.
+   Measured on the page area itself, so an open chat panel counts too (tablets, narrow windows). */
+main { container-type: inline-size; }
+@container (max-width: 1050px) { .explore { grid-template-columns: minmax(0, 1fr); } .explore .panel { max-height: none; } }
+@media (max-width: 1000px) { .explore { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 1300px) { #scan-time { display: none; } }
 .crumbs { margin-bottom: 10px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .crumbs .sep { color: var(--muted); }
 .crumbs b { color: var(--amber); }

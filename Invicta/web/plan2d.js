@@ -62,6 +62,13 @@
     g.append(el("text", { x, y, "font-size": fs, fill: o.fill || "#e8f1fb", "text-anchor": o.anchor || "middle", "dominant-baseline": "middle",
       "paint-order": "stroke", stroke: "#071425", "stroke-width": fs / 4, transform: o.rot ? `rotate(${o.rot} ${x} ${y})` : "" }, t));
   }
+  // Free-standing labels (titles, notes) skip themselves when they would land on one already placed.
+  let placed = [];
+  function place(g, x, y, t, fs, opts) {
+    const w = t.length * fs * 0.56, h = fs * 1.2, r = [x - w / 2, y - h / 2, x + w / 2, y + h / 2];
+    if (placed.some((q) => r[0] < q[2] && q[0] < r[2] && r[1] < q[3] && q[1] < r[3])) return false;
+    placed.push(r); textAt(g, x, y, t, fs, opts); return true;
+  }
   function dimLine(g, a, b, label, fs, off) {
     // Measurement line between screen points a and b, pushed out by `off` screen units, with end ticks and a label.
     const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1, nx = -dy / L * off, ny = dx / L * off;
@@ -254,6 +261,7 @@
     const F = 12 * px;  // 12 px text on screen
     const g = el("g", { id: "plan2d-labels", "pointer-events": "none" });
     if (!labelsOn) { svg.append(g); return; }
+    placed = [];
     for (const pl of plans) labelPlan(g, pl, px, F);
     svg.append(g);
   }
@@ -299,10 +307,21 @@
       textAt(g, (a[0] + c[0]) / 2, (a[1] + c[1]) / 2 - F * 1.1, `${e.name || (e.type === "door" ? "Door" : "Opening")}${e.width_m ? " · " + one(e.width_m) : ""}`, F * 0.9, { fill: "#5fd39a" });
     }
     const mid = toS([Lm / 2, Wm / 2]);
-    const fitIn = (t, f) => { const a = toS([0, 0]), b = toS([Lm, Wm]); return Math.min(f, Math.abs(b[0] - a[0]) * 0.9 / (t.length * 0.56)); };
-    const msg = (t, dy) => { const f = fitIn(t, F); if (f >= 6 * px) textAt(g, mid[0], mid[1] + dy * f, t, f, { fill: "#8fb0d3" }); };
-    if (pl.title) { const f = fitIn(pl.title, F * 1.1), top = toS([Lm / 2, 0]); if (f >= 6 * px) textAt(g, top[0], top[1] - f * 0.9, pl.title, f, { fill: "#ffc266" }); }
-    if (pl.noPlan) msg(pl.dims ? "Floor plan not designed yet · ask the chat to draw it" : "Floor plan not designed yet", pl.dims ? 2 : 0);
+    const box = () => { const a = toS([0, 0]), b = toS([Lm, Wm]); return [Math.abs(b[0] - a[0]), Math.abs(b[1] - a[1])]; };
+    const fitIn = (t, f) => Math.min(f, box()[0] * 0.9 / (t.length * 0.56));
+    // A message goes inside the footprint only when it fits there and does not sit on another label.
+    // On a block page it sits above the middle, clear of the name and the measurements.
+    const lift = pl.dims ? 0 : -1.6;
+    const msg = (t, dy) => {
+      const f = fitIn(t, F); if (f < 6 * px) return;
+      const y = mid[1] + (dy + lift) * f;
+      if (!pl.dims && Math.abs(y - mid[1]) + f * 0.7 > box()[1] / 2) return;  // too thin: leave it out
+      place(g, mid[0], y, t, f, { fill: "#8fb0d3" });
+    };
+    if (pl.title) { const f = fitIn(pl.title, F * 1.1), top = toS([Lm / 2, 0]); if (f >= 6 * px) place(g, top[0], top[1] - f * 0.9, pl.title, f, { fill: "#ffc266" }); }
+    // Floor plans are for buildings. Streets, concourses, aprons, bays, parks and plazas never get this note.
+    const roofed = !pl.kind || pl.kind === "building" || pl.kind === "utility";
+    if (pl.noPlan && roofed) msg(pl.dims ? "Floor plan not designed yet · ask the chat to draw it" : "Floor plan not designed yet", pl.dims ? 2 : 0);
     if (pl.notHere) msg(pl.notHere, 0);
     if (pl.empty) msg("Nothing drawn on this level yet", 0);
   }
@@ -319,14 +338,18 @@
     if (!svg || !sizesOn || typeof IX === "undefined") return;
     const vb = svg.getAttribute("viewBox").split(/\s+/).map(Number), fs = 11 * vb[2] / Math.max(1, svg.getBoundingClientRect().width);
     const g = el("g", { id: "sizes2d", "pointer-events": "none" });
+    // The building's own name is drawn in the middle of its box: sit the size just under it, never on it.
+    const names = [...svg.querySelectorAll(":scope > text")].map((t) => [+t.getAttribute("x"), +t.getAttribute("y"), +t.getAttribute("font-size") || 0, /rotate/.test(t.getAttribute("transform") || "")]);
+    const nameSize = (cx, cy) => { const t = names.find((q) => !q[3] && Math.abs(q[0] - cx) < 1 && Math.abs(q[1] - cy) < 1); return t ? t[2] : 0; };
     for (const b of Object.values(IX.buildings || {})) {
       if (!b.rect_km) continue;
       const r = b.rect_km, cx = (X(r[0]) + X(r[1])) / 2, cy = (Y(r[2]) + Y(r[3])) / 2;
       if (cx < vb[0] || cx > vb[0] + vb[2] || cy < vb[1] || cy > vb[1] + vb[3]) continue;
       const w = (r[1] - r[0]) * 1000, h = (r[3] - r[2]) * 1000;
       const t = `${one(w)} × ${one(h)}`;
-      if (t.length * fs * 0.56 > w * 0.95 || fs * 1.3 > h * 0.6) continue;  // too small to label at this zoom
-      textAt(g, cx, cy + fs * 1.2, t, fs, { fill: "#ffc266" });
+      const dy = Math.max(fs * 1.2, nameSize(cx, cy) * 0.6 + fs * 0.75);
+      if (t.length * fs * 0.56 > w * 0.95 || dy + fs * 0.6 > h / 2) continue;  // too small to label at this zoom
+      textAt(g, cx, cy + dy, t, fs, { fill: "#ffc266" });
     }
     svg.append(g);
   }
@@ -352,9 +375,11 @@
     plans = [];
     list.forEach((b, i) => {
       const r = b.rect_km, Lm = (r[1] - r[0]) * 1000, Wm = (r[3] - r[2]) * 1000, toS = mapper(r), m = models[i];
-      const pl = { uid: b.uid, r, Lm, Wm, toS, els: [], title: `${b.id} ${b.name}` };
+      const pl = { uid: b.uid, kind: b.kind, r, Lm, Wm, toS, els: [], title: `${b.id} ${b.name}` };
       plans.push(pl);
-      if (!m || !(m.levels || []).length) { pl.noPlan = true; return; }
+      // No plan: the map already names it inside its own box, so no extra title above it
+      // (titles above thin strips landed on the neighbours).
+      if (!m || !(m.levels || []).length) { pl.noPlan = true; pl.title = null; return; }
       const lv = m.levels.find((l) => tagOf(m, l) === tag);
       const a = toS([0, 0]), c = toS([Lm, Wm]);
       g.append(el("rect", { x: Math.min(a[0], c[0]), y: Math.min(a[1], c[1]), width: Math.abs(c[0] - a[0]), height: Math.abs(c[1] - a[1]), fill: "#0b2140", stroke: "#e8f1fb", "stroke-width": Math.max(Lm, Wm) / 200 }));
