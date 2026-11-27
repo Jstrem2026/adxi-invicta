@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway and B2 Waterfront Reach I are laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I and B3 Waterfront Reach II are laid out (proposed); the other blocks are not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -36,7 +36,7 @@ Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over
 - B7 (D3-F56-V) Garden Reach II: lane V, 1,795 × 1,640 ft (547 × 500 m), 9.1% of the precinct. Code D3F6P1B7
 - B8 (D3-F56-W) Village Gateway: lanes W–X, 1,795 × 2,421 ft (547 × 738 m), 13.5% of the precinct. Code D3F6P1B8
 
-Everything laid out so far in P1, in one list (the names with "(B2)" are the B2 Waterfront Reach I copies of B1 items). Codes give the block (B1 or B2):
+Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" are the B2 and B3 copies of B1 items). Codes give the block (B1, B2 or B3):
 
 | Item | Size | Notes | Code |
 |---|---|---|---|
@@ -68,6 +68,19 @@ Everything laid out so far in P1, in one list (the names with "(B2)" are the B2 
 | Access Road A (B2) | 59 × 1,640 ft (18 × 500 m) | WR-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
 | Access Road B (B2) | 59 × 1,640 ft (18 × 500 m) | WR-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
 | Social Bridge | 591 × 52 ft (180 × 16 m) | Pedestrian bridge. X 183.5–363.5, Y 250–266. Each end overlaps its plot by 10 m (WR-03, WR-07) | D3F6P1B2A11 |
+| Grand Canal (B3) | 328 × 1,640 ft (100 × 500 m); 538,196 sq ft (50,000 m²) | WR2-01. X 223.5–323.5, Y 0–500. Straight 100 m channel; carries on from B2 and runs on into B4 | D3F6P1B3A1 |
+| Artisan Market | 576 × 459 ft (175.5 × 140 m) | WR2-02. X 18–193.5, Y 0–140. Plot only | D3F6P1B3A2 |
+| Cultural Courtyard | 576 × 345 ft (175.5 × 105 m) | WR2-03. X 18–193.5, Y 140–245. Plot only | D3F6P1B3A3 |
+| Sculpture Gardens | 576 × 509 ft (175.5 × 155 m) | WR2-04. X 18–193.5, Y 245–400. Plot only | D3F6P1B3A4 |
+| Waterside Café Terraces | 576 × 328 ft (175.5 × 100 m) | WR2-05. X 18–193.5, Y 400–500. Plot only | D3F6P1B3A5 |
+| Canal Amphitheatre | 576 × 476 ft (175.5 × 145 m) | WR2-06. X 353.5–529, Y 0–145. Plot only | D3F6P1B3A6 |
+| Reflection Gardens | 576 × 394 ft (175.5 × 120 m) | WR2-07. X 353.5–529, Y 145–265. Plot only | D3F6P1B3A7 |
+| Floating Market Landing | 576 × 345 ft (175.5 × 105 m) | WR2-08. X 353.5–529, Y 265–370. Plot only | D3F6P1B3A8 |
+| Waterfront Picnic Park | 576 × 427 ft (175.5 × 130 m) | WR2-09. X 353.5–529, Y 370–500. Plot only | D3F6P1B3A9 |
+| Promenades (B3) | 98 × 1,640 ft (30 × 500 m) each side; 322,917 sq ft (30,000 m²) | WR2-10A X 193.5–223.5 and WR2-10B X 323.5–353.5, both Y 0–500. Carry on from B2 and run on into B4 | D3F6P1B3A10 |
+| Access Road A (B3) | 59 × 1,640 ft (18 × 500 m) | WR2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B3) | 59 × 1,640 ft (18 × 500 m) | WR2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
+| Heritage Bridge | 591 × 52 ft (180 × 16 m) | Pedestrian bridge. X 183.5–363.5, Y 220–236. Each end overlaps its plot by 10 m (WR2-03, WR2-07) | D3F6P1B3A11 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -81,7 +94,13 @@ Area check (m²): plots 175,500 (nine plots: 87,750 each side), canal 50,000, pr
 
 How the app shows it: as in B1, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-O. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B1 at Y 0 and B3 at Y 500 with the same widths, so each runs unbroken.
 
-Not designed yet: what the other six blocks and the other precincts hold, streets other than the access roads of B1 and B2, bridges other than B1's two and the Social Bridge, where the canal water comes from and goes, individual buildings.
+B3 Waterfront Reach II (D3-F56-P) layout, proposed. The block is 547 × 500 m (273,500 m²), Y 1,250 to 1,750 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 1.25 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and the bridge only; no individual buildings are designed.
+
+Area check (m²): plots 175,500 (nine plots: west 87,750 = 175.5 × (140 + 105 + 155 + 100), east 87,750 = 175.5 × (145 + 120 + 105 + 130)), canal 50,000, promenades 30,000, access roads 18,000. Total 273,500, which is the whole block. The Heritage Bridge sits over the canal and plots and is not counted again.
+
+How the app shows it: as in B1 and B2, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-P. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B2 at Y 0 and B4 at Y 500 with the same widths, so each runs unbroken from B2 through B3 into B4.
+
+Not designed yet: what the other five blocks and the other precincts hold, streets other than the access roads of B1, B2 and B3, bridges other than B1's two, the Social Bridge and the Heritage Bridge, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -138,5 +157,18 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-26 Access Road A (B2)**: The service road along the bow edge of the waterfront stretch.
 - **P1-27 Access Road B (B2)**: The service road along the stern edge of the waterfront stretch.
 - **P1-28 Social Bridge**: A footbridge over the canal linking the social gardens and restaurants on either bank.
+- **P1-29 Grand Canal (B3)**: The third stretch of the Grand Canal, carrying boats on through the Waterfront Quarter towards the Central Canal.
+- **P1-30 Artisan Market**: A market where makers and craftspeople sell what they make: pottery, textiles, glass and woodwork.
+- **P1-31 Cultural Courtyard**: An open courtyard for performances, exhibitions and cultural events, with the Heritage Bridge arriving at its canal side.
+- **P1-32 Sculpture Gardens**: Gardens for walking among sculpture, with paths and benches beside the canal.
+- **P1-33 Waterside Café Terraces**: Cafés with outdoor terraces facing the canal, for coffee and light meals.
+- **P1-34 Canal Amphitheatre**: An outdoor amphitheatre by the canal for concerts, plays and public events.
+- **P1-35 Reflection Gardens**: Quiet gardens for sitting and resting, laid out to look over the water.
+- **P1-36 Floating Market Landing**: The landing where market boats tie up and sell from the water to people on the bank.
+- **P1-37 Waterfront Picnic Park**: A park with lawns and tables for families and groups to picnic beside the canal.
+- **P1-38 Promenades (B3)**: Walkways along both banks of the third stretch of the canal.
+- **P1-39 Access Road A (B3)**: The service road along the bow edge of the waterfront stretch.
+- **P1-40 Access Road B (B3)**: The service road along the stern edge of the waterfront stretch.
+- **P1-41 Heritage Bridge**: A footbridge over the canal linking the Cultural Courtyard and the Reflection Gardens.
 
 <!-- purposes:end -->
