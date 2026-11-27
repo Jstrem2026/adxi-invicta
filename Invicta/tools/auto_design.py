@@ -356,7 +356,7 @@ def doc_update(doc_path, data, pid_filter, mdir=os.path.join(DATA, "models")):
                 cells = [c.strip() for c in l.strip().strip("|").split("|")]
                 codes[cells[0].replace("**", "")] = cells[-1]
         mk0, mk1 = "<!-- designs %s start -->" % p["id"], "<!-- designs %s end -->" % p["id"]
-        body = [mk0, "", "**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**", ""]
+        body = [mk0, "", "**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**", ""]
         for b in p.get("buildings", []):
             if not b.get("height_m") or b.get("status") == "canon" or not b.get("interior") or b["id"] not in data.get("_drafted", set()):
                 continue

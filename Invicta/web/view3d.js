@@ -105,6 +105,8 @@
     const matDoor = new THREE.MeshStandardMaterial({ color: 0x5fd39a, roughness: 0.6, transparent: true, opacity: 0.35, depthWrite: false });
     const matFix = new THREE.MeshStandardMaterial({ color: 0xc8d2dc, roughness: 0.9 });
     const matRoof = new THREE.MeshStandardMaterial({ color: f.greenRoof ? new THREE.Color(0x5f8f4e) : new THREE.Color(f.wall).multiplyScalar(0.82), roughness: 0.95 });
+    const matYard = new THREE.MeshStandardMaterial({ color: 0x3e4955, roughness: 1 });
+    const matGreen = new THREE.MeshStandardMaterial({ color: 0x4f7a45, roughness: 1 });
     const edge = new THREE.LineBasicMaterial({ color: 0x1b2633, transparent: true, opacity: 0.45 });
     matRoom.opacity = 0.85;
     const roomMat = matRoom, massMat = f.glass ? matGlass : matRoom;
@@ -117,6 +119,17 @@
         if (e.type === "mass") {
           // A mass spans its levels; draw its part on this level so levels can be hidden one by one.
           lg.add(prism(e.outline_m, l.z_m, l.height_m, massMat, edge));
+        } else if (e.outdoor) {
+          // yards, aprons, gardens: flat ground, not a room
+          lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
+        } else if ((e.type === "room" || e.type === "zone") && e.full_height) {
+          // one tall hall through several levels: draw it once, from its lowest level to the top of its highest
+          const ls = (e.levels || []).map((id) => byId[id]).filter(Boolean).sort((a, c) => a.z_m - c.z_m);
+          if (ls[0] && ls[0].id === l.id) {
+            const top = ls[ls.length - 1].z_m + ls[ls.length - 1].height_m;
+            lg.add(prism(e.outline_m, l.z_m, 0.3, matSlab, null));
+            lg.add(prism(e.outline_m, l.z_m + 0.3, top - l.z_m - 0.3, roomMat, edge));
+          }
         } else if (e.type === "room" || e.type === "zone") {
           lg.add(prism(e.outline_m, l.z_m, 0.3, matSlab, null));                      // floor
           lg.add(prism(e.outline_m, l.z_m + 0.3, l.height_m - 0.3, roomMat, edge));   // room volume
@@ -136,7 +149,7 @@
     // Roof: on top of every element's highest level.
     const tops = {};
     for (const e of model.elements || []) {
-      if (!e.outline_m || !["room", "zone", "core", "mass"].includes(e.type)) continue;
+      if (!e.outline_m || e.outdoor || !["room", "zone", "core", "mass"].includes(e.type)) continue;
       const ls = (e.levels || [e.level]).map((id) => byId[id]).filter(Boolean);
       if (!ls.length) continue;
       const top = ls.reduce((a, c) => (c.z_m + c.height_m > a.z_m + a.height_m ? c : a));

@@ -863,7 +863,7 @@ function looksLike(uid, b) {
   const bits = [];
   const size = b.size_m ? dims(b.size_m[0], b.size_m[1]) : b.rect_km ? dims((b.rect_km[1] - b.rect_km[0]) * 1000, (b.rect_km[3] - b.rect_km[2]) * 1000) : "";
   const hf = [b.height_m != null ? `${len(b.height_m)} tall` : "", b.floors ? `${b.floors} floors` : ""].filter(Boolean).join(", ");
-  if (hf || size) bits.push(`<p>${esc([hf, size ? `on a ${size} footprint` : ""].filter(Boolean).join(", "))}.</p>`);
+  if (hf || size) bits.push(`<p>${esc([hf, size ? `on a ${size} lot` : ""].filter(Boolean).join(", "))}.</p>`);
   if (b.look) bits.push(`<p>${esc(firstSentences(b.look, 3, 420))}</p>`);
   if (b.structure) bits.push(`<p class="small muted">Built as: ${esc(firstSentences(b.structure, 1, 200))}</p>`);
   const plan = D.models && D.models[uid];
