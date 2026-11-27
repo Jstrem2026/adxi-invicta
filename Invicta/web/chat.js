@@ -118,7 +118,7 @@
       const keyIn = el("input");
       keyIn.type = "password";
       keyIn.autocomplete = "off";
-      keyIn.placeholder = "Helper key (only if Jordan gave you one)";
+      keyIn.placeholder = "Helper key, or Jordan's owner key";
       keyIn.value = localStorage.getItem(KEY_HELPER) || "";
       box.append(nameIn, keyIn, row);
       back.append(box);
@@ -128,6 +128,7 @@
         if (save) {
           localStorage.setItem(KEY_NAME, nameIn.value.trim());
           if (keyIn.value.trim()) localStorage.setItem(KEY_HELPER, keyIn.value.trim()); else localStorage.removeItem(KEY_HELPER);
+          setTimeout(whoami, 100);
         }
         localStorage.setItem(KEY_ASKED, "1");
         back.remove();
@@ -138,6 +139,18 @@
     });
   }
   btnName.onclick = askName;
+  // Show whether this browser is recognised as Jordan or a trusted helper (their changes go live at once).
+  const who = el("div", "chat-who");
+  title.append(who);
+  async function whoami() {
+    try {
+      const r = await fetch("/api/whoami", { headers: { "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" } });
+      const d = await r.json();
+      who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "";
+    } catch (e) { who.textContent = ""; }
+  }
+  whoami();
+  window.addEventListener("storage", whoami);
 
   // ---------- what the person is looking at ----------
   function current() {
@@ -255,7 +268,7 @@
     try {
       const r = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem(KEY_HELPER) || localStorage.getItem("adxi.adminKey") || "" },
+        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" },
         body: JSON.stringify({ messages: history, text, images: imgs, name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
       });
       if (!r.ok || !r.body) {

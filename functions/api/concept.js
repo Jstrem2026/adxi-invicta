@@ -3,7 +3,7 @@
 // POST {action: "delete", uid, file, label, name}              remove
 // Trusted helpers and Jordan (X-Helper-Key) go live at once; others go to /review.
 
-import { trustedHelper } from "../_lib/trusted.js";
+import { trustedFrom } from "../_lib/trusted.js";
 import { UID_RE, addConcept, removeConcept } from "../_lib/concepts.js";
 
 const MAX_BYTES = 4_000_000;
@@ -16,7 +16,7 @@ export async function onRequestPost({ request, env }) {
   const uid = String(body.uid || "");
   if (!UID_RE.test(uid)) return json({ error: "Unknown building." }, 400);
   const label = clean(body.label, 80) || uid;
-  const trusted = await trustedHelper(env, request.headers.get("X-Helper-Key") || "");
+  const trusted = await trustedFrom(env, request);
   const name = trusted || clean(body.name, 40) || "Anonymous helper";
 
   const day = new Date().toISOString().slice(0, 10);

@@ -18,7 +18,7 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 import { announce } from "../_lib/announce.js";
-import { trustedHelper } from "../_lib/trusted.js";
+import { trustedFrom } from "../_lib/trusted.js";
 import { UID_RE, addConcept, imageExt } from "../_lib/concepts.js";
 
 const MAX_TURNS = 12;               // tool-use rounds per message
@@ -166,7 +166,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   }
   const history = Array.isArray(body.messages) ? body.messages : [];
   const text = String(body.text || "").trim().slice(0, 4000);
-  const trusted = await trustedHelper(env, request.headers.get("X-Helper-Key") || "");
+  const trusted = await trustedFrom(env, request);
   const name = trusted || String(body.name || "").trim().slice(0, 60);
   const view = String(body.view || "").slice(0, 3000);
   // Images attached to this message (base64 JPEG/PNG/WebP), at most 3, each up to about 1.5 MB.

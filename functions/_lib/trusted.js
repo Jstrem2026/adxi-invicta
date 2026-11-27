@@ -24,3 +24,9 @@ export async function trustedHelper(env, key) {
   return null;
 }
 
+
+// Checks both headers the site sends: X-Helper-Key (a helper's key) and X-Admin-Key (Jordan's review key).
+export async function trustedFrom(env, request) {
+  return (await trustedHelper(env, request.headers.get("X-Helper-Key") || "")) ||
+    (await trustedHelper(env, request.headers.get("X-Admin-Key") || ""));
+}
