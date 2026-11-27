@@ -308,16 +308,16 @@ def keelway_timetable(speed_kmh=KEELWAY_SPEED_KMH, accel=KEELWAY_ACCEL_MS2,
 # with a skyglass wall to space (05 §2); the arrival hangar is a flank dock beside it
 # (04 §7.3: civilian ships dock at the Port of Arrivals flank docks).
 # Canon: Hall 600 x 200 m (05). Sizes marked "Jordan 21 Nov" were made canon on
-# 21 Nov 2026 (hangar sized for a ~30-40 m passenger shuttle). TUNE = placeholder.
+# 21 Nov 2026 (hangar sized for a ~30-40 m passenger shuttle). TUNE = placeholder; settled = kept as is by Jordan.
 ARRIVAL = {
     "frame": 43,                 # Hall centred on F43 (x 21.5 km)
     "hall_length_m": 600.0,      # canon (05): along the hull
     "hall_depth_m": 200.0,       # canon (05): inward from the hull wall
     "hall_height_m": 30.0,       # canon, Jordan 21 Nov (5 civic storeys of 6 m)
-    "hall_entrance_m": 30.0,     # TUNE: doorway from the Hall into the Port of Arrivals
-    "hall_entrance_height_m": 20.0,  # TUNE
-    "hall_to_hangar_door_m": 20.0,   # TUNE
-    "hall_to_hangar_door_height_m": 10.0,  # TUNE (below the 15 m hangar roof)
+    "hall_entrance_m": 30.0,     # settled (Jordan): doorway from the Hall into the Port of Arrivals
+    "hall_entrance_height_m": 20.0,  # settled (Jordan)
+    "hall_to_hangar_door_m": 20.0,   # settled (Jordan)
+    "hall_to_hangar_door_height_m": 10.0,  # settled (Jordan; below the 15 m hangar roof)
     "hangar_length_m": 80.0,     # canon, Jordan 21 Nov: on the bow side of the Hall
     "hangar_depth_m": 60.0,      # canon, Jordan 21 Nov
     "hangar_height_m": 15.0,     # canon, Jordan 21 Nov
@@ -325,20 +325,20 @@ ARRIVAL = {
     "dock_door_height_m": 10.0,  # canon, Jordan 21 Nov
     "wall_m": 2.0,               # graybox wall / roof thickness
     # Shuttle pad in the hangar (05 §2 canon look: burnt-orange markings, a ring of
-    # orange guide lights round the pad). Sizes are TUNE.
-    "pad_m": 40.0,               # TUNE: square pad for a ~30-40 m shuttle
-    "stripe_m": 0.4,             # TUNE: painted line width
-    "cross_arm_m": 8.0,          # TUNE: centre cross, each arm
-    "hold_line_m": 0.6,          # TUNE: hold line across the dock door
-    "hold_line_inset_m": 2.0,    # TUNE: hold line distance in from the hull face
+    # orange guide lights round the pad). Sizes are settled (Jordan).
+    "pad_m": 40.0,               # settled (Jordan): square pad for a ~30-40 m shuttle
+    "stripe_m": 0.4,             # settled (Jordan): painted line width
+    "cross_arm_m": 8.0,          # settled (Jordan): centre cross, each arm
+    "hold_line_m": 0.6,          # settled (Jordan): hold line across the dock door
+    "hold_line_inset_m": 2.0,    # settled (Jordan): hold line distance in from the hull face
     "guide_light_spacing_m": 4.0,  # 06 module grid (4 m)
-    "guide_light_m": 0.3,        # TUNE: flush floor light, square
+    "guide_light_m": 0.3,        # settled (Jordan): flush floor light, square
     # Hall of Arrivals finish (05 section 2 canon look: polished dark stone, amber light
-    # lines, bronze trims). Sizes are TUNE.
+    # lines, bronze trims). Sizes are settled (Jordan).
     "hall_storey_m": 6.0,        # light line at every civic storey (06 section 3: civic storey 6 m)
-    "light_line_m": 0.15,        # TUNE: height of a light line
-    "skirting_m": 0.3,           # TUNE: bronze skirting along the walls
-    "door_trim_m": 0.4,          # TUNE: bronze frame round each doorway
+    "light_line_m": 0.15,        # settled (Jordan): height of a light line
+    "skirting_m": 0.3,           # settled (Jordan): bronze skirting along the walls
+    "door_trim_m": 0.4,          # settled (Jordan): bronze frame round each doorway
     "guide_light_offset_m": 2.0,
     # Hangar structure (TUNE): steel roof trusses spanning the 60 m depth, columns,
     # a kick plate, the dock-door frame and high-bay lights.
@@ -354,7 +354,7 @@ ARRIVAL = {
     "door_jamb_d_m": 0.8,
     "high_bays_per_truss": 3,
     "high_bay_m": 0.8,
-    "high_bay_lux": 400.0,       # TUNE: working hangar floor (06 interiors EV100 6-9)   # TUNE: outside the pad line (keeps the 4 m spacing exact)
+    "high_bay_lux": 400.0,       # settled (Jordan): working hangar floor (06 interiors EV100 6-9)   # settled: outside the pad line (keeps the 4 m spacing exact)
 }
 
 
