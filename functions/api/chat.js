@@ -94,7 +94,7 @@ const TOOLS = [
       "so the footprint runs from (0,0) to (length, width) as in its rect_km. Levels have z_m (floor height above deck) and height_m. " +
       "Elements: room (outline_m polygon), wall (line_m [[x,y],[x,y]] + thickness_m), door / opening (line_m along a wall + width_m), " +
       "core (outline_m: stairs and lifts), mass (outline_m of a volume such as a tower). Every element has id, type, level (or levels), name, status. " +
-      "Use exact numbers; never guess. Only after the person agrees. Opens a proposal, or publishes at once for Jordan and trusted helpers.",
+      "Use exact numbers; never guess. For Jordan and Kylee, right away; for others, after they agree. Opens a proposal, or publishes at once for Jordan and trusted helpers.",
     input_schema: {
       type: "object",
       properties: {
@@ -116,7 +116,7 @@ const TOOLS = [
     description:
       "Change fields of ONE building in a precinct data file (Invicta/data/decks/D<n>/<district>.json) without rewriting the file. " +
       "Use it for architecture details (height_m, floors, structure, entrances, look, capacity, services, interior), notes, name, size_text or status. " +
-      "Data stores metric (height_m in metres). Text fields may give US units first with metric alongside. Only call it after the person agrees. " +
+      "Data stores metric (height_m in metres). Text fields may give US units first with metric alongside. For Jordan and Kylee, call it right away; for others, after they agree. " +
       "It opens a proposal, or publishes at once for trusted helpers.",
     input_schema: {
       type: "object",
@@ -136,7 +136,7 @@ const TOOLS = [
     description:
       "Open a proposal (a GitHub pull request) that Jordan reviews. Give the FULL new content of every file you change. " +
       "Files under Game/Docs/ are copied to Docs/2_Design_Docs/ automatically. Canon (Docs/1_Canon_Source) can't be changed: " +
-      "propose an entry in Game/Docs/02_Canon_Errata.md instead. Only call this after the person has agreed to the change.",
+      "propose an entry in Game/Docs/02_Canon_Errata.md instead. For Jordan and Kylee, call it right away; for others, after they agree.",
     input_schema: {
       type: "object",
       properties: {
@@ -162,7 +162,7 @@ const BASE_RULES = `You are Claude, working with the public on ADXI: Invicta, th
 
 Who you are talking to: each message says who it is. Jordan is the owner and lead designer; Kylee and other trusted helpers work with him. Everyone else is a member of the public helping. Be plain and brief, and treat this as real design work: work out exact numbers, check them against the data, and do the work. Don't list limitations or say what you can't do unless a tool actually failed.
 
-What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with update_building (one building's fields) or propose_change (whole files). For Jordan and trusted helpers, a change is committed to GitHub and published at once: when they say go, make it; there is no review step for them. For everyone else the change becomes a proposal Jordan reviews. After a change, say plainly what the tool result says (published, or waiting for Jordan).
+What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with update_building (one building's fields) or propose_change (whole files). For Jordan and Kylee (recognised, see each message), never ask for confirmation: when they ask for a change, make it straight away with the tools; it is committed and published at once, then tell them what changed. For everyone else, confirm the change with them first; it then becomes a proposal that Jordan or Kylee approves. After a change, say plainly what the tool result says (published, or waiting for Jordan).
 
 Rules you must follow (from the project's CLAUDE.md, included below):
 - Never invent anything that has not been designed and isn't being designed in this conversation. If something isn't designed yet, say so.
@@ -217,7 +217,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const gh = github(env);
   const system = await systemPrompt(gh);
   const inView = await viewDetails(gh, view);
-  const nameNote = trusted ? ` (recognised as ${trusted}: agreed changes are committed and published right away, no review)`
+  const nameNote = trusted ? ` (recognised as ${trusted}: make their changes immediately, no confirmation, no review)`
     : /jordan|kylee/i.test(name) ? " (NOT recognised: their changes will go to review. Tell them once, in one line: click Name in the chat and paste your owner or helper key so your changes go live.)" : "";
   const messages = [
     ...history,

@@ -45,9 +45,9 @@
 
   function login(error) {
     app.innerHTML = `<div class="login card"><h2>Owner review</h2>
-      <p class="muted">Enter your review key (the ADMIN_KEY you set in Cloudflare). It stays in this browser only.</p>
+      <p class="muted">Jordan or Kylee: enter your password. It stays in this browser only.</p>
       ${error ? `<div class="msg err">${esc(error)}</div>` : ""}
-      <form id="f"><input id="k" type="password" autocomplete="current-password" placeholder="Review key"><button class="ok">Open</button></form></div>`;
+      <form id="f"><input id="k" type="password" autocomplete="current-password" placeholder="Password"><button class="ok">Open</button></form></div>`;
     document.getElementById("f").onsubmit = (e) => {
       e.preventDefault();
       localStorage.setItem(KEY, document.getElementById("k").value.trim());

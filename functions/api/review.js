@@ -6,10 +6,13 @@
 //   POST /api/review {number, action, note}  action = "approve" (merge) or "reject" (close)
 
 import { announce } from "../_lib/announce.js";
+import { trustedHelper } from "../_lib/trusted.js";
 
 export async function onRequest({ request, env }) {
-  if (!env.ADMIN_KEY || !env.GITHUB_TOKEN || !env.GITHUB_REPO) return json({ error: "Review isn't set up yet." }, 503);
-  if (!(await sameKey(request.headers.get("X-Admin-Key") || "", env.ADMIN_KEY))) return json({ error: "Wrong key." }, 403);
+  if (!env.GITHUB_TOKEN || !env.GITHUB_REPO) return json({ error: "Review isn't set up yet." }, 503);
+  // Jordan's key or a trusted helper's (Kylee) opens the review page.
+  const reviewer = await trustedHelper(env, request.headers.get("X-Admin-Key") || "");
+  if (!reviewer) return json({ error: "Wrong key." }, 403);
   const gh = github(env);
   try {
     if (request.method === "GET") return json(await list(gh));
@@ -21,18 +24,18 @@ export async function onRequest({ request, env }) {
       const pr = await gh.call("GET", `pulls/${number}`);
       if (pr.state !== "open") return json({ error: "That proposal is already closed." }, 409);
       if (body.action === "approve") {
-        if (note) await gh.call("POST", `issues/${number}/comments`, { body: note });
+        if (note) await gh.call("POST", `issues/${number}/comments`, { body: `${note}\n\n(${reviewer})` });
         const m = await gh.call("PUT", `pulls/${number}/merge`, { merge_method: "squash", commit_title: `${pr.title} (#${number})` });
         if (!m.merged) return json({ error: m.message || "GitHub didn't merge it." }, 409);
         await deleteBranch(gh, pr);
-        try { await announce(env, "Jordan", `approved: ${pr.title}`, pr.html_url); } catch (e) { /* optional */ }
-        return json({ ok: true, merged: true });
+        try { await announce(env, reviewer, `approved: ${pr.title}`, pr.html_url); } catch (e) { /* optional */ }
+        return json({ ok: true, merged: true, by: reviewer });
       }
       if (body.action === "reject") {
-        await gh.call("POST", `issues/${number}/comments`, { body: note || "Thanks for the idea. Jordan decided not to use this one." });
+        await gh.call("POST", `issues/${number}/comments`, { body: (note || "Thanks for the idea. We decided not to use this one.") + `\n\n(${reviewer})` });
         await gh.call("PATCH", `pulls/${number}`, { state: "closed" });
         await deleteBranch(gh, pr);
-        try { await announce(env, "Jordan", `passed on: ${pr.title}`, pr.html_url); } catch (e) { /* optional */ }
+        try { await announce(env, reviewer, `passed on: ${pr.title}`, pr.html_url); } catch (e) { /* optional */ }
         return json({ ok: true, closed: true });
       }
       return json({ error: "Unknown action." }, 400);
