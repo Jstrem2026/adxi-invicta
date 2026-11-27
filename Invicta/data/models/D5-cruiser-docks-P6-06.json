@@ -1,0 +1,7096 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P6-06",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  235.0,
+  204.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Vehicle yard",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.0,
+     182.0
+    ],
+    [
+     22.0,
+     182.0
+    ],
+    [
+     22.0,
+     43.5
+    ],
+    [
+     82.6,
+     40.4
+    ],
+    [
+     147.8,
+     34.4
+    ],
+    [
+     213.0,
+     25.3
+    ]
+   ],
+   "about": "Patrol cars and bikes park here.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.5,
+     194.5
+    ],
+    [
+     103.8,
+     194.5
+    ],
+    [
+     104.2,
+     191.5
+    ],
+    [
+     222.5,
+     191.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.8,
+     194.5
+    ],
+    [
+     9.5,
+     194.5
+    ],
+    [
+     9.5,
+     167.0
+    ],
+    [
+     12.5,
+     165.0
+    ],
+    [
+     12.5,
+     191.5
+    ],
+    [
+     104.2,
+     191.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     167.0
+    ],
+    [
+     9.5,
+     44.8
+    ],
+    [
+     12.5,
+     47.2
+    ],
+    [
+     12.5,
+     165.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     44.8
+    ],
+    [
+     9.5,
+     31.6
+    ],
+    [
+     81.7,
+     28.0
+    ],
+    [
+     117.7,
+     24.6
+    ],
+    [
+     118.0,
+     27.6
+    ],
+    [
+     81.9,
+     31.0
+    ],
+    [
+     12.5,
+     34.5
+    ],
+    [
+     12.5,
+     47.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.7,
+     24.6
+    ],
+    [
+     146.4,
+     21.9
+    ],
+    [
+     225.5,
+     10.9
+    ],
+    [
+     225.5,
+     24.1
+    ],
+    [
+     222.5,
+     27.1
+    ],
+    [
+     222.5,
+     14.4
+    ],
+    [
+     146.7,
+     24.9
+    ],
+    [
+     118.0,
+     27.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.5,
+     24.1
+    ],
+    [
+     225.5,
+     146.2
+    ],
+    [
+     222.5,
+     144.9
+    ],
+    [
+     222.5,
+     27.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     225.5,
+     146.2
+    ],
+    [
+     225.5,
+     194.5
+    ],
+    [
+     222.5,
+     191.5
+    ],
+    [
+     222.5,
+     144.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     189.2,
+     191.5
+    ],
+    [
+     180.8,
+     191.5
+    ],
+    [
+     175.1,
+     182.0
+    ],
+    [
+     182.7,
+     182.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     114.1,
+     191.5
+    ],
+    [
+     105.7,
+     191.5
+    ],
+    [
+     106.8,
+     182.0
+    ],
+    [
+     114.4,
+     182.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     39.0,
+     191.5
+    ],
+    [
+     30.6,
+     191.5
+    ],
+    [
+     38.5,
+     182.0
+    ],
+    [
+     46.1,
+     182.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     142.2
+    ],
+    [
+     12.5,
+     133.7
+    ],
+    [
+     22.0,
+     131.1
+    ],
+    [
+     22.0,
+     138.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     66.1
+    ],
+    [
+     12.5,
+     57.6
+    ],
+    [
+     22.0,
+     63.9
+    ],
+    [
+     22.0,
+     71.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     57.2,
+     32.2
+    ],
+    [
+     65.8,
+     31.8
+    ],
+    [
+     68.5,
+     41.2
+    ],
+    [
+     61.1,
+     41.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     130.1,
+     26.5
+    ],
+    [
+     138.0,
+     25.7
+    ],
+    [
+     139.1,
+     35.2
+    ],
+    [
+     131.1,
+     35.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     205.2,
+     16.8
+    ],
+    [
+     213.7,
+     15.6
+    ],
+    [
+     205.4,
+     26.3
+    ],
+    [
+     198.1,
+     27.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     222.5,
+     73.2
+    ],
+    [
+     222.5,
+     81.7
+    ],
+    [
+     213.0,
+     84.8
+    ],
+    [
+     213.0,
+     77.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     222.5,
+     149.2
+    ],
+    [
+     222.5,
+     157.7
+    ],
+    [
+     213.0,
+     152.1
+    ],
+    [
+     213.0,
+     144.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Front counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     204.0
+    ],
+    [
+     228.4,
+     204.0
+    ],
+    [
+     219.5,
+     194.5
+    ],
+    [
+     225.5,
+     194.5
+    ]
+   ],
+   "about": "The public report crimes and lost property.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Custody suite",
+   "level": "L1",
+   "outline_m": [
+    [
+     228.4,
+     204.0
+    ],
+    [
+     206.5,
+     204.0
+    ],
+    [
+     199.3,
+     194.5
+    ],
+    [
+     219.5,
+     194.5
+    ]
+   ],
+   "about": "Cells and interview rooms.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Interview room",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.5,
+     204.0
+    ],
+    [
+     203.0,
+     204.0
+    ],
+    [
+     196.1,
+     194.5
+    ],
+    [
+     199.3,
+     194.5
+    ]
+   ],
+   "about": "Suspects and witnesses are interviewed.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Interview room",
+   "level": "L1",
+   "outline_m": [
+    [
+     203.0,
+     204.0
+    ],
+    [
+     199.5,
+     204.0
+    ],
+    [
+     192.9,
+     194.5
+    ],
+    [
+     196.1,
+     194.5
+    ]
+   ],
+   "about": "Suspects and witnesses are interviewed.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Interview room",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.5,
+     204.0
+    ],
+    [
+     196.1,
+     204.0
+    ],
+    [
+     189.7,
+     194.5
+    ],
+    [
+     192.9,
+     194.5
+    ]
+   ],
+   "about": "Suspects and witnesses are interviewed.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Interview room",
+   "level": "L1",
+   "outline_m": [
+    [
+     196.1,
+     204.0
+    ],
+    [
+     192.6,
+     204.0
+    ],
+    [
+     186.5,
+     194.5
+    ],
+    [
+     189.7,
+     194.5
+    ]
+   ],
+   "about": "Suspects and witnesses are interviewed.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Evidence store",
+   "level": "L1",
+   "outline_m": [
+    [
+     192.6,
+     204.0
+    ],
+    [
+     186.0,
+     204.0
+    ],
+    [
+     180.5,
+     194.5
+    ],
+    [
+     186.5,
+     194.5
+    ]
+   ],
+   "about": "Locked evidence.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.0,
+     204.0
+    ],
+    [
+     177.3,
+     204.0
+    ],
+    [
+     172.4,
+     194.5
+    ],
+    [
+     180.5,
+     194.5
+    ]
+   ],
+   "about": "Officers watch dock cameras.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Locker room",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.3,
+     204.0
+    ],
+    [
+     167.4,
+     204.0
+    ],
+    [
+     163.4,
+     194.5
+    ],
+    [
+     172.4,
+     194.5
+    ]
+   ],
+   "about": "Lockers and changing benches for staff arriving for their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.4,
+     204.0
+    ],
+    [
+     160.8,
+     204.0
+    ],
+    [
+     157.3,
+     194.5
+    ],
+    [
+     163.4,
+     194.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.8,
+     204.0
+    ],
+    [
+     141.1,
+     204.0
+    ],
+    [
+     139.2,
+     194.5
+    ],
+    [
+     157.3,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.1,
+     204.0
+    ],
+    [
+     121.3,
+     204.0
+    ],
+    [
+     121.0,
+     194.5
+    ],
+    [
+     139.2,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.3,
+     204.0
+    ],
+    [
+     101.6,
+     204.0
+    ],
+    [
+     102.9,
+     194.5
+    ],
+    [
+     121.0,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.6,
+     204.0
+    ],
+    [
+     81.8,
+     204.0
+    ],
+    [
+     84.7,
+     194.5
+    ],
+    [
+     102.9,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.8,
+     204.0
+    ],
+    [
+     62.1,
+     204.0
+    ],
+    [
+     66.6,
+     194.5
+    ],
+    [
+     84.7,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.1,
+     204.0
+    ],
+    [
+     42.3,
+     204.0
+    ],
+    [
+     48.4,
+     194.5
+    ],
+    [
+     66.6,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.3,
+     204.0
+    ],
+    [
+     22.6,
+     204.0
+    ],
+    [
+     30.3,
+     194.5
+    ],
+    [
+     48.4,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.6,
+     204.0
+    ],
+    [
+     2.8,
+     204.0
+    ],
+    [
+     12.1,
+     194.5
+    ],
+    [
+     30.3,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.8,
+     204.0
+    ],
+    [
+     0.0,
+     204.0
+    ],
+    [
+     0.0,
+     186.9
+    ],
+    [
+     9.5,
+     179.2
+    ],
+    [
+     9.5,
+     194.5
+    ],
+    [
+     12.1,
+     194.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     186.9
+    ],
+    [
+     0.0,
+     166.9
+    ],
+    [
+     9.5,
+     161.2
+    ],
+    [
+     9.5,
+     179.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     166.9
+    ],
+    [
+     0.0,
+     147.0
+    ],
+    [
+     9.5,
+     143.3
+    ],
+    [
+     9.5,
+     161.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     147.0
+    ],
+    [
+     0.0,
+     127.0
+    ],
+    [
+     9.5,
+     125.4
+    ],
+    [
+     9.5,
+     143.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     127.0
+    ],
+    [
+     0.0,
+     107.0
+    ],
+    [
+     9.5,
+     107.4
+    ],
+    [
+     9.5,
+     125.4
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     107.0
+    ],
+    [
+     0.0,
+     87.1
+    ],
+    [
+     9.5,
+     89.5
+    ],
+    [
+     9.5,
+     107.4
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     87.1
+    ],
+    [
+     0.0,
+     67.1
+    ],
+    [
+     9.5,
+     71.6
+    ],
+    [
+     9.5,
+     89.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     67.1
+    ],
+    [
+     0.0,
+     47.1
+    ],
+    [
+     9.5,
+     53.7
+    ],
+    [
+     9.5,
+     71.6
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     47.1
+    ],
+    [
+     0.0,
+     27.2
+    ],
+    [
+     9.5,
+     35.7
+    ],
+    [
+     9.5,
+     53.7
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     27.2
+    ],
+    [
+     0.0,
+     22.6
+    ],
+    [
+     15.4,
+     21.8
+    ],
+    [
+     23.3,
+     30.9
+    ],
+    [
+     9.5,
+     31.6
+    ],
+    [
+     9.5,
+     35.7
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.4,
+     21.8
+    ],
+    [
+     35.4,
+     20.8
+    ],
+    [
+     41.1,
+     30.0
+    ],
+    [
+     23.3,
+     30.9
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.4,
+     20.8
+    ],
+    [
+     55.5,
+     19.8
+    ],
+    [
+     58.9,
+     29.1
+    ],
+    [
+     41.1,
+     30.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.5,
+     19.8
+    ],
+    [
+     75.5,
+     18.8
+    ],
+    [
+     76.8,
+     28.2
+    ],
+    [
+     58.9,
+     29.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.5,
+     18.8
+    ],
+    [
+     81.0,
+     18.5
+    ],
+    [
+     94.6,
+     17.2
+    ],
+    [
+     95.4,
+     26.7
+    ],
+    [
+     81.7,
+     28.0
+    ],
+    [
+     76.8,
+     28.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.6,
+     17.2
+    ],
+    [
+     113.4,
+     15.5
+    ],
+    [
+     114.3,
+     24.9
+    ],
+    [
+     95.4,
+     26.7
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.4,
+     15.5
+    ],
+    [
+     132.2,
+     13.7
+    ],
+    [
+     133.2,
+     23.2
+    ],
+    [
+     114.3,
+     24.9
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.2,
+     13.7
+    ],
+    [
+     145.3,
+     12.5
+    ],
+    [
+     151.4,
+     11.7
+    ],
+    [
+     151.8,
+     21.2
+    ],
+    [
+     146.4,
+     21.9
+    ],
+    [
+     133.2,
+     23.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.4,
+     11.7
+    ],
+    [
+     171.3,
+     8.9
+    ],
+    [
+     169.3,
+     18.7
+    ],
+    [
+     151.8,
+     21.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.3,
+     8.9
+    ],
+    [
+     191.3,
+     6.1
+    ],
+    [
+     186.9,
+     16.3
+    ],
+    [
+     169.3,
+     18.7
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     191.3,
+     6.1
+    ],
+    [
+     211.2,
+     3.3
+    ],
+    [
+     204.5,
+     13.8
+    ],
+    [
+     186.9,
+     16.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     211.2,
+     3.3
+    ],
+    [
+     231.1,
+     0.5
+    ],
+    [
+     222.1,
+     11.4
+    ],
+    [
+     204.5,
+     13.8
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     231.1,
+     0.5
+    ],
+    [
+     235.0,
+     0.0
+    ],
+    [
+     235.0,
+     16.1
+    ],
+    [
+     225.5,
+     25.4
+    ],
+    [
+     225.5,
+     10.9
+    ],
+    [
+     222.1,
+     11.4
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     16.1
+    ],
+    [
+     235.0,
+     36.0
+    ],
+    [
+     225.5,
+     43.3
+    ],
+    [
+     225.5,
+     25.4
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     36.0
+    ],
+    [
+     235.0,
+     56.0
+    ],
+    [
+     225.5,
+     61.3
+    ],
+    [
+     225.5,
+     43.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     56.0
+    ],
+    [
+     235.0,
+     75.9
+    ],
+    [
+     225.5,
+     79.2
+    ],
+    [
+     225.5,
+     61.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     75.9
+    ],
+    [
+     235.0,
+     95.9
+    ],
+    [
+     225.5,
+     97.2
+    ],
+    [
+     225.5,
+     79.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     95.9
+    ],
+    [
+     235.0,
+     115.8
+    ],
+    [
+     225.5,
+     115.1
+    ],
+    [
+     225.5,
+     97.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     115.8
+    ],
+    [
+     235.0,
+     135.8
+    ],
+    [
+     225.5,
+     133.1
+    ],
+    [
+     225.5,
+     115.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     135.8
+    ],
+    [
+     235.0,
+     155.7
+    ],
+    [
+     225.5,
+     151.0
+    ],
+    [
+     225.5,
+     133.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     155.7
+    ],
+    [
+     235.0,
+     175.7
+    ],
+    [
+     225.5,
+     169.0
+    ],
+    [
+     225.5,
+     151.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.0,
+     175.7
+    ],
+    [
+     235.0,
+     204.0
+    ],
+    [
+     225.5,
+     194.5
+    ],
+    [
+     225.5,
+     169.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     191.5
+    ],
+    [
+     202.7,
+     191.5
+    ],
+    [
+     195.0,
+     182.0
+    ],
+    [
+     213.0,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.7,
+     191.5
+    ],
+    [
+     189.2,
+     191.5
+    ],
+    [
+     182.7,
+     182.0
+    ],
+    [
+     195.0,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.8,
+     191.5
+    ],
+    [
+     160.9,
+     191.5
+    ],
+    [
+     157.0,
+     182.0
+    ],
+    [
+     175.1,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.9,
+     191.5
+    ],
+    [
+     141.1,
+     191.5
+    ],
+    [
+     139.0,
+     182.0
+    ],
+    [
+     157.0,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.1,
+     191.5
+    ],
+    [
+     114.1,
+     191.5
+    ],
+    [
+     114.4,
+     182.0
+    ],
+    [
+     139.0,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.7,
+     191.5
+    ],
+    [
+     85.9,
+     191.5
+    ],
+    [
+     88.7,
+     182.0
+    ],
+    [
+     106.8,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.9,
+     191.5
+    ],
+    [
+     66.0,
+     191.5
+    ],
+    [
+     70.7,
+     182.0
+    ],
+    [
+     88.7,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.0,
+     191.5
+    ],
+    [
+     39.0,
+     191.5
+    ],
+    [
+     46.1,
+     182.0
+    ],
+    [
+     70.7,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.6,
+     191.5
+    ],
+    [
+     12.5,
+     191.5
+    ],
+    [
+     12.5,
+     189.8
+    ],
+    [
+     22.0,
+     180.5
+    ],
+    [
+     22.0,
+     182.0
+    ],
+    [
+     38.5,
+     182.0
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     189.8
+    ],
+    [
+     12.5,
+     169.6
+    ],
+    [
+     22.0,
+     162.7
+    ],
+    [
+     22.0,
+     180.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     169.6
+    ],
+    [
+     12.5,
+     142.2
+    ],
+    [
+     22.0,
+     138.6
+    ],
+    [
+     22.0,
+     162.7
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     133.7
+    ],
+    [
+     12.5,
+     113.6
+    ],
+    [
+     22.0,
+     113.3
+    ],
+    [
+     22.0,
+     131.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     113.6
+    ],
+    [
+     12.5,
+     93.5
+    ],
+    [
+     22.0,
+     95.5
+    ],
+    [
+     22.0,
+     113.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     93.5
+    ],
+    [
+     12.5,
+     66.1
+    ],
+    [
+     22.0,
+     71.4
+    ],
+    [
+     22.0,
+     95.5
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     57.6
+    ],
+    [
+     12.5,
+     37.4
+    ],
+    [
+     22.0,
+     46.1
+    ],
+    [
+     22.0,
+     63.9
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     37.4
+    ],
+    [
+     12.5,
+     34.5
+    ],
+    [
+     29.7,
+     33.6
+    ],
+    [
+     37.1,
+     42.8
+    ],
+    [
+     22.0,
+     43.5
+    ],
+    [
+     22.0,
+     46.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.7,
+     33.6
+    ],
+    [
+     57.2,
+     32.2
+    ],
+    [
+     61.1,
+     41.5
+    ],
+    [
+     37.1,
+     42.8
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     65.8,
+     31.8
+    ],
+    [
+     81.9,
+     31.0
+    ],
+    [
+     85.7,
+     30.6
+    ],
+    [
+     86.4,
+     40.1
+    ],
+    [
+     82.6,
+     40.4
+    ],
+    [
+     68.5,
+     41.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.7,
+     30.6
+    ],
+    [
+     104.5,
+     28.9
+    ],
+    [
+     105.3,
+     38.3
+    ],
+    [
+     86.4,
+     40.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.5,
+     28.9
+    ],
+    [
+     130.1,
+     26.5
+    ],
+    [
+     131.1,
+     35.9
+    ],
+    [
+     105.3,
+     38.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     138.0,
+     25.7
+    ],
+    [
+     146.7,
+     24.9
+    ],
+    [
+     157.6,
+     23.4
+    ],
+    [
+     157.1,
+     33.1
+    ],
+    [
+     147.8,
+     34.4
+    ],
+    [
+     139.1,
+     35.2
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.6,
+     23.4
+    ],
+    [
+     177.7,
+     20.6
+    ],
+    [
+     174.5,
+     30.6
+    ],
+    [
+     157.1,
+     33.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.7,
+     20.6
+    ],
+    [
+     205.2,
+     16.8
+    ],
+    [
+     198.1,
+     27.4
+    ],
+    [
+     174.5,
+     30.6
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.7,
+     15.6
+    ],
+    [
+     222.5,
+     14.4
+    ],
+    [
+     222.5,
+     25.7
+    ],
+    [
+     213.0,
+     35.3
+    ],
+    [
+     213.0,
+     25.3
+    ],
+    [
+     205.4,
+     26.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     25.7
+    ],
+    [
+     222.5,
+     45.8
+    ],
+    [
+     213.0,
+     53.1
+    ],
+    [
+     213.0,
+     35.3
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     45.8
+    ],
+    [
+     222.5,
+     73.2
+    ],
+    [
+     213.0,
+     77.3
+    ],
+    [
+     213.0,
+     53.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     81.7
+    ],
+    [
+     222.5,
+     101.8
+    ],
+    [
+     213.0,
+     102.6
+    ],
+    [
+     213.0,
+     84.8
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     101.8
+    ],
+    [
+     222.5,
+     121.9
+    ],
+    [
+     213.0,
+     120.4
+    ],
+    [
+     213.0,
+     102.6
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     121.9
+    ],
+    [
+     222.5,
+     149.2
+    ],
+    [
+     213.0,
+     144.6
+    ],
+    [
+     213.0,
+     120.4
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     157.7
+    ],
+    [
+     222.5,
+     177.8
+    ],
+    [
+     213.0,
+     169.9
+    ],
+    [
+     213.0,
+     152.1
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Patrol room",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.5,
+     177.8
+    ],
+    [
+     222.5,
+     191.5
+    ],
+    [
+     213.0,
+     182.0
+    ],
+    [
+     213.0,
+     169.9
+    ]
+   ],
+   "about": "Officers prepare for patrol.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.5,
+     194.5
+    ],
+    [
+     103.8,
+     194.5
+    ],
+    [
+     104.2,
+     191.5
+    ],
+    [
+     222.5,
+     191.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.8,
+     194.5
+    ],
+    [
+     9.5,
+     194.5
+    ],
+    [
+     9.5,
+     167.0
+    ],
+    [
+     12.5,
+     165.0
+    ],
+    [
+     12.5,
+     191.5
+    ],
+    [
+     104.2,
+     191.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     167.0
+    ],
+    [
+     9.5,
+     44.8
+    ],
+    [
+     12.5,
+     47.2
+    ],
+    [
+     12.5,
+     165.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     44.8
+    ],
+    [
+     9.5,
+     31.6
+    ],
+    [
+     81.7,
+     28.0
+    ],
+    [
+     117.7,
+     24.6
+    ],
+    [
+     118.0,
+     27.6
+    ],
+    [
+     81.9,
+     31.0
+    ],
+    [
+     12.5,
+     34.5
+    ],
+    [
+     12.5,
+     47.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     117.7,
+     24.6
+    ],
+    [
+     146.4,
+     21.9
+    ],
+    [
+     225.5,
+     10.9
+    ],
+    [
+     225.5,
+     24.1
+    ],
+    [
+     222.5,
+     27.1
+    ],
+    [
+     222.5,
+     14.4
+    ],
+    [
+     146.7,
+     24.9
+    ],
+    [
+     118.0,
+     27.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.5,
+     24.1
+    ],
+    [
+     225.5,
+     146.2
+    ],
+    [
+     222.5,
+     144.9
+    ],
+    [
+     222.5,
+     27.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     225.5,
+     146.2
+    ],
+    [
+     225.5,
+     194.5
+    ],
+    [
+     222.5,
+     191.5
+    ],
+    [
+     222.5,
+     144.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Detectives' office",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     204.0
+    ],
+    [
+     218.5,
+     204.0
+    ],
+    [
+     210.4,
+     194.5
+    ],
+    [
+     225.5,
+     194.5
+    ]
+   ],
+   "about": "Investigates dock theft and smuggling.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Briefing room",
+   "level": "L2",
+   "outline_m": [
+    [
+     218.5,
+     204.0
+    ],
+    [
+     212.0,
+     204.0
+    ],
+    [
+     204.3,
+     194.5
+    ],
+    [
+     210.4,
+     194.5
+    ]
+   ],
+   "about": "Shift briefings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     212.0,
+     204.0
+    ],
+    [
+     208.5,
+     204.0
+    ],
+    [
+     201.1,
+     194.5
+    ],
+    [
+     204.3,
+     194.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     208.5,
+     204.0
+    ],
+    [
+     200.8,
+     204.0
+    ],
+    [
+     194.1,
+     194.5
+    ],
+    [
+     201.1,
+     194.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     200.8,
+     204.0
+    ],
+    [
+     190.9,
+     204.0
+    ],
+    [
+     185.0,
+     194.5
+    ],
+    [
+     194.1,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     190.9,
+     204.0
+    ],
+    [
+     181.1,
+     204.0
+    ],
+    [
+     175.9,
+     194.5
+    ],
+    [
+     185.0,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     181.1,
+     204.0
+    ],
+    [
+     171.2,
+     204.0
+    ],
+    [
+     166.9,
+     194.5
+    ],
+    [
+     175.9,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.2,
+     204.0
+    ],
+    [
+     161.3,
+     204.0
+    ],
+    [
+     157.8,
+     194.5
+    ],
+    [
+     166.9,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.3,
+     204.0
+    ],
+    [
+     151.5,
+     204.0
+    ],
+    [
+     148.7,
+     194.5
+    ],
+    [
+     157.8,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.5,
+     204.0
+    ],
+    [
+     141.6,
+     204.0
+    ],
+    [
+     139.6,
+     194.5
+    ],
+    [
+     148.7,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     141.6,
+     204.0
+    ],
+    [
+     131.7,
+     204.0
+    ],
+    [
+     130.6,
+     194.5
+    ],
+    [
+     139.6,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     131.7,
+     204.0
+    ],
+    [
+     121.8,
+     204.0
+    ],
+    [
+     121.5,
+     194.5
+    ],
+    [
+     130.6,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     121.8,
+     204.0
+    ],
+    [
+     112.0,
+     204.0
+    ],
+    [
+     112.4,
+     194.5
+    ],
+    [
+     121.5,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     112.0,
+     204.0
+    ],
+    [
+     102.1,
+     204.0
+    ],
+    [
+     103.3,
+     194.5
+    ],
+    [
+     112.4,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     102.1,
+     204.0
+    ],
+    [
+     92.2,
+     204.0
+    ],
+    [
+     94.3,
+     194.5
+    ],
+    [
+     103.3,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.2,
+     204.0
+    ],
+    [
+     82.3,
+     204.0
+    ],
+    [
+     85.2,
+     194.5
+    ],
+    [
+     94.3,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     82.3,
+     204.0
+    ],
+    [
+     72.5,
+     204.0
+    ],
+    [
+     76.1,
+     194.5
+    ],
+    [
+     85.2,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     72.5,
+     204.0
+    ],
+    [
+     62.6,
+     204.0
+    ],
+    [
+     67.0,
+     194.5
+    ],
+    [
+     76.1,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     62.6,
+     204.0
+    ],
+    [
+     52.7,
+     204.0
+    ],
+    [
+     58.0,
+     194.5
+    ],
+    [
+     67.0,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     52.7,
+     204.0
+    ],
+    [
+     42.9,
+     204.0
+    ],
+    [
+     48.9,
+     194.5
+    ],
+    [
+     58.0,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     42.9,
+     204.0
+    ],
+    [
+     33.0,
+     204.0
+    ],
+    [
+     39.8,
+     194.5
+    ],
+    [
+     48.9,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.0,
+     204.0
+    ],
+    [
+     23.1,
+     204.0
+    ],
+    [
+     30.7,
+     194.5
+    ],
+    [
+     39.8,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.1,
+     204.0
+    ],
+    [
+     13.2,
+     204.0
+    ],
+    [
+     21.7,
+     194.5
+    ],
+    [
+     30.7,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.2,
+     204.0
+    ],
+    [
+     3.4,
+     204.0
+    ],
+    [
+     12.6,
+     194.5
+    ],
+    [
+     21.7,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     3.4,
+     204.0
+    ],
+    [
+     0.0,
+     204.0
+    ],
+    [
+     0.0,
+     197.4
+    ],
+    [
+     9.5,
+     188.6
+    ],
+    [
+     9.5,
+     194.5
+    ],
+    [
+     12.6,
+     194.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     197.4
+    ],
+    [
+     0.0,
+     187.4
+    ],
+    [
+     9.5,
+     179.6
+    ],
+    [
+     9.5,
+     188.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     187.4
+    ],
+    [
+     0.0,
+     177.5
+    ],
+    [
+     9.5,
+     170.7
+    ],
+    [
+     9.5,
+     179.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     177.5
+    ],
+    [
+     0.0,
+     167.5
+    ],
+    [
+     9.5,
+     161.7
+    ],
+    [
+     9.5,
+     170.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     167.5
+    ],
+    [
+     0.0,
+     157.5
+    ],
+    [
+     9.5,
+     152.7
+    ],
+    [
+     9.5,
+     161.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     157.5
+    ],
+    [
+     0.0,
+     147.5
+    ],
+    [
+     9.5,
+     143.8
+    ],
+    [
+     9.5,
+     152.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     147.5
+    ],
+    [
+     0.0,
+     137.5
+    ],
+    [
+     9.5,
+     134.8
+    ],
+    [
+     9.5,
+     143.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     137.5
+    ],
+    [
+     0.0,
+     127.5
+    ],
+    [
+     9.5,
+     125.8
+    ],
+    [
+     9.5,
+     134.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     127.5
+    ],
+    [
+     0.0,
+     117.5
+    ],
+    [
+     9.5,
+     116.9
+    ],
+    [
+     9.5,
+     125.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     117.5
+    ],
+    [
+     0.0,
+     107.6
+    ],
+    [
+     9.5,
+     107.9
+    ],
+    [
+     9.5,
+     116.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     107.6
+    ],
+    [
+     0.0,
+     97.6
+    ],
+    [
+     9.5,
+     99.0
+    ],
+    [
+     9.5,
+     107.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     97.6
+    ],
+    [
+     0.0,
+     87.6
+    ],
+    [
+     9.5,
+     90.0
+    ],
+    [
+     9.5,
+     99.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     87.6
+    ],
+    [
+     0.0,
+     77.6
+    ],
+    [
+     9.5,
+     81.0
+    ],
+    [
+     9.5,
+     90.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     77.6
+    ],
+    [
+     0.0,
+     67.6
+    ],
+    [
+     9.5,
+     72.1
+    ],
+    [
+     9.5,
+     81.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     67.6
+    ],
+    [
+     0.0,
+     57.6
+    ],
+    [
+     9.5,
+     63.1
+    ],
+    [
+     9.5,
+     72.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     57.6
+    ],
+    [
+     0.0,
+     47.7
+    ],
+    [
+     9.5,
+     54.1
+    ],
+    [
+     9.5,
+     63.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     47.7
+    ],
+    [
+     0.0,
+     37.7
+    ],
+    [
+     9.5,
+     45.2
+    ],
+    [
+     9.5,
+     54.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     37.7
+    ],
+    [
+     0.0,
+     27.7
+    ],
+    [
+     9.5,
+     36.2
+    ],
+    [
+     9.5,
+     45.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     27.7
+    ],
+    [
+     0.0,
+     22.6
+    ],
+    [
+     4.9,
+     22.4
+    ],
+    [
+     13.9,
+     31.4
+    ],
+    [
+     9.5,
+     31.6
+    ],
+    [
+     9.5,
+     36.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.9,
+     22.4
+    ],
+    [
+     14.9,
+     21.8
+    ],
+    [
+     22.8,
+     31.0
+    ],
+    [
+     13.9,
+     31.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.9,
+     21.8
+    ],
+    [
+     24.9,
+     21.3
+    ],
+    [
+     31.7,
+     30.5
+    ],
+    [
+     22.8,
+     31.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     24.9,
+     21.3
+    ],
+    [
+     34.9,
+     20.8
+    ],
+    [
+     40.6,
+     30.1
+    ],
+    [
+     31.7,
+     30.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     34.9,
+     20.8
+    ],
+    [
+     44.9,
+     20.3
+    ],
+    [
+     49.5,
+     29.6
+    ],
+    [
+     40.6,
+     30.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     44.9,
+     20.3
+    ],
+    [
+     54.9,
+     19.8
+    ],
+    [
+     58.4,
+     29.2
+    ],
+    [
+     49.5,
+     29.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     54.9,
+     19.8
+    ],
+    [
+     64.9,
+     19.3
+    ],
+    [
+     67.4,
+     28.7
+    ],
+    [
+     58.4,
+     29.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.9,
+     19.3
+    ],
+    [
+     74.9,
+     18.8
+    ],
+    [
+     76.3,
+     28.3
+    ],
+    [
+     67.4,
+     28.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.9,
+     18.8
+    ],
+    [
+     81.0,
+     18.5
+    ],
+    [
+     84.7,
+     18.2
+    ],
+    [
+     85.4,
+     27.6
+    ],
+    [
+     81.7,
+     28.0
+    ],
+    [
+     76.3,
+     28.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     84.7,
+     18.2
+    ],
+    [
+     94.1,
+     17.3
+    ],
+    [
+     94.9,
+     26.7
+    ],
+    [
+     85.4,
+     27.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     94.1,
+     17.3
+    ],
+    [
+     103.5,
+     16.4
+    ],
+    [
+     104.3,
+     25.9
+    ],
+    [
+     94.9,
+     26.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     103.5,
+     16.4
+    ],
+    [
+     112.9,
+     15.5
+    ],
+    [
+     113.8,
+     25.0
+    ],
+    [
+     104.3,
+     25.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     112.9,
+     15.5
+    ],
+    [
+     122.3,
+     14.6
+    ],
+    [
+     123.3,
+     24.1
+    ],
+    [
+     113.8,
+     25.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     122.3,
+     14.6
+    ],
+    [
+     131.7,
+     13.8
+    ],
+    [
+     132.7,
+     23.2
+    ],
+    [
+     123.3,
+     24.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     131.7,
+     13.8
+    ],
+    [
+     141.1,
+     12.9
+    ],
+    [
+     142.2,
+     22.3
+    ],
+    [
+     132.7,
+     23.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     141.1,
+     12.9
+    ],
+    [
+     145.3,
+     12.5
+    ],
+    [
+     150.8,
+     11.7
+    ],
+    [
+     151.3,
+     21.3
+    ],
+    [
+     146.4,
+     21.9
+    ],
+    [
+     142.2,
+     22.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     150.8,
+     11.7
+    ],
+    [
+     160.8,
+     10.3
+    ],
+    [
+     160.1,
+     20.0
+    ],
+    [
+     151.3,
+     21.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.8,
+     10.3
+    ],
+    [
+     170.8,
+     8.9
+    ],
+    [
+     168.9,
+     18.8
+    ],
+    [
+     160.1,
+     20.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.8,
+     8.9
+    ],
+    [
+     180.8,
+     7.6
+    ],
+    [
+     177.7,
+     17.6
+    ],
+    [
+     168.9,
+     18.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.8,
+     7.6
+    ],
+    [
+     190.7,
+     6.2
+    ],
+    [
+     186.5,
+     16.4
+    ],
+    [
+     177.7,
+     17.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     190.7,
+     6.2
+    ],
+    [
+     200.7,
+     4.8
+    ],
+    [
+     195.3,
+     15.1
+    ],
+    [
+     186.5,
+     16.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     200.7,
+     4.8
+    ],
+    [
+     210.7,
+     3.4
+    ],
+    [
+     204.0,
+     13.9
+    ],
+    [
+     195.3,
+     15.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     210.7,
+     3.4
+    ],
+    [
+     220.6,
+     2.0
+    ],
+    [
+     212.8,
+     12.7
+    ],
+    [
+     204.0,
+     13.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     220.6,
+     2.0
+    ],
+    [
+     230.6,
+     0.6
+    ],
+    [
+     221.6,
+     11.5
+    ],
+    [
+     212.8,
+     12.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     230.6,
+     0.6
+    ],
+    [
+     235.0,
+     0.0
+    ],
+    [
+     235.0,
+     5.6
+    ],
+    [
+     225.5,
+     15.9
+    ],
+    [
+     225.5,
+     10.9
+    ],
+    [
+     221.6,
+     11.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     5.6
+    ],
+    [
+     235.0,
+     15.6
+    ],
+    [
+     225.5,
+     24.9
+    ],
+    [
+     225.5,
+     15.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     15.6
+    ],
+    [
+     235.0,
+     25.5
+    ],
+    [
+     225.5,
+     33.9
+    ],
+    [
+     225.5,
+     24.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     25.5
+    ],
+    [
+     235.0,
+     35.5
+    ],
+    [
+     225.5,
+     42.9
+    ],
+    [
+     225.5,
+     33.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     35.5
+    ],
+    [
+     235.0,
+     45.5
+    ],
+    [
+     225.5,
+     51.8
+    ],
+    [
+     225.5,
+     42.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     45.5
+    ],
+    [
+     235.0,
+     55.5
+    ],
+    [
+     225.5,
+     60.8
+    ],
+    [
+     225.5,
+     51.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     55.5
+    ],
+    [
+     235.0,
+     65.4
+    ],
+    [
+     225.5,
+     69.8
+    ],
+    [
+     225.5,
+     60.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     65.4
+    ],
+    [
+     235.0,
+     75.4
+    ],
+    [
+     225.5,
+     78.8
+    ],
+    [
+     225.5,
+     69.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     75.4
+    ],
+    [
+     235.0,
+     85.4
+    ],
+    [
+     225.5,
+     87.7
+    ],
+    [
+     225.5,
+     78.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     85.4
+    ],
+    [
+     235.0,
+     95.3
+    ],
+    [
+     225.5,
+     96.7
+    ],
+    [
+     225.5,
+     87.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     95.3
+    ],
+    [
+     235.0,
+     105.3
+    ],
+    [
+     225.5,
+     105.7
+    ],
+    [
+     225.5,
+     96.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     105.3
+    ],
+    [
+     235.0,
+     115.3
+    ],
+    [
+     225.5,
+     114.7
+    ],
+    [
+     225.5,
+     105.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     115.3
+    ],
+    [
+     235.0,
+     125.3
+    ],
+    [
+     225.5,
+     123.6
+    ],
+    [
+     225.5,
+     114.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     125.3
+    ],
+    [
+     235.0,
+     135.2
+    ],
+    [
+     225.5,
+     132.6
+    ],
+    [
+     225.5,
+     123.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     135.2
+    ],
+    [
+     235.0,
+     145.2
+    ],
+    [
+     225.5,
+     141.6
+    ],
+    [
+     225.5,
+     132.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     145.2
+    ],
+    [
+     235.0,
+     155.2
+    ],
+    [
+     225.5,
+     150.6
+    ],
+    [
+     225.5,
+     141.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     155.2
+    ],
+    [
+     235.0,
+     165.2
+    ],
+    [
+     225.5,
+     159.5
+    ],
+    [
+     225.5,
+     150.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     165.2
+    ],
+    [
+     235.0,
+     175.1
+    ],
+    [
+     225.5,
+     168.5
+    ],
+    [
+     225.5,
+     159.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     175.1
+    ],
+    [
+     235.0,
+     185.1
+    ],
+    [
+     225.5,
+     177.5
+    ],
+    [
+     225.5,
+     168.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     185.1
+    ],
+    [
+     235.0,
+     195.1
+    ],
+    [
+     225.5,
+     186.5
+    ],
+    [
+     225.5,
+     177.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.0,
+     195.1
+    ],
+    [
+     235.0,
+     204.0
+    ],
+    [
+     225.5,
+     194.5
+    ],
+    [
+     225.5,
+     186.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     191.5
+    ],
+    [
+     212.6,
+     191.5
+    ],
+    [
+     204.0,
+     182.0
+    ],
+    [
+     213.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     212.6,
+     191.5
+    ],
+    [
+     202.7,
+     191.5
+    ],
+    [
+     195.0,
+     182.0
+    ],
+    [
+     204.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     202.7,
+     191.5
+    ],
+    [
+     189.2,
+     191.5
+    ],
+    [
+     182.7,
+     182.0
+    ],
+    [
+     195.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.8,
+     191.5
+    ],
+    [
+     170.9,
+     191.5
+    ],
+    [
+     166.0,
+     182.0
+    ],
+    [
+     175.1,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.9,
+     191.5
+    ],
+    [
+     160.9,
+     191.5
+    ],
+    [
+     157.0,
+     182.0
+    ],
+    [
+     166.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.9,
+     191.5
+    ],
+    [
+     151.0,
+     191.5
+    ],
+    [
+     148.0,
+     182.0
+    ],
+    [
+     157.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.0,
+     191.5
+    ],
+    [
+     141.1,
+     191.5
+    ],
+    [
+     139.0,
+     182.0
+    ],
+    [
+     148.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     141.1,
+     191.5
+    ],
+    [
+     131.2,
+     191.5
+    ],
+    [
+     129.9,
+     182.0
+    ],
+    [
+     139.0,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     131.2,
+     191.5
+    ],
+    [
+     121.2,
+     191.5
+    ],
+    [
+     120.9,
+     182.0
+    ],
+    [
+     129.9,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     121.2,
+     191.5
+    ],
+    [
+     114.1,
+     191.5
+    ],
+    [
+     114.4,
+     182.0
+    ],
+    [
+     120.9,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.7,
+     191.5
+    ],
+    [
+     95.8,
+     191.5
+    ],
+    [
+     97.7,
+     182.0
+    ],
+    [
+     106.8,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.8,
+     191.5
+    ],
+    [
+     85.9,
+     191.5
+    ],
+    [
+     88.7,
+     182.0
+    ],
+    [
+     97.7,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.9,
+     191.5
+    ],
+    [
+     75.9,
+     191.5
+    ],
+    [
+     79.7,
+     182.0
+    ],
+    [
+     88.7,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.9,
+     191.5
+    ],
+    [
+     66.0,
+     191.5
+    ],
+    [
+     70.7,
+     182.0
+    ],
+    [
+     79.7,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     66.0,
+     191.5
+    ],
+    [
+     56.1,
+     191.5
+    ],
+    [
+     61.7,
+     182.0
+    ],
+    [
+     70.7,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     56.1,
+     191.5
+    ],
+    [
+     46.2,
+     191.5
+    ],
+    [
+     52.6,
+     182.0
+    ],
+    [
+     61.7,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     46.2,
+     191.5
+    ],
+    [
+     39.0,
+     191.5
+    ],
+    [
+     46.1,
+     182.0
+    ],
+    [
+     52.6,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.6,
+     191.5
+    ],
+    [
+     20.7,
+     191.5
+    ],
+    [
+     29.5,
+     182.0
+    ],
+    [
+     38.5,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     20.7,
+     191.5
+    ],
+    [
+     12.5,
+     191.5
+    ],
+    [
+     12.5,
+     189.8
+    ],
+    [
+     22.0,
+     180.5
+    ],
+    [
+     22.0,
+     182.0
+    ],
+    [
+     29.5,
+     182.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     189.8
+    ],
+    [
+     12.5,
+     179.7
+    ],
+    [
+     22.0,
+     171.6
+    ],
+    [
+     22.0,
+     180.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     179.7
+    ],
+    [
+     12.5,
+     169.6
+    ],
+    [
+     22.0,
+     162.7
+    ],
+    [
+     22.0,
+     171.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     169.6
+    ],
+    [
+     12.5,
+     159.6
+    ],
+    [
+     22.0,
+     153.8
+    ],
+    [
+     22.0,
+     162.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     159.6
+    ],
+    [
+     12.5,
+     149.5
+    ],
+    [
+     22.0,
+     145.0
+    ],
+    [
+     22.0,
+     153.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     149.5
+    ],
+    [
+     12.5,
+     142.2
+    ],
+    [
+     22.0,
+     138.6
+    ],
+    [
+     22.0,
+     145.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     133.7
+    ],
+    [
+     12.5,
+     123.7
+    ],
+    [
+     22.0,
+     122.2
+    ],
+    [
+     22.0,
+     131.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     123.7
+    ],
+    [
+     12.5,
+     113.6
+    ],
+    [
+     22.0,
+     113.3
+    ],
+    [
+     22.0,
+     122.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     113.6
+    ],
+    [
+     12.5,
+     103.5
+    ],
+    [
+     22.0,
+     104.4
+    ],
+    [
+     22.0,
+     113.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     103.5
+    ],
+    [
+     12.5,
+     93.5
+    ],
+    [
+     22.0,
+     95.5
+    ],
+    [
+     22.0,
+     104.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     93.5
+    ],
+    [
+     12.5,
+     83.4
+    ],
+    [
+     22.0,
+     86.7
+    ],
+    [
+     22.0,
+     95.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     83.4
+    ],
+    [
+     12.5,
+     73.3
+    ],
+    [
+     22.0,
+     77.8
+    ],
+    [
+     22.0,
+     86.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     73.3
+    ],
+    [
+     12.5,
+     66.1
+    ],
+    [
+     22.0,
+     71.4
+    ],
+    [
+     22.0,
+     77.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     57.6
+    ],
+    [
+     12.5,
+     47.5
+    ],
+    [
+     22.0,
+     55.0
+    ],
+    [
+     22.0,
+     63.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     47.5
+    ],
+    [
+     12.5,
+     37.4
+    ],
+    [
+     22.0,
+     46.1
+    ],
+    [
+     22.0,
+     55.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     37.4
+    ],
+    [
+     12.5,
+     34.5
+    ],
+    [
+     19.6,
+     34.1
+    ],
+    [
+     28.2,
+     43.2
+    ],
+    [
+     22.0,
+     43.5
+    ],
+    [
+     22.0,
+     46.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.6,
+     34.1
+    ],
+    [
+     29.7,
+     33.6
+    ],
+    [
+     37.1,
+     42.8
+    ],
+    [
+     28.2,
+     43.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.7,
+     33.6
+    ],
+    [
+     39.8,
+     33.1
+    ],
+    [
+     45.9,
+     42.3
+    ],
+    [
+     37.1,
+     42.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.8,
+     33.1
+    ],
+    [
+     50.0,
+     32.6
+    ],
+    [
+     54.7,
+     41.9
+    ],
+    [
+     45.9,
+     42.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     50.0,
+     32.6
+    ],
+    [
+     57.2,
+     32.2
+    ],
+    [
+     61.1,
+     41.5
+    ],
+    [
+     54.7,
+     41.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.8,
+     31.8
+    ],
+    [
+     75.9,
+     31.3
+    ],
+    [
+     77.3,
+     40.7
+    ],
+    [
+     68.5,
+     41.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.9,
+     31.3
+    ],
+    [
+     81.9,
+     31.0
+    ],
+    [
+     85.7,
+     30.6
+    ],
+    [
+     86.4,
+     40.1
+    ],
+    [
+     82.6,
+     40.4
+    ],
+    [
+     77.3,
+     40.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     85.7,
+     30.6
+    ],
+    [
+     95.1,
+     29.7
+    ],
+    [
+     95.9,
+     39.2
+    ],
+    [
+     86.4,
+     40.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.1,
+     29.7
+    ],
+    [
+     104.5,
+     28.9
+    ],
+    [
+     105.3,
+     38.3
+    ],
+    [
+     95.9,
+     39.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.5,
+     28.9
+    ],
+    [
+     113.9,
+     28.0
+    ],
+    [
+     114.8,
+     37.4
+    ],
+    [
+     105.3,
+     38.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     113.9,
+     28.0
+    ],
+    [
+     123.3,
+     27.1
+    ],
+    [
+     124.3,
+     36.6
+    ],
+    [
+     114.8,
+     37.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     123.3,
+     27.1
+    ],
+    [
+     130.1,
+     26.5
+    ],
+    [
+     131.1,
+     35.9
+    ],
+    [
+     124.3,
+     36.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     138.0,
+     25.7
+    ],
+    [
+     146.7,
+     24.9
+    ],
+    [
+     147.5,
+     24.8
+    ],
+    [
+     148.5,
+     34.3
+    ],
+    [
+     147.8,
+     34.4
+    ],
+    [
+     139.1,
+     35.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     147.5,
+     24.8
+    ],
+    [
+     157.6,
+     23.4
+    ],
+    [
+     157.1,
+     33.1
+    ],
+    [
+     148.5,
+     34.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     157.6,
+     23.4
+    ],
+    [
+     167.7,
+     22.0
+    ],
+    [
+     165.8,
+     31.9
+    ],
+    [
+     157.1,
+     33.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     167.7,
+     22.0
+    ],
+    [
+     177.7,
+     20.6
+    ],
+    [
+     174.5,
+     30.6
+    ],
+    [
+     165.8,
+     31.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     177.7,
+     20.6
+    ],
+    [
+     187.8,
+     19.2
+    ],
+    [
+     183.2,
+     29.4
+    ],
+    [
+     174.5,
+     30.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     187.8,
+     19.2
+    ],
+    [
+     197.9,
+     17.8
+    ],
+    [
+     191.9,
+     28.2
+    ],
+    [
+     183.2,
+     29.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.9,
+     17.8
+    ],
+    [
+     205.2,
+     16.8
+    ],
+    [
+     198.1,
+     27.4
+    ],
+    [
+     191.9,
+     28.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     213.7,
+     15.6
+    ],
+    [
+     222.5,
+     14.4
+    ],
+    [
+     222.5,
+     15.7
+    ],
+    [
+     213.0,
+     26.4
+    ],
+    [
+     213.0,
+     25.3
+    ],
+    [
+     205.4,
+     26.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     15.7
+    ],
+    [
+     222.5,
+     25.7
+    ],
+    [
+     213.0,
+     35.3
+    ],
+    [
+     213.0,
+     26.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     25.7
+    ],
+    [
+     222.5,
+     35.8
+    ],
+    [
+     213.0,
+     44.2
+    ],
+    [
+     213.0,
+     35.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     35.8
+    ],
+    [
+     222.5,
+     45.8
+    ],
+    [
+     213.0,
+     53.1
+    ],
+    [
+     213.0,
+     44.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     45.8
+    ],
+    [
+     222.5,
+     55.9
+    ],
+    [
+     213.0,
+     62.0
+    ],
+    [
+     213.0,
+     53.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     55.9
+    ],
+    [
+     222.5,
+     65.9
+    ],
+    [
+     213.0,
+     70.9
+    ],
+    [
+     213.0,
+     62.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     65.9
+    ],
+    [
+     222.5,
+     73.2
+    ],
+    [
+     213.0,
+     77.3
+    ],
+    [
+     213.0,
+     70.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     81.7
+    ],
+    [
+     222.5,
+     91.7
+    ],
+    [
+     213.0,
+     93.7
+    ],
+    [
+     213.0,
+     84.8
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     91.7
+    ],
+    [
+     222.5,
+     101.8
+    ],
+    [
+     213.0,
+     102.6
+    ],
+    [
+     213.0,
+     93.7
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     101.8
+    ],
+    [
+     222.5,
+     111.8
+    ],
+    [
+     213.0,
+     111.5
+    ],
+    [
+     213.0,
+     102.6
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     111.8
+    ],
+    [
+     222.5,
+     121.9
+    ],
+    [
+     213.0,
+     120.4
+    ],
+    [
+     213.0,
+     111.5
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     121.9
+    ],
+    [
+     222.5,
+     131.9
+    ],
+    [
+     213.0,
+     129.3
+    ],
+    [
+     213.0,
+     120.4
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     131.9
+    ],
+    [
+     222.5,
+     142.0
+    ],
+    [
+     213.0,
+     138.2
+    ],
+    [
+     213.0,
+     129.3
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     142.0
+    ],
+    [
+     222.5,
+     149.2
+    ],
+    [
+     213.0,
+     144.6
+    ],
+    [
+     213.0,
+     138.2
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     157.7
+    ],
+    [
+     222.5,
+     167.8
+    ],
+    [
+     213.0,
+     161.0
+    ],
+    [
+     213.0,
+     152.1
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     167.8
+    ],
+    [
+     222.5,
+     177.8
+    ],
+    [
+     213.0,
+     169.9
+    ],
+    [
+     213.0,
+     161.0
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Offices",
+   "level": "L2",
+   "outline_m": [
+    [
+     222.5,
+     177.8
+    ],
+    [
+     222.5,
+     191.5
+    ],
+    [
+     213.0,
+     182.0
+    ],
+    [
+     213.0,
+     169.9
+    ]
+   ],
+   "about": "Offices.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

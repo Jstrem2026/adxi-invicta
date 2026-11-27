@@ -1,0 +1,211 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-08",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  360.0,
+  1450.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Quay floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Crane rail",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     360.0,
+     0.0
+    ],
+    [
+     360.0,
+     362.5
+    ],
+    [
+     0.0,
+     362.5
+    ]
+   ],
+   "about": "Rails for the big gantry cranes that swing stores across into the cruisers at Gates 2 and 3.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Gantry cranes",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.0,
+     72.5
+    ],
+    [
+     324.0,
+     72.5
+    ],
+    [
+     324.0,
+     181.3
+    ],
+    [
+     36.0,
+     181.3
+    ]
+   ],
+   "about": "Tall gantry cranes that lift loads into the cruisers' cargo hatches.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Loading lanes",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.0,
+     362.5
+    ],
+    [
+     360.0,
+     906.3
+    ],
+    [
+     0.0,
+     906.3
+    ],
+    [
+     0.0,
+     362.5
+    ]
+   ],
+   "about": "Lanes where loaders drop pallets and containers under the cranes.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Crane control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.4,
+     763.4
+    ],
+    [
+     122.4,
+     763.4
+    ],
+    [
+     122.4,
+     773.4
+    ],
+    [
+     110.4,
+     773.4
+    ]
+   ],
+   "about": "The crane drivers' supervisor plans each lift here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "room",
+   "name": "Riggers' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     122.4,
+     763.4
+    ],
+    [
+     128.4,
+     763.4
+    ],
+    [
+     128.4,
+     773.4
+    ],
+    [
+     122.4,
+     773.4
+    ]
+   ],
+   "about": "Slings, chains and kit for the crew who hook up the loads.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Marshalling area",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.0,
+     906.3
+    ],
+    [
+     360.0,
+     1268.8
+    ],
+    [
+     0.0,
+     1268.8
+    ],
+    [
+     0.0,
+     906.3
+    ]
+   ],
+   "about": "Loads wait here in the order they will go aboard.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Haul road",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.0,
+     1268.8
+    ],
+    [
+     360.0,
+     1450.0
+    ],
+    [
+     0.0,
+     1450.0
+    ],
+    [
+     0.0,
+     1268.8
+    ]
+   ],
+   "about": "The road that brings loads from the Fleet Stores and Dock Freight.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

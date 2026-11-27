@@ -121,6 +121,10 @@ def expand_rooms(spec, rng, prog):
             name = name[1:]
         if name.startswith("|"):
             name = rng.choice(name[1:].split("|"))
+        if name.startswith("*|"):
+            # several fill names: each becomes a fill, so the floor rotates between them
+            fill = (fill or []) + [(nm, a, ab) for nm in name[2:].split("|")]
+            continue
         if name.startswith("*"):
             fill = (fill or []) + [(name[1:], a, ab)]
             continue
@@ -562,7 +566,11 @@ def layout_open(plan, P, prog, levels, rng, ctx):
         zones = head + tail
     L1 = levels[0][0]
     up = [l[0] for l in levels if l[2] >= 0]
-    pieces = G.split_by_shares(P, [z[1] for z in zones])
+    ax = None
+    if prog.get("split") == "across":   # side by side along the short axis (berths, lanes)
+        lx, ly = G.long_axis(P)
+        ax = (ly, lx)
+    pieces = G.split_by_shares(P, [z[1] for z in zones], axis=ax)
     for z, poly in zip(zones, pieces):
         name, share, about = z[0], z[1], z[2]
         e = plan.add("zone", name, poly, [L1], about, outdoor=True)

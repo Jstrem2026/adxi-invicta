@@ -1,0 +1,10146 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-10",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  186.5,
+  620.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Concourse floor",
+   "z_m": 0.0,
+   "height_m": 7.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Gangway floor",
+   "z_m": 7.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Crew concourse",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     26.0,
+     152.2
+    ],
+    [
+     26.0,
+     26.0
+    ],
+    [
+     137.3,
+     26.0
+    ],
+    [
+     152.4,
+     152.2
+    ]
+   ],
+   "about": "A tall concourse where cruiser crews gather before going aboard and stream through when they come ashore.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.0,
+     594.0
+    ],
+    [
+     26.0,
+     152.2
+    ],
+    [
+     152.4,
+     152.2
+    ],
+    [
+     153.0,
+     157.5
+    ],
+    [
+     158.5,
+     233.8
+    ],
+    [
+     160.5,
+     310.0
+    ],
+    [
+     158.5,
+     386.2
+    ],
+    [
+     153.0,
+     462.5
+    ],
+    [
+     137.3,
+     594.0
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     608.5
+    ],
+    [
+     11.5,
+     487.9
+    ],
+    [
+     14.5,
+     486.1
+    ],
+    [
+     14.5,
+     605.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     487.9
+    ],
+    [
+     11.5,
+     367.3
+    ],
+    [
+     14.5,
+     366.7
+    ],
+    [
+     14.5,
+     486.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     367.3
+    ],
+    [
+     11.5,
+     246.7
+    ],
+    [
+     14.5,
+     247.3
+    ],
+    [
+     14.5,
+     366.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     246.7
+    ],
+    [
+     11.5,
+     126.1
+    ],
+    [
+     14.5,
+     127.9
+    ],
+    [
+     14.5,
+     247.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     126.1
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     17.6,
+     11.5
+    ],
+    [
+     20.4,
+     14.5
+    ],
+    [
+     14.5,
+     14.5
+    ],
+    [
+     14.5,
+     127.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     17.6,
+     11.5
+    ],
+    [
+     140.1,
+     11.5
+    ],
+    [
+     137.9,
+     14.5
+    ],
+    [
+     20.4,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.1,
+     11.5
+    ],
+    [
+     150.2,
+     11.5
+    ],
+    [
+     163.4,
+     121.9
+    ],
+    [
+     160.5,
+     122.8
+    ],
+    [
+     147.5,
+     14.5
+    ],
+    [
+     137.9,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.4,
+     121.9
+    ],
+    [
+     167.4,
+     156.1
+    ],
+    [
+     173.0,
+     233.1
+    ],
+    [
+     173.2,
+     241.9
+    ],
+    [
+     170.2,
+     242.0
+    ],
+    [
+     170.0,
+     233.2
+    ],
+    [
+     164.5,
+     156.4
+    ],
+    [
+     160.5,
+     122.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.2,
+     241.9
+    ],
+    [
+     175.0,
+     310.0
+    ],
+    [
+     173.7,
+     361.9
+    ],
+    [
+     170.7,
+     361.8
+    ],
+    [
+     172.0,
+     310.0
+    ],
+    [
+     170.2,
+     242.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.7,
+     361.9
+    ],
+    [
+     173.0,
+     386.9
+    ],
+    [
+     167.4,
+     463.9
+    ],
+    [
+     165.3,
+     481.9
+    ],
+    [
+     162.4,
+     481.2
+    ],
+    [
+     164.5,
+     463.6
+    ],
+    [
+     170.0,
+     386.8
+    ],
+    [
+     170.7,
+     361.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.3,
+     481.9
+    ],
+    [
+     151.0,
+     602.1
+    ],
+    [
+     148.3,
+     599.3
+    ],
+    [
+     162.4,
+     481.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.0,
+     602.1
+    ],
+    [
+     150.2,
+     608.5
+    ],
+    [
+     34.2,
+     608.5
+    ],
+    [
+     36.2,
+     605.5
+    ],
+    [
+     147.5,
+     605.5
+    ],
+    [
+     148.3,
+     599.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.2,
+     608.5
+    ],
+    [
+     11.5,
+     608.5
+    ],
+    [
+     14.5,
+     605.5
+    ],
+    [
+     36.2,
+     605.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     573.7
+    ],
+    [
+     14.5,
+     565.6
+    ],
+    [
+     26.0,
+     555.6
+    ],
+    [
+     26.0,
+     563.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     502.1
+    ],
+    [
+     14.5,
+     493.9
+    ],
+    [
+     26.0,
+     486.7
+    ],
+    [
+     26.0,
+     494.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     430.4
+    ],
+    [
+     14.5,
+     422.2
+    ],
+    [
+     26.0,
+     417.8
+    ],
+    [
+     26.0,
+     425.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     358.7
+    ],
+    [
+     14.5,
+     350.5
+    ],
+    [
+     26.0,
+     349.0
+    ],
+    [
+     26.0,
+     356.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     287.0
+    ],
+    [
+     14.5,
+     278.9
+    ],
+    [
+     26.0,
+     280.1
+    ],
+    [
+     26.0,
+     287.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     215.3
+    ],
+    [
+     14.5,
+     207.2
+    ],
+    [
+     26.0,
+     211.2
+    ],
+    [
+     26.0,
+     219.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     143.6
+    ],
+    [
+     14.5,
+     135.5
+    ],
+    [
+     26.0,
+     142.3
+    ],
+    [
+     26.0,
+     150.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     14.5,
+     72.0
+    ],
+    [
+     14.5,
+     63.8
+    ],
+    [
+     26.0,
+     73.4
+    ],
+    [
+     26.0,
+     81.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     29.7,
+     14.5
+    ],
+    [
+     38.4,
+     14.5
+    ],
+    [
+     46.0,
+     26.0
+    ],
+    [
+     38.7,
+     26.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     106.2,
+     14.5
+    ],
+    [
+     114.9,
+     14.5
+    ],
+    [
+     110.0,
+     26.0
+    ],
+    [
+     102.7,
+     26.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     151.5,
+     47.8
+    ],
+    [
+     152.5,
+     56.1
+    ],
+    [
+     141.9,
+     64.5
+    ],
+    [
+     141.0,
+     56.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     160.2,
+     120.3
+    ],
+    [
+     161.1,
+     128.5
+    ],
+    [
+     149.9,
+     131.7
+    ],
+    [
+     149.0,
+     124.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     167.0,
+     191.7
+    ],
+    [
+     167.6,
+     199.7
+    ],
+    [
+     156.1,
+     200.5
+    ],
+    [
+     155.5,
+     192.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     170.8,
+     262.1
+    ],
+    [
+     171.0,
+     270.1
+    ],
+    [
+     159.5,
+     270.4
+    ],
+    [
+     159.3,
+     262.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     171.4,
+     332.6
+    ],
+    [
+     171.2,
+     340.6
+    ],
+    [
+     159.7,
+     340.4
+    ],
+    [
+     159.9,
+     332.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     168.8,
+     403.1
+    ],
+    [
+     168.3,
+     411.1
+    ],
+    [
+     156.8,
+     410.4
+    ],
+    [
+     157.4,
+     402.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     163.3,
+     473.7
+    ],
+    [
+     162.3,
+     482.0
+    ],
+    [
+     151.0,
+     479.5
+    ],
+    [
+     151.9,
+     471.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     154.6,
+     546.2
+    ],
+    [
+     153.6,
+     554.4
+    ],
+    [
+     143.0,
+     546.7
+    ],
+    [
+     143.9,
+     539.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     133.7,
+     605.5
+    ],
+    [
+     124.9,
+     605.5
+    ],
+    [
+     118.4,
+     594.0
+    ],
+    [
+     125.7,
+     594.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     57.1,
+     605.5
+    ],
+    [
+     48.4,
+     605.5
+    ],
+    [
+     54.4,
+     594.0
+    ],
+    [
+     61.7,
+     594.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Crew check-in desks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     620.0
+    ],
+    [
+     0.0,
+     606.7
+    ],
+    [
+     11.5,
+     595.7
+    ],
+    [
+     11.5,
+     608.5
+    ]
+   ],
+   "about": "Crew show their papers and are checked aboard or ashore.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Baggage room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     606.7
+    ],
+    [
+     0.0,
+     589.0
+    ],
+    [
+     11.5,
+     578.6
+    ],
+    [
+     11.5,
+     595.7
+    ]
+   ],
+   "about": "Sea bags are weighed and loaded on carts to the gangways.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     589.0
+    ],
+    [
+     0.0,
+     562.4
+    ],
+    [
+     11.5,
+     553.0
+    ],
+    [
+     11.5,
+     578.6
+    ]
+   ],
+   "about": "Seats for crews waiting to board.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Security screening",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     562.4
+    ],
+    [
+     0.0,
+     544.7
+    ],
+    [
+     11.5,
+     536.0
+    ],
+    [
+     11.5,
+     553.0
+    ]
+   ],
+   "about": "Scanners for everyone going aboard.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     544.7
+    ],
+    [
+     0.0,
+     539.4
+    ],
+    [
+     11.5,
+     530.9
+    ],
+    [
+     11.5,
+     536.0
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "First-aid room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     539.4
+    ],
+    [
+     0.0,
+     535.3
+    ],
+    [
+     11.5,
+     526.9
+    ],
+    [
+     11.5,
+     530.9
+    ]
+   ],
+   "about": "A couch, first-aid kit and defibrillator for anyone taken ill.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     535.3
+    ],
+    [
+     0.0,
+     519.3
+    ],
+    [
+     11.5,
+     511.6
+    ],
+    [
+     11.5,
+     526.9
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     519.3
+    ],
+    [
+     0.0,
+     506.0
+    ],
+    [
+     11.5,
+     498.8
+    ],
+    [
+     11.5,
+     511.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     506.0
+    ],
+    [
+     0.0,
+     490.1
+    ],
+    [
+     11.5,
+     483.4
+    ],
+    [
+     11.5,
+     498.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     490.1
+    ],
+    [
+     0.0,
+     476.8
+    ],
+    [
+     11.5,
+     470.6
+    ],
+    [
+     11.5,
+     483.4
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     476.8
+    ],
+    [
+     0.0,
+     460.8
+    ],
+    [
+     11.5,
+     455.3
+    ],
+    [
+     11.5,
+     470.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     460.8
+    ],
+    [
+     0.0,
+     447.6
+    ],
+    [
+     11.5,
+     442.5
+    ],
+    [
+     11.5,
+     455.3
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     447.6
+    ],
+    [
+     0.0,
+     431.6
+    ],
+    [
+     11.5,
+     427.1
+    ],
+    [
+     11.5,
+     442.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     431.6
+    ],
+    [
+     0.0,
+     418.3
+    ],
+    [
+     11.5,
+     414.3
+    ],
+    [
+     11.5,
+     427.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     418.3
+    ],
+    [
+     0.0,
+     402.4
+    ],
+    [
+     11.5,
+     398.9
+    ],
+    [
+     11.5,
+     414.3
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     402.4
+    ],
+    [
+     0.0,
+     389.1
+    ],
+    [
+     11.5,
+     386.1
+    ],
+    [
+     11.5,
+     398.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     389.1
+    ],
+    [
+     0.0,
+     373.1
+    ],
+    [
+     11.5,
+     370.8
+    ],
+    [
+     11.5,
+     386.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     373.1
+    ],
+    [
+     0.0,
+     359.8
+    ],
+    [
+     11.5,
+     358.0
+    ],
+    [
+     11.5,
+     370.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     359.8
+    ],
+    [
+     0.0,
+     343.9
+    ],
+    [
+     11.5,
+     342.6
+    ],
+    [
+     11.5,
+     358.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     343.9
+    ],
+    [
+     0.0,
+     330.6
+    ],
+    [
+     11.5,
+     329.8
+    ],
+    [
+     11.5,
+     342.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     330.6
+    ],
+    [
+     0.0,
+     314.7
+    ],
+    [
+     11.5,
+     314.5
+    ],
+    [
+     11.5,
+     329.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     314.7
+    ],
+    [
+     0.0,
+     301.4
+    ],
+    [
+     11.5,
+     301.7
+    ],
+    [
+     11.5,
+     314.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     301.4
+    ],
+    [
+     0.0,
+     285.4
+    ],
+    [
+     11.5,
+     286.3
+    ],
+    [
+     11.5,
+     301.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     285.4
+    ],
+    [
+     0.0,
+     272.1
+    ],
+    [
+     11.5,
+     273.5
+    ],
+    [
+     11.5,
+     286.3
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     272.1
+    ],
+    [
+     0.0,
+     256.2
+    ],
+    [
+     11.5,
+     258.2
+    ],
+    [
+     11.5,
+     273.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     256.2
+    ],
+    [
+     0.0,
+     242.9
+    ],
+    [
+     11.5,
+     245.4
+    ],
+    [
+     11.5,
+     258.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     242.9
+    ],
+    [
+     0.0,
+     226.9
+    ],
+    [
+     11.5,
+     230.0
+    ],
+    [
+     11.5,
+     245.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     226.9
+    ],
+    [
+     0.0,
+     213.7
+    ],
+    [
+     11.5,
+     217.2
+    ],
+    [
+     11.5,
+     230.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     213.7
+    ],
+    [
+     0.0,
+     197.7
+    ],
+    [
+     11.5,
+     201.9
+    ],
+    [
+     11.5,
+     217.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     197.7
+    ],
+    [
+     0.0,
+     184.4
+    ],
+    [
+     11.5,
+     189.1
+    ],
+    [
+     11.5,
+     201.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     184.4
+    ],
+    [
+     0.0,
+     168.5
+    ],
+    [
+     11.5,
+     173.7
+    ],
+    [
+     11.5,
+     189.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     168.5
+    ],
+    [
+     0.0,
+     155.2
+    ],
+    [
+     11.5,
+     160.9
+    ],
+    [
+     11.5,
+     173.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     155.2
+    ],
+    [
+     0.0,
+     139.2
+    ],
+    [
+     11.5,
+     145.6
+    ],
+    [
+     11.5,
+     160.9
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     139.2
+    ],
+    [
+     0.0,
+     125.9
+    ],
+    [
+     11.5,
+     132.8
+    ],
+    [
+     11.5,
+     145.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     125.9
+    ],
+    [
+     0.0,
+     110.0
+    ],
+    [
+     11.5,
+     117.4
+    ],
+    [
+     11.5,
+     132.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     110.0
+    ],
+    [
+     0.0,
+     96.7
+    ],
+    [
+     11.5,
+     104.6
+    ],
+    [
+     11.5,
+     117.4
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     96.7
+    ],
+    [
+     0.0,
+     80.8
+    ],
+    [
+     11.5,
+     89.3
+    ],
+    [
+     11.5,
+     104.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     80.8
+    ],
+    [
+     0.0,
+     67.5
+    ],
+    [
+     11.5,
+     76.5
+    ],
+    [
+     11.5,
+     89.3
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     67.5
+    ],
+    [
+     0.0,
+     51.5
+    ],
+    [
+     11.5,
+     61.1
+    ],
+    [
+     11.5,
+     76.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     51.5
+    ],
+    [
+     0.0,
+     38.2
+    ],
+    [
+     11.5,
+     48.3
+    ],
+    [
+     11.5,
+     61.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     38.2
+    ],
+    [
+     0.0,
+     22.3
+    ],
+    [
+     11.5,
+     33.0
+    ],
+    [
+     11.5,
+     48.3
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     22.3
+    ],
+    [
+     0.0,
+     9.0
+    ],
+    [
+     11.5,
+     20.2
+    ],
+    [
+     11.5,
+     33.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     9.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     7.3,
+     0.0
+    ],
+    [
+     17.8,
+     11.5
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     11.5,
+     20.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.3,
+     0.0
+    ],
+    [
+     21.3,
+     0.0
+    ],
+    [
+     29.9,
+     11.5
+    ],
+    [
+     17.8,
+     11.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.3,
+     0.0
+    ],
+    [
+     38.1,
+     0.0
+    ],
+    [
+     44.4,
+     11.5
+    ],
+    [
+     29.9,
+     11.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.1,
+     0.0
+    ],
+    [
+     52.1,
+     0.0
+    ],
+    [
+     56.5,
+     11.5
+    ],
+    [
+     44.4,
+     11.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     52.1,
+     0.0
+    ],
+    [
+     68.9,
+     0.0
+    ],
+    [
+     71.1,
+     11.5
+    ],
+    [
+     56.5,
+     11.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.9,
+     0.0
+    ],
+    [
+     82.9,
+     0.0
+    ],
+    [
+     83.2,
+     11.5
+    ],
+    [
+     71.1,
+     11.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.9,
+     0.0
+    ],
+    [
+     99.7,
+     0.0
+    ],
+    [
+     97.7,
+     11.5
+    ],
+    [
+     83.2,
+     11.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.7,
+     0.0
+    ],
+    [
+     113.7,
+     0.0
+    ],
+    [
+     109.8,
+     11.5
+    ],
+    [
+     97.7,
+     11.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.7,
+     0.0
+    ],
+    [
+     130.4,
+     0.0
+    ],
+    [
+     124.3,
+     11.5
+    ],
+    [
+     109.8,
+     11.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.4,
+     0.0
+    ],
+    [
+     144.4,
+     0.0
+    ],
+    [
+     136.4,
+     11.5
+    ],
+    [
+     124.3,
+     11.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     144.4,
+     0.0
+    ],
+    [
+     160.4,
+     0.0
+    ],
+    [
+     160.5,
+     0.8
+    ],
+    [
+     150.3,
+     12.2
+    ],
+    [
+     150.2,
+     11.5
+    ],
+    [
+     136.4,
+     11.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.5,
+     0.8
+    ],
+    [
+     162.1,
+     14.2
+    ],
+    [
+     151.8,
+     24.7
+    ],
+    [
+     150.3,
+     12.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.1,
+     14.2
+    ],
+    [
+     164.0,
+     30.3
+    ],
+    [
+     153.6,
+     39.7
+    ],
+    [
+     151.8,
+     24.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.0,
+     30.3
+    ],
+    [
+     165.6,
+     43.7
+    ],
+    [
+     155.1,
+     52.2
+    ],
+    [
+     153.6,
+     39.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.6,
+     43.7
+    ],
+    [
+     167.5,
+     59.7
+    ],
+    [
+     156.8,
+     67.2
+    ],
+    [
+     155.1,
+     52.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.5,
+     59.7
+    ],
+    [
+     169.1,
+     73.2
+    ],
+    [
+     158.3,
+     79.7
+    ],
+    [
+     156.8,
+     67.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.1,
+     73.2
+    ],
+    [
+     171.1,
+     89.2
+    ],
+    [
+     160.1,
+     94.7
+    ],
+    [
+     158.3,
+     79.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.1,
+     89.2
+    ],
+    [
+     172.6,
+     102.6
+    ],
+    [
+     161.6,
+     107.2
+    ],
+    [
+     160.1,
+     94.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     172.6,
+     102.6
+    ],
+    [
+     174.6,
+     118.7
+    ],
+    [
+     163.4,
+     122.2
+    ],
+    [
+     161.6,
+     107.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     174.6,
+     118.7
+    ],
+    [
+     176.2,
+     132.1
+    ],
+    [
+     164.9,
+     134.7
+    ],
+    [
+     163.4,
+     122.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.2,
+     132.1
+    ],
+    [
+     178.1,
+     148.2
+    ],
+    [
+     166.7,
+     149.8
+    ],
+    [
+     164.9,
+     134.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     178.1,
+     148.2
+    ],
+    [
+     178.9,
+     155.0
+    ],
+    [
+     179.4,
+     161.4
+    ],
+    [
+     167.9,
+     162.5
+    ],
+    [
+     167.4,
+     156.1
+    ],
+    [
+     166.7,
+     149.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     179.4,
+     161.4
+    ],
+    [
+     180.5,
+     177.1
+    ],
+    [
+     169.0,
+     178.0
+    ],
+    [
+     167.9,
+     162.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.5,
+     177.1
+    ],
+    [
+     181.4,
+     190.1
+    ],
+    [
+     170.0,
+     191.0
+    ],
+    [
+     169.0,
+     178.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.4,
+     190.1
+    ],
+    [
+     182.6,
+     205.8
+    ],
+    [
+     171.1,
+     206.6
+    ],
+    [
+     170.0,
+     191.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     182.6,
+     205.8
+    ],
+    [
+     183.5,
+     218.9
+    ],
+    [
+     172.0,
+     219.5
+    ],
+    [
+     171.1,
+     206.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     183.5,
+     218.9
+    ],
+    [
+     184.5,
+     232.5
+    ],
+    [
+     184.6,
+     234.5
+    ],
+    [
+     173.1,
+     235.1
+    ],
+    [
+     173.0,
+     233.1
+    ],
+    [
+     172.0,
+     219.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.6,
+     234.5
+    ],
+    [
+     184.9,
+     247.6
+    ],
+    [
+     173.4,
+     248.1
+    ],
+    [
+     173.1,
+     235.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.9,
+     247.6
+    ],
+    [
+     185.3,
+     263.3
+    ],
+    [
+     173.8,
+     263.7
+    ],
+    [
+     173.4,
+     248.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.3,
+     263.3
+    ],
+    [
+     185.6,
+     276.4
+    ],
+    [
+     174.1,
+     276.7
+    ],
+    [
+     173.8,
+     263.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.6,
+     276.4
+    ],
+    [
+     186.0,
+     292.1
+    ],
+    [
+     174.5,
+     292.2
+    ],
+    [
+     174.1,
+     276.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.0,
+     292.1
+    ],
+    [
+     186.4,
+     305.2
+    ],
+    [
+     174.9,
+     305.2
+    ],
+    [
+     174.5,
+     292.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.4,
+     305.2
+    ],
+    [
+     186.5,
+     310.0
+    ],
+    [
+     186.2,
+     320.9
+    ],
+    [
+     174.7,
+     320.8
+    ],
+    [
+     175.0,
+     310.0
+    ],
+    [
+     174.9,
+     305.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.2,
+     320.9
+    ],
+    [
+     185.9,
+     334.0
+    ],
+    [
+     174.4,
+     333.8
+    ],
+    [
+     174.7,
+     320.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.9,
+     334.0
+    ],
+    [
+     185.5,
+     349.7
+    ],
+    [
+     174.0,
+     349.4
+    ],
+    [
+     174.4,
+     333.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.5,
+     349.7
+    ],
+    [
+     185.1,
+     362.8
+    ],
+    [
+     173.6,
+     362.4
+    ],
+    [
+     174.0,
+     349.4
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.1,
+     362.8
+    ],
+    [
+     184.7,
+     378.5
+    ],
+    [
+     173.2,
+     378.0
+    ],
+    [
+     173.6,
+     362.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.7,
+     378.5
+    ],
+    [
+     184.5,
+     387.5
+    ],
+    [
+     184.2,
+     391.6
+    ],
+    [
+     172.7,
+     391.0
+    ],
+    [
+     173.0,
+     386.9
+    ],
+    [
+     173.2,
+     378.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.2,
+     391.6
+    ],
+    [
+     183.1,
+     407.2
+    ],
+    [
+     171.6,
+     406.5
+    ],
+    [
+     172.7,
+     391.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     183.1,
+     407.2
+    ],
+    [
+     182.1,
+     420.3
+    ],
+    [
+     170.7,
+     419.5
+    ],
+    [
+     171.6,
+     406.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     182.1,
+     420.3
+    ],
+    [
+     181.0,
+     436.0
+    ],
+    [
+     169.5,
+     435.1
+    ],
+    [
+     170.7,
+     419.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.0,
+     436.0
+    ],
+    [
+     180.1,
+     449.0
+    ],
+    [
+     168.6,
+     448.0
+    ],
+    [
+     169.5,
+     435.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.1,
+     449.0
+    ],
+    [
+     178.9,
+     464.7
+    ],
+    [
+     167.5,
+     463.6
+    ],
+    [
+     168.6,
+     448.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     178.9,
+     464.7
+    ],
+    [
+     178.9,
+     465.0
+    ],
+    [
+     177.3,
+     478.1
+    ],
+    [
+     166.0,
+     476.1
+    ],
+    [
+     167.4,
+     463.9
+    ],
+    [
+     167.5,
+     463.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.3,
+     478.1
+    ],
+    [
+     175.4,
+     494.1
+    ],
+    [
+     164.2,
+     491.1
+    ],
+    [
+     166.0,
+     476.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.4,
+     494.1
+    ],
+    [
+     173.8,
+     507.5
+    ],
+    [
+     162.7,
+     503.6
+    ],
+    [
+     164.2,
+     491.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.8,
+     507.5
+    ],
+    [
+     171.9,
+     523.6
+    ],
+    [
+     160.9,
+     518.6
+    ],
+    [
+     162.7,
+     503.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.9,
+     523.6
+    ],
+    [
+     170.3,
+     537.0
+    ],
+    [
+     159.4,
+     531.1
+    ],
+    [
+     160.9,
+     518.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.3,
+     537.0
+    ],
+    [
+     168.4,
+     553.1
+    ],
+    [
+     157.6,
+     546.1
+    ],
+    [
+     159.4,
+     531.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.4,
+     553.1
+    ],
+    [
+     166.8,
+     566.5
+    ],
+    [
+     156.1,
+     558.6
+    ],
+    [
+     157.6,
+     546.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.8,
+     566.5
+    ],
+    [
+     164.9,
+     582.6
+    ],
+    [
+     154.4,
+     573.6
+    ],
+    [
+     156.1,
+     558.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.9,
+     582.6
+    ],
+    [
+     163.3,
+     596.0
+    ],
+    [
+     152.9,
+     586.1
+    ],
+    [
+     154.4,
+     573.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.3,
+     596.0
+    ],
+    [
+     161.3,
+     612.1
+    ],
+    [
+     151.1,
+     601.1
+    ],
+    [
+     152.9,
+     586.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.3,
+     612.1
+    ],
+    [
+     160.4,
+     620.0
+    ],
+    [
+     154.7,
+     620.0
+    ],
+    [
+     145.2,
+     608.5
+    ],
+    [
+     150.2,
+     608.5
+    ],
+    [
+     151.1,
+     601.1
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.7,
+     620.0
+    ],
+    [
+     137.9,
+     620.0
+    ],
+    [
+     130.7,
+     608.5
+    ],
+    [
+     145.2,
+     608.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     137.9,
+     620.0
+    ],
+    [
+     123.9,
+     620.0
+    ],
+    [
+     118.6,
+     608.5
+    ],
+    [
+     130.7,
+     608.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.9,
+     620.0
+    ],
+    [
+     107.1,
+     620.0
+    ],
+    [
+     104.1,
+     608.5
+    ],
+    [
+     118.6,
+     608.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.1,
+     620.0
+    ],
+    [
+     93.1,
+     620.0
+    ],
+    [
+     92.0,
+     608.5
+    ],
+    [
+     104.1,
+     608.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.1,
+     620.0
+    ],
+    [
+     76.3,
+     620.0
+    ],
+    [
+     77.5,
+     608.5
+    ],
+    [
+     92.0,
+     608.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     76.3,
+     620.0
+    ],
+    [
+     62.3,
+     620.0
+    ],
+    [
+     65.4,
+     608.5
+    ],
+    [
+     77.5,
+     608.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.3,
+     620.0
+    ],
+    [
+     45.6,
+     620.0
+    ],
+    [
+     50.9,
+     608.5
+    ],
+    [
+     65.4,
+     608.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.6,
+     620.0
+    ],
+    [
+     31.6,
+     620.0
+    ],
+    [
+     38.8,
+     608.5
+    ],
+    [
+     50.9,
+     608.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.6,
+     620.0
+    ],
+    [
+     14.8,
+     620.0
+    ],
+    [
+     24.3,
+     608.5
+    ],
+    [
+     38.8,
+     608.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.8,
+     620.0
+    ],
+    [
+     0.0,
+     620.0
+    ],
+    [
+     11.5,
+     608.5
+    ],
+    [
+     24.3,
+     608.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     605.5
+    ],
+    [
+     14.5,
+     589.5
+    ],
+    [
+     26.0,
+     578.7
+    ],
+    [
+     26.0,
+     594.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     589.5
+    ],
+    [
+     14.5,
+     573.7
+    ],
+    [
+     26.0,
+     563.5
+    ],
+    [
+     26.0,
+     578.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     565.6
+    ],
+    [
+     14.5,
+     549.6
+    ],
+    [
+     26.0,
+     540.3
+    ],
+    [
+     26.0,
+     555.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     549.6
+    ],
+    [
+     14.5,
+     536.3
+    ],
+    [
+     26.0,
+     527.5
+    ],
+    [
+     26.0,
+     540.3
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     536.3
+    ],
+    [
+     14.5,
+     520.4
+    ],
+    [
+     26.0,
+     512.2
+    ],
+    [
+     26.0,
+     527.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     520.4
+    ],
+    [
+     14.5,
+     502.1
+    ],
+    [
+     26.0,
+     494.6
+    ],
+    [
+     26.0,
+     512.2
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     493.9
+    ],
+    [
+     14.5,
+     477.9
+    ],
+    [
+     26.0,
+     471.4
+    ],
+    [
+     26.0,
+     486.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     477.9
+    ],
+    [
+     14.5,
+     464.6
+    ],
+    [
+     26.0,
+     458.6
+    ],
+    [
+     26.0,
+     471.4
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     464.6
+    ],
+    [
+     14.5,
+     448.7
+    ],
+    [
+     26.0,
+     443.3
+    ],
+    [
+     26.0,
+     458.6
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     448.7
+    ],
+    [
+     14.5,
+     430.4
+    ],
+    [
+     26.0,
+     425.7
+    ],
+    [
+     26.0,
+     443.3
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     422.2
+    ],
+    [
+     14.5,
+     406.3
+    ],
+    [
+     26.0,
+     402.5
+    ],
+    [
+     26.0,
+     417.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     406.3
+    ],
+    [
+     14.5,
+     393.0
+    ],
+    [
+     26.0,
+     389.7
+    ],
+    [
+     26.0,
+     402.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     393.0
+    ],
+    [
+     14.5,
+     377.0
+    ],
+    [
+     26.0,
+     374.4
+    ],
+    [
+     26.0,
+     389.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     377.0
+    ],
+    [
+     14.5,
+     358.7
+    ],
+    [
+     26.0,
+     356.8
+    ],
+    [
+     26.0,
+     374.4
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     350.5
+    ],
+    [
+     14.5,
+     334.6
+    ],
+    [
+     26.0,
+     333.6
+    ],
+    [
+     26.0,
+     349.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     334.6
+    ],
+    [
+     14.5,
+     321.3
+    ],
+    [
+     26.0,
+     320.8
+    ],
+    [
+     26.0,
+     333.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     321.3
+    ],
+    [
+     14.5,
+     305.3
+    ],
+    [
+     26.0,
+     305.5
+    ],
+    [
+     26.0,
+     320.8
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     305.3
+    ],
+    [
+     14.5,
+     287.0
+    ],
+    [
+     26.0,
+     287.9
+    ],
+    [
+     26.0,
+     305.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     278.9
+    ],
+    [
+     14.5,
+     262.9
+    ],
+    [
+     26.0,
+     264.7
+    ],
+    [
+     26.0,
+     280.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     262.9
+    ],
+    [
+     14.5,
+     249.6
+    ],
+    [
+     26.0,
+     251.9
+    ],
+    [
+     26.0,
+     264.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     249.6
+    ],
+    [
+     14.5,
+     233.6
+    ],
+    [
+     26.0,
+     236.6
+    ],
+    [
+     26.0,
+     251.9
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     233.6
+    ],
+    [
+     14.5,
+     215.3
+    ],
+    [
+     26.0,
+     219.0
+    ],
+    [
+     26.0,
+     236.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     207.2
+    ],
+    [
+     14.5,
+     191.2
+    ],
+    [
+     26.0,
+     195.8
+    ],
+    [
+     26.0,
+     211.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     191.2
+    ],
+    [
+     14.5,
+     177.9
+    ],
+    [
+     26.0,
+     183.0
+    ],
+    [
+     26.0,
+     195.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     177.9
+    ],
+    [
+     14.5,
+     161.9
+    ],
+    [
+     26.0,
+     167.7
+    ],
+    [
+     26.0,
+     183.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     161.9
+    ],
+    [
+     14.5,
+     143.6
+    ],
+    [
+     26.0,
+     150.1
+    ],
+    [
+     26.0,
+     167.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     135.5
+    ],
+    [
+     14.5,
+     119.5
+    ],
+    [
+     26.0,
+     126.9
+    ],
+    [
+     26.0,
+     142.3
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     119.5
+    ],
+    [
+     14.5,
+     106.2
+    ],
+    [
+     26.0,
+     114.2
+    ],
+    [
+     26.0,
+     126.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     106.2
+    ],
+    [
+     14.5,
+     90.3
+    ],
+    [
+     26.0,
+     98.8
+    ],
+    [
+     26.0,
+     114.2
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     90.3
+    ],
+    [
+     14.5,
+     72.0
+    ],
+    [
+     26.0,
+     81.2
+    ],
+    [
+     26.0,
+     98.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     63.8
+    ],
+    [
+     14.5,
+     47.8
+    ],
+    [
+     26.0,
+     58.0
+    ],
+    [
+     26.0,
+     73.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     47.8
+    ],
+    [
+     14.5,
+     34.5
+    ],
+    [
+     26.0,
+     45.3
+    ],
+    [
+     26.0,
+     58.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     34.5
+    ],
+    [
+     14.5,
+     18.6
+    ],
+    [
+     26.0,
+     29.9
+    ],
+    [
+     26.0,
+     45.3
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.5,
+     18.6
+    ],
+    [
+     14.5,
+     14.5
+    ],
+    [
+     29.7,
+     14.5
+    ],
+    [
+     38.7,
+     26.0
+    ],
+    [
+     26.0,
+     26.0
+    ],
+    [
+     26.0,
+     29.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.4,
+     14.5
+    ],
+    [
+     55.4,
+     14.5
+    ],
+    [
+     60.3,
+     26.0
+    ],
+    [
+     46.0,
+     26.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.4,
+     14.5
+    ],
+    [
+     69.6,
+     14.5
+    ],
+    [
+     72.1,
+     26.0
+    ],
+    [
+     60.3,
+     26.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     69.6,
+     14.5
+    ],
+    [
+     86.7,
+     14.5
+    ],
+    [
+     86.4,
+     26.0
+    ],
+    [
+     72.1,
+     26.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.7,
+     14.5
+    ],
+    [
+     106.2,
+     14.5
+    ],
+    [
+     102.7,
+     26.0
+    ],
+    [
+     86.4,
+     26.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.9,
+     14.5
+    ],
+    [
+     132.0,
+     14.5
+    ],
+    [
+     124.3,
+     26.0
+    ],
+    [
+     110.0,
+     26.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.0,
+     14.5
+    ],
+    [
+     146.2,
+     14.5
+    ],
+    [
+     136.2,
+     26.0
+    ],
+    [
+     124.3,
+     26.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     146.2,
+     14.5
+    ],
+    [
+     147.5,
+     14.5
+    ],
+    [
+     149.3,
+     29.3
+    ],
+    [
+     139.0,
+     39.8
+    ],
+    [
+     137.3,
+     26.0
+    ],
+    [
+     136.2,
+     26.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     149.3,
+     29.3
+    ],
+    [
+     151.5,
+     47.8
+    ],
+    [
+     141.0,
+     56.9
+    ],
+    [
+     139.0,
+     39.8
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.5,
+     56.1
+    ],
+    [
+     154.4,
+     72.2
+    ],
+    [
+     143.7,
+     79.5
+    ],
+    [
+     141.9,
+     64.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.4,
+     72.2
+    ],
+    [
+     156.0,
+     85.7
+    ],
+    [
+     145.2,
+     91.9
+    ],
+    [
+     143.7,
+     79.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.0,
+     85.7
+    ],
+    [
+     157.9,
+     101.8
+    ],
+    [
+     147.0,
+     106.9
+    ],
+    [
+     145.2,
+     91.9
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.9,
+     101.8
+    ],
+    [
+     160.2,
+     120.3
+    ],
+    [
+     149.0,
+     124.0
+    ],
+    [
+     147.0,
+     106.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.1,
+     128.5
+    ],
+    [
+     163.1,
+     144.7
+    ],
+    [
+     151.7,
+     146.6
+    ],
+    [
+     149.9,
+     131.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.1,
+     144.7
+    ],
+    [
+     164.5,
+     156.4
+    ],
+    [
+     164.6,
+     158.1
+    ],
+    [
+     153.1,
+     159.1
+    ],
+    [
+     153.0,
+     157.5
+    ],
+    [
+     151.7,
+     146.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.6,
+     158.1
+    ],
+    [
+     165.7,
+     173.7
+    ],
+    [
+     154.3,
+     174.7
+    ],
+    [
+     153.1,
+     159.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.7,
+     173.7
+    ],
+    [
+     167.0,
+     191.7
+    ],
+    [
+     155.5,
+     192.5
+    ],
+    [
+     154.3,
+     174.7
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.6,
+     199.7
+    ],
+    [
+     168.7,
+     215.3
+    ],
+    [
+     157.2,
+     216.0
+    ],
+    [
+     156.1,
+     200.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.7,
+     215.3
+    ],
+    [
+     169.7,
+     228.4
+    ],
+    [
+     158.2,
+     229.0
+    ],
+    [
+     157.2,
+     216.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.7,
+     228.4
+    ],
+    [
+     170.0,
+     233.2
+    ],
+    [
+     170.3,
+     244.1
+    ],
+    [
+     158.8,
+     244.6
+    ],
+    [
+     158.5,
+     233.8
+    ],
+    [
+     158.2,
+     229.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.3,
+     244.1
+    ],
+    [
+     170.8,
+     262.1
+    ],
+    [
+     159.3,
+     262.4
+    ],
+    [
+     158.8,
+     244.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.0,
+     270.1
+    ],
+    [
+     171.4,
+     285.8
+    ],
+    [
+     159.9,
+     286.0
+    ],
+    [
+     159.5,
+     270.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.4,
+     285.8
+    ],
+    [
+     171.7,
+     298.9
+    ],
+    [
+     160.2,
+     299.0
+    ],
+    [
+     159.9,
+     286.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.7,
+     298.9
+    ],
+    [
+     172.0,
+     310.0
+    ],
+    [
+     171.9,
+     314.6
+    ],
+    [
+     160.4,
+     314.6
+    ],
+    [
+     160.5,
+     310.0
+    ],
+    [
+     160.2,
+     299.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.9,
+     314.6
+    ],
+    [
+     171.4,
+     332.6
+    ],
+    [
+     159.9,
+     332.5
+    ],
+    [
+     160.4,
+     314.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.2,
+     340.6
+    ],
+    [
+     170.8,
+     356.3
+    ],
+    [
+     159.3,
+     356.0
+    ],
+    [
+     159.7,
+     340.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.8,
+     356.3
+    ],
+    [
+     170.5,
+     369.4
+    ],
+    [
+     159.0,
+     369.0
+    ],
+    [
+     159.3,
+     356.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.5,
+     369.4
+    ],
+    [
+     170.1,
+     385.1
+    ],
+    [
+     158.6,
+     384.6
+    ],
+    [
+     159.0,
+     369.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.1,
+     385.1
+    ],
+    [
+     170.0,
+     386.8
+    ],
+    [
+     168.8,
+     403.1
+    ],
+    [
+     157.4,
+     402.4
+    ],
+    [
+     158.5,
+     386.2
+    ],
+    [
+     158.6,
+     384.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.3,
+     411.1
+    ],
+    [
+     167.1,
+     426.8
+    ],
+    [
+     155.7,
+     425.9
+    ],
+    [
+     156.8,
+     410.4
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.1,
+     426.8
+    ],
+    [
+     166.2,
+     439.8
+    ],
+    [
+     154.7,
+     438.9
+    ],
+    [
+     155.7,
+     425.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.2,
+     439.8
+    ],
+    [
+     165.0,
+     455.5
+    ],
+    [
+     153.6,
+     454.5
+    ],
+    [
+     154.7,
+     438.9
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.0,
+     455.5
+    ],
+    [
+     164.5,
+     463.6
+    ],
+    [
+     163.3,
+     473.7
+    ],
+    [
+     151.9,
+     471.9
+    ],
+    [
+     153.0,
+     462.5
+    ],
+    [
+     153.6,
+     454.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.3,
+     482.0
+    ],
+    [
+     160.3,
+     498.1
+    ],
+    [
+     149.2,
+     494.5
+    ],
+    [
+     151.0,
+     479.5
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.3,
+     498.1
+    ],
+    [
+     158.7,
+     511.6
+    ],
+    [
+     147.7,
+     507.0
+    ],
+    [
+     149.2,
+     494.5
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     158.7,
+     511.6
+    ],
+    [
+     156.8,
+     527.7
+    ],
+    [
+     145.9,
+     521.9
+    ],
+    [
+     147.7,
+     507.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.8,
+     527.7
+    ],
+    [
+     154.6,
+     546.2
+    ],
+    [
+     143.9,
+     539.0
+    ],
+    [
+     145.9,
+     521.9
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.6,
+     554.4
+    ],
+    [
+     151.7,
+     570.6
+    ],
+    [
+     141.2,
+     561.6
+    ],
+    [
+     143.0,
+     546.7
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.7,
+     570.6
+    ],
+    [
+     150.1,
+     584.0
+    ],
+    [
+     139.7,
+     574.1
+    ],
+    [
+     141.2,
+     561.6
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.1,
+     584.0
+    ],
+    [
+     148.2,
+     600.1
+    ],
+    [
+     137.9,
+     589.0
+    ],
+    [
+     139.7,
+     574.1
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.2,
+     600.1
+    ],
+    [
+     147.5,
+     605.5
+    ],
+    [
+     133.7,
+     605.5
+    ],
+    [
+     125.7,
+     594.0
+    ],
+    [
+     137.3,
+     594.0
+    ],
+    [
+     137.9,
+     589.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.9,
+     605.5
+    ],
+    [
+     107.9,
+     605.5
+    ],
+    [
+     104.2,
+     594.0
+    ],
+    [
+     118.4,
+     594.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.9,
+     605.5
+    ],
+    [
+     93.7,
+     605.5
+    ],
+    [
+     92.3,
+     594.0
+    ],
+    [
+     104.2,
+     594.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.7,
+     605.5
+    ],
+    [
+     76.7,
+     605.5
+    ],
+    [
+     78.0,
+     594.0
+    ],
+    [
+     92.3,
+     594.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     76.7,
+     605.5
+    ],
+    [
+     57.1,
+     605.5
+    ],
+    [
+     61.7,
+     594.0
+    ],
+    [
+     78.0,
+     594.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Gangway gate",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.4,
+     605.5
+    ],
+    [
+     31.4,
+     605.5
+    ],
+    [
+     40.1,
+     594.0
+    ],
+    [
+     54.4,
+     594.0
+    ]
+   ],
+   "about": "A gate leading to one gangway tower and a cruiser's hatch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Family farewell room",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.4,
+     605.5
+    ],
+    [
+     14.5,
+     605.5
+    ],
+    [
+     26.0,
+     594.0
+    ],
+    [
+     40.1,
+     594.0
+    ]
+   ],
+   "about": "A quiet room where crews say goodbye to their families.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     608.5
+    ],
+    [
+     11.5,
+     487.9
+    ],
+    [
+     14.5,
+     486.1
+    ],
+    [
+     14.5,
+     605.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     487.9
+    ],
+    [
+     11.5,
+     367.3
+    ],
+    [
+     14.5,
+     366.7
+    ],
+    [
+     14.5,
+     486.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     367.3
+    ],
+    [
+     11.5,
+     246.7
+    ],
+    [
+     14.5,
+     247.3
+    ],
+    [
+     14.5,
+     366.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     246.7
+    ],
+    [
+     11.5,
+     126.1
+    ],
+    [
+     14.5,
+     127.9
+    ],
+    [
+     14.5,
+     247.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     126.1
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     17.6,
+     11.5
+    ],
+    [
+     20.4,
+     14.5
+    ],
+    [
+     14.5,
+     14.5
+    ],
+    [
+     14.5,
+     127.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     17.6,
+     11.5
+    ],
+    [
+     140.1,
+     11.5
+    ],
+    [
+     137.9,
+     14.5
+    ],
+    [
+     20.4,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.1,
+     11.5
+    ],
+    [
+     150.2,
+     11.5
+    ],
+    [
+     163.4,
+     121.9
+    ],
+    [
+     160.5,
+     122.8
+    ],
+    [
+     147.5,
+     14.5
+    ],
+    [
+     137.9,
+     14.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     163.4,
+     121.9
+    ],
+    [
+     167.4,
+     156.1
+    ],
+    [
+     173.0,
+     233.1
+    ],
+    [
+     173.2,
+     241.9
+    ],
+    [
+     170.2,
+     242.0
+    ],
+    [
+     170.0,
+     233.2
+    ],
+    [
+     164.5,
+     156.4
+    ],
+    [
+     160.5,
+     122.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     173.2,
+     241.9
+    ],
+    [
+     175.0,
+     310.0
+    ],
+    [
+     173.7,
+     361.9
+    ],
+    [
+     170.7,
+     361.8
+    ],
+    [
+     172.0,
+     310.0
+    ],
+    [
+     170.2,
+     242.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     173.7,
+     361.9
+    ],
+    [
+     173.0,
+     386.9
+    ],
+    [
+     167.4,
+     463.9
+    ],
+    [
+     165.3,
+     481.9
+    ],
+    [
+     162.4,
+     481.2
+    ],
+    [
+     164.5,
+     463.6
+    ],
+    [
+     170.0,
+     386.8
+    ],
+    [
+     170.7,
+     361.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.3,
+     481.9
+    ],
+    [
+     151.0,
+     602.1
+    ],
+    [
+     148.3,
+     599.3
+    ],
+    [
+     162.4,
+     481.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.0,
+     602.1
+    ],
+    [
+     150.2,
+     608.5
+    ],
+    [
+     34.2,
+     608.5
+    ],
+    [
+     36.2,
+     605.5
+    ],
+    [
+     147.5,
+     605.5
+    ],
+    [
+     148.3,
+     599.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     34.2,
+     608.5
+    ],
+    [
+     11.5,
+     608.5
+    ],
+    [
+     14.5,
+     605.5
+    ],
+    [
+     36.2,
+     605.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Gangway control room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     620.0
+    ],
+    [
+     0.0,
+     614.7
+    ],
+    [
+     11.5,
+     603.4
+    ],
+    [
+     11.5,
+     608.5
+    ]
+   ],
+   "about": "Moves the telescopic gangways into place.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Crew records office",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     614.7
+    ],
+    [
+     0.0,
+     607.6
+    ],
+    [
+     11.5,
+     596.6
+    ],
+    [
+     11.5,
+     603.4
+    ]
+   ],
+   "about": "Updates every cruiser's crew list.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     607.6
+    ],
+    [
+     0.0,
+     603.5
+    ],
+    [
+     11.5,
+     592.6
+    ],
+    [
+     11.5,
+     596.6
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     603.5
+    ],
+    [
+     0.0,
+     597.3
+    ],
+    [
+     11.5,
+     586.6
+    ],
+    [
+     11.5,
+     592.6
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     597.3
+    ],
+    [
+     0.0,
+     576.0
+    ],
+    [
+     11.5,
+     566.2
+    ],
+    [
+     11.5,
+     586.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     576.0
+    ],
+    [
+     0.0,
+     554.8
+    ],
+    [
+     11.5,
+     545.7
+    ],
+    [
+     11.5,
+     566.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     554.8
+    ],
+    [
+     0.0,
+     533.5
+    ],
+    [
+     11.5,
+     525.2
+    ],
+    [
+     11.5,
+     545.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     533.5
+    ],
+    [
+     0.0,
+     512.2
+    ],
+    [
+     11.5,
+     504.7
+    ],
+    [
+     11.5,
+     525.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     512.2
+    ],
+    [
+     0.0,
+     491.0
+    ],
+    [
+     11.5,
+     484.3
+    ],
+    [
+     11.5,
+     504.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     491.0
+    ],
+    [
+     0.0,
+     469.7
+    ],
+    [
+     11.5,
+     463.8
+    ],
+    [
+     11.5,
+     484.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     469.7
+    ],
+    [
+     0.0,
+     448.4
+    ],
+    [
+     11.5,
+     443.3
+    ],
+    [
+     11.5,
+     463.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     448.4
+    ],
+    [
+     0.0,
+     427.2
+    ],
+    [
+     11.5,
+     422.8
+    ],
+    [
+     11.5,
+     443.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     427.2
+    ],
+    [
+     0.0,
+     405.9
+    ],
+    [
+     11.5,
+     402.4
+    ],
+    [
+     11.5,
+     422.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     405.9
+    ],
+    [
+     0.0,
+     384.7
+    ],
+    [
+     11.5,
+     381.9
+    ],
+    [
+     11.5,
+     402.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     384.7
+    ],
+    [
+     0.0,
+     363.4
+    ],
+    [
+     11.5,
+     361.4
+    ],
+    [
+     11.5,
+     381.9
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     363.4
+    ],
+    [
+     0.0,
+     342.1
+    ],
+    [
+     11.5,
+     340.9
+    ],
+    [
+     11.5,
+     361.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     342.1
+    ],
+    [
+     0.0,
+     320.9
+    ],
+    [
+     11.5,
+     320.5
+    ],
+    [
+     11.5,
+     340.9
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     320.9
+    ],
+    [
+     0.0,
+     299.6
+    ],
+    [
+     11.5,
+     300.0
+    ],
+    [
+     11.5,
+     320.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     299.6
+    ],
+    [
+     0.0,
+     278.3
+    ],
+    [
+     11.5,
+     279.5
+    ],
+    [
+     11.5,
+     300.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     278.3
+    ],
+    [
+     0.0,
+     257.1
+    ],
+    [
+     11.5,
+     259.0
+    ],
+    [
+     11.5,
+     279.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     257.1
+    ],
+    [
+     0.0,
+     235.8
+    ],
+    [
+     11.5,
+     238.6
+    ],
+    [
+     11.5,
+     259.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     235.8
+    ],
+    [
+     0.0,
+     214.5
+    ],
+    [
+     11.5,
+     218.1
+    ],
+    [
+     11.5,
+     238.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     214.5
+    ],
+    [
+     0.0,
+     193.3
+    ],
+    [
+     11.5,
+     197.6
+    ],
+    [
+     11.5,
+     218.1
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     193.3
+    ],
+    [
+     0.0,
+     172.0
+    ],
+    [
+     11.5,
+     177.1
+    ],
+    [
+     11.5,
+     197.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     172.0
+    ],
+    [
+     0.0,
+     150.7
+    ],
+    [
+     11.5,
+     156.7
+    ],
+    [
+     11.5,
+     177.1
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     150.7
+    ],
+    [
+     0.0,
+     129.5
+    ],
+    [
+     11.5,
+     136.2
+    ],
+    [
+     11.5,
+     156.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     129.5
+    ],
+    [
+     0.0,
+     108.2
+    ],
+    [
+     11.5,
+     115.7
+    ],
+    [
+     11.5,
+     136.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     108.2
+    ],
+    [
+     0.0,
+     87.0
+    ],
+    [
+     11.5,
+     95.2
+    ],
+    [
+     11.5,
+     115.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     87.0
+    ],
+    [
+     0.0,
+     65.7
+    ],
+    [
+     11.5,
+     74.8
+    ],
+    [
+     11.5,
+     95.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     65.7
+    ],
+    [
+     0.0,
+     44.4
+    ],
+    [
+     11.5,
+     54.3
+    ],
+    [
+     11.5,
+     74.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     44.4
+    ],
+    [
+     0.0,
+     23.2
+    ],
+    [
+     11.5,
+     33.8
+    ],
+    [
+     11.5,
+     54.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     23.2
+    ],
+    [
+     0.0,
+     1.9
+    ],
+    [
+     11.5,
+     13.3
+    ],
+    [
+     11.5,
+     33.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     1.9
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     20.4,
+     0.0
+    ],
+    [
+     29.1,
+     11.5
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     11.5,
+     13.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     20.4,
+     0.0
+    ],
+    [
+     42.8,
+     0.0
+    ],
+    [
+     48.5,
+     11.5
+    ],
+    [
+     29.1,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     42.8,
+     0.0
+    ],
+    [
+     65.2,
+     0.0
+    ],
+    [
+     67.8,
+     11.5
+    ],
+    [
+     48.5,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.2,
+     0.0
+    ],
+    [
+     87.5,
+     0.0
+    ],
+    [
+     87.2,
+     11.5
+    ],
+    [
+     67.8,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     87.5,
+     0.0
+    ],
+    [
+     109.9,
+     0.0
+    ],
+    [
+     106.5,
+     11.5
+    ],
+    [
+     87.2,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     109.9,
+     0.0
+    ],
+    [
+     132.3,
+     0.0
+    ],
+    [
+     125.9,
+     11.5
+    ],
+    [
+     106.5,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     132.3,
+     0.0
+    ],
+    [
+     154.7,
+     0.0
+    ],
+    [
+     145.3,
+     11.5
+    ],
+    [
+     125.9,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     154.7,
+     0.0
+    ],
+    [
+     160.4,
+     0.0
+    ],
+    [
+     162.3,
+     16.0
+    ],
+    [
+     152.0,
+     26.4
+    ],
+    [
+     150.2,
+     11.5
+    ],
+    [
+     145.3,
+     11.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     162.3,
+     16.0
+    ],
+    [
+     164.9,
+     37.4
+    ],
+    [
+     154.4,
+     46.4
+    ],
+    [
+     152.0,
+     26.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.9,
+     37.4
+    ],
+    [
+     167.4,
+     58.9
+    ],
+    [
+     156.7,
+     66.4
+    ],
+    [
+     154.4,
+     46.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     167.4,
+     58.9
+    ],
+    [
+     170.0,
+     80.3
+    ],
+    [
+     159.1,
+     86.4
+    ],
+    [
+     156.7,
+     66.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.0,
+     80.3
+    ],
+    [
+     172.5,
+     101.7
+    ],
+    [
+     161.5,
+     106.4
+    ],
+    [
+     159.1,
+     86.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     172.5,
+     101.7
+    ],
+    [
+     175.1,
+     123.2
+    ],
+    [
+     163.9,
+     126.4
+    ],
+    [
+     161.5,
+     106.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.1,
+     123.2
+    ],
+    [
+     177.7,
+     144.6
+    ],
+    [
+     166.3,
+     146.4
+    ],
+    [
+     163.9,
+     126.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     177.7,
+     144.6
+    ],
+    [
+     178.9,
+     155.0
+    ],
+    [
+     179.7,
+     165.8
+    ],
+    [
+     168.2,
+     166.8
+    ],
+    [
+     167.4,
+     156.1
+    ],
+    [
+     166.3,
+     146.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     179.7,
+     165.8
+    ],
+    [
+     181.2,
+     186.7
+    ],
+    [
+     169.7,
+     187.5
+    ],
+    [
+     168.2,
+     166.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     181.2,
+     186.7
+    ],
+    [
+     182.7,
+     207.6
+    ],
+    [
+     171.2,
+     208.3
+    ],
+    [
+     169.7,
+     187.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     182.7,
+     207.6
+    ],
+    [
+     184.2,
+     228.4
+    ],
+    [
+     172.7,
+     229.0
+    ],
+    [
+     171.2,
+     208.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     184.2,
+     228.4
+    ],
+    [
+     184.5,
+     232.5
+    ],
+    [
+     184.9,
+     249.4
+    ],
+    [
+     173.4,
+     249.8
+    ],
+    [
+     173.0,
+     233.1
+    ],
+    [
+     172.7,
+     229.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     184.9,
+     249.4
+    ],
+    [
+     185.5,
+     270.3
+    ],
+    [
+     174.0,
+     270.6
+    ],
+    [
+     173.4,
+     249.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     185.5,
+     270.3
+    ],
+    [
+     186.0,
+     291.2
+    ],
+    [
+     174.5,
+     291.4
+    ],
+    [
+     174.0,
+     270.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     186.0,
+     291.2
+    ],
+    [
+     186.5,
+     310.0
+    ],
+    [
+     186.4,
+     312.2
+    ],
+    [
+     174.9,
+     312.2
+    ],
+    [
+     175.0,
+     310.0
+    ],
+    [
+     174.5,
+     291.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     186.4,
+     312.2
+    ],
+    [
+     185.9,
+     333.1
+    ],
+    [
+     174.4,
+     333.0
+    ],
+    [
+     174.9,
+     312.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     185.9,
+     333.1
+    ],
+    [
+     185.4,
+     354.1
+    ],
+    [
+     173.9,
+     353.7
+    ],
+    [
+     174.4,
+     333.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     185.4,
+     354.1
+    ],
+    [
+     184.8,
+     375.0
+    ],
+    [
+     173.3,
+     374.5
+    ],
+    [
+     173.9,
+     353.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     184.8,
+     375.0
+    ],
+    [
+     184.5,
+     387.5
+    ],
+    [
+     183.9,
+     395.9
+    ],
+    [
+     172.4,
+     395.3
+    ],
+    [
+     173.0,
+     386.9
+    ],
+    [
+     173.3,
+     374.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     183.9,
+     395.9
+    ],
+    [
+     182.4,
+     416.8
+    ],
+    [
+     170.9,
+     416.0
+    ],
+    [
+     172.4,
+     395.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     182.4,
+     416.8
+    ],
+    [
+     180.9,
+     437.7
+    ],
+    [
+     169.4,
+     436.8
+    ],
+    [
+     170.9,
+     416.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     180.9,
+     437.7
+    ],
+    [
+     179.4,
+     458.6
+    ],
+    [
+     167.9,
+     457.5
+    ],
+    [
+     169.4,
+     436.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     179.4,
+     458.6
+    ],
+    [
+     178.9,
+     465.0
+    ],
+    [
+     177.1,
+     479.9
+    ],
+    [
+     165.8,
+     477.8
+    ],
+    [
+     167.4,
+     463.9
+    ],
+    [
+     167.9,
+     457.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     177.1,
+     479.9
+    ],
+    [
+     174.6,
+     501.3
+    ],
+    [
+     163.4,
+     497.8
+    ],
+    [
+     165.8,
+     477.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     174.6,
+     501.3
+    ],
+    [
+     172.0,
+     522.7
+    ],
+    [
+     161.0,
+     517.8
+    ],
+    [
+     163.4,
+     497.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     172.0,
+     522.7
+    ],
+    [
+     169.4,
+     544.2
+    ],
+    [
+     158.6,
+     537.8
+    ],
+    [
+     161.0,
+     517.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     169.4,
+     544.2
+    ],
+    [
+     166.9,
+     565.6
+    ],
+    [
+     156.2,
+     557.8
+    ],
+    [
+     158.6,
+     537.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     166.9,
+     565.6
+    ],
+    [
+     164.3,
+     587.1
+    ],
+    [
+     153.9,
+     577.8
+    ],
+    [
+     156.2,
+     557.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.3,
+     587.1
+    ],
+    [
+     161.8,
+     608.5
+    ],
+    [
+     151.5,
+     597.8
+    ],
+    [
+     153.9,
+     577.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.8,
+     608.5
+    ],
+    [
+     160.4,
+     620.0
+    ],
+    [
+     150.0,
+     620.0
+    ],
+    [
+     141.2,
+     608.5
+    ],
+    [
+     150.2,
+     608.5
+    ],
+    [
+     151.5,
+     597.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     150.0,
+     620.0
+    ],
+    [
+     127.6,
+     620.0
+    ],
+    [
+     121.9,
+     608.5
+    ],
+    [
+     141.2,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     127.6,
+     620.0
+    ],
+    [
+     105.2,
+     620.0
+    ],
+    [
+     102.5,
+     608.5
+    ],
+    [
+     121.9,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.2,
+     620.0
+    ],
+    [
+     82.9,
+     620.0
+    ],
+    [
+     83.1,
+     608.5
+    ],
+    [
+     102.5,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     82.9,
+     620.0
+    ],
+    [
+     60.5,
+     620.0
+    ],
+    [
+     63.8,
+     608.5
+    ],
+    [
+     83.1,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     60.5,
+     620.0
+    ],
+    [
+     38.1,
+     620.0
+    ],
+    [
+     44.4,
+     608.5
+    ],
+    [
+     63.8,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.1,
+     620.0
+    ],
+    [
+     15.7,
+     620.0
+    ],
+    [
+     25.1,
+     608.5
+    ],
+    [
+     44.4,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.7,
+     620.0
+    ],
+    [
+     0.0,
+     620.0
+    ],
+    [
+     11.5,
+     608.5
+    ],
+    [
+     25.1,
+     608.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     605.5
+    ],
+    [
+     14.5,
+     584.2
+    ],
+    [
+     26.0,
+     573.5
+    ],
+    [
+     26.0,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     584.2
+    ],
+    [
+     14.5,
+     573.7
+    ],
+    [
+     26.0,
+     563.5
+    ],
+    [
+     26.0,
+     573.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     565.6
+    ],
+    [
+     14.5,
+     544.3
+    ],
+    [
+     26.0,
+     535.2
+    ],
+    [
+     26.0,
+     555.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     544.3
+    ],
+    [
+     14.5,
+     523.0
+    ],
+    [
+     26.0,
+     514.7
+    ],
+    [
+     26.0,
+     535.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     523.0
+    ],
+    [
+     14.5,
+     502.1
+    ],
+    [
+     26.0,
+     494.6
+    ],
+    [
+     26.0,
+     514.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     493.9
+    ],
+    [
+     14.5,
+     472.6
+    ],
+    [
+     26.0,
+     466.3
+    ],
+    [
+     26.0,
+     486.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     472.6
+    ],
+    [
+     14.5,
+     451.3
+    ],
+    [
+     26.0,
+     445.8
+    ],
+    [
+     26.0,
+     466.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     451.3
+    ],
+    [
+     14.5,
+     430.4
+    ],
+    [
+     26.0,
+     425.7
+    ],
+    [
+     26.0,
+     445.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     422.2
+    ],
+    [
+     14.5,
+     400.9
+    ],
+    [
+     26.0,
+     397.4
+    ],
+    [
+     26.0,
+     417.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     400.9
+    ],
+    [
+     14.5,
+     379.6
+    ],
+    [
+     26.0,
+     376.9
+    ],
+    [
+     26.0,
+     397.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     379.6
+    ],
+    [
+     14.5,
+     358.7
+    ],
+    [
+     26.0,
+     356.8
+    ],
+    [
+     26.0,
+     376.9
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     350.5
+    ],
+    [
+     14.5,
+     329.3
+    ],
+    [
+     26.0,
+     328.5
+    ],
+    [
+     26.0,
+     349.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     329.3
+    ],
+    [
+     14.5,
+     308.0
+    ],
+    [
+     26.0,
+     308.0
+    ],
+    [
+     26.0,
+     328.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     308.0
+    ],
+    [
+     14.5,
+     287.0
+    ],
+    [
+     26.0,
+     287.9
+    ],
+    [
+     26.0,
+     308.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     278.9
+    ],
+    [
+     14.5,
+     257.6
+    ],
+    [
+     26.0,
+     259.6
+    ],
+    [
+     26.0,
+     280.1
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     257.6
+    ],
+    [
+     14.5,
+     236.3
+    ],
+    [
+     26.0,
+     239.2
+    ],
+    [
+     26.0,
+     259.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     236.3
+    ],
+    [
+     14.5,
+     215.3
+    ],
+    [
+     26.0,
+     219.0
+    ],
+    [
+     26.0,
+     239.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     207.2
+    ],
+    [
+     14.5,
+     185.9
+    ],
+    [
+     26.0,
+     190.7
+    ],
+    [
+     26.0,
+     211.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     185.9
+    ],
+    [
+     14.5,
+     164.6
+    ],
+    [
+     26.0,
+     170.3
+    ],
+    [
+     26.0,
+     190.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     164.6
+    ],
+    [
+     14.5,
+     143.6
+    ],
+    [
+     26.0,
+     150.1
+    ],
+    [
+     26.0,
+     170.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     135.5
+    ],
+    [
+     14.5,
+     114.2
+    ],
+    [
+     26.0,
+     121.8
+    ],
+    [
+     26.0,
+     142.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     114.2
+    ],
+    [
+     14.5,
+     92.9
+    ],
+    [
+     26.0,
+     101.4
+    ],
+    [
+     26.0,
+     121.8
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     92.9
+    ],
+    [
+     14.5,
+     72.0
+    ],
+    [
+     26.0,
+     81.2
+    ],
+    [
+     26.0,
+     101.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     63.8
+    ],
+    [
+     14.5,
+     42.5
+    ],
+    [
+     26.0,
+     52.9
+    ],
+    [
+     26.0,
+     73.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E335",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     42.5
+    ],
+    [
+     14.5,
+     21.2
+    ],
+    [
+     26.0,
+     32.5
+    ],
+    [
+     26.0,
+     52.9
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E336",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.5,
+     21.2
+    ],
+    [
+     14.5,
+     14.5
+    ],
+    [
+     29.7,
+     14.5
+    ],
+    [
+     38.7,
+     26.0
+    ],
+    [
+     26.0,
+     26.0
+    ],
+    [
+     26.0,
+     32.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E337",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.4,
+     14.5
+    ],
+    [
+     61.1,
+     14.5
+    ],
+    [
+     65.0,
+     26.0
+    ],
+    [
+     46.0,
+     26.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E338",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     61.1,
+     14.5
+    ],
+    [
+     83.8,
+     14.5
+    ],
+    [
+     84.0,
+     26.0
+    ],
+    [
+     65.0,
+     26.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E339",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     83.8,
+     14.5
+    ],
+    [
+     106.2,
+     14.5
+    ],
+    [
+     102.7,
+     26.0
+    ],
+    [
+     84.0,
+     26.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E340",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.9,
+     14.5
+    ],
+    [
+     137.6,
+     14.5
+    ],
+    [
+     129.0,
+     26.0
+    ],
+    [
+     110.0,
+     26.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E341",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.6,
+     14.5
+    ],
+    [
+     147.5,
+     14.5
+    ],
+    [
+     149.0,
+     26.7
+    ],
+    [
+     138.7,
+     37.3
+    ],
+    [
+     137.3,
+     26.0
+    ],
+    [
+     129.0,
+     26.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E342",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     149.0,
+     26.7
+    ],
+    [
+     151.5,
+     47.8
+    ],
+    [
+     141.0,
+     56.9
+    ],
+    [
+     138.7,
+     37.3
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E343",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     152.5,
+     56.1
+    ],
+    [
+     155.1,
+     77.6
+    ],
+    [
+     144.3,
+     84.5
+    ],
+    [
+     141.9,
+     64.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E344",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     155.1,
+     77.6
+    ],
+    [
+     157.6,
+     99.1
+    ],
+    [
+     146.7,
+     104.4
+    ],
+    [
+     144.3,
+     84.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E345",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     157.6,
+     99.1
+    ],
+    [
+     160.2,
+     120.3
+    ],
+    [
+     149.0,
+     124.0
+    ],
+    [
+     146.7,
+     104.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E346",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.1,
+     128.5
+    ],
+    [
+     163.7,
+     150.0
+    ],
+    [
+     152.3,
+     151.6
+    ],
+    [
+     149.9,
+     131.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E347",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     163.7,
+     150.0
+    ],
+    [
+     164.5,
+     156.4
+    ],
+    [
+     165.5,
+     171.1
+    ],
+    [
+     154.1,
+     172.1
+    ],
+    [
+     153.0,
+     157.5
+    ],
+    [
+     152.3,
+     151.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E348",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.5,
+     171.1
+    ],
+    [
+     167.0,
+     191.7
+    ],
+    [
+     155.5,
+     192.5
+    ],
+    [
+     154.1,
+     172.1
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E349",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     167.6,
+     199.7
+    ],
+    [
+     169.1,
+     220.6
+    ],
+    [
+     157.6,
+     221.2
+    ],
+    [
+     156.1,
+     200.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E350",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     169.1,
+     220.6
+    ],
+    [
+     170.0,
+     233.2
+    ],
+    [
+     170.2,
+     241.5
+    ],
+    [
+     158.7,
+     242.0
+    ],
+    [
+     158.5,
+     233.8
+    ],
+    [
+     157.6,
+     221.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E351",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.2,
+     241.5
+    ],
+    [
+     170.8,
+     262.1
+    ],
+    [
+     159.3,
+     262.4
+    ],
+    [
+     158.7,
+     242.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E352",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.0,
+     270.1
+    ],
+    [
+     171.5,
+     291.1
+    ],
+    [
+     160.0,
+     291.2
+    ],
+    [
+     159.5,
+     270.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E353",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.5,
+     291.1
+    ],
+    [
+     172.0,
+     310.0
+    ],
+    [
+     171.9,
+     312.0
+    ],
+    [
+     160.4,
+     312.0
+    ],
+    [
+     160.5,
+     310.0
+    ],
+    [
+     160.0,
+     291.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E354",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.9,
+     312.0
+    ],
+    [
+     171.4,
+     332.6
+    ],
+    [
+     159.9,
+     332.5
+    ],
+    [
+     160.4,
+     312.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E355",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     171.2,
+     340.6
+    ],
+    [
+     170.7,
+     361.6
+    ],
+    [
+     159.2,
+     361.2
+    ],
+    [
+     159.7,
+     340.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E356",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.7,
+     361.6
+    ],
+    [
+     170.1,
+     382.5
+    ],
+    [
+     158.6,
+     382.0
+    ],
+    [
+     159.2,
+     361.2
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E357",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     170.1,
+     382.5
+    ],
+    [
+     170.0,
+     386.8
+    ],
+    [
+     168.8,
+     403.1
+    ],
+    [
+     157.4,
+     402.4
+    ],
+    [
+     158.5,
+     386.2
+    ],
+    [
+     158.6,
+     382.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E358",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.3,
+     411.1
+    ],
+    [
+     166.7,
+     432.0
+    ],
+    [
+     155.3,
+     431.1
+    ],
+    [
+     156.8,
+     410.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E359",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     166.7,
+     432.0
+    ],
+    [
+     165.2,
+     452.9
+    ],
+    [
+     153.8,
+     451.9
+    ],
+    [
+     155.3,
+     431.1
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E360",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     165.2,
+     452.9
+    ],
+    [
+     164.5,
+     463.6
+    ],
+    [
+     163.3,
+     473.7
+    ],
+    [
+     151.9,
+     471.9
+    ],
+    [
+     153.0,
+     462.5
+    ],
+    [
+     153.8,
+     451.9
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E361",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     162.3,
+     482.0
+    ],
+    [
+     159.7,
+     503.5
+    ],
+    [
+     148.6,
+     499.5
+    ],
+    [
+     151.0,
+     479.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E362",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     159.7,
+     503.5
+    ],
+    [
+     157.1,
+     525.0
+    ],
+    [
+     146.2,
+     519.4
+    ],
+    [
+     148.6,
+     499.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E363",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     157.1,
+     525.0
+    ],
+    [
+     154.6,
+     546.2
+    ],
+    [
+     143.9,
+     539.0
+    ],
+    [
+     146.2,
+     519.4
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E364",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     153.6,
+     554.4
+    ],
+    [
+     151.1,
+     575.9
+    ],
+    [
+     140.6,
+     566.6
+    ],
+    [
+     143.0,
+     546.7
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E365",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.1,
+     575.9
+    ],
+    [
+     148.5,
+     597.5
+    ],
+    [
+     138.2,
+     586.5
+    ],
+    [
+     140.6,
+     566.6
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E366",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.5,
+     597.5
+    ],
+    [
+     147.5,
+     605.5
+    ],
+    [
+     133.7,
+     605.5
+    ],
+    [
+     125.7,
+     594.0
+    ],
+    [
+     137.3,
+     594.0
+    ],
+    [
+     138.2,
+     586.5
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E367",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     124.9,
+     605.5
+    ],
+    [
+     102.2,
+     605.5
+    ],
+    [
+     99.4,
+     594.0
+    ],
+    [
+     118.4,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E368",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     102.2,
+     605.5
+    ],
+    [
+     79.5,
+     605.5
+    ],
+    [
+     80.4,
+     594.0
+    ],
+    [
+     99.4,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E369",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     79.5,
+     605.5
+    ],
+    [
+     57.1,
+     605.5
+    ],
+    [
+     61.7,
+     594.0
+    ],
+    [
+     80.4,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E370",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     48.4,
+     605.5
+    ],
+    [
+     25.7,
+     605.5
+    ],
+    [
+     35.4,
+     594.0
+    ],
+    [
+     54.4,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E371",
+   "type": "room",
+   "name": "Gangway bridge",
+   "level": "L2",
+   "outline_m": [
+    [
+     25.7,
+     605.5
+    ],
+    [
+     14.5,
+     605.5
+    ],
+    [
+     26.0,
+     594.0
+    ],
+    [
+     35.4,
+     594.0
+    ]
+   ],
+   "about": "A covered bridge from the hall towards the gangway towers.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

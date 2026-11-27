@@ -1,0 +1,211 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P2-02",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  520.0,
+  575.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Tank floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Fuel tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     359.4
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     520.0,
+     0.0
+    ],
+    [
+     520.0,
+     359.4
+    ]
+   ],
+   "about": "Rows of tall tanks holding the cruisers' fuel, each inside a bunded wall to catch any spill.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Pump house",
+   "level": "L1",
+   "outline_m": [
+    [
+     84.0,
+     238.7
+    ],
+    [
+     100.0,
+     238.7
+    ],
+    [
+     100.0,
+     250.7
+    ],
+    [
+     84.0,
+     250.7
+    ]
+   ],
+   "about": "Pumps that push fuel down the pipe to the berths.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Farm control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.0,
+     238.7
+    ],
+    [
+     108.0,
+     238.7
+    ],
+    [
+     108.0,
+     250.7
+    ],
+    [
+     100.0,
+     250.7
+    ]
+   ],
+   "about": "Operators watch every tank's level, pressure and temperature.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Tank row",
+   "level": "L1",
+   "outline_m": [
+    [
+     52.0,
+     35.9
+    ],
+    [
+     468.0,
+     35.9
+    ],
+    [
+     468.0,
+     287.5
+    ],
+    [
+     52.0,
+     287.5
+    ]
+   ],
+   "about": "Tall white fuel tanks in a bunded enclosure.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Pipe rack",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     431.3
+    ],
+    [
+     0.0,
+     359.4
+    ],
+    [
+     520.0,
+     359.4
+    ],
+    [
+     520.0,
+     431.3
+    ]
+   ],
+   "about": "Raised racks carrying fuel pipes to the berths.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Fire water ring",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     503.1
+    ],
+    [
+     0.0,
+     431.3
+    ],
+    [
+     520.0,
+     431.3
+    ],
+    [
+     520.0,
+     503.1
+    ]
+   ],
+   "about": "Fire hydrants and foam monitors round the tanks.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Tanker bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     575.0
+    ],
+    [
+     0.0,
+     503.1
+    ],
+    [
+     520.0,
+     503.1
+    ],
+    [
+     520.0,
+     575.0
+    ]
+   ],
+   "about": "Bays where fuel arrives by tanker train from the Keelway.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

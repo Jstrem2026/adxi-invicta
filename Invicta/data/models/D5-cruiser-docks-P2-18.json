@@ -1,0 +1,185 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P2-18",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  763.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Spares crates",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     190.7
+    ],
+    [
+     0.0,
+     190.7
+    ]
+   ],
+   "about": "Crates of general spares.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.9,
+     17.6
+    ],
+    [
+     71.9,
+     17.6
+    ],
+    [
+     71.9,
+     25.6
+    ],
+    [
+     59.9,
+     25.6
+    ]
+   ],
+   "about": "The yard checker's hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Water containers",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     190.7
+    ],
+    [
+     440.0,
+     381.5
+    ],
+    [
+     0.0,
+     381.5
+    ],
+    [
+     0.0,
+     190.7
+    ]
+   ],
+   "about": "Containers of drinking water.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Empties",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     381.5
+    ],
+    [
+     440.0,
+     476.9
+    ],
+    [
+     0.0,
+     476.9
+    ],
+    [
+     0.0,
+     381.5
+    ]
+   ],
+   "about": "Empty containers waiting to go back.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Container rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     476.9
+    ],
+    [
+     440.0,
+     667.6
+    ],
+    [
+     0.0,
+     667.6
+    ],
+    [
+     0.0,
+     476.9
+    ]
+   ],
+   "about": "Containers of mixed stores.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Forklift lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     667.6
+    ],
+    [
+     440.0,
+     763.0
+    ],
+    [
+     0.0,
+     763.0
+    ],
+    [
+     0.0,
+     667.6
+    ]
+   ],
+   "about": "A lane for forklifts and haulers.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

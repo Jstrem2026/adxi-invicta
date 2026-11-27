@@ -1,0 +1,318 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P5-05",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  570.4,
+  590.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Parade square",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.2,
+     336.9
+    ],
+    [
+     0.4,
+     34.3
+    ],
+    [
+     3.6,
+     23.4
+    ],
+    [
+     9.8,
+     13.8
+    ],
+    [
+     18.4,
+     6.3
+    ],
+    [
+     28.7,
+     1.6
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     536.1,
+     0.4
+    ],
+    [
+     547.0,
+     3.6
+    ],
+    [
+     556.6,
+     9.8
+    ],
+    [
+     564.0,
+     18.4
+    ],
+    [
+     568.7,
+     28.7
+    ],
+    [
+     570.4,
+     40.0
+    ],
+    [
+     570.2,
+     336.9
+    ]
+   ],
+   "about": "A paved square in front of the Fleet Admiral's Office, used for parades and ceremonies.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Flag masts",
+   "level": "L1",
+   "outline_m": [
+    [
+     171.2,
+     16.8
+    ],
+    [
+     399.3,
+     16.8
+    ],
+    [
+     399.3,
+     37.1
+    ],
+    [
+     171.2,
+     37.1
+    ]
+   ],
+   "about": "A row of masts flying the flags of the six cruisers.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Memorial garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.1,
+     420.8
+    ],
+    [
+     0.2,
+     336.9
+    ],
+    [
+     570.2,
+     336.9
+    ],
+    [
+     570.1,
+     420.8
+    ]
+   ],
+   "about": "A quiet garden with a memorial to crews lost in service.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Fleet memorial",
+   "level": "L1",
+   "outline_m": [
+    [
+     228.1,
+     370.5
+    ],
+    [
+     342.1,
+     370.5
+    ],
+    [
+     342.1,
+     387.3
+    ],
+    [
+     228.1,
+     387.3
+    ]
+   ],
+   "about": "A stone memorial with the names of the fallen.",
+   "parent": "E003",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Tree avenue",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     504.7
+    ],
+    [
+     0.1,
+     420.8
+    ],
+    [
+     570.1,
+     420.8
+    ],
+    [
+     570.0,
+     504.7
+    ]
+   ],
+   "about": "An avenue of trees leading to the Admiral's Office.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Café terrace",
+   "level": "L1",
+   "outline_m": [
+    [
+     570.0,
+     555.7
+    ],
+    [
+     566.8,
+     566.6
+    ],
+    [
+     560.6,
+     576.2
+    ],
+    [
+     552.0,
+     583.7
+    ],
+    [
+     541.6,
+     588.4
+    ],
+    [
+     530.4,
+     590.0
+    ],
+    [
+     34.3,
+     589.6
+    ],
+    [
+     23.4,
+     586.4
+    ],
+    [
+     13.8,
+     580.2
+    ],
+    [
+     6.3,
+     571.6
+    ],
+    [
+     1.6,
+     561.3
+    ],
+    [
+     0.0,
+     550.0
+    ],
+    [
+     0.0,
+     504.7
+    ],
+    [
+     570.0,
+     504.7
+    ]
+   ],
+   "about": "Outdoor tables beside a café kiosk.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Café kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     379.9,
+     506.3
+    ],
+    [
+     390.6,
+     506.3
+    ],
+    [
+     390.6,
+     516.3
+    ],
+    [
+     379.9,
+     516.3
+    ]
+   ],
+   "about": "Coffee and food.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     390.6,
+     506.3
+    ],
+    [
+     395.9,
+     506.3
+    ],
+    [
+     395.9,
+     516.3
+    ],
+    [
+     390.6,
+     516.3
+    ]
+   ],
+   "about": "Public toilets.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
