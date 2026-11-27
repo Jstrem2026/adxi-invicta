@@ -9,6 +9,8 @@ import re
 import time
 
 from . import geometry as G
+from . import footprints as FP
+from .categories import categorize, KEYS as CATEGORY_KEYS, legend as category_legend
 from . import parsers as P
 from .sources import CANON, DECK_NAMES, FIXED, MIRROR_DOCS, GAME_DOCS, deck_paths, Root
 
@@ -119,6 +121,11 @@ class Loader:
         for k in ("render", "emblem", "sheet_pdf"):
             self.used[dp[k]] = "Deck %d %s" % (n, k)
             d["has_" + k] = self.r.exists(dp[k])
+        art = "%s/art/emblems/d%d.png" % (GAME_DOCS, n)   # Jordan's full-size deck city emblem (27 Nov 2026)
+        if self.r.exists(art):
+            self.used[art] = "Deck %d emblem (full size)" % n
+            d["emblem_art"] = art
+        d["emblem_web"] = "emblems/d%d.webp" % n if os.path.isfile(os.path.join(APP_DIR, "web", "emblems", "d%d.webp" % n)) else None
         if not t:
             return d
         d["meta"] = P.sheet_meta(t)
@@ -221,6 +228,11 @@ class Loader:
     def crown(self):
         t = self.text(FIXED["crown_sheet"], "Canon Crown Bridge data sheet")
         out = {"sheet": FIXED["crown_sheet"], "key": {}, "levels": []}
+        art = "%s/art/emblems/bridge.png" % GAME_DOCS
+        if self.r.exists(art):
+            self.used[art] = "Bridge emblem (full size)"
+            out["emblem_art"] = art
+        out["emblem_web"] = "emblems/bridge.webp" if os.path.isfile(os.path.join(APP_DIR, "web", "emblems", "bridge.webp")) else None
         if not t:
             return out
         out["meta"] = P.sheet_meta(t)
@@ -273,18 +285,24 @@ class Loader:
             # buildings
             for b in p["buildings"]:
                 b["uid"] = "%s-%s" % (p["uid"].rsplit("-", 1)[0], b["id"])
+                if b.get("category") not in CATEGORY_KEYS:
+                    if b.get("category"):
+                        b["category_bad"] = b["category"]   # the scan reports it
+                    b["category"] = categorize(b)
+                    b["category_auto"] = True   # worked out from the name: not stored in the data file yet
                 r = b.get("rect_km")
                 if r:
                     cxy = ((r[0] + r[1]) / 2, (r[2] + r[3]) / 2)
                     b["address"] = G.address(n, *cxy)
                     shapes = b.get("bays_km") or [r]
-                    b["footprint_km2"] = round(sum((s[1] - s[0]) * (s[3] - s[2]) for s in shapes), 4)
+                    b["footprint_km2"] = round(FP.footprint_area(b), 4)
+                    box_km2 = sum((s[1] - s[0]) * (s[3] - s[2]) for s in shapes)
                     b["blocks"] = []
                     for blk in blocks:
                         ov = sum(G.rect_overlap(s, blk["cell_km"]) for s in shapes)
                         if ov > 1e-7:
                             b["blocks"].append(blk["id"])
-                            ct = {"id": b["id"], "share": round(ov / max(b["footprint_km2"], 1e-9), 3)}
+                            ct = {"id": b["id"], "share": round(ov / max(box_km2, 1e-9), 3)}
                             if b.get("bays_km"):
                                 ct["parts"] = sum(1 for s in b["bays_km"] if G.rect_overlap(s, blk["cell_km"]) > 0.999 * (s[1] - s[0]) * (s[3] - s[2]))
                                 ct["of"] = len(b["bays_km"])
@@ -329,7 +347,7 @@ class Loader:
             "root": self.r.root,
             "ship": ship, "game": {k: v for k, v in game.items()}, "decks": decks, "crown": crown,
             "precinct_sets": psets, "zones": zones, "errata": errata, "rules": rules,
-            "load_ms": 0,
+            "categories": category_legend(), "load_ms": 0,
         }
         model["sources"] = [{"path": p, "role": role, "exists": self.r.exists(p) or os.path.isfile(_atlas_abs(p)),
                              "mtime": self.r.mtime(p) or _mtime(_atlas_abs(p))} for p, role in sorted(self.used.items())]

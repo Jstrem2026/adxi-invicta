@@ -48,6 +48,7 @@ ALLOWED = (
     "Game/Docs/Atrium_Plaza_Precincts.md",
     "Game/Docs/geometry_revB/",
     "Game/Docs/art/blueprints/",
+    "Game/Docs/art/emblems/",
 )
 NEVER = ("Website/", "Game/Tools/", "Game/ArcaneDrift/", "Game/Data/")
 

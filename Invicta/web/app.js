@@ -6,7 +6,32 @@
 const SHIP_L = 34.0;               // km, prow tip to stern
 const M_FT = 3.28084, KM2_SQMI = 1 / 2.589988, M2_ACRE = 1 / 4046.8564224;
 const LANES = "ABCDEFGHIJKLMNOPQRSTUVWXY";
-const KIND_FILL = { building: "#3b5b7f", utility: "#4a4f57", park: "#2f6b4a", plaza: "#4a4128", transport: "#2c3440", bays: "#6b4a2b" };
+// Map colour legend (Jordan, 27 Nov 2026): every building is coloured by what it is used for.
+// The list comes from the app data (atlaslib/categories.py), so 2D and 3D always agree.
+let CAT = {};
+const catOf = b => CAT[(b && b.category) || "offices"] || { fill: "#3b5b7f", edge: "#e8f1fb", text: "#e8f1fb", label: "" };
+const streetCat = st => CAT[/keelway/i.test(st.name) ? "keelway" : /boulevard|promenade/i.test(st.name) ? "parks" : "transit"] || { fill: "#2c3440", text: "#cfd8e3" };
+window.adxiCat = b => catOf(b);
+window.adxiStreetCat = st => streetCat(st);
+function catLegend() {
+  return (D.model.categories || []).map(c => `<span><i style="background:${c.fill};border-color:${c.edge}"></i>${esc(c.label)}</span>`).join("");
+}
+// A building's footprint: its shaped outline (curves, L and U shapes, courtyards as holes) when it has one,
+// otherwise its box, or one box per bay for a bay row.
+// Deck city and Bridge emblems (Jordan, 27 Nov 2026): a small copy in web/emblems, the full size art in Game/Docs/art/emblems.
+const staticSrc = rel => (window.ADXI_STATIC ? "static/" : "/static/") + rel;
+function emblem(o, size, cls) {
+  if (!o || !o.emblem_web) return "";
+  const img = `<img class="${cls || "emblem"}" src="${staticSrc(o.emblem_web)}" width="${size}" height="${size}" alt="" loading="lazy">`;
+  return o.emblem_art ? `<a href="${fileSrc(o.emblem_art)}" target="_blank" rel="noopener" title="Emblem (full size)">${img}</a>` : img;
+}
+function shapeEl(b, attrs) {
+  if (b.outline_km && !b.bays_km) {
+    const d = b.outline_km.map(pathOf).join("") + (b.holes_km || []).map(pathOf).join("");
+    return `<path d="${d}" fill-rule="evenodd" ${attrs || ""}/>`;
+  }
+  return (b.bays_km || (b.rect_km ? [b.rect_km] : [])).map(r => rectEl(r, attrs)).join("");
+}
 let D = null;                      // everything from /api/all
 let IX = {};                       // lookups
 let showKnown = true;
@@ -102,6 +127,7 @@ async function load() {
 }
 function index() {
   IX = { decks: {}, districts: {}, psets: {}, precincts: {}, buildings: {} };
+  CAT = Object.fromEntries((D.model.categories || []).map(c => [c.key, c]));
   for (const d of D.model.decks) {
     IX.decks[d.n] = d;
     for (const x of d.districts) { x.deck = d.n; IX.districts[x.id] = x; }
@@ -517,10 +543,10 @@ function shipView() {
   g += `<text x="${X(17)}" y="${SY(4.1) - 700}" font-size="520" fill="#7fb0de" text-anchor="middle">SIDE VIEW · vertical scale ×${ex} · click a deck</text>`;
   const vb = [-1000, SY(4.1) - 1500, 36000, 4100 * ex + 1500 + off + 7000];
   const dims = (s.dimensions || []).slice(0, 10).map(r => `<div>${esc(r.item)}</div><div>${usText(r.value)}</div>`).join("");
-  const decks = D.model.decks.map(d => `<li onclick="go('#/deck/${d.n}')"><span><b>${d.n} ${esc(d.name)}</b> <span class="muted small">${esc(d.role)}</span></span><span class="small">${area(d.net_area_calc)}</span></li>`).join("");
+  const decks = D.model.decks.map(d => `<li onclick="go('#/deck/${d.n}')"><span>${d.emblem_web ? `<img class="emblem-sm" src="${staticSrc(d.emblem_web)}" alt="">` : ""}<b>${d.n} ${esc(d.name)}</b> <span class="muted small">${esc(d.role)}</span></span><span class="small">${area(d.net_area_calc)}</span></li>`).join("");
   const panel = `<h1>${esc(s.name)}</h1><div class="small muted">${esc((s.meta || {}).title || "")} · ${fileLink(s.sheet, "Sheet S0")}</div>
     <h3>Key dimensions (canon)</h3><div class="kv">${dims}</div>
-    <h3>Deck cities</h3><ul class="list">${decks}<li onclick="go('#/crown')"><span><b>Crown Bridge</b> <span class="muted small">detachable command ship</span></span><span class="small">14 levels</span></li></ul>
+    <h3>Deck cities</h3><ul class="list">${decks}<li onclick="go('#/crown')"><span>${D.model.crown && D.model.crown.emblem_web ? `<img class="emblem-sm" src="${staticSrc(D.model.crown.emblem_web)}" alt="">` : ""}<b>Crown Bridge</b> <span class="muted small">detachable command ship</span></span><span class="small">14 levels</span></li></ul>
     <h3>Structure</h3><div class="kv">${(s.structure || []).map(r => `<div>${esc(r.item)}</div><div>${esc(r.value)}</div>`).join("")}</div>
     ${issueBlock("ship", "Ship-level issues")}`;
   return layout([["Invicta", "#/ship"]], mapShell(g, vb, "", "", "Click a deck · scroll to zoom"), panel);
@@ -530,7 +556,7 @@ function shipView() {
 function crownView() {
   const c = D.model.crown;
   const levels = (c.levels || []).map(l => `<tr><td>${esc(l.level)}</td><td><b>${esc(l.name)}</b><div class="small muted">${esc(l.function)}</div></td><td>${usText(l.footprint)}</td><td>${esc(l.area)}</td><td>${esc(l.height)}</td></tr>`).join("");
-  return crumbs([["Invicta", "#/ship"], ["Crown Bridge", ""]]) + `<div class="card"><h1>Crown Bridge</h1><div class="small muted">${fileLink(c.sheet, "Crown Bridge data sheet")} · canon</div>
+  return crumbs([["Invicta", "#/ship"], ["Crown Bridge", ""]]) + `<div class="card"><div class="emblem-head">${emblem(c, 96)}<h1>Crown Bridge</h1></div><div class="small muted">${fileLink(c.sheet, "Crown Bridge data sheet")} · canon</div>
     <div class="kv" style="margin-top:10px">${Object.entries(c.key || {}).map(([k, v]) => `<div>${esc(k)}</div><div>${usText(v)}</div>`).join("")}</div>
     <h3>Levels</h3><table><tr><th>Level</th><th>Name</th><th>Footprint</th><th>Area</th><th>Height</th></tr>${levels}</table>
     <div class="note" style="margin-top:10px">The Crown Bridge has levels but no plan drawings yet. Room layouts are not designed yet.</div></div>`;
@@ -595,13 +621,13 @@ function deckView(n) {
       g += `<g transform="rotate(-90 ${X(cx)} ${Y(cy)})">${label(cx, cy, x.name.toUpperCase(), tall, {})}</g>`;
     }
   }
-  const legend = `<span><i style="background:#2273b8"></i>has a precinct plan</span><span><i style="background:#2b4563"></i>not designed yet</span><span><i style="background:#4a3513;border-color:#ffc266"></i>central plaza (canon)</span><span><b style="color:#6fd0ff">━</b> Keelway and stops</span>`;
+  const legend = `<span><i style="background:#2273b8"></i>has a precinct plan</span><span><i style="background:#2b4563"></i>not designed yet</span><span><i style="background:#4a3513;border-color:#ffc266"></i>central plaza (canon)</span><span><b style="color:#6fd0ff">━</b> Keelway and stops</span>` + (Object.values(IX.psets).some(ps => ps.deck == n) ? catLegend() : "");
   const k = d.key || {};
   const keyRows = ["Gross outline", "Net floor area", "Floor / ceiling elevation", "Clear height", "Floor-to-floor stack height", "Design population", "Frames", "Atrium", "Governor", "Deck Chief"]
     .filter(r => k[r]).map(r => `<div>${esc(r)}</div><div>${usText(k[r])}</div>`).join("");
   const dl = d.districts.map(x => `<li onclick="go('#/district/${x.id}')"><span><b>${esc(x.name)}</b> ${x.is_plaza ? '<span class="small muted">plaza</span>' : ""}<br><span class="small muted">${esc(x.what)}</span></span><span class="small" style="text-align:right">${area(x.revB ? x.revB.area_km2 : x.area_km2)}<br>${badge(x.design_status)}</span></li>`).join("");
   const stopsT = (d.keelway || []).map(s => `<div>${esc(s.stop)}</div><div>${esc(s.frame)} · ${esc(s.address)} · ${usText(s.from_bow)} from deck bow</div>`).join("");
-  const panel = `<h1>${esc(d.title || ("Deck " + n))}</h1><div class="small muted">${esc(d.role)} · landmark: ${esc(d.landmark)}</div>
+  const panel = `<div class="emblem-head">${emblem(d, 84)}<h1>${esc(d.title || ("Deck " + n))}</h1></div><div class="small muted">${esc(d.role)} · landmark: ${esc(d.landmark)}</div>
     <p class="small">${esc(d.summary || "")}</p>
     <div class="small">${fileLink(d.paths.sheet, `Sheet S${n}`)} ${d.has_sheet_pdf ? "· " + fileLink(d.paths.sheet_pdf, "PDF") : ""} ${d.has_render ? "· " + fileLink(d.paths.render, "render") : ""} · outline: ${fileLink(d.outline_source, d.outline_source.endsWith("_revB.csv") ? "Rev B" : "canon")}</div>
     <h3>Key data</h3><div class="kv">${keyRows}<div>Net floor (outline)</div><div>${area(d.net_area_calc)}</div></div>
@@ -619,15 +645,14 @@ function deckView(n) {
 function precinctContents(p, fs) {
   let g = `<g pointer-events="none">`;
   for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
-  for (const st of p.streets || []) if (st.rect_km) g += rectEl(st.rect_km, `fill="#0b2140" fill-opacity=".7"`);
+  for (const st of p.streets || []) if (st.rect_km) g += rectEl(st.rect_km, `fill="${streetCat(st).fill}" fill-opacity=".8"`);
   for (const bd of p.buildings || []) {
-    const done = bd.height_m != null, open = ["plaza", "park"].includes(bd.kind) || /open/i.test(bd.open_ground || "");
-    const fill = open ? "#2f6b45" : done ? "#cfe3f7" : "#5a7a99", op = open ? 0.55 : done ? 0.8 : 0.5;
-    for (const r of bd.bays_km || (bd.rect_km ? [bd.rect_km] : [])) g += rectEl(r, `fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`);
+    const c = catOf(bd);
+    g += shapeEl(bd, `fill="${c.fill}" fill-opacity=".85" stroke="${bd.category === "medical" ? c.edge : "#071425"}" stroke-width="${fs / 14}"`);
     const r = bd.rect_km;
     if (r && !bd.bays_km) {
       const fz = fitText(bd.name, (r[1] - r[0]) * 0.92, (r[3] - r[2]) * 0.6, fs * 0.45);
-      if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: open ? "#e8f1fb" : "#0b2140" });
+      if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: bd.holes_km ? "#e8f1fb" : c.text });
     }
   }
   return g + "</g>";
@@ -685,7 +710,7 @@ function districtView(id) {
     body += `<div class="note" style="margin-top:10px">Not designed yet. Canon gives this district's area, role, centre and workforce (above) and its shape on Sheet S${d.n}. It has no precincts, blocks or buildings yet. The app will show them once a precinct plan exists in <code>Invicta/data</code>.</div>`;
   }
   const panel = `<h1>${esc(x.name)}</h1><div class="small muted">Deck ${d.n} · ${esc(d.name)} · ${fileLink(d.paths.sheet, "Sheet S" + d.n)}</div>${body}${issueBlock(id, "Issues in this district")}`;
-  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, ""]], mapShell(g, vb, "", ps ? "Click a precinct" : "", ""), panel);
+  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, ""]], mapShell(g, vb, "", ps ? catLegend() : "", ps ? "Click a precinct" : ""), panel);
 }
 function circlePts(c) { const out = []; for (let i = 0; i < 48; i++) { const a = i / 48 * 2 * Math.PI; out.push([c[0] + c[2] * Math.cos(a), c[1] + c[2] * Math.sin(a)]); } return out; }
 
@@ -699,18 +724,18 @@ function drawPrecinct(p, fs, opts) {
   (p.streets || []).forEach((st, i) => {
     const sel = opts.selectedStreet === i;
     g += (opts.streetsClickable ? `<g class="hit" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` : `<g pointer-events="none">`) +
-      rectEl(st.rect_km, `fill="${/keelway/i.test(st.name) ? "#0f2f4f" : /boulevard|promenade/i.test(st.name) ? "#4a3f2a" : "#2c3440"}"${sel ? ` stroke="#ffc266" stroke-width="${fs / 3}"` : ""}`) + "</g>";
+      rectEl(st.rect_km, `fill="${streetCat(st).fill}"${sel ? ` stroke="#ffc266" stroke-width="${fs / 3}"` : ""}`) + "</g>";
   });
   if (opts.blocks) g += blocksLayer(p, fs, false, opts.blocks.selected);
   // buildings
   for (const b of p.buildings) {
     if (!b.rect_km) continue;
-    const fill = KIND_FILL[b.kind] || KIND_FILL.building;
-    const stroke = b.status === "canon" ? "#5fd39a" : (b.uid === opts.selected ? "#ffc266" : "#e8f1fb");
-    const sw = b.uid === opts.selected ? fs / 2.5 : fs / 9;
+    const c = catOf(b);
+    const stroke = b.uid === opts.selected ? "#ffc266" : b.status === "canon" ? "#5fd39a" : b.category === "medical" ? c.edge : "#e8f1fb";
+    const sw = b.uid === opts.selected ? fs / 2.5 : b.category === "medical" ? fs / 5 : fs / 9;
     const click = opts.clickBuildings ? opts.clickBuildings(b) : false;
-    const shapes = b.bays_km || [b.rect_km];
-    g += (click ? `<g class="hit" onclick="go('#/building/${b.uid}')"><title>${b.id} ${esc(b.name)} · click for details</title>` : `<g pointer-events="none">`) + shapes.map(s => rectEl(s, `fill="${fill}" stroke="${stroke}" stroke-width="${sw}"`)).join("");
+    g += (click ? `<g class="hit" onclick="go('#/building/${b.uid}')"><title>${b.id} ${esc(b.name)} · ${esc(c.label)}${b.shape ? " · " + esc(b.shape) : ""} · click for details</title>` : `<g pointer-events="none">`) +
+      shapeEl(b, `fill="${c.fill}" stroke="${stroke}" stroke-width="${sw}"`);
     for (const dr of b.doors_km || []) g += rectEl(dr, `fill="#ff8a3d"`);
     g += "</g>";
     if (opts.labels !== false) {
@@ -722,12 +747,12 @@ function drawPrecinct(p, fs, opts) {
         const r = b.rect_km, wide = (r[1] - r[0]) >= (r[3] - r[2]);
         if (b.bays_km.length > 3 && !b.bay_names) g += wide ? label((r[0] + r[1]) / 2, r[2] - fs * 0.0006, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" })
                   : labelR(r[0] - fs * 0.0006, (r[2] + r[3]) / 2, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" });
-      } else g += boxLabel(b.rect_km, b.name.toUpperCase(), fs * 0.75, {});
+      } else g += boxLabel(b.rect_km, b.name.toUpperCase(), fs * 0.75, { fill: b.holes_km ? "#e8f1fb" : c.text });
     }
   }
   if (opts.labels !== false) for (const st of p.streets || []) {
     const r = st.rect_km, w = r[1] - r[0], h = r[3] - r[2];
-    g += boxLabel(r, st.name, fs * 0.55, { fill: "#cfd8e3", weight: 400 });
+    g += boxLabel(r, st.name, fs * 0.55, { fill: /keelway/i.test(st.name) ? "#0b2140" : "#e8f1fb", weight: 400 });
   }
   return g;
 }
@@ -754,7 +779,7 @@ function precinctView(uid) {
   g += drawPrecinct(p, fs, {});
   g += blocksLayer(p, fs, true);
   const tools = "";
-  const legend = Object.entries(KIND_FILL).map(([k, c]) => `<span><i style="background:${c}"></i>${k}</span>`).join("") + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>block</span>`;
+  const legend = catLegend() + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>block</span>`;
   const groups = {};
   for (const bd of p.buildings) (groups[bd.kind] = groups[bd.kind] || []).push(bd);
   const bl = Object.entries(groups).map(([k, list]) => `<h3>${esc(k)} (${list.length})</h3><ul class="list">` + list.map(bd =>
@@ -804,7 +829,7 @@ function blockView(puid, bid) {
     <h3>In this block (${blk.contents.length})</h3>${items ? `<ul class="list">${items}</ul>` : `<div class="note">Nothing placed in this block yet: not designed yet.</div>`}
     <div class="small muted" style="margin-top:8px">Click a building on the map or in the list for its details.</div>`;
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [blk.name, ""]],
-    mapShell(g, vb, "", "", "Click a building"), panel);
+    mapShell(g, vb, "", catLegend(), "Click a building"), panel);
 }
 
 // ---- building
@@ -939,7 +964,9 @@ function buildingView(uid) {
       <div>Grid position</div><div>${b.address ? `${esc(gridPos(b.address))} <span class="small muted">(frame line and lane at the centre)</span>` : ND}</div>
       <div>Footprint</div><div>${sz ? dims(sz[0], sz[1]) : r ? dims(w, h) : ND}${b.bay_count ? ` <span class="small muted">each, × ${b.bay_count}</span>` : ""}</div>
       ${r && sz && !b.bays_km && (Math.abs(w - sz[0]) > 15 && Math.abs(w - sz[1]) > 15) ? `<div>Drawn</div><div class="sev-warning">${dims(w, h)}</div>` : ""}
-      <div>Ground area</div><div>${b.footprint_km2 != null ? area(b.footprint_km2) : ND}</div>
+      <div>Used for</div><div><i class="swatch" style="background:${catOf(b).fill};border-color:${catOf(b).edge}"></i> ${esc(catOf(b).label)}${b.category_auto ? ` <span class="small muted">(from its name)</span>` : ""}</div>
+      <div>Shape</div><div>${b.shape ? esc(b.shape) : b.bays_km ? "a row of bays" : "rectangle"}</div>
+      <div>Ground area</div><div>${b.footprint_km2 != null ? area(b.footprint_km2) : ND}${b.holes_km ? ` <span class="small muted">(courtyard not counted)</span>` : ""}</div>
       <div>Listed as</div><div>${esc(b.size_text || "")}</div>
       <div>Notes</div><div>${esc(b.notes || "") || "<span class='muted'>—</span>"}</div>
       <div>${(b.blocks || []).length > 1 ? "Blocks" : "Block"}</div><div>${blocks || ND}</div>
@@ -953,7 +980,7 @@ function buildingView(uid) {
   const cr = [["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`]];
   if (firstBlock) { const fb = (p.blocks || []).find(q => q.id === firstBlock); cr.push([fb ? fb.name : "Block", `#/block/${p.uid}/${firstBlock}`]); }
   cr.push([b.name, ""]);
-  return layout(cr, mapShell(g, vb, "", "", "Click another building"), panel);
+  return layout(cr, mapShell(g, vb, "", catLegend(), "Click another building"), panel);
 }
 
 load();

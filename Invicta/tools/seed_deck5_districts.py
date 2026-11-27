@@ -6,7 +6,7 @@
 Follows the Port of Arrivals pattern: precincts on frame and lane lines, named streets, every building
 named (generic names where nothing better exists), US units first with metric in brackets.
 
-How a precinct is laid out:
+How a precinct is laid out (shapes: Jordan, 27 Nov 2026):
   * Its outline is a rectangle (or quarter circle for the Atrium Plaza) on frame and lane lines,
     clipped to the Rev B deck outline. Canon circles (the Atrium Plaza, the Spine Atrium shaft) are cut out.
   * Streets are straight strips. The land between them is the precinct's blocks.
@@ -17,6 +17,12 @@ How a precinct is laid out:
     Listed sizes are drawn at the district's scale (below) unless a block is too small for that.
   * A block still empty after that gets a filler suited to the precinct (open bay, quay yard,
     apartment block, garden ...), numbered: Open Bay 1, Open Bay 2 ...
+  * Then buildings follow their blocks (follow_blocks): each block's land, 30 m in from its streets,
+    the hull and the plaza circles, is shared between its buildings by listed size (lots cut again and
+    again across their longer side, so they stay close to square), and each building takes a shape on
+    its lot (atlaslib/footprints.py): courtyard, L, U, curved front, rounded, oval, or the whole lot.
+    A lot is at most 2.5 times the building's listed footprint; the rest of the block gets a filler
+    (or stays open ground in an approved plan). Every building also gets its map colour category.
 Everything is "proposed" unless the item itself is canon. Re-running rewrites the five files.
 """
 import json
@@ -31,6 +37,8 @@ ROOT = os.path.dirname(APP)
 sys.path.insert(0, APP)
 from atlaslib import geometry as G  # noqa: E402
 from atlaslib.loader import Loader, make_blocks, slug  # noqa: E402
+from atlaslib import footprints as FP  # noqa: E402
+from atlaslib.categories import categorize  # noqa: E402
 
 TODAY = "2026-11-27"
 FT = 3.28084
@@ -173,6 +181,7 @@ def lay_out(dist, P):
     scale = P.get("scale", dist.get("scale", 1.0))
     for k, it in enumerate(items):
         it["_n"] = k + 1
+        it["_fixed"] = bool(it.get("rect") or it.get("bays"))
         if it.get("rect") or it.get("bays"):
             shapes = it.get("bays") or [it["rect"]]
             for s in shapes:
@@ -234,6 +243,7 @@ def lay_out(dist, P):
             it = {"name": "%s %d" % (base, counters[base]), "notes": notes, "kind": kind, "rect": spot, "_n": len(items) + 1, "filler": True}
             items.append(it)
             placed.append(spot)
+    follow_blocks(P, shape, bx, items, excl, streets, fills, counters)
     out = []
     for it in items:
         b = {"id": "%s-%02d" % (P["id"], it["_n"]), "name": it["name"]}
@@ -254,11 +264,216 @@ def lay_out(dist, P):
             b["size_text"] = size_text(Lm, Wm)
             b["size_m"] = [Lm, Wm]
             b["rect_km"] = [round(v, 4) for v in r]
+            if it.get("outline"):
+                b["outline_km"] = it["outline"]
+                if it.get("holes"):
+                    b["holes_km"] = it["holes"]
+                b["shape"] = it["shape"]
         b["notes"] = it.get("notes", "")
-        b["status"] = it.get("status", "proposed")
+        b["status"] = "canon" if dist.get("approved") else it.get("status", "proposed")
         b["kind"] = it.get("kind", "building")
+        b["category"] = categorize(b)
         out.append(b)
     return shape, area, streets, out
+
+
+CAP = 2.5   # a building's lot is at most this many times its listed footprint; the rest of the block gets a filler
+
+
+def _cut_area(poly, ax, lo, hi):
+    b = G.bbox(poly)
+    r = [lo, hi, b[2] - 1, b[3] + 1] if ax == "x" else [b[0] - 1, b[1] + 1, lo, hi]
+    q = G.clip(poly, G.rect_poly(r))
+    return (G.polygon_area(q) if len(q) >= 3 else 0.0), q
+
+
+def follow_blocks(P, shape, bx, items, excl, streets, fills, counters):
+    """Buildings follow their blocks (Jordan, 27 Nov 2026). Each block's buildable land (the block 30 m in
+    from its streets, the hull and the plaza circles, so it keeps their curves) is shared out between its
+    buildings in strips along the block, in proportion to each building's listed footprint, 20 m apart.
+    Each building then takes a shape that fits its strip and its use: courtyard, L, U, curved front,
+    rounded or oval, or the whole strip for halls, yards and parks. Canon items drawn at fixed frames
+    (stations, pod stops) keep their box and the strip across the block beside them stays open as their
+    forecourt. Blocks holding a bay row (launch shafts, berths) keep every box, shaped inside the box."""
+    blocks = app_blocks(shape, bx, items, excl, streets)
+    k = [0]
+    stats = {"strips": 0, "kept": 0}
+    for blk in blocks:
+        c = blk["cell_km"]
+        inside = lambda r: c[0] - 1e-6 <= r[0] and r[1] <= c[1] + 1e-6 and c[2] - 1e-6 <= r[2] and r[3] <= c[3] + 1e-6
+        here = [it for it in items if it.get("rect") and not it.get("bays") and inside(it["rect"])]
+        fixed = [it for it in here if it.get("_fixed") or it.get("kind") == "transport"]
+        members = [it for it in here if it not in fixed]
+        if not members:
+            continue
+        has_bays = any(it.get("bays") and any(G.rect_overlap(q, c) > 1e-7 for q in it["bays"]) for it in items)
+        part = _without_streets(blk["part_km"], c, streets)
+        lots = None
+        if part and not has_bays:
+            lots = _block_lots(part, members, fixed, [] if dist_approved(P) else fills, counters, items)
+        stats["strips" if lots is not None else "kept"] += 1
+        if lots is None:  # keep each box, shaped inside it
+            for it in members:
+                _shape(it, G.rect_poly(it["rect"]), k[0])
+                k[0] += 1
+            continue
+        for it, lot in lots:
+            _shape(it, lot, k[0])
+            k[0] += 1
+    print("   %s: %d blocks follow their shape, %d keep boxes" % (P["id"], stats["strips"], stats["kept"]))
+
+
+def dist_approved(P):
+    return any(P is q for q in PLAZA_D["precincts"]) and PLAZA_D.get("approved")
+
+
+def _without_streets(part, c, streets):
+    """The block outline with any street along its edge cut off (the app does not cut a block along a
+    street when the cut would split a building, so a street can run along a block's edge inside it).
+    None when a street runs through the middle of the block."""
+    for st in streets:
+        r = st["rect_km"]
+        if G.rect_overlap(r, [c[0] + 0.001, c[1] - 0.001, c[2] + 0.001, c[3] - 0.001]) <= 1e-7:
+            continue
+        if r[1] - r[0] >= r[3] - r[2]:   # runs bow to stern
+            sides = [[c[0] - 1, c[1] + 1, c[2] - 1, r[2]], [c[0] - 1, c[1] + 1, r[3], c[3] + 1]]
+        else:
+            sides = [[c[0] - 1, r[0], c[2] - 1, c[3] + 1], [r[1], c[1] + 1, c[2] - 1, c[3] + 1]]
+        pieces = [G.clip(part, G.rect_poly(sd)) for sd in sides]
+        pieces = [q for q in pieces if len(q) >= 3 and G.polygon_area(q) > 0.002]
+        if len(pieces) != 1:
+            return None   # the street splits the block in two: leave it as it is
+        part = pieces[0]
+    return part
+
+
+def _block_lots(part, members, fixed, fills, counters, items):
+    build = FP.offset(part, SET)
+    if not build or G.polygon_area(build) < 0.004:
+        return None
+    bb = G.bbox(build)
+    ax = "x" if bb[1] - bb[0] >= bb[3] - bb[2] else "y"
+    i0, i1 = (0, 1) if ax == "x" else (2, 3)
+    lo, hi = bb[i0], bb[i1]
+    # fixed items reserve the strip across the block beside them (their forecourt)
+    res = sorted([max(lo, f["rect"][i0] - GAP), min(hi, f["rect"][i1] + GAP)] for f in fixed)
+    merged = []
+    for a, b in res:
+        if merged and a <= merged[-1][1]:
+            merged[-1][1] = max(merged[-1][1], b)
+        else:
+            merged.append([a, b])
+    segs, cur = [], lo
+    for a, b in merged:
+        if a - cur > 0.06:
+            segs.append([cur, a])
+        cur = max(cur, b)
+    if hi - cur > 0.06:
+        segs.append([cur, hi])
+    if not segs:
+        return None
+    for it in members:
+        r = it["rect"]
+        it["_target"] = (r[1] - r[0]) * (r[3] - r[2])
+    groups = [[] for _ in segs]
+    for it in members:
+        m = (it["rect"][i0] + it["rect"][i1]) / 2
+        j = min(range(len(segs)), key=lambda j: 0 if segs[j][0] <= m <= segs[j][1] else min(abs(m - segs[j][0]), abs(m - segs[j][1])))
+        groups[j].append(it)
+    lots = []
+    new = []
+    for (a, b), grp in zip(segs, groups):
+        if not grp:
+            continue
+        sub = _strip_lots(build, grp, ax, a, b, fills, counters, items, new)
+        if sub is None:
+            return None
+        lots += sub
+    for it in new:
+        it["_n"] = len(items) + 1
+        items.append(it)
+    return lots
+
+
+def _strip_lots(build, members, ax, lo, hi, fills, counters, items, new):
+    A = _cut_area(build, ax, lo, hi)[0]
+    T = sum(it["_target"] for it in members)
+    i0, i1 = (0, 1) if ax == "x" else (2, 3)
+    order = sorted(members, key=lambda it: (it["rect"][i0] + it["rect"][i1]) / 2)
+    weights = [it["_target"] for it in order]
+    if A > CAP * T:
+        if fills:   # the rest of the block gets a filler that suits the precinct
+            base, notes, kind = fills[len(counters.get("_all", [])) % len(fills)][:3]
+            counters.setdefault("_all", []).append(1)
+            counters[base] = counters.get(base, 0) + 1
+            filler = {"name": "%s %d" % (base, counters[base]), "notes": notes, "kind": kind, "filler": True,
+                      "rect": None, "_target": A - CAP * T}
+            new.append(filler)
+        else:       # an approved plan gets no new items: the rest of the block stays open ground
+            filler = {"_open": True, "_target": A - CAP * T, "rect": [0, 0, 0, 0]}
+        order.append(filler)
+        weights.append(A - CAP * T)
+    region = _cut_area(build, ax, lo, hi)[1]
+    out = _split(region, list(zip(order, weights)))
+    if out is None:
+        return None
+    return [(it, q) for it, q in out if not it.get("_open")]
+
+
+def _shape(it, lot, k):
+    tmp = {"name": it["name"], "kind": it.get("kind", "building")}
+    tmp["category"] = categorize(tmp)
+    style = FP.choose(tmp, lot, k)
+    depth = None
+    if style == "courtyard" and it.get("_target"):
+        per = sum(math.hypot(lot[i][0] - lot[i - 1][0], lot[i][1] - lot[i - 1][1]) for i in range(len(lot)))
+        depth = max(0.03, min(0.09, 1.3 * it["_target"] / max(per, 1e-6)))
+    FP.apply(tmp, lot, k, style, depth)
+    it["outline"], it["holes"], it["shape"] = tmp["outline_km"], tmp.get("holes_km"), tmp["shape"]
+    it["rect"] = tmp["rect_km"]
+
+
+def _split(region, pairs):
+    """Share a region between items by area, cutting it in two again and again across its longer side,
+    so every lot comes out close to square (a treemap). Lots are 20 m apart. None if a lot gets too thin."""
+    region = FP.simplify(region, 1e-5) if len(region) >= 3 else region
+    if len(region) < 3 or G.polygon_area(region) < 0.002 or FP.self_intersects(region):
+        return None
+    rb = G.bbox(region)
+    if min(rb[1] - rb[0], rb[3] - rb[2]) < 0.04:
+        return None
+    if len(pairs) == 1:
+        return [(pairs[0][0], region)]
+    ax = "x" if rb[1] - rb[0] >= rb[3] - rb[2] else "y"
+    i0, i1 = (0, 1) if ax == "x" else (2, 3)
+    lo, hi = rb[i0], rb[i1]
+    key = lambda pr: ((pr[0]["rect"][i0] + pr[0]["rect"][i1]) / 2) if pr[0].get("rect") and not pr[0].get("_open") and pr[0]["rect"][1] > pr[0]["rect"][0] else 1e9
+    pairs = sorted(pairs, key=key)
+    tot = sum(w for _, w in pairs)
+    acc, k = 0.0, 1
+    best = None
+    for j in range(1, len(pairs)):
+        acc += pairs[j - 1][1]
+        if best is None or abs(acc - tot / 2) < best[0]:
+            best = (abs(acc - tot / 2), j, acc)
+    _, k, left_w = best
+    A = G.polygon_area(region)
+    goal = A * left_w / tot
+    a, b = lo, hi
+    for _ in range(40):
+        m = (a + b) / 2
+        if _cut_area(region, ax, lo, m)[0] < goal:
+            a = m
+        else:
+            b = m
+    cut = (a + b) / 2
+    left = _cut_area(region, ax, lo - 1, cut - GAP / 2)[1]
+    right = _cut_area(region, ax, cut + GAP / 2, hi + 1)[1]
+    L = _split(left, pairs[:k])
+    R = _split(right, pairs[k:])
+    if L is None or R is None:
+        return None
+    return L + R
 
 
 def fit(c, L, W, inner, excl, placed, srects, centre=False):
@@ -929,6 +1144,7 @@ PILOTS["precincts"] = [
 
 # ---------------------------------------------------------------------------------- Atrium Plaza
 PLAZA_D = {
+    "approved": True,   # Jordan approved the plan as canon (PR #27, 27 Nov 2026)
     "district": "Atrium Plaza", "file": "atrium-plaza", "doc": "Atrium_Plaza_Precincts.md", "code": "D5F1", "title": "Atrium Plaza",
     "lead": ("The Atrium Plaza is Deck 5's central plaza, a circle 2.22 mi (3.57 km) across centred on F52 on the centreline, "
              "around the Spine Atrium shaft. Canon (Sheet S5): 3.9 sq mi (10.0 km²), Governor's Hall, pilots' guild, Atrium "
@@ -1044,9 +1260,11 @@ for _D in DISTRICTS:
 # ---------------------------------------------------------------------------------- build
 
 def build(D):
-    pset = {"schema": "invicta-atlas/precincts@1", "deck": 5, "district": D["district"], "status": "proposed", "version": "v1",
+    ok = D.get("approved")
+    pset = {"schema": "invicta-atlas/precincts@1", "deck": 5, "district": D["district"], "status": "canon" if ok else "proposed", "version": "v2",
             "updated": TODAY, "doc": "Game/Docs/" + D["doc"],
-            "note": "Laid out 27 Nov 2026 following the Port of Arrivals pattern. Proposed, awaiting Jordan.", "precincts": []}
+            "note": "Laid out 27 Nov 2026 following the Port of Arrivals pattern. " + ("Approved as canon by Jordan." if ok else "Proposed, awaiting Jordan."),
+            "precincts": []}
     rows = []
     for P in D["precincts"]:
         shape, area, streets, bld = lay_out(D, P)
@@ -1056,7 +1274,7 @@ def build(D):
         p = {"id": P["id"], "name": P["name"], "frames": "F%d–F%d" % (f0, f1), "lanes": P["lanes"],
              "bounds_km": [round(v, 4) for v in (P.get("bounds") or bx)],
              "polygon_km": [[round(a, 4), round(b, 4)] for a, b in (P.get("poly") or G.rect_poly(P["bounds"]))],
-             "status": "proposed", "area_km2_stated": round(area, 2), "role": P["role"],
+             "status": "canon" if ok else "proposed", "area_km2_stated": round(area, 2), "role": P["role"],
              "intro": "%s. %s" % (km_text(L, W), P["intro"]), "build_order": int(P["id"][1:])}
         if P.get("excl"):
             p["exclude_circles_km"] = [list(c) for c in P["excl"]]
@@ -1072,15 +1290,23 @@ def build(D):
 
 def doc_for(D, pset, rows):
     total = sum(r[4] for r in rows)
-    out = ["# %s — Precinct Plans (⏳ proposed, %s, awaiting Jordan)" % (D["title"], "27 Nov 2026"), ""]
-    out.append("Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). %s "
-               "Everything here is a proposal unless marked canon. Plans are true top views: **bow right, port up**." % D["lead"])
+    ok = D.get("approved")
+    out = ["# %s — Precinct Plans (%s)" % (D["title"], "✅ canon, approved by Jordan" if ok else "⏳ proposed, 27 Nov 2026, awaiting Jordan"), ""]
+    out.append("Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). %s %s "
+               "Plans are true top views: **bow right, port up**." % (D["lead"], "Jordan approved this plan as canon." if ok else "Everything here is a proposal unless marked canon."))
     out.append("")
     out.append(D["rule"])
     out.append("")
     out.append("Common sizes (proposed, as in the Port of Arrivals): main roads 131 ft (40 m), streets 98 ft (30 m), the Keelway corridor 328 ft (100 m). "
                "Every building is kept 98 ft (30 m) clear of the streets, so no block edge ever cuts a building. Building heights, floors and "
                "interiors are not designed yet.")
+    out.append("")
+    out.append("Building shapes (Jordan, 27 Nov 2026): buildings follow their blocks. Each block's land, 98 ft (30 m) in from its streets, "
+               "the hull and the plaza rims, is shared out between its buildings by their listed size, 66 ft (20 m) apart, so buildings "
+               "take the block's curves along the Spine Atrium, the Atrium Plaza and the hull. Each building then gets a shape that suits "
+               "its use: courtyard, L-shape, U-shape, curved front, rounded corners or oval; halls, hangars, yards and parks fill their "
+               "lot. The Size column gives each building's overall size; its shape is in the notes. Map colours show what each "
+               "building is used for (legend on the map).")
     out.append("")
     out.append("## Layout")
     out.append("")
@@ -1097,7 +1323,7 @@ def doc_for(D, pset, rows):
         la, lb = p["lanes"].split("–")
         out.append("## %s · %s — %s to %s, lanes %s–%s" % (p["id"], p["name"], fa, fb, la, lb))
         out.append("")
-        out.append("%s, %s. %s Status: proposed." % (km_text(L, W), area_text(a), P["intro"]))
+        out.append("%s, %s. %s Status: %s." % (km_text(L, W), area_text(a), P["intro"], "canon" if ok else "proposed"))
         out.append("")
         names = []
         for s in p["streets"]:
@@ -1111,6 +1337,8 @@ def doc_for(D, pset, rows):
             note = b["notes"]
             if b["status"] == "canon" and not note.lower().startswith("canon"):
                 note = "**Canon** · " + note
+            if b.get("shape") and b["shape"] != "follows its block":
+                note += " · shape: %s" % b["shape"]
             out.append("| %s | %s | %s |" % (b["name"], b["size_text"], note))
         out.append("")
     return "\n".join(out)
@@ -1138,6 +1366,14 @@ def write_reference(results):
              "109.1 km²; Flight Control's and the Pilots' Quarter's shared edge (29.28 km) and the Atrium Plaza circle fall "
              "between frames; the Spine Atrium shaft (0.78 sq mi, 2.01 km²) is an opening and in no precinct. All four are "
              "logged as known in the app's rules (`Invicta/data/rules.json`).")
+    L.append("")
+    L.append("Building shapes and map colours (Jordan, 27 Nov 2026): Deck 5 buildings follow their blocks, with curved edges "
+             "along the Spine Atrium, the Atrium Plaza rim and the hull, and courtyards, L and U shapes, curved fronts and rounded "
+             "corners where they fit. Port of Arrivals buildings that have a building plan show that plan's outline. Every building "
+             "is coloured by use on the map and in 3D: roads and transit dark grey, the Keelway light blue, police and security "
+             "blue, fire and emergency red, medical white with a red edge, homes warm tan, shops and food orange, offices and "
+             "government purple, industry, hangars and docks steel grey, utilities and services yellow, parks and plazas green, "
+             "schools and training teal.")
     txt = "\n".join(L) + "\n"
     for base in ("Game/Docs", "Docs/2_Design_Docs"):
         path = os.path.join(ROOT, *base.split("/"), "Invicta_Ship_Reference.md")

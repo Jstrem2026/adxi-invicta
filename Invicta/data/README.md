@@ -45,6 +45,15 @@ district until Jordan designs it.
 | `rect_km` | `[x0, x1, y0, y1]` footprint in ship km |
 | `notes` | text |
 | `bays_km`, `doors_km`, `bay_count`, `bay_names` | optional detail for hangars and docks |
+| `category` | map colour (Jordan, 27 Nov 2026): `transit`, `police`, `fire`, `medical`, `homes`, `shops`, `offices`, `industry`, `utilities`, `parks`, `schools` (`keelway` is for the Keelway itself). Missing ones are worked out from the name (`atlaslib/categories.py`) |
+| `outline_km` | optional shaped footprint inside `rect_km`: a list of outer rings `[[[x, y], ...], ...]` (curves as points) |
+| `holes_km` | optional courtyards inside the outline: a list of rings |
+| `shape` | plain words for the shape: `courtyard`, `L-shape`, `U-shape`, `curved front`, `rounded corners`, `oval`, `follows its block`, `from its plan` |
+
+With an outline, `rect_km` stays the building's overall box (its lot): sizes, blocks and labels use the box,
+the maps and 3D draw the outline, and the scan checks the outline against the hull, the precinct and the
+plaza circles. Ground area is the outline minus its courtyards. Shapes are made by `atlaslib/footprints.py`
+(`tools/seed_deck5_districts.py` for the Deck 5 districts it lays out, `tools/shape_buildings.py` for others).
 
 Architecture fields, left out until designed (the app shows "not designed yet"):
 `height_m`, `floors`, `structure`, `entrances`, `look`, `capacity`, `services`, `interior`.

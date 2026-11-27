@@ -13,6 +13,8 @@ import re
 import fnmatch
 
 from . import geometry as G
+from . import footprints as FP
+from .categories import KEYS as CATEGORY_KEYS
 from . import parsers as P
 from .sources import FIXED, GAME_DOCS, MIRROR_DOCS
 
@@ -388,11 +390,30 @@ class Scan:
                         self.add("warning", "data", "Building has no position",
                                  "%s is listed in the precinct plan but is not placed on the drawing." % who, b["uid"], ps["file"])
                         continue
+                    if b.get("category_bad"):
+                        self.add("warning", "data", "Building has an unknown colour category",
+                                 "%s: category '%s' is not on the map legend (%s). The map uses '%s' for now." % (
+                                     who, b["category_bad"], ", ".join(CATEGORY_KEYS), b["category"]), b["uid"], ps["file"])
+                    if b.get("outline_km"):
+                        pts_all = FP.outline_points(b)
+                        tol = 0.0015
+                        if any(not (r[0] - tol <= x <= r[1] + tol and r[2] - tol <= y <= r[3] + tol) for x, y in pts_all):
+                            self.add("warning", "geometry", "Building outline leaves its box",
+                                     "%s: the shaped outline reaches outside rect_km. Make rect_km the outline's overall box." % who,
+                                     b["uid"], ps["file"], fix="Re-run the footprint tool, or set rect_km to the outline's box.")
+                        for h in b.get("holes_km") or []:
+                            if not all(any(G.point_in_poly(x, y, o) for o in b["outline_km"]) for x, y in h):
+                                self.add("warning", "geometry", "Courtyard outside its building",
+                                         "%s: a courtyard (holes_km) is not inside the building's outline." % who, b["uid"], ps["file"])
+                                break
                     shapes = b.get("bays_km") or [r]
                     for s in shapes:
                         pts = G.rect_poly(s)
                         inset = 0.002
                         corners = [(s[0] + inset, s[2] + inset), (s[1] - inset, s[2] + inset), (s[1] - inset, s[3] - inset), (s[0] + inset, s[3] - inset)]
+                        if b.get("outline_km") and not b.get("bays_km"):
+                            # a shaped building is checked by its own outline, not its box (curved edges, courtyards)
+                            corners = [_toward(q, G.centroid(o), inset) for o in b["outline_km"] for q in o]
                         if hull and not all(G.point_in_poly(x, y, hull) for x, y in corners):
                             self.add("error", "geometry", "Building pokes through the hull",
                                      "%s reaches outside the Deck %d city floor (Rev B outline)." % (who, deck["n"]), b["uid"], ps["file"])
@@ -736,6 +757,13 @@ def _f(v):
 
 def _norm(s):
     return re.sub(r"[^a-z0-9]+", " ", s.replace("**", "").lower()).strip()
+
+
+def _toward(q, c, d):
+    """Point q moved d km toward c (so a point exactly on an edge tests as inside)."""
+    dx, dy = c[0] - q[0], c[1] - q[1]
+    L = math.hypot(dx, dy)
+    return (q[0], q[1]) if L < 1e-12 else (q[0] + dx / L * min(d, L), q[1] + dy / L * min(d, L))
 
 
 def _near_poly(x, y, pts, tol):

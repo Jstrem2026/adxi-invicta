@@ -4,6 +4,8 @@ Started 26 Nov 2026. One true-scale blueprint per precinct of the Port of Arriva
 
 Common sizes (proposed): main roads 131 ft (40 m), streets 98 ft (30 m), Arrivals Boulevard 197 ft (60 m). Shuttle gates copy the canon arrival hangar: 262 × 197 × 49 ft (80 × 60 × 15 m) with a 131 × 33 ft (40 × 10 m) dock door.
 
+Building shapes (27 Nov 2026, proposed): on the map and in 3D, a building that has a building plan is drawn with that plan's real outline (its wings, halls and towers, with yards and gardens left open), inside its lot. Buildings without a plan get a shape that suits their use (rounded corners for pavilions and squares). The sizes below are the lots and did not change. Map colours show what each building is used for (legend on the map).
+
 Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P6 Concourse › P7 Station › P1 Bow Docks › P3 Stern Docks › P4 Freight › P8 Shuttle Yards.
 
 ## P2 · Arrivals — F41 to F46, lanes A–C
