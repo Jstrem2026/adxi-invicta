@@ -34,7 +34,8 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Staff Centre | 1,378 × 886 ft (420 × 270 m) | Crew rest, canteen, lockers |
 | Crew Lodge | 1,378 × 1,148 ft (420 × 350 m) | Rest for shuttle crews |
 | Utility | 656 × 820 ft (200 × 250 m) | Substation, air, water |
-| Service shafts | two | Access to the 60 m service layer |
+| Service Shaft 1 | 328 × 1,476 ft (100 × 450 m) | Access to the 60 m service layer (bow shaft) |
+| Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) |
 | Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks |
 
 ## P5 · Terminals — F39 to F48, lanes D–F
