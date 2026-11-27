@@ -340,6 +340,9 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Hangar Row A | 31 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B8A2 |
 | Shuttle Depot | 16 bays, each 262 × 197 ft (80 × 60 m) |  | D5F3P8B15A3 |
 | Hangar Row B | 62 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B9A2 |
+| Shuttle Yards Training Centre | 919 × 1,640 ft (280 × 500 m) | pilot and ground-crew training · simulators | D5F3P8B3A1 |
+| Engine Test Hall | 919 × 2,526 ft (280 × 770 m) | engine runs and test cells | D5F3P8B4A1 |
+| Yard Stores | 919 × 2,067 ft (280 × 630 m) | spares and consumables for the yards | D5F3P8B5A1 |
 
 <!-- designs P8 start -->
 
@@ -357,5 +360,8 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 - **Shuttle Yards Service Shaft** (D5F3P8B16A5): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 78 staff.
 - **Shuttle Yards Crew Rest** (D5F3P8B16A6): 55 ft (16.8 m) tall, 4 above deck. Concrete frame on a 8 m grid with flat slabs. Level 1: Entrance and front desk, Canteen, Lounges, Gym, Lockers and showers, Kitchen and stores. Levels 2–4: Rest rooms (sleeping), Laundry, Lift lobbies. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 10,980 beds.
 - **Shuttle Yards Pod Depot** (D5F3P8B6A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 400 staff per shift.
+- **Shuttle Yards Training Centre** (D5F3P8B3A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 8,670 staff.
+- **Engine Test Hall** (D5F3P8B4A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 270 staff per shift.
+- **Yard Stores** (D5F3P8B5A1): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 340 staff per shift.
 
 <!-- designs P8 end -->
