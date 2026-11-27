@@ -68,6 +68,10 @@ async function load() {
     return;
   } finally { document.getElementById("rescan").disabled = false; }
   index();
+  // Concept art (data/concepts.json): mood and look references per building, never canon.
+  if (!D.concepts) {
+    try { const c = await fetch("/file?path=Invicta/data/concepts.json", { cache: "no-store" }); D.concepts = c.ok ? await c.json() : {}; } catch (e) { D.concepts = {}; }
+  }
   const open = D.issues.filter(i => (i.severity === "error" || i.severity === "warning") && !i.known).length;
   const errs = D.issues.filter(i => i.severity === "error" && !i.known).length;
   const pill = document.getElementById("issue-pill");
@@ -681,6 +685,18 @@ function blockView(puid, bid) {
 }
 
 // ---- building
+function fileSrc(rel) {
+  return window.ADXI_STATIC ? "file/" + rel.split("/").map(encodeURIComponent).join("/") : "/file?path=" + encodeURIComponent(rel);
+}
+function conceptBlock(uid, b) {
+  const list = ((D.concepts || {}).buildings || {})[uid] || [];
+  const add = window.adxiAddConcept ? `<button class="concept-add" onclick="adxiAddConcept('${uid}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Add concept art</button>` : "";
+  if (!list.length && !add) return "";
+  return `<h3>Concept art</h3>
+    ${list.map(c => `<figure class="concept"><a href="${fileSrc(c.file)}" target="_blank" rel="noopener"><img src="${fileSrc(c.file)}" alt="${esc(c.title || "Concept art")}" loading="lazy"></a>
+      <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span></figcaption></figure>`).join("")}
+    ${list.length ? "" : `<div class="small muted">No concept art yet.</div>`}${add}`;
+}
 function buildingView(uid) {
   const b = IX.buildings[uid];
   if (!b) return `<div class="note">Unknown building ${esc(uid)}.</div>`;
@@ -711,6 +727,7 @@ function buildingView(uid) {
       ${b.doors_km ? `<div>Dock doors</div><div>${b.doors_km.length} in the hull, ${dims((b.doors_km[0][1] - b.doors_km[0][0]) * 1000, (b.doors_km[0][3] - b.doors_km[0][2]) * 1000)} as drawn</div>` : ""}
       <div>Position</div><div>${r ? `${nd(r[0], 2)}–${nd(r[1], 2)} km from the prow, ${nd(r[2], 2)} to ${nd(r[3], 2)} km across` : ND}</div></div>
     <h3>Architecture</h3><div class="kv">${arch}</div>
+    ${conceptBlock(uid, b)}
     <h3>Sources</h3><div class="small">${fileLink(ps.doc, "precinct plans doc")} (${esc(p.id)} table) · ${fileLink(p.blueprint, "blueprint")} · ${fileLink(ps.file, "app data")}</div>
     ${issueBlock(uid, "Issues with this building")}`;
   const cr = [["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`]];

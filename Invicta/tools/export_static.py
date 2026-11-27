@@ -108,6 +108,10 @@ def main():
     os.makedirs(os.path.join(out, "api"), exist_ok=True)
 
     data = build(root)
+    cp = os.path.join(APP, "data", "concepts.json")  # concept art per building
+    if os.path.isfile(cp):
+        with open(cp, encoding="utf-8") as f:
+            data["concepts"] = json.load(f)
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 
@@ -142,9 +146,10 @@ def main():
     # Jordan's private review page (needs /api/review and the ADMIN_KEY secret).
     if os.path.isfile(os.path.join(WEB, "review.html")):
         shutil.copy2(os.path.join(WEB, "review.html"), os.path.join(out, "review.html"))
-    for extra in ("chat", "room"):
-        if os.path.isfile(os.path.join(WEB, extra + ".js")):
+    for extra in ("concepts", "chat", "room"):
+        if os.path.isfile(os.path.join(WEB, extra + ".css")):
             html = html.replace("</head>", '<link rel="stylesheet" href="static/%s.css">\n</head>' % extra, 1)
+        if os.path.isfile(os.path.join(WEB, extra + ".js")):
             html = html.replace("</body>", '<script src="static/%s.js"></script>\n</body>' % extra, 1)
     with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
