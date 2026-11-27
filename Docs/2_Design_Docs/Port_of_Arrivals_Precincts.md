@@ -82,6 +82,26 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Terminals Service Shaft | 459 × 1,903 ft (140 × 580 m) |  | D5F3P5B7A3 |
 | Medical Centre | 1,312 × 1,575 ft (400 × 480 m) | first aid · clinic | D5F3P5B9A1 |
 
+<!-- designs P5 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Transfer Hall** (D5F3P5B1A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 61,480 travellers at a time.
+- **Arrivals Terminal** (D5F3P5B3A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 62,580 travellers at a time.
+- **Departures Terminal** (D5F3P5B5A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 62,580 travellers at a time.
+- **Cargo Customs** (D5F3P5B6A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 35,520 staff.
+- **Terminals Private Flights Lounge** (D5F3P5B8A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 15,780 staff.
+- **Travel Office** (D5F3P5B2A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 10,950 staff.
+- **Terminals Pod Depot** (D5F3P5B2A2): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 320 staff per shift.
+- **Customs & Border Hq** (D5F3P5B4A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 23,520 staff.
+- **Licensing & Permits** (D5F3P5B4A3): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 23,520 staff.
+- **Terminal Admin** (D5F3P5B7A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 13,520 staff.
+- **Terminals Utility Plant** (D5F3P5B7A2): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 53 staff per shift.
+- **Terminals Service Shaft** (D5F3P5B7A3): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 93 staff.
+- **Medical Centre** (D5F3P5B9A1): 44 ft (13.5 m) tall, 3 above deck, 1 below. Concrete frame on a 9 m grid, wide corridors for beds. Level 1: Entrance and waiting, Emergency and treatment, Screening rooms, Imaging, Pharmacy, Staff rooms, Stores. Levels 2–3: Wards, Consulting rooms, Isolation rooms, Offices, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Below deck: Stores, Plant rooms, Morgue. Capacity about 2,070 beds.
+
+<!-- designs P5 end -->
+
 ## P6 · Concourse — F39 to F48, lanes G–I
 
 ![P6 Concourse](art/blueprints/precincts/p6-concourse.png)
@@ -106,6 +126,26 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Concourse Utility Plant | 656 × 2,034 ft (200 × 620 m) |  | D5F3P6B10A1 |
 | Concourse Service Shaft | 525 × 2,034 ft (160 × 620 m) |  | D5F3P6B10A2 |
 
+<!-- designs P6 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Greeters' Hall** (D5F3P6B1A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 31,460 travellers at a time.
+- **Shop Arcade** (D5F3P6B1A2): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 35,840 visitors at a time.
+- **Transit Lounges** (D5F3P6B3A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 59,730 travellers at a time.
+- **Market Hall** (D5F3P6B5A1): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 80,640 visitors at a time.
+- **Restaurant Row** (D5F3P6B7A1): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 84,490 visitors at a time.
+- **Travellers' Clinic** (D5F3P6B9A1): 44 ft (13.5 m) tall, 3 above deck, 1 below. Concrete frame on a 9 m grid, wide corridors for beds. Level 1: Entrance and waiting, Emergency and treatment, Screening rooms, Imaging, Pharmacy, Staff rooms, Stores. Levels 2–3: Wards, Consulting rooms, Isolation rooms, Offices, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Below deck: Stores, Plant rooms, Morgue. Capacity about 1,720 beds.
+- **Concourse Police Post** (D5F3P6B9A2): 39 ft (12 m) tall, 3 above deck. Reinforced concrete frame on a 9 m grid. Level 1: Front desk and waiting, Interview rooms, Holding cells, Vehicle garage, Evidence and stores, Duty office. Levels 2–3: Offices, Briefing rooms, Control room, Lockers and showers, Canteen. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 1,320 officers.
+- **Grand Port Hotel** (D5F3P6B4A1): 181 ft (55.2 m) tall, 14 above deck, 1 below. Concrete core and flat-slab towers on a two-storey steel podium. Levels 1–2 (podium): Lobby and reception, Restaurants and bars, Ballroom and meeting rooms, Spa and pool, Kitchens, Back of house. Levels 3–14: Guest rooms, Housekeeping, Lift lobbies. The upper floors rise as 4 slim towers over the podium. Below deck: Laundry, Stores, Plant rooms. Capacity 1,200 guest rooms (from the brief).
+- **Harbour Hotel** (D5F3P6B6A1): 181 ft (55.2 m) tall, 14 above deck, 1 below. Concrete core and flat-slab towers on a two-storey steel podium. Levels 1–2 (podium): Lobby and reception, Restaurants and bars, Ballroom and meeting rooms, Spa and pool, Kitchens, Back of house. Levels 3–14: Guest rooms, Housekeeping, Lift lobbies. The upper floors rise as 4 slim towers over the podium. Below deck: Laundry, Stores, Plant rooms. Capacity 900 guest rooms (from the brief).
+- **Crew Hotel** (D5F3P6B8A1): 181 ft (55.2 m) tall, 14 above deck, 1 below. Concrete core and flat-slab towers on a two-storey steel podium. Levels 1–2 (podium): Lobby and reception, Restaurants and bars, Ballroom and meeting rooms, Spa and pool, Kitchens, Back of house. Levels 3–14: Guest rooms, Housekeeping, Lift lobbies. The upper floors rise as 4 slim towers over the podium. Below deck: Laundry, Stores, Plant rooms. Capacity about 38,050 guest rooms.
+- **Port Hostel** (D5F3P6B8A2): 181 ft (55.2 m) tall, 14 above deck, 1 below. Concrete core and flat-slab towers on a two-storey steel podium. Levels 1–2 (podium): Lobby and reception, Restaurants and bars, Ballroom and meeting rooms, Spa and pool, Kitchens, Back of house. Levels 3–14: Guest rooms, Housekeeping, Lift lobbies. The upper floors rise as 4 slim towers over the podium. Below deck: Laundry, Stores, Plant rooms. Capacity about 33,560 guest rooms.
+- **Concourse Utility Plant** (D5F3P6B10A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 99 staff per shift.
+- **Concourse Service Shaft** (D5F3P6B10A2): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 110 staff.
+
+<!-- designs P6 end -->
+
 ## P7 · Station — F39 to F48, lanes J–M
 
 ![P7 Station](art/blueprints/precincts/p7-station.png)
@@ -128,6 +168,22 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Station Walk | 1,312 × 197 ft (400 × 60 m) | covered moving walkway | D5F3P7B5A2 |
 | Keelway Port Station | 5,249 × 2,723 ft (1600 × 830 m) | platforms on the Keelway · centred on F46 | D5F3P7B5A3 |
 
+<!-- designs P7 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Porters' Hall** (D5F3P7B1A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 31,460 travellers at a time.
+- **Station Shops** (D5F3P7B1A2): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 35,840 visitors at a time.
+- **Interchange Hall** (D5F3P7B4A1): 79 ft (24 m) tall, 3 above deck, 1 below. Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors. Level 1: Main hall, Desks and check-in, Security and control, Waiting areas, Shops and cafés, Toilets and family rooms, Staff rooms. Levels 2–3: Lounges, Food court, Offices, Toilets, Plant rooms. Below deck: Baggage handling, Service roads and loading, Plant rooms. Capacity about 59,730 travellers at a time.
+- **Station Clinic** (D5F3P7B6A1): 44 ft (13.5 m) tall, 3 above deck, 1 below. Concrete frame on a 9 m grid, wide corridors for beds. Level 1: Entrance and waiting, Emergency and treatment, Screening rooms, Imaging, Pharmacy, Staff rooms, Stores. Levels 2–3: Wards, Consulting rooms, Isolation rooms, Offices, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Below deck: Stores, Plant rooms, Morgue. Capacity about 2,760 beds.
+- **Station Offices** (D5F3P7B6A2): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 15,880 staff.
+- **Station Pod Depot** (D5F3P7B8A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 330 staff per shift.
+- **Station Utility Plant** (D5F3P7B3A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 120 staff per shift.
+- **Station Service Shaft** (D5F3P7B3A2): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 110 staff.
+- **Keelway Port Station** (D5F3P7B5A3): 66 ft (20 m) tall, 2 above deck, 1 below. Long-span steel trusses on a 40 m column grid, concrete platform decks. Level 1: Concourse, Platform access and lifts, Ticket halls, Waiting areas, Shops and cafés, Staff and control. Level 2: Mezzanine walkways, Waiting lounges, Offices and control, Plant rooms. Below deck: Platforms, Track and lift shafts, Plant rooms. Capacity about 223,340 travellers at a time.
+
+<!-- designs P7 end -->
+
 ## P1 · Bow Docks — F34 to F41, lanes A–C
 
 ![P1 Bow Docks](art/blueprints/precincts/p1-bow-docks.png)
@@ -148,6 +204,22 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Marina Park | 3,445 × 1,575 ft (1050 × 480 m) | pocket park · 125 acres | D5F3P1B2A1 |
 | Medium Berths | 15 bays, each 394 × 262 ft (120 × 80 m) |  | D5F3P1B1A1 |
 | Skiff Marina | 25 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P1B1A2 |
+
+<!-- designs P1 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Harbourmaster** (D5F3P1B4A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 9,920 staff.
+- **Bow Docks Fire Station** (D5F3P1B4A2): 39 ft (12 m) tall, 2 above deck. Steel portal frames over the vehicle bays, concrete frame for crew quarters. Level 1: Vehicle bays, Equipment and hose stores, Workshop, Watch room, Training yard store. Level 2: Crew bunk rooms, Kitchen and mess, Gym, Offices, Training rooms. Capacity about 320 crew on watch.
+- **Bow Docks Chandlery** (D5F3P1B5A1): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 21,440 visitors at a time.
+- **Bow Docks Police Post** (D5F3P1B5A2): 39 ft (12 m) tall, 3 above deck. Reinforced concrete frame on a 9 m grid. Level 1: Front desk and waiting, Interview rooms, Holding cells, Vehicle garage, Evidence and stores, Duty office. Levels 2–3: Offices, Briefing rooms, Control room, Lockers and showers, Canteen. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 1,810 officers.
+- **Repair Yard** (D5F3P1B5A3): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 640 staff per shift.
+- **Bow Docks Fuel Depot** (D5F3P1B4A3): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 240 staff per shift.
+- **Pilot Lounge** (D5F3P1B4A4): 55 ft (16.8 m) tall, 4 above deck. Concrete frame on a 8 m grid with flat slabs. Level 1: Entrance and front desk, Canteen, Lounges, Gym, Lockers and showers, Kitchen and stores. Levels 2–4: Rest rooms (sleeping), Laundry, Lift lobbies. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 5,660 beds.
+- **Bow Docks Utility Plant** (D5F3P1B4A5): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 22 staff per shift.
+- **Bow Docks Service Shaft** (D5F3P1B4A6): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 24 staff.
+
+<!-- designs P1 end -->
 
 ## P3 · Stern Docks — F46 to F55, lanes A–C
 
@@ -176,6 +248,25 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Yard Locks | 1,969 × 492 ft (600 × 150 m) |  | D5F3P3B1A2 |
 | Yard Taxiway | 853 × 3,675 ft (260 × 1120 m) |  | D5F3P3 |
 
+<!-- designs P3 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Stern Docks Private Flights Lounge** (D5F3P3B2A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 8,820 staff.
+- **Stern Docks Fire Station** (D5F3P3B2A2): 39 ft (12 m) tall, 2 above deck. Steel portal frames over the vehicle bays, concrete frame for crew quarters. Level 1: Vehicle bays, Equipment and hose stores, Workshop, Watch room, Training yard store. Level 2: Crew bunk rooms, Kitchen and mess, Gym, Offices, Training rooms. Capacity about 610 crew on watch.
+- **Stern Docks Police Post** (D5F3P3B3A1): 39 ft (12 m) tall, 3 above deck. Reinforced concrete frame on a 9 m grid. Level 1: Front desk and waiting, Interview rooms, Holding cells, Vehicle garage, Evidence and stores, Duty office. Levels 2–3: Offices, Briefing rooms, Control room, Lockers and showers, Canteen. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 2,930 officers.
+- **Stern Docks Chandlery** (D5F3P3B3A2): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 36,010 visitors at a time.
+- **Corvette Service** (D5F3P3B4A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 370 staff per shift.
+- **Stern Docks Fuel Depot** (D5F3P3B5A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 190 staff per shift.
+- **Frigate Service Yard** (D5F3P3B7A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 560 staff per shift.
+- **Company Berth Offices** (D5F3P3B8A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 19,090 staff.
+- **Stern Harbourmaster** (D5F3P3B12A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 21,650 staff.
+- **Stern Docks Utility Plant** (D5F3P3B15A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 80 staff per shift.
+- **Stern Docks Service Shaft** (D5F3P3B15A2): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 91 staff.
+- **Stern Docks Crew Rest** (D5F3P3B15A3): 55 ft (16.8 m) tall, 4 above deck. Concrete frame on a 8 m grid with flat slabs. Level 1: Entrance and front desk, Canteen, Lounges, Gym, Lockers and showers, Kitchen and stores. Levels 2–4: Rest rooms (sleeping), Laundry, Lift lobbies. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 14,760 beds.
+
+<!-- designs P3 end -->
+
 ## P4 · Freight — F34 to F39, lanes D–M
 
 ![P4 Freight](art/blueprints/precincts/p4-freight.png)
@@ -200,6 +291,29 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Forwarders | 2,953 × 1,476 ft (900 × 450 m) | freight offices | D5F3P4B8A1 |
 | Vehicle Workshop | 2,953 × 2,297 ft (900 × 700 m) | maintenance | D5F3P4B8A2 |
 | Container Yard | 2,953 × 2,559 ft (900 × 780 m) | on the Keelway siding | D5F3P4B8A3 |
+
+<!-- designs P4 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Bonded Warehouse A** (D5F3P4B1A1): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 1,010 staff per shift.
+- **Bonded Warehouse B** (D5F3P4B1A2): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 960 staff per shift.
+- **Cargo Sorting Hub** (D5F3P4B4A1): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 1,750 staff per shift.
+- **Baggage Logistics** (D5F3P4B4A2): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 2,010 staff per shift.
+- **Freight Fire Station** (D5F3P4B6A1): 39 ft (12 m) tall, 2 above deck. Steel portal frames over the vehicle bays, concrete frame for crew quarters. Level 1: Vehicle bays, Equipment and hose stores, Workshop, Watch room, Training yard store. Level 2: Crew bunk rooms, Kitchen and mess, Gym, Offices, Training rooms. Capacity about 430 crew on watch.
+- **Tug Park** (D5F3P4B6A2): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 340 staff per shift.
+- **Cold Store** (D5F3P4B6A3): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 1,180 staff per shift.
+- **Warehouse C** (D5F3P4B7A1): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 1,270 staff per shift.
+- **Waste** (D5F3P4B2A1): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 960 staff per shift.
+- **Freight Utility Plant** (D5F3P4B3A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 110 staff per shift.
+- **Freight Service Shaft** (D5F3P4B3A2): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 140 staff.
+- **Service Plant** (D5F3P4B5A1): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 870 staff per shift.
+- **Ground Vehicle Depot** (D5F3P4B5A2): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 980 staff per shift.
+- **Forwarders** (D5F3P4B8A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 25,980 staff.
+- **Vehicle Workshop** (D5F3P4B8A2): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 810 staff per shift.
+- **Container Yard** (D5F3P4B8A3): 61 ft (18.5 m) tall, 2 above deck. Steel portal frames on a 30 m grid, heavy-duty concrete floor. Level 1: Storage halls, Sorting floor, Loading docks, Inspection rooms, Staff rooms. Level 2: Offices, Control room, Staff rooms. Capacity about 1,330 staff per shift.
+
+<!-- designs P4 end -->
 
 ## P8 · Shuttle Yards — F48 to F55, lanes D–M (less the Atrium Plaza)
 
@@ -226,3 +340,22 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Hangar Row A | 31 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B8A2 |
 | Shuttle Depot | 16 bays, each 262 × 197 ft (80 × 60 m) |  | D5F3P8B15A3 |
 | Hangar Row B | 62 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P8B9A2 |
+
+<!-- designs P8 start -->
+
+**Building designs (proposed 27 Nov 2026, drafted from each footprint; full room plans in `Invicta/data/models/`):**
+
+- **Maintenance Shops** (D5F3P8B8A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 1,190 staff per shift.
+- **Shuttle Ops** (D5F3P8B15A1): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 24,910 staff.
+- **Fuel Farm** (D5F3P8B15A2): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 310 staff per shift.
+- **Shuttle Yards Fire Station** (D5F3P8B12A1): 39 ft (12 m) tall, 2 above deck. Steel portal frames over the vehicle bays, concrete frame for crew quarters. Level 1: Vehicle bays, Equipment and hose stores, Workshop, Watch room, Training yard store. Level 2: Crew bunk rooms, Kitchen and mess, Gym, Offices, Training rooms. Capacity about 370 crew on watch.
+- **Shuttle Yards Police Post** (D5F3P8B13A1): 39 ft (12 m) tall, 3 above deck. Reinforced concrete frame on a 9 m grid. Level 1: Front desk and waiting, Interview rooms, Holding cells, Vehicle garage, Evidence and stores, Duty office. Levels 2–3: Offices, Briefing rooms, Control room, Lockers and showers, Canteen. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 1,810 officers.
+- **Parts & Avionics** (D5F3P8B16A1): 36 ft (11 m) tall, 2 above deck. Steel frame on a 12 m grid with a glass-roofed central street. Level 1: Shop units, Walkway seating, Food stalls, Toilets, Loading and stores. Level 2: Shop units, Restaurants, Offices, Plant rooms. Capacity about 58,130 visitors at a time.
+- **Paint & Refit** (D5F3P8B16A2): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 380 staff per shift.
+- **Yard Offices** (D5F3P8B16A3): 55 ft (16.8 m) tall, 4 above deck. Concrete core with steel frame on a 9 m grid. Level 1: Lobby, Public counters, Meeting rooms, Café, Mail and stores, Security, Offices. Levels 2–4: Open offices, Meeting rooms, Private offices, Break rooms, Plant rooms. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 14,430 staff.
+- **Shuttle Yards Utility Plant** (D5F3P8B16A4): 52 ft (16 m) tall, 2 above deck, 1 below. Concrete frame with heavy plant floors, steel roof. Level 1: Substation, Air handling, Water pumps and tanks, Control room, Workshop and stores. Level 2: Air handling, Switch rooms, Offices. Below deck: Pipe and cable galleries, Tanks. Capacity about 72 staff per shift.
+- **Shuttle Yards Service Shaft** (D5F3P8B16A5): 39 ft (12 m) tall, 2 above deck, 1 below. Heavy concrete shaft walls, steel frame head house. Level 1: Vehicle lift lobby, Goods lifts, Stair and ladders, Control room, Stores. Level 2: Lift machine rooms, Ventilation plant. Below deck: Shaft opening, Lift pits. Capacity about 78 staff.
+- **Shuttle Yards Crew Rest** (D5F3P8B16A6): 55 ft (16.8 m) tall, 4 above deck. Concrete frame on a 8 m grid with flat slabs. Level 1: Entrance and front desk, Canteen, Lounges, Gym, Lockers and showers, Kitchen and stores. Levels 2–4: Rest rooms (sleeping), Laundry, Lift lobbies. Above level 1 the building splits into 4 wings with open courtyards between them. Capacity about 10,980 beds.
+- **Shuttle Yards Pod Depot** (D5F3P8B6A1): 80 ft (24.5 m) tall, 2 above deck. Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor. Level 1: Work bays, Workshops, Parts stores, Staff rooms, Control. Level 2: Offices, Control room, Training rooms, Staff rooms. Capacity about 400 staff per shift.
+
+<!-- designs P8 end -->
