@@ -131,7 +131,7 @@ function issueHTML(i) {
     <div class="meta">${i.path ? fileLink(i.path, i.path) : ""}${i.entity && entityHref(i.entity) ? ` · <a href="${entityHref(i.entity)}">show on map</a>` : ""} · ${i.id}</div></div>`;
   }
   return `<div class="issue ${i.severity}${i.known ? " known" : ""}">
-    <div class="t"><span class="sev-${i.severity}">${sevName(i.severity)}</span> · ${esc(i.title)}</div>
+    <div class="t">${i.known ? `<span class="muted">Accepted</span>` : `<span class="sev-${i.severity}">${sevName(i.severity)}</span>`} · ${esc(i.title)}</div>
     <div>${esc(i.detail)}</div>
     ${i.fix ? `<div class="meta">Fix: ${esc(i.fix)}</div>` : ""}
     <div class="meta">${i.path ? fileLink(i.path, i.path) : ""}${i.entity && entityHref(i.entity) ? ` · <a href="${entityHref(i.entity)}">show on map</a>` : ""}${i.known ? ` · known: ${esc(i.known)}` : ""} · ${i.id}</div>
@@ -155,11 +155,12 @@ function entityHref(e) {
   return "";
 }
 function issueBlock(id, title) {
-  const list = issuesFor(id);
-  if (!list.length) return `<h3>${title || "Issues here"}</h3><div class="muted small">None found.</div>`;
+  const all = issuesFor(id), list = all.filter(i => !i.known), known = all.filter(i => i.known);
   const order = { error: 0, warning: 1, decision: 2, gap: 3 };
   list.sort((a, b) => order[a.severity] - order[b.severity]);
-  return `<h3>${title || "Issues here"} (${list.length})</h3>` + list.map(issueHTML).join("");
+  const folded = known.length ? `<details class="known-list"><summary>Accepted as known, no action needed (${known.length})</summary>${known.map(issueHTML).join("")}</details>` : "";
+  if (!list.length) return `<h3>${title || "Issues here"}</h3><div class="muted small">None open.</div>${folded}`;
+  return `<h3>${title || "Issues here"} (${list.length})</h3>` + list.map(issueHTML).join("") + folded;
 }
 
 // ------------------------------------------------------------------ routing
@@ -227,11 +228,10 @@ function dashboard() {
 function issuesPage() {
   const cats = [...new Set(D.issues.map(i => i.category))].sort();
   const btn = (k, label) => `<button data-sev="${k}" class="${issueFilter.sev === k ? "on" : ""}">${label}</button>`;
-  const counts = s => D.issues.filter(i => i.severity === s && (showKnown || !i.known)).length;
+  const counts = s => D.issues.filter(i => i.severity === s && !i.known).length;
   return `<h1>Scanner</h1>
   <div class="filters">${btn("all", "All")}${btn("error", `Errors (${counts("error")})`)}${btn("warning", `Warnings (${counts("warning")})`)}${btn("decision", `Waiting on Jordan (${counts("decision")})`)}${btn("gap", `Not designed yet (${counts("gap")})`)}
   <input id="q" placeholder="Search (title, file, place…)" value="${esc(issueFilter.q)}">
-  <label class="small"><input type="checkbox" id="known" ${showKnown ? "checked" : ""}> show known</label>
   <a href="/api/report.md" target="_blank">Download report (.md)</a></div>
   <div class="small muted">Categories: ${cats.map(esc).join(", ")}. Every scan reads the files fresh; press Rescan after editing.</div>
   <div id="issue-list"></div>`;
@@ -239,13 +239,15 @@ function issuesPage() {
 function bindIssues() {
   const draw = () => {
     const q = issueFilter.q.toLowerCase();
-    const list = D.issues.filter(i => (issueFilter.sev === "all" || i.severity === issueFilter.sev) && (showKnown || !i.known) &&
-      (!q || (i.title + " " + i.detail + " " + (i.path || "") + " " + (i.entity || "") + " " + i.category).toLowerCase().includes(q)));
-    document.getElementById("issue-list").innerHTML = list.map(issueHTML).join("") || "<div class='muted'>Nothing matches.</div>";
+    const match = i => (issueFilter.sev === "all" || i.severity === issueFilter.sev) &&
+      (!q || (i.title + " " + i.detail + " " + (i.path || "") + " " + (i.entity || "") + " " + i.category).toLowerCase().includes(q));
+    const list = D.issues.filter(i => !i.known && match(i)), known = D.issues.filter(i => i.known && match(i));
+    // Items already accepted as known never show as open or waiting; they sit folded at the end.
+    document.getElementById("issue-list").innerHTML = (list.map(issueHTML).join("") || "<div class='muted'>Nothing open here.</div>") +
+      (known.length ? `<details class="known-list"><summary>Accepted as known, no action needed (${known.length})</summary>${known.map(issueHTML).join("")}</details>` : "");
   };
   document.querySelectorAll("[data-sev]").forEach(b => b.onclick = () => { issueFilter.sev = b.dataset.sev; route(); });
   document.getElementById("q").oninput = e => { issueFilter.q = e.target.value; draw(); };
-  document.getElementById("known").onchange = e => { showKnown = e.target.checked; route(); };
   draw();
 }
 function sourcesPage() {
