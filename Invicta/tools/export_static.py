@@ -8,6 +8,7 @@ It runs the same build and scan as the local app, then writes:
     index.html, static/      the browser app, with a small shim so it reads files
                              instead of the local /api and /file endpoints
     api/all.json             the model, scan and progress (what /api/all returns)
+    api/models/<uid>.json    each building's exact plan, loaded when the building opens
     api/report.md            the scan report
     file/<path>              only the source files the app links to, and only from
                              the allowed folders below (never game code or the website)
@@ -119,14 +120,21 @@ def main():
     if os.path.isfile(cp):
         with open(cp, encoding="utf-8") as f:
             data["concepts"] = json.load(f)
-    md = os.path.join(APP, "data", "models")  # exact 2D plans per building
+    # Exact plans per building. Each is its own file (api/models/<uid>.json), loaded when a building opens:
+    # inlined they made all.json larger than the 25 MiB a Cloudflare Pages file may be (27 Nov 2026).
+    # all.json keeps a small index (levels and parts per plan) for the building panel.
+    md = os.path.join(APP, "data", "models")
+    os.makedirs(os.path.join(out, "api", "models"), exist_ok=True)
     if os.path.isdir(md):
-        data["models"] = {}
+        data["model_index"] = {}
         for n in sorted(os.listdir(md)):
             if n.endswith(".json"):
                 with open(os.path.join(md, n), encoding="utf-8") as f:
                     m = json.load(f)
-                data["models"][m.get("building_uid") or n[:-5]] = m
+                uid = m.get("building_uid") or n[:-5]
+                data["model_index"][uid] = [len(m.get("levels", [])), len(m.get("elements", []))]
+                with open(os.path.join(out, "api", "models", uid + ".json"), "w", encoding="utf-8") as f:
+                    json.dump(m, f, ensure_ascii=False, separators=(",", ":"))
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 
