@@ -1,0 +1,6122 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P2-19",
+ "units": "m",
+ "frame": "Metres from the building's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  420,
+  350
+ ],
+ "grid_m": 12,
+ "source": "Jordan's Crew Lodge review spec (26 Nov 2026); room layout drafted to fit it, all proposed.",
+ "levels": [
+  {
+   "id": "L-1",
+   "name": "Level −1 · Crew Undercroft",
+   "z_m": -6,
+   "height_m": 6,
+   "status": "proposed"
+  },
+  {
+   "id": "L1",
+   "name": "Level 1 · Arrivals & Commons",
+   "z_m": 0,
+   "height_m": 8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Residential & Recreation",
+   "z_m": 8,
+   "height_m": 8,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Crew Residential",
+   "z_m": 16,
+   "height_m": 8,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Tower Quarters",
+   "z_m": 24,
+   "height_m": 7,
+   "status": "proposed"
+  },
+  {
+   "id": "L5",
+   "name": "Level 5 · Tower Quarters",
+   "z_m": 31,
+   "height_m": 7,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "TBP-mass",
+   "type": "mass",
+   "name": "Tower (bow-port)",
+   "levels": [
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     0
+    ],
+    [
+     80,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-core",
+   "type": "core",
+   "name": "Tower stairs & lifts",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     34,
+     24
+    ],
+    [
+     46,
+     24
+    ],
+    [
+     46,
+     36
+    ],
+    [
+     34,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     0,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     36
+    ],
+    [
+     8,
+     36
+    ],
+    [
+     8,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L4",
+   "outline_m": [
+    [
+     8,
+     0
+    ],
+    [
+     16,
+     0
+    ],
+    [
+     16,
+     24
+    ],
+    [
+     8,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L4",
+   "outline_m": [
+    [
+     8,
+     36
+    ],
+    [
+     16,
+     36
+    ],
+    [
+     16,
+     60
+    ],
+    [
+     8,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L4",
+   "outline_m": [
+    [
+     16,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     24
+    ],
+    [
+     16,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L4",
+   "outline_m": [
+    [
+     16,
+     36
+    ],
+    [
+     24,
+     36
+    ],
+    [
+     24,
+     60
+    ],
+    [
+     16,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L4",
+   "outline_m": [
+    [
+     24,
+     0
+    ],
+    [
+     32,
+     0
+    ],
+    [
+     32,
+     24
+    ],
+    [
+     24,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L4",
+   "outline_m": [
+    [
+     24,
+     36
+    ],
+    [
+     32,
+     36
+    ],
+    [
+     32,
+     60
+    ],
+    [
+     24,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L4",
+   "outline_m": [
+    [
+     32,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     40,
+     24
+    ],
+    [
+     32,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L4",
+   "outline_m": [
+    [
+     32,
+     36
+    ],
+    [
+     40,
+     36
+    ],
+    [
+     40,
+     60
+    ],
+    [
+     32,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L4",
+   "outline_m": [
+    [
+     40,
+     0
+    ],
+    [
+     48,
+     0
+    ],
+    [
+     48,
+     24
+    ],
+    [
+     40,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L4",
+   "outline_m": [
+    [
+     40,
+     36
+    ],
+    [
+     48,
+     36
+    ],
+    [
+     48,
+     60
+    ],
+    [
+     40,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L4",
+   "outline_m": [
+    [
+     48,
+     0
+    ],
+    [
+     56,
+     0
+    ],
+    [
+     56,
+     24
+    ],
+    [
+     48,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L4",
+   "outline_m": [
+    [
+     48,
+     36
+    ],
+    [
+     56,
+     36
+    ],
+    [
+     56,
+     60
+    ],
+    [
+     48,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L4",
+   "outline_m": [
+    [
+     56,
+     0
+    ],
+    [
+     64,
+     0
+    ],
+    [
+     64,
+     24
+    ],
+    [
+     56,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L4",
+   "outline_m": [
+    [
+     56,
+     36
+    ],
+    [
+     64,
+     36
+    ],
+    [
+     64,
+     60
+    ],
+    [
+     56,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L4",
+   "outline_m": [
+    [
+     64,
+     0
+    ],
+    [
+     72,
+     0
+    ],
+    [
+     72,
+     24
+    ],
+    [
+     64,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L4",
+   "outline_m": [
+    [
+     64,
+     36
+    ],
+    [
+     72,
+     36
+    ],
+    [
+     72,
+     60
+    ],
+    [
+     64,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L4",
+   "outline_m": [
+    [
+     72,
+     0
+    ],
+    [
+     80,
+     0
+    ],
+    [
+     80,
+     24
+    ],
+    [
+     72,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L4",
+   "outline_m": [
+    [
+     72,
+     36
+    ],
+    [
+     80,
+     36
+    ],
+    [
+     80,
+     60
+    ],
+    [
+     72,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     24
+    ],
+    [
+     34,
+     24
+    ],
+    [
+     34,
+     36
+    ],
+    [
+     0,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L4-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     46,
+     24
+    ],
+    [
+     80,
+     24
+    ],
+    [
+     80,
+     36
+    ],
+    [
+     46,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     0,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     36
+    ],
+    [
+     8,
+     36
+    ],
+    [
+     8,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L5",
+   "outline_m": [
+    [
+     8,
+     0
+    ],
+    [
+     16,
+     0
+    ],
+    [
+     16,
+     24
+    ],
+    [
+     8,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L5",
+   "outline_m": [
+    [
+     8,
+     36
+    ],
+    [
+     16,
+     36
+    ],
+    [
+     16,
+     60
+    ],
+    [
+     8,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L5",
+   "outline_m": [
+    [
+     16,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     24
+    ],
+    [
+     16,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L5",
+   "outline_m": [
+    [
+     16,
+     36
+    ],
+    [
+     24,
+     36
+    ],
+    [
+     24,
+     60
+    ],
+    [
+     16,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L5",
+   "outline_m": [
+    [
+     24,
+     0
+    ],
+    [
+     32,
+     0
+    ],
+    [
+     32,
+     24
+    ],
+    [
+     24,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L5",
+   "outline_m": [
+    [
+     24,
+     36
+    ],
+    [
+     32,
+     36
+    ],
+    [
+     32,
+     60
+    ],
+    [
+     24,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L5",
+   "outline_m": [
+    [
+     32,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     40,
+     24
+    ],
+    [
+     32,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L5",
+   "outline_m": [
+    [
+     32,
+     36
+    ],
+    [
+     40,
+     36
+    ],
+    [
+     40,
+     60
+    ],
+    [
+     32,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L5",
+   "outline_m": [
+    [
+     40,
+     0
+    ],
+    [
+     48,
+     0
+    ],
+    [
+     48,
+     24
+    ],
+    [
+     40,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L5",
+   "outline_m": [
+    [
+     40,
+     36
+    ],
+    [
+     48,
+     36
+    ],
+    [
+     48,
+     60
+    ],
+    [
+     40,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L5",
+   "outline_m": [
+    [
+     48,
+     0
+    ],
+    [
+     56,
+     0
+    ],
+    [
+     56,
+     24
+    ],
+    [
+     48,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L5",
+   "outline_m": [
+    [
+     48,
+     36
+    ],
+    [
+     56,
+     36
+    ],
+    [
+     56,
+     60
+    ],
+    [
+     48,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L5",
+   "outline_m": [
+    [
+     56,
+     0
+    ],
+    [
+     64,
+     0
+    ],
+    [
+     64,
+     24
+    ],
+    [
+     56,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L5",
+   "outline_m": [
+    [
+     56,
+     36
+    ],
+    [
+     64,
+     36
+    ],
+    [
+     64,
+     60
+    ],
+    [
+     56,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L5",
+   "outline_m": [
+    [
+     64,
+     0
+    ],
+    [
+     72,
+     0
+    ],
+    [
+     72,
+     24
+    ],
+    [
+     64,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L5",
+   "outline_m": [
+    [
+     64,
+     36
+    ],
+    [
+     72,
+     36
+    ],
+    [
+     72,
+     60
+    ],
+    [
+     64,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L5",
+   "outline_m": [
+    [
+     72,
+     0
+    ],
+    [
+     80,
+     0
+    ],
+    [
+     80,
+     24
+    ],
+    [
+     72,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L5",
+   "outline_m": [
+    [
+     72,
+     36
+    ],
+    [
+     80,
+     36
+    ],
+    [
+     80,
+     60
+    ],
+    [
+     72,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     24
+    ],
+    [
+     34,
+     24
+    ],
+    [
+     34,
+     36
+    ],
+    [
+     0,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBP-L5-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     46,
+     24
+    ],
+    [
+     80,
+     24
+    ],
+    [
+     80,
+     36
+    ],
+    [
+     46,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-mass",
+   "type": "mass",
+   "name": "Tower (stern-port)",
+   "levels": [
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     340,
+     0
+    ],
+    [
+     420,
+     0
+    ],
+    [
+     420,
+     60
+    ],
+    [
+     340,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-core",
+   "type": "core",
+   "name": "Tower stairs & lifts",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     374,
+     24
+    ],
+    [
+     386,
+     24
+    ],
+    [
+     386,
+     36
+    ],
+    [
+     374,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     0
+    ],
+    [
+     348,
+     0
+    ],
+    [
+     348,
+     24
+    ],
+    [
+     340,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     36
+    ],
+    [
+     348,
+     36
+    ],
+    [
+     348,
+     60
+    ],
+    [
+     340,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L4",
+   "outline_m": [
+    [
+     348,
+     0
+    ],
+    [
+     356,
+     0
+    ],
+    [
+     356,
+     24
+    ],
+    [
+     348,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L4",
+   "outline_m": [
+    [
+     348,
+     36
+    ],
+    [
+     356,
+     36
+    ],
+    [
+     356,
+     60
+    ],
+    [
+     348,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L4",
+   "outline_m": [
+    [
+     356,
+     0
+    ],
+    [
+     364,
+     0
+    ],
+    [
+     364,
+     24
+    ],
+    [
+     356,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L4",
+   "outline_m": [
+    [
+     356,
+     36
+    ],
+    [
+     364,
+     36
+    ],
+    [
+     364,
+     60
+    ],
+    [
+     356,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L4",
+   "outline_m": [
+    [
+     364,
+     0
+    ],
+    [
+     372,
+     0
+    ],
+    [
+     372,
+     24
+    ],
+    [
+     364,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L4",
+   "outline_m": [
+    [
+     364,
+     36
+    ],
+    [
+     372,
+     36
+    ],
+    [
+     372,
+     60
+    ],
+    [
+     364,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L4",
+   "outline_m": [
+    [
+     372,
+     0
+    ],
+    [
+     380,
+     0
+    ],
+    [
+     380,
+     24
+    ],
+    [
+     372,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L4",
+   "outline_m": [
+    [
+     372,
+     36
+    ],
+    [
+     380,
+     36
+    ],
+    [
+     380,
+     60
+    ],
+    [
+     372,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L4",
+   "outline_m": [
+    [
+     380,
+     0
+    ],
+    [
+     388,
+     0
+    ],
+    [
+     388,
+     24
+    ],
+    [
+     380,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L4",
+   "outline_m": [
+    [
+     380,
+     36
+    ],
+    [
+     388,
+     36
+    ],
+    [
+     388,
+     60
+    ],
+    [
+     380,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L4",
+   "outline_m": [
+    [
+     388,
+     0
+    ],
+    [
+     396,
+     0
+    ],
+    [
+     396,
+     24
+    ],
+    [
+     388,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L4",
+   "outline_m": [
+    [
+     388,
+     36
+    ],
+    [
+     396,
+     36
+    ],
+    [
+     396,
+     60
+    ],
+    [
+     388,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L4",
+   "outline_m": [
+    [
+     396,
+     0
+    ],
+    [
+     404,
+     0
+    ],
+    [
+     404,
+     24
+    ],
+    [
+     396,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L4",
+   "outline_m": [
+    [
+     396,
+     36
+    ],
+    [
+     404,
+     36
+    ],
+    [
+     404,
+     60
+    ],
+    [
+     396,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L4",
+   "outline_m": [
+    [
+     404,
+     0
+    ],
+    [
+     412,
+     0
+    ],
+    [
+     412,
+     24
+    ],
+    [
+     404,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L4",
+   "outline_m": [
+    [
+     404,
+     36
+    ],
+    [
+     412,
+     36
+    ],
+    [
+     412,
+     60
+    ],
+    [
+     404,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L4",
+   "outline_m": [
+    [
+     412,
+     0
+    ],
+    [
+     420,
+     0
+    ],
+    [
+     420,
+     24
+    ],
+    [
+     412,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L4",
+   "outline_m": [
+    [
+     412,
+     36
+    ],
+    [
+     420,
+     36
+    ],
+    [
+     420,
+     60
+    ],
+    [
+     412,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     24
+    ],
+    [
+     374,
+     24
+    ],
+    [
+     374,
+     36
+    ],
+    [
+     340,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L4-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     386,
+     24
+    ],
+    [
+     420,
+     24
+    ],
+    [
+     420,
+     36
+    ],
+    [
+     386,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     0
+    ],
+    [
+     348,
+     0
+    ],
+    [
+     348,
+     24
+    ],
+    [
+     340,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     36
+    ],
+    [
+     348,
+     36
+    ],
+    [
+     348,
+     60
+    ],
+    [
+     340,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L5",
+   "outline_m": [
+    [
+     348,
+     0
+    ],
+    [
+     356,
+     0
+    ],
+    [
+     356,
+     24
+    ],
+    [
+     348,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L5",
+   "outline_m": [
+    [
+     348,
+     36
+    ],
+    [
+     356,
+     36
+    ],
+    [
+     356,
+     60
+    ],
+    [
+     348,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L5",
+   "outline_m": [
+    [
+     356,
+     0
+    ],
+    [
+     364,
+     0
+    ],
+    [
+     364,
+     24
+    ],
+    [
+     356,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L5",
+   "outline_m": [
+    [
+     356,
+     36
+    ],
+    [
+     364,
+     36
+    ],
+    [
+     364,
+     60
+    ],
+    [
+     356,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L5",
+   "outline_m": [
+    [
+     364,
+     0
+    ],
+    [
+     372,
+     0
+    ],
+    [
+     372,
+     24
+    ],
+    [
+     364,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L5",
+   "outline_m": [
+    [
+     364,
+     36
+    ],
+    [
+     372,
+     36
+    ],
+    [
+     372,
+     60
+    ],
+    [
+     364,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L5",
+   "outline_m": [
+    [
+     372,
+     0
+    ],
+    [
+     380,
+     0
+    ],
+    [
+     380,
+     24
+    ],
+    [
+     372,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L5",
+   "outline_m": [
+    [
+     372,
+     36
+    ],
+    [
+     380,
+     36
+    ],
+    [
+     380,
+     60
+    ],
+    [
+     372,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L5",
+   "outline_m": [
+    [
+     380,
+     0
+    ],
+    [
+     388,
+     0
+    ],
+    [
+     388,
+     24
+    ],
+    [
+     380,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L5",
+   "outline_m": [
+    [
+     380,
+     36
+    ],
+    [
+     388,
+     36
+    ],
+    [
+     388,
+     60
+    ],
+    [
+     380,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L5",
+   "outline_m": [
+    [
+     388,
+     0
+    ],
+    [
+     396,
+     0
+    ],
+    [
+     396,
+     24
+    ],
+    [
+     388,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L5",
+   "outline_m": [
+    [
+     388,
+     36
+    ],
+    [
+     396,
+     36
+    ],
+    [
+     396,
+     60
+    ],
+    [
+     388,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L5",
+   "outline_m": [
+    [
+     396,
+     0
+    ],
+    [
+     404,
+     0
+    ],
+    [
+     404,
+     24
+    ],
+    [
+     396,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L5",
+   "outline_m": [
+    [
+     396,
+     36
+    ],
+    [
+     404,
+     36
+    ],
+    [
+     404,
+     60
+    ],
+    [
+     396,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L5",
+   "outline_m": [
+    [
+     404,
+     0
+    ],
+    [
+     412,
+     0
+    ],
+    [
+     412,
+     24
+    ],
+    [
+     404,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L5",
+   "outline_m": [
+    [
+     404,
+     36
+    ],
+    [
+     412,
+     36
+    ],
+    [
+     412,
+     60
+    ],
+    [
+     404,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L5",
+   "outline_m": [
+    [
+     412,
+     0
+    ],
+    [
+     420,
+     0
+    ],
+    [
+     420,
+     24
+    ],
+    [
+     412,
+     24
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L5",
+   "outline_m": [
+    [
+     412,
+     36
+    ],
+    [
+     420,
+     36
+    ],
+    [
+     420,
+     60
+    ],
+    [
+     412,
+     60
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     24
+    ],
+    [
+     374,
+     24
+    ],
+    [
+     374,
+     36
+    ],
+    [
+     340,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSP-L5-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     386,
+     24
+    ],
+    [
+     420,
+     24
+    ],
+    [
+     420,
+     36
+    ],
+    [
+     386,
+     36
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-mass",
+   "type": "mass",
+   "name": "Tower (bow-starboard)",
+   "levels": [
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0,
+     290
+    ],
+    [
+     80,
+     290
+    ],
+    [
+     80,
+     350
+    ],
+    [
+     0,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-core",
+   "type": "core",
+   "name": "Tower stairs & lifts",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     34,
+     314
+    ],
+    [
+     46,
+     314
+    ],
+    [
+     46,
+     326
+    ],
+    [
+     34,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     290
+    ],
+    [
+     8,
+     290
+    ],
+    [
+     8,
+     314
+    ],
+    [
+     0,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     326
+    ],
+    [
+     8,
+     326
+    ],
+    [
+     8,
+     350
+    ],
+    [
+     0,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L4",
+   "outline_m": [
+    [
+     8,
+     290
+    ],
+    [
+     16,
+     290
+    ],
+    [
+     16,
+     314
+    ],
+    [
+     8,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L4",
+   "outline_m": [
+    [
+     8,
+     326
+    ],
+    [
+     16,
+     326
+    ],
+    [
+     16,
+     350
+    ],
+    [
+     8,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L4",
+   "outline_m": [
+    [
+     16,
+     290
+    ],
+    [
+     24,
+     290
+    ],
+    [
+     24,
+     314
+    ],
+    [
+     16,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L4",
+   "outline_m": [
+    [
+     16,
+     326
+    ],
+    [
+     24,
+     326
+    ],
+    [
+     24,
+     350
+    ],
+    [
+     16,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L4",
+   "outline_m": [
+    [
+     24,
+     290
+    ],
+    [
+     32,
+     290
+    ],
+    [
+     32,
+     314
+    ],
+    [
+     24,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L4",
+   "outline_m": [
+    [
+     24,
+     326
+    ],
+    [
+     32,
+     326
+    ],
+    [
+     32,
+     350
+    ],
+    [
+     24,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L4",
+   "outline_m": [
+    [
+     32,
+     290
+    ],
+    [
+     40,
+     290
+    ],
+    [
+     40,
+     314
+    ],
+    [
+     32,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L4",
+   "outline_m": [
+    [
+     32,
+     326
+    ],
+    [
+     40,
+     326
+    ],
+    [
+     40,
+     350
+    ],
+    [
+     32,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L4",
+   "outline_m": [
+    [
+     40,
+     290
+    ],
+    [
+     48,
+     290
+    ],
+    [
+     48,
+     314
+    ],
+    [
+     40,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L4",
+   "outline_m": [
+    [
+     40,
+     326
+    ],
+    [
+     48,
+     326
+    ],
+    [
+     48,
+     350
+    ],
+    [
+     40,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L4",
+   "outline_m": [
+    [
+     48,
+     290
+    ],
+    [
+     56,
+     290
+    ],
+    [
+     56,
+     314
+    ],
+    [
+     48,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L4",
+   "outline_m": [
+    [
+     48,
+     326
+    ],
+    [
+     56,
+     326
+    ],
+    [
+     56,
+     350
+    ],
+    [
+     48,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L4",
+   "outline_m": [
+    [
+     56,
+     290
+    ],
+    [
+     64,
+     290
+    ],
+    [
+     64,
+     314
+    ],
+    [
+     56,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L4",
+   "outline_m": [
+    [
+     56,
+     326
+    ],
+    [
+     64,
+     326
+    ],
+    [
+     64,
+     350
+    ],
+    [
+     56,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L4",
+   "outline_m": [
+    [
+     64,
+     290
+    ],
+    [
+     72,
+     290
+    ],
+    [
+     72,
+     314
+    ],
+    [
+     64,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L4",
+   "outline_m": [
+    [
+     64,
+     326
+    ],
+    [
+     72,
+     326
+    ],
+    [
+     72,
+     350
+    ],
+    [
+     64,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L4",
+   "outline_m": [
+    [
+     72,
+     290
+    ],
+    [
+     80,
+     290
+    ],
+    [
+     80,
+     314
+    ],
+    [
+     72,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L4",
+   "outline_m": [
+    [
+     72,
+     326
+    ],
+    [
+     80,
+     326
+    ],
+    [
+     80,
+     350
+    ],
+    [
+     72,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     0,
+     314
+    ],
+    [
+     34,
+     314
+    ],
+    [
+     34,
+     326
+    ],
+    [
+     0,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L4-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     46,
+     314
+    ],
+    [
+     80,
+     314
+    ],
+    [
+     80,
+     326
+    ],
+    [
+     46,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     290
+    ],
+    [
+     8,
+     290
+    ],
+    [
+     8,
+     314
+    ],
+    [
+     0,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     326
+    ],
+    [
+     8,
+     326
+    ],
+    [
+     8,
+     350
+    ],
+    [
+     0,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L5",
+   "outline_m": [
+    [
+     8,
+     290
+    ],
+    [
+     16,
+     290
+    ],
+    [
+     16,
+     314
+    ],
+    [
+     8,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L5",
+   "outline_m": [
+    [
+     8,
+     326
+    ],
+    [
+     16,
+     326
+    ],
+    [
+     16,
+     350
+    ],
+    [
+     8,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L5",
+   "outline_m": [
+    [
+     16,
+     290
+    ],
+    [
+     24,
+     290
+    ],
+    [
+     24,
+     314
+    ],
+    [
+     16,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L5",
+   "outline_m": [
+    [
+     16,
+     326
+    ],
+    [
+     24,
+     326
+    ],
+    [
+     24,
+     350
+    ],
+    [
+     16,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L5",
+   "outline_m": [
+    [
+     24,
+     290
+    ],
+    [
+     32,
+     290
+    ],
+    [
+     32,
+     314
+    ],
+    [
+     24,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L5",
+   "outline_m": [
+    [
+     24,
+     326
+    ],
+    [
+     32,
+     326
+    ],
+    [
+     32,
+     350
+    ],
+    [
+     24,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L5",
+   "outline_m": [
+    [
+     32,
+     290
+    ],
+    [
+     40,
+     290
+    ],
+    [
+     40,
+     314
+    ],
+    [
+     32,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L5",
+   "outline_m": [
+    [
+     32,
+     326
+    ],
+    [
+     40,
+     326
+    ],
+    [
+     40,
+     350
+    ],
+    [
+     32,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L5",
+   "outline_m": [
+    [
+     40,
+     290
+    ],
+    [
+     48,
+     290
+    ],
+    [
+     48,
+     314
+    ],
+    [
+     40,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L5",
+   "outline_m": [
+    [
+     40,
+     326
+    ],
+    [
+     48,
+     326
+    ],
+    [
+     48,
+     350
+    ],
+    [
+     40,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L5",
+   "outline_m": [
+    [
+     48,
+     290
+    ],
+    [
+     56,
+     290
+    ],
+    [
+     56,
+     314
+    ],
+    [
+     48,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L5",
+   "outline_m": [
+    [
+     48,
+     326
+    ],
+    [
+     56,
+     326
+    ],
+    [
+     56,
+     350
+    ],
+    [
+     48,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L5",
+   "outline_m": [
+    [
+     56,
+     290
+    ],
+    [
+     64,
+     290
+    ],
+    [
+     64,
+     314
+    ],
+    [
+     56,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L5",
+   "outline_m": [
+    [
+     56,
+     326
+    ],
+    [
+     64,
+     326
+    ],
+    [
+     64,
+     350
+    ],
+    [
+     56,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L5",
+   "outline_m": [
+    [
+     64,
+     290
+    ],
+    [
+     72,
+     290
+    ],
+    [
+     72,
+     314
+    ],
+    [
+     64,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L5",
+   "outline_m": [
+    [
+     64,
+     326
+    ],
+    [
+     72,
+     326
+    ],
+    [
+     72,
+     350
+    ],
+    [
+     64,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L5",
+   "outline_m": [
+    [
+     72,
+     290
+    ],
+    [
+     80,
+     290
+    ],
+    [
+     80,
+     314
+    ],
+    [
+     72,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L5",
+   "outline_m": [
+    [
+     72,
+     326
+    ],
+    [
+     80,
+     326
+    ],
+    [
+     80,
+     350
+    ],
+    [
+     72,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     0,
+     314
+    ],
+    [
+     34,
+     314
+    ],
+    [
+     34,
+     326
+    ],
+    [
+     0,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TBS-L5-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     46,
+     314
+    ],
+    [
+     80,
+     314
+    ],
+    [
+     80,
+     326
+    ],
+    [
+     46,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-mass",
+   "type": "mass",
+   "name": "Tower (stern-starboard)",
+   "levels": [
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     340,
+     290
+    ],
+    [
+     420,
+     290
+    ],
+    [
+     420,
+     350
+    ],
+    [
+     340,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-core",
+   "type": "core",
+   "name": "Tower stairs & lifts",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     374,
+     314
+    ],
+    [
+     386,
+     314
+    ],
+    [
+     386,
+     326
+    ],
+    [
+     374,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     290
+    ],
+    [
+     348,
+     290
+    ],
+    [
+     348,
+     314
+    ],
+    [
+     340,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     326
+    ],
+    [
+     348,
+     326
+    ],
+    [
+     348,
+     350
+    ],
+    [
+     340,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L4",
+   "outline_m": [
+    [
+     348,
+     290
+    ],
+    [
+     356,
+     290
+    ],
+    [
+     356,
+     314
+    ],
+    [
+     348,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L4",
+   "outline_m": [
+    [
+     348,
+     326
+    ],
+    [
+     356,
+     326
+    ],
+    [
+     356,
+     350
+    ],
+    [
+     348,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L4",
+   "outline_m": [
+    [
+     356,
+     290
+    ],
+    [
+     364,
+     290
+    ],
+    [
+     364,
+     314
+    ],
+    [
+     356,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L4",
+   "outline_m": [
+    [
+     356,
+     326
+    ],
+    [
+     364,
+     326
+    ],
+    [
+     364,
+     350
+    ],
+    [
+     356,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L4",
+   "outline_m": [
+    [
+     364,
+     290
+    ],
+    [
+     372,
+     290
+    ],
+    [
+     372,
+     314
+    ],
+    [
+     364,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L4",
+   "outline_m": [
+    [
+     364,
+     326
+    ],
+    [
+     372,
+     326
+    ],
+    [
+     372,
+     350
+    ],
+    [
+     364,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L4",
+   "outline_m": [
+    [
+     372,
+     290
+    ],
+    [
+     380,
+     290
+    ],
+    [
+     380,
+     314
+    ],
+    [
+     372,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L4",
+   "outline_m": [
+    [
+     372,
+     326
+    ],
+    [
+     380,
+     326
+    ],
+    [
+     380,
+     350
+    ],
+    [
+     372,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L4",
+   "outline_m": [
+    [
+     380,
+     290
+    ],
+    [
+     388,
+     290
+    ],
+    [
+     388,
+     314
+    ],
+    [
+     380,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L4",
+   "outline_m": [
+    [
+     380,
+     326
+    ],
+    [
+     388,
+     326
+    ],
+    [
+     388,
+     350
+    ],
+    [
+     380,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L4",
+   "outline_m": [
+    [
+     388,
+     290
+    ],
+    [
+     396,
+     290
+    ],
+    [
+     396,
+     314
+    ],
+    [
+     388,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L4",
+   "outline_m": [
+    [
+     388,
+     326
+    ],
+    [
+     396,
+     326
+    ],
+    [
+     396,
+     350
+    ],
+    [
+     388,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L4",
+   "outline_m": [
+    [
+     396,
+     290
+    ],
+    [
+     404,
+     290
+    ],
+    [
+     404,
+     314
+    ],
+    [
+     396,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L4",
+   "outline_m": [
+    [
+     396,
+     326
+    ],
+    [
+     404,
+     326
+    ],
+    [
+     404,
+     350
+    ],
+    [
+     396,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L4",
+   "outline_m": [
+    [
+     404,
+     290
+    ],
+    [
+     412,
+     290
+    ],
+    [
+     412,
+     314
+    ],
+    [
+     404,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L4",
+   "outline_m": [
+    [
+     404,
+     326
+    ],
+    [
+     412,
+     326
+    ],
+    [
+     412,
+     350
+    ],
+    [
+     404,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L4",
+   "outline_m": [
+    [
+     412,
+     290
+    ],
+    [
+     420,
+     290
+    ],
+    [
+     420,
+     314
+    ],
+    [
+     412,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L4",
+   "outline_m": [
+    [
+     412,
+     326
+    ],
+    [
+     420,
+     326
+    ],
+    [
+     420,
+     350
+    ],
+    [
+     412,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     340,
+     314
+    ],
+    [
+     374,
+     314
+    ],
+    [
+     374,
+     326
+    ],
+    [
+     340,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L4-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L4",
+   "outline_m": [
+    [
+     386,
+     314
+    ],
+    [
+     420,
+     314
+    ],
+    [
+     420,
+     326
+    ],
+    [
+     386,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q01",
+   "type": "room",
+   "name": "Quarter 1",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     290
+    ],
+    [
+     348,
+     290
+    ],
+    [
+     348,
+     314
+    ],
+    [
+     340,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q11",
+   "type": "room",
+   "name": "Quarter 11",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     326
+    ],
+    [
+     348,
+     326
+    ],
+    [
+     348,
+     350
+    ],
+    [
+     340,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q02",
+   "type": "room",
+   "name": "Quarter 2",
+   "level": "L5",
+   "outline_m": [
+    [
+     348,
+     290
+    ],
+    [
+     356,
+     290
+    ],
+    [
+     356,
+     314
+    ],
+    [
+     348,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q12",
+   "type": "room",
+   "name": "Quarter 12",
+   "level": "L5",
+   "outline_m": [
+    [
+     348,
+     326
+    ],
+    [
+     356,
+     326
+    ],
+    [
+     356,
+     350
+    ],
+    [
+     348,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q03",
+   "type": "room",
+   "name": "Quarter 3",
+   "level": "L5",
+   "outline_m": [
+    [
+     356,
+     290
+    ],
+    [
+     364,
+     290
+    ],
+    [
+     364,
+     314
+    ],
+    [
+     356,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q13",
+   "type": "room",
+   "name": "Quarter 13",
+   "level": "L5",
+   "outline_m": [
+    [
+     356,
+     326
+    ],
+    [
+     364,
+     326
+    ],
+    [
+     364,
+     350
+    ],
+    [
+     356,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q04",
+   "type": "room",
+   "name": "Quarter 4",
+   "level": "L5",
+   "outline_m": [
+    [
+     364,
+     290
+    ],
+    [
+     372,
+     290
+    ],
+    [
+     372,
+     314
+    ],
+    [
+     364,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q14",
+   "type": "room",
+   "name": "Quarter 14",
+   "level": "L5",
+   "outline_m": [
+    [
+     364,
+     326
+    ],
+    [
+     372,
+     326
+    ],
+    [
+     372,
+     350
+    ],
+    [
+     364,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q05",
+   "type": "room",
+   "name": "Quarter 5",
+   "level": "L5",
+   "outline_m": [
+    [
+     372,
+     290
+    ],
+    [
+     380,
+     290
+    ],
+    [
+     380,
+     314
+    ],
+    [
+     372,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q15",
+   "type": "room",
+   "name": "Quarter 15",
+   "level": "L5",
+   "outline_m": [
+    [
+     372,
+     326
+    ],
+    [
+     380,
+     326
+    ],
+    [
+     380,
+     350
+    ],
+    [
+     372,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q06",
+   "type": "room",
+   "name": "Quarter 6",
+   "level": "L5",
+   "outline_m": [
+    [
+     380,
+     290
+    ],
+    [
+     388,
+     290
+    ],
+    [
+     388,
+     314
+    ],
+    [
+     380,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q16",
+   "type": "room",
+   "name": "Quarter 16",
+   "level": "L5",
+   "outline_m": [
+    [
+     380,
+     326
+    ],
+    [
+     388,
+     326
+    ],
+    [
+     388,
+     350
+    ],
+    [
+     380,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q07",
+   "type": "room",
+   "name": "Quarter 7",
+   "level": "L5",
+   "outline_m": [
+    [
+     388,
+     290
+    ],
+    [
+     396,
+     290
+    ],
+    [
+     396,
+     314
+    ],
+    [
+     388,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q17",
+   "type": "room",
+   "name": "Quarter 17",
+   "level": "L5",
+   "outline_m": [
+    [
+     388,
+     326
+    ],
+    [
+     396,
+     326
+    ],
+    [
+     396,
+     350
+    ],
+    [
+     388,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q08",
+   "type": "room",
+   "name": "Quarter 8",
+   "level": "L5",
+   "outline_m": [
+    [
+     396,
+     290
+    ],
+    [
+     404,
+     290
+    ],
+    [
+     404,
+     314
+    ],
+    [
+     396,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q18",
+   "type": "room",
+   "name": "Quarter 18",
+   "level": "L5",
+   "outline_m": [
+    [
+     396,
+     326
+    ],
+    [
+     404,
+     326
+    ],
+    [
+     404,
+     350
+    ],
+    [
+     396,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q09",
+   "type": "room",
+   "name": "Quarter 9",
+   "level": "L5",
+   "outline_m": [
+    [
+     404,
+     290
+    ],
+    [
+     412,
+     290
+    ],
+    [
+     412,
+     314
+    ],
+    [
+     404,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q19",
+   "type": "room",
+   "name": "Quarter 19",
+   "level": "L5",
+   "outline_m": [
+    [
+     404,
+     326
+    ],
+    [
+     412,
+     326
+    ],
+    [
+     412,
+     350
+    ],
+    [
+     404,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q10",
+   "type": "room",
+   "name": "Quarter 10",
+   "level": "L5",
+   "outline_m": [
+    [
+     412,
+     290
+    ],
+    [
+     420,
+     290
+    ],
+    [
+     420,
+     314
+    ],
+    [
+     412,
+     314
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-Q20",
+   "type": "room",
+   "name": "Quarter 20",
+   "level": "L5",
+   "outline_m": [
+    [
+     412,
+     326
+    ],
+    [
+     420,
+     326
+    ],
+    [
+     420,
+     350
+    ],
+    [
+     412,
+     350
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-lounge",
+   "type": "room",
+   "name": "Tower lounge & corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     340,
+     314
+    ],
+    [
+     374,
+     314
+    ],
+    [
+     374,
+     326
+    ],
+    [
+     340,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "TSS-L5-hall",
+   "type": "room",
+   "name": "Tower corridor",
+   "level": "L5",
+   "outline_m": [
+    [
+     386,
+     314
+    ],
+    [
+     420,
+     314
+    ],
+    [
+     420,
+     326
+    ],
+    [
+     386,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C1",
+   "type": "core",
+   "name": "Stairs & lifts 1",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60,
+     72
+    ],
+    [
+     72,
+     72
+    ],
+    [
+     72,
+     84
+    ],
+    [
+     60,
+     84
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C2",
+   "type": "core",
+   "name": "Stairs & lifts 2",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60,
+     266
+    ],
+    [
+     72,
+     266
+    ],
+    [
+     72,
+     278
+    ],
+    [
+     60,
+     278
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C3",
+   "type": "core",
+   "name": "Stairs & lifts 3",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     156,
+     72
+    ],
+    [
+     168,
+     72
+    ],
+    [
+     168,
+     84
+    ],
+    [
+     156,
+     84
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C4",
+   "type": "core",
+   "name": "Stairs & lifts 4",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     156,
+     266
+    ],
+    [
+     168,
+     266
+    ],
+    [
+     168,
+     278
+    ],
+    [
+     156,
+     278
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C5",
+   "type": "core",
+   "name": "Stairs & lifts 5",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     252,
+     72
+    ],
+    [
+     264,
+     72
+    ],
+    [
+     264,
+     84
+    ],
+    [
+     252,
+     84
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C6",
+   "type": "core",
+   "name": "Stairs & lifts 6",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     252,
+     266
+    ],
+    [
+     264,
+     266
+    ],
+    [
+     264,
+     278
+    ],
+    [
+     252,
+     278
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C7",
+   "type": "core",
+   "name": "Stairs & lifts 7",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     348,
+     72
+    ],
+    [
+     360,
+     72
+    ],
+    [
+     360,
+     84
+    ],
+    [
+     348,
+     84
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "C8",
+   "type": "core",
+   "name": "Stairs & lifts 8",
+   "levels": [
+    "L-1",
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     348,
+     266
+    ],
+    [
+     360,
+     266
+    ],
+    [
+     360,
+     278
+    ],
+    [
+     348,
+     278
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "ATR",
+   "type": "room",
+   "name": "Atrium (open to Level 3)",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     144,
+     139
+    ],
+    [
+     240,
+     139
+    ],
+    [
+     240,
+     211
+    ],
+    [
+     144,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "CRT",
+   "type": "room",
+   "name": "Protected courtyard garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     252,
+     127
+    ],
+    [
+     348,
+     127
+    ],
+    [
+     348,
+     223
+    ],
+    [
+     252,
+     223
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-ENT",
+   "type": "room",
+   "name": "Prow Entrance & canopy",
+   "level": "L1",
+   "outline_m": [
+    [
+     0,
+     151
+    ],
+    [
+     24,
+     151
+    ],
+    [
+     24,
+     199
+    ],
+    [
+     0,
+     199
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-REC",
+   "type": "room",
+   "name": "Reception & crew check-in",
+   "level": "L1",
+   "outline_m": [
+    [
+     24,
+     139
+    ],
+    [
+     84,
+     139
+    ],
+    [
+     84,
+     211
+    ],
+    [
+     24,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-LUG",
+   "type": "room",
+   "name": "Luggage & waiting",
+   "level": "L1",
+   "outline_m": [
+    [
+     84,
+     139
+    ],
+    [
+     144,
+     139
+    ],
+    [
+     144,
+     211
+    ],
+    [
+     84,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-OPS",
+   "type": "room",
+   "name": "Operations & duty offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     24,
+     96
+    ],
+    [
+     144,
+     96
+    ],
+    [
+     144,
+     132
+    ],
+    [
+     24,
+     132
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-SEC",
+   "type": "room",
+   "name": "Security desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     24,
+     218
+    ],
+    [
+     60,
+     218
+    ],
+    [
+     60,
+     254
+    ],
+    [
+     24,
+     254
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-MED",
+   "type": "room",
+   "name": "Medical station",
+   "level": "L1",
+   "outline_m": [
+    [
+     60,
+     218
+    ],
+    [
+     144,
+     218
+    ],
+    [
+     144,
+     254
+    ],
+    [
+     60,
+     254
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-DIN",
+   "type": "room",
+   "name": "Dining hall & cafeteria",
+   "level": "L1",
+   "outline_m": [
+    [
+     144,
+     24
+    ],
+    [
+     264,
+     24
+    ],
+    [
+     264,
+     120
+    ],
+    [
+     144,
+     120
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-KIT",
+   "type": "room",
+   "name": "Kitchen & food stores",
+   "level": "L1",
+   "outline_m": [
+    [
+     264,
+     24
+    ],
+    [
+     336,
+     24
+    ],
+    [
+     336,
+     120
+    ],
+    [
+     264,
+     120
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-CAF",
+   "type": "room",
+   "name": "Coffee bar & grab-and-go",
+   "level": "L1",
+   "outline_m": [
+    [
+     96,
+     24
+    ],
+    [
+     144,
+     24
+    ],
+    [
+     144,
+     72
+    ],
+    [
+     96,
+     72
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-LNG",
+   "type": "room",
+   "name": "Central lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     144,
+     230
+    ],
+    [
+     240,
+     230
+    ],
+    [
+     240,
+     326
+    ],
+    [
+     144,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-QL",
+   "type": "room",
+   "name": "Quiet lounge & reading",
+   "level": "L1",
+   "outline_m": [
+    [
+     240,
+     230
+    ],
+    [
+     300,
+     230
+    ],
+    [
+     300,
+     326
+    ],
+    [
+     240,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-REC2",
+   "type": "room",
+   "name": "Recreation room",
+   "level": "L1",
+   "outline_m": [
+    [
+     300,
+     230
+    ],
+    [
+     348,
+     230
+    ],
+    [
+     348,
+     326
+    ],
+    [
+     300,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-SHOP",
+   "type": "room",
+   "name": "Crew supplies shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     96,
+     278
+    ],
+    [
+     144,
+     278
+    ],
+    [
+     144,
+     326
+    ],
+    [
+     96,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-WC",
+   "type": "room",
+   "name": "Restrooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     24,
+     278
+    ],
+    [
+     96,
+     278
+    ],
+    [
+     96,
+     302
+    ],
+    [
+     24,
+     302
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L1-HK",
+   "type": "room",
+   "name": "Housekeeping & storage",
+   "level": "L1",
+   "outline_m": [
+    [
+     348,
+     127
+    ],
+    [
+     408,
+     127
+    ],
+    [
+     408,
+     223
+    ],
+    [
+     348,
+     223
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "D-ENT",
+   "type": "door",
+   "name": "Prow Entrance (glass doors)",
+   "level": "L1",
+   "line_m": [
+    [
+     0,
+     163
+    ],
+    [
+     0,
+     187
+    ]
+   ],
+   "width_m": 24,
+   "status": "proposed"
+  },
+  {
+   "id": "D-SVC",
+   "type": "door",
+   "name": "Starboard Service Access",
+   "level": "L-1",
+   "line_m": [
+    [
+     360,
+     350
+    ],
+    [
+     372,
+     350
+    ]
+   ],
+   "width_m": 12,
+   "status": "proposed"
+  },
+  {
+   "id": "U-LAU",
+   "type": "room",
+   "name": "Industrial laundry & linen",
+   "level": "L-1",
+   "outline_m": [
+    [
+     24,
+     24
+    ],
+    [
+     144,
+     24
+    ],
+    [
+     144,
+     120
+    ],
+    [
+     24,
+     120
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-PLT",
+   "type": "room",
+   "name": "Mechanical plant & HVAC",
+   "level": "L-1",
+   "outline_m": [
+    [
+     144,
+     24
+    ],
+    [
+     264,
+     24
+    ],
+    [
+     264,
+     120
+    ],
+    [
+     144,
+     120
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-ELE",
+   "type": "room",
+   "name": "Electrical rooms",
+   "level": "L-1",
+   "outline_m": [
+    [
+     264,
+     24
+    ],
+    [
+     336,
+     24
+    ],
+    [
+     336,
+     72
+    ],
+    [
+     264,
+     72
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-WAT",
+   "type": "room",
+   "name": "Water treatment",
+   "level": "L-1",
+   "outline_m": [
+    [
+     264,
+     72
+    ],
+    [
+     336,
+     72
+    ],
+    [
+     336,
+     120
+    ],
+    [
+     264,
+     120
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-WSH",
+   "type": "room",
+   "name": "Maintenance workshop",
+   "level": "L-1",
+   "outline_m": [
+    [
+     24,
+     139
+    ],
+    [
+     144,
+     139
+    ],
+    [
+     144,
+     211
+    ],
+    [
+     24,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-STO",
+   "type": "room",
+   "name": "Stores & crew equipment",
+   "level": "L-1",
+   "outline_m": [
+    [
+     144,
+     139
+    ],
+    [
+     264,
+     139
+    ],
+    [
+     264,
+     211
+    ],
+    [
+     144,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-AUT",
+   "type": "room",
+   "name": "Building automation",
+   "level": "L-1",
+   "outline_m": [
+    [
+     264,
+     139
+    ],
+    [
+     336,
+     139
+    ],
+    [
+     336,
+     211
+    ],
+    [
+     264,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-RCV",
+   "type": "room",
+   "name": "Receiving & waste sorting",
+   "level": "L-1",
+   "outline_m": [
+    [
+     336,
+     230
+    ],
+    [
+     408,
+     230
+    ],
+    [
+     408,
+     326
+    ],
+    [
+     336,
+     326
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-CLN",
+   "type": "room",
+   "name": "Cleaning supplies",
+   "level": "L-1",
+   "outline_m": [
+    [
+     264,
+     230
+    ],
+    [
+     336,
+     230
+    ],
+    [
+     336,
+     278
+    ],
+    [
+     264,
+     278
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "U-SVC",
+   "type": "room",
+   "name": "Service corridor",
+   "level": "L-1",
+   "outline_m": [
+    [
+     24,
+     230
+    ],
+    [
+     264,
+     230
+    ],
+    [
+     264,
+     254
+    ],
+    [
+     24,
+     254
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "D-TUN",
+   "type": "door",
+   "name": "Crew tunnel door (secure)",
+   "level": "L-1",
+   "line_m": [
+    [
+     0,
+     240
+    ],
+    [
+     0,
+     246
+    ]
+   ],
+   "width_m": 6,
+   "status": "proposed"
+  },
+  {
+   "id": "L2-W1",
+   "type": "room",
+   "name": "Cabin wing 1 (60 cabins, 6 × 9 m each)",
+   "level": "L2",
+   "outline_m": [
+    [
+     30,
+     9
+    ],
+    [
+     210,
+     9
+    ],
+    [
+     210,
+     30
+    ],
+    [
+     30,
+     30
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-W2",
+   "type": "room",
+   "name": "Cabin wing 2 (60 cabins, 6 × 9 m each)",
+   "level": "L2",
+   "outline_m": [
+    [
+     210,
+     9
+    ],
+    [
+     390,
+     9
+    ],
+    [
+     390,
+     30
+    ],
+    [
+     210,
+     30
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-W3",
+   "type": "room",
+   "name": "Cabin wing 3 (60 cabins, 6 × 9 m each)",
+   "level": "L2",
+   "outline_m": [
+    [
+     30,
+     308
+    ],
+    [
+     210,
+     308
+    ],
+    [
+     210,
+     329
+    ],
+    [
+     30,
+     329
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-W4",
+   "type": "room",
+   "name": "Cabin wing 4 (60 cabins, 6 × 9 m each)",
+   "level": "L2",
+   "outline_m": [
+    [
+     210,
+     308
+    ],
+    [
+     390,
+     308
+    ],
+    [
+     390,
+     329
+    ],
+    [
+     210,
+     329
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-W1",
+   "type": "room",
+   "name": "Cabin wing 1 (60 cabins, 6 × 9 m each)",
+   "level": "L3",
+   "outline_m": [
+    [
+     30,
+     9
+    ],
+    [
+     210,
+     9
+    ],
+    [
+     210,
+     30
+    ],
+    [
+     30,
+     30
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-W2",
+   "type": "room",
+   "name": "Cabin wing 2 (60 cabins, 6 × 9 m each)",
+   "level": "L3",
+   "outline_m": [
+    [
+     210,
+     9
+    ],
+    [
+     390,
+     9
+    ],
+    [
+     390,
+     30
+    ],
+    [
+     210,
+     30
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-W3",
+   "type": "room",
+   "name": "Cabin wing 3 (60 cabins, 6 × 9 m each)",
+   "level": "L3",
+   "outline_m": [
+    [
+     30,
+     308
+    ],
+    [
+     210,
+     308
+    ],
+    [
+     210,
+     329
+    ],
+    [
+     30,
+     329
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-W4",
+   "type": "room",
+   "name": "Cabin wing 4 (60 cabins, 6 × 9 m each)",
+   "level": "L3",
+   "outline_m": [
+    [
+     210,
+     308
+    ],
+    [
+     390,
+     308
+    ],
+    [
+     390,
+     329
+    ],
+    [
+     210,
+     329
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-HK",
+   "type": "room",
+   "name": "Housekeeping & linen",
+   "level": "L2",
+   "outline_m": [
+    [
+     24,
+     139
+    ],
+    [
+     84,
+     139
+    ],
+    [
+     84,
+     211
+    ],
+    [
+     24,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-HK",
+   "type": "room",
+   "name": "Housekeeping & linen",
+   "level": "L3",
+   "outline_m": [
+    [
+     24,
+     139
+    ],
+    [
+     84,
+     139
+    ],
+    [
+     84,
+     211
+    ],
+    [
+     24,
+     211
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-FIT",
+   "type": "room",
+   "name": "Fitness centre & walking track",
+   "level": "L2",
+   "outline_m": [
+    [
+     252,
+     127
+    ],
+    [
+     348,
+     127
+    ],
+    [
+     348,
+     223
+    ],
+    [
+     252,
+     223
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-THE",
+   "type": "room",
+   "name": "Movie theatre",
+   "level": "L2",
+   "outline_m": [
+    [
+     84,
+     96
+    ],
+    [
+     144,
+     96
+    ],
+    [
+     144,
+     132
+    ],
+    [
+     84,
+     132
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-GAM",
+   "type": "room",
+   "name": "Gaming & entertainment",
+   "level": "L2",
+   "outline_m": [
+    [
+     84,
+     218
+    ],
+    [
+     144,
+     218
+    ],
+    [
+     144,
+     254
+    ],
+    [
+     84,
+     254
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-WEL",
+   "type": "room",
+   "name": "Wellness & recovery rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     348,
+     127
+    ],
+    [
+     408,
+     127
+    ],
+    [
+     408,
+     223
+    ],
+    [
+     348,
+     223
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-KIT",
+   "type": "room",
+   "name": "Communal kitchen & social lounge",
+   "level": "L2",
+   "outline_m": [
+    [
+     144,
+     230
+    ],
+    [
+     240,
+     230
+    ],
+    [
+     240,
+     290
+    ],
+    [
+     144,
+     290
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L2-STU",
+   "type": "room",
+   "name": "Study rooms & workstations",
+   "level": "L2",
+   "outline_m": [
+    [
+     240,
+     230
+    ],
+    [
+     300,
+     230
+    ],
+    [
+     300,
+     290
+    ],
+    [
+     240,
+     290
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-QL",
+   "type": "room",
+   "name": "Quiet lounges",
+   "level": "L3",
+   "outline_m": [
+    [
+     252,
+     127
+    ],
+    [
+     348,
+     127
+    ],
+    [
+     348,
+     223
+    ],
+    [
+     252,
+     223
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "L3-LS",
+   "type": "room",
+   "name": "Long-stay sitting areas",
+   "level": "L3",
+   "outline_m": [
+    [
+     348,
+     127
+    ],
+    [
+     408,
+     127
+    ],
+    [
+     408,
+     223
+    ],
+    [
+     348,
+     223
+    ]
+   ],
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

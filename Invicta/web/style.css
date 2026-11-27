@@ -109,8 +109,8 @@ code { background: #0c2038; padding: 1px 5px; border-radius: 4px; font-size: 12p
 /* Building panel: collapsible text and copy buttons */
 .kvv { display: flex; gap: 6px; align-items: flex-start; }
 .kvv > span { flex: 1; min-width: 0; }
-.clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
-.clamp::after { content: ""; }
+.clamp { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+.clamp:not(.open) { border-bottom: 1px dashed var(--muted); }
 .clamp.open { display: block; -webkit-line-clamp: unset; }
 .cp { background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: 13px; padding: 0 2px; line-height: 1.3; }
 .cp:hover { color: var(--accent); }

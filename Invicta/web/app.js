@@ -767,7 +767,7 @@ function buildingView(uid) {
     ["Materials / look", b.look], ["Capacity", b.capacity], ["Services", b.services], ["Interior layout", b.interior]]
     .map(([k, v]) => {
       if (v == null || v === "") return `<div>${k}</div><div>${ND}</div>`;
-      const t = String(v), long = t.length > 80;
+      const t = String(v), long = t.length > 220;
       return `<div>${k}</div><div class="kvv"><span class="${long ? "clamp" : ""}" ${long ? `onclick="this.classList.toggle('open')" title="Tap to expand"` : ""}>${esc(t)}</span><button class="cp" title="Copy" data-copy="${esc(k + ": " + t)}" onclick="copyFrom(this)">⧉</button></div>`;
     }).join("");
   const blocks = (b.blocks || []).map(k => { const bk = (p.blocks || []).find(q => q.id === k); return `<a href="#/block/${p.uid}/${k}">${esc(bk ? bk.name : "")} · ${k}</a>`; }).join(", ");

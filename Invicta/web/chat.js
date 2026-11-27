@@ -37,7 +37,7 @@
   panel.setAttribute("aria-label", "Chat with Claude");
   const head = el("div", "chat-head");
   const title = el("div", "chat-title");
-  title.innerHTML = '<strong>Work on the Invicta with Claude</strong><span>Ask questions or propose changes. Jordan reviews every change.</span>';
+  title.innerHTML = '<strong>Design the Invicta with Claude</strong><span>Ask a question or describe a change.</span>';
   const btnNew = el("button", "chat-btn", "New chat");
   const btnName = el("button", "chat-btn", "Name / password");
   const btnClose = el("button", "chat-btn chat-x", "×");
@@ -186,8 +186,8 @@
       who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "For the design team only: Jordan or Kylee, click Name / password to sign in.";
       input.disabled = send.disabled = attach.disabled = !d.name;
       input.placeholder = d.name ? "Ask about a deck or building, or suggest a change…" : "The Claude chat is for the design team. You can still browse and use the Helpers chat.";
-      if (d.name && /kylee/i.test(d.name) && !localStorage.getItem("adxi.units")) {  // Kylee works in metric (Western Australia)
-        localStorage.setItem("adxi.units", "metric");
+      if (d.name && !localStorage.getItem("adxi.unitsChosen")) {  // Kylee works in metric (Western Australia); Jordan in feet
+        localStorage.setItem("adxi.units", /kylee/i.test(d.name) ? "metric" : "us");
         if (window.adxiUnitsLabel) window.adxiUnitsLabel();
         if (typeof route === "function") route();
       }
@@ -293,7 +293,7 @@
     return n;
   }
   function welcome() {
-    bubble("assistant", md("Hi! I can answer questions about the **Luxuria Invicta** and help you design it. Tell me what you'd like to add or change, and I'll make the change (Jordan and Kylee: straight away; everyone else: Jordan or Kylee approves it).\n\nTry: *What's designed on Deck 5 so far?*"));
+    bubble("assistant", md("Hi! Ask me anything about **the Invicta**, or tell me what to build or change and I'll do it. I can see what you have open on the map.\n\nTry: *Draw the Level 1 floor plan of this building*"));
   }
 
   function render() {

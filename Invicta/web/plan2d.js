@@ -181,6 +181,7 @@
     bt.title = "Switch between feet and metric";
     bt.onclick = () => {
       localStorage.setItem("adxi.units", isMetric() ? "us" : "metric");
+      localStorage.setItem("adxi.unitsChosen", "1");
       label();
       if (typeof route === "function") route();
     };

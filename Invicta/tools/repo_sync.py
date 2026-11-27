@@ -14,6 +14,7 @@ Needs Python 3.8+ and nothing else.
 
 import argparse
 import filecmp
+import glob
 import os
 import shutil
 import sys
@@ -50,6 +51,10 @@ CANON = "Docs/1_Canon_Source/"
 
 def scope_files(base):
     out = set()
+    # every precinct design doc (e.g. Canal_Gardens_Precincts.md), in Game/Docs and its mirror
+    for d in ("Game/Docs", "Docs/2_Design_Docs"):
+        for n in glob.glob(os.path.join(base, *d.split("/"), "*_Precincts.md")):
+            out.add(d + "/" + os.path.basename(n))
     for rel in FILES:
         if os.path.isfile(os.path.join(base, *rel.split("/"))):
             out.add(rel)
@@ -101,18 +106,16 @@ def main():
         if not a.dry_run:
             os.makedirs(os.path.dirname(d), exist_ok=True)
             shutil.copy2(s, d)
-    if a.direction == "out":  # mirror deletions inside the repo only
+    if a.direction == "out":  # never delete in the repo: files missing here may be new work from the site
         for rel in sorted(scope_files(repo) - want):
             removed.append(rel)
-            if not a.dry_run:
-                os.remove(os.path.join(repo, *rel.split("/")))
 
     verb = "Would copy" if a.dry_run else "Copied"
     print("%s %d file(s) %s." % (verb, len(copied), "to the repo" if a.direction == "out" else "to ArcaneDrift"))
     for r in copied:
         print("  + " + r)
     for r in removed:
-        print("  - " + r + ("  (would remove from repo)" if a.dry_run else "  (removed from repo)"))
+        print("  ? " + r + "  (in the repo but not here; kept. Run 'in' to bring it here)")
     if skipped:
         print("Canon files differ but were NOT copied (canon is read-only; use errata):")
         for r in skipped:
