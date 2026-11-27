@@ -1,0 +1,159 @@
+{
+  "about": "P7 Station building designs, one per building, written 27 Nov 2026 (proposed). Front row (P7-01 to P7-07) runs from the Station Road (low y) to the Interchange Road (high y); the back row runs from the Interchange Road (low y) to the Keelway (high y). The Deck-Transfer Lifts are canon and not in this file. Coordinates in metres from each lot's bow-port corner.",
+  "buildings": [
+    {
+      "id": "P7-01", "name": "Porters' Hall",
+      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 4.5], ["L3", "Level 3", 10.5, 4.5]],
+      "parts": [
+        {"name": "Porters' hall", "x": 50, "y": 60, "w": 350, "d": 160, "levels": ["L1", "L2", "L3"], "corridor": 12, "cores": 2, "corridor_name": "Trolley street",
+         "rooms": {"L1": [["Porter booking desks", 2000], ["Luggage storage", 8000], ["Lost and found", 2500], ["Trolley and cart store", 6000], ["Porters' room", 2000], ["Toilets", "rest"]],
+                   "L2": [["Porters' lockers and showers", 3000], ["Canteen", 3000], ["Training room", 600], ["Offices", "rest"]], "L3": [["Lost property archive", "rest"]]}},
+        {"name": "Luggage tower", "x": 170, "y": 240, "w": 110, "d": 110, "layout": "bays", "bays": 2, "bay_names": ["Automated luggage store", "Long-stay luggage store"], "levels": ["L1", "L2", "L3"]},
+        {"name": "Cart yard", "x": 50, "y": 370, "w": 350, "d": 120, "layout": "outdoor"},
+        {"name": "Drop-off", "x": 50, "y": 500, "w": 350, "d": 120, "layout": "outdoor"}
+      ],
+      "structure": "Concrete frame with a steel automated luggage store.",
+      "look": "A three-storey brick-red building with a wide glazed trolley street through the middle and a windowless luggage tower behind, its sides lit with a moving light strip.",
+      "entrances": "Trolley street entrances from the Station Road and from the cart yard.",
+      "capacity": "About 40,000 bags stored; 600 porters.",
+      "services": "Automated luggage store, 2 stair and lift cores.",
+      "interior": "Porter booking desks, luggage storage, lost and found and the trolley store along a trolley street, porters' lockers, canteen and offices upstairs, an automated luggage tower behind, and a cart yard and drop-off."
+    },
+    {
+      "id": "P7-02", "name": "Station Shops",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4.5]],
+      "parts": [
+        {"name": "Shop hall", "x": 50, "y": 60, "w": 300, "d": 300, "levels": ["L1", "L2"], "corridor": 16, "cores": 2, "corridor_name": "Shop street",
+         "rooms": {"L1": [["Supermarket", 12000], ["Pharmacy", 1500], ["Bakery", 800], ["Newsagent", 400], ["Shops", 300, 14], ["Toilets", "rest"]],
+                   "L2": [["Food court", 8000], ["Post office", 1500], ["Bank", 1200], ["Shops", 300, 10], ["Offices", "rest"]]}},
+        {"name": "Service yard", "x": 50, "y": 370, "w": 300, "d": 80, "layout": "outdoor"},
+        {"name": "Shop square", "x": 50, "y": 460, "w": 300, "d": 160, "layout": "outdoor"}
+      ],
+      "structure": "Steel frame on a 10 m grid with a rooflit shop street.",
+      "look": "A square two-storey shop hall with a long rooflight over its shop street and a bright supermarket front onto the Station Road.",
+      "entrances": "Shop street entrances from the Station Road and the shop square.",
+      "capacity": "About 30 shops and a supermarket; 4,000 shoppers at a time.",
+      "services": "2 stair and lift cores, service yard.",
+      "interior": "A shop street with a supermarket, pharmacy, bakery, newsagent and small shops below, and a food court, post office, bank and shops above; a service yard and a shop square."
+    },
+    {
+      "id": "P7-03", "name": "Interchange Hall",
+      "levels": [["L1", "Bay level", 0, 8], ["L2", "Concourse", 8, 6], ["L3", "Roof", 14, 6]],
+      "parts": [
+        {"name": "Concourse", "x": 60, "y": 50, "w": 720, "d": 100, "levels": ["L1", "L2"], "corridor": 16, "cores": 4, "corridor_name": "Interchange concourse",
+         "rooms": {"L1": [["Ticket hall", 4000], ["Travel information", 1500], ["Waiting rooms", 800, 6], ["Cafés", 400, 6], ["Toilets", "rest"]],
+                   "L2": [["Departure board hall", 6000], ["Transport control", 2000], ["Offices", "rest"]]}},
+        {"name": "Pod and bus bays", "x": 60, "y": 160, "w": 720, "d": 300, "layout": "bays", "bays": 12, "bay_name": "Pod and bus bay", "levels": ["L1", "L2", "L3"]},
+        {"name": "Taxi rank", "x": 60, "y": 470, "w": 720, "d": 100, "layout": "outdoor"}
+      ],
+      "structure": "Steel trusses on a 60 m (197 ft) grid over twelve drive-through bays; concrete concourse.",
+      "look": "A long concourse under a sawtooth roof of white steel and glass, opening onto twelve drive-through bays where pods and buses pull up under lit bay numbers.",
+      "entrances": "Concourse doors from the Station Road; vehicles enter the bays from the Interchange Road.",
+      "capacity": "12 bays; about 15,000 passengers an hour.",
+      "services": "4 stair and lift cores, real-time departure boards.",
+      "interior": "A concourse with ticket hall, travel information, waiting rooms and cafés, a departure board hall and transport control upstairs, and twelve drive-through pod and bus bays behind it, then the taxi rank."
+    },
+    {
+      "id": "P7-04", "name": "Station Clinic",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4.5]],
+      "parts": [
+        {"name": "Clinic", "x": 50, "y": 60, "w": 300, "d": 60, "levels": ["L1", "L2"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Walk-in clinic", 3000], ["First aid", 1500], ["Pharmacy", 800], ["Waiting", 1500], ["Toilets", "rest"]], "L2": [["Consulting rooms", 30, 16], ["Staff", "rest"]]}},
+        {"name": "Garden", "x": 50, "y": 130, "w": 300, "d": 200, "layout": "outdoor"},
+        {"name": "Ambulance bay", "x": 50, "y": 340, "w": 300, "d": 60, "layout": "outdoor"}
+      ],
+      "structure": "Concrete frame on a 9 m grid.",
+      "look": "A low white clinic with a green cross lit over the door and a garden behind.",
+      "entrances": "Walk-in entrance from the Station Road; ambulance bay behind.",
+      "capacity": "About 800 patients a day.",
+      "services": "2 stair and lift cores.",
+      "interior": "Walk-in clinic, first aid, pharmacy and waiting room below, consulting rooms above, a garden and an ambulance bay."
+    },
+    {
+      "id": "P7-05", "name": "Station Offices",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4], ["L3", "Level 3", 9, 4], ["L4", "Level 4", 13, 4], ["L5", "Level 5", 17, 4], ["L6", "Level 6", 21, 4]],
+      "parts": [
+        {"name": "Office block", "x": 60, "y": 60, "w": 270, "d": 44, "levels": ["L1", "L2", "L3", "L4", "L5", "L6"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Entrance hall", 1500], ["Station staff room", 2000], ["Café", "rest"]],
+                   "L2": [["Keelway transit control room", 4000], ["Comms room", "rest"]], "L3-L6": [["Transit offices", "rest"], ["Meeting rooms", 100, 4]]}},
+        {"name": "Back wing", "x": 60, "y": 104, "w": 44, "d": 200, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 1,
+         "rooms": {"all": [["Transit offices", "rest"]]}},
+        {"name": "Office garden", "x": 104, "y": 114, "w": 226, "d": 190, "layout": "outdoor"}
+      ],
+      "structure": "Steel frame with concrete cores.",
+      "look": "A six-storey L of graphite glass with a glass-walled transit control room on level 2 showing the live Keelway map.",
+      "entrances": "Entrance from the Station Road.",
+      "capacity": "About 900 staff.",
+      "services": "3 stair and lift cores, backup power and comms.",
+      "interior": "An L-shaped office with the entrance hall and staff room below, the Keelway transit control room on level 2, and transit offices above."
+    },
+    {
+      "id": "P7-07", "name": "Station Pod Depot",
+      "levels": [["L1", "Ground deck", 0, 4.5], ["L2", "Deck 2", 4.5, 4], ["L3", "Deck 3", 8.5, 4]],
+      "parts": [
+        {"name": "Pod decks", "x": 40, "y": 60, "w": 320, "d": 420, "layout": "bays", "bays": 4, "bay_name": "Pod parking and charging", "levels": ["L1", "L2", "L3"]},
+        {"name": "Dispatch", "x": 40, "y": 490, "w": 320, "d": 40, "levels": ["L1"], "corridor": 3,
+         "rooms": {"L1": [["Pod dispatch", 1000], ["Drivers' room", 1500], ["Pod wash", 3000], ["Battery swap", "rest"]]}},
+        {"name": "Pod lanes", "x": 0, "y": 540, "w": 400, "d": 100, "layout": "outdoor"}
+      ],
+      "structure": "Post-tensioned concrete parking decks.",
+      "look": "A three-deck pod garage with perforated gunmetal screens and green charging lights.",
+      "entrances": "Pod lanes on the Interchange Road side.",
+      "capacity": "About 1,200 pods.",
+      "services": "Charging at every space, pod wash, battery swap.",
+      "interior": "Three decks of pod parking and charging and a dispatch strip."
+    },
+    {
+      "id": "P7-09", "name": "Station Utility Plant",
+      "levels": [["L1", "Ground floor", 0, 8], ["L2", "Upper plant", 8, 6]],
+      "parts": [
+        {"name": "Substation", "x": 30, "y": 30, "w": 280, "d": 120, "levels": ["L1"], "corridor": 6,
+         "rooms": {"L1": [["Transformer bays", 700, 8], ["Switch room", 4000], ["Traction power room (Keelway)", 3000], ["Control room", "rest"]]}},
+        {"name": "Plant hall", "x": 30, "y": 170, "w": 280, "d": 160, "layout": "bays", "bays": 3, "bay_names": ["Chiller hall", "Air handling hall", "Water pump hall"], "levels": ["L1", "L2"]},
+        {"name": "Service yard", "x": 30, "y": 340, "w": 280, "d": 80, "layout": "outdoor"}
+      ],
+      "structure": "Concrete plant floors with blast walls; steel roof.",
+      "look": "Plain graphite sheds with tall louvres and a heavy cable gallery running to the Keelway.",
+      "entrances": "Service yard on the Keelway side.",
+      "capacity": "Power for P7 and Keelway traction power; about 30 staff per shift.",
+      "services": "Eight transformers, traction power, chillers, air handling, water pumps.",
+      "interior": "A substation with transformer bays and a Keelway traction power room, and a plant hall with chillers, air handling and water pumps."
+    },
+    {
+      "id": "P7-10", "name": "Station Service Shaft",
+      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "parts": [
+        {"name": "Control house", "x": 30, "y": 30, "w": 280, "d": 30, "levels": ["L1", "L2"], "corridor": 3,
+         "rooms": {"L1": [["Shaft control room", 1200], ["Crew room", "rest"]], "L2": [["Ventilation fans", "rest"]]}},
+        {"name": "Shaft hall", "x": 30, "y": 70, "w": 280, "d": 140, "layout": "bays", "bays": 3, "bay_names": ["Vehicle lift", "Goods lift hall", "Vehicle lift"], "levels": ["LB1", "L1", "L2"]},
+        {"name": "Vehicle queue", "x": 30, "y": 220, "w": 280, "d": 60, "layout": "outdoor"}
+      ],
+      "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house.",
+      "look": "A wide graphite head house with yellow-striped lift doors.",
+      "entrances": "Vehicle queue on the Keelway side; staff door into the control house.",
+      "capacity": "Two vehicle lifts and a goods lift.",
+      "services": "Lift machinery and shaft ventilation.",
+      "interior": "A control house and a shaft hall with two vehicle lifts and a goods lift down to the service layer."
+    },
+    {
+      "id": "P7-13", "name": "Keelway Port Station",
+      "levels": [["LB1", "Platform level", -10, 10], ["L1", "Concourse", 0, 9], ["L2", "Upper concourse", 9, 7], ["L3", "Train shed", 16, 10]],
+      "parts": [
+        {"name": "Station forecourt", "x": 200, "y": 20, "w": 1200, "d": 110, "layout": "outdoor"},
+        {"name": "Concourse", "x": 100, "y": 140, "w": 1400, "d": 160, "levels": ["L1", "L2"], "corridor": 24, "cores": 6, "corridor_name": "Station concourse",
+         "rooms": {"L1": [["Ticket hall", 8000], ["Gate lines", 6000], ["Waiting hall", 12000], ["Travel centre", 3000], ["Shops", 400, 20], ["Cafés", 600, 10], ["Lost property", 800], ["Toilets", "rest"]],
+                   "L2": [["Food hall", 15000], ["First-class lounge", 5000], ["Station control", 3000], ["Offices", "rest"]]}},
+        {"name": "Train shed", "x": 100, "y": 310, "w": 1400, "d": 420, "layout": "bays", "bays": 8, "bay_names": ["Platforms 1–2", "Platforms 3–4", "Platforms 5–6", "Platforms 7–8", "Platforms 9–10", "Platforms 11–12", "Freight through-line", "Maintenance siding"], "levels": ["L1", "L2", "L3"]},
+        {"name": "Platform level", "x": 100, "y": 140, "w": 1400, "d": 590, "layout": "bays", "bays": 4, "bay_names": ["Platform access halls", "Lift and escalator halls", "Staff and plant", "Platform access halls"], "levels": ["LB1"]},
+        {"name": "Keelway approach", "x": 0, "y": 740, "w": 1600, "d": 90, "layout": "outdoor"}
+      ],
+      "doors": [["Main entrance", [760, 140], [840, 140]]],
+      "structure": "A steel arched train shed, 26 m (85 ft) high and 420 m (1,378 ft) deep, over the Keelway platforms; concrete concourse.",
+      "look": "The port's railway cathedral: a long arched train shed of steel ribs and glass over the Keelway platforms, fronted by a broad glass concourse with a lit clock and the Keelway sign over the forecourt.",
+      "entrances": "Main entrance from the station forecourt on the Interchange Road; platforms open to the Keelway on the starboard side.",
+      "capacity": "12 platforms; about 40,000 passengers an hour.",
+      "services": "6 stair, lift and escalator cores; platform screen doors; station control.",
+      "interior": "A forecourt, a two-level concourse with ticket hall, gate lines, waiting hall, shops, cafés, food hall and first-class lounge, and the train shed with twelve platforms, a freight through-line and a maintenance siding; platform access halls below."
+    }
+  ]
+}

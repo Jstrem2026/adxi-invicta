@@ -2,2273 +2,1915 @@
  "schema": "invicta-atlas/model@1",
  "building_uid": "D5-port-of-arrivals-P6-04",
  "units": "m",
- "frame": "Metres from the building's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
  "footprint_m": [
   840.0,
   640.0
  ],
- "grid_m": 12,
- "source": "Drafted by tools/auto_design.py from the footprint and the 'retail' type in data/typologies.json, 2026-11-27. All proposed.",
+ "grid_m": 10,
+ "source": "Designed for this building (data/designs), built with tools/build_designs.py, 2026-11-27. All proposed.",
  "levels": [
   {
    "id": "L1",
-   "name": "Level 1 · Ground floor",
-   "z_m": 0.0,
-   "height_m": 5.5,
+   "name": "Level 1 · Market floor",
+   "z_m": 0,
+   "height_m": 7,
    "status": "proposed"
   },
   {
    "id": "L2",
-   "name": "Level 2 · Upper floor",
-   "z_m": 5.5,
-   "height_m": 5.5,
+   "name": "Level 2 · Gallery",
+   "z_m": 7,
+   "height_m": 6,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Vault",
+   "z_m": 13,
+   "height_m": 8,
    "status": "proposed"
   }
  ],
  "elements": [
   {
-   "id": "L1-001",
+   "id": "E001",
+   "type": "room",
+   "name": "Fresh produce stalls",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     160.0,
+     120.0
+    ],
+    [
+     225.0,
+     120.0
+    ],
+    [
+     225.0,
+     440.0
+    ],
+    [
+     160.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Bakers and grocers",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     225.0,
+     120.0
+    ],
+    [
+     290.0,
+     120.0
+    ],
+    [
+     290.0,
+     440.0
+    ],
+    [
+     225.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Butchers and fishmongers",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     290.0,
+     120.0
+    ],
+    [
+     355.0,
+     120.0
+    ],
+    [
+     355.0,
+     440.0
+    ],
+    [
+     290.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Spice and tea stalls",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     355.0,
+     120.0
+    ],
+    [
+     420.0,
+     120.0
+    ],
+    [
+     420.0,
+     440.0
+    ],
+    [
+     355.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "room",
+   "name": "Street food stalls",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     420.0,
+     120.0
+    ],
+    [
+     485.0,
+     120.0
+    ],
+    [
+     485.0,
+     440.0
+    ],
+    [
+     420.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Street food stalls",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     485.0,
+     120.0
+    ],
+    [
+     550.0,
+     120.0
+    ],
+    [
+     550.0,
+     440.0
+    ],
+    [
+     485.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Flower and craft stalls",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     550.0,
+     120.0
+    ],
+    [
+     615.0,
+     120.0
+    ],
+    [
+     615.0,
+     440.0
+    ],
+    [
+     550.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Seating hall",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     615.0,
+     120.0
+    ],
+    [
+     680.0,
+     120.0
+    ],
+    [
+     680.0,
+     440.0
+    ],
+    [
+     615.0,
+     440.0
+    ]
+   ],
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     60.0,
+     60.0
+    ],
+    [
+     70.0,
+     60.0
+    ],
+    [
+     70.0,
+     83.0
+    ],
+    [
+     60.0,
+     83.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     770.0,
+     60.0
+    ],
+    [
+     780.0,
+     60.0
+    ],
+    [
+     780.0,
+     83.0
+    ],
+    [
+     770.0,
+     83.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
    "type": "zone",
-   "name": "Walkway",
+   "name": "Corridor",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     36.0
+     60.0,
+     83.0
     ],
     [
-     840.0,
-     36.0
+     780.0,
+     83.0
     ],
     [
-     840.0,
-     44.0
+     780.0,
+     87.0
     ],
     [
-     0.0,
-     44.0
+     60.0,
+     87.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-002",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     116.0
-    ],
-    [
-     840.0,
-     116.0
-    ],
-    [
-     840.0,
-     124.0
-    ],
-    [
-     0.0,
-     124.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-003",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     196.0
-    ],
-    [
-     840.0,
-     196.0
-    ],
-    [
-     840.0,
-     204.0
-    ],
-    [
-     0.0,
-     204.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-004",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     276.0
-    ],
-    [
-     840.0,
-     276.0
-    ],
-    [
-     840.0,
-     284.0
-    ],
-    [
-     0.0,
-     284.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-005",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     356.0
-    ],
-    [
-     840.0,
-     356.0
-    ],
-    [
-     840.0,
-     364.0
-    ],
-    [
-     0.0,
-     364.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-006",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     436.0
-    ],
-    [
-     840.0,
-     436.0
-    ],
-    [
-     840.0,
-     444.0
-    ],
-    [
-     0.0,
-     444.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-007",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     516.0
-    ],
-    [
-     840.0,
-     516.0
-    ],
-    [
-     840.0,
-     524.0
-    ],
-    [
-     0.0,
-     524.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-008",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     596.0
-    ],
-    [
-     840.0,
-     596.0
-    ],
-    [
-     840.0,
-     604.0
-    ],
-    [
-     0.0,
-     604.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-009",
+   "id": "E012",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     0.0
+     70.0,
+     60.0
     ],
     [
-     140.0,
-     0.0
+     128.3,
+     60.0
     ],
     [
-     140.0,
-     36.0
+     128.3,
+     83.0
     ],
     [
-     0.0,
-     36.0
+     70.0,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-010",
+   "id": "E013",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     0.0
+     128.3,
+     60.0
     ],
     [
-     560.0,
-     0.0
+     186.7,
+     60.0
     ],
     [
-     560.0,
-     36.0
+     186.7,
+     83.0
     ],
     [
-     280.0,
-     36.0
+     128.3,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-011",
+   "id": "E014",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     0.0
+     186.7,
+     60.0
     ],
     [
-     840.0,
-     0.0
+     245.0,
+     60.0
     ],
     [
-     840.0,
-     36.0
+     245.0,
+     83.0
     ],
     [
-     700.0,
-     36.0
+     186.7,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-012",
+   "id": "E015",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     44.0
+     245.0,
+     60.0
     ],
     [
-     840.0,
-     44.0
+     303.3,
+     60.0
     ],
     [
-     840.0,
-     80.0
+     303.3,
+     83.0
     ],
     [
-     0.0,
-     80.0
+     245.0,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-013",
+   "id": "E016",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     80.0
+     303.3,
+     60.0
     ],
     [
-     140.0,
-     80.0
+     361.7,
+     60.0
     ],
     [
-     140.0,
-     116.0
+     361.7,
+     83.0
     ],
     [
-     0.0,
-     116.0
+     303.3,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-014",
+   "id": "E017",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     80.0
+     361.7,
+     60.0
     ],
     [
-     560.0,
-     80.0
+     420.0,
+     60.0
     ],
     [
-     560.0,
-     116.0
+     420.0,
+     83.0
     ],
     [
-     280.0,
-     116.0
+     361.7,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-015",
+   "id": "E018",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     80.0
+     420.0,
+     60.0
     ],
     [
-     840.0,
-     80.0
+     478.3,
+     60.0
     ],
     [
-     840.0,
-     116.0
+     478.3,
+     83.0
     ],
     [
-     700.0,
-     116.0
+     420.0,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-016",
+   "id": "E019",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     124.0
+     478.3,
+     60.0
     ],
     [
-     840.0,
-     124.0
+     536.7,
+     60.0
     ],
     [
-     840.0,
-     160.0
+     536.7,
+     83.0
     ],
     [
-     0.0,
-     160.0
+     478.3,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-017",
+   "id": "E020",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     160.0
+     536.7,
+     60.0
     ],
     [
-     140.0,
-     160.0
+     595.0,
+     60.0
     ],
     [
-     140.0,
-     196.0
+     595.0,
+     83.0
     ],
     [
-     0.0,
-     196.0
+     536.7,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-018",
+   "id": "E021",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     160.0
+     595.0,
+     60.0
     ],
     [
-     560.0,
-     160.0
+     653.3,
+     60.0
     ],
     [
-     560.0,
-     196.0
+     653.3,
+     83.0
     ],
     [
-     280.0,
-     196.0
+     595.0,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-019",
+   "id": "E022",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     160.0
+     653.3,
+     60.0
     ],
     [
-     840.0,
-     160.0
+     711.7,
+     60.0
     ],
     [
-     840.0,
-     196.0
+     711.7,
+     83.0
     ],
     [
-     700.0,
-     196.0
+     653.3,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-020",
+   "id": "E023",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     204.0
+     711.7,
+     60.0
     ],
     [
-     840.0,
-     204.0
+     770.0,
+     60.0
     ],
     [
-     840.0,
-     240.0
+     770.0,
+     83.0
     ],
     [
-     0.0,
-     240.0
+     711.7,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-021",
+   "id": "E024",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     240.0
+     60.0,
+     87.0
     ],
     [
-     140.0,
-     240.0
+     70.9,
+     87.0
     ],
     [
-     140.0,
-     276.0
+     70.9,
+     110.0
     ],
     [
-     0.0,
-     276.0
+     60.0,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-022",
+   "id": "E025",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     240.0
+     70.9,
+     87.0
     ],
     [
-     560.0,
-     240.0
+     81.7,
+     87.0
     ],
     [
-     560.0,
-     276.0
+     81.7,
+     110.0
     ],
     [
-     280.0,
-     276.0
+     70.9,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-023",
+   "id": "E026",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     240.0
+     81.7,
+     87.0
     ],
     [
-     840.0,
-     240.0
+     92.6,
+     87.0
     ],
     [
-     840.0,
-     276.0
+     92.6,
+     110.0
     ],
     [
-     700.0,
-     276.0
+     81.7,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-024",
+   "id": "E027",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     284.0
+     92.6,
+     87.0
     ],
     [
-     840.0,
-     284.0
+     103.5,
+     87.0
     ],
     [
-     840.0,
-     320.0
+     103.5,
+     110.0
     ],
     [
-     0.0,
-     320.0
+     92.6,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-025",
+   "id": "E028",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     320.0
+     103.5,
+     87.0
     ],
     [
-     140.0,
-     320.0
+     114.3,
+     87.0
     ],
     [
-     140.0,
-     356.0
+     114.3,
+     110.0
     ],
     [
-     0.0,
-     356.0
+     103.5,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-026",
+   "id": "E029",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     320.0
+     114.3,
+     87.0
     ],
     [
-     560.0,
-     320.0
+     125.2,
+     87.0
     ],
     [
-     560.0,
-     356.0
+     125.2,
+     110.0
     ],
     [
-     280.0,
-     356.0
+     114.3,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-027",
+   "id": "E030",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     320.0
+     125.2,
+     87.0
     ],
     [
-     840.0,
-     320.0
+     136.1,
+     87.0
     ],
     [
-     840.0,
-     356.0
+     136.1,
+     110.0
     ],
     [
-     700.0,
-     356.0
+     125.2,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-028",
+   "id": "E031",
    "type": "room",
-   "name": "Shop units",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     364.0
+     136.1,
+     87.0
     ],
     [
-     560.0,
-     364.0
+     147.0,
+     87.0
     ],
     [
-     560.0,
-     400.0
+     147.0,
+     110.0
     ],
     [
-     0.0,
-     400.0
+     136.1,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-029",
+   "id": "E032",
    "type": "room",
-   "name": "Walkway seating",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     560.0,
-     364.0
+     147.0,
+     87.0
     ],
     [
-     840.0,
-     364.0
+     157.8,
+     87.0
     ],
     [
-     840.0,
-     400.0
+     157.8,
+     110.0
     ],
     [
-     560.0,
-     400.0
+     147.0,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-030",
+   "id": "E033",
    "type": "room",
-   "name": "Walkway seating",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     0.0,
-     400.0
+     157.8,
+     87.0
     ],
     [
-     140.0,
-     400.0
+     168.7,
+     87.0
     ],
     [
-     140.0,
-     436.0
+     168.7,
+     110.0
     ],
     [
-     0.0,
-     436.0
+     157.8,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-031",
+   "id": "E034",
    "type": "room",
-   "name": "Walkway seating",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     280.0,
-     400.0
+     168.7,
+     87.0
     ],
     [
-     560.0,
-     400.0
+     179.6,
+     87.0
     ],
     [
-     560.0,
-     436.0
+     179.6,
+     110.0
     ],
     [
-     280.0,
-     436.0
+     168.7,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-032",
+   "id": "E035",
    "type": "room",
-   "name": "Walkway seating",
+   "name": "Shops",
    "level": "L1",
    "outline_m": [
     [
-     700.0,
-     400.0
+     179.6,
+     87.0
     ],
     [
-     840.0,
-     400.0
+     190.4,
+     87.0
     ],
     [
-     840.0,
-     436.0
+     190.4,
+     110.0
     ],
     [
-     700.0,
-     436.0
+     179.6,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-033",
-   "type": "room",
-   "name": "Walkway seating",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     444.0
-    ],
-    [
-     280.0,
-     444.0
-    ],
-    [
-     280.0,
-     480.0
-    ],
-    [
-     0.0,
-     480.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-034",
-   "type": "room",
-   "name": "Food stalls",
-   "level": "L1",
-   "outline_m": [
-    [
-     280.0,
-     444.0
-    ],
-    [
-     840.0,
-     444.0
-    ],
-    [
-     840.0,
-     480.0
-    ],
-    [
-     280.0,
-     480.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-035",
-   "type": "room",
-   "name": "Food stalls",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     480.0
-    ],
-    [
-     140.0,
-     480.0
-    ],
-    [
-     140.0,
-     516.0
-    ],
-    [
-     0.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-036",
-   "type": "room",
-   "name": "Food stalls",
-   "level": "L1",
-   "outline_m": [
-    [
-     280.0,
-     480.0
-    ],
-    [
-     560.0,
-     480.0
-    ],
-    [
-     560.0,
-     516.0
-    ],
-    [
-     280.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-037",
-   "type": "room",
-   "name": "Food stalls",
-   "level": "L1",
-   "outline_m": [
-    [
-     700.0,
-     480.0
-    ],
-    [
-     840.0,
-     480.0
-    ],
-    [
-     840.0,
-     516.0
-    ],
-    [
-     700.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-038",
-   "type": "room",
-   "name": "Food stalls",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     524.0
-    ],
-    [
-     560.0,
-     524.0
-    ],
-    [
-     560.0,
-     560.0
-    ],
-    [
-     0.0,
-     560.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-039",
+   "id": "E036",
    "type": "room",
    "name": "Toilets",
    "level": "L1",
    "outline_m": [
     [
-     560.0,
-     524.0
+     190.4,
+     87.0
     ],
     [
-     840.0,
-     524.0
+     780.0,
+     87.0
     ],
     [
-     840.0,
-     560.0
+     780.0,
+     110.0
     ],
     [
-     560.0,
-     560.0
+     190.4,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-040",
-   "type": "room",
-   "name": "Toilets",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     560.0
-    ],
-    [
-     140.0,
-     560.0
-    ],
-    [
-     140.0,
-     596.0
-    ],
-    [
-     0.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-041",
-   "type": "room",
-   "name": "Toilets",
-   "level": "L1",
-   "outline_m": [
-    [
-     280.0,
-     560.0
-    ],
-    [
-     420.0,
-     560.0
-    ],
-    [
-     420.0,
-     596.0
-    ],
-    [
-     280.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-042",
-   "type": "room",
-   "name": "Loading and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     420.0,
-     560.0
-    ],
-    [
-     560.0,
-     560.0
-    ],
-    [
-     560.0,
-     596.0
-    ],
-    [
-     420.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-043",
-   "type": "room",
-   "name": "Loading and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     700.0,
-     560.0
-    ],
-    [
-     840.0,
-     560.0
-    ],
-    [
-     840.0,
-     596.0
-    ],
-    [
-     700.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-044",
-   "type": "room",
-   "name": "Loading and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     604.0
-    ],
-    [
-     840.0,
-     604.0
-    ],
-    [
-     840.0,
-     640.0
-    ],
-    [
-     0.0,
-     640.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-045",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     0.0
-    ],
-    [
-     280.0,
-     0.0
-    ],
-    [
-     280.0,
-     36.0
-    ],
-    [
-     140.0,
-     36.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-046",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     0.0
-    ],
-    [
-     700.0,
-     0.0
-    ],
-    [
-     700.0,
-     36.0
-    ],
-    [
-     560.0,
-     36.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-047",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     80.0
-    ],
-    [
-     280.0,
-     80.0
-    ],
-    [
-     280.0,
-     116.0
-    ],
-    [
-     140.0,
-     116.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-048",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     80.0
-    ],
-    [
-     700.0,
-     80.0
-    ],
-    [
-     700.0,
-     116.0
-    ],
-    [
-     560.0,
-     116.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-049",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     160.0
-    ],
-    [
-     280.0,
-     160.0
-    ],
-    [
-     280.0,
-     196.0
-    ],
-    [
-     140.0,
-     196.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-050",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     160.0
-    ],
-    [
-     700.0,
-     160.0
-    ],
-    [
-     700.0,
-     196.0
-    ],
-    [
-     560.0,
-     196.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-051",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     240.0
-    ],
-    [
-     280.0,
-     240.0
-    ],
-    [
-     280.0,
-     276.0
-    ],
-    [
-     140.0,
-     276.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-052",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     240.0
-    ],
-    [
-     700.0,
-     240.0
-    ],
-    [
-     700.0,
-     276.0
-    ],
-    [
-     560.0,
-     276.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-053",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     320.0
-    ],
-    [
-     280.0,
-     320.0
-    ],
-    [
-     280.0,
-     356.0
-    ],
-    [
-     140.0,
-     356.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-054",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     320.0
-    ],
-    [
-     700.0,
-     320.0
-    ],
-    [
-     700.0,
-     356.0
-    ],
-    [
-     560.0,
-     356.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-055",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     400.0
-    ],
-    [
-     280.0,
-     400.0
-    ],
-    [
-     280.0,
-     436.0
-    ],
-    [
-     140.0,
-     436.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-056",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     400.0
-    ],
-    [
-     700.0,
-     400.0
-    ],
-    [
-     700.0,
-     436.0
-    ],
-    [
-     560.0,
-     436.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-057",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     480.0
-    ],
-    [
-     280.0,
-     480.0
-    ],
-    [
-     280.0,
-     516.0
-    ],
-    [
-     140.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-058",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     480.0
-    ],
-    [
-     700.0,
-     480.0
-    ],
-    [
-     700.0,
-     516.0
-    ],
-    [
-     560.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-059",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     140.0,
-     560.0
-    ],
-    [
-     280.0,
-     560.0
-    ],
-    [
-     280.0,
-     596.0
-    ],
-    [
-     140.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-060",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     560.0,
-     560.0
-    ],
-    [
-     700.0,
-     560.0
-    ],
-    [
-     700.0,
-     596.0
-    ],
-    [
-     560.0,
-     596.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-001",
+   "id": "E037",
    "type": "zone",
-   "name": "Walkway",
+   "name": "Corridor",
    "level": "L2",
    "outline_m": [
     [
-     0.0,
-     36.0
+     60.0,
+     83.0
     ],
     [
-     840.0,
-     36.0
+     780.0,
+     83.0
     ],
     [
-     840.0,
-     44.0
+     780.0,
+     87.0
     ],
     [
-     0.0,
-     44.0
+     60.0,
+     87.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-002",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     116.0
-    ],
-    [
-     840.0,
-     116.0
-    ],
-    [
-     840.0,
-     124.0
-    ],
-    [
-     0.0,
-     124.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-003",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     196.0
-    ],
-    [
-     840.0,
-     196.0
-    ],
-    [
-     840.0,
-     204.0
-    ],
-    [
-     0.0,
-     204.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-004",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     276.0
-    ],
-    [
-     840.0,
-     276.0
-    ],
-    [
-     840.0,
-     284.0
-    ],
-    [
-     0.0,
-     284.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-005",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     356.0
-    ],
-    [
-     840.0,
-     356.0
-    ],
-    [
-     840.0,
-     364.0
-    ],
-    [
-     0.0,
-     364.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-006",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     436.0
-    ],
-    [
-     840.0,
-     436.0
-    ],
-    [
-     840.0,
-     444.0
-    ],
-    [
-     0.0,
-     444.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-007",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     516.0
-    ],
-    [
-     840.0,
-     516.0
-    ],
-    [
-     840.0,
-     524.0
-    ],
-    [
-     0.0,
-     524.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-008",
-   "type": "zone",
-   "name": "Walkway",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     596.0
-    ],
-    [
-     840.0,
-     596.0
-    ],
-    [
-     840.0,
-     604.0
-    ],
-    [
-     0.0,
-     604.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-009",
+   "id": "E038",
    "type": "room",
-   "name": "Shop units (around the core)",
+   "name": "Cooking school",
    "level": "L2",
    "outline_m": [
     [
-     0.0,
-     0.0
+     70.0,
+     60.0
     ],
     [
-     840.0,
-     0.0
+     770.0,
+     60.0
     ],
     [
-     840.0,
-     36.0
+     770.0,
+     83.0
     ],
     [
-     0.0,
-     36.0
+     70.0,
+     83.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-010",
-   "type": "room",
-   "name": "Shop units",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     44.0
-    ],
-    [
-     840.0,
-     44.0
-    ],
-    [
-     840.0,
-     80.0
-    ],
-    [
-     0.0,
-     80.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-011",
-   "type": "room",
-   "name": "Shop units (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     80.0
-    ],
-    [
-     840.0,
-     80.0
-    ],
-    [
-     840.0,
-     116.0
-    ],
-    [
-     0.0,
-     116.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-012",
-   "type": "room",
-   "name": "Shop units",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     124.0
-    ],
-    [
-     840.0,
-     124.0
-    ],
-    [
-     840.0,
-     160.0
-    ],
-    [
-     0.0,
-     160.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-013",
-   "type": "room",
-   "name": "Shop units (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     160.0
-    ],
-    [
-     840.0,
-     160.0
-    ],
-    [
-     840.0,
-     196.0
-    ],
-    [
-     0.0,
-     196.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-014",
-   "type": "room",
-   "name": "Shop units",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     204.0
-    ],
-    [
-     840.0,
-     204.0
-    ],
-    [
-     840.0,
-     240.0
-    ],
-    [
-     0.0,
-     240.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-015",
-   "type": "room",
-   "name": "Shop units (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     240.0
-    ],
-    [
-     840.0,
-     240.0
-    ],
-    [
-     840.0,
-     276.0
-    ],
-    [
-     0.0,
-     276.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-016",
-   "type": "room",
-   "name": "Shop units",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     284.0
-    ],
-    [
-     840.0,
-     284.0
-    ],
-    [
-     840.0,
-     320.0
-    ],
-    [
-     0.0,
-     320.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-017",
-   "type": "room",
-   "name": "Restaurants (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     320.0
-    ],
-    [
-     840.0,
-     320.0
-    ],
-    [
-     840.0,
-     356.0
-    ],
-    [
-     0.0,
-     356.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-018",
-   "type": "room",
-   "name": "Restaurants",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     364.0
-    ],
-    [
-     840.0,
-     364.0
-    ],
-    [
-     840.0,
-     400.0
-    ],
-    [
-     0.0,
-     400.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-019",
-   "type": "room",
-   "name": "Restaurants (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     400.0
-    ],
-    [
-     840.0,
-     400.0
-    ],
-    [
-     840.0,
-     436.0
-    ],
-    [
-     0.0,
-     436.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-020",
-   "type": "room",
-   "name": "Restaurants",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     444.0
-    ],
-    [
-     840.0,
-     444.0
-    ],
-    [
-     840.0,
-     480.0
-    ],
-    [
-     0.0,
-     480.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-021",
-   "type": "room",
-   "name": "Offices (around the core)",
-   "level": "L2",
-   "outline_m": [
-    [
-     0.0,
-     480.0
-    ],
-    [
-     840.0,
-     480.0
-    ],
-    [
-     840.0,
-     516.0
-    ],
-    [
-     0.0,
-     516.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-022",
+   "id": "E039",
    "type": "room",
    "name": "Offices",
    "level": "L2",
    "outline_m": [
     [
-     0.0,
-     524.0
+     60.0,
+     87.0
     ],
     [
-     560.0,
-     524.0
+     780.0,
+     87.0
     ],
     [
-     560.0,
-     560.0
+     780.0,
+     110.0
     ],
     [
-     0.0,
-     560.0
+     60.0,
+     110.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-023",
+   "id": "E040",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     60.0,
+     450.0
+    ],
+    [
+     70.0,
+     450.0
+    ],
+    [
+     70.0,
+     473.0
+    ],
+    [
+     60.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     770.0,
+     450.0
+    ],
+    [
+     780.0,
+     450.0
+    ],
+    [
+     780.0,
+     473.0
+    ],
+    [
+     770.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     473.0
+    ],
+    [
+     780.0,
+     473.0
+    ],
+    [
+     780.0,
+     477.0
+    ],
+    [
+     60.0,
+     477.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
    "type": "room",
-   "name": "Plant rooms",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     70.0,
+     450.0
+    ],
+    [
+     128.3,
+     450.0
+    ],
+    [
+     128.3,
+     473.0
+    ],
+    [
+     70.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     128.3,
+     450.0
+    ],
+    [
+     186.7,
+     450.0
+    ],
+    [
+     186.7,
+     473.0
+    ],
+    [
+     128.3,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     186.7,
+     450.0
+    ],
+    [
+     245.0,
+     450.0
+    ],
+    [
+     245.0,
+     473.0
+    ],
+    [
+     186.7,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     245.0,
+     450.0
+    ],
+    [
+     303.3,
+     450.0
+    ],
+    [
+     303.3,
+     473.0
+    ],
+    [
+     245.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     303.3,
+     450.0
+    ],
+    [
+     361.7,
+     450.0
+    ],
+    [
+     361.7,
+     473.0
+    ],
+    [
+     303.3,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     361.7,
+     450.0
+    ],
+    [
+     420.0,
+     450.0
+    ],
+    [
+     420.0,
+     473.0
+    ],
+    [
+     361.7,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     420.0,
+     450.0
+    ],
+    [
+     478.3,
+     450.0
+    ],
+    [
+     478.3,
+     473.0
+    ],
+    [
+     420.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     478.3,
+     450.0
+    ],
+    [
+     536.7,
+     450.0
+    ],
+    [
+     536.7,
+     473.0
+    ],
+    [
+     478.3,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     536.7,
+     450.0
+    ],
+    [
+     595.0,
+     450.0
+    ],
+    [
+     595.0,
+     473.0
+    ],
+    [
+     536.7,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     595.0,
+     450.0
+    ],
+    [
+     653.3,
+     450.0
+    ],
+    [
+     653.3,
+     473.0
+    ],
+    [
+     595.0,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     653.3,
+     450.0
+    ],
+    [
+     711.7,
+     450.0
+    ],
+    [
+     711.7,
+     473.0
+    ],
+    [
+     653.3,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     711.7,
+     450.0
+    ],
+    [
+     770.0,
+     450.0
+    ],
+    [
+     770.0,
+     473.0
+    ],
+    [
+     711.7,
+     473.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     477.0
+    ],
+    [
+     70.9,
+     477.0
+    ],
+    [
+     70.9,
+     500.0
+    ],
+    [
+     60.0,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     70.9,
+     477.0
+    ],
+    [
+     81.7,
+     477.0
+    ],
+    [
+     81.7,
+     500.0
+    ],
+    [
+     70.9,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.7,
+     477.0
+    ],
+    [
+     92.6,
+     477.0
+    ],
+    [
+     92.6,
+     500.0
+    ],
+    [
+     81.7,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     92.6,
+     477.0
+    ],
+    [
+     103.5,
+     477.0
+    ],
+    [
+     103.5,
+     500.0
+    ],
+    [
+     92.6,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.5,
+     477.0
+    ],
+    [
+     114.3,
+     477.0
+    ],
+    [
+     114.3,
+     500.0
+    ],
+    [
+     103.5,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.3,
+     477.0
+    ],
+    [
+     125.2,
+     477.0
+    ],
+    [
+     125.2,
+     500.0
+    ],
+    [
+     114.3,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     125.2,
+     477.0
+    ],
+    [
+     136.1,
+     477.0
+    ],
+    [
+     136.1,
+     500.0
+    ],
+    [
+     125.2,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     136.1,
+     477.0
+    ],
+    [
+     147.0,
+     477.0
+    ],
+    [
+     147.0,
+     500.0
+    ],
+    [
+     136.1,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.0,
+     477.0
+    ],
+    [
+     157.8,
+     477.0
+    ],
+    [
+     157.8,
+     500.0
+    ],
+    [
+     147.0,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.8,
+     477.0
+    ],
+    [
+     168.7,
+     477.0
+    ],
+    [
+     168.7,
+     500.0
+    ],
+    [
+     157.8,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.7,
+     477.0
+    ],
+    [
+     179.6,
+     477.0
+    ],
+    [
+     179.6,
+     500.0
+    ],
+    [
+     168.7,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Shops",
+   "level": "L1",
+   "outline_m": [
+    [
+     179.6,
+     477.0
+    ],
+    [
+     190.4,
+     477.0
+    ],
+    [
+     190.4,
+     500.0
+    ],
+    [
+     179.6,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Loading and cold rooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.4,
+     477.0
+    ],
+    [
+     780.0,
+     477.0
+    ],
+    [
+     780.0,
+     500.0
+    ],
+    [
+     190.4,
+     500.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "zone",
+   "name": "Corridor",
    "level": "L2",
    "outline_m": [
     [
-     560.0,
-     524.0
+     60.0,
+     473.0
     ],
     [
-     840.0,
-     524.0
+     780.0,
+     473.0
     ],
     [
-     840.0,
-     560.0
+     780.0,
+     477.0
     ],
     [
-     560.0,
-     560.0
+     60.0,
+     477.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-024",
+   "id": "E069",
    "type": "room",
-   "name": "Plant rooms (around the core)",
+   "name": "Market management",
    "level": "L2",
    "outline_m": [
     [
-     0.0,
-     560.0
+     70.0,
+     450.0
     ],
     [
-     840.0,
-     560.0
+     770.0,
+     450.0
     ],
     [
-     840.0,
-     596.0
+     770.0,
+     473.0
     ],
     [
-     0.0,
-     596.0
+     70.0,
+     473.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-025",
+   "id": "E070",
    "type": "room",
-   "name": "Plant rooms",
+   "name": "Staff",
    "level": "L2",
    "outline_m": [
     [
-     0.0,
-     604.0
+     60.0,
+     477.0
     ],
     [
-     840.0,
-     604.0
+     780.0,
+     477.0
     ],
     [
-     840.0,
-     640.0
+     780.0,
+     500.0
     ],
     [
-     0.0,
-     640.0
+     60.0,
+     500.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "D-86",
-   "type": "door",
-   "name": "Main entrance",
+   "id": "E071",
+   "type": "zone",
+   "name": "Market square (bow)",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     408.0,
-     0.0
+     60.0,
+     120.0
     ],
     [
-     432.0,
-     0.0
+     150.0,
+     120.0
+    ],
+    [
+     150.0,
+     440.0
+    ],
+    [
+     60.0,
+     440.0
     ]
    ],
-   "width_m": 24.0,
+   "outdoor": true,
    "status": "proposed"
   },
   {
-   "id": "D-87",
-   "type": "door",
-   "name": "Second entrance",
+   "id": "E072",
+   "type": "zone",
+   "name": "Market square (stern)",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     408.0,
-     640.0
+     690.0,
+     120.0
     ],
     [
-     432.0,
-     640.0
+     780.0,
+     120.0
+    ],
+    [
+     780.0,
+     440.0
+    ],
+    [
+     690.0,
+     440.0
     ]
    ],
-   "width_m": 24.0,
+   "outdoor": true,
    "status": "proposed"
   },
   {
-   "id": "D-88",
-   "type": "door",
-   "name": "Side door",
+   "id": "E073",
+   "type": "zone",
+   "name": "Delivery yard",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     0.0,
-     317.0
+     60.0,
+     520.0
     ],
     [
-     0.0,
-     323.0
-    ]
-   ],
-   "width_m": 6.0,
-   "status": "proposed"
-  },
-  {
-   "id": "D-89",
-   "type": "door",
-   "name": "Side door",
-   "level": "L1",
-   "line_m": [
-    [
-     840.0,
-     317.0
+     780.0,
+     520.0
     ],
     [
-     840.0,
-     323.0
+     780.0,
+     620.0
+    ],
+    [
+     60.0,
+     620.0
     ]
    ],
-   "width_m": 6.0,
+   "outdoor": true,
    "status": "proposed"
   }
  ],

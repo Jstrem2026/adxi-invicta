@@ -2,20 +2,272 @@
   "about": "P8 Shuttle Yards building designs, one per building, written 27 Nov 2026 (proposed). The Yard Taxiway runs along the port side of the precinct: P8-01 to P8-03 face it with their starboard side (high y); P8-04 to P8-12 face it with their port side (y = 0). The Yard Road runs past the starboard side of P8-09 to P8-12. Coordinates in metres from each lot's bow-port corner.",
   "buildings": [
     {
-      "id": "P8-01", "name": "Maintenance Shops",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Upper floor", 6, 6], ["L3", "Hall upper", 12, 6], ["L4", "Hall roof space", 18, 6]],
-      "parts": [
-        {"name": "Hangar apron", "x": 0, "y": 480, "w": 1550, "d": 120, "layout": "outdoor"},
-        {"name": "Hall 1", "x": 30, "y": 220, "w": 320, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Hall 1 · engine bay", "Hall 1 · airframe bay"], "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Hall 2", "x": 400, "y": 220, "w": 320, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Hall 2 · engine bay", "Hall 2 · airframe bay"], "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Hall 3", "x": 770, "y": 220, "w": 320, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Hall 3 · inspection bay", "Hall 3 · airframe bay"], "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Hall 4", "x": 1140, "y": 220, "w": 320, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Hall 4 · heavy check bay", "Hall 4 · heavy check bay"], "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Workshop spine", "x": 30, "y": 130, "w": 1430, "d": 90, "levels": ["L1", "L2"], "corridor": 6, "cores": 3, "corridor_name": "Workshop street",
-         "rooms": {"L1": [["Engine shop", 6000], ["Avionics shop", 5000], ["Composites shop", 4000], ["Wheels and brakes", 3000], ["Test lab (non-destructive)", 1600], ["Tool crib", 900, 2], ["Parts cage", 3000], ["Locker rooms", 800, 2], ["Workshop stores", "rest"]],
-                   "L2": [["Planning office", 5000], ["Technical library and records", 1500], ["Training rooms", 400, 4], ["Canteen", 2500], ["Kitchen", 800], ["Shift managers", 1200], ["Offices", "rest"]]}},
-        {"name": "Staff pod park", "x": 30, "y": 20, "w": 1430, "d": 100, "layout": "outdoor"}
+      "id": "P8-01",
+      "name": "Maintenance Shops",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Upper floor",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Hall upper",
+          12,
+          6
+        ],
+        [
+          "L4",
+          "Hall roof space",
+          18,
+          6
+        ]
       ],
-      "doors": [["Hall 1 folding door", [40, 480], [340, 480]], ["Hall 2 folding door", [410, 480], [710, 480]], ["Hall 3 folding door", [780, 480], [1080, 480]], ["Hall 4 folding door", [1150, 480], [1450, 480]], ["Staff entrance", [735, 130], [755, 130]]],
+      "parts": [
+        {
+          "name": "Hangar apron",
+          "x": 0,
+          "y": 480,
+          "w": 1550,
+          "d": 120,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Hall 1",
+          "x": 30,
+          "y": 220,
+          "w": 320,
+          "d": 260,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Hall 1 · engine bay",
+            "Hall 1 · airframe bay"
+          ],
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Hall 2",
+          "x": 400,
+          "y": 220,
+          "w": 320,
+          "d": 260,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Hall 2 · engine bay",
+            "Hall 2 · airframe bay"
+          ],
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Hall 3",
+          "x": 770,
+          "y": 220,
+          "w": 320,
+          "d": 260,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Hall 3 · inspection bay",
+            "Hall 3 · airframe bay"
+          ],
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Hall 4",
+          "x": 1140,
+          "y": 220,
+          "w": 320,
+          "d": 260,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Hall 4 · heavy check bay",
+            "Hall 4 · heavy check bay"
+          ],
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Workshop spine",
+          "x": 30,
+          "y": 130,
+          "w": 1430,
+          "d": 90,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 6,
+          "cores": 3,
+          "corridor_name": "Workshop street",
+          "rooms": {
+            "L1": [
+              [
+                "Engine shop",
+                6000
+              ],
+              [
+                "Avionics shop",
+                5000
+              ],
+              [
+                "Composites shop",
+                4000
+              ],
+              [
+                "Wheels and brakes",
+                3000
+              ],
+              [
+                "Test lab (non-destructive)",
+                1600
+              ],
+              [
+                "Tool crib",
+                900,
+                2
+              ],
+              [
+                "Parts cage",
+                3000
+              ],
+              [
+                "Locker rooms",
+                800,
+                2
+              ],
+              [
+                "Workshop stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Planning office",
+                5000
+              ],
+              [
+                "Technical library and records",
+                1500
+              ],
+              [
+                "Training rooms",
+                400,
+                4
+              ],
+              [
+                "Canteen",
+                2500
+              ],
+              [
+                "Kitchen",
+                800
+              ],
+              [
+                "Shift managers",
+                1200
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Staff pod park",
+          "x": 30,
+          "y": 20,
+          "w": 1430,
+          "d": 100,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Hall 1 folding door",
+          [
+            40,
+            480
+          ],
+          [
+            340,
+            480
+          ]
+        ],
+        [
+          "Hall 2 folding door",
+          [
+            410,
+            480
+          ],
+          [
+            710,
+            480
+          ]
+        ],
+        [
+          "Hall 3 folding door",
+          [
+            780,
+            480
+          ],
+          [
+            1080,
+            480
+          ]
+        ],
+        [
+          "Hall 4 folding door",
+          [
+            1150,
+            480
+          ],
+          [
+            1450,
+            480
+          ]
+        ],
+        [
+          "Staff entrance",
+          [
+            735,
+            130
+          ],
+          [
+            755,
+            130
+          ]
+        ]
+      ],
       "structure": "Four steel barrel-vault halls, 24 m (79 ft) clear inside, each spanning 260 m (853 ft) with no columns; a two-storey concrete workshop spine behind them.",
       "look": "Four barrel-vaulted halls in ribbed gunmetal steel, each with a 300 m glazed folding door facing the taxiway that glows amber at night; behind them a low dark workshop spine with a continuous strip of high windows.",
       "entrances": "One 300 m folding hangar door per hall onto the apron; staff entrance in the middle of the workshop spine, off the pod park.",
@@ -24,25 +276,344 @@
       "interior": "Four halls side by side, each split into two craft bays. Behind them the workshop spine: engine, avionics, composites and wheel shops, test lab, tool cribs and parts cage on the ground floor; planning office, records, training rooms and canteen upstairs, all opening onto a 6 m workshop street."
     },
     {
-      "id": "P8-02", "name": "Shuttle Ops",
-      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4.5], ["L3", "Level 3", 9.5, 4.5], ["L4", "Tower", 14, 4.5], ["L5", "Tower", 18.5, 4.5], ["L6", "Tower", 23, 4.5], ["L7", "Tower", 27.5, 4.5], ["L8", "Tower", 32, 4.5], ["L9", "Control cab", 36.5, 6]],
-      "parts": [
-        {"name": "Forecourt and drop-off", "x": 170, "y": 40, "w": 360, "d": 100, "layout": "outdoor"},
-        {"name": "Entrance wing", "x": 170, "y": 150, "w": 360, "d": 26, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Main lobby", 1200], ["Visitor desk", 200], ["Security check", 300], ["Café", 600], ["Mail and stores", 300], ["Toilets", 150, 2]],
-                   "L2-L3": [["Staff offices", "rest"], ["Meeting rooms", 120, 4]]}},
-        {"name": "Bow wing", "x": 170, "y": 176, "w": 26, "d": 248, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 1,
-         "rooms": {"L1": [["Crew check-in", 1200], ["Crew lounge", 1600], ["Lockers", 600], ["Quiet rooms", 60, 6]], "L2-L3": [["Training rooms", 200, 6], ["Offices", "rest"]]}},
-        {"name": "Stern wing", "x": 504, "y": 176, "w": 26, "d": 248, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 1,
-         "rooms": {"L1": [["Weather office", 800], ["Flight planning room", 1200], ["Data and comms room", 1000], ["Plant room", 600]], "L2-L3": [["Scheduling office", 2000], ["Offices", "rest"]]}},
-        {"name": "Airside wing", "x": 170, "y": 424, "w": 360, "d": 26, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Crew briefing rooms", 150, 8], ["Crew gate to the apron", 400], ["Ramp control room", 600]], "L2-L3": [["Dispatch floor", 3000], ["Duty managers", 400], ["Offices", "rest"]]}},
-        {"name": "Garden courtyard", "x": 196, "y": 176, "w": 308, "d": 248, "layout": "outdoor"},
-        {"name": "Ops tower", "x": 330, "y": 450, "w": 40, "d": 40, "levels": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9"], "corridor": 4, "cores": 1, "core_len": 12,
-         "rooms": {"L1-L3": [["Tower lobby", "rest"]], "L4-L8": [["Yard planning floor", "rest"]], "L9": [["Yard control cab (360° glass)", "rest"]]}},
-        {"name": "Airside apron", "x": 0, "y": 495, "w": 700, "d": 55, "layout": "outdoor"}
+      "id": "P8-02",
+      "name": "Shuttle Ops",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4.5
+        ],
+        [
+          "L3",
+          "Level 3",
+          9.5,
+          4.5
+        ],
+        [
+          "L4",
+          "Tower",
+          14,
+          4.5
+        ],
+        [
+          "L5",
+          "Tower",
+          18.5,
+          4.5
+        ],
+        [
+          "L6",
+          "Tower",
+          23,
+          4.5
+        ],
+        [
+          "L7",
+          "Tower",
+          27.5,
+          4.5
+        ],
+        [
+          "L8",
+          "Tower",
+          32,
+          4.5
+        ],
+        [
+          "L9",
+          "Control cab",
+          36.5,
+          6
+        ]
       ],
-      "doors": [["Main entrance", [335, 150], [365, 150]], ["Crew gate", [440, 450], [460, 450]]],
+      "parts": [
+        {
+          "name": "Forecourt and drop-off",
+          "x": 150,
+          "y": 30,
+          "w": 400,
+          "d": 80,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Entrance wing",
+          "x": 150,
+          "y": 120,
+          "w": 400,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Main lobby",
+                1200
+              ],
+              [
+                "Visitor desk",
+                200
+              ],
+              [
+                "Security check",
+                300
+              ],
+              [
+                "Café",
+                600
+              ],
+              [
+                "Mail and stores",
+                300
+              ],
+              [
+                "Toilets",
+                150,
+                2
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Staff offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                120,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Bow wing",
+          "x": 150,
+          "y": 160,
+          "w": 40,
+          "d": 230,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Crew check-in",
+                1200
+              ],
+              [
+                "Crew lounge",
+                1600
+              ],
+              [
+                "Lockers",
+                600
+              ],
+              [
+                "Quiet rooms",
+                60,
+                6
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Training rooms",
+                200,
+                6
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Stern wing",
+          "x": 510,
+          "y": 160,
+          "w": 40,
+          "d": 230,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Weather office",
+                800
+              ],
+              [
+                "Flight planning room",
+                1200
+              ],
+              [
+                "Data and comms room",
+                1000
+              ],
+              [
+                "Plant room",
+                600
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Scheduling office",
+                2000
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Airside wing",
+          "x": 150,
+          "y": 390,
+          "w": 400,
+          "d": 50,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Crew briefing rooms",
+                150,
+                8
+              ],
+              [
+                "Crew gate to the apron",
+                400
+              ],
+              [
+                "Ramp control room",
+                600
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Dispatch floor",
+                3000
+              ],
+              [
+                "Duty managers",
+                400
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden courtyard",
+          "x": 190,
+          "y": 160,
+          "w": 320,
+          "d": 230,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Ops tower",
+          "x": 330,
+          "y": 440,
+          "w": 40,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L8",
+            "L9"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "core_len": 12,
+          "rooms": {
+            "L1-L3": [
+              [
+                "Tower lobby",
+                "rest"
+              ]
+            ],
+            "L4-L8": [
+              [
+                "Yard planning floor",
+                "rest"
+              ]
+            ],
+            "L9": [
+              [
+                "Yard control cab (360° glass)",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Airside apron",
+          "x": 0,
+          "y": 495,
+          "w": 700,
+          "d": 55,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            340,
+            120
+          ],
+          [
+            360,
+            120
+          ]
+        ],
+        [
+          "Crew gate",
+          [
+            440,
+            440
+          ],
+          [
+            460,
+            440
+          ]
+        ]
+      ],
       "structure": "Concrete frame on a 9 m grid for the courtyard ring; a slipformed concrete tower core with a steel-framed glass control cab on top.",
       "look": "A three-storey ring of smoked glass and brushed titanium around a planted courtyard, with a slim 42 m (138 ft) tower rising on the airside edge; the tower ends in a faceted glass cab that is lit blue-white so pilots can find it from anywhere in the yards.",
       "entrances": "Main entrance from the forecourt on the port side; crew gate straight onto the airside apron beside the tower.",
@@ -51,28 +622,269 @@
       "interior": "Four wings round a garden courtyard. Ground floor: lobby and café on the entrance side, crew check-in and lounge on the bow side, weather and flight planning on the stern side, briefing rooms and the crew gate on the airside. Upstairs: the dispatch floor, scheduling, training and offices. The tower holds planning floors and the yard control cab at the top."
     },
     {
-      "id": "P8-03", "name": "Fuel Farm",
-      "levels": [["L1", "Ground", 0, 8], ["L2", "Tank tops", 8, 8]],
+      "id": "P8-03",
+      "name": "Fuel Farm",
+      "levels": [
+        [
+          "L1",
+          "Ground",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Tank tops",
+          8,
+          8
+        ]
+      ],
       "parts": [
-        {"name": "Tank bund (spill wall)", "x": 50, "y": 50, "w": 480, "d": 380, "layout": "outdoor"},
-        {"name": "T1", "x": 80, "y": 80, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T1", "levels": ["L1", "L2"]},
-        {"name": "T2", "x": 195, "y": 80, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T2", "levels": ["L1", "L2"]},
-        {"name": "T3", "x": 310, "y": 80, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T3", "levels": ["L1", "L2"]},
-        {"name": "T4", "x": 425, "y": 80, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T4", "levels": ["L1", "L2"]},
-        {"name": "T5", "x": 80, "y": 200, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T5", "levels": ["L1", "L2"]},
-        {"name": "T6", "x": 195, "y": 200, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T6", "levels": ["L1", "L2"]},
-        {"name": "T7", "x": 310, "y": 200, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T7", "levels": ["L1", "L2"]},
-        {"name": "T8", "x": 425, "y": 200, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T8", "levels": ["L1", "L2"]},
-        {"name": "T9", "x": 80, "y": 320, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T9", "levels": ["L1", "L2"]},
-        {"name": "T10", "x": 195, "y": 320, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T10", "levels": ["L1", "L2"]},
-        {"name": "T11", "x": 310, "y": 320, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T11", "levels": ["L1", "L2"]},
-        {"name": "T12", "x": 425, "y": 320, "w": 44, "d": 44, "layout": "hall", "room": "Fuel tank T12", "levels": ["L1", "L2"]},
-        {"name": "Pump house", "x": 560, "y": 70, "w": 120, "d": 40, "levels": ["L1"], "corridor": 4,
-         "rooms": {"L1": [["Hydrant pumps", 2400], ["Filter and water-separator room", 1200], ["Switch room", 400], ["Spares store", "rest"]]}},
-        {"name": "Control and foam house", "x": 560, "y": 140, "w": 120, "d": 30, "levels": ["L1"], "corridor": 3,
-         "rooms": {"L1": [["Control room", 600], ["Fuel quality lab", 400], ["Foam concentrate store", 800], ["Crew room", 300], ["Toilets and showers", "rest"]]}},
-        {"name": "Truck loading gantry", "x": 560, "y": 200, "w": 120, "d": 140, "layout": "outdoor"},
-        {"name": "Hydrant valve pit row", "x": 0, "y": 470, "w": 700, "d": 80, "layout": "outdoor"}
+        {
+          "name": "Tank bund (spill wall)",
+          "x": 50,
+          "y": 50,
+          "w": 480,
+          "d": 380,
+          "layout": "outdoor"
+        },
+        {
+          "name": "T1",
+          "x": 80,
+          "y": 80,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T1",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T2",
+          "x": 195,
+          "y": 80,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T2",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T3",
+          "x": 310,
+          "y": 80,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T3",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T4",
+          "x": 425,
+          "y": 80,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T4",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T5",
+          "x": 80,
+          "y": 200,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T5",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T6",
+          "x": 195,
+          "y": 200,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T6",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T7",
+          "x": 310,
+          "y": 200,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T7",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T8",
+          "x": 425,
+          "y": 200,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T8",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T9",
+          "x": 80,
+          "y": 320,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T9",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T10",
+          "x": 195,
+          "y": 320,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T10",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T11",
+          "x": 310,
+          "y": 320,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T11",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "T12",
+          "x": 425,
+          "y": 320,
+          "w": 44,
+          "d": 44,
+          "layout": "hall",
+          "room": "Fuel tank T12",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Pump house",
+          "x": 560,
+          "y": 70,
+          "w": 120,
+          "d": 40,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 4,
+          "rooms": {
+            "L1": [
+              [
+                "Hydrant pumps",
+                2400
+              ],
+              [
+                "Filter and water-separator room",
+                1200
+              ],
+              [
+                "Switch room",
+                400
+              ],
+              [
+                "Spares store",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Control and foam house",
+          "x": 560,
+          "y": 140,
+          "w": 120,
+          "d": 30,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Control room",
+                600
+              ],
+              [
+                "Fuel quality lab",
+                400
+              ],
+              [
+                "Foam concentrate store",
+                800
+              ],
+              [
+                "Crew room",
+                300
+              ],
+              [
+                "Toilets and showers",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Truck loading gantry",
+          "x": 560,
+          "y": 200,
+          "w": 120,
+          "d": 140,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Hydrant valve pit row",
+          "x": 0,
+          "y": 470,
+          "w": 700,
+          "d": 80,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Twelve welded steel tanks on concrete ring foundations inside a 2 m (6.6 ft) concrete spill wall; pump and control houses in blast-rated concrete.",
       "look": "Twelve squat white-banded steel tanks in a neat grid behind a low concrete wall, with a pipe rack running out to the apron; small graphite pump and control houses with red safety lighting.",
@@ -82,27 +894,242 @@
       "interior": "Tank grid inside the spill wall, with the pump house, control and foam house and truck gantry along the stern side and the hydrant valve pits along the apron edge."
     },
     {
-      "id": "P8-04", "name": "Owner Hangars",
-      "levels": [["L1", "Ground floor", 0, 12], ["L2", "Clubhouse upper", 12, 5]],
-      "parts": [
-        {"name": "Row A (west)", "x": 60, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay A", "levels": ["L1"]},
-        {"name": "Row B", "x": 100, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay B", "levels": ["L1"]},
-        {"name": "Taxilane 1", "x": 140, "y": 40, "w": 110, "d": 960, "layout": "outdoor"},
-        {"name": "Row C", "x": 250, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay C", "levels": ["L1"]},
-        {"name": "Row D", "x": 290, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay D", "levels": ["L1"]},
-        {"name": "Taxilane 2", "x": 330, "y": 40, "w": 110, "d": 960, "layout": "outdoor"},
-        {"name": "Row E", "x": 440, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay E", "levels": ["L1"]},
-        {"name": "Row F", "x": 480, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay F", "levels": ["L1"]},
-        {"name": "Taxilane 3", "x": 520, "y": 40, "w": 110, "d": 960, "layout": "outdoor"},
-        {"name": "Row G", "x": 630, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay G", "levels": ["L1"]},
-        {"name": "Row H", "x": 670, "y": 40, "w": 40, "d": 960, "layout": "bays", "bays": 32, "bay_name": "Bay H", "levels": ["L1"]},
-        {"name": "Taxilane 4", "x": 710, "y": 40, "w": 80, "d": 960, "layout": "outdoor"},
-        {"name": "Owners' clubhouse", "x": 820, "y": 120, "w": 140, "d": 500, "levels": ["L1", "L2"], "corridor": 6, "cores": 2, "corridor_name": "Clubhouse hall",
-         "rooms": {"L1": [["Owners' lounge", 4000], ["Leasing office", 1200], ["Pilot shop", 1600], ["Café", 1500], ["Flight planning room", 1000], ["Lockers and showers", 1200], ["Owner stores", "rest"]],
-                   "L2": [["Members' rooms", 60, 30], ["Function room", 3000], ["Offices", "rest"]]}},
-        {"name": "Visitor parking", "x": 820, "y": 660, "w": 140, "d": 380, "layout": "outdoor"}
+      "id": "P8-04",
+      "name": "Owner Hangars",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          12
+        ],
+        [
+          "L2",
+          "Clubhouse upper",
+          12,
+          5
+        ]
       ],
-      "doors": [["Clubhouse entrance", [880, 620], [900, 620]]],
+      "parts": [
+        {
+          "name": "Row A (west)",
+          "x": 60,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay A",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Row B",
+          "x": 100,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay B",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Taxilane 1",
+          "x": 140,
+          "y": 40,
+          "w": 110,
+          "d": 960,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Row C",
+          "x": 250,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay C",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Row D",
+          "x": 290,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay D",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Taxilane 2",
+          "x": 330,
+          "y": 40,
+          "w": 110,
+          "d": 960,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Row E",
+          "x": 440,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay E",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Row F",
+          "x": 480,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay F",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Taxilane 3",
+          "x": 520,
+          "y": 40,
+          "w": 110,
+          "d": 960,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Row G",
+          "x": 630,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay G",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Row H",
+          "x": 670,
+          "y": 40,
+          "w": 40,
+          "d": 960,
+          "layout": "bays",
+          "bays": 32,
+          "bay_name": "Bay H",
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Taxilane 4",
+          "x": 710,
+          "y": 40,
+          "w": 80,
+          "d": 960,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Owners' clubhouse",
+          "x": 820,
+          "y": 120,
+          "w": 140,
+          "d": 500,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 6,
+          "cores": 2,
+          "corridor_name": "Clubhouse hall",
+          "rooms": {
+            "L1": [
+              [
+                "Owners' lounge",
+                4000
+              ],
+              [
+                "Leasing office",
+                1200
+              ],
+              [
+                "Pilot shop",
+                1600
+              ],
+              [
+                "Café",
+                1500
+              ],
+              [
+                "Flight planning room",
+                1000
+              ],
+              [
+                "Lockers and showers",
+                1200
+              ],
+              [
+                "Owner stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Members' rooms",
+                60,
+                30
+              ],
+              [
+                "Function room",
+                3000
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Visitor parking",
+          "x": 820,
+          "y": 660,
+          "w": 140,
+          "d": 380,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Clubhouse entrance",
+          [
+            880,
+            620
+          ],
+          [
+            900,
+            620
+          ]
+        ]
+      ],
       "structure": "Eight rows of steel-framed hangar bays, 30 × 40 m (98 × 131 ft) each, built back to back in pairs; a two-storey timber-and-steel clubhouse.",
       "look": "Long low rows of gunmetal hangars with numbered roller doors, each lit by its own white door light; the clubhouse is warm timber and glass with a deep roof terrace looking over the taxilanes.",
       "entrances": "Every bay has its own roller door onto a taxilane; the taxilanes open onto the Yard Taxiway at the port end. Clubhouse entrance from the visitor parking.",
@@ -111,21 +1138,201 @@
       "interior": "Four pairs of hangar rows with a taxilane between each pair, running from the taxiway to the back of the lot. The clubhouse on the stern side has the lounge, leasing office, pilot shop, café and flight planning on the ground floor and members' rooms and a function room upstairs."
     },
     {
-      "id": "P8-05", "name": "Shuttle Yards Fire Station",
-      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 4.5], ["L3", "Level 3", 9, 4.5], ["L4", "Watch cab", 13.5, 4.5]],
-      "parts": [
-        {"name": "Airside forecourt", "x": 0, "y": 0, "w": 400, "d": 40, "layout": "outdoor"},
-        {"name": "Appliance hall", "x": 60, "y": 40, "w": 220, "d": 70, "layout": "bays", "bays": 8, "bay_name": "Crash tender bay", "levels": ["L1", "L2"]},
-        {"name": "Crew block", "x": 60, "y": 110, "w": 220, "d": 40, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Watch room", 200], ["Breathing apparatus room", 300], ["Decontamination", 250], ["Equipment store", 900], ["Workshop", "rest"]],
-                   "L2": [["Bunk rooms", 16, 24], ["Kitchen", 200], ["Mess", 500], ["Gym", 400]],
-                   "L3": [["Station office", 300], ["Training room", 400], ["Fire safety office", 300], ["Offices", "rest"]]}},
-        {"name": "Watch tower", "x": 280, "y": 40, "w": 14, "d": 14, "layout": "hall", "room": "Watch tower", "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Training ground", "x": 300, "y": 160, "w": 90, "d": 180, "layout": "outdoor"},
-        {"name": "Fire training rig", "x": 320, "y": 200, "w": 40, "d": 30, "layout": "hall", "room": "Fire training rig (mock craft)", "levels": ["L1", "L2"]},
-        {"name": "Drill yard", "x": 60, "y": 160, "w": 220, "d": 170, "layout": "outdoor"}
+      "id": "P8-05",
+      "name": "Shuttle Yards Fire Station",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Level 2",
+          4.5,
+          4.5
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4.5
+        ],
+        [
+          "L4",
+          "Watch cab",
+          13.5,
+          4.5
+        ]
       ],
-      "doors": [["Appliance doors (airside)", [60, 40], [280, 40]], ["Appliance doors (road side)", [60, 110], [100, 110]]],
+      "parts": [
+        {
+          "name": "Airside forecourt",
+          "x": 0,
+          "y": 0,
+          "w": 400,
+          "d": 40,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Appliance hall",
+          "x": 60,
+          "y": 40,
+          "w": 220,
+          "d": 70,
+          "layout": "bays",
+          "bays": 8,
+          "bay_name": "Crash tender bay",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Crew block",
+          "x": 60,
+          "y": 110,
+          "w": 220,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Watch room",
+                200
+              ],
+              [
+                "Breathing apparatus room",
+                300
+              ],
+              [
+                "Decontamination",
+                250
+              ],
+              [
+                "Equipment store",
+                900
+              ],
+              [
+                "Workshop",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Bunk rooms",
+                16,
+                24
+              ],
+              [
+                "Kitchen",
+                200
+              ],
+              [
+                "Mess",
+                500
+              ],
+              [
+                "Gym",
+                400
+              ]
+            ],
+            "L3": [
+              [
+                "Station office",
+                300
+              ],
+              [
+                "Training room",
+                400
+              ],
+              [
+                "Fire safety office",
+                300
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Watch tower",
+          "x": 280,
+          "y": 40,
+          "w": 14,
+          "d": 14,
+          "layout": "hall",
+          "room": "Watch tower",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Training ground",
+          "x": 300,
+          "y": 160,
+          "w": 90,
+          "d": 180,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Fire training rig",
+          "x": 320,
+          "y": 200,
+          "w": 40,
+          "d": 30,
+          "layout": "hall",
+          "room": "Fire training rig (mock craft)",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Drill yard",
+          "x": 60,
+          "y": 160,
+          "w": 220,
+          "d": 170,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Appliance doors (airside)",
+          [
+            60,
+            40
+          ],
+          [
+            280,
+            40
+          ]
+        ],
+        [
+          "Appliance doors (road side)",
+          [
+            60,
+            110
+          ],
+          [
+            100,
+            110
+          ]
+        ]
+      ],
       "structure": "Steel portal frame over a drive-through appliance hall, 9 m (30 ft) clear; concrete frame for the three-storey crew block and the watch tower.",
       "look": "A long low hall of glass bay doors framed in red-trimmed graphite panels, with a slim 18 m (59 ft) watch tower at one end lit red at the top; the crew block above has deep-set windows.",
       "entrances": "Eight glass appliance doors straight onto the airside forecourt and the taxiway; crew door and road-side exit on the starboard side.",
@@ -134,18 +1341,160 @@
       "interior": "A drive-through appliance hall with 8 bays facing the taxiway. Behind it the crew block: watch room, breathing apparatus and decontamination on the ground floor, bunk rooms, kitchen, mess and gym on level 2, offices and training on level 3. Drill yard and a mock-craft training rig behind."
     },
     {
-      "id": "P8-06", "name": "Shuttle Yards Police Post",
-      "levels": [["L1", "Ground floor", 0, 4.2], ["L2", "Upper floor", 4.2, 4.2]],
-      "parts": [
-        {"name": "Main block", "x": 60, "y": 50, "w": 200, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Front desk and waiting", 600], ["Interview rooms", 30, 4], ["Holding cells", 12, 8], ["Custody desk", 200], ["Duty office", 400], ["Toilets", "rest"]],
-                   "L2": [["Open office", 2500], ["Briefing room", 300], ["Control room", 400], ["Lockers and showers", 500], ["Canteen", "rest"]]}},
-        {"name": "Garage wing", "x": 220, "y": 90, "w": 40, "d": 110, "levels": ["L1"], "corridor": 4,
-         "rooms": {"L1": [["Vehicle garage", 2200], ["Evidence store", 600], ["Armoury", 200], ["Kit store", "rest"]]}},
-        {"name": "Secure vehicle yard", "x": 60, "y": 90, "w": 160, "d": 110, "layout": "outdoor"},
-        {"name": "Public plaza", "x": 260, "y": 20, "w": 120, "d": 100, "layout": "outdoor"}
+      "id": "P8-06",
+      "name": "Shuttle Yards Police Post",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.2
+        ],
+        [
+          "L2",
+          "Upper floor",
+          4.2,
+          4.2
+        ]
       ],
-      "doors": [["Public entrance", [255, 60], [255, 80]], ["Vehicle gate", [60, 200], [100, 200]]],
+      "parts": [
+        {
+          "name": "Main block",
+          "x": 60,
+          "y": 50,
+          "w": 200,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Front desk and waiting",
+                600
+              ],
+              [
+                "Interview rooms",
+                30,
+                4
+              ],
+              [
+                "Holding cells",
+                12,
+                8
+              ],
+              [
+                "Custody desk",
+                200
+              ],
+              [
+                "Duty office",
+                400
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Open office",
+                2500
+              ],
+              [
+                "Briefing room",
+                300
+              ],
+              [
+                "Control room",
+                400
+              ],
+              [
+                "Lockers and showers",
+                500
+              ],
+              [
+                "Canteen",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garage wing",
+          "x": 220,
+          "y": 90,
+          "w": 40,
+          "d": 110,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 4,
+          "rooms": {
+            "L1": [
+              [
+                "Vehicle garage",
+                2200
+              ],
+              [
+                "Evidence store",
+                600
+              ],
+              [
+                "Armoury",
+                200
+              ],
+              [
+                "Kit store",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Secure vehicle yard",
+          "x": 60,
+          "y": 90,
+          "w": 160,
+          "d": 110,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Public plaza",
+          "x": 260,
+          "y": 20,
+          "w": 120,
+          "d": 100,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Public entrance",
+          [
+            255,
+            60
+          ],
+          [
+            255,
+            80
+          ]
+        ],
+        [
+          "Vehicle gate",
+          [
+            60,
+            200
+          ],
+          [
+            100,
+            200
+          ]
+        ]
+      ],
       "structure": "Reinforced concrete frame on an 8 m grid with hardened ground-floor walls.",
       "look": "A compact two-storey block of dark basalt-grey panels with narrow vertical windows and a lit blue band over the glass entrance.",
       "entrances": "Public entrance from the small plaza on the stern side; secure vehicle gate at the back.",
@@ -154,20 +1503,195 @@
       "interior": "Front desk, interview rooms, custody and holding cells on the ground floor; open office, control and briefing rooms upstairs; a garage wing with evidence store and armoury around a secure yard."
     },
     {
-      "id": "P8-07", "name": "Parts & Avionics",
-      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 5], ["L3", "Level 3", 10, 5], ["L4", "Rack top", 15, 5]],
-      "parts": [
-        {"name": "Airside dispatch", "x": 40, "y": 0, "w": 720, "d": 60, "layout": "outdoor"},
-        {"name": "Automated parts store", "x": 40, "y": 80, "w": 400, "d": 300, "layout": "bays", "bays": 5, "bay_name": "Robot rack aisle", "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Avionics labs", "x": 480, "y": 80, "w": 280, "d": 44, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Avionics test benches", 3000], ["Clean room", 1200], ["Antenna and radar lab", 1000], ["Calibration lab", 800], ["Static-safe store", "rest"]],
-                   "L2-L3": [["Repair benches", 4000], ["Software and data lab", 1200], ["Engineers' offices", "rest"]]}},
-        {"name": "Trade counter and offices", "x": 480, "y": 160, "w": 280, "d": 30, "levels": ["L1", "L2"], "corridor": 3, "cores": 1,
-         "rooms": {"L1": [["Trade counter", 1200], ["Will-call lockers", 400], ["Goods-in inspection", 1500], ["Returns", "rest"]], "L2": [["Purchasing", 1500], ["Offices", "rest"]]}},
-        {"name": "Truck docks", "x": 40, "y": 380, "w": 400, "d": 90, "layout": "outdoor"},
-        {"name": "Staff garden", "x": 480, "y": 210, "w": 280, "d": 170, "layout": "outdoor"}
+      "id": "P8-07",
+      "name": "Parts & Avionics",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          5
+        ],
+        [
+          "L3",
+          "Level 3",
+          10,
+          5
+        ],
+        [
+          "L4",
+          "Rack top",
+          15,
+          5
+        ]
       ],
-      "doors": [["Airside dispatch doors", [100, 80], [380, 80]], ["Trade counter entrance", [610, 190], [630, 190]]],
+      "parts": [
+        {
+          "name": "Airside dispatch",
+          "x": 40,
+          "y": 0,
+          "w": 720,
+          "d": 60,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Automated parts store",
+          "x": 40,
+          "y": 80,
+          "w": 400,
+          "d": 300,
+          "layout": "bays",
+          "bays": 5,
+          "bay_name": "Robot rack aisle",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Avionics labs",
+          "x": 480,
+          "y": 80,
+          "w": 280,
+          "d": 44,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Avionics test benches",
+                3000
+              ],
+              [
+                "Clean room",
+                1200
+              ],
+              [
+                "Antenna and radar lab",
+                1000
+              ],
+              [
+                "Calibration lab",
+                800
+              ],
+              [
+                "Static-safe store",
+                "rest"
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Repair benches",
+                4000
+              ],
+              [
+                "Software and data lab",
+                1200
+              ],
+              [
+                "Engineers' offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Trade counter and offices",
+          "x": 480,
+          "y": 160,
+          "w": 280,
+          "d": 30,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Trade counter",
+                1200
+              ],
+              [
+                "Will-call lockers",
+                400
+              ],
+              [
+                "Goods-in inspection",
+                1500
+              ],
+              [
+                "Returns",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Purchasing",
+                1500
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Truck docks",
+          "x": 40,
+          "y": 380,
+          "w": 400,
+          "d": 90,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Staff garden",
+          "x": 480,
+          "y": 210,
+          "w": 280,
+          "d": 170,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Airside dispatch doors",
+          [
+            100,
+            80
+          ],
+          [
+            380,
+            80
+          ]
+        ],
+        [
+          "Trade counter entrance",
+          [
+            610,
+            190
+          ],
+          [
+            630,
+            190
+          ]
+        ]
+      ],
       "structure": "A 20 m (66 ft) steel high-bay store with robot rack aisles; a three-storey concrete lab wing with vibration-isolated floors.",
       "look": "A tall, almost windowless box in silver-grey ribbed metal with a band of white light around the top; beside it a glass-fronted lab wing showing the benches inside.",
       "entrances": "Airside dispatch doors straight to the apron; truck docks on the starboard side; trade counter entrance on the stern side.",
@@ -176,21 +1700,220 @@
       "interior": "An automated high-bay parts store with five robot aisles, airside dispatch on one side and truck docks on the other. The lab wing holds avionics test benches, a clean room, antenna and calibration labs and repair floors; the trade counter, goods-in inspection and purchasing sit beside it."
     },
     {
-      "id": "P8-08", "name": "Paint & Refit",
-      "levels": [["L1", "Ground floor", 0, 5.5], ["L2", "Level 2", 5.5, 5.5], ["L3", "Hall upper", 11, 5.5], ["L4", "Hall roof space", 16.5, 5.5]],
-      "parts": [
-        {"name": "Apron", "x": 0, "y": 0, "w": 600, "d": 60, "layout": "outdoor"},
-        {"name": "Paint hall 1", "x": 40, "y": 60, "w": 160, "d": 140, "layout": "hall", "room": "Paint hall 1 (sealed booth)", "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Paint hall 2", "x": 220, "y": 60, "w": 160, "d": 140, "layout": "hall", "room": "Paint hall 2 (sealed booth)", "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Refit hangar", "x": 400, "y": 60, "w": 160, "d": 200, "layout": "bays", "bays": 2, "bay_name": "Refit bay", "levels": ["L1", "L2", "L3", "L4"]},
-        {"name": "Prep bays", "x": 40, "y": 200, "w": 340, "d": 60, "layout": "bays", "bays": 4, "bay_name": "Sanding and masking bay", "levels": ["L1", "L2"]},
-        {"name": "Support block", "x": 40, "y": 290, "w": 520, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Paint mixing room", 1200], ["Solvent store (blast-proof)", 800], ["Masking and stencil shop", 1200], ["Upholstery and interiors shop", 3000], ["Changing rooms", 400, 2], ["Stores", "rest"]],
-                   "L2": [["Design studio (liveries)", 1500], ["Quality office", 600], ["Canteen", 1000], ["Offices", "rest"]]}},
-        {"name": "Exhaust air treatment", "x": 420, "y": 360, "w": 140, "d": 100, "layout": "hall", "room": "Exhaust air treatment plant", "levels": ["L1", "L2"]},
-        {"name": "Service yard", "x": 40, "y": 340, "w": 360, "d": 140, "layout": "outdoor"}
+      "id": "P8-08",
+      "name": "Paint & Refit",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5.5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5.5,
+          5.5
+        ],
+        [
+          "L3",
+          "Hall upper",
+          11,
+          5.5
+        ],
+        [
+          "L4",
+          "Hall roof space",
+          16.5,
+          5.5
+        ]
       ],
-      "doors": [["Paint hall 1 door", [50, 60], [190, 60]], ["Paint hall 2 door", [230, 60], [370, 60]], ["Refit hangar door", [410, 60], [550, 60]]],
+      "parts": [
+        {
+          "name": "Apron",
+          "x": 0,
+          "y": 0,
+          "w": 600,
+          "d": 60,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Paint hall 1",
+          "x": 40,
+          "y": 60,
+          "w": 160,
+          "d": 140,
+          "layout": "hall",
+          "room": "Paint hall 1 (sealed booth)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Paint hall 2",
+          "x": 220,
+          "y": 60,
+          "w": 160,
+          "d": 140,
+          "layout": "hall",
+          "room": "Paint hall 2 (sealed booth)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Refit hangar",
+          "x": 400,
+          "y": 60,
+          "w": 160,
+          "d": 200,
+          "layout": "bays",
+          "bays": 2,
+          "bay_name": "Refit bay",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "name": "Prep bays",
+          "x": 40,
+          "y": 200,
+          "w": 340,
+          "d": 60,
+          "layout": "bays",
+          "bays": 4,
+          "bay_name": "Sanding and masking bay",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Support block",
+          "x": 40,
+          "y": 290,
+          "w": 520,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Paint mixing room",
+                1200
+              ],
+              [
+                "Solvent store (blast-proof)",
+                800
+              ],
+              [
+                "Masking and stencil shop",
+                1200
+              ],
+              [
+                "Upholstery and interiors shop",
+                3000
+              ],
+              [
+                "Changing rooms",
+                400,
+                2
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Design studio (liveries)",
+                1500
+              ],
+              [
+                "Quality office",
+                600
+              ],
+              [
+                "Canteen",
+                1000
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Exhaust air treatment",
+          "x": 420,
+          "y": 360,
+          "w": 140,
+          "d": 100,
+          "layout": "hall",
+          "room": "Exhaust air treatment plant",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Service yard",
+          "x": 40,
+          "y": 340,
+          "w": 360,
+          "d": 140,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Paint hall 1 door",
+          [
+            50,
+            60
+          ],
+          [
+            190,
+            60
+          ]
+        ],
+        [
+          "Paint hall 2 door",
+          [
+            230,
+            60
+          ],
+          [
+            370,
+            60
+          ]
+        ],
+        [
+          "Refit hangar door",
+          [
+            410,
+            60
+          ],
+          [
+            550,
+            60
+          ]
+        ]
+      ],
       "structure": "Sealed steel-framed halls, 22 m (72 ft) clear, with pressurised air and fire-rated walls; a two-storey concrete support block.",
       "look": "Two smooth white sealed paint halls and a darker refit hangar side by side, their doors striped with colour test panels; filter stacks and the air treatment plant behind.",
       "entrances": "Hall doors face the apron and the taxiway; staff and goods enter the support block from the service yard.",
@@ -199,19 +1922,181 @@
       "interior": "Two sealed paint halls and a two-bay refit hangar along the apron, four sanding and masking bays behind the paint halls, and a support block with paint mixing, solvent store, upholstery and interiors shop, livery design studio and canteen."
     },
     {
-      "id": "P8-09", "name": "Yard Offices",
-      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4], ["L3", "Level 3", 9, 4], ["L4", "Level 4", 13, 4], ["L5", "Level 5", 17, 4]],
-      "parts": [
-        {"name": "Road wing", "x": 60, "y": 290, "w": 330, "d": 44, "levels": ["L1", "L2", "L3", "L4", "L5"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Entrance hall", 1500], ["Customs and permits desk", 800], ["Leasing and berth rights office", 1200], ["Bank and insurance desk", 600], ["Café", 800], ["Toilets", "rest"]],
-                   "L2-L5": [["Open offices", 6000], ["Meeting rooms", 100, 4], ["Private offices", 25, 12], ["Break room", 200]]}},
-        {"name": "Garden wing", "x": 346, "y": 70, "w": 44, "d": 220, "levels": ["L1", "L2", "L3", "L4"], "corridor": 4, "cores": 1,
-         "rooms": {"L1": [["Conference hall", 2000], ["Training rooms", 150, 3], ["Kitchen", "rest"]],
-                   "L2-L4": [["Yard management", 3000], ["Records", 800], ["Offices", "rest"]]}},
-        {"name": "Office garden", "x": 60, "y": 70, "w": 286, "d": 220, "layout": "outdoor"},
-        {"name": "Entrance plaza", "x": 60, "y": 334, "w": 330, "d": 100, "layout": "outdoor"}
+      "id": "P8-09",
+      "name": "Yard Offices",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4
+        ],
+        [
+          "L4",
+          "Level 4",
+          13,
+          4
+        ],
+        [
+          "L5",
+          "Level 5",
+          17,
+          4
+        ]
       ],
-      "doors": [["Main entrance", [215, 334], [235, 334]]],
+      "parts": [
+        {
+          "name": "Road wing",
+          "x": 60,
+          "y": 290,
+          "w": 330,
+          "d": 44,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Entrance hall",
+                1500
+              ],
+              [
+                "Customs and permits desk",
+                800
+              ],
+              [
+                "Leasing and berth rights office",
+                1200
+              ],
+              [
+                "Bank and insurance desk",
+                600
+              ],
+              [
+                "Café",
+                800
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2-L5": [
+              [
+                "Open offices",
+                6000
+              ],
+              [
+                "Meeting rooms",
+                100,
+                4
+              ],
+              [
+                "Private offices",
+                25,
+                12
+              ],
+              [
+                "Break room",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden wing",
+          "x": 346,
+          "y": 70,
+          "w": 44,
+          "d": 220,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Conference hall",
+                2000
+              ],
+              [
+                "Training rooms",
+                150,
+                3
+              ],
+              [
+                "Kitchen",
+                "rest"
+              ]
+            ],
+            "L2-L4": [
+              [
+                "Yard management",
+                3000
+              ],
+              [
+                "Records",
+                800
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Office garden",
+          "x": 60,
+          "y": 70,
+          "w": 286,
+          "d": 220,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Entrance plaza",
+          "x": 60,
+          "y": 334,
+          "w": 330,
+          "d": 100,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            215,
+            334
+          ],
+          [
+            235,
+            334
+          ]
+        ]
+      ],
       "structure": "Steel frame with timber-concrete composite floors on a 7.5 m grid.",
       "look": "An L-shaped five-storey office with full-height smart glass behind slim bronze-coloured fins, wrapped around a sunken garden; the top floor steps back for a roof terrace.",
       "entrances": "Main entrance from the plaza facing the Yard Road; garden doors on the courtyard side.",
@@ -220,16 +2105,117 @@
       "interior": "An L of two office wings round a garden. Ground floor: entrance hall, customs and permits desk, leasing and berth rights office, bank and insurance desk, café, conference hall and training rooms. Upper floors: open offices, meeting rooms, private offices, yard management and records."
     },
     {
-      "id": "P8-10", "name": "Shuttle Yards Utility Plant",
-      "levels": [["L1", "Ground floor", 0, 8], ["L2", "Upper plant", 8, 6]],
-      "parts": [
-        {"name": "Substation", "x": 20, "y": 30, "w": 160, "d": 110, "levels": ["L1"], "corridor": 6,
-         "rooms": {"L1": [["Transformer bays", 600, 6], ["Switch room", 2500], ["Battery room", 1200], ["Control room", 600], ["Cable room", "rest"]]}},
-        {"name": "Chiller and air hall", "x": 20, "y": 160, "w": 160, "d": 160, "layout": "bays", "bays": 3, "bay_names": ["Chiller hall", "Air handling hall", "Heat exchanger hall"], "levels": ["L1", "L2"]},
-        {"name": "Water tank 1", "x": 40, "y": 350, "w": 50, "d": 70, "layout": "hall", "room": "Water tank 1", "levels": ["L1", "L2"]},
-        {"name": "Water tank 2", "x": 110, "y": 350, "w": 50, "d": 70, "layout": "hall", "room": "Water tank 2", "levels": ["L1", "L2"]}
+      "id": "P8-10",
+      "name": "Shuttle Yards Utility Plant",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Upper plant",
+          8,
+          6
+        ]
       ],
-      "doors": [["Service gate", [180, 80], [180, 100]]],
+      "parts": [
+        {
+          "name": "Substation",
+          "x": 20,
+          "y": 30,
+          "w": 160,
+          "d": 110,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 6,
+          "rooms": {
+            "L1": [
+              [
+                "Transformer bays",
+                600,
+                6
+              ],
+              [
+                "Switch room",
+                2500
+              ],
+              [
+                "Battery room",
+                1200
+              ],
+              [
+                "Control room",
+                600
+              ],
+              [
+                "Cable room",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Chiller and air hall",
+          "x": 20,
+          "y": 160,
+          "w": 160,
+          "d": 160,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Chiller hall",
+            "Air handling hall",
+            "Heat exchanger hall"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Water tank 1",
+          "x": 40,
+          "y": 350,
+          "w": 50,
+          "d": 70,
+          "layout": "hall",
+          "room": "Water tank 1",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Water tank 2",
+          "x": 110,
+          "y": 350,
+          "w": 50,
+          "d": 70,
+          "layout": "hall",
+          "room": "Water tank 2",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "doors": [
+        [
+          "Service gate",
+          [
+            180,
+            80
+          ],
+          [
+            180,
+            100
+          ]
+        ]
+      ],
       "structure": "Heavy concrete plant floors and blast walls between transformer bays; steel roof over the chiller hall.",
       "look": "Plain graphite metal sheds with louvred walls and two round-topped water tanks, lit only by small amber service lights.",
       "entrances": "Service gate and transformer doors on the stern side; tanker access to the water tanks.",
@@ -238,13 +2224,90 @@
       "interior": "A substation with six transformer bays, switch, battery and control rooms; a three-bay chiller, air handling and heat exchanger hall; two water tanks at the back."
     },
     {
-      "id": "P8-11", "name": "Shuttle Yards Service Shaft",
-      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "id": "P8-11",
+      "name": "Shuttle Yards Service Shaft",
+      "levels": [
+        [
+          "LB1",
+          "Shaft head",
+          -10,
+          10
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          7
+        ],
+        [
+          "L2",
+          "Lift machine level",
+          7,
+          6
+        ]
+      ],
       "parts": [
-        {"name": "Control house", "x": 25, "y": 90, "w": 100, "d": 30, "levels": ["L1", "L2"], "corridor": 3,
-         "rooms": {"L1": [["Shaft control room", 600], ["Crew room", 300], ["Stores", "rest"]], "L2": [["Ventilation fans", "rest"]]}},
-        {"name": "Shaft hall", "x": 25, "y": 130, "w": 100, "d": 160, "layout": "bays", "bays": 3, "bay_names": ["Vehicle lift 1", "Goods lift hall", "Vehicle lift 2"], "levels": ["LB1", "L1", "L2"]},
-        {"name": "Vehicle ramp and queue", "x": 25, "y": 300, "w": 100, "d": 140, "layout": "outdoor"}
+        {
+          "name": "Control house",
+          "x": 25,
+          "y": 90,
+          "w": 100,
+          "d": 30,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Shaft control room",
+                600
+              ],
+              [
+                "Crew room",
+                300
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Ventilation fans",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Shaft hall",
+          "x": 25,
+          "y": 130,
+          "w": 100,
+          "d": 160,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Vehicle lift 1",
+            "Goods lift hall",
+            "Vehicle lift 2"
+          ],
+          "levels": [
+            "LB1",
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Vehicle ramp and queue",
+          "x": 25,
+          "y": 300,
+          "w": 100,
+          "d": 140,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house with crane rails over the lifts.",
       "look": "A tall windowless head house in graphite metal with big louvres and yellow-striped lift doors.",
@@ -254,38 +2317,317 @@
       "interior": "Control house with shaft control and fans; the shaft hall holds two vehicle lifts and a goods lift that run down to the service layer; vehicles queue on the ramp behind."
     },
     {
-      "id": "P8-12", "name": "Shuttle Yards Crew Rest",
-      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 3.4], ["L3", "Level 3", 7.9, 3.4], ["L4", "Level 4", 11.3, 3.4]],
-      "parts": [
-        {"name": "Road block", "x": 40, "y": 360, "w": 320, "d": 40, "levels": ["L1", "L2", "L3", "L4"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Reception", 400], ["Canteen", 2000], ["Kitchen", 600], ["Lounge", 1200], ["Gym", 900], ["Laundry", 400], ["Lockers", "rest"]],
-                   "L2-L4": [["Rest room", 22, 60], ["Housekeeping", 80], ["Quiet lounge", "rest"]]}},
-        {"name": "Wing 1", "x": 40, "y": 60, "w": 16, "d": 300, "levels": ["L1", "L2", "L3", "L4"], "corridor": 2.4, "cores": 1, "core_len": 8,
-         "rooms": {"all": [["Rest room", 21, 80]]}},
-        {"name": "Garden 1", "x": 56, "y": 60, "w": 136, "d": 300, "layout": "outdoor"},
-        {"name": "Wing 2", "x": 192, "y": 60, "w": 16, "d": 300, "levels": ["L1", "L2", "L3", "L4"], "corridor": 2.4, "cores": 1, "core_len": 8,
-         "rooms": {"all": [["Rest room", 21, 80]]}},
-        {"name": "Garden 2", "x": 208, "y": 60, "w": 136, "d": 300, "layout": "outdoor"},
-        {"name": "Wing 3", "x": 344, "y": 60, "w": 16, "d": 300, "levels": ["L1", "L2", "L3", "L4"], "corridor": 2.4, "cores": 1, "core_len": 8,
-         "rooms": {"all": [["Rest room", 21, 80]]}}
+      "id": "P8-12",
+      "name": "Shuttle Yards Crew Rest",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Level 2",
+          4.5,
+          3.4
+        ],
+        [
+          "L3",
+          "Level 3",
+          7.9,
+          3.4
+        ],
+        [
+          "L4",
+          "Level 4",
+          11.3,
+          3.4
+        ]
       ],
-      "doors": [["Main entrance", [190, 400], [210, 400]]],
+      "parts": [
+        {
+          "name": "Road block",
+          "x": 40,
+          "y": 350,
+          "w": 320,
+          "d": 50,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Reception",
+                400
+              ],
+              [
+                "Canteen",
+                2000
+              ],
+              [
+                "Kitchen",
+                600
+              ],
+              [
+                "Lounge",
+                1200
+              ],
+              [
+                "Gym",
+                900
+              ],
+              [
+                "Laundry",
+                400
+              ],
+              [
+                "Lockers",
+                "rest"
+              ]
+            ],
+            "L2-L4": [
+              [
+                "Rest room",
+                22,
+                60
+              ],
+              [
+                "Housekeeping",
+                80
+              ],
+              [
+                "Quiet lounge",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Wing 1",
+          "x": 40,
+          "y": 50,
+          "w": 24,
+          "d": 300,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "core_len": 8,
+          "rooms": {
+            "all": [
+              [
+                "Rest room (two beds)",
+                40,
+                60
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden 1",
+          "x": 64,
+          "y": 50,
+          "w": 124,
+          "d": 300,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Wing 2",
+          "x": 188,
+          "y": 50,
+          "w": 24,
+          "d": 300,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "core_len": 8,
+          "rooms": {
+            "all": [
+              [
+                "Rest room (two beds)",
+                40,
+                60
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden 2",
+          "x": 212,
+          "y": 50,
+          "w": 124,
+          "d": 300,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Wing 3",
+          "x": 336,
+          "y": 50,
+          "w": 24,
+          "d": 300,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "core_len": 8,
+          "rooms": {
+            "all": [
+              [
+                "Rest room (two beds)",
+                40,
+                60
+              ]
+            ]
+          }
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            190,
+            400
+          ],
+          [
+            210,
+            400
+          ]
+        ]
+      ],
       "structure": "Cross-laminated timber floors on a concrete ground floor, 3.4 m (11 ft) storeys.",
-      "look": "Three slim timber-clad sleeping wings reaching toward the taxiway with planted gardens between them, joined by a glazed road-side block; deep window reveals and blackout shutters for day sleepers.",
+      "look": "Three timber-clad sleeping wings reaching toward the taxiway with planted gardens between them, joined by a glazed road-side block; deep window reveals and blackout shutters for day sleepers.",
       "entrances": "Main entrance from the Yard Road side; garden doors from the canteen and lounge.",
-      "capacity": "About 1,100 rest rooms for crews between shifts.",
+      "capacity": "About 1,400 beds in two-bed rest rooms for crews between shifts.",
       "services": "5 stair and lift cores, sound-insulated walls, blackout shutters, staffed reception around the clock.",
       "interior": "A road-side block with reception, canteen, lounge, gym and laundry on the ground floor and rest rooms above; three sleeping wings of single rest rooms on every floor, with gardens between the wings."
     },
     {
-      "id": "P8-14", "name": "Shuttle Yards Pod Depot",
-      "levels": [["L1", "Ground deck", 0, 4.5], ["L2", "Deck 2", 4.5, 4], ["L3", "Deck 3", 8.5, 4]],
+      "id": "P8-14",
+      "name": "Shuttle Yards Pod Depot",
+      "levels": [
+        [
+          "L1",
+          "Ground deck",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Deck 2",
+          4.5,
+          4
+        ],
+        [
+          "L3",
+          "Deck 3",
+          8.5,
+          4
+        ]
+      ],
       "parts": [
-        {"name": "Dispatch office", "x": 30, "y": 30, "w": 260, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 2,
-         "rooms": {"L1": [["Dispatch desk", 600], ["Drivers' room", 800], ["Pod booking hall", 2000], ["Toilets", "rest"]], "L2": [["Fleet control", 1200], ["Offices", "rest"]]}},
-        {"name": "Pod parking decks", "x": 30, "y": 90, "w": 260, "d": 600, "layout": "bays", "bays": 6, "bay_name": "Pod parking and charging", "levels": ["L1", "L2", "L3"]},
-        {"name": "Wash and service", "x": 30, "y": 710, "w": 260, "d": 100, "layout": "bays", "bays": 4, "bay_names": ["Pod wash", "Service bay", "Battery swap", "Tyre and brake bay"], "levels": ["L1"]},
-        {"name": "Pod lanes", "x": 0, "y": 830, "w": 320, "d": 170, "layout": "outdoor"}
+        {
+          "name": "Dispatch office",
+          "x": 30,
+          "y": 30,
+          "w": 260,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Dispatch desk",
+                600
+              ],
+              [
+                "Drivers' room",
+                800
+              ],
+              [
+                "Pod booking hall",
+                2000
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Fleet control",
+                1200
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Pod parking decks",
+          "x": 30,
+          "y": 90,
+          "w": 260,
+          "d": 600,
+          "layout": "bays",
+          "bays": 6,
+          "bay_name": "Pod parking and charging",
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        {
+          "name": "Wash and service",
+          "x": 30,
+          "y": 710,
+          "w": 260,
+          "d": 100,
+          "layout": "bays",
+          "bays": 4,
+          "bay_names": [
+            "Pod wash",
+            "Service bay",
+            "Battery swap",
+            "Tyre and brake bay"
+          ],
+          "levels": [
+            "L1"
+          ]
+        },
+        {
+          "name": "Pod lanes",
+          "x": 0,
+          "y": 830,
+          "w": 320,
+          "d": 170,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Post-tensioned concrete parking decks with ramps at each end; steel canopy over the wash and service bays.",
       "look": "Open-sided parking decks with perforated gunmetal screens and lines of green charging lights; a small glass dispatch office at the front.",
@@ -295,17 +2637,132 @@
       "interior": "Three parking and charging decks, a wash and service block with pod wash, battery swap and repair bays, and a dispatch office with booking hall and fleet control."
     },
     {
-      "id": "P8-18", "name": "Shuttle Yards Training Centre",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Level 3", 12, 4]],
-      "parts": [
-        {"name": "Simulator hall", "x": 30, "y": 40, "w": 220, "d": 160, "layout": "bays", "bays": 8, "bay_name": "Flight simulator", "levels": ["L1", "L2"]},
-        {"name": "Classroom block", "x": 30, "y": 215, "w": 220, "d": 44, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Entrance and reception", 800], ["Briefing rooms", 80, 6], ["Instructors' room", 400], ["Café", "rest"]],
-                   "L2-L3": [["Classrooms", 120, 12], ["Library", 600], ["Exam hall", 800], ["Offices", "rest"]]}},
-        {"name": "Ground school courtyard", "x": 30, "y": 260, "w": 220, "d": 100, "layout": "outdoor"},
-        {"name": "Training hangar", "x": 60, "y": 370, "w": 160, "d": 110, "layout": "hall", "room": "Training hangar (practice craft)", "levels": ["L1", "L2"]}
+      "id": "P8-18",
+      "name": "Shuttle Yards Training Centre",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Level 3",
+          12,
+          4
+        ]
       ],
-      "doors": [["Entrance", [130, 259], [150, 259]]],
+      "parts": [
+        {
+          "name": "Simulator hall",
+          "x": 30,
+          "y": 40,
+          "w": 220,
+          "d": 160,
+          "layout": "bays",
+          "bays": 8,
+          "bay_name": "Flight simulator",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Classroom block",
+          "x": 30,
+          "y": 215,
+          "w": 220,
+          "d": 44,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Entrance and reception",
+                800
+              ],
+              [
+                "Briefing rooms",
+                80,
+                6
+              ],
+              [
+                "Instructors' room",
+                400
+              ],
+              [
+                "Café",
+                "rest"
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Classrooms",
+                120,
+                12
+              ],
+              [
+                "Library",
+                600
+              ],
+              [
+                "Exam hall",
+                800
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ground school courtyard",
+          "x": 30,
+          "y": 260,
+          "w": 220,
+          "d": 100,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Training hangar",
+          "x": 60,
+          "y": 370,
+          "w": 160,
+          "d": 110,
+          "layout": "hall",
+          "room": "Training hangar (practice craft)",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "doors": [
+        [
+          "Entrance",
+          [
+            130,
+            259
+          ],
+          [
+            150,
+            259
+          ]
+        ]
+      ],
       "structure": "Steel frame with isolated slabs under the simulators; concrete classroom block.",
       "look": "A crisp white box for the simulators with a glass classroom block in front, its stair towers lit blue; the training hangar behind has a full-glass door so the practice craft can be seen.",
       "entrances": "Entrance from the courtyard; training hangar door to the yard.",
@@ -314,16 +2771,131 @@
       "interior": "Eight full-motion flight simulator bays, a classroom block with briefing rooms, classrooms, library and exam hall, a ground-school courtyard and a training hangar with practice craft."
     },
     {
-      "id": "P8-19", "name": "Engine Test Hall",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Hall upper", 12, 6]],
+      "id": "P8-19",
+      "name": "Engine Test Hall",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Hall upper",
+          12,
+          6
+        ]
+      ],
       "parts": [
-        {"name": "Test cell 1", "x": 40, "y": 40, "w": 200, "d": 160, "layout": "hall", "room": "Test cell 1 (sound-proof)", "levels": ["L1", "L2", "L3"]},
-        {"name": "Test cell 2", "x": 40, "y": 240, "w": 200, "d": 160, "layout": "hall", "room": "Test cell 2 (sound-proof)", "levels": ["L1", "L2", "L3"]},
-        {"name": "Test cell 3", "x": 40, "y": 440, "w": 200, "d": 160, "layout": "hall", "room": "Test cell 3 (sound-proof)", "levels": ["L1", "L2", "L3"]},
-        {"name": "Engine prep and control", "x": 40, "y": 630, "w": 200, "d": 44, "levels": ["L1", "L2"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Engine prep shop", 3000], ["Engine stands store", 1200], ["Fuel and oil room", 400], ["Workshop", "rest"]],
-                   "L2": [["Test control rooms", 300, 3], ["Data room", 600], ["Viewing gallery", 400], ["Offices", "rest"]]}},
-        {"name": "Engine transfer yard", "x": 40, "y": 690, "w": 200, "d": 70, "layout": "outdoor"}
+        {
+          "name": "Test cell 1",
+          "x": 40,
+          "y": 40,
+          "w": 200,
+          "d": 160,
+          "layout": "hall",
+          "room": "Test cell 1 (sound-proof)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        {
+          "name": "Test cell 2",
+          "x": 40,
+          "y": 240,
+          "w": 200,
+          "d": 160,
+          "layout": "hall",
+          "room": "Test cell 2 (sound-proof)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        {
+          "name": "Test cell 3",
+          "x": 40,
+          "y": 440,
+          "w": 200,
+          "d": 160,
+          "layout": "hall",
+          "room": "Test cell 3 (sound-proof)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        {
+          "name": "Engine prep and control",
+          "x": 40,
+          "y": 630,
+          "w": 200,
+          "d": 44,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Engine prep shop",
+                3000
+              ],
+              [
+                "Engine stands store",
+                1200
+              ],
+              [
+                "Fuel and oil room",
+                400
+              ],
+              [
+                "Workshop",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Test control rooms",
+                300,
+                3
+              ],
+              [
+                "Data room",
+                600
+              ],
+              [
+                "Viewing gallery",
+                400
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Engine transfer yard",
+          "x": 40,
+          "y": 690,
+          "w": 200,
+          "d": 70,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Thick double concrete walls and roofs round each test cell, with acoustic baffles in the air intakes and exhaust stacks.",
       "look": "Three heavy concrete blocks with tall square exhaust stacks, their sides lined with acoustic louvres; a slim glass control block at the end where engineers watch the runs.",
@@ -333,14 +2905,112 @@
       "interior": "Three sound-proof engine test cells in a row, then the engine prep shop and stores with three test control rooms, a data room and a viewing gallery above."
     },
     {
-      "id": "P8-20", "name": "Yard Stores",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Rack top", 12, 6]],
+      "id": "P8-20",
+      "name": "Yard Stores",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Rack top",
+          12,
+          6
+        ]
+      ],
       "parts": [
-        {"name": "High-bay store", "x": 30, "y": 40, "w": 220, "d": 360, "layout": "bays", "bays": 6, "bay_name": "Rack block", "levels": ["L1", "L2", "L3"]},
-        {"name": "Bulk store", "x": 30, "y": 420, "w": 220, "d": 120, "layout": "bays", "bays": 2, "bay_names": ["Bulk consumables", "Tyres and heavy spares"], "levels": ["L1", "L2"]},
-        {"name": "Receiving and offices", "x": 30, "y": 560, "w": 220, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 1,
-         "rooms": {"L1": [["Receiving dock", 3000], ["Goods-in check", 1000], ["Issue counter", 800], ["Stores", "rest"]], "L2": [["Stock control", 800], ["Offices", "rest"]]}},
-        {"name": "Delivery yard", "x": 0, "y": 600, "w": 280, "d": 30, "layout": "outdoor"}
+        {
+          "name": "High-bay store",
+          "x": 30,
+          "y": 40,
+          "w": 220,
+          "d": 360,
+          "layout": "bays",
+          "bays": 6,
+          "bay_name": "Rack block",
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        {
+          "name": "Bulk store",
+          "x": 30,
+          "y": 420,
+          "w": 220,
+          "d": 120,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Bulk consumables",
+            "Tyres and heavy spares"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Receiving and offices",
+          "x": 30,
+          "y": 560,
+          "w": 220,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Receiving dock",
+                3000
+              ],
+              [
+                "Goods-in check",
+                1000
+              ],
+              [
+                "Issue counter",
+                800
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Stock control",
+                800
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Delivery yard",
+          "x": 0,
+          "y": 600,
+          "w": 280,
+          "d": 30,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Steel portal frames, 18 m (59 ft) clear, with a flat heavy-duty floor for the racks.",
       "look": "A long ribbed gunmetal store with one band of high windows and a yellow-lit receiving canopy at the end.",

@@ -2,16 +2,115 @@
   "about": "P3 Stern Docks building designs, one per building, written 27 Nov 2026 (proposed). The corvette and frigate berths, Dock Concourse and Berth Road run along the port hull (low y). Front-row lots face the berths with their y = 0 side; back-row lots (P3-03, P3-05, P3-07, P3-09, P3-14) face the Dock Road with their high-y side. Coordinates in metres from each lot's bow-port corner.",
   "buildings": [
     {
-      "id": "P3-02", "name": "Stern Docks Private Flights Lounge",
-      "levels": [["L1", "Lounge floor", 0, 6], ["L2", "Roof lounge", 6, 4.5]],
-      "parts": [
-        {"name": "Arrival court (valet)", "x": 60, "y": 0, "w": 280, "d": 50, "layout": "outdoor"},
-        {"name": "Lounge pavilion", "x": 60, "y": 60, "w": 280, "d": 120, "levels": ["L1", "L2"], "corridor": 10, "cores": 2, "corridor_name": "Glass gallery",
-         "rooms": {"L1": [["Owners' check-in", 1200], ["Private customs suite", 900], ["Main lounge", 5000], ["Dining room", 2500], ["Private suites", 120, 8], ["Spa", 1500], ["Kitchen", "rest"]],
-                   "L2": [["Roof bar", 3000], ["Meeting suites", 150, 6], ["Staff rooms", "rest"]]}},
-        {"name": "Water garden", "x": 60, "y": 190, "w": 280, "d": 140, "layout": "outdoor"}
+      "id": "P3-02",
+      "name": "Stern Docks Private Flights Lounge",
+      "levels": [
+        [
+          "L1",
+          "Lounge floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Roof lounge",
+          6,
+          4.5
+        ]
       ],
-      "doors": [["Valet entrance", [190, 60], [210, 60]]],
+      "parts": [
+        {
+          "name": "Arrival court (valet)",
+          "x": 60,
+          "y": 0,
+          "w": 280,
+          "d": 50,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Lounge pavilion",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 10,
+          "cores": 2,
+          "corridor_name": "Glass gallery",
+          "rooms": {
+            "L1": [
+              [
+                "Owners' check-in",
+                1200
+              ],
+              [
+                "Private customs suite",
+                900
+              ],
+              [
+                "Main lounge",
+                5000
+              ],
+              [
+                "Dining room",
+                2500
+              ],
+              [
+                "Private suites",
+                120,
+                8
+              ],
+              [
+                "Spa",
+                1500
+              ],
+              [
+                "Kitchen",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Roof bar",
+                3000
+              ],
+              [
+                "Meeting suites",
+                150,
+                6
+              ],
+              [
+                "Staff rooms",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Water garden",
+          "x": 60,
+          "y": 190,
+          "w": 280,
+          "d": 140,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Valet entrance",
+          [
+            190,
+            60
+          ],
+          [
+            210,
+            60
+          ]
+        ]
+      ],
       "structure": "A long-span steel roof on slender columns over a glass-walled pavilion.",
       "look": "A low floating roof of brushed titanium over full-height glass, with a reflecting water garden behind; warm amber light inside and a single gold line along the roof edge.",
       "entrances": "Valet arrival court facing the berths; garden doors at the back.",
@@ -20,19 +119,165 @@
       "interior": "A glass gallery runs the length of the pavilion: owners' check-in and private customs at the front, a main lounge, dining room, private suites and spa along it, a roof bar and meeting suites on top, and a water garden behind."
     },
     {
-      "id": "P3-03", "name": "Stern Docks Fire Station",
-      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 4.5], ["L3", "Level 3", 9, 4], ["L4", "Level 4", 13, 4], ["L5", "Level 5", 17, 4]],
-      "parts": [
-        {"name": "Training ground", "x": 40, "y": 40, "w": 320, "d": 260, "layout": "outdoor"},
-        {"name": "Hot-fire training rig", "x": 120, "y": 120, "w": 60, "d": 40, "layout": "hall", "room": "Hot-fire training rig (mock corvette)", "levels": ["L1", "L2"]},
-        {"name": "Crew tower", "x": 40, "y": 320, "w": 44, "d": 120, "levels": ["L1", "L2", "L3", "L4", "L5"], "corridor": 4, "cores": 1,
-         "rooms": {"L1": [["Watch room", 300], ["Breathing apparatus", 400], ["Decontamination", 300], ["Stores", "rest"]],
-                   "L2-L3": [["Bunk rooms", 16, 18], ["Kitchen and mess", 600]],
-                   "L4-L5": [["Fire academy classrooms", 120, 6], ["Offices", "rest"]]}},
-        {"name": "Appliance hall", "x": 100, "y": 440, "w": 260, "d": 80, "layout": "bays", "bays": 8, "bay_names": ["Heavy dock tender", "Heavy dock tender", "Foam tender", "Foam tender", "Rescue unit", "Aerial platform", "Hazmat unit", "Command car"], "levels": ["L1", "L2"]},
-        {"name": "Road apron", "x": 100, "y": 520, "w": 300, "d": 40, "layout": "outdoor"}
+      "id": "P3-03",
+      "name": "Stern Docks Fire Station",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Level 2",
+          4.5,
+          4.5
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4
+        ],
+        [
+          "L4",
+          "Level 4",
+          13,
+          4
+        ],
+        [
+          "L5",
+          "Level 5",
+          17,
+          4
+        ]
       ],
-      "doors": [["Appliance doors (road)", [100, 520], [360, 520]]],
+      "parts": [
+        {
+          "name": "Training ground",
+          "x": 40,
+          "y": 40,
+          "w": 320,
+          "d": 260,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Hot-fire training rig",
+          "x": 120,
+          "y": 120,
+          "w": 60,
+          "d": 40,
+          "layout": "hall",
+          "room": "Hot-fire training rig (mock corvette)",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Crew tower",
+          "x": 40,
+          "y": 320,
+          "w": 44,
+          "d": 120,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Watch room",
+                300
+              ],
+              [
+                "Breathing apparatus",
+                400
+              ],
+              [
+                "Decontamination",
+                300
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2-L3": [
+              [
+                "Bunk rooms",
+                16,
+                18
+              ],
+              [
+                "Kitchen and mess",
+                600
+              ]
+            ],
+            "L4-L5": [
+              [
+                "Fire academy classrooms",
+                120,
+                6
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Appliance hall",
+          "x": 100,
+          "y": 440,
+          "w": 260,
+          "d": 80,
+          "layout": "bays",
+          "bays": 8,
+          "bay_names": [
+            "Heavy dock tender",
+            "Heavy dock tender",
+            "Foam tender",
+            "Foam tender",
+            "Rescue unit",
+            "Aerial platform",
+            "Hazmat unit",
+            "Command car"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Road apron",
+          "x": 100,
+          "y": 520,
+          "w": 300,
+          "d": 40,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Appliance doors (road)",
+          [
+            100,
+            520
+          ],
+          [
+            360,
+            520
+          ]
+        ]
+      ],
       "structure": "Steel portal frame appliance hall, 9 m (30 ft) clear; a five-storey concrete crew tower.",
       "look": "A long glass-doored appliance hall on the Dock Road, red-framed, with a slim five-storey crew tower at its bow end; a burnt-black training rig shaped like a corvette stands in the yard.",
       "entrances": "Eight appliance doors onto the Dock Road apron; training ground gate on the dock side.",
@@ -41,18 +286,146 @@
       "interior": "An eight-bay appliance hall on the road, a crew tower with watch room and breathing apparatus at ground level, bunk rooms and mess above and fire academy classrooms on top, and a training ground with a mock-corvette fire rig."
     },
     {
-      "id": "P3-04", "name": "Stern Docks Police Post",
-      "levels": [["L1", "Ground floor", 0, 4.2], ["L2", "Level 2", 4.2, 4.2], ["L3", "Level 3", 8.4, 4.2]],
-      "parts": [
-        {"name": "Dockside frontage", "x": 0, "y": 0, "w": 450, "d": 40, "layout": "outdoor"},
-        {"name": "Main block", "x": 60, "y": 50, "w": 240, "d": 44, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Front desk and waiting", 800], ["Customs search rooms", 40, 6], ["Interview rooms", 30, 4], ["Holding rooms", 14, 10], ["Toilets", "rest"]],
-                   "L2": [["Marine unit room", 1200], ["Open office", 3500], ["Briefing room", 400]],
-                   "L3": [["Port security control", 1500], ["Intelligence office", 1000], ["Canteen", "rest"]]}},
-        {"name": "Marine unit shed", "x": 320, "y": 50, "w": 100, "d": 120, "layout": "bays", "bays": 3, "bay_names": ["Patrol launch bay", "Patrol launch bay", "Drone hangar"], "levels": ["L1", "L2"]},
-        {"name": "Secure yard", "x": 60, "y": 110, "w": 240, "d": 200, "layout": "outdoor"}
+      "id": "P3-04",
+      "name": "Stern Docks Police Post",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.2
+        ],
+        [
+          "L2",
+          "Level 2",
+          4.2,
+          4.2
+        ],
+        [
+          "L3",
+          "Level 3",
+          8.4,
+          4.2
+        ]
       ],
-      "doors": [["Public entrance", [170, 50], [190, 50]]],
+      "parts": [
+        {
+          "name": "Dockside frontage",
+          "x": 0,
+          "y": 0,
+          "w": 450,
+          "d": 40,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Main block",
+          "x": 60,
+          "y": 50,
+          "w": 240,
+          "d": 44,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Front desk and waiting",
+                800
+              ],
+              [
+                "Customs search rooms",
+                40,
+                6
+              ],
+              [
+                "Interview rooms",
+                30,
+                4
+              ],
+              [
+                "Holding rooms",
+                14,
+                10
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Marine unit room",
+                1200
+              ],
+              [
+                "Open office",
+                3500
+              ],
+              [
+                "Briefing room",
+                400
+              ]
+            ],
+            "L3": [
+              [
+                "Port security control",
+                1500
+              ],
+              [
+                "Intelligence office",
+                1000
+              ],
+              [
+                "Canteen",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Marine unit shed",
+          "x": 320,
+          "y": 50,
+          "w": 100,
+          "d": 120,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Patrol launch bay",
+            "Patrol launch bay",
+            "Drone hangar"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Secure yard",
+          "x": 60,
+          "y": 110,
+          "w": 240,
+          "d": 200,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Public entrance",
+          [
+            170,
+            50
+          ],
+          [
+            190,
+            50
+          ]
+        ]
+      ],
       "structure": "Concrete frame with hardened ground floor; steel launch and drone shed.",
       "look": "A three-storey block in charcoal panels with a deep-set ribbon window on every floor and a blue light band; the launch shed beside it has a big blue-striped door.",
       "entrances": "Public entrance facing the berths; patrol launches and drones leave from the shed toward the berths.",
@@ -61,17 +434,123 @@
       "interior": "Front desk, customs search, interview and holding rooms on the ground floor; marine unit room, open office and briefing room on level 2; port security control and intelligence office on top; a shed for patrol launches and drones beside it."
     },
     {
-      "id": "P3-05", "name": "Stern Docks Chandlery",
-      "levels": [["L1", "Trade floor", 0, 6], ["L2", "Upper floor", 6, 5]],
-      "parts": [
-        {"name": "Bonded store", "x": 40, "y": 40, "w": 370, "d": 220, "layout": "bays", "bays": 4, "bay_names": ["Bonded spares", "Bonded provisions (chilled)", "Weapons-grade parts (secure)", "Heavy parts"], "levels": ["L1", "L2"]},
-        {"name": "Loading yard", "x": 40, "y": 270, "w": 370, "d": 90, "layout": "outdoor"},
-        {"name": "Trade building", "x": 40, "y": 380, "w": 370, "d": 70, "levels": ["L1", "L2"], "corridor": 6, "cores": 2,
-         "rooms": {"L1": [["Trade counter", 3000], ["Frigate supply office", 1500], ["Crew outfitters", 2500], ["Provisions counter", 2500], ["Café", "rest"]],
-                   "L2": [["Contract office", 2000], ["Customs bond office", 800], ["Offices", "rest"]]}},
-        {"name": "Customer forecourt", "x": 40, "y": 460, "w": 370, "d": 90, "layout": "outdoor"}
+      "id": "P3-05",
+      "name": "Stern Docks Chandlery",
+      "levels": [
+        [
+          "L1",
+          "Trade floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Upper floor",
+          6,
+          5
+        ]
       ],
-      "doors": [["Trade entrance", [215, 450], [235, 450]]],
+      "parts": [
+        {
+          "name": "Bonded store",
+          "x": 40,
+          "y": 40,
+          "w": 370,
+          "d": 220,
+          "layout": "bays",
+          "bays": 4,
+          "bay_names": [
+            "Bonded spares",
+            "Bonded provisions (chilled)",
+            "Weapons-grade parts (secure)",
+            "Heavy parts"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Loading yard",
+          "x": 40,
+          "y": 270,
+          "w": 370,
+          "d": 90,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Trade building",
+          "x": 40,
+          "y": 380,
+          "w": 370,
+          "d": 70,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 6,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Trade counter",
+                3000
+              ],
+              [
+                "Frigate supply office",
+                1500
+              ],
+              [
+                "Crew outfitters",
+                2500
+              ],
+              [
+                "Provisions counter",
+                2500
+              ],
+              [
+                "Café",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Contract office",
+                2000
+              ],
+              [
+                "Customs bond office",
+                800
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Customer forecourt",
+          "x": 40,
+          "y": 460,
+          "w": 370,
+          "d": 90,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Trade entrance",
+          [
+            215,
+            450
+          ],
+          [
+            235,
+            450
+          ]
+        ]
+      ],
       "structure": "Steel frame bonded store with secure walls; two-storey steel and timber trade building.",
       "look": "A long trade building with a deep timber canopy facing the road and, behind it, a windowless bonded store in dark blue-grey metal with a single row of red security lights.",
       "entrances": "Trade entrance from the road forecourt; goods move between the bonded store and the berths through the loading yard.",
@@ -80,20 +559,189 @@
       "interior": "A trade building on the road with trade, frigate supply, outfitting and provisions counters and contract and bond offices upstairs; a four-part bonded store behind, including a secure vault for controlled parts."
     },
     {
-      "id": "P3-06", "name": "Corvette Service",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Shed upper", 12, 7], ["L4", "Shed upper", 19, 7], ["L5", "Shed roof space", 26, 6]],
-      "parts": [
-        {"name": "Berth transfer apron", "x": 0, "y": 0, "w": 590, "d": 40, "layout": "outdoor"},
-        {"name": "Corvette shed", "x": 40, "y": 40, "w": 420, "d": 230, "layout": "bays", "bays": 2, "bay_names": ["Corvette bay 1", "Corvette bay 2"], "levels": ["L1", "L2", "L3", "L4", "L5"]},
-        {"name": "Weapons and systems shop", "x": 480, "y": 40, "w": 80, "d": 230, "levels": ["L1", "L2"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Systems test bay", 3000], ["Armament workshop (secure)", 2500], ["Sensor lab", 1500], ["Parts store", "rest"]],
-                   "L2": [["Engineering office", 2500], ["Crew liaison", 600], ["Offices", "rest"]]}},
-        {"name": "Workshop row", "x": 40, "y": 290, "w": 520, "d": 50, "levels": ["L1", "L2"], "corridor": 4, "cores": 2,
-         "rooms": {"L1": [["Engine shop", 4000], ["Hull shop", 4000], ["Electrical shop", 2500], ["Lockers", 800], ["Stores", "rest"]],
-                   "L2": [["Canteen", 1500], ["Planning", 1500], ["Offices", "rest"]]}},
-        {"name": "Service yard", "x": 40, "y": 350, "w": 520, "d": 140, "layout": "outdoor"}
+      "id": "P3-06",
+      "name": "Corvette Service",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Shed upper",
+          12,
+          7
+        ],
+        [
+          "L4",
+          "Shed upper",
+          19,
+          7
+        ],
+        [
+          "L5",
+          "Shed roof space",
+          26,
+          6
+        ]
       ],
-      "doors": [["Corvette shed door", [50, 40], [450, 40]]],
+      "parts": [
+        {
+          "name": "Berth transfer apron",
+          "x": 0,
+          "y": 0,
+          "w": 590,
+          "d": 40,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Corvette shed",
+          "x": 40,
+          "y": 40,
+          "w": 420,
+          "d": 230,
+          "layout": "bays",
+          "bays": 2,
+          "bay_names": [
+            "Corvette bay 1",
+            "Corvette bay 2"
+          ],
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5"
+          ]
+        },
+        {
+          "name": "Weapons and systems shop",
+          "x": 480,
+          "y": 40,
+          "w": 80,
+          "d": 230,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Systems test bay",
+                3000
+              ],
+              [
+                "Armament workshop (secure)",
+                2500
+              ],
+              [
+                "Sensor lab",
+                1500
+              ],
+              [
+                "Parts store",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Engineering office",
+                2500
+              ],
+              [
+                "Crew liaison",
+                600
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Workshop row",
+          "x": 40,
+          "y": 290,
+          "w": 520,
+          "d": 50,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "L1": [
+              [
+                "Engine shop",
+                4000
+              ],
+              [
+                "Hull shop",
+                4000
+              ],
+              [
+                "Electrical shop",
+                2500
+              ],
+              [
+                "Lockers",
+                800
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Canteen",
+                1500
+              ],
+              [
+                "Planning",
+                1500
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Service yard",
+          "x": 40,
+          "y": 350,
+          "w": 520,
+          "d": 140,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Corvette shed door",
+          [
+            50,
+            40
+          ],
+          [
+            450,
+            40
+          ]
+        ]
+      ],
       "structure": "Steel shed, 32 m (105 ft) clear, with twin overhead cranes; concrete workshop wings.",
       "look": "A broad shed in navy-grey ribbed steel with one huge sliding door toward the berths, crowned with a strip of white light; secure systems shop on the stern side with no windows at all.",
       "entrances": "Corvettes come in from the berths through the shed door; staff from the service yard.",
@@ -102,22 +750,191 @@
       "interior": "A two-bay corvette shed opening to the berths, a secure weapons and systems shop on its stern side, and a workshop row with engine, hull and electrical shops, canteen and planning offices."
     },
     {
-      "id": "P3-07", "name": "Stern Docks Fuel Depot",
-      "levels": [["L1", "Ground", 0, 9], ["L2", "Tank tops", 9, 9]],
+      "id": "P3-07",
+      "name": "Stern Docks Fuel Depot",
+      "levels": [
+        [
+          "L1",
+          "Ground",
+          0,
+          9
+        ],
+        [
+          "L2",
+          "Tank tops",
+          9,
+          9
+        ]
+      ],
       "parts": [
-        {"name": "Spill wall", "x": 40, "y": 40, "w": 420, "d": 320, "layout": "outdoor"},
-        {"name": "Tank 1", "x": 70, "y": 70, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 1", "levels": ["L1", "L2"]},
-        {"name": "Tank 2", "x": 220, "y": 70, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 2", "levels": ["L1", "L2"]},
-        {"name": "Tank 3", "x": 370, "y": 70, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 3", "levels": ["L1", "L2"]},
-        {"name": "Tank 4", "x": 70, "y": 170, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 4", "levels": ["L1", "L2"]},
-        {"name": "Tank 5", "x": 220, "y": 170, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 5", "levels": ["L1", "L2"]},
-        {"name": "Tank 6", "x": 370, "y": 170, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 6", "levels": ["L1", "L2"]},
-        {"name": "Tank 7", "x": 70, "y": 270, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 7", "levels": ["L1", "L2"]},
-        {"name": "Tank 8", "x": 220, "y": 270, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 8", "levels": ["L1", "L2"]},
-        {"name": "Tank 9", "x": 370, "y": 270, "w": 60, "d": 60, "layout": "hall", "room": "Bunker tank 9", "levels": ["L1", "L2"]},
-        {"name": "Pump and control house", "x": 480, "y": 40, "w": 80, "d": 180, "levels": ["L1"], "corridor": 4,
-         "rooms": {"L1": [["Bunker pumps", 4000], ["Filter room", 1500], ["Control room", 800], ["Fuel lab", 500], ["Crew room", "rest"]]}},
-        {"name": "Truck bay", "x": 480, "y": 240, "w": 90, "d": 130, "layout": "outdoor"}
+        {
+          "name": "Spill wall",
+          "x": 40,
+          "y": 40,
+          "w": 420,
+          "d": 320,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Tank 1",
+          "x": 70,
+          "y": 70,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 1",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 2",
+          "x": 220,
+          "y": 70,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 2",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 3",
+          "x": 370,
+          "y": 70,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 3",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 4",
+          "x": 70,
+          "y": 170,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 4",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 5",
+          "x": 220,
+          "y": 170,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 5",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 6",
+          "x": 370,
+          "y": 170,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 6",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 7",
+          "x": 70,
+          "y": 270,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 7",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 8",
+          "x": 220,
+          "y": 270,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 8",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Tank 9",
+          "x": 370,
+          "y": 270,
+          "w": 60,
+          "d": 60,
+          "layout": "hall",
+          "room": "Bunker tank 9",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Pump and control house",
+          "x": 480,
+          "y": 40,
+          "w": 80,
+          "d": 180,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 4,
+          "rooms": {
+            "L1": [
+              [
+                "Bunker pumps",
+                4000
+              ],
+              [
+                "Filter room",
+                1500
+              ],
+              [
+                "Control room",
+                800
+              ],
+              [
+                "Fuel lab",
+                500
+              ],
+              [
+                "Crew room",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Truck bay",
+          "x": 480,
+          "y": 240,
+          "w": 90,
+          "d": 130,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Nine welded steel tanks on ring foundations in a concrete spill wall; blast-rated pump and control house.",
       "look": "A square grid of nine tall tanks banded in grey and orange, linked by silver pipe bridges to the berths; a small dark pump house with red safety lights.",
@@ -127,18 +944,167 @@
       "interior": "A three-by-three grid of bunker tanks inside a spill wall, with the pump and control house and truck bay on the stern side."
     },
     {
-      "id": "P3-08", "name": "Frigate Service Yard",
-      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Shed", 12, 8], ["L4", "Shed", 20, 8], ["L5", "Shed", 28, 8], ["L6", "Shed roof space", 36, 6]],
-      "parts": [
-        {"name": "Berth transfer apron", "x": 0, "y": 0, "w": 900, "d": 40, "layout": "outdoor"},
-        {"name": "Frigate shed", "x": 40, "y": 40, "w": 440, "d": 300, "layout": "hall", "room": "Frigate dock (one frigate under cover)", "levels": ["L1", "L2", "L3", "L4", "L5", "L6"]},
-        {"name": "Crane yard", "x": 500, "y": 40, "w": 360, "d": 300, "layout": "outdoor"},
-        {"name": "Heavy shops", "x": 40, "y": 360, "w": 820, "d": 60, "levels": ["L1", "L2"], "corridor": 6, "cores": 3,
-         "rooms": {"L1": [["Engine overhaul shop", 8000], ["Hull plate shop", 6000], ["Armour and shield shop", 5000], ["Pipe and power shop", 4000], ["Tool store", 1500], ["Locker rooms", 1000, 2], ["Stores", "rest"]],
-                   "L2": [["Canteen", 3000], ["Planning and drawing office", 4000], ["Training rooms", 300, 4], ["Offices", "rest"]]}},
-        {"name": "Road-side parking", "x": 40, "y": 430, "w": 820, "d": 60, "layout": "outdoor"}
+      "id": "P3-08",
+      "name": "Frigate Service Yard",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Level 2",
+          6,
+          6
+        ],
+        [
+          "L3",
+          "Shed",
+          12,
+          8
+        ],
+        [
+          "L4",
+          "Shed",
+          20,
+          8
+        ],
+        [
+          "L5",
+          "Shed",
+          28,
+          8
+        ],
+        [
+          "L6",
+          "Shed roof space",
+          36,
+          6
+        ]
       ],
-      "doors": [["Frigate shed door", [50, 40], [470, 40]]],
+      "parts": [
+        {
+          "name": "Berth transfer apron",
+          "x": 0,
+          "y": 0,
+          "w": 900,
+          "d": 40,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Frigate shed",
+          "x": 40,
+          "y": 40,
+          "w": 440,
+          "d": 300,
+          "layout": "hall",
+          "room": "Frigate dock (one frigate under cover)",
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ]
+        },
+        {
+          "name": "Crane yard",
+          "x": 500,
+          "y": 40,
+          "w": 360,
+          "d": 300,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Heavy shops",
+          "x": 40,
+          "y": 360,
+          "w": 820,
+          "d": 60,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 6,
+          "cores": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Engine overhaul shop",
+                8000
+              ],
+              [
+                "Hull plate shop",
+                6000
+              ],
+              [
+                "Armour and shield shop",
+                5000
+              ],
+              [
+                "Pipe and power shop",
+                4000
+              ],
+              [
+                "Tool store",
+                1500
+              ],
+              [
+                "Locker rooms",
+                1000,
+                2
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Canteen",
+                3000
+              ],
+              [
+                "Planning and drawing office",
+                4000
+              ],
+              [
+                "Training rooms",
+                300,
+                4
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Road-side parking",
+          "x": 40,
+          "y": 430,
+          "w": 820,
+          "d": 60,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Frigate shed door",
+          [
+            50,
+            40
+          ],
+          [
+            470,
+            40
+          ]
+        ]
+      ],
       "structure": "One clear-span steel shed, 42 m (138 ft) high and 300 m (984 ft) deep, with two 200-tonne gantry cranes running out over the crane yard.",
       "look": "The biggest shed in the docks: a tall pitched hall in dark steel with a door the full width of a frigate, and two yellow gantry cranes striding over the open crane yard beside it.",
       "entrances": "Frigates come in on cradles from the berths through the shed door; staff enter from the road-side parking.",
@@ -147,23 +1113,265 @@
       "interior": "A single frigate dock under one great shed, an open crane yard beside it, and a heavy-shops row with engine overhaul, hull plate, armour and shield, and pipe and power shops, with canteen, drawing office and training rooms above."
     },
     {
-      "id": "P3-09", "name": "Company Berth Offices",
-      "levels": [["L1", "Podium", 0, 6], ["L2", "Podium", 6, 5], ["L3", "Tower", 11, 4], ["L4", "Tower", 15, 4], ["L5", "Tower", 19, 4], ["L6", "Tower", 23, 4], ["L7", "Tower", 27, 4], ["L8", "Tower", 31, 4], ["L9", "Tower", 35, 4], ["L10", "Tower", 39, 4]],
-      "parts": [
-        {"name": "Podium", "x": 60, "y": 120, "w": 630, "d": 60, "levels": ["L1", "L2"], "corridor": 8, "cores": 3, "corridor_name": "Arcade",
-         "rooms": {"L1": [["Shared reception", 2000], ["Berth leasing hall", 4000], ["Bank", 1500], ["Insurers and brokers", 3000], ["Restaurants", 600, 3], ["Shops", 200, 6], ["Toilets", "rest"]],
-                   "L2": [["Conference centre", 6000], ["Members' club", 3000], ["Gym", 1500], ["Offices", "rest"]]}},
-        {"name": "Tower A", "x": 90, "y": 180, "w": 140, "d": 40, "levels": ["L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"], "corridor": 4, "cores": 2,
-         "rooms": {"all": [["Company offices", "rest"], ["Meeting rooms", 80, 4]]}},
-        {"name": "Tower B", "x": 305, "y": 180, "w": 140, "d": 40, "levels": ["L3", "L4", "L5", "L6", "L7", "L8"], "corridor": 4, "cores": 2,
-         "rooms": {"all": [["Company offices", "rest"], ["Meeting rooms", 80, 4]]}},
-        {"name": "Tower C", "x": 520, "y": 180, "w": 140, "d": 40, "levels": ["L3", "L4", "L5", "L6"], "corridor": 4, "cores": 2,
-         "rooms": {"all": [["Company offices", "rest"], ["Meeting rooms", 80, 4]]}},
-        {"name": "Garden terraces", "x": 60, "y": 230, "w": 630, "d": 50, "layout": "outdoor"},
-        {"name": "Company plaza", "x": 60, "y": 290, "w": 630, "d": 100, "layout": "outdoor"},
-        {"name": "Dock-side gardens", "x": 60, "y": 20, "w": 630, "d": 90, "layout": "outdoor"}
+      "id": "P3-09",
+      "name": "Company Berth Offices",
+      "levels": [
+        [
+          "L1",
+          "Podium",
+          0,
+          6
+        ],
+        [
+          "L2",
+          "Podium",
+          6,
+          5
+        ],
+        [
+          "L3",
+          "Tower",
+          11,
+          4
+        ],
+        [
+          "L4",
+          "Tower",
+          15,
+          4
+        ],
+        [
+          "L5",
+          "Tower",
+          19,
+          4
+        ],
+        [
+          "L6",
+          "Tower",
+          23,
+          4
+        ],
+        [
+          "L7",
+          "Tower",
+          27,
+          4
+        ],
+        [
+          "L8",
+          "Tower",
+          31,
+          4
+        ],
+        [
+          "L9",
+          "Tower",
+          35,
+          4
+        ],
+        [
+          "L10",
+          "Tower",
+          39,
+          4
+        ]
       ],
-      "doors": [["Main entrance", [365, 180], [385, 180]]],
+      "parts": [
+        {
+          "name": "Podium",
+          "x": 60,
+          "y": 120,
+          "w": 630,
+          "d": 60,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 8,
+          "cores": 3,
+          "corridor_name": "Arcade",
+          "rooms": {
+            "L1": [
+              [
+                "Shared reception",
+                2000
+              ],
+              [
+                "Berth leasing hall",
+                4000
+              ],
+              [
+                "Bank",
+                1500
+              ],
+              [
+                "Insurers and brokers",
+                3000
+              ],
+              [
+                "Restaurants",
+                600,
+                3
+              ],
+              [
+                "Shops",
+                200,
+                6
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Conference centre",
+                6000
+              ],
+              [
+                "Members' club",
+                3000
+              ],
+              [
+                "Gym",
+                1500
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Tower A",
+          "x": 90,
+          "y": 180,
+          "w": 140,
+          "d": 40,
+          "levels": [
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L8",
+            "L9",
+            "L10"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "all": [
+              [
+                "Company offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                80,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Tower B",
+          "x": 305,
+          "y": 180,
+          "w": 140,
+          "d": 40,
+          "levels": [
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L8"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "all": [
+              [
+                "Company offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                80,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Tower C",
+          "x": 520,
+          "y": 180,
+          "w": 140,
+          "d": 40,
+          "levels": [
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 4,
+          "cores": 2,
+          "rooms": {
+            "all": [
+              [
+                "Company offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                80,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Garden terraces",
+          "x": 60,
+          "y": 230,
+          "w": 630,
+          "d": 50,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Company plaza",
+          "x": 60,
+          "y": 290,
+          "w": 630,
+          "d": 100,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Dock-side gardens",
+          "x": 60,
+          "y": 20,
+          "w": 630,
+          "d": 90,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            365,
+            180
+          ],
+          [
+            385,
+            180
+          ]
+        ]
+      ],
       "structure": "Concrete podium with three steel-framed office towers stepping down from 10 to 6 storeys.",
       "look": "Three slim towers of dark mirrored glass rising in steps (10, 8 and 6 storeys) from a stone-clad podium, each with a company crest lit in gold at the top; the plaza in front faces the Dock Road.",
       "entrances": "Main entrance from the company plaza on the Dock Road side; arcade entrances at both ends.",
@@ -172,22 +1380,280 @@
       "interior": "A two-storey podium with a central arcade: shared reception, berth leasing hall, bank, insurers and brokers, restaurants and shops, and a conference centre, members' club and gym upstairs. Three office towers above for the shipping companies that lease the frigate berths."
     },
     {
-      "id": "P3-10", "name": "Stern Harbourmaster",
-      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4], ["L3", "Level 3", 9, 4], ["L4", "Tower", 13, 4], ["L5", "Tower", 17, 4], ["L6", "Tower", 21, 4], ["L7", "Tower", 25, 4], ["L8", "Tower", 29, 4], ["L9", "Tower", 33, 4], ["L10", "Tower", 37, 4], ["L11", "Tower", 41, 4], ["L12", "Harbour control cab", 45, 6]],
-      "parts": [
-        {"name": "Dockside promenade", "x": 0, "y": 0, "w": 750, "d": 40, "layout": "outdoor"},
-        {"name": "Long building", "x": 60, "y": 50, "w": 560, "d": 48, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 3,
-         "rooms": {"L1": [["Entrance hall", 1500], ["Berth booking counters", 2000], ["Frigate berth office", 1200], ["Pilot assignment", 800], ["Customs liaison", 800], ["Café", 900], ["Toilets", "rest"]],
-                   "L2": [["Berth control room", 4000], ["Traffic planning", 2000], ["Lock control (Yard Locks)", 1500], ["Offices", "rest"]],
-                   "L3": [["Offices", "rest"], ["Meeting rooms", 100, 6]]}},
-        {"name": "Stern tower", "x": 640, "y": 50, "w": 40, "d": 40, "levels": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10", "L11", "L12"], "corridor": 4, "cores": 1, "core_len": 12,
-         "rooms": {"L1-L3": [["Tower lobby", "rest"]], "L4-L11": [["Radar and comms floor", "rest"]], "L12": [["Harbour control cab (360° glass)", "rest"]]}},
-        {"name": "Pilots' wing", "x": 60, "y": 98, "w": 44, "d": 200, "levels": ["L1", "L2"], "corridor": 4, "cores": 1,
-         "rooms": {"L1": [["Pilots' ready room", 1500], ["Kitchen and mess", 1500], ["Lockers", "rest"]], "L2": [["Rest rooms", 20, 16], ["Offices", "rest"]]}},
-        {"name": "Harbour garden", "x": 104, "y": 110, "w": 516, "d": 230, "layout": "outdoor"},
-        {"name": "Staff parking", "x": 60, "y": 360, "w": 620, "d": 80, "layout": "outdoor"}
+      "id": "P3-10",
+      "name": "Stern Harbourmaster",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          5
+        ],
+        [
+          "L2",
+          "Level 2",
+          5,
+          4
+        ],
+        [
+          "L3",
+          "Level 3",
+          9,
+          4
+        ],
+        [
+          "L4",
+          "Tower",
+          13,
+          4
+        ],
+        [
+          "L5",
+          "Tower",
+          17,
+          4
+        ],
+        [
+          "L6",
+          "Tower",
+          21,
+          4
+        ],
+        [
+          "L7",
+          "Tower",
+          25,
+          4
+        ],
+        [
+          "L8",
+          "Tower",
+          29,
+          4
+        ],
+        [
+          "L9",
+          "Tower",
+          33,
+          4
+        ],
+        [
+          "L10",
+          "Tower",
+          37,
+          4
+        ],
+        [
+          "L11",
+          "Tower",
+          41,
+          4
+        ],
+        [
+          "L12",
+          "Harbour control cab",
+          45,
+          6
+        ]
       ],
-      "doors": [["Main entrance", [330, 50], [350, 50]]],
+      "parts": [
+        {
+          "name": "Dockside promenade",
+          "x": 0,
+          "y": 0,
+          "w": 750,
+          "d": 40,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Long building",
+          "x": 60,
+          "y": 50,
+          "w": 560,
+          "d": 48,
+          "levels": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "corridor": 4,
+          "cores": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Entrance hall",
+                1500
+              ],
+              [
+                "Berth booking counters",
+                2000
+              ],
+              [
+                "Frigate berth office",
+                1200
+              ],
+              [
+                "Pilot assignment",
+                800
+              ],
+              [
+                "Customs liaison",
+                800
+              ],
+              [
+                "Café",
+                900
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Berth control room",
+                4000
+              ],
+              [
+                "Traffic planning",
+                2000
+              ],
+              [
+                "Lock control (Yard Locks)",
+                1500
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ],
+            "L3": [
+              [
+                "Offices",
+                "rest"
+              ],
+              [
+                "Meeting rooms",
+                100,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Stern tower",
+          "x": 640,
+          "y": 50,
+          "w": 40,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L8",
+            "L9",
+            "L10",
+            "L11",
+            "L12"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "core_len": 12,
+          "rooms": {
+            "L1-L3": [
+              [
+                "Tower lobby",
+                "rest"
+              ]
+            ],
+            "L4-L11": [
+              [
+                "Radar and comms floor",
+                "rest"
+              ]
+            ],
+            "L12": [
+              [
+                "Harbour control cab (360° glass)",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Pilots' wing",
+          "x": 60,
+          "y": 98,
+          "w": 44,
+          "d": 200,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Pilots' ready room",
+                1500
+              ],
+              [
+                "Kitchen and mess",
+                1500
+              ],
+              [
+                "Lockers",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Rest rooms",
+                20,
+                16
+              ],
+              [
+                "Offices",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Harbour garden",
+          "x": 104,
+          "y": 110,
+          "w": 516,
+          "d": 230,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Staff parking",
+          "x": 60,
+          "y": 360,
+          "w": 620,
+          "d": 80,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            330,
+            50
+          ],
+          [
+            350,
+            50
+          ]
+        ]
+      ],
       "structure": "Concrete frame on an 8 m grid; a slipformed concrete tower with a steel and glass cab.",
       "look": "A long, low three-storey building of pale stone and dark glass running along the docks, ending in a 167 ft (51 m) tower at the stern end with a ringed glass cab; it mirrors the Bow Docks harbourmaster from the other end of the port.",
       "entrances": "Main entrance from the dockside promenade; staff entrance from the parking.",
@@ -196,13 +1662,86 @@
       "interior": "A long building along the docks with entrance hall, booking counters, frigate berth office and pilot assignment on the ground floor, the berth control room, traffic planning and Yard Locks control on level 2, and offices on top; a pilots' wing with ready room, mess and rest rooms; the stern tower with radar floors and the control cab."
     },
     {
-      "id": "P3-12", "name": "Stern Docks Utility Plant",
-      "levels": [["L1", "Ground floor", 0, 8], ["L2", "Upper plant", 8, 6]],
+      "id": "P3-12",
+      "name": "Stern Docks Utility Plant",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          8
+        ],
+        [
+          "L2",
+          "Upper plant",
+          8,
+          6
+        ]
+      ],
       "parts": [
-        {"name": "Substation", "x": 25, "y": 30, "w": 200, "d": 100, "levels": ["L1"], "corridor": 6,
-         "rooms": {"L1": [["Transformer bays", 600, 6], ["Switch room", 3000], ["Battery room", 1500], ["Control room", "rest"]]}},
-        {"name": "Plant hall", "x": 25, "y": 150, "w": 200, "d": 140, "layout": "bays", "bays": 3, "bay_names": ["Chiller hall", "Air handling hall", "Water pump hall"], "levels": ["L1", "L2"]},
-        {"name": "Water tank", "x": 75, "y": 310, "w": 100, "d": 70, "layout": "hall", "room": "Water tank", "levels": ["L1", "L2"]}
+        {
+          "name": "Substation",
+          "x": 25,
+          "y": 30,
+          "w": 200,
+          "d": 100,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 6,
+          "rooms": {
+            "L1": [
+              [
+                "Transformer bays",
+                600,
+                6
+              ],
+              [
+                "Switch room",
+                3000
+              ],
+              [
+                "Battery room",
+                1500
+              ],
+              [
+                "Control room",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Plant hall",
+          "x": 25,
+          "y": 150,
+          "w": 200,
+          "d": 140,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Chiller hall",
+            "Air handling hall",
+            "Water pump hall"
+          ],
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Water tank",
+          "x": 75,
+          "y": 310,
+          "w": 100,
+          "d": 70,
+          "layout": "hall",
+          "room": "Water tank",
+          "levels": [
+            "L1",
+            "L2"
+          ]
+        }
       ],
       "structure": "Concrete plant floors with blast walls between transformers; steel roof over the plant hall.",
       "look": "Plain graphite sheds with tall louvres and a single long water tank, lit only by small amber lights.",
@@ -212,13 +1751,90 @@
       "interior": "A substation with six transformer bays, a three-bay plant hall for chillers, air handling and water pumps, and a water tank behind."
     },
     {
-      "id": "P3-13", "name": "Stern Docks Service Shaft",
-      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "id": "P3-13",
+      "name": "Stern Docks Service Shaft",
+      "levels": [
+        [
+          "LB1",
+          "Shaft head",
+          -10,
+          10
+        ],
+        [
+          "L1",
+          "Ground floor",
+          0,
+          7
+        ],
+        [
+          "L2",
+          "Lift machine level",
+          7,
+          6
+        ]
+      ],
       "parts": [
-        {"name": "Control house", "x": 30, "y": 30, "w": 140, "d": 30, "levels": ["L1", "L2"], "corridor": 3,
-         "rooms": {"L1": [["Shaft control room", 800], ["Crew room", 400], ["Stores", "rest"]], "L2": [["Ventilation fans", "rest"]]}},
-        {"name": "Shaft hall", "x": 30, "y": 70, "w": 140, "d": 200, "layout": "bays", "bays": 3, "bay_names": ["Heavy vehicle lift", "Goods lift hall", "Vehicle lift"], "levels": ["LB1", "L1", "L2"]},
-        {"name": "Vehicle ramp and queue", "x": 30, "y": 280, "w": 140, "d": 110, "layout": "outdoor"}
+        {
+          "name": "Control house",
+          "x": 30,
+          "y": 30,
+          "w": 140,
+          "d": 30,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 3,
+          "rooms": {
+            "L1": [
+              [
+                "Shaft control room",
+                800
+              ],
+              [
+                "Crew room",
+                400
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Ventilation fans",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Shaft hall",
+          "x": 30,
+          "y": 70,
+          "w": 140,
+          "d": 200,
+          "layout": "bays",
+          "bays": 3,
+          "bay_names": [
+            "Heavy vehicle lift",
+            "Goods lift hall",
+            "Vehicle lift"
+          ],
+          "levels": [
+            "LB1",
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "name": "Vehicle ramp and queue",
+          "x": 30,
+          "y": 280,
+          "w": 140,
+          "d": 110,
+          "layout": "outdoor"
+        }
       ],
       "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house with crane rails.",
       "look": "A tall windowless head house in graphite metal with big louvres and yellow-striped lift doors.",
@@ -228,25 +1844,225 @@
       "interior": "A control house with shaft control and fans, and a shaft hall with a heavy vehicle lift, a goods lift and a vehicle lift down to the service layer."
     },
     {
-      "id": "P3-14", "name": "Stern Docks Crew Rest",
-      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 3.4], ["L3", "Level 3", 7.9, 3.4], ["L4", "Level 4", 11.3, 3.4], ["L5", "Level 5", 14.7, 3.4], ["L6", "Level 6", 18.1, 3.4]],
-      "parts": [
-        {"name": "Ring north", "x": 60, "y": 60, "w": 380, "d": 16, "levels": ["L1", "L2", "L3", "L4", "L5", "L6"], "corridor": 2.4, "cores": 2, "core_len": 8,
-         "rooms": {"L1": [["Reception", 300], ["Canteen", 1200], ["Lounge", 800], ["Lockers", "rest"]], "L2-L6": [["Rest room", 21, 60]]}},
-        {"name": "Ring south", "x": 60, "y": 384, "w": 380, "d": 16, "levels": ["L1", "L2", "L3", "L4", "L5", "L6"], "corridor": 2.4, "cores": 2, "core_len": 8,
-         "rooms": {"L1": [["Gym", 900], ["Laundry", 400], ["Kitchen", 500], ["Stores", "rest"]], "L2-L6": [["Rest room", 21, 60]]}},
-        {"name": "Ring bow", "x": 60, "y": 76, "w": 16, "d": 308, "levels": ["L1", "L2", "L3", "L4", "L5", "L6"], "corridor": 2.4, "cores": 1, "core_len": 8,
-         "rooms": {"all": [["Rest room", 21, 48]]}},
-        {"name": "Ring stern", "x": 424, "y": 76, "w": 16, "d": 308, "levels": ["L1", "L2", "L3", "L4", "L5", "L6"], "corridor": 2.4, "cores": 1, "core_len": 8,
-         "rooms": {"all": [["Rest room", 21, 48]]}},
-        {"name": "Courtyard garden", "x": 76, "y": 76, "w": 348, "d": 308, "layout": "outdoor"},
-        {"name": "Road forecourt", "x": 60, "y": 410, "w": 380, "d": 60, "layout": "outdoor"}
+      "id": "P3-14",
+      "name": "Stern Docks Crew Rest",
+      "levels": [
+        [
+          "L1",
+          "Ground floor",
+          0,
+          4.5
+        ],
+        [
+          "L2",
+          "Level 2",
+          4.5,
+          3.4
+        ],
+        [
+          "L3",
+          "Level 3",
+          7.9,
+          3.4
+        ],
+        [
+          "L4",
+          "Level 4",
+          11.3,
+          3.4
+        ],
+        [
+          "L5",
+          "Level 5",
+          14.7,
+          3.4
+        ],
+        [
+          "L6",
+          "Level 6",
+          18.1,
+          3.4
+        ]
       ],
-      "doors": [["Main entrance", [240, 400], [260, 400]]],
+      "parts": [
+        {
+          "name": "Ring north",
+          "x": 50,
+          "y": 40,
+          "w": 400,
+          "d": 24,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "core_len": 8,
+          "rooms": {
+            "L1": [
+              [
+                "Reception",
+                300
+              ],
+              [
+                "Canteen",
+                1200
+              ],
+              [
+                "Lounge",
+                800
+              ],
+              [
+                "Lockers",
+                "rest"
+              ]
+            ],
+            "L2-L6": [
+              [
+                "Rest room (two beds)",
+                40,
+                44
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring south",
+          "x": 50,
+          "y": 376,
+          "w": 400,
+          "d": 24,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 2.4,
+          "cores": 2,
+          "core_len": 8,
+          "rooms": {
+            "L1": [
+              [
+                "Gym",
+                900
+              ],
+              [
+                "Laundry",
+                400
+              ],
+              [
+                "Kitchen",
+                500
+              ],
+              [
+                "Stores",
+                "rest"
+              ]
+            ],
+            "L2-L6": [
+              [
+                "Rest room (two beds)",
+                40,
+                44
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring bow",
+          "x": 50,
+          "y": 64,
+          "w": 24,
+          "d": 312,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 2.4,
+          "cores": 1,
+          "core_len": 8,
+          "rooms": {
+            "all": [
+              [
+                "Rest room (two beds)",
+                40,
+                36
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Ring stern",
+          "x": 426,
+          "y": 64,
+          "w": 24,
+          "d": 312,
+          "levels": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            "L6"
+          ],
+          "corridor": 2.4,
+          "cores": 1,
+          "core_len": 8,
+          "rooms": {
+            "all": [
+              [
+                "Rest room (two beds)",
+                40,
+                36
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Courtyard garden",
+          "x": 74,
+          "y": 64,
+          "w": 352,
+          "d": 312,
+          "layout": "outdoor"
+        },
+        {
+          "name": "Road forecourt",
+          "x": 50,
+          "y": 410,
+          "w": 400,
+          "d": 60,
+          "layout": "outdoor"
+        }
+      ],
+      "doors": [
+        [
+          "Main entrance",
+          [
+            240,
+            400
+          ],
+          [
+            260,
+            400
+          ]
+        ]
+      ],
       "structure": "Cross-laminated timber on a concrete ground floor, six storeys.",
       "look": "A six-storey ring of rest rooms in pale timber and copper-coloured metal around one big quiet garden, with lit window boxes facing inward.",
       "entrances": "Main entrance from the road forecourt; garden doors from the canteen and lounge.",
-      "capacity": "About 1,700 rest rooms for corvette and frigate crews.",
+      "capacity": "About 2,200 beds in two-bed rest rooms for corvette and frigate crews.",
       "services": "6 stair and lift cores, blackout shutters, staffed reception around the clock.",
       "interior": "A ring of four wings round a courtyard garden. Ground floor: reception, canteen, lounge, gym, laundry and kitchen in the long wings and rest rooms in the short ones; rest rooms on every floor above."
     }
