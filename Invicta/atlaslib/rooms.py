@@ -19,6 +19,7 @@ import numpy as np
 import shapely
 from shapely.strtree import STRtree
 
+from . import fabric as FB
 from . import geometry as G
 
 MIN_ROOM_WIDTH_M = 1.5    # 5 ft: narrower than this, a person can't use the room
@@ -164,7 +165,7 @@ def check_plan(m, b=None):
     return out
 
 
-CHECK_VERSION = 1  # raise when a check changes, so cached results are redone
+CHECK_VERSION = 2  # raise when a check changes, so cached results are redone
 
 
 def scan_plans(model, models_dir, add, cache_path=None):
@@ -189,7 +190,8 @@ def scan_plans(model, models_dir, add, cache_path=None):
             cache = {}
     plans = cache.get("plans", {})
     fresh = {}
-    n_plans = n_doors = n_without_doors = 0
+    n_plans = 0
+    totals = {}
     for name in sorted(os.listdir(models_dir)):
         if not name.endswith(".json"):
             continue
@@ -210,8 +212,8 @@ def scan_plans(model, models_dir, add, cache_path=None):
             add(sev, "rooms" if sev != "error" else "data", title, detail, entity, rel, fix)
         if res.get("ok"):
             n_plans += 1
-            n_doors += res["doors"]
-            n_without_doors += res["doors"] == 0
+            for k, v in res["fabric"].items():
+                totals[k] = totals.get(k, 0) + v
     if cache_path:
         try:
             os.makedirs(os.path.dirname(cache_path), exist_ok=True)
@@ -220,11 +222,12 @@ def scan_plans(model, models_dir, add, cache_path=None):
         except OSError:
             pass  # a cache that can't be written only makes the next scan slower
     if n_plans:
-        add("gap", "design-gap", "Room plans are floor shapes only",
-            "The %d room plans have no walls, windows or stair steps yet, and %d doors in all (%d plans have none). "
-            "Plan step 3 adds these so the buildings can be walked through in 3D." % (n_plans, n_doors, n_without_doors),
-            None, "Invicta/data/models", None)
-
+        add("decision", "rooms", "Walls, doors, windows and stairs are proposed",
+            "Worked out by rule from the rooms of the %d room plans (atlaslib/fabric.py): %s walls, %s doors, "
+            "%s openings, %s window runs, %s flights of stairs, %s lifts and %s floor slabs. "
+            "They are shown in the 2D plans and 3D view; the plan files are unchanged. Approve the rules or say what to change." % (
+                n_plans, *("{:,}".format(totals.get(k, 0)) for k in ("wall", "door", "opening", "window", "stair", "lift", "slab"))),
+            None, "Invicta/atlaslib/fabric.py", None)
 
 def _check_file(path, name, buildings):
     try:
@@ -241,5 +244,19 @@ def _check_file(path, name, buildings):
                        "%s has a room plan, but no district file lists that building." % uid, None, None])
     for title, detail, fix in check_plan(m, b):
         issues.append(["warning", title, "%s: %s" % (who, detail), uid if b else None, fix])
-    doors = sum(1 for e in m.get("elements", []) if e.get("type") == "door")
-    return {"ok": True, "issues": issues, "doors": doors}
+    # The fabric (walls, doors, windows, stairs) worked out from the rooms: can every room be reached?
+    extra, rep = FB.build(m)
+    if rep["unreachable"]:
+        issues.append(["warning", "Rooms with no way in",
+                       "%s: %d space(s) can't be reached from an entrance through doors and stairs: %s." % (
+                           who, len(rep["unreachable"]), _examples(rep["unreachable"])), uid if b else None,
+                       "Usually a floor whose stair core doesn't reach the floor below. Add or extend a core."])
+    if rep["stairs_not_fitting"]:
+        issues.append(["warning", "Stairs too big for their core",
+                       "%s: %d flight(s) of stairs don't fit their core: %s." % (
+                           who, len(rep["stairs_not_fitting"]), _examples(rep["stairs_not_fitting"])), uid if b else None,
+                       "Make the core bigger, or the floor lower."])
+    count = {}
+    for e in extra:
+        count[e["type"]] = count.get(e["type"], 0) + 1
+    return {"ok": True, "issues": issues, "fabric": count}
