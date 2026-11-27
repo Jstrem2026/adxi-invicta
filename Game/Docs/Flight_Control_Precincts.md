@@ -1,6 +1,6 @@
-# Flight Control — Precinct Plans (⏳ proposed, 27 Nov 2026, awaiting Jordan)
+# Flight Control — Precinct Plans (✅ canon, approved by Jordan)
 
-Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Flight Control is the band across the whole deck from F55 to F59, between the Port of Arrivals and Cruiser Docks (bow) and the Pilots' Quarter (stern). Canon (Sheet S5): 7.7 sq mi (20.0 km²), the Beacon tower, traffic control, briefing halls, 15,000 people (controllers, flight officers, dispatchers, analysts), centre address D5-F57-M. The Keelway runs through the middle; the Atrium Plaza (canon) just touches the bow edge. Everything here is a proposal unless marked canon. Plans are true top views: **bow right, port up**.
+Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Flight Control is the band across the whole deck from F55 to F59, between the Port of Arrivals and Cruiser Docks (bow) and the Pilots' Quarter (stern). Canon (Sheet S5): 7.7 sq mi (20.0 km²), the Beacon tower, traffic control, briefing halls, 15,000 people (controllers, flight officers, dispatchers, analysts), centre address D5-F57-M. The Keelway runs through the middle; the Atrium Plaza (canon) just touches the bow edge. Jordan approved this whole plan as canon. Plans are true top views: **bow right, port up**.
 
 Layout rule: approach control and sensors at both hull ends, where the docks and gates are; briefings on the port side, dispatch on the starboard side, and the Beacon with the master traffic room in the middle beside the Keelway. The Beacon's height is not designed yet (errata D1 allows one landmark per city up to 1,181 ft / 360 m).
 
@@ -22,7 +22,7 @@ Total 7.71 sq mi (19.96 km²).
 
 ## P1 · Port Approach — F55 to F59, lanes A–F
 
-5,435 × 9,262 ft (1.66 × 2.82 km), 1.81 sq mi (4.68 km²). Controllers who bring every ship into the port docks and the Hall of Arrivals. Status: proposed.
+5,435 × 9,262 ft (1.66 × 2.82 km), 1.81 sq mi (4.68 km²). Controllers who bring every ship into the port docks and the Hall of Arrivals. Status: canon.
 
 Streets: Approach Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
@@ -54,7 +54,7 @@ Streets: Approach Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
 ## P2 · Briefing Halls — F55 to F59, lanes G–L
 
-5,435 × 8,202 ft (1.66 × 2.50 km), 1.60 sq mi (4.14 km²). Every flight on and off the ship is briefed and filed here. Status: proposed.
+5,435 × 8,202 ft (1.66 × 2.50 km), 1.60 sq mi (4.14 km²). Every flight on and off the ship is briefed and filed here. Status: canon.
 
 Streets: Briefing Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
@@ -86,7 +86,7 @@ Streets: Briefing Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
 ## P3 · Beacon — F55 to F59, lanes L–N
 
-5,435 × 4,921 ft (1.66 × 1.50 km), 0.90 sq mi (2.32 km²). The Beacon (canon), the deck's control tower, stands at F57 beside the Keelway with the master traffic room next to it. Status: proposed.
+5,435 × 4,921 ft (1.66 × 1.50 km), 0.90 sq mi (2.32 km²). The Beacon (canon), the deck's control tower, stands at F57 beside the Keelway with the master traffic room next to it. Status: canon.
 
 Streets: Keelway, 328 ft (100 m); F57 Street, 98 ft (30 m).
 
@@ -109,7 +109,7 @@ Streets: Keelway, 328 ft (100 m); F57 Street, 98 ft (30 m).
 
 ## P4 · Dispatch — F55 to F59, lanes O–S
 
-5,435 × 8,202 ft (1.66 × 2.50 km), 1.60 sq mi (4.14 km²). Dispatchers give every craft its crew, slot and route; analysts study the traffic. Status: proposed.
+5,435 × 8,202 ft (1.66 × 2.50 km), 1.60 sq mi (4.14 km²). Dispatchers give every craft its crew, slot and route; analysts study the traffic. Status: canon.
 
 Streets: Dispatch Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
@@ -141,7 +141,7 @@ Streets: Dispatch Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
 ## P5 · Starboard Approach — F55 to F59, lanes T–Y
 
-5,435 × 9,262 ft (1.66 × 2.82 km), 1.81 sq mi (4.68 km²). Approach control for the three Cruiser Gates and the starboard side, and the rescue centre. Status: proposed.
+5,435 × 9,262 ft (1.66 × 2.82 km), 1.81 sq mi (4.68 km²). Approach control for the three Cruiser Gates and the starboard side, and the rescue centre. Status: canon.
 
 Streets: Approach Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 
