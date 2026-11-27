@@ -368,3 +368,165 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 - **Yard Stores** (D5F3P8B5A1): 59 ft (18 m) tall, 3 above deck. Steel portal frames, 18 m (59 ft) clear, with a flat heavy-duty floor for the racks. Six high-bay rack blocks, a bulk store for consumables and heavy spares, and a receiving block with dock, goods-in check, issue counter and stock control. Capacity About 40,000 pallet spaces; about 80 staff per shift..
 
 <!-- designs P8 end -->
+
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P2 Arrivals
+
+- **P2-01 Hall of Arrivals**: The front door of the Invicta. Every shuttle passenger steps off into this great hall, is greeted, and is sent on to customs, the terminals or the Keelway. It is the landmark of Deck 5 and the first room most visitors ever see aboard.
+- **P2-02 Arrival hangar**: A single covered bay on the bow side of the Hall where an arriving shuttle can be parked indoors, unloaded under cover and turned around without blocking the open gates.
+- **P2-03 Shuttle gates G1–G16**: Sixteen gates along the hull where passenger shuttles dock. Each gate has its own door to the apron, so a shuttle can open up, let its passengers walk into the concourse and leave again while the next one waits.
+- **P2-04 Gate Concourse**: A covered walkway running behind all sixteen gates. Passengers walk along it from their shuttle to the Hall of Arrivals, and staff use it to move between gates without crossing the aprons.
+- **P2-05 Apron yards**: The working ground behind the gates where baggage carts, fuel trucks and ground crews serve each docked shuttle. Passengers never come here; it keeps the turnaround work off the concourse.
+- **P2-06 Gate Road**: The service road behind the Hall of Arrivals. Trucks, fuel carts and baggage trains use it to reach every gate and apron along the precinct without mixing with passenger traffic.
+- **P2-07 Arrivals Forecourt**: The open plaza at the Hall's main doors. Arriving travellers come out here to meet friends, find their pod or taxi, and get their first look down the boulevard into the port.
+- **P2-08 Pickup lanes**: Drop-off and pickup lanes for pods and taxis on both sides of the boulevard, so travellers leaving the Hall can be collected straight from the forecourt.
+- **P2-09 Arrivals Boulevard**: The main street out of the arrivals precinct. It carries travellers from the forecourt inland along F43 to the Terminals, with walkways, trees and the pickup lanes along it.
+- **P2-10 Streets**: The cross streets that link Gate Road to Dock Road, giving staff, service vehicles and emergency crews short routes through the precinct blocks.
+- **P2-11 Dock Road**: The arterial road along the precinct edge, linking Arrivals to the Bow and Stern Docks. Freight, service vehicles and through traffic use it so they stay out of the passenger streets.
+- **P2-12 Port Health**: The port's health checkpoint. Arrivals who need it are screened here for disease and contamination, and anyone who must be kept apart is cared for in its quarantine ward before entering the ship.
+- **P2-13 Arrivals Fire Station**: The fire and rescue station for the shuttle gates. Its crash crews stand ready for a fire, fuel spill or hard landing on the aprons and reach any gate within minutes.
+- **P2-14 Baggage Hall**: Where arrivals collect their luggage from the reclaim belts. It also runs the lost-luggage desk and hands bags on to the baggage system in the Freight precinct.
+- **P2-15 Visitor Centre**: The welcome desk for newcomers. Guides hand out maps, explain how the ship works, book tours and help visitors find where they are staying.
+- **P2-16 Arrivals Police Post**: The police and security post for the arrivals area. Officers here patrol the Hall and gates, handle lost people and trouble on arrival, and work with customs and port health.
+- **P2-17 Gate Operations**: The control room for the sixteen shuttle gates. Staff here assign gates, schedule docking and departures, and dispatch the ground crews that serve each shuttle.
+- **P2-18 Staff Centre**: The staff building for everyone who works in Arrivals: canteen, locker rooms and rest areas where gate, baggage and hall staff take their breaks and change shifts.
+- **P2-19 Crew Lodge**: Rooms for shuttle crews between flights. Pilots and cabin crew sleep and rest here close to the gates instead of travelling to homes elsewhere in the ship.
+- **P2-20 Arrivals Utility Plant**: The local utility plant for the arrivals precinct. It steps down power, moves fresh air and supplies water and cooling to the Hall, the gates and the buildings around them.
+- **P2-21 Service Shaft 1**: A lift shaft down to the service layer under the deck at the bow end of the precinct. Maintenance crews and goods move up and down here without using the streets.
+- **P2-23 Service Shaft 2**: The stern-end shaft to the service layer under the precinct. Its vehicle and goods lifts let crews bring heavy equipment up to Arrivals and take waste down.
+- **P2-22 Bow Garden / Stern Garden**: Two parks either side of the boulevard where travellers can sit in green space after their flight, wait for friends, or take a first walk before heading on.
+
+### P5 Terminals
+
+- **P5-01 Transfer Hall**: The hall for travellers changing between the shuttles and the rest of the ship. People arriving from other decks or going on to another shuttle check bookings and wait here.
+- **P5-02 Arrivals Terminal**: Where arriving passengers go through passport and customs control and collect checked baggage before entering the ship proper.
+- **P5-03 Departures Terminal**: Where travellers leaving the Invicta check in, pass security screening and wait in lounges until their shuttle is called at the gates.
+- **P5-04 Cargo Customs**: The customs post for cargo. Incoming freight is inspected, scanned and held in bond here until its declarations are cleared and duties are paid.
+- **P5-05 Terminals Private Flights Lounge**: A private lounge for passengers of private and charter flights docking at the Stern Docks, with its own quiet check-in away from the main terminals.
+- **P5-06 Travel Office**: The ticket and information office for travel to, from and around the ship. Travellers book shuttles, change bookings and ask for help here.
+- **P5-07 Terminals Pod Depot**: The depot where the terminals' ground pods and taxis are parked, charged and dispatched to pick up travellers.
+- **P5-08 Customs & Border Hq**: Headquarters for customs and border control in the port and the main police station for the terminals. Officers who staff passport desks and cargo inspection are based here.
+- **P5-09 Terminal Plaza**: The open square in front of the terminals where travellers meet, wait between connections and find their way to the halls around it.
+- **P5-10 Licensing & Permits**: The permits office. Pilots, shipping firms and travellers come here to apply for flight licences, cargo permits and travel papers.
+- **P5-11 Terminal Admin**: The port authority's offices. The people who run the Port of Arrivals, from planning to finance and staffing, work here.
+- **P5-12 Terminals Utility Plant**: The terminals' own utility plant, supplying power, fresh air, cooling and water to the passenger halls around it.
+- **P5-13 Terminals Service Shaft**: A service shaft from the terminals to the layer under the deck, with a lift for vehicles, one for goods and one dedicated to moving baggage.
+- **P5-14 Medical Centre**: The main medical centre for the terminals, with a clinic, beds and operating theatres for travellers and port staff who fall ill or are hurt.
+
+### P6 Concourse
+
+- **P6-01 Greeters' Hall**: The meeting place where friends and family wait for arriving travellers, with welcome desks and a big arrivals board.
+- **P6-02 Shop Arcade**: A covered shopping street for travellers selling travel goods, souvenirs and duty-free items between the terminals and the hotels.
+- **P6-03 Transit Lounges**: Rest areas for travellers between connections, with seating, sleep pods and showers so long waits are comfortable.
+- **P6-04 Market Hall**: The concourse's indoor market and food court, where travellers and port workers buy meals, groceries and everyday goods.
+- **P6-05 Restaurant Row**: A street of restaurants and cafés serving travellers, hotel guests and port staff.
+- **P6-06 Travellers' Clinic**: A clinic for travellers staying in the concourse hotels, treating illness and minor injuries without a trip to the terminals' medical centre.
+- **P6-07 Concourse Police Post**: The police post for the hotels, shops and lounges of the concourse, keeping the busy public areas safe day and night.
+- **P6-08 Promenade Park**: A large park running through the concourse where travellers walk, rest and stretch their legs between flights.
+- **P6-09 Pod Stop**: The local pod stop serving the concourse's hotels and shops.
+- **P6-10 Grand Port Hotel**: The port's flagship hotel, where important visitors, officials and wealthy travellers stay when they arrive aboard.
+- **P6-11 Harbour Hotel**: A mid-range hotel for ordinary travellers staying a few nights near the port.
+- **P6-12 Crew Hotel**: A large hotel for shuttle and ship crews on layover, close to the gates and docks.
+- **P6-13 Port Hostel**: A budget hostel with capsule rooms for travellers on a tight budget or a short stopover.
+- **P6-14 Concourse Utility Plant**: The utility plant for the concourse, supplying power, air, water and cooling to its hotels, shops and halls.
+- **P6-15 Concourse Service Shaft**: The concourse's shaft down to the service layer, used to bring in supplies for the hotels and shops and take waste away.
+
+### P7 Station
+
+- **P7-01 Porters' Hall**: The porters' base at the Keelway station. Porters carry luggage for travellers between the station and the port, and the lost and found office is here.
+- **P7-02 Station Shops**: Everyday shops at the station, such as a grocery and a pharmacy, for travellers and commuters passing through.
+- **P7-03 Interchange Hall**: The hall where travellers change from the Keelway to pods, taxis and other ground transport across the port.
+- **P7-04 Station Clinic**: A clinic at the station for travellers and commuters who are taken ill or hurt on their journey.
+- **P7-05 Station Offices**: The station's offices and transit control room, which run the Keelway Port station, its platforms and lifts.
+- **P7-06 Deck-Transfer Lifts**: Large lifts that carry people and goods between Deck 5 and the other decks of the ship.
+- **P7-07 Station Pod Depot**: The depot where the station's ground pods are parked, charged and sent out to waiting travellers.
+- **P7-08 Pod & Taxi Rank**: The rank where pods and taxis queue to pick up travellers leaving the station.
+- **P7-09 Station Utility Plant**: The station's utility plant, supplying power, fresh air and cooling to the platforms and halls.
+- **P7-10 Station Service Shaft**: The station's shaft to the service layer, used by maintenance crews and for deliveries.
+- **P7-11 Keelway Square**: The open square outside Keelway Port station where travellers gather, meet and set off into the port.
+- **P7-12 Station Walk**: A covered moving walkway linking the station to the port's terminals and concourse.
+- **P7-13 Keelway Port Station**: The Port of Arrivals stop on the Keelway, the ship's main rail line. Trains from every part of the deck stop at its platforms on F46.
+
+### P1 Bow Docks
+
+- **P1-01 Harbourmaster**: The control office for the bow docks. Harbourmaster staff assign berths, guide ships in and out, and keep the docks running safely.
+- **P1-02 Bow Docks Fire Station**: The fire and rescue station for the bow docks, ready for ship fires, fuel spills and accidents at the berths.
+- **P1-03 Bow Docks Chandlery**: A ship supply store where crews of docked ships buy spare parts, tools and supplies.
+- **P1-04 Bow Docks Police Post**: The security post for the bow docks, patrolling the berths and checking people and goods coming off the ships.
+- **P1-05 Repair Yard**: A repair yard with covered dry bays and open cradles where small ships are lifted out of their berths for repairs.
+- **P1-06 Bow Docks Fuel Depot**: The fuel depot that fills the tanks of ships berthed at the bow docks.
+- **P1-07 Pilot Lounge**: A rest stop for ship pilots and crews at the bow docks, with rooms and a canteen.
+- **P1-08 Bow Docks Utility Plant**: The utility plant for the bow docks, supplying power, water and cooling to the berths and buildings.
+- **P1-09 Bow Docks Service Shaft**: The bow docks' shaft down to the service layer, used for vehicles and goods.
+- **P1-10 Marina Park**: A small park beside the bow docks where dock workers and visiting crews can take a break outdoors.
+- **P1-11 Medium Berths**: Berths for medium-sized civilian and private ships along the bow flank of the port.
+- **P1-12 Skiff Marina**: A marina for small skiffs and private craft at the bow docks.
+
+### P3 Stern Docks
+
+- **P3-01 Cross-Line Stop**: The cross-line stop at the stern docks, where the line across the deck to Flight Control picks up and drops off passengers.
+- **P3-02 Stern Docks Private Flights Lounge**: A lounge with its own check-in for passengers of private flights berthed at the stern docks.
+- **P3-03 Stern Docks Fire Station**: The main fire and rescue station for the stern docks, which also trains new port firefighters.
+- **P3-04 Stern Docks Police Post**: The security post for the stern docks, with patrol teams covering the corvette and frigate berths.
+- **P3-05 Stern Docks Chandlery**: A ship supply store at the stern docks selling parts and supplies to the crews of docked ships.
+- **P3-06 Corvette Service**: A covered yard where corvettes are repaired and refitted.
+- **P3-07 Stern Docks Fuel Depot**: The fuel depot that refuels ships berthed at the stern docks.
+- **P3-08 Frigate Service Yard**: A heavy repair yard with cranes where frigates are worked on, one under cover and one in the open yard.
+- **P3-09 Company Berth Offices**: Offices for the shipping companies that lease berths at the stern docks, where berth rights and contracts are handled.
+- **P3-10 Stern Harbourmaster**: The control office for the stern docks, assigning berths and guiding ships in and out.
+- **P3-11 Dock Park**: A park beside the stern docks for dock workers and visiting crews.
+- **P3-12 Stern Docks Utility Plant**: The utility plant for the stern docks, supplying power, cooling and water to the berths and yards.
+- **P3-13 Stern Docks Service Shaft**: The stern docks' shaft to the service layer, with one lift strong enough for heavy loads.
+- **P3-14 Stern Docks Crew Rest**: Rest rooms, a canteen and lockers for corvette and frigate crews while their ships are berthed.
+- **P3-15 Corvette Berths**: Berths for corvettes along the stern flank of the port.
+- **P3-16 Frigate Berths**: Berths for frigates, the largest civilian ships the stern docks take.
+- **P3-17 Yard Locks**: Locks where ships pass between the berths and the repair yards.
+- **P3-18 Yard Taxiway**: The taxiway that ships use to move between the berths and the yards.
+
+### P4 Freight
+
+- **P4-01 Bonded Warehouse A**: A secure warehouse where imported goods are stored in bond until customs clears them.
+- **P4-02 Bonded Warehouse B**: A second bonded warehouse split into many bays, rented to different importers to store their goods until they are cleared.
+- **P4-03 Cargo Sorting Hub**: The hub where all incoming and outgoing freight is sorted and sent on to its destination.
+- **P4-04 Baggage Logistics**: The baggage system behind the terminals. It moves, sorts and stores every passenger's luggage between the shuttles, Arrivals and the Terminals.
+- **P4-05 Freight Fire Station**: The fire station for the freight precinct, with crews trained to deal with chemical and hazardous cargo fires.
+- **P4-06 Tug Park**: The yard where tugs and haulers are parked between jobs moving cargo around the port.
+- **P4-07 Cold Store**: A refrigerated warehouse for food and medical supplies that must be kept frozen or chilled.
+- **P4-08 Warehouse C**: A general warehouse split into units rented by businesses that need storage near the port.
+- **P4-09 Waste Transfer & Recycling**: Where the district's waste is collected, sorted and recycled before being sent on.
+- **P4-10 Freight Utility Plant**: The utility plant for the freight precinct, supplying power, cooling and heat.
+- **P4-11 Freight Service Shaft**: The freight precinct's shaft to the service layer, with lifts big enough for containers and heavy freight.
+- **P4-12 Service Plant**: A plant that pumps water and handles air for the service layer under the whole Port of Arrivals.
+- **P4-13 Ground Vehicle Depot**: The depot for the port's own vehicles: trucks, ground pods and service vehicles are parked and dispatched from here.
+- **P4-14 Forwarders**: Offices for freight forwarding firms that book and arrange cargo shipments through the port.
+- **P4-15 Vehicle Workshop**: A workshop where the port's trucks, pods and service vehicles are maintained and repaired.
+- **P4-16 Container Yard**: A container yard beside the Keelway freight siding, where containers are stacked and loaded on and off trains.
+
+### P8 Shuttle Yards
+
+- **P8-01 Maintenance Shops**: Workshops where shuttles and small craft have their engines, avionics and safety inspections done.
+- **P8-02 Shuttle Ops**: The operations centre for the shuttle service, setting schedules and dispatching shuttles.
+- **P8-03 Fuel Farm**: The fuel depot for the shuttle yards, refuelling shuttles and small craft.
+- **P8-04 Owner Hangars**: Rows of hangar bays leased to private owners who keep their small craft aboard.
+- **P8-05 Shuttle Yards Fire Station**: The fire and rescue station for the shuttle yards, with crash tenders ready for craft accidents.
+- **P8-06 Shuttle Yards Police Post**: The security post for the shuttle yards, guarding the hangars and checking who comes and goes.
+- **P8-07 Parts & Avionics**: A store for craft spare parts and avionics, kept in robot-served aisles for the yard's workshops.
+- **P8-08 Paint & Refit**: Halls where small craft are repainted and refitted.
+- **P8-09 Yard Offices**: Offices for the staff who run the shuttle yards.
+- **P8-10 Shuttle Yards Utility Plant**: The utility plant for the shuttle yards, supplying power, cooling and water.
+- **P8-11 Shuttle Yards Service Shaft**: The shuttle yards' shaft to the service layer for vehicles and goods.
+- **P8-12 Shuttle Yards Crew Rest**: Rest rooms for yard crews between shifts.
+- **P8-13 Atrium Edge Park**: A large park at the edge of the Atrium Plaza, separating the busy shuttle yards from the plaza and giving yard workers green space.
+- **P8-14 Shuttle Yards Pod Depot**: The depot where the yards' ground pods are parked and charged.
+- **P8-15 Hangar Row A**: A row of public hangar bays for small craft, one craft to a bay.
+- **P8-16 Shuttle Depot**: The depot where the port's own passenger shuttles are kept and readied between flights.
+- **P8-17 Hangar Row B**: A long row of public hangar bays for small craft.
+- **P8-18 Shuttle Yards Training Centre**: A training centre for shuttle pilots and ground crews, with simulators and classrooms.
+- **P8-19 Engine Test Hall**: A hall with test cells where repaired engines are run and checked before going back into a craft.
+- **P8-20 Yard Stores**: The stores building that keeps the yards supplied with spares and consumables.
+
+<!-- purposes:end -->

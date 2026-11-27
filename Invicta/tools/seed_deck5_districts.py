@@ -38,7 +38,8 @@ sys.path.insert(0, APP)
 from atlaslib import geometry as G  # noqa: E402
 from atlaslib.loader import Loader, make_blocks, slug  # noqa: E402
 from atlaslib import footprints as FP  # noqa: E402
-from atlaslib.categories import categorize  # noqa: E402
+from atlaslib.categories import categorize
+from atlaslib import purposes as PU  # noqa: E402
 
 TODAY = "2026-11-27"
 FT = 3.28084
@@ -1389,10 +1390,13 @@ def main():
     for D in DISTRICTS:
         pset, rows = build(D)
         path = os.path.join(APP, "data", "decks", "D5", D["file"] + ".json")
+        if os.path.isfile(path):   # keep each building's purpose (written by hand, not generated)
+            with open(path, encoding="utf-8") as f:
+                PU.keep_purposes(json.load(f), pset)
         with open(path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(pset, f, ensure_ascii=False, separators=(", ", ": "))
             f.write("\n")
-        doc = doc_for(D, pset, rows)
+        doc = PU.put_section(doc_for(D, pset, rows), PU.doc_section(pset)).rstrip("\n")
         for base in ("Game/Docs", "Docs/2_Design_Docs"):
             with open(os.path.join(ROOT, *base.split("/"), D["doc"]), "w", encoding="utf-8", newline="\n") as f:
                 f.write(doc + "\n")

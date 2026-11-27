@@ -255,3 +255,207 @@ Streets: Dockside Road, 131 ft (40 m); Cross-line, 164 ft (50 m).
 | Dockside Shops 9 | 1,444 × 1,335 ft (440 × 407 m) | shops and cafés | D5F4P6B14A3 |
 | Pocket Park 9 | 1,847 × 1,775 ft (563 × 541 m) | small park · shape: rounded corners | D5F4P6B17A3 |
 
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Cruiser Gates
+
+- **P1-01 Cruiser Gate 1 Berths**: Two berths behind Cruiser Gate 1 where escort cruisers dock nose first to load stores, take on crew and get repairs.
+- **P1-02 Cruiser Gate 1**: One of Aerion's three Cruiser Gates, an opening in the starboard hull through which escort cruisers enter and leave the ship.
+- **P1-03 Cruiser Gate 2 Berths**: Two berths behind Cruiser Gate 2 where escort cruisers dock to load stores, take on crew and get repairs.
+- **P1-04 Cruiser Gate 2**: One of Aerion's three Cruiser Gates, an opening in the starboard hull through which escort cruisers enter and leave the ship.
+- **P1-05 Cruiser Gate 3 Berths**: Two berths behind Cruiser Gate 3 where escort cruisers dock to load stores, take on crew and get repairs.
+- **P1-06 Cruiser Gate 3**: One of Aerion's three Cruiser Gates, an opening in the starboard hull through which escort cruisers enter and leave the ship.
+- **P1-07 Supply Quay A**: A quay where cranes load stores into the cruisers at Gates 1 and 2.
+- **P1-08 Supply Quay B**: A quay where cranes load stores into the cruisers at Gates 2 and 3.
+- **P1-09 Cruiser Gate Control**: The control room that opens the three hull gates and manages cruiser traffic to and from the fleet.
+- **P1-10 Gangway Hall**: The hall where cruiser crews board and leave their ships.
+- **P1-11 Fleet Inspectors' Office**: The office of the fleet inspectors who sign cruisers in and out of the berths.
+- **P1-12 Gangway Canteen**: A canteen for cruiser crews coming ashore.
+- **P1-13 Berths Fire Station**: The fire and rescue station for the cruiser berths.
+- **P1-14 Quay Pod Stop**: The pod stop linking the quays to the Keelway.
+- **P1-15 Berth Utility Plant**: The plant supplying shore power, water and air to docked cruisers.
+- **P1-16 Gates Service Shaft**: The Cruiser Gates' shaft down to the service layer.
+- **P1-17 Quay Yard 1**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-18 Quay Yard 2**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-19 Quay Yard 3**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-20 Quay Yard 4**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-21 Quay Yard 5**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-22 Quay Yard 6**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-23 Quay Yard 7**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-24 Quay Yard 8**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-25 Quay Yard 9**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-26 Quay Yard 10**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-27 Quay Yard 11**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-28 Quay Yard 12**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-29 Quay Yard 13**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-30 Quay Yard 14**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+- **P1-31 Quay Yard 15**: An open quay in the Cruiser Gates with cranes and stacked stores waiting to be loaded into the cruisers.
+
+### P2 Fleet Stores
+
+- **P2-01 Cruiser Munitions Magazine**: The magazine holding shells and missiles for the six escort cruisers.
+- **P2-02 Cruiser Fuel Farm**: The fuel farm for the cruisers, piping fuel to the berths.
+- **P2-03 Fleet Stores Warehouse**: The warehouse for food, water and supplies for cruiser crews.
+- **P2-04 Repair Parts Depot**: The depot for cruiser repair parts made in the Ferrum foundries on Deck 8.
+- **P2-05 Freight Lift to Ferrum**: Heavy-goods lifts carrying parts and stores between the Cruiser Docks and Ferrum on Deck 8.
+- **P2-06 Stores Control**: The office that keeps track of stock and plans how each cruiser is loaded.
+- **P2-07 Loaders' Hall**: The loaders' hall, with lockers and a canteen.
+- **P2-08 Stores Fire Station**: The fire station for the fleet stores.
+- **P2-09 Fleet Stores Utility Plant**: The utility plant for the fleet stores.
+- **P2-10 Fleet Stores Service Shaft**: The fleet stores' shaft down to the service layer.
+- **P2-11 Stores Shed 1**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-12 Stores Yard 1**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-13 Stores Shed 2**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-14 Stores Yard 2**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-15 Stores Shed 3**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-16 Stores Yard 3**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-17 Stores Shed 4**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-18 Stores Yard 4**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-19 Stores Shed 5**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-20 Stores Yard 5**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-21 Stores Shed 6**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+- **P2-22 Stores Yard 6**: An open yard in the Fleet Stores where fleet stores are stacked.
+- **P2-23 Stores Shed 7**: A covered store in the Fleet Stores for fleet supplies waiting to be loaded.
+
+### P3 Cruiser Repair Yards
+
+- **P3-01 Dockside Station**: The Dockside stop on the cross-line, bringing workers to the cruiser repair yards.
+- **P3-02 Module Repair Hall**: The hall where engines, turrets and shield modules lifted out of the cruisers are repaired.
+- **P3-03 Turret Shop**: The shop where cruiser turrets are rebuilt and test-fired.
+- **P3-04 Engine Module Shop**: The shop that repairs cruiser engine modules.
+- **P3-05 Hull Plate Store**: The store for the armour plates used to repair cruiser hulls.
+- **P3-06 Shield Module Lab**: The lab where cruiser shield emitters are tuned and tested.
+- **P3-07 Heavy Transporter Depot**: The depot for the heavy carriers that move modules between the berths and the repair yards.
+- **P3-08 Yard Crane Depot**: The depot for the yards' mobile cranes.
+- **P3-09 Inspectors' Hall**: Offices and test labs for the dock inspectors.
+- **P3-10 Dockside Park**: A green space beside the Dockside station.
+- **P3-11 Repair Yards Fire Station**: The fire station for the cruiser repair yards.
+- **P3-12 Repair Yards Utility Plant**: The utility plant for the cruiser repair yards.
+- **P3-13 Repair Yards Service Shaft**: The cruiser repair yards' shaft down to the service layer.
+- **P3-14 Module Yard 1**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-15 Repair Shed 1**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-16 Module Yard 2**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-17 Repair Shed 2**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-18 Module Yard 3**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-19 Repair Shed 3**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-20 Module Yard 4**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-21 Repair Shed 4**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-22 Module Yard 5**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-23 Repair Shed 5**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-24 Module Yard 6**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-25 Repair Shed 6**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-26 Module Yard 7**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-27 Repair Shed 7**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-28 Module Yard 8**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-29 Repair Shed 8**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-30 Module Yard 9**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+- **P3-31 Repair Shed 9**: A covered workshop in the Cruiser Repair Yards for cruiser repair work.
+- **P3-32 Module Yard 10**: An open yard in the Cruiser Repair Yards where cruiser modules wait for repair.
+
+### P4 Dock Freight
+
+- **P4-01 Keelway Freight Siding**: A freight siding on the Keelway where freight trains load and unload cargo for the fleet.
+- **P4-02 Container Yard**: A yard where containers of cruiser stores are stacked while in transit.
+- **P4-03 Bonded Warehouse**: A warehouse for goods waiting for inspection before they go to the fleet.
+- **P4-04 Cold Store**: A refrigerated store for food for the cruiser crews.
+- **P4-05 Loaders' Depot**: The depot for loader vehicles and hauler drones.
+- **P4-06 Freight Inspection Shed**: The shed where inspectors check every load going to the fleet.
+- **P4-07 Dock Freight Office**: The office handling freight bookings and paperwork.
+- **P4-08 Hazardous Cargo Shed**: A separate shed where fuel cells and chemicals are kept apart from other cargo.
+- **P4-09 Truck Park**: A park for freight trucks waiting for loads.
+- **P4-10 Water and Air Tanks**: Tanks storing water and air to resupply the cruisers.
+- **P4-11 Dock Freight Fire Station**: The fire station for Dock Freight.
+- **P4-12 Dock Freight Utility Plant**: The utility plant for Dock Freight.
+- **P4-13 Dock Freight Service Shaft**: Dock Freight's shaft down to the service layer.
+- **P4-14 Container Stacks 1**: Stacked containers in transit in the Dock Freight.
+- **P4-15 Freight Shed 1**: A covered freight store in the Dock Freight.
+- **P4-16 Container Stacks 2**: Stacked containers in transit in the Dock Freight.
+- **P4-17 Freight Shed 2**: A covered freight store in the Dock Freight.
+- **P4-18 Container Stacks 3**: Stacked containers in transit in the Dock Freight.
+- **P4-19 Freight Shed 3**: A covered freight store in the Dock Freight.
+- **P4-20 Container Stacks 4**: Stacked containers in transit in the Dock Freight.
+- **P4-21 Freight Shed 4**: A covered freight store in the Dock Freight.
+- **P4-22 Container Stacks 5**: Stacked containers in transit in the Dock Freight.
+- **P4-23 Freight Shed 5**: A covered freight store in the Dock Freight.
+- **P4-24 Container Stacks 6**: Stacked containers in transit in the Dock Freight.
+- **P4-25 Freight Shed 6**: A covered freight store in the Dock Freight.
+- **P4-26 Container Stacks 7**: Stacked containers in transit in the Dock Freight.
+- **P4-27 Freight Shed 7**: A covered freight store in the Dock Freight.
+- **P4-28 Container Stacks 8**: Stacked containers in transit in the Dock Freight.
+- **P4-29 Freight Shed 8**: A covered freight store in the Dock Freight.
+- **P4-30 Container Stacks 9**: Stacked containers in transit in the Dock Freight.
+- **P4-31 Freight Shed 9**: A covered freight store in the Dock Freight.
+- **P4-32 Container Stacks 10**: Stacked containers in transit in the Dock Freight.
+- **P4-33 Freight Shed 10**: A covered freight store in the Dock Freight.
+- **P4-34 Container Stacks 11**: Stacked containers in transit in the Dock Freight.
+
+### P5 Fleet Quarter
+
+- **P5-01 Fleet Admiral's Office**: The headquarters of the escort fleet and the office of the Fleet Admiral.
+- **P5-02 Cruiser Captains' Hall**: The shore offices of the six cruiser captains.
+- **P5-03 Fleet Communications Centre**: The centre that keeps secure communication links with the cruisers.
+- **P5-04 Dock Station Entrance**: The starboard entrance to Keelway Port station.
+- **P5-05 Fleet Plaza**: The square in front of the Fleet Admiral's Office.
+- **P5-06 Cruiser Crews' Hall**: Shore rooms, lockers and a canteen for cruiser crews on leave.
+- **P5-07 Dockworkers' Hall**: The dockworkers' union hall, with lockers and a canteen.
+- **P5-08 Crew Transit Lodge**: A lodge with beds for crews between cruisers.
+- **P5-09 Fleet Training Hall**: A hall for damage-control and boarding drills.
+- **P5-10 Fleet Clinic**: The clinic for cruiser crews, with doctors and dentists.
+- **P5-11 Dock Canteen**: A canteen serving meals to the dock workforce.
+- **P5-12 Fleet Quarter Utility Plant**: The utility plant for the Fleet Quarter.
+- **P5-13 Fleet Quarter Service Shaft**: The Fleet Quarter's shaft down to the service layer.
+- **P5-14 Fleet Offices 1**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-15 Crew Garden 1**: A garden in the Fleet Quarter for crews ashore.
+- **P5-16 Fleet Offices 2**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-17 Crew Garden 2**: A garden in the Fleet Quarter for crews ashore.
+- **P5-18 Fleet Offices 3**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-19 Crew Garden 3**: A garden in the Fleet Quarter for crews ashore.
+- **P5-20 Fleet Offices 4**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-21 Crew Garden 4**: A garden in the Fleet Quarter for crews ashore.
+- **P5-22 Fleet Offices 5**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-23 Crew Garden 5**: A garden in the Fleet Quarter for crews ashore.
+- **P5-24 Crew Garden 6**: A garden in the Fleet Quarter for crews ashore.
+- **P5-25 Fleet Offices 7**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-26 Crew Garden 7**: A garden in the Fleet Quarter for crews ashore.
+- **P5-27 Fleet Offices 8**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-28 Crew Garden 8**: A garden in the Fleet Quarter for crews ashore.
+- **P5-29 Fleet Offices 9**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-30 Crew Garden 9**: A garden in the Fleet Quarter for crews ashore.
+- **P5-31 Fleet Offices 10**: Offices in the Fleet Quarter for the fleet's shore staff.
+- **P5-32 Crew Garden 10**: A garden in the Fleet Quarter for crews ashore.
+
+### P6 Dockside
+
+- **P6-01 Dockside Market**: A market with shops and food for dock workers.
+- **P6-02 Spacers' Inn**: An inn with rooms for visiting ship crews.
+- **P6-03 Dockside Offices**: Offices for shipping agents and brokers.
+- **P6-04 Dockside Gardens**: A garden walk beside the Atrium Plaza.
+- **P6-05 Dockside Hostel**: A hostel with cheap beds for dockworkers on double shifts.
+- **P6-06 Dock Police Post**: The police post for the docks.
+- **P6-07 Dockside Clinic**: A walk-in clinic for dock workers.
+- **P6-08 Dockside Pod Stop**: The pod stop serving Dockside and the plaza.
+- **P6-09 Dockside Utility Plant**: The utility plant for Dockside.
+- **P6-10 Dockside Service Shaft**: Dockside's shaft down to the service layer.
+- **P6-11 Dockside Shops 1**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-12 Pocket Park 1**: A small park in the Dockside.
+- **P6-13 Dockside Shops 2**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-14 Pocket Park 2**: A small park in the Dockside.
+- **P6-15 Dockside Shops 3**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-16 Pocket Park 3**: A small park in the Dockside.
+- **P6-17 Dockside Shops 4**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-18 Pocket Park 4**: A small park in the Dockside.
+- **P6-19 Dockside Shops 5**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-20 Pocket Park 5**: A small park in the Dockside.
+- **P6-21 Dockside Shops 6**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-22 Pocket Park 6**: A small park in the Dockside.
+- **P6-23 Dockside Shops 7**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-24 Pocket Park 7**: A small park in the Dockside.
+- **P6-25 Dockside Shops 8**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-26 Pocket Park 8**: A small park in the Dockside.
+- **P6-27 Dockside Shops 9**: Shops and cafés in the Dockside for dock workers and visiting crews.
+- **P6-28 Pocket Park 9**: A small park in the Dockside.
+
+<!-- purposes:end -->

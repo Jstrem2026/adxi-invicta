@@ -338,18 +338,31 @@
     if (!svg || !sizesOn || typeof IX === "undefined") return;
     const vb = svg.getAttribute("viewBox").split(/\s+/).map(Number), fs = 11 * vb[2] / Math.max(1, svg.getBoundingClientRect().width);
     const g = el("g", { id: "sizes2d", "pointer-events": "none" });
-    // The building's own name is drawn in the middle of its box: sit the size just under it, never on it.
-    const names = [...svg.querySelectorAll(":scope > text")].map((t) => [+t.getAttribute("x"), +t.getAttribute("y"), +t.getAttribute("font-size") || 0, /rotate/.test(t.getAttribute("transform") || "")]);
-    const nameSize = (cx, cy) => { const t = names.find((q) => !q[3] && Math.abs(q[0] - cx) < 1 && Math.abs(q[1] - cy) < 1); return t ? t[2] : 0; };
+    // Sit each size just under its building's name, inside the open part of the shape the name uses;
+    // leave it off when it would not fit there (never on top of the name or over a courtyard).
+    const lbls = {};
+    for (const t of svg.querySelectorAll("text[data-lbl]")) lbls[t.dataset.lbl] = t;
     for (const b of Object.values(IX.buildings || {})) {
       if (!b.rect_km) continue;
-      const r = b.rect_km, cx = (X(r[0]) + X(r[1])) / 2, cy = (Y(r[2]) + Y(r[3])) / 2;
-      if (cx < vb[0] || cx > vb[0] + vb[2] || cy < vb[1] || cy > vb[1] + vb[3]) continue;
-      const w = (r[1] - r[0]) * 1000, h = (r[3] - r[2]) * 1000;
-      const t = `${one(w)} × ${one(h)}`;
-      const dy = Math.max(fs * 1.2, nameSize(cx, cy) * 0.6 + fs * 0.75);
-      if (t.length * fs * 0.56 > w * 0.95 || dy + fs * 0.6 > h / 2) continue;  // too small to label at this zoom
-      textAt(g, cx, cy + dy, t, fs, { fill: "#ffc266" });
+      const r = b.rect_km, w = (r[1] - r[0]) * 1000, h = (r[3] - r[2]) * 1000;
+      const t = `${one(w)} × ${one(h)}`, tw = t.length * fs * 0.58;
+      const lb = lbls[b.uid];
+      let sp, x, y;
+      if (lb) {
+        sp = lb.dataset.spot.split(" ").map(Number);   // x0 y0 x1 y1 of the open part
+        x = (sp[0] + sp[2]) / 2;
+        const mid = (sp[1] + sp[3]) / 2;
+        // a sideways name runs down the middle: the size goes under it only when the open part is wide enough
+        y = lb.dataset.side === "1" ? mid : mid + (+lb.dataset.th) / 2 + fs * 0.8;
+        if (lb.dataset.side === "1") { x = (sp[0] + sp[2]) / 2 + (+lb.dataset.th) / 2 + tw / 2 + fs * 0.4; }
+      } else {
+        sp = [Math.min(X(r[0]), X(r[1])), Math.min(Y(r[2]), Y(r[3])), Math.max(X(r[0]), X(r[1])), Math.max(Y(r[2]), Y(r[3]))];
+        if (b.outline_km || b.bays_km) continue;      // hidden name (too small) or a row of bays: no single size spot
+        x = (sp[0] + sp[2]) / 2; y = (sp[1] + sp[3]) / 2;
+      }
+      if (x < vb[0] || x > vb[0] + vb[2] || y < vb[1] || y > vb[1] + vb[3]) continue;
+      if (x - tw / 2 < sp[0] || x + tw / 2 > sp[2] || y - fs * 0.6 < sp[1] || y + fs * 0.6 > sp[3]) continue;  // too small at this zoom
+      textAt(g, x, y, t, fs, { fill: "#ffc266" });
     }
     svg.append(g);
   }
@@ -467,6 +480,9 @@
     d.innerHTML = '<button type="button" class="dl-btn" title="What the codes mean">Codes ?</button><div class="dl-box"><b>D5F1P1B1A1L2R1</b><br>D · Deck<br>F · District<br>P · Precinct<br>B · Block<br>A · Building<br>L · Level (LB below deck)<br>R · Room</div>';
     d.querySelector(".dl-btn").onclick = () => d.classList.toggle("open");
     wrap.append(d);
+    // the colour legend button sits just right of Codes
+    const lg = wrap.querySelector(".map-legend");
+    if (lg) lg.style.left = (d.offsetLeft + d.querySelector(".dl-btn").offsetWidth + 8) + "px";
   }
 
   // Redraw whenever the app renders a page.
