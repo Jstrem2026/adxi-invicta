@@ -697,6 +697,29 @@ function conceptBlock(uid, b) {
       <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span>${window.adxiDeleteConcept ? ` <button class="concept-del" onclick="adxiDeleteConcept('${uid}', '${esc(c.file)}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Delete</button>` : ""}</figcaption></figure>`).join("")}
     ${list.length ? "" : `<div class="small muted">No concept art yet.</div>`}${add}`;
 }
+// Copy helpers for the building panel.
+function copyText(t, btn) {
+  const done = () => { if (btn) { const o = btn.textContent; btn.textContent = "✓"; setTimeout(() => (btn.textContent = o), 1200); } };
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, () => fallbackCopy(t, done));
+  else fallbackCopy(t, done);
+}
+function fallbackCopy(t, done) {
+  const a = document.createElement("textarea"); a.value = t; a.style.position = "fixed"; a.style.opacity = "0";
+  document.body.append(a); a.select(); try { document.execCommand("copy"); done(); } catch (e) { /* ignore */ } a.remove();
+}
+function copyFrom(btn) { copyText(btn.dataset.copy || "", btn); }
+function copyBuilding(btn) {
+  const panel = btn.closest(".panel") || document;
+  const clean = (el) => { const c = el.cloneNode(true); c.querySelectorAll(".cp").forEach((x) => x.remove()); return c.textContent.replace(/\s+/g, " ").trim(); };
+  const lines = [clean(panel.querySelector("h1")), clean(panel.querySelector("h1 + div"))];
+  panel.querySelectorAll(".kv").forEach((kv, i) => {
+    if (i === 1) lines.push("", "Architecture");
+    const cells = [...kv.children];
+    for (let j = 0; j + 1 < cells.length; j += 2) lines.push(`${clean(cells[j])}: ${clean(cells[j + 1])}`);
+  });
+  copyText(lines.join(String.fromCharCode(10)), btn);
+}
+window.copyFrom = copyFrom; window.copyBuilding = copyBuilding;
 function buildingView(uid) {
   const b = IX.buildings[uid];
   if (!b) return `<div class="note">Unknown building ${esc(uid)}.</div>`;
@@ -710,10 +733,14 @@ function buildingView(uid) {
   const sz = b.size_m;
   const arch = [["Height", b.height_m != null ? len(b.height_m) : null], ["Floors", b.floors], ["Structure", b.structure], ["Entrances", b.entrances],
     ["Materials / look", b.look], ["Capacity", b.capacity], ["Services", b.services], ["Interior layout", b.interior]]
-    .map(([k, v]) => `<div>${k}</div><div>${v != null && v !== "" ? esc(v) : ND}</div>`).join("");
+    .map(([k, v]) => {
+      if (v == null || v === "") return `<div>${k}</div><div>${ND}</div>`;
+      const t = String(v), long = t.length > 80;
+      return `<div>${k}</div><div class="kvv"><span class="${long ? "clamp" : ""}" ${long ? `onclick="this.classList.toggle('open')" title="Tap to expand"` : ""}>${esc(t)}</span><button class="cp" title="Copy" data-copy="${esc(k + ": " + t)}" onclick="copyFrom(this)">⧉</button></div>`;
+    }).join("");
   const blocks = (b.blocks || []).map(k => { const bk = (p.blocks || []).find(q => q.id === k); return `<a href="#/block/${p.uid}/${k}">${esc(bk ? bk.name : "")} · ${k}</a>`; }).join(", ");
   const firstBlock = (b.blocks || [])[0];
-  const panel = `<h1>${esc(b.name)}</h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
+  const panel = `<h1>${esc(b.name)} <button class="cp cp-all" title="Copy all building information" onclick="copyBuilding(this)">⧉</button></h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
     <div class="kv">
       <div>Address</div><div>${esc(b.address || "—")} <span class="small muted">(centre)</span></div>
@@ -726,7 +753,7 @@ function buildingView(uid) {
       ${b.bay_names ? `<div>Parts</div><div>${b.bay_names.map(esc).join(", ")}</div>` : ""}
       ${b.doors_km ? `<div>Dock doors</div><div>${b.doors_km.length} in the hull, ${dims((b.doors_km[0][1] - b.doors_km[0][0]) * 1000, (b.doors_km[0][3] - b.doors_km[0][2]) * 1000)} as drawn</div>` : ""}
       <div>Position</div><div>${r ? `${nd(r[0], 2)}–${nd(r[1], 2)} km from the prow, ${nd(r[2], 2)} to ${nd(r[3], 2)} km across` : ND}</div></div>
-    <h3>Architecture</h3><div class="kv">${arch}</div>
+    <details class="sect" open><summary><h3>Architecture</h3></summary><div class="kv">${arch}</div></details>
     ${conceptBlock(uid, b)}
     <h3>Sources</h3><div class="small">${fileLink(ps.doc, "precinct plans doc")} (${esc(p.id)} table) · ${fileLink(p.blueprint, "blueprint")} · ${fileLink(ps.file, "app data")}</div>
     ${issueBlock(uid, "Issues with this building")}`;
