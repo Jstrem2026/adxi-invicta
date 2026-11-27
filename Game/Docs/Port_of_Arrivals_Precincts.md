@@ -93,7 +93,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 ![P7 Station](art/blueprints/precincts/p7-station.png)
 
-14,764 × 5,741 ft (4.5 × 1.75 km). The interchange. Keelway Port station (canon stop at F46) with its platforms, Keelway Square where the boulevard ends, pods and taxis. Deck-transfer lifts are an assumption.
+14,764 × 5,741 ft (4.5 × 1.75 km). The interchange. Keelway Port station (canon stop at F46) with its platforms, Keelway Square where the boulevard ends, pods and taxis. Deck-transfer lifts approved as canon by Jordan.
 
 | Item | Size | Notes |
 |---|---|---|
@@ -102,7 +102,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Interchange Hall | 2,756 × 2,100 ft (840 × 640 m) | pods · taxis · ground transport |
 | Clinic | 1,312 × 2,100 ft (400 × 640 m) |  |
 | Station Offices | 1,280 × 2,100 ft (390 × 640 m) | transit control |
-| Deck-Transfer Lifts | 2,887 × 2,100 ft (880 × 640 m) | lifts to the other decks (assumed) |
+| Deck-Transfer Lifts | 2,887 × 2,100 ft (880 × 640 m) | lifts to the other decks |
 | Pod Depot | 1,312 × 2,100 ft (400 × 640 m) |  |
 | Pod & Taxi Rank | 2,953 × 2,526 ft (900 × 770 m) |  |
 | Utility | 1,115 × 1,411 ft (340 × 430 m) | substation · air |
