@@ -80,3 +80,19 @@ svg text { font-family: "Segoe UI", system-ui, sans-serif; pointer-events: none;
 .note { background: #0c2038; border: 1px dashed var(--line); border-radius: 8px; padding: 10px; color: var(--muted); font-size: 13px; }
 code { background: #0c2038; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
 .help p, .help li { max-width: 860px; line-height: 1.55; }
+
+/* Phones and small tablets */
+.mapwrap svg { touch-action: none; }
+@media (max-width: 700px) {
+  html { -webkit-text-size-adjust: 100%; }
+  .top { gap: 8px 12px; padding: 8px 10px; position: static; }
+  .top .brand .sub, #scan-time { display: none; }
+  .tabs { overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; max-width: 100%; -webkit-overflow-scrolling: touch; }
+  main { padding: 10px 10px 90px; }
+  .mapwrap svg { height: 58vh; }
+  .maptools button { padding: 6px 11px; font-size: 13px; }
+  .panel { max-height: none; padding: 12px; }
+  .kv { grid-template-columns: 105px 1fr; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  table { display: block; overflow-x: auto; max-width: 100%; }
+}

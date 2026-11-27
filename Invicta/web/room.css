@@ -36,3 +36,8 @@
 .room-send { background: var(--accent, #6fd0ff); color: #071425; border: 0; border-radius: 8px; padding: 7px 12px; font: inherit; font-weight: 600; cursor: pointer; }
 .room-send:disabled { opacity: .5; }
 .room-note { padding: 0 12px 8px; color: var(--muted, #8fb0d3); font-size: 11px; }
+body.chat-open .room-btn { display: none; }
+@media (max-width: 700px) {
+  .room { left: 0; right: 0; bottom: 0; width: 100vw; height: 78vh; border-radius: 14px 14px 0 0; }
+  .room-btn { left: 10px; bottom: 12px; }
+}

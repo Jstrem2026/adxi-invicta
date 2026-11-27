@@ -310,7 +310,7 @@ function mapShell(svgInner, vb, tools, legend, hint) {
     <pattern id="hatchS" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="40" height="40" fill="#16283d"/><line x1="0" y1="0" x2="0" y2="40" stroke="#2b4563" stroke-width="10"/></pattern></defs>
     ${svgInner}${scaleBar(vb)}</svg>
     <div class="maptools">${tools || ""}<button onclick="fitMap()">Fit</button></div>
-    <div class="maphint">${hint || "Scroll to zoom · drag to move"}</div></div>${legend ? `<div class="legend">${legend}</div>` : ""}`;
+    <div class="maphint">${("ontouchstart" in window) ? (hint || "Scroll to zoom · drag to move").replace(/[Ss]croll to zoom/, "pinch to zoom").replace(/^p/, (hint ? "p" : "P")) : (hint || "Scroll to zoom · drag to move")}</div></div>${legend ? `<div class="legend">${legend}</div>` : ""}`;
 }
 function bindMap() {
   const svg = document.getElementById("map");
@@ -337,6 +337,38 @@ function bindMap() {
   };
   window.onmouseup = () => { drag = null; svg.classList.remove("dragging"); };
   svg.addEventListener("click", e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+  // Touch: one finger pans, two fingers pinch to zoom. A tap still clicks.
+  let t0 = null;
+  const toMap = (cx, cy) => {
+    const r = svg.getBoundingClientRect(), s = Math.min(r.width / vb[2], r.height / vb[3]);
+    return [vb[0] + (cx - r.left - (r.width - vb[2] * s) / 2) / s, vb[1] + (cy - r.top - (r.height - vb[3] * s) / 2) / s, s];
+  };
+  const snap = (ts) => {
+    if (ts.length === 1) return { n: 1, x: ts[0].clientX, y: ts[0].clientY, vb: vb.slice() };
+    const x = (ts[0].clientX + ts[1].clientX) / 2, y = (ts[0].clientY + ts[1].clientY) / 2;
+    return { n: 2, x, y, d: Math.hypot(ts[0].clientX - ts[1].clientX, ts[0].clientY - ts[1].clientY), vb: vb.slice(), m: toMap(x, y) };
+  };
+  svg.addEventListener("touchstart", e => { t0 = snap(e.touches); moved = false; }, { passive: true });
+  svg.addEventListener("touchmove", e => {
+    if (!t0) return;
+    e.preventDefault();
+    const ts = e.touches;
+    if (ts.length !== t0.n) { t0 = snap(ts); return; }
+    const r = svg.getBoundingClientRect();
+    if (t0.n === 1) {
+      const s = Math.min(r.width / t0.vb[2], r.height / t0.vb[3]);
+      const dx = ts[0].clientX - t0.x, dy = ts[0].clientY - t0.y;
+      if (Math.abs(dx) + Math.abs(dy) > 6) moved = true;
+      vb = [t0.vb[0] - dx / s, t0.vb[1] - dy / s, t0.vb[2], t0.vb[3]];
+    } else {
+      const d = Math.hypot(ts[0].clientX - ts[1].clientX, ts[0].clientY - ts[1].clientY) || 1;
+      const k = t0.d / d, [mx, my] = t0.m;
+      vb = [mx - (mx - t0.vb[0]) * k, my - (my - t0.vb[1]) * k, t0.vb[2] * k, t0.vb[3] * k];
+      moved = true;
+    }
+    set();
+  }, { passive: false });
+  svg.addEventListener("touchend", e => { t0 = e.touches.length ? snap(e.touches) : null; }, { passive: true });
 }
 function fitMap() { const s = document.getElementById("map"); if (s) s.setAttribute("viewBox", s.dataset.vb.split(",").join(" ")); }
 window.fitMap = fitMap;

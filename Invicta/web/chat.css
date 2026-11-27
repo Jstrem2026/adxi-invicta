@@ -66,3 +66,9 @@ body.chat-open .chat-tab { display: none; }
   :root { --chat-w: 100vw; }
   body.chat-open main, body.chat-open header.top { margin-right: 0; }
 }
+@media (max-width: 700px) {
+  .chat { top: auto; height: 88vh; border-left: 0; border-top: 1px solid var(--line, #234a75); border-radius: 14px 14px 0 0; }
+  .chat-tab { right: 10px; bottom: 12px; }
+  .chat-input { font-size: 16px; } /* stops iPhone zooming in on focus */
+  .room-input, .room-who input { font-size: 16px; }
+}
