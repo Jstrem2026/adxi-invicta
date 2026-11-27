@@ -1,0 +1,184 @@
+{
+  "about": "P2 Arrivals building designs, one per building, written 27 Nov 2026 (proposed). The shuttle gates, Gate Concourse and apron yards run along the port hull (low y); the Hall of Arrivals (canon) and the Crew Lodge (designed separately) are not in this file. Coordinates in metres from each lot's bow-port corner.",
+  "buildings": [
+    {
+      "id": "P2-12", "name": "Port Health",
+      "levels": [["LB1", "Service level", -5, 5], ["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4.5], ["L3", "Level 3", 9.5, 4.5]],
+      "parts": [
+        {"name": "Screening hall", "x": 40, "y": 30, "w": 290, "d": 70, "levels": ["L1"], "corridor": 10, "cores": 2, "corridor_name": "Screening lanes",
+         "rooms": {"L1": [["Arrivals screening booths", 40, 24], ["Temperature and scan gates", 1200], ["Family screening rooms", 60, 6], ["Waiting hall", "rest"]]}},
+        {"name": "Clinic wing", "x": 40, "y": 100, "w": 46, "d": 200, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 1,
+         "rooms": {"L1": [["Treatment rooms", 30, 12], ["Imaging", 800], ["Pharmacy", 300], ["Lab", 600]],
+                   "L2-L3": [["Wards", 1200, 2], ["Consulting rooms", 25, 10], ["Staff rooms", "rest"]]}},
+        {"name": "Quarantine wing", "x": 284, "y": 100, "w": 46, "d": 200, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 1,
+         "rooms": {"L1": [["Quarantine admissions", 800], ["Decontamination", 600], ["Negative-pressure rooms", 25, 10]],
+                   "L2-L3": [["Quarantine suites", 40, 18], ["Family rooms", 60, 4]]}},
+        {"name": "Healing garden", "x": 86, "y": 110, "w": 198, "d": 180, "layout": "outdoor"},
+        {"name": "Ambulance bay", "x": 100, "y": 300, "w": 170, "d": 30, "layout": "outdoor"}
+      ],
+      "doors": [["Arrivals screening entry", [170, 30], [200, 30]], ["Ambulance entrance", [175, 300], [195, 300]]],
+      "structure": "Concrete frame on a 9 m grid; the quarantine wing is sealed with its own air supply.",
+      "look": "A clean white building of frosted glass and pale ceramic panels in a U around a healing garden, with a soft green light line marking the screening entrance.",
+      "entrances": "Arrivals reach the screening hall from the gates side; ambulances use the bay at the back.",
+      "capacity": "About 3,000 arrivals screened an hour; 60 ward beds and 46 quarantine suites.",
+      "services": "Separate air for the quarantine wing, 4 stair and lift cores, decontamination suite.",
+      "interior": "A screening hall with booths and scan gates along the gates side; a clinic wing with treatment rooms, imaging, lab and wards; a sealed quarantine wing with negative-pressure rooms and quarantine suites; a healing garden between them."
+    },
+    {
+      "id": "P2-13", "name": "Arrivals Fire Station",
+      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 4.5], ["L3", "Level 3", 9, 4]],
+      "parts": [
+        {"name": "Appliance hall", "x": 30, "y": 30, "w": 210, "d": 66, "layout": "bays", "bays": 6, "bay_names": ["Crash tender", "Crash tender", "Foam tender", "Rescue unit", "Medical response car", "Command car"], "levels": ["L1", "L2"]},
+        {"name": "Crew block", "x": 30, "y": 96, "w": 210, "d": 40, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 2,
+         "rooms": {"L1": [["Watch room", 200], ["Breathing apparatus", 300], ["Medical store", 300], ["Workshop", "rest"]], "L2": [["Bunk rooms", 16, 18], ["Kitchen and mess", 600]], "L3": [["Offices", "rest"], ["Training room", 400]]}},
+        {"name": "Drill yard", "x": 30, "y": 150, "w": 210, "d": 130, "layout": "outdoor"},
+        {"name": "Apron", "x": 0, "y": 0, "w": 270, "d": 30, "layout": "outdoor"}
+      ],
+      "doors": [["Appliance doors", [30, 30], [240, 30]]],
+      "structure": "Steel appliance hall, 9 m (30 ft) clear; three-storey concrete crew block.",
+      "look": "A compact station of red-framed glass bay doors under a dark crew block with a single lit red stripe, facing the arrival gates.",
+      "entrances": "Six appliance doors toward the gates; crew door from the drill yard.",
+      "capacity": "6 appliances; 18 crew on watch.",
+      "services": "Foam refill, medical store, 2 stair cores.",
+      "interior": "A six-bay appliance hall, a crew block with watch room and medical store, bunk rooms and mess, and offices on top, and a drill yard behind."
+    },
+    {
+      "id": "P2-14", "name": "Baggage Hall",
+      "levels": [["LB1", "Baggage tunnel", -6, 6], ["L1", "Reclaim hall", 0, 9], ["L2", "Upper", 9, 4.5]],
+      "parts": [
+        {"name": "Reclaim hall", "x": 20, "y": 20, "w": 230, "d": 150, "layout": "bays", "bays": 6, "bay_name": "Reclaim belt", "levels": ["L1"]},
+        {"name": "Service strip", "x": 20, "y": 170, "w": 230, "d": 36, "levels": ["L1", "L2"], "corridor": 3, "cores": 2,
+         "rooms": {"L1": [["Lost luggage office", 400], ["Oversize bags", 500], ["Customs red channel", 600], ["Customs green channel", 600], ["Trolley store", "rest"]], "L2": [["Baggage control", 600], ["Offices", "rest"]]}},
+        {"name": "Baggage tunnel (from P4)", "x": 20, "y": 20, "w": 230, "d": 186, "layout": "bays", "bays": 2, "bay_names": ["Inbound bag tunnel", "Belt feed room"], "levels": ["LB1"]},
+        {"name": "Exit to the forecourt", "x": 20, "y": 210, "w": 230, "d": 35, "layout": "outdoor"}
+      ],
+      "structure": "Steel roof on a 24 m grid over a column-free reclaim hall, 9 m (30 ft) clear; baggage tunnel in concrete below.",
+      "look": "A bright hall under a white folded roof with long rooflights, glass walls on the forecourt side so arrivals can see their way out.",
+      "entrances": "Arrivals come in from the Hall of Arrivals; exits through customs channels to the forecourt.",
+      "capacity": "6 reclaim belts; about 4,000 arrivals an hour.",
+      "services": "Bags arrive by tunnel from Baggage Logistics in P4; 2 stair and lift cores.",
+      "interior": "Six reclaim belts in one hall, fed from a bag tunnel below, with lost luggage, oversize bags and the customs red and green channels on the way out."
+    },
+    {
+      "id": "P2-15", "name": "Visitor Centre",
+      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Gallery", 6, 5], ["L3", "Viewing deck", 11, 4]],
+      "parts": [
+        {"name": "Welcome pavilion", "x": 40, "y": 40, "w": 260, "d": 110, "levels": ["L1", "L2"], "corridor": 12, "cores": 2, "corridor_name": "Welcome hall",
+         "rooms": {"L1": [["Welcome desks", 1500], ["Ship map wall and model", 3000], ["Guides' office", 600], ["Travel shop", 1500], ["Café", 1500], ["Lockers and baggage drop", 800], ["Toilets", "rest"]],
+                   "L2": [["Invicta exhibition", 6000], ["Cinema", 1500], ["Group rooms", 120, 4], ["Offices", "rest"]]}},
+        {"name": "Viewing deck", "x": 120, "y": 60, "w": 100, "d": 70, "layout": "hall", "room": "Roof viewing deck", "levels": ["L3"]},
+        {"name": "Forecourt garden", "x": 40, "y": 160, "w": 260, "d": 55, "layout": "outdoor"}
+      ],
+      "doors": [["Main entrance", [160, 150], [180, 150]]],
+      "structure": "Timber and steel roof on tree-like columns over a two-storey glass pavilion.",
+      "look": "A welcoming glass pavilion under a wide wave-shaped timber roof, with a giant lit model of the Invicta inside visible from the forecourt.",
+      "entrances": "Main entrance from the Arrivals Forecourt; garden doors on the forecourt side.",
+      "capacity": "About 2,000 visitors at a time; 120 guides and staff.",
+      "services": "2 stair and lift cores, baggage drop, multilingual guides.",
+      "interior": "Welcome desks, a ship map wall with a large model of the Invicta, travel shop and café on the ground floor; the Invicta exhibition, cinema and group rooms upstairs; a roof viewing deck."
+    },
+    {
+      "id": "P2-16", "name": "Arrivals Police Post",
+      "levels": [["L1", "Ground floor", 0, 4.2], ["L2", "Upper floor", 4.2, 4.2]],
+      "parts": [
+        {"name": "Main block", "x": 30, "y": 30, "w": 140, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 1,
+         "rooms": {"L1": [["Front desk", 500], ["Interview rooms", 30, 3], ["Holding rooms", 12, 6], ["Duty office", "rest"]], "L2": [["Open office", 1500], ["Briefing room", 250], ["Lockers", "rest"]]}},
+        {"name": "Side wing", "x": 130, "y": 70, "w": 40, "d": 80, "levels": ["L1"], "corridor": 3,
+         "rooms": {"L1": [["Vehicle garage", 1500], ["Evidence store", "rest"]]}},
+        {"name": "Secure yard", "x": 30, "y": 70, "w": 100, "d": 80, "layout": "outdoor"}
+      ],
+      "structure": "Reinforced concrete frame with a hardened ground floor.",
+      "look": "A small two-storey block in charcoal panels with a blue light band, tucked beside the gate road.",
+      "entrances": "Public entrance at the front; vehicle gate at the back.",
+      "capacity": "About 80 officers across three shifts.",
+      "services": "1 stair core, holding rooms, CCTV link to the Hall of Arrivals.",
+      "interior": "Front desk, interview and holding rooms below, open office and briefing room above, and a garage wing round a secure yard."
+    },
+    {
+      "id": "P2-17", "name": "Gate Operations",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4.5], ["L3", "Level 3", 9.5, 4.5], ["L4", "Gate control floor", 14, 6]],
+      "parts": [
+        {"name": "Ops block", "x": 50, "y": 40, "w": 320, "d": 48, "levels": ["L1", "L2", "L3", "L4"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Entrance hall", 800], ["Gate crew room", 2000], ["Ramp equipment store", 2000], ["Lockers", 1200], ["Canteen", "rest"]],
+                   "L2-L3": [["Dispatch offices", 4000], ["Training rooms", 150, 4], ["Offices", "rest"]],
+                   "L4": [["Gate control room (overlooks all 16 gates)", 6000], ["Duty managers", 600], ["Comms room", "rest"]]}},
+        {"name": "Ground equipment hall", "x": 50, "y": 110, "w": 320, "d": 120, "layout": "bays", "bays": 4, "bay_names": ["Boarding bridge spares", "Tug and tow bay", "Ground power units", "Stairs and loaders"], "levels": ["L1", "L2"]},
+        {"name": "Equipment yard", "x": 50, "y": 240, "w": 320, "d": 50, "layout": "outdoor"}
+      ],
+      "doors": [["Main entrance", [200, 40], [220, 40]]],
+      "structure": "Concrete frame with a steel and glass top floor; steel equipment hall behind.",
+      "look": "A four-storey block of dark glass and gunmetal fins topped by a glass gate control floor that looks out over all sixteen shuttle gates, with a ground equipment hall behind.",
+      "entrances": "Main entrance on the gates side; equipment hall doors to the yard.",
+      "capacity": "About 700 staff across shifts; the control floor runs all 16 gates.",
+      "services": "2 stair and lift cores, backup power and comms.",
+      "interior": "Ground floor: gate crew room, ramp equipment store, lockers and canteen. Levels 2 and 3: dispatch, training and offices. Level 4: the gate control room overlooking every gate. A four-bay ground equipment hall behind."
+    },
+    {
+      "id": "P2-18", "name": "Staff Centre",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4], ["L3", "Level 3", 9, 4]],
+      "parts": [
+        {"name": "Front block", "x": 40, "y": 30, "w": 340, "d": 40, "levels": ["L1", "L2", "L3"], "corridor": 3, "cores": 2,
+         "rooms": {"L1": [["Staff entrance and security", 600], ["Canteen", 4000], ["Kitchen", 1200], ["Shop", 400], ["Toilets", "rest"]],
+                   "L2-L3": [["Training centre", 3000], ["HR and payroll", 1200], ["Union and welfare rooms", 600], ["Offices", "rest"]]}},
+        {"name": "Locker wing", "x": 40, "y": 70, "w": 40, "d": 170, "levels": ["L1", "L2"], "corridor": 3,
+         "rooms": {"all": [["Lockers and showers", 1200, 4], ["Uniform store", "rest"]]}},
+        {"name": "Rest wing", "x": 340, "y": 70, "w": 40, "d": 170, "levels": ["L1", "L2"], "corridor": 3,
+         "rooms": {"L1": [["Quiet room", 600], ["Prayer rooms", 80, 2], ["Nap pods", 1000], ["Gym", "rest"]], "L2": [["Rest rooms", 20, 30]]}},
+        {"name": "Staff garden", "x": 80, "y": 80, "w": 260, "d": 160, "layout": "outdoor"}
+      ],
+      "structure": "Concrete frame on an 8 m grid.",
+      "look": "A three-sided staff building in warm grey metal and timber around a green garden, with big canteen windows facing it.",
+      "entrances": "Staff entrance from the gate road; garden doors from the canteen.",
+      "capacity": "Canteen seats 1,200; lockers for about 4,000 staff.",
+      "services": "2 stair and lift cores, 24-hour canteen.",
+      "interior": "A front block with staff entrance, canteen and shop, and training, HR and welfare rooms upstairs; a locker wing and a rest wing with quiet room, prayer rooms, nap pods, gym and rest rooms; a staff garden in the middle."
+    },
+    {
+      "id": "P2-20", "name": "Arrivals Utility Plant",
+      "levels": [["L1", "Ground floor", 0, 8], ["L2", "Upper plant", 8, 6]],
+      "parts": [
+        {"name": "Plant house", "x": 20, "y": 20, "w": 160, "d": 120, "levels": ["L1", "L2"], "corridor": 6,
+         "rooms": {"L1": [["Transformer bays", 500, 6], ["Switch room", 2500], ["Water pumps", 2000], ["Control room", "rest"]], "L2": [["Air handling", "rest"]]}},
+        {"name": "Chiller yard", "x": 20, "y": 160, "w": 160, "d": 70, "layout": "bays", "bays": 3, "bay_name": "Chiller", "levels": ["L1"]}
+      ],
+      "structure": "Concrete plant house; steel chiller enclosures.",
+      "look": "A plain graphite plant house with three louvred chiller boxes beside it.",
+      "entrances": "Service doors on the gate road side.",
+      "capacity": "Power, water and cooling for P2; about 20 staff per shift.",
+      "services": "Six transformers, water pumps, air handling, three chillers.",
+      "interior": "A plant house with transformer bays, switch room and water pumps below, air handling above, and three chillers alongside."
+    },
+    {
+      "id": "P2-21", "name": "Service Shaft 1",
+      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "parts": [
+        {"name": "Control house", "x": 15, "y": 30, "w": 70, "d": 30, "levels": ["L1"], "corridor": 3,
+         "rooms": {"L1": [["Shaft control room", 600], ["Crew room", "rest"]]}},
+        {"name": "Shaft hall", "x": 15, "y": 70, "w": 70, "d": 200, "layout": "bays", "bays": 2, "bay_names": ["Vehicle lift", "Goods lift hall"], "levels": ["LB1", "L1", "L2"]},
+        {"name": "Vehicle queue", "x": 15, "y": 280, "w": 70, "d": 160, "layout": "outdoor"}
+      ],
+      "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house.",
+      "look": "A narrow graphite head house with yellow-striped lift doors beside Street 1.",
+      "entrances": "Vehicle queue on the starboard side; staff door into the control house.",
+      "capacity": "One vehicle lift and one goods lift.",
+      "services": "Lift machinery and shaft ventilation.",
+      "interior": "A control house and a shaft hall with a vehicle lift and a goods lift down to the service layer."
+    },
+    {
+      "id": "P2-23", "name": "Service Shaft 2",
+      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "parts": [
+        {"name": "Control house", "x": 20, "y": 30, "w": 140, "d": 30, "levels": ["L1", "L2"], "corridor": 3,
+         "rooms": {"L1": [["Shaft control room", 800], ["Crew room", 400], ["Stores", "rest"]], "L2": [["Ventilation fans", "rest"]]}},
+        {"name": "Shaft hall", "x": 20, "y": 70, "w": 140, "d": 240, "layout": "bays", "bays": 3, "bay_names": ["Vehicle lift 1", "Goods lift hall", "Vehicle lift 2"], "levels": ["LB1", "L1", "L2"]},
+        {"name": "Vehicle ramp and queue", "x": 20, "y": 320, "w": 140, "d": 170, "layout": "outdoor"}
+      ],
+      "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house with crane rails.",
+      "look": "A tall graphite head house with big louvres and yellow-striped lift doors.",
+      "entrances": "Vehicle ramp on the starboard side; staff door into the control house.",
+      "capacity": "Two vehicle lifts and one goods lift.",
+      "services": "Lift machinery, shaft ventilation, emergency stair.",
+      "interior": "A control house with shaft control and fans, and a shaft hall with two vehicle lifts and a goods lift down to the service layer."
+    }
+  ]
+}
