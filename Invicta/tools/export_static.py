@@ -15,7 +15,7 @@ It runs the same build and scan as the local app, then writes:
     _headers                 Cloudflare Pages headers
 
 Exit code 1 when the scan finds errors, so a CI build can stop on them.
-Needs Python 3.8+ and nothing else.
+Needs Python 3.8+ and Shapely (pip install -r Invicta/requirements.txt).
 """
 
 import argparse

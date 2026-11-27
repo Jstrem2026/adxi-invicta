@@ -1,7 +1,21 @@
 """Plane geometry helpers for the app. Ship frame: x km from the prow tip toward the
-stern, y km across the beam (port negative). Pure Python, no dependencies."""
+stern, y km across the beam (port negative).
+
+Areas, overlaps and containment are exact (circles to within 0.001%): they use Shapely, a standard geometry library
+(Jordan, 27 Nov 2026: "Yes, use Shapely"). Install once with
+    python -m pip install -r Invicta/requirements.txt
+The small helpers (point in polygon, polygon area, convex clipping) stay plain Python."""
 
 import math
+
+try:
+    import shapely
+    from shapely.geometry import Polygon as _Polygon, Point as _Point, box as _box
+    from shapely.ops import unary_union as _union
+except ImportError:  # pragma: no cover - explained to the user by atlas.py
+    shapely = None
+
+CIRCLE_SEGMENTS = 256  # per quarter circle (1,024 sides): circle areas within 0.001%
 
 FRAME_KM = 0.5
 LANES = "ABCDEFGHIJKLMNOPQRSTUVWXY"  # 25 lanes, 500 m wide, centred on (index-12)*0.5 km; M on the centreline
@@ -89,10 +103,31 @@ def _is_ccw(pts):
     return a > 0
 
 
+def is_convex(pts):
+    n = len(pts)
+    sign = 0
+    for i in range(n):
+        (x1, y1), (x2, y2), (x3, y3) = pts[i], pts[(i + 1) % n], pts[(i + 2) % n]
+        c = (x2 - x1) * (y3 - y2) - (y2 - y1) * (x3 - x2)
+        if abs(c) > 1e-15:
+            if sign and (c > 0) != (sign > 0):
+                return False
+            sign = c
+    return True
+
+
 def clip(subject, window):
-    """Sutherland-Hodgman: subject polygon clipped by a CONVEX window polygon."""
+    """Subject polygon clipped by a window polygon. Sutherland-Hodgman when the window is
+    convex (fast, exact). A concave window is clipped exactly with Shapely; when that
+    leaves several pieces, the largest is returned (the scan's area checks then show it)."""
     if not subject or not window:
         return []
+    if not is_convex(window):
+        g = shape(subject).intersection(shape(window))
+        parts = [p for p in getattr(g, "geoms", [g]) if p.geom_type == "Polygon" and not p.is_empty]
+        if not parts:
+            return []
+        return [tuple(q) for q in max(parts, key=lambda p: p.area).exterior.coords[:-1]]
     win = list(window) if _is_ccw(window) else list(reversed(window))
     out = list(subject)
     for i in range(len(win)):
@@ -128,23 +163,59 @@ def clip(subject, window):
     return out
 
 
-def circle_overlap_area(pts, cx, cy, r, step=0.01):
-    """Area of polygon ∩ circle by sampling a step-km grid over their common box."""
-    bx0, bx1, by0, by1 = bbox(pts)
-    x0, x1 = max(bx0, cx - r), min(bx1, cx + r)
-    y0, y1 = max(by0, cy - r), min(by1, cy + r)
-    if x0 >= x1 or y0 >= y1:
+def circle_overlap_area(pts, cx, cy, r, step=None):
+    """Exact area of polygon ∩ circle, in the units of the input (km² for ship km).
+    `step` is ignored; it was the grid size of the old sampled version."""
+    if len(pts) < 3 or r <= 0:
         return 0.0
-    n = 0
-    y = y0 + step / 2
-    while y < y1:
-        x = x0 + step / 2
-        while x < x1:
-            if (x - cx) ** 2 + (y - cy) ** 2 <= r * r and point_in_poly(x, y, pts):
-                n += 1
-            x += step
-        y += step
-    return n * step * step
+    return shape(pts).intersection(circle(cx, cy, r)).area
+
+
+# ---- exact shapes (Shapely) -------------------------------------------------------
+
+def shape(rings, holes=None):
+    """A valid Shapely shape from one ring [[x, y], ...] or a list of rings, minus holes.
+    A ring that crosses itself is repaired (make_valid), never dropped."""
+    if not rings:
+        return _Polygon()
+    if isinstance(rings[0][0], (int, float)):
+        rings = [rings]
+    parts = [_fix(_Polygon(r)) for r in rings if len(r) >= 3]
+    g = _union(parts) if len(parts) > 1 else (parts[0] if parts else _Polygon())
+    for h in holes or []:
+        if len(h) >= 3:
+            g = g.difference(_fix(_Polygon(h)))
+    return g
+
+
+def _fix(g):
+    return g if g.is_valid else shapely.make_valid(g).buffer(0)
+
+
+def box_shape(r):
+    """rect [x0, x1, y0, y1] -> Shapely box."""
+    return _box(r[0], r[2], r[1], r[3])
+
+
+def circle(cx, cy, r):
+    return _Point(cx, cy).buffer(r, quad_segs=CIRCLE_SEGMENTS)
+
+
+def building_shape(b):
+    """A building's true footprint in ship km: its bays, or its shaped outline minus
+    courtyards, or else its box."""
+    if b.get("bays_km"):
+        return _union([box_shape(s) for s in b["bays_km"]])
+    if b.get("outline_km"):
+        return shape(b["outline_km"], b.get("holes_km"))
+    return box_shape(b["rect_km"])
+
+
+def overlap_area(a, b):
+    """Exact shared area of two point lists or Shapely shapes."""
+    a = a if hasattr(a, "intersection") else shape(a)
+    b = b if hasattr(b, "intersection") else shape(b)
+    return a.intersection(b).area
 
 
 def rect_overlap(a, b):
@@ -180,6 +251,11 @@ def fmt_len_m(m):
     if m >= 1600:
         return "%s mi (%s km)" % (_n(m / 1609.344, 2), _n(m / 1000, 2))
     return "%s ft (%s m)" % (_n(ft), _n(m, 0 if m >= 10 else 1))
+
+
+def fmt_area_m2(m2):
+    """Room-sized areas: '646 sq ft (60 m²)'."""
+    return "%s sq ft (%s m²)" % (_n(m2 * M_TO_FT * M_TO_FT), _n(m2, 0 if m2 >= 10 else 1))
 
 
 def fmt_area_km2(a):
