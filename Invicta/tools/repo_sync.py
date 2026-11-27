@@ -1,4 +1,8 @@
-"""Copy the Invicta files between the ArcaneDrift folder and the adxi-invicta repo.
+"""OBSOLETE (27 Nov 2026): written for the old two-folder setup (ArcaneDrift + a separate clone at
+C:\Studio\adxi-invicta). The clone now lives at C:\Studio\ArcaneDrift\Invicta and is the only copy, so
+this is no longer used.
+
+Copy the Invicta files between the ArcaneDrift folder and the adxi-invicta repo.
 
     python tools/repo_sync.py out     ArcaneDrift -> repo   (then commit and push in the repo)
     python tools/repo_sync.py in      repo -> ArcaneDrift   (after pulling approved changes)

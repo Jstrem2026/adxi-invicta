@@ -9,7 +9,7 @@ Blueprint explorer, progress dashboard and consistency scanner for the Luxuria I
 Needs Python 3.8 or newer. Nothing to install.
 
 ```
-cd C:\Studio\ArcaneDrift\Invicta
+cd C:\Studio\ArcaneDrift\Invicta\Invicta
 python atlas.py
 ```
 

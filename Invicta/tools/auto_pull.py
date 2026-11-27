@@ -1,4 +1,8 @@
-"""Pull approved changes from the adxi-invicta repo into the ArcaneDrift folder.
+"""OBSOLETE (27 Nov 2026): written for the old two-folder setup (ArcaneDrift + a separate clone at
+C:\Studio\adxi-invicta). The clone now lives at C:\Studio\ArcaneDrift\Invicta and is the only copy, so
+this is no longer used.
+
+Pull approved changes from the adxi-invicta repo into the ArcaneDrift folder.
 
 Run by the Windows scheduled task "ADXI Invicta auto-pull" every 5 minutes:
     pythonw tools/auto_pull.py

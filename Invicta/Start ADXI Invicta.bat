@@ -1,6 +1,6 @@
 @echo off
 title ADXI: Invicta
-cd /d "C:\Studio\ArcaneDrift\Invicta"
+cd /d "%~dp0"
 echo Starting ADXI: Invicta. Your browser will open in a moment.
 echo Keep this window open while you use the app. Close it to stop the app.
 echo.
