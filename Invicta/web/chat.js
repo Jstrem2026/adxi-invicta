@@ -135,7 +135,9 @@
   }
   tab.onclick = () => setOpen(true);
   btnClose.onclick = () => setOpen(false);
-  setOpen(localStorage.getItem(KEY_OPEN) !== "0" && window.innerWidth > 900);
+  // Open by itself only on wide screens. On tablets and phones it starts closed, so the map gets
+  // the room; tap "Chat with Claude" to open it. No keyboard pops up on load.
+  document.body.classList.toggle("chat-open", localStorage.getItem(KEY_OPEN) !== "0" && window.innerWidth >= 1400);
 
   // ---------- name pop-up ----------
   function askName() {

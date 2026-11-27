@@ -17,6 +17,19 @@ const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&a
 const n0 = v => Math.round(v).toLocaleString("en-US");
 const nd = (v, d) => Number(v).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
 // Units: "us" (feet first, metres in brackets) or "metric" (Australian practice: m, mm for small sizes).
+// First visit with no choice saved: pick by where the device is. US devices get feet; everyone else
+// (Kylee in Western Australia, for example) gets metric. Signing in or the Units button overrides it.
+(function defaultUnits() {
+  try {
+    if (localStorage.getItem("adxi.units")) return;
+    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    const region = ((/[-_]([A-Za-z]{2})\b/.exec(langs[0] || "") || [])[1] || "").toUpperCase();
+    const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+    const usZone = /^America\/|^US\/|^Pacific\/Honolulu$/.test(tz);
+    const us = ["US", "LR", "MM"].includes(region) ? (usZone || !tz) : (!region && usZone);
+    localStorage.setItem("adxi.units", us ? "us" : "metric");
+  } catch (e) { /* storage blocked: keep feet */ }
+})();
 const metric = () => { try { return localStorage.getItem("adxi.units") === "metric"; } catch (e) { return false; } };
 const mm = v => v < 10 ? `${n0(v * 1000)} mm` : `${v >= 100 ? n0(v) : nd(v, 1)} m`;
 function len(m) {                   // US first, metric in brackets (or metric only)
@@ -365,6 +378,7 @@ function bindMap() {
   if (!svg) return;
   let vb = svg.getAttribute("viewBox").split(/\s+/).map(Number);
   const set = () => svg.setAttribute("viewBox", vb.join(" "));
+  fitMapHeight();
   svg.addEventListener("wheel", e => {
     e.preventDefault();
     const r = svg.getBoundingClientRect();
@@ -418,6 +432,17 @@ function bindMap() {
   }, { passive: false });
   svg.addEventListener("touchend", e => { t0 = e.touches.length ? snap(e.touches) : null; }, { passive: true });
 }
+// Make the map box the shape of what it shows, so a long thin block is not lost in empty space.
+// Between 300 px and the normal height (72% of the screen, at most 760 px).
+function fitMapHeight() {
+  const svg = document.getElementById("map");
+  if (!svg || !svg.dataset.vb) return;
+  const v = svg.dataset.vb.split(",").map(Number), w = svg.getBoundingClientRect().width;
+  if (!w || !v[2]) return;
+  const max = Math.min(window.innerHeight * (window.innerWidth <= 700 ? 0.58 : 0.72), 760), min = Math.min(340, max);
+  svg.style.height = Math.round(Math.max(min, Math.min(max, w * v[3] / v[2] * 1.08))) + "px";
+}
+window.addEventListener("resize", () => { clearTimeout(fitMapHeight.t); fitMapHeight.t = setTimeout(fitMapHeight, 80); });
 function fitMap() { const s = document.getElementById("map"); if (s) s.setAttribute("viewBox", s.dataset.vb.split(",").join(" ")); }
 window.fitMap = fitMap;
 function go(h) { location.hash = h; }
