@@ -2,1121 +2,46 @@
  "schema": "invicta-atlas/model@1",
  "building_uid": "D5-port-of-arrivals-P4-14",
  "units": "m",
- "frame": "Metres from the building's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
  "footprint_m": [
   900.0,
   450.0
  ],
- "grid_m": 9,
- "source": "Drafted by tools/auto_design.py from the footprint and the 'office' type in data/typologies.json, 2026-11-27. All proposed.",
+ "grid_m": 10,
+ "source": "Designed for this building (data/designs), built with tools/build_designs.py, 2026-11-27. All proposed.",
  "levels": [
   {
    "id": "L1",
    "name": "Level 1 · Ground floor",
-   "z_m": 0.0,
-   "height_m": 4.2,
+   "z_m": 0,
+   "height_m": 4.5,
    "status": "proposed"
   },
   {
    "id": "L2",
-   "name": "Level 2 · Upper floor",
-   "z_m": 4.2,
-   "height_m": 4.2,
+   "name": "Level 2 · Level 2",
+   "z_m": 4.5,
+   "height_m": 4,
    "status": "proposed"
   },
   {
    "id": "L3",
-   "name": "Level 3 · Upper floor",
-   "z_m": 8.4,
-   "height_m": 4.2,
+   "name": "Level 3 · Level 3",
+   "z_m": 8.5,
+   "height_m": 4,
    "status": "proposed"
   },
   {
    "id": "L4",
-   "name": "Level 4 · Upper floor",
-   "z_m": 12.6,
-   "height_m": 4.2,
+   "name": "Level 4 · Level 4",
+   "z_m": 12.5,
+   "height_m": 4,
    "status": "proposed"
   }
  ],
  "elements": [
   {
-   "id": "L1-001",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     26.6
-    ],
-    [
-     900.0,
-     26.6
-    ],
-    [
-     900.0,
-     29.6
-    ],
-    [
-     0.0,
-     29.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-002",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     82.9
-    ],
-    [
-     900.0,
-     82.9
-    ],
-    [
-     900.0,
-     85.9
-    ],
-    [
-     0.0,
-     85.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-003",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     139.1
-    ],
-    [
-     900.0,
-     139.1
-    ],
-    [
-     900.0,
-     142.1
-    ],
-    [
-     0.0,
-     142.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-004",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     195.4
-    ],
-    [
-     900.0,
-     195.4
-    ],
-    [
-     900.0,
-     198.4
-    ],
-    [
-     0.0,
-     198.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-005",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     251.6
-    ],
-    [
-     900.0,
-     251.6
-    ],
-    [
-     900.0,
-     254.6
-    ],
-    [
-     0.0,
-     254.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-006",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     307.9
-    ],
-    [
-     900.0,
-     307.9
-    ],
-    [
-     900.0,
-     310.9
-    ],
-    [
-     0.0,
-     310.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-007",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     364.1
-    ],
-    [
-     900.0,
-     364.1
-    ],
-    [
-     900.0,
-     367.1
-    ],
-    [
-     0.0,
-     367.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-008",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     420.4
-    ],
-    [
-     900.0,
-     420.4
-    ],
-    [
-     900.0,
-     423.4
-    ],
-    [
-     0.0,
-     423.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-009",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     0.0
-    ],
-    [
-     150.0,
-     0.0
-    ],
-    [
-     150.0,
-     26.6
-    ],
-    [
-     0.0,
-     26.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-010",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     0.0
-    ],
-    [
-     600.0,
-     0.0
-    ],
-    [
-     600.0,
-     26.6
-    ],
-    [
-     300.0,
-     26.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-011",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     0.0
-    ],
-    [
-     900.0,
-     0.0
-    ],
-    [
-     900.0,
-     26.6
-    ],
-    [
-     750.0,
-     26.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-012",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     29.6
-    ],
-    [
-     900.0,
-     29.6
-    ],
-    [
-     900.0,
-     56.3
-    ],
-    [
-     0.0,
-     56.3
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-013",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     56.3
-    ],
-    [
-     150.0,
-     56.3
-    ],
-    [
-     150.0,
-     82.9
-    ],
-    [
-     0.0,
-     82.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-014",
-   "type": "room",
-   "name": "Lobby",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     56.3
-    ],
-    [
-     450.0,
-     56.3
-    ],
-    [
-     450.0,
-     82.9
-    ],
-    [
-     300.0,
-     82.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-015",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     450.0,
-     56.3
-    ],
-    [
-     600.0,
-     56.3
-    ],
-    [
-     600.0,
-     82.9
-    ],
-    [
-     450.0,
-     82.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-016",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     56.3
-    ],
-    [
-     900.0,
-     56.3
-    ],
-    [
-     900.0,
-     82.9
-    ],
-    [
-     750.0,
-     82.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-017",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     85.9
-    ],
-    [
-     900.0,
-     85.9
-    ],
-    [
-     900.0,
-     112.5
-    ],
-    [
-     0.0,
-     112.5
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-018",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     112.5
-    ],
-    [
-     150.0,
-     112.5
-    ],
-    [
-     150.0,
-     139.1
-    ],
-    [
-     0.0,
-     139.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-019",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     112.5
-    ],
-    [
-     600.0,
-     112.5
-    ],
-    [
-     600.0,
-     139.1
-    ],
-    [
-     300.0,
-     139.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-020",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     112.5
-    ],
-    [
-     900.0,
-     112.5
-    ],
-    [
-     900.0,
-     139.1
-    ],
-    [
-     750.0,
-     139.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-021",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     142.1
-    ],
-    [
-     900.0,
-     142.1
-    ],
-    [
-     900.0,
-     168.8
-    ],
-    [
-     0.0,
-     168.8
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-022",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     168.8
-    ],
-    [
-     150.0,
-     168.8
-    ],
-    [
-     150.0,
-     195.4
-    ],
-    [
-     0.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-023",
-   "type": "room",
-   "name": "Public counters",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     168.8
-    ],
-    [
-     450.0,
-     168.8
-    ],
-    [
-     450.0,
-     195.4
-    ],
-    [
-     300.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-024",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     450.0,
-     168.8
-    ],
-    [
-     600.0,
-     168.8
-    ],
-    [
-     600.0,
-     195.4
-    ],
-    [
-     450.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-025",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     168.8
-    ],
-    [
-     900.0,
-     168.8
-    ],
-    [
-     900.0,
-     195.4
-    ],
-    [
-     750.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-026",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     198.4
-    ],
-    [
-     900.0,
-     198.4
-    ],
-    [
-     900.0,
-     225.0
-    ],
-    [
-     0.0,
-     225.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-027",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     225.0
-    ],
-    [
-     150.0,
-     225.0
-    ],
-    [
-     150.0,
-     251.6
-    ],
-    [
-     0.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-028",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     225.0
-    ],
-    [
-     600.0,
-     225.0
-    ],
-    [
-     600.0,
-     251.6
-    ],
-    [
-     300.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-029",
-   "type": "room",
-   "name": "Meeting rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     225.0
-    ],
-    [
-     900.0,
-     225.0
-    ],
-    [
-     900.0,
-     251.6
-    ],
-    [
-     750.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-030",
-   "type": "room",
-   "name": "Café",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     254.6
-    ],
-    [
-     900.0,
-     254.6
-    ],
-    [
-     900.0,
-     281.3
-    ],
-    [
-     0.0,
-     281.3
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-031",
-   "type": "room",
-   "name": "Café",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     281.3
-    ],
-    [
-     150.0,
-     281.3
-    ],
-    [
-     150.0,
-     307.9
-    ],
-    [
-     0.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-032",
-   "type": "room",
-   "name": "Café",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     281.3
-    ],
-    [
-     450.0,
-     281.3
-    ],
-    [
-     450.0,
-     307.9
-    ],
-    [
-     300.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-033",
-   "type": "room",
-   "name": "Mail and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     450.0,
-     281.3
-    ],
-    [
-     600.0,
-     281.3
-    ],
-    [
-     600.0,
-     307.9
-    ],
-    [
-     450.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-034",
-   "type": "room",
-   "name": "Mail and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     281.3
-    ],
-    [
-     900.0,
-     281.3
-    ],
-    [
-     900.0,
-     307.9
-    ],
-    [
-     750.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-035",
-   "type": "room",
-   "name": "Mail and stores",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     310.9
-    ],
-    [
-     900.0,
-     310.9
-    ],
-    [
-     900.0,
-     337.5
-    ],
-    [
-     0.0,
-     337.5
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-036",
-   "type": "room",
-   "name": "Security",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     337.5
-    ],
-    [
-     150.0,
-     337.5
-    ],
-    [
-     150.0,
-     364.1
-    ],
-    [
-     0.0,
-     364.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-037",
-   "type": "room",
-   "name": "Security",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     337.5
-    ],
-    [
-     600.0,
-     337.5
-    ],
-    [
-     600.0,
-     364.1
-    ],
-    [
-     300.0,
-     364.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-038",
-   "type": "room",
-   "name": "Security",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     337.5
-    ],
-    [
-     900.0,
-     337.5
-    ],
-    [
-     900.0,
-     364.1
-    ],
-    [
-     750.0,
-     364.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-039",
-   "type": "room",
-   "name": "Offices",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     367.1
-    ],
-    [
-     900.0,
-     367.1
-    ],
-    [
-     900.0,
-     393.8
-    ],
-    [
-     0.0,
-     393.8
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-040",
-   "type": "room",
-   "name": "Offices",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     393.8
-    ],
-    [
-     150.0,
-     393.8
-    ],
-    [
-     150.0,
-     420.4
-    ],
-    [
-     0.0,
-     420.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-041",
-   "type": "room",
-   "name": "Offices",
-   "level": "L1",
-   "outline_m": [
-    [
-     300.0,
-     393.8
-    ],
-    [
-     600.0,
-     393.8
-    ],
-    [
-     600.0,
-     420.4
-    ],
-    [
-     300.0,
-     420.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-042",
-   "type": "room",
-   "name": "Offices",
-   "level": "L1",
-   "outline_m": [
-    [
-     750.0,
-     393.8
-    ],
-    [
-     900.0,
-     393.8
-    ],
-    [
-     900.0,
-     420.4
-    ],
-    [
-     750.0,
-     420.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-043",
-   "type": "room",
-   "name": "Offices",
-   "level": "L1",
-   "outline_m": [
-    [
-     0.0,
-     423.4
-    ],
-    [
-     900.0,
-     423.4
-    ],
-    [
-     900.0,
-     450.0
-    ],
-    [
-     0.0,
-     450.0
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-044",
+   "id": "E001",
    "type": "core",
    "name": "Stairs and lifts",
    "levels": [
@@ -1127,26 +52,26 @@
    ],
    "outline_m": [
     [
-     150.0,
-     0.0
+     60.0,
+     60.0
     ],
     [
-     300.0,
-     0.0
+     70.0,
+     60.0
     ],
     [
-     300.0,
-     26.6
+     70.0,
+     80.0
     ],
     [
-     150.0,
-     26.6
+     60.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-045",
+   "id": "E002",
    "type": "core",
    "name": "Stairs and lifts",
    "levels": [
@@ -1157,404 +82,126 @@
    ],
    "outline_m": [
     [
-     600.0,
-     0.0
+     250.0,
+     60.0
     ],
     [
-     750.0,
-     0.0
+     260.0,
+     60.0
     ],
     [
-     750.0,
-     26.6
+     260.0,
+     80.0
     ],
     [
-     600.0,
-     26.6
+     250.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-046",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
    "outline_m": [
     [
-     150.0,
-     56.3
+     60.0,
+     80.0
     ],
     [
-     300.0,
-     56.3
+     260.0,
+     80.0
     ],
     [
-     300.0,
-     82.9
+     260.0,
+     84.0
     ],
     [
-     150.0,
-     82.9
+     60.0,
+     84.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-047",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
+   "id": "E004",
+   "type": "room",
+   "name": "Shared reception",
+   "level": "L1",
    "outline_m": [
     [
-     600.0,
-     56.3
+     70.0,
+     60.0
     ],
     [
-     750.0,
-     56.3
+     250.0,
+     60.0
     ],
     [
-     750.0,
-     82.9
+     250.0,
+     80.0
     ],
     [
-     600.0,
-     82.9
+     70.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-048",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
+   "id": "E005",
+   "type": "room",
+   "name": "Customs broker desks",
+   "level": "L1",
    "outline_m": [
     [
-     150.0,
-     112.5
+     60.0,
+     84.0
     ],
     [
-     300.0,
-     112.5
+     135.0,
+     84.0
     ],
     [
-     300.0,
-     139.1
+     135.0,
+     104.0
     ],
     [
-     150.0,
-     139.1
+     60.0,
+     104.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-049",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
+   "id": "E006",
+   "type": "room",
+   "name": "Café",
+   "level": "L1",
    "outline_m": [
     [
-     600.0,
-     112.5
+     135.0,
+     84.0
     ],
     [
-     750.0,
-     112.5
+     260.0,
+     84.0
     ],
     [
-     750.0,
-     139.1
+     260.0,
+     104.0
     ],
     [
-     600.0,
-     139.1
+     135.0,
+     104.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "L1-050",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     168.8
-    ],
-    [
-     300.0,
-     168.8
-    ],
-    [
-     300.0,
-     195.4
-    ],
-    [
-     150.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-051",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     600.0,
-     168.8
-    ],
-    [
-     750.0,
-     168.8
-    ],
-    [
-     750.0,
-     195.4
-    ],
-    [
-     600.0,
-     195.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-052",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     225.0
-    ],
-    [
-     300.0,
-     225.0
-    ],
-    [
-     300.0,
-     251.6
-    ],
-    [
-     150.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-053",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     600.0,
-     225.0
-    ],
-    [
-     750.0,
-     225.0
-    ],
-    [
-     750.0,
-     251.6
-    ],
-    [
-     600.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-054",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     281.3
-    ],
-    [
-     300.0,
-     281.3
-    ],
-    [
-     300.0,
-     307.9
-    ],
-    [
-     150.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-055",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     600.0,
-     281.3
-    ],
-    [
-     750.0,
-     281.3
-    ],
-    [
-     750.0,
-     307.9
-    ],
-    [
-     600.0,
-     307.9
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-056",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     337.5
-    ],
-    [
-     300.0,
-     337.5
-    ],
-    [
-     300.0,
-     364.1
-    ],
-    [
-     150.0,
-     364.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-057",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     600.0,
-     337.5
-    ],
-    [
-     750.0,
-     337.5
-    ],
-    [
-     750.0,
-     364.1
-    ],
-    [
-     600.0,
-     364.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-058",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     393.8
-    ],
-    [
-     300.0,
-     393.8
-    ],
-    [
-     300.0,
-     420.4
-    ],
-    [
-     150.0,
-     420.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "L1-059",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1"
-   ],
-   "outline_m": [
-    [
-     600.0,
-     393.8
-    ],
-    [
-     750.0,
-     393.8
-    ],
-    [
-     750.0,
-     420.4
-    ],
-    [
-     600.0,
-     420.4
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-001",
+   "id": "E007",
    "type": "zone",
    "name": "Corridor",
    "levels": [
@@ -1564,115 +211,28 @@
    ],
    "outline_m": [
     [
-     0.0,
-     26.6
+     60.0,
+     80.0
     ],
     [
-     900.0,
-     26.6
+     260.0,
+     80.0
     ],
     [
-     900.0,
-     29.6
+     260.0,
+     84.0
     ],
     [
-     0.0,
-     29.6
+     60.0,
+     84.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-002",
-   "type": "zone",
-   "name": "Corridor",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     139.1
-    ],
-    [
-     900.0,
-     139.1
-    ],
-    [
-     900.0,
-     142.1
-    ],
-    [
-     0.0,
-     142.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-003",
-   "type": "zone",
-   "name": "Corridor",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     251.6
-    ],
-    [
-     900.0,
-     251.6
-    ],
-    [
-     900.0,
-     254.6
-    ],
-    [
-     0.0,
-     254.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-004",
-   "type": "zone",
-   "name": "Corridor",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     364.1
-    ],
-    [
-     900.0,
-     364.1
-    ],
-    [
-     900.0,
-     367.1
-    ],
-    [
-     0.0,
-     367.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-005",
+   "id": "E008",
    "type": "room",
-   "name": "Open offices (around the core)",
+   "name": "Forwarder offices",
    "levels": [
     "L2",
     "L3",
@@ -1680,171 +240,26 @@
    ],
    "outline_m": [
     [
-     0.0,
-     0.0
+     70.0,
+     60.0
     ],
     [
-     900.0,
-     0.0
+     246.0,
+     60.0
     ],
     [
-     900.0,
-     26.6
+     246.0,
+     80.0
     ],
     [
-     0.0,
-     26.6
+     70.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-006",
-   "type": "room",
-   "name": "Open offices",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     29.6
-    ],
-    [
-     900.0,
-     29.6
-    ],
-    [
-     900.0,
-     56.3
-    ],
-    [
-     0.0,
-     56.3
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-007",
-   "type": "room",
-   "name": "Open offices (around the core)",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     112.5
-    ],
-    [
-     900.0,
-     112.5
-    ],
-    [
-     900.0,
-     139.1
-    ],
-    [
-     0.0,
-     139.1
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-008",
-   "type": "room",
-   "name": "Open offices",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     142.1
-    ],
-    [
-     900.0,
-     142.1
-    ],
-    [
-     900.0,
-     168.8
-    ],
-    [
-     0.0,
-     168.8
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-009",
-   "type": "room",
-   "name": "Open offices (around the core)",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     0.0,
-     225.0
-    ],
-    [
-     300.0,
-     225.0
-    ],
-    [
-     300.0,
-     251.6
-    ],
-    [
-     0.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-010",
-   "type": "room",
-   "name": "Meeting rooms (around the core)",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     300.0,
-     225.0
-    ],
-    [
-     900.0,
-     225.0
-    ],
-    [
-     900.0,
-     251.6
-    ],
-    [
-     300.0,
-     251.6
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "LT-011",
+   "id": "E009",
    "type": "room",
    "name": "Meeting rooms",
    "levels": [
@@ -1854,28 +269,28 @@
    ],
    "outline_m": [
     [
-     0.0,
-     254.6
+     246.0,
+     60.0
     ],
     [
-     600.0,
-     254.6
+     250.0,
+     60.0
     ],
     [
-     600.0,
-     281.3
+     250.0,
+     80.0
     ],
     [
-     0.0,
-     281.3
+     246.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-012",
+   "id": "E010",
    "type": "room",
-   "name": "Private offices",
+   "name": "Meeting rooms",
    "levels": [
     "L2",
     "L3",
@@ -1883,28 +298,28 @@
    ],
    "outline_m": [
     [
-     600.0,
-     254.6
+     60.0,
+     84.0
     ],
     [
-     900.0,
-     254.6
+     160.0,
+     84.0
     ],
     [
-     900.0,
-     281.3
+     160.0,
+     104.0
     ],
     [
-     600.0,
-     281.3
+     60.0,
+     104.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-013",
+   "id": "E011",
    "type": "room",
-   "name": "Private offices (around the core)",
+   "name": "Meeting rooms",
    "levels": [
     "L2",
     "L3",
@@ -1912,181 +327,995 @@
    ],
    "outline_m": [
     [
-     0.0,
-     337.5
+     160.0,
+     84.0
     ],
     [
-     750.0,
-     337.5
+     260.0,
+     84.0
     ],
     [
-     750.0,
-     364.1
+     260.0,
+     104.0
     ],
     [
-     0.0,
-     364.1
+     160.0,
+     104.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-014",
-   "type": "room",
-   "name": "Break rooms",
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
    "levels": [
+    "L1",
     "L2",
     "L3",
     "L4"
    ],
    "outline_m": [
     [
-     750.0,
-     337.5
+     350.0,
+     60.0
     ],
     [
-     900.0,
-     337.5
+     360.0,
+     60.0
     ],
     [
-     900.0,
-     364.1
+     360.0,
+     80.0
     ],
     [
-     750.0,
-     364.1
+     350.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-015",
-   "type": "room",
-   "name": "Break rooms",
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
    "levels": [
+    "L1",
     "L2",
     "L3",
     "L4"
    ],
    "outline_m": [
     [
-     0.0,
-     367.1
+     540.0,
+     60.0
     ],
     [
-     150.0,
-     367.1
+     550.0,
+     60.0
     ],
     [
-     150.0,
-     393.8
+     550.0,
+     80.0
     ],
     [
-     0.0,
-     393.8
+     540.0,
+     80.0
     ]
    ],
    "status": "proposed"
   },
   {
-   "id": "LT-016",
-   "type": "room",
-   "name": "Plant rooms",
-   "levels": [
-    "L2",
-    "L3",
-    "L4"
-   ],
-   "outline_m": [
-    [
-     150.0,
-     367.1
-    ],
-    [
-     900.0,
-     367.1
-    ],
-    [
-     900.0,
-     393.8
-    ],
-    [
-     150.0,
-     393.8
-    ]
-   ],
-   "status": "proposed"
-  },
-  {
-   "id": "D-76",
-   "type": "door",
-   "name": "Main entrance",
+   "id": "E014",
+   "type": "zone",
+   "name": "Corridor",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     438.0,
-     0.0
+     350.0,
+     80.0
     ],
     [
-     462.0,
-     0.0
+     550.0,
+     80.0
+    ],
+    [
+     550.0,
+     84.0
+    ],
+    [
+     350.0,
+     84.0
     ]
    ],
-   "width_m": 24.0,
    "status": "proposed"
   },
   {
-   "id": "D-77",
-   "type": "door",
-   "name": "Second entrance",
+   "id": "E015",
+   "type": "room",
+   "name": "Freight booking hall",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     438.0,
-     450.0
+     360.0,
+     60.0
     ],
     [
-     462.0,
-     450.0
+     540.0,
+     60.0
+    ],
+    [
+     540.0,
+     80.0
+    ],
+    [
+     360.0,
+     80.0
     ]
    ],
-   "width_m": 24.0,
    "status": "proposed"
   },
   {
-   "id": "D-78",
-   "type": "door",
-   "name": "Side door",
+   "id": "E016",
+   "type": "room",
+   "name": "Bank desk",
    "level": "L1",
-   "line_m": [
+   "outline_m": [
     [
-     0.0,
-     222.0
+     350.0,
+     84.0
     ],
     [
-     0.0,
-     228.0
+     550.0,
+     84.0
+    ],
+    [
+     550.0,
+     104.0
+    ],
+    [
+     350.0,
+     104.0
     ]
    ],
-   "width_m": 6.0,
    "status": "proposed"
   },
   {
-   "id": "D-79",
-   "type": "door",
-   "name": "Side door",
-   "level": "L1",
-   "line_m": [
+   "id": "E017",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
     [
-     900.0,
-     222.0
+     350.0,
+     80.0
     ],
     [
-     900.0,
-     228.0
+     550.0,
+     80.0
+    ],
+    [
+     550.0,
+     84.0
+    ],
+    [
+     350.0,
+     84.0
     ]
    ],
-   "width_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Forwarder offices",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     360.0,
+     60.0
+    ],
+    [
+     536.0,
+     60.0
+    ],
+    [
+     536.0,
+     80.0
+    ],
+    [
+     360.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Meeting rooms",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     536.0,
+     60.0
+    ],
+    [
+     540.0,
+     60.0
+    ],
+    [
+     540.0,
+     80.0
+    ],
+    [
+     536.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Meeting rooms",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     350.0,
+     84.0
+    ],
+    [
+     450.0,
+     84.0
+    ],
+    [
+     450.0,
+     104.0
+    ],
+    [
+     350.0,
+     104.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Meeting rooms",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     450.0,
+     84.0
+    ],
+    [
+     550.0,
+     84.0
+    ],
+    [
+     550.0,
+     104.0
+    ],
+    [
+     450.0,
+     104.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     640.0,
+     60.0
+    ],
+    [
+     650.0,
+     60.0
+    ],
+    [
+     650.0,
+     80.0
+    ],
+    [
+     640.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     830.0,
+     60.0
+    ],
+    [
+     840.0,
+     60.0
+    ],
+    [
+     840.0,
+     80.0
+    ],
+    [
+     830.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     640.0,
+     80.0
+    ],
+    [
+     840.0,
+     80.0
+    ],
+    [
+     840.0,
+     84.0
+    ],
+    [
+     640.0,
+     84.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Insurance and claims",
+   "level": "L1",
+   "outline_m": [
+    [
+     650.0,
+     60.0
+    ],
+    [
+     830.0,
+     60.0
+    ],
+    [
+     830.0,
+     80.0
+    ],
+    [
+     650.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Courier counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     640.0,
+     84.0
+    ],
+    [
+     840.0,
+     84.0
+    ],
+    [
+     840.0,
+     104.0
+    ],
+    [
+     640.0,
+     104.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     640.0,
+     80.0
+    ],
+    [
+     840.0,
+     80.0
+    ],
+    [
+     840.0,
+     84.0
+    ],
+    [
+     640.0,
+     84.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Forwarder offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     650.0,
+     60.0
+    ],
+    [
+     830.0,
+     60.0
+    ],
+    [
+     830.0,
+     80.0
+    ],
+    [
+     650.0,
+     80.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Stores",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     640.0,
+     84.0
+    ],
+    [
+     840.0,
+     84.0
+    ],
+    [
+     840.0,
+     104.0
+    ],
+    [
+     640.0,
+     104.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60.0,
+     340.0
+    ],
+    [
+     70.0,
+     340.0
+    ],
+    [
+     70.0,
+     360.0
+    ],
+    [
+     60.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     445.0,
+     340.0
+    ],
+    [
+     455.0,
+     340.0
+    ],
+    [
+     455.0,
+     360.0
+    ],
+    [
+     445.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     830.0,
+     340.0
+    ],
+    [
+     840.0,
+     340.0
+    ],
+    [
+     840.0,
+     360.0
+    ],
+    [
+     830.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     360.0
+    ],
+    [
+     840.0,
+     360.0
+    ],
+    [
+     840.0,
+     364.0
+    ],
+    [
+     60.0,
+     364.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Conference rooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     70.0,
+     340.0
+    ],
+    [
+     123.6,
+     340.0
+    ],
+    [
+     123.6,
+     360.0
+    ],
+    [
+     70.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Conference rooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     340.0
+    ],
+    [
+     177.1,
+     340.0
+    ],
+    [
+     177.1,
+     360.0
+    ],
+    [
+     123.6,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Conference rooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     177.1,
+     340.0
+    ],
+    [
+     230.7,
+     340.0
+    ],
+    [
+     230.7,
+     360.0
+    ],
+    [
+     177.1,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Conference rooms",
+   "level": "L1",
+   "outline_m": [
+    [
+     230.7,
+     340.0
+    ],
+    [
+     284.3,
+     340.0
+    ],
+    [
+     284.3,
+     360.0
+    ],
+    [
+     230.7,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Canteen",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.3,
+     340.0
+    ],
+    [
+     445.0,
+     340.0
+    ],
+    [
+     445.0,
+     360.0
+    ],
+    [
+     284.3,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Canteen",
+   "level": "L1",
+   "outline_m": [
+    [
+     455.0,
+     340.0
+    ],
+    [
+     830.0,
+     340.0
+    ],
+    [
+     830.0,
+     360.0
+    ],
+    [
+     455.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Gym",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     364.0
+    ],
+    [
+     135.0,
+     364.0
+    ],
+    [
+     135.0,
+     384.0
+    ],
+    [
+     60.0,
+     384.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Stores",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.0,
+     364.0
+    ],
+    [
+     840.0,
+     364.0
+    ],
+    [
+     840.0,
+     384.0
+    ],
+    [
+     135.0,
+     384.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60.0,
+     360.0
+    ],
+    [
+     840.0,
+     360.0
+    ],
+    [
+     840.0,
+     364.0
+    ],
+    [
+     60.0,
+     364.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Forwarder offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     70.0,
+     340.0
+    ],
+    [
+     445.0,
+     340.0
+    ],
+    [
+     445.0,
+     360.0
+    ],
+    [
+     70.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Forwarder offices",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     455.0,
+     340.0
+    ],
+    [
+     830.0,
+     340.0
+    ],
+    [
+     830.0,
+     360.0
+    ],
+    [
+     455.0,
+     360.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Stores",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60.0,
+     364.0
+    ],
+    [
+     840.0,
+     364.0
+    ],
+    [
+     840.0,
+     384.0
+    ],
+    [
+     60.0,
+     384.0
+    ]
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "zone",
+   "name": "Shared garden",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     120.0
+    ],
+    [
+     840.0,
+     120.0
+    ],
+    [
+     840.0,
+     330.0
+    ],
+    [
+     60.0,
+     330.0
+    ]
+   ],
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "zone",
+   "name": "Street-side parking",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     395.0
+    ],
+    [
+     840.0,
+     395.0
+    ],
+    [
+     840.0,
+     445.0
+    ],
+    [
+     60.0,
+     445.0
+    ]
+   ],
+   "outdoor": true,
    "status": "proposed"
   }
  ],

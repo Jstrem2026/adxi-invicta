@@ -226,6 +226,23 @@ def build(entry, b, did):
     return fields, model
 
 
+def rename_rows(fp, pid, renames):
+    rb = open(fp, "rb").read()
+    crlf = b"\r\n" in rb
+    lines = rb.decode("utf-8").replace("\r\n", "\n").split("\n")
+    cur = None
+    for i, ln in enumerate(lines):
+        if ln.startswith("## "):
+            m = re.match(r"^## (P\d+) · ", ln)
+            cur = m.group(1) if m else None
+        if cur == pid and ln.startswith("| "):
+            first = ln[2:].split(" | ")[0]
+            if first in renames:
+                lines[i] = "| " + renames[first] + ln[2 + len(first):]
+    out = "\n".join(lines)
+    open(fp, "wb").write((out.replace("\n", "\r\n") if crlf else out).encode("utf-8"))
+
+
 def main():
     try:
         sys.stdout.reconfigure(errors="replace")
@@ -239,9 +256,11 @@ def main():
     spec = json.load(open(os.path.join(DATA, "designs", *file.split("/"), pid + ".json"), encoding="utf-8"))
     pr = [p for p in data["precincts"] if p["id"] == pid][0]
     byid = {b["id"]: b for b in pr["buildings"]}
-    built = []
+    built, renames = [], {}
     for entry in spec["buildings"]:
         b = byid[entry["id"]]
+        if entry.get("name") and entry["name"] != b["name"]:
+            renames[b["name"]] = entry["name"]
         fields, model = build(entry, b, did)
         for k, v in fields.items():
             if v is not None:
@@ -258,6 +277,8 @@ def main():
                                      and "auto_design" in open(os.path.join(DATA, "models", "%s-%s.json" % (did, b["id"])), encoding="utf-8").read(400)}
     root = os.path.dirname(APP)
     for rel in (data["doc"], data["doc"].replace("Game/Docs/", "Docs/2_Design_Docs/", 1)):
+        if renames:  # keep the doc's building table in step with new names (only inside this precinct's section)
+            rename_rows(os.path.join(root, *rel.split("/")), pid, renames)
         auto_design.doc_update(os.path.join(root, *rel.split("/")), data, pid)
     print("%d building(s) built." % len(built))
 
