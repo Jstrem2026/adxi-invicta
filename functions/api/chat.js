@@ -244,14 +244,22 @@ export async function onRequestPost({ request, env, waitUntil }) {
       // Earlier thinking blocks are bound to the exact system prompt and history that produced them.
       // The site's system prompt changes when the project files change, so old blocks can stop
       // matching: drop_block tells the API to drop those blocks instead of failing the request.
+      // Jordan's rule: Claude Haiku 5.5 answers questions; Claude Sonnet 5.5 makes design changes.
+      const QUESTION_MODEL = env.QUESTION_MODEL || "claude-haiku-5-5";
+      const DESIGN_MODEL = env.DESIGN_MODEL || "claude-sonnet-5-5";
+      const WRITE_TOOLS = new Set(["update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
+      let model = QUESTION_MODEL;
       const ask = (msgs, streamText) => {
+        const design = model === DESIGN_MODEL;
         const s = client.beta.messages.stream({
-          model: env.CLAUDE_MODEL || "claude-opus-5-5",
-          max_tokens: 32000,
-          betas: ["server-side-fallback-2026-07-01", "thinking-binding-controls-2026-08-01"],
-          fallbacks: "default",
-          thinking: { type: "adaptive", block_binding: { prefix_mismatch_behavior: "drop_block" } },
-          output_config: { effort: "medium" },
+          model,
+          max_tokens: design ? 32000 : 8000,
+          ...(design ? {
+            betas: ["server-side-fallback-2026-07-01", "thinking-binding-controls-2026-08-01"],
+            fallbacks: "default",
+            thinking: { type: "adaptive", block_binding: { prefix_mismatch_behavior: "drop_block" } },
+            output_config: { effort: "medium" },
+          } : { output_config: { effort: "low" } }),
           cache_control: { type: "ephemeral" },
           system,
           tools: TOOLS,
@@ -272,6 +280,13 @@ export async function onRequestPost({ request, env, waitUntil }) {
             if (m.role === "assistant" && Array.isArray(m.content)) m.content = m.content.filter((c) => c.type !== "thinking" && c.type !== "redacted_thinking");
           }
           message = await ask(messages, true);
+        }
+        // A question model that wants to change the design hands the turn to the design model.
+        if (model === QUESTION_MODEL && message.content.some((c) => c.type === "tool_use" && WRITE_TOOLS.has(c.name))) {
+          model = DESIGN_MODEL;
+          send("reset", {});
+          turn--;
+          continue;
         }
         messages.push({ role: "assistant", content: message.content });
 

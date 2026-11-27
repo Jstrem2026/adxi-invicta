@@ -368,6 +368,9 @@
             acc += data.delta;
             out.innerHTML = md(acc);
             log.scrollTop = log.scrollHeight;
+          } else if (ev === "reset") {  // switching to the design model: start the answer again
+            acc = "";
+            out.innerHTML = '<span class="chat-typing">Working on the change…</span>';
           } else if (ev === "tool") {
             log.insertBefore(el("div", "chat-note", data.label + "…"), out);
           } else if (ev === "proposal") {
