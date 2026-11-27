@@ -374,6 +374,62 @@ def bay_label(b):
     return next((v for k, v in BAY_WORDS if k in name), "Bay")
 
 
+def subtract_circles(part, excl, steps=360):
+    """Cut reserved circles (for example a canon plaza) out of a block outline, so no block
+    is drawn over them. Works on the convex outlines blocks have: the outline outside each
+    circle is kept and the circle's arc is traced where it passes through the block."""
+    for cx, cy, r in excl or []:
+        if len(part) < 3:
+            return part
+        inside = lambda q: (q[0] - cx) ** 2 + (q[1] - cy) ** 2 < r * r - 1e-12
+        if not any(inside(q) for q in part) and G.circle_overlap_area(part, cx, cy, r, 0.01) <= 1e-6:
+            continue
+        if all(inside(q) for q in part):
+            return []
+        k0 = next(i for i, q in enumerate(part) if not inside(q))   # start outside the circle
+        part = part[k0:] + part[:k0]
+        out = []
+        n = len(part)
+
+        def cross(a, b):  # where segment a-b crosses the circle
+            dx, dy = b[0] - a[0], b[1] - a[1]
+            fx, fy = a[0] - cx, a[1] - cy
+            A, B, C = dx * dx + dy * dy, 2 * (fx * dx + fy * dy), fx * fx + fy * fy - r * r
+            disc = max(0.0, B * B - 4 * A * C) ** 0.5
+            ts = sorted(t for t in ((-B - disc) / (2 * A), (-B + disc) / (2 * A)) if 0 <= t <= 1)
+            return [(a[0] + t * dx, a[1] + t * dy) for t in ts]
+
+        pending = None  # angle where the outline entered the circle
+        for i in range(n):
+            a, b = part[i], part[(i + 1) % n]
+            if not inside(a):
+                out.append(tuple(a))
+            for q in cross(a, b):
+                ang = math.atan2(q[1] - cy, q[0] - cx)
+                if pending is None:
+                    out.append(q)
+                    pending = ang
+                else:
+                    # trace the arc from the entry point to this exit point, the way that stays in the block
+                    d = ang - pending
+                    while d > math.pi:
+                        d -= 2 * math.pi
+                    while d < -math.pi:
+                        d += 2 * math.pi
+                    mid = (pending + d / 2)
+                    mq = (cx + r * math.cos(mid), cy + r * math.sin(mid))
+                    if not G.point_in_poly(mq[0], mq[1], part):
+                        d = d - 2 * math.pi if d > 0 else d + 2 * math.pi
+                    k = max(2, int(abs(d) / (2 * math.pi) * steps))
+                    for j in range(1, k):
+                        t = pending + d * j / k
+                        out.append((cx + r * 1.002 * math.cos(t), cy + r * 1.002 * math.sin(t)))  # just outside, so chords never dip in
+                    out.append(q)
+                    pending = None
+        part = [list(q) for q in out] if len(out) >= 3 else []
+    return part
+
+
 def make_blocks(n, shape, bx, buildings, excl, streets=()):
     """City blocks. The precinct is cut first along its streets and roads (both edges of
     each, so the roadway itself is not part of any block), then blocks longer than
@@ -446,9 +502,9 @@ def make_blocks(n, shape, bx, buildings, excl, streets=()):
         if is_roadway(cell):
             continue
         part = G.clip(shape, G.rect_poly(cell))
+        if excl and len(part) >= 3:
+            part = subtract_circles(part, excl)   # reserved plazas are never part of a block
         a = G.polygon_area(part) if len(part) >= 3 else 0
-        if a and excl:
-            a -= sum(G.circle_overlap_area(part, c[0], c[1], c[2], 0.01) for c in excl)
         if a < 0.002:
             continue
         f = int(math.floor(cell[0] / G.FRAME_KM + 1e-6))

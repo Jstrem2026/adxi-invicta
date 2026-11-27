@@ -21,18 +21,4 @@ Total 5.79 sq mi (15.0 km²).
 
 Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, stern band 28.636 to 29.638. Bow band splits across the beam at y 2.345 and 4.090; stern band at y 2.495.
 
-## P1 Grand Canal: blocks (⏳ proposed, Kylee, 27 Nov 2026)
-
-P1 is cut across its 5,488 m length into five blocks, port to starboard. Each block is 547 m (F56–F57, x 28.089 to 28.636 km) from bow to stern. Shares are of P1's length, so areas follow. Block address = frame and lane of the bow-port corner. Lanes are 500 m bands with M on the centreline (M is y −0.25 to 0.25 km, N next, and so on to X at 5.25 to 5.75 km).
-
-| Block | Name | Address | Share | y from–to (km, starboard +) | Lanes | Size | Area |
-|---|---|---|---|---|---|---|---|
-| B1 | Port Gateway | D3-F56-M | 15% | 0 to 0.8232 | M–O | 547 × 823.2 m | 0.450 km² |
-| B2 | Waterfront Reach | D3-F56-O | 25% | 0.8232 to 2.1952 | O–Q | 547 × 1,372 m | 0.750 km² |
-| B3 | Central Canal | D3-F56-Q | 20% | 2.1952 to 3.2928 | Q–T | 547 × 1,097.6 m | 0.600 km² |
-| B4 | Garden Reach | D3-F56-T | 25% | 3.2928 to 4.6648 | T–V | 547 × 1,372 m | 0.750 km² |
-| B5 | Village Gateway | D3-F56-V | 15% | 4.6648 to 5.488 | V–X | 547 × 823.2 m | 0.450 km² |
-
-Areas add to 3.002 km² (P1 stated 3.0). Block edges fall inside lanes, not on lane edges, because the shares were set by percentage. No buildings or streets yet. The P1 boundary, the other five precincts and the canon Atrium Plaza are unchanged.
-
-Not designed yet: what each precinct and block holds, streets, bridges over the canal, where the canal water comes from and goes, buildings.
+Not designed yet: what each precinct holds, streets, bridges over the canal, where the canal water comes from and goes, buildings.

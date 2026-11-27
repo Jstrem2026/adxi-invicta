@@ -374,6 +374,12 @@ class Scan:
             deck = self.deck(ps["deck"])
             hull = deck.get("outline_net") if deck else None
             for p in ps["precincts"]:
+                for c in p.get("exclude_circles_km", []):  # no block may cover a reserved plaza
+                    for blk in p.get("blocks") or []:
+                        pts = blk.get("part_km") or []
+                        if len(pts) >= 3 and G.circle_overlap_area(pts, c[0], c[1], c[2], 0.005) > 0.0005:
+                            self.add("error", "geometry", "Block covers a reserved plaza",
+                                     "%s in %s %s overlaps the excluded circle (%s)." % (blk["id"], p["id"], p["name"], p.get("exclude_note", "")), p["uid"], ps["file"])
                 solid = [b for b in p["buildings"] if b.get("rect_km") and b["kind"] != "transport"]
                 for b in p["buildings"]:
                     r = b.get("rect_km")
