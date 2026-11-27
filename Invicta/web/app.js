@@ -69,7 +69,11 @@ async function load() {
   } finally { document.getElementById("rescan").disabled = false; }
   index();
   const open = D.issues.filter(i => (i.severity === "error" || i.severity === "warning") && !i.known).length;
-  document.getElementById("issue-pill").textContent = open || "";
+  const errs = D.issues.filter(i => i.severity === "error" && !i.known).length;
+  const pill = document.getElementById("issue-pill");
+  pill.textContent = open || "";
+  pill.classList.toggle("warn", !errs);  // red only when there are real errors, yellow for warnings
+  pill.title = errs ? `${errs} errors` : `${open} warnings, no errors`;
   document.getElementById("scan-time").textContent = `Read ${D.model.generated} · ${D.scan_ms} ms`;
   route();
 }
