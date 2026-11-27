@@ -612,12 +612,12 @@ function districtView(id) {
         const done = bd.height_m != null, open = ["plaza", "park"].includes(bd.kind) || /open/i.test(bd.open_ground || "");
         const fill = open ? "#2f6b45" : done ? "#cfe3f7" : "#5a7a99", op = open ? 0.55 : done ? 0.8 : 0.5;
         for (const r of bd.bays_km || (bd.rect_km ? [bd.rect_km] : [])) {
-          g += rectEl(r, `class="hit" onclick="event.stopPropagation();go('#/building/${bd.uid}')" fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`).replace("/>", `><title>${esc(designation(bd))} ${esc(bd.name)}${done ? ` · ${esc(len(bd.height_m))} tall` : open ? " · open ground" : " · footprint only"}</title></rect>`);
+          g += rectEl(r, `pointer-events="none" fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`);  // context only: on the district map only precincts can be clicked
         }
         const r = bd.rect_km;
         if (r && !bd.bays_km) {
           const fz = fitText(bd.name, (r[1] - r[0]) * 0.92, (r[3] - r[2]) * 0.6, fs * 0.45);
-          if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: open ? "#e8f1fb" : "#0b2140" });
+          if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: open ? "#e8f1fb" : "#0b2140" }).replace("<text ", `<text pointer-events="none" `);
         }
       }
       const s = fitText(`${p.id} ${p.name.toUpperCase()}`, pb[1] - pb[0], pb[3] - pb[2], fs) || fitText(p.id, pb[1] - pb[0], pb[3] - pb[2], fs);
