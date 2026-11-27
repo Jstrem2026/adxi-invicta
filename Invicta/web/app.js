@@ -1105,11 +1105,12 @@ function looksLike(uid, b) {
   if (hf || size) bits.push(`<p>${esc([hf, size ? `on a ${size} lot` : ""].filter(Boolean).join(", "))}.</p>`);
   if (b.look) bits.push(`<p>${esc(firstSentences(b.look, 3, 420))}</p>`);
   if (b.structure) bits.push(`<p class="small muted">Built as: ${esc(firstSentences(b.structure, 1, 200))}</p>`);
-  const plan = D.models && D.models[uid];
+  const pm = D.models && D.models[uid], pi = D.model_index && D.model_index[uid];
+  const plan = pm ? { levels: pm.levels.length, parts: pm.elements.length } : pi ? { levels: pi[0], parts: pi[1] } : null;
   const has = !!(b.look || b.height_m != null || b.floors || b.structure);
   return `<details class="sect looks" open><summary><h3>What it looks like</h3></summary>
     ${has ? bits.join("") : `<p class="muted">Not designed yet: no look, height or floors are stored. Tell Claude what it should look like and it will add them.</p>`}
-    <div class="small muted">${!D.models ? "" : plan ? `Full plan stored: ${plan.levels.length} levels, ${plan.elements.length} parts.` : "No room plan yet, so 3D shows the footprint only."} <button class="v3d-open" onclick="window.adxi3D && adxi3D.open()">Open in 3D</button></div></details>`;
+    <div class="small muted">${!D.models && !D.model_index ? "" : plan ? `Full plan stored: ${plan.levels} levels, ${plan.parts} parts.` : "No room plan yet, so 3D shows the footprint only."} <button class="v3d-open" onclick="window.adxi3D && adxi3D.open()">Open in 3D</button></div></details>`;
 }
 
 function buildingView(uid) {

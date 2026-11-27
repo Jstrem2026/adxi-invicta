@@ -8,6 +8,7 @@ It runs the same build and scan as the local app, then writes:
     index.html, static/      the browser app, with a small shim so it reads files
                              instead of the local /api and /file endpoints
     api/all.json             the model, scan and progress (what /api/all returns)
+    api/models/<uid>.json    each building's exact plan, loaded when the building opens
     api/report.md            the scan report
     file/<path>              only the source files the app links to, and only from
                              the allowed folders below (never game code or the website)
@@ -50,6 +51,8 @@ ALLOWED = (
     "Game/Docs/art/blueprints/",
     "Game/Docs/art/emblems/",
 )
+MAX_FILE_MIB = 20  # Cloudflare Pages limit is 25 MiB per file
+MAX_FILES = 18000  # and 20,000 files per site
 NEVER = ("Website/", "Game/Tools/", "Game/ArcaneDrift/", "Game/Data/")
 
 SHIM = """<script>
@@ -119,14 +122,21 @@ def main():
     if os.path.isfile(cp):
         with open(cp, encoding="utf-8") as f:
             data["concepts"] = json.load(f)
-    md = os.path.join(APP, "data", "models")  # exact 2D plans per building
+    # Exact plans per building. Each is its own file (api/models/<uid>.json), loaded when a building opens:
+    # inlined they made all.json larger than the 25 MiB a Cloudflare Pages file may be (27 Nov 2026).
+    # all.json keeps a small index (levels and parts per plan) for the building panel.
+    md = os.path.join(APP, "data", "models")
+    os.makedirs(os.path.join(out, "api", "models"), exist_ok=True)
     if os.path.isdir(md):
-        data["models"] = {}
+        data["model_index"] = {}
         for n in sorted(os.listdir(md)):
             if n.endswith(".json"):
                 with open(os.path.join(md, n), encoding="utf-8") as f:
                     m = json.load(f)
-                data["models"][m.get("building_uid") or n[:-5]] = m
+                uid = m.get("building_uid") or n[:-5]
+                data["model_index"][uid] = [len(m.get("levels", [])), len(m.get("elements", []))]
+                with open(os.path.join(out, "api", "models", uid + ".json"), "w", encoding="utf-8") as f:
+                    json.dump(m, f, ensure_ascii=False, separators=(",", ":"))
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 
@@ -188,6 +198,21 @@ def main():
         print("Not published (outside the allowed folders or missing): %s" % ", ".join(skipped))
     print("Scan: %d errors, %d warnings, %d waiting on Jordan, %d not designed yet." % (
         c.get("error", 0), c.get("warning", 0), c.get("decision", 0), c.get("gap", 0)))
+    # Cloudflare Pages takes files up to 25 MiB and at most 20,000 files. Stop here, with a clear message,
+    # well before either limit, so a publish never fails half-way (27 Nov 2026).
+    big = [(os.path.getsize(os.path.join(d, n)), os.path.relpath(os.path.join(d, n), out))
+           for d, _, ns in os.walk(out) for n in ns]
+    nfiles = len(big)
+    big = sorted((s, r) for s, r in big if s > MAX_FILE_MIB * 1048576)
+    if big or nfiles > MAX_FILES:
+        for s, r in big:
+            print("TOO BIG TO PUBLISH: %s is %.1f MiB (limit here %d MiB, Cloudflare's %d MiB). Split it into smaller files."
+                  % (r, s / 1048576, MAX_FILE_MIB, 25))
+        if nfiles > MAX_FILES:
+            print("TOO MANY FILES TO PUBLISH: %d (limit here %d, Cloudflare's 20,000)." % (nfiles, MAX_FILES))
+        sys.exit(2)
+    print("Size check: %d files, largest %.1f MiB (limit %d MiB)." % (
+        nfiles, max((os.path.getsize(os.path.join(d, n)) for d, _, ns in os.walk(out) for n in ns), default=0) / 1048576, MAX_FILE_MIB))
     sys.exit(1 if c.get("error") else 0)
 
 

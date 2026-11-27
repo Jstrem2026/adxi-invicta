@@ -38,10 +38,12 @@
   async function getModel(uid) {
     const D_ = typeof D !== "undefined" ? D : null;
     if (D_ && D_.models && D_.models[uid]) return D_.models[uid];
-    if (window.ADXI_STATIC) return null;
     if (uid in cache) return cache[uid];
+    if (window.ADXI_STATIC && !(D_ && D_.model_index && D_.model_index[uid])) return null;
     try {
-      const r = await fetch("/file?path=" + encodeURIComponent(`Invicta/data/models/${uid}.json`), { cache: "no-store" });
+      const u = window.ADXI_STATIC ? `api/models/${encodeURIComponent(uid)}.json`
+        : "/file?path=" + encodeURIComponent(`Invicta/data/models/${uid}.json`);
+      const r = await fetch(u, { cache: window.ADXI_STATIC ? "default" : "no-store" });
       cache[uid] = r.ok ? await r.json() : null;
     } catch (e) { cache[uid] = null; }
     return cache[uid];
