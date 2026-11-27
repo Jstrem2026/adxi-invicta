@@ -117,7 +117,7 @@ const TOOLS = [
     name: "update_building",
     description:
       "Change fields of ONE building in a precinct data file (Invicta/data/decks/D<n>/<district>.json) without rewriting the file. " +
-      "Use it for architecture details (height_m, floors, structure, entrances, look, capacity, services, interior), notes, name, size_text, status or category (its map colour: transit, keelway, police, fire, medical, homes, shops, offices, industry, utilities, parks or schools). " +
+      "Use it for architecture details (height_m, floors, structure, entrances, look, capacity, services, interior), purpose (a short paragraph: what the building is for, who uses it, what happens there), notes, name, size_text, status or category (its map colour: transit, keelway, police, fire, medical, homes, shops, offices, industry, utilities, parks or schools). " +
       "Data stores metric (height_m in metres). Text fields may give US units first with metric alongside. For Jordan and Kylee, call it right away; for others, after they agree. " +
       "It opens a proposal, or publishes at once for trusted helpers.",
     input_schema: {
@@ -224,6 +224,7 @@ Rules you must follow (from the project's CLAUDE.md, included below):
 - Canon (Docs/1_Canon_Source) is read-only. Canon changes are proposed as errata in Game/Docs/02_Canon_Errata.md.
 - When a precinct, building or street changes, change BOTH the data file (Invicta/data/decks/D<n>/<district>.json) and its design doc in Game/Docs/ in the same proposal.
 - Mark each new or changed building's status "proposed" unless Jordan says it is canon. Only Jordan can make something canon.
+- Give every new building a "purpose" (a short paragraph in plain words: what it is for, who uses it, what happens there) and a "category" (its map colour). When asked what a building is for, read its purpose.
 - Give measurements in the units each message asks for: US (feet and inches first, metric in brackets, e.g. 2,953 × 2,034 ft (900 × 620 m)) or metric (Australian practice: m, and mm for building parts). Data files always store metric.
 - Use everyday words, not architecture or CAD jargon. Keep plans and explanations simple.
 - Scan issues: when asked to resolve them, give 2–3 plain choices as a numbered list (fix the data, record canon errata in Game/Docs/02_Canon_Errata.md and its mirror, or accept as known by adding an entry with the issue id, a reason and today's date to "acknowledged" in Invicta/data/rules.json). When the person picks one, make that change straight away (Jordan and Kylee: no confirmation). Never edit canon files.
@@ -658,7 +659,7 @@ async function planPatch(gh, input) {
 
 // update_building: patch one building's fields and hand the whole file to proposeChange.
 const BUILDING_FIELDS = ["name", "status", "kind", "notes", "size_text", "height_m", "floors", "structure", "entrances",
-  "look", "capacity", "services", "interior", "category"];
+  "look", "capacity", "services", "interior", "category", "purpose"];
 // Map colour legend (Jordan, 27 Nov 2026), same keys as Invicta/atlaslib/categories.py.
 const CATEGORY_KEYS = ["transit", "keelway", "police", "fire", "medical", "homes", "shops", "offices", "industry",
   "utilities", "parks", "schools"];
@@ -676,10 +677,22 @@ async function buildingPatch(gh, input, trusted) {
     if (k === "status" && !["proposed", "assumption", "canon"].includes(v)) throw new Error("status must be proposed, assumption or canon.");
     if (k === "status" && v === "canon" && trusted !== "Jordan") throw new Error("Only Jordan can mark something canon.");
     if (k === "category" && !CATEGORY_KEYS.includes(v)) throw new Error(`category must be one of ${CATEGORY_KEYS.join(", ")}.`);
+    if (k === "purpose" && (typeof v !== "string" || v.trim().length < 10)) throw new Error("purpose must be a sentence or short paragraph.");
     if (k === "height_m" && typeof v !== "number") throw new Error("height_m must be a number of metres.");
     found[k] = v;
   }
-  return { title: input.title, summary: input.summary, files: [{ path: file, content: jsonLike(raw, data) }] };
+  const files = [{ path: file, content: jsonLike(raw, data) }];
+  // The design doc lists every building's purpose (tools/purposes.py): keep its line, and the mirror's, in step.
+  if (set.purpose && /^Game\/Docs\/[A-Za-z0-9_]+\.md$/.test(data.doc || "")) {
+    const line = `- **${found.id} ${found.name}**: ${String(set.purpose).replace(/\s+/g, " ").trim()}`;
+    const re = new RegExp(`^- \\*\\*${found.id.replace(/[-]/g, "\\-")} [^\\n]*$`, "m");
+    for (const doc of [data.doc, data.doc.replace(/^Game\/Docs\//, "Docs/2_Design_Docs/")]) {
+      let text;
+      try { text = await gh.raw(doc); } catch { continue; }
+      if (re.test(text)) files.push({ path: doc, content: text.replace(re, () => line) });
+    }
+  }
+  return { title: input.title, summary: input.summary, files };
 }
 
 // Write JSON back in the same layout it was read in (indent and final newline).

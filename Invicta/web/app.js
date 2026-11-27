@@ -9,13 +9,37 @@ const LANES = "ABCDEFGHIJKLMNOPQRSTUVWXY";
 // Map colour legend (Jordan, 27 Nov 2026): every building is coloured by what it is used for.
 // The list comes from the app data (atlaslib/categories.py), so 2D and 3D always agree.
 let CAT = {};
+const catKey = b => (b && CAT[b.category]) ? b.category : "offices";
 const catOf = b => CAT[(b && b.category) || "offices"] || { fill: "#3b5b7f", edge: "#e8f1fb", text: "#e8f1fb", label: "" };
+const streetKey = st => /keelway/i.test(st.name) ? "keelway" : /boulevard|promenade/i.test(st.name) ? "parks" : "transit";
 const streetCat = st => CAT[/keelway/i.test(st.name) ? "keelway" : /boulevard|promenade/i.test(st.name) ? "parks" : "transit"] || { fill: "#2c3440", text: "#cfd8e3" };
 window.adxiCat = b => catOf(b);
 window.adxiStreetCat = st => streetCat(st);
 function catLegend() {
-  return (D.model.categories || []).map(c => `<span><i style="background:${c.fill};border-color:${c.edge}"></i>${esc(c.label)}</span>`).join("");
+  return (D.model.categories || []).map(c => legendItem(c.key, c.label, `background:${c.fill};border-color:${c.edge}`)).join("");
 }
+// One legend entry with a tick box that shows or hides everything of that kind on the map (Jordan, 27 Nov 2026).
+function legendItem(key, text, swatch) {
+  return `<label class="lg-item"><input type="checkbox" data-lg="${key}" ${hiddenCats().has(key) ? "" : "checked"} onchange="toggleCat(this)"><i style="${swatch}"></i>${esc(text)}</label>`;
+}
+function hiddenCats() { try { return new Set(JSON.parse(localStorage.getItem("adxi.hide") || "[]")); } catch { return new Set(); } }
+function applyHidden() {
+  const svg = document.getElementById("map");
+  if (svg) svg.setAttribute("data-hide", [...hiddenCats()].join(" "));
+}
+window.toggleCat = el => {
+  const h = hiddenCats();
+  el.checked ? h.delete(el.dataset.lg) : h.add(el.dataset.lg);
+  try { localStorage.setItem("adxi.hide", JSON.stringify([...h])); } catch {}
+  applyHidden();
+};
+// CSS that hides each kind when its box is unticked
+(function () {
+  const keys = ["transit", "keelway", "police", "fire", "medical", "homes", "shops", "offices", "industry", "utilities", "parks", "schools", "block", "door"];
+  const st = document.createElement("style");
+  st.textContent = keys.map(k => `#map[data-hide~="${k}"] [data-cat="${k}"]`).join(",") + "{display:none}";
+  document.head.append(st);
+})();
 // A building's footprint: its shaped outline (curves, L and U shapes, courtyards as holes) when it has one,
 // otherwise its box, or one box per bay for a bay row.
 // Deck city and Bridge emblems (Jordan, 27 Nov 2026): a small copy in web/emblems, the full size art in Game/Docs/art/emblems.
@@ -25,6 +49,8 @@ function emblem(o, size, cls) {
   const img = `<img class="${cls || "emblem"}" src="${staticSrc(o.emblem_web)}" width="${size}" height="${size}" alt="" loading="lazy">`;
   return o.emblem_art ? `<a href="${fileSrc(o.emblem_art)}" target="_blank" rel="noopener" title="Emblem (full size)">${img}</a>` : img;
 }
+// the building's purpose under its name in building lists (full text on hover)
+const purposeLine = b => b.purpose ? `<span class="purpose-line" title="${esc(b.purpose)}">${esc(b.purpose)}</span>` : "";
 function shapeEl(b, attrs) {
   if (b.outline_km && !b.bays_km) {
     const d = b.outline_km.map(pathOf).join("") + (b.holes_km || []).map(pathOf).join("");
@@ -339,27 +365,142 @@ function vbFor(b, padKm) {             // viewBox for a ship-frame bbox
 }
 function label(x, y, text, size, opts) {
   opts = opts || {};
-  return `<text x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="${opts.anchor || "middle"}" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
+  return `<text${opts.cat ? ` data-cat="${opts.cat}"` : ""} x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="${opts.anchor || "middle"}" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
 }
 function labelR(x, y, text, size, opts) {
   opts = opts || {};
-  return `<text transform="rotate(-90 ${X(x).toFixed(1)} ${Y(y).toFixed(1)})" x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="middle" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
+  return `<text${opts.cat ? ` data-cat="${opts.cat}"` : ""} transform="rotate(-90 ${X(x).toFixed(1)} ${Y(y).toFixed(1)})" x="${X(x).toFixed(1)}" y="${Y(y).toFixed(1)}" font-size="${size.toFixed(1)}" fill="${opts.fill || "#e8f1fb"}" text-anchor="middle" dominant-baseline="middle" font-weight="${opts.weight || 600}">${esc(text)}</text>`;
 }
-// fit a label in a box, turning it sideways when the box is tall; never drops a label
+// fit a label in a box, turning it sideways when the box is tall; never drops a label (streets, bays)
 function boxLabel(r, text, fs, opts) {
   const w = (r[1] - r[0]) * 1000, h = (r[3] - r[2]) * 1000, cx = (r[0] + r[1]) / 2, cy = (r[2] + r[3]) / 2;
   const tall = h > w * 1.3;
   const along = tall ? h : w, across = tall ? w : h;
-  let s = Math.min(fs, (along * 0.92) / Math.max(1, text.length * 0.58), across * 0.8);
+  let s = Math.min(fs, (along * 0.92) / Math.max(1, text.length * 0.62), across * 0.8);
   s = Math.max(s, fs * 0.12);
   return tall ? labelR(cx, cy, text, s, opts) : label(cx, cy, text, s, opts);
 }
+
 function fitText(name, wKm, hKm, fs) {
   const w = wKm * 1000, h = hKm * 1000;
   let s = fs;
   if (name.length * s * 0.56 > w * 0.92) s = (w * 0.92) / (name.length * 0.56);
   return s >= fs * 0.5 && s <= h * 0.8 ? s : 0;
 }
+
+// ---- building labels that fit their shape (Jordan, 27 Nov 2026: "fix the words")
+// A shaped building (L, U, courtyard, curved, from its plan) gets its name in the biggest open part of
+// its own outline, never over a courtyard or outside its edges. Long names wrap onto 2 or 3 lines and
+// turn sideways in tall spaces. A name that still can't be read is shortened to the building id, and
+// left off only when even that won't fit (hovering still shows the full name).
+const CH = 0.62, LH = 1.15;           // average capital width and line height, in font sizes
+function inRing(pts, x, y) {
+  let ins = false;
+  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+    const [xi, yi] = pts[i], [xj, yj] = pts[j];
+    if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) ins = !ins;
+  }
+  return ins;
+}
+function inShape(b, x, y) {
+  if (!b.outline_km) return true;
+  let n = 0;
+  for (const r of b.outline_km) if (inRing(r, x, y)) n++;
+  for (const r of b.holes_km || []) if (inRing(r, x, y)) n++;
+  return n % 2 === 1;
+}
+// Split words into n lines as evenly as possible.
+function wrapLines(text, n) {
+  const words = text.split(/\s+/).filter(Boolean);
+  if (n <= 1 || words.length < 2) return [words.join(" ")];
+  n = Math.min(n, words.length);
+  const total = text.length, lines = [];
+  let cur = [];
+  for (let i = 0; i < words.length; i++) {
+    cur.push(words[i]);
+    const left = words.length - i - 1, need = n - lines.length - 1;
+    if (need > 0 && (left === need || cur.join(" ").length >= total / n)) { lines.push(cur.join(" ")); cur = []; }
+  }
+  if (cur.length) lines.push(cur.join(" "));
+  return lines;
+}
+// The best way to write text in a w × h box (metres): size, lines and whether it turns sideways.
+function bestFit(text, w, h, fs) {
+  let best = null;
+  for (const side of [false, true]) {
+    const along = side ? h : w, across = side ? w : h;
+    for (let n = 1; n <= 3; n++) {
+      const lines = wrapLines(text, n);
+      if (lines.length < n) break;
+      const longest = Math.max(...lines.map(l => l.length));
+      const s = Math.min(fs, (along * 0.9) / Math.max(1, longest * CH), (across * 0.86) / (lines.length * LH));
+      if (!best || s > best.s * 1.02) best = { s, lines, side };
+    }
+  }
+  return best;
+}
+// Biggest open rectangles inside a building's own shape (on a grid), best first for this label.
+const SPOT = new WeakMap();
+function labelSpots(b) {
+  if (SPOT.has(b)) return SPOT.get(b);
+  const r = b.rect_km;
+  let out;
+  if (!b.outline_km) out = [r];
+  else {
+    const N = 28, dx = (r[1] - r[0]) / N, dy = (r[3] - r[2]) / N;
+    const ok = [];
+    for (let j = 0; j < N; j++) {
+      const row = [];
+      for (let i = 0; i < N; i++) {
+        const x0 = r[0] + i * dx, y0 = r[2] + j * dy;
+        // a cell counts only when its middle and all four corners (pulled in a little) are inside
+        row.push(inShape(b, x0 + dx / 2, y0 + dy / 2) && inShape(b, x0 + dx * 0.1, y0 + dy * 0.1) && inShape(b, x0 + dx * 0.9, y0 + dy * 0.1) &&
+          inShape(b, x0 + dx * 0.1, y0 + dy * 0.9) && inShape(b, x0 + dx * 0.9, y0 + dy * 0.9));
+      }
+      ok.push(row);
+    }
+    // every maximal rectangle of open cells (histogram method)
+    out = [];
+    const hgt = new Array(N).fill(0);
+    for (let j = 0; j < N; j++) {
+      for (let i = 0; i < N; i++) hgt[i] = ok[j][i] ? hgt[i] + 1 : 0;
+      for (let i = 0; i < N; i++) {
+        if (!hgt[i]) continue;
+        let mh = Infinity;
+        for (let k = i; k < N && hgt[k]; k++) {
+          mh = Math.min(mh, hgt[k]);
+          if (k + 1 < N && hgt[k + 1] >= mh) continue;   // keep widening while the height holds
+          out.push([r[0] + i * dx, r[0] + (k + 1) * dx, r[2] + (j - mh + 1) * dy, r[2] + (j + 1) * dy]);
+        }
+      }
+    }
+    if (!out.length) out = [r];
+  }
+  SPOT.set(b, out);
+  return out;
+}
+// Text for one building name inside its shape; "" when nothing readable fits.
+function shapeLabel(b, text, fs, minS, opts) {
+  let best = null;
+  const tryText = t => {
+    for (const s of labelSpots(b)) {
+      const f = bestFit(t, (s[1] - s[0]) * 1000, (s[3] - s[2]) * 1000, fs);
+      if (f && (!best || f.s > best.s)) best = Object.assign(f, { spot: s, text: t });
+    }
+  };
+  tryText(text);
+  if ((!best || best.s < minS) && !opts.noId && b.id && b.id !== text) { const keep = best; best = null; tryText(b.id); if (!best || (keep && keep.s >= best.s)) best = keep; }
+  if (!best || best.s < minS) return "";
+  const s = best.spot, cx = (s[0] + s[1]) / 2, cy = (s[2] + s[3]) / 2, n = best.lines.length;
+  const halo = opts.halo ? ` stroke="${opts.halo}" stroke-width="${(best.s / 6).toFixed(1)}" paint-order="stroke" stroke-linejoin="round"` : "";
+  const tspans = best.lines.map((l, i) => `<tspan x="${X(cx).toFixed(1)}" dy="${(i ? best.s * LH : -best.s * LH * (n - 1) / 2).toFixed(1)}">${esc(l)}</tspan>`).join("");
+  const rot = best.side ? ` transform="rotate(-90 ${X(cx).toFixed(1)} ${Y(cy).toFixed(1)})"` : "";
+  // where the name sits, for the measurement line that goes under it (plan2d.js drawSizes)
+  const bx = [Math.min(X(s[0]), X(s[1])), Math.min(Y(s[2]), Y(s[3])), Math.max(X(s[0]), X(s[1])), Math.max(Y(s[2]), Y(s[3]))].map(v => v.toFixed(1)).join(" ");
+  const tag = b.uid ? ` data-lbl="${b.uid}" data-spot="${bx}" data-th="${(best.s * LH * n).toFixed(1)}" data-side="${best.side ? 1 : 0}"` : "";
+  return `<text${tag}${opts.cat ? ` data-cat="${opts.cat}"` : ""}${rot} x="${X(cx).toFixed(1)}" y="${Y(cy).toFixed(1)}" font-size="${best.s.toFixed(1)}" fill="${opts.fill}" text-anchor="middle" dominant-baseline="middle" font-weight="${opts.weight || 600}"${halo}>${tspans}</text>`;
+}
+
 function frameGrid(b, everyFrames, fs, showLanes) {
   let g = "";
   const f0 = Math.ceil(b[0] / 0.5), f1 = Math.floor(b[1] / 0.5);
@@ -397,11 +538,44 @@ function mapShell(svgInner, vb, tools, legend, hint) {
     <pattern id="hatchS" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="40" height="40" fill="#16283d"/><line x1="0" y1="0" x2="0" y2="40" stroke="#2b4563" stroke-width="10"/></pattern></defs>
     ${svgInner}${scaleBar(vb)}</svg>
     <div class="maptools">${tools || ""}<button onclick="fitMap()">Fit</button></div>
-    <div class="maphint">${("ontouchstart" in window) ? (hint || "Scroll to zoom · drag to move").replace(/[Ss]croll to zoom/, "pinch to zoom").replace(/^p/, (hint ? "p" : "P")) : (hint || "Scroll to zoom · drag to move")}</div></div>${legend ? `<div class="legend">${legend}</div>` : ""}`;
+    ${legend ? `<div class="map-legend"><button type="button" class="dl-btn" onclick="this.parentNode.classList.toggle('open')" title="What the colours mean · untick a colour to hide it">Legend</button><div class="lg-box">${legend}</div></div>` : ""}
+    <div class="maphint">${("ontouchstart" in window) ? (hint || "Scroll to zoom · drag to move").replace(/[Ss]croll to zoom/, "pinch to zoom").replace(/^p/, (hint ? "p" : "P")) : (hint || "Scroll to zoom · drag to move")}</div></div>`;
+}
+// Clickable areas stand out (Jordan, 27 Nov 2026): every clickable next-level area gets a clear outline
+// drawn on top of the coloured detail, the detail underneath is dimmed a little, and the area under
+// the mouse (or the one you are on) gets a bold red ring. Works on every level from the same .hit marks.
+function ringLayer(svg) {
+  const old = svg.querySelector("#rings"); if (old) old.remove();
+  const hits = [...svg.querySelectorAll(".hit")];
+  if (!hits.length) return;
+  const NS = "http://www.w3.org/2000/svg", layer = document.createElementNS(NS, "g");
+  layer.id = "rings";
+  for (const h of hits) {
+    const shapes = h.matches("path,rect,circle,polygon") ? [h] : [...h.querySelectorAll("path,rect,circle,polygon")];
+    if (!shapes.length) continue;
+    const grp = document.createElementNS(NS, "g");
+    grp.setAttribute("class", "ring" + (h.dataset.sel ? " sel" : ""));
+    if (h.dataset.cat) grp.dataset.cat = h.dataset.cat;
+    const t = h.querySelector("title"); if (t) grp.append(t.cloneNode(true));
+    for (const sh of shapes) {
+      const c = sh.cloneNode(false);
+      for (const a of ["class", "onclick", "style", "stroke-dasharray", "fill-opacity", "opacity", "pointer-events"]) c.removeAttribute(a);
+      c.setAttribute("fill", "transparent");
+      const tr = sh.closest("[transform]");
+      if (tr && tr !== svg && !h.contains(tr) && tr !== sh) c.setAttribute("transform", tr.getAttribute("transform"));
+      grp.append(c);
+    }
+    grp.addEventListener("click", e => { e.stopPropagation(); h.dispatchEvent(new MouseEvent("click", { bubbles: true })); });
+    layer.append(grp);
+  }
+  svg.classList.add("has-rings");
+  svg.append(layer);
 }
 function bindMap() {
   const svg = document.getElementById("map");
   if (!svg) return;
+  ringLayer(svg);
+  applyHidden();
   let vb = svg.getAttribute("viewBox").split(/\s+/).map(Number);
   const set = () => svg.setAttribute("viewBox", vb.join(" "));
   fitMapHeight();
@@ -645,14 +819,13 @@ function deckView(n) {
 function precinctContents(p, fs) {
   let g = `<g pointer-events="none">`;
   for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
-  for (const st of p.streets || []) if (st.rect_km) g += rectEl(st.rect_km, `fill="${streetCat(st).fill}" fill-opacity=".8"`);
+  for (const st of p.streets || []) if (st.rect_km) g += rectEl(st.rect_km, `data-cat="${streetKey(st)}" fill="${streetCat(st).fill}" fill-opacity=".8"`);
   for (const bd of p.buildings || []) {
     const c = catOf(bd);
-    g += shapeEl(bd, `fill="${c.fill}" fill-opacity=".85" stroke="${bd.category === "medical" ? c.edge : "#071425"}" stroke-width="${fs / 14}"`);
+    g += shapeEl(bd, `data-cat="${catKey(bd)}" fill="${c.fill}" fill-opacity=".85" stroke="${bd.category === "medical" ? c.edge : "#071425"}" stroke-width="${fs / 14}"`);
     const r = bd.rect_km;
     if (r && !bd.bays_km) {
-      const fz = fitText(bd.name, (r[1] - r[0]) * 0.92, (r[3] - r[2]) * 0.6, fs * 0.45);
-      if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: bd.holes_km ? "#e8f1fb" : c.text });
+      g += shapeLabel(bd, bd.name, fs * 0.45, fs * 0.2, { fill: c.text, noId: true, cat: catKey(bd) });
     }
   }
   return g + "</g>";
@@ -723,7 +896,7 @@ function drawPrecinct(p, fs, opts) {
   for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 5}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
   (p.streets || []).forEach((st, i) => {
     const sel = opts.selectedStreet === i;
-    g += (opts.streetsClickable ? `<g class="hit" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` : `<g pointer-events="none">`) +
+    g += (opts.streetsClickable ? `<g class="hit" data-cat="${streetKey(st)}" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` : `<g data-cat="${streetKey(st)}" pointer-events="none">`) +
       rectEl(st.rect_km, `fill="${streetCat(st).fill}"${sel ? ` stroke="#ffc266" stroke-width="${fs / 3}"` : ""}`) + "</g>";
   });
   if (opts.blocks) g += blocksLayer(p, fs, false, opts.blocks.selected);
@@ -734,25 +907,25 @@ function drawPrecinct(p, fs, opts) {
     const stroke = b.uid === opts.selected ? "#ffc266" : b.status === "canon" ? "#5fd39a" : b.category === "medical" ? c.edge : "#e8f1fb";
     const sw = b.uid === opts.selected ? fs / 2.5 : b.category === "medical" ? fs / 5 : fs / 9;
     const click = opts.clickBuildings ? opts.clickBuildings(b) : false;
-    g += (click ? `<g class="hit" onclick="go('#/building/${b.uid}')"><title>${b.id} ${esc(b.name)} · ${esc(c.label)}${b.shape ? " · " + esc(b.shape) : ""} · click for details</title>` : `<g pointer-events="none">`) +
+    g += (click ? `<g class="hit" data-cat="${catKey(b)}"${b.uid === opts.selected ? ` data-sel="1"` : ""} onclick="go('#/building/${b.uid}')"><title>${b.id} ${esc(b.name)} · ${esc(c.label)}${b.shape ? " · " + esc(b.shape) : ""} · click for details</title>` : `<g data-cat="${catKey(b)}" pointer-events="none">`) +
       shapeEl(b, `fill="${c.fill}" stroke="${stroke}" stroke-width="${sw}"`);
-    for (const dr of b.doors_km || []) g += rectEl(dr, `fill="#ff8a3d"`);
+    for (const dr of b.doors_km || []) g += rectEl(dr, `data-cat="door" fill="#ff8a3d"`);
     g += "</g>";
     if (opts.labels !== false) {
       if (b.bays_km) {
         // each bay gets its own name, or a numbered generic one
         const base = b.bay_label || "Bay";
         const tag = i => base === "Street" ? String.fromCharCode(65 + i) : i + 1;   // Street A, Street B … ; Berth 1, Berth 2 …
-        b.bays_km.forEach((s, i) => { g += boxLabel(s, (b.bay_names && b.bay_names[i]) || `${base} ${tag(i)}`, fs * 0.4, { weight: 400 }); });
+        b.bays_km.forEach((s, i) => { g += boxLabel(s, (b.bay_names && b.bay_names[i]) || `${base} ${tag(i)}`, fs * 0.4, { weight: 400, fill: c.text, cat: catKey(b) }); });
         const r = b.rect_km, wide = (r[1] - r[0]) >= (r[3] - r[2]);
-        if (b.bays_km.length > 3 && !b.bay_names) g += wide ? label((r[0] + r[1]) / 2, r[2] - fs * 0.0006, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" })
-                  : labelR(r[0] - fs * 0.0006, (r[2] + r[3]) / 2, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7" });
-      } else g += boxLabel(b.rect_km, b.name.toUpperCase(), fs * 0.75, { fill: b.holes_km ? "#e8f1fb" : c.text });
+        if (b.bays_km.length > 3 && !b.bay_names) g += wide ? label((r[0] + r[1]) / 2, r[2] - fs * 0.0006, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7", cat: catKey(b) })
+                  : labelR(r[0] - fs * 0.0006, (r[2] + r[3]) / 2, b.name.toUpperCase(), fs * 0.5, { fill: "#cfe3f7", cat: catKey(b) });
+      } else g += shapeLabel(b, b.name.toUpperCase(), fs * 0.75, fs * 0.25, { fill: c.text, halo: c.fill, cat: catKey(b) });
     }
   }
   if (opts.labels !== false) for (const st of p.streets || []) {
     const r = st.rect_km, w = r[1] - r[0], h = r[3] - r[2];
-    g += boxLabel(r, st.name, fs * 0.55, { fill: /keelway/i.test(st.name) ? "#0b2140" : "#e8f1fb", weight: 400 });
+    g += boxLabel(r, st.name, fs * 0.55, { fill: streetCat(st).text, weight: 400, cat: streetKey(st) });
   }
   return g;
 }
@@ -760,9 +933,9 @@ function blocksLayer(p, fs, clickable, selected) {
   let g = "";
   for (const blk of p.blocks || []) {
     const sel = blk.id === selected;
-    g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : `pointer-events="none"`} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}">${clickable ? `<title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title>` : ""}</path>`;
+    g += `<path data-cat="block" ${clickable ? `class="hit"${sel ? ` data-sel="1"` : ""} onclick="go('#/block/${p.uid}/${blk.id}')"` : `pointer-events="none"`} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}">${clickable ? `<title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title>` : ""}</path>`;
     const c = blk.cell_km;
-    g += `<text x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600" pointer-events="none">${esc(blk.name)}</text>`;
+    g += `<text data-cat="block" x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600" pointer-events="none">${esc(blk.name)}</text>`;
   }
   return g;
 }
@@ -779,11 +952,11 @@ function precinctView(uid) {
   g += drawPrecinct(p, fs, {});
   g += blocksLayer(p, fs, true);
   const tools = "";
-  const legend = catLegend() + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>block</span>`;
+  const legend = catLegend() + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span>` + legendItem("door", "dock door", "background:#ff8a3d;border:0") + legendItem("block", "block outlines and names", "background:none;border-color:#6fd0ff");
   const groups = {};
   for (const bd of p.buildings) (groups[bd.kind] = groups[bd.kind] || []).push(bd);
   const bl = Object.entries(groups).map(([k, list]) => `<h3>${esc(k)} (${list.length})</h3><ul class="list">` + list.map(bd =>
-    `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b>${bd.bay_count ? ` <span class="small muted">× ${bd.bay_count}</span>` : ""}</span><span class="small">${bd.size_m ? dims(bd.size_m[0], bd.size_m[1]) : ""} ${badge(bd.status)}</span></li>`).join("") + "</ul>").join("");
+    `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b>${bd.bay_count ? ` <span class="small muted">× ${bd.bay_count}</span>` : ""}${purposeLine(bd)}</span><span class="small">${bd.size_m ? dims(bd.size_m[0], bd.size_m[1]) : ""} ${badge(bd.status)}</span></li>`).join("") + "</ul>").join("");
   const used = (p.blocks || []).filter(k => k.contents.length).length;
   const panel = `<h1>${p.id} · ${esc(p.name)}</h1><div class="small muted">${esc(x.name)} · Deck ${d.n} ${esc(d.name)} · ${badge(p.status)}</div>
     <p class="small">${esc(p.intro || p.role)}</p>
@@ -817,7 +990,7 @@ function blockView(puid, bid) {
   g += label(c[1] + 0.03, (c[2] + c[3]) / 2, blk.lane === blk.lane_end ? `lane ${blk.lane}` : `lanes ${blk.lane}–${blk.lane_end}`, fs * 0.6, { fill: "#ffc266", anchor: "end" });
   const items = blk.contents.map(ct => {
     const bd = p.buildings.find(q => q.id === ct.id);
-    return `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b> <span class="small muted">${esc(bd.kind)}</span></span><span class="small">${ct.of ? (ct.parts < ct.of ? `${ct.parts} of ${ct.of} ${esc((bd.bay_label || "bay").toLowerCase())}s here ` : "") : ct.share < 0.995 ? Math.round(ct.share * 100) + "% of it here " : ""}${badge(bd.status)}</span></li>`;
+    return `<li onclick="go('#/building/${bd.uid}')"><span>${bd.id} <b>${esc(bd.name)}</b> <span class="small muted">${esc(bd.kind)}</span>${purposeLine(bd)}</span><span class="small">${ct.of ? (ct.parts < ct.of ? `${ct.parts} of ${ct.of} ${esc((bd.bay_label || "bay").toLowerCase())}s here ` : "") : ct.share < 0.995 ? Math.round(ct.share * 100) + "% of it here " : ""}${badge(bd.status)}</span></li>`;
   }).join("");
   const streets = (p.streets || []).filter(s => (s.blocks || []).includes(bid)).map(s => esc(s.name)).join(", ");
   const panel = `<h1>${esc(blk.name)} <span class="muted small">${esc(blk.id)}</span></h1><div class="small muted">${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n}</div>
@@ -860,6 +1033,8 @@ function copyBuilding(btn) {
   const panel = btn.closest(".panel") || document;
   const clean = (el) => { const c = el.cloneNode(true); c.querySelectorAll(".cp").forEach((x) => x.remove()); return c.textContent.replace(/\s+/g, " ").trim(); };
   const lines = [clean(panel.querySelector("h1")), clean(panel.querySelector("h1 + div"))];
+  const pu = panel.querySelector(".purpose");
+  if (pu) lines.push("Purpose: " + clean(pu).replace(/^Purpose\s*/, ""));
   panel.querySelectorAll(".kv").forEach((kv, i) => {
     if (i === 1) lines.push("", "Architecture");
     const cells = [...kv.children];
@@ -957,6 +1132,7 @@ function buildingView(uid) {
   const firstBlock = (b.blocks || [])[0];
   const panel = `<h1>${esc(b.name)} <button class="cp cp-all" title="Copy all building information" onclick="copyBuilding(this)">⧉</button></h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
+    <div class="purpose"><b>Purpose</b> ${b.purpose ? esc(b.purpose) : `<span class="muted">${ND}</span>`}</div>
     ${looksLike(uid, b)}
     <div class="kv">
       <div>Designation</div><div><b>${esc(designation(b))}</b> <span class="small muted">(deck · district · precinct · block · building)</span></div>

@@ -170,3 +170,129 @@ Streets: Approach Road, 98 ft (30 m); F57 Street, 98 ft (30 m).
 | Antenna Field 13 | 2,313 × 2,060 ft (705 × 628 m) | ground antennas and sensor masts | D5F5P5B7A3 |
 | Antenna Field 14 | 1,909 × 1,886 ft (582 × 575 m) | ground antennas and sensor masts | D5F5P5B8A3 |
 
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Port Approach
+
+- **P1-01 Port Approach Control**: The approach control room for the port side. Controllers here guide every ship and shuttle coming in to the port docks and the Hall of Arrivals.
+- **P1-02 Port Sensor Hall**: The radar and sensor hall that tracks every craft approaching the port side of the ship.
+- **P1-03 Pilot Boat Station**: The base for pilot boats, small craft that fly out to meet big ships and guide them safely into their berths.
+- **P1-04 Port Controllers' Lodge**: Rest rooms for port approach controllers between shifts, so they stay close to the control room.
+- **P1-05 Port Approach Fire Station**: The fire and rescue station covering the Port Approach precinct and its control rooms.
+- **P1-06 Port Antenna Plant**: The plant that supplies power and cooling to the antennas on the hull above the port approaches.
+- **P1-07 Port Approach Utility Plant**: The utility plant for Port Approach, supplying power, air and water.
+- **P1-08 Port Approach Service Shaft**: The Port Approach shaft down to the service layer, used for maintenance and deliveries.
+- **P1-09 Antenna Field 1**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-10 Antenna Field 2**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-11 Antenna Field 3**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-12 Antenna Field 4**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-13 Antenna Field 5**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-14 Antenna Field 6**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-15 Antenna Field 7**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-16 Antenna Field 8**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-17 Antenna Field 9**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-18 Antenna Field 10**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-19 Antenna Field 11**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-20 Antenna Field 12**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-21 Antenna Field 13**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-22 Antenna Field 14**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+- **P1-23 Antenna Field 15**: An open field of ground antennas and sensor masts in the Port Approach, feeding traffic data to the approach controllers.
+
+### P2 Briefing Halls
+
+- **P2-01 Main Briefing Hall**: The deck's main briefing hall, where crews gather every day for the flight briefing that covers traffic, weather and orders for the whole deck.
+- **P2-02 Squadron Briefing Rooms**: Smaller briefing rooms where individual crews and squadrons are briefed before flights and debriefed after.
+- **P2-03 Flight Plans Office**: The office where every flight on and off the ship is filed and checked before it is cleared.
+- **P2-04 Space Weather Office**: The forecasting office for space weather, warning pilots and controllers of storms, debris and solar wind.
+- **P2-05 Navigation Charts Library**: The library of navigation charts for the Drift Network, used by pilots and planners to plot routes.
+- **P2-06 Accident Investigation Board**: The board that investigates every flight incident and accident, finds the cause and recommends changes.
+- **P2-07 Flight Officers' Club**: The flight officers' club, with dining and lounges for officers off duty.
+- **P2-08 Briefing Halls Canteen**: The canteen serving meals to briefing staff and crews between briefings.
+- **P2-09 Briefing Halls Utility Plant**: The utility plant for the Briefing Halls precinct, supplying power, air and water.
+- **P2-10 Briefing Halls Service Shaft**: The Briefing Halls shaft down to the service layer, used for maintenance and deliveries.
+- **P2-11 Briefing Annex 1**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-12 Quiet Garden 1**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-13 Briefing Annex 2**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-14 Quiet Garden 2**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-15 Briefing Annex 3**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-16 Quiet Garden 3**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-17 Briefing Annex 4**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-18 Quiet Garden 4**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-19 Briefing Annex 5**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-20 Quiet Garden 5**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-21 Briefing Annex 6**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+- **P2-22 Quiet Garden 6**: A small garden in the Briefing Halls where briefing and planning staff take their breaks away from the halls.
+- **P2-23 Briefing Annex 7**: An overflow building with more briefing rooms in the Briefing Halls, used when the main hall and squadron rooms are full.
+
+### P3 Beacon
+
+- **P3-01 The Beacon**: The Beacon, Aerion's flight control tower and the landmark of Flight Control, overlooking the flight deck.
+- **P3-02 Traffic Control Centre**: The deck's master traffic room. Controllers here follow every craft on Deck 5 from launch to landing.
+- **P3-03 Backup Control Room**: A hardened standby control room that takes over traffic control if the main Traffic Control Centre fails.
+- **P3-04 Beacon Plaza**: The square at the foot of the Beacon, the open heart of Flight Control.
+- **P3-05 Controllers' Rest Hall**: Quiet rooms where traffic controllers rest between shifts.
+- **P3-06 Beacon Pod Stop**: The pod stop on the Keelway beside the Beacon, bringing controllers and visitors to Flight Control.
+- **P3-07 Beacon Utility Plant**: The utility plant for the Beacon precinct, supplying power, air and water.
+- **P3-08 Beacon Garden 1**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-09 Beacon Garden 2**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-10 Beacon Garden 3**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-11 Beacon Garden 4**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-12 Beacon Garden 5**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-13 Beacon Garden 6**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+- **P3-14 Beacon Garden 7**: A garden in the Beacon around the Beacon tower, where controllers and visitors can sit outside.
+
+### P4 Dispatch
+
+- **P4-01 Dispatch Centre**: The dispatch centre, where dispatchers assign craft, crews and time slots for every flight.
+- **P4-02 Shuttle Schedules Office**: The office that draws up and publishes the timetables for every shuttle service.
+- **P4-03 Cruiser Liaison Office**: The office that coordinates Flight Control with the escort cruisers, keeping their movements in step with deck traffic.
+- **P4-04 Analysts' Hall**: A hall of analysts who study traffic data and incidents to make flying on the deck safer and smoother.
+- **P4-05 Controllers' Training Centre**: The training centre for new traffic controllers, with simulators that recreate the control rooms.
+- **P4-06 Flight Radio Hub**: The hub for the ship-wide flight radio and data links between controllers and craft.
+- **P4-07 Dispatch Canteen**: The canteen serving meals to dispatch staff.
+- **P4-08 Dispatch Fire Station**: The fire and rescue station for the Dispatch precinct.
+- **P4-09 Dispatch Utility Plant**: The utility plant for the Dispatch precinct, supplying power, air and water.
+- **P4-10 Dispatch Service Shaft**: The Dispatch shaft down to the service layer, used for maintenance and deliveries.
+- **P4-11 Dispatch Annex 1**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-12 Staff Garden 1**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-13 Dispatch Annex 2**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-14 Staff Garden 2**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-15 Dispatch Annex 3**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-16 Staff Garden 3**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-17 Dispatch Annex 4**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-18 Staff Garden 4**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-19 Dispatch Annex 5**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-20 Staff Garden 5**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-21 Dispatch Annex 6**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+- **P4-22 Staff Garden 6**: A small garden in the Dispatch where dispatch staff take their breaks.
+- **P4-23 Dispatch Annex 7**: An overflow building with more dispatch desks in the Dispatch, used at busy times.
+
+### P5 Starboard Approach
+
+- **P5-01 Starboard Approach Control**: The approach control room for the starboard side. Controllers here guide cruisers through the three Cruiser Gates.
+- **P5-02 Starboard Sensor Hall**: The radar and sensor hall tracking every craft approaching the starboard side of the ship.
+- **P5-03 Gate Traffic Desk**: The desk that books time slots for cruisers using the three Cruiser Gates.
+- **P5-04 Rescue Coordination Centre**: The centre that runs search and rescue for Aerion and organises evacuation flights in an emergency.
+- **P5-05 Evacuation Craft Hangar**: The hangar holding Aerion's evacuation craft, kept ready to fly people out in an emergency.
+- **P5-06 Starboard Controllers' Lodge**: Rest rooms for starboard approach controllers between shifts.
+- **P5-07 Starboard Approach Utility Plant**: The utility plant for Starboard Approach, supplying power, air and water.
+- **P5-08 Starboard Approach Service Shaft**: The Starboard Approach shaft down to the service layer.
+- **P5-09 Antenna Field 1**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-10 Antenna Field 2**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-11 Antenna Field 3**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-12 Antenna Field 4**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-13 Antenna Field 5**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-14 Antenna Field 6**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-15 Antenna Field 7**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-16 Antenna Field 8**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-17 Antenna Field 9**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-18 Antenna Field 10**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-19 Antenna Field 11**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-20 Antenna Field 12**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-21 Antenna Field 13**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+- **P5-22 Antenna Field 14**: An open field of ground antennas and sensor masts in the Starboard Approach, feeding traffic data to the approach controllers.
+
+<!-- purposes:end -->

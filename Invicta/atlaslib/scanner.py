@@ -14,6 +14,7 @@ import fnmatch
 
 from . import geometry as G
 from . import footprints as FP
+from . import purposes as PU
 from .categories import KEYS as CATEGORY_KEYS
 from . import parsers as P
 from .sources import FIXED, GAME_DOCS, MIRROR_DOCS
@@ -479,6 +480,13 @@ class Scan:
                     self.add("error", "docs", "Precinct design doc is missing", "%s points to %s, which does not exist." % (ps["file"], rel), did, ps["file"])
                     continue
                 text = open(full, encoding="utf-8").read()
+            # building purposes (Jordan, 27 Nov 2026): the doc's list must match the data
+            have = PU.doc_part(text)
+            want = PU.doc_section(ps)
+            if (have or "") != want and (have is not None or any(b.get("purpose") for p in ps["precincts"] for b in p["buildings"])):
+                self.add("warning", "docs", "Building purposes in the design doc differ from the data",
+                         "%s: the \"What each building is for\" list does not match the purposes in %s." % (ps["doc"], ps["file"]),
+                         did, ps["doc"], fix="Run python tools/purposes.py to rewrite the list from the data.")
             secs = {}
             # A precinct section counts even before it has a building table ("What it holds is not designed yet").
             for n, ln in enumerate(text.splitlines(), 1):

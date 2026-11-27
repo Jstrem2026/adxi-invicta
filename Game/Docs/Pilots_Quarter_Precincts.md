@@ -277,3 +277,229 @@ Streets: Starboard Homes Road, 98 ft (30 m); F65 Street, 98 ft (30 m).
 | Neighbourhood Park 5 | 1,283 × 1,444 ft (391 × 440 m) | playground and lawn · shape: rounded corners | D5F6P6B13A3 |
 | Terrace Row 5 | 1,227 × 1,234 ft (374 × 376 m) | row houses · shape: courtyard | D5F6P6B14A2 |
 
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Flight School
+
+- **P1-01 Flight School Main Hall**: The heart of Aerion's flight school, with classrooms, lecture theatres and the school offices where trainee pilots learn the theory of flying.
+- **P1-02 Training Hangar**: The hangar that houses the flight school's training craft, where trainees learn to inspect and prepare a craft before flying it.
+- **P1-03 Training Flight Line**: The line where training craft are parked, fuelled and serviced between lessons, and where trainees start and finish their training flights.
+- **P1-04 Navigation School**: The school where trainees learn navigation and how to read the charts of the Drift Network.
+- **P1-05 Engineering School**: The school for mechanics and armorers, who learn to maintain craft, engines and weapons.
+- **P1-06 Survival School**: The school that trains pilots and crews to escape a damaged craft and survive in vacuum or after a crash.
+- **P1-07 Cadet Parade Ground**: The flight school's parade ground, used for drill, parades and graduation ceremonies.
+- **P1-08 Trainee Halls 1**: Halls of residence in the Flight School where trainee pilots live during their course, close to the classrooms and hangars.
+- **P1-09 Trainee Halls 2**: Halls of residence in the Flight School where trainee pilots live during their course, close to the classrooms and hangars.
+- **P1-10 Trainee Halls 3**: Halls of residence in the Flight School where trainee pilots live during their course, close to the classrooms and hangars.
+- **P1-11 Instructors' Apartments**: Homes for the flight school's instructors and their families, beside the school.
+- **P1-12 School Library**: The school library, holding flight manuals and logbooks, with quiet rooms for study.
+- **P1-13 School Canteen**: The canteen where flight school staff and trainees eat.
+- **P1-14 School Sports Field**: The school's sports field and running track, used for fitness training and games.
+- **P1-15 Flight School Clinic**: The flight school clinic, giving trainees flight medicals and treating injuries from training.
+- **P1-16 Flight School Utility Plant**: The utility plant for the flight school, supplying power, air and water.
+- **P1-17 Flight School Service Shaft**: The flight school's shaft down to the service layer, used for maintenance and deliveries.
+- **P1-18 Cadet House 1**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-19 Training Field 1**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-20 Cadet House 2**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-21 Training Field 2**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-22 Cadet House 3**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-23 Training Field 3**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-24 Cadet House 4**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-25 Training Field 4**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-26 Cadet House 5**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-27 Training Field 5**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-28 Cadet House 6**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-29 Training Field 6**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-30 Cadet House 7**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-31 Training Field 7**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-32 Cadet House 8**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-33 Training Field 8**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-34 Cadet House 9**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+- **P1-35 Training Field 9**: An open field in the Flight School used by trainees for drill, fitness and outdoor sports.
+- **P1-36 Cadet House 10**: A boarding house in the Flight School where young cadets live during their flight training, with their own rooms and common room.
+
+### P2 Simulator Halls
+
+- **P2-01 Full-Motion Simulator Hall**: A hall of 48 full-motion cockpit simulators where pilots practise flying and emergencies safely before flying for real.
+- **P2-02 Squadron Simulator Hall**: A hall where whole squadrons fly linked missions together in simulators to train as a team.
+- **P2-03 Cruiser Bridge Simulator**: A full-size simulator of a cruiser bridge, used to train cruiser crews in command, helm and gunnery.
+- **P2-04 Zero-G Training Tank**: A sealed tank where pilots and crews practise moving and working in zero gravity.
+- **P2-05 Centrifuge Hall**: A centrifuge that spins pilots to build their tolerance to the high g-forces of combat flying.
+- **P2-06 Simulator Control Centre**: The control centre that runs and records every simulator session, so instructors can review each flight.
+- **P2-07 Simulator Workshops**: Workshops where simulators are repaired and new simulator cockpits are built.
+- **P2-08 Public Flight Arcade**: A public arcade of flight simulators where anyone aboard can try flying a craft for fun.
+- **P2-09 Starboard Lawn**: Open lawns between the simulator halls where staff and trainees take breaks outdoors.
+- **P2-10 Simulator Halls Canteen**: The canteen and coffee shop for staff and trainees in the simulator halls.
+- **P2-11 Simulator Data Centre**: The data centre whose computers run all the simulators in the precinct.
+- **P2-12 Simulator Halls Utility Plant**: The utility plant for the simulator halls, supplying power, air and water.
+- **P2-13 Simulator Halls Service Shaft**: The simulator halls' shaft down to the service layer.
+- **P2-14 Simulator Annex 1**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-15 Lawn 1**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-16 Simulator Annex 2**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-17 Lawn 2**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-18 Simulator Annex 3**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-19 Lawn 3**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-20 Simulator Annex 4**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-21 Lawn 4**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-22 Simulator Annex 5**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-23 Lawn 5**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-24 Simulator Annex 6**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-25 Lawn 6**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-26 Simulator Annex 7**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-27 Lawn 7**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-28 Simulator Annex 8**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-29 Lawn 8**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-30 Simulator Annex 9**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-31 Lawn 9**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-32 Simulator Annex 10**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-33 Lawn 10**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+- **P2-34 Simulator Annex 11**: An extra simulator building in the Simulator Halls, with more bays for training when the main halls are full.
+- **P2-35 Lawn 11**: An open lawn in the Simulator Halls between the halls, where staff and trainees can sit outside.
+
+### P3 Pilots' Commons
+
+- **P3-01 Pilots' Quarter Town Hall**: The town hall of the Pilots' Quarter, home to the local offices that look after its residents and services.
+- **P3-02 Commons Square**: The Pilots' Quarter's main square, the meeting place at the heart of the town centre.
+- **P3-03 Commons Market**: The Quarter's covered market and food hall, where residents do their everyday shopping.
+- **P3-04 Restaurants Row**: A street of restaurants and cafés where residents eat out.
+- **P3-05 Quarter Primary School**: The primary school for the children of pilots and crews living in the Quarter.
+- **P3-06 Quarter Secondary School**: The secondary school for the older children of pilots and crews.
+- **P3-07 Childcare Centre**: Day care for young children whose parents are on shift.
+- **P3-08 Quarter Hospital**: Aerion's main hospital, giving full hospital care to everyone on Deck 5.
+- **P3-09 Family Health Centre**: The Quarter's family health centre, with doctors, dentists and midwives.
+- **P3-10 Quarter Library**: The Quarter's public library, with books, study rooms and a makers' space.
+- **P3-11 Aerion Flight Museum**: The museum of Aerion's flight history, showing craft and telling the stories of the strike wings.
+- **P3-12 Pilots' Theatre**: The Quarter's theatre and cinema.
+- **P3-13 Commons Park**: The Quarter's main park, where residents walk, play and relax.
+- **P3-14 Sports Centre**: The Quarter's sports centre, with a pool, courts and a gym.
+- **P3-15 Commons Hotel**: A hotel for families visiting relatives who live in the Pilots' Quarter.
+- **P3-16 Quarter Police Station**: The police station for the Pilots' Quarter.
+- **P3-17 Quarter Fire Station**: The fire station for the Pilots' Quarter.
+- **P3-18 Commons Pod Stop**: The pod stop on the Keelway serving the Commons.
+- **P3-19 Commons Utility Plant**: The utility plant for the Commons, supplying power, air and water.
+- **P3-20 Commons Service Shaft**: The Commons' shaft down to the service layer.
+- **P3-21 Commons Shops 1**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-22 Pocket Park 1**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-23 Commons Shops 2**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-24 Pocket Park 2**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-25 Commons Shops 3**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-26 Pocket Park 3**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-27 Commons Shops 4**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-28 Pocket Park 4**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-29 Commons Shops 5**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-30 Pocket Park 5**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-31 Commons Shops 6**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-32 Pocket Park 6**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-33 Commons Shops 7**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-34 Pocket Park 7**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-35 Pocket Park 8**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-36 Commons Shops 9**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-37 Pocket Park 9**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-38 Commons Shops 10**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-39 Pocket Park 10**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-40 Commons Shops 11**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+- **P3-41 Pocket Park 11**: A small park in the Pilots' Commons with seating and greenery, a quiet spot between the streets.
+- **P3-42 Commons Shops 12**: A block in the Pilots' Commons with shops at street level and flats above, part of the Quarter's busy town centre.
+
+### P4 Port Homes
+
+- **P4-01 Pilots' Towers 1**: An apartment tower in the Port Homes near the station, giving pilots and crews homes a short walk from the Keelway.
+- **P4-02 Pilots' Towers 2**: An apartment tower in the Port Homes near the station, giving pilots and crews homes a short walk from the Keelway.
+- **P4-03 Family Apartments 1**: Family flats around a shared courtyard in the Port Homes, home to pilots' and crews' families.
+- **P4-04 Family Apartments 2**: Family flats around a shared courtyard in the Port Homes, home to pilots' and crews' families.
+- **P4-05 Port Homes Shops**: Corner shops and a café serving the people who live in Port Homes.
+- **P4-06 Port Homes Park**: The Port Homes park, with playgrounds and lawns for local families.
+- **P4-07 Family Apartments 3**: Family flats around a shared courtyard in the Port Homes, home to pilots' and crews' families.
+- **P4-08 Courtyard Homes 1**: Two-storey homes built around a shared garden court in the Port Homes, for families who want a house rather than a flat.
+- **P4-09 Courtyard Homes 2**: Two-storey homes built around a shared garden court in the Port Homes, for families who want a house rather than a flat.
+- **P4-10 Port Homes School**: The primary school for children living in Port Homes.
+- **P4-11 Crew Terraces 1**: Row houses in the Port Homes for crew families.
+- **P4-12 Crew Terraces 2**: Row houses in the Port Homes for crew families.
+- **P4-13 Crew Terraces 3**: Row houses in the Port Homes for crew families.
+- **P4-14 Senior Pilots' Villas**: Homes for retired pilots, quieter villas at the edge of Port Homes.
+- **P4-15 Port Homes Clinic**: The family doctor's clinic for Port Homes.
+- **P4-16 Port Homes Utility Plant**: The utility plant for Port Homes, supplying power, air and water.
+- **P4-17 Port Homes Service Shaft**: The Port Homes shaft down to the service layer.
+- **P4-18 Apartment Block 1**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-19 Garden Court 1**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+- **P4-20 Neighbourhood Park 1**: A local park in the Port Homes with a playground and lawn for the families living nearby.
+- **P4-21 Terrace Row 1**: A row of terraced houses in the Port Homes for pilots' and crews' families.
+- **P4-22 Apartment Block 2**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-23 Garden Court 2**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+- **P4-24 Neighbourhood Park 2**: A local park in the Port Homes with a playground and lawn for the families living nearby.
+- **P4-25 Terrace Row 2**: A row of terraced houses in the Port Homes for pilots' and crews' families.
+- **P4-26 Apartment Block 3**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-27 Garden Court 3**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+- **P4-28 Neighbourhood Park 3**: A local park in the Port Homes with a playground and lawn for the families living nearby.
+- **P4-29 Terrace Row 3**: A row of terraced houses in the Port Homes for pilots' and crews' families.
+- **P4-30 Apartment Block 4**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-31 Garden Court 4**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+- **P4-32 Neighbourhood Park 4**: A local park in the Port Homes with a playground and lawn for the families living nearby.
+- **P4-33 Terrace Row 4**: A row of terraced houses in the Port Homes for pilots' and crews' families.
+- **P4-34 Apartment Block 5**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-35 Garden Court 5**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+- **P4-36 Neighbourhood Park 5**: A local park in the Port Homes with a playground and lawn for the families living nearby.
+- **P4-37 Terrace Row 5**: A row of terraced houses in the Port Homes for pilots' and crews' families.
+- **P4-38 Apartment Block 6**: A block of flats in the Port Homes for the families of pilots and crews.
+- **P4-39 Garden Court 6**: Homes built around a shared garden in the Port Homes, where neighbours share a green court.
+
+### P5 Quarter Station
+
+- **P5-01 Pilots' Quarter Station**: Pilots' Quarter station, the last stop at the stern end of the Keelway, bringing residents to and from the rest of the deck.
+- **P5-02 Station Square**: The square in front of the station where residents meet and set off into the Quarter.
+- **P5-03 Quarter Deck Lifts**: Lifts linking the Pilots' Quarter with the other decks of the ship.
+- **P5-04 Station Shops**: Everyday shops at the station, such as a grocery, for commuters on their way home.
+- **P5-05 Pod and Taxi Rank**: The rank where pods and taxis wait to take people from the station to their homes.
+- **P5-06 Keelway Depot**: The depot at the end of the line where Keelway trains are parked, cleaned and serviced overnight.
+- **P5-07 Quarter Hostel**: A hostel with rooms for visitors to the Pilots' Quarter.
+- **P5-08 Station Utility Plant**: The utility plant for the station precinct, supplying power, air and water.
+- **P5-09 Station Garden 1**: A garden by the station in the Quarter Station, a green place to wait or meet.
+- **P5-10 Station Garden 2**: A garden by the station in the Quarter Station, a green place to wait or meet.
+- **P5-11 Station Garden 3**: A garden by the station in the Quarter Station, a green place to wait or meet.
+- **P5-12 Station Garden 4**: A garden by the station in the Quarter Station, a green place to wait or meet.
+- **P5-13 Station Garden 5**: A garden by the station in the Quarter Station, a green place to wait or meet.
+
+### P6 Starboard Homes
+
+- **P6-01 Starboard Towers 1**: An apartment tower in the Starboard Homes near the station, giving residents homes close to the Keelway.
+- **P6-02 Starboard Towers 2**: An apartment tower in the Starboard Homes near the station, giving residents homes close to the Keelway.
+- **P6-03 Garden Apartments 1**: Flats with roof gardens in the Starboard Homes, for families who want outdoor space in an apartment.
+- **P6-04 Hangar Lofts**: Big open lofts for crews who want large, flexible living spaces, built in the style of the hangars.
+- **P6-05 Starboard Homes Market**: The Starboard Homes food market where residents buy groceries.
+- **P6-06 Starboard Green**: The Starboard Homes green, with lawns and sports courts for residents.
+- **P6-07 Garden Apartments 2**: Flats with roof gardens in the Starboard Homes, for families who want outdoor space in an apartment.
+- **P6-08 Garden Apartments 3**: Flats with roof gardens in the Starboard Homes, for families who want outdoor space in an apartment.
+- **P6-09 Trainee Flats**: Small flats for newly graduated pilots and crews starting out on their own.
+- **P6-10 Family Courts 1**: Family homes around a shared court in the Starboard Homes, where children can play safely close to home.
+- **P6-11 Family Courts 2**: Family homes around a shared court in the Starboard Homes, where children can play safely close to home.
+- **P6-12 Starboard Homes School**: The primary school for children living in Starboard Homes.
+- **P6-13 Row Houses 1**: Row houses in the Starboard Homes for pilots' and crews' families.
+- **P6-14 Row Houses 2**: Row houses in the Starboard Homes for pilots' and crews' families.
+- **P6-15 Starboard Homes Clinic**: The family doctor's clinic for Starboard Homes.
+- **P6-16 Starboard Homes Utility Plant**: The utility plant for Starboard Homes, supplying power, air and water.
+- **P6-17 Starboard Homes Service Shaft**: The Starboard Homes shaft down to the service layer.
+- **P6-18 Apartment Block 1**: A block of flats in the Starboard Homes for the families of pilots and crews.
+- **P6-19 Garden Court 1**: Homes built around a shared garden in the Starboard Homes, where neighbours share a green court.
+- **P6-20 Neighbourhood Park 1**: A local park in the Starboard Homes with a playground and lawn for the families living nearby.
+- **P6-21 Terrace Row 1**: A row of terraced houses in the Starboard Homes for pilots' and crews' families.
+- **P6-22 Apartment Block 2**: A block of flats in the Starboard Homes for the families of pilots and crews.
+- **P6-23 Garden Court 2**: Homes built around a shared garden in the Starboard Homes, where neighbours share a green court.
+- **P6-24 Neighbourhood Park 2**: A local park in the Starboard Homes with a playground and lawn for the families living nearby.
+- **P6-25 Terrace Row 2**: A row of terraced houses in the Starboard Homes for pilots' and crews' families.
+- **P6-26 Apartment Block 3**: A block of flats in the Starboard Homes for the families of pilots and crews.
+- **P6-27 Garden Court 3**: Homes built around a shared garden in the Starboard Homes, where neighbours share a green court.
+- **P6-28 Neighbourhood Park 3**: A local park in the Starboard Homes with a playground and lawn for the families living nearby.
+- **P6-29 Terrace Row 3**: A row of terraced houses in the Starboard Homes for pilots' and crews' families.
+- **P6-30 Apartment Block 4**: A block of flats in the Starboard Homes for the families of pilots and crews.
+- **P6-31 Garden Court 4**: Homes built around a shared garden in the Starboard Homes, where neighbours share a green court.
+- **P6-32 Neighbourhood Park 4**: A local park in the Starboard Homes with a playground and lawn for the families living nearby.
+- **P6-33 Terrace Row 4**: A row of terraced houses in the Starboard Homes for pilots' and crews' families.
+- **P6-34 Apartment Block 5**: A block of flats in the Starboard Homes for the families of pilots and crews.
+- **P6-35 Garden Court 5**: Homes built around a shared garden in the Starboard Homes, where neighbours share a green court.
+- **P6-36 Neighbourhood Park 5**: A local park in the Starboard Homes with a playground and lawn for the families living nearby.
+- **P6-37 Terrace Row 5**: A row of terraced houses in the Starboard Homes for pilots' and crews' families.
+
+<!-- purposes:end -->

@@ -102,3 +102,41 @@ Not designed yet: what the other six blocks and the other precincts hold, street
 ## P6 · Canal Village — F53 to F56, lanes U–X
 
 4,695 × 4,587 ft (1,431 × 1,398 m), 0.77 sq mi (2.0 km²). Bow band, starboard side, out to the starboard edge (x 26.658 to 28.089 km). Status: canon. What it holds is not designed yet.
+
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Grand Canal
+
+- **P1-01 Grand Canal**: The Grand Canal, the waterway at the centre of Canal Gardens. Boats carry people along it and the gardens, dining and promenades of the district face onto it.
+- **P1-02 Grand Entrance Plaza**: The main entrance plaza to Canal Gardens, where visitors arrive and get their first view down the Grand Canal.
+- **P1-03 Main Passenger Terminal**: The passenger terminal for Canal Gardens, where visitors arriving in the district start their journey along the canal.
+- **P1-04 Gateway Gardens**: Gardens at the gateway to the district, greeting visitors as they come in from the terminal.
+- **P1-05 Canal Operations**: The office that runs the Grand Canal: boat services, water levels, the bridges and canal maintenance.
+- **P1-06 Welcome Gardens**: Gardens on the far bank at the district entrance, welcoming people as they cross the canal.
+- **P1-07 Waterfront Dining**: Restaurants and cafés on the canal front, where people eat looking out over the water.
+- **P1-08 Public Boat Stop**: A public boat stop where people get on and off the canal boats.
+- **P1-09 Recreation Park**: A park for play and recreation beside the canal.
+- **P1-10 Emergency Services**: The emergency services post for Canal Gardens, covering fire, rescue and first aid along the canal.
+- **P1-11 Promenades**: Walkways along both banks of the canal, where people stroll between the gardens, dining and boat stops.
+- **P1-12 Access Road A**: The service road along the bow edge of the district, keeping deliveries and vehicles away from the canal front.
+- **P1-13 Access Road B**: The service road along the stern edge of the district.
+- **P1-14 Gateway Bridge**: A footbridge over the canal by the entrance, linking the two banks.
+- **P1-15 Garden Bridge**: A footbridge over the canal by the gardens, linking the two banks.
+- **P1-16 Grand Canal (B2)**: The second stretch of the Grand Canal, running on through the Waterfront Quarter.
+- **P1-17 Riverside Dining**: Riverside restaurants along the second stretch of the canal.
+- **P1-18 Culinary Market**: A food market where people buy and taste food from across the ship.
+- **P1-19 Waterfront Social Gardens**: Gardens beside the water for gatherings, picnics and events.
+- **P1-20 Public Boat Stop (B2)**: A second public boat stop, serving the waterfront.
+- **P1-21 Canal Terrace Gardens**: Terraced gardens stepping down to the canal.
+- **P1-22 Waterfront Restaurants**: A row of restaurants on the waterfront.
+- **P1-23 Fountain Square**: A square with a fountain, a meeting place on the waterfront.
+- **P1-24 Sunset Terraces**: Terraces facing along the canal where people gather to watch the evening light.
+- **P1-25 Promenades (B2)**: Walkways along both banks of the second stretch of the canal.
+- **P1-26 Access Road A (B2)**: The service road along the bow edge of the waterfront stretch.
+- **P1-27 Access Road B (B2)**: The service road along the stern edge of the waterfront stretch.
+- **P1-28 Social Bridge**: A footbridge over the canal linking the social gardens and restaurants on either bank.
+
+<!-- purposes:end -->

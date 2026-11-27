@@ -57,6 +57,12 @@ to keep in sync and no build step.
   Keelway light blue, police blue, fire red, medical white with a red edge, homes tan, shops orange,
   offices and government purple, industry, hangars and docks steel grey, utilities yellow, parks green,
   schools teal). Set it on every new building; `atlaslib/categories.py` holds the legend.
+- Building purposes (Jordan, 27 Nov 2026): every building has a `purpose`, a short plain paragraph on what it is
+  for, who uses it and what happens there, written for that building. Give every new building one, then run
+  `python tools/purposes.py` so the design doc's "What each building is for" list matches.
+- Map reading (Jordan, 27 Nov 2026): building names sit inside their own shape (shortened to the code, or left off,
+  when they can't be read); the clickable next-level areas get an outline, with a red ring on hover; the colour
+  legend is a "Legend" button beside "Codes", with a tick box per colour.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.

@@ -46,6 +46,7 @@ district until Jordan designs it.
 | `notes` | text |
 | `bays_km`, `doors_km`, `bay_count`, `bay_names` | optional detail for hangars and docks |
 | `category` | map colour (Jordan, 27 Nov 2026): `transit`, `police`, `fire`, `medical`, `homes`, `shops`, `offices`, `industry`, `utilities`, `parks`, `schools` (`keelway` is for the Keelway itself). Missing ones are worked out from the name (`atlaslib/categories.py`) |
+| `purpose` | what the building is for (Jordan, 27 Nov 2026): a short plain paragraph on what it is for, who uses it and what happens there. Every building has one. The design doc lists them in its "What each building is for" section; run `python tools/purposes.py` after changing one by hand (the scan warns when they differ) |
 | `outline_km` | optional shaped footprint inside `rect_km`: a list of outer rings `[[[x, y], ...], ...]` (curves as points) |
 | `holes_km` | optional courtyards inside the outline: a list of rings |
 | `shape` | plain words for the shape: `courtyard`, `L-shape`, `U-shape`, `curved front`, `rounded corners`, `oval`, `follows its block`, `from its plan` |

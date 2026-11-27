@@ -90,3 +90,56 @@ Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 | Rim Garden 2 | 633 × 1,811 ft (193 × 552 m) | **Canon** · garden on the plaza ring · shape: rounded corners | D5F1P4B4A2 |
 | Plaza Pavilion 2 | 538 × 814 ft (164 × 248 m) | **Canon** · kiosks and seating · shape: oval | D5F1P4B5A2 |
 
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Governor's Quarter
+
+- **P1-01 Governor's Hall**: The seat of Aerion's government. Governor Vector works here with the Governor's staff and clerks, running the deck city and receiving visitors and petitions.
+- **P1-02 Aerion City Council Chamber**: Where Aerion's five elected councillors meet to debate and vote on the deck city's laws, budgets and plans, in sessions residents can attend.
+- **P1-03 Deck Chief's Office**: The office of the Deck Chief, who runs the deck's day-to-day operations, maintenance and crews on behalf of the Governor.
+- **P1-04 Hall of Records**: The deck's public records office. Clerks here handle permits, citizenship papers and housing applications, and keep the official records of Aerion.
+- **P1-05 Governor's Guard Post**: The guard post for the Atrium Plaza. Guards based here protect the Governor's Hall and the council, and keep order in the busy plaza.
+- **P1-06 Governor's Garden**: A formal garden on the plaza rim beside the Governor's Hall, used for official receptions and open to the public as a quiet place to walk.
+- **P1-07 Rim Garden 1**: A garden on the ring around the Spine Atrium in the Governor's Quarter, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P1-08 Plaza Pavilion 1**: A light pavilion with kiosks and seating in the Governor's Quarter, where people buy a drink or snack and rest while crossing the plaza.
+- **P1-09 Rim Garden 2**: A garden on the ring around the Spine Atrium in the Governor's Quarter, where people crossing the plaza can sit among plants and look out over the shaft.
+
+### P2 Station Quarter
+
+- **P2-01 Atrium Central Station**: Atrium Central, the deck's main interchange where the Keelway and the cross-line meet at the rim of the Spine Atrium. Travellers change lines and reach the plaza from here.
+- **P2-02 Interchange Walk**: A covered walk linking the Keelway platforms and the cross-line platforms, so travellers can change lines at Atrium Central without going outside.
+- **P2-03 Station Plaza**: The square outside Atrium Central where travellers come out into the plaza, meet people and find their way.
+- **P2-04 Transit Crews' Hall**: The base for the transit crews who run and maintain the Keelway and cross-line at Atrium Central: rest rooms, lockers and the duty office.
+- **P2-05 Help Desk Pavilion**: An information pavilion where travellers get maps, ask for directions and hand in or collect lost property.
+- **P2-06 Rim Garden 1**: A garden on the ring around the Spine Atrium in the Station Quarter, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P2-07 Plaza Pavilion 1**: A light pavilion with kiosks and seating in the Station Quarter, where people buy a drink or snack and rest while crossing the plaza.
+- **P2-08 Rim Garden 2**: A garden on the ring around the Spine Atrium in the Station Quarter, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P2-09 Plaza Pavilion 2**: A light pavilion with kiosks and seating in the Station Quarter, where people buy a drink or snack and rest while crossing the plaza.
+
+### P3 Guild Quarter
+
+- **P3-01 Pilots' Guild**: The guildhall of Aerion's pilots, where the guild meets, represents pilots' interests and keeps pilots' standards.
+- **P3-02 Licensing Hall**: Where pilots take their flight licence tests and earn new ratings, in exam rooms and simulators run for the guild.
+- **P3-03 Guild Archive**: The guild's archive, holding every pilot's logbook, licence and rating history.
+- **P3-04 Guild Lodge**: The guild's members' club, with dining rooms and lounges where pilots meet off duty.
+- **P3-05 Guild Court**: The guild's open courtyard, used for gatherings, ceremonies and as a quiet place for members.
+- **P3-06 Rim Garden 1**: A garden on the ring around the Spine Atrium in the Guild Quarter, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P3-07 Plaza Pavilion 1**: A light pavilion with kiosks and seating in the Guild Quarter, where people buy a drink or snack and rest while crossing the plaza.
+
+### P4 Rim Gardens
+
+- **P4-01 Atrium Rim Gardens**: The main gardens on the rim of the Spine Atrium, the deck's central green space where residents and visitors stroll, picnic and look down the shaft.
+- **P4-02 Atrium Overlook**: A viewing terrace that juts out over the Spine Atrium, giving the best view down the shaft through the decks.
+- **P4-03 Rim Cafés**: A row of cafés facing the rim gardens, where people eat and drink with a view over the plaza.
+- **P4-04 Plaza Clinic**: A first-aid clinic for the Atrium Plaza, treating visitors and workers taken ill or hurt in the plaza.
+- **P4-05 Atrium Plaza Utility Plant**: The utility plant for the Atrium Plaza, supplying power, air and water to the plaza buildings.
+- **P4-06 Atrium Plaza Service Shaft**: The Atrium Plaza's shaft down to the service layer, used by maintenance crews and for deliveries.
+- **P4-07 Rim Garden 1**: A garden on the ring around the Spine Atrium in the Rim Gardens, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P4-08 Plaza Pavilion 1**: A light pavilion with kiosks and seating in the Rim Gardens, where people buy a drink or snack and rest while crossing the plaza.
+- **P4-09 Rim Garden 2**: A garden on the ring around the Spine Atrium in the Rim Gardens, where people crossing the plaza can sit among plants and look out over the shaft.
+- **P4-10 Plaza Pavilion 2**: A light pavilion with kiosks and seating in the Rim Gardens, where people buy a drink or snack and rest while crossing the plaza.
+
+<!-- purposes:end -->

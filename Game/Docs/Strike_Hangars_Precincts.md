@@ -429,3 +429,360 @@ Streets: Starboard Yard Road, 98 ft (30 m); F31 Street, 98 ft (30 m).
 | Work Yard 6 | 1,949 × 2,215 ft (594 × 675 m) | outdoor repair yard with mobile cranes | D5F2P9B13A3 |
 | Parts Shed 6 | 2,260 × 2,215 ft (689 × 675 m) | covered parts store | D5F2P9B14A3 |
 
+<!-- purposes:start -->
+## What each building is for
+
+Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). These describe the use of each building as planned; they follow each building's own status.
+
+### P1 Keelway Gate
+
+- **P1-01 Strike Hangars Station**: The Strike Hangars stop on the Keelway at the bow end of the deck. Strike crews arrive and leave for every shift through its two platforms and crew turnstiles.
+- **P1-02 Crew Gate Hall**: Where every strike crew member checks in for duty. Crews collect their kit here and read the alert boards before heading to the rack halls.
+- **P1-03 Deck Lift Hall**: A hall of lifts carrying strike crews who live on other decks up and down to the Strike Hangars.
+- **P1-04 Shift Lodge**: A lodge of bunks where crews rest between shifts without leaving the strike decks.
+- **P1-05 Duty Rosters Office**: The office that plans duty shifts for the Strike Hangars' 60,000 crew, so every hall and squadron is staffed around the clock.
+- **P1-06 Gate Canteen**: A canteen serving hot food round the clock to crews coming on and off shift.
+- **P1-07 Strike Hangars Clinic**: The clinic at the crew gate, giving first aid, flight medicine and fitness checks to strike crews.
+- **P1-08 Prow Fire Station**: The fire and crash rescue station at the bow tip of the deck, covering the front of the Strike Hangars.
+- **P1-09 Gate Pod Stop**: The pod stop that takes crews from the Keelway gate to every rack hall.
+- **P1-10 Prow Garden**: A small park at the very bow tip of the deck, a green spot for crews near the gate.
+- **P1-11 Gate Utility Plant**: The utility plant for the Keelway Gate precinct, supplying power, air and water.
+- **P1-12 Gate Service Shaft**: The Keelway Gate's shaft down to the service layer, used for maintenance and deliveries.
+- **P1-13 Crew Garden 1**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-14 Gate Yard 1**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-15 Crew Garden 2**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-16 Gate Yard 2**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-17 Crew Garden 3**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-18 Gate Yard 3**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-19 Crew Garden 4**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-20 Gate Yard 4**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-21 Crew Garden 5**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-22 Gate Yard 5**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-23 Crew Garden 6**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-24 Gate Yard 6**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-25 Crew Garden 7**: A small garden in the Keelway Gate where crews relax between shifts.
+- **P1-26 Gate Yard 7**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
+- **P1-27 Crew Garden 8**: A small garden in the Keelway Gate where crews relax between shifts.
+
+### P2 Ordnance Yards
+
+- **P2-01 Missile Magazine**: The magazine that stores missiles for the strike wings, buried in blast berms so an accident cannot spread.
+- **P2-02 Torpedo Magazine**: The magazine for heavy torpedoes used by the heavy strike squadrons.
+- **P2-03 Cannon Round Store**: The store for cannon shells, kept belted and boxed ready to load into craft.
+- **P2-04 Countermeasure Store**: The store for flares, chaff and decoy drones that craft use to fool enemy weapons.
+- **P2-05 Bomb Store**: The store for free-fall and guided bombs.
+- **P2-06 Magazine Control**: The control office that tracks every round in the magazines and issues ordnance to the rack halls.
+- **P2-07 Weapons Assembly Shop**: The workshop where armorers fit fuzes, mate warheads and test missiles before they go to the racks.
+- **P2-08 Armorers' Hall**: The armorers' base, with workshops, tool cribs and a training bay.
+- **P2-09 Ordnance Test Range**: A sealed, baffled range where weapons are test-fired.
+- **P2-10 Disposal Pit**: A pit where faulty or unsafe rounds are safely destroyed.
+- **P2-11 Ordnance Rail Depot**: The depot for the munitions trains that carry ordnance from the magazines to the rack halls.
+- **P2-12 Loader Drone Depot**: The depot for the hauler drones that carry rounds from the magazines to the racks.
+- **P2-13 Propellant Tank Farm**: Double-walled tanks holding fuel for the strike craft.
+- **P2-14 Fuel Cell Farm**: A farm of charged power cells for the strike craft.
+- **P2-15 Fuel Control Room**: The control room for the pumps and valves on the fuel lines to the rack halls.
+- **P2-16 Berm Park**: A planted blast buffer between the magazines and the Keelway, which also gives the precinct a green strip.
+- **P2-17 Armorers' Lodge**: Rest rooms for armorers on shift, close to the magazines.
+- **P2-18 Intercept Drone Racks**: Ready racks holding intercept drones that can be launched quickly to defend the ship.
+- **P2-19 Strike Drone Racks**: Ready racks holding strike drones for attack missions.
+- **P2-20 Ordnance Fire Station**: The fire station for the Ordnance Yards, with crews trained for fires and blasts.
+- **P2-21 Ordnance Clinic**: A clinic specialising in blast and burn injuries for the ordnance workers.
+- **P2-22 Ordnance Utility Plant**: The utility plant for the Ordnance Yards, supplying power, air and water.
+- **P2-23 Ordnance Service Shaft**: The Ordnance Yards' shaft down to the service layer.
+- **P2-24 Blast Berm 1**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-25 Munitions Bunker 1**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-26 Blast Berm 2**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-27 Munitions Bunker 2**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-28 Blast Berm 3**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-29 Munitions Bunker 3**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-30 Blast Berm 4**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-31 Munitions Bunker 4**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-32 Blast Berm 5**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-33 Munitions Bunker 5**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-34 Blast Berm 6**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-35 Munitions Bunker 6**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-36 Blast Berm 7**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-37 Munitions Bunker 7**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-38 Blast Berm 8**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-39 Munitions Bunker 8**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-40 Blast Berm 9**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-41 Munitions Bunker 9**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-42 Blast Berm 10**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-43 Munitions Bunker 10**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-44 Blast Berm 11**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-45 Munitions Bunker 11**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-46 Blast Berm 12**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-47 Munitions Bunker 12**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-48 Blast Berm 13**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-49 Munitions Bunker 13**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-50 Blast Berm 14**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-51 Munitions Bunker 14**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+- **P2-52 Blast Berm 15**: An earth and armour berm in the Ordnance Yards that keeps a blast in one magazine from reaching the next.
+- **P2-53 Munitions Bunker 15**: A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
+
+### P3 Port Launch Wing
+
+- **P3-01 Launch Shafts 1–4**: Launch shafts 1 to 4, which lift strike craft up to the port Forward Grid and launch them.
+- **P3-02 Launch Shafts 5–8**: Launch shafts 5 to 8, which lift strike craft up to the port Forward Grid and launch them.
+- **P3-03 Launch Shafts 9–12**: Launch shafts 9 to 12, which lift strike craft up to the port Forward Grid and launch them.
+- **P3-04 Launch Shafts 13–16**: Launch shafts 13 to 16, which lift strike craft up to the port Forward Grid and launch them.
+- **P3-05 Port Launch Control**: The control room for launch shafts 1 to 16, with windows over the shaft heads, where launch controllers send each craft up.
+- **P3-06 Launch Queue Apron**: The apron where craft line up in order for their launch shaft.
+- **P3-07 Port Arming Apron**: The apron where armorers make last weapons checks on each craft before launch.
+- **P3-08 Port Launch Ready Rooms**: Ready rooms where crews on alert wait to be called to their craft.
+- **P3-09 Shaft Maintenance Shop**: The workshop that repairs lift cradles and shaft doors for the port launch shafts.
+- **P3-10 Port Catapult Plant**: The plant that powers the launch rails in the port shafts.
+- **P3-11 Port Wing Fire Station**: The fire and crash rescue station for the port launch wing.
+- **P3-12 Port Launch Service Shaft**: The port launch wing's shaft down to the service layer.
+- **P3-13 Launch Apron 1**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-14 Launch Apron 2**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-15 Launch Apron 3**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-16 Launch Apron 4**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-17 Launch Apron 5**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-18 Launch Apron 6**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-19 Launch Apron 7**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-20 Launch Apron 8**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-21 Launch Apron 9**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+- **P3-22 Launch Apron 10**: An open apron in the Port Launch Wing where craft line up for the launch shafts.
+
+### P4 Starboard Launch Wing
+
+- **P4-01 Launch Shafts 17–20**: Launch shafts 17 to 20, which lift strike craft up to the starboard Forward Grid and launch them.
+- **P4-02 Launch Shafts 21–24**: Launch shafts 21 to 24, which lift strike craft up to the starboard Forward Grid and launch them.
+- **P4-03 Launch Shafts 25–28**: Launch shafts 25 to 28, which lift strike craft up to the starboard Forward Grid and launch them.
+- **P4-04 Launch Shafts 29–32**: Launch shafts 29 to 32, which lift strike craft up to the starboard Forward Grid and launch them.
+- **P4-05 Starboard Launch Control**: The control room for launch shafts 17 to 32.
+- **P4-06 Recovery Apron**: The apron where returning craft drop out of the shafts after a mission.
+- **P4-07 Starboard Arming Apron**: The apron for last weapons checks on starboard craft before launch.
+- **P4-08 Damage Triage Bay**: The bay where craft that come back damaged get a first inspection to decide what repairs they need.
+- **P4-09 Shaft Door Workshop**: The workshop for shaft doors and seals on the starboard shafts.
+- **P4-10 Starboard Launch Ready Rooms**: Ready rooms where starboard crews on alert wait to be called.
+- **P4-11 Starboard Catapult Plant**: The plant that powers the launch rails in the starboard shafts.
+- **P4-12 Starboard Wing Fire Station**: The fire and crash rescue station for the starboard launch wing.
+- **P4-13 Starboard Launch Service Shaft**: The starboard launch wing's shaft down to the service layer.
+- **P4-14 Launch Apron 1**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-15 Launch Apron 2**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-16 Launch Apron 3**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-17 Launch Apron 4**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-18 Launch Apron 5**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-19 Launch Apron 6**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-20 Launch Apron 7**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+- **P4-21 Launch Apron 8**: An open apron in the Starboard Launch Wing where craft line up for the launch shafts.
+
+### P5 Port Rack Halls
+
+- **P5-01 Rack Hall 1**: Home of 1st Wing, Squadron 1: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-02 Rack Hall 2**: Home of 1st Wing, Squadron 2: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-03 Rack Hall 3**: Home of 1st Wing, Squadron 3: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-04 1st Wing Ready Hall**: Ready rooms and briefing rooms for the 1st Strike Wing's crews.
+- **P5-05 Rack Hall 4**: Home of 1st Wing, Squadron 4: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-06 Rack Hall 5**: Home of 1st Wing, Squadron 5: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-07 Rack Hall 6**: Home of 1st Wing, Squadron 6: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-08 Port Rack Lift Control**: The control room for the rack lifts that bring craft down to the floor in the port rack halls.
+- **P5-09 Port Taxi Apron**: The taxi apron where port craft move from the rack halls to the launch roads.
+- **P5-10 Rack Hall 7**: Home of 2nd Wing, Squadron 1: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-11 Rack Hall 8**: Home of 2nd Wing, Squadron 2: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-12 Rack Hall 9**: Home of 2nd Wing, Squadron 3: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-13 2nd Wing Ready Hall**: Ready rooms and briefing rooms for the 2nd Strike Wing's crews.
+- **P5-14 Rack Hall 10**: Home of 2nd Wing, Squadron 4: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-15 Rack Hall 11**: Home of 2nd Wing, Squadron 5: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-16 Rack Hall 12**: Home of 2nd Wing, Squadron 6: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P5-17 Port Hangar Canteen**: The canteen for the port rack hall crews.
+- **P5-18 Port Parts Store**: The spare parts store for 1st and 2nd Wing craft.
+- **P5-19 Port Crew Lockers**: Lockers and showers for the port rack crews.
+- **P5-20 Port Racks Fire Station**: The fire and crash rescue station for the port rack halls.
+- **P5-21 Port Pod Stop**: The pod stop on the Keelway serving the port rack halls.
+- **P5-22 Port Racks Utility Plant**: The utility plant for the port rack halls.
+- **P5-23 Port Racks Service Shaft**: The port rack halls' shaft down to the service layer.
+- **P5-24 Open Bay 1**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-25 Taxi Apron 1**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-26 Open Bay 2**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-27 Taxi Apron 2**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-28 Open Bay 3**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-29 Taxi Apron 3**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-30 Open Bay 4**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-31 Taxi Apron 4**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-32 Open Bay 5**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-33 Taxi Apron 5**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-34 Open Bay 6**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-35 Taxi Apron 6**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-36 Open Bay 7**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-37 Taxi Apron 7**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-38 Open Bay 8**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-39 Taxi Apron 8**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-40 Open Bay 9**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-41 Taxi Apron 9**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-42 Open Bay 10**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-43 Taxi Apron 10**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-44 Open Bay 11**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-45 Taxi Apron 11**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-46 Open Bay 12**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-47 Taxi Apron 12**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-48 Open Bay 13**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-49 Taxi Apron 13**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+- **P5-50 Open Bay 14**: An open hangar floor in the Port Rack Halls where craft are parked between sorties.
+- **P5-51 Taxi Apron 14**: An apron in the Port Rack Halls where craft taxi between the halls and the launch roads.
+
+### P6 Starboard Rack Halls
+
+- **P6-01 Rack Hall 13**: Home of 3rd Wing, Squadron 1: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-02 Rack Hall 14**: Home of 3rd Wing, Squadron 2: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-03 Rack Hall 15**: Home of 3rd Wing, Squadron 3: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-04 3rd Wing Ready Hall**: Ready rooms and briefing rooms for the 3rd Strike Wing's crews.
+- **P6-05 Rack Hall 16**: Home of 3rd Wing, Squadron 4: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-06 Rack Hall 17**: Home of 3rd Wing, Squadron 5: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-07 Rack Hall 18**: Home of 3rd Wing, Squadron 6: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-08 Starboard Rack Lift Control**: The control room for the rack lifts in the starboard rack halls.
+- **P6-09 Starboard Taxi Apron**: The taxi apron where starboard craft move from the rack halls to the launch roads.
+- **P6-10 Rack Hall 19**: Home of 4th Wing, Squadron 1: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-11 Rack Hall 20**: Home of 4th Wing, Squadron 2: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-12 Rack Hall 21**: Home of 4th Wing, Squadron 3: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-13 4th Wing Ready Hall**: Ready rooms and briefing rooms for the 4th Strike Wing's crews.
+- **P6-14 Rack Hall 22**: Home of 4th Wing, Squadron 4: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-15 Rack Hall 23**: Home of 4th Wing, Squadron 5: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-16 Rack Hall 24**: Home of 4th Wing, Squadron 6: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
+- **P6-17 Craft Wash Hall**: A wash hall where every craft is decontaminated after a sortie.
+- **P6-18 Starboard Hangar Canteen**: The canteen for the starboard rack hall crews.
+- **P6-19 Starboard Parts Store**: The spare parts store for 3rd and 4th Wing craft.
+- **P6-20 Starboard Crew Lockers**: Lockers and showers for the starboard rack crews.
+- **P6-21 Starboard Racks Fire Station**: The fire and crash rescue station for the starboard rack halls.
+- **P6-22 Starboard Pod Stop**: The pod stop on the Keelway serving the starboard rack halls.
+- **P6-23 Starboard Racks Utility Plant**: The utility plant for the starboard rack halls.
+- **P6-24 Starboard Racks Service Shaft**: The starboard rack halls' shaft down to the service layer.
+- **P6-25 Open Bay 1**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-26 Taxi Apron 1**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-27 Open Bay 2**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-28 Taxi Apron 2**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-29 Open Bay 3**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-30 Taxi Apron 3**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-31 Open Bay 4**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-32 Taxi Apron 4**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-33 Open Bay 5**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-34 Taxi Apron 5**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-35 Open Bay 6**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-36 Taxi Apron 6**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-37 Open Bay 7**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-38 Taxi Apron 7**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-39 Open Bay 8**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-40 Taxi Apron 8**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-41 Open Bay 9**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-42 Taxi Apron 9**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-43 Open Bay 10**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-44 Taxi Apron 10**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-45 Open Bay 11**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-46 Taxi Apron 11**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-47 Open Bay 12**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-48 Taxi Apron 12**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-49 Open Bay 13**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-50 Taxi Apron 13**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-51 Open Bay 14**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-52 Taxi Apron 14**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-53 Open Bay 15**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+- **P6-54 Taxi Apron 15**: An apron in the Starboard Rack Halls where craft taxi between the halls and the launch roads.
+- **P6-55 Open Bay 16**: An open hangar floor in the Starboard Rack Halls where craft are parked between sorties.
+
+### P7 Port Repair Yards
+
+- **P7-01 Heavy Repair Hangar**: The hangar for full strip-downs, where up to six craft at a time are taken apart and rebuilt.
+- **P7-02 Engine Shop**: The shop where craft engines are overhauled and tested.
+- **P7-03 Engine Test Stand**: A test stand behind blast fences where engines are run up after overhaul.
+- **P7-04 Airframe Shop**: The shop that repairs craft frames, skins and landing gear.
+- **P7-05 Avionics Lab**: The lab that repairs and tests sensors, radios and flight computers.
+- **P7-06 Coatings Hall**: The hall where craft get their armour and low-signature coatings.
+- **P7-07 Port Repair Parts Warehouse**: The parts warehouse for the port repair yards.
+- **P7-08 Salvage Yard**: The yard where wrecked craft are stripped for reusable parts.
+- **P7-09 Repair Crews' Hall**: The mechanics' hall, with lockers, a canteen and rest rooms.
+- **P7-10 Port Yards Fire Station**: The fire station for the port repair yards.
+- **P7-11 Port Yards Utility Plant**: The utility plant for the port repair yards.
+- **P7-12 Port Yards Service Shaft**: The port repair yards' shaft down to the service layer.
+- **P7-13 Work Yard 1**: An outdoor repair yard in the Port Repair Yards with mobile cranes for work too big for the sheds.
+- **P7-14 Parts Shed 1**: A covered store in the Port Repair Yards for parts close to where the repairs happen.
+- **P7-15 Work Yard 2**: An outdoor repair yard in the Port Repair Yards with mobile cranes for work too big for the sheds.
+- **P7-16 Parts Shed 2**: A covered store in the Port Repair Yards for parts close to where the repairs happen.
+- **P7-17 Work Yard 3**: An outdoor repair yard in the Port Repair Yards with mobile cranes for work too big for the sheds.
+- **P7-18 Parts Shed 3**: A covered store in the Port Repair Yards for parts close to where the repairs happen.
+- **P7-19 Work Yard 4**: An outdoor repair yard in the Port Repair Yards with mobile cranes for work too big for the sheds.
+- **P7-20 Parts Shed 4**: A covered store in the Port Repair Yards for parts close to where the repairs happen.
+
+### P8 Wing Command
+
+- **P8-01 Wing Command**: The headquarters of the strike wings, with Vector's flight operations desk and the senior commanders' offices.
+- **P8-02 Strike Operations Centre**: The operations centre showing a live picture of every strike craft in flight.
+- **P8-03 Intelligence Briefing Hall**: The hall where crews get threat briefings before every sortie.
+- **P8-04 Squadron Leaders' Hall**: The offices and wardroom of the 24 squadron leaders.
+- **P8-05 Mission Planning Rooms**: Rooms where mission routes, targets and timings are planned.
+- **P8-06 Debrief Hall**: The hall where every flight is debriefed after landing.
+- **P8-07 Space Conditions Office**: The office forecasting space weather, debris and radiation for flight crews.
+- **P8-08 Command Plaza**: The parade and gathering square at Wing Command.
+- **P8-09 Duty Crew Lodge 1**: A lodge of bunks in the Wing Command for crews on 24-hour duty, so they can rest close to their craft.
+- **P8-10 Duty Crew Lodge 2**: A lodge of bunks in the Wing Command for crews on 24-hour duty, so they can rest close to their craft.
+- **P8-11 Hangar Mess Hall**: The mess hall serving meals to thousands of hangar crews each shift.
+- **P8-12 Hangar Medical Centre**: The strike decks' medical centre, with flight surgeons, crash trauma care and hospital beds.
+- **P8-13 Fitness Hall**: A fitness hall with g-force training, a gym and a pool.
+- **P8-14 Wing Memorial Garden**: A memorial garden for crews lost in action.
+- **P8-15 Hangar Commissary**: A shop for crews' daily needs.
+- **P8-16 Uniform and Kit Store**: The store that issues flight suits, helmets and kit.
+- **P8-17 Hangar Police Post**: The police and security post for the strike decks.
+- **P8-18 Command Fire Station**: The fire station for Wing Command.
+- **P8-19 Command Pod Stop**: The pod stop on the Keelway serving Wing Command.
+- **P8-20 Wing Command Utility Plant**: The utility plant for Wing Command.
+- **P8-21 Wing Command Service Shaft**: Wing Command's shaft down to the service layer.
+- **P8-22 Command Garden 1**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-23 Staff Offices 1**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-24 Command Garden 2**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-25 Staff Offices 2**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-26 Command Garden 3**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-27 Staff Offices 3**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-28 Command Garden 4**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-29 Staff Offices 4**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-30 Command Garden 5**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-31 Staff Offices 5**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-32 Command Garden 6**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-33 Staff Offices 6**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-34 Command Garden 7**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-35 Staff Offices 7**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-36 Command Garden 8**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-37 Staff Offices 8**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-38 Command Garden 9**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-39 Staff Offices 9**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-40 Command Garden 10**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-41 Staff Offices 10**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-42 Command Garden 11**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-43 Staff Offices 11**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-44 Command Garden 12**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-45 Staff Offices 12**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-46 Command Garden 13**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-47 Staff Offices 13**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-48 Command Garden 14**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-49 Staff Offices 14**: Offices in the Wing Command for the strike wings' administrative staff.
+- **P8-50 Command Garden 15**: A garden in the Wing Command between the command buildings, where staff take breaks.
+- **P8-51 Staff Offices 15**: Offices in the Wing Command for the strike wings' administrative staff.
+
+### P9 Starboard Repair Yards
+
+- **P9-01 Rebuild Hangar**: The hangar where craft with battle damage are rebuilt.
+- **P9-02 Weapons Fit Shop**: The shop where guns and weapon pylons are fitted and tested.
+- **P9-03 Shield Calibration Hall**: A screened hall where craft shields are tuned.
+- **P9-04 Canopy and Seat Shop**: The shop for canopies, ejection seats and cockpit fittings.
+- **P9-05 Fuel Cell Shop**: The shop where craft power cells are tested and recharged.
+- **P9-06 Drone Repair Bay**: The repair bay for strike and intercept drones.
+- **P9-07 Tool and Gauge Store**: The store of calibrated tools and gauges for the repair yards.
+- **P9-08 Starboard Repair Parts Warehouse**: The parts warehouse for the starboard repair yards.
+- **P9-09 Craft Paint Hall**: The hall where craft get squadron markings and paint touch-ups.
+- **P9-10 Starboard Yards Fire Station**: The fire station for the starboard repair yards.
+- **P9-11 Starboard Yards Utility Plant**: The utility plant for the starboard repair yards.
+- **P9-12 Starboard Yards Service Shaft**: The starboard repair yards' shaft down to the service layer.
+- **P9-13 Work Yard 1**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-14 Parts Shed 1**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+- **P9-15 Work Yard 2**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-16 Parts Shed 2**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+- **P9-17 Work Yard 3**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-18 Parts Shed 3**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+- **P9-19 Work Yard 4**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-20 Parts Shed 4**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+- **P9-21 Work Yard 5**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-22 Parts Shed 5**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+- **P9-23 Work Yard 6**: An outdoor repair yard in the Starboard Repair Yards with mobile cranes for work too big for the sheds.
+- **P9-24 Parts Shed 6**: A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
+
+<!-- purposes:end -->

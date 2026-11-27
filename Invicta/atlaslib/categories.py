@@ -19,8 +19,8 @@ CATEGORIES = [
     ("offices", "Offices and government", "#8a5cc7", "#d6c2f2", "#ffffff"),
     ("industry", "Industry, hangars and docks", "#7d8a96", "#c9d2da", "#0b1622"),
     ("utilities", "Utilities and services", "#e6c93a", "#fff1a8", "#3a3004"),
-    ("parks", "Parks and plazas", "#3f9a55", "#a8e0b6", "#ffffff"),
-    ("schools", "Schools and training", "#2aa8a0", "#a6ece6", "#ffffff"),
+    ("parks", "Parks and plazas", "#3f9a55", "#a8e0b6", "#04210d"),
+    ("schools", "Schools and training", "#2aa8a0", "#a6ece6", "#03211f"),
 ]
 KEYS = [c[0] for c in CATEGORIES]
 
