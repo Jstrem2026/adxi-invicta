@@ -71,7 +71,7 @@
     textAt(g, (A[0] + B[0]) / 2 + nx * 0.6, (A[1] + B[1]) / 2 + ny * 0.6, label, fs, { fill: c, rot });
   }
 
-  async function drawBuilding(uid, sel) {
+  async function drawBuilding(uid, sel, keepView) {
     const svg = document.getElementById("map");
     const b = typeof IX !== "undefined" && IX.buildings && IX.buildings[uid];
     if (!svg || !b || !b.rect_km) return;
@@ -118,8 +118,12 @@
         const pg = el("polygon", { points: poly(e.outline_m), class: "hit", "pointer-events": "all",
           fill: on ? "rgba(255,194,102,.22)" : e.status === "canon" ? "rgba(95,211,154,.18)" : "rgba(111,208,255,.14)",
           stroke: on ? "#ffc266" : "#cfe8ff", "stroke-width": on ? fs / 8 : fs / 22 });
-        pg.append(el("title", {}, `${e.name || e.id} · click to open`));
-        pg.addEventListener("click", (ev) => { ev.stopPropagation(); location.hash = `#/building/${uid}/${level}:${encodeURIComponent(e.id)}`; });
+        pg.append(el("title", {}, e.name || e.id));
+        pg.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          history.replaceState(null, "", `#/building/${uid}/${level}:${encodeURIComponent(e.id)}`);
+          drawBuilding(uid, { level, room: e.id }, true);
+        });
         g.append(pg);
       }
       for (const e of els.filter((x) => x.type === "fixture")) {
@@ -140,7 +144,7 @@
       current.empty = !els.length;
       current.level = level;
       const room = sel && sel.room && els.find((e) => e.id === sel.room);
-      showRoom(uid, model, room);
+      showRoom(uid, model, room, keepView);
     } else {
       current.noPlan = true;
     }
@@ -172,6 +176,8 @@
   function showRoom(uid, model, room) {
     window.adxiRoom = null;
     document.querySelectorAll(".room-card").forEach((x) => x.remove());
+    const cr0 = document.querySelector(".crumbs");
+    if (cr0) { cr0.querySelectorAll(".crumb-extra").forEach((x) => x.remove()); }
     if (!room) return;
     const lv = model.levels.find((l) => l.id === level) || {};
     const xs = room.outline_m.map((p) => p[0]), ys = room.outline_m.map((p) => p[1]);
@@ -180,22 +186,17 @@
     const desig = roomDesignation(uid, model, room);
     window.adxiRoom = { designation: desig, building_uid: uid, level: lv.id, level_name: lv.name, id: room.id, name: room.name, type: room.type,
       outline_m: room.outline_m, size_m: [w, h], area_m2: Math.round(a), status: room.status, contains: inside.map((e) => `${e.id} ${e.name || e.type}`) };
-    // zoom the map to the room
-    const svg = document.getElementById("map");
-    if (svg && current) {
-      const p0 = current.toS([Math.min(...xs), Math.min(...ys)]), p1 = current.toS([Math.max(...xs), Math.max(...ys)]);
-      const x0 = Math.min(p0[0], p1[0]), y0 = Math.min(p0[1], p1[1]), ww = Math.abs(p1[0] - p0[0]), hh = Math.abs(p1[1] - p0[1]), pad = Math.max(ww, hh) * 0.35;
-      svg.setAttribute("viewBox", [x0 - pad, y0 - pad, ww + 2 * pad, hh + 2 * pad].map((v) => v.toFixed(1)).join(" "));
-    }
     // breadcrumb: Building › Level › Room
     const cr = document.querySelector(".crumbs");
-    if (cr && !cr.querySelector(".crumb-room")) {
-      const last = cr.querySelector("b");
+    if (cr) {
+      const last = cr.querySelector("b:not(.crumb-extra)");
       if (last) {
-        const a1 = document.createElement("a"); a1.href = `#/building/${uid}`; a1.textContent = last.textContent;
+        const a1 = document.createElement("a"); a1.href = `#/building/${uid}`; a1.textContent = last.textContent; a1.className = "crumb crumb-bld";
         last.replaceWith(a1);
-        cr.insertAdjacentHTML("beforeend", `<span class="sep">›</span><a href="#/building/${uid}/${lv.id}">${esc(lv.name || lv.id)}</a><span class="sep">›</span><b class="crumb-room">${esc(room.name || room.id)} · ${esc(desig)}</b>`);
       }
+      const tag = levelTag(model, lv.id) || lv.name || lv.id;
+      const rn = "R" + roomNumber(model, room, lv.id);
+      cr.insertAdjacentHTML("beforeend", `<span class="sep crumb-extra">›</span><a class="crumb crumb-extra" href="#/building/${uid}/${lv.id}" title="${esc(lv.name || "")}">${esc(tag)}</a><span class="sep crumb-extra">›</span><b class="crumb-room crumb-extra" title="${esc(room.name || "")}">${esc(rn)}</b>`);
     }
     const panel = document.querySelector(".panel");
     if (panel) {

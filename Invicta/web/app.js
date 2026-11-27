@@ -392,7 +392,31 @@ window.go = go;
 
 // ------------------------------------------------------------------ explore
 function crumbs(parts) {
-  return `<div class="crumbs">` + parts.map((p, i) => i === parts.length - 1 ? `<b>${esc(p[0])}</b>` : `<a href="${p[1]}">${esc(p[0])}</a><span class="sep">›</span>`).join("") + `</div>`;
+  // Codes only (Jordan): D5 › F3 › P2 › B5 › A1 (› LB1 › R208 added for a room). Names are in the panel; each code shows its name on hover.
+  const h = location.hash.replace(/^#\/?/, "");
+  const [kind, a, b] = h.split("/").map(decodeURIComponent);
+  const out = [];
+  try {
+    let d = null, x = null, p = null, blk = null, bd = null;
+    if (kind === "deck") d = IX.decks[+a];
+    if (kind === "district") { x = IX.districts[a]; d = x && IX.decks[x.deck]; }
+    if (kind === "precinct" || kind === "block" || kind === "street") p = IX.precincts[a];
+    if (kind === "building") { bd = IX.buildings[a]; p = bd && IX.precincts[bd.precinct_uid]; }
+    if (p) { d = IX.decks[p.deck]; x = IX.districts[p.district_id]; }
+    if (p && kind === "block") blk = (p.blocks || []).find(q => q.id === b);
+    if (bd) blk = (p.blocks || []).find(q => q.id === (bd.blocks || [])[0]);
+    if (d) out.push([`D${d.n}`, `#/deck/${d.n}`, `Deck ${d.n} · ${d.name}`]);
+    if (x && d) out.push([`F${(d.districts || []).findIndex(q => q.id === x.id) + 1}`, `#/district/${x.id}`, x.name]);
+    if (p) out.push([`P${String(p.id).replace(/^P/, "")}`, `#/precinct/${p.uid}`, `${p.id} ${p.name}`]);
+    if (blk) out.push([`B${(/(\d+)/.exec(blk.name || "") || [])[1] || "?"}`, `#/block/${p.uid}/${blk.id}`, `${blk.name} (grid ${blk.id})`]);
+    if (kind === "street" && p) { const st = (p.streets || [])[+b]; out.push([`S${+b + 1}`, "", st ? st.name : "Street"]); }
+    if (bd) out.push([`A${blk ? blockNo(p, blk.id, bd) : "?"}`, `#/building/${bd.uid}`, `${bd.id} ${bd.name}`]);
+  } catch (e) { /* fall back to names */ }
+  if (!out.length) out.push(...parts.map(q => [q[0], q[1], q[0]]));
+  return `<div class="crumbs">` + out.map((q, i) => {
+    const mid = i > 0 && i < out.length - 2 ? " mid" : "";
+    return i === out.length - 1 ? `<b title="${esc(q[2])}">${esc(q[0])}</b>` : `<a class="crumb${mid}" href="${q[1]}" title="${esc(q[2])}">${esc(q[0])}</a><span class="sep${mid}">›</span>`;
+  }).join("") + `</div>`;
 }
 function explore(kind, a, b) {
   let html;
@@ -693,7 +717,7 @@ function blockView(puid, bid) {
     <div>Streets</div><div>${streets || "<span class='muted'>none</span>"}</div></div>
     <h3>In this block (${blk.contents.length})</h3>${items ? `<ul class="list">${items}</ul>` : `<div class="note">Nothing placed in this block yet: not designed yet.</div>`}
     <div class="small muted" style="margin-top:8px">Click a building on the map or in the list for its details.</div>`;
-  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [`${blk.name} · ${blk.id}`, ""]],
+  return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [blk.name, ""]],
     mapShell(g, vb, "", "", "Click a building"), panel);
 }
 
@@ -819,7 +843,7 @@ function buildingView(uid) {
     <h3>Sources</h3><div class="small">${fileLink(ps.doc, "precinct plans doc")} (${esc(p.id)} table) · ${fileLink(p.blueprint, "blueprint")} · ${fileLink(ps.file, "app data")}</div>
     ${issueBlock(uid, "Issues with this building")}`;
   const cr = [["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`]];
-  if (firstBlock) cr.push([`Block ${firstBlock}`, `#/block/${p.uid}/${firstBlock}`]);
+  if (firstBlock) { const fb = (p.blocks || []).find(q => q.id === firstBlock); cr.push([fb ? fb.name : "Block", `#/block/${p.uid}/${firstBlock}`]); }
   cr.push([b.name, ""]);
   return layout(cr, mapShell(g, vb, "", "", "Click another building"), panel);
 }

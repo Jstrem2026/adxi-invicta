@@ -130,3 +130,5 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 
 .desig-legend { position: absolute; right: 8px; bottom: 8px; font-size: 10.5px; color: var(--muted); background: rgba(8,24,43,.82); padding: 2px 7px; border-radius: 4px; max-width: 70%; }
 @media (max-width: 700px) { .desig-legend { font-size: 9.5px; right: 4px; bottom: 30px; } }
+
+@media (max-width: 700px) { .crumbs .mid { display: none; } .crumbs .crumb:first-child::after { content: ' › …'; color: var(--muted); } }
