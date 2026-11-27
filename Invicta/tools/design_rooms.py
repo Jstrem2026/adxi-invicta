@@ -264,6 +264,20 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
         if court and halls and abs(G.area(inner)) > 6000 * len(halls):
             hs.append(court)
             shares.append(0.6)
+        cap = prog.get("hall_max_m2")
+        Ai = abs(G.area(inner))
+        if cap and Ai > cap * 1.3:
+            # a middle far bigger than its halls need: the halls keep their size, the rest is an open light court
+            tot = sum(shares)
+            shares = [min(s / tot * Ai, (h.get("max_m2") or cap)) for s, h in zip(shares, hs)]
+            spare = Ai - sum(shares)
+            if spare > 0.2 * Ai:
+                c = court or LIGHT_COURT
+                if c in hs:
+                    shares[hs.index(c)] += spare
+                else:
+                    hs.append(c)
+                    shares.append(spare)
         pieces = G.split_by_shares(inner, shares)
         hall_pieces = list(zip(hs, pieces))
     else:
@@ -356,6 +370,8 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
     basement(plan, P, holes, prog, levels, rng, ctx)
 
 
+LIGHT_COURT = {"name": "Light court", "outdoor": True,
+               "about": "An open court in the middle of the building that brings light and air to the inner rooms."}
 STAIRS_ABOUT = "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
 
 
@@ -369,6 +385,9 @@ def free_segments(L, blocked):
     if L - u > 1.0:
         segs.append((u, L))
     return segs
+
+
+FILL_GROW_MAX = 3.0   # a fill room grows at most this much; past it the floor gets more rooms
 
 
 def pack(plan, strips, rooms, fill, lvs, rng, cap=400, fill_cap=24):
@@ -385,7 +404,7 @@ def pack(plan, strips, rooms, fill, lvs, rng, cap=400, fill_cap=24):
         avg = sum(f[1] for f in fills) / len(fills)
         n_fill = max(1, int(left / avg))
         if n_fill > fill_cap:
-            g = left / fill_cap / avg
+            g = min(left / fill_cap / avg, FILL_GROW_MAX)
             fills = [(f[0], f[1] * g, f[2]) for f in fills]
     fi = [0]
 

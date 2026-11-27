@@ -2,7 +2,7 @@
 
 Deck 5 · Atrium Plaza. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**33 buildings, 1,695 rooms.**
+**33 buildings, 5,325 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -14,7 +14,7 @@ Governor's Hall (canon), City Council, Deck Chief, records
 
 **What it is for:** The seat of Aerion's government. Governor Vector works here with the Governor's staff and clerks, running the deck city and receiving visitors and petitions.
 
-99 ft (30.1 m) tall, 6 above deck, 3,678,600 sq ft (341,750 m²) of rooms. Room plan proposed.
+99 ft (30.1 m) tall, 6 above deck, 3,679,200 sq ft (341,810 m²) of rooms. Room plan proposed.
 
 **Look:** A formal block in pale stone and bronze with a tall colonnade facing the Atrium Plaza, the Aerion crest over the doors, and a planted roof terrace behind a bronze balustrade.
 
@@ -35,9 +35,9 @@ Floor at deck level; 25 ft (7.5 m) floor to floor.
 | Guard room | 1 | 870 sq ft (80 m²) | The Governor's Guard detachment inside the hall. |
 | Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Post room | 1 | 550 sq ft (51 m²) | Where letters and parcels for the building are sorted and handed out. |
-| Public service counter | 13 | 10,390 sq ft (965 m²) each | Counters where residents get help with everyday government business. |
-| Department enquiry office | 13 | 10,750 sq ft (998 m²) each | Each department's public office, where residents ask about transport, housing or budgets. |
-| Waiting hall | 12 | 17,540 sq ft (1,630 m²) each | Seats and screens where residents wait for their number to be called. |
+| Public service counter | 38 | 2,800 sq ft (260 m²) each | Counters where residents get help with everyday government business. |
+| Department enquiry office | 38 | 4,040 sq ft (375 m²) each | Each department's public office, where residents ask about transport, housing or budgets. |
+| Waiting hall | 38 | 5,940 sq ft (552 m²) each | Seats and screens where residents wait for their number to be called. |
 
 #### Level 2 · Governor's floor
 
@@ -56,8 +56,8 @@ Floor at 25 ft (7.5 m) above the deck; 16 ft (5 m) floor to floor.
 | Guest waiting room | 1 | 540 sq ft (50 m²) | A quiet room where visitors wait to see the Governor. |
 | Tea point | 1 | 540 sq ft (50 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Advisers' office | 20 | 6,650 sq ft (618 m²) each | Offices for the Governor's advisers on transport, budget and the districts. |
-| Policy unit | 19 | 19,120 sq ft (1,776 m²) each | Teams who write the Governor's plans and new rules for the deck. |
+| Advisers' office | 79 | 1,540 sq ft (143 m²) each | Offices for the Governor's advisers on transport, budget and the districts. |
+| Policy unit | 79 | 4,740 sq ft (441 m²) each | Teams who write the Governor's plans and new rules for the deck. |
 
 #### Level 3 to Level 5 · Ministry floor (3 identical floors)
 
@@ -71,7 +71,7 @@ Floor at 41 ft (12.5 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Tea point | 1 | 550 sq ft (51 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Comms room | 1 | 540 sq ft (50 m²) | Network switches and the building's data and radio links. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Open-plan office | 35 | 17,890 sq ft (1,662 m²) each | Desks for civil servants running Aerion's transport, housing, budget and district services. |
+| Open-plan office | 68 | 9,210 sq ft (856 m²) each | Desks for civil servants running Aerion's transport, housing, budget and district services. |
 
 #### Level 6 · Roof terrace floor
 
@@ -82,13 +82,13 @@ Floor at 84 ft (25.7 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Roof terrace | 1 | 4,290 sq ft (399 m²) | A planted terrace for staff and receptions, looking out over the Atrium Plaza. |
 | Staff restaurant | 1 | 3,220 sq ft (299 m²) | Restaurant for the hall's staff. |
 | Staff kitchen | 1 | 1,290 sq ft (119 m²) | Kitchen for the staff restaurant and official receptions. |
-| Plant room | 37 | 16,820 sq ft (1,562 m²) each | Air handling units, pumps and electrical boards that keep this floor running. |
+| Plant room | 128 | 4,860 sq ft (452 m²) each | Air handling units, pumps and electrical boards that keep this floor running. |
 
 ### P1-02 · Aerion City Council Chamber
 
 **What it is for:** Where Aerion's five elected councillors meet to debate and vote on the deck city's laws, budgets and plans, in sessions residents can attend.
 
-57 ft (17.4 m) tall, 3 above deck, 761,500 sq ft (70,740 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 3 above deck, 761,100 sq ft (70,710 m²) of rooms. Room plan proposed.
 
 **Look:** A long, narrow hall with a curved copper roof over the chamber and tall slit windows of amber glass along the plaza side.
 
@@ -105,8 +105,8 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Clerk of the Council's office | 1 | 650 sq ft (60 m²) | The Clerk records every vote and keeps the Council's minutes. |
 | Security desk | 1 | 430 sq ft (40 m²) | Guards watch the cameras and the doors from here. |
 | Toilets | 1 | 650 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Councillor's office | 13 | 7,770 sq ft (722 m²) each | Each councillor's office, where they meet residents of their district. |
-| Surgery room | 13 | 6,000 sq ft (558 m²) each | Residents meet a councillor privately about a problem. |
+| Councillor's office | 93 | 1,120 sq ft (104 m²) each | Each councillor's office, where they meet residents of their district. |
+| Surgery room | 92 | 820 sq ft (76 m²) each | Residents meet a councillor privately about a problem. |
 
 #### Level 2 · Gallery floor
 
@@ -119,8 +119,8 @@ Floor at 26 ft (8 m) above the deck; 16 ft (5 m) floor to floor.
 | Press gallery | 1 | 870 sq ft (80 m²) | Seats for reporters covering the Council. |
 | Broadcast room | 1 | 430 sq ft (40 m²) | Cameras and sound for showing sessions live across the deck. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Gallery foyer | 13 | 5,710 sq ft (530 m²) each | Space for visitors to wait between sessions. |
-| Civic exhibition | 13 | 8,050 sq ft (748 m²) each | Displays on how Aerion is governed and the history of the deck city. |
+| Gallery foyer | 23 | 2,660 sq ft (247 m²) each | Space for visitors to wait between sessions. |
+| Civic exhibition | 22 | 5,350 sq ft (497 m²) each | Displays on how Aerion is governed and the history of the deck city. |
 
 #### Level 3 · Committee floor
 
@@ -133,7 +133,7 @@ Floor at 43 ft (13 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Members' lounge | 1 | 860 sq ft (80 m²) | A private lounge for councillors. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Council staff office | 26 | 6,840 sq ft (635 m²) each | Staff who research and draft for the councillors. |
+| Council staff office | 98 | 1,810 sq ft (168 m²) each | Staff who research and draft for the councillors. |
 
 ### P1-03 · Deck Chief's Office
 
@@ -155,7 +155,7 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Briefing room | 1 | 760 sq ft (70 m²) | Morning briefing for the shift's crew leaders. |
 | Radio room | 1 | 430 sq ft (40 m²) | Talks to crews out on the deck by radio. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Supervisors' office | 27 | 3,720 sq ft (345 m²) each | Shift supervisors who manage the maintenance crews. |
+| Supervisors' office | 104 | 960 sq ft (90 m²) each | Shift supervisors who manage the maintenance crews. |
 
 #### Level 2 · Office floor 1
 
@@ -170,7 +170,7 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Drawing archive | 1 | 860 sq ft (80 m²) | Drawings of every building, pipe and cable on the deck. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Engineers' office | 27 | 3,680 sq ft (342 m²) each | Engineers who plan repairs and approve changes to buildings. |
+| Engineers' office | 28 | 3,550 sq ft (330 m²) each | Engineers who plan repairs and approve changes to buildings. |
 
 #### Level 3 to Level 4 · Office floor (2 identical floors)
 
@@ -184,7 +184,7 @@ Floor at 34 ft (10.4 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Drawing archive | 1 | 860 sq ft (80 m²) | Drawings of every building, pipe and cable on the deck. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Engineers' office | 27 | 3,680 sq ft (342 m²) each | Engineers who plan repairs and approve changes to buildings. |
+| Engineers' office | 28 | 3,550 sq ft (330 m²) each | Engineers who plan repairs and approve changes to buildings. |
 
 ### P1-04 · Hall of Records
 
@@ -217,7 +217,7 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Births, marriages and deaths office | 1 | 640 sq ft (60 m²) | Life events on the deck are registered here. |
 | Private interview room | 4 | 420 sq ft (39 m²) each | For confidential cases. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Clerks' office | 23 | 5,770 sq ft (536 m²) each | Clerks who check and process applications. |
+| Clerks' office | 71 | 1,870 sq ft (174 m²) each | Clerks who check and process applications. |
 | Reading court (open air) | 1 | 39,260 sq ft (3,647 m²) | A quiet planted court where people wait and read. |
 
 #### Level 2 to Level 3 · Archive floor (2 identical floors)
@@ -231,13 +231,13 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Archivists' office | 1 | 640 sq ft (60 m²) | Archivists who look after the deck's official records. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Record stacks | 23 | 5,860 sq ft (545 m²) each | Rolling shelves of current files and registers. |
+| Record stacks | 36 | 3,750 sq ft (348 m²) each | Rolling shelves of current files and registers. |
 
 ### P1-05 · Governor's Guard Post
 
 **What it is for:** The guard post for the Atrium Plaza. Guards based here protect the Governor's Hall and the council, and keep order in the busy plaza.
 
-28 ft (8.5 m) tall, 2 above deck, 237,100 sq ft (22,030 m²) of rooms. Room plan proposed.
+28 ft (8.5 m) tall, 2 above deck, 237,200 sq ft (22,040 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low guard post in dark blue panels with a lit blue band and a glass front counter facing the plaza.
 
@@ -253,8 +253,8 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 | Holding room | 2 | 270 sq ft (25 m²) each | A short-stay room for anyone detained until they can be moved to a police station. |
 | Camera room | 1 | 430 sq ft (40 m²) | Guards watch the cameras covering the Atrium Plaza and the Governor's Hall. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Patrol room | 12 | 5,140 sq ft (477 m²) each | Desks where guards write reports and plan their patrols. |
-| Kit store | 12 | 4,470 sq ft (415 m²) each | Shields, barriers, radios and first-aid kits. |
+| Patrol room | 45 | 1,280 sq ft (119 m²) each | Desks where guards write reports and plan their patrols. |
+| Kit store | 45 | 1,280 sq ft (119 m²) each | Shields, barriers, radios and first-aid kits. |
 
 #### Level 2 · Upper floor
 
@@ -267,7 +267,7 @@ Floor at 15 ft (4.5 m) above the deck; 13 ft (4 m) floor to floor.
 | Rest room | 1 | 430 sq ft (40 m²) | Where guards rest on long shifts. |
 | Locker room | 1 | 540 sq ft (50 m²) | Uniforms and personal lockers. |
 | Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
-| Offices | 24 | 4,830 sq ft (449 m²) each | Desks for reports and planning. |
+| Offices | 143 | 810 sq ft (75 m²) each | Desks for reports and planning. |
 
 ### P1-06 · Governor's Garden
 
@@ -405,8 +405,8 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Kit store | 1 | 850 sq ft (79 m²) | Hi-vis kit, tools and lamps for track crews. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 770 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
-| Supervisors' office | 13 | 6,620 sq ft (615 m²) each | Supervisors of the train, platform and track crews. |
-| Crew room | 13 | 10,140 sq ft (942 m²) each | Where crews wait for their train and have a hot drink. |
+| Supervisors' office | 73 | 1,050 sq ft (97 m²) each | Supervisors of the train, platform and track crews. |
+| Crew room | 73 | 1,940 sq ft (180 m²) each | Where crews wait for their train and have a hot drink. |
 
 #### Level 2 to Level 3 · Crew floor (2 identical floors)
 
@@ -419,7 +419,7 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Showers | 1 | 770 sq ft (71 m²) | Showers for crews coming off track work. |
 | Training room | 1 | 860 sq ft (80 m²) | Refresher training on signals, rules and safety. |
 | Staff toilets and showers | 1 | 770 sq ft (72 m²) | Toilets, showers and changing space for the staff. |
-| Crew lounge | 26 | 9,200 sq ft (854 m²) each | A lounge with chairs and screens for crews off duty. |
+| Crew lounge | 124 | 1,930 sq ft (179 m²) each | A lounge with chairs and screens for crews off duty. |
 
 ### P2-05 · Help Desk Pavilion
 
@@ -471,7 +471,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A light pavilion with kiosks and seating in the Station Quarter, where people buy a drink or snack and rest while crossing the plaza.
 
-20 ft (6 m) tall, 1 above deck, 930,600 sq ft (86,450 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 930,500 sq ft (86,450 m²) of rooms. Room plan proposed.
 
 **Look:** A light glass pavilion on thin white columns, its roof edge lit at night.
 
@@ -515,7 +515,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A light pavilion with kiosks and seating in the Station Quarter, where people buy a drink or snack and rest while crossing the plaza.
 
-20 ft (6 m) tall, 1 above deck, 1,926,100 sq ft (178,940 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1,926,000 sq ft (178,940 m²) of rooms. Room plan proposed.
 
 **Look:** A long open pavilion under a wavy canopy, with kiosk counters at each end.
 
@@ -532,7 +532,7 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Flower stall | 1 | 320 sq ft (30 m²) | Cut flowers and potted plants. |
 | Ticket kiosk | 1 | 310 sq ft (28 m²) | Tickets for Keelway tours, events and the Atrium Overlook. |
 | Toilets | 1 | 1,120 sq ft (104 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Seating | 23 | 5,950 sq ft (553 m²) each | Tables and chairs under the pavilion roof. |
+| Seating | 45 | 3,040 sq ft (282 m²) each | Tables and chairs under the pavilion roof. |
 
 ## P3 · Guild Quarter
 
@@ -542,7 +542,7 @@ The pilots' guild (canon), licensing, guild archive
 
 **What it is for:** The guildhall of Aerion's pilots, where the guild meets, represents pilots' interests and keeps pilots' standards.
 
-66 ft (20.2 m) tall, 4 above deck, 1,398,700 sq ft (129,940 m²) of rooms. Room plan proposed.
+66 ft (20.2 m) tall, 4 above deck, 1,398,600 sq ft (129,930 m²) of rooms. Room plan proposed.
 
 **Look:** A tall narrow guildhall in bronze and dark stone with a winged emblem over the doors and long amber windows lighting the hall.
 
@@ -559,7 +559,7 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Welfare office | 1 | 500 sq ft (46 m²) | Helps pilots and their families with injury, money and family problems. |
 | Guild shop | 1 | 540 sq ft (50 m²) | Guild badges, flight jackets and books. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Members' room | 30 | 9,250 sq ft (859 m²) each | Small rooms members can book to meet. |
+| Members' room | 213 | 1,300 sq ft (121 m²) each | Small rooms members can book to meet. |
 | Cloister (open air) | 1 | 81,200 sq ft (7,544 m²) | A quiet cloister garden for members. |
 
 #### Level 2 · Guild floor 1
@@ -576,7 +576,7 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Pay and contracts office | 1 | 640 sq ft (60 m²) | Negotiates pilots' pay and working hours. |
 | Tea point | 1 | 500 sq ft (47 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Guild office | 30 | 9,230 sq ft (857 m²) each | Guild staff offices. |
+| Guild office | 173 | 1,600 sq ft (149 m²) each | Guild staff offices. |
 
 #### Level 3 to Level 4 · Guild floor (2 identical floors)
 
@@ -591,13 +591,13 @@ Floor at 37 ft (11.4 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Pay and contracts office | 1 | 640 sq ft (60 m²) | Negotiates pilots' pay and working hours. |
 | Tea point | 1 | 500 sq ft (47 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Guild office | 30 | 9,230 sq ft (857 m²) each | Guild staff offices. |
+| Guild office | 173 | 1,600 sq ft (149 m²) each | Guild staff offices. |
 
 ### P3-02 · Licensing Hall
 
 **What it is for:** Where pilots take their flight licence tests and earn new ratings, in exam rooms and simulators run for the guild.
 
-38 ft (11.5 m) tall, 2 above deck, 467,700 sq ft (43,450 m²) of rooms. Room plan proposed.
+38 ft (11.5 m) tall, 2 above deck, 467,600 sq ft (43,440 m²) of rooms. Room plan proposed.
 
 **Look:** A square two-storey block in teal-trimmed grey with a bank of frosted windows over the simulator floor.
 
@@ -613,8 +613,8 @@ Floor at deck level; 18 ft (5.5 m) floor to floor.
 | Oral exam room | 6 | 470 sq ft (44 m²) each | An examiner questions a candidate face to face. |
 | Results office | 1 | 470 sq ft (44 m²) | Passes are entered on the pilot's licence and sent to the Guild Archive. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Waiting room | 13 | 7,410 sq ft (688 m²) each | Candidates wait to be called. |
-| Study room | 12 | 8,940 sq ft (831 m²) each | Candidates revise and sit practice papers before their exam. |
+| Waiting room | 63 | 1,290 sq ft (119 m²) each | Candidates wait to be called. |
+| Study room | 63 | 1,950 sq ft (181 m²) each | Candidates revise and sit practice papers before their exam. |
 
 #### Level 2 · Simulator floor
 
@@ -626,14 +626,14 @@ Floor at 18 ft (5.5 m) above the deck; 20 ft (6 m) floor to floor.
 | Simulator control room | 1 | 640 sq ft (60 m²) | The examiner sets up failures and emergencies and watches the candidate fly. |
 | Debrief room | 3 | 470 sq ft (44 m²) each | Examiner and candidate go over the flight and the result. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Procedure trainer room | 13 | 10,230 sq ft (950 m²) each | Fixed cockpit trainers where candidates rehearse checklists before the full test. |
-| Simulator maintenance room | 13 | 6,990 sq ft (649 m²) each | Technicians keep the simulators working. |
+| Procedure trainer room | 69 | 1,970 sq ft (183 m²) each | Fixed cockpit trainers where candidates rehearse checklists before the full test. |
+| Simulator maintenance room | 68 | 1,290 sq ft (120 m²) each | Technicians keep the simulators working. |
 
 ### P3-03 · Guild Archive
 
 **What it is for:** The guild's archive, holding every pilot's logbook, licence and rating history.
 
-43 ft (13 m) tall, 3 above deck, 1 below, 805,100 sq ft (74,800 m²) of rooms. Room plan proposed.
+43 ft (13 m) tall, 3 above deck, 1 below, 805,000 sq ft (74,790 m²) of rooms. Room plan proposed.
 
 **Look:** A windowless bronze-panelled block with one tall glass slot lighting the reading room.
 
@@ -656,8 +656,8 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Enquiry desk | 1 | 850 sq ft (79 m²) | Archivists find a pilot's logbook or licence history on request. |
 | Data room | 1 | 870 sq ft (80 m²) | Servers holding every pilot's digital logbook and rating record. |
 | Conservation lab | 1 | 850 sq ft (79 m²) | Old paper logbooks and charts are cleaned and repaired. |
-| Toilets | 1 | 2,720 sq ft (252 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Archivists' office | 24 | 5,040 sq ft (469 m²) each | Archivists' desks. |
+| Toilets | 1 | 850 sq ft (79 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Archivists' office | 127 | 970 sq ft (90 m²) each | Archivists' desks. |
 
 #### Level 2 to Level 3 · Stacks (2 identical floors)
 
@@ -689,8 +689,8 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Kitchen | 1 | 1,610 sq ft (150 m²) | Cooks for the dining room and private dinners. |
 | Private dining room | 2 | 430 sq ft (40 m²) each | Bookable room for squadron dinners. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Members' lounge | 15 | 8,320 sq ft (773 m²) each | Armchairs and tables where members meet over a drink. |
-| Function room | 14 | 10,120 sq ft (940 m²) each | A room hired for squadron reunions, wakes and celebrations. |
+| Members' lounge | 32 | 3,620 sq ft (336 m²) each | Armchairs and tables where members meet over a drink. |
+| Function room | 32 | 4,710 sq ft (437 m²) each | A room hired for squadron reunions, wakes and celebrations. |
 
 #### Level 2 · Lounge floor
 
@@ -702,8 +702,8 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Games room | 1 | 860 sq ft (80 m²) | Cards, darts and a flight-sim table. |
 | Quiet lounge | 1 | 850 sq ft (79 m²) | A room for reading and conversation. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Card room | 14 | 6,540 sq ft (608 m²) each | Small rooms for card games and meetings. |
-| Lounge | 14 | 14,740 sq ft (1,370 m²) each | A comfortable lounge for members. |
+| Card room | 62 | 1,040 sq ft (97 m²) each | Small rooms for card games and meetings. |
+| Lounge | 62 | 3,760 sq ft (350 m²) each | A comfortable lounge for members. |
 
 #### Level 3 to Level 4 · Guest floor (2 identical floors)
 
@@ -711,7 +711,7 @@ Floor at 31 ft (9.4 m) above the deck; 12 ft (3.6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Guest room | 37 | 8,150 sq ft (757 m²) each | A simple bedroom for a visiting pilot. |
+| Guest room | 380 | 790 sq ft (74 m²) each | A simple bedroom for a visiting pilot. |
 | Linen room | 1 | 360 sq ft (34 m²) | Clean bedding and towels. |
 
 ### P3-05 · Guild Court
@@ -774,7 +774,7 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Newsstand | 1 | 310 sq ft (29 m²) | Papers, magazines, maps and travel guides. |
 | Ticket kiosk | 1 | 310 sq ft (28 m²) | Tickets for Keelway tours, events and the Atrium Overlook. |
 | Toilets | 1 | 1,510 sq ft (140 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Seating | 36 | 5,880 sq ft (547 m²) each | Tables and chairs under the pavilion roof. |
+| Seating | 71 | 2,980 sq ft (277 m²) each | Tables and chairs under the pavilion roof. |
 
 ## P4 · Rim Gardens
 
@@ -830,7 +830,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A row of cafés facing the rim gardens, where people eat and drink with a view over the plaza.
 
-30 ft (9.2 m) tall, 2 above deck, 435,200 sq ft (40,440 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 435,000 sq ft (40,420 m²) of rooms. Room plan proposed.
 
 **Look:** A row of café fronts under striped awnings, glass doors folded open onto terrace tables.
 
@@ -847,7 +847,7 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Shared kitchen | 1 | 2,150 sq ft (199 m²) | One kitchen serving all the cafés. |
 | Cold store | 1 | 430 sq ft (40 m²) | Fridges and freezers for the cafés. |
 | Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Café seating | 26 | 8,050 sq ft (748 m²) each | Tables inside the cafés. |
+| Café seating | 110 | 1,900 sq ft (177 m²) each | Tables inside the cafés. |
 
 #### Level 2 · Upper terrace floor
 
@@ -858,13 +858,13 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Roof terrace | 1 | 2,150 sq ft (199 m²) | An upper terrace with the best view of the plaza. |
 | Private room | 1 | 640 sq ft (60 m²) | Bookable room for parties. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff rooms | 27 | 7,930 sq ft (737 m²) each | Changing and break rooms for café staff. |
+| Staff rooms | 222 | 960 sq ft (90 m²) each | Changing and break rooms for café staff. |
 
 ### P4-04 · Plaza Clinic
 
 **What it is for:** A first-aid clinic for the Atrium Plaza, treating visitors and workers taken ill or hurt in the plaza.
 
-30 ft (9 m) tall, 2 above deck, 194,100 sq ft (18,030 m²) of rooms. Room plan proposed.
+30 ft (9 m) tall, 2 above deck, 193,900 sq ft (18,020 m²) of rooms. Room plan proposed.
 
 **Look:** A low white building with deep window reveals, a covered ambulance bay and a red stripe at the eaves.
 
@@ -885,7 +885,7 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Clean utility | 1 | 260 sq ft (24 m²) | Sterile supplies and dressings ready for use. |
 | Dirty utility | 1 | 270 sq ft (25 m²) | Where used equipment is cleaned and clinical waste is sealed for removal. |
-| Consulting room | 26 | 3,420 sq ft (318 m²) each | A doctor's room for appointments and check-ups. |
+| Consulting room | 152 | 580 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
 
 #### Level 2 · Upper floor
 
@@ -899,7 +899,7 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Staff room | 1 | 430 sq ft (40 m²) | Where clinic staff take their breaks. |
 | Clinic manager's office | 1 | 260 sq ft (24 m²) | The clinic manager runs rotas, supplies and records from here. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Consulting room | 26 | 3,600 sq ft (334 m²) each | A doctor's room for appointments and check-ups. |
+| Consulting room | 160 | 580 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
 
 ### P4-05 · Atrium Plaza Utility Plant
 

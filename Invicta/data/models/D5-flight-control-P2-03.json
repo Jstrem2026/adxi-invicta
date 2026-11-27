@@ -1,0 +1,6643 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P2-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  222.0,
+  242.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Office floor 1",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Office floor 2",
+   "z_m": 9.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     24.0
+    ],
+    [
+     198.0,
+     24.0
+    ],
+    [
+     198.0,
+     218.2
+    ],
+    [
+     135.0,
+     218.2
+    ],
+    [
+     135.0,
+     97.1
+    ],
+    [
+     24.0,
+     97.1
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     132.3,
+     10.5
+    ],
+    [
+     131.7,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.3,
+     10.5
+    ],
+    [
+     211.5,
+     10.5
+    ],
+    [
+     211.5,
+     53.1
+    ],
+    [
+     208.5,
+     54.9
+    ],
+    [
+     208.5,
+     13.5
+    ],
+    [
+     131.7,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     211.5,
+     53.1
+    ],
+    [
+     211.5,
+     174.7
+    ],
+    [
+     208.5,
+     173.3
+    ],
+    [
+     208.5,
+     54.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     211.5,
+     174.7
+    ],
+    [
+     211.5,
+     231.7
+    ],
+    [
+     145.5,
+     231.7
+    ],
+    [
+     146.9,
+     228.7
+    ],
+    [
+     208.5,
+     228.7
+    ],
+    [
+     208.5,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.5,
+     231.7
+    ],
+    [
+     121.5,
+     231.7
+    ],
+    [
+     121.5,
+     134.9
+    ],
+    [
+     124.5,
+     131.9
+    ],
+    [
+     124.5,
+     228.7
+    ],
+    [
+     146.9,
+     228.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.5,
+     134.9
+    ],
+    [
+     121.5,
+     110.6
+    ],
+    [
+     25.8,
+     110.6
+    ],
+    [
+     28.8,
+     107.6
+    ],
+    [
+     124.5,
+     107.6
+    ],
+    [
+     124.5,
+     131.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     25.8,
+     110.6
+    ],
+    [
+     10.5,
+     110.6
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     107.6
+    ],
+    [
+     28.8,
+     107.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     46.7,
+     13.5
+    ],
+    [
+     55.1,
+     13.5
+    ],
+    [
+     61.1,
+     24.0
+    ],
+    [
+     53.6,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.5,
+     13.5
+    ],
+    [
+     129.9,
+     13.5
+    ],
+    [
+     127.9,
+     24.0
+    ],
+    [
+     120.3,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     196.2,
+     13.5
+    ],
+    [
+     204.7,
+     13.5
+    ],
+    [
+     194.6,
+     24.0
+    ],
+    [
+     187.1,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     75.7
+    ],
+    [
+     208.5,
+     84.1
+    ],
+    [
+     198.0,
+     87.7
+    ],
+    [
+     198.0,
+     80.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     150.1
+    ],
+    [
+     208.5,
+     158.5
+    ],
+    [
+     198.0,
+     154.9
+    ],
+    [
+     198.0,
+     147.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     224.5
+    ],
+    [
+     208.5,
+     228.7
+    ],
+    [
+     203.9,
+     228.7
+    ],
+    [
+     194.6,
+     218.2
+    ],
+    [
+     198.0,
+     218.2
+    ],
+    [
+     198.0,
+     214.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     132.2,
+     228.7
+    ],
+    [
+     124.5,
+     228.7
+    ],
+    [
+     124.5,
+     227.4
+    ],
+    [
+     135.0,
+     216.9
+    ],
+    [
+     135.0,
+     218.2
+    ],
+    [
+     140.8,
+     218.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     164.7
+    ],
+    [
+     124.5,
+     156.7
+    ],
+    [
+     135.0,
+     146.2
+    ],
+    [
+     135.0,
+     154.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     110.8,
+     107.6
+    ],
+    [
+     102.8,
+     107.6
+    ],
+    [
+     113.3,
+     97.1
+    ],
+    [
+     121.3,
+     97.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     40.0,
+     107.6
+    ],
+    [
+     32.0,
+     107.6
+    ],
+    [
+     42.5,
+     97.1
+    ],
+    [
+     50.5,
+     97.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     57.8
+    ],
+    [
+     13.5,
+     48.8
+    ],
+    [
+     24.0,
+     51.4
+    ],
+    [
+     24.0,
+     58.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Filing counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.0,
+     0.0
+    ],
+    [
+     21.4,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Pilots and companies file flight plans in person here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Checking room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.0,
+     0.0
+    ],
+    [
+     27.0,
+     0.0
+    ],
+    [
+     34.9,
+     10.5
+    ],
+    [
+     21.4,
+     10.5
+    ]
+   ],
+   "about": "Every plan is checked for route, timing and safety before it is cleared.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Reception",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.0,
+     0.0
+    ],
+    [
+     32.0,
+     0.0
+    ],
+    [
+     39.5,
+     10.5
+    ],
+    [
+     34.9,
+     10.5
+    ]
+   ],
+   "about": "Visitors sign in.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     32.0,
+     0.0
+    ],
+    [
+     38.0,
+     0.0
+    ],
+    [
+     44.9,
+     10.5
+    ],
+    [
+     39.5,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     38.0,
+     0.0
+    ],
+    [
+     56.0,
+     0.0
+    ],
+    [
+     61.2,
+     10.5
+    ],
+    [
+     44.9,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     56.0,
+     0.0
+    ],
+    [
+     71.0,
+     0.0
+    ],
+    [
+     74.8,
+     10.5
+    ],
+    [
+     61.2,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.0,
+     0.0
+    ],
+    [
+     89.0,
+     0.0
+    ],
+    [
+     91.1,
+     10.5
+    ],
+    [
+     74.8,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     89.0,
+     0.0
+    ],
+    [
+     104.0,
+     0.0
+    ],
+    [
+     104.6,
+     10.5
+    ],
+    [
+     91.1,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.0,
+     0.0
+    ],
+    [
+     122.0,
+     0.0
+    ],
+    [
+     120.9,
+     10.5
+    ],
+    [
+     104.6,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     122.0,
+     0.0
+    ],
+    [
+     137.0,
+     0.0
+    ],
+    [
+     134.5,
+     10.5
+    ],
+    [
+     120.9,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     137.0,
+     0.0
+    ],
+    [
+     154.9,
+     0.0
+    ],
+    [
+     150.8,
+     10.5
+    ],
+    [
+     134.5,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.9,
+     0.0
+    ],
+    [
+     169.9,
+     0.0
+    ],
+    [
+     164.4,
+     10.5
+    ],
+    [
+     150.8,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.9,
+     0.0
+    ],
+    [
+     187.9,
+     0.0
+    ],
+    [
+     180.7,
+     10.5
+    ],
+    [
+     164.4,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     187.9,
+     0.0
+    ],
+    [
+     202.9,
+     0.0
+    ],
+    [
+     194.2,
+     10.5
+    ],
+    [
+     180.7,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     202.9,
+     0.0
+    ],
+    [
+     220.9,
+     0.0
+    ],
+    [
+     210.5,
+     10.5
+    ],
+    [
+     194.2,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.9,
+     0.0
+    ],
+    [
+     222.0,
+     0.0
+    ],
+    [
+     222.0,
+     13.9
+    ],
+    [
+     211.5,
+     23.2
+    ],
+    [
+     211.5,
+     10.5
+    ],
+    [
+     210.5,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     13.9
+    ],
+    [
+     222.0,
+     31.8
+    ],
+    [
+     211.5,
+     39.5
+    ],
+    [
+     211.5,
+     23.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     31.8
+    ],
+    [
+     222.0,
+     46.7
+    ],
+    [
+     211.5,
+     53.2
+    ],
+    [
+     211.5,
+     39.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     46.7
+    ],
+    [
+     222.0,
+     64.6
+    ],
+    [
+     211.5,
+     69.5
+    ],
+    [
+     211.5,
+     53.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     64.6
+    ],
+    [
+     222.0,
+     79.6
+    ],
+    [
+     211.5,
+     83.2
+    ],
+    [
+     211.5,
+     69.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     79.6
+    ],
+    [
+     222.0,
+     97.5
+    ],
+    [
+     211.5,
+     99.5
+    ],
+    [
+     211.5,
+     83.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     97.5
+    ],
+    [
+     222.0,
+     112.4
+    ],
+    [
+     211.5,
+     113.2
+    ],
+    [
+     211.5,
+     99.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     112.4
+    ],
+    [
+     222.0,
+     130.3
+    ],
+    [
+     211.5,
+     129.5
+    ],
+    [
+     211.5,
+     113.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     130.3
+    ],
+    [
+     222.0,
+     145.3
+    ],
+    [
+     211.5,
+     143.2
+    ],
+    [
+     211.5,
+     129.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     145.3
+    ],
+    [
+     222.0,
+     163.2
+    ],
+    [
+     211.5,
+     159.5
+    ],
+    [
+     211.5,
+     143.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     163.2
+    ],
+    [
+     222.0,
+     178.1
+    ],
+    [
+     211.5,
+     173.2
+    ],
+    [
+     211.5,
+     159.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     178.1
+    ],
+    [
+     222.0,
+     196.0
+    ],
+    [
+     211.5,
+     189.5
+    ],
+    [
+     211.5,
+     173.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     196.0
+    ],
+    [
+     222.0,
+     211.0
+    ],
+    [
+     211.5,
+     203.2
+    ],
+    [
+     211.5,
+     189.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     211.0
+    ],
+    [
+     222.0,
+     228.9
+    ],
+    [
+     211.5,
+     219.6
+    ],
+    [
+     211.5,
+     203.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.0,
+     228.9
+    ],
+    [
+     222.0,
+     242.2
+    ],
+    [
+     220.3,
+     242.2
+    ],
+    [
+     210.1,
+     231.7
+    ],
+    [
+     211.5,
+     231.7
+    ],
+    [
+     211.5,
+     219.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.3,
+     242.2
+    ],
+    [
+     201.3,
+     242.2
+    ],
+    [
+     194.7,
+     231.7
+    ],
+    [
+     210.1,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     201.3,
+     242.2
+    ],
+    [
+     185.6,
+     242.2
+    ],
+    [
+     182.0,
+     231.7
+    ],
+    [
+     194.7,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.6,
+     242.2
+    ],
+    [
+     166.6,
+     242.2
+    ],
+    [
+     166.6,
+     231.7
+    ],
+    [
+     182.0,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.6,
+     242.2
+    ],
+    [
+     150.9,
+     242.2
+    ],
+    [
+     153.8,
+     231.7
+    ],
+    [
+     166.6,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.9,
+     242.2
+    ],
+    [
+     131.9,
+     242.2
+    ],
+    [
+     138.5,
+     231.7
+    ],
+    [
+     153.8,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.9,
+     242.2
+    ],
+    [
+     116.1,
+     242.2
+    ],
+    [
+     125.7,
+     231.7
+    ],
+    [
+     138.5,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.1,
+     242.2
+    ],
+    [
+     111.0,
+     242.2
+    ],
+    [
+     111.0,
+     229.7
+    ],
+    [
+     121.5,
+     219.2
+    ],
+    [
+     121.5,
+     231.7
+    ],
+    [
+     125.7,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     229.7
+    ],
+    [
+     111.0,
+     215.4
+    ],
+    [
+     121.5,
+     204.9
+    ],
+    [
+     121.5,
+     219.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     215.4
+    ],
+    [
+     111.0,
+     198.3
+    ],
+    [
+     121.5,
+     187.8
+    ],
+    [
+     121.5,
+     204.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     198.3
+    ],
+    [
+     111.0,
+     184.0
+    ],
+    [
+     121.5,
+     173.5
+    ],
+    [
+     121.5,
+     187.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     184.0
+    ],
+    [
+     111.0,
+     166.9
+    ],
+    [
+     121.5,
+     156.4
+    ],
+    [
+     121.5,
+     173.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     166.9
+    ],
+    [
+     111.0,
+     152.6
+    ],
+    [
+     121.5,
+     142.1
+    ],
+    [
+     121.5,
+     156.4
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     152.6
+    ],
+    [
+     111.0,
+     135.4
+    ],
+    [
+     121.5,
+     124.9
+    ],
+    [
+     121.5,
+     142.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     135.4
+    ],
+    [
+     111.0,
+     121.1
+    ],
+    [
+     121.5,
+     110.6
+    ],
+    [
+     121.5,
+     124.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.0,
+     121.1
+    ],
+    [
+     93.9,
+     121.1
+    ],
+    [
+     104.4,
+     110.6
+    ],
+    [
+     121.5,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.9,
+     121.1
+    ],
+    [
+     79.6,
+     121.1
+    ],
+    [
+     90.1,
+     110.6
+    ],
+    [
+     104.4,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.6,
+     121.1
+    ],
+    [
+     62.5,
+     121.1
+    ],
+    [
+     73.0,
+     110.6
+    ],
+    [
+     90.1,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.5,
+     121.1
+    ],
+    [
+     48.2,
+     121.1
+    ],
+    [
+     58.7,
+     110.6
+    ],
+    [
+     73.0,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.2,
+     121.1
+    ],
+    [
+     31.0,
+     121.1
+    ],
+    [
+     41.5,
+     110.6
+    ],
+    [
+     58.7,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.0,
+     121.1
+    ],
+    [
+     16.8,
+     121.1
+    ],
+    [
+     27.3,
+     110.6
+    ],
+    [
+     41.5,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.8,
+     121.1
+    ],
+    [
+     0.0,
+     121.1
+    ],
+    [
+     0.0,
+     120.7
+    ],
+    [
+     10.5,
+     110.2
+    ],
+    [
+     10.5,
+     110.6
+    ],
+    [
+     27.3,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     120.7
+    ],
+    [
+     0.0,
+     105.0
+    ],
+    [
+     10.5,
+     97.3
+    ],
+    [
+     10.5,
+     110.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     105.0
+    ],
+    [
+     0.0,
+     86.3
+    ],
+    [
+     10.5,
+     81.8
+    ],
+    [
+     10.5,
+     97.3
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     86.3
+    ],
+    [
+     0.0,
+     70.6
+    ],
+    [
+     10.5,
+     68.9
+    ],
+    [
+     10.5,
+     81.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     70.6
+    ],
+    [
+     0.0,
+     51.8
+    ],
+    [
+     10.5,
+     53.4
+    ],
+    [
+     10.5,
+     68.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     51.8
+    ],
+    [
+     0.0,
+     36.2
+    ],
+    [
+     10.5,
+     40.4
+    ],
+    [
+     10.5,
+     53.4
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     36.2
+    ],
+    [
+     0.0,
+     17.4
+    ],
+    [
+     10.5,
+     24.9
+    ],
+    [
+     10.5,
+     40.4
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     17.4
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     24.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     31.6,
+     13.5
+    ],
+    [
+     40.2,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.6,
+     13.5
+    ],
+    [
+     46.7,
+     13.5
+    ],
+    [
+     53.6,
+     24.0
+    ],
+    [
+     40.2,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.1,
+     13.5
+    ],
+    [
+     73.2,
+     13.5
+    ],
+    [
+     77.3,
+     24.0
+    ],
+    [
+     61.1,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     73.2,
+     13.5
+    ],
+    [
+     88.3,
+     13.5
+    ],
+    [
+     90.8,
+     24.0
+    ],
+    [
+     77.3,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.3,
+     13.5
+    ],
+    [
+     106.5,
+     13.5
+    ],
+    [
+     106.9,
+     24.0
+    ],
+    [
+     90.8,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     106.5,
+     13.5
+    ],
+    [
+     121.5,
+     13.5
+    ],
+    [
+     120.3,
+     24.0
+    ],
+    [
+     106.9,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.9,
+     13.5
+    ],
+    [
+     148.0,
+     13.5
+    ],
+    [
+     144.0,
+     24.0
+    ],
+    [
+     127.9,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.0,
+     13.5
+    ],
+    [
+     163.1,
+     13.5
+    ],
+    [
+     157.5,
+     24.0
+    ],
+    [
+     144.0,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.1,
+     13.5
+    ],
+    [
+     181.2,
+     13.5
+    ],
+    [
+     173.7,
+     24.0
+    ],
+    [
+     157.5,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.2,
+     13.5
+    ],
+    [
+     196.2,
+     13.5
+    ],
+    [
+     187.1,
+     24.0
+    ],
+    [
+     173.7,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     204.7,
+     13.5
+    ],
+    [
+     208.5,
+     13.5
+    ],
+    [
+     208.5,
+     27.7
+    ],
+    [
+     198.0,
+     36.9
+    ],
+    [
+     198.0,
+     24.0
+    ],
+    [
+     194.6,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     27.7
+    ],
+    [
+     208.5,
+     42.8
+    ],
+    [
+     198.0,
+     50.4
+    ],
+    [
+     198.0,
+     36.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     42.8
+    ],
+    [
+     208.5,
+     60.8
+    ],
+    [
+     198.0,
+     66.7
+    ],
+    [
+     198.0,
+     50.4
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     60.8
+    ],
+    [
+     208.5,
+     75.7
+    ],
+    [
+     198.0,
+     80.1
+    ],
+    [
+     198.0,
+     66.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     84.1
+    ],
+    [
+     208.5,
+     102.1
+    ],
+    [
+     198.0,
+     104.0
+    ],
+    [
+     198.0,
+     87.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     102.1
+    ],
+    [
+     208.5,
+     117.2
+    ],
+    [
+     198.0,
+     117.5
+    ],
+    [
+     198.0,
+     104.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     117.2
+    ],
+    [
+     208.5,
+     135.2
+    ],
+    [
+     198.0,
+     133.8
+    ],
+    [
+     198.0,
+     117.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     135.2
+    ],
+    [
+     208.5,
+     150.1
+    ],
+    [
+     198.0,
+     147.3
+    ],
+    [
+     198.0,
+     133.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     158.5
+    ],
+    [
+     208.5,
+     176.5
+    ],
+    [
+     198.0,
+     171.1
+    ],
+    [
+     198.0,
+     154.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     176.5
+    ],
+    [
+     208.5,
+     191.6
+    ],
+    [
+     198.0,
+     184.7
+    ],
+    [
+     198.0,
+     171.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     191.6
+    ],
+    [
+     208.5,
+     209.6
+    ],
+    [
+     198.0,
+     200.9
+    ],
+    [
+     198.0,
+     184.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.5,
+     209.6
+    ],
+    [
+     208.5,
+     224.5
+    ],
+    [
+     198.0,
+     214.4
+    ],
+    [
+     198.0,
+     200.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     203.9,
+     228.7
+    ],
+    [
+     184.3,
+     228.7
+    ],
+    [
+     179.9,
+     218.2
+    ],
+    [
+     194.6,
+     218.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.3,
+     228.7
+    ],
+    [
+     168.0,
+     228.7
+    ],
+    [
+     167.6,
+     218.2
+    ],
+    [
+     179.9,
+     218.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.0,
+     228.7
+    ],
+    [
+     148.4,
+     228.7
+    ],
+    [
+     152.9,
+     218.2
+    ],
+    [
+     167.6,
+     218.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.4,
+     228.7
+    ],
+    [
+     132.2,
+     228.7
+    ],
+    [
+     140.8,
+     218.2
+    ],
+    [
+     152.9,
+     218.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     227.4
+    ],
+    [
+     124.5,
+     210.3
+    ],
+    [
+     135.0,
+     199.8
+    ],
+    [
+     135.0,
+     216.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     210.3
+    ],
+    [
+     124.5,
+     196.0
+    ],
+    [
+     135.0,
+     185.5
+    ],
+    [
+     135.0,
+     199.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     196.0
+    ],
+    [
+     124.5,
+     178.9
+    ],
+    [
+     135.0,
+     168.4
+    ],
+    [
+     135.0,
+     185.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     178.9
+    ],
+    [
+     124.5,
+     164.7
+    ],
+    [
+     135.0,
+     154.2
+    ],
+    [
+     135.0,
+     168.4
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     156.7
+    ],
+    [
+     124.5,
+     139.5
+    ],
+    [
+     135.0,
+     129.0
+    ],
+    [
+     135.0,
+     146.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     139.5
+    ],
+    [
+     124.5,
+     125.2
+    ],
+    [
+     135.0,
+     114.7
+    ],
+    [
+     135.0,
+     129.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     125.2
+    ],
+    [
+     124.5,
+     108.1
+    ],
+    [
+     135.0,
+     97.6
+    ],
+    [
+     135.0,
+     114.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.5,
+     108.1
+    ],
+    [
+     124.5,
+     107.6
+    ],
+    [
+     110.8,
+     107.6
+    ],
+    [
+     121.3,
+     97.1
+    ],
+    [
+     135.0,
+     97.1
+    ],
+    [
+     135.0,
+     97.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.8,
+     107.6
+    ],
+    [
+     85.7,
+     107.6
+    ],
+    [
+     96.2,
+     97.1
+    ],
+    [
+     113.3,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.7,
+     107.6
+    ],
+    [
+     71.4,
+     107.6
+    ],
+    [
+     81.9,
+     97.1
+    ],
+    [
+     96.2,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.4,
+     107.6
+    ],
+    [
+     54.2,
+     107.6
+    ],
+    [
+     64.7,
+     97.1
+    ],
+    [
+     81.9,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.2,
+     107.6
+    ],
+    [
+     40.0,
+     107.6
+    ],
+    [
+     50.5,
+     97.1
+    ],
+    [
+     64.7,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     32.0,
+     107.6
+    ],
+    [
+     14.9,
+     107.6
+    ],
+    [
+     25.4,
+     97.1
+    ],
+    [
+     42.5,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.9,
+     107.6
+    ],
+    [
+     13.5,
+     107.6
+    ],
+    [
+     13.5,
+     93.1
+    ],
+    [
+     24.0,
+     85.8
+    ],
+    [
+     24.0,
+     97.1
+    ],
+    [
+     25.4,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     93.1
+    ],
+    [
+     13.5,
+     73.8
+    ],
+    [
+     24.0,
+     70.8
+    ],
+    [
+     24.0,
+     85.8
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     73.8
+    ],
+    [
+     13.5,
+     57.8
+    ],
+    [
+     24.0,
+     58.4
+    ],
+    [
+     24.0,
+     70.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Plans office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     48.8
+    ],
+    [
+     13.5,
+     29.5
+    ],
+    [
+     24.0,
+     36.5
+    ],
+    [
+     24.0,
+     51.4
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Route approvals office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     29.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     36.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     132.3,
+     10.5
+    ],
+    [
+     131.7,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     132.3,
+     10.5
+    ],
+    [
+     211.5,
+     10.5
+    ],
+    [
+     211.5,
+     53.1
+    ],
+    [
+     208.5,
+     54.9
+    ],
+    [
+     208.5,
+     13.5
+    ],
+    [
+     131.7,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     211.5,
+     53.1
+    ],
+    [
+     211.5,
+     174.7
+    ],
+    [
+     208.5,
+     173.3
+    ],
+    [
+     208.5,
+     54.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     211.5,
+     174.7
+    ],
+    [
+     211.5,
+     231.7
+    ],
+    [
+     145.5,
+     231.7
+    ],
+    [
+     146.9,
+     228.7
+    ],
+    [
+     208.5,
+     228.7
+    ],
+    [
+     208.5,
+     173.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     145.5,
+     231.7
+    ],
+    [
+     121.5,
+     231.7
+    ],
+    [
+     121.5,
+     134.9
+    ],
+    [
+     124.5,
+     131.9
+    ],
+    [
+     124.5,
+     228.7
+    ],
+    [
+     146.9,
+     228.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.5,
+     134.9
+    ],
+    [
+     121.5,
+     110.6
+    ],
+    [
+     25.8,
+     110.6
+    ],
+    [
+     28.8,
+     107.6
+    ],
+    [
+     124.5,
+     107.6
+    ],
+    [
+     124.5,
+     131.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     25.8,
+     110.6
+    ],
+    [
+     10.5,
+     110.6
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     107.6
+    ],
+    [
+     28.8,
+     107.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     0.0
+    ],
+    [
+     19.6,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Every filed plan is kept for a year.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Systems room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.0,
+     0.0
+    ],
+    [
+     18.0,
+     0.0
+    ],
+    [
+     26.8,
+     10.5
+    ],
+    [
+     19.6,
+     10.5
+    ]
+   ],
+   "about": "The flight plan computers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     18.0,
+     0.0
+    ],
+    [
+     21.9,
+     0.0
+    ],
+    [
+     30.3,
+     10.5
+    ],
+    [
+     26.8,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     21.9,
+     0.0
+    ],
+    [
+     28.8,
+     0.0
+    ],
+    [
+     36.6,
+     10.5
+    ],
+    [
+     30.3,
+     10.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.8,
+     0.0
+    ],
+    [
+     46.8,
+     0.0
+    ],
+    [
+     52.9,
+     10.5
+    ],
+    [
+     36.6,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     46.8,
+     0.0
+    ],
+    [
+     61.8,
+     0.0
+    ],
+    [
+     66.5,
+     10.5
+    ],
+    [
+     52.9,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     61.8,
+     0.0
+    ],
+    [
+     79.8,
+     0.0
+    ],
+    [
+     82.8,
+     10.5
+    ],
+    [
+     66.5,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.8,
+     0.0
+    ],
+    [
+     94.8,
+     0.0
+    ],
+    [
+     96.4,
+     10.5
+    ],
+    [
+     82.8,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     94.8,
+     0.0
+    ],
+    [
+     112.8,
+     0.0
+    ],
+    [
+     112.6,
+     10.5
+    ],
+    [
+     96.4,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     112.8,
+     0.0
+    ],
+    [
+     127.8,
+     0.0
+    ],
+    [
+     126.2,
+     10.5
+    ],
+    [
+     112.6,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     127.8,
+     0.0
+    ],
+    [
+     145.8,
+     0.0
+    ],
+    [
+     142.5,
+     10.5
+    ],
+    [
+     126.2,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     145.8,
+     0.0
+    ],
+    [
+     160.8,
+     0.0
+    ],
+    [
+     156.1,
+     10.5
+    ],
+    [
+     142.5,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     160.8,
+     0.0
+    ],
+    [
+     178.8,
+     0.0
+    ],
+    [
+     172.4,
+     10.5
+    ],
+    [
+     156.1,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     178.8,
+     0.0
+    ],
+    [
+     193.8,
+     0.0
+    ],
+    [
+     186.0,
+     10.5
+    ],
+    [
+     172.4,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     193.8,
+     0.0
+    ],
+    [
+     211.8,
+     0.0
+    ],
+    [
+     202.3,
+     10.5
+    ],
+    [
+     186.0,
+     10.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     211.8,
+     0.0
+    ],
+    [
+     222.0,
+     0.0
+    ],
+    [
+     222.0,
+     4.8
+    ],
+    [
+     211.5,
+     14.8
+    ],
+    [
+     211.5,
+     10.5
+    ],
+    [
+     202.3,
+     10.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     4.8
+    ],
+    [
+     222.0,
+     22.7
+    ],
+    [
+     211.5,
+     31.2
+    ],
+    [
+     211.5,
+     14.8
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     22.7
+    ],
+    [
+     222.0,
+     37.6
+    ],
+    [
+     211.5,
+     44.9
+    ],
+    [
+     211.5,
+     31.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     37.6
+    ],
+    [
+     222.0,
+     55.5
+    ],
+    [
+     211.5,
+     61.2
+    ],
+    [
+     211.5,
+     44.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     55.5
+    ],
+    [
+     222.0,
+     70.5
+    ],
+    [
+     211.5,
+     74.9
+    ],
+    [
+     211.5,
+     61.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     70.5
+    ],
+    [
+     222.0,
+     88.4
+    ],
+    [
+     211.5,
+     91.2
+    ],
+    [
+     211.5,
+     74.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     88.4
+    ],
+    [
+     222.0,
+     103.3
+    ],
+    [
+     211.5,
+     104.9
+    ],
+    [
+     211.5,
+     91.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     103.3
+    ],
+    [
+     222.0,
+     121.2
+    ],
+    [
+     211.5,
+     121.2
+    ],
+    [
+     211.5,
+     104.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     121.2
+    ],
+    [
+     222.0,
+     136.2
+    ],
+    [
+     211.5,
+     134.9
+    ],
+    [
+     211.5,
+     121.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     136.2
+    ],
+    [
+     222.0,
+     154.1
+    ],
+    [
+     211.5,
+     151.2
+    ],
+    [
+     211.5,
+     134.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     154.1
+    ],
+    [
+     222.0,
+     169.0
+    ],
+    [
+     211.5,
+     164.9
+    ],
+    [
+     211.5,
+     151.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     169.0
+    ],
+    [
+     222.0,
+     186.9
+    ],
+    [
+     211.5,
+     181.2
+    ],
+    [
+     211.5,
+     164.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     186.9
+    ],
+    [
+     222.0,
+     201.9
+    ],
+    [
+     211.5,
+     194.9
+    ],
+    [
+     211.5,
+     181.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     201.9
+    ],
+    [
+     222.0,
+     219.8
+    ],
+    [
+     211.5,
+     211.2
+    ],
+    [
+     211.5,
+     194.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     219.8
+    ],
+    [
+     222.0,
+     234.7
+    ],
+    [
+     211.5,
+     224.9
+    ],
+    [
+     211.5,
+     211.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     222.0,
+     234.7
+    ],
+    [
+     222.0,
+     242.2
+    ],
+    [
+     211.0,
+     242.2
+    ],
+    [
+     202.5,
+     231.7
+    ],
+    [
+     211.5,
+     231.7
+    ],
+    [
+     211.5,
+     224.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     211.0,
+     242.2
+    ],
+    [
+     195.2,
+     242.2
+    ],
+    [
+     189.8,
+     231.7
+    ],
+    [
+     202.5,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     195.2,
+     242.2
+    ],
+    [
+     176.2,
+     242.2
+    ],
+    [
+     174.4,
+     231.7
+    ],
+    [
+     189.8,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     176.2,
+     242.2
+    ],
+    [
+     160.5,
+     242.2
+    ],
+    [
+     161.6,
+     231.7
+    ],
+    [
+     174.4,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     160.5,
+     242.2
+    ],
+    [
+     141.5,
+     242.2
+    ],
+    [
+     146.3,
+     231.7
+    ],
+    [
+     161.6,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     141.5,
+     242.2
+    ],
+    [
+     125.8,
+     242.2
+    ],
+    [
+     133.5,
+     231.7
+    ],
+    [
+     146.3,
+     231.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     125.8,
+     242.2
+    ],
+    [
+     111.0,
+     242.2
+    ],
+    [
+     111.0,
+     238.4
+    ],
+    [
+     121.5,
+     227.9
+    ],
+    [
+     121.5,
+     231.7
+    ],
+    [
+     133.5,
+     231.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     238.4
+    ],
+    [
+     111.0,
+     224.1
+    ],
+    [
+     121.5,
+     213.6
+    ],
+    [
+     121.5,
+     227.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     224.1
+    ],
+    [
+     111.0,
+     207.0
+    ],
+    [
+     121.5,
+     196.5
+    ],
+    [
+     121.5,
+     213.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     207.0
+    ],
+    [
+     111.0,
+     192.7
+    ],
+    [
+     121.5,
+     182.2
+    ],
+    [
+     121.5,
+     196.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     192.7
+    ],
+    [
+     111.0,
+     175.6
+    ],
+    [
+     121.5,
+     165.1
+    ],
+    [
+     121.5,
+     182.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     175.6
+    ],
+    [
+     111.0,
+     161.3
+    ],
+    [
+     121.5,
+     150.8
+    ],
+    [
+     121.5,
+     165.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     161.3
+    ],
+    [
+     111.0,
+     144.1
+    ],
+    [
+     121.5,
+     133.6
+    ],
+    [
+     121.5,
+     150.8
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     144.1
+    ],
+    [
+     111.0,
+     129.8
+    ],
+    [
+     121.5,
+     119.3
+    ],
+    [
+     121.5,
+     133.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.0,
+     129.8
+    ],
+    [
+     111.0,
+     121.1
+    ],
+    [
+     102.6,
+     121.1
+    ],
+    [
+     113.1,
+     110.6
+    ],
+    [
+     121.5,
+     110.6
+    ],
+    [
+     121.5,
+     119.3
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     102.6,
+     121.1
+    ],
+    [
+     88.3,
+     121.1
+    ],
+    [
+     98.8,
+     110.6
+    ],
+    [
+     113.1,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     88.3,
+     121.1
+    ],
+    [
+     71.2,
+     121.1
+    ],
+    [
+     81.7,
+     110.6
+    ],
+    [
+     98.8,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     71.2,
+     121.1
+    ],
+    [
+     56.9,
+     121.1
+    ],
+    [
+     67.4,
+     110.6
+    ],
+    [
+     81.7,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     56.9,
+     121.1
+    ],
+    [
+     39.7,
+     121.1
+    ],
+    [
+     50.2,
+     110.6
+    ],
+    [
+     67.4,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     39.7,
+     121.1
+    ],
+    [
+     25.5,
+     121.1
+    ],
+    [
+     36.0,
+     110.6
+    ],
+    [
+     50.2,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     25.5,
+     121.1
+    ],
+    [
+     8.3,
+     121.1
+    ],
+    [
+     18.8,
+     110.6
+    ],
+    [
+     36.0,
+     110.6
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     8.3,
+     121.1
+    ],
+    [
+     0.0,
+     121.1
+    ],
+    [
+     0.0,
+     114.6
+    ],
+    [
+     10.5,
+     105.2
+    ],
+    [
+     10.5,
+     110.6
+    ],
+    [
+     18.8,
+     110.6
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     114.6
+    ],
+    [
+     0.0,
+     95.8
+    ],
+    [
+     10.5,
+     89.7
+    ],
+    [
+     10.5,
+     105.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     95.8
+    ],
+    [
+     0.0,
+     80.2
+    ],
+    [
+     10.5,
+     76.8
+    ],
+    [
+     10.5,
+     89.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     80.2
+    ],
+    [
+     0.0,
+     61.4
+    ],
+    [
+     10.5,
+     61.2
+    ],
+    [
+     10.5,
+     76.8
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     61.4
+    ],
+    [
+     0.0,
+     45.7
+    ],
+    [
+     10.5,
+     48.3
+    ],
+    [
+     10.5,
+     61.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     45.7
+    ],
+    [
+     0.0,
+     27.0
+    ],
+    [
+     10.5,
+     32.8
+    ],
+    [
+     10.5,
+     48.3
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     27.0
+    ],
+    [
+     0.0,
+     11.3
+    ],
+    [
+     10.5,
+     19.9
+    ],
+    [
+     10.5,
+     32.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     11.3
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     19.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     28.6,
+     13.5
+    ],
+    [
+     37.5,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.6,
+     13.5
+    ],
+    [
+     46.7,
+     13.5
+    ],
+    [
+     53.6,
+     24.0
+    ],
+    [
+     37.5,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     55.1,
+     13.5
+    ],
+    [
+     70.2,
+     13.5
+    ],
+    [
+     74.6,
+     24.0
+    ],
+    [
+     61.1,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     70.2,
+     13.5
+    ],
+    [
+     88.3,
+     13.5
+    ],
+    [
+     90.8,
+     24.0
+    ],
+    [
+     74.6,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     88.3,
+     13.5
+    ],
+    [
+     103.4,
+     13.5
+    ],
+    [
+     104.3,
+     24.0
+    ],
+    [
+     90.8,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     103.4,
+     13.5
+    ],
+    [
+     121.5,
+     13.5
+    ],
+    [
+     120.3,
+     24.0
+    ],
+    [
+     104.3,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     129.9,
+     13.5
+    ],
+    [
+     145.0,
+     13.5
+    ],
+    [
+     141.3,
+     24.0
+    ],
+    [
+     127.9,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     145.0,
+     13.5
+    ],
+    [
+     163.1,
+     13.5
+    ],
+    [
+     157.5,
+     24.0
+    ],
+    [
+     141.3,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     163.1,
+     13.5
+    ],
+    [
+     178.2,
+     13.5
+    ],
+    [
+     171.0,
+     24.0
+    ],
+    [
+     157.5,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     178.2,
+     13.5
+    ],
+    [
+     196.2,
+     13.5
+    ],
+    [
+     187.1,
+     24.0
+    ],
+    [
+     171.0,
+     24.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     204.7,
+     13.5
+    ],
+    [
+     208.5,
+     13.5
+    ],
+    [
+     208.5,
+     24.7
+    ],
+    [
+     198.0,
+     34.1
+    ],
+    [
+     198.0,
+     24.0
+    ],
+    [
+     194.6,
+     24.0
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     24.7
+    ],
+    [
+     208.5,
+     42.8
+    ],
+    [
+     198.0,
+     50.4
+    ],
+    [
+     198.0,
+     34.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     42.8
+    ],
+    [
+     208.5,
+     57.8
+    ],
+    [
+     198.0,
+     64.0
+    ],
+    [
+     198.0,
+     50.4
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     57.8
+    ],
+    [
+     208.5,
+     75.7
+    ],
+    [
+     198.0,
+     80.1
+    ],
+    [
+     198.0,
+     64.0
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     84.1
+    ],
+    [
+     208.5,
+     99.1
+    ],
+    [
+     198.0,
+     101.3
+    ],
+    [
+     198.0,
+     87.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     99.1
+    ],
+    [
+     208.5,
+     117.2
+    ],
+    [
+     198.0,
+     117.5
+    ],
+    [
+     198.0,
+     101.3
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     117.2
+    ],
+    [
+     208.5,
+     132.2
+    ],
+    [
+     198.0,
+     131.1
+    ],
+    [
+     198.0,
+     117.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     132.2
+    ],
+    [
+     208.5,
+     150.1
+    ],
+    [
+     198.0,
+     147.3
+    ],
+    [
+     198.0,
+     131.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     158.5
+    ],
+    [
+     208.5,
+     173.5
+    ],
+    [
+     198.0,
+     168.4
+    ],
+    [
+     198.0,
+     154.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     173.5
+    ],
+    [
+     208.5,
+     191.6
+    ],
+    [
+     198.0,
+     184.7
+    ],
+    [
+     198.0,
+     168.4
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     191.6
+    ],
+    [
+     208.5,
+     206.6
+    ],
+    [
+     198.0,
+     198.2
+    ],
+    [
+     198.0,
+     184.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     208.5,
+     206.6
+    ],
+    [
+     208.5,
+     224.5
+    ],
+    [
+     198.0,
+     214.4
+    ],
+    [
+     198.0,
+     198.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     203.9,
+     228.7
+    ],
+    [
+     187.6,
+     228.7
+    ],
+    [
+     182.3,
+     218.2
+    ],
+    [
+     194.6,
+     218.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     187.6,
+     228.7
+    ],
+    [
+     168.0,
+     228.7
+    ],
+    [
+     167.6,
+     218.2
+    ],
+    [
+     182.3,
+     218.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     168.0,
+     228.7
+    ],
+    [
+     151.7,
+     228.7
+    ],
+    [
+     155.4,
+     218.2
+    ],
+    [
+     167.6,
+     218.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     151.7,
+     228.7
+    ],
+    [
+     132.2,
+     228.7
+    ],
+    [
+     140.8,
+     218.2
+    ],
+    [
+     155.4,
+     218.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     227.4
+    ],
+    [
+     124.5,
+     213.2
+    ],
+    [
+     135.0,
+     202.7
+    ],
+    [
+     135.0,
+     216.9
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     213.2
+    ],
+    [
+     124.5,
+     196.0
+    ],
+    [
+     135.0,
+     185.5
+    ],
+    [
+     135.0,
+     202.7
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     196.0
+    ],
+    [
+     124.5,
+     181.7
+    ],
+    [
+     135.0,
+     171.2
+    ],
+    [
+     135.0,
+     185.5
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     181.7
+    ],
+    [
+     124.5,
+     164.7
+    ],
+    [
+     135.0,
+     154.2
+    ],
+    [
+     135.0,
+     171.2
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     156.7
+    ],
+    [
+     124.5,
+     142.4
+    ],
+    [
+     135.0,
+     131.9
+    ],
+    [
+     135.0,
+     146.2
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     142.4
+    ],
+    [
+     124.5,
+     125.2
+    ],
+    [
+     135.0,
+     114.7
+    ],
+    [
+     135.0,
+     131.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     125.2
+    ],
+    [
+     124.5,
+     111.0
+    ],
+    [
+     135.0,
+     100.5
+    ],
+    [
+     135.0,
+     114.7
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.5,
+     111.0
+    ],
+    [
+     124.5,
+     107.6
+    ],
+    [
+     110.8,
+     107.6
+    ],
+    [
+     121.3,
+     97.1
+    ],
+    [
+     135.0,
+     97.1
+    ],
+    [
+     135.0,
+     100.5
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     102.8,
+     107.6
+    ],
+    [
+     88.5,
+     107.6
+    ],
+    [
+     99.0,
+     97.1
+    ],
+    [
+     113.3,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     88.5,
+     107.6
+    ],
+    [
+     71.4,
+     107.6
+    ],
+    [
+     81.9,
+     97.1
+    ],
+    [
+     99.0,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     71.4,
+     107.6
+    ],
+    [
+     57.1,
+     107.6
+    ],
+    [
+     67.6,
+     97.1
+    ],
+    [
+     81.9,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     57.1,
+     107.6
+    ],
+    [
+     40.0,
+     107.6
+    ],
+    [
+     50.5,
+     97.1
+    ],
+    [
+     67.6,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     32.0,
+     107.6
+    ],
+    [
+     17.8,
+     107.6
+    ],
+    [
+     28.3,
+     97.1
+    ],
+    [
+     42.5,
+     97.1
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     17.8,
+     107.6
+    ],
+    [
+     13.5,
+     107.6
+    ],
+    [
+     13.5,
+     93.1
+    ],
+    [
+     24.0,
+     85.8
+    ],
+    [
+     24.0,
+     97.1
+    ],
+    [
+     28.3,
+     97.1
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     93.1
+    ],
+    [
+     13.5,
+     77.0
+    ],
+    [
+     24.0,
+     73.3
+    ],
+    [
+     24.0,
+     85.8
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     77.0
+    ],
+    [
+     13.5,
+     57.8
+    ],
+    [
+     24.0,
+     58.4
+    ],
+    [
+     24.0,
+     73.3
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Route approvals office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     48.8
+    ],
+    [
+     13.5,
+     32.7
+    ],
+    [
+     24.0,
+     38.9
+    ],
+    [
+     24.0,
+     51.4
+    ]
+   ],
+   "about": "Approves unusual routes and flights that need special permission.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Plans office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     32.7
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     38.9
+    ]
+   ],
+   "about": "Officers who check and clear flight plans.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,6536 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P4-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  134.1,
+  242.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Office floor 1",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Office floor 2",
+   "z_m": 9.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.0,
+     22.0
+    ],
+    [
+     112.1,
+     22.0
+    ],
+    [
+     112.1,
+     220.0
+    ],
+    [
+     89.0,
+     220.0
+    ],
+    [
+     89.0,
+     99.0
+    ],
+    [
+     22.0,
+     99.0
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     9.5
+    ],
+    [
+     124.6,
+     9.5
+    ],
+    [
+     124.6,
+     17.5
+    ],
+    [
+     121.6,
+     20.3
+    ],
+    [
+     121.6,
+     12.5
+    ],
+    [
+     12.5,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.6,
+     17.5
+    ],
+    [
+     124.6,
+     139.1
+    ],
+    [
+     121.6,
+     138.7
+    ],
+    [
+     121.6,
+     20.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.6,
+     139.1
+    ],
+    [
+     124.6,
+     232.5
+    ],
+    [
+     94.8,
+     232.5
+    ],
+    [
+     95.6,
+     229.5
+    ],
+    [
+     121.6,
+     229.5
+    ],
+    [
+     121.6,
+     138.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.8,
+     232.5
+    ],
+    [
+     76.5,
+     232.5
+    ],
+    [
+     76.5,
+     129.7
+    ],
+    [
+     79.5,
+     126.7
+    ],
+    [
+     79.5,
+     229.5
+    ],
+    [
+     95.6,
+     229.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     76.5,
+     129.7
+    ],
+    [
+     76.5,
+     111.5
+    ],
+    [
+     9.5,
+     111.5
+    ],
+    [
+     9.5,
+     75.6
+    ],
+    [
+     12.5,
+     74.8
+    ],
+    [
+     12.5,
+     108.5
+    ],
+    [
+     79.5,
+     108.5
+    ],
+    [
+     79.5,
+     126.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     75.6
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     12.5,
+     74.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     45.5,
+     12.5
+    ],
+    [
+     54.3,
+     12.5
+    ],
+    [
+     56.5,
+     22.0
+    ],
+    [
+     49.2,
+     22.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.2,
+     12.5
+    ],
+    [
+     121.6,
+     12.5
+    ],
+    [
+     121.6,
+     19.6
+    ],
+    [
+     112.1,
+     28.5
+    ],
+    [
+     112.1,
+     22.0
+    ],
+    [
+     111.0,
+     22.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     82.6
+    ],
+    [
+     121.6,
+     90.9
+    ],
+    [
+     112.1,
+     93.6
+    ],
+    [
+     112.1,
+     85.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     153.9
+    ],
+    [
+     121.6,
+     162.3
+    ],
+    [
+     112.1,
+     158.7
+    ],
+    [
+     112.1,
+     151.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     225.3
+    ],
+    [
+     121.6,
+     229.5
+    ],
+    [
+     116.4,
+     229.5
+    ],
+    [
+     109.3,
+     220.0
+    ],
+    [
+     112.1,
+     220.0
+    ],
+    [
+     112.1,
+     216.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     197.9
+    ],
+    [
+     79.5,
+     189.9
+    ],
+    [
+     89.0,
+     180.4
+    ],
+    [
+     89.0,
+     188.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     129.6
+    ],
+    [
+     79.5,
+     121.6
+    ],
+    [
+     89.0,
+     112.1
+    ],
+    [
+     89.0,
+     120.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     32.4,
+     108.5
+    ],
+    [
+     24.4,
+     108.5
+    ],
+    [
+     33.9,
+     99.0
+    ],
+    [
+     41.9,
+     99.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     54.8
+    ],
+    [
+     12.5,
+     45.9
+    ],
+    [
+     22.0,
+     48.8
+    ],
+    [
+     22.0,
+     55.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Secure entrance",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     6.8,
+     0.0
+    ],
+    [
+     15.3,
+     9.5
+    ],
+    [
+     9.5,
+     9.5
+    ]
+   ],
+   "about": "Visitors from the cruisers are checked and escorted.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Liaison room",
+   "level": "L1",
+   "outline_m": [
+    [
+     6.8,
+     0.0
+    ],
+    [
+     20.4,
+     0.0
+    ],
+    [
+     27.0,
+     9.5
+    ],
+    [
+     15.3,
+     9.5
+    ]
+   ],
+   "about": "Officers from Flight Control and the escort cruisers sit side by side and agree movements.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Secure communications room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.4,
+     0.0
+    ],
+    [
+     27.2,
+     0.0
+    ],
+    [
+     32.8,
+     9.5
+    ],
+    [
+     27.0,
+     9.5
+    ]
+   ],
+   "about": "Encrypted links to each escort cruiser's bridge.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.2,
+     0.0
+    ],
+    [
+     34.0,
+     0.0
+    ],
+    [
+     38.7,
+     9.5
+    ],
+    [
+     32.8,
+     9.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.0,
+     0.0
+    ],
+    [
+     47.6,
+     0.0
+    ],
+    [
+     50.3,
+     9.5
+    ],
+    [
+     38.7,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     47.6,
+     0.0
+    ],
+    [
+     61.2,
+     0.0
+    ],
+    [
+     62.0,
+     9.5
+    ],
+    [
+     50.3,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     61.2,
+     0.0
+    ],
+    [
+     74.8,
+     0.0
+    ],
+    [
+     73.7,
+     9.5
+    ],
+    [
+     62.0,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.8,
+     0.0
+    ],
+    [
+     88.4,
+     0.0
+    ],
+    [
+     85.3,
+     9.5
+    ],
+    [
+     73.7,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.4,
+     0.0
+    ],
+    [
+     102.0,
+     0.0
+    ],
+    [
+     97.0,
+     9.5
+    ],
+    [
+     85.3,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.0,
+     0.0
+    ],
+    [
+     115.6,
+     0.0
+    ],
+    [
+     108.7,
+     9.5
+    ],
+    [
+     97.0,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.6,
+     0.0
+    ],
+    [
+     129.1,
+     0.0
+    ],
+    [
+     120.4,
+     9.5
+    ],
+    [
+     108.7,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.1,
+     0.0
+    ],
+    [
+     134.1,
+     0.0
+    ],
+    [
+     134.1,
+     8.4
+    ],
+    [
+     124.6,
+     17.2
+    ],
+    [
+     124.6,
+     9.5
+    ],
+    [
+     120.4,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     8.4
+    ],
+    [
+     134.1,
+     21.5
+    ],
+    [
+     124.6,
+     29.3
+    ],
+    [
+     124.6,
+     17.2
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     21.5
+    ],
+    [
+     134.1,
+     34.7
+    ],
+    [
+     124.6,
+     41.4
+    ],
+    [
+     124.6,
+     29.3
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     34.7
+    ],
+    [
+     134.1,
+     47.8
+    ],
+    [
+     124.6,
+     53.5
+    ],
+    [
+     124.6,
+     41.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     47.8
+    ],
+    [
+     134.1,
+     61.0
+    ],
+    [
+     124.6,
+     65.7
+    ],
+    [
+     124.6,
+     53.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     61.0
+    ],
+    [
+     134.1,
+     74.1
+    ],
+    [
+     124.6,
+     77.8
+    ],
+    [
+     124.6,
+     65.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     74.1
+    ],
+    [
+     134.1,
+     87.2
+    ],
+    [
+     124.6,
+     89.9
+    ],
+    [
+     124.6,
+     77.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     87.2
+    ],
+    [
+     134.1,
+     100.4
+    ],
+    [
+     124.6,
+     102.0
+    ],
+    [
+     124.6,
+     89.9
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     100.4
+    ],
+    [
+     134.1,
+     113.5
+    ],
+    [
+     124.6,
+     114.1
+    ],
+    [
+     124.6,
+     102.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     113.5
+    ],
+    [
+     134.1,
+     126.7
+    ],
+    [
+     124.6,
+     126.2
+    ],
+    [
+     124.6,
+     114.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     126.7
+    ],
+    [
+     134.1,
+     139.8
+    ],
+    [
+     124.6,
+     138.4
+    ],
+    [
+     124.6,
+     126.2
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     139.8
+    ],
+    [
+     134.1,
+     153.0
+    ],
+    [
+     124.6,
+     150.5
+    ],
+    [
+     124.6,
+     138.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     153.0
+    ],
+    [
+     134.1,
+     166.1
+    ],
+    [
+     124.6,
+     162.6
+    ],
+    [
+     124.6,
+     150.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     166.1
+    ],
+    [
+     134.1,
+     179.3
+    ],
+    [
+     124.6,
+     174.7
+    ],
+    [
+     124.6,
+     162.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     179.3
+    ],
+    [
+     134.1,
+     192.4
+    ],
+    [
+     124.6,
+     186.8
+    ],
+    [
+     124.6,
+     174.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     192.4
+    ],
+    [
+     134.1,
+     205.6
+    ],
+    [
+     124.6,
+     198.9
+    ],
+    [
+     124.6,
+     186.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     205.6
+    ],
+    [
+     134.1,
+     218.7
+    ],
+    [
+     124.6,
+     211.1
+    ],
+    [
+     124.6,
+     198.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     218.7
+    ],
+    [
+     134.1,
+     231.9
+    ],
+    [
+     124.6,
+     223.2
+    ],
+    [
+     124.6,
+     211.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     231.9
+    ],
+    [
+     134.1,
+     242.0
+    ],
+    [
+     130.7,
+     242.0
+    ],
+    [
+     122.2,
+     232.5
+    ],
+    [
+     124.6,
+     232.5
+    ],
+    [
+     124.6,
+     223.2
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.7,
+     242.0
+    ],
+    [
+     116.0,
+     242.0
+    ],
+    [
+     111.6,
+     232.5
+    ],
+    [
+     122.2,
+     232.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.0,
+     242.0
+    ],
+    [
+     101.3,
+     242.0
+    ],
+    [
+     101.1,
+     232.5
+    ],
+    [
+     111.6,
+     232.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.3,
+     242.0
+    ],
+    [
+     86.6,
+     242.0
+    ],
+    [
+     90.5,
+     232.5
+    ],
+    [
+     101.1,
+     232.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.6,
+     242.0
+    ],
+    [
+     71.9,
+     242.0
+    ],
+    [
+     80.0,
+     232.5
+    ],
+    [
+     90.5,
+     232.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.9,
+     242.0
+    ],
+    [
+     67.0,
+     242.0
+    ],
+    [
+     67.0,
+     233.5
+    ],
+    [
+     76.5,
+     224.0
+    ],
+    [
+     76.5,
+     232.5
+    ],
+    [
+     80.0,
+     232.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     233.5
+    ],
+    [
+     67.0,
+     220.9
+    ],
+    [
+     76.5,
+     211.4
+    ],
+    [
+     76.5,
+     224.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     220.9
+    ],
+    [
+     67.0,
+     208.3
+    ],
+    [
+     76.5,
+     198.8
+    ],
+    [
+     76.5,
+     211.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     208.3
+    ],
+    [
+     67.0,
+     195.6
+    ],
+    [
+     76.5,
+     186.1
+    ],
+    [
+     76.5,
+     198.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     195.6
+    ],
+    [
+     67.0,
+     183.0
+    ],
+    [
+     76.5,
+     173.5
+    ],
+    [
+     76.5,
+     186.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     183.0
+    ],
+    [
+     67.0,
+     170.4
+    ],
+    [
+     76.5,
+     160.9
+    ],
+    [
+     76.5,
+     173.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     170.4
+    ],
+    [
+     67.0,
+     157.8
+    ],
+    [
+     76.5,
+     148.3
+    ],
+    [
+     76.5,
+     160.9
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     157.8
+    ],
+    [
+     67.0,
+     145.1
+    ],
+    [
+     76.5,
+     135.6
+    ],
+    [
+     76.5,
+     148.3
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     145.1
+    ],
+    [
+     67.0,
+     132.5
+    ],
+    [
+     76.5,
+     123.0
+    ],
+    [
+     76.5,
+     135.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     132.5
+    ],
+    [
+     67.0,
+     121.0
+    ],
+    [
+     65.9,
+     121.0
+    ],
+    [
+     75.4,
+     111.5
+    ],
+    [
+     76.5,
+     111.5
+    ],
+    [
+     76.5,
+     123.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     65.9,
+     121.0
+    ],
+    [
+     53.2,
+     121.0
+    ],
+    [
+     62.7,
+     111.5
+    ],
+    [
+     75.4,
+     111.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.2,
+     121.0
+    ],
+    [
+     40.6,
+     121.0
+    ],
+    [
+     50.1,
+     111.5
+    ],
+    [
+     62.7,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.6,
+     121.0
+    ],
+    [
+     28.0,
+     121.0
+    ],
+    [
+     37.5,
+     111.5
+    ],
+    [
+     50.1,
+     111.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.0,
+     121.0
+    ],
+    [
+     15.3,
+     121.0
+    ],
+    [
+     24.8,
+     111.5
+    ],
+    [
+     37.5,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.3,
+     121.0
+    ],
+    [
+     2.7,
+     121.0
+    ],
+    [
+     12.2,
+     111.5
+    ],
+    [
+     24.8,
+     111.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.7,
+     121.0
+    ],
+    [
+     0.0,
+     121.0
+    ],
+    [
+     0.0,
+     110.2
+    ],
+    [
+     9.5,
+     102.4
+    ],
+    [
+     9.5,
+     111.5
+    ],
+    [
+     12.2,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     110.2
+    ],
+    [
+     0.0,
+     96.5
+    ],
+    [
+     9.5,
+     90.9
+    ],
+    [
+     9.5,
+     102.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     96.5
+    ],
+    [
+     0.0,
+     82.8
+    ],
+    [
+     9.5,
+     79.3
+    ],
+    [
+     9.5,
+     90.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     82.8
+    ],
+    [
+     0.0,
+     69.1
+    ],
+    [
+     9.5,
+     67.7
+    ],
+    [
+     9.5,
+     79.3
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     69.1
+    ],
+    [
+     0.0,
+     55.4
+    ],
+    [
+     9.5,
+     56.2
+    ],
+    [
+     9.5,
+     67.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     55.4
+    ],
+    [
+     0.0,
+     41.7
+    ],
+    [
+     9.5,
+     44.6
+    ],
+    [
+     9.5,
+     56.2
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     41.7
+    ],
+    [
+     0.0,
+     28.0
+    ],
+    [
+     9.5,
+     33.1
+    ],
+    [
+     9.5,
+     44.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     28.0
+    ],
+    [
+     0.0,
+     14.3
+    ],
+    [
+     9.5,
+     21.5
+    ],
+    [
+     9.5,
+     33.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     14.3
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     9.5,
+     21.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     12.5
+    ],
+    [
+     26.3,
+     12.5
+    ],
+    [
+     33.4,
+     22.0
+    ],
+    [
+     22.0,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.3,
+     12.5
+    ],
+    [
+     45.5,
+     12.5
+    ],
+    [
+     49.2,
+     22.0
+    ],
+    [
+     33.4,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.3,
+     12.5
+    ],
+    [
+     68.1,
+     12.5
+    ],
+    [
+     67.9,
+     22.0
+    ],
+    [
+     56.5,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.1,
+     12.5
+    ],
+    [
+     81.9,
+     12.5
+    ],
+    [
+     79.3,
+     22.0
+    ],
+    [
+     67.9,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.9,
+     12.5
+    ],
+    [
+     95.8,
+     12.5
+    ],
+    [
+     90.8,
+     22.0
+    ],
+    [
+     79.3,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.8,
+     12.5
+    ],
+    [
+     109.6,
+     12.5
+    ],
+    [
+     102.2,
+     22.0
+    ],
+    [
+     90.8,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.6,
+     12.5
+    ],
+    [
+     120.2,
+     12.5
+    ],
+    [
+     111.0,
+     22.0
+    ],
+    [
+     102.2,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     19.6
+    ],
+    [
+     121.6,
+     32.8
+    ],
+    [
+     112.1,
+     40.5
+    ],
+    [
+     112.1,
+     28.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     32.8
+    ],
+    [
+     121.6,
+     46.0
+    ],
+    [
+     112.1,
+     52.6
+    ],
+    [
+     112.1,
+     40.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     46.0
+    ],
+    [
+     121.6,
+     59.2
+    ],
+    [
+     112.1,
+     64.6
+    ],
+    [
+     112.1,
+     52.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     59.2
+    ],
+    [
+     121.6,
+     72.4
+    ],
+    [
+     112.1,
+     76.7
+    ],
+    [
+     112.1,
+     64.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     72.4
+    ],
+    [
+     121.6,
+     82.6
+    ],
+    [
+     112.1,
+     85.9
+    ],
+    [
+     112.1,
+     76.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     90.9
+    ],
+    [
+     121.6,
+     104.2
+    ],
+    [
+     112.1,
+     105.6
+    ],
+    [
+     112.1,
+     93.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     104.2
+    ],
+    [
+     121.6,
+     117.4
+    ],
+    [
+     112.1,
+     117.7
+    ],
+    [
+     112.1,
+     105.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     117.4
+    ],
+    [
+     121.6,
+     130.6
+    ],
+    [
+     112.1,
+     129.7
+    ],
+    [
+     112.1,
+     117.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     130.6
+    ],
+    [
+     121.6,
+     143.8
+    ],
+    [
+     112.1,
+     141.8
+    ],
+    [
+     112.1,
+     129.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     143.8
+    ],
+    [
+     121.6,
+     153.9
+    ],
+    [
+     112.1,
+     151.1
+    ],
+    [
+     112.1,
+     141.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     162.3
+    ],
+    [
+     121.6,
+     175.5
+    ],
+    [
+     112.1,
+     170.8
+    ],
+    [
+     112.1,
+     158.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     175.5
+    ],
+    [
+     121.6,
+     188.7
+    ],
+    [
+     112.1,
+     182.8
+    ],
+    [
+     112.1,
+     170.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     188.7
+    ],
+    [
+     121.6,
+     201.9
+    ],
+    [
+     112.1,
+     194.9
+    ],
+    [
+     112.1,
+     182.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     201.9
+    ],
+    [
+     121.6,
+     215.2
+    ],
+    [
+     112.1,
+     206.9
+    ],
+    [
+     112.1,
+     194.9
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.6,
+     215.2
+    ],
+    [
+     121.6,
+     225.3
+    ],
+    [
+     112.1,
+     216.2
+    ],
+    [
+     112.1,
+     206.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.4,
+     229.5
+    ],
+    [
+     100.1,
+     229.5
+    ],
+    [
+     100.3,
+     220.0
+    ],
+    [
+     109.3,
+     220.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.1,
+     229.5
+    ],
+    [
+     83.8,
+     229.5
+    ],
+    [
+     91.4,
+     220.0
+    ],
+    [
+     100.3,
+     220.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.8,
+     229.5
+    ],
+    [
+     79.5,
+     229.5
+    ],
+    [
+     79.5,
+     220.2
+    ],
+    [
+     89.0,
+     210.7
+    ],
+    [
+     89.0,
+     220.0
+    ],
+    [
+     91.4,
+     220.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     220.2
+    ],
+    [
+     79.5,
+     207.6
+    ],
+    [
+     89.0,
+     198.1
+    ],
+    [
+     89.0,
+     210.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     207.6
+    ],
+    [
+     79.5,
+     197.9
+    ],
+    [
+     89.0,
+     188.4
+    ],
+    [
+     89.0,
+     198.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     189.9
+    ],
+    [
+     79.5,
+     177.2
+    ],
+    [
+     89.0,
+     167.7
+    ],
+    [
+     89.0,
+     180.4
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     177.2
+    ],
+    [
+     79.5,
+     164.6
+    ],
+    [
+     89.0,
+     155.1
+    ],
+    [
+     89.0,
+     167.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     164.6
+    ],
+    [
+     79.5,
+     152.0
+    ],
+    [
+     89.0,
+     142.5
+    ],
+    [
+     89.0,
+     155.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     152.0
+    ],
+    [
+     79.5,
+     139.3
+    ],
+    [
+     89.0,
+     129.8
+    ],
+    [
+     89.0,
+     142.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     139.3
+    ],
+    [
+     79.5,
+     129.6
+    ],
+    [
+     89.0,
+     120.1
+    ],
+    [
+     89.0,
+     129.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     121.6
+    ],
+    [
+     79.5,
+     109.0
+    ],
+    [
+     89.0,
+     99.5
+    ],
+    [
+     89.0,
+     112.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.5,
+     109.0
+    ],
+    [
+     79.5,
+     108.5
+    ],
+    [
+     67.3,
+     108.5
+    ],
+    [
+     76.8,
+     99.0
+    ],
+    [
+     89.0,
+     99.0
+    ],
+    [
+     89.0,
+     99.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.3,
+     108.5
+    ],
+    [
+     54.7,
+     108.5
+    ],
+    [
+     64.2,
+     99.0
+    ],
+    [
+     76.8,
+     99.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.7,
+     108.5
+    ],
+    [
+     42.1,
+     108.5
+    ],
+    [
+     51.6,
+     99.0
+    ],
+    [
+     64.2,
+     99.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.1,
+     108.5
+    ],
+    [
+     32.4,
+     108.5
+    ],
+    [
+     41.9,
+     99.0
+    ],
+    [
+     51.6,
+     99.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.4,
+     108.5
+    ],
+    [
+     12.5,
+     108.5
+    ],
+    [
+     12.5,
+     107.7
+    ],
+    [
+     22.0,
+     98.3
+    ],
+    [
+     22.0,
+     99.0
+    ],
+    [
+     33.9,
+     99.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     107.7
+    ],
+    [
+     12.5,
+     93.6
+    ],
+    [
+     22.0,
+     87.1
+    ],
+    [
+     22.0,
+     98.3
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     93.6
+    ],
+    [
+     12.5,
+     79.6
+    ],
+    [
+     22.0,
+     75.8
+    ],
+    [
+     22.0,
+     87.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     79.6
+    ],
+    [
+     12.5,
+     65.6
+    ],
+    [
+     22.0,
+     64.6
+    ],
+    [
+     22.0,
+     75.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     65.6
+    ],
+    [
+     12.5,
+     54.8
+    ],
+    [
+     22.0,
+     55.9
+    ],
+    [
+     22.0,
+     64.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Liaison office",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     45.9
+    ],
+    [
+     12.5,
+     31.9
+    ],
+    [
+     22.0,
+     37.6
+    ],
+    [
+     22.0,
+     48.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Secure planning room",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     31.9
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     22.0,
+     22.0
+    ],
+    [
+     22.0,
+     37.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     9.5,
+     9.5
+    ],
+    [
+     124.6,
+     9.5
+    ],
+    [
+     124.6,
+     17.5
+    ],
+    [
+     121.6,
+     20.3
+    ],
+    [
+     121.6,
+     12.5
+    ],
+    [
+     12.5,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.6,
+     17.5
+    ],
+    [
+     124.6,
+     139.1
+    ],
+    [
+     121.6,
+     138.7
+    ],
+    [
+     121.6,
+     20.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     124.6,
+     139.1
+    ],
+    [
+     124.6,
+     232.5
+    ],
+    [
+     94.8,
+     232.5
+    ],
+    [
+     95.6,
+     229.5
+    ],
+    [
+     121.6,
+     229.5
+    ],
+    [
+     121.6,
+     138.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     94.8,
+     232.5
+    ],
+    [
+     76.5,
+     232.5
+    ],
+    [
+     76.5,
+     129.7
+    ],
+    [
+     79.5,
+     126.7
+    ],
+    [
+     79.5,
+     229.5
+    ],
+    [
+     95.6,
+     229.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     76.5,
+     129.7
+    ],
+    [
+     76.5,
+     111.5
+    ],
+    [
+     9.5,
+     111.5
+    ],
+    [
+     9.5,
+     75.6
+    ],
+    [
+     12.5,
+     74.8
+    ],
+    [
+     12.5,
+     108.5
+    ],
+    [
+     79.5,
+     108.5
+    ],
+    [
+     79.5,
+     126.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     9.5,
+     75.6
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     12.5,
+     74.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Conference room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     9.1,
+     0.0
+    ],
+    [
+     17.3,
+     9.5
+    ],
+    [
+     9.5,
+     9.5
+    ]
+   ],
+   "about": "Planning meetings for big movements, such as a cruiser coming in to dock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Duty officer's office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     9.1,
+     0.0
+    ],
+    [
+     12.6,
+     0.0
+    ],
+    [
+     20.4,
+     9.5
+    ],
+    [
+     17.3,
+     9.5
+    ]
+   ],
+   "about": "The duty officer on call for cruiser movements.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.6,
+     0.0
+    ],
+    [
+     16.2,
+     0.0
+    ],
+    [
+     23.4,
+     9.5
+    ],
+    [
+     20.4,
+     9.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     16.2,
+     0.0
+    ],
+    [
+     24.2,
+     0.0
+    ],
+    [
+     30.2,
+     9.5
+    ],
+    [
+     23.4,
+     9.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     24.2,
+     0.0
+    ],
+    [
+     37.7,
+     0.0
+    ],
+    [
+     41.9,
+     9.5
+    ],
+    [
+     30.2,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     37.7,
+     0.0
+    ],
+    [
+     51.3,
+     0.0
+    ],
+    [
+     53.6,
+     9.5
+    ],
+    [
+     41.9,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     51.3,
+     0.0
+    ],
+    [
+     64.9,
+     0.0
+    ],
+    [
+     65.2,
+     9.5
+    ],
+    [
+     53.6,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     64.9,
+     0.0
+    ],
+    [
+     78.5,
+     0.0
+    ],
+    [
+     76.9,
+     9.5
+    ],
+    [
+     65.2,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     78.5,
+     0.0
+    ],
+    [
+     92.1,
+     0.0
+    ],
+    [
+     88.6,
+     9.5
+    ],
+    [
+     76.9,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     92.1,
+     0.0
+    ],
+    [
+     105.7,
+     0.0
+    ],
+    [
+     100.2,
+     9.5
+    ],
+    [
+     88.6,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     105.7,
+     0.0
+    ],
+    [
+     119.3,
+     0.0
+    ],
+    [
+     111.9,
+     9.5
+    ],
+    [
+     100.2,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     119.3,
+     0.0
+    ],
+    [
+     132.9,
+     0.0
+    ],
+    [
+     123.6,
+     9.5
+    ],
+    [
+     111.9,
+     9.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     132.9,
+     0.0
+    ],
+    [
+     134.1,
+     0.0
+    ],
+    [
+     134.1,
+     12.0
+    ],
+    [
+     124.6,
+     20.6
+    ],
+    [
+     124.6,
+     9.5
+    ],
+    [
+     123.6,
+     9.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     12.0
+    ],
+    [
+     134.1,
+     25.1
+    ],
+    [
+     124.6,
+     32.7
+    ],
+    [
+     124.6,
+     20.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     25.1
+    ],
+    [
+     134.1,
+     38.3
+    ],
+    [
+     124.6,
+     44.8
+    ],
+    [
+     124.6,
+     32.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     38.3
+    ],
+    [
+     134.1,
+     51.4
+    ],
+    [
+     124.6,
+     56.9
+    ],
+    [
+     124.6,
+     44.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     51.4
+    ],
+    [
+     134.1,
+     64.6
+    ],
+    [
+     124.6,
+     69.0
+    ],
+    [
+     124.6,
+     56.9
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     64.6
+    ],
+    [
+     134.1,
+     77.7
+    ],
+    [
+     124.6,
+     81.1
+    ],
+    [
+     124.6,
+     69.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     77.7
+    ],
+    [
+     134.1,
+     90.9
+    ],
+    [
+     124.6,
+     93.2
+    ],
+    [
+     124.6,
+     81.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     90.9
+    ],
+    [
+     134.1,
+     104.0
+    ],
+    [
+     124.6,
+     105.4
+    ],
+    [
+     124.6,
+     93.2
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     104.0
+    ],
+    [
+     134.1,
+     117.2
+    ],
+    [
+     124.6,
+     117.5
+    ],
+    [
+     124.6,
+     105.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     117.2
+    ],
+    [
+     134.1,
+     130.3
+    ],
+    [
+     124.6,
+     129.6
+    ],
+    [
+     124.6,
+     117.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     130.3
+    ],
+    [
+     134.1,
+     143.5
+    ],
+    [
+     124.6,
+     141.7
+    ],
+    [
+     124.6,
+     129.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     143.5
+    ],
+    [
+     134.1,
+     156.6
+    ],
+    [
+     124.6,
+     153.8
+    ],
+    [
+     124.6,
+     141.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     156.6
+    ],
+    [
+     134.1,
+     169.8
+    ],
+    [
+     124.6,
+     165.9
+    ],
+    [
+     124.6,
+     153.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     169.8
+    ],
+    [
+     134.1,
+     182.9
+    ],
+    [
+     124.6,
+     178.1
+    ],
+    [
+     124.6,
+     165.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     182.9
+    ],
+    [
+     134.1,
+     196.1
+    ],
+    [
+     124.6,
+     190.2
+    ],
+    [
+     124.6,
+     178.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     196.1
+    ],
+    [
+     134.1,
+     209.2
+    ],
+    [
+     124.6,
+     202.3
+    ],
+    [
+     124.6,
+     190.2
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     209.2
+    ],
+    [
+     134.1,
+     222.4
+    ],
+    [
+     124.6,
+     214.4
+    ],
+    [
+     124.6,
+     202.3
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     222.4
+    ],
+    [
+     134.1,
+     235.5
+    ],
+    [
+     124.6,
+     226.5
+    ],
+    [
+     124.6,
+     214.4
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     235.5
+    ],
+    [
+     134.1,
+     242.0
+    ],
+    [
+     126.7,
+     242.0
+    ],
+    [
+     119.3,
+     232.5
+    ],
+    [
+     124.6,
+     232.5
+    ],
+    [
+     124.6,
+     226.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     126.7,
+     242.0
+    ],
+    [
+     111.9,
+     242.0
+    ],
+    [
+     108.7,
+     232.5
+    ],
+    [
+     119.3,
+     232.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     111.9,
+     242.0
+    ],
+    [
+     97.2,
+     242.0
+    ],
+    [
+     98.2,
+     232.5
+    ],
+    [
+     108.7,
+     232.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     97.2,
+     242.0
+    ],
+    [
+     82.5,
+     242.0
+    ],
+    [
+     87.6,
+     232.5
+    ],
+    [
+     98.2,
+     232.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     82.5,
+     242.0
+    ],
+    [
+     67.8,
+     242.0
+    ],
+    [
+     77.1,
+     232.5
+    ],
+    [
+     87.6,
+     232.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.8,
+     242.0
+    ],
+    [
+     67.0,
+     242.0
+    ],
+    [
+     67.0,
+     230.0
+    ],
+    [
+     76.5,
+     220.5
+    ],
+    [
+     76.5,
+     232.5
+    ],
+    [
+     77.1,
+     232.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     230.0
+    ],
+    [
+     67.0,
+     217.4
+    ],
+    [
+     76.5,
+     207.9
+    ],
+    [
+     76.5,
+     220.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     217.4
+    ],
+    [
+     67.0,
+     204.8
+    ],
+    [
+     76.5,
+     195.3
+    ],
+    [
+     76.5,
+     207.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     204.8
+    ],
+    [
+     67.0,
+     192.2
+    ],
+    [
+     76.5,
+     182.7
+    ],
+    [
+     76.5,
+     195.3
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     192.2
+    ],
+    [
+     67.0,
+     179.5
+    ],
+    [
+     76.5,
+     170.0
+    ],
+    [
+     76.5,
+     182.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     179.5
+    ],
+    [
+     67.0,
+     166.9
+    ],
+    [
+     76.5,
+     157.4
+    ],
+    [
+     76.5,
+     170.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     166.9
+    ],
+    [
+     67.0,
+     154.3
+    ],
+    [
+     76.5,
+     144.8
+    ],
+    [
+     76.5,
+     157.4
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     154.3
+    ],
+    [
+     67.0,
+     141.6
+    ],
+    [
+     76.5,
+     132.1
+    ],
+    [
+     76.5,
+     144.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     141.6
+    ],
+    [
+     67.0,
+     129.0
+    ],
+    [
+     76.5,
+     119.5
+    ],
+    [
+     76.5,
+     132.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     129.0
+    ],
+    [
+     67.0,
+     121.0
+    ],
+    [
+     62.4,
+     121.0
+    ],
+    [
+     71.9,
+     111.5
+    ],
+    [
+     76.5,
+     111.5
+    ],
+    [
+     76.5,
+     119.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     62.4,
+     121.0
+    ],
+    [
+     49.7,
+     121.0
+    ],
+    [
+     59.2,
+     111.5
+    ],
+    [
+     71.9,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     49.7,
+     121.0
+    ],
+    [
+     37.1,
+     121.0
+    ],
+    [
+     46.6,
+     111.5
+    ],
+    [
+     59.2,
+     111.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     37.1,
+     121.0
+    ],
+    [
+     24.5,
+     121.0
+    ],
+    [
+     34.0,
+     111.5
+    ],
+    [
+     46.6,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     24.5,
+     121.0
+    ],
+    [
+     11.8,
+     121.0
+    ],
+    [
+     21.3,
+     111.5
+    ],
+    [
+     34.0,
+     111.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     11.8,
+     121.0
+    ],
+    [
+     0.0,
+     121.0
+    ],
+    [
+     0.0,
+     120.1
+    ],
+    [
+     9.5,
+     110.8
+    ],
+    [
+     9.5,
+     111.5
+    ],
+    [
+     21.3,
+     111.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     120.1
+    ],
+    [
+     0.0,
+     106.4
+    ],
+    [
+     9.5,
+     99.2
+    ],
+    [
+     9.5,
+     110.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     106.4
+    ],
+    [
+     0.0,
+     92.7
+    ],
+    [
+     9.5,
+     87.7
+    ],
+    [
+     9.5,
+     99.2
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     92.7
+    ],
+    [
+     0.0,
+     79.0
+    ],
+    [
+     9.5,
+     76.1
+    ],
+    [
+     9.5,
+     87.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     79.0
+    ],
+    [
+     0.0,
+     65.3
+    ],
+    [
+     9.5,
+     64.6
+    ],
+    [
+     9.5,
+     76.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     65.3
+    ],
+    [
+     0.0,
+     51.6
+    ],
+    [
+     9.5,
+     53.0
+    ],
+    [
+     9.5,
+     64.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     51.6
+    ],
+    [
+     0.0,
+     37.9
+    ],
+    [
+     9.5,
+     41.4
+    ],
+    [
+     9.5,
+     53.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     37.9
+    ],
+    [
+     0.0,
+     24.2
+    ],
+    [
+     9.5,
+     29.9
+    ],
+    [
+     9.5,
+     41.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     24.2
+    ],
+    [
+     0.0,
+     10.5
+    ],
+    [
+     9.5,
+     18.3
+    ],
+    [
+     9.5,
+     29.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     10.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     9.5,
+     18.3
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     12.5
+    ],
+    [
+     26.3,
+     12.5
+    ],
+    [
+     33.4,
+     22.0
+    ],
+    [
+     22.0,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     26.3,
+     12.5
+    ],
+    [
+     45.5,
+     12.5
+    ],
+    [
+     49.2,
+     22.0
+    ],
+    [
+     33.4,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     54.3,
+     12.5
+    ],
+    [
+     68.1,
+     12.5
+    ],
+    [
+     67.9,
+     22.0
+    ],
+    [
+     56.5,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     68.1,
+     12.5
+    ],
+    [
+     81.9,
+     12.5
+    ],
+    [
+     79.3,
+     22.0
+    ],
+    [
+     67.9,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     81.9,
+     12.5
+    ],
+    [
+     95.8,
+     12.5
+    ],
+    [
+     90.8,
+     22.0
+    ],
+    [
+     79.3,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     95.8,
+     12.5
+    ],
+    [
+     109.6,
+     12.5
+    ],
+    [
+     102.2,
+     22.0
+    ],
+    [
+     90.8,
+     22.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     109.6,
+     12.5
+    ],
+    [
+     120.2,
+     12.5
+    ],
+    [
+     111.0,
+     22.0
+    ],
+    [
+     102.2,
+     22.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     19.6
+    ],
+    [
+     121.6,
+     32.8
+    ],
+    [
+     112.1,
+     40.5
+    ],
+    [
+     112.1,
+     28.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     32.8
+    ],
+    [
+     121.6,
+     46.0
+    ],
+    [
+     112.1,
+     52.6
+    ],
+    [
+     112.1,
+     40.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     46.0
+    ],
+    [
+     121.6,
+     59.2
+    ],
+    [
+     112.1,
+     64.6
+    ],
+    [
+     112.1,
+     52.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     59.2
+    ],
+    [
+     121.6,
+     72.4
+    ],
+    [
+     112.1,
+     76.7
+    ],
+    [
+     112.1,
+     64.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     72.4
+    ],
+    [
+     121.6,
+     82.6
+    ],
+    [
+     112.1,
+     85.9
+    ],
+    [
+     112.1,
+     76.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     90.9
+    ],
+    [
+     121.6,
+     104.2
+    ],
+    [
+     112.1,
+     105.6
+    ],
+    [
+     112.1,
+     93.6
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     104.2
+    ],
+    [
+     121.6,
+     117.4
+    ],
+    [
+     112.1,
+     117.7
+    ],
+    [
+     112.1,
+     105.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     117.4
+    ],
+    [
+     121.6,
+     130.6
+    ],
+    [
+     112.1,
+     129.7
+    ],
+    [
+     112.1,
+     117.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     130.6
+    ],
+    [
+     121.6,
+     143.8
+    ],
+    [
+     112.1,
+     141.8
+    ],
+    [
+     112.1,
+     129.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     143.8
+    ],
+    [
+     121.6,
+     153.9
+    ],
+    [
+     112.1,
+     151.1
+    ],
+    [
+     112.1,
+     141.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     162.3
+    ],
+    [
+     121.6,
+     175.5
+    ],
+    [
+     112.1,
+     170.8
+    ],
+    [
+     112.1,
+     158.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     175.5
+    ],
+    [
+     121.6,
+     188.7
+    ],
+    [
+     112.1,
+     182.8
+    ],
+    [
+     112.1,
+     170.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     188.7
+    ],
+    [
+     121.6,
+     201.9
+    ],
+    [
+     112.1,
+     194.9
+    ],
+    [
+     112.1,
+     182.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     201.9
+    ],
+    [
+     121.6,
+     215.2
+    ],
+    [
+     112.1,
+     206.9
+    ],
+    [
+     112.1,
+     194.9
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     121.6,
+     215.2
+    ],
+    [
+     121.6,
+     225.3
+    ],
+    [
+     112.1,
+     216.2
+    ],
+    [
+     112.1,
+     206.9
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     116.4,
+     229.5
+    ],
+    [
+     100.1,
+     229.5
+    ],
+    [
+     100.3,
+     220.0
+    ],
+    [
+     109.3,
+     220.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     100.1,
+     229.5
+    ],
+    [
+     83.8,
+     229.5
+    ],
+    [
+     91.4,
+     220.0
+    ],
+    [
+     100.3,
+     220.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     83.8,
+     229.5
+    ],
+    [
+     79.5,
+     229.5
+    ],
+    [
+     79.5,
+     220.2
+    ],
+    [
+     89.0,
+     210.7
+    ],
+    [
+     89.0,
+     220.0
+    ],
+    [
+     91.4,
+     220.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     220.2
+    ],
+    [
+     79.5,
+     207.6
+    ],
+    [
+     89.0,
+     198.1
+    ],
+    [
+     89.0,
+     210.7
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     207.6
+    ],
+    [
+     79.5,
+     197.9
+    ],
+    [
+     89.0,
+     188.4
+    ],
+    [
+     89.0,
+     198.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     189.9
+    ],
+    [
+     79.5,
+     177.2
+    ],
+    [
+     89.0,
+     167.7
+    ],
+    [
+     89.0,
+     180.4
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     177.2
+    ],
+    [
+     79.5,
+     164.6
+    ],
+    [
+     89.0,
+     155.1
+    ],
+    [
+     89.0,
+     167.7
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     164.6
+    ],
+    [
+     79.5,
+     152.0
+    ],
+    [
+     89.0,
+     142.5
+    ],
+    [
+     89.0,
+     155.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     152.0
+    ],
+    [
+     79.5,
+     139.3
+    ],
+    [
+     89.0,
+     129.8
+    ],
+    [
+     89.0,
+     142.5
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     139.3
+    ],
+    [
+     79.5,
+     129.6
+    ],
+    [
+     89.0,
+     120.1
+    ],
+    [
+     89.0,
+     129.8
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     121.6
+    ],
+    [
+     79.5,
+     109.0
+    ],
+    [
+     89.0,
+     99.5
+    ],
+    [
+     89.0,
+     112.1
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     109.0
+    ],
+    [
+     79.5,
+     108.5
+    ],
+    [
+     67.3,
+     108.5
+    ],
+    [
+     76.8,
+     99.0
+    ],
+    [
+     89.0,
+     99.0
+    ],
+    [
+     89.0,
+     99.5
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.3,
+     108.5
+    ],
+    [
+     54.7,
+     108.5
+    ],
+    [
+     64.2,
+     99.0
+    ],
+    [
+     76.8,
+     99.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     54.7,
+     108.5
+    ],
+    [
+     42.1,
+     108.5
+    ],
+    [
+     51.6,
+     99.0
+    ],
+    [
+     64.2,
+     99.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     42.1,
+     108.5
+    ],
+    [
+     32.4,
+     108.5
+    ],
+    [
+     41.9,
+     99.0
+    ],
+    [
+     51.6,
+     99.0
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     24.4,
+     108.5
+    ],
+    [
+     12.5,
+     108.5
+    ],
+    [
+     12.5,
+     107.7
+    ],
+    [
+     22.0,
+     98.3
+    ],
+    [
+     22.0,
+     99.0
+    ],
+    [
+     33.9,
+     99.0
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     107.7
+    ],
+    [
+     12.5,
+     93.6
+    ],
+    [
+     22.0,
+     87.1
+    ],
+    [
+     22.0,
+     98.3
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     93.6
+    ],
+    [
+     12.5,
+     79.6
+    ],
+    [
+     22.0,
+     75.8
+    ],
+    [
+     22.0,
+     87.1
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     79.6
+    ],
+    [
+     12.5,
+     65.6
+    ],
+    [
+     22.0,
+     64.6
+    ],
+    [
+     22.0,
+     75.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     65.6
+    ],
+    [
+     12.5,
+     54.8
+    ],
+    [
+     22.0,
+     55.9
+    ],
+    [
+     22.0,
+     64.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Secure planning room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     45.9
+    ],
+    [
+     12.5,
+     31.9
+    ],
+    [
+     22.0,
+     37.6
+    ],
+    [
+     22.0,
+     48.8
+    ]
+   ],
+   "about": "A screened room where cruiser movements are planned in secret.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Liaison office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     31.9
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     22.0,
+     22.0
+    ],
+    [
+     22.0,
+     37.6
+    ]
+   ],
+   "about": "Desks for cruiser officers on attachment.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

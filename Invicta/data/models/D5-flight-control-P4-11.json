@@ -1,0 +1,6119 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P4-11",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  134.1,
+  413.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Dispatch floor 1",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Dispatch floor 2",
+   "z_m": 9.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.0,
+     24.0
+    ],
+    [
+     110.1,
+     24.0
+    ],
+    [
+     110.1,
+     389.0
+    ],
+    [
+     24.0,
+     389.0
+    ],
+    [
+     24.0,
+     230.5
+    ],
+    [
+     91.0,
+     230.5
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.5,
+     10.5
+    ],
+    [
+     123.6,
+     10.5
+    ],
+    [
+     123.6,
+     88.0
+    ],
+    [
+     120.6,
+     89.8
+    ],
+    [
+     120.6,
+     13.5
+    ],
+    [
+     80.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     88.0
+    ],
+    [
+     123.6,
+     208.9
+    ],
+    [
+     120.6,
+     208.9
+    ],
+    [
+     120.6,
+     89.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     208.9
+    ],
+    [
+     123.6,
+     329.8
+    ],
+    [
+     120.6,
+     328.0
+    ],
+    [
+     120.6,
+     208.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     329.8
+    ],
+    [
+     123.6,
+     402.5
+    ],
+    [
+     74.4,
+     402.5
+    ],
+    [
+     74.0,
+     399.5
+    ],
+    [
+     120.6,
+     399.5
+    ],
+    [
+     120.6,
+     328.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     74.4,
+     402.5
+    ],
+    [
+     10.5,
+     402.5
+    ],
+    [
+     10.5,
+     343.7
+    ],
+    [
+     13.5,
+     342.7
+    ],
+    [
+     13.5,
+     399.5
+    ],
+    [
+     74.0,
+     399.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     343.7
+    ],
+    [
+     10.5,
+     221.8
+    ],
+    [
+     13.5,
+     224.6
+    ],
+    [
+     13.5,
+     342.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     221.8
+    ],
+    [
+     10.5,
+     217.0
+    ],
+    [
+     77.5,
+     217.0
+    ],
+    [
+     77.5,
+     168.7
+    ],
+    [
+     80.5,
+     171.7
+    ],
+    [
+     80.5,
+     220.0
+    ],
+    [
+     13.5,
+     220.0
+    ],
+    [
+     13.5,
+     224.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.5,
+     168.7
+    ],
+    [
+     77.5,
+     48.7
+    ],
+    [
+     80.5,
+     51.7
+    ],
+    [
+     80.5,
+     171.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.5,
+     48.7
+    ],
+    [
+     77.5,
+     10.5
+    ],
+    [
+     80.5,
+     13.5
+    ],
+    [
+     80.5,
+     51.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     16.3
+    ],
+    [
+     120.6,
+     24.5
+    ],
+    [
+     110.1,
+     34.4
+    ],
+    [
+     110.1,
+     26.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     91.0
+    ],
+    [
+     120.6,
+     99.2
+    ],
+    [
+     110.1,
+     105.0
+    ],
+    [
+     110.1,
+     97.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     165.6
+    ],
+    [
+     120.6,
+     173.8
+    ],
+    [
+     110.1,
+     175.6
+    ],
+    [
+     110.1,
+     167.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     240.3
+    ],
+    [
+     120.6,
+     248.5
+    ],
+    [
+     110.1,
+     246.2
+    ],
+    [
+     110.1,
+     238.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     314.9
+    ],
+    [
+     120.6,
+     323.2
+    ],
+    [
+     110.1,
+     316.8
+    ],
+    [
+     110.1,
+     309.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     389.6
+    ],
+    [
+     120.6,
+     397.8
+    ],
+    [
+     110.1,
+     387.4
+    ],
+    [
+     110.1,
+     379.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     50.8,
+     399.5
+    ],
+    [
+     41.9,
+     399.5
+    ],
+    [
+     46.8,
+     389.0
+    ],
+    [
+     53.9,
+     389.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     358.0
+    ],
+    [
+     13.5,
+     349.5
+    ],
+    [
+     24.0,
+     344.9
+    ],
+    [
+     24.0,
+     352.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     280.9
+    ],
+    [
+     13.5,
+     272.4
+    ],
+    [
+     24.0,
+     276.8
+    ],
+    [
+     24.0,
+     284.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     28.8,
+     220.0
+    ],
+    [
+     36.8,
+     220.0
+    ],
+    [
+     47.3,
+     230.5
+    ],
+    [
+     39.3,
+     230.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     199.1
+    ],
+    [
+     80.5,
+     191.1
+    ],
+    [
+     91.0,
+     201.6
+    ],
+    [
+     91.0,
+     209.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     126.4
+    ],
+    [
+     80.5,
+     118.4
+    ],
+    [
+     91.0,
+     128.9
+    ],
+    [
+     91.0,
+     136.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     53.8
+    ],
+    [
+     80.5,
+     45.8
+    ],
+    [
+     91.0,
+     56.3
+    ],
+    [
+     91.0,
+     64.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Entrance",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     0.0
+    ],
+    [
+     73.8,
+     0.0
+    ],
+    [
+     82.2,
+     10.5
+    ],
+    [
+     77.5,
+     10.5
+    ]
+   ],
+   "about": "Staff entrance and reception.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     73.8,
+     0.0
+    ],
+    [
+     80.5,
+     0.0
+    ],
+    [
+     86.8,
+     10.5
+    ],
+    [
+     82.2,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Cargo flight desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     0.0
+    ],
+    [
+     87.3,
+     0.0
+    ],
+    [
+     91.5,
+     10.5
+    ],
+    [
+     86.8,
+     10.5
+    ]
+   ],
+   "about": "Plans freight flights to the cruisers and the docks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Slot desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.3,
+     0.0
+    ],
+    [
+     94.1,
+     0.0
+    ],
+    [
+     96.1,
+     10.5
+    ],
+    [
+     91.5,
+     10.5
+    ]
+   ],
+   "about": "Hands out departure slots when the main Dispatch Centre is busy.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Delay desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.1,
+     0.0
+    ],
+    [
+     99.7,
+     0.0
+    ],
+    [
+     100.0,
+     10.5
+    ],
+    [
+     96.1,
+     10.5
+    ]
+   ],
+   "about": "Re-plans flights held up by weather, faults or traffic.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.7,
+     0.0
+    ],
+    [
+     134.1,
+     0.0
+    ],
+    [
+     134.1,
+     5.4
+    ],
+    [
+     123.6,
+     15.7
+    ],
+    [
+     123.6,
+     10.5
+    ],
+    [
+     100.0,
+     10.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     5.4
+    ],
+    [
+     134.1,
+     20.1
+    ],
+    [
+     123.6,
+     29.6
+    ],
+    [
+     123.6,
+     15.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     20.1
+    ],
+    [
+     134.1,
+     37.7
+    ],
+    [
+     123.6,
+     46.3
+    ],
+    [
+     123.6,
+     29.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     37.7
+    ],
+    [
+     134.1,
+     72.9
+    ],
+    [
+     123.6,
+     79.7
+    ],
+    [
+     123.6,
+     46.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     72.9
+    ],
+    [
+     134.1,
+     87.5
+    ],
+    [
+     123.6,
+     93.6
+    ],
+    [
+     123.6,
+     79.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     87.5
+    ],
+    [
+     134.1,
+     105.1
+    ],
+    [
+     123.6,
+     110.3
+    ],
+    [
+     123.6,
+     93.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     105.1
+    ],
+    [
+     134.1,
+     140.3
+    ],
+    [
+     123.6,
+     143.7
+    ],
+    [
+     123.6,
+     110.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     140.3
+    ],
+    [
+     134.1,
+     155.0
+    ],
+    [
+     123.6,
+     157.6
+    ],
+    [
+     123.6,
+     143.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     155.0
+    ],
+    [
+     134.1,
+     172.5
+    ],
+    [
+     123.6,
+     174.3
+    ],
+    [
+     123.6,
+     157.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     172.5
+    ],
+    [
+     134.1,
+     207.7
+    ],
+    [
+     123.6,
+     207.7
+    ],
+    [
+     123.6,
+     174.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     207.7
+    ],
+    [
+     134.1,
+     222.4
+    ],
+    [
+     123.6,
+     221.6
+    ],
+    [
+     123.6,
+     207.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     222.4
+    ],
+    [
+     134.1,
+     240.0
+    ],
+    [
+     123.6,
+     238.3
+    ],
+    [
+     123.6,
+     221.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     240.0
+    ],
+    [
+     134.1,
+     275.2
+    ],
+    [
+     123.6,
+     271.7
+    ],
+    [
+     123.6,
+     238.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     275.2
+    ],
+    [
+     134.1,
+     289.8
+    ],
+    [
+     123.6,
+     285.6
+    ],
+    [
+     123.6,
+     271.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     289.8
+    ],
+    [
+     134.1,
+     307.4
+    ],
+    [
+     123.6,
+     302.3
+    ],
+    [
+     123.6,
+     285.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     307.4
+    ],
+    [
+     134.1,
+     342.6
+    ],
+    [
+     123.6,
+     335.7
+    ],
+    [
+     123.6,
+     302.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     342.6
+    ],
+    [
+     134.1,
+     357.2
+    ],
+    [
+     123.6,
+     349.6
+    ],
+    [
+     123.6,
+     335.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     357.2
+    ],
+    [
+     134.1,
+     374.8
+    ],
+    [
+     123.6,
+     366.3
+    ],
+    [
+     123.6,
+     349.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     374.8
+    ],
+    [
+     134.1,
+     410.0
+    ],
+    [
+     123.6,
+     399.7
+    ],
+    [
+     123.6,
+     366.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     410.0
+    ],
+    [
+     134.1,
+     413.0
+    ],
+    [
+     121.8,
+     413.0
+    ],
+    [
+     113.2,
+     402.5
+    ],
+    [
+     123.6,
+     402.5
+    ],
+    [
+     123.6,
+     399.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.8,
+     413.0
+    ],
+    [
+     103.2,
+     413.0
+    ],
+    [
+     97.5,
+     402.5
+    ],
+    [
+     113.2,
+     402.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.2,
+     413.0
+    ],
+    [
+     66.0,
+     413.0
+    ],
+    [
+     66.1,
+     402.5
+    ],
+    [
+     97.5,
+     402.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.0,
+     413.0
+    ],
+    [
+     50.5,
+     413.0
+    ],
+    [
+     53.1,
+     402.5
+    ],
+    [
+     66.1,
+     402.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.5,
+     413.0
+    ],
+    [
+     31.9,
+     413.0
+    ],
+    [
+     37.4,
+     402.5
+    ],
+    [
+     53.1,
+     402.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     31.9,
+     413.0
+    ],
+    [
+     0.0,
+     413.0
+    ],
+    [
+     0.0,
+     407.8
+    ],
+    [
+     10.5,
+     397.8
+    ],
+    [
+     10.5,
+     402.5
+    ],
+    [
+     37.4,
+     402.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     407.8
+    ],
+    [
+     0.0,
+     392.8
+    ],
+    [
+     10.5,
+     384.3
+    ],
+    [
+     10.5,
+     397.8
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     392.8
+    ],
+    [
+     0.0,
+     374.7
+    ],
+    [
+     10.5,
+     368.1
+    ],
+    [
+     10.5,
+     384.3
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     374.7
+    ],
+    [
+     0.0,
+     338.6
+    ],
+    [
+     10.5,
+     335.7
+    ],
+    [
+     10.5,
+     368.1
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     338.6
+    ],
+    [
+     0.0,
+     323.5
+    ],
+    [
+     10.5,
+     322.1
+    ],
+    [
+     10.5,
+     335.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     323.5
+    ],
+    [
+     0.0,
+     305.5
+    ],
+    [
+     10.5,
+     305.9
+    ],
+    [
+     10.5,
+     322.1
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     305.5
+    ],
+    [
+     0.0,
+     269.3
+    ],
+    [
+     10.5,
+     273.5
+    ],
+    [
+     10.5,
+     305.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     269.3
+    ],
+    [
+     0.0,
+     254.3
+    ],
+    [
+     10.5,
+     259.9
+    ],
+    [
+     10.5,
+     273.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     254.3
+    ],
+    [
+     0.0,
+     236.2
+    ],
+    [
+     10.5,
+     243.7
+    ],
+    [
+     10.5,
+     259.9
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     236.2
+    ],
+    [
+     0.0,
+     206.5
+    ],
+    [
+     6.1,
+     206.5
+    ],
+    [
+     16.6,
+     217.0
+    ],
+    [
+     10.5,
+     217.0
+    ],
+    [
+     10.5,
+     243.7
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     6.1,
+     206.5
+    ],
+    [
+     20.3,
+     206.5
+    ],
+    [
+     30.8,
+     217.0
+    ],
+    [
+     16.6,
+     217.0
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.3,
+     206.5
+    ],
+    [
+     37.5,
+     206.5
+    ],
+    [
+     48.0,
+     217.0
+    ],
+    [
+     30.8,
+     217.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.5,
+     206.5
+    ],
+    [
+     67.0,
+     206.5
+    ],
+    [
+     67.0,
+     201.7
+    ],
+    [
+     77.5,
+     212.2
+    ],
+    [
+     77.5,
+     217.0
+    ],
+    [
+     48.0,
+     217.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     201.7
+    ],
+    [
+     67.0,
+     187.4
+    ],
+    [
+     77.5,
+     197.9
+    ],
+    [
+     77.5,
+     212.2
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     187.4
+    ],
+    [
+     67.0,
+     170.3
+    ],
+    [
+     77.5,
+     180.8
+    ],
+    [
+     77.5,
+     197.9
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     170.3
+    ],
+    [
+     67.0,
+     136.0
+    ],
+    [
+     77.5,
+     146.5
+    ],
+    [
+     77.5,
+     180.8
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     136.0
+    ],
+    [
+     67.0,
+     121.7
+    ],
+    [
+     77.5,
+     132.2
+    ],
+    [
+     77.5,
+     146.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     121.7
+    ],
+    [
+     67.0,
+     104.6
+    ],
+    [
+     77.5,
+     115.1
+    ],
+    [
+     77.5,
+     132.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     104.6
+    ],
+    [
+     67.0,
+     70.3
+    ],
+    [
+     77.5,
+     80.8
+    ],
+    [
+     77.5,
+     115.1
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     70.3
+    ],
+    [
+     67.0,
+     56.0
+    ],
+    [
+     77.5,
+     66.5
+    ],
+    [
+     77.5,
+     80.8
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     56.0
+    ],
+    [
+     67.0,
+     38.9
+    ],
+    [
+     77.5,
+     49.4
+    ],
+    [
+     77.5,
+     66.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.0,
+     38.9
+    ],
+    [
+     67.0,
+     0.0
+    ],
+    [
+     77.5,
+     10.5
+    ],
+    [
+     77.5,
+     49.4
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     13.5
+    ],
+    [
+     99.9,
+     13.5
+    ],
+    [
+     100.2,
+     24.0
+    ],
+    [
+     91.0,
+     24.0
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.9,
+     13.5
+    ],
+    [
+     120.6,
+     13.5
+    ],
+    [
+     120.6,
+     16.3
+    ],
+    [
+     110.1,
+     26.6
+    ],
+    [
+     110.1,
+     24.0
+    ],
+    [
+     100.2,
+     24.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     24.5
+    ],
+    [
+     120.6,
+     59.8
+    ],
+    [
+     110.1,
+     67.7
+    ],
+    [
+     110.1,
+     34.4
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     59.8
+    ],
+    [
+     120.6,
+     74.4
+    ],
+    [
+     110.1,
+     81.6
+    ],
+    [
+     110.1,
+     67.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     74.4
+    ],
+    [
+     120.6,
+     91.0
+    ],
+    [
+     110.1,
+     97.2
+    ],
+    [
+     110.1,
+     81.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     99.2
+    ],
+    [
+     120.6,
+     134.4
+    ],
+    [
+     110.1,
+     138.3
+    ],
+    [
+     110.1,
+     105.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     134.4
+    ],
+    [
+     120.6,
+     149.1
+    ],
+    [
+     110.1,
+     152.2
+    ],
+    [
+     110.1,
+     138.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     149.1
+    ],
+    [
+     120.6,
+     165.6
+    ],
+    [
+     110.1,
+     167.8
+    ],
+    [
+     110.1,
+     152.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     173.8
+    ],
+    [
+     120.6,
+     209.1
+    ],
+    [
+     110.1,
+     208.9
+    ],
+    [
+     110.1,
+     175.6
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     209.1
+    ],
+    [
+     120.6,
+     223.8
+    ],
+    [
+     110.1,
+     222.8
+    ],
+    [
+     110.1,
+     208.9
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     223.8
+    ],
+    [
+     120.6,
+     240.3
+    ],
+    [
+     110.1,
+     238.4
+    ],
+    [
+     110.1,
+     222.8
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     248.5
+    ],
+    [
+     120.6,
+     283.7
+    ],
+    [
+     110.1,
+     279.5
+    ],
+    [
+     110.1,
+     246.2
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     283.7
+    ],
+    [
+     120.6,
+     298.4
+    ],
+    [
+     110.1,
+     293.4
+    ],
+    [
+     110.1,
+     279.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     298.4
+    ],
+    [
+     120.6,
+     314.9
+    ],
+    [
+     110.1,
+     309.0
+    ],
+    [
+     110.1,
+     293.4
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     323.2
+    ],
+    [
+     120.6,
+     358.4
+    ],
+    [
+     110.1,
+     350.1
+    ],
+    [
+     110.1,
+     316.8
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     358.4
+    ],
+    [
+     120.6,
+     373.1
+    ],
+    [
+     110.1,
+     364.0
+    ],
+    [
+     110.1,
+     350.1
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     373.1
+    ],
+    [
+     120.6,
+     389.6
+    ],
+    [
+     110.1,
+     379.6
+    ],
+    [
+     110.1,
+     364.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     397.8
+    ],
+    [
+     120.6,
+     399.5
+    ],
+    [
+     84.4,
+     399.5
+    ],
+    [
+     81.0,
+     389.0
+    ],
+    [
+     110.1,
+     389.0
+    ],
+    [
+     110.1,
+     387.4
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     84.4,
+     399.5
+    ],
+    [
+     68.6,
+     399.5
+    ],
+    [
+     68.3,
+     389.0
+    ],
+    [
+     81.0,
+     389.0
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.6,
+     399.5
+    ],
+    [
+     50.8,
+     399.5
+    ],
+    [
+     53.9,
+     389.0
+    ],
+    [
+     68.3,
+     389.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.9,
+     399.5
+    ],
+    [
+     13.5,
+     399.5
+    ],
+    [
+     13.5,
+     390.3
+    ],
+    [
+     24.0,
+     380.9
+    ],
+    [
+     24.0,
+     389.0
+    ],
+    [
+     46.8,
+     389.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     390.3
+    ],
+    [
+     13.5,
+     375.1
+    ],
+    [
+     24.0,
+     367.5
+    ],
+    [
+     24.0,
+     380.9
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     375.1
+    ],
+    [
+     13.5,
+     358.0
+    ],
+    [
+     24.0,
+     352.4
+    ],
+    [
+     24.0,
+     367.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     349.5
+    ],
+    [
+     13.5,
+     313.1
+    ],
+    [
+     24.0,
+     312.7
+    ],
+    [
+     24.0,
+     344.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     313.1
+    ],
+    [
+     13.5,
+     298.0
+    ],
+    [
+     24.0,
+     299.3
+    ],
+    [
+     24.0,
+     312.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     298.0
+    ],
+    [
+     13.5,
+     280.9
+    ],
+    [
+     24.0,
+     284.3
+    ],
+    [
+     24.0,
+     299.3
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     272.4
+    ],
+    [
+     13.5,
+     236.0
+    ],
+    [
+     24.0,
+     244.6
+    ],
+    [
+     24.0,
+     276.8
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     236.0
+    ],
+    [
+     13.5,
+     220.8
+    ],
+    [
+     24.0,
+     231.2
+    ],
+    [
+     24.0,
+     244.6
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     220.8
+    ],
+    [
+     13.5,
+     220.0
+    ],
+    [
+     28.8,
+     220.0
+    ],
+    [
+     39.3,
+     230.5
+    ],
+    [
+     24.0,
+     230.5
+    ],
+    [
+     24.0,
+     231.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.8,
+     220.0
+    ],
+    [
+     71.1,
+     220.0
+    ],
+    [
+     81.6,
+     230.5
+    ],
+    [
+     47.3,
+     230.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.1,
+     220.0
+    ],
+    [
+     80.5,
+     220.0
+    ],
+    [
+     80.5,
+     215.1
+    ],
+    [
+     91.0,
+     225.6
+    ],
+    [
+     91.0,
+     230.5
+    ],
+    [
+     81.6,
+     230.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     215.1
+    ],
+    [
+     80.5,
+     199.1
+    ],
+    [
+     91.0,
+     209.6
+    ],
+    [
+     91.0,
+     225.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     191.1
+    ],
+    [
+     80.5,
+     156.8
+    ],
+    [
+     91.0,
+     167.3
+    ],
+    [
+     91.0,
+     201.6
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     156.8
+    ],
+    [
+     80.5,
+     142.5
+    ],
+    [
+     91.0,
+     153.0
+    ],
+    [
+     91.0,
+     167.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     142.5
+    ],
+    [
+     80.5,
+     126.4
+    ],
+    [
+     91.0,
+     136.9
+    ],
+    [
+     91.0,
+     153.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     118.4
+    ],
+    [
+     80.5,
+     84.2
+    ],
+    [
+     91.0,
+     94.7
+    ],
+    [
+     91.0,
+     128.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Team office",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     84.2
+    ],
+    [
+     80.5,
+     69.9
+    ],
+    [
+     91.0,
+     80.4
+    ],
+    [
+     91.0,
+     94.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Call desk room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     69.9
+    ],
+    [
+     80.5,
+     53.8
+    ],
+    [
+     91.0,
+     64.3
+    ],
+    [
+     91.0,
+     80.4
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Dispatch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.5,
+     45.8
+    ],
+    [
+     80.5,
+     13.5
+    ],
+    [
+     91.0,
+     24.0
+    ],
+    [
+     91.0,
+     56.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     77.5,
+     10.5
+    ],
+    [
+     123.6,
+     10.5
+    ],
+    [
+     123.6,
+     88.0
+    ],
+    [
+     120.6,
+     89.8
+    ],
+    [
+     120.6,
+     13.5
+    ],
+    [
+     80.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     123.6,
+     88.0
+    ],
+    [
+     123.6,
+     208.9
+    ],
+    [
+     120.6,
+     208.9
+    ],
+    [
+     120.6,
+     89.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     123.6,
+     208.9
+    ],
+    [
+     123.6,
+     329.8
+    ],
+    [
+     120.6,
+     328.0
+    ],
+    [
+     120.6,
+     208.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     123.6,
+     329.8
+    ],
+    [
+     123.6,
+     402.5
+    ],
+    [
+     74.4,
+     402.5
+    ],
+    [
+     74.0,
+     399.5
+    ],
+    [
+     120.6,
+     399.5
+    ],
+    [
+     120.6,
+     328.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     74.4,
+     402.5
+    ],
+    [
+     10.5,
+     402.5
+    ],
+    [
+     10.5,
+     343.7
+    ],
+    [
+     13.5,
+     342.7
+    ],
+    [
+     13.5,
+     399.5
+    ],
+    [
+     74.0,
+     399.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     343.7
+    ],
+    [
+     10.5,
+     221.8
+    ],
+    [
+     13.5,
+     224.6
+    ],
+    [
+     13.5,
+     342.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     221.8
+    ],
+    [
+     10.5,
+     217.0
+    ],
+    [
+     77.5,
+     217.0
+    ],
+    [
+     77.5,
+     168.7
+    ],
+    [
+     80.5,
+     171.7
+    ],
+    [
+     80.5,
+     220.0
+    ],
+    [
+     13.5,
+     220.0
+    ],
+    [
+     13.5,
+     224.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     77.5,
+     168.7
+    ],
+    [
+     77.5,
+     48.7
+    ],
+    [
+     80.5,
+     51.7
+    ],
+    [
+     80.5,
+     171.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     77.5,
+     48.7
+    ],
+    [
+     77.5,
+     10.5
+    ],
+    [
+     80.5,
+     13.5
+    ],
+    [
+     80.5,
+     51.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     0.0
+    ],
+    [
+     71.5,
+     0.0
+    ],
+    [
+     80.6,
+     10.5
+    ],
+    [
+     77.5,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     71.5,
+     0.0
+    ],
+    [
+     76.0,
+     0.0
+    ],
+    [
+     83.7,
+     10.5
+    ],
+    [
+     80.6,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     76.0,
+     0.0
+    ],
+    [
+     80.4,
+     0.0
+    ],
+    [
+     86.7,
+     10.5
+    ],
+    [
+     83.7,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.4,
+     0.0
+    ],
+    [
+     88.3,
+     0.0
+    ],
+    [
+     92.1,
+     10.5
+    ],
+    [
+     86.7,
+     10.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     88.3,
+     0.0
+    ],
+    [
+     128.9,
+     0.0
+    ],
+    [
+     120.1,
+     10.5
+    ],
+    [
+     92.1,
+     10.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     128.9,
+     0.0
+    ],
+    [
+     134.1,
+     0.0
+    ],
+    [
+     134.1,
+     10.2
+    ],
+    [
+     123.6,
+     20.2
+    ],
+    [
+     123.6,
+     10.5
+    ],
+    [
+     120.1,
+     10.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     10.2
+    ],
+    [
+     134.1,
+     27.8
+    ],
+    [
+     123.6,
+     36.9
+    ],
+    [
+     123.6,
+     20.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     27.8
+    ],
+    [
+     134.1,
+     63.0
+    ],
+    [
+     123.6,
+     70.3
+    ],
+    [
+     123.6,
+     36.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     63.0
+    ],
+    [
+     134.1,
+     77.6
+    ],
+    [
+     123.6,
+     84.2
+    ],
+    [
+     123.6,
+     70.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     77.6
+    ],
+    [
+     134.1,
+     95.2
+    ],
+    [
+     123.6,
+     100.9
+    ],
+    [
+     123.6,
+     84.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     95.2
+    ],
+    [
+     134.1,
+     130.4
+    ],
+    [
+     123.6,
+     134.3
+    ],
+    [
+     123.6,
+     100.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     130.4
+    ],
+    [
+     134.1,
+     145.0
+    ],
+    [
+     123.6,
+     148.2
+    ],
+    [
+     123.6,
+     134.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     145.0
+    ],
+    [
+     134.1,
+     162.6
+    ],
+    [
+     123.6,
+     164.9
+    ],
+    [
+     123.6,
+     148.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     162.6
+    ],
+    [
+     134.1,
+     197.8
+    ],
+    [
+     123.6,
+     198.3
+    ],
+    [
+     123.6,
+     164.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     197.8
+    ],
+    [
+     134.1,
+     212.5
+    ],
+    [
+     123.6,
+     212.2
+    ],
+    [
+     123.6,
+     198.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     212.5
+    ],
+    [
+     134.1,
+     230.1
+    ],
+    [
+     123.6,
+     228.9
+    ],
+    [
+     123.6,
+     212.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     230.1
+    ],
+    [
+     134.1,
+     265.2
+    ],
+    [
+     123.6,
+     262.3
+    ],
+    [
+     123.6,
+     228.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     265.2
+    ],
+    [
+     134.1,
+     279.9
+    ],
+    [
+     123.6,
+     276.2
+    ],
+    [
+     123.6,
+     262.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     279.9
+    ],
+    [
+     134.1,
+     297.5
+    ],
+    [
+     123.6,
+     292.9
+    ],
+    [
+     123.6,
+     276.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     297.5
+    ],
+    [
+     134.1,
+     332.7
+    ],
+    [
+     123.6,
+     326.3
+    ],
+    [
+     123.6,
+     292.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     332.7
+    ],
+    [
+     134.1,
+     347.3
+    ],
+    [
+     123.6,
+     340.2
+    ],
+    [
+     123.6,
+     326.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     347.3
+    ],
+    [
+     134.1,
+     364.9
+    ],
+    [
+     123.6,
+     356.9
+    ],
+    [
+     123.6,
+     340.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     364.9
+    ],
+    [
+     134.1,
+     400.1
+    ],
+    [
+     123.6,
+     390.3
+    ],
+    [
+     123.6,
+     356.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     134.1,
+     400.1
+    ],
+    [
+     134.1,
+     413.0
+    ],
+    [
+     132.2,
+     413.0
+    ],
+    [
+     122.0,
+     402.5
+    ],
+    [
+     123.6,
+     402.5
+    ],
+    [
+     123.6,
+     390.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     132.2,
+     413.0
+    ],
+    [
+     113.6,
+     413.0
+    ],
+    [
+     106.3,
+     402.5
+    ],
+    [
+     122.0,
+     402.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     113.6,
+     413.0
+    ],
+    [
+     76.4,
+     413.0
+    ],
+    [
+     75.0,
+     402.5
+    ],
+    [
+     106.3,
+     402.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     76.4,
+     413.0
+    ],
+    [
+     60.9,
+     413.0
+    ],
+    [
+     61.9,
+     402.5
+    ],
+    [
+     75.0,
+     402.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     60.9,
+     413.0
+    ],
+    [
+     42.3,
+     413.0
+    ],
+    [
+     46.2,
+     402.5
+    ],
+    [
+     61.9,
+     402.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     42.3,
+     413.0
+    ],
+    [
+     5.1,
+     413.0
+    ],
+    [
+     14.8,
+     402.5
+    ],
+    [
+     46.2,
+     402.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     5.1,
+     413.0
+    ],
+    [
+     0.0,
+     413.0
+    ],
+    [
+     0.0,
+     402.9
+    ],
+    [
+     10.5,
+     393.5
+    ],
+    [
+     10.5,
+     402.5
+    ],
+    [
+     14.8,
+     402.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     402.9
+    ],
+    [
+     0.0,
+     384.9
+    ],
+    [
+     10.5,
+     377.2
+    ],
+    [
+     10.5,
+     393.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     384.9
+    ],
+    [
+     0.0,
+     348.8
+    ],
+    [
+     10.5,
+     344.8
+    ],
+    [
+     10.5,
+     377.2
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     348.8
+    ],
+    [
+     0.0,
+     333.7
+    ],
+    [
+     10.5,
+     331.3
+    ],
+    [
+     10.5,
+     344.8
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     333.7
+    ],
+    [
+     0.0,
+     315.6
+    ],
+    [
+     10.5,
+     315.0
+    ],
+    [
+     10.5,
+     331.3
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     315.6
+    ],
+    [
+     0.0,
+     279.5
+    ],
+    [
+     10.5,
+     282.6
+    ],
+    [
+     10.5,
+     315.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     279.5
+    ],
+    [
+     0.0,
+     264.5
+    ],
+    [
+     10.5,
+     269.1
+    ],
+    [
+     10.5,
+     282.6
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     264.5
+    ],
+    [
+     0.0,
+     246.4
+    ],
+    [
+     10.5,
+     252.9
+    ],
+    [
+     10.5,
+     269.1
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     246.4
+    ],
+    [
+     0.0,
+     210.3
+    ],
+    [
+     10.5,
+     220.4
+    ],
+    [
+     10.5,
+     252.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     210.3
+    ],
+    [
+     0.0,
+     206.5
+    ],
+    [
+     10.7,
+     206.5
+    ],
+    [
+     21.2,
+     217.0
+    ],
+    [
+     10.5,
+     217.0
+    ],
+    [
+     10.5,
+     220.4
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     10.7,
+     206.5
+    ],
+    [
+     27.8,
+     206.5
+    ],
+    [
+     38.3,
+     217.0
+    ],
+    [
+     21.2,
+     217.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     27.8,
+     206.5
+    ],
+    [
+     62.1,
+     206.5
+    ],
+    [
+     72.6,
+     217.0
+    ],
+    [
+     38.3,
+     217.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     62.1,
+     206.5
+    ],
+    [
+     67.0,
+     206.5
+    ],
+    [
+     67.0,
+     197.1
+    ],
+    [
+     77.5,
+     207.6
+    ],
+    [
+     77.5,
+     217.0
+    ],
+    [
+     72.6,
+     217.0
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     197.1
+    ],
+    [
+     67.0,
+     180.0
+    ],
+    [
+     77.5,
+     190.5
+    ],
+    [
+     77.5,
+     207.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     180.0
+    ],
+    [
+     67.0,
+     145.7
+    ],
+    [
+     77.5,
+     156.2
+    ],
+    [
+     77.5,
+     190.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     145.7
+    ],
+    [
+     67.0,
+     131.4
+    ],
+    [
+     77.5,
+     141.9
+    ],
+    [
+     77.5,
+     156.2
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     131.4
+    ],
+    [
+     67.0,
+     114.2
+    ],
+    [
+     77.5,
+     124.7
+    ],
+    [
+     77.5,
+     141.9
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     114.2
+    ],
+    [
+     67.0,
+     80.0
+    ],
+    [
+     77.5,
+     90.5
+    ],
+    [
+     77.5,
+     124.7
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     80.0
+    ],
+    [
+     67.0,
+     65.7
+    ],
+    [
+     77.5,
+     76.2
+    ],
+    [
+     77.5,
+     90.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     65.7
+    ],
+    [
+     67.0,
+     48.5
+    ],
+    [
+     77.5,
+     59.0
+    ],
+    [
+     77.5,
+     76.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     48.5
+    ],
+    [
+     67.0,
+     14.2
+    ],
+    [
+     77.5,
+     24.7
+    ],
+    [
+     77.5,
+     59.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     67.0,
+     14.2
+    ],
+    [
+     67.0,
+     0.0
+    ],
+    [
+     77.5,
+     10.5
+    ],
+    [
+     77.5,
+     24.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     13.5
+    ],
+    [
+     120.6,
+     13.5
+    ],
+    [
+     120.6,
+     16.3
+    ],
+    [
+     110.1,
+     26.6
+    ],
+    [
+     110.1,
+     24.0
+    ],
+    [
+     91.0,
+     24.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     24.5
+    ],
+    [
+     120.6,
+     59.8
+    ],
+    [
+     110.1,
+     67.7
+    ],
+    [
+     110.1,
+     34.4
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     59.8
+    ],
+    [
+     120.6,
+     74.4
+    ],
+    [
+     110.1,
+     81.6
+    ],
+    [
+     110.1,
+     67.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     74.4
+    ],
+    [
+     120.6,
+     91.0
+    ],
+    [
+     110.1,
+     97.2
+    ],
+    [
+     110.1,
+     81.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     99.2
+    ],
+    [
+     120.6,
+     134.4
+    ],
+    [
+     110.1,
+     138.3
+    ],
+    [
+     110.1,
+     105.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     134.4
+    ],
+    [
+     120.6,
+     149.1
+    ],
+    [
+     110.1,
+     152.2
+    ],
+    [
+     110.1,
+     138.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     149.1
+    ],
+    [
+     120.6,
+     165.6
+    ],
+    [
+     110.1,
+     167.8
+    ],
+    [
+     110.1,
+     152.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     173.8
+    ],
+    [
+     120.6,
+     209.1
+    ],
+    [
+     110.1,
+     208.9
+    ],
+    [
+     110.1,
+     175.6
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     209.1
+    ],
+    [
+     120.6,
+     223.8
+    ],
+    [
+     110.1,
+     222.8
+    ],
+    [
+     110.1,
+     208.9
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     223.8
+    ],
+    [
+     120.6,
+     240.3
+    ],
+    [
+     110.1,
+     238.4
+    ],
+    [
+     110.1,
+     222.8
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     248.5
+    ],
+    [
+     120.6,
+     283.7
+    ],
+    [
+     110.1,
+     279.5
+    ],
+    [
+     110.1,
+     246.2
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     283.7
+    ],
+    [
+     120.6,
+     298.4
+    ],
+    [
+     110.1,
+     293.4
+    ],
+    [
+     110.1,
+     279.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     298.4
+    ],
+    [
+     120.6,
+     314.9
+    ],
+    [
+     110.1,
+     309.0
+    ],
+    [
+     110.1,
+     293.4
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     323.2
+    ],
+    [
+     120.6,
+     358.4
+    ],
+    [
+     110.1,
+     350.1
+    ],
+    [
+     110.1,
+     316.8
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     358.4
+    ],
+    [
+     120.6,
+     373.1
+    ],
+    [
+     110.1,
+     364.0
+    ],
+    [
+     110.1,
+     350.1
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     373.1
+    ],
+    [
+     120.6,
+     389.6
+    ],
+    [
+     110.1,
+     379.6
+    ],
+    [
+     110.1,
+     364.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     120.6,
+     397.8
+    ],
+    [
+     120.6,
+     399.5
+    ],
+    [
+     84.4,
+     399.5
+    ],
+    [
+     81.0,
+     389.0
+    ],
+    [
+     110.1,
+     389.0
+    ],
+    [
+     110.1,
+     387.4
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     84.4,
+     399.5
+    ],
+    [
+     68.6,
+     399.5
+    ],
+    [
+     68.3,
+     389.0
+    ],
+    [
+     81.0,
+     389.0
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     68.6,
+     399.5
+    ],
+    [
+     50.8,
+     399.5
+    ],
+    [
+     53.9,
+     389.0
+    ],
+    [
+     68.3,
+     389.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     41.9,
+     399.5
+    ],
+    [
+     13.5,
+     399.5
+    ],
+    [
+     13.5,
+     390.3
+    ],
+    [
+     24.0,
+     380.9
+    ],
+    [
+     24.0,
+     389.0
+    ],
+    [
+     46.8,
+     389.0
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     390.3
+    ],
+    [
+     13.5,
+     375.1
+    ],
+    [
+     24.0,
+     367.5
+    ],
+    [
+     24.0,
+     380.9
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     375.1
+    ],
+    [
+     13.5,
+     358.0
+    ],
+    [
+     24.0,
+     352.4
+    ],
+    [
+     24.0,
+     367.5
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     349.5
+    ],
+    [
+     13.5,
+     313.1
+    ],
+    [
+     24.0,
+     312.7
+    ],
+    [
+     24.0,
+     344.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     313.1
+    ],
+    [
+     13.5,
+     298.0
+    ],
+    [
+     24.0,
+     299.3
+    ],
+    [
+     24.0,
+     312.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     298.0
+    ],
+    [
+     13.5,
+     280.9
+    ],
+    [
+     24.0,
+     284.3
+    ],
+    [
+     24.0,
+     299.3
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     272.4
+    ],
+    [
+     13.5,
+     236.0
+    ],
+    [
+     24.0,
+     244.6
+    ],
+    [
+     24.0,
+     276.8
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     236.0
+    ],
+    [
+     13.5,
+     220.8
+    ],
+    [
+     24.0,
+     231.2
+    ],
+    [
+     24.0,
+     244.6
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     220.8
+    ],
+    [
+     13.5,
+     220.0
+    ],
+    [
+     28.8,
+     220.0
+    ],
+    [
+     39.3,
+     230.5
+    ],
+    [
+     24.0,
+     230.5
+    ],
+    [
+     24.0,
+     231.2
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     36.8,
+     220.0
+    ],
+    [
+     71.1,
+     220.0
+    ],
+    [
+     81.6,
+     230.5
+    ],
+    [
+     47.3,
+     230.5
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     71.1,
+     220.0
+    ],
+    [
+     80.5,
+     220.0
+    ],
+    [
+     80.5,
+     215.1
+    ],
+    [
+     91.0,
+     225.6
+    ],
+    [
+     91.0,
+     230.5
+    ],
+    [
+     81.6,
+     230.5
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     215.1
+    ],
+    [
+     80.5,
+     199.1
+    ],
+    [
+     91.0,
+     209.6
+    ],
+    [
+     91.0,
+     225.6
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     191.1
+    ],
+    [
+     80.5,
+     156.8
+    ],
+    [
+     91.0,
+     167.3
+    ],
+    [
+     91.0,
+     201.6
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     156.8
+    ],
+    [
+     80.5,
+     142.5
+    ],
+    [
+     91.0,
+     153.0
+    ],
+    [
+     91.0,
+     167.3
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     142.5
+    ],
+    [
+     80.5,
+     126.4
+    ],
+    [
+     91.0,
+     136.9
+    ],
+    [
+     91.0,
+     153.0
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     118.4
+    ],
+    [
+     80.5,
+     84.2
+    ],
+    [
+     91.0,
+     94.7
+    ],
+    [
+     91.0,
+     128.9
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Team office",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     84.2
+    ],
+    [
+     80.5,
+     69.9
+    ],
+    [
+     91.0,
+     80.4
+    ],
+    [
+     91.0,
+     94.7
+    ]
+   ],
+   "about": "A dispatch team's own office, where they plan the next day's flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Call desk room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     69.9
+    ],
+    [
+     80.5,
+     53.8
+    ],
+    [
+     91.0,
+     64.3
+    ],
+    [
+     91.0,
+     80.4
+    ]
+   ],
+   "about": "Dispatchers phone crews and craft operators about changes to their flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Dispatch room",
+   "levels": [
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     80.5,
+     45.8
+    ],
+    [
+     80.5,
+     13.5
+    ],
+    [
+     91.0,
+     24.0
+    ],
+    [
+     91.0,
+     56.3
+    ]
+   ],
+   "about": "Rows of dispatch desks with screens showing flights, crews and slots.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

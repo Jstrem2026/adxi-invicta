@@ -1,0 +1,3117 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P4-07",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  222.3,
+  136.7
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Dining floor",
+   "z_m": 0.0,
+   "height_m": 5.4,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Dining hall",
+   "level": "L1",
+   "outline_m": [
+    [
+     133.1,
+     22.0
+    ],
+    [
+     164.2,
+     22.0
+    ],
+    [
+     164.2,
+     114.7
+    ],
+    [
+     22.0,
+     114.7
+    ],
+    [
+     22.0,
+     90.4
+    ],
+    [
+     133.1,
+     90.4
+    ]
+   ],
+   "about": "The main dining hall, with long tables, booths and a counter where dispatch staff collect their meals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Terrace court",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.2,
+     22.0
+    ],
+    [
+     200.3,
+     22.0
+    ],
+    [
+     200.3,
+     114.7
+    ],
+    [
+     164.2,
+     114.7
+    ]
+   ],
+   "about": "An open court with tables for eating outside.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     9.5
+    ],
+    [
+     212.8,
+     9.5
+    ],
+    [
+     212.8,
+     41.1
+    ],
+    [
+     209.8,
+     42.5
+    ],
+    [
+     209.8,
+     12.5
+    ],
+    [
+     123.6,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     212.8,
+     41.1
+    ],
+    [
+     212.8,
+     127.2
+    ],
+    [
+     176.2,
+     127.2
+    ],
+    [
+     174.2,
+     124.2
+    ],
+    [
+     209.8,
+     124.2
+    ],
+    [
+     209.8,
+     42.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.2,
+     127.2
+    ],
+    [
+     54.4,
+     127.2
+    ],
+    [
+     56.0,
+     124.2
+    ],
+    [
+     174.2,
+     124.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.4,
+     127.2
+    ],
+    [
+     9.5,
+     127.2
+    ],
+    [
+     9.5,
+     77.9
+    ],
+    [
+     39.0,
+     77.9
+    ],
+    [
+     42.0,
+     80.9
+    ],
+    [
+     12.5,
+     80.9
+    ],
+    [
+     12.5,
+     124.2
+    ],
+    [
+     56.0,
+     124.2
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     39.0,
+     77.9
+    ],
+    [
+     120.6,
+     77.9
+    ],
+    [
+     120.6,
+     39.5
+    ],
+    [
+     123.6,
+     42.5
+    ],
+    [
+     123.6,
+     80.9
+    ],
+    [
+     42.0,
+     80.9
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.6,
+     39.5
+    ],
+    [
+     120.6,
+     9.5
+    ],
+    [
+     123.6,
+     12.5
+    ],
+    [
+     123.6,
+     42.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.8,
+     12.5
+    ],
+    [
+     168.8,
+     12.5
+    ],
+    [
+     168.4,
+     22.0
+    ],
+    [
+     161.4,
+     22.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     43.2
+    ],
+    [
+     209.8,
+     51.9
+    ],
+    [
+     200.3,
+     54.7
+    ],
+    [
+     200.3,
+     47.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     122.4
+    ],
+    [
+     209.8,
+     124.2
+    ],
+    [
+     203.1,
+     124.2
+    ],
+    [
+     194.3,
+     114.7
+    ],
+    [
+     200.3,
+     114.7
+    ],
+    [
+     200.3,
+     113.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.4,
+     124.2
+    ],
+    [
+     127.0,
+     124.2
+    ],
+    [
+     125.4,
+     114.7
+    ],
+    [
+     133.0,
+     114.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.2,
+     124.2
+    ],
+    [
+     50.8,
+     124.2
+    ],
+    [
+     56.6,
+     114.7
+    ],
+    [
+     64.2,
+     114.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     88.3
+    ],
+    [
+     12.5,
+     80.9
+    ],
+    [
+     14.7,
+     80.9
+    ],
+    [
+     24.2,
+     90.4
+    ],
+    [
+     22.0,
+     90.4
+    ],
+    [
+     22.0,
+     94.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     79.2,
+     80.9
+    ],
+    [
+     87.2,
+     80.9
+    ],
+    [
+     96.7,
+     90.4
+    ],
+    [
+     88.7,
+     90.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     52.7
+    ],
+    [
+     123.6,
+     44.7
+    ],
+    [
+     133.1,
+     54.2
+    ],
+    [
+     133.1,
+     62.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Serving counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     0.0
+    ],
+    [
+     124.9,
+     0.0
+    ],
+    [
+     132.1,
+     9.5
+    ],
+    [
+     120.6,
+     9.5
+    ]
+   ],
+   "about": "Hot meals, salads and drinks are served here in a fast-moving line.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Main kitchen",
+   "level": "L1",
+   "outline_m": [
+    [
+     124.9,
+     0.0
+    ],
+    [
+     159.4,
+     0.0
+    ],
+    [
+     160.7,
+     9.5
+    ],
+    [
+     132.1,
+     9.5
+    ]
+   ],
+   "about": "Cooks prepare thousands of meals a day here on big ranges, ovens and kettles.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Cold room",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.4,
+     0.0
+    ],
+    [
+     166.3,
+     0.0
+    ],
+    [
+     166.4,
+     9.5
+    ],
+    [
+     160.7,
+     9.5
+    ]
+   ],
+   "about": "A walk-in fridge for fresh meat, vegetables and dairy.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Freezer room",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.3,
+     0.0
+    ],
+    [
+     170.9,
+     0.0
+    ],
+    [
+     170.2,
+     9.5
+    ],
+    [
+     166.4,
+     9.5
+    ]
+   ],
+   "about": "A walk-in freezer for frozen stores.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Dry store",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.9,
+     0.0
+    ],
+    [
+     180.2,
+     0.0
+    ],
+    [
+     177.9,
+     9.5
+    ],
+    [
+     170.2,
+     9.5
+    ]
+   ],
+   "about": "Shelves of flour, rice, tins and other dry food.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Dishwash room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.2,
+     0.0
+    ],
+    [
+     189.4,
+     0.0
+    ],
+    [
+     185.5,
+     9.5
+    ],
+    [
+     177.9,
+     9.5
+    ]
+   ],
+   "about": "Conveyor dishwashers clean trays, plates and cutlery.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Goods-in bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     189.4,
+     0.0
+    ],
+    [
+     196.3,
+     0.0
+    ],
+    [
+     191.2,
+     9.5
+    ],
+    [
+     185.5,
+     9.5
+    ]
+   ],
+   "about": "Food deliveries arrive and are checked here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Waste and recycling room",
+   "level": "L1",
+   "outline_m": [
+    [
+     196.3,
+     0.0
+    ],
+    [
+     199.9,
+     0.0
+    ],
+    [
+     194.2,
+     9.5
+    ],
+    [
+     191.2,
+     9.5
+    ]
+   ],
+   "about": "Food waste goes to the digester; packaging is sorted for recycling.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Night counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.9,
+     0.0
+    ],
+    [
+     204.5,
+     0.0
+    ],
+    [
+     198.1,
+     9.5
+    ],
+    [
+     194.2,
+     9.5
+    ]
+   ],
+   "about": "Hot food through the night shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     204.5,
+     0.0
+    ],
+    [
+     211.4,
+     0.0
+    ],
+    [
+     203.8,
+     9.5
+    ],
+    [
+     198.1,
+     9.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     211.4,
+     0.0
+    ],
+    [
+     222.3,
+     0.0
+    ],
+    [
+     222.3,
+     2.9
+    ],
+    [
+     212.8,
+     12.0
+    ],
+    [
+     212.8,
+     9.5
+    ],
+    [
+     203.8,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     2.9
+    ],
+    [
+     222.3,
+     16.5
+    ],
+    [
+     212.8,
+     23.7
+    ],
+    [
+     212.8,
+     12.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     16.5
+    ],
+    [
+     222.3,
+     30.0
+    ],
+    [
+     212.8,
+     35.4
+    ],
+    [
+     212.8,
+     23.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     30.0
+    ],
+    [
+     222.3,
+     43.6
+    ],
+    [
+     212.8,
+     47.0
+    ],
+    [
+     212.8,
+     35.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     43.6
+    ],
+    [
+     222.3,
+     57.2
+    ],
+    [
+     212.8,
+     58.7
+    ],
+    [
+     212.8,
+     47.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     57.2
+    ],
+    [
+     222.3,
+     70.8
+    ],
+    [
+     212.8,
+     70.4
+    ],
+    [
+     212.8,
+     58.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     70.8
+    ],
+    [
+     222.3,
+     84.3
+    ],
+    [
+     212.8,
+     82.1
+    ],
+    [
+     212.8,
+     70.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     84.3
+    ],
+    [
+     222.3,
+     97.9
+    ],
+    [
+     212.8,
+     93.8
+    ],
+    [
+     212.8,
+     82.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     97.9
+    ],
+    [
+     222.3,
+     111.5
+    ],
+    [
+     212.8,
+     105.5
+    ],
+    [
+     212.8,
+     93.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     111.5
+    ],
+    [
+     222.3,
+     125.1
+    ],
+    [
+     212.8,
+     117.2
+    ],
+    [
+     212.8,
+     105.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.3,
+     125.1
+    ],
+    [
+     222.3,
+     136.7
+    ],
+    [
+     220.4,
+     136.7
+    ],
+    [
+     211.1,
+     127.2
+    ],
+    [
+     212.8,
+     127.2
+    ],
+    [
+     212.8,
+     117.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     220.4,
+     136.7
+    ],
+    [
+     207.2,
+     136.7
+    ],
+    [
+     199.0,
+     127.2
+    ],
+    [
+     211.1,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.2,
+     136.7
+    ],
+    [
+     194.0,
+     136.7
+    ],
+    [
+     187.0,
+     127.2
+    ],
+    [
+     199.0,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.0,
+     136.7
+    ],
+    [
+     180.8,
+     136.7
+    ],
+    [
+     174.9,
+     127.2
+    ],
+    [
+     187.0,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.8,
+     136.7
+    ],
+    [
+     167.6,
+     136.7
+    ],
+    [
+     162.8,
+     127.2
+    ],
+    [
+     174.9,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.6,
+     136.7
+    ],
+    [
+     154.4,
+     136.7
+    ],
+    [
+     150.7,
+     127.2
+    ],
+    [
+     162.8,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.4,
+     136.7
+    ],
+    [
+     141.3,
+     136.7
+    ],
+    [
+     138.7,
+     127.2
+    ],
+    [
+     150.7,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.3,
+     136.7
+    ],
+    [
+     128.1,
+     136.7
+    ],
+    [
+     126.6,
+     127.2
+    ],
+    [
+     138.7,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     128.1,
+     136.7
+    ],
+    [
+     114.9,
+     136.7
+    ],
+    [
+     114.5,
+     127.2
+    ],
+    [
+     126.6,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.9,
+     136.7
+    ],
+    [
+     101.7,
+     136.7
+    ],
+    [
+     102.5,
+     127.2
+    ],
+    [
+     114.5,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.7,
+     136.7
+    ],
+    [
+     88.5,
+     136.7
+    ],
+    [
+     90.4,
+     127.2
+    ],
+    [
+     102.5,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.5,
+     136.7
+    ],
+    [
+     75.3,
+     136.7
+    ],
+    [
+     78.3,
+     127.2
+    ],
+    [
+     90.4,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.3,
+     136.7
+    ],
+    [
+     62.1,
+     136.7
+    ],
+    [
+     66.3,
+     127.2
+    ],
+    [
+     78.3,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.1,
+     136.7
+    ],
+    [
+     48.9,
+     136.7
+    ],
+    [
+     54.2,
+     127.2
+    ],
+    [
+     66.3,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.9,
+     136.7
+    ],
+    [
+     35.7,
+     136.7
+    ],
+    [
+     42.1,
+     127.2
+    ],
+    [
+     54.2,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.7,
+     136.7
+    ],
+    [
+     22.5,
+     136.7
+    ],
+    [
+     30.1,
+     127.2
+    ],
+    [
+     42.1,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     22.5,
+     136.7
+    ],
+    [
+     9.3,
+     136.7
+    ],
+    [
+     18.0,
+     127.2
+    ],
+    [
+     30.1,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.3,
+     136.7
+    ],
+    [
+     0.0,
+     136.7
+    ],
+    [
+     0.0,
+     132.4
+    ],
+    [
+     9.5,
+     124.1
+    ],
+    [
+     9.5,
+     127.2
+    ],
+    [
+     18.0,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     132.4
+    ],
+    [
+     0.0,
+     117.7
+    ],
+    [
+     9.5,
+     113.5
+    ],
+    [
+     9.5,
+     124.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     117.7
+    ],
+    [
+     0.0,
+     103.0
+    ],
+    [
+     9.5,
+     102.9
+    ],
+    [
+     9.5,
+     113.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     103.0
+    ],
+    [
+     0.0,
+     88.3
+    ],
+    [
+     9.5,
+     92.3
+    ],
+    [
+     9.5,
+     102.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     88.3
+    ],
+    [
+     0.0,
+     73.7
+    ],
+    [
+     9.5,
+     81.7
+    ],
+    [
+     9.5,
+     92.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     73.7
+    ],
+    [
+     0.0,
+     68.4
+    ],
+    [
+     8.1,
+     68.4
+    ],
+    [
+     17.6,
+     77.9
+    ],
+    [
+     9.5,
+     77.9
+    ],
+    [
+     9.5,
+     81.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.1,
+     68.4
+    ],
+    [
+     20.7,
+     68.4
+    ],
+    [
+     30.2,
+     77.9
+    ],
+    [
+     17.6,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.7,
+     68.4
+    ],
+    [
+     33.4,
+     68.4
+    ],
+    [
+     42.9,
+     77.9
+    ],
+    [
+     30.2,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     33.4,
+     68.4
+    ],
+    [
+     46.0,
+     68.4
+    ],
+    [
+     55.5,
+     77.9
+    ],
+    [
+     42.9,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.0,
+     68.4
+    ],
+    [
+     58.6,
+     68.4
+    ],
+    [
+     68.1,
+     77.9
+    ],
+    [
+     55.5,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.6,
+     68.4
+    ],
+    [
+     71.2,
+     68.4
+    ],
+    [
+     80.7,
+     77.9
+    ],
+    [
+     68.1,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.2,
+     68.4
+    ],
+    [
+     83.9,
+     68.4
+    ],
+    [
+     93.4,
+     77.9
+    ],
+    [
+     80.7,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.9,
+     68.4
+    ],
+    [
+     96.5,
+     68.4
+    ],
+    [
+     106.0,
+     77.9
+    ],
+    [
+     93.4,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.5,
+     68.4
+    ],
+    [
+     109.1,
+     68.4
+    ],
+    [
+     118.6,
+     77.9
+    ],
+    [
+     106.0,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.1,
+     68.4
+    ],
+    [
+     111.1,
+     68.4
+    ],
+    [
+     111.1,
+     57.7
+    ],
+    [
+     120.6,
+     67.2
+    ],
+    [
+     120.6,
+     77.9
+    ],
+    [
+     118.6,
+     77.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     57.7
+    ],
+    [
+     111.1,
+     45.1
+    ],
+    [
+     120.6,
+     54.6
+    ],
+    [
+     120.6,
+     67.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     45.1
+    ],
+    [
+     111.1,
+     32.5
+    ],
+    [
+     120.6,
+     42.0
+    ],
+    [
+     120.6,
+     54.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     32.5
+    ],
+    [
+     111.1,
+     19.8
+    ],
+    [
+     120.6,
+     29.3
+    ],
+    [
+     120.6,
+     42.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     19.8
+    ],
+    [
+     111.1,
+     7.2
+    ],
+    [
+     120.6,
+     16.7
+    ],
+    [
+     120.6,
+     29.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     111.1,
+     7.2
+    ],
+    [
+     111.1,
+     0.0
+    ],
+    [
+     120.6,
+     9.5
+    ],
+    [
+     120.6,
+     16.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     12.5
+    ],
+    [
+     137.8,
+     12.5
+    ],
+    [
+     144.2,
+     22.0
+    ],
+    [
+     133.1,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     137.8,
+     12.5
+    ],
+    [
+     152.0,
+     12.5
+    ],
+    [
+     155.2,
+     22.0
+    ],
+    [
+     144.2,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.0,
+     12.5
+    ],
+    [
+     159.8,
+     12.5
+    ],
+    [
+     161.4,
+     22.0
+    ],
+    [
+     155.2,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.8,
+     12.5
+    ],
+    [
+     183.0,
+     12.5
+    ],
+    [
+     179.4,
+     22.0
+    ],
+    [
+     168.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     183.0,
+     12.5
+    ],
+    [
+     197.2,
+     12.5
+    ],
+    [
+     190.5,
+     22.0
+    ],
+    [
+     179.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.2,
+     12.5
+    ],
+    [
+     209.8,
+     12.5
+    ],
+    [
+     209.8,
+     14.1
+    ],
+    [
+     200.3,
+     23.3
+    ],
+    [
+     200.3,
+     22.0
+    ],
+    [
+     190.5,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     14.1
+    ],
+    [
+     209.8,
+     27.9
+    ],
+    [
+     200.3,
+     34.8
+    ],
+    [
+     200.3,
+     23.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     27.9
+    ],
+    [
+     209.8,
+     43.2
+    ],
+    [
+     200.3,
+     47.4
+    ],
+    [
+     200.3,
+     34.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     51.9
+    ],
+    [
+     209.8,
+     65.7
+    ],
+    [
+     200.3,
+     66.2
+    ],
+    [
+     200.3,
+     54.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     65.7
+    ],
+    [
+     209.8,
+     79.5
+    ],
+    [
+     200.3,
+     77.6
+    ],
+    [
+     200.3,
+     66.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     79.5
+    ],
+    [
+     209.8,
+     93.3
+    ],
+    [
+     200.3,
+     89.1
+    ],
+    [
+     200.3,
+     77.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     93.3
+    ],
+    [
+     209.8,
+     107.1
+    ],
+    [
+     200.3,
+     100.5
+    ],
+    [
+     200.3,
+     89.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.8,
+     107.1
+    ],
+    [
+     209.8,
+     122.4
+    ],
+    [
+     200.3,
+     113.2
+    ],
+    [
+     200.3,
+     100.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     203.1,
+     124.2
+    ],
+    [
+     189.9,
+     124.2
+    ],
+    [
+     182.3,
+     114.7
+    ],
+    [
+     194.3,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     189.9,
+     124.2
+    ],
+    [
+     176.6,
+     124.2
+    ],
+    [
+     170.3,
+     114.7
+    ],
+    [
+     182.3,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.6,
+     124.2
+    ],
+    [
+     163.3,
+     124.2
+    ],
+    [
+     158.3,
+     114.7
+    ],
+    [
+     170.3,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.3,
+     124.2
+    ],
+    [
+     150.0,
+     124.2
+    ],
+    [
+     146.3,
+     114.7
+    ],
+    [
+     158.3,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.0,
+     124.2
+    ],
+    [
+     135.4,
+     124.2
+    ],
+    [
+     133.0,
+     114.7
+    ],
+    [
+     146.3,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.0,
+     124.2
+    ],
+    [
+     113.7,
+     124.2
+    ],
+    [
+     113.4,
+     114.7
+    ],
+    [
+     125.4,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.7,
+     124.2
+    ],
+    [
+     100.4,
+     124.2
+    ],
+    [
+     101.5,
+     114.7
+    ],
+    [
+     113.4,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.4,
+     124.2
+    ],
+    [
+     87.1,
+     124.2
+    ],
+    [
+     89.5,
+     114.7
+    ],
+    [
+     101.5,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.1,
+     124.2
+    ],
+    [
+     73.9,
+     124.2
+    ],
+    [
+     77.5,
+     114.7
+    ],
+    [
+     89.5,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     73.9,
+     124.2
+    ],
+    [
+     59.2,
+     124.2
+    ],
+    [
+     64.2,
+     114.7
+    ],
+    [
+     77.5,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.8,
+     124.2
+    ],
+    [
+     37.5,
+     124.2
+    ],
+    [
+     44.6,
+     114.7
+    ],
+    [
+     56.6,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.5,
+     124.2
+    ],
+    [
+     24.3,
+     124.2
+    ],
+    [
+     32.6,
+     114.7
+    ],
+    [
+     44.6,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.3,
+     124.2
+    ],
+    [
+     12.5,
+     124.2
+    ],
+    [
+     12.5,
+     122.3
+    ],
+    [
+     22.0,
+     113.7
+    ],
+    [
+     22.0,
+     114.7
+    ],
+    [
+     32.6,
+     114.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     122.3
+    ],
+    [
+     12.5,
+     106.2
+    ],
+    [
+     22.0,
+     104.6
+    ],
+    [
+     22.0,
+     113.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     106.2
+    ],
+    [
+     12.5,
+     88.3
+    ],
+    [
+     22.0,
+     94.5
+    ],
+    [
+     22.0,
+     104.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.7,
+     80.9
+    ],
+    [
+     27.4,
+     80.9
+    ],
+    [
+     36.9,
+     90.4
+    ],
+    [
+     24.2,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.4,
+     80.9
+    ],
+    [
+     40.0,
+     80.9
+    ],
+    [
+     49.5,
+     90.4
+    ],
+    [
+     36.9,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.0,
+     80.9
+    ],
+    [
+     52.6,
+     80.9
+    ],
+    [
+     62.1,
+     90.4
+    ],
+    [
+     49.5,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     52.6,
+     80.9
+    ],
+    [
+     65.3,
+     80.9
+    ],
+    [
+     74.8,
+     90.4
+    ],
+    [
+     62.1,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     65.3,
+     80.9
+    ],
+    [
+     79.2,
+     80.9
+    ],
+    [
+     88.7,
+     90.4
+    ],
+    [
+     74.8,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.2,
+     80.9
+    ],
+    [
+     99.9,
+     80.9
+    ],
+    [
+     109.4,
+     90.4
+    ],
+    [
+     96.7,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.9,
+     80.9
+    ],
+    [
+     112.5,
+     80.9
+    ],
+    [
+     122.0,
+     90.4
+    ],
+    [
+     109.4,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     112.5,
+     80.9
+    ],
+    [
+     123.6,
+     80.9
+    ],
+    [
+     123.6,
+     79.4
+    ],
+    [
+     133.1,
+     88.9
+    ],
+    [
+     133.1,
+     90.4
+    ],
+    [
+     122.0,
+     90.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     79.4
+    ],
+    [
+     123.6,
+     66.7
+    ],
+    [
+     133.1,
+     76.2
+    ],
+    [
+     133.1,
+     88.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     66.7
+    ],
+    [
+     123.6,
+     52.7
+    ],
+    [
+     133.1,
+     62.2
+    ],
+    [
+     133.1,
+     76.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     44.7
+    ],
+    [
+     123.6,
+     32.1
+    ],
+    [
+     133.1,
+     41.6
+    ],
+    [
+     133.1,
+     54.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     32.1
+    ],
+    [
+     123.6,
+     19.5
+    ],
+    [
+     133.1,
+     29.0
+    ],
+    [
+     133.1,
+     41.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     123.6,
+     19.5
+    ],
+    [
+     123.6,
+     12.5
+    ],
+    [
+     133.1,
+     22.0
+    ],
+    [
+     133.1,
+     29.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,11276 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P3-01",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  240.0,
+  240.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Base hall",
+   "z_m": 0.0,
+   "height_m": 8.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Equipment floor 1",
+   "z_m": 8.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Equipment floor 2",
+   "z_m": 13.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Equipment floor 3",
+   "z_m": 18.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L5",
+   "name": "Level 5 · Tower shaft floor 1",
+   "z_m": 23.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L6",
+   "name": "Level 6 · Tower shaft floor 2",
+   "z_m": 28.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L7",
+   "name": "Level 7 · Tower shaft floor 3",
+   "z_m": 33.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L8",
+   "name": "Level 8 · Tower shaft floor 4",
+   "z_m": 38.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L9",
+   "name": "Level 9 · Tower shaft floor 5",
+   "z_m": 43.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L10",
+   "name": "Level 10 · Tower shaft floor 6",
+   "z_m": 48.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L11",
+   "name": "Level 11 · Visual control cab",
+   "z_m": 53.0,
+   "height_m": 7.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Beacon Hall",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.0,
+     30.0
+    ],
+    [
+     96.7,
+     30.0
+    ],
+    [
+     96.7,
+     210.0
+    ],
+    [
+     30.0,
+     210.0
+    ]
+   ],
+   "about": "The tower's entrance hall, with a model of Deck 5 showing every flight live; visitors can watch from the gallery.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.7,
+     30.0
+    ],
+    [
+     210.0,
+     30.0
+    ],
+    [
+     210.0,
+     210.0
+    ],
+    [
+     96.7,
+     210.0
+    ]
+   ],
+   "about": "An open court in the middle of the building that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     135.2,
+     13.5
+    ],
+    [
+     134.8,
+     16.5
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.2,
+     13.5
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     226.5,
+     43.9
+    ],
+    [
+     223.5,
+     46.1
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     134.8,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     226.5,
+     43.9
+    ],
+    [
+     226.5,
+     165.6
+    ],
+    [
+     223.5,
+     164.4
+    ],
+    [
+     223.5,
+     46.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     226.5,
+     165.6
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     165.6,
+     226.5
+    ],
+    [
+     164.4,
+     223.5
+    ],
+    [
+     223.5,
+     223.5
+    ],
+    [
+     223.5,
+     164.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.6,
+     226.5
+    ],
+    [
+     43.9,
+     226.5
+    ],
+    [
+     46.1,
+     223.5
+    ],
+    [
+     164.4,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     43.9,
+     226.5
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     13.5,
+     135.2
+    ],
+    [
+     16.5,
+     134.8
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     46.1,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     135.2
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     16.5,
+     134.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     49.9,
+     16.5
+    ],
+    [
+     58.4,
+     16.5
+    ],
+    [
+     66.4,
+     30.0
+    ],
+    [
+     59.0,
+     30.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     125.1,
+     16.5
+    ],
+    [
+     133.7,
+     16.5
+    ],
+    [
+     131.9,
+     30.0
+    ],
+    [
+     124.5,
+     30.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     200.4,
+     16.5
+    ],
+    [
+     209.0,
+     16.5
+    ],
+    [
+     197.4,
+     30.0
+    ],
+    [
+     189.9,
+     30.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     68.7
+    ],
+    [
+     223.5,
+     77.2
+    ],
+    [
+     210.0,
+     82.8
+    ],
+    [
+     210.0,
+     75.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     143.9
+    ],
+    [
+     223.5,
+     152.5
+    ],
+    [
+     210.0,
+     148.3
+    ],
+    [
+     210.0,
+     140.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     219.2
+    ],
+    [
+     223.5,
+     223.5
+    ],
+    [
+     219.2,
+     223.5
+    ],
+    [
+     206.3,
+     210.0
+    ],
+    [
+     210.0,
+     210.0
+    ],
+    [
+     210.0,
+     206.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     152.5,
+     223.5
+    ],
+    [
+     143.9,
+     223.5
+    ],
+    [
+     140.8,
+     210.0
+    ],
+    [
+     148.3,
+     210.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     77.2,
+     223.5
+    ],
+    [
+     68.7,
+     223.5
+    ],
+    [
+     75.4,
+     210.0
+    ],
+    [
+     82.8,
+     210.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     209.0
+    ],
+    [
+     16.5,
+     200.4
+    ],
+    [
+     30.0,
+     189.9
+    ],
+    [
+     30.0,
+     197.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     133.7
+    ],
+    [
+     16.5,
+     125.1
+    ],
+    [
+     30.0,
+     124.5
+    ],
+    [
+     30.0,
+     131.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     58.4
+    ],
+    [
+     16.5,
+     49.9
+    ],
+    [
+     30.0,
+     59.0
+    ],
+    [
+     30.0,
+     66.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Security lobby",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     7.8,
+     0.0
+    ],
+    [
+     20.5,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "Everyone entering the tower is checked here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Visitors' gallery",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.8,
+     0.0
+    ],
+    [
+     23.5,
+     0.0
+    ],
+    [
+     34.4,
+     13.5
+    ],
+    [
+     20.5,
+     13.5
+    ]
+   ],
+   "about": "Visitors watch the flight deck on big screens and learn how traffic control works.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Lift lobby",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.5,
+     0.0
+    ],
+    [
+     29.8,
+     0.0
+    ],
+    [
+     40.0,
+     13.5
+    ],
+    [
+     34.4,
+     13.5
+    ]
+   ],
+   "about": "Express lifts to the control cab at the top.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.8,
+     0.0
+    ],
+    [
+     34.8,
+     0.0
+    ],
+    [
+     44.4,
+     13.5
+    ],
+    [
+     40.0,
+     13.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.8,
+     0.0
+    ],
+    [
+     49.0,
+     0.0
+    ],
+    [
+     57.0,
+     13.5
+    ],
+    [
+     44.4,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     49.0,
+     0.0
+    ],
+    [
+     63.1,
+     0.0
+    ],
+    [
+     69.5,
+     13.5
+    ],
+    [
+     57.0,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     63.1,
+     0.0
+    ],
+    [
+     77.2,
+     0.0
+    ],
+    [
+     82.0,
+     13.5
+    ],
+    [
+     69.5,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.2,
+     0.0
+    ],
+    [
+     91.3,
+     0.0
+    ],
+    [
+     94.6,
+     13.5
+    ],
+    [
+     82.0,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.3,
+     0.0
+    ],
+    [
+     105.5,
+     0.0
+    ],
+    [
+     107.1,
+     13.5
+    ],
+    [
+     94.6,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.5,
+     0.0
+    ],
+    [
+     119.6,
+     0.0
+    ],
+    [
+     119.6,
+     13.5
+    ],
+    [
+     107.1,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     119.6,
+     0.0
+    ],
+    [
+     133.7,
+     0.0
+    ],
+    [
+     132.2,
+     13.5
+    ],
+    [
+     119.6,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     133.7,
+     0.0
+    ],
+    [
+     147.9,
+     0.0
+    ],
+    [
+     144.7,
+     13.5
+    ],
+    [
+     132.2,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.9,
+     0.0
+    ],
+    [
+     162.0,
+     0.0
+    ],
+    [
+     157.3,
+     13.5
+    ],
+    [
+     144.7,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.0,
+     0.0
+    ],
+    [
+     176.1,
+     0.0
+    ],
+    [
+     169.8,
+     13.5
+    ],
+    [
+     157.3,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.1,
+     0.0
+    ],
+    [
+     190.2,
+     0.0
+    ],
+    [
+     182.3,
+     13.5
+    ],
+    [
+     169.8,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.2,
+     0.0
+    ],
+    [
+     204.4,
+     0.0
+    ],
+    [
+     194.9,
+     13.5
+    ],
+    [
+     182.3,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     204.4,
+     0.0
+    ],
+    [
+     218.5,
+     0.0
+    ],
+    [
+     207.4,
+     13.5
+    ],
+    [
+     194.9,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.5,
+     0.0
+    ],
+    [
+     232.6,
+     0.0
+    ],
+    [
+     220.0,
+     13.5
+    ],
+    [
+     207.4,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.6,
+     0.0
+    ],
+    [
+     240.0,
+     0.0
+    ],
+    [
+     240.0,
+     6.8
+    ],
+    [
+     226.5,
+     19.5
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     220.0,
+     13.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     6.8
+    ],
+    [
+     240.0,
+     20.9
+    ],
+    [
+     226.5,
+     32.0
+    ],
+    [
+     226.5,
+     19.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     20.9
+    ],
+    [
+     240.0,
+     35.0
+    ],
+    [
+     226.5,
+     44.6
+    ],
+    [
+     226.5,
+     32.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     35.0
+    ],
+    [
+     240.0,
+     49.1
+    ],
+    [
+     226.5,
+     57.1
+    ],
+    [
+     226.5,
+     44.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     49.1
+    ],
+    [
+     240.0,
+     63.3
+    ],
+    [
+     226.5,
+     69.6
+    ],
+    [
+     226.5,
+     57.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     63.3
+    ],
+    [
+     240.0,
+     77.4
+    ],
+    [
+     226.5,
+     82.2
+    ],
+    [
+     226.5,
+     69.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     77.4
+    ],
+    [
+     240.0,
+     91.5
+    ],
+    [
+     226.5,
+     94.7
+    ],
+    [
+     226.5,
+     82.2
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     91.5
+    ],
+    [
+     240.0,
+     105.6
+    ],
+    [
+     226.5,
+     107.3
+    ],
+    [
+     226.5,
+     94.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     105.6
+    ],
+    [
+     240.0,
+     119.8
+    ],
+    [
+     226.5,
+     119.8
+    ],
+    [
+     226.5,
+     107.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     119.8
+    ],
+    [
+     240.0,
+     133.9
+    ],
+    [
+     226.5,
+     132.3
+    ],
+    [
+     226.5,
+     119.8
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     133.9
+    ],
+    [
+     240.0,
+     148.0
+    ],
+    [
+     226.5,
+     144.9
+    ],
+    [
+     226.5,
+     132.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     148.0
+    ],
+    [
+     240.0,
+     162.2
+    ],
+    [
+     226.5,
+     157.4
+    ],
+    [
+     226.5,
+     144.9
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     162.2
+    ],
+    [
+     240.0,
+     176.3
+    ],
+    [
+     226.5,
+     170.0
+    ],
+    [
+     226.5,
+     157.4
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     176.3
+    ],
+    [
+     240.0,
+     190.4
+    ],
+    [
+     226.5,
+     182.5
+    ],
+    [
+     226.5,
+     170.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     190.4
+    ],
+    [
+     240.0,
+     204.5
+    ],
+    [
+     226.5,
+     195.0
+    ],
+    [
+     226.5,
+     182.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     204.5
+    ],
+    [
+     240.0,
+     218.7
+    ],
+    [
+     226.5,
+     207.6
+    ],
+    [
+     226.5,
+     195.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     218.7
+    ],
+    [
+     240.0,
+     232.8
+    ],
+    [
+     226.5,
+     220.1
+    ],
+    [
+     226.5,
+     207.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     232.8
+    ],
+    [
+     240.0,
+     240.0
+    ],
+    [
+     233.1,
+     240.0
+    ],
+    [
+     220.3,
+     226.5
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     226.5,
+     220.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     233.1,
+     240.0
+    ],
+    [
+     218.9,
+     240.0
+    ],
+    [
+     207.8,
+     226.5
+    ],
+    [
+     220.3,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.9,
+     240.0
+    ],
+    [
+     204.8,
+     240.0
+    ],
+    [
+     195.3,
+     226.5
+    ],
+    [
+     207.8,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     204.8,
+     240.0
+    ],
+    [
+     190.7,
+     240.0
+    ],
+    [
+     182.7,
+     226.5
+    ],
+    [
+     195.3,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.7,
+     240.0
+    ],
+    [
+     176.6,
+     240.0
+    ],
+    [
+     170.2,
+     226.5
+    ],
+    [
+     182.7,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.6,
+     240.0
+    ],
+    [
+     162.4,
+     240.0
+    ],
+    [
+     157.7,
+     226.5
+    ],
+    [
+     170.2,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.4,
+     240.0
+    ],
+    [
+     148.3,
+     240.0
+    ],
+    [
+     145.1,
+     226.5
+    ],
+    [
+     157.7,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.3,
+     240.0
+    ],
+    [
+     134.2,
+     240.0
+    ],
+    [
+     132.6,
+     226.5
+    ],
+    [
+     145.1,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.2,
+     240.0
+    ],
+    [
+     120.0,
+     240.0
+    ],
+    [
+     120.0,
+     226.5
+    ],
+    [
+     132.6,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.0,
+     240.0
+    ],
+    [
+     105.9,
+     240.0
+    ],
+    [
+     107.5,
+     226.5
+    ],
+    [
+     120.0,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.9,
+     240.0
+    ],
+    [
+     91.8,
+     240.0
+    ],
+    [
+     95.0,
+     226.5
+    ],
+    [
+     107.5,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.8,
+     240.0
+    ],
+    [
+     77.7,
+     240.0
+    ],
+    [
+     82.4,
+     226.5
+    ],
+    [
+     95.0,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.7,
+     240.0
+    ],
+    [
+     63.5,
+     240.0
+    ],
+    [
+     69.9,
+     226.5
+    ],
+    [
+     82.4,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     63.5,
+     240.0
+    ],
+    [
+     49.4,
+     240.0
+    ],
+    [
+     57.3,
+     226.5
+    ],
+    [
+     69.9,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     49.4,
+     240.0
+    ],
+    [
+     35.3,
+     240.0
+    ],
+    [
+     44.8,
+     226.5
+    ],
+    [
+     57.3,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.3,
+     240.0
+    ],
+    [
+     21.1,
+     240.0
+    ],
+    [
+     32.3,
+     226.5
+    ],
+    [
+     44.8,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.1,
+     240.0
+    ],
+    [
+     7.0,
+     240.0
+    ],
+    [
+     19.7,
+     226.5
+    ],
+    [
+     32.3,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     7.0,
+     240.0
+    ],
+    [
+     0.0,
+     240.0
+    ],
+    [
+     0.0,
+     232.9
+    ],
+    [
+     13.5,
+     220.2
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     19.7,
+     226.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     232.9
+    ],
+    [
+     0.0,
+     218.8
+    ],
+    [
+     13.5,
+     207.7
+    ],
+    [
+     13.5,
+     220.2
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     218.8
+    ],
+    [
+     0.0,
+     204.6
+    ],
+    [
+     13.5,
+     195.1
+    ],
+    [
+     13.5,
+     207.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     204.6
+    ],
+    [
+     0.0,
+     190.5
+    ],
+    [
+     13.5,
+     182.6
+    ],
+    [
+     13.5,
+     195.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     190.5
+    ],
+    [
+     0.0,
+     176.4
+    ],
+    [
+     13.5,
+     170.0
+    ],
+    [
+     13.5,
+     182.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     176.4
+    ],
+    [
+     0.0,
+     162.3
+    ],
+    [
+     13.5,
+     157.5
+    ],
+    [
+     13.5,
+     170.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     162.3
+    ],
+    [
+     0.0,
+     148.1
+    ],
+    [
+     13.5,
+     145.0
+    ],
+    [
+     13.5,
+     157.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     148.1
+    ],
+    [
+     0.0,
+     134.0
+    ],
+    [
+     13.5,
+     132.4
+    ],
+    [
+     13.5,
+     145.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     134.0
+    ],
+    [
+     0.0,
+     119.9
+    ],
+    [
+     13.5,
+     119.9
+    ],
+    [
+     13.5,
+     132.4
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     119.9
+    ],
+    [
+     0.0,
+     105.7
+    ],
+    [
+     13.5,
+     107.3
+    ],
+    [
+     13.5,
+     119.9
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     105.7
+    ],
+    [
+     0.0,
+     91.6
+    ],
+    [
+     13.5,
+     94.8
+    ],
+    [
+     13.5,
+     107.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     91.6
+    ],
+    [
+     0.0,
+     77.5
+    ],
+    [
+     13.5,
+     82.3
+    ],
+    [
+     13.5,
+     94.8
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     77.5
+    ],
+    [
+     0.0,
+     63.4
+    ],
+    [
+     13.5,
+     69.7
+    ],
+    [
+     13.5,
+     82.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     63.4
+    ],
+    [
+     0.0,
+     49.2
+    ],
+    [
+     13.5,
+     57.2
+    ],
+    [
+     13.5,
+     69.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     49.2
+    ],
+    [
+     0.0,
+     35.1
+    ],
+    [
+     13.5,
+     44.7
+    ],
+    [
+     13.5,
+     57.2
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     35.1
+    ],
+    [
+     0.0,
+     21.0
+    ],
+    [
+     13.5,
+     32.1
+    ],
+    [
+     13.5,
+     44.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     21.0
+    ],
+    [
+     0.0,
+     6.8
+    ],
+    [
+     13.5,
+     19.6
+    ],
+    [
+     13.5,
+     32.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     6.8
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     19.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.8,
+     16.5
+    ],
+    [
+     42.4,
+     30.0
+    ],
+    [
+     30.0,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.8,
+     16.5
+    ],
+    [
+     49.9,
+     16.5
+    ],
+    [
+     59.0,
+     30.0
+    ],
+    [
+     42.4,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     58.4,
+     16.5
+    ],
+    [
+     72.7,
+     16.5
+    ],
+    [
+     78.9,
+     30.0
+    ],
+    [
+     66.4,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.7,
+     16.5
+    ],
+    [
+     86.9,
+     16.5
+    ],
+    [
+     91.3,
+     30.0
+    ],
+    [
+     78.9,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.9,
+     16.5
+    ],
+    [
+     101.2,
+     16.5
+    ],
+    [
+     103.7,
+     30.0
+    ],
+    [
+     91.3,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.2,
+     16.5
+    ],
+    [
+     115.5,
+     16.5
+    ],
+    [
+     116.1,
+     30.0
+    ],
+    [
+     103.7,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.5,
+     16.5
+    ],
+    [
+     125.1,
+     16.5
+    ],
+    [
+     124.5,
+     30.0
+    ],
+    [
+     116.1,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     133.7,
+     16.5
+    ],
+    [
+     148.0,
+     16.5
+    ],
+    [
+     144.3,
+     30.0
+    ],
+    [
+     131.9,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.0,
+     16.5
+    ],
+    [
+     162.2,
+     16.5
+    ],
+    [
+     156.7,
+     30.0
+    ],
+    [
+     144.3,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.2,
+     16.5
+    ],
+    [
+     176.5,
+     16.5
+    ],
+    [
+     169.1,
+     30.0
+    ],
+    [
+     156.7,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.5,
+     16.5
+    ],
+    [
+     190.7,
+     16.5
+    ],
+    [
+     181.5,
+     30.0
+    ],
+    [
+     169.1,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.7,
+     16.5
+    ],
+    [
+     200.4,
+     16.5
+    ],
+    [
+     189.9,
+     30.0
+    ],
+    [
+     181.5,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     209.0,
+     16.5
+    ],
+    [
+     223.2,
+     16.5
+    ],
+    [
+     209.8,
+     30.0
+    ],
+    [
+     197.4,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.2,
+     16.5
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     223.5,
+     30.5
+    ],
+    [
+     210.0,
+     42.2
+    ],
+    [
+     210.0,
+     30.0
+    ],
+    [
+     209.8,
+     30.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     30.5
+    ],
+    [
+     223.5,
+     44.8
+    ],
+    [
+     210.0,
+     54.6
+    ],
+    [
+     210.0,
+     42.2
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     44.8
+    ],
+    [
+     223.5,
+     59.0
+    ],
+    [
+     210.0,
+     67.0
+    ],
+    [
+     210.0,
+     54.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     59.0
+    ],
+    [
+     223.5,
+     68.7
+    ],
+    [
+     210.0,
+     75.4
+    ],
+    [
+     210.0,
+     67.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     77.2
+    ],
+    [
+     223.5,
+     91.5
+    ],
+    [
+     210.0,
+     95.2
+    ],
+    [
+     210.0,
+     82.8
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     91.5
+    ],
+    [
+     223.5,
+     105.8
+    ],
+    [
+     210.0,
+     107.6
+    ],
+    [
+     210.0,
+     95.2
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     105.8
+    ],
+    [
+     223.5,
+     120.0
+    ],
+    [
+     210.0,
+     120.0
+    ],
+    [
+     210.0,
+     107.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     120.0
+    ],
+    [
+     223.5,
+     134.3
+    ],
+    [
+     210.0,
+     132.4
+    ],
+    [
+     210.0,
+     120.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     134.3
+    ],
+    [
+     223.5,
+     143.9
+    ],
+    [
+     210.0,
+     140.8
+    ],
+    [
+     210.0,
+     132.4
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     152.5
+    ],
+    [
+     223.5,
+     166.8
+    ],
+    [
+     210.0,
+     160.7
+    ],
+    [
+     210.0,
+     148.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     166.8
+    ],
+    [
+     223.5,
+     181.0
+    ],
+    [
+     210.0,
+     173.1
+    ],
+    [
+     210.0,
+     160.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     181.0
+    ],
+    [
+     223.5,
+     195.3
+    ],
+    [
+     210.0,
+     185.5
+    ],
+    [
+     210.0,
+     173.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     195.3
+    ],
+    [
+     223.5,
+     209.6
+    ],
+    [
+     210.0,
+     197.9
+    ],
+    [
+     210.0,
+     185.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     223.5,
+     209.6
+    ],
+    [
+     223.5,
+     219.2
+    ],
+    [
+     210.0,
+     206.3
+    ],
+    [
+     210.0,
+     197.9
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     219.2,
+     223.5
+    ],
+    [
+     205.0,
+     223.5
+    ],
+    [
+     193.9,
+     210.0
+    ],
+    [
+     206.3,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     205.0,
+     223.5
+    ],
+    [
+     190.7,
+     223.5
+    ],
+    [
+     181.5,
+     210.0
+    ],
+    [
+     193.9,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.7,
+     223.5
+    ],
+    [
+     176.4,
+     223.5
+    ],
+    [
+     169.1,
+     210.0
+    ],
+    [
+     181.5,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.4,
+     223.5
+    ],
+    [
+     162.2,
+     223.5
+    ],
+    [
+     156.7,
+     210.0
+    ],
+    [
+     169.1,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.2,
+     223.5
+    ],
+    [
+     152.5,
+     223.5
+    ],
+    [
+     148.3,
+     210.0
+    ],
+    [
+     156.7,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.9,
+     223.5
+    ],
+    [
+     129.7,
+     223.5
+    ],
+    [
+     128.4,
+     210.0
+    ],
+    [
+     140.8,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.7,
+     223.5
+    ],
+    [
+     115.4,
+     223.5
+    ],
+    [
+     116.0,
+     210.0
+    ],
+    [
+     128.4,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.4,
+     223.5
+    ],
+    [
+     101.2,
+     223.5
+    ],
+    [
+     103.6,
+     210.0
+    ],
+    [
+     116.0,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.2,
+     223.5
+    ],
+    [
+     86.9,
+     223.5
+    ],
+    [
+     91.2,
+     210.0
+    ],
+    [
+     103.6,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.9,
+     223.5
+    ],
+    [
+     77.2,
+     223.5
+    ],
+    [
+     82.8,
+     210.0
+    ],
+    [
+     91.2,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.7,
+     223.5
+    ],
+    [
+     54.4,
+     223.5
+    ],
+    [
+     63.0,
+     210.0
+    ],
+    [
+     75.4,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.4,
+     223.5
+    ],
+    [
+     40.1,
+     223.5
+    ],
+    [
+     50.6,
+     210.0
+    ],
+    [
+     63.0,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.1,
+     223.5
+    ],
+    [
+     25.9,
+     223.5
+    ],
+    [
+     38.2,
+     210.0
+    ],
+    [
+     50.6,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     25.9,
+     223.5
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     16.5,
+     218.6
+    ],
+    [
+     30.0,
+     205.8
+    ],
+    [
+     30.0,
+     210.0
+    ],
+    [
+     38.2,
+     210.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     218.6
+    ],
+    [
+     16.5,
+     209.0
+    ],
+    [
+     30.0,
+     197.4
+    ],
+    [
+     30.0,
+     205.8
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     200.4
+    ],
+    [
+     16.5,
+     186.1
+    ],
+    [
+     30.0,
+     177.5
+    ],
+    [
+     30.0,
+     189.9
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     186.1
+    ],
+    [
+     16.5,
+     171.9
+    ],
+    [
+     30.0,
+     165.1
+    ],
+    [
+     30.0,
+     177.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     171.9
+    ],
+    [
+     16.5,
+     157.6
+    ],
+    [
+     30.0,
+     152.7
+    ],
+    [
+     30.0,
+     165.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     157.6
+    ],
+    [
+     16.5,
+     143.3
+    ],
+    [
+     30.0,
+     140.3
+    ],
+    [
+     30.0,
+     152.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     143.3
+    ],
+    [
+     16.5,
+     133.7
+    ],
+    [
+     30.0,
+     131.9
+    ],
+    [
+     30.0,
+     140.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     125.1
+    ],
+    [
+     16.5,
+     110.9
+    ],
+    [
+     30.0,
+     112.1
+    ],
+    [
+     30.0,
+     124.5
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     110.9
+    ],
+    [
+     16.5,
+     96.6
+    ],
+    [
+     30.0,
+     99.7
+    ],
+    [
+     30.0,
+     112.1
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     96.6
+    ],
+    [
+     16.5,
+     82.3
+    ],
+    [
+     30.0,
+     87.3
+    ],
+    [
+     30.0,
+     99.7
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     82.3
+    ],
+    [
+     16.5,
+     68.1
+    ],
+    [
+     30.0,
+     74.8
+    ],
+    [
+     30.0,
+     87.3
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     68.1
+    ],
+    [
+     16.5,
+     58.4
+    ],
+    [
+     30.0,
+     66.4
+    ],
+    [
+     30.0,
+     74.8
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     49.9
+    ],
+    [
+     16.5,
+     35.6
+    ],
+    [
+     30.0,
+     46.6
+    ],
+    [
+     30.0,
+     59.0
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Tower offices",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.5,
+     35.6
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.0,
+     30.0
+    ],
+    [
+     30.0,
+     46.6
+    ]
+   ],
+   "about": "Offices for the tower's managers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     135.2,
+     13.5
+    ],
+    [
+     134.8,
+     16.5
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     135.2,
+     13.5
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     226.5,
+     43.9
+    ],
+    [
+     223.5,
+     46.1
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     134.8,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     226.5,
+     43.9
+    ],
+    [
+     226.5,
+     165.6
+    ],
+    [
+     223.5,
+     164.4
+    ],
+    [
+     223.5,
+     46.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     226.5,
+     165.6
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     165.6,
+     226.5
+    ],
+    [
+     164.4,
+     223.5
+    ],
+    [
+     223.5,
+     223.5
+    ],
+    [
+     223.5,
+     164.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.6,
+     226.5
+    ],
+    [
+     43.9,
+     226.5
+    ],
+    [
+     46.1,
+     223.5
+    ],
+    [
+     164.4,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     43.9,
+     226.5
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     13.5,
+     135.2
+    ],
+    [
+     16.5,
+     134.8
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     46.1,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     135.2
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     16.5,
+     134.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Radio equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     15.7,
+     0.0
+    ],
+    [
+     27.4,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "Radios that talk to every craft on the flight deck.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Battery room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     15.7,
+     0.0
+    ],
+    [
+     25.1,
+     0.0
+    ],
+    [
+     35.8,
+     13.5
+    ],
+    [
+     27.4,
+     13.5
+    ]
+   ],
+   "about": "Keeps the tower running if the power fails.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Cooling plant",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     25.1,
+     0.0
+    ],
+    [
+     34.5,
+     0.0
+    ],
+    [
+     44.1,
+     13.5
+    ],
+    [
+     35.8,
+     13.5
+    ]
+   ],
+   "about": "Cools the equipment floors.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     34.5,
+     0.0
+    ],
+    [
+     69.9,
+     0.0
+    ],
+    [
+     75.5,
+     13.5
+    ],
+    [
+     44.1,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     69.9,
+     0.0
+    ],
+    [
+     105.2,
+     0.0
+    ],
+    [
+     106.8,
+     13.5
+    ],
+    [
+     75.5,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     105.2,
+     0.0
+    ],
+    [
+     140.5,
+     0.0
+    ],
+    [
+     138.2,
+     13.5
+    ],
+    [
+     106.8,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     140.5,
+     0.0
+    ],
+    [
+     175.8,
+     0.0
+    ],
+    [
+     169.5,
+     13.5
+    ],
+    [
+     138.2,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     175.8,
+     0.0
+    ],
+    [
+     211.1,
+     0.0
+    ],
+    [
+     200.9,
+     13.5
+    ],
+    [
+     169.5,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     211.1,
+     0.0
+    ],
+    [
+     240.0,
+     0.0
+    ],
+    [
+     240.0,
+     6.5
+    ],
+    [
+     226.5,
+     19.2
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     200.9,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     6.5
+    ],
+    [
+     240.0,
+     41.8
+    ],
+    [
+     226.5,
+     50.6
+    ],
+    [
+     226.5,
+     19.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     41.8
+    ],
+    [
+     240.0,
+     77.1
+    ],
+    [
+     226.5,
+     81.9
+    ],
+    [
+     226.5,
+     50.6
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     77.1
+    ],
+    [
+     240.0,
+     112.4
+    ],
+    [
+     226.5,
+     113.3
+    ],
+    [
+     226.5,
+     81.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     112.4
+    ],
+    [
+     240.0,
+     147.7
+    ],
+    [
+     226.5,
+     144.6
+    ],
+    [
+     226.5,
+     113.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     147.7
+    ],
+    [
+     240.0,
+     183.1
+    ],
+    [
+     226.5,
+     176.0
+    ],
+    [
+     226.5,
+     144.6
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     183.1
+    ],
+    [
+     240.0,
+     218.4
+    ],
+    [
+     226.5,
+     207.3
+    ],
+    [
+     226.5,
+     176.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     218.4
+    ],
+    [
+     240.0,
+     240.0
+    ],
+    [
+     226.3,
+     240.0
+    ],
+    [
+     214.3,
+     226.5
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     226.5,
+     207.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     226.3,
+     240.0
+    ],
+    [
+     191.0,
+     240.0
+    ],
+    [
+     183.0,
+     226.5
+    ],
+    [
+     214.3,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     191.0,
+     240.0
+    ],
+    [
+     155.7,
+     240.0
+    ],
+    [
+     151.7,
+     226.5
+    ],
+    [
+     183.0,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.7,
+     240.0
+    ],
+    [
+     120.3,
+     240.0
+    ],
+    [
+     120.3,
+     226.5
+    ],
+    [
+     151.7,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     120.3,
+     240.0
+    ],
+    [
+     85.0,
+     240.0
+    ],
+    [
+     89.0,
+     226.5
+    ],
+    [
+     120.3,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     85.0,
+     240.0
+    ],
+    [
+     49.7,
+     240.0
+    ],
+    [
+     57.6,
+     226.5
+    ],
+    [
+     89.0,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     49.7,
+     240.0
+    ],
+    [
+     14.4,
+     240.0
+    ],
+    [
+     26.3,
+     226.5
+    ],
+    [
+     57.6,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     14.4,
+     240.0
+    ],
+    [
+     0.0,
+     240.0
+    ],
+    [
+     0.0,
+     219.1
+    ],
+    [
+     13.5,
+     207.9
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     26.3,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     219.1
+    ],
+    [
+     0.0,
+     183.7
+    ],
+    [
+     13.5,
+     176.6
+    ],
+    [
+     13.5,
+     207.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     183.7
+    ],
+    [
+     0.0,
+     148.4
+    ],
+    [
+     13.5,
+     145.2
+    ],
+    [
+     13.5,
+     176.6
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     148.4
+    ],
+    [
+     0.0,
+     113.1
+    ],
+    [
+     13.5,
+     113.9
+    ],
+    [
+     13.5,
+     145.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     113.1
+    ],
+    [
+     0.0,
+     77.8
+    ],
+    [
+     13.5,
+     82.5
+    ],
+    [
+     13.5,
+     113.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     77.8
+    ],
+    [
+     0.0,
+     42.5
+    ],
+    [
+     13.5,
+     51.2
+    ],
+    [
+     13.5,
+     82.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     42.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     51.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     16.5
+    ],
+    [
+     49.9,
+     16.5
+    ],
+    [
+     59.0,
+     30.0
+    ],
+    [
+     30.0,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     58.4,
+     16.5
+    ],
+    [
+     94.1,
+     16.5
+    ],
+    [
+     97.5,
+     30.0
+    ],
+    [
+     66.4,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     94.1,
+     16.5
+    ],
+    [
+     125.1,
+     16.5
+    ],
+    [
+     124.5,
+     30.0
+    ],
+    [
+     97.5,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     133.7,
+     16.5
+    ],
+    [
+     169.3,
+     16.5
+    ],
+    [
+     162.9,
+     30.0
+    ],
+    [
+     131.9,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     169.3,
+     16.5
+    ],
+    [
+     200.4,
+     16.5
+    ],
+    [
+     189.9,
+     30.0
+    ],
+    [
+     162.9,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     209.0,
+     16.5
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     223.5,
+     37.6
+    ],
+    [
+     210.0,
+     48.4
+    ],
+    [
+     210.0,
+     30.0
+    ],
+    [
+     197.4,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     37.6
+    ],
+    [
+     223.5,
+     68.7
+    ],
+    [
+     210.0,
+     75.4
+    ],
+    [
+     210.0,
+     48.4
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     77.2
+    ],
+    [
+     223.5,
+     112.9
+    ],
+    [
+     210.0,
+     113.8
+    ],
+    [
+     210.0,
+     82.8
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     112.9
+    ],
+    [
+     223.5,
+     143.9
+    ],
+    [
+     210.0,
+     140.8
+    ],
+    [
+     210.0,
+     113.8
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     152.5
+    ],
+    [
+     223.5,
+     188.2
+    ],
+    [
+     210.0,
+     179.3
+    ],
+    [
+     210.0,
+     148.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     188.2
+    ],
+    [
+     223.5,
+     219.2
+    ],
+    [
+     210.0,
+     206.3
+    ],
+    [
+     210.0,
+     179.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     219.2,
+     223.5
+    ],
+    [
+     183.6,
+     223.5
+    ],
+    [
+     175.3,
+     210.0
+    ],
+    [
+     206.3,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     183.6,
+     223.5
+    ],
+    [
+     152.5,
+     223.5
+    ],
+    [
+     148.3,
+     210.0
+    ],
+    [
+     175.3,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     143.9,
+     223.5
+    ],
+    [
+     108.3,
+     223.5
+    ],
+    [
+     109.8,
+     210.0
+    ],
+    [
+     140.8,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     108.3,
+     223.5
+    ],
+    [
+     77.2,
+     223.5
+    ],
+    [
+     82.8,
+     210.0
+    ],
+    [
+     109.8,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     68.7,
+     223.5
+    ],
+    [
+     33.0,
+     223.5
+    ],
+    [
+     44.4,
+     210.0
+    ],
+    [
+     75.4,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     33.0,
+     223.5
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     16.5,
+     209.0
+    ],
+    [
+     30.0,
+     197.4
+    ],
+    [
+     30.0,
+     210.0
+    ],
+    [
+     44.4,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     200.4
+    ],
+    [
+     16.5,
+     164.7
+    ],
+    [
+     30.0,
+     158.9
+    ],
+    [
+     30.0,
+     189.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     164.7
+    ],
+    [
+     16.5,
+     133.7
+    ],
+    [
+     30.0,
+     131.9
+    ],
+    [
+     30.0,
+     158.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     125.1
+    ],
+    [
+     16.5,
+     89.5
+    ],
+    [
+     30.0,
+     93.5
+    ],
+    [
+     30.0,
+     124.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     89.5
+    ],
+    [
+     16.5,
+     58.4
+    ],
+    [
+     30.0,
+     66.4
+    ],
+    [
+     30.0,
+     93.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     49.9
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.0,
+     30.0
+    ],
+    [
+     30.0,
+     59.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     135.2,
+     13.5
+    ],
+    [
+     134.8,
+     16.5
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     135.2,
+     13.5
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     226.5,
+     43.9
+    ],
+    [
+     223.5,
+     46.1
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     134.8,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     226.5,
+     43.9
+    ],
+    [
+     226.5,
+     165.6
+    ],
+    [
+     223.5,
+     164.4
+    ],
+    [
+     223.5,
+     46.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     226.5,
+     165.6
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     165.6,
+     226.5
+    ],
+    [
+     164.4,
+     223.5
+    ],
+    [
+     223.5,
+     223.5
+    ],
+    [
+     223.5,
+     164.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     165.6,
+     226.5
+    ],
+    [
+     43.9,
+     226.5
+    ],
+    [
+     46.1,
+     223.5
+    ],
+    [
+     164.4,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     43.9,
+     226.5
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     13.5,
+     135.2
+    ],
+    [
+     16.5,
+     134.8
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     46.1,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     135.2
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     16.5,
+     134.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Rest room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     5.0,
+     0.0
+    ],
+    [
+     17.9,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "Rest rooms for tower controllers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Rest room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     5.0,
+     0.0
+    ],
+    [
+     10.0,
+     0.0
+    ],
+    [
+     22.4,
+     13.5
+    ],
+    [
+     17.9,
+     13.5
+    ]
+   ],
+   "about": "Rest rooms for tower controllers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     10.0,
+     0.0
+    ],
+    [
+     15.0,
+     0.0
+    ],
+    [
+     26.8,
+     13.5
+    ],
+    [
+     22.4,
+     13.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     15.0,
+     0.0
+    ],
+    [
+     50.3,
+     0.0
+    ],
+    [
+     58.2,
+     13.5
+    ],
+    [
+     26.8,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     50.3,
+     0.0
+    ],
+    [
+     85.7,
+     0.0
+    ],
+    [
+     89.5,
+     13.5
+    ],
+    [
+     58.2,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     85.7,
+     0.0
+    ],
+    [
+     121.0,
+     0.0
+    ],
+    [
+     120.9,
+     13.5
+    ],
+    [
+     89.5,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     121.0,
+     0.0
+    ],
+    [
+     156.3,
+     0.0
+    ],
+    [
+     152.2,
+     13.5
+    ],
+    [
+     120.9,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     156.3,
+     0.0
+    ],
+    [
+     191.6,
+     0.0
+    ],
+    [
+     183.6,
+     13.5
+    ],
+    [
+     152.2,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     191.6,
+     0.0
+    ],
+    [
+     226.9,
+     0.0
+    ],
+    [
+     214.9,
+     13.5
+    ],
+    [
+     183.6,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     226.9,
+     0.0
+    ],
+    [
+     240.0,
+     0.0
+    ],
+    [
+     240.0,
+     22.3
+    ],
+    [
+     226.5,
+     33.3
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     214.9,
+     13.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     22.3
+    ],
+    [
+     240.0,
+     57.6
+    ],
+    [
+     226.5,
+     64.6
+    ],
+    [
+     226.5,
+     33.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     57.6
+    ],
+    [
+     240.0,
+     92.9
+    ],
+    [
+     226.5,
+     95.9
+    ],
+    [
+     226.5,
+     64.6
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     92.9
+    ],
+    [
+     240.0,
+     128.2
+    ],
+    [
+     226.5,
+     127.3
+    ],
+    [
+     226.5,
+     95.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     128.2
+    ],
+    [
+     240.0,
+     163.5
+    ],
+    [
+     226.5,
+     158.6
+    ],
+    [
+     226.5,
+     127.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     163.5
+    ],
+    [
+     240.0,
+     198.9
+    ],
+    [
+     226.5,
+     190.0
+    ],
+    [
+     226.5,
+     158.6
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     198.9
+    ],
+    [
+     240.0,
+     234.2
+    ],
+    [
+     226.5,
+     221.3
+    ],
+    [
+     226.5,
+     190.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     240.0,
+     234.2
+    ],
+    [
+     240.0,
+     240.0
+    ],
+    [
+     210.5,
+     240.0
+    ],
+    [
+     200.3,
+     226.5
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     226.5,
+     221.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     210.5,
+     240.0
+    ],
+    [
+     175.2,
+     240.0
+    ],
+    [
+     169.0,
+     226.5
+    ],
+    [
+     200.3,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     175.2,
+     240.0
+    ],
+    [
+     139.9,
+     240.0
+    ],
+    [
+     137.6,
+     226.5
+    ],
+    [
+     169.0,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     139.9,
+     240.0
+    ],
+    [
+     104.5,
+     240.0
+    ],
+    [
+     106.3,
+     226.5
+    ],
+    [
+     137.6,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     104.5,
+     240.0
+    ],
+    [
+     69.2,
+     240.0
+    ],
+    [
+     74.9,
+     226.5
+    ],
+    [
+     106.3,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     69.2,
+     240.0
+    ],
+    [
+     33.9,
+     240.0
+    ],
+    [
+     43.6,
+     226.5
+    ],
+    [
+     74.9,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     33.9,
+     240.0
+    ],
+    [
+     0.0,
+     240.0
+    ],
+    [
+     0.0,
+     238.6
+    ],
+    [
+     13.5,
+     225.2
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     43.6,
+     226.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     238.6
+    ],
+    [
+     0.0,
+     203.3
+    ],
+    [
+     13.5,
+     193.9
+    ],
+    [
+     13.5,
+     225.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     203.3
+    ],
+    [
+     0.0,
+     167.9
+    ],
+    [
+     13.5,
+     162.5
+    ],
+    [
+     13.5,
+     193.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     167.9
+    ],
+    [
+     0.0,
+     132.6
+    ],
+    [
+     13.5,
+     131.2
+    ],
+    [
+     13.5,
+     162.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     132.6
+    ],
+    [
+     0.0,
+     97.3
+    ],
+    [
+     13.5,
+     99.9
+    ],
+    [
+     13.5,
+     131.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     97.3
+    ],
+    [
+     0.0,
+     62.0
+    ],
+    [
+     13.5,
+     68.5
+    ],
+    [
+     13.5,
+     99.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     62.0
+    ],
+    [
+     0.0,
+     26.7
+    ],
+    [
+     13.5,
+     37.2
+    ],
+    [
+     13.5,
+     68.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     26.7
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     37.2
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     16.5
+    ],
+    [
+     49.9,
+     16.5
+    ],
+    [
+     59.0,
+     30.0
+    ],
+    [
+     30.0,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     58.4,
+     16.5
+    ],
+    [
+     94.1,
+     16.5
+    ],
+    [
+     97.5,
+     30.0
+    ],
+    [
+     66.4,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     94.1,
+     16.5
+    ],
+    [
+     125.1,
+     16.5
+    ],
+    [
+     124.5,
+     30.0
+    ],
+    [
+     97.5,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     133.7,
+     16.5
+    ],
+    [
+     169.3,
+     16.5
+    ],
+    [
+     162.9,
+     30.0
+    ],
+    [
+     131.9,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     169.3,
+     16.5
+    ],
+    [
+     200.4,
+     16.5
+    ],
+    [
+     189.9,
+     30.0
+    ],
+    [
+     162.9,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     209.0,
+     16.5
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     223.5,
+     37.6
+    ],
+    [
+     210.0,
+     48.4
+    ],
+    [
+     210.0,
+     30.0
+    ],
+    [
+     197.4,
+     30.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     37.6
+    ],
+    [
+     223.5,
+     68.7
+    ],
+    [
+     210.0,
+     75.4
+    ],
+    [
+     210.0,
+     48.4
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     77.2
+    ],
+    [
+     223.5,
+     112.9
+    ],
+    [
+     210.0,
+     113.8
+    ],
+    [
+     210.0,
+     82.8
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     112.9
+    ],
+    [
+     223.5,
+     143.9
+    ],
+    [
+     210.0,
+     140.8
+    ],
+    [
+     210.0,
+     113.8
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     152.5
+    ],
+    [
+     223.5,
+     188.2
+    ],
+    [
+     210.0,
+     179.3
+    ],
+    [
+     210.0,
+     148.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     223.5,
+     188.2
+    ],
+    [
+     223.5,
+     219.2
+    ],
+    [
+     210.0,
+     206.3
+    ],
+    [
+     210.0,
+     179.3
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     219.2,
+     223.5
+    ],
+    [
+     183.6,
+     223.5
+    ],
+    [
+     175.3,
+     210.0
+    ],
+    [
+     206.3,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     183.6,
+     223.5
+    ],
+    [
+     152.5,
+     223.5
+    ],
+    [
+     148.3,
+     210.0
+    ],
+    [
+     175.3,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     143.9,
+     223.5
+    ],
+    [
+     108.3,
+     223.5
+    ],
+    [
+     109.8,
+     210.0
+    ],
+    [
+     140.8,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     108.3,
+     223.5
+    ],
+    [
+     77.2,
+     223.5
+    ],
+    [
+     82.8,
+     210.0
+    ],
+    [
+     109.8,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     68.7,
+     223.5
+    ],
+    [
+     33.0,
+     223.5
+    ],
+    [
+     44.4,
+     210.0
+    ],
+    [
+     75.4,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     33.0,
+     223.5
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     16.5,
+     209.0
+    ],
+    [
+     30.0,
+     197.4
+    ],
+    [
+     30.0,
+     210.0
+    ],
+    [
+     44.4,
+     210.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     200.4
+    ],
+    [
+     16.5,
+     164.7
+    ],
+    [
+     30.0,
+     158.9
+    ],
+    [
+     30.0,
+     189.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     164.7
+    ],
+    [
+     16.5,
+     133.7
+    ],
+    [
+     30.0,
+     131.9
+    ],
+    [
+     30.0,
+     158.9
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     125.1
+    ],
+    [
+     16.5,
+     89.5
+    ],
+    [
+     30.0,
+     93.5
+    ],
+    [
+     30.0,
+     124.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     89.5
+    ],
+    [
+     16.5,
+     58.4
+    ],
+    [
+     30.0,
+     66.4
+    ],
+    [
+     30.0,
+     93.5
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Equipment room",
+   "levels": [
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10"
+   ],
+   "outline_m": [
+    [
+     16.5,
+     49.9
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.0,
+     30.0
+    ],
+    [
+     30.0,
+     59.0
+    ]
+   ],
+   "about": "Racks of radio, radar and data equipment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     135.2,
+     13.5
+    ],
+    [
+     134.8,
+     16.5
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     135.2,
+     13.5
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     226.5,
+     43.9
+    ],
+    [
+     223.5,
+     46.1
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     134.8,
+     16.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     226.5,
+     43.9
+    ],
+    [
+     226.5,
+     165.6
+    ],
+    [
+     223.5,
+     164.4
+    ],
+    [
+     223.5,
+     46.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     226.5,
+     165.6
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     165.6,
+     226.5
+    ],
+    [
+     164.4,
+     223.5
+    ],
+    [
+     223.5,
+     223.5
+    ],
+    [
+     223.5,
+     164.4
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     165.6,
+     226.5
+    ],
+    [
+     43.9,
+     226.5
+    ],
+    [
+     46.1,
+     223.5
+    ],
+    [
+     164.4,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     43.9,
+     226.5
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     13.5,
+     135.2
+    ],
+    [
+     16.5,
+     134.8
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     46.1,
+     223.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L11",
+   "outline_m": [
+    [
+     13.5,
+     135.2
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     16.5,
+     134.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Visual control cab",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     23.5,
+     0.0
+    ],
+    [
+     34.4,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The glass room at the top of the Beacon. Controllers look straight out over the flight deck and clear craft to launch and land.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Tower supervisor's desk",
+   "level": "L11",
+   "outline_m": [
+    [
+     23.5,
+     0.0
+    ],
+    [
+     28.6,
+     0.0
+    ],
+    [
+     38.8,
+     13.5
+    ],
+    [
+     34.4,
+     13.5
+    ]
+   ],
+   "about": "The supervisor's raised desk in the cab.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     28.6,
+     0.0
+    ],
+    [
+     42.7,
+     0.0
+    ],
+    [
+     51.4,
+     13.5
+    ],
+    [
+     38.8,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     42.7,
+     0.0
+    ],
+    [
+     56.8,
+     0.0
+    ],
+    [
+     63.9,
+     13.5
+    ],
+    [
+     51.4,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     56.8,
+     0.0
+    ],
+    [
+     70.9,
+     0.0
+    ],
+    [
+     76.5,
+     13.5
+    ],
+    [
+     63.9,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     70.9,
+     0.0
+    ],
+    [
+     85.1,
+     0.0
+    ],
+    [
+     89.0,
+     13.5
+    ],
+    [
+     76.5,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     85.1,
+     0.0
+    ],
+    [
+     99.2,
+     0.0
+    ],
+    [
+     101.5,
+     13.5
+    ],
+    [
+     89.0,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     99.2,
+     0.0
+    ],
+    [
+     113.3,
+     0.0
+    ],
+    [
+     114.1,
+     13.5
+    ],
+    [
+     101.5,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     113.3,
+     0.0
+    ],
+    [
+     127.4,
+     0.0
+    ],
+    [
+     126.6,
+     13.5
+    ],
+    [
+     114.1,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     127.4,
+     0.0
+    ],
+    [
+     141.6,
+     0.0
+    ],
+    [
+     139.2,
+     13.5
+    ],
+    [
+     126.6,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     141.6,
+     0.0
+    ],
+    [
+     155.7,
+     0.0
+    ],
+    [
+     151.7,
+     13.5
+    ],
+    [
+     139.2,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     155.7,
+     0.0
+    ],
+    [
+     169.8,
+     0.0
+    ],
+    [
+     164.2,
+     13.5
+    ],
+    [
+     151.7,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     169.8,
+     0.0
+    ],
+    [
+     184.0,
+     0.0
+    ],
+    [
+     176.8,
+     13.5
+    ],
+    [
+     164.2,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     184.0,
+     0.0
+    ],
+    [
+     198.1,
+     0.0
+    ],
+    [
+     189.3,
+     13.5
+    ],
+    [
+     176.8,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     198.1,
+     0.0
+    ],
+    [
+     212.2,
+     0.0
+    ],
+    [
+     201.8,
+     13.5
+    ],
+    [
+     189.3,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     212.2,
+     0.0
+    ],
+    [
+     226.3,
+     0.0
+    ],
+    [
+     214.4,
+     13.5
+    ],
+    [
+     201.8,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     226.3,
+     0.0
+    ],
+    [
+     240.0,
+     0.0
+    ],
+    [
+     240.0,
+     0.5
+    ],
+    [
+     226.5,
+     13.9
+    ],
+    [
+     226.5,
+     13.5
+    ],
+    [
+     214.4,
+     13.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     0.5
+    ],
+    [
+     240.0,
+     14.6
+    ],
+    [
+     226.5,
+     26.5
+    ],
+    [
+     226.5,
+     13.9
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     14.6
+    ],
+    [
+     240.0,
+     28.7
+    ],
+    [
+     226.5,
+     39.0
+    ],
+    [
+     226.5,
+     26.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     28.7
+    ],
+    [
+     240.0,
+     42.9
+    ],
+    [
+     226.5,
+     51.5
+    ],
+    [
+     226.5,
+     39.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     42.9
+    ],
+    [
+     240.0,
+     57.0
+    ],
+    [
+     226.5,
+     64.1
+    ],
+    [
+     226.5,
+     51.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     57.0
+    ],
+    [
+     240.0,
+     71.1
+    ],
+    [
+     226.5,
+     76.6
+    ],
+    [
+     226.5,
+     64.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     71.1
+    ],
+    [
+     240.0,
+     85.2
+    ],
+    [
+     226.5,
+     89.2
+    ],
+    [
+     226.5,
+     76.6
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     85.2
+    ],
+    [
+     240.0,
+     99.4
+    ],
+    [
+     226.5,
+     101.7
+    ],
+    [
+     226.5,
+     89.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     99.4
+    ],
+    [
+     240.0,
+     113.5
+    ],
+    [
+     226.5,
+     114.2
+    ],
+    [
+     226.5,
+     101.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     113.5
+    ],
+    [
+     240.0,
+     127.6
+    ],
+    [
+     226.5,
+     126.8
+    ],
+    [
+     226.5,
+     114.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     127.6
+    ],
+    [
+     240.0,
+     141.8
+    ],
+    [
+     226.5,
+     139.3
+    ],
+    [
+     226.5,
+     126.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     141.8
+    ],
+    [
+     240.0,
+     155.9
+    ],
+    [
+     226.5,
+     151.8
+    ],
+    [
+     226.5,
+     139.3
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     155.9
+    ],
+    [
+     240.0,
+     170.0
+    ],
+    [
+     226.5,
+     164.4
+    ],
+    [
+     226.5,
+     151.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     170.0
+    ],
+    [
+     240.0,
+     184.1
+    ],
+    [
+     226.5,
+     176.9
+    ],
+    [
+     226.5,
+     164.4
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     184.1
+    ],
+    [
+     240.0,
+     198.3
+    ],
+    [
+     226.5,
+     189.5
+    ],
+    [
+     226.5,
+     176.9
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     198.3
+    ],
+    [
+     240.0,
+     212.4
+    ],
+    [
+     226.5,
+     202.0
+    ],
+    [
+     226.5,
+     189.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     212.4
+    ],
+    [
+     240.0,
+     226.5
+    ],
+    [
+     226.5,
+     214.5
+    ],
+    [
+     226.5,
+     202.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     240.0,
+     226.5
+    ],
+    [
+     240.0,
+     240.0
+    ],
+    [
+     239.3,
+     240.0
+    ],
+    [
+     225.9,
+     226.5
+    ],
+    [
+     226.5,
+     226.5
+    ],
+    [
+     226.5,
+     214.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     239.3,
+     240.0
+    ],
+    [
+     225.2,
+     240.0
+    ],
+    [
+     213.4,
+     226.5
+    ],
+    [
+     225.9,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     225.2,
+     240.0
+    ],
+    [
+     211.1,
+     240.0
+    ],
+    [
+     200.8,
+     226.5
+    ],
+    [
+     213.4,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     211.1,
+     240.0
+    ],
+    [
+     197.0,
+     240.0
+    ],
+    [
+     188.3,
+     226.5
+    ],
+    [
+     200.8,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     197.0,
+     240.0
+    ],
+    [
+     182.8,
+     240.0
+    ],
+    [
+     175.8,
+     226.5
+    ],
+    [
+     188.3,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     182.8,
+     240.0
+    ],
+    [
+     168.7,
+     240.0
+    ],
+    [
+     163.2,
+     226.5
+    ],
+    [
+     175.8,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     168.7,
+     240.0
+    ],
+    [
+     154.6,
+     240.0
+    ],
+    [
+     150.7,
+     226.5
+    ],
+    [
+     163.2,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     154.6,
+     240.0
+    ],
+    [
+     140.5,
+     240.0
+    ],
+    [
+     138.2,
+     226.5
+    ],
+    [
+     150.7,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     140.5,
+     240.0
+    ],
+    [
+     126.3,
+     240.0
+    ],
+    [
+     125.6,
+     226.5
+    ],
+    [
+     138.2,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     126.3,
+     240.0
+    ],
+    [
+     112.2,
+     240.0
+    ],
+    [
+     113.1,
+     226.5
+    ],
+    [
+     125.6,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     112.2,
+     240.0
+    ],
+    [
+     98.1,
+     240.0
+    ],
+    [
+     100.5,
+     226.5
+    ],
+    [
+     113.1,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     98.1,
+     240.0
+    ],
+    [
+     83.9,
+     240.0
+    ],
+    [
+     88.0,
+     226.5
+    ],
+    [
+     100.5,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     83.9,
+     240.0
+    ],
+    [
+     69.8,
+     240.0
+    ],
+    [
+     75.5,
+     226.5
+    ],
+    [
+     88.0,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     69.8,
+     240.0
+    ],
+    [
+     55.7,
+     240.0
+    ],
+    [
+     62.9,
+     226.5
+    ],
+    [
+     75.5,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     55.7,
+     240.0
+    ],
+    [
+     41.6,
+     240.0
+    ],
+    [
+     50.4,
+     226.5
+    ],
+    [
+     62.9,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     41.6,
+     240.0
+    ],
+    [
+     27.4,
+     240.0
+    ],
+    [
+     37.8,
+     226.5
+    ],
+    [
+     50.4,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     27.4,
+     240.0
+    ],
+    [
+     13.3,
+     240.0
+    ],
+    [
+     25.3,
+     226.5
+    ],
+    [
+     37.8,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     13.3,
+     240.0
+    ],
+    [
+     0.0,
+     240.0
+    ],
+    [
+     0.0,
+     239.2
+    ],
+    [
+     13.5,
+     225.8
+    ],
+    [
+     13.5,
+     226.5
+    ],
+    [
+     25.3,
+     226.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     239.2
+    ],
+    [
+     0.0,
+     225.0
+    ],
+    [
+     13.5,
+     213.2
+    ],
+    [
+     13.5,
+     225.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     225.0
+    ],
+    [
+     0.0,
+     210.9
+    ],
+    [
+     13.5,
+     200.7
+    ],
+    [
+     13.5,
+     213.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     210.9
+    ],
+    [
+     0.0,
+     196.8
+    ],
+    [
+     13.5,
+     188.2
+    ],
+    [
+     13.5,
+     200.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     196.8
+    ],
+    [
+     0.0,
+     182.7
+    ],
+    [
+     13.5,
+     175.6
+    ],
+    [
+     13.5,
+     188.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     182.7
+    ],
+    [
+     0.0,
+     168.5
+    ],
+    [
+     13.5,
+     163.1
+    ],
+    [
+     13.5,
+     175.6
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     168.5
+    ],
+    [
+     0.0,
+     154.4
+    ],
+    [
+     13.5,
+     150.5
+    ],
+    [
+     13.5,
+     163.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     154.4
+    ],
+    [
+     0.0,
+     140.3
+    ],
+    [
+     13.5,
+     138.0
+    ],
+    [
+     13.5,
+     150.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     140.3
+    ],
+    [
+     0.0,
+     126.1
+    ],
+    [
+     13.5,
+     125.5
+    ],
+    [
+     13.5,
+     138.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E328",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     126.1
+    ],
+    [
+     0.0,
+     112.0
+    ],
+    [
+     13.5,
+     112.9
+    ],
+    [
+     13.5,
+     125.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E329",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     112.0
+    ],
+    [
+     0.0,
+     97.9
+    ],
+    [
+     13.5,
+     100.4
+    ],
+    [
+     13.5,
+     112.9
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E330",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     97.9
+    ],
+    [
+     0.0,
+     83.8
+    ],
+    [
+     13.5,
+     87.8
+    ],
+    [
+     13.5,
+     100.4
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E331",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     83.8
+    ],
+    [
+     0.0,
+     69.6
+    ],
+    [
+     13.5,
+     75.3
+    ],
+    [
+     13.5,
+     87.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E332",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     69.6
+    ],
+    [
+     0.0,
+     55.5
+    ],
+    [
+     13.5,
+     62.8
+    ],
+    [
+     13.5,
+     75.3
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E333",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     55.5
+    ],
+    [
+     0.0,
+     41.4
+    ],
+    [
+     13.5,
+     50.2
+    ],
+    [
+     13.5,
+     62.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E334",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     41.4
+    ],
+    [
+     0.0,
+     27.3
+    ],
+    [
+     13.5,
+     37.7
+    ],
+    [
+     13.5,
+     50.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E335",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     27.3
+    ],
+    [
+     0.0,
+     13.1
+    ],
+    [
+     13.5,
+     25.1
+    ],
+    [
+     13.5,
+     37.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E336",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     0.0,
+     13.1
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     25.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E337",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.8,
+     16.5
+    ],
+    [
+     42.4,
+     30.0
+    ],
+    [
+     30.0,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E338",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     30.8,
+     16.5
+    ],
+    [
+     49.9,
+     16.5
+    ],
+    [
+     59.0,
+     30.0
+    ],
+    [
+     42.4,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E339",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     58.4,
+     16.5
+    ],
+    [
+     72.7,
+     16.5
+    ],
+    [
+     78.9,
+     30.0
+    ],
+    [
+     66.4,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E340",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     72.7,
+     16.5
+    ],
+    [
+     86.9,
+     16.5
+    ],
+    [
+     91.3,
+     30.0
+    ],
+    [
+     78.9,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E341",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     86.9,
+     16.5
+    ],
+    [
+     101.2,
+     16.5
+    ],
+    [
+     103.7,
+     30.0
+    ],
+    [
+     91.3,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E342",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     101.2,
+     16.5
+    ],
+    [
+     115.5,
+     16.5
+    ],
+    [
+     116.1,
+     30.0
+    ],
+    [
+     103.7,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E343",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     115.5,
+     16.5
+    ],
+    [
+     125.1,
+     16.5
+    ],
+    [
+     124.5,
+     30.0
+    ],
+    [
+     116.1,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E344",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     133.7,
+     16.5
+    ],
+    [
+     148.0,
+     16.5
+    ],
+    [
+     144.3,
+     30.0
+    ],
+    [
+     131.9,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E345",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     148.0,
+     16.5
+    ],
+    [
+     162.2,
+     16.5
+    ],
+    [
+     156.7,
+     30.0
+    ],
+    [
+     144.3,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E346",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     162.2,
+     16.5
+    ],
+    [
+     176.5,
+     16.5
+    ],
+    [
+     169.1,
+     30.0
+    ],
+    [
+     156.7,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E347",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     176.5,
+     16.5
+    ],
+    [
+     190.7,
+     16.5
+    ],
+    [
+     181.5,
+     30.0
+    ],
+    [
+     169.1,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E348",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     190.7,
+     16.5
+    ],
+    [
+     200.4,
+     16.5
+    ],
+    [
+     189.9,
+     30.0
+    ],
+    [
+     181.5,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E349",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     209.0,
+     16.5
+    ],
+    [
+     223.2,
+     16.5
+    ],
+    [
+     209.8,
+     30.0
+    ],
+    [
+     197.4,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E350",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.2,
+     16.5
+    ],
+    [
+     223.5,
+     16.5
+    ],
+    [
+     223.5,
+     30.5
+    ],
+    [
+     210.0,
+     42.2
+    ],
+    [
+     210.0,
+     30.0
+    ],
+    [
+     209.8,
+     30.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E351",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     30.5
+    ],
+    [
+     223.5,
+     44.8
+    ],
+    [
+     210.0,
+     54.6
+    ],
+    [
+     210.0,
+     42.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E352",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     44.8
+    ],
+    [
+     223.5,
+     59.0
+    ],
+    [
+     210.0,
+     67.0
+    ],
+    [
+     210.0,
+     54.6
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E353",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     59.0
+    ],
+    [
+     223.5,
+     68.7
+    ],
+    [
+     210.0,
+     75.4
+    ],
+    [
+     210.0,
+     67.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E354",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     77.2
+    ],
+    [
+     223.5,
+     91.5
+    ],
+    [
+     210.0,
+     95.2
+    ],
+    [
+     210.0,
+     82.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E355",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     91.5
+    ],
+    [
+     223.5,
+     105.8
+    ],
+    [
+     210.0,
+     107.6
+    ],
+    [
+     210.0,
+     95.2
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E356",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     105.8
+    ],
+    [
+     223.5,
+     120.0
+    ],
+    [
+     210.0,
+     120.0
+    ],
+    [
+     210.0,
+     107.6
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E357",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     120.0
+    ],
+    [
+     223.5,
+     134.3
+    ],
+    [
+     210.0,
+     132.4
+    ],
+    [
+     210.0,
+     120.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E358",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     134.3
+    ],
+    [
+     223.5,
+     143.9
+    ],
+    [
+     210.0,
+     140.8
+    ],
+    [
+     210.0,
+     132.4
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E359",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     152.5
+    ],
+    [
+     223.5,
+     166.8
+    ],
+    [
+     210.0,
+     160.7
+    ],
+    [
+     210.0,
+     148.3
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E360",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     166.8
+    ],
+    [
+     223.5,
+     181.0
+    ],
+    [
+     210.0,
+     173.1
+    ],
+    [
+     210.0,
+     160.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E361",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     181.0
+    ],
+    [
+     223.5,
+     195.3
+    ],
+    [
+     210.0,
+     185.5
+    ],
+    [
+     210.0,
+     173.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E362",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     195.3
+    ],
+    [
+     223.5,
+     209.6
+    ],
+    [
+     210.0,
+     197.9
+    ],
+    [
+     210.0,
+     185.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E363",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     223.5,
+     209.6
+    ],
+    [
+     223.5,
+     219.2
+    ],
+    [
+     210.0,
+     206.3
+    ],
+    [
+     210.0,
+     197.9
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E364",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     219.2,
+     223.5
+    ],
+    [
+     205.0,
+     223.5
+    ],
+    [
+     193.9,
+     210.0
+    ],
+    [
+     206.3,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E365",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     205.0,
+     223.5
+    ],
+    [
+     190.7,
+     223.5
+    ],
+    [
+     181.5,
+     210.0
+    ],
+    [
+     193.9,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E366",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     190.7,
+     223.5
+    ],
+    [
+     176.4,
+     223.5
+    ],
+    [
+     169.1,
+     210.0
+    ],
+    [
+     181.5,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E367",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     176.4,
+     223.5
+    ],
+    [
+     162.2,
+     223.5
+    ],
+    [
+     156.7,
+     210.0
+    ],
+    [
+     169.1,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E368",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     162.2,
+     223.5
+    ],
+    [
+     152.5,
+     223.5
+    ],
+    [
+     148.3,
+     210.0
+    ],
+    [
+     156.7,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E369",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     143.9,
+     223.5
+    ],
+    [
+     129.7,
+     223.5
+    ],
+    [
+     128.4,
+     210.0
+    ],
+    [
+     140.8,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E370",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     129.7,
+     223.5
+    ],
+    [
+     115.4,
+     223.5
+    ],
+    [
+     116.0,
+     210.0
+    ],
+    [
+     128.4,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E371",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     115.4,
+     223.5
+    ],
+    [
+     101.2,
+     223.5
+    ],
+    [
+     103.6,
+     210.0
+    ],
+    [
+     116.0,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E372",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     101.2,
+     223.5
+    ],
+    [
+     86.9,
+     223.5
+    ],
+    [
+     91.2,
+     210.0
+    ],
+    [
+     103.6,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E373",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     86.9,
+     223.5
+    ],
+    [
+     77.2,
+     223.5
+    ],
+    [
+     82.8,
+     210.0
+    ],
+    [
+     91.2,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E374",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     68.7,
+     223.5
+    ],
+    [
+     54.4,
+     223.5
+    ],
+    [
+     63.0,
+     210.0
+    ],
+    [
+     75.4,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E375",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     54.4,
+     223.5
+    ],
+    [
+     40.1,
+     223.5
+    ],
+    [
+     50.6,
+     210.0
+    ],
+    [
+     63.0,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E376",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     40.1,
+     223.5
+    ],
+    [
+     25.9,
+     223.5
+    ],
+    [
+     38.2,
+     210.0
+    ],
+    [
+     50.6,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E377",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     25.9,
+     223.5
+    ],
+    [
+     16.5,
+     223.5
+    ],
+    [
+     16.5,
+     218.6
+    ],
+    [
+     30.0,
+     205.8
+    ],
+    [
+     30.0,
+     210.0
+    ],
+    [
+     38.2,
+     210.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E378",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     218.6
+    ],
+    [
+     16.5,
+     209.0
+    ],
+    [
+     30.0,
+     197.4
+    ],
+    [
+     30.0,
+     205.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E379",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     200.4
+    ],
+    [
+     16.5,
+     186.1
+    ],
+    [
+     30.0,
+     177.5
+    ],
+    [
+     30.0,
+     189.9
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E380",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     186.1
+    ],
+    [
+     16.5,
+     171.9
+    ],
+    [
+     30.0,
+     165.1
+    ],
+    [
+     30.0,
+     177.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E381",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     171.9
+    ],
+    [
+     16.5,
+     157.6
+    ],
+    [
+     30.0,
+     152.7
+    ],
+    [
+     30.0,
+     165.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E382",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     157.6
+    ],
+    [
+     16.5,
+     143.3
+    ],
+    [
+     30.0,
+     140.3
+    ],
+    [
+     30.0,
+     152.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E383",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     143.3
+    ],
+    [
+     16.5,
+     133.7
+    ],
+    [
+     30.0,
+     131.9
+    ],
+    [
+     30.0,
+     140.3
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E384",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     125.1
+    ],
+    [
+     16.5,
+     110.9
+    ],
+    [
+     30.0,
+     112.1
+    ],
+    [
+     30.0,
+     124.5
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E385",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     110.9
+    ],
+    [
+     16.5,
+     96.6
+    ],
+    [
+     30.0,
+     99.7
+    ],
+    [
+     30.0,
+     112.1
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E386",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     96.6
+    ],
+    [
+     16.5,
+     82.3
+    ],
+    [
+     30.0,
+     87.3
+    ],
+    [
+     30.0,
+     99.7
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E387",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     82.3
+    ],
+    [
+     16.5,
+     68.1
+    ],
+    [
+     30.0,
+     74.8
+    ],
+    [
+     30.0,
+     87.3
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E388",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     68.1
+    ],
+    [
+     16.5,
+     58.4
+    ],
+    [
+     30.0,
+     66.4
+    ],
+    [
+     30.0,
+     74.8
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E389",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     49.9
+    ],
+    [
+     16.5,
+     35.6
+    ],
+    [
+     30.0,
+     46.6
+    ],
+    [
+     30.0,
+     59.0
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E390",
+   "type": "room",
+   "name": "Cab gallery",
+   "level": "L11",
+   "outline_m": [
+    [
+     16.5,
+     35.6
+    ],
+    [
+     16.5,
+     16.5
+    ],
+    [
+     30.0,
+     30.0
+    ],
+    [
+     30.0,
+     46.6
+    ]
+   ],
+   "about": "The walkway round the cab glass.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
