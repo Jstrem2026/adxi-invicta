@@ -1,0 +1,191 @@
+{
+  "about": "P1 Bow Docks building designs, one per building, written 27 Nov 2026 (proposed). The berths and Dock Concourse run along the port hull (low y). Front-row lots (P1-01 to P1-04, P1-06) face the docks with their y = 0 side; back-row lots (P1-05, P1-07 to P1-09) face the Dock Road with their high-y side. Coordinates in metres from each lot's bow-port corner.",
+  "buildings": [
+    {
+      "id": "P1-01", "name": "Harbourmaster",
+      "levels": [["L1", "Ground floor", 0, 5], ["L2", "Level 2", 5, 4], ["L3", "Level 3", 9, 4], ["L4", "Level 4", 13, 4], ["L5", "Tower", 17, 4], ["L6", "Tower", 21, 4], ["L7", "Tower", 25, 4], ["L8", "Tower", 29, 4], ["L9", "Tower", 33, 4], ["L10", "Tower", 37, 4], ["L11", "Harbour control cab", 41, 6]],
+      "parts": [
+        {"name": "Dockside forecourt", "x": 0, "y": 0, "w": 450, "d": 56, "layout": "outdoor"},
+        {"name": "Harbour tower", "x": 207, "y": 12, "w": 36, "d": 36, "levels": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10", "L11"], "corridor": 4, "cores": 1, "core_len": 12,
+         "rooms": {"L1-L4": [["Tower lobby", "rest"]], "L5-L10": [["Radar and comms floor", "rest"]], "L11": [["Harbour control cab (360° glass)", "rest"]]}},
+        {"name": "Front wing", "x": 60, "y": 60, "w": 330, "d": 44, "levels": ["L1", "L2", "L3", "L4"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Entrance hall", 1200], ["Berth booking counters", 1500], ["Pilot assignment desk", 600], ["Customs liaison", 600], ["Café", 800], ["Toilets", "rest"]],
+                   "L2": [["Berth control room", 3000], ["Traffic planning", 1500], ["Duty harbourmaster", 300], ["Offices", "rest"]],
+                   "L3-L4": [["Offices", "rest"], ["Meeting rooms", 100, 4]]}},
+        {"name": "Bow wing", "x": 60, "y": 104, "w": 44, "d": 186, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 1,
+         "rooms": {"L1": [["Dock operations", 2500], ["Records", 800], ["Stores", "rest"]], "L2-L3": [["Offices", "rest"]]}},
+        {"name": "Stern wing", "x": 346, "y": 104, "w": 44, "d": 186, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 1,
+         "rooms": {"L1": [["Pilots' ready room", 1200], ["Training room", 600], ["Kitchen and mess", "rest"]], "L2-L3": [["Offices", "rest"]]}},
+        {"name": "Harbour garden", "x": 104, "y": 104, "w": 242, "d": 186, "layout": "outdoor"},
+        {"name": "Staff parking", "x": 60, "y": 300, "w": 330, "d": 45, "layout": "outdoor"}
+      ],
+      "doors": [["Main entrance", [215, 60], [235, 60]]],
+      "structure": "Concrete frame on an 8 m grid for the horseshoe; a slipformed concrete tower core with a steel and glass cab.",
+      "look": "A four-storey horseshoe of pale stone-coloured panels and tall windows, open toward the docks, with a slim 154 ft (47 m) harbour tower standing in front; the tower cab is ringed with green and red navigation lights.",
+      "entrances": "Main entrance from the dockside forecourt; staff entrance from the parking on the Dock Road side.",
+      "capacity": "About 450 staff; the control cab holds 10 berth controllers.",
+      "services": "4 stair and lift cores plus the tower core; berth radar and comms; backup power.",
+      "interior": "A horseshoe of three wings round a harbour garden. Front wing: entrance hall, berth booking counters, pilot assignment and customs liaison on the ground floor, the berth control room on level 2, offices above. Side wings: dock operations, records, pilots' ready room and mess. The tower has radar and comms floors and the harbour control cab at the top."
+    },
+    {
+      "id": "P1-02", "name": "Bow Docks Fire Station",
+      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Level 2", 4.5, 4.5], ["L3", "Level 3", 9, 4.5], ["L4", "Drill tower top", 13.5, 6]],
+      "parts": [
+        {"name": "Dockside apron", "x": 0, "y": 0, "w": 400, "d": 30, "layout": "outdoor"},
+        {"name": "Appliance hall", "x": 40, "y": 30, "w": 220, "d": 66, "layout": "bays", "bays": 6, "bay_names": ["Dock tender bay", "Dock tender bay", "Foam tender bay", "Rescue unit bay", "Hazmat unit bay", "Command car bay"], "levels": ["L1", "L2"]},
+        {"name": "Crew wing", "x": 260, "y": 30, "w": 44, "d": 230, "levels": ["L1", "L2", "L3"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Watch room", 200], ["Breathing apparatus room", 300], ["Foam concentrate store", 800], ["Decontamination", 300], ["Hose and dive store", 900], ["Workshop", "rest"]],
+                   "L2": [["Bunk rooms", 16, 20], ["Kitchen", 200], ["Mess", 500], ["Gym", 400]],
+                   "L3": [["Station office", 300], ["Training room", 500], ["Fire safety office", 300], ["Offices", "rest"]]}},
+        {"name": "Drill tower", "x": 330, "y": 200, "w": 16, "d": 16, "layout": "hall", "room": "Drill tower", "levels": ["L1", "L2", "L3", "L4"]},
+        {"name": "Drill yard", "x": 40, "y": 110, "w": 210, "d": 170, "layout": "outdoor"}
+      ],
+      "doors": [["Appliance doors", [40, 30], [260, 30]]],
+      "structure": "Steel portal frame over the appliance hall, 9 m (30 ft) clear; three-storey concrete crew wing.",
+      "look": "An L of red-framed glass bay doors along the dock with a taller graphite crew wing turning inland; a lattice drill tower stands in the yard.",
+      "entrances": "Six appliance doors onto the dockside apron; crew door from the drill yard.",
+      "capacity": "6 appliances; 20 crew on watch.",
+      "services": "Foam refill at every bay, dive and water-rescue store, 2 stair cores with fire poles.",
+      "interior": "A six-bay appliance hall facing the dock, and a crew wing with watch room, breathing apparatus, foam store and dive store on the ground floor, bunk rooms, mess and gym above, offices and training on top. Drill tower and yard behind."
+    },
+    {
+      "id": "P1-03", "name": "Bow Docks Chandlery",
+      "levels": [["L1", "Trade floor", 0, 6], ["L2", "Mezzanine", 6, 5]],
+      "parts": [
+        {"name": "Dockside frontage", "x": 0, "y": 0, "w": 450, "d": 36, "layout": "outdoor"},
+        {"name": "Trade hall", "x": 40, "y": 40, "w": 300, "d": 120, "levels": ["L1", "L2"], "corridor": 12, "cores": 2, "corridor_name": "Trade aisle",
+         "rooms": {"L1": [["Ship parts counter", 4000], ["Rations and provisions", 4000], ["Crew outfitters", 2500], ["Tools and hardware", 3000], ["Navigation and charts", 1200], ["Café", 900], ["Trade floor", "rest"]],
+                   "L2": [["Account desks", 1500], ["Order office", 1200], ["Staff room", 400], ["Offices", "rest"]]}},
+        {"name": "Warehouse", "x": 40, "y": 180, "w": 300, "d": 130, "layout": "bays", "bays": 3, "bay_names": ["Racked spares", "Bulk provisions (chilled)", "Heavy parts"], "levels": ["L1", "L2"]},
+        {"name": "Loading yard", "x": 360, "y": 40, "w": 80, "d": 280, "layout": "outdoor"}
+      ],
+      "doors": [["Trade entrance", [175, 40], [205, 40]]],
+      "structure": "Steel frame on a 12 m grid with a timber mezzanine; racked steel warehouse behind.",
+      "look": "A tall trade hall with a saw-tooth roof of north lights and a glazed front full of goods on display, in weathered bronze and dark metal; the warehouse behind is plain ribbed steel.",
+      "entrances": "Trade entrance from the dockside; goods in and out through the loading yard on the stern side.",
+      "capacity": "About 2,000 customers a day; 150 staff.",
+      "services": "Chilled store for provisions, delivery carts to every berth, 2 stair cores.",
+      "interior": "A trade hall with counters for ship parts, rations and provisions, crew outfitting, tools and hardware and navigation charts along a central trade aisle, with account desks and the order office on the mezzanine; a three-part warehouse behind."
+    },
+    {
+      "id": "P1-04", "name": "Bow Docks Police Post",
+      "levels": [["L1", "Ground floor", 0, 4.2], ["L2", "Upper floor", 4.2, 4.2]],
+      "parts": [
+        {"name": "Front block", "x": 50, "y": 30, "w": 300, "d": 40, "levels": ["L1", "L2"], "corridor": 3, "cores": 2,
+         "rooms": {"L1": [["Front desk and waiting", 700], ["Customs search rooms", 40, 4], ["Interview rooms", 30, 4], ["Detained crew rooms", 14, 8], ["Duty office", 400], ["Toilets", "rest"]],
+                   "L2": [["Dock security control", 1200], ["Open office", 3000], ["Briefing room", 300], ["Lockers and showers", 600], ["Canteen", "rest"]]}},
+        {"name": "Rear wing", "x": 180, "y": 70, "w": 40, "d": 140, "levels": ["L1"], "corridor": 4,
+         "rooms": {"L1": [["Evidence store", 800], ["Armoury", 250], ["Drone and kit store", 1000], ["Vehicle garage", "rest"]]}},
+        {"name": "Secure vehicle yard", "x": 220, "y": 70, "w": 130, "d": 140, "layout": "outdoor"},
+        {"name": "Public garden", "x": 50, "y": 70, "w": 130, "d": 140, "layout": "outdoor"}
+      ],
+      "doors": [["Public entrance", [190, 30], [210, 30]]],
+      "structure": "Reinforced concrete frame with hardened ground-floor walls.",
+      "look": "A two-storey T in dark basalt panels with a long ribbon window over the dock and a blue light band at the entrance.",
+      "entrances": "Public entrance facing the dock; secure vehicle gate on the stern side.",
+      "capacity": "About 140 officers across three shifts.",
+      "services": "2 stair cores, custody rooms, drone launch pad on the roof.",
+      "interior": "Front desk, customs search rooms, interview rooms and detained-crew rooms on the ground floor; dock security control, open office and briefing room above; a rear wing with evidence store, armoury, drone store and garage between a public garden and a secure yard."
+    },
+    {
+      "id": "P1-05", "name": "Repair Yard",
+      "levels": [["L1", "Ground floor", 0, 6], ["L2", "Level 2", 6, 6], ["L3", "Shed upper", 12, 6], ["L4", "Shed upper", 18, 6], ["L5", "Shed roof space", 24, 6]],
+      "parts": [
+        {"name": "Transporter lane (to the berths)", "x": 0, "y": 0, "w": 900, "d": 36, "layout": "outdoor"},
+        {"name": "Repair shed A", "x": 40, "y": 40, "w": 260, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Dry bay A1", "Dry bay A2"], "levels": ["L1", "L2", "L3", "L4", "L5"]},
+        {"name": "Repair shed B", "x": 340, "y": 40, "w": 260, "d": 260, "layout": "bays", "bays": 2, "bay_names": ["Dry bay B1", "Dry bay B2"], "levels": ["L1", "L2", "L3", "L4", "L5"]},
+        {"name": "Open repair cradles", "x": 640, "y": 40, "w": 240, "d": 260, "layout": "outdoor"},
+        {"name": "Workshop row", "x": 40, "y": 330, "w": 840, "d": 50, "levels": ["L1", "L2"], "corridor": 5, "cores": 3,
+         "rooms": {"L1": [["Machine shop", 4000], ["Welding shop", 3000], ["Hull plating shop", 4000], ["Electrical shop", 2500], ["Pipe shop", 2000], ["Tool store", 1200], ["Locker rooms", 800, 2], ["Stores", "rest"]],
+                   "L2": [["Canteen", 2000], ["Planning and estimates", 2500], ["Training room", 600], ["Offices", "rest"]]}},
+        {"name": "Road-side parking", "x": 40, "y": 410, "w": 840, "d": 130, "layout": "outdoor"}
+      ],
+      "doors": [["Shed A door", [50, 40], [290, 40]], ["Shed B door", [350, 40], [590, 40]]],
+      "structure": "Two steel sheds, 30 m (98 ft) clear, with 100-tonne overhead cranes on rails; a two-storey concrete workshop row.",
+      "look": "Two big pitched sheds in rust-red and graphite ribbed steel with giant doors toward the berths and crane rails running out over the open cradles; the workshop row behind has a long line of yellow-lit windows.",
+      "entrances": "Ships come in on transporters from the berths through the shed doors; staff enter from the road-side parking.",
+      "capacity": "4 covered dry bays and 3 open cradles; about 700 workers per shift.",
+      "services": "Overhead cranes, compressed air, welding gas, power and water at every bay, 3 stair cores.",
+      "interior": "Two repair sheds with two dry bays each, open repair cradles beside them, and a workshop row with machine, welding, hull plating, electrical and pipe shops; canteen and planning offices upstairs."
+    },
+    {
+      "id": "P1-06", "name": "Bow Docks Fuel Depot",
+      "levels": [["L1", "Ground", 0, 9], ["L2", "Tank tops", 9, 9]],
+      "parts": [
+        {"name": "Bunker manifold (lines to the berths)", "x": 0, "y": 0, "w": 900, "d": 30, "layout": "outdoor"},
+        {"name": "Spill wall", "x": 40, "y": 40, "w": 760, "d": 250, "layout": "outdoor"},
+        {"name": "Tank 1", "x": 70, "y": 60, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 1", "levels": ["L1", "L2"]},
+        {"name": "Tank 2", "x": 220, "y": 60, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 2", "levels": ["L1", "L2"]},
+        {"name": "Tank 3", "x": 370, "y": 60, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 3", "levels": ["L1", "L2"]},
+        {"name": "Tank 4", "x": 520, "y": 60, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 4", "levels": ["L1", "L2"]},
+        {"name": "Tank 5", "x": 670, "y": 60, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 5", "levels": ["L1", "L2"]},
+        {"name": "Tank 6", "x": 70, "y": 190, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 6", "levels": ["L1", "L2"]},
+        {"name": "Tank 7", "x": 220, "y": 190, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 7", "levels": ["L1", "L2"]},
+        {"name": "Tank 8", "x": 370, "y": 190, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 8", "levels": ["L1", "L2"]},
+        {"name": "Tank 9", "x": 520, "y": 190, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 9", "levels": ["L1", "L2"]},
+        {"name": "Tank 10", "x": 670, "y": 190, "w": 54, "d": 54, "layout": "hall", "room": "Bunker tank 10", "levels": ["L1", "L2"]},
+        {"name": "Pump house", "x": 820, "y": 40, "w": 60, "d": 110, "levels": ["L1"], "corridor": 4,
+         "rooms": {"L1": [["Bunker pumps", 3000], ["Filter room", 1200], ["Switch room", "rest"]]}},
+        {"name": "Control house", "x": 820, "y": 160, "w": 60, "d": 60, "levels": ["L1"], "corridor": 3,
+         "rooms": {"L1": [["Control room", 800], ["Fuel quality lab", 500], ["Crew room", "rest"]]}},
+        {"name": "Truck bay", "x": 820, "y": 235, "w": 70, "d": 85, "layout": "outdoor"}
+      ],
+      "structure": "Ten welded steel tanks on ring foundations inside a concrete spill wall; blast-rated pump and control houses.",
+      "look": "Two rows of tall grey tanks with orange hazard bands, a pipe bridge running out to the berths, and small dark pump and control houses.",
+      "entrances": "Bunker lines run out under the Dock Concourse to every berth; truck bay and staff gate on the stern side.",
+      "capacity": "10 tanks of about 12,000 m³: 120,000 m³ (about 32 million US gallons) of ship fuel.",
+      "services": "Bunker pumps to every berth, foam deluge, gas detection, fuel lab.",
+      "interior": "Two rows of five bunker tanks inside a spill wall, with the pump house, control house and truck bay at the stern end and the bunker manifold along the dock side."
+    },
+    {
+      "id": "P1-07", "name": "Pilot Lounge",
+      "levels": [["L1", "Ground floor", 0, 4.5], ["L2", "Rest floor", 4.5, 3.4]],
+      "parts": [
+        {"name": "Lounge garden", "x": 30, "y": 0, "w": 490, "d": 40, "layout": "outdoor"},
+        {"name": "Lounge building", "x": 30, "y": 40, "w": 490, "d": 60, "levels": ["L1", "L2"], "corridor": 4, "cores": 2,
+         "rooms": {"L1": [["Pilots' lounge", 3000], ["Canteen", 2500], ["Kitchen", 800], ["Briefing rooms", 120, 4], ["Showers and lockers", 1200], ["Quiet sleep pods", 600], ["Laundry", 300], ["Gym", "rest"]],
+                   "L2": [["Rest room", 22, 70], ["Roof lounge", "rest"]]}},
+        {"name": "Road-side drop-off", "x": 30, "y": 110, "w": 490, "d": 60, "layout": "outdoor"}
+      ],
+      "doors": [["Entrance", [265, 100], [285, 100]]],
+      "structure": "Two-storey cross-laminated timber on a concrete ground floor.",
+      "look": "A long, low timber-and-glass lounge with a planted roof and deep overhangs, warmly lit inside; a calm place on the edge of the docks.",
+      "entrances": "Entrance from the drop-off on the Dock Road side; garden doors on the dock side.",
+      "capacity": "About 140 rest rooms; the lounge seats 300.",
+      "services": "2 stair cores, 24-hour canteen, blackout blinds upstairs.",
+      "interior": "Ground floor: pilots' lounge, canteen, briefing rooms, showers, sleep pods, laundry and gym. Upstairs: a long row of rest rooms and a roof lounge."
+    },
+    {
+      "id": "P1-08", "name": "Bow Docks Utility Plant",
+      "levels": [["L1", "Ground floor", 0, 8], ["L2", "Upper plant", 8, 6]],
+      "parts": [
+        {"name": "Plant house", "x": 15, "y": 20, "w": 120, "d": 80, "levels": ["L1", "L2"], "corridor": 6,
+         "rooms": {"L1": [["Transformer bays", 500, 4], ["Switch room", 1500], ["Water pumps", 1200], ["Control room", "rest"]], "L2": [["Air handling", "rest"]]}},
+        {"name": "Cooling tower 1", "x": 25, "y": 115, "w": 45, "d": 45, "layout": "hall", "room": "Cooling tower 1", "levels": ["L1", "L2"]},
+        {"name": "Cooling tower 2", "x": 80, "y": 115, "w": 45, "d": 45, "layout": "hall", "room": "Cooling tower 2", "levels": ["L1", "L2"]}
+      ],
+      "structure": "Concrete plant house with heavy floors; steel cooling towers.",
+      "look": "A small plain graphite plant house with two louvred cooling towers that breathe white vapour.",
+      "entrances": "Service doors on the Dock Road side.",
+      "capacity": "Power, water and cooling for the front berths; about 15 staff per shift.",
+      "services": "Four transformers, water pumps, air handling and two cooling towers.",
+      "interior": "A plant house with transformer bays, switch room, water pumps and control room below and air handling above; two cooling towers behind."
+    },
+    {
+      "id": "P1-09", "name": "Bow Docks Service Shaft",
+      "levels": [["LB1", "Shaft head", -10, 10], ["L1", "Ground floor", 0, 7], ["L2", "Lift machine level", 7, 6]],
+      "parts": [
+        {"name": "Control house", "x": 15, "y": 10, "w": 90, "d": 28, "levels": ["L1"], "corridor": 3,
+         "rooms": {"L1": [["Shaft control room", 600], ["Crew room", "rest"]]}},
+        {"name": "Shaft hall", "x": 15, "y": 40, "w": 90, "d": 110, "layout": "bays", "bays": 2, "bay_names": ["Vehicle lift", "Goods lift hall"], "levels": ["LB1", "L1", "L2"]},
+        {"name": "Vehicle queue", "x": 15, "y": 152, "w": 90, "d": 26, "layout": "outdoor"}
+      ],
+      "structure": "Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house.",
+      "look": "A narrow windowless head house in graphite metal with yellow-striped lift doors.",
+      "entrances": "Vehicle queue on the Dock Road side; staff door into the control house.",
+      "capacity": "One vehicle lift and one goods lift to the service layer.",
+      "services": "Lift machinery and shaft ventilation.",
+      "interior": "A control house and a shaft hall with a vehicle lift and a goods lift down to the service layer."
+    }
+  ]
+}
