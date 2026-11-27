@@ -1,0 +1,291 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P2-07",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  300.0,
+  200.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Paved square",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.3,
+     25.7
+    ],
+    [
+     2.7,
+     17.5
+    ],
+    [
+     7.3,
+     10.4
+    ],
+    [
+     13.8,
+     4.8
+    ],
+    [
+     21.5,
+     1.2
+    ],
+    [
+     30.0,
+     0.0
+    ],
+    [
+     150.0,
+     0.1
+    ],
+    [
+     150.0,
+     199.9
+    ],
+    [
+     25.7,
+     199.7
+    ],
+    [
+     17.5,
+     197.3
+    ],
+    [
+     10.4,
+     192.7
+    ],
+    [
+     4.8,
+     186.2
+    ],
+    [
+     1.2,
+     178.5
+    ],
+    [
+     0.0,
+     170.0
+    ]
+   ],
+   "about": "Open paving where people cross, meet and gather.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.8,
+     136.8
+    ],
+    [
+     97.8,
+     136.8
+    ],
+    [
+     97.8,
+     146.8
+    ],
+    [
+     87.8,
+     146.8
+    ]
+   ],
+   "about": "Sells coffee, drinks and snacks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     97.8,
+     136.8
+    ],
+    [
+     107.8,
+     136.8
+    ],
+    [
+     107.8,
+     146.8
+    ],
+    [
+     97.8,
+     146.8
+    ]
+   ],
+   "about": "Public toilets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Pod waiting area",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.0,
+     0.1
+    ],
+    [
+     199.3,
+     0.2
+    ],
+    [
+     199.3,
+     199.9
+    ],
+    [
+     150.0,
+     199.9
+    ]
+   ],
+   "about": "Benches and shelters beside the pickup lanes for people waiting for a pod or taxi.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Tree-lined edge",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.3,
+     0.2
+    ],
+    [
+     248.6,
+     0.3
+    ],
+    [
+     248.6,
+     200.0
+    ],
+    [
+     199.3,
+     199.9
+    ]
+   ],
+   "about": "A row of trees and benches along the edge of the square.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Meeting point",
+   "level": "L1",
+   "outline_m": [
+    [
+     248.6,
+     0.3
+    ],
+    [
+     274.3,
+     0.3
+    ],
+    [
+     282.5,
+     2.7
+    ],
+    [
+     289.6,
+     7.3
+    ],
+    [
+     295.2,
+     13.8
+    ],
+    [
+     298.8,
+     21.5
+    ],
+    [
+     300.0,
+     30.0
+    ],
+    [
+     299.7,
+     174.3
+    ],
+    [
+     297.3,
+     182.5
+    ],
+    [
+     292.7,
+     189.6
+    ],
+    [
+     286.2,
+     195.2
+    ],
+    [
+     278.5,
+     198.8
+    ],
+    [
+     270.0,
+     200.0
+    ],
+    [
+     248.6,
+     200.0
+    ]
+   ],
+   "about": "Where travellers coming out of the Hall's main doors meet friends and family.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "fixture",
+   "name": "Welcome map",
+   "level": "L1",
+   "outline_m": [
+    [
+     264.0,
+     60.2
+    ],
+    [
+     284.6,
+     60.2
+    ],
+    [
+     284.6,
+     100.1
+    ],
+    [
+     264.0,
+     100.1
+    ]
+   ],
+   "about": "A big lit map of the ship for people just off their shuttle.",
+   "parent": "E006",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

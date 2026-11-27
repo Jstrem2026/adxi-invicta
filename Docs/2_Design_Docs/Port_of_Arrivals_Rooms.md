@@ -2,7 +2,7 @@
 
 Deck 5 · Port of Arrivals. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**117 buildings, 9,290 rooms.**
+**117 buildings, 10,120 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -14,33 +14,144 @@ Hall of Arrivals, arrival hangar, shuttle pads
 
 **What it is for:** The front door of the Invicta. Every shuttle passenger steps off into this great hall, is greeted, and is sent on to customs, the terminals or the Keelway. It is the landmark of Deck 5 and the first room most visitors ever see aboard.
 
-98 ft (30 m) tall. Room plan proposed.
+98 ft (30 m) tall, 5 above deck, 2,044,800 sq ft (189,970 m²) of rooms. Room plan proposed.
 
-_No room plan yet._
+**Look:** A vast hall of polished dark stone with amber light lines every 20 ft (6 m) storey and bronze trim, its whole hull side a 1,969 ft (600 m) Skyglass wall onto space (canon look).
+
+#### Level 1 · Arrivals floor
+
+Floor at deck level; 20 ft (6 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Great Hall | 1 | 1,033,300 sq ft (96,000 m²) | The great hall itself, 98 ft (30 m) high and open to the roof, lit through the Skyglass wall that looks out on Haven's Reach. Every arriving passenger walks through it. Inside: In-processing circle, Seating island (bow), Seating island (stern), Arrivals boards, Door to the arrival hangar. |
+| Main entrance hall | 1 | 5,940 sq ft (552 m²) | Inside the 98 ft (30 m) wide main entrance (placeholder size), where people leave for the Arrivals Forecourt. |
+| Information desk | 1 | 1,300 sq ft (121 m²) | Staff answer questions and hand out ship maps in every language. |
+| Greeters' office | 1 | 1,610 sq ft (150 m²) | Base for the greeters who welcome each shuttle load of new arrivals. |
+| Guides' room | 1 | 1,300 sq ft (121 m²) | Guides wait here to walk newcomers to customs, the terminals or the Keelway. |
+| Porters' station | 1 | 2,150 sq ft (200 m²) | Porters and their luggage trolleys, ready to carry bags for arrivals. |
+| Arrivals clerks' office | 1 | 2,160 sq ft (200 m²) | Clerks log every arrival and issue first passes and papers. |
+| Customs officers' post | 1 | 1,940 sq ft (180 m²) | Customs officers watch the hall and send travellers on to customs and health screening. |
+| Assisted travel desk | 1 | 1,450 sq ft (135 m²) | Help for travellers who need a wheelchair, a guide or extra time. |
+| Lost and found | 1 | 1,150 sq ft (107 m²) | Things left in the hall are handed in and claimed here. |
+| Family room | 1 | 1,160 sq ft (108 m²) | A quiet room with changing tables and play space for families after a long flight. |
+| Security desk | 1 | 1,150 sq ft (107 m²) | Guards watch the cameras and the doors from here. |
+| First-aid room | 1 | 1,150 sq ft (107 m²) | A couch, first-aid kit and defibrillator for anyone taken ill. |
+| Toilets | 2 | 1,150 sq ft (107 m²) each | Public toilets, with an accessible toilet and baby-changing room. |
+| Locker room | 1 | 1,150 sq ft (107 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Cleaners' room | 1 | 3,840 sq ft (357 m²) | Cleaning machines, supplies and a sink for the building's cleaning crew. |
+| Waiting lounge | 22 | 5,700 sq ft (530 m²) each | Seats along the hall for people waiting for a connection or a friend. |
+| Kiosk | 21 | 2,240 sq ft (208 m²) each | Coffee, water and snacks for new arrivals. |
+
+#### Level 2 to Level 5 · Gallery floor (4 identical floors)
+
+Floor at 20 ft (6 m) above the deck; 20 ft (6 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Great Hall | 1 | 1,033,300 sq ft (96,000 m²) | The great hall itself, 98 ft (30 m) high and open to the roof, lit through the Skyglass wall that looks out on Haven's Reach. Every arriving passenger walks through it. Inside: In-processing circle, Seating island (bow), Seating island (stern), Arrivals boards, Door to the arrival hangar. |
+| Gallery café | 1 | 5,940 sq ft (552 m²) | A café on the gallery with views down into the great hall and out through the Skyglass wall. |
+| Viewing gallery | 1 | 6,460 sq ft (600 m²) | An open gallery where visitors watch the hall and the shuttles outside. |
+| Hall control room | 1 | 1,630 sq ft (151 m²) | Staff run the hall's lights, screens, doors and crowd flow. |
+| Arrivals management office | 1 | 2,160 sq ft (200 m²) | The managers who run the Hall of Arrivals day to day. |
+| Customs supervisors' office | 1 | 1,660 sq ft (154 m²) | Senior customs officers who oversee the hall's posts. |
+| Translation service | 1 | 1,150 sq ft (107 m²) | Interpreters who help arrivals who don't speak the ship's languages. |
+| Tea point | 1 | 1,160 sq ft (108 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 1,150 sq ft (107 m²) | Toilets, showers and changing space for the staff. |
+| Plant room | 1 | 1,290 sq ft (120 m²) | Air handling units, pumps and electrical boards that keep this floor running. |
+| Comms room | 1 | 1,160 sq ft (108 m²) | Network switches and the building's data and radio links. |
+| Quiet room | 1 | 1,150 sq ft (107 m²) | A small quiet room for prayer, rest or a private moment. |
+| Staff office | 68 | 1,310 sq ft (122 m²) each | Desks for the hall's greeters, guides and clerks. |
+| Meeting room | 67 | 1,320 sq ft (122 m²) each | A room for staff meetings and private talks with travellers. |
 
 ### P2-02 · Arrival hangar
 
 **What it is for:** A single covered bay on the bow side of the Hall where an arriving shuttle can be parked indoors, unloaded under cover and turned around without blocking the open gates.
 
-49 ft (15 m) tall. Room plan proposed.
+49 ft (15 m) tall, 3 above deck, 73,630 sq ft (6,840 m²) of rooms. Room plan proposed.
 
-_No room plan yet._
+**Look:** A gunmetal hangar against the hull beside the Hall, with an orange-lit dock door and a marked pad inside. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
+
+#### Level 1 · Hangar floor
+
+Floor at deck level; 16 ft (5 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Arrival hangar bay | 1 | 37,890 sq ft (3,520 m²) | One covered bay where an arriving shuttle comes in through the hull dock door, lands on the pad and is unloaded under cover. Inside: Shuttle pad, Dock door. |
+| Unloading office | 1 | 430 sq ft (40 m²) | The crew chief plans each unload and signs for the cargo. |
+| Baggage transfer room | 1 | 860 sq ft (80 m²) | Bags come off the shuttle and are loaded onto carts for the Hall. |
+| Ground crew room | 1 | 650 sq ft (60 m²) | The hangar's ground crew wait here between arrivals. |
+| Tool room | 1 | 430 sq ft (40 m²) | Tools and spares for turning the shuttle round. |
+| Staff toilets and showers | 1 | 610 sq ft (57 m²) | Toilets, showers and changing space for the staff. |
+| Offices | 7 | 1,280 sq ft (119 m²) each | Offices for the people who work in the building. |
+
+#### Level 2 to Level 3 · Upper floor (2 identical floors)
+
+Floor at 16 ft (5 m) above the deck; 16 ft (5 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Arrival hangar bay | 1 | 37,890 sq ft (3,520 m²) | One covered bay where an arriving shuttle comes in through the hull dock door, lands on the pad and is unloaded under cover. Inside: Shuttle pad, Dock door. |
+| Hangar control room | 1 | 540 sq ft (50 m²) | Opens and closes the dock door and guides the shuttle onto the pad. |
+| Crew rest room | 1 | 540 sq ft (51 m²) | Shuttle crews rest here while their craft is turned round. |
+| Plant room | 1 | 1,290 sq ft (120 m²) | Air handling units, pumps and electrical boards that keep this floor running. |
+| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Offices | 7 | 1,280 sq ft (119 m²) each | Offices for the people who work in the building. |
 
 ### P2-03 · Shuttle gates G1–G16
 
 **What it is for:** Sixteen gates along the hull where passenger shuttles dock. Each gate has its own door to the apron, so a shuttle can open up, let its passengers walk into the concourse and leave again while the next one waits.
 
-49 ft (15 m) tall, 1 (single high bay each). Room plan proposed.
+49 ft (15 m) tall, 1 (single high bay each), 826,700 sq ft (76,800 m²) of rooms. Room plan proposed.
 
 **Look:** Gunmetal sheds with full-width bay doors and a light strip over each door. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
-_No room plan yet._
+#### Level 1 · Bay floor
+
+Floor at deck level; 49 ft (15 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Gate G1 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G2 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G3 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G4 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G5 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G6 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G7 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G8 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G9 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G10 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G11 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G12 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G13 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G14 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G15 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G16 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Row end (open air) | 4 | 22,600 sq ft (2,100 m²) each | Open ground at the end of the row, kept clear for walkways and fire access. |
+| Gate gap (open air) | 14 | 12,920 sq ft (1,200 m²) each | A 66 ft (20 m) gap between two gate sheds, kept clear for walkways, fire access and service cables. |
 
 ### P2-07 · Arrivals Forecourt
 
 **What it is for:** The open plaza at the Hall's main doors. Arriving travellers come out here to meet friends, find their pod or taxi, and get their first look down the boulevard into the port.
 
-_No room plan yet._
+33 ft (10 m) tall, open ground; one small kiosk, 2,150 sq ft (200 m²) of rooms. Room plan proposed.
+
+**Look:** A wide square of pale paving in front of the Hall's main doors, with a lit ship map and rows of young trees.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,080 sq ft (100 m²) | Sells coffee, drinks and snacks. |
+| Toilets | 1 | 1,080 sq ft (100 m²) | Public toilets. |
+| Paved square (open air) | 1 | 318,000 sq ft (29,540 m²) | Open paving where people cross, meet and gather. |
+| Pod waiting area (open air) | 1 | 106,000 sq ft (9,848 m²) | Benches and shelters beside the pickup lanes for people waiting for a pod or taxi. |
+| Tree-lined edge (open air) | 1 | 105,970 sq ft (9,845 m²) | A row of trees and benches along the edge of the square. |
+| Meeting point (open air) | 1 | 106,000 sq ft (9,848 m²) | Where travellers coming out of the Hall's main doors meet friends and family. Inside: Welcome map. |
 
 ### P2-12 · Port Health
 
@@ -593,7 +704,24 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 **What it is for:** Two parks either side of the boulevard where travellers can sit in green space after their flight, wait for friends, or take a first walk before heading on.
 
-_No room plan yet._
+39 ft (12 m) tall, open ground; one small pavilion, 6,200 sq ft (576 m²) of rooms. Room plan proposed.
+
+**Look:** A forecourt garden of lawns and trees under the deck's daylight panels, with lamp posts along the paths.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 2 | 1,030 sq ft (96 m²) each | Sells drinks, ice cream and snacks. |
+| Toilets | 2 | 1,030 sq ft (96 m²) each | Public toilets for garden visitors. |
+| Gardeners' store | 2 | 1,030 sq ft (96 m²) each | Tools and mowers for the garden crew. |
+| Lawn (open air) | 2 | 726,000 sq ft (67,450 m²) each | Open grass for sitting, picnics and games. |
+| Welcome lawn (open air) | 2 | 484,100 sq ft (44,980 m²) each | A lawn where travellers sit after their flight and wait for friends. |
+| Tree grove (open air) | 2 | 483,900 sq ft (44,960 m²) each | Shady trees with benches underneath. |
+| Flower borders (open air) | 2 | 242,100 sq ft (22,490 m²) each | Long beds of flowers along the boulevard. |
+| Paths and benches (open air) | 2 | 241,900 sq ft (22,470 m²) each | Paved paths with benches and lamps that lead through the forecourt garden. |
 
 ## P5 · Terminals
 
@@ -1017,7 +1145,22 @@ Floor at 56 ft (17 m) above the deck; 13 ft (4 m) floor to floor.
 
 **What it is for:** The open square in front of the terminals where travellers meet, wait between connections and find their way to the halls around it.
 
-_No room plan yet._
+33 ft (10 m) tall, open ground; one small kiosk, 2,150 sq ft (200 m²) of rooms. Room plan proposed.
+
+**Look:** A busy square between the terminals, with a round fountain and tall lit signposts.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,080 sq ft (100 m²) | Sells coffee, drinks and snacks. |
+| Toilets | 1 | 1,080 sq ft (100 m²) | Public toilets. |
+| Paved square (open air) | 1 | 766,000 sq ft (71,160 m²) | Open paving where people cross, meet and gather. |
+| Tree-lined edge (open air) | 1 | 255,500 sq ft (23,730 m²) | A row of trees and benches along the edge of the square. |
+| Wayfinding court (open air) | 1 | 255,100 sq ft (23,700 m²) | Signs and screens pointing to every terminal, the Keelway and the concourse. |
+| Fountain court (open air) | 1 | 255,400 sq ft (23,730 m²) | A fountain with seating round it, a landmark meeting place between connections. |
 
 ### P5-10 · Licensing & Permits
 
@@ -1556,7 +1699,25 @@ Floor at 14 ft (4.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 **What it is for:** A large park running through the concourse where travellers walk, rest and stretch their legs between flights.
 
-_No room plan yet._
+39 ft (12 m) tall, open ground; one small pavilion, 3,100 sq ft (288 m²) of rooms. Room plan proposed.
+
+**Look:** A park through the concourse of lawns and trees under the deck's daylight panels, with lamp posts along the paths.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,030 sq ft (96 m²) | Sells drinks, ice cream and snacks. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets for garden visitors. |
+| Gardeners' store | 1 | 1,030 sq ft (96 m²) | Tools and mowers for the garden crew. |
+| Lawn (open air) | 1 | 1,272,600 sq ft (118,230 m²) | Open grass for sitting, picnics and games. |
+| Tree grove (open air) | 1 | 848,400 sq ft (78,820 m²) | Shady trees with benches underneath. |
+| Paths and benches (open air) | 1 | 424,000 sq ft (39,390 m²) | Paved paths with benches and lamps that lead through the park through the concourse. |
+| Children's playground (open air) | 1 | 424,400 sq ft (39,430 m²) | Swings, slides and climbing frames for children waiting to travel. |
+| Water garden (open air) | 1 | 424,000 sq ft (39,390 m²) | Shallow pools and fountains with stepping stones. |
+| Promenade (open air) | 1 | 848,600 sq ft (78,840 m²) | A wide tree-lined walk through the park for travellers stretching their legs between flights. |
 
 ### P6-10 · Grand Port Hotel
 
@@ -2176,7 +2337,23 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 **What it is for:** The open square outside Keelway Port station where travellers gather, meet and set off into the port.
 
-_No room plan yet._
+33 ft (10 m) tall, open ground; one small kiosk, 2,150 sq ft (200 m²) of rooms. Room plan proposed.
+
+**Look:** A large square in front of the station, with broad steps, a lawn in the middle and lights strung between the trees.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,080 sq ft (100 m²) | Sells coffee, drinks and snacks. |
+| Toilets | 1 | 1,080 sq ft (100 m²) | Public toilets. |
+| Paved square (open air) | 1 | 2,288,300 sq ft (212,590 m²) | Open paving where people cross, meet and gather. |
+| Station steps (open air) | 1 | 762,900 sq ft (70,870 m²) | Wide steps and ramps up to the Keelway Port Station entrance. |
+| Event lawn (open air) | 1 | 762,900 sq ft (70,870 m²) | Grass for markets, music and gatherings in the square. |
+| Tree-lined edge (open air) | 1 | 762,900 sq ft (70,870 m²) | A row of trees and benches along the edge of the square. |
+| Bike and scooter racks (open air) | 1 | 762,600 sq ft (70,850 m²) | Racks and charging points for bikes and scooters. |
 
 ### P7-13 · Keelway Port Station
 
@@ -2708,19 +2885,76 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 **What it is for:** A small park beside the bow docks where dock workers and visiting crews can take a break outdoors.
 
-_No room plan yet._
+39 ft (12 m) tall, open ground; one small pavilion, 3,100 sq ft (288 m²) of rooms. Room plan proposed.
+
+**Look:** A park beside the bow docks of lawns and trees under the deck's daylight panels, with lamp posts along the paths.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,030 sq ft (96 m²) | Sells drinks, ice cream and snacks. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets for garden visitors. |
+| Gardeners' store | 1 | 1,030 sq ft (96 m²) | Tools and mowers for the garden crew. |
+| Lawn (open air) | 1 | 1,801,000 sq ft (167,320 m²) | Open grass for sitting, picnics and games. |
+| Paths and benches (open air) | 1 | 600,400 sq ft (55,780 m²) | Paved paths with benches and lamps that lead through the park beside the bow docks. |
+| Outdoor gym (open air) | 1 | 600,900 sq ft (55,830 m²) | Exercise bars and machines for dock workers on their breaks. |
+| Dock view lawn (open air) | 1 | 1,200,800 sq ft (111,550 m²) | A lawn looking out over the bow docks and the ships coming in. |
+| Tree grove (open air) | 1 | 1,200,600 sq ft (111,540 m²) | Shady trees with benches underneath. |
 
 ### P1-11 · Medium Berths
 
 **What it is for:** Berths for medium-sized civilian and private ships along the bow flank of the port.
 
-_No room plan yet._
+13 ft (4 m) tall, open berths (no roof). Room plan proposed.
+
+**Look:** A row of open floodlit berths along the hull, striped at the edges, each with yellow mooring arms.
+
+#### Level 1 · Berth floor
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Medium berth 1 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Berth walkway (open air) | 14 | 17,220 sq ft (1,600 m²) each | A railed walkway between two berths, used by line handlers and inspectors. |
+| Medium berth 2 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 3 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 4 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 5 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 6 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 7 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 8 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 9 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 10 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 11 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 12 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 13 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 14 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Medium berth 15 (open air) | 1 | 103,330 sq ft (9,600 m²) | An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
 
 ### P1-12 · Skiff Marina
 
 **What it is for:** A marina for small skiffs and private craft at the bow docks.
 
-_No room plan yet._
+13 ft (4 m) tall, open marina; one small office, 3,880 sq ft (360 m²) of rooms. Room plan proposed.
+
+**Look:** A floodlit marina of small craft in neat numbered slips, with a little lit office at the back.
+
+#### Level 1 · Marina floor
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Marina office | 1 | 2,580 sq ft (240 m²) | Books slips and welcomes visiting skiffs. |
+| Skiff fuel point | 1 | 1,290 sq ft (120 m²) | Fuel for small craft. |
+| Skiff slips (open air) | 1 | 533,900 sq ft (49,600 m²) | The row of 25 slips where skiffs and private craft tie up. Inside: Slip 1, Slip 2, Slip 3, Slip 4, Slip 5, Slip 6, Slip 7, Slip 8, Slip 9, Slip 10, Slip 11, Slip 12, Slip 13, Slip 14, Slip 15, Slip 16, Slip 17, Slip 18, Slip 19, Slip 20, Slip 21, Slip 22, Slip 23, Slip 24, Slip 25. |
+| Taxi lane (open air) | 1 | 532,600 sq ft (49,480 m²) | The lane skiffs taxi along between the slips and the dock doors. |
+| Skiff apron (open air) | 1 | 2,134,200 sq ft (198,280 m²) | Open apron where skiffs wait, are washed and are serviced. |
+| Marina walk (open air) | 1 | 799,500 sq ft (74,280 m²) | A walkway along the marina, with the marina office and fuel point. |
 
 ## P3 · Stern Docks
 
@@ -3196,7 +3430,23 @@ Floor at 148 ft (45 m) above the deck; 20 ft (6 m) floor to floor.
 
 **What it is for:** A park beside the stern docks for dock workers and visiting crews.
 
-_No room plan yet._
+39 ft (12 m) tall, open ground; one small pavilion, 3,100 sq ft (288 m²) of rooms. Room plan proposed.
+
+**Look:** A park beside the stern docks of lawns and trees under the deck's daylight panels, with lamp posts along the paths.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,030 sq ft (96 m²) | Sells drinks, ice cream and snacks. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets for garden visitors. |
+| Gardeners' store | 1 | 1,030 sq ft (96 m²) | Tools and mowers for the garden crew. |
+| Lawn (open air) | 1 | 1,479,300 sq ft (137,430 m²) | Open grass for sitting, picnics and games. |
+| Picnic lawn (open air) | 1 | 985,900 sq ft (91,590 m²) | Picnic tables on the grass for crews and dock workers. |
+| Paths and benches (open air) | 1 | 493,400 sq ft (45,840 m²) | Paved paths with benches and lamps that lead through the park beside the stern docks. |
+| Ball court (open air) | 1 | 492,900 sq ft (45,800 m²) | A hard court for football and basketball after shifts. |
 
 ### P3-12 · Stern Docks Utility Plant
 
@@ -3314,13 +3564,46 @@ Floor at 15 ft (4.5 m) above the deck; 11 ft (3.4 m) floor to floor.
 
 **What it is for:** Berths for corvettes along the stern flank of the port.
 
-_No room plan yet._
+13 ft (4 m) tall, open berths (no roof). Room plan proposed.
+
+**Look:** A row of open floodlit berths along the hull, striped at the edges, each with yellow mooring arms.
+
+#### Level 1 · Berth floor
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Corvette berth 1 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Berth walkway (open air) | 7 | 133,800 sq ft (12,430 m²) each | A railed walkway between two berths, used by line handlers and inspectors. |
+| Corvette berth 2 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 3 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 4 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 5 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 6 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 7 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Corvette berth 8 (open air) | 1 | 172,200 sq ft (16,000 m²) | An open berth for one corvette, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
 
 ### P3-16 · Frigate Berths
 
 **What it is for:** Berths for frigates, the largest civilian ships the stern docks take.
 
-_No room plan yet._
+13 ft (4 m) tall, open berths (no roof). Room plan proposed.
+
+**Look:** A row of open floodlit berths along the hull, striped at the edges, each with yellow mooring arms.
+
+#### Level 1 · Berth floor
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Frigate berth 1 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Berth walkway (open air) | 4 | 32,290 sq ft (3,000 m²) each | A railed walkway between two berths, used by line handlers and inspectors. |
+| Frigate berth 2 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Frigate berth 3 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Frigate berth 4 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+| Frigate berth 5 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
 
 ## P4 · Freight
 
@@ -5013,7 +5296,25 @@ Floor at 15 ft (4.5 m) above the deck; 11 ft (3.4 m) floor to floor.
 
 **What it is for:** A large park at the edge of the Atrium Plaza, separating the busy shuttle yards from the plaza and giving yard workers green space.
 
-_No room plan yet._
+39 ft (12 m) tall, open ground; one small pavilion, 3,100 sq ft (288 m²) of rooms. Room plan proposed.
+
+**Look:** A long park at the edge of the Atrium Plaza of lawns and trees under the deck's daylight panels, with lamp posts along the paths.
+
+#### Level 1 · Ground
+
+Floor at deck level; 13 ft (4 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Kiosk | 1 | 1,030 sq ft (96 m²) | Sells drinks, ice cream and snacks. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets for garden visitors. |
+| Gardeners' store | 1 | 1,030 sq ft (96 m²) | Tools and mowers for the garden crew. |
+| Lawn (open air) | 1 | 4,086,800 sq ft (379,680 m²) | Open grass for sitting, picnics and games. |
+| Plaza walk (open air) | 1 | 1,362,300 sq ft (126,560 m²) | A path linking the shuttle yards to the Atrium Plaza. |
+| Paths and benches (open air) | 1 | 1,362,300 sq ft (126,560 m²) | Paved paths with benches and lamps that lead through the long park at the edge of the Atrium Plaza. |
+| Tree grove (open air) | 1 | 2,725,100 sq ft (253,170 m²) | Shady trees with benches underneath. |
+| Buffer woodland (open air) | 1 | 4,086,900 sq ft (379,690 m²) | Dense trees that screen the shuttle yards' noise and lights from the Atrium Plaza. |
+| Yard workers' lawn (open air) | 1 | 1,362,200 sq ft (126,550 m²) | A lawn where shuttle yard crews take their breaks. |
 
 ### P8-14 · Shuttle Yards Pod Depot
 
@@ -5077,31 +5378,158 @@ Floor at 28 ft (8.5 m) above the deck; 13 ft (4 m) floor to floor.
 
 **What it is for:** A row of public hangar bays for small craft, one craft to a bay.
 
-33 ft (10 m) tall, 1 (single high bay each). Room plan proposed.
+33 ft (10 m) tall, 1 (single high bay each), 533,900 sq ft (49,600 m²) of rooms. Room plan proposed.
 
 **Look:** Gunmetal sheds with full-width bay doors and a light strip over each door. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
-_No room plan yet._
+#### Level 1 · Bay floor
+
+Floor at deck level; 33 ft (10 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Bay A1 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A2 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A3 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A4 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A5 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A6 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A7 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A8 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A9 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A10 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A11 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A12 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A13 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A14 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A15 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A16 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A17 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A18 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A19 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A20 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A21 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A22 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A23 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A24 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A25 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A26 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A27 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A28 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A29 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A30 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay A31 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay wall (open air) | 30 | 4,310 sq ft (400 m²) each | The fire wall between two hangar bays. |
 
 ### P8-16 · Shuttle Depot
 
 **What it is for:** The depot where the port's own passenger shuttles are kept and readied between flights.
 
-49 ft (15 m) tall, 1 (single high bay each). Room plan proposed.
+49 ft (15 m) tall, 1 (single high bay each), 826,700 sq ft (76,800 m²) of rooms. Room plan proposed.
 
 **Look:** Gunmetal sheds with full-width bay doors and a light strip over each door. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
-_No room plan yet._
+#### Level 1 · Bay floor
+
+Floor at deck level; 49 ft (15 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Depot bay 1 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 2 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 3 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 4 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 5 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 6 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 7 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 8 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 9 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 10 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 11 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 12 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 13 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 14 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 15 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Depot bay 16 | 1 | 51,670 sq ft (4,800 m²) | A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights. Inside: Craft door, Tool room, Staff door. |
+| Bay wall (open air) | 15 | 6,460 sq ft (600 m²) each | The fire wall between two depot bays. |
 
 ### P8-17 · Hangar Row B
 
 **What it is for:** A long row of public hangar bays for small craft.
 
-33 ft (10 m) tall, 1 (single high bay each). Room plan proposed.
+33 ft (10 m) tall, 1 (single high bay each), 1,067,800 sq ft (99,200 m²) of rooms. Room plan proposed.
 
 **Look:** Gunmetal sheds with full-width bay doors and a light strip over each door. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
-_No room plan yet._
+#### Level 1 · Bay floor
+
+Floor at deck level; 33 ft (10 m) floor to floor.
+
+| Room | How many | Floor area | What it does |
+|---|---|---|---|
+| Bay B1 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B2 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B3 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B4 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B5 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B6 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B7 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B8 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B9 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B10 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B11 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B12 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B13 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B14 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B15 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B16 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B17 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B18 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B19 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B20 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B21 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B22 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B23 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B24 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B25 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B26 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B27 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B28 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B29 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B30 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B31 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B32 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B33 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B34 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B35 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B36 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B37 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B38 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B39 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B40 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B41 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B42 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B43 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B44 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B45 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B46 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B47 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B48 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B49 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B50 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B51 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B52 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B53 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B54 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B55 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B56 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B57 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B58 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B59 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B60 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B61 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay B62 | 1 | 17,220 sq ft (1,600 m²) | A public hangar bay for one small craft, rented by the day or the month. Inside: Craft door, Tool room, Staff door. |
+| Bay wall (open air) | 61 | 4,310 sq ft (400 m²) each | The fire wall between two hangar bays. |
 
 ### P8-18 · Shuttle Yards Training Centre
 

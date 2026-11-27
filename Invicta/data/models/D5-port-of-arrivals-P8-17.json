@@ -1,0 +1,8305 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P8-17",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  3090.0,
+  40.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Bay floor",
+   "z_m": 0.0,
+   "height_m": 10.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Bay B1",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     40.0,
+     40.0
+    ],
+    [
+     0.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.6,
+     7.5
+    ],
+    [
+     32.6,
+     7.5
+    ],
+    [
+     32.6,
+     9.4
+    ],
+    [
+     0.6,
+     9.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     8.0,
+     0.0
+    ],
+    [
+     8.0,
+     7.2
+    ],
+    [
+     0.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.0,
+     0.0
+    ],
+    [
+     22.0,
+     0.0
+    ],
+    [
+     22.0,
+     2.0
+    ],
+    [
+     18.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.0,
+     0.0
+    ],
+    [
+     50.0,
+     0.0
+    ],
+    [
+     50.0,
+     40.0
+    ],
+    [
+     40.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Bay B2",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.0,
+     0.0
+    ],
+    [
+     90.0,
+     0.0
+    ],
+    [
+     90.0,
+     40.0
+    ],
+    [
+     50.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     53.2,
+     19.7
+    ],
+    [
+     85.2,
+     19.7
+    ],
+    [
+     85.2,
+     21.6
+    ],
+    [
+     53.2,
+     21.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.0,
+     0.0
+    ],
+    [
+     58.0,
+     0.0
+    ],
+    [
+     58.0,
+     7.2
+    ],
+    [
+     50.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.0,
+     0.0
+    ],
+    [
+     72.0,
+     0.0
+    ],
+    [
+     72.0,
+     2.0
+    ],
+    [
+     68.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.0,
+     0.0
+    ],
+    [
+     100.0,
+     0.0
+    ],
+    [
+     100.0,
+     40.0
+    ],
+    [
+     90.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Bay B3",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.0,
+     0.0
+    ],
+    [
+     140.0,
+     0.0
+    ],
+    [
+     140.0,
+     40.0
+    ],
+    [
+     100.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.6,
+     33.3
+    ],
+    [
+     133.6,
+     33.3
+    ],
+    [
+     133.6,
+     35.3
+    ],
+    [
+     101.6,
+     35.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.0,
+     0.0
+    ],
+    [
+     108.0,
+     0.0
+    ],
+    [
+     108.0,
+     7.2
+    ],
+    [
+     100.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.0,
+     0.0
+    ],
+    [
+     122.0,
+     0.0
+    ],
+    [
+     122.0,
+     2.0
+    ],
+    [
+     118.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     0.0
+    ],
+    [
+     150.0,
+     0.0
+    ],
+    [
+     150.0,
+     40.0
+    ],
+    [
+     140.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Bay B4",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.0,
+     0.0
+    ],
+    [
+     190.0,
+     0.0
+    ],
+    [
+     190.0,
+     40.0
+    ],
+    [
+     150.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.8,
+     8.8
+    ],
+    [
+     186.8,
+     8.8
+    ],
+    [
+     186.8,
+     10.7
+    ],
+    [
+     154.8,
+     10.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.0,
+     0.0
+    ],
+    [
+     158.0,
+     0.0
+    ],
+    [
+     158.0,
+     7.2
+    ],
+    [
+     150.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.0,
+     0.0
+    ],
+    [
+     172.0,
+     0.0
+    ],
+    [
+     172.0,
+     2.0
+    ],
+    [
+     168.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     190.0,
+     0.0
+    ],
+    [
+     200.0,
+     0.0
+    ],
+    [
+     200.0,
+     40.0
+    ],
+    [
+     190.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Bay B5",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.0,
+     0.0
+    ],
+    [
+     240.0,
+     0.0
+    ],
+    [
+     240.0,
+     40.0
+    ],
+    [
+     200.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.2,
+     16.6
+    ],
+    [
+     232.2,
+     16.6
+    ],
+    [
+     232.2,
+     18.5
+    ],
+    [
+     200.2,
+     18.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.0,
+     0.0
+    ],
+    [
+     208.0,
+     0.0
+    ],
+    [
+     208.0,
+     7.2
+    ],
+    [
+     200.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     218.0,
+     0.0
+    ],
+    [
+     222.0,
+     0.0
+    ],
+    [
+     222.0,
+     2.0
+    ],
+    [
+     218.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     240.0,
+     0.0
+    ],
+    [
+     250.0,
+     0.0
+    ],
+    [
+     250.0,
+     40.0
+    ],
+    [
+     240.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Bay B6",
+   "level": "L1",
+   "outline_m": [
+    [
+     250.0,
+     0.0
+    ],
+    [
+     290.0,
+     0.0
+    ],
+    [
+     290.0,
+     40.0
+    ],
+    [
+     250.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     256.1,
+     31.4
+    ],
+    [
+     288.1,
+     31.4
+    ],
+    [
+     288.1,
+     33.4
+    ],
+    [
+     256.1,
+     33.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     250.0,
+     0.0
+    ],
+    [
+     258.0,
+     0.0
+    ],
+    [
+     258.0,
+     7.2
+    ],
+    [
+     250.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     268.0,
+     0.0
+    ],
+    [
+     272.0,
+     0.0
+    ],
+    [
+     272.0,
+     2.0
+    ],
+    [
+     268.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     290.0,
+     0.0
+    ],
+    [
+     300.0,
+     0.0
+    ],
+    [
+     300.0,
+     40.0
+    ],
+    [
+     290.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Bay B7",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.0,
+     0.0
+    ],
+    [
+     340.0,
+     0.0
+    ],
+    [
+     340.0,
+     40.0
+    ],
+    [
+     300.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     301.4,
+     1.0
+    ],
+    [
+     333.4,
+     1.0
+    ],
+    [
+     333.4,
+     2.9
+    ],
+    [
+     301.4,
+     2.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.0,
+     0.0
+    ],
+    [
+     308.0,
+     0.0
+    ],
+    [
+     308.0,
+     7.2
+    ],
+    [
+     300.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     318.0,
+     0.0
+    ],
+    [
+     322.0,
+     0.0
+    ],
+    [
+     322.0,
+     2.0
+    ],
+    [
+     318.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     340.0,
+     0.0
+    ],
+    [
+     350.0,
+     0.0
+    ],
+    [
+     350.0,
+     40.0
+    ],
+    [
+     340.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Bay B8",
+   "level": "L1",
+   "outline_m": [
+    [
+     350.0,
+     0.0
+    ],
+    [
+     390.0,
+     0.0
+    ],
+    [
+     390.0,
+     40.0
+    ],
+    [
+     350.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     355.1,
+     5.5
+    ],
+    [
+     387.1,
+     5.5
+    ],
+    [
+     387.1,
+     7.4
+    ],
+    [
+     355.1,
+     7.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     350.0,
+     0.0
+    ],
+    [
+     358.0,
+     0.0
+    ],
+    [
+     358.0,
+     7.2
+    ],
+    [
+     350.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     368.0,
+     0.0
+    ],
+    [
+     372.0,
+     0.0
+    ],
+    [
+     372.0,
+     2.0
+    ],
+    [
+     368.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     390.0,
+     0.0
+    ],
+    [
+     400.0,
+     0.0
+    ],
+    [
+     400.0,
+     40.0
+    ],
+    [
+     390.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Bay B9",
+   "level": "L1",
+   "outline_m": [
+    [
+     400.0,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     40.0
+    ],
+    [
+     400.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     405.5,
+     0.3
+    ],
+    [
+     437.5,
+     0.3
+    ],
+    [
+     437.5,
+     2.2
+    ],
+    [
+     405.5,
+     2.2
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     400.0,
+     0.0
+    ],
+    [
+     408.0,
+     0.0
+    ],
+    [
+     408.0,
+     7.2
+    ],
+    [
+     400.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     418.0,
+     0.0
+    ],
+    [
+     422.0,
+     0.0
+    ],
+    [
+     422.0,
+     2.0
+    ],
+    [
+     418.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     0.0
+    ],
+    [
+     450.0,
+     0.0
+    ],
+    [
+     450.0,
+     40.0
+    ],
+    [
+     440.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Bay B10",
+   "level": "L1",
+   "outline_m": [
+    [
+     450.0,
+     0.0
+    ],
+    [
+     490.0,
+     0.0
+    ],
+    [
+     490.0,
+     40.0
+    ],
+    [
+     450.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     453.4,
+     10.0
+    ],
+    [
+     485.4,
+     10.0
+    ],
+    [
+     485.4,
+     11.9
+    ],
+    [
+     453.4,
+     11.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     450.0,
+     0.0
+    ],
+    [
+     458.0,
+     0.0
+    ],
+    [
+     458.0,
+     7.2
+    ],
+    [
+     450.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     468.0,
+     0.0
+    ],
+    [
+     472.0,
+     0.0
+    ],
+    [
+     472.0,
+     2.0
+    ],
+    [
+     468.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     490.0,
+     0.0
+    ],
+    [
+     500.0,
+     0.0
+    ],
+    [
+     500.0,
+     40.0
+    ],
+    [
+     490.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Bay B11",
+   "level": "L1",
+   "outline_m": [
+    [
+     500.0,
+     0.0
+    ],
+    [
+     540.0,
+     0.0
+    ],
+    [
+     540.0,
+     40.0
+    ],
+    [
+     500.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     505.3,
+     10.9
+    ],
+    [
+     537.3,
+     10.9
+    ],
+    [
+     537.3,
+     12.8
+    ],
+    [
+     505.3,
+     12.8
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     500.0,
+     0.0
+    ],
+    [
+     508.0,
+     0.0
+    ],
+    [
+     508.0,
+     7.2
+    ],
+    [
+     500.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     518.0,
+     0.0
+    ],
+    [
+     522.0,
+     0.0
+    ],
+    [
+     522.0,
+     2.0
+    ],
+    [
+     518.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     540.0,
+     0.0
+    ],
+    [
+     550.0,
+     0.0
+    ],
+    [
+     550.0,
+     40.0
+    ],
+    [
+     540.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Bay B12",
+   "level": "L1",
+   "outline_m": [
+    [
+     550.0,
+     0.0
+    ],
+    [
+     590.0,
+     0.0
+    ],
+    [
+     590.0,
+     40.0
+    ],
+    [
+     550.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     550.9,
+     13.2
+    ],
+    [
+     582.9,
+     13.2
+    ],
+    [
+     582.9,
+     15.1
+    ],
+    [
+     550.9,
+     15.1
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     550.0,
+     0.0
+    ],
+    [
+     558.0,
+     0.0
+    ],
+    [
+     558.0,
+     7.2
+    ],
+    [
+     550.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     568.0,
+     0.0
+    ],
+    [
+     572.0,
+     0.0
+    ],
+    [
+     572.0,
+     2.0
+    ],
+    [
+     568.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     590.0,
+     0.0
+    ],
+    [
+     600.0,
+     0.0
+    ],
+    [
+     600.0,
+     40.0
+    ],
+    [
+     590.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Bay B13",
+   "level": "L1",
+   "outline_m": [
+    [
+     600.0,
+     0.0
+    ],
+    [
+     640.0,
+     0.0
+    ],
+    [
+     640.0,
+     40.0
+    ],
+    [
+     600.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     608.0,
+     7.1
+    ],
+    [
+     640.0,
+     7.1
+    ],
+    [
+     640.0,
+     9.0
+    ],
+    [
+     608.0,
+     9.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     600.0,
+     0.0
+    ],
+    [
+     608.0,
+     0.0
+    ],
+    [
+     608.0,
+     7.2
+    ],
+    [
+     600.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     618.0,
+     0.0
+    ],
+    [
+     622.0,
+     0.0
+    ],
+    [
+     622.0,
+     2.0
+    ],
+    [
+     618.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     640.0,
+     0.0
+    ],
+    [
+     650.0,
+     0.0
+    ],
+    [
+     650.0,
+     40.0
+    ],
+    [
+     640.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Bay B14",
+   "level": "L1",
+   "outline_m": [
+    [
+     650.0,
+     0.0
+    ],
+    [
+     690.0,
+     0.0
+    ],
+    [
+     690.0,
+     40.0
+    ],
+    [
+     650.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     652.6,
+     20.7
+    ],
+    [
+     684.6,
+     20.7
+    ],
+    [
+     684.6,
+     22.6
+    ],
+    [
+     652.6,
+     22.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     650.0,
+     0.0
+    ],
+    [
+     658.0,
+     0.0
+    ],
+    [
+     658.0,
+     7.2
+    ],
+    [
+     650.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     668.0,
+     0.0
+    ],
+    [
+     672.0,
+     0.0
+    ],
+    [
+     672.0,
+     2.0
+    ],
+    [
+     668.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     690.0,
+     0.0
+    ],
+    [
+     700.0,
+     0.0
+    ],
+    [
+     700.0,
+     40.0
+    ],
+    [
+     690.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Bay B15",
+   "level": "L1",
+   "outline_m": [
+    [
+     700.0,
+     0.0
+    ],
+    [
+     740.0,
+     0.0
+    ],
+    [
+     740.0,
+     40.0
+    ],
+    [
+     700.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     702.2,
+     3.0
+    ],
+    [
+     734.2,
+     3.0
+    ],
+    [
+     734.2,
+     4.9
+    ],
+    [
+     702.2,
+     4.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     700.0,
+     0.0
+    ],
+    [
+     708.0,
+     0.0
+    ],
+    [
+     708.0,
+     7.2
+    ],
+    [
+     700.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     718.0,
+     0.0
+    ],
+    [
+     722.0,
+     0.0
+    ],
+    [
+     722.0,
+     2.0
+    ],
+    [
+     718.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     740.0,
+     0.0
+    ],
+    [
+     750.0,
+     0.0
+    ],
+    [
+     750.0,
+     40.0
+    ],
+    [
+     740.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Bay B16",
+   "level": "L1",
+   "outline_m": [
+    [
+     750.0,
+     0.0
+    ],
+    [
+     790.0,
+     0.0
+    ],
+    [
+     790.0,
+     40.0
+    ],
+    [
+     750.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     750.6,
+     9.7
+    ],
+    [
+     782.6,
+     9.7
+    ],
+    [
+     782.6,
+     11.6
+    ],
+    [
+     750.6,
+     11.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E076",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     750.0,
+     0.0
+    ],
+    [
+     758.0,
+     0.0
+    ],
+    [
+     758.0,
+     7.2
+    ],
+    [
+     750.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E076",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     768.0,
+     0.0
+    ],
+    [
+     772.0,
+     0.0
+    ],
+    [
+     772.0,
+     2.0
+    ],
+    [
+     768.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E076",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     790.0,
+     0.0
+    ],
+    [
+     800.0,
+     0.0
+    ],
+    [
+     800.0,
+     40.0
+    ],
+    [
+     790.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Bay B17",
+   "level": "L1",
+   "outline_m": [
+    [
+     800.0,
+     0.0
+    ],
+    [
+     840.0,
+     0.0
+    ],
+    [
+     840.0,
+     40.0
+    ],
+    [
+     800.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     801.5,
+     16.1
+    ],
+    [
+     833.5,
+     16.1
+    ],
+    [
+     833.5,
+     18.0
+    ],
+    [
+     801.5,
+     18.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E081",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     800.0,
+     0.0
+    ],
+    [
+     808.0,
+     0.0
+    ],
+    [
+     808.0,
+     7.2
+    ],
+    [
+     800.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E081",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     818.0,
+     0.0
+    ],
+    [
+     822.0,
+     0.0
+    ],
+    [
+     822.0,
+     2.0
+    ],
+    [
+     818.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E081",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     840.0,
+     0.0
+    ],
+    [
+     850.0,
+     0.0
+    ],
+    [
+     850.0,
+     40.0
+    ],
+    [
+     840.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Bay B18",
+   "level": "L1",
+   "outline_m": [
+    [
+     850.0,
+     0.0
+    ],
+    [
+     890.0,
+     0.0
+    ],
+    [
+     890.0,
+     40.0
+    ],
+    [
+     850.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     853.9,
+     7.2
+    ],
+    [
+     885.9,
+     7.2
+    ],
+    [
+     885.9,
+     9.1
+    ],
+    [
+     853.9,
+     9.1
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E086",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     850.0,
+     0.0
+    ],
+    [
+     858.0,
+     0.0
+    ],
+    [
+     858.0,
+     7.2
+    ],
+    [
+     850.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E086",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     868.0,
+     0.0
+    ],
+    [
+     872.0,
+     0.0
+    ],
+    [
+     872.0,
+     2.0
+    ],
+    [
+     868.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E086",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     890.0,
+     0.0
+    ],
+    [
+     900.0,
+     0.0
+    ],
+    [
+     900.0,
+     40.0
+    ],
+    [
+     890.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Bay B19",
+   "level": "L1",
+   "outline_m": [
+    [
+     900.0,
+     0.0
+    ],
+    [
+     940.0,
+     0.0
+    ],
+    [
+     940.0,
+     40.0
+    ],
+    [
+     900.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     905.1,
+     8.0
+    ],
+    [
+     937.1,
+     8.0
+    ],
+    [
+     937.1,
+     9.9
+    ],
+    [
+     905.1,
+     9.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E091",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     900.0,
+     0.0
+    ],
+    [
+     908.0,
+     0.0
+    ],
+    [
+     908.0,
+     7.2
+    ],
+    [
+     900.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E091",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     918.0,
+     0.0
+    ],
+    [
+     922.0,
+     0.0
+    ],
+    [
+     922.0,
+     2.0
+    ],
+    [
+     918.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E091",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     940.0,
+     0.0
+    ],
+    [
+     950.0,
+     0.0
+    ],
+    [
+     950.0,
+     40.0
+    ],
+    [
+     940.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Bay B20",
+   "level": "L1",
+   "outline_m": [
+    [
+     950.0,
+     0.0
+    ],
+    [
+     990.0,
+     0.0
+    ],
+    [
+     990.0,
+     40.0
+    ],
+    [
+     950.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     956.7,
+     36.7
+    ],
+    [
+     988.7,
+     36.7
+    ],
+    [
+     988.7,
+     38.7
+    ],
+    [
+     956.7,
+     38.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E096",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     950.0,
+     0.0
+    ],
+    [
+     958.0,
+     0.0
+    ],
+    [
+     958.0,
+     7.2
+    ],
+    [
+     950.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E096",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     968.0,
+     0.0
+    ],
+    [
+     972.0,
+     0.0
+    ],
+    [
+     972.0,
+     2.0
+    ],
+    [
+     968.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E096",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     990.0,
+     0.0
+    ],
+    [
+     1000.0,
+     0.0
+    ],
+    [
+     1000.0,
+     40.0
+    ],
+    [
+     990.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Bay B21",
+   "level": "L1",
+   "outline_m": [
+    [
+     1000.0,
+     0.0
+    ],
+    [
+     1040.0,
+     0.0
+    ],
+    [
+     1040.0,
+     40.0
+    ],
+    [
+     1000.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1007.7,
+     7.7
+    ],
+    [
+     1039.7,
+     7.7
+    ],
+    [
+     1039.7,
+     9.6
+    ],
+    [
+     1007.7,
+     9.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E101",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1000.0,
+     0.0
+    ],
+    [
+     1008.0,
+     0.0
+    ],
+    [
+     1008.0,
+     7.2
+    ],
+    [
+     1000.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E101",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1018.0,
+     0.0
+    ],
+    [
+     1022.0,
+     0.0
+    ],
+    [
+     1022.0,
+     2.0
+    ],
+    [
+     1018.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E101",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1040.0,
+     0.0
+    ],
+    [
+     1050.0,
+     0.0
+    ],
+    [
+     1050.0,
+     40.0
+    ],
+    [
+     1040.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Bay B22",
+   "level": "L1",
+   "outline_m": [
+    [
+     1050.0,
+     0.0
+    ],
+    [
+     1090.0,
+     0.0
+    ],
+    [
+     1090.0,
+     40.0
+    ],
+    [
+     1050.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1056.6,
+     3.0
+    ],
+    [
+     1088.6,
+     3.0
+    ],
+    [
+     1088.6,
+     4.9
+    ],
+    [
+     1056.6,
+     4.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E106",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1050.0,
+     0.0
+    ],
+    [
+     1058.0,
+     0.0
+    ],
+    [
+     1058.0,
+     7.2
+    ],
+    [
+     1050.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E106",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1068.0,
+     0.0
+    ],
+    [
+     1072.0,
+     0.0
+    ],
+    [
+     1072.0,
+     2.0
+    ],
+    [
+     1068.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E106",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1090.0,
+     0.0
+    ],
+    [
+     1100.0,
+     0.0
+    ],
+    [
+     1100.0,
+     40.0
+    ],
+    [
+     1090.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Bay B23",
+   "level": "L1",
+   "outline_m": [
+    [
+     1100.0,
+     0.0
+    ],
+    [
+     1140.0,
+     0.0
+    ],
+    [
+     1140.0,
+     40.0
+    ],
+    [
+     1100.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1103.6,
+     9.1
+    ],
+    [
+     1135.6,
+     9.1
+    ],
+    [
+     1135.6,
+     11.0
+    ],
+    [
+     1103.6,
+     11.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E111",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1100.0,
+     0.0
+    ],
+    [
+     1108.0,
+     0.0
+    ],
+    [
+     1108.0,
+     7.2
+    ],
+    [
+     1100.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E111",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1118.0,
+     0.0
+    ],
+    [
+     1122.0,
+     0.0
+    ],
+    [
+     1122.0,
+     2.0
+    ],
+    [
+     1118.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E111",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1140.0,
+     0.0
+    ],
+    [
+     1150.0,
+     0.0
+    ],
+    [
+     1150.0,
+     40.0
+    ],
+    [
+     1140.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Bay B24",
+   "level": "L1",
+   "outline_m": [
+    [
+     1150.0,
+     0.0
+    ],
+    [
+     1190.0,
+     0.0
+    ],
+    [
+     1190.0,
+     40.0
+    ],
+    [
+     1150.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1150.4,
+     30.1
+    ],
+    [
+     1182.4,
+     30.1
+    ],
+    [
+     1182.4,
+     32.0
+    ],
+    [
+     1150.4,
+     32.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E116",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1150.0,
+     0.0
+    ],
+    [
+     1158.0,
+     0.0
+    ],
+    [
+     1158.0,
+     7.2
+    ],
+    [
+     1150.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E116",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1168.0,
+     0.0
+    ],
+    [
+     1172.0,
+     0.0
+    ],
+    [
+     1172.0,
+     2.0
+    ],
+    [
+     1168.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E116",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1190.0,
+     0.0
+    ],
+    [
+     1200.0,
+     0.0
+    ],
+    [
+     1200.0,
+     40.0
+    ],
+    [
+     1190.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Bay B25",
+   "level": "L1",
+   "outline_m": [
+    [
+     1200.0,
+     0.0
+    ],
+    [
+     1240.0,
+     0.0
+    ],
+    [
+     1240.0,
+     40.0
+    ],
+    [
+     1200.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1202.7,
+     23.5
+    ],
+    [
+     1234.7,
+     23.5
+    ],
+    [
+     1234.7,
+     25.4
+    ],
+    [
+     1202.7,
+     25.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E121",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1200.0,
+     0.0
+    ],
+    [
+     1208.0,
+     0.0
+    ],
+    [
+     1208.0,
+     7.2
+    ],
+    [
+     1200.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E121",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1218.0,
+     0.0
+    ],
+    [
+     1222.0,
+     0.0
+    ],
+    [
+     1222.0,
+     2.0
+    ],
+    [
+     1218.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E121",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1240.0,
+     0.0
+    ],
+    [
+     1250.0,
+     0.0
+    ],
+    [
+     1250.0,
+     40.0
+    ],
+    [
+     1240.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Bay B26",
+   "level": "L1",
+   "outline_m": [
+    [
+     1250.0,
+     0.0
+    ],
+    [
+     1290.0,
+     0.0
+    ],
+    [
+     1290.0,
+     40.0
+    ],
+    [
+     1250.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1257.5,
+     14.1
+    ],
+    [
+     1289.5,
+     14.1
+    ],
+    [
+     1289.5,
+     16.0
+    ],
+    [
+     1257.5,
+     16.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E126",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1250.0,
+     0.0
+    ],
+    [
+     1258.0,
+     0.0
+    ],
+    [
+     1258.0,
+     7.2
+    ],
+    [
+     1250.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E126",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1268.0,
+     0.0
+    ],
+    [
+     1272.0,
+     0.0
+    ],
+    [
+     1272.0,
+     2.0
+    ],
+    [
+     1268.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E126",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1290.0,
+     0.0
+    ],
+    [
+     1300.0,
+     0.0
+    ],
+    [
+     1300.0,
+     40.0
+    ],
+    [
+     1290.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Bay B27",
+   "level": "L1",
+   "outline_m": [
+    [
+     1300.0,
+     0.0
+    ],
+    [
+     1340.0,
+     0.0
+    ],
+    [
+     1340.0,
+     40.0
+    ],
+    [
+     1300.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1305.3,
+     31.6
+    ],
+    [
+     1337.3,
+     31.6
+    ],
+    [
+     1337.3,
+     33.5
+    ],
+    [
+     1305.3,
+     33.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E131",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1300.0,
+     0.0
+    ],
+    [
+     1308.0,
+     0.0
+    ],
+    [
+     1308.0,
+     7.2
+    ],
+    [
+     1300.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E131",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1318.0,
+     0.0
+    ],
+    [
+     1322.0,
+     0.0
+    ],
+    [
+     1322.0,
+     2.0
+    ],
+    [
+     1318.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E131",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1340.0,
+     0.0
+    ],
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1350.0,
+     40.0
+    ],
+    [
+     1340.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Bay B28",
+   "level": "L1",
+   "outline_m": [
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1390.0,
+     0.0
+    ],
+    [
+     1390.0,
+     40.0
+    ],
+    [
+     1350.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1357.4,
+     1.8
+    ],
+    [
+     1389.4,
+     1.8
+    ],
+    [
+     1389.4,
+     3.7
+    ],
+    [
+     1357.4,
+     3.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E136",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1358.0,
+     0.0
+    ],
+    [
+     1358.0,
+     7.2
+    ],
+    [
+     1350.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E136",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1368.0,
+     0.0
+    ],
+    [
+     1372.0,
+     0.0
+    ],
+    [
+     1372.0,
+     2.0
+    ],
+    [
+     1368.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E136",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1390.0,
+     0.0
+    ],
+    [
+     1400.0,
+     0.0
+    ],
+    [
+     1400.0,
+     40.0
+    ],
+    [
+     1390.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Bay B29",
+   "level": "L1",
+   "outline_m": [
+    [
+     1400.0,
+     0.0
+    ],
+    [
+     1440.0,
+     0.0
+    ],
+    [
+     1440.0,
+     40.0
+    ],
+    [
+     1400.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1407.3,
+     1.6
+    ],
+    [
+     1439.3,
+     1.6
+    ],
+    [
+     1439.3,
+     3.5
+    ],
+    [
+     1407.3,
+     3.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E141",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1400.0,
+     0.0
+    ],
+    [
+     1408.0,
+     0.0
+    ],
+    [
+     1408.0,
+     7.2
+    ],
+    [
+     1400.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E141",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1418.0,
+     0.0
+    ],
+    [
+     1422.0,
+     0.0
+    ],
+    [
+     1422.0,
+     2.0
+    ],
+    [
+     1418.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E141",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1440.0,
+     0.0
+    ],
+    [
+     1450.0,
+     0.0
+    ],
+    [
+     1450.0,
+     40.0
+    ],
+    [
+     1440.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Bay B30",
+   "level": "L1",
+   "outline_m": [
+    [
+     1450.0,
+     0.0
+    ],
+    [
+     1490.0,
+     0.0
+    ],
+    [
+     1490.0,
+     40.0
+    ],
+    [
+     1450.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1453.2,
+     12.7
+    ],
+    [
+     1485.2,
+     12.7
+    ],
+    [
+     1485.2,
+     14.7
+    ],
+    [
+     1453.2,
+     14.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E146",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1450.0,
+     0.0
+    ],
+    [
+     1458.0,
+     0.0
+    ],
+    [
+     1458.0,
+     7.2
+    ],
+    [
+     1450.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E146",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1468.0,
+     0.0
+    ],
+    [
+     1472.0,
+     0.0
+    ],
+    [
+     1472.0,
+     2.0
+    ],
+    [
+     1468.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E146",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1490.0,
+     0.0
+    ],
+    [
+     1500.0,
+     0.0
+    ],
+    [
+     1500.0,
+     40.0
+    ],
+    [
+     1490.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Bay B31",
+   "level": "L1",
+   "outline_m": [
+    [
+     1500.0,
+     0.0
+    ],
+    [
+     1540.0,
+     0.0
+    ],
+    [
+     1540.0,
+     40.0
+    ],
+    [
+     1500.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1506.0,
+     15.0
+    ],
+    [
+     1538.0,
+     15.0
+    ],
+    [
+     1538.0,
+     16.9
+    ],
+    [
+     1506.0,
+     16.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E151",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1500.0,
+     0.0
+    ],
+    [
+     1508.0,
+     0.0
+    ],
+    [
+     1508.0,
+     7.2
+    ],
+    [
+     1500.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E151",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1518.0,
+     0.0
+    ],
+    [
+     1522.0,
+     0.0
+    ],
+    [
+     1522.0,
+     2.0
+    ],
+    [
+     1518.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E151",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1540.0,
+     0.0
+    ],
+    [
+     1550.0,
+     0.0
+    ],
+    [
+     1550.0,
+     40.0
+    ],
+    [
+     1540.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Bay B32",
+   "level": "L1",
+   "outline_m": [
+    [
+     1550.0,
+     0.0
+    ],
+    [
+     1590.0,
+     0.0
+    ],
+    [
+     1590.0,
+     40.0
+    ],
+    [
+     1550.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1552.2,
+     36.4
+    ],
+    [
+     1584.2,
+     36.4
+    ],
+    [
+     1584.2,
+     38.3
+    ],
+    [
+     1552.2,
+     38.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E156",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1550.0,
+     0.0
+    ],
+    [
+     1558.0,
+     0.0
+    ],
+    [
+     1558.0,
+     7.2
+    ],
+    [
+     1550.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E156",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1568.0,
+     0.0
+    ],
+    [
+     1572.0,
+     0.0
+    ],
+    [
+     1572.0,
+     2.0
+    ],
+    [
+     1568.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E156",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1590.0,
+     0.0
+    ],
+    [
+     1600.0,
+     0.0
+    ],
+    [
+     1600.0,
+     40.0
+    ],
+    [
+     1590.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Bay B33",
+   "level": "L1",
+   "outline_m": [
+    [
+     1600.0,
+     0.0
+    ],
+    [
+     1640.0,
+     0.0
+    ],
+    [
+     1640.0,
+     40.0
+    ],
+    [
+     1600.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1606.0,
+     31.5
+    ],
+    [
+     1638.0,
+     31.5
+    ],
+    [
+     1638.0,
+     33.4
+    ],
+    [
+     1606.0,
+     33.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E161",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1600.0,
+     0.0
+    ],
+    [
+     1608.0,
+     0.0
+    ],
+    [
+     1608.0,
+     7.2
+    ],
+    [
+     1600.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E161",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1618.0,
+     0.0
+    ],
+    [
+     1622.0,
+     0.0
+    ],
+    [
+     1622.0,
+     2.0
+    ],
+    [
+     1618.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E161",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1640.0,
+     0.0
+    ],
+    [
+     1650.0,
+     0.0
+    ],
+    [
+     1650.0,
+     40.0
+    ],
+    [
+     1640.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Bay B34",
+   "level": "L1",
+   "outline_m": [
+    [
+     1650.0,
+     0.0
+    ],
+    [
+     1690.0,
+     0.0
+    ],
+    [
+     1690.0,
+     40.0
+    ],
+    [
+     1650.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1655.2,
+     10.6
+    ],
+    [
+     1687.2,
+     10.6
+    ],
+    [
+     1687.2,
+     12.6
+    ],
+    [
+     1655.2,
+     12.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E166",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1650.0,
+     0.0
+    ],
+    [
+     1658.0,
+     0.0
+    ],
+    [
+     1658.0,
+     7.2
+    ],
+    [
+     1650.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E166",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1668.0,
+     0.0
+    ],
+    [
+     1672.0,
+     0.0
+    ],
+    [
+     1672.0,
+     2.0
+    ],
+    [
+     1668.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E166",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1690.0,
+     0.0
+    ],
+    [
+     1700.0,
+     0.0
+    ],
+    [
+     1700.0,
+     40.0
+    ],
+    [
+     1690.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Bay B35",
+   "level": "L1",
+   "outline_m": [
+    [
+     1700.0,
+     0.0
+    ],
+    [
+     1740.0,
+     0.0
+    ],
+    [
+     1740.0,
+     40.0
+    ],
+    [
+     1700.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1700.9,
+     14.1
+    ],
+    [
+     1732.9,
+     14.1
+    ],
+    [
+     1732.9,
+     16.0
+    ],
+    [
+     1700.9,
+     16.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E171",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1700.0,
+     0.0
+    ],
+    [
+     1708.0,
+     0.0
+    ],
+    [
+     1708.0,
+     7.2
+    ],
+    [
+     1700.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E171",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1718.0,
+     0.0
+    ],
+    [
+     1722.0,
+     0.0
+    ],
+    [
+     1722.0,
+     2.0
+    ],
+    [
+     1718.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E171",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1740.0,
+     0.0
+    ],
+    [
+     1750.0,
+     0.0
+    ],
+    [
+     1750.0,
+     40.0
+    ],
+    [
+     1740.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Bay B36",
+   "level": "L1",
+   "outline_m": [
+    [
+     1750.0,
+     0.0
+    ],
+    [
+     1790.0,
+     0.0
+    ],
+    [
+     1790.0,
+     40.0
+    ],
+    [
+     1750.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1757.0,
+     15.9
+    ],
+    [
+     1789.0,
+     15.9
+    ],
+    [
+     1789.0,
+     17.9
+    ],
+    [
+     1757.0,
+     17.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E176",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1750.0,
+     0.0
+    ],
+    [
+     1758.0,
+     0.0
+    ],
+    [
+     1758.0,
+     7.2
+    ],
+    [
+     1750.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E176",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1768.0,
+     0.0
+    ],
+    [
+     1772.0,
+     0.0
+    ],
+    [
+     1772.0,
+     2.0
+    ],
+    [
+     1768.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E176",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1790.0,
+     0.0
+    ],
+    [
+     1800.0,
+     0.0
+    ],
+    [
+     1800.0,
+     40.0
+    ],
+    [
+     1790.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Bay B37",
+   "level": "L1",
+   "outline_m": [
+    [
+     1800.0,
+     0.0
+    ],
+    [
+     1840.0,
+     0.0
+    ],
+    [
+     1840.0,
+     40.0
+    ],
+    [
+     1800.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1806.6,
+     13.2
+    ],
+    [
+     1838.6,
+     13.2
+    ],
+    [
+     1838.6,
+     15.1
+    ],
+    [
+     1806.6,
+     15.1
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E181",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1800.0,
+     0.0
+    ],
+    [
+     1808.0,
+     0.0
+    ],
+    [
+     1808.0,
+     7.2
+    ],
+    [
+     1800.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E181",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1818.0,
+     0.0
+    ],
+    [
+     1822.0,
+     0.0
+    ],
+    [
+     1822.0,
+     2.0
+    ],
+    [
+     1818.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E181",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1840.0,
+     0.0
+    ],
+    [
+     1850.0,
+     0.0
+    ],
+    [
+     1850.0,
+     40.0
+    ],
+    [
+     1840.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Bay B38",
+   "level": "L1",
+   "outline_m": [
+    [
+     1850.0,
+     0.0
+    ],
+    [
+     1890.0,
+     0.0
+    ],
+    [
+     1890.0,
+     40.0
+    ],
+    [
+     1850.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1855.7,
+     31.1
+    ],
+    [
+     1887.7,
+     31.1
+    ],
+    [
+     1887.7,
+     33.0
+    ],
+    [
+     1855.7,
+     33.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E186",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1850.0,
+     0.0
+    ],
+    [
+     1858.0,
+     0.0
+    ],
+    [
+     1858.0,
+     7.2
+    ],
+    [
+     1850.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E186",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1868.0,
+     0.0
+    ],
+    [
+     1872.0,
+     0.0
+    ],
+    [
+     1872.0,
+     2.0
+    ],
+    [
+     1868.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E186",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1890.0,
+     0.0
+    ],
+    [
+     1900.0,
+     0.0
+    ],
+    [
+     1900.0,
+     40.0
+    ],
+    [
+     1890.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Bay B39",
+   "level": "L1",
+   "outline_m": [
+    [
+     1900.0,
+     0.0
+    ],
+    [
+     1940.0,
+     0.0
+    ],
+    [
+     1940.0,
+     40.0
+    ],
+    [
+     1900.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1907.0,
+     3.0
+    ],
+    [
+     1939.0,
+     3.0
+    ],
+    [
+     1939.0,
+     4.9
+    ],
+    [
+     1907.0,
+     4.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E191",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1900.0,
+     0.0
+    ],
+    [
+     1908.0,
+     0.0
+    ],
+    [
+     1908.0,
+     7.2
+    ],
+    [
+     1900.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E191",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1918.0,
+     0.0
+    ],
+    [
+     1922.0,
+     0.0
+    ],
+    [
+     1922.0,
+     2.0
+    ],
+    [
+     1918.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E191",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1940.0,
+     0.0
+    ],
+    [
+     1950.0,
+     0.0
+    ],
+    [
+     1950.0,
+     40.0
+    ],
+    [
+     1940.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Bay B40",
+   "level": "L1",
+   "outline_m": [
+    [
+     1950.0,
+     0.0
+    ],
+    [
+     1990.0,
+     0.0
+    ],
+    [
+     1990.0,
+     40.0
+    ],
+    [
+     1950.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1950.1,
+     27.2
+    ],
+    [
+     1982.1,
+     27.2
+    ],
+    [
+     1982.1,
+     29.1
+    ],
+    [
+     1950.1,
+     29.1
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E196",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1950.0,
+     0.0
+    ],
+    [
+     1958.0,
+     0.0
+    ],
+    [
+     1958.0,
+     7.2
+    ],
+    [
+     1950.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E196",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1968.0,
+     0.0
+    ],
+    [
+     1972.0,
+     0.0
+    ],
+    [
+     1972.0,
+     2.0
+    ],
+    [
+     1968.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E196",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1990.0,
+     0.0
+    ],
+    [
+     2000.0,
+     0.0
+    ],
+    [
+     2000.0,
+     40.0
+    ],
+    [
+     1990.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Bay B41",
+   "level": "L1",
+   "outline_m": [
+    [
+     2000.0,
+     0.0
+    ],
+    [
+     2040.0,
+     0.0
+    ],
+    [
+     2040.0,
+     40.0
+    ],
+    [
+     2000.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2005.0,
+     34.2
+    ],
+    [
+     2037.0,
+     34.2
+    ],
+    [
+     2037.0,
+     36.1
+    ],
+    [
+     2005.0,
+     36.1
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E201",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2000.0,
+     0.0
+    ],
+    [
+     2008.0,
+     0.0
+    ],
+    [
+     2008.0,
+     7.2
+    ],
+    [
+     2000.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E201",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2018.0,
+     0.0
+    ],
+    [
+     2022.0,
+     0.0
+    ],
+    [
+     2022.0,
+     2.0
+    ],
+    [
+     2018.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E201",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2040.0,
+     0.0
+    ],
+    [
+     2050.0,
+     0.0
+    ],
+    [
+     2050.0,
+     40.0
+    ],
+    [
+     2040.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Bay B42",
+   "level": "L1",
+   "outline_m": [
+    [
+     2050.0,
+     0.0
+    ],
+    [
+     2090.0,
+     0.0
+    ],
+    [
+     2090.0,
+     40.0
+    ],
+    [
+     2050.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2051.1,
+     37.6
+    ],
+    [
+     2083.1,
+     37.6
+    ],
+    [
+     2083.1,
+     39.6
+    ],
+    [
+     2051.1,
+     39.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E206",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2050.0,
+     0.0
+    ],
+    [
+     2058.0,
+     0.0
+    ],
+    [
+     2058.0,
+     7.2
+    ],
+    [
+     2050.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E206",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2068.0,
+     0.0
+    ],
+    [
+     2072.0,
+     0.0
+    ],
+    [
+     2072.0,
+     2.0
+    ],
+    [
+     2068.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E206",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2090.0,
+     0.0
+    ],
+    [
+     2100.0,
+     0.0
+    ],
+    [
+     2100.0,
+     40.0
+    ],
+    [
+     2090.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Bay B43",
+   "level": "L1",
+   "outline_m": [
+    [
+     2100.0,
+     0.0
+    ],
+    [
+     2140.0,
+     0.0
+    ],
+    [
+     2140.0,
+     40.0
+    ],
+    [
+     2100.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2104.1,
+     35.1
+    ],
+    [
+     2136.1,
+     35.1
+    ],
+    [
+     2136.1,
+     37.0
+    ],
+    [
+     2104.1,
+     37.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E211",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2100.0,
+     0.0
+    ],
+    [
+     2108.0,
+     0.0
+    ],
+    [
+     2108.0,
+     7.2
+    ],
+    [
+     2100.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E211",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2118.0,
+     0.0
+    ],
+    [
+     2122.0,
+     0.0
+    ],
+    [
+     2122.0,
+     2.0
+    ],
+    [
+     2118.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E211",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2140.0,
+     0.0
+    ],
+    [
+     2150.0,
+     0.0
+    ],
+    [
+     2150.0,
+     40.0
+    ],
+    [
+     2140.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Bay B44",
+   "level": "L1",
+   "outline_m": [
+    [
+     2150.0,
+     0.0
+    ],
+    [
+     2190.0,
+     0.0
+    ],
+    [
+     2190.0,
+     40.0
+    ],
+    [
+     2150.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2155.1,
+     18.8
+    ],
+    [
+     2187.1,
+     18.8
+    ],
+    [
+     2187.1,
+     20.7
+    ],
+    [
+     2155.1,
+     20.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E216",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2150.0,
+     0.0
+    ],
+    [
+     2158.0,
+     0.0
+    ],
+    [
+     2158.0,
+     7.2
+    ],
+    [
+     2150.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E216",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2168.0,
+     0.0
+    ],
+    [
+     2172.0,
+     0.0
+    ],
+    [
+     2172.0,
+     2.0
+    ],
+    [
+     2168.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E216",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2190.0,
+     0.0
+    ],
+    [
+     2200.0,
+     0.0
+    ],
+    [
+     2200.0,
+     40.0
+    ],
+    [
+     2190.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Bay B45",
+   "level": "L1",
+   "outline_m": [
+    [
+     2200.0,
+     0.0
+    ],
+    [
+     2240.0,
+     0.0
+    ],
+    [
+     2240.0,
+     40.0
+    ],
+    [
+     2200.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2204.7,
+     6.7
+    ],
+    [
+     2236.7,
+     6.7
+    ],
+    [
+     2236.7,
+     8.6
+    ],
+    [
+     2204.7,
+     8.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E221",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2200.0,
+     0.0
+    ],
+    [
+     2208.0,
+     0.0
+    ],
+    [
+     2208.0,
+     7.2
+    ],
+    [
+     2200.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E221",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2218.0,
+     0.0
+    ],
+    [
+     2222.0,
+     0.0
+    ],
+    [
+     2222.0,
+     2.0
+    ],
+    [
+     2218.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E221",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2240.0,
+     0.0
+    ],
+    [
+     2250.0,
+     0.0
+    ],
+    [
+     2250.0,
+     40.0
+    ],
+    [
+     2240.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Bay B46",
+   "level": "L1",
+   "outline_m": [
+    [
+     2250.0,
+     0.0
+    ],
+    [
+     2290.0,
+     0.0
+    ],
+    [
+     2290.0,
+     40.0
+    ],
+    [
+     2250.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2253.9,
+     11.9
+    ],
+    [
+     2285.9,
+     11.9
+    ],
+    [
+     2285.9,
+     13.8
+    ],
+    [
+     2253.9,
+     13.8
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E226",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2250.0,
+     0.0
+    ],
+    [
+     2258.0,
+     0.0
+    ],
+    [
+     2258.0,
+     7.2
+    ],
+    [
+     2250.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E226",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2268.0,
+     0.0
+    ],
+    [
+     2272.0,
+     0.0
+    ],
+    [
+     2272.0,
+     2.0
+    ],
+    [
+     2268.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E226",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2290.0,
+     0.0
+    ],
+    [
+     2300.0,
+     0.0
+    ],
+    [
+     2300.0,
+     40.0
+    ],
+    [
+     2290.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Bay B47",
+   "level": "L1",
+   "outline_m": [
+    [
+     2300.0,
+     0.0
+    ],
+    [
+     2340.0,
+     0.0
+    ],
+    [
+     2340.0,
+     40.0
+    ],
+    [
+     2300.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2302.5,
+     20.6
+    ],
+    [
+     2334.5,
+     20.6
+    ],
+    [
+     2334.5,
+     22.6
+    ],
+    [
+     2302.5,
+     22.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E231",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2300.0,
+     0.0
+    ],
+    [
+     2308.0,
+     0.0
+    ],
+    [
+     2308.0,
+     7.2
+    ],
+    [
+     2300.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E231",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2318.0,
+     0.0
+    ],
+    [
+     2322.0,
+     0.0
+    ],
+    [
+     2322.0,
+     2.0
+    ],
+    [
+     2318.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E231",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2340.0,
+     0.0
+    ],
+    [
+     2350.0,
+     0.0
+    ],
+    [
+     2350.0,
+     40.0
+    ],
+    [
+     2340.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Bay B48",
+   "level": "L1",
+   "outline_m": [
+    [
+     2350.0,
+     0.0
+    ],
+    [
+     2390.0,
+     0.0
+    ],
+    [
+     2390.0,
+     40.0
+    ],
+    [
+     2350.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2357.9,
+     37.4
+    ],
+    [
+     2389.9,
+     37.4
+    ],
+    [
+     2389.9,
+     39.3
+    ],
+    [
+     2357.9,
+     39.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E236",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2350.0,
+     0.0
+    ],
+    [
+     2358.0,
+     0.0
+    ],
+    [
+     2358.0,
+     7.2
+    ],
+    [
+     2350.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E236",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2368.0,
+     0.0
+    ],
+    [
+     2372.0,
+     0.0
+    ],
+    [
+     2372.0,
+     2.0
+    ],
+    [
+     2368.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E236",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2390.0,
+     0.0
+    ],
+    [
+     2400.0,
+     0.0
+    ],
+    [
+     2400.0,
+     40.0
+    ],
+    [
+     2390.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Bay B49",
+   "level": "L1",
+   "outline_m": [
+    [
+     2400.0,
+     0.0
+    ],
+    [
+     2440.0,
+     0.0
+    ],
+    [
+     2440.0,
+     40.0
+    ],
+    [
+     2400.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2407.4,
+     19.3
+    ],
+    [
+     2439.4,
+     19.3
+    ],
+    [
+     2439.4,
+     21.2
+    ],
+    [
+     2407.4,
+     21.2
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E241",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2400.0,
+     0.0
+    ],
+    [
+     2408.0,
+     0.0
+    ],
+    [
+     2408.0,
+     7.2
+    ],
+    [
+     2400.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E241",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2418.0,
+     0.0
+    ],
+    [
+     2422.0,
+     0.0
+    ],
+    [
+     2422.0,
+     2.0
+    ],
+    [
+     2418.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E241",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2440.0,
+     0.0
+    ],
+    [
+     2450.0,
+     0.0
+    ],
+    [
+     2450.0,
+     40.0
+    ],
+    [
+     2440.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Bay B50",
+   "level": "L1",
+   "outline_m": [
+    [
+     2450.0,
+     0.0
+    ],
+    [
+     2490.0,
+     0.0
+    ],
+    [
+     2490.0,
+     40.0
+    ],
+    [
+     2450.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2456.5,
+     17.6
+    ],
+    [
+     2488.5,
+     17.6
+    ],
+    [
+     2488.5,
+     19.6
+    ],
+    [
+     2456.5,
+     19.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E246",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2450.0,
+     0.0
+    ],
+    [
+     2458.0,
+     0.0
+    ],
+    [
+     2458.0,
+     7.2
+    ],
+    [
+     2450.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E246",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2468.0,
+     0.0
+    ],
+    [
+     2472.0,
+     0.0
+    ],
+    [
+     2472.0,
+     2.0
+    ],
+    [
+     2468.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E246",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2490.0,
+     0.0
+    ],
+    [
+     2500.0,
+     0.0
+    ],
+    [
+     2500.0,
+     40.0
+    ],
+    [
+     2490.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Bay B51",
+   "level": "L1",
+   "outline_m": [
+    [
+     2500.0,
+     0.0
+    ],
+    [
+     2540.0,
+     0.0
+    ],
+    [
+     2540.0,
+     40.0
+    ],
+    [
+     2500.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2500.3,
+     11.5
+    ],
+    [
+     2532.3,
+     11.5
+    ],
+    [
+     2532.3,
+     13.4
+    ],
+    [
+     2500.3,
+     13.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E251",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2500.0,
+     0.0
+    ],
+    [
+     2508.0,
+     0.0
+    ],
+    [
+     2508.0,
+     7.2
+    ],
+    [
+     2500.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E251",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2518.0,
+     0.0
+    ],
+    [
+     2522.0,
+     0.0
+    ],
+    [
+     2522.0,
+     2.0
+    ],
+    [
+     2518.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E251",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2540.0,
+     0.0
+    ],
+    [
+     2550.0,
+     0.0
+    ],
+    [
+     2550.0,
+     40.0
+    ],
+    [
+     2540.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Bay B52",
+   "level": "L1",
+   "outline_m": [
+    [
+     2550.0,
+     0.0
+    ],
+    [
+     2590.0,
+     0.0
+    ],
+    [
+     2590.0,
+     40.0
+    ],
+    [
+     2550.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2550.4,
+     17.4
+    ],
+    [
+     2582.4,
+     17.4
+    ],
+    [
+     2582.4,
+     19.4
+    ],
+    [
+     2550.4,
+     19.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E256",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2550.0,
+     0.0
+    ],
+    [
+     2558.0,
+     0.0
+    ],
+    [
+     2558.0,
+     7.2
+    ],
+    [
+     2550.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E256",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2568.0,
+     0.0
+    ],
+    [
+     2572.0,
+     0.0
+    ],
+    [
+     2572.0,
+     2.0
+    ],
+    [
+     2568.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E256",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2590.0,
+     0.0
+    ],
+    [
+     2600.0,
+     0.0
+    ],
+    [
+     2600.0,
+     40.0
+    ],
+    [
+     2590.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Bay B53",
+   "level": "L1",
+   "outline_m": [
+    [
+     2600.0,
+     0.0
+    ],
+    [
+     2640.0,
+     0.0
+    ],
+    [
+     2640.0,
+     40.0
+    ],
+    [
+     2600.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2602.0,
+     37.0
+    ],
+    [
+     2634.0,
+     37.0
+    ],
+    [
+     2634.0,
+     38.9
+    ],
+    [
+     2602.0,
+     38.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E261",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2600.0,
+     0.0
+    ],
+    [
+     2608.0,
+     0.0
+    ],
+    [
+     2608.0,
+     7.2
+    ],
+    [
+     2600.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E261",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2618.0,
+     0.0
+    ],
+    [
+     2622.0,
+     0.0
+    ],
+    [
+     2622.0,
+     2.0
+    ],
+    [
+     2618.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E261",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2640.0,
+     0.0
+    ],
+    [
+     2650.0,
+     0.0
+    ],
+    [
+     2650.0,
+     40.0
+    ],
+    [
+     2640.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Bay B54",
+   "level": "L1",
+   "outline_m": [
+    [
+     2650.0,
+     0.0
+    ],
+    [
+     2690.0,
+     0.0
+    ],
+    [
+     2690.0,
+     40.0
+    ],
+    [
+     2650.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2655.3,
+     37.8
+    ],
+    [
+     2687.3,
+     37.8
+    ],
+    [
+     2687.3,
+     39.8
+    ],
+    [
+     2655.3,
+     39.8
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E266",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2650.0,
+     0.0
+    ],
+    [
+     2658.0,
+     0.0
+    ],
+    [
+     2658.0,
+     7.2
+    ],
+    [
+     2650.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E266",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2668.0,
+     0.0
+    ],
+    [
+     2672.0,
+     0.0
+    ],
+    [
+     2672.0,
+     2.0
+    ],
+    [
+     2668.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E266",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2690.0,
+     0.0
+    ],
+    [
+     2700.0,
+     0.0
+    ],
+    [
+     2700.0,
+     40.0
+    ],
+    [
+     2690.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Bay B55",
+   "level": "L1",
+   "outline_m": [
+    [
+     2700.0,
+     0.0
+    ],
+    [
+     2740.0,
+     0.0
+    ],
+    [
+     2740.0,
+     40.0
+    ],
+    [
+     2700.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2703.4,
+     2.9
+    ],
+    [
+     2735.4,
+     2.9
+    ],
+    [
+     2735.4,
+     4.8
+    ],
+    [
+     2703.4,
+     4.8
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E271",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2700.0,
+     0.0
+    ],
+    [
+     2708.0,
+     0.0
+    ],
+    [
+     2708.0,
+     7.2
+    ],
+    [
+     2700.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E271",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2718.0,
+     0.0
+    ],
+    [
+     2722.0,
+     0.0
+    ],
+    [
+     2722.0,
+     2.0
+    ],
+    [
+     2718.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E271",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2740.0,
+     0.0
+    ],
+    [
+     2750.0,
+     0.0
+    ],
+    [
+     2750.0,
+     40.0
+    ],
+    [
+     2740.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Bay B56",
+   "level": "L1",
+   "outline_m": [
+    [
+     2750.0,
+     0.0
+    ],
+    [
+     2790.0,
+     0.0
+    ],
+    [
+     2790.0,
+     40.0
+    ],
+    [
+     2750.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2750.1,
+     27.5
+    ],
+    [
+     2782.1,
+     27.5
+    ],
+    [
+     2782.1,
+     29.5
+    ],
+    [
+     2750.1,
+     29.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E276",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2750.0,
+     0.0
+    ],
+    [
+     2758.0,
+     0.0
+    ],
+    [
+     2758.0,
+     7.2
+    ],
+    [
+     2750.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E276",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2768.0,
+     0.0
+    ],
+    [
+     2772.0,
+     0.0
+    ],
+    [
+     2772.0,
+     2.0
+    ],
+    [
+     2768.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E276",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2790.0,
+     0.0
+    ],
+    [
+     2800.0,
+     0.0
+    ],
+    [
+     2800.0,
+     40.0
+    ],
+    [
+     2790.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Bay B57",
+   "level": "L1",
+   "outline_m": [
+    [
+     2800.0,
+     0.0
+    ],
+    [
+     2840.0,
+     0.0
+    ],
+    [
+     2840.0,
+     40.0
+    ],
+    [
+     2800.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2805.6,
+     33.0
+    ],
+    [
+     2837.6,
+     33.0
+    ],
+    [
+     2837.6,
+     34.9
+    ],
+    [
+     2805.6,
+     34.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E281",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2800.0,
+     0.0
+    ],
+    [
+     2808.0,
+     0.0
+    ],
+    [
+     2808.0,
+     7.2
+    ],
+    [
+     2800.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E281",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2818.0,
+     0.0
+    ],
+    [
+     2822.0,
+     0.0
+    ],
+    [
+     2822.0,
+     2.0
+    ],
+    [
+     2818.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E281",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2840.0,
+     0.0
+    ],
+    [
+     2850.0,
+     0.0
+    ],
+    [
+     2850.0,
+     40.0
+    ],
+    [
+     2840.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Bay B58",
+   "level": "L1",
+   "outline_m": [
+    [
+     2850.0,
+     0.0
+    ],
+    [
+     2890.0,
+     0.0
+    ],
+    [
+     2890.0,
+     40.0
+    ],
+    [
+     2850.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2852.8,
+     26.3
+    ],
+    [
+     2884.8,
+     26.3
+    ],
+    [
+     2884.8,
+     28.2
+    ],
+    [
+     2852.8,
+     28.2
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E286",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2850.0,
+     0.0
+    ],
+    [
+     2858.0,
+     0.0
+    ],
+    [
+     2858.0,
+     7.2
+    ],
+    [
+     2850.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E286",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2868.0,
+     0.0
+    ],
+    [
+     2872.0,
+     0.0
+    ],
+    [
+     2872.0,
+     2.0
+    ],
+    [
+     2868.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E286",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2890.0,
+     0.0
+    ],
+    [
+     2900.0,
+     0.0
+    ],
+    [
+     2900.0,
+     40.0
+    ],
+    [
+     2890.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Bay B59",
+   "level": "L1",
+   "outline_m": [
+    [
+     2900.0,
+     0.0
+    ],
+    [
+     2940.0,
+     0.0
+    ],
+    [
+     2940.0,
+     40.0
+    ],
+    [
+     2900.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2901.4,
+     20.5
+    ],
+    [
+     2933.4,
+     20.5
+    ],
+    [
+     2933.4,
+     22.4
+    ],
+    [
+     2901.4,
+     22.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E291",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2900.0,
+     0.0
+    ],
+    [
+     2908.0,
+     0.0
+    ],
+    [
+     2908.0,
+     7.2
+    ],
+    [
+     2900.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E291",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2918.0,
+     0.0
+    ],
+    [
+     2922.0,
+     0.0
+    ],
+    [
+     2922.0,
+     2.0
+    ],
+    [
+     2918.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E291",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2940.0,
+     0.0
+    ],
+    [
+     2950.0,
+     0.0
+    ],
+    [
+     2950.0,
+     40.0
+    ],
+    [
+     2940.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Bay B60",
+   "level": "L1",
+   "outline_m": [
+    [
+     2950.0,
+     0.0
+    ],
+    [
+     2990.0,
+     0.0
+    ],
+    [
+     2990.0,
+     40.0
+    ],
+    [
+     2950.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2953.3,
+     13.8
+    ],
+    [
+     2985.3,
+     13.8
+    ],
+    [
+     2985.3,
+     15.7
+    ],
+    [
+     2953.3,
+     15.7
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E296",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     2950.0,
+     0.0
+    ],
+    [
+     2958.0,
+     0.0
+    ],
+    [
+     2958.0,
+     7.2
+    ],
+    [
+     2950.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E296",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     2968.0,
+     0.0
+    ],
+    [
+     2972.0,
+     0.0
+    ],
+    [
+     2972.0,
+     2.0
+    ],
+    [
+     2968.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E296",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     2990.0,
+     0.0
+    ],
+    [
+     3000.0,
+     0.0
+    ],
+    [
+     3000.0,
+     40.0
+    ],
+    [
+     2990.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Bay B61",
+   "level": "L1",
+   "outline_m": [
+    [
+     3000.0,
+     0.0
+    ],
+    [
+     3040.0,
+     0.0
+    ],
+    [
+     3040.0,
+     40.0
+    ],
+    [
+     3000.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     3003.6,
+     20.6
+    ],
+    [
+     3035.6,
+     20.6
+    ],
+    [
+     3035.6,
+     22.5
+    ],
+    [
+     3003.6,
+     22.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E301",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     3000.0,
+     0.0
+    ],
+    [
+     3008.0,
+     0.0
+    ],
+    [
+     3008.0,
+     7.2
+    ],
+    [
+     3000.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E301",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     3018.0,
+     0.0
+    ],
+    [
+     3022.0,
+     0.0
+    ],
+    [
+     3022.0,
+     2.0
+    ],
+    [
+     3018.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E301",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     3040.0,
+     0.0
+    ],
+    [
+     3050.0,
+     0.0
+    ],
+    [
+     3050.0,
+     40.0
+    ],
+    [
+     3040.0,
+     40.0
+    ]
+   ],
+   "about": "The fire wall between two hangar bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Bay B62",
+   "level": "L1",
+   "outline_m": [
+    [
+     3050.0,
+     0.0
+    ],
+    [
+     3090.0,
+     0.0
+    ],
+    [
+     3090.0,
+     40.0
+    ],
+    [
+     3050.0,
+     40.0
+    ]
+   ],
+   "about": "A public hangar bay for one small craft, rented by the day or the month.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     3057.4,
+     23.3
+    ],
+    [
+     3089.4,
+     23.3
+    ],
+    [
+     3089.4,
+     25.3
+    ],
+    [
+     3057.4,
+     25.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E306",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     3050.0,
+     0.0
+    ],
+    [
+     3058.0,
+     0.0
+    ],
+    [
+     3058.0,
+     7.2
+    ],
+    [
+     3050.0,
+     7.2
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E306",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     3068.0,
+     0.0
+    ],
+    [
+     3072.0,
+     0.0
+    ],
+    [
+     3072.0,
+     2.0
+    ],
+    [
+     3068.0,
+     2.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E306",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

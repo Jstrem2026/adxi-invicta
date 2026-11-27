@@ -498,6 +498,10 @@ def layout_hall(plan, P, prog, levels, rng, ctx):
     n = len(P)
     edges = sorted(range(n), key=lambda i: -math.dist(P[i], P[(i + 1) % n]))
     ei = edges[0] if rng.random() < 0.6 or len(edges) < 2 else edges[1]
+    if prog.get("support_edge") in ("far_y", "near_y") and len(edges) > 1:
+        # put the support wing on a chosen long side (far_y: away from the lot's y = 0 side, e.g. the hull)
+        my = lambda i: (P[i][1] + P[(i + 1) % n][1]) / 2
+        ei = (max if prog["support_edge"] == "far_y" else min)(edges[:2], key=my)
     (x1, y1), (x2, y2) = P[ei], P[(ei + 1) % n]
     ln = math.hypot(x2 - x1, y2 - y1)
     nx, ny = -(y2 - y1) / ln, (x2 - x1) / ln  # inward
@@ -557,6 +561,8 @@ def layout_hall(plan, P, prog, levels, rng, ctx):
 
 def layout_open(plan, P, prog, levels, rng, ctx):
     """Yards, parks and squares: open zones in strips across the lot, with small buildings and fixtures."""
+    lx_, ly_ = G.long_axis(P)
+    ctx["ring_len"] = (lambda r: r[1] - r[0])(G.proj_range(P, lx_, ly_))  # this piece's length, for rows of bays
     zones = prog["zones"](ctx) if callable(prog["zones"]) else list(prog["zones"])
     zones = [z for z in zones if not (z[0].startswith("?") and rng.random() < 0.5)]
     zones = [(z[0].lstrip("?"),) + tuple(z[1:]) for z in zones]
@@ -573,7 +579,11 @@ def layout_open(plan, P, prog, levels, rng, ctx):
     pieces = G.split_by_shares(P, [z[1] for z in zones], axis=ax)
     for z, poly in zip(zones, pieces):
         name, share, about = z[0], z[1], z[2]
-        e = plan.add("zone", name, poly, [L1], about, outdoor=True)
+        opts = z[5] if len(z) > 5 else {}
+        if opts.get("covered"):   # a roofed bay in a row (gate shed, hangar bay): a full-height room
+            e = plan.add("room", name, poly, up, about, full=True)
+        else:
+            e = plan.add("zone", name, poly, [L1], about, outdoor=True)
         if not e:
             continue
         for bld in (z[3] if len(z) > 3 else []):

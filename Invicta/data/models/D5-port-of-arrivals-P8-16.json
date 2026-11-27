@@ -1,0 +1,2141 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P8-16",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  1430.0,
+  60.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Bay floor",
+   "z_m": 0.0,
+   "height_m": 15.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Depot bay 1",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     80.0,
+     0.0
+    ],
+    [
+     80.0,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.0,
+     3.9
+    ],
+    [
+     79.0,
+     3.9
+    ],
+    [
+     79.0,
+     6.8
+    ],
+    [
+     15.0,
+     6.8
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     16.0,
+     0.0
+    ],
+    [
+     16.0,
+     10.8
+    ],
+    [
+     0.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.0,
+     0.0
+    ],
+    [
+     44.0,
+     0.0
+    ],
+    [
+     44.0,
+     3.0
+    ],
+    [
+     36.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.0,
+     0.0
+    ],
+    [
+     90.0,
+     0.0
+    ],
+    [
+     90.0,
+     60.0
+    ],
+    [
+     80.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Depot bay 2",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.0,
+     0.0
+    ],
+    [
+     170.0,
+     0.0
+    ],
+    [
+     170.0,
+     60.0
+    ],
+    [
+     90.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.6,
+     14.7
+    ],
+    [
+     168.6,
+     14.7
+    ],
+    [
+     168.6,
+     17.6
+    ],
+    [
+     104.6,
+     17.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.0,
+     0.0
+    ],
+    [
+     106.0,
+     0.0
+    ],
+    [
+     106.0,
+     10.8
+    ],
+    [
+     90.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.0,
+     0.0
+    ],
+    [
+     134.0,
+     0.0
+    ],
+    [
+     134.0,
+     3.0
+    ],
+    [
+     126.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.0,
+     0.0
+    ],
+    [
+     180.0,
+     0.0
+    ],
+    [
+     180.0,
+     60.0
+    ],
+    [
+     170.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Depot bay 3",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.0,
+     0.0
+    ],
+    [
+     260.0,
+     0.0
+    ],
+    [
+     260.0,
+     60.0
+    ],
+    [
+     180.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     185.4,
+     39.5
+    ],
+    [
+     249.4,
+     39.5
+    ],
+    [
+     249.4,
+     42.4
+    ],
+    [
+     185.4,
+     42.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     180.0,
+     0.0
+    ],
+    [
+     196.0,
+     0.0
+    ],
+    [
+     196.0,
+     10.8
+    ],
+    [
+     180.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     216.0,
+     0.0
+    ],
+    [
+     224.0,
+     0.0
+    ],
+    [
+     224.0,
+     3.0
+    ],
+    [
+     216.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.0,
+     0.0
+    ],
+    [
+     270.0,
+     0.0
+    ],
+    [
+     270.0,
+     60.0
+    ],
+    [
+     260.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "room",
+   "name": "Depot bay 4",
+   "level": "L1",
+   "outline_m": [
+    [
+     270.0,
+     0.0
+    ],
+    [
+     350.0,
+     0.0
+    ],
+    [
+     350.0,
+     60.0
+    ],
+    [
+     270.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     274.8,
+     41.4
+    ],
+    [
+     338.8,
+     41.4
+    ],
+    [
+     338.8,
+     44.3
+    ],
+    [
+     274.8,
+     44.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     270.0,
+     0.0
+    ],
+    [
+     286.0,
+     0.0
+    ],
+    [
+     286.0,
+     10.8
+    ],
+    [
+     270.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     306.0,
+     0.0
+    ],
+    [
+     314.0,
+     0.0
+    ],
+    [
+     314.0,
+     3.0
+    ],
+    [
+     306.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     350.0,
+     0.0
+    ],
+    [
+     360.0,
+     0.0
+    ],
+    [
+     360.0,
+     60.0
+    ],
+    [
+     350.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Depot bay 5",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.0,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     60.0
+    ],
+    [
+     360.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.9,
+     29.4
+    ],
+    [
+     424.9,
+     29.4
+    ],
+    [
+     424.9,
+     32.3
+    ],
+    [
+     360.9,
+     32.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     360.0,
+     0.0
+    ],
+    [
+     376.0,
+     0.0
+    ],
+    [
+     376.0,
+     10.8
+    ],
+    [
+     360.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     396.0,
+     0.0
+    ],
+    [
+     404.0,
+     0.0
+    ],
+    [
+     404.0,
+     3.0
+    ],
+    [
+     396.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     0.0
+    ],
+    [
+     450.0,
+     0.0
+    ],
+    [
+     450.0,
+     60.0
+    ],
+    [
+     440.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Depot bay 6",
+   "level": "L1",
+   "outline_m": [
+    [
+     450.0,
+     0.0
+    ],
+    [
+     530.0,
+     0.0
+    ],
+    [
+     530.0,
+     60.0
+    ],
+    [
+     450.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     464.6,
+     36.5
+    ],
+    [
+     528.6,
+     36.5
+    ],
+    [
+     528.6,
+     39.4
+    ],
+    [
+     464.6,
+     39.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     450.0,
+     0.0
+    ],
+    [
+     466.0,
+     0.0
+    ],
+    [
+     466.0,
+     10.8
+    ],
+    [
+     450.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     486.0,
+     0.0
+    ],
+    [
+     494.0,
+     0.0
+    ],
+    [
+     494.0,
+     3.0
+    ],
+    [
+     486.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     530.0,
+     0.0
+    ],
+    [
+     540.0,
+     0.0
+    ],
+    [
+     540.0,
+     60.0
+    ],
+    [
+     530.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Depot bay 7",
+   "level": "L1",
+   "outline_m": [
+    [
+     540.0,
+     0.0
+    ],
+    [
+     620.0,
+     0.0
+    ],
+    [
+     620.0,
+     60.0
+    ],
+    [
+     540.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     541.5,
+     43.7
+    ],
+    [
+     605.5,
+     43.7
+    ],
+    [
+     605.5,
+     46.6
+    ],
+    [
+     541.5,
+     46.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     540.0,
+     0.0
+    ],
+    [
+     556.0,
+     0.0
+    ],
+    [
+     556.0,
+     10.8
+    ],
+    [
+     540.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     576.0,
+     0.0
+    ],
+    [
+     584.0,
+     0.0
+    ],
+    [
+     584.0,
+     3.0
+    ],
+    [
+     576.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     620.0,
+     0.0
+    ],
+    [
+     630.0,
+     0.0
+    ],
+    [
+     630.0,
+     60.0
+    ],
+    [
+     620.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Depot bay 8",
+   "level": "L1",
+   "outline_m": [
+    [
+     630.0,
+     0.0
+    ],
+    [
+     710.0,
+     0.0
+    ],
+    [
+     710.0,
+     60.0
+    ],
+    [
+     630.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     632.0,
+     24.5
+    ],
+    [
+     696.0,
+     24.5
+    ],
+    [
+     696.0,
+     27.4
+    ],
+    [
+     632.0,
+     27.4
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     630.0,
+     0.0
+    ],
+    [
+     646.0,
+     0.0
+    ],
+    [
+     646.0,
+     10.8
+    ],
+    [
+     630.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     666.0,
+     0.0
+    ],
+    [
+     674.0,
+     0.0
+    ],
+    [
+     674.0,
+     3.0
+    ],
+    [
+     666.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     710.0,
+     0.0
+    ],
+    [
+     720.0,
+     0.0
+    ],
+    [
+     720.0,
+     60.0
+    ],
+    [
+     710.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Depot bay 9",
+   "level": "L1",
+   "outline_m": [
+    [
+     720.0,
+     0.0
+    ],
+    [
+     800.0,
+     0.0
+    ],
+    [
+     800.0,
+     60.0
+    ],
+    [
+     720.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     735.3,
+     6.6
+    ],
+    [
+     799.3,
+     6.6
+    ],
+    [
+     799.3,
+     9.5
+    ],
+    [
+     735.3,
+     9.5
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     720.0,
+     0.0
+    ],
+    [
+     736.0,
+     0.0
+    ],
+    [
+     736.0,
+     10.8
+    ],
+    [
+     720.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     756.0,
+     0.0
+    ],
+    [
+     764.0,
+     0.0
+    ],
+    [
+     764.0,
+     3.0
+    ],
+    [
+     756.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     800.0,
+     0.0
+    ],
+    [
+     810.0,
+     0.0
+    ],
+    [
+     810.0,
+     60.0
+    ],
+    [
+     800.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Depot bay 10",
+   "level": "L1",
+   "outline_m": [
+    [
+     810.0,
+     0.0
+    ],
+    [
+     890.0,
+     0.0
+    ],
+    [
+     890.0,
+     60.0
+    ],
+    [
+     810.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     823.8,
+     16.7
+    ],
+    [
+     887.8,
+     16.7
+    ],
+    [
+     887.8,
+     19.6
+    ],
+    [
+     823.8,
+     19.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     810.0,
+     0.0
+    ],
+    [
+     826.0,
+     0.0
+    ],
+    [
+     826.0,
+     10.8
+    ],
+    [
+     810.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     846.0,
+     0.0
+    ],
+    [
+     854.0,
+     0.0
+    ],
+    [
+     854.0,
+     3.0
+    ],
+    [
+     846.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     890.0,
+     0.0
+    ],
+    [
+     900.0,
+     0.0
+    ],
+    [
+     900.0,
+     60.0
+    ],
+    [
+     890.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Depot bay 11",
+   "level": "L1",
+   "outline_m": [
+    [
+     900.0,
+     0.0
+    ],
+    [
+     980.0,
+     0.0
+    ],
+    [
+     980.0,
+     60.0
+    ],
+    [
+     900.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     901.9,
+     18.2
+    ],
+    [
+     965.9,
+     18.2
+    ],
+    [
+     965.9,
+     21.0
+    ],
+    [
+     901.9,
+     21.0
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     900.0,
+     0.0
+    ],
+    [
+     916.0,
+     0.0
+    ],
+    [
+     916.0,
+     10.8
+    ],
+    [
+     900.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     936.0,
+     0.0
+    ],
+    [
+     944.0,
+     0.0
+    ],
+    [
+     944.0,
+     3.0
+    ],
+    [
+     936.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     980.0,
+     0.0
+    ],
+    [
+     990.0,
+     0.0
+    ],
+    [
+     990.0,
+     60.0
+    ],
+    [
+     980.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Depot bay 12",
+   "level": "L1",
+   "outline_m": [
+    [
+     990.0,
+     0.0
+    ],
+    [
+     1070.0,
+     0.0
+    ],
+    [
+     1070.0,
+     60.0
+    ],
+    [
+     990.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     994.8,
+     36.0
+    ],
+    [
+     1058.8,
+     36.0
+    ],
+    [
+     1058.8,
+     38.9
+    ],
+    [
+     994.8,
+     38.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     990.0,
+     0.0
+    ],
+    [
+     1006.0,
+     0.0
+    ],
+    [
+     1006.0,
+     10.8
+    ],
+    [
+     990.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1026.0,
+     0.0
+    ],
+    [
+     1034.0,
+     0.0
+    ],
+    [
+     1034.0,
+     3.0
+    ],
+    [
+     1026.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1070.0,
+     0.0
+    ],
+    [
+     1080.0,
+     0.0
+    ],
+    [
+     1080.0,
+     60.0
+    ],
+    [
+     1070.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Depot bay 13",
+   "level": "L1",
+   "outline_m": [
+    [
+     1080.0,
+     0.0
+    ],
+    [
+     1160.0,
+     0.0
+    ],
+    [
+     1160.0,
+     60.0
+    ],
+    [
+     1080.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1090.3,
+     48.0
+    ],
+    [
+     1154.3,
+     48.0
+    ],
+    [
+     1154.3,
+     50.9
+    ],
+    [
+     1090.3,
+     50.9
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1080.0,
+     0.0
+    ],
+    [
+     1096.0,
+     0.0
+    ],
+    [
+     1096.0,
+     10.8
+    ],
+    [
+     1080.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1116.0,
+     0.0
+    ],
+    [
+     1124.0,
+     0.0
+    ],
+    [
+     1124.0,
+     3.0
+    ],
+    [
+     1116.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1160.0,
+     0.0
+    ],
+    [
+     1170.0,
+     0.0
+    ],
+    [
+     1170.0,
+     60.0
+    ],
+    [
+     1160.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Depot bay 14",
+   "level": "L1",
+   "outline_m": [
+    [
+     1170.0,
+     0.0
+    ],
+    [
+     1250.0,
+     0.0
+    ],
+    [
+     1250.0,
+     60.0
+    ],
+    [
+     1170.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1176.4,
+     20.8
+    ],
+    [
+     1240.4,
+     20.8
+    ],
+    [
+     1240.4,
+     23.6
+    ],
+    [
+     1176.4,
+     23.6
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1170.0,
+     0.0
+    ],
+    [
+     1186.0,
+     0.0
+    ],
+    [
+     1186.0,
+     10.8
+    ],
+    [
+     1170.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1206.0,
+     0.0
+    ],
+    [
+     1214.0,
+     0.0
+    ],
+    [
+     1214.0,
+     3.0
+    ],
+    [
+     1206.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1250.0,
+     0.0
+    ],
+    [
+     1260.0,
+     0.0
+    ],
+    [
+     1260.0,
+     60.0
+    ],
+    [
+     1250.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Depot bay 15",
+   "level": "L1",
+   "outline_m": [
+    [
+     1260.0,
+     0.0
+    ],
+    [
+     1340.0,
+     0.0
+    ],
+    [
+     1340.0,
+     60.0
+    ],
+    [
+     1260.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1262.4,
+     52.4
+    ],
+    [
+     1326.4,
+     52.4
+    ],
+    [
+     1326.4,
+     55.3
+    ],
+    [
+     1262.4,
+     55.3
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1260.0,
+     0.0
+    ],
+    [
+     1276.0,
+     0.0
+    ],
+    [
+     1276.0,
+     10.8
+    ],
+    [
+     1260.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1296.0,
+     0.0
+    ],
+    [
+     1304.0,
+     0.0
+    ],
+    [
+     1304.0,
+     3.0
+    ],
+    [
+     1296.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "zone",
+   "name": "Bay wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     1340.0,
+     0.0
+    ],
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1350.0,
+     60.0
+    ],
+    [
+     1340.0,
+     60.0
+    ]
+   ],
+   "about": "The fire wall between two depot bays.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Depot bay 16",
+   "level": "L1",
+   "outline_m": [
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1430.0,
+     0.0
+    ],
+    [
+     1430.0,
+     60.0
+    ],
+    [
+     1350.0,
+     60.0
+    ]
+   ],
+   "about": "A covered bay where one of the port's own passenger shuttles is kept, cleaned and readied between flights.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "fixture",
+   "name": "Craft door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1356.8,
+     52.3
+    ],
+    [
+     1420.8,
+     52.3
+    ],
+    [
+     1420.8,
+     55.2
+    ],
+    [
+     1356.8,
+     55.2
+    ]
+   ],
+   "about": "The full-width door the craft rolls in and out through.",
+   "parent": "E076",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "fixture",
+   "name": "Tool room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1350.0,
+     0.0
+    ],
+    [
+     1366.0,
+     0.0
+    ],
+    [
+     1366.0,
+     10.8
+    ],
+    [
+     1350.0,
+     10.8
+    ]
+   ],
+   "about": "A small tool room at the back of the bay.",
+   "parent": "E076",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "fixture",
+   "name": "Staff door",
+   "level": "L1",
+   "outline_m": [
+    [
+     1386.0,
+     0.0
+    ],
+    [
+     1394.0,
+     0.0
+    ],
+    [
+     1394.0,
+     3.0
+    ],
+    [
+     1386.0,
+     3.0
+    ]
+   ],
+   "about": "The staff door at the back of the bay.",
+   "parent": "E076",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

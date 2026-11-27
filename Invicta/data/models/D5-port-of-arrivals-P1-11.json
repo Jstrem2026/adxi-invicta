@@ -1,0 +1,2022 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P1-11",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  2080.0,
+  80.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Berth floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Medium berth 1",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     120.0,
+     0.0
+    ],
+    [
+     120.0,
+     80.0
+    ],
+    [
+     0.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.4,
+     12.0
+    ],
+    [
+     9.6,
+     12.0
+    ],
+    [
+     9.6,
+     68.0
+    ],
+    [
+     2.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.4,
+     12.0
+    ],
+    [
+     117.6,
+     12.0
+    ],
+    [
+     117.6,
+     68.0
+    ],
+    [
+     110.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.0,
+     70.4
+    ],
+    [
+     72.0,
+     70.4
+    ],
+    [
+     72.0,
+     78.4
+    ],
+    [
+     48.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.0,
+     0.0
+    ],
+    [
+     140.0,
+     0.0
+    ],
+    [
+     140.0,
+     80.0
+    ],
+    [
+     120.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Medium berth 2",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     0.0
+    ],
+    [
+     260.0,
+     0.0
+    ],
+    [
+     260.0,
+     80.0
+    ],
+    [
+     140.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     142.4,
+     12.0
+    ],
+    [
+     149.6,
+     12.0
+    ],
+    [
+     149.6,
+     68.0
+    ],
+    [
+     142.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     250.4,
+     12.0
+    ],
+    [
+     257.6,
+     12.0
+    ],
+    [
+     257.6,
+     68.0
+    ],
+    [
+     250.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     188.0,
+     70.4
+    ],
+    [
+     212.0,
+     70.4
+    ],
+    [
+     212.0,
+     78.4
+    ],
+    [
+     188.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.0,
+     0.0
+    ],
+    [
+     280.0,
+     0.0
+    ],
+    [
+     280.0,
+     80.0
+    ],
+    [
+     260.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Medium berth 3",
+   "level": "L1",
+   "outline_m": [
+    [
+     280.0,
+     0.0
+    ],
+    [
+     400.0,
+     0.0
+    ],
+    [
+     400.0,
+     80.0
+    ],
+    [
+     280.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     282.4,
+     12.0
+    ],
+    [
+     289.6,
+     12.0
+    ],
+    [
+     289.6,
+     68.0
+    ],
+    [
+     282.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     390.4,
+     12.0
+    ],
+    [
+     397.6,
+     12.0
+    ],
+    [
+     397.6,
+     68.0
+    ],
+    [
+     390.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     328.0,
+     70.4
+    ],
+    [
+     352.0,
+     70.4
+    ],
+    [
+     352.0,
+     78.4
+    ],
+    [
+     328.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     400.0,
+     0.0
+    ],
+    [
+     420.0,
+     0.0
+    ],
+    [
+     420.0,
+     80.0
+    ],
+    [
+     400.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "zone",
+   "name": "Medium berth 4",
+   "level": "L1",
+   "outline_m": [
+    [
+     420.0,
+     0.0
+    ],
+    [
+     540.0,
+     0.0
+    ],
+    [
+     540.0,
+     80.0
+    ],
+    [
+     420.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     422.4,
+     12.0
+    ],
+    [
+     429.6,
+     12.0
+    ],
+    [
+     429.6,
+     68.0
+    ],
+    [
+     422.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     530.4,
+     12.0
+    ],
+    [
+     537.6,
+     12.0
+    ],
+    [
+     537.6,
+     68.0
+    ],
+    [
+     530.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     468.0,
+     70.4
+    ],
+    [
+     492.0,
+     70.4
+    ],
+    [
+     492.0,
+     78.4
+    ],
+    [
+     468.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     540.0,
+     0.0
+    ],
+    [
+     560.0,
+     0.0
+    ],
+    [
+     560.0,
+     80.0
+    ],
+    [
+     540.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "zone",
+   "name": "Medium berth 5",
+   "level": "L1",
+   "outline_m": [
+    [
+     560.0,
+     0.0
+    ],
+    [
+     680.0,
+     0.0
+    ],
+    [
+     680.0,
+     80.0
+    ],
+    [
+     560.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     562.4,
+     12.0
+    ],
+    [
+     569.6,
+     12.0
+    ],
+    [
+     569.6,
+     68.0
+    ],
+    [
+     562.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     670.4,
+     12.0
+    ],
+    [
+     677.6,
+     12.0
+    ],
+    [
+     677.6,
+     68.0
+    ],
+    [
+     670.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     608.0,
+     70.4
+    ],
+    [
+     632.0,
+     70.4
+    ],
+    [
+     632.0,
+     78.4
+    ],
+    [
+     608.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     680.0,
+     0.0
+    ],
+    [
+     700.0,
+     0.0
+    ],
+    [
+     700.0,
+     80.0
+    ],
+    [
+     680.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "zone",
+   "name": "Medium berth 6",
+   "level": "L1",
+   "outline_m": [
+    [
+     700.0,
+     0.0
+    ],
+    [
+     820.0,
+     0.0
+    ],
+    [
+     820.0,
+     80.0
+    ],
+    [
+     700.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     702.4,
+     12.0
+    ],
+    [
+     709.6,
+     12.0
+    ],
+    [
+     709.6,
+     68.0
+    ],
+    [
+     702.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     810.4,
+     12.0
+    ],
+    [
+     817.6,
+     12.0
+    ],
+    [
+     817.6,
+     68.0
+    ],
+    [
+     810.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     748.0,
+     70.4
+    ],
+    [
+     772.0,
+     70.4
+    ],
+    [
+     772.0,
+     78.4
+    ],
+    [
+     748.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     820.0,
+     0.0
+    ],
+    [
+     840.0,
+     0.0
+    ],
+    [
+     840.0,
+     80.0
+    ],
+    [
+     820.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "zone",
+   "name": "Medium berth 7",
+   "level": "L1",
+   "outline_m": [
+    [
+     840.0,
+     0.0
+    ],
+    [
+     960.0,
+     0.0
+    ],
+    [
+     960.0,
+     80.0
+    ],
+    [
+     840.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     842.4,
+     12.0
+    ],
+    [
+     849.6,
+     12.0
+    ],
+    [
+     849.6,
+     68.0
+    ],
+    [
+     842.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     950.4,
+     12.0
+    ],
+    [
+     957.6,
+     12.0
+    ],
+    [
+     957.6,
+     68.0
+    ],
+    [
+     950.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     888.0,
+     70.4
+    ],
+    [
+     912.0,
+     70.4
+    ],
+    [
+     912.0,
+     78.4
+    ],
+    [
+     888.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     960.0,
+     0.0
+    ],
+    [
+     980.0,
+     0.0
+    ],
+    [
+     980.0,
+     80.0
+    ],
+    [
+     960.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "zone",
+   "name": "Medium berth 8",
+   "level": "L1",
+   "outline_m": [
+    [
+     980.0,
+     0.0
+    ],
+    [
+     1100.0,
+     0.0
+    ],
+    [
+     1100.0,
+     80.0
+    ],
+    [
+     980.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     982.4,
+     12.0
+    ],
+    [
+     989.6,
+     12.0
+    ],
+    [
+     989.6,
+     68.0
+    ],
+    [
+     982.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1090.4,
+     12.0
+    ],
+    [
+     1097.6,
+     12.0
+    ],
+    [
+     1097.6,
+     68.0
+    ],
+    [
+     1090.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1028.0,
+     70.4
+    ],
+    [
+     1052.0,
+     70.4
+    ],
+    [
+     1052.0,
+     78.4
+    ],
+    [
+     1028.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1100.0,
+     0.0
+    ],
+    [
+     1120.0,
+     0.0
+    ],
+    [
+     1120.0,
+     80.0
+    ],
+    [
+     1100.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "zone",
+   "name": "Medium berth 9",
+   "level": "L1",
+   "outline_m": [
+    [
+     1120.0,
+     0.0
+    ],
+    [
+     1240.0,
+     0.0
+    ],
+    [
+     1240.0,
+     80.0
+    ],
+    [
+     1120.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1122.4,
+     12.0
+    ],
+    [
+     1129.6,
+     12.0
+    ],
+    [
+     1129.6,
+     68.0
+    ],
+    [
+     1122.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1230.4,
+     12.0
+    ],
+    [
+     1237.6,
+     12.0
+    ],
+    [
+     1237.6,
+     68.0
+    ],
+    [
+     1230.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1168.0,
+     70.4
+    ],
+    [
+     1192.0,
+     70.4
+    ],
+    [
+     1192.0,
+     78.4
+    ],
+    [
+     1168.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E041",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1240.0,
+     0.0
+    ],
+    [
+     1260.0,
+     0.0
+    ],
+    [
+     1260.0,
+     80.0
+    ],
+    [
+     1240.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "zone",
+   "name": "Medium berth 10",
+   "level": "L1",
+   "outline_m": [
+    [
+     1260.0,
+     0.0
+    ],
+    [
+     1380.0,
+     0.0
+    ],
+    [
+     1380.0,
+     80.0
+    ],
+    [
+     1260.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1262.4,
+     12.0
+    ],
+    [
+     1269.6,
+     12.0
+    ],
+    [
+     1269.6,
+     68.0
+    ],
+    [
+     1262.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1370.4,
+     12.0
+    ],
+    [
+     1377.6,
+     12.0
+    ],
+    [
+     1377.6,
+     68.0
+    ],
+    [
+     1370.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1308.0,
+     70.4
+    ],
+    [
+     1332.0,
+     70.4
+    ],
+    [
+     1332.0,
+     78.4
+    ],
+    [
+     1308.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E046",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1380.0,
+     0.0
+    ],
+    [
+     1400.0,
+     0.0
+    ],
+    [
+     1400.0,
+     80.0
+    ],
+    [
+     1380.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "zone",
+   "name": "Medium berth 11",
+   "level": "L1",
+   "outline_m": [
+    [
+     1400.0,
+     0.0
+    ],
+    [
+     1520.0,
+     0.0
+    ],
+    [
+     1520.0,
+     80.0
+    ],
+    [
+     1400.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1402.4,
+     12.0
+    ],
+    [
+     1409.6,
+     12.0
+    ],
+    [
+     1409.6,
+     68.0
+    ],
+    [
+     1402.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1510.4,
+     12.0
+    ],
+    [
+     1517.6,
+     12.0
+    ],
+    [
+     1517.6,
+     68.0
+    ],
+    [
+     1510.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1448.0,
+     70.4
+    ],
+    [
+     1472.0,
+     70.4
+    ],
+    [
+     1472.0,
+     78.4
+    ],
+    [
+     1448.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E051",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1520.0,
+     0.0
+    ],
+    [
+     1540.0,
+     0.0
+    ],
+    [
+     1540.0,
+     80.0
+    ],
+    [
+     1520.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "zone",
+   "name": "Medium berth 12",
+   "level": "L1",
+   "outline_m": [
+    [
+     1540.0,
+     0.0
+    ],
+    [
+     1660.0,
+     0.0
+    ],
+    [
+     1660.0,
+     80.0
+    ],
+    [
+     1540.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1542.4,
+     12.0
+    ],
+    [
+     1549.6,
+     12.0
+    ],
+    [
+     1549.6,
+     68.0
+    ],
+    [
+     1542.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1650.4,
+     12.0
+    ],
+    [
+     1657.6,
+     12.0
+    ],
+    [
+     1657.6,
+     68.0
+    ],
+    [
+     1650.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1588.0,
+     70.4
+    ],
+    [
+     1612.0,
+     70.4
+    ],
+    [
+     1612.0,
+     78.4
+    ],
+    [
+     1588.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E056",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1660.0,
+     0.0
+    ],
+    [
+     1680.0,
+     0.0
+    ],
+    [
+     1680.0,
+     80.0
+    ],
+    [
+     1660.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "zone",
+   "name": "Medium berth 13",
+   "level": "L1",
+   "outline_m": [
+    [
+     1680.0,
+     0.0
+    ],
+    [
+     1800.0,
+     0.0
+    ],
+    [
+     1800.0,
+     80.0
+    ],
+    [
+     1680.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1682.4,
+     12.0
+    ],
+    [
+     1689.6,
+     12.0
+    ],
+    [
+     1689.6,
+     68.0
+    ],
+    [
+     1682.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1790.4,
+     12.0
+    ],
+    [
+     1797.6,
+     12.0
+    ],
+    [
+     1797.6,
+     68.0
+    ],
+    [
+     1790.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1728.0,
+     70.4
+    ],
+    [
+     1752.0,
+     70.4
+    ],
+    [
+     1752.0,
+     78.4
+    ],
+    [
+     1728.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E061",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1800.0,
+     0.0
+    ],
+    [
+     1820.0,
+     0.0
+    ],
+    [
+     1820.0,
+     80.0
+    ],
+    [
+     1800.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "zone",
+   "name": "Medium berth 14",
+   "level": "L1",
+   "outline_m": [
+    [
+     1820.0,
+     0.0
+    ],
+    [
+     1940.0,
+     0.0
+    ],
+    [
+     1940.0,
+     80.0
+    ],
+    [
+     1820.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1822.4,
+     12.0
+    ],
+    [
+     1829.6,
+     12.0
+    ],
+    [
+     1829.6,
+     68.0
+    ],
+    [
+     1822.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1930.4,
+     12.0
+    ],
+    [
+     1937.6,
+     12.0
+    ],
+    [
+     1937.6,
+     68.0
+    ],
+    [
+     1930.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1868.0,
+     70.4
+    ],
+    [
+     1892.0,
+     70.4
+    ],
+    [
+     1892.0,
+     78.4
+    ],
+    [
+     1868.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E066",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1940.0,
+     0.0
+    ],
+    [
+     1960.0,
+     0.0
+    ],
+    [
+     1960.0,
+     80.0
+    ],
+    [
+     1940.0,
+     80.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "zone",
+   "name": "Medium berth 15",
+   "level": "L1",
+   "outline_m": [
+    [
+     1960.0,
+     0.0
+    ],
+    [
+     2080.0,
+     0.0
+    ],
+    [
+     2080.0,
+     80.0
+    ],
+    [
+     1960.0,
+     80.0
+    ]
+   ],
+   "about": "An open berth for one medium-sized civilian or private ship, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1962.4,
+     12.0
+    ],
+    [
+     1969.6,
+     12.0
+    ],
+    [
+     1969.6,
+     68.0
+    ],
+    [
+     1962.4,
+     68.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     2070.4,
+     12.0
+    ],
+    [
+     2077.6,
+     12.0
+    ],
+    [
+     2077.6,
+     68.0
+    ],
+    [
+     2070.4,
+     68.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E071",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     2008.0,
+     70.4
+    ],
+    [
+     2032.0,
+     70.4
+    ],
+    [
+     2032.0,
+     78.4
+    ],
+    [
+     2008.0,
+     78.4
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E071",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

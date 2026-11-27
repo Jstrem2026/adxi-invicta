@@ -1,0 +1,1077 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P3-15",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  2150.0,
+  100.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Berth floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Corvette berth 1",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     160.0,
+     0.0
+    ],
+    [
+     160.0,
+     100.0
+    ],
+    [
+     0.0,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.2,
+     15.0
+    ],
+    [
+     12.8,
+     15.0
+    ],
+    [
+     12.8,
+     85.0
+    ],
+    [
+     3.2,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.2,
+     15.0
+    ],
+    [
+     156.8,
+     15.0
+    ],
+    [
+     156.8,
+     85.0
+    ],
+    [
+     147.2,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     64.0,
+     88.0
+    ],
+    [
+     96.0,
+     88.0
+    ],
+    [
+     96.0,
+     98.0
+    ],
+    [
+     64.0,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.0,
+     0.0
+    ],
+    [
+     284.3,
+     0.0
+    ],
+    [
+     284.3,
+     100.0
+    ],
+    [
+     160.0,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corvette berth 2",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.3,
+     0.0
+    ],
+    [
+     444.3,
+     0.0
+    ],
+    [
+     444.3,
+     100.0
+    ],
+    [
+     284.3,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     287.5,
+     15.0
+    ],
+    [
+     297.1,
+     15.0
+    ],
+    [
+     297.1,
+     85.0
+    ],
+    [
+     287.5,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     431.5,
+     15.0
+    ],
+    [
+     441.1,
+     15.0
+    ],
+    [
+     441.1,
+     85.0
+    ],
+    [
+     431.5,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     348.3,
+     88.0
+    ],
+    [
+     380.3,
+     88.0
+    ],
+    [
+     380.3,
+     98.0
+    ],
+    [
+     348.3,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E006",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     444.3,
+     0.0
+    ],
+    [
+     568.6,
+     0.0
+    ],
+    [
+     568.6,
+     100.0
+    ],
+    [
+     444.3,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "zone",
+   "name": "Corvette berth 3",
+   "level": "L1",
+   "outline_m": [
+    [
+     568.6,
+     0.0
+    ],
+    [
+     728.6,
+     0.0
+    ],
+    [
+     728.6,
+     100.0
+    ],
+    [
+     568.6,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     571.8,
+     15.0
+    ],
+    [
+     581.4,
+     15.0
+    ],
+    [
+     581.4,
+     85.0
+    ],
+    [
+     571.8,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     715.8,
+     15.0
+    ],
+    [
+     725.4,
+     15.0
+    ],
+    [
+     725.4,
+     85.0
+    ],
+    [
+     715.8,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     632.6,
+     88.0
+    ],
+    [
+     664.6,
+     88.0
+    ],
+    [
+     664.6,
+     98.0
+    ],
+    [
+     632.6,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E011",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     728.6,
+     0.0
+    ],
+    [
+     852.9,
+     0.0
+    ],
+    [
+     852.9,
+     100.0
+    ],
+    [
+     728.6,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "zone",
+   "name": "Corvette berth 4",
+   "level": "L1",
+   "outline_m": [
+    [
+     852.9,
+     0.0
+    ],
+    [
+     1012.9,
+     0.0
+    ],
+    [
+     1012.9,
+     100.0
+    ],
+    [
+     852.9,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     856.1,
+     15.0
+    ],
+    [
+     865.7,
+     15.0
+    ],
+    [
+     865.7,
+     85.0
+    ],
+    [
+     856.1,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1000.1,
+     15.0
+    ],
+    [
+     1009.7,
+     15.0
+    ],
+    [
+     1009.7,
+     85.0
+    ],
+    [
+     1000.1,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     916.9,
+     88.0
+    ],
+    [
+     948.9,
+     88.0
+    ],
+    [
+     948.9,
+     98.0
+    ],
+    [
+     916.9,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E016",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1012.9,
+     0.0
+    ],
+    [
+     1137.1,
+     0.0
+    ],
+    [
+     1137.1,
+     100.0
+    ],
+    [
+     1012.9,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "zone",
+   "name": "Corvette berth 5",
+   "level": "L1",
+   "outline_m": [
+    [
+     1137.1,
+     0.0
+    ],
+    [
+     1297.1,
+     0.0
+    ],
+    [
+     1297.1,
+     100.0
+    ],
+    [
+     1137.1,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1140.3,
+     15.0
+    ],
+    [
+     1149.9,
+     15.0
+    ],
+    [
+     1149.9,
+     85.0
+    ],
+    [
+     1140.3,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1284.3,
+     15.0
+    ],
+    [
+     1293.9,
+     15.0
+    ],
+    [
+     1293.9,
+     85.0
+    ],
+    [
+     1284.3,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1201.1,
+     88.0
+    ],
+    [
+     1233.1,
+     88.0
+    ],
+    [
+     1233.1,
+     98.0
+    ],
+    [
+     1201.1,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E021",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1297.1,
+     0.0
+    ],
+    [
+     1421.4,
+     0.0
+    ],
+    [
+     1421.4,
+     100.0
+    ],
+    [
+     1297.1,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "zone",
+   "name": "Corvette berth 6",
+   "level": "L1",
+   "outline_m": [
+    [
+     1421.4,
+     0.0
+    ],
+    [
+     1581.4,
+     0.0
+    ],
+    [
+     1581.4,
+     100.0
+    ],
+    [
+     1421.4,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1424.6,
+     15.0
+    ],
+    [
+     1434.2,
+     15.0
+    ],
+    [
+     1434.2,
+     85.0
+    ],
+    [
+     1424.6,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1568.6,
+     15.0
+    ],
+    [
+     1578.2,
+     15.0
+    ],
+    [
+     1578.2,
+     85.0
+    ],
+    [
+     1568.6,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1485.4,
+     88.0
+    ],
+    [
+     1517.4,
+     88.0
+    ],
+    [
+     1517.4,
+     98.0
+    ],
+    [
+     1485.4,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E026",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1581.4,
+     0.0
+    ],
+    [
+     1705.7,
+     0.0
+    ],
+    [
+     1705.7,
+     100.0
+    ],
+    [
+     1581.4,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "zone",
+   "name": "Corvette berth 7",
+   "level": "L1",
+   "outline_m": [
+    [
+     1705.7,
+     0.0
+    ],
+    [
+     1865.7,
+     0.0
+    ],
+    [
+     1865.7,
+     100.0
+    ],
+    [
+     1705.7,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1708.9,
+     15.0
+    ],
+    [
+     1718.5,
+     15.0
+    ],
+    [
+     1718.5,
+     85.0
+    ],
+    [
+     1708.9,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     1852.9,
+     15.0
+    ],
+    [
+     1862.5,
+     15.0
+    ],
+    [
+     1862.5,
+     85.0
+    ],
+    [
+     1852.9,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     1769.7,
+     88.0
+    ],
+    [
+     1801.7,
+     88.0
+    ],
+    [
+     1801.7,
+     98.0
+    ],
+    [
+     1769.7,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E031",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "zone",
+   "name": "Berth walkway",
+   "level": "L1",
+   "outline_m": [
+    [
+     1865.7,
+     0.0
+    ],
+    [
+     1990.0,
+     0.0
+    ],
+    [
+     1990.0,
+     100.0
+    ],
+    [
+     1865.7,
+     100.0
+    ]
+   ],
+   "about": "A railed walkway between two berths, used by line handlers and inspectors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "zone",
+   "name": "Corvette berth 8",
+   "level": "L1",
+   "outline_m": [
+    [
+     1990.0,
+     0.0
+    ],
+    [
+     2150.0,
+     0.0
+    ],
+    [
+     2150.0,
+     100.0
+    ],
+    [
+     1990.0,
+     100.0
+    ]
+   ],
+   "about": "An open berth for one corvette, with mooring arms and shore connections.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     1993.2,
+     15.0
+    ],
+    [
+     2002.8,
+     15.0
+    ],
+    [
+     2002.8,
+     85.0
+    ],
+    [
+     1993.2,
+     85.0
+    ]
+   ],
+   "about": "Arms that grip the ship's hull and hold it steady at the berth.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "fixture",
+   "name": "Mooring arms (far side)",
+   "level": "L1",
+   "outline_m": [
+    [
+     2137.2,
+     15.0
+    ],
+    [
+     2146.8,
+     15.0
+    ],
+    [
+     2146.8,
+     85.0
+    ],
+    [
+     2137.2,
+     85.0
+    ]
+   ],
+   "about": "Arms on the other side of the ship.",
+   "parent": "E036",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "fixture",
+   "name": "Shore connection post",
+   "level": "L1",
+   "outline_m": [
+    [
+     2054.0,
+     88.0
+    ],
+    [
+     2086.0,
+     88.0
+    ],
+    [
+     2086.0,
+     98.0
+    ],
+    [
+     2054.0,
+     98.0
+    ]
+   ],
+   "about": "Where shore power, water, air and data plug into the ship.",
+   "parent": "E036",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

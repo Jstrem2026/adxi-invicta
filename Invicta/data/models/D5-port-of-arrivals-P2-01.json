@@ -1,0 +1,6969 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P2-01",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  600.0,
+  200.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Arrivals floor",
+   "z_m": 0.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Gallery floor 1",
+   "z_m": 6.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Gallery floor 2",
+   "z_m": 12.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Gallery floor 3",
+   "z_m": 18.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L5",
+   "name": "Level 5 · Gallery floor 4",
+   "z_m": 24.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Great Hall",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     600.0,
+     0.0
+    ],
+    [
+     600.0,
+     160.0
+    ],
+    [
+     0.0,
+     160.0
+    ]
+   ],
+   "about": "The great hall itself, 98 ft (30 m) high and open to the roof, lit through the Skyglass wall that looks out on Haven's Reach. Every arriving passenger walks through it.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "In-processing circle",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.0,
+     56.0
+    ],
+    [
+     348.0,
+     56.0
+    ],
+    [
+     348.0,
+     104.0
+    ],
+    [
+     252.0,
+     104.0
+    ]
+   ],
+   "about": "The welcome point at the heart of the hall where new arrivals are in-processed and meet Avalon, Sentinel and Vector (canon).",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "fixture",
+   "name": "Seating island (bow)",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.0,
+     64.0
+    ],
+    [
+     156.0,
+     64.0
+    ],
+    [
+     156.0,
+     99.2
+    ],
+    [
+     72.0,
+     99.2
+    ]
+   ],
+   "about": "Benches and planters where travellers sit, get their bearings and wait for friends.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Seating island (stern)",
+   "level": "L1",
+   "outline_m": [
+    [
+     444.0,
+     64.0
+    ],
+    [
+     528.0,
+     64.0
+    ],
+    [
+     528.0,
+     99.2
+    ],
+    [
+     444.0,
+     99.2
+    ]
+   ],
+   "about": "Benches and planters where travellers sit, get their bearings and wait for friends.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "fixture",
+   "name": "Arrivals boards",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.0,
+     137.6
+    ],
+    [
+     570.0,
+     137.6
+    ],
+    [
+     570.0,
+     144.0
+    ],
+    [
+     30.0,
+     144.0
+    ]
+   ],
+   "about": "Screens listing every arriving shuttle, its gate and where its passengers go next.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "fixture",
+   "name": "Door to the arrival hangar",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     12.8
+    ],
+    [
+     9.0,
+     12.8
+    ],
+    [
+     9.0,
+     33.6
+    ],
+    [
+     0.0,
+     33.6
+    ]
+   ],
+   "about": "The 66 × 33 ft (20 × 10 m) door through to the arrival hangar (placeholder size, TUNE).",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     590.7,
+     200.0
+    ],
+    [
+     582.4,
+     200.0
+    ],
+    [
+     566.0,
+     182.5
+    ],
+    [
+     573.7,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     517.3,
+     200.0
+    ],
+    [
+     509.1,
+     200.0
+    ],
+    [
+     496.9,
+     182.5
+    ],
+    [
+     504.7,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     444.0,
+     200.0
+    ],
+    [
+     435.8,
+     200.0
+    ],
+    [
+     427.9,
+     182.5
+    ],
+    [
+     435.6,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     370.7,
+     200.0
+    ],
+    [
+     362.5,
+     200.0
+    ],
+    [
+     358.8,
+     182.5
+    ],
+    [
+     366.6,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     297.4,
+     200.0
+    ],
+    [
+     289.1,
+     200.0
+    ],
+    [
+     289.8,
+     182.5
+    ],
+    [
+     297.5,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     224.1,
+     200.0
+    ],
+    [
+     215.8,
+     200.0
+    ],
+    [
+     220.7,
+     182.5
+    ],
+    [
+     228.5,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     150.8,
+     200.0
+    ],
+    [
+     142.5,
+     200.0
+    ],
+    [
+     151.7,
+     182.5
+    ],
+    [
+     159.5,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     77.4,
+     200.0
+    ],
+    [
+     69.2,
+     200.0
+    ],
+    [
+     82.6,
+     182.5
+    ],
+    [
+     90.4,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     4.1,
+     200.0
+    ],
+    [
+     0.0,
+     200.0
+    ],
+    [
+     0.0,
+     192.9
+    ],
+    [
+     17.5,
+     181.6
+    ],
+    [
+     17.5,
+     182.5
+    ],
+    [
+     21.4,
+     182.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     46.0,
+     160.0
+    ],
+    [
+     54.2,
+     160.0
+    ],
+    [
+     68.6,
+     177.5
+    ],
+    [
+     60.8,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     119.3,
+     160.0
+    ],
+    [
+     127.6,
+     160.0
+    ],
+    [
+     137.6,
+     177.5
+    ],
+    [
+     129.8,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     192.6,
+     160.0
+    ],
+    [
+     200.9,
+     160.0
+    ],
+    [
+     206.7,
+     177.5
+    ],
+    [
+     198.9,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     266.0,
+     160.0
+    ],
+    [
+     274.2,
+     160.0
+    ],
+    [
+     275.7,
+     177.5
+    ],
+    [
+     267.9,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     339.3,
+     160.0
+    ],
+    [
+     347.5,
+     160.0
+    ],
+    [
+     344.7,
+     177.5
+    ],
+    [
+     337.0,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     412.6,
+     160.0
+    ],
+    [
+     420.8,
+     160.0
+    ],
+    [
+     413.8,
+     177.5
+    ],
+    [
+     406.0,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     485.9,
+     160.0
+    ],
+    [
+     494.1,
+     160.0
+    ],
+    [
+     482.8,
+     177.5
+    ],
+    [
+     475.1,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     559.2,
+     160.0
+    ],
+    [
+     567.5,
+     160.0
+    ],
+    [
+     551.9,
+     177.5
+    ],
+    [
+     544.1,
+     177.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.5,
+     177.5
+    ],
+    [
+     582.5,
+     182.5
+    ],
+    [
+     17.5,
+     182.5
+    ],
+    [
+     17.5,
+     177.5
+    ],
+    [
+     582.5,
+     177.5
+    ],
+    [
+     581.0,
+     179.0
+    ],
+    [
+     19.0,
+     179.0
+    ],
+    [
+     19.0,
+     181.0
+    ],
+    [
+     581.0,
+     181.0
+    ],
+    [
+     581.0,
+     179.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Main entrance hall",
+   "level": "L1",
+   "outline_m": [
+    [
+     600.0,
+     160.0
+    ],
+    [
+     600.0,
+     200.0
+    ],
+    [
+     590.7,
+     200.0
+    ],
+    [
+     573.7,
+     182.5
+    ],
+    [
+     582.5,
+     182.5
+    ],
+    [
+     582.5,
+     177.5
+    ]
+   ],
+   "about": "Inside the 98 ft (30 m) wide main entrance (placeholder size), where people leave for the Arrivals Forecourt.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Information desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.4,
+     200.0
+    ],
+    [
+     575.3,
+     200.0
+    ],
+    [
+     559.3,
+     182.5
+    ],
+    [
+     566.0,
+     182.5
+    ]
+   ],
+   "about": "Staff answer questions and hand out ship maps in every language.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Greeters' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     575.3,
+     200.0
+    ],
+    [
+     566.5,
+     200.0
+    ],
+    [
+     551.0,
+     182.5
+    ],
+    [
+     559.3,
+     182.5
+    ]
+   ],
+   "about": "Base for the greeters who welcome each shuttle load of new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Guides' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     566.5,
+     200.0
+    ],
+    [
+     559.4,
+     200.0
+    ],
+    [
+     544.3,
+     182.5
+    ],
+    [
+     551.0,
+     182.5
+    ]
+   ],
+   "about": "Guides wait here to walk newcomers to customs, the terminals or the Keelway.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Porters' station",
+   "level": "L1",
+   "outline_m": [
+    [
+     559.4,
+     200.0
+    ],
+    [
+     547.7,
+     200.0
+    ],
+    [
+     533.2,
+     182.5
+    ],
+    [
+     544.3,
+     182.5
+    ]
+   ],
+   "about": "Porters and their luggage trolleys, ready to carry bags for arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Arrivals clerks' office",
+   "level": "L1",
+   "outline_m": [
+    [
+     547.7,
+     200.0
+    ],
+    [
+     535.9,
+     200.0
+    ],
+    [
+     522.1,
+     182.5
+    ],
+    [
+     533.2,
+     182.5
+    ]
+   ],
+   "about": "Clerks log every arrival and issue first passes and papers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Customs officers' post",
+   "level": "L1",
+   "outline_m": [
+    [
+     535.9,
+     200.0
+    ],
+    [
+     525.3,
+     200.0
+    ],
+    [
+     512.1,
+     182.5
+    ],
+    [
+     522.1,
+     182.5
+    ]
+   ],
+   "about": "Customs officers watch the hall and send travellers on to customs and health screening.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Assisted travel desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     525.3,
+     200.0
+    ],
+    [
+     517.3,
+     200.0
+    ],
+    [
+     504.7,
+     182.5
+    ],
+    [
+     512.1,
+     182.5
+    ]
+   ],
+   "about": "Help for travellers who need a wheelchair, a guide or extra time.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Lost and found",
+   "level": "L1",
+   "outline_m": [
+    [
+     509.1,
+     200.0
+    ],
+    [
+     502.8,
+     200.0
+    ],
+    [
+     491.0,
+     182.5
+    ],
+    [
+     496.9,
+     182.5
+    ]
+   ],
+   "about": "Things left in the hall are handed in and claimed here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Family room",
+   "level": "L1",
+   "outline_m": [
+    [
+     502.8,
+     200.0
+    ],
+    [
+     496.5,
+     200.0
+    ],
+    [
+     485.0,
+     182.5
+    ],
+    [
+     491.0,
+     182.5
+    ]
+   ],
+   "about": "A quiet room with changing tables and play space for families after a long flight.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Security desk",
+   "level": "L1",
+   "outline_m": [
+    [
+     496.5,
+     200.0
+    ],
+    [
+     490.2,
+     200.0
+    ],
+    [
+     479.1,
+     182.5
+    ],
+    [
+     485.0,
+     182.5
+    ]
+   ],
+   "about": "Guards watch the cameras and the doors from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "First-aid room",
+   "level": "L1",
+   "outline_m": [
+    [
+     490.2,
+     200.0
+    ],
+    [
+     483.9,
+     200.0
+    ],
+    [
+     473.2,
+     182.5
+    ],
+    [
+     479.1,
+     182.5
+    ]
+   ],
+   "about": "A couch, first-aid kit and defibrillator for anyone taken ill.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     483.9,
+     200.0
+    ],
+    [
+     477.6,
+     200.0
+    ],
+    [
+     467.2,
+     182.5
+    ],
+    [
+     473.2,
+     182.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     477.6,
+     200.0
+    ],
+    [
+     471.3,
+     200.0
+    ],
+    [
+     461.3,
+     182.5
+    ],
+    [
+     467.2,
+     182.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Locker room",
+   "level": "L1",
+   "outline_m": [
+    [
+     471.3,
+     200.0
+    ],
+    [
+     465.0,
+     200.0
+    ],
+    [
+     455.4,
+     182.5
+    ],
+    [
+     461.3,
+     182.5
+    ]
+   ],
+   "about": "Lockers and changing benches for staff arriving for their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Cleaners' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     465.0,
+     200.0
+    ],
+    [
+     444.0,
+     200.0
+    ],
+    [
+     435.6,
+     182.5
+    ],
+    [
+     455.4,
+     182.5
+    ]
+   ],
+   "about": "Cleaning machines, supplies and a sink for the building's cleaning crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     435.8,
+     200.0
+    ],
+    [
+     400.4,
+     200.0
+    ],
+    [
+     394.6,
+     182.5
+    ],
+    [
+     427.9,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     400.4,
+     200.0
+    ],
+    [
+     393.4,
+     200.0
+    ],
+    [
+     387.9,
+     182.5
+    ],
+    [
+     394.6,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     393.4,
+     200.0
+    ],
+    [
+     370.7,
+     200.0
+    ],
+    [
+     366.6,
+     182.5
+    ],
+    [
+     387.9,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     362.5,
+     200.0
+    ],
+    [
+     355.4,
+     200.0
+    ],
+    [
+     352.2,
+     182.5
+    ],
+    [
+     358.8,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     355.4,
+     200.0
+    ],
+    [
+     320.0,
+     200.0
+    ],
+    [
+     318.9,
+     182.5
+    ],
+    [
+     352.2,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     320.0,
+     200.0
+    ],
+    [
+     297.4,
+     200.0
+    ],
+    [
+     297.5,
+     182.5
+    ],
+    [
+     318.9,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     289.1,
+     200.0
+    ],
+    [
+     253.8,
+     200.0
+    ],
+    [
+     256.5,
+     182.5
+    ],
+    [
+     289.8,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     253.8,
+     200.0
+    ],
+    [
+     246.7,
+     200.0
+    ],
+    [
+     249.8,
+     182.5
+    ],
+    [
+     256.5,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     246.7,
+     200.0
+    ],
+    [
+     224.1,
+     200.0
+    ],
+    [
+     228.5,
+     182.5
+    ],
+    [
+     249.8,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.8,
+     200.0
+    ],
+    [
+     208.8,
+     200.0
+    ],
+    [
+     214.1,
+     182.5
+    ],
+    [
+     220.7,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.8,
+     200.0
+    ],
+    [
+     173.4,
+     200.0
+    ],
+    [
+     180.8,
+     182.5
+    ],
+    [
+     214.1,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     173.4,
+     200.0
+    ],
+    [
+     150.8,
+     200.0
+    ],
+    [
+     159.5,
+     182.5
+    ],
+    [
+     180.8,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     142.5,
+     200.0
+    ],
+    [
+     107.2,
+     200.0
+    ],
+    [
+     118.4,
+     182.5
+    ],
+    [
+     151.7,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.2,
+     200.0
+    ],
+    [
+     100.1,
+     200.0
+    ],
+    [
+     111.7,
+     182.5
+    ],
+    [
+     118.4,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.1,
+     200.0
+    ],
+    [
+     77.4,
+     200.0
+    ],
+    [
+     90.4,
+     182.5
+    ],
+    [
+     111.7,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     69.2,
+     200.0
+    ],
+    [
+     62.1,
+     200.0
+    ],
+    [
+     76.0,
+     182.5
+    ],
+    [
+     82.6,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     62.1,
+     200.0
+    ],
+    [
+     26.8,
+     200.0
+    ],
+    [
+     42.7,
+     182.5
+    ],
+    [
+     76.0,
+     182.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.8,
+     200.0
+    ],
+    [
+     4.1,
+     200.0
+    ],
+    [
+     21.4,
+     182.5
+    ],
+    [
+     42.7,
+     182.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     192.9
+    ],
+    [
+     0.0,
+     160.0
+    ],
+    [
+     16.3,
+     160.0
+    ],
+    [
+     32.8,
+     177.5
+    ],
+    [
+     17.5,
+     177.5
+    ],
+    [
+     17.5,
+     181.6
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.3,
+     160.0
+    ],
+    [
+     23.3,
+     160.0
+    ],
+    [
+     39.5,
+     177.5
+    ],
+    [
+     32.8,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.3,
+     160.0
+    ],
+    [
+     46.0,
+     160.0
+    ],
+    [
+     60.8,
+     177.5
+    ],
+    [
+     39.5,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.2,
+     160.0
+    ],
+    [
+     61.3,
+     160.0
+    ],
+    [
+     75.2,
+     177.5
+    ],
+    [
+     68.6,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     61.3,
+     160.0
+    ],
+    [
+     96.7,
+     160.0
+    ],
+    [
+     108.5,
+     177.5
+    ],
+    [
+     75.2,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.7,
+     160.0
+    ],
+    [
+     119.3,
+     160.0
+    ],
+    [
+     129.8,
+     177.5
+    ],
+    [
+     108.5,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.6,
+     160.0
+    ],
+    [
+     162.9,
+     160.0
+    ],
+    [
+     170.9,
+     177.5
+    ],
+    [
+     137.6,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.9,
+     160.0
+    ],
+    [
+     170.0,
+     160.0
+    ],
+    [
+     177.6,
+     177.5
+    ],
+    [
+     170.9,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     170.0,
+     160.0
+    ],
+    [
+     192.6,
+     160.0
+    ],
+    [
+     198.9,
+     177.5
+    ],
+    [
+     177.6,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.9,
+     160.0
+    ],
+    [
+     207.9,
+     160.0
+    ],
+    [
+     213.3,
+     177.5
+    ],
+    [
+     206.7,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     207.9,
+     160.0
+    ],
+    [
+     243.3,
+     160.0
+    ],
+    [
+     246.6,
+     177.5
+    ],
+    [
+     213.3,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.3,
+     160.0
+    ],
+    [
+     266.0,
+     160.0
+    ],
+    [
+     267.9,
+     177.5
+    ],
+    [
+     246.6,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     274.2,
+     160.0
+    ],
+    [
+     309.5,
+     160.0
+    ],
+    [
+     309.0,
+     177.5
+    ],
+    [
+     275.7,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     309.5,
+     160.0
+    ],
+    [
+     316.6,
+     160.0
+    ],
+    [
+     315.6,
+     177.5
+    ],
+    [
+     309.0,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     316.6,
+     160.0
+    ],
+    [
+     339.3,
+     160.0
+    ],
+    [
+     337.0,
+     177.5
+    ],
+    [
+     315.6,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     347.5,
+     160.0
+    ],
+    [
+     354.6,
+     160.0
+    ],
+    [
+     351.4,
+     177.5
+    ],
+    [
+     344.7,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     354.6,
+     160.0
+    ],
+    [
+     389.9,
+     160.0
+    ],
+    [
+     384.7,
+     177.5
+    ],
+    [
+     351.4,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     389.9,
+     160.0
+    ],
+    [
+     412.6,
+     160.0
+    ],
+    [
+     406.0,
+     177.5
+    ],
+    [
+     384.7,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     420.8,
+     160.0
+    ],
+    [
+     456.2,
+     160.0
+    ],
+    [
+     447.1,
+     177.5
+    ],
+    [
+     413.8,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     456.2,
+     160.0
+    ],
+    [
+     463.3,
+     160.0
+    ],
+    [
+     453.7,
+     177.5
+    ],
+    [
+     447.1,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     463.3,
+     160.0
+    ],
+    [
+     485.9,
+     160.0
+    ],
+    [
+     475.1,
+     177.5
+    ],
+    [
+     453.7,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     494.1,
+     160.0
+    ],
+    [
+     501.2,
+     160.0
+    ],
+    [
+     489.5,
+     177.5
+    ],
+    [
+     482.8,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     501.2,
+     160.0
+    ],
+    [
+     536.6,
+     160.0
+    ],
+    [
+     522.8,
+     177.5
+    ],
+    [
+     489.5,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     536.6,
+     160.0
+    ],
+    [
+     559.2,
+     160.0
+    ],
+    [
+     544.1,
+     177.5
+    ],
+    [
+     522.8,
+     177.5
+    ]
+   ],
+   "about": "Coffee, water and snacks for new arrivals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Waiting lounge",
+   "level": "L1",
+   "outline_m": [
+    [
+     567.5,
+     160.0
+    ],
+    [
+     600.0,
+     160.0
+    ],
+    [
+     582.5,
+     177.5
+    ],
+    [
+     551.9,
+     177.5
+    ]
+   ],
+   "about": "Seats along the hall for people waiting for a connection or a friend.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     582.5,
+     177.5
+    ],
+    [
+     582.5,
+     182.5
+    ],
+    [
+     17.5,
+     182.5
+    ],
+    [
+     17.5,
+     177.5
+    ],
+    [
+     582.5,
+     177.5
+    ],
+    [
+     581.0,
+     179.0
+    ],
+    [
+     19.0,
+     179.0
+    ],
+    [
+     19.0,
+     181.0
+    ],
+    [
+     581.0,
+     181.0
+    ],
+    [
+     581.0,
+     179.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Gallery café",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     600.0,
+     160.0
+    ],
+    [
+     600.0,
+     200.0
+    ],
+    [
+     590.7,
+     200.0
+    ],
+    [
+     573.7,
+     182.5
+    ],
+    [
+     582.5,
+     182.5
+    ],
+    [
+     582.5,
+     177.5
+    ]
+   ],
+   "about": "A café on the gallery with views down into the great hall and out through the Skyglass wall.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Viewing gallery",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     582.4,
+     200.0
+    ],
+    [
+     547.1,
+     200.0
+    ],
+    [
+     532.7,
+     182.5
+    ],
+    [
+     566.0,
+     182.5
+    ]
+   ],
+   "about": "An open gallery where visitors watch the hall and the shuttles outside.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Hall control room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     547.1,
+     200.0
+    ],
+    [
+     538.2,
+     200.0
+    ],
+    [
+     524.3,
+     182.5
+    ],
+    [
+     532.7,
+     182.5
+    ]
+   ],
+   "about": "Staff run the hall's lights, screens, doors and crowd flow.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Arrivals management office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     538.2,
+     200.0
+    ],
+    [
+     526.4,
+     200.0
+    ],
+    [
+     513.2,
+     182.5
+    ],
+    [
+     524.3,
+     182.5
+    ]
+   ],
+   "about": "The managers who run the Hall of Arrivals day to day.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Customs supervisors' office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     526.4,
+     200.0
+    ],
+    [
+     517.3,
+     200.0
+    ],
+    [
+     504.7,
+     182.5
+    ],
+    [
+     513.2,
+     182.5
+    ]
+   ],
+   "about": "Senior customs officers who oversee the hall's posts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Translation service",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     509.1,
+     200.0
+    ],
+    [
+     502.8,
+     200.0
+    ],
+    [
+     491.0,
+     182.5
+    ],
+    [
+     496.9,
+     182.5
+    ]
+   ],
+   "about": "Interpreters who help arrivals who don't speak the ship's languages.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     502.8,
+     200.0
+    ],
+    [
+     496.5,
+     200.0
+    ],
+    [
+     485.0,
+     182.5
+    ],
+    [
+     491.0,
+     182.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     496.5,
+     200.0
+    ],
+    [
+     490.2,
+     200.0
+    ],
+    [
+     479.1,
+     182.5
+    ],
+    [
+     485.0,
+     182.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Plant room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     490.2,
+     200.0
+    ],
+    [
+     483.1,
+     200.0
+    ],
+    [
+     472.5,
+     182.5
+    ],
+    [
+     479.1,
+     182.5
+    ]
+   ],
+   "about": "Air handling units, pumps and electrical boards that keep this floor running.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Comms room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     483.1,
+     200.0
+    ],
+    [
+     476.8,
+     200.0
+    ],
+    [
+     466.5,
+     182.5
+    ],
+    [
+     472.5,
+     182.5
+    ]
+   ],
+   "about": "Network switches and the building's data and radio links.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Quiet room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     476.8,
+     200.0
+    ],
+    [
+     470.5,
+     200.0
+    ],
+    [
+     460.6,
+     182.5
+    ],
+    [
+     466.5,
+     182.5
+    ]
+   ],
+   "about": "A small quiet room for prayer, rest or a private moment.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     470.5,
+     200.0
+    ],
+    [
+     463.4,
+     200.0
+    ],
+    [
+     453.9,
+     182.5
+    ],
+    [
+     460.6,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     463.4,
+     200.0
+    ],
+    [
+     456.4,
+     200.0
+    ],
+    [
+     447.3,
+     182.5
+    ],
+    [
+     453.9,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     456.4,
+     200.0
+    ],
+    [
+     449.3,
+     200.0
+    ],
+    [
+     440.6,
+     182.5
+    ],
+    [
+     447.3,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     449.3,
+     200.0
+    ],
+    [
+     444.0,
+     200.0
+    ],
+    [
+     435.6,
+     182.5
+    ],
+    [
+     440.6,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     435.8,
+     200.0
+    ],
+    [
+     428.7,
+     200.0
+    ],
+    [
+     421.2,
+     182.5
+    ],
+    [
+     427.9,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     428.7,
+     200.0
+    ],
+    [
+     421.6,
+     200.0
+    ],
+    [
+     414.6,
+     182.5
+    ],
+    [
+     421.2,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     421.6,
+     200.0
+    ],
+    [
+     414.6,
+     200.0
+    ],
+    [
+     407.9,
+     182.5
+    ],
+    [
+     414.6,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     414.6,
+     200.0
+    ],
+    [
+     407.5,
+     200.0
+    ],
+    [
+     401.2,
+     182.5
+    ],
+    [
+     407.9,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     407.5,
+     200.0
+    ],
+    [
+     400.4,
+     200.0
+    ],
+    [
+     394.6,
+     182.5
+    ],
+    [
+     401.2,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     400.4,
+     200.0
+    ],
+    [
+     393.4,
+     200.0
+    ],
+    [
+     387.9,
+     182.5
+    ],
+    [
+     394.6,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     393.4,
+     200.0
+    ],
+    [
+     386.3,
+     200.0
+    ],
+    [
+     381.3,
+     182.5
+    ],
+    [
+     387.9,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     386.3,
+     200.0
+    ],
+    [
+     379.2,
+     200.0
+    ],
+    [
+     374.6,
+     182.5
+    ],
+    [
+     381.3,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     379.2,
+     200.0
+    ],
+    [
+     370.7,
+     200.0
+    ],
+    [
+     366.6,
+     182.5
+    ],
+    [
+     374.6,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     362.5,
+     200.0
+    ],
+    [
+     355.4,
+     200.0
+    ],
+    [
+     352.2,
+     182.5
+    ],
+    [
+     358.8,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     355.4,
+     200.0
+    ],
+    [
+     348.3,
+     200.0
+    ],
+    [
+     345.5,
+     182.5
+    ],
+    [
+     352.2,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     348.3,
+     200.0
+    ],
+    [
+     341.3,
+     200.0
+    ],
+    [
+     338.8,
+     182.5
+    ],
+    [
+     345.5,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     341.3,
+     200.0
+    ],
+    [
+     334.2,
+     200.0
+    ],
+    [
+     332.2,
+     182.5
+    ],
+    [
+     338.8,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     334.2,
+     200.0
+    ],
+    [
+     327.1,
+     200.0
+    ],
+    [
+     325.5,
+     182.5
+    ],
+    [
+     332.2,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     327.1,
+     200.0
+    ],
+    [
+     320.0,
+     200.0
+    ],
+    [
+     318.9,
+     182.5
+    ],
+    [
+     325.5,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     320.0,
+     200.0
+    ],
+    [
+     313.0,
+     200.0
+    ],
+    [
+     312.2,
+     182.5
+    ],
+    [
+     318.9,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     313.0,
+     200.0
+    ],
+    [
+     305.9,
+     200.0
+    ],
+    [
+     305.6,
+     182.5
+    ],
+    [
+     312.2,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     305.9,
+     200.0
+    ],
+    [
+     297.4,
+     200.0
+    ],
+    [
+     297.5,
+     182.5
+    ],
+    [
+     305.6,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     289.1,
+     200.0
+    ],
+    [
+     282.1,
+     200.0
+    ],
+    [
+     283.1,
+     182.5
+    ],
+    [
+     289.8,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     282.1,
+     200.0
+    ],
+    [
+     275.0,
+     200.0
+    ],
+    [
+     276.5,
+     182.5
+    ],
+    [
+     283.1,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     275.0,
+     200.0
+    ],
+    [
+     267.9,
+     200.0
+    ],
+    [
+     269.8,
+     182.5
+    ],
+    [
+     276.5,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     267.9,
+     200.0
+    ],
+    [
+     260.9,
+     200.0
+    ],
+    [
+     263.1,
+     182.5
+    ],
+    [
+     269.8,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     260.9,
+     200.0
+    ],
+    [
+     253.8,
+     200.0
+    ],
+    [
+     256.5,
+     182.5
+    ],
+    [
+     263.1,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     253.8,
+     200.0
+    ],
+    [
+     246.7,
+     200.0
+    ],
+    [
+     249.8,
+     182.5
+    ],
+    [
+     256.5,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     246.7,
+     200.0
+    ],
+    [
+     239.7,
+     200.0
+    ],
+    [
+     243.2,
+     182.5
+    ],
+    [
+     249.8,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     239.7,
+     200.0
+    ],
+    [
+     232.6,
+     200.0
+    ],
+    [
+     236.5,
+     182.5
+    ],
+    [
+     243.2,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     232.6,
+     200.0
+    ],
+    [
+     224.1,
+     200.0
+    ],
+    [
+     228.5,
+     182.5
+    ],
+    [
+     236.5,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     215.8,
+     200.0
+    ],
+    [
+     208.8,
+     200.0
+    ],
+    [
+     214.1,
+     182.5
+    ],
+    [
+     220.7,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     208.8,
+     200.0
+    ],
+    [
+     201.7,
+     200.0
+    ],
+    [
+     207.4,
+     182.5
+    ],
+    [
+     214.1,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     201.7,
+     200.0
+    ],
+    [
+     194.6,
+     200.0
+    ],
+    [
+     200.8,
+     182.5
+    ],
+    [
+     207.4,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     194.6,
+     200.0
+    ],
+    [
+     187.5,
+     200.0
+    ],
+    [
+     194.1,
+     182.5
+    ],
+    [
+     200.8,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     187.5,
+     200.0
+    ],
+    [
+     180.5,
+     200.0
+    ],
+    [
+     187.4,
+     182.5
+    ],
+    [
+     194.1,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     180.5,
+     200.0
+    ],
+    [
+     173.4,
+     200.0
+    ],
+    [
+     180.8,
+     182.5
+    ],
+    [
+     187.4,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     173.4,
+     200.0
+    ],
+    [
+     166.3,
+     200.0
+    ],
+    [
+     174.1,
+     182.5
+    ],
+    [
+     180.8,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     166.3,
+     200.0
+    ],
+    [
+     159.3,
+     200.0
+    ],
+    [
+     167.5,
+     182.5
+    ],
+    [
+     174.1,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     159.3,
+     200.0
+    ],
+    [
+     150.8,
+     200.0
+    ],
+    [
+     159.5,
+     182.5
+    ],
+    [
+     167.5,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     142.5,
+     200.0
+    ],
+    [
+     135.4,
+     200.0
+    ],
+    [
+     145.0,
+     182.5
+    ],
+    [
+     151.7,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     135.4,
+     200.0
+    ],
+    [
+     128.4,
+     200.0
+    ],
+    [
+     138.4,
+     182.5
+    ],
+    [
+     145.0,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     128.4,
+     200.0
+    ],
+    [
+     121.3,
+     200.0
+    ],
+    [
+     131.7,
+     182.5
+    ],
+    [
+     138.4,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     121.3,
+     200.0
+    ],
+    [
+     114.2,
+     200.0
+    ],
+    [
+     125.1,
+     182.5
+    ],
+    [
+     131.7,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     114.2,
+     200.0
+    ],
+    [
+     107.2,
+     200.0
+    ],
+    [
+     118.4,
+     182.5
+    ],
+    [
+     125.1,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     107.2,
+     200.0
+    ],
+    [
+     100.1,
+     200.0
+    ],
+    [
+     111.7,
+     182.5
+    ],
+    [
+     118.4,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     100.1,
+     200.0
+    ],
+    [
+     93.0,
+     200.0
+    ],
+    [
+     105.1,
+     182.5
+    ],
+    [
+     111.7,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     93.0,
+     200.0
+    ],
+    [
+     85.9,
+     200.0
+    ],
+    [
+     98.4,
+     182.5
+    ],
+    [
+     105.1,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     85.9,
+     200.0
+    ],
+    [
+     77.4,
+     200.0
+    ],
+    [
+     90.4,
+     182.5
+    ],
+    [
+     98.4,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     69.2,
+     200.0
+    ],
+    [
+     62.1,
+     200.0
+    ],
+    [
+     76.0,
+     182.5
+    ],
+    [
+     82.6,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     62.1,
+     200.0
+    ],
+    [
+     55.1,
+     200.0
+    ],
+    [
+     69.3,
+     182.5
+    ],
+    [
+     76.0,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     55.1,
+     200.0
+    ],
+    [
+     48.0,
+     200.0
+    ],
+    [
+     62.7,
+     182.5
+    ],
+    [
+     69.3,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     48.0,
+     200.0
+    ],
+    [
+     40.9,
+     200.0
+    ],
+    [
+     56.0,
+     182.5
+    ],
+    [
+     62.7,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     40.9,
+     200.0
+    ],
+    [
+     33.8,
+     200.0
+    ],
+    [
+     49.4,
+     182.5
+    ],
+    [
+     56.0,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     33.8,
+     200.0
+    ],
+    [
+     26.8,
+     200.0
+    ],
+    [
+     42.7,
+     182.5
+    ],
+    [
+     49.4,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     26.8,
+     200.0
+    ],
+    [
+     19.7,
+     200.0
+    ],
+    [
+     36.0,
+     182.5
+    ],
+    [
+     42.7,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     19.7,
+     200.0
+    ],
+    [
+     12.6,
+     200.0
+    ],
+    [
+     29.4,
+     182.5
+    ],
+    [
+     36.0,
+     182.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     12.6,
+     200.0
+    ],
+    [
+     4.1,
+     200.0
+    ],
+    [
+     21.4,
+     182.5
+    ],
+    [
+     29.4,
+     182.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     192.9
+    ],
+    [
+     0.0,
+     180.7
+    ],
+    [
+     17.5,
+     180.1
+    ],
+    [
+     17.5,
+     181.6
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     180.7
+    ],
+    [
+     0.0,
+     168.5
+    ],
+    [
+     17.5,
+     178.6
+    ],
+    [
+     17.5,
+     180.1
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     168.5
+    ],
+    [
+     0.0,
+     160.0
+    ],
+    [
+     2.1,
+     160.0
+    ],
+    [
+     19.5,
+     177.5
+    ],
+    [
+     17.5,
+     177.5
+    ],
+    [
+     17.5,
+     178.6
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     2.1,
+     160.0
+    ],
+    [
+     9.2,
+     160.0
+    ],
+    [
+     26.2,
+     177.5
+    ],
+    [
+     19.5,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     9.2,
+     160.0
+    ],
+    [
+     16.3,
+     160.0
+    ],
+    [
+     32.8,
+     177.5
+    ],
+    [
+     26.2,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     16.3,
+     160.0
+    ],
+    [
+     23.3,
+     160.0
+    ],
+    [
+     39.5,
+     177.5
+    ],
+    [
+     32.8,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     23.3,
+     160.0
+    ],
+    [
+     30.4,
+     160.0
+    ],
+    [
+     46.1,
+     177.5
+    ],
+    [
+     39.5,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     30.4,
+     160.0
+    ],
+    [
+     37.5,
+     160.0
+    ],
+    [
+     52.8,
+     177.5
+    ],
+    [
+     46.1,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     37.5,
+     160.0
+    ],
+    [
+     46.0,
+     160.0
+    ],
+    [
+     60.8,
+     177.5
+    ],
+    [
+     52.8,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     54.2,
+     160.0
+    ],
+    [
+     61.3,
+     160.0
+    ],
+    [
+     75.2,
+     177.5
+    ],
+    [
+     68.6,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     61.3,
+     160.0
+    ],
+    [
+     68.4,
+     160.0
+    ],
+    [
+     81.9,
+     177.5
+    ],
+    [
+     75.2,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     68.4,
+     160.0
+    ],
+    [
+     75.5,
+     160.0
+    ],
+    [
+     88.5,
+     177.5
+    ],
+    [
+     81.9,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     75.5,
+     160.0
+    ],
+    [
+     82.5,
+     160.0
+    ],
+    [
+     95.2,
+     177.5
+    ],
+    [
+     88.5,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     82.5,
+     160.0
+    ],
+    [
+     89.6,
+     160.0
+    ],
+    [
+     101.9,
+     177.5
+    ],
+    [
+     95.2,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     89.6,
+     160.0
+    ],
+    [
+     96.7,
+     160.0
+    ],
+    [
+     108.5,
+     177.5
+    ],
+    [
+     101.9,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     96.7,
+     160.0
+    ],
+    [
+     103.7,
+     160.0
+    ],
+    [
+     115.2,
+     177.5
+    ],
+    [
+     108.5,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     103.7,
+     160.0
+    ],
+    [
+     110.8,
+     160.0
+    ],
+    [
+     121.8,
+     177.5
+    ],
+    [
+     115.2,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     110.8,
+     160.0
+    ],
+    [
+     119.3,
+     160.0
+    ],
+    [
+     129.8,
+     177.5
+    ],
+    [
+     121.8,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     127.6,
+     160.0
+    ],
+    [
+     134.6,
+     160.0
+    ],
+    [
+     144.3,
+     177.5
+    ],
+    [
+     137.6,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     134.6,
+     160.0
+    ],
+    [
+     141.7,
+     160.0
+    ],
+    [
+     150.9,
+     177.5
+    ],
+    [
+     144.3,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     141.7,
+     160.0
+    ],
+    [
+     148.8,
+     160.0
+    ],
+    [
+     157.6,
+     177.5
+    ],
+    [
+     150.9,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     148.8,
+     160.0
+    ],
+    [
+     155.8,
+     160.0
+    ],
+    [
+     164.2,
+     177.5
+    ],
+    [
+     157.6,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     155.8,
+     160.0
+    ],
+    [
+     162.9,
+     160.0
+    ],
+    [
+     170.9,
+     177.5
+    ],
+    [
+     164.2,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     162.9,
+     160.0
+    ],
+    [
+     170.0,
+     160.0
+    ],
+    [
+     177.6,
+     177.5
+    ],
+    [
+     170.9,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     170.0,
+     160.0
+    ],
+    [
+     177.1,
+     160.0
+    ],
+    [
+     184.2,
+     177.5
+    ],
+    [
+     177.6,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     177.1,
+     160.0
+    ],
+    [
+     184.1,
+     160.0
+    ],
+    [
+     190.9,
+     177.5
+    ],
+    [
+     184.2,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     184.1,
+     160.0
+    ],
+    [
+     192.6,
+     160.0
+    ],
+    [
+     198.9,
+     177.5
+    ],
+    [
+     190.9,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     200.9,
+     160.0
+    ],
+    [
+     207.9,
+     160.0
+    ],
+    [
+     213.3,
+     177.5
+    ],
+    [
+     206.7,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     207.9,
+     160.0
+    ],
+    [
+     215.0,
+     160.0
+    ],
+    [
+     220.0,
+     177.5
+    ],
+    [
+     213.3,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     215.0,
+     160.0
+    ],
+    [
+     222.1,
+     160.0
+    ],
+    [
+     226.6,
+     177.5
+    ],
+    [
+     220.0,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     222.1,
+     160.0
+    ],
+    [
+     229.2,
+     160.0
+    ],
+    [
+     233.3,
+     177.5
+    ],
+    [
+     226.6,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     229.2,
+     160.0
+    ],
+    [
+     236.2,
+     160.0
+    ],
+    [
+     239.9,
+     177.5
+    ],
+    [
+     233.3,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     236.2,
+     160.0
+    ],
+    [
+     243.3,
+     160.0
+    ],
+    [
+     246.6,
+     177.5
+    ],
+    [
+     239.9,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     243.3,
+     160.0
+    ],
+    [
+     250.4,
+     160.0
+    ],
+    [
+     253.3,
+     177.5
+    ],
+    [
+     246.6,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     250.4,
+     160.0
+    ],
+    [
+     257.4,
+     160.0
+    ],
+    [
+     259.9,
+     177.5
+    ],
+    [
+     253.3,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     257.4,
+     160.0
+    ],
+    [
+     266.0,
+     160.0
+    ],
+    [
+     267.9,
+     177.5
+    ],
+    [
+     259.9,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     274.2,
+     160.0
+    ],
+    [
+     281.3,
+     160.0
+    ],
+    [
+     282.4,
+     177.5
+    ],
+    [
+     275.7,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     281.3,
+     160.0
+    ],
+    [
+     288.3,
+     160.0
+    ],
+    [
+     289.0,
+     177.5
+    ],
+    [
+     282.4,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     288.3,
+     160.0
+    ],
+    [
+     295.4,
+     160.0
+    ],
+    [
+     295.7,
+     177.5
+    ],
+    [
+     289.0,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     295.4,
+     160.0
+    ],
+    [
+     302.5,
+     160.0
+    ],
+    [
+     302.3,
+     177.5
+    ],
+    [
+     295.7,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     302.5,
+     160.0
+    ],
+    [
+     309.5,
+     160.0
+    ],
+    [
+     309.0,
+     177.5
+    ],
+    [
+     302.3,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     309.5,
+     160.0
+    ],
+    [
+     316.6,
+     160.0
+    ],
+    [
+     315.6,
+     177.5
+    ],
+    [
+     309.0,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     316.6,
+     160.0
+    ],
+    [
+     323.7,
+     160.0
+    ],
+    [
+     322.3,
+     177.5
+    ],
+    [
+     315.6,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     323.7,
+     160.0
+    ],
+    [
+     330.8,
+     160.0
+    ],
+    [
+     329.0,
+     177.5
+    ],
+    [
+     322.3,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     330.8,
+     160.0
+    ],
+    [
+     339.3,
+     160.0
+    ],
+    [
+     337.0,
+     177.5
+    ],
+    [
+     329.0,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     347.5,
+     160.0
+    ],
+    [
+     354.6,
+     160.0
+    ],
+    [
+     351.4,
+     177.5
+    ],
+    [
+     344.7,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     354.6,
+     160.0
+    ],
+    [
+     361.7,
+     160.0
+    ],
+    [
+     358.1,
+     177.5
+    ],
+    [
+     351.4,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     361.7,
+     160.0
+    ],
+    [
+     368.7,
+     160.0
+    ],
+    [
+     364.7,
+     177.5
+    ],
+    [
+     358.1,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     368.7,
+     160.0
+    ],
+    [
+     375.8,
+     160.0
+    ],
+    [
+     371.4,
+     177.5
+    ],
+    [
+     364.7,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     375.8,
+     160.0
+    ],
+    [
+     382.9,
+     160.0
+    ],
+    [
+     378.0,
+     177.5
+    ],
+    [
+     371.4,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     382.9,
+     160.0
+    ],
+    [
+     389.9,
+     160.0
+    ],
+    [
+     384.7,
+     177.5
+    ],
+    [
+     378.0,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     389.9,
+     160.0
+    ],
+    [
+     397.0,
+     160.0
+    ],
+    [
+     391.4,
+     177.5
+    ],
+    [
+     384.7,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     397.0,
+     160.0
+    ],
+    [
+     404.1,
+     160.0
+    ],
+    [
+     398.0,
+     177.5
+    ],
+    [
+     391.4,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     404.1,
+     160.0
+    ],
+    [
+     412.6,
+     160.0
+    ],
+    [
+     406.0,
+     177.5
+    ],
+    [
+     398.0,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     420.8,
+     160.0
+    ],
+    [
+     427.9,
+     160.0
+    ],
+    [
+     420.4,
+     177.5
+    ],
+    [
+     413.8,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     427.9,
+     160.0
+    ],
+    [
+     435.0,
+     160.0
+    ],
+    [
+     427.1,
+     177.5
+    ],
+    [
+     420.4,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     435.0,
+     160.0
+    ],
+    [
+     442.0,
+     160.0
+    ],
+    [
+     433.8,
+     177.5
+    ],
+    [
+     427.1,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     442.0,
+     160.0
+    ],
+    [
+     449.1,
+     160.0
+    ],
+    [
+     440.4,
+     177.5
+    ],
+    [
+     433.8,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     449.1,
+     160.0
+    ],
+    [
+     456.2,
+     160.0
+    ],
+    [
+     447.1,
+     177.5
+    ],
+    [
+     440.4,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     456.2,
+     160.0
+    ],
+    [
+     463.3,
+     160.0
+    ],
+    [
+     453.7,
+     177.5
+    ],
+    [
+     447.1,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     463.3,
+     160.0
+    ],
+    [
+     470.3,
+     160.0
+    ],
+    [
+     460.4,
+     177.5
+    ],
+    [
+     453.7,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     470.3,
+     160.0
+    ],
+    [
+     477.4,
+     160.0
+    ],
+    [
+     467.1,
+     177.5
+    ],
+    [
+     460.4,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     477.4,
+     160.0
+    ],
+    [
+     485.9,
+     160.0
+    ],
+    [
+     475.1,
+     177.5
+    ],
+    [
+     467.1,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     494.1,
+     160.0
+    ],
+    [
+     501.2,
+     160.0
+    ],
+    [
+     489.5,
+     177.5
+    ],
+    [
+     482.8,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     501.2,
+     160.0
+    ],
+    [
+     508.3,
+     160.0
+    ],
+    [
+     496.1,
+     177.5
+    ],
+    [
+     489.5,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     508.3,
+     160.0
+    ],
+    [
+     515.4,
+     160.0
+    ],
+    [
+     502.8,
+     177.5
+    ],
+    [
+     496.1,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     515.4,
+     160.0
+    ],
+    [
+     522.4,
+     160.0
+    ],
+    [
+     509.5,
+     177.5
+    ],
+    [
+     502.8,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     522.4,
+     160.0
+    ],
+    [
+     529.5,
+     160.0
+    ],
+    [
+     516.1,
+     177.5
+    ],
+    [
+     509.5,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     529.5,
+     160.0
+    ],
+    [
+     536.6,
+     160.0
+    ],
+    [
+     522.8,
+     177.5
+    ],
+    [
+     516.1,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     536.6,
+     160.0
+    ],
+    [
+     543.6,
+     160.0
+    ],
+    [
+     529.4,
+     177.5
+    ],
+    [
+     522.8,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     543.6,
+     160.0
+    ],
+    [
+     550.7,
+     160.0
+    ],
+    [
+     536.1,
+     177.5
+    ],
+    [
+     529.4,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     550.7,
+     160.0
+    ],
+    [
+     559.2,
+     160.0
+    ],
+    [
+     544.1,
+     177.5
+    ],
+    [
+     536.1,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     567.5,
+     160.0
+    ],
+    [
+     574.5,
+     160.0
+    ],
+    [
+     558.5,
+     177.5
+    ],
+    [
+     551.9,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     574.5,
+     160.0
+    ],
+    [
+     581.6,
+     160.0
+    ],
+    [
+     565.2,
+     177.5
+    ],
+    [
+     558.5,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     581.6,
+     160.0
+    ],
+    [
+     588.7,
+     160.0
+    ],
+    [
+     571.9,
+     177.5
+    ],
+    [
+     565.2,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Meeting room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     588.7,
+     160.0
+    ],
+    [
+     595.7,
+     160.0
+    ],
+    [
+     578.5,
+     177.5
+    ],
+    [
+     571.9,
+     177.5
+    ]
+   ],
+   "about": "A room for staff meetings and private talks with travellers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "outline_m": [
+    [
+     595.7,
+     160.0
+    ],
+    [
+     600.0,
+     160.0
+    ],
+    [
+     582.5,
+     177.5
+    ],
+    [
+     578.5,
+     177.5
+    ]
+   ],
+   "about": "Desks for the hall's greeters, guides and clerks.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,344 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-port-of-arrivals-P8-13",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  3100.0,
+  450.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Lawn",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.4,
+     34.3
+    ],
+    [
+     3.6,
+     23.4
+    ],
+    [
+     9.8,
+     13.8
+    ],
+    [
+     18.4,
+     6.3
+    ],
+    [
+     28.7,
+     1.6
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     846.2,
+     0.1
+    ],
+    [
+     846.2,
+     449.7
+    ],
+    [
+     34.3,
+     449.6
+    ],
+    [
+     23.4,
+     446.4
+    ],
+    [
+     13.8,
+     440.2
+    ],
+    [
+     6.3,
+     431.6
+    ],
+    [
+     1.6,
+     421.3
+    ],
+    [
+     0.0,
+     410.0
+    ]
+   ],
+   "about": "Open grass for sitting, picnics and games.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     395.3,
+     204.9
+    ],
+    [
+     403.3,
+     204.9
+    ],
+    [
+     403.3,
+     216.9
+    ],
+    [
+     395.3,
+     216.9
+    ]
+   ],
+   "about": "Sells drinks, ice cream and snacks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     403.3,
+     204.9
+    ],
+    [
+     411.3,
+     204.9
+    ],
+    [
+     411.3,
+     216.9
+    ],
+    [
+     403.3,
+     216.9
+    ]
+   ],
+   "about": "Public toilets for garden visitors.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Gardeners' store",
+   "level": "L1",
+   "outline_m": [
+    [
+     411.3,
+     204.9
+    ],
+    [
+     419.3,
+     204.9
+    ],
+    [
+     419.3,
+     216.9
+    ],
+    [
+     411.3,
+     216.9
+    ]
+   ],
+   "about": "Tools and mowers for the garden crew.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Plaza walk",
+   "level": "L1",
+   "outline_m": [
+    [
+     846.2,
+     0.1
+    ],
+    [
+     1127.7,
+     0.1
+    ],
+    [
+     1127.7,
+     449.7
+    ],
+    [
+     846.2,
+     449.7
+    ]
+   ],
+   "about": "A path linking the shuttle yards to the Atrium Plaza.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Paths and benches",
+   "level": "L1",
+   "outline_m": [
+    [
+     1127.7,
+     0.1
+    ],
+    [
+     1409.2,
+     0.2
+    ],
+    [
+     1409.2,
+     449.8
+    ],
+    [
+     1127.7,
+     449.7
+    ]
+   ],
+   "about": "Paved paths with benches and lamps that lead through the long park at the edge of the Atrium Plaza.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Tree grove",
+   "level": "L1",
+   "outline_m": [
+    [
+     1409.2,
+     0.2
+    ],
+    [
+     1972.3,
+     0.3
+    ],
+    [
+     1972.3,
+     449.9
+    ],
+    [
+     1409.2,
+     449.8
+    ]
+   ],
+   "about": "Shady trees with benches underneath.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Buffer woodland",
+   "level": "L1",
+   "outline_m": [
+    [
+     1972.3,
+     0.3
+    ],
+    [
+     2816.8,
+     0.4
+    ],
+    [
+     2816.8,
+     450.0
+    ],
+    [
+     1972.3,
+     449.9
+    ]
+   ],
+   "about": "Dense trees that screen the shuttle yards' noise and lights from the Atrium Plaza.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Yard workers' lawn",
+   "level": "L1",
+   "outline_m": [
+    [
+     2816.8,
+     0.4
+    ],
+    [
+     3065.7,
+     0.4
+    ],
+    [
+     3076.6,
+     3.6
+    ],
+    [
+     3086.2,
+     9.8
+    ],
+    [
+     3093.7,
+     18.4
+    ],
+    [
+     3098.4,
+     28.7
+    ],
+    [
+     3100.0,
+     40.0
+    ],
+    [
+     3099.6,
+     415.7
+    ],
+    [
+     3096.4,
+     426.6
+    ],
+    [
+     3090.2,
+     436.2
+    ],
+    [
+     3081.6,
+     443.7
+    ],
+    [
+     3071.3,
+     448.4
+    ],
+    [
+     3060.0,
+     450.0
+    ],
+    [
+     2816.8,
+     450.0
+    ]
+   ],
+   "about": "A lawn where shuttle yard crews take their breaks.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
