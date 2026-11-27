@@ -11,4 +11,4 @@ Status: canon · data: `Invicta/data/decks/D5/port-of-arrivals.json` · design d
 | [P1 Bow Docks](P1.md) | F34–F41 | A–C | 1,124.3 acres (4.550 km²) | 12 |
 | [P3 Stern Docks](P3.md) | F46–F55 | A–C | 1,512.3 acres (6.120 km²) | 18 |
 | [P4 Freight](P4.md) | F34–F39 | D–M | 3,027.0 acres (12.250 km²) | 16 |
-| [P8 Shuttle Yards](P8.md) | F48–F55 | D–M | 3,032.0 acres (12.270 km²) | 17 |
+| [P8 Shuttle Yards](P8.md) | F48–F55 | D–M | 3,032.0 acres (12.270 km²) | 20 |
