@@ -752,17 +752,19 @@ function streetView(puid, i) {
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [st.name, ""]],
     mapShell(g, vb, "", "", "Click any building, block or street"), panel);
 }
-// Designation (Jordan, 27 Nov 2026): D<deck>-F<district>-P<precinct>-B<block>-A<building>-R<room>,
-// e.g. D5-F1-P1-B1-A1-R1. District = its place in the deck's canon list; precinct = its P number;
-// block = its Block number; building = its place in the block; room = its place in the building's plan.
-function designation(b, room) {
+// Designation (Jordan, 27 Nov 2026): D<deck> F<district> P<precinct> B<block> A<building> L<level> R<room>, no dashes,
+// e.g. D5F1P1B1A1L2R1. District = its place in the deck's canon list; precinct = its P number; block = its Block
+// number; building = its place in the block; level = L1, L2 … above deck and LB1, LB2 … below deck (left out for
+// single-level buildings); room = its place on that level of the building's plan.
+function designation(b, levelTag, room) {
   const p = IX.precincts[b.precinct_uid], d = IX.decks[p.deck];
   const f = (d.districts || []).findIndex(x => x.id === p.district_id) + 1;
   const bid = (b.blocks || [])[0], blk = (p.blocks || []).find(q => q.id === bid);
   const bn = blk ? (/(\d+)/.exec(blk.name || "") || [])[1] : null;
   const an = bid ? blockNo(p, bid, b) : null;
-  let out = `D${p.deck}-F${f || "?"}-P${String(p.id).replace(/^P/, "")}` + (bn ? `-B${bn}` : "") + (an && an !== "—" ? `-A${an}` : "");
-  if (room != null) out += `-R${room}`;
+  let out = `D${p.deck}F${f || "?"}P${String(p.id).replace(/^P/, "")}` + (bn ? `B${bn}` : "") + (an && an !== "—" ? `A${an}` : "");
+  if (levelTag) out += levelTag;
+  if (room != null) out += `R${room}`;
   return out;
 }
 window.designation = designation;

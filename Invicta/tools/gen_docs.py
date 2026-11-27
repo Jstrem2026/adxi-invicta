@@ -119,13 +119,13 @@ def main():
                 name = b["name"]
                 if b.get("uid") in models:
                     name = f"[{name}]({p['id']}/{b['id']}.md)"
-                addr, desig = "—", f"D{ps.get('deck')}-F{fnum}-P{str(p['id']).lstrip('P')}"
+                addr, desig = "—", f"D{ps.get('deck')}F{fnum}P{str(p['id']).lstrip('P')}"
                 for blk in p.get("blocks") or []:
                     ids = [c.get("id") for c in blk.get("contents", [])]
                     if b["id"] in ids:
                         addr = f"{blk['id']}, building {ids.index(b['id']) + 1}"
                         bn = "".join(ch for ch in blk.get("name", "") if ch.isdigit())
-                        desig += (f"-B{bn}" if bn else "") + f"-A{ids.index(b['id']) + 1}"
+                        desig += (f"B{bn}" if bn else "") + f"A{ids.index(b['id']) + 1}"
                         break
                 pp.append(f"| {b['id']} | {desig} | {name} | {addr} | {b.get('status')} | {size} | {ga} | {pos} | {both(b['height_m']) if b.get('height_m') else 'not designed yet'} | {cell(b.get('floors'))} | {cell(b.get('capacity'))} |")
                 m = models.get(b.get("uid"))
@@ -138,7 +138,21 @@ def main():
                         rooms = [e for e in m.get("elements", []) if e["type"] == "room" and lv["id"] in (e.get("levels") or [e.get("level")])]
                         bp.append(f"| {lv['name']} | {both(lv['z_m']) if lv['z_m'] >= 0 else '−' + both(-lv['z_m'])} | {both(lv['height_m'])} | {area_m2(sum(poly_area(e['outline_m']) for e in rooms)) if rooms else '—'} |")
                     bp += ["", "## Elements", "", "| ID | Designation | Type | Name | Level(s) | Size / length | Area | Status |", "|---|---|---|---|---|---|---|---|"]
-                    numbered = [x for x in m.get("elements", []) if x["type"] in ("room", "zone", "core")]
+                    lvls = m.get("levels", [])
+                    def ltag(lid):
+                        me = next((l for l in lvls if l["id"] == lid), None)
+                        if len(lvls) < 2 or not me:
+                            return ""
+                        if me["z_m"] < 0:
+                            return "LB%d" % (sorted([l for l in lvls if l["z_m"] < 0], key=lambda l: -l["z_m"]).index(me) + 1)
+                        return "L%d" % (sorted([l for l in lvls if l["z_m"] >= 0], key=lambda l: l["z_m"]).index(me) + 1)
+                    def dz_for(e):
+                        out = []
+                        for lid in (e.get("levels") or [e.get("level")]):
+                            on = [x for x in m.get("elements", []) if x["type"] in ("room", "zone", "core") and lid in (x.get("levels") or [x.get("level")])]
+                            if e in on:
+                                out.append(f"{desig}{ltag(lid)}R{on.index(e) + 1}")
+                        return ", ".join(out)
                     for e in m.get("elements", []):
                         if e.get("outline_m"):
                             xs = [q[0] for q in e["outline_m"]]; ys = [q[1] for q in e["outline_m"]]
@@ -146,7 +160,7 @@ def main():
                         else:
                             a_, b_ = e["line_m"][0], e["line_m"][-1]
                             sz = both(((a_[0] - b_[0]) ** 2 + (a_[1] - b_[1]) ** 2) ** 0.5) + (f", {both(e['width_m'])} wide" if e.get("width_m") else ""); ar = "—"
-                        dz = f"{desig}-R{numbered.index(e) + 1}" if e in numbered else ""
+                        dz = dz_for(e) if e["type"] in ("room", "zone", "core") else ""
                         bp.append(f"| {e['id']} | {dz} | {e['type']} | {cell(e.get('name'))} | {', '.join(e.get('levels') or [e.get('level')])} | {sz} | {ar} | {e.get('status')} |")
                     bp += ["", "## Drawings", ""]
                     for lv in m.get("levels", []):

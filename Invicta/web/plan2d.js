@@ -150,13 +150,24 @@
   }
 
   // ---- A selected room: zoom to it, add it to the breadcrumb, show its details, and tell the chat.
-  function roomNumber(model, room) {
-    const list = (model.elements || []).filter((e) => e.type === "room" || e.type === "zone" || e.type === "core");
+  // Level tags: L1, L2 … above deck, LB1, LB2 … below deck (nearest the deck first); none for single-level buildings.
+  function levelTag(model, levelId) {
+    const lv = model.levels || [];
+    if (lv.length < 2) return "";
+    const me = lv.find((l) => l.id === levelId);
+    if (!me) return "";
+    if (me.z_m < 0) return "LB" + (lv.filter((l) => l.z_m < 0).sort((a, b) => b.z_m - a.z_m).indexOf(me) + 1);
+    return "L" + (lv.filter((l) => l.z_m >= 0).sort((a, b) => a.z_m - b.z_m).indexOf(me) + 1);
+  }
+  function roomNumber(model, room, levelId) {  // numbered per level, in plan order
+    const onLevel = (e) => (e.levels || [e.level]).includes(levelId);
+    const list = (model.elements || []).filter((e) => (e.type === "room" || e.type === "zone" || e.type === "core") && onLevel(e));
     return list.indexOf(room) + 1;
   }
   function roomDesignation(uid, model, room) {
     const b = typeof IX !== "undefined" && IX.buildings && IX.buildings[uid];
-    return b && window.designation ? window.designation(b, roomNumber(model, room)) : `R${roomNumber(model, room)}`;
+    const tag = levelTag(model, level), n = roomNumber(model, room, level);
+    return b && window.designation ? window.designation(b, tag, n) : `${tag}R${n}`;
   }
   function showRoom(uid, model, room) {
     window.adxiRoom = null;
@@ -305,6 +316,7 @@
   function hook() {
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, a] = h.split("/").map(decodeURIComponent);
+    desigLegend();
     if (kind === "building") {
       const extra = h.split("/")[2] || "";
       const [lv, room] = decodeURIComponent(extra).split(":");
@@ -343,6 +355,17 @@
     window.adxiUnitsLabel = label;
   }
   unitsSwitch();
+
+  // A small legend for the designation code, on every map.
+  function desigLegend() {
+    const wrap = document.querySelector(".mapwrap");
+    if (!wrap || wrap.querySelector(".desig-legend")) return;
+    const d = document.createElement("div");
+    d.className = "desig-legend";
+    d.title = "How designations are written";
+    d.innerHTML = "<b>D5F1P1B1A1L2R1</b> · D deck · F district · P precinct · B block · A building · L level (LB below deck) · R room";
+    wrap.append(d);
+  }
 
   // Redraw whenever the app renders a page.
   const app = document.getElementById("app");
