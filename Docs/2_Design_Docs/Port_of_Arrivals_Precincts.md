@@ -1,4 +1,4 @@
-# Port of Arrivals — Precinct Plans (⏳ proposed, awaiting Jordan)
+# Port of Arrivals — Precinct Plans (✅ canon, approved by Jordan 27 Nov 2026)
 
 Started 26 Nov 2026. One true-scale blueprint per precinct of the Port of Arrivals (Deck 5, Aerion). The precinct split and the design rule (Aerion is the Hangar Deck first; the district's 40,000 people are its workforce) are in `Invicta_Ship_Reference.md` §5. Everything here is a proposal unless marked canon. All plans are true top views: **bow right, port up**, matching the game.
 

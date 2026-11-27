@@ -1,4 +1,4 @@
-# Canal Gardens — Precinct Plans (⏳ proposed, awaiting Jordan)
+# Canal Gardens — Precinct Plans (✅ canon, approved by Jordan 27 Nov 2026)
 
 Started 27 Nov 2026. Precinct split by Kylee, from her sketch. Canal Gardens is on Deck 3 (Meridian), starboard of the Keelway, between the Grand Bazaar (bow) and the Arena District (stern). Canon (Sheet S3): 5.8 sq mi (15.0 km²), 20,000 people, waterways, restaurants and garden squares; centre address D3-F57-T. Everything here is a proposal. Plans are true top views: **bow right, port up**.
 

@@ -133,9 +133,45 @@ const TOOLS = [
     },
   },
   {
+    name: "edit_files",
+    description:
+      "Make small, exact edits to one or more repo files in ONE change, without rewriting them. Use this for almost every change. " +
+      "JSON files: 'ops' with a path like precincts[id=P2].buildings[id=P2-19].height_m or status or levels[0].h_m " +
+      "([n] = list position, [key=value] = the item whose key equals value). op 'set' sets a value (creates it if missing), 'delete' removes it, " +
+      "'append' adds an item to the end of a list. Text files (Markdown etc.): 'replace' with exact 'find' text (must occur once unless all=true) and 'with'. " +
+      "Game/Docs files are mirrored to Docs/2_Design_Docs automatically. Canon (Docs/1_Canon_Source) can't be edited. " +
+      "Read a file first if you are not sure of its exact text or structure. For Jordan and Kylee it is committed and published at once.",
+    input_schema: {
+      type: "object",
+      properties: {
+        title: { type: "string", description: "Short title of the change" },
+        summary: { type: "string", description: "What changed and why, in plain words" },
+        changes: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              file: { type: "string" },
+              ops: { type: "array", items: { type: "object", properties: {
+                op: { type: "string", enum: ["set", "delete", "append"] }, path: { type: "string" }, value: {} },
+                required: ["op", "path"], additionalProperties: false } },
+              replace: { type: "array", items: { type: "object", properties: {
+                find: { type: "string" }, with: { type: "string" }, all: { type: "boolean" } },
+                required: ["find", "with"], additionalProperties: false } },
+            },
+            required: ["file"],
+            additionalProperties: false,
+          },
+        },
+      },
+      required: ["title", "summary", "changes"],
+      additionalProperties: false,
+    },
+  },
+  {
     name: "propose_change",
     description:
-      "Open a proposal (a GitHub pull request) that Jordan reviews. Give the FULL new content of every file you change. " +
+      "Write whole files. Only for NEW files or a full rewrite of a small file; for edits use edit_files. Give the FULL new content of every file. " +
       "Files under Game/Docs/ are copied to Docs/2_Design_Docs/ automatically. Canon (Docs/1_Canon_Source) can't be changed: " +
       "propose an entry in Game/Docs/02_Canon_Errata.md instead. For Jordan and Kylee, call it right away; for others, after they agree.",
     input_schema: {
@@ -163,7 +199,7 @@ const BASE_RULES = `You are Claude, working with the public on ADXI: Invicta, th
 
 Who you are talking to: each message says who it is. Jordan is the owner and lead designer; Kylee and other trusted helpers work with him. Everyone else is a member of the public helping. Be plain and brief, and treat this as real design work: work out exact numbers, check them against the data, and do the work. Don't list limitations or say what you can't do unless a tool actually failed.
 
-What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with update_building (one building's fields) or propose_change (whole files). For Jordan and Kylee (recognised, see each message), never ask for confirmation: when they ask for a change, make it straight away with the tools; it is committed and published at once, then tell them what changed. For everyone else, confirm the change with them first; it then becomes a proposal that Jordan or Kylee approves. After a change, say plainly what the tool result says (published, or waiting for Jordan).
+What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with edit_files (exact small edits to any data or doc file, several files in one go), update_building (one building's fields), edit_plan (2D plans) or propose_change (new files only). For Jordan and Kylee (recognised, see each message), never ask for confirmation and never ask which item they mean when there is a reasonable reading: pick the most likely meaning, make the change straight away with the tools (it is committed and published at once), then say what you did and which reading you took. Only ask when a choice truly changes the design and there's no sensible default. Never say a file is too big to change: use edit_files. For everyone else, confirm the change with them first; it then becomes a proposal that Jordan or Kylee approves. After a change, say plainly what the tool result says (published, or waiting for Jordan).
 
 Rules you must follow (from the project's CLAUDE.md, included below):
 - Never invent anything that has not been designed and isn't being designed in this conversation. If something isn't designed yet, say so.
@@ -175,7 +211,7 @@ Rules you must follow (from the project's CLAUDE.md, included below):
 - Scan issues: when asked to resolve them, give 2–3 plain choices as a numbered list (fix the data, record canon errata in Game/Docs/02_Canon_Errata.md and its mirror, or accept as known by adding an entry with the issue id, a reason and today's date to "acknowledged" in Invicta/data/rules.json). When the person picks one, make that change straight away (Jordan and Kylee: no confirmation). Never edit canon files.
 - Ship frame: x km from the prow tip (0 to 34), y km across the beam, port negative. Frames F0 to F68 are 500 m apart. Lanes A to Y are 500 m bands, M on the centreline, A at port. Plans are top views, bow right, port up.
 - Read the files you change before proposing, and keep their existing format exactly (JSON stays valid; tables keep their columns).
-- To change one building's details, use update_building instead of rewriting the whole data file with propose_change.
+- Never rewrite a big file. Use edit_files (or update_building) for every change to an existing file.
 - Exact 2D plans (levels, rooms, walls, doors, cores, masses) are made with edit_plan and drawn on the map. A 3D view built from the same plan data is being added; if asked for 3D, say it's coming.
 - After any change, say plainly whether it was published or is waiting for Jordan, exactly as the tool result says. If a tool fails, say so; never claim a change happened when it didn't.
 - The game itself and the Arcane Drift website are separate and not part of this repo. The EX101 is a different ship.
@@ -249,7 +285,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       // Jordan's rule: Claude Haiku 5.5 answers questions; Claude Sonnet 5.5 makes design changes.
       const QUESTION_MODEL = env.QUESTION_MODEL || "claude-haiku-5-5";
       const DESIGN_MODEL = env.DESIGN_MODEL || "claude-sonnet-5-5";
-      const WRITE_TOOLS = new Set(["update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
+      const WRITE_TOOLS = new Set(["edit_files", "update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
       let model = QUESTION_MODEL;
       const ask = (msgs, streamText) => {
         const design = model === DESIGN_MODEL;
@@ -324,9 +360,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
               proposals++;
               send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
               try { await announce(env, name, `${out.merged ? "changed a plan (going live)" : "proposed a plan change"}: ${use.input.title}`, out.url); } catch (e) { /* optional */ }
-            } else if (use.name === "propose_change" || use.name === "update_building") {
+            } else if (use.name === "propose_change" || use.name === "update_building" || use.name === "edit_files") {
               if (proposals >= MAX_PROPOSALS_PER_MESSAGE) throw new Error("Proposal limit reached for this message.");
-              const input = use.name === "update_building" ? await buildingPatch(gh, use.input, trusted) : use.input;
+              const input = use.name === "update_building" ? await buildingPatch(gh, use.input, trusted)
+                : use.name === "edit_files" ? await filesPatch(gh, use.input, trusted) : use.input;
               out = await proposeChange(gh, input, name, !!trusted);
               proposals++;
               send("proposal", { url: out.url, title: use.input.title, merged: !!out.merged });
@@ -601,7 +638,8 @@ const BUILDING_FIELDS = ["name", "status", "kind", "notes", "size_text", "height
 async function buildingPatch(gh, input, trusted) {
   const file = cleanPath(input.file);
   if (!/^Invicta\/data\/decks\/D\d\/[a-z0-9-]+\.json$/.test(file)) throw new Error("file must be a precinct data file under Invicta/data/decks.");
-  const data = JSON.parse(await gh.raw(file));
+  const raw = await gh.raw(file);
+  const data = JSON.parse(raw);
   let found = null;
   for (const p of data.precincts || []) for (const b of p.buildings || []) if (b.id === input.building_id) found = b;
   if (!found) throw new Error(`No building ${input.building_id} in ${file}.`);
@@ -613,7 +651,91 @@ async function buildingPatch(gh, input, trusted) {
     if (k === "height_m" && typeof v !== "number") throw new Error("height_m must be a number of metres.");
     found[k] = v;
   }
-  return { title: input.title, summary: input.summary, files: [{ path: file, content: JSON.stringify(data) }] };
+  return { title: input.title, summary: input.summary, files: [{ path: file, content: jsonLike(raw, data) }] };
+}
+
+// Write JSON back in the same layout it was read in (indent and final newline).
+function jsonLike(raw, data) {
+  const m = /^\{\r?\n([ \t]+)/.exec(raw);
+  return JSON.stringify(data, null, m ? m[1] : undefined) + (raw.endsWith("\n") ? "\n" : "");
+}
+
+// edit_files: exact path-based JSON edits and find/replace text edits, never a whole-file rewrite by the model.
+const PATH_RE = /^(?:[^.[\]]+|\[\d+\]|\[[^=\]]+=[^\]]*\])(?:\.[^.[\]]+|\[\d+\]|\[[^=\]]+=[^\]]*\])*$/;
+function parsePath(path) {
+  if (!PATH_RE.test(path)) throw new Error(`Can't read the path "${path}". Use e.g. precincts[id=P2].buildings[id=P2-19].height_m`);
+  const out = [];
+  const re = /([^.[\]]+)|\[(\d+)\]|\[([^=\]]+)=([^\]]*)\]/g;
+  let m;
+  while ((m = re.exec(path))) {
+    if (m[1] !== undefined) out.push({ key: m[1] });
+    else if (m[2] !== undefined) out.push({ index: +m[2] });
+    else out.push({ match: m[3].trim(), value: m[4].trim().replace(/^["']|["']$/g, "") });
+  }
+  return out;
+}
+function step(node, seg, path, create) {
+  if (seg.key !== undefined) {
+    if (node === null || typeof node !== "object" || Array.isArray(node)) throw new Error(`"${seg.key}" in ${path}: not an object there.`);
+    if (!(seg.key in node)) { if (create) node[seg.key] = {}; else throw new Error(`No "${seg.key}" in ${path}.`); }
+    return node[seg.key];
+  }
+  if (!Array.isArray(node)) throw new Error(`${path}: expected a list.`);
+  if (seg.index !== undefined) { if (seg.index >= node.length) throw new Error(`${path}: there is no item ${seg.index}.`); return node[seg.index]; }
+  const hits = node.filter((x) => x && String(x[seg.match]) === seg.value);
+  if (hits.length !== 1) throw new Error(`${path}: ${hits.length} items with ${seg.match}=${seg.value} (need exactly 1).`);
+  return hits[0];
+}
+function applyOp(data, op) {
+  const segs = parsePath(String(op.path || ""));
+  const last = segs.pop();
+  let node = data;
+  for (const sg of segs) node = step(node, sg, op.path, op.op === "set");
+  if (op.op === "append") {
+    const list = step(node, last, op.path, false);
+    if (!Array.isArray(list)) throw new Error(`${op.path} is not a list.`);
+    list.push(op.value);
+    return;
+  }
+  if (last.key !== undefined) {
+    if (typeof node !== "object" || node === null || Array.isArray(node)) throw new Error(`${op.path}: not an object there.`);
+    if (op.op === "delete") { if (!(last.key in node)) throw new Error(`No "${last.key}" in ${op.path}.`); delete node[last.key]; }
+    else node[last.key] = op.value;
+    return;
+  }
+  if (!Array.isArray(node)) throw new Error(`${op.path}: expected a list.`);
+  let i = last.index;
+  if (i === undefined) i = node.indexOf(step(node, last, op.path, false));
+  if (i >= node.length) throw new Error(`${op.path}: there is no item ${i}.`);
+  if (op.op === "delete") node.splice(i, 1); else node[i] = op.value;
+}
+async function filesPatch(gh, input, trusted) {
+  const files = [];
+  for (const ch of input.changes || []) {
+    const file = cleanPath(ch.file);
+    if (file.startsWith("Docs/1_Canon_Source")) throw new Error("Canon is read-only. Add an errata entry in Game/Docs/02_Canon_Errata.md instead.");
+    const raw = await gh.raw(file);
+    let content = raw;
+    if ((ch.ops || []).length) {
+      if (!file.endsWith(".json")) throw new Error(`${file}: ops are for JSON files; use replace for text.`);
+      const data = JSON.parse(raw);
+      for (const op of ch.ops) {
+        if (/(^|\.)status$/.test(op.path) && op.value === "canon" && trusted !== "Jordan") throw new Error("Only Jordan can mark something canon.");
+        applyOp(data, op);
+      }
+      content = jsonLike(raw, data);
+    }
+    for (const r of ch.replace || []) {
+      const n = content.split(r.find).length - 1;
+      if (n === 0) throw new Error(`${file}: couldn't find the text "${r.find.slice(0, 80)}". Read the file and copy the exact text.`);
+      if (n > 1 && !r.all) throw new Error(`${file}: the text "${r.find.slice(0, 80)}" appears ${n} times. Give more of it, or set all=true.`);
+      content = r.all ? content.split(r.find).join(r.with) : content.replace(r.find, () => r.with);
+    }
+    if (content === raw) throw new Error(`${file}: nothing changed.`);
+    files.push({ path: file, content });
+  }
+  if (!files.length) throw new Error("No changes given.");
+  return { title: input.title, summary: input.summary, files };
 }
 
 async function checkLimits(env, request) {
@@ -652,7 +774,8 @@ function toolLabel(use) {
   if (use.name === "read_file") return `Reading ${p}`;
   if (use.name === "list_files") return `Looking in ${p || "the repo"}`;
   if (use.name === "get_scan") return "Checking the scan";
-  if (use.name === "propose_change") return "Opening a proposal for Jordan";
+  if (use.name === "propose_change") return "Saving the change";
+  if (use.name === "edit_files") return `Editing ${((use.input && use.input.changes) || []).map((c) => String(c.file).split("/").pop()).join(", ")}`;
   if (use.name === "save_image_as_concept") return "Saving the image as concept art";
   if (use.name === "edit_plan") return `Editing the plan of ${use.input && use.input.building_uid}`;
   if (use.name === "update_building") return `Updating ${use.input && use.input.building_id}`;
