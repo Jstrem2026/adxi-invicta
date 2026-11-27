@@ -752,6 +752,17 @@ function streetView(puid, i) {
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [st.name, ""]],
     mapShell(g, vb, "", "", "Click any building, block or street"), panel);
 }
+// Address = the street-bounded block plus the building's number in it; grid position = frame and lane at its centre.
+function blockNo(p, bid, b) {
+  const blk = (p.blocks || []).find(q => q.id === bid);
+  const ids = blk ? (blk.contents || []).map(c => c.uid || c.id || c).filter(Boolean) : [];
+  const i = ids.findIndex(x => x === b.uid || x === b.id);
+  return i >= 0 ? i + 1 : (p.buildings.filter(x => (x.blocks || [])[0] === bid).indexOf(b) + 1 || "—");
+}
+function gridPos(addr) {
+  const m = /^D\d+-F(\d+)-([A-Z])$/.exec(addr || "");
+  return m ? `F${m[1]} lane ${m[2]}` : addr;
+}
 function buildingView(uid) {
   const b = IX.buildings[uid];
   if (!b) return `<div class="note">Unknown building ${esc(uid)}.</div>`;
@@ -775,7 +786,8 @@ function buildingView(uid) {
   const panel = `<h1>${esc(b.name)} <button class="cp cp-all" title="Copy all building information" onclick="copyBuilding(this)">⧉</button></h1><div class="small muted">${b.id} · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div style="margin:8px 0">${badge(b.status)} <span class="badge" style="color:#cfd8e3">${esc(b.kind)}</span></div>
     <div class="kv">
-      <div>Address</div><div>${esc(b.address || "—")} <span class="small muted">(centre)</span></div>
+      <div>Address</div><div>${firstBlock ? `${esc(firstBlock)}, building ${blockNo(p, firstBlock, b)}` : esc(b.address || "—")}</div>
+      <div>Grid position</div><div>${b.address ? `${esc(gridPos(b.address))} <span class="small muted">(frame line and lane at the centre)</span>` : ND}</div>
       <div>Footprint</div><div>${sz ? dims(sz[0], sz[1]) : r ? dims(w, h) : ND}${b.bay_count ? ` <span class="small muted">each, × ${b.bay_count}</span>` : ""}</div>
       ${r && sz && !b.bays_km && (Math.abs(w - sz[0]) > 15 && Math.abs(w - sz[1]) > 15) ? `<div>Drawn</div><div class="sev-warning">${dims(w, h)}</div>` : ""}
       <div>Ground area</div><div>${b.footprint_km2 != null ? area(b.footprint_km2) : ND}</div>

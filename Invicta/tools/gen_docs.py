@@ -108,7 +108,7 @@ def main():
             dpage.append(f"| [{p['id']} {p['name']}]({p['id']}.md) | {cell(p.get('frames'))} | {cell(p.get('lanes'))} | {a * 247.105:,.1f} acres ({a:,.3f} km²) | {len(p.get('buildings', []))} |")
             pp = [f"# {p['id']} {p['name']}", "", f"Deck {ps.get('deck')} · {dname} · status {p.get('status')}", "", cell(p.get("intro")), "",
                   f"Bounds: x {p['bounds_km'][0]}–{p['bounds_km'][1]} km, y {p['bounds_km'][2]} to {p['bounds_km'][3]} km", "",
-                  "| ID | Building | Status | Size | Ground area | Position (x, y km) | Height | Floors | Capacity |", "|---|---|---|---|---|---|---|---|---|"]
+                  "| ID | Building | Address | Status | Size | Ground area | Position (x, y km) | Height | Floors | Capacity |", "|---|---|---|---|---|---|---|---|---|---|"]
             for b in p.get("buildings", []):
                 r = b.get("rect_km")
                 size = f"{ft((r[1] - r[0]) * 1000)} × {ft((r[3] - r[2]) * 1000)} ({(r[1] - r[0]) * 1000:,.0f} × {(r[3] - r[2]) * 1000:,.0f} m)" if r else cell(b.get("size_text"))
@@ -117,7 +117,13 @@ def main():
                 name = b["name"]
                 if b.get("uid") in models:
                     name = f"[{name}]({p['id']}/{b['id']}.md)"
-                pp.append(f"| {b['id']} | {name} | {b.get('status')} | {size} | {ga} | {pos} | {both(b['height_m']) if b.get('height_m') else 'not designed yet'} | {cell(b.get('floors'))} | {cell(b.get('capacity'))} |")
+                addr = "—"
+                for blk in p.get("blocks") or []:
+                    ids = [c.get("id") for c in blk.get("contents", [])]
+                    if b["id"] in ids:
+                        addr = f"{blk['id']}, building {ids.index(b['id']) + 1}"
+                        break
+                pp.append(f"| {b['id']} | {name} | {addr} | {b.get('status')} | {size} | {ga} | {pos} | {both(b['height_m']) if b.get('height_m') else 'not designed yet'} | {cell(b.get('floors'))} | {cell(b.get('capacity'))} |")
                 m = models.get(b.get("uid"))
                 if m:
                     bdir = os.path.join(ddir, p["id"]); os.makedirs(bdir, exist_ok=True)
