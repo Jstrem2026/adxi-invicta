@@ -1,6 +1,6 @@
-# Atrium Plaza — Precinct Plans (⏳ proposed, 27 Nov 2026, awaiting Jordan)
+# Atrium Plaza — Precinct Plans (✅ canon, approved by Jordan)
 
-Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). The Atrium Plaza is Deck 5's central plaza, a circle 2.22 mi (3.57 km) across centred on F52 on the centreline, around the Spine Atrium shaft. Canon (Sheet S5): 3.9 sq mi (10.0 km²), Governor's Hall, pilots' guild, Atrium Central station, 10,000 people (Governor's staff, clerks, guards, transit crews), centre address D5-F52-M; the Spine Atrium shaft is 0.99 mi (1.6 km) across with a 164 ft (50 m) wall. The Keelway and the cross-line both stop at Atrium Central. Everything here is a proposal unless marked canon. Plans are true top views: **bow right, port up**.
+Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). The Atrium Plaza is Deck 5's central plaza, a circle 2.22 mi (3.57 km) across centred on F52 on the centreline, around the Spine Atrium shaft. Canon (Sheet S5): 3.9 sq mi (10.0 km²), Governor's Hall, pilots' guild, Atrium Central station, 10,000 people (Governor's staff, clerks, guards, transit crews), centre address D5-F52-M; the Spine Atrium shaft is 0.99 mi (1.6 km) across with a 164 ft (50 m) wall. The Keelway and the cross-line both stop at Atrium Central. Jordan approved this plan as canon. Plans are true top views: **bow right, port up**.
 
 Layout rule: the Keelway and the cross-line cut the plaza ring into four quarters. The shaft itself is an opening (0.78 sq mi, 2.01 km²) and is not part of any precinct, so the four precincts add up to 3.09 sq mi (8.0 km²). Proposed: the Keelway and cross-line cross the shaft on bridges, with Atrium Central's platforms at the rim.
 
@@ -19,7 +19,7 @@ Total 3.09 sq mi (7.99 km²).
 
 ## P1 · Governor's Quarter — F48 to F52, lanes I–M
 
-5,856 × 5,856 ft (1.79 × 1.78 km), 0.77 sq mi (2.00 km²). The seat of Aerion's government: Vector's Governor's Hall (canon) and the elected City Council (errata G1). Status: proposed.
+5,856 × 5,856 ft (1.79 × 1.78 km), 0.77 sq mi (2.00 km²). The seat of Aerion's government: Vector's Governor's Hall (canon) and the elected City Council (errata G1). Status: canon.
 
 Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
@@ -37,7 +37,7 @@ Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
 ## P2 · Station Quarter — F48 to F52, lanes M–Q
 
-5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Atrium Central (canon), where the Keelway meets the cross-line. Status: proposed.
+5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Atrium Central (canon), where the Keelway meets the cross-line. Status: canon.
 
 Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
@@ -55,7 +55,7 @@ Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
 ## P3 · Guild Quarter — F52 to F56, lanes I–M
 
-5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Home of the pilots' guild (canon): licences, ratings and the guild lodge. Status: proposed.
+5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Home of the pilots' guild (canon): licences, ratings and the guild lodge. Status: canon.
 
 Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
@@ -71,7 +71,7 @@ Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
 ## P4 · Rim Gardens — F52 to F56, lanes M–Q
 
-5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Gardens and cafés along the rim of the Spine Atrium, with a terrace looking into the shaft. Status: proposed.
+5,856 × 5,856 ft (1.79 × 1.79 km), 0.77 sq mi (2.00 km²). Gardens and cafés along the rim of the Spine Atrium, with a terrace looking into the shaft. Status: canon.
 
 Streets: Keelway, 164 ft (50 m); Cross-line, 82 ft (25 m).
 
