@@ -1,0 +1,946 @@
+{
+  "about": "Building types used by tools/auto_design.py to draft a building's architecture and room plan from its footprint. First type whose 'match' words appear in the building's name or notes wins (order matters). Heights in metres. 'floors' = above-deck levels, 'below' = levels below deck. 'program' shares split each level's floor area into named rooms. Everything drafted from here is status 'proposed' until Jordan approves it. Edit freely. Words match whole words only. 'towers' or 'courtyards': upper floors only on every other band of rooms, leaving open courts between wings.",
+  "style": {
+    "port-of-arrivals": "Port of Arrivals style: graphite and gunmetal metal cladding, titanium composite panels and smart glass, white exterior light lines; inside, warm amber and soft-white light, polished stone floors and warm-toned acoustic finishes."
+  },
+  "types": [
+    {
+      "id": "station",
+      "match": [
+        "keelway port station",
+        "deck-transfer lifts"
+      ],
+      "floor_h": 10,
+      "floors": 2,
+      "below": [
+        {
+          "name": "Platform level",
+          "h": 10
+        }
+      ],
+      "module": 40,
+      "depth": 40,
+      "corridor": 20,
+      "structure": "Long-span steel trusses on a 40 m column grid, concrete platform decks",
+      "look": "Tall glass walls under a light metal roof with long skylights",
+      "entrances": "Wide glass entrances on every side facing a street or square",
+      "ground": [
+        [
+          "Concourse",
+          0.35
+        ],
+        [
+          "Platform access and lifts",
+          0.25
+        ],
+        [
+          "Ticket halls",
+          0.1
+        ],
+        [
+          "Waiting areas",
+          0.15
+        ],
+        [
+          "Shops and cafés",
+          0.1
+        ],
+        [
+          "Staff and control",
+          0.05
+        ]
+      ],
+      "upper": [
+        [
+          "Mezzanine walkways",
+          0.4
+        ],
+        [
+          "Waiting lounges",
+          0.25
+        ],
+        [
+          "Offices and control",
+          0.2
+        ],
+        [
+          "Plant rooms",
+          0.15
+        ]
+      ],
+      "below_program": [
+        [
+          "Platforms",
+          0.6
+        ],
+        [
+          "Track and lift shafts",
+          0.3
+        ],
+        [
+          "Plant rooms",
+          0.1
+        ]
+      ],
+      "capacity_m2": 4,
+      "capacity_word": "travellers at a time"
+    },
+    {
+      "id": "hotel",
+      "match": [
+        "hotel",
+        "hostel"
+      ],
+      "floor_h": 3.6,
+      "floors": 14,
+      "podium": 2,
+      "podium_h": 6,
+      "towers": true,
+      "below": [
+        {
+          "name": "Service level",
+          "h": 5
+        }
+      ],
+      "module": 9,
+      "depth": 9,
+      "corridor": 2.4,
+      "structure": "Concrete core and flat-slab towers on a two-storey steel podium",
+      "look": "Slim towers with full-height smart glass and metal fins, a glass podium with a lit canopy",
+      "entrances": "Main lobby on the street side with a covered drop-off; service entrance at the back",
+      "ground": [
+        [
+          "Lobby and reception",
+          0.2
+        ],
+        [
+          "Restaurants and bars",
+          0.2
+        ],
+        [
+          "Ballroom and meeting rooms",
+          0.2
+        ],
+        [
+          "Spa and pool",
+          0.15
+        ],
+        [
+          "Kitchens",
+          0.1
+        ],
+        [
+          "Back of house",
+          0.15
+        ]
+      ],
+      "upper": [
+        [
+          "Guest rooms",
+          0.88
+        ],
+        [
+          "Housekeeping",
+          0.06
+        ],
+        [
+          "Lift lobbies",
+          0.06
+        ]
+      ],
+      "below_program": [
+        [
+          "Laundry",
+          0.3
+        ],
+        [
+          "Stores",
+          0.3
+        ],
+        [
+          "Plant rooms",
+          0.4
+        ]
+      ],
+      "capacity_word": "guest rooms",
+      "room_m2": 36
+    },
+    {
+      "id": "lodging",
+      "match": [
+        "crew rest",
+        "staff centre",
+        "lodge",
+        "pilot lounge"
+      ],
+      "floor_h": 3.6,
+      "floors": 4,
+      "podium": 1,
+      "podium_h": 6,
+      "module": 8,
+      "depth": 9,
+      "corridor": 2.4,
+      "structure": "Concrete frame on a 8 m grid with flat slabs",
+      "look": "Metal-clad blocks with deep windows and lit balconies",
+      "entrances": "Glass entrance on the street side; staff entrance at the back",
+      "ground": [
+        [
+          "Entrance and front desk",
+          0.12
+        ],
+        [
+          "Canteen",
+          0.25
+        ],
+        [
+          "Lounges",
+          0.2
+        ],
+        [
+          "Gym",
+          0.1
+        ],
+        [
+          "Lockers and showers",
+          0.18
+        ],
+        [
+          "Kitchen and stores",
+          0.15
+        ]
+      ],
+      "upper": [
+        [
+          "Rest rooms (sleeping)",
+          0.85
+        ],
+        [
+          "Laundry",
+          0.05
+        ],
+        [
+          "Lift lobbies",
+          0.1
+        ]
+      ],
+      "capacity_word": "beds",
+      "room_m2": 20,
+      "courtyards": true
+    },
+    {
+      "id": "clinic",
+      "match": [
+        "clinic",
+        "medical",
+        "port health"
+      ],
+      "floor_h": 4.5,
+      "floors": 3,
+      "below": [
+        {
+          "name": "Service level",
+          "h": 5
+        }
+      ],
+      "module": 9,
+      "depth": 9,
+      "corridor": 3,
+      "structure": "Concrete frame on a 9 m grid, wide corridors for beds",
+      "look": "White metal panels and frosted glass, a bright glass entrance",
+      "entrances": "Public entrance at the front; ambulance bay at the side",
+      "ground": [
+        [
+          "Entrance and waiting",
+          0.15
+        ],
+        [
+          "Emergency and treatment",
+          0.25
+        ],
+        [
+          "Screening rooms",
+          0.2
+        ],
+        [
+          "Imaging",
+          0.1
+        ],
+        [
+          "Pharmacy",
+          0.05
+        ],
+        [
+          "Staff rooms",
+          0.1
+        ],
+        [
+          "Stores",
+          0.15
+        ]
+      ],
+      "upper": [
+        [
+          "Wards",
+          0.45
+        ],
+        [
+          "Consulting rooms",
+          0.25
+        ],
+        [
+          "Isolation rooms",
+          0.1
+        ],
+        [
+          "Offices",
+          0.1
+        ],
+        [
+          "Plant rooms",
+          0.1
+        ]
+      ],
+      "below_program": [
+        [
+          "Stores",
+          0.4
+        ],
+        [
+          "Plant rooms",
+          0.4
+        ],
+        [
+          "Morgue",
+          0.2
+        ]
+      ],
+      "capacity_word": "beds",
+      "room_m2": 40,
+      "courtyards": true
+    },
+    {
+      "id": "fire",
+      "match": [
+        "fire & rescue",
+        "fire station"
+      ],
+      "floor_h": 6,
+      "floors": 2,
+      "module": 16,
+      "depth": 24,
+      "corridor": 4,
+      "structure": "Steel portal frames over the vehicle bays, concrete frame for crew quarters",
+      "look": "Red-trimmed graphite cladding with tall glass bay doors",
+      "entrances": "Vehicle bay doors on the street side; crew entrance at the side",
+      "ground": [
+        [
+          "Vehicle bays",
+          0.55
+        ],
+        [
+          "Equipment and hose stores",
+          0.15
+        ],
+        [
+          "Workshop",
+          0.1
+        ],
+        [
+          "Watch room",
+          0.05
+        ],
+        [
+          "Training yard store",
+          0.15
+        ]
+      ],
+      "upper": [
+        [
+          "Crew bunk rooms",
+          0.35
+        ],
+        [
+          "Kitchen and mess",
+          0.15
+        ],
+        [
+          "Gym",
+          0.1
+        ],
+        [
+          "Offices",
+          0.2
+        ],
+        [
+          "Training rooms",
+          0.2
+        ]
+      ],
+      "capacity_word": "crew on watch",
+      "room_m2": 120
+    },
+    {
+      "id": "police",
+      "match": [
+        "police"
+      ],
+      "floor_h": 4,
+      "floors": 3,
+      "module": 9,
+      "depth": 9,
+      "corridor": 3,
+      "structure": "Reinforced concrete frame on a 9 m grid",
+      "look": "Dark metal panels with narrow glass strips and a lit blue band at the entrance",
+      "entrances": "Public front desk on the street side; secure vehicle entrance at the back",
+      "ground": [
+        [
+          "Front desk and waiting",
+          0.15
+        ],
+        [
+          "Interview rooms",
+          0.15
+        ],
+        [
+          "Holding cells",
+          0.15
+        ],
+        [
+          "Vehicle garage",
+          0.3
+        ],
+        [
+          "Evidence and stores",
+          0.15
+        ],
+        [
+          "Duty office",
+          0.1
+        ]
+      ],
+      "upper": [
+        [
+          "Offices",
+          0.5
+        ],
+        [
+          "Briefing rooms",
+          0.15
+        ],
+        [
+          "Control room",
+          0.1
+        ],
+        [
+          "Lockers and showers",
+          0.15
+        ],
+        [
+          "Canteen",
+          0.1
+        ]
+      ],
+      "capacity_word": "officers",
+      "room_m2": 25,
+      "courtyards": true
+    },
+    {
+      "id": "office",
+      "match": [
+        "admin",
+        "offices",
+        "operations",
+        "ops",
+        "harbourmaster",
+        "licensing",
+        "customs & border",
+        "forwarders",
+        "berth offices",
+        "travel office",
+        "visitor centre",
+        "cargo customs",
+        "private flights",
+        "terminal admin"
+      ],
+      "floor_h": 4.2,
+      "floors": 4,
+      "module": 9,
+      "depth": 12,
+      "corridor": 3,
+      "structure": "Concrete core with steel frame on a 9 m grid",
+      "look": "Smart-glass curtain walls framed in gunmetal metal, a double-height glass lobby",
+      "entrances": "Glass lobby on the street side; staff entrance at the back",
+      "ground": [
+        [
+          "Lobby",
+          0.15
+        ],
+        [
+          "Public counters",
+          0.25
+        ],
+        [
+          "Meeting rooms",
+          0.15
+        ],
+        [
+          "Café",
+          0.1
+        ],
+        [
+          "Mail and stores",
+          0.1
+        ],
+        [
+          "Security",
+          0.05
+        ],
+        [
+          "Offices",
+          0.2
+        ]
+      ],
+      "upper": [
+        [
+          "Open offices",
+          0.55
+        ],
+        [
+          "Meeting rooms",
+          0.15
+        ],
+        [
+          "Private offices",
+          0.15
+        ],
+        [
+          "Break rooms",
+          0.05
+        ],
+        [
+          "Plant rooms",
+          0.1
+        ]
+      ],
+      "capacity_word": "staff",
+      "room_m2": 12,
+      "courtyards": true
+    },
+    {
+      "id": "terminal",
+      "match": [
+        "terminal",
+        "transfer hall",
+        "interchange",
+        "greeters",
+        "porters' hall",
+        "transit lounges"
+      ],
+      "floor_h": 8,
+      "floors": 3,
+      "below": [
+        {
+          "name": "Baggage and service level",
+          "h": 6
+        }
+      ],
+      "module": 24,
+      "depth": 30,
+      "corridor": 16,
+      "structure": "Long-span steel roof trusses on a 24 m column grid, post-tensioned concrete floors",
+      "look": "Tall glass walls under a curved roof with skylights, timber-lined ceilings",
+      "entrances": "Glass entrance halls on the street sides, covered drop-off on the main side",
+      "ground": [
+        [
+          "Main hall",
+          0.3
+        ],
+        [
+          "Desks and check-in",
+          0.15
+        ],
+        [
+          "Security and control",
+          0.12
+        ],
+        [
+          "Waiting areas",
+          0.15
+        ],
+        [
+          "Shops and cafés",
+          0.12
+        ],
+        [
+          "Toilets and family rooms",
+          0.06
+        ],
+        [
+          "Staff rooms",
+          0.1
+        ]
+      ],
+      "upper": [
+        [
+          "Lounges",
+          0.3
+        ],
+        [
+          "Food court",
+          0.2
+        ],
+        [
+          "Offices",
+          0.25
+        ],
+        [
+          "Toilets",
+          0.05
+        ],
+        [
+          "Plant rooms",
+          0.2
+        ]
+      ],
+      "below_program": [
+        [
+          "Baggage handling",
+          0.5
+        ],
+        [
+          "Service roads and loading",
+          0.3
+        ],
+        [
+          "Plant rooms",
+          0.2
+        ]
+      ],
+      "capacity_m2": 6,
+      "capacity_word": "travellers at a time"
+    },
+    {
+      "id": "warehouse",
+      "match": [
+        "warehouse",
+        "cold store",
+        "sorting",
+        "logistics",
+        "container yard",
+        "waste",
+        "baggage hall"
+      ],
+      "floor_h": 14,
+      "floors": 1,
+      "office_band": true,
+      "module": 30,
+      "depth": 60,
+      "corridor": 12,
+      "structure": "Steel portal frames on a 30 m grid, heavy-duty concrete floor",
+      "look": "Gunmetal ribbed metal walls with a band of high windows, white light lines along the roof edge",
+      "entrances": "Loading docks along the long sides; office entrance at the front",
+      "ground": [
+        [
+          "Storage halls",
+          0.6
+        ],
+        [
+          "Sorting floor",
+          0.15
+        ],
+        [
+          "Loading docks",
+          0.15
+        ],
+        [
+          "Inspection rooms",
+          0.05
+        ],
+        [
+          "Staff rooms",
+          0.05
+        ]
+      ],
+      "upper": [
+        [
+          "Offices",
+          0.6
+        ],
+        [
+          "Control room",
+          0.2
+        ],
+        [
+          "Staff rooms",
+          0.2
+        ]
+      ],
+      "capacity_word": "staff per shift",
+      "room_m2": 400
+    },
+    {
+      "id": "hangar",
+      "match": [
+        "hangar",
+        "maintenance",
+        "repair",
+        "service yard",
+        "corvette service",
+        "paint",
+        "refit",
+        "workshop",
+        "vehicle depot",
+        "pod depot",
+        "tug park"
+      ],
+      "floor_h": 20,
+      "floors": 1,
+      "office_band": true,
+      "module": 40,
+      "depth": 80,
+      "corridor": 16,
+      "structure": "Long-span steel trusses on a 40 m grid, overhead crane rails, reinforced floor",
+      "look": "Large gunmetal sheds with full-width doors and roof light strips",
+      "entrances": "Full-width bay doors to the yard; staff entrance at the front",
+      "ground": [
+        [
+          "Work bays",
+          0.65
+        ],
+        [
+          "Workshops",
+          0.15
+        ],
+        [
+          "Parts stores",
+          0.1
+        ],
+        [
+          "Staff rooms",
+          0.05
+        ],
+        [
+          "Control",
+          0.05
+        ]
+      ],
+      "upper": [
+        [
+          "Offices",
+          0.5
+        ],
+        [
+          "Control room",
+          0.2
+        ],
+        [
+          "Training rooms",
+          0.15
+        ],
+        [
+          "Staff rooms",
+          0.15
+        ]
+      ],
+      "capacity_word": "staff per shift",
+      "room_m2": 600
+    },
+    {
+      "id": "retail",
+      "match": [
+        "shop",
+        "market",
+        "restaurant",
+        "arcade",
+        "chandlery",
+        "parts & avionics",
+        "shops"
+      ],
+      "floor_h": 5.5,
+      "floors": 2,
+      "module": 12,
+      "depth": 18,
+      "corridor": 8,
+      "structure": "Steel frame on a 12 m grid with a glass-roofed central street",
+      "look": "Glass shopfronts under metal canopies, a glass roof over the walkways",
+      "entrances": "Open glass entrances at both ends of each walkway",
+      "ground": [
+        [
+          "Shop units",
+          0.6
+        ],
+        [
+          "Walkway seating",
+          0.1
+        ],
+        [
+          "Food stalls",
+          0.15
+        ],
+        [
+          "Toilets",
+          0.05
+        ],
+        [
+          "Loading and stores",
+          0.1
+        ]
+      ],
+      "upper": [
+        [
+          "Shop units",
+          0.5
+        ],
+        [
+          "Restaurants",
+          0.25
+        ],
+        [
+          "Offices",
+          0.1
+        ],
+        [
+          "Plant rooms",
+          0.15
+        ]
+      ],
+      "capacity_m2": 5,
+      "capacity_word": "visitors at a time"
+    },
+    {
+      "id": "shaft",
+      "match": [
+        "service shaft"
+      ],
+      "floor_h": 6,
+      "floors": 2,
+      "below": [
+        {
+          "name": "Shaft head (down to the service layer)",
+          "h": 8
+        }
+      ],
+      "module": 20,
+      "depth": 30,
+      "corridor": 6,
+      "structure": "Heavy concrete shaft walls, steel frame head house",
+      "look": "Plain graphite metal head house with louvred walls",
+      "entrances": "Service doors on the street side; vehicle lift door",
+      "ground": [
+        [
+          "Vehicle lift lobby",
+          0.3
+        ],
+        [
+          "Goods lifts",
+          0.25
+        ],
+        [
+          "Stair and ladders",
+          0.1
+        ],
+        [
+          "Control room",
+          0.1
+        ],
+        [
+          "Stores",
+          0.25
+        ]
+      ],
+      "upper": [
+        [
+          "Lift machine rooms",
+          0.5
+        ],
+        [
+          "Ventilation plant",
+          0.5
+        ]
+      ],
+      "below_program": [
+        [
+          "Shaft opening",
+          0.6
+        ],
+        [
+          "Lift pits",
+          0.4
+        ]
+      ],
+      "capacity_word": "staff",
+      "room_m2": 400
+    },
+    {
+      "id": "utility",
+      "match": [
+        "utility",
+        "service plant",
+        "fuel",
+        "substation"
+      ],
+      "floor_h": 8,
+      "floors": 2,
+      "below": [
+        {
+          "name": "Plant level",
+          "h": 6
+        }
+      ],
+      "module": 20,
+      "depth": 30,
+      "corridor": 6,
+      "structure": "Concrete frame with heavy plant floors, steel roof",
+      "look": "Plain graphite metal with louvred walls and a few lit windows",
+      "entrances": "Service doors and loading bays on the street side",
+      "ground": [
+        [
+          "Substation",
+          0.25
+        ],
+        [
+          "Air handling",
+          0.25
+        ],
+        [
+          "Water pumps and tanks",
+          0.25
+        ],
+        [
+          "Control room",
+          0.05
+        ],
+        [
+          "Workshop and stores",
+          0.2
+        ]
+      ],
+      "upper": [
+        [
+          "Air handling",
+          0.5
+        ],
+        [
+          "Switch rooms",
+          0.3
+        ],
+        [
+          "Offices",
+          0.2
+        ]
+      ],
+      "below_program": [
+        [
+          "Pipe and cable galleries",
+          0.6
+        ],
+        [
+          "Tanks",
+          0.4
+        ]
+      ],
+      "capacity_word": "staff per shift",
+      "room_m2": 800
+    }
+  ]
+}
