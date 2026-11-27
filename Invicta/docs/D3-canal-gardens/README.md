@@ -4,7 +4,7 @@ Status: canon · data: `Invicta/data/decks/D3/canal-gardens.json` · design doc:
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
-| [P1 Grand Canal](P1.md) | F56–F57 | M–X | 741.3 acres (3.000 km²) | 15 |
+| [P1 Grand Canal](P1.md) | F56–F57 | M–X | 741.3 acres (3.000 km²) | 28 |
 | [P2 Waterfront Quarter](P2.md) | F57–F59 | M–R | 617.8 acres (2.500 km²) | 0 |
 | [P3 Botanical Gardens](P3.md) | F57–F59 | R–X | 741.3 acres (3.000 km²) | 0 |
 | [P4 Garden Squares](P4.md) | F53–F56 | M–R | 494.2 acres (2.000 km²) | 0 |
