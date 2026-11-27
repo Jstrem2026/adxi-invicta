@@ -1,6 +1,6 @@
 # Deck 5 · Atrium Plaza
 
-Status: proposed · data: `Invicta/data/decks/D5/atrium-plaza.json` · design doc: `Game/Docs/Atrium_Plaza_Precincts.md`
+Status: canon · data: `Invicta/data/decks/D5/atrium-plaza.json` · design doc: `Game/Docs/Atrium_Plaza_Precincts.md`
 
 | Precinct | Frames | Lanes | Area | Buildings |
 |---|---|---|---|---|
