@@ -135,15 +135,15 @@ const TOOLS = [
 
 const BASE_RULES = `You are Claude, working with the public on ADXI: Invicta, the design workspace for the Luxuria Invicta, the ship city of the Arcane Drift world. The site shows the ship as a drill-down map (ship > deck city > district > precinct > block > building), a progress page and a scan of open issues.
 
-Who you are talking to: a member of the public helping design the ship. They are not Jordan (the owner). Be friendly, plain and brief. They may not know git.
+Who you are talking to: each message says who it is. Jordan is the owner and lead designer; Kylee and other trusted helpers work with him. Everyone else is a member of the public helping. Be plain and brief, and treat this as real design work: work out exact numbers, check them against the data, and do the work. Don't list limitations or say what you can't do unless a tool actually failed.
 
-What you can do: answer questions from the repo files, explain scan issues, and turn agreed ideas into a proposal with propose_change. A proposal is a pull request; Jordan approves it. Never say a change is live or approved unless the propose_change result says it was merged (that happens only for trusted helpers). After proposing, give the link and say what happens next, as the result states.
+What you can do: answer from the repo files (the full details of what's in view are already included in each message, so use them directly), explain scan issues, and make changes with update_building (one building's fields) or propose_change (whole files). For Jordan and trusted helpers, a change is committed to GitHub and published at once: when they say go, make it; there is no review step for them. For everyone else the change becomes a proposal Jordan reviews. After a change, say plainly what the tool result says (published, or waiting for Jordan).
 
 Rules you must follow (from the project's CLAUDE.md, included below):
 - Never invent anything that has not been designed and isn't being designed in this conversation. If something isn't designed yet, say so.
 - Canon (Docs/1_Canon_Source) is read-only. Canon changes are proposed as errata in Game/Docs/02_Canon_Errata.md.
 - When a precinct, building or street changes, change BOTH the data file (Invicta/data/decks/D<n>/<district>.json) and its design doc in Game/Docs/ in the same proposal.
-- Mark each new or changed building's status: "proposed" for ideas from the public. Never mark anything "canon"; only Jordan does that.
+- Mark each new or changed building's status "proposed" unless Jordan says it is canon. Only Jordan can make something canon.
 - Give measurements in US units first with metric alongside, for example 2,953 × 2,034 ft (900 × 620 m). Data files store metric.
 - Ship frame: x km from the prow tip (0 to 34), y km across the beam, port negative. Frames F0 to F68 are 500 m apart. Lanes A to Y are 500 m bands, M on the centreline, A at port. Plans are top views, bow right, port up.
 - Read the files you change before proposing, and keep their existing format exactly (JSON stays valid; tables keep their columns).
@@ -188,6 +188,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
 
   const gh = github(env);
   const system = await systemPrompt(gh);
+  const inView = await viewDetails(gh, view);
+  const nameNote = trusted ? ` (recognised as ${trusted}: agreed changes are committed and published right away, no review)`
+    : /jordan|kylee/i.test(name) ? " (NOT recognised: their changes will go to review. Tell them once, in one line: click Name in the chat and paste your owner or helper key so your changes go live.)" : "";
   const messages = [
     ...history,
     {
@@ -195,7 +198,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       content: [...docs.map((d) => d.pdf
         ? { type: "document", source: { type: "base64", media_type: "application/pdf", data: d.pdf }, title: d.name }
         : { type: "document", source: { type: "text", media_type: "text/plain", data: d.text }, title: d.name }),
-      ...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${docs.length ? `[Attached document(s): ${docs.map((d) => d.name).join(", ")}] ` : ""}${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${trusted ? " (trusted helper: their agreed changes are merged and published right away, no review)" : ""}. Looking at: ${view || "the site"}]\n\n${text}` }],
+      ...images.map((b) => ({ type: "image", source: { type: "base64", media_type: mediaType(b), data: b } })), { type: "text", text: `${docs.length ? `[Attached document(s): ${docs.map((d) => d.name).join(", ")}] ` : ""}${images.length ? `[${images.length} image(s) attached to this message, numbered 1 to ${images.length}] ` : ""}[Helper: ${name || "anonymous"}${nameNote}. Looking at: ${view || "the site"}]${inView}\n\n${text}` }],
     },
   ];
 
@@ -447,6 +450,43 @@ async function systemPrompt(gh) {
   cachedSystem = [{ type: "text", text: BASE_RULES + "\n\nProject files for reference:" + docs }];
   cachedAt = Date.now();
   return cachedSystem;
+}
+
+// Full details of what's in view: the building or precinct record from its data file, plus its design doc section.
+async function viewDetails(gh, view) {
+  let v;
+  try { v = JSON.parse(view); } catch (e) { return ""; }
+  const uid = v && v.building && v.building.uid;
+  const file = v && (v.data_file || (uid ? `Invicta/data/decks/${uid.split("-")[0]}/${uid.split("-").slice(1, -2).join("-")}.json` : null));
+  if (!file || !/^Invicta\/data\/decks\/D\d\/[a-z0-9-]+\.json$/.test(file)) return "";
+  try {
+    const data = JSON.parse(await gh.raw(file));
+    const bid = v.building && v.building.id;
+    const pid = (v.precinct || "").split(" ")[0] || (bid ? bid.split("-")[0] : "");
+    const pr = (data.precincts || []).find((q) => q.id === pid);
+    let out = `\n\n[In view, from ${file}:`;
+    if (bid && pr) {
+      const b = (pr.buildings || []).find((x) => x.id === bid);
+      if (b) out += `\nBuilding ${bid}: ${JSON.stringify(b)}`;
+    }
+    if (pr) {
+      const { buildings, streets, ...rest } = pr;
+      out += `\nPrecinct ${pr.id}: ${JSON.stringify(rest).slice(0, 3000)}\nBuildings in ${pr.id}: ${(buildings || []).map((x) => `${x.id} ${x.name}`).join(", ")}`;
+      if (data.doc) {
+        try {
+          const doc = await gh.raw(data.doc);
+          const i = doc.indexOf(`## ${pr.id} `);
+          if (i >= 0) {
+            const j = doc.indexOf("\n## ", i + 4);
+            out += `\nDesign doc ${data.doc}, ${pr.id} section:\n${doc.slice(i, j > 0 ? j : undefined).slice(0, 8000)}`;
+          }
+        } catch (e) { /* doc optional */ }
+      }
+    }
+    return out + "]";
+  } catch (e) {
+    return "";
+  }
 }
 
 // update_building: patch one building's fields and hand the whole file to proposeChange.
