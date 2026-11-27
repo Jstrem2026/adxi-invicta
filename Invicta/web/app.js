@@ -9,7 +9,6 @@ const LANES = "ABCDEFGHIJKLMNOPQRSTUVWXY";
 const KIND_FILL = { building: "#3b5b7f", utility: "#4a4f57", park: "#2f6b4a", plaza: "#4a4128", transport: "#2c3440", bays: "#6b4a2b" };
 let D = null;                      // everything from /api/all
 let IX = {};                       // lookups
-let precinctMode = "blocks";
 let showKnown = true;
 let issueFilter = { sev: "all", q: "" };
 
@@ -531,6 +530,7 @@ function deckView(n) {
   for (const x of d.districts) {
     if (x.is_plaza || !x.polygon_km) continue;
     g += `<path class="hit" onclick="go('#/district/${x.id}')" d="${pathOf(x.polygon_km)}" fill="${districtFill(x)}" stroke="#cfe3f7" stroke-width="${fs / 6}"><title>${esc(x.name)} · ${esc(x.design_status)}</title></path>`;
+    if (IX.psets[x.id]) g += precinctsContext(IX.psets[x.id], fs / 4);
   }
   const pl = d.districts.find(x => x.is_plaza);
   if (pl && pl.circle_km) {
@@ -544,12 +544,12 @@ function deckView(n) {
     g += `<line x1="${X(Math.min(...stops) * 0.5)}" y1="0" x2="${X(Math.max(...stops) * 0.5)}" y2="0" stroke="#6fd0ff" stroke-width="${fs / 3}"/>`;
     for (const s of d.keelway) {
       const f = parseInt(String(s.frame).replace(/\D/g, ""), 10);
-      g += `<circle cx="${X(f * 0.5)}" cy="0" r="${fs / 2}" fill="#0a2343" stroke="#6fd0ff" stroke-width="${fs / 6}"><title>Keelway: ${esc(s.stop)} (${esc(s.address)})</title></circle>`;
+      g += `<circle pointer-events="none" cx="${X(f * 0.5)}" cy="0" r="${fs / 2}" fill="#0a2343" stroke="#6fd0ff" stroke-width="${fs / 6}"/>`;
     }
   }
   for (const s of d.crossline || []) {
     const f = parseInt(String(s.frame).replace(/\D/g, ""), 10), off = parseFloat(s.offset);
-    if (!isNaN(off) && off !== 0) g += `<line x1="${X(f * 0.5)}" y1="0" x2="${X(f * 0.5)}" y2="${Y(off)}" stroke="#6fd0ff" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/><circle cx="${X(f * 0.5)}" cy="${Y(off)}" r="${fs / 2}" fill="#0a2343" stroke="#6fd0ff" stroke-width="${fs / 6}"><title>Cross-line: ${esc(s.stop)}</title></circle>`;
+    if (!isNaN(off) && off !== 0) g += `<line x1="${X(f * 0.5)}" y1="0" x2="${X(f * 0.5)}" y2="${Y(off)}" stroke="#6fd0ff" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/><circle pointer-events="none" cx="${X(f * 0.5)}" cy="${Y(off)}" r="${fs / 2}" fill="#0a2343" stroke="#6fd0ff" stroke-width="${fs / 6}"/>`;
   }
   for (const x of d.districts) {
     if (x.is_plaza && x.circle_km) { g += label(x.circle_km[0], x.circle_km[1] - x.circle_km[2] - 0.35, x.name.toUpperCase(), fs * 0.8, { fill: "#ffc266" }); continue; }
@@ -587,6 +587,32 @@ function deckView(n) {
   return layout([["Invicta", "#/ship"], deckCrumb(d)], mapShell(g, vb, "", legend, "Click a district · scroll to zoom"), panel);
 }
 
+// Everything inside a precinct (streets, buildings, names), drawn for context only: nothing here takes
+// clicks or hovers. Map rule (Jordan, 27 Nov 2026): every view draws everything down to the buildings,
+// but only the next level down can be clicked.
+function precinctContents(p, fs) {
+  let g = `<g pointer-events="none">`;
+  for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
+  for (const st of p.streets || []) if (st.rect_km) g += rectEl(st.rect_km, `fill="#0b2140" fill-opacity=".7"`);
+  for (const bd of p.buildings || []) {
+    const done = bd.height_m != null, open = ["plaza", "park"].includes(bd.kind) || /open/i.test(bd.open_ground || "");
+    const fill = open ? "#2f6b45" : done ? "#cfe3f7" : "#5a7a99", op = open ? 0.55 : done ? 0.8 : 0.5;
+    for (const r of bd.bays_km || (bd.rect_km ? [bd.rect_km] : [])) g += rectEl(r, `fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`);
+    const r = bd.rect_km;
+    if (r && !bd.bays_km) {
+      const fz = fitText(bd.name, (r[1] - r[0]) * 0.92, (r[3] - r[2]) * 0.6, fs * 0.45);
+      if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: open ? "#e8f1fb" : "#0b2140" });
+    }
+  }
+  return g + "</g>";
+}
+// Precinct outlines with everything inside them, for context only (used on the deck view).
+function precinctsContext(ps, fs) {
+  let g = `<g pointer-events="none">`;
+  for (const p of ps.precincts) g += `<path d="${pathOf(p.shape_km)}" fill="${p.status === "canon" ? "#2a6a4a" : "#1f5f99"}" fill-opacity=".6" stroke="#e8f1fb" stroke-opacity=".7" stroke-width="${fs / 12}"/>` + precinctContents(p, fs / 2);
+  return g + "</g>";
+}
+
 // ---- district
 function districtView(id) {
   const x = IX.districts[id];
@@ -598,28 +624,14 @@ function districtView(id) {
   const vb = vbFor(b, Math.max(b[1] - b[0], b[3] - b[2]) * 0.1);
   const fs = vb[2] / 60;
   let g = `<path d="${pathOf(d.outline_net)}" fill="#0b2140" stroke="#cfe3f7" stroke-width="${fs / 6}"/>`;
-  for (const o of d.districts) if (o.polygon_km && o.id !== id) g += `<path class="hit" onclick="go('#/district/${o.id}')" d="${pathOf(o.polygon_km)}" fill="#0f2a48" stroke="#2b4f78" stroke-width="${fs / 8}"><title>${esc(o.name)}</title></path>`;
+  for (const o of d.districts) if (o.polygon_km && o.id !== id) g += `<path pointer-events="none" d="${pathOf(o.polygon_km)}" fill="#0f2a48" stroke="#2b4f78" stroke-width="${fs / 8}"/>`;
   g += frameGrid([b[0] - 0.5, b[1] + 0.5, b[2] - 0.3, b[3] + 0.3], 1, fs * 0.8, true);
   if (shape) g += `<path d="${pathOf(shape)}" fill="${ps ? "#123d63" : "url(#hatch)"}" stroke="#fff" stroke-width="${fs / 4}"/>`;
   if (ps) {
     for (const p of ps.precincts) {
       const pb = bboxOf(p.shape_km);
       g += `<path class="hit" onclick="go('#/precinct/${p.uid}')" d="${pathOf(p.shape_km)}" fill="${p.status === "canon" ? "#2a6a4a" : "#1f5f99"}" fill-opacity=".85" stroke="#e8f1fb" stroke-width="${fs / 6}"><title>${p.id} ${esc(p.name)}</title></path>`;
-      for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 6}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
-      // Every building in the precinct, so the district view shows what is designed: bright = height and plan stored, dim = footprint only.
-      for (const st of p.streets || []) if (st.rect_km) { g += rectEl(st.rect_km, `fill="#0b2140" fill-opacity=".7" pointer-events="none"`); }
-      for (const bd of p.buildings || []) {
-        const done = bd.height_m != null, open = ["plaza", "park"].includes(bd.kind) || /open/i.test(bd.open_ground || "");
-        const fill = open ? "#2f6b45" : done ? "#cfe3f7" : "#5a7a99", op = open ? 0.55 : done ? 0.8 : 0.5;
-        for (const r of bd.bays_km || (bd.rect_km ? [bd.rect_km] : [])) {
-          g += rectEl(r, `pointer-events="none" fill="${fill}" fill-opacity="${op}" stroke="#071425" stroke-width="${fs / 14}"`);  // context only: on the district map only precincts can be clicked
-        }
-        const r = bd.rect_km;
-        if (r && !bd.bays_km) {
-          const fz = fitText(bd.name, (r[1] - r[0]) * 0.92, (r[3] - r[2]) * 0.6, fs * 0.45);
-          if (fz && fz > fs * 0.12) g += label((r[0] + r[1]) / 2, (r[2] + r[3]) / 2, bd.name, fz, { fill: open ? "#e8f1fb" : "#0b2140" }).replace("<text ", `<text pointer-events="none" `);
-        }
-      }
+      g += precinctContents(p, fs);
       const s = fitText(`${p.id} ${p.name.toUpperCase()}`, pb[1] - pb[0], pb[3] - pb[2], fs) || fitText(p.id, pb[1] - pb[0], pb[3] - pb[2], fs);
       if (s) g += label((pb[0] + pb[1]) / 2, (pb[2] + pb[3]) / 2, s < fs * 0.6 ? p.id : `${p.id} ${p.name.toUpperCase()}`, s, {}).replace("<text ", `<text pointer-events="none" paint-order="stroke" stroke="#071425" stroke-width="${(s / 5).toFixed(1)}" `);
     }
@@ -660,20 +672,19 @@ function drawPrecinct(p, fs, opts) {
   for (const c of p.exclude_circles_km || []) g += `<circle cx="${X(c[0])}" cy="${Y(c[1])}" r="${c[2] * 1000}" fill="#0a2343" stroke="#ffc266" stroke-width="${fs / 5}" stroke-dasharray="${fs / 2} ${fs / 3}"/>`;
   (p.streets || []).forEach((st, i) => {
     const sel = opts.selectedStreet === i;
-    g += `<g class="hit" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` +
+    g += (opts.streetsClickable ? `<g class="hit" onclick="go('#/street/${p.uid}/${i}')"><title>${esc(st.name)} · click for details</title>` : `<g pointer-events="none">`) +
       rectEl(st.rect_km, `fill="${/keelway/i.test(st.name) ? "#0f2f4f" : /boulevard|promenade/i.test(st.name) ? "#4a3f2a" : "#2c3440"}"${sel ? ` stroke="#ffc266" stroke-width="${fs / 3}"` : ""}`) + "</g>";
   });
-  // blocks sit under the buildings, so both can be clicked
-  if (opts.blocks) g += blocksLayer(p, fs, true, opts.blocks.selected);
+  if (opts.blocks) g += blocksLayer(p, fs, false, opts.blocks.selected);
   // buildings
   for (const b of p.buildings) {
     if (!b.rect_km) continue;
     const fill = KIND_FILL[b.kind] || KIND_FILL.building;
     const stroke = b.status === "canon" ? "#5fd39a" : (b.uid === opts.selected ? "#ffc266" : "#e8f1fb");
     const sw = b.uid === opts.selected ? fs / 2.5 : fs / 9;
-    const hit = opts.buildingsClickable ? `class="hit" onclick="go('#/building/${b.uid}')"` : "";
+    const click = opts.clickBuildings ? opts.clickBuildings(b) : false;
     const shapes = b.bays_km || [b.rect_km];
-    g += `<g ${hit}><title>${b.id} ${esc(b.name)}${opts.buildingsClickable ? " · click for details" : ""}</title>` + shapes.map(s => rectEl(s, `fill="${fill}" stroke="${stroke}" stroke-width="${sw}"`)).join("");
+    g += (click ? `<g class="hit" onclick="go('#/building/${b.uid}')"><title>${b.id} ${esc(b.name)} · click for details</title>` : `<g pointer-events="none">`) + shapes.map(s => rectEl(s, `fill="${fill}" stroke="${stroke}" stroke-width="${sw}"`)).join("");
     for (const dr of b.doors_km || []) g += rectEl(dr, `fill="#ff8a3d"`);
     g += "</g>";
     if (opts.labels !== false) {
@@ -698,7 +709,7 @@ function blocksLayer(p, fs, clickable, selected) {
   let g = "";
   for (const blk of p.blocks || []) {
     const sel = blk.id === selected;
-    g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : ""} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}"><title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title></path>`;
+    g += `<path ${clickable ? `class="hit" onclick="go('#/block/${p.uid}/${blk.id}')"` : `pointer-events="none"`} d="${pathOf(blk.part_km)}" fill="${sel ? "rgba(255,194,102,.18)" : clickable ? "rgba(111,208,255,.04)" : "none"}" stroke="${sel ? "#ffc266" : "#6fd0ff"}" stroke-opacity="${sel ? 1 : .45}" stroke-width="${sel ? fs / 3 : fs / 10}">${clickable ? `<title>${blk.name} (${blk.id}) · ${blk.contents.length} item(s)</title>` : ""}</path>`;
     const c = blk.cell_km;
     g += `<text x="${(X(c[0]) - fs * 0.25).toFixed(1)}" y="${(Y(c[2]) + fs * 0.45).toFixed(1)}" font-size="${(fs * 0.4).toFixed(1)}" fill="#6fd0ff" fill-opacity=".8" text-anchor="end" font-weight="600" pointer-events="none">${esc(blk.name)}</text>`;
   }
@@ -714,9 +725,9 @@ function precinctView(uid) {
   const vb = vbFor(b, Math.max(b[1] - b[0], b[3] - b[2]) * 0.07);
   const fs = vb[2] / 55;
   let g = frameGrid([b[0], b[1], b[2], b[3]], 1, fs * 0.8, true);
-  g += drawPrecinct(p, fs, { buildingsClickable: precinctMode === "buildings" });
-  g += blocksLayer(p, fs, precinctMode === "blocks");
-  const tools = `<button class="${precinctMode === "blocks" ? "on" : ""}" onclick="setMode('blocks')">Select blocks</button><button class="${precinctMode === "buildings" ? "on" : ""}" onclick="setMode('buildings')">Select buildings</button>`;
+  g += drawPrecinct(p, fs, {});
+  g += blocksLayer(p, fs, true);
+  const tools = "";
   const legend = Object.entries(KIND_FILL).map(([k, c]) => `<span><i style="background:${c}"></i>${k}</span>`).join("") + `<span><i style="background:none;border-color:#5fd39a"></i>canon (green outline)</span><span><i style="background:#ff8a3d;border:0"></i>dock door</span><span><i style="background:none;border-color:#6fd0ff"></i>block</span>`;
   const groups = {};
   for (const bd of p.buildings) (groups[bd.kind] = groups[bd.kind] || []).push(bd);
@@ -733,9 +744,8 @@ function precinctView(uid) {
     <div>Sources</div><div>${fileLink(ps.doc, "precinct plans doc")} · ${fileLink(p.blueprint, "blueprint PNG")} · ${fileLink(p.blueprint_svg, "SVG")} · ${fileLink(ps.file, "app data")}</div></div>
     ${bl}${issueBlock(uid, "Issues in this precinct")}`;
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, ""]],
-    mapShell(g, vb, tools, legend, precinctMode === "blocks" ? "Click a block (blocks are bounded by streets and never cut through a building) · or switch to Select buildings" : "Click a building"), panel);
+    mapShell(g, vb, tools, legend, "Click a block (blocks are bounded by streets and never cut through a building)"), panel);
 }
-window.setMode = m => { precinctMode = m; route(); };
 
 // ---- block
 function blockView(puid, bid) {
@@ -746,7 +756,8 @@ function blockView(puid, bid) {
   const c = blk.cell_km;
   const vb = vbFor(c, 0.12);
   const fs = vb[2] / 40;
-  let g = drawPrecinct(p, fs, { buildingsClickable: true, labels: true, blocks: { selected: bid } });
+  const here = new Set(blk.contents.map(ct => ct.id));
+  let g = drawPrecinct(p, fs, { clickBuildings: q => here.has(q.id), labels: true, blocks: { selected: bid } });
   // dim everything outside this block
   const outer = `M${vb[0] - 4 * vb[2]},${vb[1] - 4 * vb[3]}h${9 * vb[2]}v${9 * vb[3]}h${-9 * vb[2]}Z`;
   g += `<path d="${outer} ${pathOf(blk.part_km)}" fill="rgba(5,12,22,.55)" fill-rule="evenodd" pointer-events="none"/>`;
@@ -813,7 +824,7 @@ function streetView(puid, i) {
   const x = IX.districts[p.district_id], d = IX.decks[p.deck], r = st.rect_km;
   const vb = vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.4));
   const fs = vb[2] / 45;
-  const g = drawPrecinct(p, fs, { buildingsClickable: true, selectedStreet: i, blocks: { selected: null } });
+  const g = drawPrecinct(p, fs, { selectedStreet: i, blocks: { selected: null } });
   const L = Math.max(r[1] - r[0], r[3] - r[2]) * 1000, Wd = Math.min(r[1] - r[0], r[3] - r[2]) * 1000;
   const panel = `<h1>${esc(st.name)}</h1><div class="small muted">Street · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div class="kv" style="margin-top:8px">
@@ -880,7 +891,7 @@ function buildingView(uid) {
   const r = b.rect_km;
   const vb = r ? vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.6)) : vbFor(p.bbox_km);
   const fs = vb[2] / 45;
-  let g = drawPrecinct(p, fs, { buildingsClickable: true, selected: uid, blocks: { selected: null } });
+  let g = drawPrecinct(p, fs, { selected: uid, blocks: { selected: null } });
   g += blocksLayer(p, fs, false);
   const w = r ? (r[1] - r[0]) * 1000 : null, h = r ? (r[3] - r[2]) * 1000 : null;
   const sz = b.size_m;

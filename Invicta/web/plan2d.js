@@ -79,10 +79,10 @@
     for (const e of els.filter((x) => x.type === "mass")) g.append(el("polygon", { points: poly(e.outline_m), fill: "none", stroke: "#b99cff", "stroke-width": fs / 8, "stroke-dasharray": `${fs / 2} ${fs / 3}` }));
     for (const e of els.filter((x) => x.type === "room" || x.type === "zone")) {
       const on = o.selRoom === e.id;
-      const pg = el("polygon", { points: poly(e.outline_m), class: "hit", "pointer-events": "all",
+      const pg = el("polygon", { points: poly(e.outline_m), ...(o.onRoom ? { class: "hit", "pointer-events": "all" } : { "pointer-events": "none" }),
         fill: on ? "rgba(255,194,102,.22)" : e.status === "canon" ? "rgba(95,211,154,.18)" : "rgba(111,208,255,.14)",
         stroke: on ? "#ffc266" : "#cfe8ff", "stroke-width": on ? fs / 8 : fs / 22 });
-      pg.append(el("title", {}, e.name || e.id));
+      if (o.onRoom) pg.append(el("title", {}, e.name || e.id));
       pg.addEventListener("click", (ev) => { ev.stopPropagation(); if (o.onRoom) o.onRoom(e); });
       g.append(pg);
     }
@@ -361,7 +361,7 @@
       if (!lv) { pl.notHere = `No ${tag} in this building`; return; }
       pl.els = (m.elements || []).filter((e) => (e.levels || [e.level]).includes(lv.id));
       pl.empty = !pl.els.length;
-      drawEls(g, pl.els, toS, Math.max(Lm, Wm) / 32, { onRoom: (e) => go(`#/building/${b.uid}/${lv.id}:${encodeURIComponent(e.id)}`) });
+      drawEls(g, pl.els, toS, Math.max(Lm, Wm) / 32, {});  // on a block page only the buildings are clickable
     });
     const tools = document.querySelector(".mapwrap .maptools");
     document.querySelectorAll(".plan-lv").forEach((x) => x.remove());
