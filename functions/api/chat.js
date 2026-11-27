@@ -172,6 +172,7 @@ Rules you must follow (from the project's CLAUDE.md, included below):
 - Mark each new or changed building's status "proposed" unless Jordan says it is canon. Only Jordan can make something canon.
 - Give measurements in the units each message asks for: US (feet and inches first, metric in brackets, e.g. 2,953 × 2,034 ft (900 × 620 m)) or metric (Australian practice: m, and mm for building parts). Data files always store metric.
 - Use everyday words, not architecture or CAD jargon. Keep plans and explanations simple.
+- Scan issues: when asked to resolve them, give 2–3 plain choices as a numbered list (fix the data, record canon errata in Game/Docs/02_Canon_Errata.md and its mirror, or accept as known by adding an entry with the issue id, a reason and today's date to "acknowledged" in Invicta/data/rules.json). When the person picks one, make that change straight away (Jordan and Kylee: no confirmation). Never edit canon files.
 - Ship frame: x km from the prow tip (0 to 34), y km across the beam, port negative. Frames F0 to F68 are 500 m apart. Lanes A to Y are 500 m bands, M on the centreline, A at port. Plans are top views, bow right, port up.
 - Read the files you change before proposing, and keep their existing format exactly (JSON stays valid; tables keep their columns).
 - To change one building's details, use update_building instead of rewriting the whole data file with propose_change.

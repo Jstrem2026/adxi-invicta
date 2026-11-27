@@ -111,7 +111,16 @@ function issueHTML(i) {
     <div class="t"><span class="sev-${i.severity}">${sevName(i.severity)}</span> · ${esc(i.title)}</div>
     <div>${esc(i.detail)}</div>
     ${i.fix ? `<div class="meta">Fix: ${esc(i.fix)}</div>` : ""}
-    <div class="meta">${i.path ? fileLink(i.path, i.path) : ""}${i.entity && entityHref(i.entity) ? ` · <a href="${entityHref(i.entity)}">show on map</a>` : ""}${i.known ? ` · known: ${esc(i.known)}` : ""} · ${i.id}</div></div>`;
+    <div class="meta">${i.path ? fileLink(i.path, i.path) : ""}${i.entity && entityHref(i.entity) ? ` · <a href="${entityHref(i.entity)}">show on map</a>` : ""}${i.known ? ` · known: ${esc(i.known)}` : ""} · ${i.id}</div>
+    ${window.adxiAsk && !i.known && i.severity !== "gap" ? `<div class="issue-act"><button onclick="askIssue('${i.id}', false)">${i.severity === "decision" ? "Answer with Claude" : "Fix with Claude"}</button>${D.issues.filter(x => x.title === i.title && !x.known).length > 1 ? ` <button onclick="askIssue('${i.id}', true)">Fix all ${D.issues.filter(x => x.title === i.title && !x.known).length} like this</button>` : ""}</div>` : ""}</div>`;
+}
+// Hand an issue (or every issue with the same title) to the site chat, which offers the choices and then applies the one picked.
+function askIssue(id, all) {
+  const i = D.issues.find(x => x.id === id);
+  if (!i || !window.adxiAsk) return;
+  const group = all ? D.issues.filter(x => x.title === i.title && !x.known) : [i];
+  const lines = group.map(x => `- [${x.id}] ${x.title}: ${x.detail}${x.path ? ` (${x.path})` : ""}`).join(String.fromCharCode(10));
+  window.adxiAsk(`Help me resolve ${all ? `these ${group.length} scan issues` : "this scan issue"}:${String.fromCharCode(10)}${lines}${String.fromCharCode(10)}Give me the choices as a short numbered list (for example: fix the data, record it as canon errata, or accept it as known with a reason), then do the one I pick.`);
 }
 const sevName = s => ({ error: "Error", warning: "Warning", decision: "Waiting on Jordan", gap: "Not designed yet" }[s] || s);
 function entityHref(e) {

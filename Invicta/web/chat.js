@@ -177,6 +177,12 @@
     });
   }
   btnName.onclick = askName;
+  // Other parts of the page (the Issues list) can hand a question to the chat.
+  window.adxiAsk = (text) => {
+    setOpen(true);
+    input.value = text;
+    if (!input.disabled) form.requestSubmit();
+  };
   // Show whether this browser is recognised as Jordan or a trusted helper (their changes go live at once).
   const who = el("div", "chat-who");
   title.append(who);
