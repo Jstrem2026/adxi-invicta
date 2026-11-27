@@ -189,6 +189,28 @@
   whoami();
   window.addEventListener("storage", whoami);
 
+  // After a change merges, wait for the site to republish, then reload the map data in place.
+  function watchPublish(card) {
+    const started = Date.now();
+    let sawRun = false;
+    const tick = async () => {
+      if (Date.now() - started > 6 * 60000) { card.querySelector("strong").textContent = "Change approved · reload the page in a minute"; return; }
+      try {
+        const d = await (await fetch("/api/status", { cache: "no-store" })).json();
+        if (d.state === "updating") sawRun = true;
+        if (d.state === "updated" && (sawRun || Date.parse(d.at) > started)) {
+          await new Promise((r) => setTimeout(r, 4000));  // let the new files reach the edge
+          if (typeof load === "function") await load();
+          card.querySelector("strong").textContent = "Change published · now showing on the map";
+          return;
+        }
+        if (d.state === "failed") { card.querySelector("strong").textContent = "Change approved, but publishing failed (see the top bar)"; return; }
+      } catch (e) { /* keep waiting */ }
+      setTimeout(tick, 8000);
+    };
+    setTimeout(tick, 8000);
+  }
+
   // ---------- what the person is looking at ----------
   function current() {
     // app.js keeps its lookups in top-level D and IX.
@@ -341,7 +363,8 @@
             card.href = data.url;
             card.target = "_blank";
             card.rel = "noopener";
-            card.innerHTML = `<strong>${data.merged ? "Change published" : "Proposal sent to Jordan"}</strong><span>${esc(data.title)}</span>`;
+            card.innerHTML = `<strong>${data.merged ? "Change approved · publishing…" : "Proposal sent to Jordan"}</strong><span>${esc(data.title)}</span>`;
+            if (data.merged) watchPublish(card);
             log.insertBefore(card, out);
           } else if (ev === "done") {
             history = data.messages;

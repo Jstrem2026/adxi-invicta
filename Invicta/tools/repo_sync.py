@@ -78,6 +78,11 @@ def main():
     repo = os.path.abspath(a.repo)
     if not os.path.isdir(os.path.join(repo, ".git")):
         sys.exit("No git repo at %s. Clone https://github.com/Jstrem2026/adxi-invicta there first." % repo)
+    if a.direction == "out" and not a.dry_run:
+        # Bring in approved changes from the site first, so a stale local copy never overwrites them.
+        import auto_pull
+        auto_pull.main()
+        print("Pulled approved site changes first (see %s)." % auto_pull.LOG)
     src, dst = (root, repo) if a.direction == "out" else (repo, root)
 
     want = scope_files(src)
