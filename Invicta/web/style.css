@@ -133,7 +133,8 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 
 /* Code legend: a small "Codes ?" button top-left of the map; tap to show the key */
 .desig-legend { position: absolute; left: 8px; top: 8px; z-index: 2; font-size: 11px; color: var(--muted); }
-.desig-legend .dl-btn { font-size: 11px; padding: 2px 8px; background: rgba(15,36,64,.9); }
-.desig-legend .dl-box { display: none; margin-top: 4px; background: rgba(8,24,43,.95); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; line-height: 1.5; color: var(--ink); }
+.desig-legend .dl-btn { font-size: 13px; padding: 4px 10px; background: rgba(15,36,64,.9); }
+.desig-legend .dl-box { display: none; margin-top: 6px; background: rgba(8,24,43,.96); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; font-size: 16px; line-height: 1.7; color: var(--ink); min-width: 240px; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+.desig-legend .dl-box b { font-size: 17px; }
 .desig-legend.open .dl-box { display: block; }
 .mapwrap .maphint { display: none; }

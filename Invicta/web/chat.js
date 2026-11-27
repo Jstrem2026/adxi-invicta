@@ -120,6 +120,7 @@
   tray.hidden = true;
   form.append(attach, picker, input, send);
   window.addEventListener("hashchange", () => setTimeout(showHere, 50));
+  window.addEventListener("adxi:selection", showHere);
   setTimeout(showHere, 800);
 
   panel.append(head, log, here, tray, form);
@@ -257,7 +258,7 @@
       }
       if (window.adxiRoom && kind === "building") {
         ctx.room = window.adxiRoom;
-        label = `${window.adxiRoom.name} · ${window.adxiRoom.level_name || ""}`;
+        label = `${window.adxiRoom.designation || ""} ${window.adxiRoom.name}`.trim();
       }
       const svg = document.getElementById("map");
       if (svg) ctx.map_view_km = svg.getAttribute("viewBox");

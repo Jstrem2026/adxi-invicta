@@ -174,6 +174,7 @@
     return b && window.designation ? window.designation(b, tag, n) : `${tag}R${n}`;
   }
   function showRoom(uid, model, room) {
+    setTimeout(() => window.dispatchEvent(new Event("adxi:selection")), 0);  // tell the chat what is selected
     window.adxiRoom = null;
     document.querySelectorAll(".room-card").forEach((x) => x.remove());
     const cr0 = document.querySelector(".crumbs");
