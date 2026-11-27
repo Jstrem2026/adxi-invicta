@@ -584,6 +584,7 @@ def racks(first, wing, side):
 
 
 STRIKE = {
+    "approved": True,   # Jordan approved the plan as canon (site Issues page, 27 Nov 2026)
     "district": "Strike Hangars", "file": "strike-hangars", "doc": "Strike_Hangars_Precincts.md", "code": "D5F2",
     "title": "Strike Hangars",
     "lead": ("Strike Hangars is the bow district of Deck 5 (Aerion), from the prow tip to F34, the full width of the deck. "
@@ -793,6 +794,7 @@ def gate(n, x0):
 
 
 CRUISER = {
+    "approved": True,   # Jordan approved the plan as canon (PR #30, 27 Nov 2026)
     "district": "Cruiser Docks", "file": "cruiser-docks", "doc": "Cruiser_Docks_Precincts.md", "code": "D5F4", "title": "Cruiser Docks",
     "lead": ("Cruiser Docks is the starboard half of Deck 5's middle, F34 to F55, from the Keelway to the starboard hull. "
              "Canon (Sheet S5, errata C5, Q115): 23.2 sq mi (60.0 km²), berths for the six 2 km escort cruisers "
@@ -915,6 +917,7 @@ CRUISER["precincts"] = [
 
 # ---------------------------------------------------------------------------------- Flight Control
 FLIGHT = {
+    "approved": True,   # Jordan approved the plan as canon (PR #31, 27 Nov 2026)
     "district": "Flight Control", "file": "flight-control", "doc": "Flight_Control_Precincts.md", "code": "D5F5", "title": "Flight Control",
     "lead": ("Flight Control is the band across the whole deck from F55 to F59, between the Port of Arrivals and Cruiser Docks "
              "(bow) and the Pilots' Quarter (stern). Canon (Sheet S5): 7.7 sq mi (20.0 km²), the Beacon tower, traffic control, "
@@ -1003,6 +1006,7 @@ FLIGHT["precincts"] = [
 
 # ---------------------------------------------------------------------------------- Pilots' Quarter
 PILOTS = {
+    "approved": True,   # Jordan approved the plan as canon (site Issues page, 27 Nov 2026)
     "district": "Pilots' Quarter", "file": "pilots-quarter", "doc": "Pilots_Quarter_Precincts.md", "code": "D5F6", "title": "Pilots' Quarter",
     "lead": ("The Pilots' Quarter is the stern end of Deck 5, F59 to the stern wall, the full width of the deck. Canon (Sheet S5): "
              "17.4 sq mi (45.0 km²), housing, simulators, flight school, 45,000 people (flight instructors, trainee pilots, "
@@ -1347,10 +1351,10 @@ def doc_for(D, pset, rows):
 
 def write_reference(results):
     """Section 8 of Invicta_Ship_Reference.md (and its mirror): one table per district."""
-    L = ["", "## 8. Deck 5 precincts for the other districts (⏳ proposed, 27 Nov 2026, awaiting Jordan)", "",
+    L = ["", "## 8. Deck 5 precincts for the other districts (%s)" % ("✅ canon, approved by Jordan 27 Nov 2026" if all(D.get("approved") for D, _ in results) else "⏳ proposed, 27 Nov 2026, awaiting Jordan"), "",
          "Jordan asked (27 Nov 2026) for every Deck 5 district to get its precincts. Each district now has a precinct plan in the "
          "Port of Arrivals pattern: precincts on frame and lane lines, named streets, and every block holding something, with "
-         "names and codes. All proposed. Canon kept: Strike Hangars' 32 launch shafts (errata C4, F16–F28, lanes D–F and T–V) "
+         "names and codes. " + ("Jordan approved all five plans as canon (27 Nov 2026). Canon from the start: " if all(D.get("approved") for D, _ in results) else "All proposed. Canon kept: ") + "Strike Hangars' 32 launch shafts (errata C4, F16–F28, lanes D–F and T–V) "
          "and the Strike Hangars Keelway stop (F3); the three Cruiser Gates (C5, F38–F48) with two 2 km cruiser berths behind "
          "each; the cross-line Dockside stop (F52); the Beacon (F57); the Pilots' Quarter stop (F65); the Governor's Hall, "
          "pilots' guild and Atrium Central in the Atrium Plaza. Homes and family services are in the Pilots' Quarter (design "
