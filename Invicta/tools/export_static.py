@@ -146,7 +146,7 @@ def main():
     # Jordan's private review page (needs /api/review and the ADMIN_KEY secret).
     if os.path.isfile(os.path.join(WEB, "review.html")):
         shutil.copy2(os.path.join(WEB, "review.html"), os.path.join(out, "review.html"))
-    for extra in ("concepts", "chat", "room"):
+    for extra in ("status", "concepts", "chat", "room"):
         if os.path.isfile(os.path.join(WEB, extra + ".css")):
             html = html.replace("</head>", '<link rel="stylesheet" href="static/%s.css">\n</head>' % extra, 1)
         if os.path.isfile(os.path.join(WEB, extra + ".js")):

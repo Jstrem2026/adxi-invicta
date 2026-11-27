@@ -1,0 +1,14 @@
+/* Header spot: is the site updating? (web copy only) */
+.upd { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 10px; border-radius: 12px;
+  border: 1px solid var(--line, #234a75); color: var(--muted, #8fb0d3); text-decoration: none; white-space: nowrap; }
+.upd[hidden] { display: none; }
+.upd-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.upd-updating { color: var(--warn, #ffb84d); border-color: var(--warn, #ffb84d); }
+.upd-updating .upd-dot { animation: upd-pulse 1s ease-in-out infinite; }
+.upd-updated { color: var(--ok, #5fd39a); }
+.upd-failed { color: var(--err, #ff6b6b); border-color: var(--err, #ff6b6b); }
+@keyframes upd-pulse { 50% { opacity: .25; } }
+@media (max-width: 700px) {
+  .top .actions { display: flex !important; }
+  .upd { font-size: 11px; padding: 2px 8px; }
+}
