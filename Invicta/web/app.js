@@ -694,7 +694,7 @@ function conceptBlock(uid, b) {
   if (!list.length && !add) return "";
   return `<h3>Concept art</h3>
     ${list.map(c => `<figure class="concept"><a href="${fileSrc(c.file)}" target="_blank" rel="noopener"><img src="${fileSrc(c.file)}" alt="${esc(c.title || "Concept art")}" loading="lazy"></a>
-      <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span></figcaption></figure>`).join("")}
+      <figcaption><span class="concept-tag">CONCEPT · not canon</span> ${esc(c.title || "")} <span class="small muted">by ${esc(c.by || "a helper")}${c.added ? ", " + esc(c.added) : ""}</span>${window.adxiDeleteConcept ? ` <button class="concept-del" onclick="adxiDeleteConcept('${uid}', '${esc(c.file)}', '${esc(b.id)} ${esc(b.name).replace(/'/g, "")}')">Delete</button>` : ""}</figcaption></figure>`).join("")}
     ${list.length ? "" : `<div class="small muted">No concept art yet.</div>`}${add}`;
 }
 function buildingView(uid) {

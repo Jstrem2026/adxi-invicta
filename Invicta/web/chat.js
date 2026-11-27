@@ -50,8 +50,42 @@
   input.placeholder = "Ask about a deck or building, or suggest a change…";
   const send = el("button", "chat-send", "Send");
   send.type = "submit";
-  form.append(input, send);
-  panel.append(head, log, form);
+  // Attach images (resized in the browser) and show what the person is looking at.
+  const attach = el("button", "chat-attach", "+");
+  attach.type = "button";
+  attach.title = "Attach an image";
+  const picker = el("input");
+  picker.type = "file";
+  picker.accept = "image/png,image/jpeg,image/webp";
+  picker.multiple = true;
+  picker.hidden = true;
+  const tray = el("div", "chat-tray");
+  const here = el("div", "chat-here");
+  let pending = [];  // base64 JPEGs
+  attach.onclick = () => picker.click();
+  picker.onchange = async () => {
+    for (const f of [...picker.files].slice(0, 3 - pending.length)) {
+      try { pending.push(await shrinkImage(f)); } catch (e) { note("Couldn't read that image.", "msg-error"); }
+    }
+    picker.value = "";
+    drawTray();
+  };
+  function drawTray() {
+    tray.innerHTML = "";
+    pending.forEach((b, i) => {
+      const t = el("span", "chat-thumb");
+      t.innerHTML = `<img src="data:image/jpeg;base64,${b}" alt=""><button type="button" title="Remove">×</button>`;
+      t.querySelector("button").onclick = () => { pending.splice(i, 1); drawTray(); };
+      tray.append(t);
+    });
+    tray.hidden = !pending.length;
+  }
+  tray.hidden = true;
+  form.append(attach, picker, input, send);
+  window.addEventListener("hashchange", () => setTimeout(showHere, 50));
+  setTimeout(showHere, 800);
+
+  panel.append(head, log, here, tray, form);
   const tab = el("button", "chat-tab", "Chat with Claude");
   document.body.append(panel, tab);
 
@@ -105,6 +139,61 @@
   }
   btnName.onclick = askName;
 
+  // ---------- what the person is looking at ----------
+  function current() {
+    // app.js keeps its lookups in top-level D and IX.
+    const ix = (typeof IX !== "undefined" && IX) || {};
+    const h = location.hash.replace(/^#\/?/, "") || "dashboard";
+    const [kind, a, b] = h.split("/").map(decodeURIComponent);
+    const ctx = { page: kind, route: "#/" + h };
+    let label = { dashboard: "Progress page", issues: "Issues list", sources: "Sources list", help: "Help" }[kind] || "The whole ship";
+    try {
+      if (kind === "deck" && ix.decks && ix.decks[+a]) { const d = ix.decks[+a]; ctx.deck = `Deck ${d.n} ${d.name}`; label = ctx.deck; }
+      if (kind === "district" && ix.districts && ix.districts[a]) { const x = ix.districts[a]; ctx.deck = `Deck ${x.deck}`; ctx.district = x.name; ctx.district_id = a; label = x.name; }
+      const pr = kind === "precinct" ? ix.precincts[a] : kind === "block" ? ix.precincts[a] : kind === "building" && ix.buildings[a] ? ix.precincts[ix.buildings[a].precinct_uid] : null;
+      if (pr) {
+        const x = ix.districts[pr.district_id], ps = ix.psets && ix.psets[pr.district_id];
+        Object.assign(ctx, { deck: `Deck ${pr.deck}`, district: x && x.name, precinct: `${pr.id} ${pr.name}`, precinct_uid: pr.uid, data_file: ps && ps.file, design_doc: ps && ps.doc });
+        label = `${pr.id} ${pr.name}`;
+      }
+      if (kind === "block" && pr) {
+        const blk = (pr.blocks || []).find((q) => q.id === b);
+        ctx.block = blk ? `${blk.name} (${blk.id})` : b;
+        if (blk) ctx.block_contents = (blk.contents || []).map((c) => c.id || c.name || c).slice(0, 30);
+        label = blk ? `${blk.name} · ${blk.id}` : `Block ${b}`;
+      }
+      if (kind === "building" && ix.buildings[a]) {
+        const bd = ix.buildings[a];
+        ctx.building = { uid: bd.uid, id: bd.id, name: bd.name, status: bd.status, kind: bd.kind, size: bd.size_text, address: bd.address,
+          blocks: bd.blocks, rect_km: bd.rect_km, height_m: bd.height_m, floors: bd.floors, capacity: bd.capacity, entrances: bd.entrances,
+          structure: bd.structure, look: bd.look, services: bd.services, interior: bd.interior, notes: bd.notes };
+        const cs = ((typeof D !== "undefined" && D && D.concepts && D.concepts.buildings) || {})[bd.uid];
+        if (cs) ctx.building.concept_art = cs.map((c) => c.title);
+        label = `${bd.id} ${bd.name}`;
+      }
+      const svg = document.getElementById("map");
+      if (svg) ctx.map_view_km = svg.getAttribute("viewBox");
+    } catch (e) { /* keep what we have */ }
+    return { ctx, label };
+  }
+  function viewContext() { return JSON.stringify(current().ctx).slice(0, 3000); }
+  function showHere() { here.textContent = "Looking at: " + current().label; }
+  function shrinkImage(file) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        const k = Math.min(1, 1568 / Math.max(img.width, img.height));
+        const c = document.createElement("canvas");
+        c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(img.src);
+        resolve(c.toDataURL("image/jpeg", 0.85).split(",")[1]);
+      };
+      img.onerror = reject;
+      img.src = URL.createObjectURL(file);
+    });
+  }
+
   // ---------- conversation ----------
   function bubble(role, html) {
     const b = el("div", "msg msg-" + role);
@@ -129,7 +218,7 @@
     for (const m of history) {
       if (m.role === "user") {
         for (const c of m.content || []) {
-          if (c.type === "text") bubble("user", esc(c.text.replace(/^\[Helper:[^\]]*\]\n\n/, "")).replace(/\n/g, "<br>"));
+          if (c.type === "text") bubble("user", esc(c.text.replace(/^(\[\d+ image\(s\)[^\]]*\] )?\[Helper:[^\]]*\]\n\n/, "")).replace(/\n/g, "<br>"));
         }
       } else {
         const t = (m.content || []).filter((c) => c.type === "text").map((c) => c.text).join("");
@@ -152,20 +241,22 @@
 
   form.onsubmit = async (e) => {
     e.preventDefault();
-    const text = input.value.trim();
+    const text = input.value.trim() || (pending.length ? "(see the attached image)" : "");
     if (!text || busy) return;
+    const imgs = pending.slice();
+    pending = []; drawTray();
     if (!localStorage.getItem(KEY_ASKED)) await askName();
     busy = true;
     send.disabled = true;
     input.value = "";
-    bubble("user", esc(text).replace(/\n/g, "<br>"));
+    bubble("user", imgs.map((b) => `<img class="chat-img" src="data:image/jpeg;base64,${b}" alt="">`).join("") + esc(text).replace(/\n/g, "<br>"));
     const out = bubble("assistant", '<span class="chat-typing">Thinking…</span>');
     let acc = "";
     try {
       const r = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem(KEY_HELPER) || localStorage.getItem("adxi.adminKey") || "" },
-        body: JSON.stringify({ messages: history, text, name: localStorage.getItem(KEY_NAME) || "", view: location.hash }),
+        body: JSON.stringify({ messages: history, text, images: imgs, name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
       });
       if (!r.ok || !r.body) {
         let msg = "The chat isn't available right now.";

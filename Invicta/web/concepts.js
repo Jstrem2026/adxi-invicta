@@ -21,6 +21,20 @@
     });
   }
 
+  window.adxiDeleteConcept = async function (uid, file, label) {
+    if (!window.confirm(`Delete this concept art from ${label}?`)) return;
+    try {
+      const r = await fetch("/api/concept", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || localStorage.getItem("adxi.adminKey") || "" },
+        body: JSON.stringify({ action: "delete", uid, file, label, name: localStorage.getItem("adxi.name") || "" }),
+      });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(d.error || "Delete failed.");
+      window.alert(d.merged ? "Deleted. The site updates in a few minutes." : "Your delete request was sent to Jordan.");
+    } catch (e) { window.alert(e.message); }
+  };
+
   window.adxiAddConcept = function (uid, label) {
     const back = document.createElement("div");
     back.className = "chat-modal";
