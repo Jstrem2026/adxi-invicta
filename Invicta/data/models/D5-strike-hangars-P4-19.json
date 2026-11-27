@@ -1,0 +1,185 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P4-19",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  940.0,
+  841.5
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Launch line",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     383.7,
+     0.0
+    ],
+    [
+     383.7,
+     721.1
+    ],
+    [
+     0.0,
+     638.1
+    ]
+   ],
+   "about": "Craft lined up for the shafts.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Marshal's hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.3,
+     528.2
+    ],
+    [
+     173.3,
+     528.2
+    ],
+    [
+     173.3,
+     536.2
+    ],
+    [
+     161.3,
+     536.2
+    ]
+   ],
+   "about": "The marshal's hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Fuel point",
+   "level": "L1",
+   "outline_m": [
+    [
+     383.7,
+     0.0
+    ],
+    [
+     502.2,
+     0.0
+    ],
+    [
+     502.2,
+     746.8
+    ],
+    [
+     383.7,
+     721.1
+    ]
+   ],
+   "about": "Quick refuelling.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Tug lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     502.2,
+     0.0
+    ],
+    [
+     616.7,
+     0.0
+    ],
+    [
+     616.7,
+     771.5
+    ],
+    [
+     502.2,
+     746.8
+    ]
+   ],
+   "about": "Tugs move craft.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Holding bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     616.7,
+     0.0
+    ],
+    [
+     835.3,
+     0.0
+    ],
+    [
+     835.3,
+     818.8
+    ],
+    [
+     616.7,
+     771.5
+    ]
+   ],
+   "about": "Craft waiting for a slot.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Taxi lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     835.3,
+     0.0
+    ],
+    [
+     940.0,
+     0.0
+    ],
+    [
+     940.0,
+     841.5
+    ],
+    [
+     835.3,
+     818.8
+    ]
+   ],
+   "about": "The taxi lane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

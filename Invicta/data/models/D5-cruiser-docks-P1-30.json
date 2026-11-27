@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-30",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  250.7,
+  150.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Container stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     150.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     107.4,
+     0.0
+    ],
+    [
+     107.4,
+     150.0
+    ]
+   ],
+   "about": "Containers of stores stacked three high, waiting to go aboard.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard office",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.9,
+     31.9
+    ],
+    [
+     51.2,
+     31.9
+    ],
+    [
+     51.2,
+     39.9
+    ],
+    [
+     41.9,
+     39.9
+    ]
+   ],
+   "about": "The yard foreman tracks every load in the yard.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Checkers' hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.2,
+     31.9
+    ],
+    [
+     55.9,
+     31.9
+    ],
+    [
+     55.9,
+     39.9
+    ],
+    [
+     51.2,
+     39.9
+    ]
+   ],
+   "about": "Checkers scan each load in and out.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Empty returns",
+   "level": "L1",
+   "outline_m": [
+    [
+     107.4,
+     0.0
+    ],
+    [
+     143.3,
+     0.0
+    ],
+    [
+     143.3,
+     150.0
+    ],
+    [
+     107.4,
+     150.0
+    ]
+   ],
+   "about": "Empty containers back from the cruisers, waiting to be cleaned.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Pallet rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.3,
+     0.0
+    ],
+    [
+     214.9,
+     0.0
+    ],
+    [
+     214.9,
+     150.0
+    ],
+    [
+     143.3,
+     150.0
+    ]
+   ],
+   "about": "Pallets of food, water and spares in long rows.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Haul lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     214.9,
+     0.0
+    ],
+    [
+     250.7,
+     0.0
+    ],
+    [
+     250.7,
+     150.0
+    ],
+    [
+     214.9,
+     150.0
+    ]
+   ],
+   "about": "The lane the haulers use through the yard.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

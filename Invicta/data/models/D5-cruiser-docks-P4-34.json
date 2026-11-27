@@ -1,0 +1,158 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P4-34",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  635.1,
+  570.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Empty stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     570.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     90.7,
+     0.0
+    ],
+    [
+     90.7,
+     570.0
+    ]
+   ],
+   "about": "Empty containers waiting to be reused.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Checker's hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.3,
+     350.8
+    ],
+    [
+     66.3,
+     350.8
+    ],
+    [
+     66.3,
+     358.8
+    ],
+    [
+     54.3,
+     358.8
+    ]
+   ],
+   "about": "Scans containers in and out.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Refrigerated rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     90.7,
+     0.0
+    ],
+    [
+     181.5,
+     0.0
+    ],
+    [
+     181.5,
+     570.0
+    ],
+    [
+     90.7,
+     570.0
+    ]
+   ],
+   "about": "Plug-in points for refrigerated containers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Container rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     181.5,
+     0.0
+    ],
+    [
+     544.4,
+     0.0
+    ],
+    [
+     544.4,
+     570.0
+    ],
+    [
+     181.5,
+     570.0
+    ]
+   ],
+   "about": "Containers stacked several high.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Carrier lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     544.4,
+     0.0
+    ],
+    [
+     635.1,
+     0.0
+    ],
+    [
+     635.1,
+     570.0
+    ],
+    [
+     544.4,
+     570.0
+    ]
+   ],
+   "about": "Lane for straddle carriers.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

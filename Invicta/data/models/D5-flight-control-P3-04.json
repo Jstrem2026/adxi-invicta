@@ -1,0 +1,291 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P3-04",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  346.0,
+  424.7
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Plaza",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.2,
+     182.3
+    ],
+    [
+     0.4,
+     34.3
+    ],
+    [
+     3.6,
+     23.4
+    ],
+    [
+     9.8,
+     13.8
+    ],
+    [
+     18.4,
+     6.3
+    ],
+    [
+     28.7,
+     1.6
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     311.7,
+     0.4
+    ],
+    [
+     322.6,
+     3.6
+    ],
+    [
+     332.2,
+     9.8
+    ],
+    [
+     339.6,
+     18.4
+    ],
+    [
+     344.3,
+     28.7
+    ],
+    [
+     346.0,
+     40.0
+    ],
+    [
+     345.8,
+     182.3
+    ]
+   ],
+   "about": "The paved square at the foot of the Beacon, the open heart of Flight Control, where staff and visitors cross.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Coffee kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     259.3,
+     56.2
+    ],
+    [
+     267.3,
+     56.2
+    ],
+    [
+     267.3,
+     66.2
+    ],
+    [
+     259.3,
+     66.2
+    ]
+   ],
+   "about": "Coffee for controllers going on shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Information point",
+   "level": "L1",
+   "outline_m": [
+    [
+     267.3,
+     56.2
+    ],
+    [
+     275.3,
+     56.2
+    ],
+    [
+     275.3,
+     66.2
+    ],
+    [
+     267.3,
+     66.2
+    ]
+   ],
+   "about": "Maps and visitor tours of the Beacon.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Compass rose",
+   "level": "L1",
+   "outline_m": [
+    [
+     138.5,
+     72.9
+    ],
+    [
+     207.7,
+     72.9
+    ],
+    [
+     207.7,
+     109.4
+    ],
+    [
+     138.5,
+     109.4
+    ]
+   ],
+   "about": "A huge compass set in the paving, pointing to the bow, the stern, port and starboard.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Tree avenue",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.1,
+     302.4
+    ],
+    [
+     0.2,
+     182.3
+    ],
+    [
+     345.8,
+     182.3
+    ],
+    [
+     345.7,
+     302.4
+    ]
+   ],
+   "about": "Two rows of trees leading to the Beacon's doors.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Fountain court",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     362.5
+    ],
+    [
+     0.1,
+     302.4
+    ],
+    [
+     345.7,
+     302.4
+    ],
+    [
+     345.6,
+     362.5
+    ]
+   ],
+   "about": "A low fountain whose jets rise and fall with the deck's traffic.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Pod stop kerb",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.3,
+     424.3
+    ],
+    [
+     23.4,
+     421.1
+    ],
+    [
+     13.8,
+     414.9
+    ],
+    [
+     6.3,
+     406.3
+    ],
+    [
+     1.6,
+     396.0
+    ],
+    [
+     0.0,
+     384.7
+    ],
+    [
+     0.0,
+     362.5
+    ],
+    [
+     345.6,
+     362.5
+    ],
+    [
+     345.6,
+     390.4
+    ],
+    [
+     342.4,
+     401.3
+    ],
+    [
+     336.2,
+     410.9
+    ],
+    [
+     327.6,
+     418.4
+    ],
+    [
+     317.2,
+     423.1
+    ],
+    [
+     306.0,
+     424.7
+    ]
+   ],
+   "about": "Kerb where pods drop off controllers and visitors.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

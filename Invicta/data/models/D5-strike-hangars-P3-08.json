@@ -1,0 +1,6076 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P3-08",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  140.0,
+  290.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.5,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 4.5,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     24.0
+    ],
+    [
+     116.0,
+     24.0
+    ],
+    [
+     116.0,
+     266.0
+    ],
+    [
+     24.0,
+     266.0
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     129.5,
+     10.5
+    ],
+    [
+     129.5,
+     14.5
+    ],
+    [
+     126.5,
+     17.5
+    ],
+    [
+     126.5,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.5,
+     14.5
+    ],
+    [
+     129.5,
+     135.9
+    ],
+    [
+     126.5,
+     136.1
+    ],
+    [
+     126.5,
+     17.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.5,
+     135.9
+    ],
+    [
+     129.5,
+     257.3
+    ],
+    [
+     126.5,
+     254.7
+    ],
+    [
+     126.5,
+     136.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.5,
+     257.3
+    ],
+    [
+     129.5,
+     279.5
+    ],
+    [
+     29.0,
+     279.5
+    ],
+    [
+     31.0,
+     276.5
+    ],
+    [
+     126.5,
+     276.5
+    ],
+    [
+     126.5,
+     254.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.0,
+     279.5
+    ],
+    [
+     10.5,
+     279.5
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     13.5,
+     175.7
+    ],
+    [
+     13.5,
+     276.5
+    ],
+    [
+     31.0,
+     276.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     176.3
+    ],
+    [
+     10.5,
+     55.0
+    ],
+    [
+     13.5,
+     57.0
+    ],
+    [
+     13.5,
+     175.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     55.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     57.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     48.2,
+     13.5
+    ],
+    [
+     57.0,
+     13.5
+    ],
+    [
+     59.5,
+     24.0
+    ],
+    [
+     52.3,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     126.5,
+     13.5
+    ],
+    [
+     126.5,
+     21.8
+    ],
+    [
+     116.0,
+     31.7
+    ],
+    [
+     116.0,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     126.5,
+     87.5
+    ],
+    [
+     126.5,
+     95.8
+    ],
+    [
+     116.0,
+     99.7
+    ],
+    [
+     116.0,
+     92.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     126.5,
+     161.4
+    ],
+    [
+     126.5,
+     169.7
+    ],
+    [
+     116.0,
+     167.8
+    ],
+    [
+     116.0,
+     160.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     126.5,
+     235.4
+    ],
+    [
+     126.5,
+     243.7
+    ],
+    [
+     116.0,
+     235.8
+    ],
+    [
+     116.0,
+     228.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     91.8,
+     276.5
+    ],
+    [
+     83.0,
+     276.5
+    ],
+    [
+     80.5,
+     266.0
+    ],
+    [
+     87.7,
+     266.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     276.5
+    ],
+    [
+     13.5,
+     268.2
+    ],
+    [
+     24.0,
+     258.3
+    ],
+    [
+     24.0,
+     266.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     202.5
+    ],
+    [
+     13.5,
+     194.2
+    ],
+    [
+     24.0,
+     190.3
+    ],
+    [
+     24.0,
+     198.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     128.6
+    ],
+    [
+     13.5,
+     120.3
+    ],
+    [
+     24.0,
+     122.2
+    ],
+    [
+     24.0,
+     129.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     54.6
+    ],
+    [
+     13.5,
+     46.3
+    ],
+    [
+     24.0,
+     54.2
+    ],
+    [
+     24.0,
+     61.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Alert board room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     8.2,
+     0.0
+    ],
+    [
+     17.5,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Shows which crews are on alert and how fast they must launch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Kit room",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.2,
+     0.0
+    ],
+    [
+     18.5,
+     0.0
+    ],
+    [
+     26.3,
+     10.5
+    ],
+    [
+     17.5,
+     10.5
+    ]
+   ],
+   "about": "Flight kit ready to grab.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     18.5,
+     0.0
+    ],
+    [
+     24.7,
+     0.0
+    ],
+    [
+     31.5,
+     10.5
+    ],
+    [
+     26.3,
+     10.5
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.7,
+     0.0
+    ],
+    [
+     40.2,
+     0.0
+    ],
+    [
+     44.6,
+     10.5
+    ],
+    [
+     31.5,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.2,
+     0.0
+    ],
+    [
+     55.6,
+     0.0
+    ],
+    [
+     57.8,
+     10.5
+    ],
+    [
+     44.6,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.6,
+     0.0
+    ],
+    [
+     71.0,
+     0.0
+    ],
+    [
+     70.9,
+     10.5
+    ],
+    [
+     57.8,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.0,
+     0.0
+    ],
+    [
+     86.5,
+     0.0
+    ],
+    [
+     84.0,
+     10.5
+    ],
+    [
+     70.9,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.5,
+     0.0
+    ],
+    [
+     101.9,
+     0.0
+    ],
+    [
+     97.1,
+     10.5
+    ],
+    [
+     84.0,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.9,
+     0.0
+    ],
+    [
+     117.4,
+     0.0
+    ],
+    [
+     110.3,
+     10.5
+    ],
+    [
+     97.1,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.4,
+     0.0
+    ],
+    [
+     132.8,
+     0.0
+    ],
+    [
+     123.4,
+     10.5
+    ],
+    [
+     110.3,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.8,
+     0.0
+    ],
+    [
+     140.0,
+     0.0
+    ],
+    [
+     140.0,
+     7.9
+    ],
+    [
+     129.5,
+     17.9
+    ],
+    [
+     129.5,
+     10.5
+    ],
+    [
+     123.4,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     7.9
+    ],
+    [
+     140.0,
+     22.8
+    ],
+    [
+     129.5,
+     31.6
+    ],
+    [
+     129.5,
+     17.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     22.8
+    ],
+    [
+     140.0,
+     37.6
+    ],
+    [
+     129.5,
+     45.4
+    ],
+    [
+     129.5,
+     31.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     37.6
+    ],
+    [
+     140.0,
+     52.4
+    ],
+    [
+     129.5,
+     59.1
+    ],
+    [
+     129.5,
+     45.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     52.4
+    ],
+    [
+     140.0,
+     67.2
+    ],
+    [
+     129.5,
+     72.9
+    ],
+    [
+     129.5,
+     59.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     67.2
+    ],
+    [
+     140.0,
+     82.0
+    ],
+    [
+     129.5,
+     86.6
+    ],
+    [
+     129.5,
+     72.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     82.0
+    ],
+    [
+     140.0,
+     96.9
+    ],
+    [
+     129.5,
+     100.3
+    ],
+    [
+     129.5,
+     86.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     96.9
+    ],
+    [
+     140.0,
+     111.7
+    ],
+    [
+     129.5,
+     114.1
+    ],
+    [
+     129.5,
+     100.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     111.7
+    ],
+    [
+     140.0,
+     126.5
+    ],
+    [
+     129.5,
+     127.8
+    ],
+    [
+     129.5,
+     114.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     126.5
+    ],
+    [
+     140.0,
+     141.3
+    ],
+    [
+     129.5,
+     141.6
+    ],
+    [
+     129.5,
+     127.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     141.3
+    ],
+    [
+     140.0,
+     156.2
+    ],
+    [
+     129.5,
+     155.3
+    ],
+    [
+     129.5,
+     141.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     156.2
+    ],
+    [
+     140.0,
+     171.0
+    ],
+    [
+     129.5,
+     169.1
+    ],
+    [
+     129.5,
+     155.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     171.0
+    ],
+    [
+     140.0,
+     185.8
+    ],
+    [
+     129.5,
+     182.8
+    ],
+    [
+     129.5,
+     169.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     185.8
+    ],
+    [
+     140.0,
+     200.6
+    ],
+    [
+     129.5,
+     196.6
+    ],
+    [
+     129.5,
+     182.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     200.6
+    ],
+    [
+     140.0,
+     215.4
+    ],
+    [
+     129.5,
+     210.3
+    ],
+    [
+     129.5,
+     196.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     215.4
+    ],
+    [
+     140.0,
+     230.3
+    ],
+    [
+     129.5,
+     224.1
+    ],
+    [
+     129.5,
+     210.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     230.3
+    ],
+    [
+     140.0,
+     245.1
+    ],
+    [
+     129.5,
+     237.8
+    ],
+    [
+     129.5,
+     224.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     245.1
+    ],
+    [
+     140.0,
+     259.9
+    ],
+    [
+     129.5,
+     251.6
+    ],
+    [
+     129.5,
+     237.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     259.9
+    ],
+    [
+     140.0,
+     274.7
+    ],
+    [
+     129.5,
+     265.3
+    ],
+    [
+     129.5,
+     251.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     274.7
+    ],
+    [
+     140.0,
+     289.6
+    ],
+    [
+     129.5,
+     279.1
+    ],
+    [
+     129.5,
+     265.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.0,
+     289.6
+    ],
+    [
+     140.0,
+     290.0
+    ],
+    [
+     125.0,
+     290.0
+    ],
+    [
+     116.8,
+     279.5
+    ],
+    [
+     129.5,
+     279.5
+    ],
+    [
+     129.5,
+     279.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     125.0,
+     290.0
+    ],
+    [
+     109.6,
+     290.0
+    ],
+    [
+     103.6,
+     279.5
+    ],
+    [
+     116.8,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.6,
+     290.0
+    ],
+    [
+     94.1,
+     290.0
+    ],
+    [
+     90.5,
+     279.5
+    ],
+    [
+     103.6,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.1,
+     290.0
+    ],
+    [
+     78.7,
+     290.0
+    ],
+    [
+     77.4,
+     279.5
+    ],
+    [
+     90.5,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     78.7,
+     290.0
+    ],
+    [
+     63.2,
+     290.0
+    ],
+    [
+     64.3,
+     279.5
+    ],
+    [
+     77.4,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     63.2,
+     290.0
+    ],
+    [
+     47.8,
+     290.0
+    ],
+    [
+     51.1,
+     279.5
+    ],
+    [
+     64.3,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     47.8,
+     290.0
+    ],
+    [
+     32.4,
+     290.0
+    ],
+    [
+     38.0,
+     279.5
+    ],
+    [
+     51.1,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     32.4,
+     290.0
+    ],
+    [
+     16.9,
+     290.0
+    ],
+    [
+     24.9,
+     279.5
+    ],
+    [
+     38.0,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.9,
+     290.0
+    ],
+    [
+     1.5,
+     290.0
+    ],
+    [
+     11.7,
+     279.5
+    ],
+    [
+     24.9,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     1.5,
+     290.0
+    ],
+    [
+     0.0,
+     290.0
+    ],
+    [
+     0.0,
+     276.6
+    ],
+    [
+     10.5,
+     267.1
+    ],
+    [
+     10.5,
+     279.5
+    ],
+    [
+     11.7,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     276.6
+    ],
+    [
+     0.0,
+     261.8
+    ],
+    [
+     10.5,
+     253.3
+    ],
+    [
+     10.5,
+     267.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     261.8
+    ],
+    [
+     0.0,
+     246.9
+    ],
+    [
+     10.5,
+     239.6
+    ],
+    [
+     10.5,
+     253.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     246.9
+    ],
+    [
+     0.0,
+     232.1
+    ],
+    [
+     10.5,
+     225.8
+    ],
+    [
+     10.5,
+     239.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     232.1
+    ],
+    [
+     0.0,
+     217.3
+    ],
+    [
+     10.5,
+     212.1
+    ],
+    [
+     10.5,
+     225.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     217.3
+    ],
+    [
+     0.0,
+     202.5
+    ],
+    [
+     10.5,
+     198.3
+    ],
+    [
+     10.5,
+     212.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     202.5
+    ],
+    [
+     0.0,
+     187.7
+    ],
+    [
+     10.5,
+     184.6
+    ],
+    [
+     10.5,
+     198.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     187.7
+    ],
+    [
+     0.0,
+     172.8
+    ],
+    [
+     10.5,
+     170.8
+    ],
+    [
+     10.5,
+     184.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     172.8
+    ],
+    [
+     0.0,
+     158.0
+    ],
+    [
+     10.5,
+     157.1
+    ],
+    [
+     10.5,
+     170.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     158.0
+    ],
+    [
+     0.0,
+     143.2
+    ],
+    [
+     10.5,
+     143.3
+    ],
+    [
+     10.5,
+     157.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     143.2
+    ],
+    [
+     0.0,
+     128.4
+    ],
+    [
+     10.5,
+     129.6
+    ],
+    [
+     10.5,
+     143.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     128.4
+    ],
+    [
+     0.0,
+     113.5
+    ],
+    [
+     10.5,
+     115.8
+    ],
+    [
+     10.5,
+     129.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     113.5
+    ],
+    [
+     0.0,
+     98.7
+    ],
+    [
+     10.5,
+     102.1
+    ],
+    [
+     10.5,
+     115.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     98.7
+    ],
+    [
+     0.0,
+     83.9
+    ],
+    [
+     10.5,
+     88.3
+    ],
+    [
+     10.5,
+     102.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     83.9
+    ],
+    [
+     0.0,
+     69.1
+    ],
+    [
+     10.5,
+     74.6
+    ],
+    [
+     10.5,
+     88.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     69.1
+    ],
+    [
+     0.0,
+     54.2
+    ],
+    [
+     10.5,
+     60.8
+    ],
+    [
+     10.5,
+     74.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     54.2
+    ],
+    [
+     0.0,
+     39.4
+    ],
+    [
+     10.5,
+     47.1
+    ],
+    [
+     10.5,
+     60.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     39.4
+    ],
+    [
+     0.0,
+     24.6
+    ],
+    [
+     10.5,
+     33.3
+    ],
+    [
+     10.5,
+     47.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     24.6
+    ],
+    [
+     0.0,
+     9.8
+    ],
+    [
+     10.5,
+     19.6
+    ],
+    [
+     10.5,
+     33.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     9.8
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     19.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     29.2,
+     13.5
+    ],
+    [
+     36.8,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     29.2,
+     13.5
+    ],
+    [
+     48.2,
+     13.5
+    ],
+    [
+     52.3,
+     24.0
+    ],
+    [
+     36.8,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.0,
+     13.5
+    ],
+    [
+     72.8,
+     13.5
+    ],
+    [
+     72.3,
+     24.0
+    ],
+    [
+     59.5,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.8,
+     13.5
+    ],
+    [
+     88.5,
+     13.5
+    ],
+    [
+     85.1,
+     24.0
+    ],
+    [
+     72.3,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.5,
+     13.5
+    ],
+    [
+     104.3,
+     13.5
+    ],
+    [
+     97.9,
+     24.0
+    ],
+    [
+     85.1,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     104.3,
+     13.5
+    ],
+    [
+     126.5,
+     13.5
+    ],
+    [
+     116.0,
+     24.0
+    ],
+    [
+     97.9,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     21.8
+    ],
+    [
+     126.5,
+     36.7
+    ],
+    [
+     116.0,
+     45.4
+    ],
+    [
+     116.0,
+     31.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     36.7
+    ],
+    [
+     126.5,
+     51.6
+    ],
+    [
+     116.0,
+     59.1
+    ],
+    [
+     116.0,
+     45.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     51.6
+    ],
+    [
+     126.5,
+     66.5
+    ],
+    [
+     116.0,
+     72.7
+    ],
+    [
+     116.0,
+     59.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     66.5
+    ],
+    [
+     126.5,
+     87.5
+    ],
+    [
+     116.0,
+     92.0
+    ],
+    [
+     116.0,
+     72.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     95.8
+    ],
+    [
+     126.5,
+     110.7
+    ],
+    [
+     116.0,
+     113.4
+    ],
+    [
+     116.0,
+     99.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     110.7
+    ],
+    [
+     126.5,
+     125.5
+    ],
+    [
+     116.0,
+     127.1
+    ],
+    [
+     116.0,
+     113.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     125.5
+    ],
+    [
+     126.5,
+     140.4
+    ],
+    [
+     116.0,
+     140.8
+    ],
+    [
+     116.0,
+     127.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     140.4
+    ],
+    [
+     126.5,
+     161.4
+    ],
+    [
+     116.0,
+     160.1
+    ],
+    [
+     116.0,
+     140.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     169.7
+    ],
+    [
+     126.5,
+     184.6
+    ],
+    [
+     116.0,
+     181.5
+    ],
+    [
+     116.0,
+     167.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     184.6
+    ],
+    [
+     126.5,
+     199.5
+    ],
+    [
+     116.0,
+     195.1
+    ],
+    [
+     116.0,
+     181.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     199.5
+    ],
+    [
+     126.5,
+     214.4
+    ],
+    [
+     116.0,
+     208.8
+    ],
+    [
+     116.0,
+     195.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     214.4
+    ],
+    [
+     126.5,
+     235.4
+    ],
+    [
+     116.0,
+     228.1
+    ],
+    [
+     116.0,
+     208.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     243.7
+    ],
+    [
+     126.5,
+     258.6
+    ],
+    [
+     116.0,
+     249.5
+    ],
+    [
+     116.0,
+     235.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     258.6
+    ],
+    [
+     126.5,
+     273.4
+    ],
+    [
+     116.0,
+     263.2
+    ],
+    [
+     116.0,
+     249.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.5,
+     273.4
+    ],
+    [
+     126.5,
+     276.5
+    ],
+    [
+     114.0,
+     276.5
+    ],
+    [
+     105.8,
+     266.0
+    ],
+    [
+     116.0,
+     266.0
+    ],
+    [
+     116.0,
+     263.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.0,
+     276.5
+    ],
+    [
+     91.8,
+     276.5
+    ],
+    [
+     87.7,
+     266.0
+    ],
+    [
+     105.8,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     83.0,
+     276.5
+    ],
+    [
+     67.2,
+     276.5
+    ],
+    [
+     67.7,
+     266.0
+    ],
+    [
+     80.5,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.2,
+     276.5
+    ],
+    [
+     51.5,
+     276.5
+    ],
+    [
+     54.9,
+     266.0
+    ],
+    [
+     67.7,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     51.5,
+     276.5
+    ],
+    [
+     35.7,
+     276.5
+    ],
+    [
+     42.1,
+     266.0
+    ],
+    [
+     54.9,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.7,
+     276.5
+    ],
+    [
+     13.5,
+     276.5
+    ],
+    [
+     24.0,
+     266.0
+    ],
+    [
+     42.1,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     268.2
+    ],
+    [
+     13.5,
+     253.3
+    ],
+    [
+     24.0,
+     244.6
+    ],
+    [
+     24.0,
+     258.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     253.3
+    ],
+    [
+     13.5,
+     238.4
+    ],
+    [
+     24.0,
+     230.9
+    ],
+    [
+     24.0,
+     244.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     238.4
+    ],
+    [
+     13.5,
+     223.5
+    ],
+    [
+     24.0,
+     217.3
+    ],
+    [
+     24.0,
+     230.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     223.5
+    ],
+    [
+     13.5,
+     202.5
+    ],
+    [
+     24.0,
+     198.0
+    ],
+    [
+     24.0,
+     217.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     194.2
+    ],
+    [
+     13.5,
+     179.3
+    ],
+    [
+     24.0,
+     176.6
+    ],
+    [
+     24.0,
+     190.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     179.3
+    ],
+    [
+     13.5,
+     164.5
+    ],
+    [
+     24.0,
+     162.9
+    ],
+    [
+     24.0,
+     176.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     164.5
+    ],
+    [
+     13.5,
+     149.6
+    ],
+    [
+     24.0,
+     149.2
+    ],
+    [
+     24.0,
+     162.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     149.6
+    ],
+    [
+     13.5,
+     128.6
+    ],
+    [
+     24.0,
+     129.9
+    ],
+    [
+     24.0,
+     149.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     120.3
+    ],
+    [
+     13.5,
+     105.4
+    ],
+    [
+     24.0,
+     108.5
+    ],
+    [
+     24.0,
+     122.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     105.4
+    ],
+    [
+     13.5,
+     90.5
+    ],
+    [
+     24.0,
+     94.9
+    ],
+    [
+     24.0,
+     108.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     90.5
+    ],
+    [
+     13.5,
+     75.6
+    ],
+    [
+     24.0,
+     81.2
+    ],
+    [
+     24.0,
+     94.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     75.6
+    ],
+    [
+     13.5,
+     54.6
+    ],
+    [
+     24.0,
+     61.9
+    ],
+    [
+     24.0,
+     81.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     46.3
+    ],
+    [
+     13.5,
+     31.4
+    ],
+    [
+     24.0,
+     40.5
+    ],
+    [
+     24.0,
+     54.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     31.4
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     40.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     10.5
+    ],
+    [
+     129.5,
+     10.5
+    ],
+    [
+     129.5,
+     14.5
+    ],
+    [
+     126.5,
+     17.5
+    ],
+    [
+     126.5,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     129.5,
+     14.5
+    ],
+    [
+     129.5,
+     135.9
+    ],
+    [
+     126.5,
+     136.1
+    ],
+    [
+     126.5,
+     17.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     129.5,
+     135.9
+    ],
+    [
+     129.5,
+     257.3
+    ],
+    [
+     126.5,
+     254.7
+    ],
+    [
+     126.5,
+     136.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     129.5,
+     257.3
+    ],
+    [
+     129.5,
+     279.5
+    ],
+    [
+     29.0,
+     279.5
+    ],
+    [
+     31.0,
+     276.5
+    ],
+    [
+     126.5,
+     276.5
+    ],
+    [
+     126.5,
+     254.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.0,
+     279.5
+    ],
+    [
+     10.5,
+     279.5
+    ],
+    [
+     10.5,
+     176.3
+    ],
+    [
+     13.5,
+     175.7
+    ],
+    [
+     13.5,
+     276.5
+    ],
+    [
+     31.0,
+     276.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     176.3
+    ],
+    [
+     10.5,
+     55.0
+    ],
+    [
+     13.5,
+     57.0
+    ],
+    [
+     13.5,
+     175.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.5,
+     55.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     57.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     4.0,
+     0.0
+    ],
+    [
+     13.9,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.0,
+     0.0
+    ],
+    [
+     7.9,
+     0.0
+    ],
+    [
+     17.3,
+     10.5
+    ],
+    [
+     13.9,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     7.9,
+     0.0
+    ],
+    [
+     11.9,
+     0.0
+    ],
+    [
+     20.6,
+     10.5
+    ],
+    [
+     17.3,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.9,
+     0.0
+    ],
+    [
+     15.9,
+     0.0
+    ],
+    [
+     24.0,
+     10.5
+    ],
+    [
+     20.6,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.9,
+     0.0
+    ],
+    [
+     19.9,
+     0.0
+    ],
+    [
+     27.4,
+     10.5
+    ],
+    [
+     24.0,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.9,
+     0.0
+    ],
+    [
+     23.8,
+     0.0
+    ],
+    [
+     30.8,
+     10.5
+    ],
+    [
+     27.4,
+     10.5
+    ]
+   ],
+   "about": "Bunks for crews on long alerts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.8,
+     0.0
+    ],
+    [
+     27.8,
+     0.0
+    ],
+    [
+     34.1,
+     10.5
+    ],
+    [
+     30.8,
+     10.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.8,
+     0.0
+    ],
+    [
+     43.3,
+     0.0
+    ],
+    [
+     47.3,
+     10.5
+    ],
+    [
+     34.1,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     43.3,
+     0.0
+    ],
+    [
+     58.7,
+     0.0
+    ],
+    [
+     60.4,
+     10.5
+    ],
+    [
+     47.3,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     58.7,
+     0.0
+    ],
+    [
+     74.1,
+     0.0
+    ],
+    [
+     73.5,
+     10.5
+    ],
+    [
+     60.4,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     74.1,
+     0.0
+    ],
+    [
+     89.6,
+     0.0
+    ],
+    [
+     86.6,
+     10.5
+    ],
+    [
+     73.5,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     89.6,
+     0.0
+    ],
+    [
+     105.0,
+     0.0
+    ],
+    [
+     99.8,
+     10.5
+    ],
+    [
+     86.6,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.0,
+     0.0
+    ],
+    [
+     120.5,
+     0.0
+    ],
+    [
+     112.9,
+     10.5
+    ],
+    [
+     99.8,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     120.5,
+     0.0
+    ],
+    [
+     135.9,
+     0.0
+    ],
+    [
+     126.0,
+     10.5
+    ],
+    [
+     112.9,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     135.9,
+     0.0
+    ],
+    [
+     140.0,
+     0.0
+    ],
+    [
+     140.0,
+     10.9
+    ],
+    [
+     129.5,
+     20.6
+    ],
+    [
+     129.5,
+     10.5
+    ],
+    [
+     126.0,
+     10.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     10.9
+    ],
+    [
+     140.0,
+     25.7
+    ],
+    [
+     129.5,
+     34.4
+    ],
+    [
+     129.5,
+     20.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     25.7
+    ],
+    [
+     140.0,
+     40.6
+    ],
+    [
+     129.5,
+     48.1
+    ],
+    [
+     129.5,
+     34.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     40.6
+    ],
+    [
+     140.0,
+     55.4
+    ],
+    [
+     129.5,
+     61.9
+    ],
+    [
+     129.5,
+     48.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     55.4
+    ],
+    [
+     140.0,
+     70.2
+    ],
+    [
+     129.5,
+     75.6
+    ],
+    [
+     129.5,
+     61.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     70.2
+    ],
+    [
+     140.0,
+     85.0
+    ],
+    [
+     129.5,
+     89.4
+    ],
+    [
+     129.5,
+     75.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     85.0
+    ],
+    [
+     140.0,
+     99.8
+    ],
+    [
+     129.5,
+     103.1
+    ],
+    [
+     129.5,
+     89.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     99.8
+    ],
+    [
+     140.0,
+     114.7
+    ],
+    [
+     129.5,
+     116.9
+    ],
+    [
+     129.5,
+     103.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     114.7
+    ],
+    [
+     140.0,
+     129.5
+    ],
+    [
+     129.5,
+     130.6
+    ],
+    [
+     129.5,
+     116.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     129.5
+    ],
+    [
+     140.0,
+     144.3
+    ],
+    [
+     129.5,
+     144.4
+    ],
+    [
+     129.5,
+     130.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     144.3
+    ],
+    [
+     140.0,
+     159.1
+    ],
+    [
+     129.5,
+     158.1
+    ],
+    [
+     129.5,
+     144.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     159.1
+    ],
+    [
+     140.0,
+     174.0
+    ],
+    [
+     129.5,
+     171.9
+    ],
+    [
+     129.5,
+     158.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     174.0
+    ],
+    [
+     140.0,
+     188.8
+    ],
+    [
+     129.5,
+     185.6
+    ],
+    [
+     129.5,
+     171.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     188.8
+    ],
+    [
+     140.0,
+     203.6
+    ],
+    [
+     129.5,
+     199.4
+    ],
+    [
+     129.5,
+     185.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     203.6
+    ],
+    [
+     140.0,
+     218.4
+    ],
+    [
+     129.5,
+     213.1
+    ],
+    [
+     129.5,
+     199.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     218.4
+    ],
+    [
+     140.0,
+     233.2
+    ],
+    [
+     129.5,
+     226.9
+    ],
+    [
+     129.5,
+     213.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     233.2
+    ],
+    [
+     140.0,
+     248.1
+    ],
+    [
+     129.5,
+     240.6
+    ],
+    [
+     129.5,
+     226.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     248.1
+    ],
+    [
+     140.0,
+     262.9
+    ],
+    [
+     129.5,
+     254.3
+    ],
+    [
+     129.5,
+     240.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     262.9
+    ],
+    [
+     140.0,
+     277.7
+    ],
+    [
+     129.5,
+     268.1
+    ],
+    [
+     129.5,
+     254.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     140.0,
+     277.7
+    ],
+    [
+     140.0,
+     290.0
+    ],
+    [
+     137.4,
+     290.0
+    ],
+    [
+     127.3,
+     279.5
+    ],
+    [
+     129.5,
+     279.5
+    ],
+    [
+     129.5,
+     268.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.4,
+     290.0
+    ],
+    [
+     121.9,
+     290.0
+    ],
+    [
+     114.1,
+     279.5
+    ],
+    [
+     127.3,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     121.9,
+     290.0
+    ],
+    [
+     106.5,
+     290.0
+    ],
+    [
+     101.0,
+     279.5
+    ],
+    [
+     114.1,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     106.5,
+     290.0
+    ],
+    [
+     91.0,
+     290.0
+    ],
+    [
+     87.9,
+     279.5
+    ],
+    [
+     101.0,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     91.0,
+     290.0
+    ],
+    [
+     75.6,
+     290.0
+    ],
+    [
+     74.7,
+     279.5
+    ],
+    [
+     87.9,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.6,
+     290.0
+    ],
+    [
+     60.1,
+     290.0
+    ],
+    [
+     61.6,
+     279.5
+    ],
+    [
+     74.7,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     60.1,
+     290.0
+    ],
+    [
+     44.7,
+     290.0
+    ],
+    [
+     48.5,
+     279.5
+    ],
+    [
+     61.6,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     44.7,
+     290.0
+    ],
+    [
+     29.3,
+     290.0
+    ],
+    [
+     35.4,
+     279.5
+    ],
+    [
+     48.5,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.3,
+     290.0
+    ],
+    [
+     13.8,
+     290.0
+    ],
+    [
+     22.2,
+     279.5
+    ],
+    [
+     35.4,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.8,
+     290.0
+    ],
+    [
+     0.0,
+     290.0
+    ],
+    [
+     0.0,
+     288.4
+    ],
+    [
+     10.5,
+     278.0
+    ],
+    [
+     10.5,
+     279.5
+    ],
+    [
+     22.2,
+     279.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     288.4
+    ],
+    [
+     0.0,
+     273.6
+    ],
+    [
+     10.5,
+     264.3
+    ],
+    [
+     10.5,
+     278.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     273.6
+    ],
+    [
+     0.0,
+     258.8
+    ],
+    [
+     10.5,
+     250.5
+    ],
+    [
+     10.5,
+     264.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     258.8
+    ],
+    [
+     0.0,
+     244.0
+    ],
+    [
+     10.5,
+     236.8
+    ],
+    [
+     10.5,
+     250.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     244.0
+    ],
+    [
+     0.0,
+     229.1
+    ],
+    [
+     10.5,
+     223.0
+    ],
+    [
+     10.5,
+     236.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     229.1
+    ],
+    [
+     0.0,
+     214.3
+    ],
+    [
+     10.5,
+     209.3
+    ],
+    [
+     10.5,
+     223.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     214.3
+    ],
+    [
+     0.0,
+     199.5
+    ],
+    [
+     10.5,
+     195.6
+    ],
+    [
+     10.5,
+     209.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     199.5
+    ],
+    [
+     0.0,
+     184.7
+    ],
+    [
+     10.5,
+     181.8
+    ],
+    [
+     10.5,
+     195.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     184.7
+    ],
+    [
+     0.0,
+     169.9
+    ],
+    [
+     10.5,
+     168.1
+    ],
+    [
+     10.5,
+     181.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     169.9
+    ],
+    [
+     0.0,
+     155.0
+    ],
+    [
+     10.5,
+     154.3
+    ],
+    [
+     10.5,
+     168.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     155.0
+    ],
+    [
+     0.0,
+     140.2
+    ],
+    [
+     10.5,
+     140.6
+    ],
+    [
+     10.5,
+     154.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     140.2
+    ],
+    [
+     0.0,
+     125.4
+    ],
+    [
+     10.5,
+     126.8
+    ],
+    [
+     10.5,
+     140.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     125.4
+    ],
+    [
+     0.0,
+     110.6
+    ],
+    [
+     10.5,
+     113.1
+    ],
+    [
+     10.5,
+     126.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     110.6
+    ],
+    [
+     0.0,
+     95.7
+    ],
+    [
+     10.5,
+     99.3
+    ],
+    [
+     10.5,
+     113.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     95.7
+    ],
+    [
+     0.0,
+     80.9
+    ],
+    [
+     10.5,
+     85.6
+    ],
+    [
+     10.5,
+     99.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     80.9
+    ],
+    [
+     0.0,
+     66.1
+    ],
+    [
+     10.5,
+     71.8
+    ],
+    [
+     10.5,
+     85.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     66.1
+    ],
+    [
+     0.0,
+     51.3
+    ],
+    [
+     10.5,
+     58.1
+    ],
+    [
+     10.5,
+     71.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     51.3
+    ],
+    [
+     0.0,
+     36.5
+    ],
+    [
+     10.5,
+     44.3
+    ],
+    [
+     10.5,
+     58.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     36.5
+    ],
+    [
+     0.0,
+     21.6
+    ],
+    [
+     10.5,
+     30.6
+    ],
+    [
+     10.5,
+     44.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     21.6
+    ],
+    [
+     0.0,
+     6.8
+    ],
+    [
+     10.5,
+     16.8
+    ],
+    [
+     10.5,
+     30.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     6.8
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     16.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     29.2,
+     13.5
+    ],
+    [
+     36.8,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     29.2,
+     13.5
+    ],
+    [
+     48.2,
+     13.5
+    ],
+    [
+     52.3,
+     24.0
+    ],
+    [
+     36.8,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     57.0,
+     13.5
+    ],
+    [
+     72.8,
+     13.5
+    ],
+    [
+     72.3,
+     24.0
+    ],
+    [
+     59.5,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     72.8,
+     13.5
+    ],
+    [
+     88.5,
+     13.5
+    ],
+    [
+     85.1,
+     24.0
+    ],
+    [
+     72.3,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     88.5,
+     13.5
+    ],
+    [
+     104.3,
+     13.5
+    ],
+    [
+     97.9,
+     24.0
+    ],
+    [
+     85.1,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.3,
+     13.5
+    ],
+    [
+     126.5,
+     13.5
+    ],
+    [
+     116.0,
+     24.0
+    ],
+    [
+     97.9,
+     24.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     21.8
+    ],
+    [
+     126.5,
+     36.7
+    ],
+    [
+     116.0,
+     45.4
+    ],
+    [
+     116.0,
+     31.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     36.7
+    ],
+    [
+     126.5,
+     51.6
+    ],
+    [
+     116.0,
+     59.1
+    ],
+    [
+     116.0,
+     45.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     51.6
+    ],
+    [
+     126.5,
+     66.5
+    ],
+    [
+     116.0,
+     72.7
+    ],
+    [
+     116.0,
+     59.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     66.5
+    ],
+    [
+     126.5,
+     87.5
+    ],
+    [
+     116.0,
+     92.0
+    ],
+    [
+     116.0,
+     72.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     95.8
+    ],
+    [
+     126.5,
+     110.7
+    ],
+    [
+     116.0,
+     113.4
+    ],
+    [
+     116.0,
+     99.7
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     110.7
+    ],
+    [
+     126.5,
+     125.5
+    ],
+    [
+     116.0,
+     127.1
+    ],
+    [
+     116.0,
+     113.4
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     125.5
+    ],
+    [
+     126.5,
+     140.4
+    ],
+    [
+     116.0,
+     140.8
+    ],
+    [
+     116.0,
+     127.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     140.4
+    ],
+    [
+     126.5,
+     161.4
+    ],
+    [
+     116.0,
+     160.1
+    ],
+    [
+     116.0,
+     140.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     169.7
+    ],
+    [
+     126.5,
+     184.6
+    ],
+    [
+     116.0,
+     181.5
+    ],
+    [
+     116.0,
+     167.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     184.6
+    ],
+    [
+     126.5,
+     199.5
+    ],
+    [
+     116.0,
+     195.1
+    ],
+    [
+     116.0,
+     181.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     199.5
+    ],
+    [
+     126.5,
+     214.4
+    ],
+    [
+     116.0,
+     208.8
+    ],
+    [
+     116.0,
+     195.1
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     214.4
+    ],
+    [
+     126.5,
+     235.4
+    ],
+    [
+     116.0,
+     228.1
+    ],
+    [
+     116.0,
+     208.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     243.7
+    ],
+    [
+     126.5,
+     258.6
+    ],
+    [
+     116.0,
+     249.5
+    ],
+    [
+     116.0,
+     235.8
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     258.6
+    ],
+    [
+     126.5,
+     273.4
+    ],
+    [
+     116.0,
+     263.2
+    ],
+    [
+     116.0,
+     249.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     126.5,
+     273.4
+    ],
+    [
+     126.5,
+     276.5
+    ],
+    [
+     114.0,
+     276.5
+    ],
+    [
+     105.8,
+     266.0
+    ],
+    [
+     116.0,
+     266.0
+    ],
+    [
+     116.0,
+     263.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.0,
+     276.5
+    ],
+    [
+     91.8,
+     276.5
+    ],
+    [
+     87.7,
+     266.0
+    ],
+    [
+     105.8,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     83.0,
+     276.5
+    ],
+    [
+     67.2,
+     276.5
+    ],
+    [
+     67.7,
+     266.0
+    ],
+    [
+     80.5,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     67.2,
+     276.5
+    ],
+    [
+     51.5,
+     276.5
+    ],
+    [
+     54.9,
+     266.0
+    ],
+    [
+     67.7,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     51.5,
+     276.5
+    ],
+    [
+     35.7,
+     276.5
+    ],
+    [
+     42.1,
+     266.0
+    ],
+    [
+     54.9,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     35.7,
+     276.5
+    ],
+    [
+     13.5,
+     276.5
+    ],
+    [
+     24.0,
+     266.0
+    ],
+    [
+     42.1,
+     266.0
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     268.2
+    ],
+    [
+     13.5,
+     253.3
+    ],
+    [
+     24.0,
+     244.6
+    ],
+    [
+     24.0,
+     258.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     253.3
+    ],
+    [
+     13.5,
+     238.4
+    ],
+    [
+     24.0,
+     230.9
+    ],
+    [
+     24.0,
+     244.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     238.4
+    ],
+    [
+     13.5,
+     223.5
+    ],
+    [
+     24.0,
+     217.3
+    ],
+    [
+     24.0,
+     230.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     223.5
+    ],
+    [
+     13.5,
+     202.5
+    ],
+    [
+     24.0,
+     198.0
+    ],
+    [
+     24.0,
+     217.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     194.2
+    ],
+    [
+     13.5,
+     179.3
+    ],
+    [
+     24.0,
+     176.6
+    ],
+    [
+     24.0,
+     190.3
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     179.3
+    ],
+    [
+     13.5,
+     164.5
+    ],
+    [
+     24.0,
+     162.9
+    ],
+    [
+     24.0,
+     176.6
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     164.5
+    ],
+    [
+     13.5,
+     149.6
+    ],
+    [
+     24.0,
+     149.2
+    ],
+    [
+     24.0,
+     162.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     149.6
+    ],
+    [
+     13.5,
+     128.6
+    ],
+    [
+     24.0,
+     129.9
+    ],
+    [
+     24.0,
+     149.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     120.3
+    ],
+    [
+     13.5,
+     105.4
+    ],
+    [
+     24.0,
+     108.5
+    ],
+    [
+     24.0,
+     122.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     105.4
+    ],
+    [
+     13.5,
+     90.5
+    ],
+    [
+     24.0,
+     94.9
+    ],
+    [
+     24.0,
+     108.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     90.5
+    ],
+    [
+     13.5,
+     75.6
+    ],
+    [
+     24.0,
+     81.2
+    ],
+    [
+     24.0,
+     94.9
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     75.6
+    ],
+    [
+     13.5,
+     54.6
+    ],
+    [
+     24.0,
+     61.9
+    ],
+    [
+     24.0,
+     81.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     46.3
+    ],
+    [
+     13.5,
+     31.4
+    ],
+    [
+     24.0,
+     40.5
+    ],
+    [
+     24.0,
+     54.2
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Ready room",
+   "level": "L2",
+   "outline_m": [
+    [
+     13.5,
+     31.4
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     40.5
+    ]
+   ],
+   "about": "A crew waits here on alert, in flight kit, with a screen and recliners.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

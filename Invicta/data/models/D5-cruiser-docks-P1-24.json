@@ -1,0 +1,211 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-24",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  620.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Parts crates",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     77.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     77.5
+    ]
+   ],
+   "about": "Crates of repair parts for the cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard office",
+   "level": "L1",
+   "outline_m": [
+    [
+     296.8,
+     5.1
+    ],
+    [
+     306.1,
+     5.1
+    ],
+    [
+     306.1,
+     13.1
+    ],
+    [
+     296.8,
+     13.1
+    ]
+   ],
+   "about": "The yard foreman tracks every load in the yard.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Checkers' hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     306.1,
+     5.1
+    ],
+    [
+     310.8,
+     5.1
+    ],
+    [
+     310.8,
+     13.1
+    ],
+    [
+     306.1,
+     13.1
+    ]
+   ],
+   "about": "Checkers scan each load in and out.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Container stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     310.0
+    ],
+    [
+     0.0,
+     77.5
+    ],
+    [
+     440.0,
+     77.5
+    ],
+    [
+     440.0,
+     310.0
+    ]
+   ],
+   "about": "Containers of stores stacked three high, waiting to go aboard.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Pallet rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     465.0
+    ],
+    [
+     0.0,
+     310.0
+    ],
+    [
+     440.0,
+     310.0
+    ],
+    [
+     440.0,
+     465.0
+    ]
+   ],
+   "about": "Pallets of food, water and spares in long rows.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Bulk tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     542.5
+    ],
+    [
+     0.0,
+     465.0
+    ],
+    [
+     440.0,
+     465.0
+    ],
+    [
+     440.0,
+     542.5
+    ]
+   ],
+   "about": "Small tanks of oils and coolants for the cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Haul lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     620.0
+    ],
+    [
+     0.0,
+     542.5
+    ],
+    [
+     440.0,
+     542.5
+    ],
+    [
+     440.0,
+     620.0
+    ]
+   ],
+   "about": "The lane the haulers use through the yard.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

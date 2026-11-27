@@ -121,6 +121,10 @@ def expand_rooms(spec, rng, prog):
             name = name[1:]
         if name.startswith("|"):
             name = rng.choice(name[1:].split("|"))
+        if name.startswith("*|"):
+            # several fill names: each becomes a fill, so the floor rotates between them
+            fill = (fill or []) + [(nm, a, ab) for nm in name[2:].split("|")]
+            continue
         if name.startswith("*"):
             fill = (fill or []) + [(name[1:], a, ab)]
             continue
@@ -264,6 +268,20 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
         if court and halls and abs(G.area(inner)) > 6000 * len(halls):
             hs.append(court)
             shares.append(0.6)
+        cap = prog.get("hall_max_m2")
+        Ai = abs(G.area(inner))
+        if cap and Ai > cap * 1.3:
+            # a middle far bigger than its halls need: the halls keep their size, the rest is an open light court
+            tot = sum(shares)
+            shares = [min(s / tot * Ai, (h.get("max_m2") or cap)) for s, h in zip(shares, hs)]
+            spare = Ai - sum(shares)
+            if spare > 0.2 * Ai:
+                c = court or LIGHT_COURT
+                if c in hs:
+                    shares[hs.index(c)] += spare
+                else:
+                    hs.append(c)
+                    shares.append(spare)
         pieces = G.split_by_shares(inner, shares)
         hall_pieces = list(zip(hs, pieces))
     else:
@@ -356,6 +374,8 @@ def layout_ring(plan, P, holes, prog, levels, rng, ctx):
     basement(plan, P, holes, prog, levels, rng, ctx)
 
 
+LIGHT_COURT = {"name": "Light court", "outdoor": True,
+               "about": "An open court in the middle of the building that brings light and air to the inner rooms."}
 STAIRS_ABOUT = "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
 
 
@@ -369,6 +389,9 @@ def free_segments(L, blocked):
     if L - u > 1.0:
         segs.append((u, L))
     return segs
+
+
+FILL_GROW_MAX = 3.0   # a fill room grows at most this much; past it the floor gets more rooms
 
 
 def pack(plan, strips, rooms, fill, lvs, rng, cap=400, fill_cap=24):
@@ -385,7 +408,7 @@ def pack(plan, strips, rooms, fill, lvs, rng, cap=400, fill_cap=24):
         avg = sum(f[1] for f in fills) / len(fills)
         n_fill = max(1, int(left / avg))
         if n_fill > fill_cap:
-            g = left / fill_cap / avg
+            g = min(left / fill_cap / avg, FILL_GROW_MAX)
             fills = [(f[0], f[1] * g, f[2]) for f in fills]
     fi = [0]
 
@@ -543,7 +566,11 @@ def layout_open(plan, P, prog, levels, rng, ctx):
         zones = head + tail
     L1 = levels[0][0]
     up = [l[0] for l in levels if l[2] >= 0]
-    pieces = G.split_by_shares(P, [z[1] for z in zones])
+    ax = None
+    if prog.get("split") == "across":   # side by side along the short axis (berths, lanes)
+        lx, ly = G.long_axis(P)
+        ax = (ly, lx)
+    pieces = G.split_by_shares(P, [z[1] for z in zones], axis=ax)
     for z, poly in zip(zones, pieces):
         name, share, about = z[0], z[1], z[2]
         e = plan.add("zone", name, poly, [L1], about, outdoor=True)

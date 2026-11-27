@@ -1,0 +1,158 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P1-20",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  741.9
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Pod parking",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     324.6
+    ],
+    [
+     0.0,
+     324.6
+    ]
+   ],
+   "about": "Crew pods parked in rows.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     286.3,
+     113.2
+    ],
+    [
+     298.3,
+     113.2
+    ],
+    [
+     298.3,
+     121.2
+    ],
+    [
+     286.3,
+     121.2
+    ]
+   ],
+   "about": "The yard marshal's hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Charging lanes",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     324.6
+    ],
+    [
+     440.0,
+     432.7
+    ],
+    [
+     0.0,
+     432.7
+    ],
+    [
+     0.0,
+     324.6
+    ]
+   ],
+   "about": "Charging points.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Wash bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     432.7
+    ],
+    [
+     440.0,
+     540.9
+    ],
+    [
+     0.0,
+     540.9
+    ],
+    [
+     0.0,
+     432.7
+    ]
+   ],
+   "about": "Pods and tugs are washed.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Access lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     540.9
+    ],
+    [
+     440.0,
+     741.9
+    ],
+    [
+     0.0,
+     556.3
+    ],
+    [
+     0.0,
+     540.9
+    ]
+   ],
+   "about": "Lane in and out.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

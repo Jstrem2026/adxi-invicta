@@ -1,0 +1,211 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P1-18",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  582.3,
+  775.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Field",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Weather sensors",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     582.3,
+     0.0
+    ],
+    [
+     582.3,
+     110.7
+    ],
+    [
+     0.0,
+     110.7
+    ]
+   ],
+   "about": "Sensors that measure radiation and debris near the hull.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Equipment hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.6,
+     22.5
+    ],
+    [
+     215.9,
+     22.5
+    ],
+    [
+     215.9,
+     30.5
+    ],
+    [
+     206.6,
+     30.5
+    ]
+   ],
+   "about": "Receivers, power units and fibre links for the antennas in this field.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Engineers' shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.9,
+     22.5
+    ],
+    [
+     220.6,
+     22.5
+    ],
+    [
+     220.6,
+     30.5
+    ],
+    [
+     215.9,
+     30.5
+    ]
+   ],
+   "about": "Shelter with a desk and kit for engineers working in the field.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Beacon antennas",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.3,
+     110.7
+    ],
+    [
+     582.3,
+     332.1
+    ],
+    [
+     0.0,
+     332.1
+    ],
+    [
+     0.0,
+     110.7
+    ]
+   ],
+   "about": "Transmit the homing signals craft steer by on their way in.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Spare mast pads",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.3,
+     332.1
+    ],
+    [
+     582.3,
+     442.9
+    ],
+    [
+     0.0,
+     442.9
+    ],
+    [
+     0.0,
+     332.1
+    ]
+   ],
+   "about": "Concrete pads with cables ready for new antennas.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Direction-finding ring",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.3,
+     442.9
+    ],
+    [
+     582.3,
+     664.3
+    ],
+    [
+     0.0,
+     664.3
+    ],
+    [
+     0.0,
+     442.9
+    ]
+   ],
+   "about": "A ring of small aerials that tells controllers which direction a radio call came from.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Cable path",
+   "level": "L1",
+   "outline_m": [
+    [
+     582.3,
+     664.3
+    ],
+    [
+     582.3,
+     775.0
+    ],
+    [
+     0.0,
+     775.0
+    ],
+    [
+     0.0,
+     664.3
+    ]
+   ],
+   "about": "Gravel path over the cable trench, used by engineers and the mast crane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

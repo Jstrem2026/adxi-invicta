@@ -1,0 +1,321 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P3-01",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  360.0,
+  40.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Launch shaft 1",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     60.0,
+     0.0
+    ],
+    [
+     60.0,
+     40.0
+    ],
+    [
+     0.0,
+     40.0
+    ]
+   ],
+   "about": "A 197 x 131 ft (60 x 40 m) shaft that lifts a strike craft on its launch cradle up to the port Forward Grid and fires it out.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "fixture",
+   "name": "Shaft head doors",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.0,
+     2.0
+    ],
+    [
+     57.0,
+     2.0
+    ],
+    [
+     57.0,
+     38.0
+    ],
+    [
+     3.0,
+     38.0
+    ]
+   ],
+   "about": "Armoured doors that close over the shaft between launches.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Shaft wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.0,
+     0.0
+    ],
+    [
+     100.0,
+     0.0
+    ],
+    [
+     100.0,
+     40.0
+    ],
+    [
+     60.0,
+     40.0
+    ]
+   ],
+   "about": "The armoured wall between two shafts, holding the cradle rails and cables.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Launch shaft 2",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.0,
+     0.0
+    ],
+    [
+     160.0,
+     0.0
+    ],
+    [
+     160.0,
+     40.0
+    ],
+    [
+     100.0,
+     40.0
+    ]
+   ],
+   "about": "A 197 x 131 ft (60 x 40 m) shaft that lifts a strike craft on its launch cradle up to the port Forward Grid and fires it out.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "fixture",
+   "name": "Shaft head doors",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.0,
+     2.0
+    ],
+    [
+     157.0,
+     2.0
+    ],
+    [
+     157.0,
+     38.0
+    ],
+    [
+     103.0,
+     38.0
+    ]
+   ],
+   "about": "Armoured doors that close over the shaft between launches.",
+   "parent": "E004",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Shaft wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.0,
+     0.0
+    ],
+    [
+     200.0,
+     0.0
+    ],
+    [
+     200.0,
+     40.0
+    ],
+    [
+     160.0,
+     40.0
+    ]
+   ],
+   "about": "The armoured wall between two shafts, holding the cradle rails and cables.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Launch shaft 3",
+   "level": "L1",
+   "outline_m": [
+    [
+     200.0,
+     0.0
+    ],
+    [
+     260.0,
+     0.0
+    ],
+    [
+     260.0,
+     40.0
+    ],
+    [
+     200.0,
+     40.0
+    ]
+   ],
+   "about": "A 197 x 131 ft (60 x 40 m) shaft that lifts a strike craft on its launch cradle up to the port Forward Grid and fires it out.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Shaft head doors",
+   "level": "L1",
+   "outline_m": [
+    [
+     203.0,
+     2.0
+    ],
+    [
+     257.0,
+     2.0
+    ],
+    [
+     257.0,
+     38.0
+    ],
+    [
+     203.0,
+     38.0
+    ]
+   ],
+   "about": "Armoured doors that close over the shaft between launches.",
+   "parent": "E007",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Shaft wall",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.0,
+     0.0
+    ],
+    [
+     300.0,
+     0.0
+    ],
+    [
+     300.0,
+     40.0
+    ],
+    [
+     260.0,
+     40.0
+    ]
+   ],
+   "about": "The armoured wall between two shafts, holding the cradle rails and cables.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Launch shaft 4",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.0,
+     0.0
+    ],
+    [
+     360.0,
+     0.0
+    ],
+    [
+     360.0,
+     40.0
+    ],
+    [
+     300.0,
+     40.0
+    ]
+   ],
+   "about": "A 197 x 131 ft (60 x 40 m) shaft that lifts a strike craft on its launch cradle up to the port Forward Grid and fires it out.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "fixture",
+   "name": "Shaft head doors",
+   "level": "L1",
+   "outline_m": [
+    [
+     303.0,
+     2.0
+    ],
+    [
+     357.0,
+     2.0
+    ],
+    [
+     357.0,
+     38.0
+    ],
+    [
+     303.0,
+     38.0
+    ]
+   ],
+   "about": "Armoured doors that close over the shaft between launches.",
+   "parent": "E010",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

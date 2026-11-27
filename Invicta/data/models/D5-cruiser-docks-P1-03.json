@@ -1,0 +1,342 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  980.0,
+  2048.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Berth floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Berth 2A",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     435.6,
+     0.0
+    ],
+    [
+     435.6,
+     2048.0
+    ],
+    [
+     0.0,
+     2048.0
+    ]
+   ],
+   "about": "A berth for one 2 km escort cruiser, which docks nose first towards Cruiser Gate 2, held by mooring arms along both sides.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Berth control cabin",
+   "level": "L1",
+   "outline_m": [
+    [
+     262.3,
+     45.2
+    ],
+    [
+     275.7,
+     45.2
+    ],
+    [
+     275.7,
+     55.2
+    ],
+    [
+     262.3,
+     55.2
+    ]
+   ],
+   "about": "The berth master watches the cruiser's mooring arms, power and hoses from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Line handlers' shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     275.7,
+     45.2
+    ],
+    [
+     282.3,
+     45.2
+    ],
+    [
+     282.3,
+     55.2
+    ],
+    [
+     275.7,
+     55.2
+    ]
+   ],
+   "about": "Shelter and kit for the crew who make the cruiser fast.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.7,
+     204.8
+    ],
+    [
+     26.1,
+     204.8
+    ],
+    [
+     26.1,
+     1843.2
+    ],
+    [
+     8.7,
+     1843.2
+    ]
+   ],
+   "about": "Hydraulic arms that grip the cruiser's hull and hold it steady.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Service apron",
+   "level": "L1",
+   "outline_m": [
+    [
+     435.6,
+     0.0
+    ],
+    [
+     544.4,
+     0.0
+    ],
+    [
+     544.4,
+     2048.0
+    ],
+    [
+     435.6,
+     2048.0
+    ]
+   ],
+   "about": "The strip between the two berths, with shore connections, fuel valves and the gangway towers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Shore connection house",
+   "level": "L1",
+   "outline_m": [
+    [
+     446.7,
+     739.8
+    ],
+    [
+     466.7,
+     739.8
+    ],
+    [
+     466.7,
+     751.8
+    ],
+    [
+     446.7,
+     751.8
+    ]
+   ],
+   "about": "Where shore power, water, air and data cables plug into the cruiser.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Fuel valve house",
+   "level": "L1",
+   "outline_m": [
+    [
+     466.7,
+     739.8
+    ],
+    [
+     476.7,
+     739.8
+    ],
+    [
+     476.7,
+     751.8
+    ],
+    [
+     466.7,
+     751.8
+    ]
+   ],
+   "about": "Valves that open the fuel line from the fuel farm to the cruiser.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "fixture",
+   "name": "Gangway towers",
+   "level": "L1",
+   "outline_m": [
+    [
+     468.2,
+     921.6
+    ],
+    [
+     511.8,
+     921.6
+    ],
+    [
+     511.8,
+     1126.4
+    ],
+    [
+     468.2,
+     1126.4
+    ]
+   ],
+   "about": "Towers with telescopic gangways that reach the cruisers' crew hatches.",
+   "parent": "E005",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Berth 2B",
+   "level": "L1",
+   "outline_m": [
+    [
+     544.4,
+     0.0
+    ],
+    [
+     980.0,
+     0.0
+    ],
+    [
+     980.0,
+     2048.0
+    ],
+    [
+     544.4,
+     2048.0
+    ]
+   ],
+   "about": "The second berth behind Cruiser Gate 2, for another escort cruiser.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "room",
+   "name": "Berth control cabin",
+   "level": "L1",
+   "outline_m": [
+    [
+     710.9,
+     655.7
+    ],
+    [
+     724.2,
+     655.7
+    ],
+    [
+     724.2,
+     665.7
+    ],
+    [
+     710.9,
+     665.7
+    ]
+   ],
+   "about": "The berth master watches the cruiser's mooring arms, power and hoses from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "room",
+   "name": "Line handlers' shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     724.2,
+     655.7
+    ],
+    [
+     730.9,
+     655.7
+    ],
+    [
+     730.9,
+     665.7
+    ],
+    [
+     724.2,
+     665.7
+    ]
+   ],
+   "about": "Shelter and kit for the crew who make the cruiser fast.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "fixture",
+   "name": "Mooring arms",
+   "level": "L1",
+   "outline_m": [
+    [
+     953.9,
+     204.8
+    ],
+    [
+     971.3,
+     204.8
+    ],
+    [
+     971.3,
+     1843.2
+    ],
+    [
+     953.9,
+     1843.2
+    ]
+   ],
+   "about": "Hydraulic arms that grip the cruiser's hull and hold it steady.",
+   "parent": "E009",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

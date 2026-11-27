@@ -1,0 +1,9605 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P5-14",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  170.0,
+  370.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground floor",
+   "z_m": 0.0,
+   "height_m": 4.8,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Office floor 1",
+   "z_m": 4.8,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Office floor 2",
+   "z_m": 9.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L4",
+   "name": "Level 4 · Office floor 3",
+   "z_m": 13.2,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.0,
+     346.0
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     126.2,
+     24.0
+    ],
+    [
+     139.2,
+     96.0
+    ],
+    [
+     144.3,
+     140.5
+    ],
+    [
+     146.0,
+     185.0
+    ],
+    [
+     144.3,
+     229.4
+    ],
+    [
+     139.2,
+     274.0
+    ],
+    [
+     126.2,
+     346.0
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     359.5
+    ],
+    [
+     10.5,
+     238.5
+    ],
+    [
+     13.5,
+     237.5
+    ],
+    [
+     13.5,
+     356.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     238.5
+    ],
+    [
+     10.5,
+     117.4
+    ],
+    [
+     13.5,
+     118.6
+    ],
+    [
+     13.5,
+     237.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.5,
+     117.4
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     24.8,
+     10.5
+    ],
+    [
+     27.2,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     118.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     24.8,
+     10.5
+    ],
+    [
+     137.4,
+     10.5
+    ],
+    [
+     139.2,
+     20.3
+    ],
+    [
+     136.7,
+     23.0
+    ],
+    [
+     134.9,
+     13.5
+    ],
+    [
+     27.2,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.2,
+     20.3
+    ],
+    [
+     152.6,
+     94.0
+    ],
+    [
+     157.7,
+     139.5
+    ],
+    [
+     157.7,
+     140.1
+    ],
+    [
+     154.8,
+     140.3
+    ],
+    [
+     154.7,
+     139.7
+    ],
+    [
+     149.6,
+     94.5
+    ],
+    [
+     136.7,
+     23.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.7,
+     140.1
+    ],
+    [
+     159.5,
+     185.0
+    ],
+    [
+     157.7,
+     230.4
+    ],
+    [
+     154.4,
+     260.1
+    ],
+    [
+     151.4,
+     259.7
+    ],
+    [
+     154.7,
+     230.2
+    ],
+    [
+     156.5,
+     185.0
+    ],
+    [
+     154.8,
+     140.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.4,
+     260.1
+    ],
+    [
+     152.6,
+     276.0
+    ],
+    [
+     137.4,
+     359.5
+    ],
+    [
+     116.5,
+     359.5
+    ],
+    [
+     114.9,
+     356.5
+    ],
+    [
+     134.9,
+     356.5
+    ],
+    [
+     149.6,
+     275.5
+    ],
+    [
+     151.4,
+     259.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.5,
+     359.5
+    ],
+    [
+     10.5,
+     359.5
+    ],
+    [
+     13.5,
+     356.5
+    ],
+    [
+     114.9,
+     356.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     325.2
+    ],
+    [
+     13.5,
+     317.0
+    ],
+    [
+     24.0,
+     308.9
+    ],
+    [
+     24.0,
+     316.7
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     254.5
+    ],
+    [
+     13.5,
+     246.2
+    ],
+    [
+     24.0,
+     242.5
+    ],
+    [
+     24.0,
+     250.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     183.7
+    ],
+    [
+     13.5,
+     175.5
+    ],
+    [
+     24.0,
+     176.1
+    ],
+    [
+     24.0,
+     183.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     113.0
+    ],
+    [
+     13.5,
+     104.7
+    ],
+    [
+     24.0,
+     109.6
+    ],
+    [
+     24.0,
+     117.4
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     42.2
+    ],
+    [
+     13.5,
+     33.9
+    ],
+    [
+     24.0,
+     43.2
+    ],
+    [
+     24.0,
+     50.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     57.8,
+     13.5
+    ],
+    [
+     66.5,
+     13.5
+    ],
+    [
+     68.6,
+     24.0
+    ],
+    [
+     61.3,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     132.3,
+     13.5
+    ],
+    [
+     134.9,
+     13.5
+    ],
+    [
+     136.0,
+     19.3
+    ],
+    [
+     127.1,
+     29.2
+    ],
+    [
+     126.2,
+     24.0
+    ],
+    [
+     123.9,
+     24.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     147.4,
+     82.4
+    ],
+    [
+     149.0,
+     90.8
+    ],
+    [
+     138.6,
+     92.7
+    ],
+    [
+     137.3,
+     85.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.2,
+     151.7
+    ],
+    [
+     155.5,
+     159.7
+    ],
+    [
+     145.0,
+     160.2
+    ],
+    [
+     144.7,
+     152.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.1,
+     220.8
+    ],
+    [
+     154.8,
+     228.9
+    ],
+    [
+     144.3,
+     228.1
+    ],
+    [
+     144.6,
+     220.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     147.0,
+     290.2
+    ],
+    [
+     145.5,
+     298.5
+    ],
+    [
+     135.5,
+     294.4
+    ],
+    [
+     136.9,
+     287.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     129.6,
+     356.5
+    ],
+    [
+     120.9,
+     356.5
+    ],
+    [
+     114.4,
+     346.0
+    ],
+    [
+     121.7,
+     346.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     55.1,
+     356.5
+    ],
+    [
+     46.4,
+     356.5
+    ],
+    [
+     51.7,
+     346.0
+    ],
+    [
+     59.0,
+     346.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Reception",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     370.0
+    ],
+    [
+     0.0,
+     354.3
+    ],
+    [
+     10.5,
+     344.7
+    ],
+    [
+     10.5,
+     359.5
+    ]
+   ],
+   "about": "The front desk where visitors sign in, get a pass and are met.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     354.3
+    ],
+    [
+     0.0,
+     348.4
+    ],
+    [
+     10.5,
+     339.2
+    ],
+    [
+     10.5,
+     344.7
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Supply office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     348.4
+    ],
+    [
+     0.0,
+     340.6
+    ],
+    [
+     10.5,
+     331.8
+    ],
+    [
+     10.5,
+     339.2
+    ]
+   ],
+   "about": "Orders the fleet's supplies.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Pay office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     340.6
+    ],
+    [
+     0.0,
+     332.8
+    ],
+    [
+     10.5,
+     324.4
+    ],
+    [
+     10.5,
+     331.8
+    ]
+   ],
+   "about": "Crews' pay and allowances.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     332.8
+    ],
+    [
+     0.0,
+     318.0
+    ],
+    [
+     10.5,
+     310.5
+    ],
+    [
+     10.5,
+     324.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     318.0
+    ],
+    [
+     0.0,
+     309.2
+    ],
+    [
+     10.5,
+     302.2
+    ],
+    [
+     10.5,
+     310.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     309.2
+    ],
+    [
+     0.0,
+     294.5
+    ],
+    [
+     10.5,
+     288.3
+    ],
+    [
+     10.5,
+     302.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     294.5
+    ],
+    [
+     0.0,
+     285.7
+    ],
+    [
+     10.5,
+     280.0
+    ],
+    [
+     10.5,
+     288.3
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     285.7
+    ],
+    [
+     0.0,
+     271.0
+    ],
+    [
+     10.5,
+     266.1
+    ],
+    [
+     10.5,
+     280.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     271.0
+    ],
+    [
+     0.0,
+     262.2
+    ],
+    [
+     10.5,
+     257.8
+    ],
+    [
+     10.5,
+     266.1
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     262.2
+    ],
+    [
+     0.0,
+     247.5
+    ],
+    [
+     10.5,
+     243.9
+    ],
+    [
+     10.5,
+     257.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     247.5
+    ],
+    [
+     0.0,
+     238.7
+    ],
+    [
+     10.5,
+     235.6
+    ],
+    [
+     10.5,
+     243.9
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     238.7
+    ],
+    [
+     0.0,
+     224.0
+    ],
+    [
+     10.5,
+     221.7
+    ],
+    [
+     10.5,
+     235.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     224.0
+    ],
+    [
+     0.0,
+     215.1
+    ],
+    [
+     10.5,
+     213.4
+    ],
+    [
+     10.5,
+     221.7
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     215.1
+    ],
+    [
+     0.0,
+     200.4
+    ],
+    [
+     10.5,
+     199.6
+    ],
+    [
+     10.5,
+     213.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     200.4
+    ],
+    [
+     0.0,
+     191.6
+    ],
+    [
+     10.5,
+     191.2
+    ],
+    [
+     10.5,
+     199.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     191.6
+    ],
+    [
+     0.0,
+     176.9
+    ],
+    [
+     10.5,
+     177.4
+    ],
+    [
+     10.5,
+     191.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     176.9
+    ],
+    [
+     0.0,
+     168.1
+    ],
+    [
+     10.5,
+     169.0
+    ],
+    [
+     10.5,
+     177.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     168.1
+    ],
+    [
+     0.0,
+     153.4
+    ],
+    [
+     10.5,
+     155.2
+    ],
+    [
+     10.5,
+     169.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     153.4
+    ],
+    [
+     0.0,
+     144.6
+    ],
+    [
+     10.5,
+     146.9
+    ],
+    [
+     10.5,
+     155.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     144.6
+    ],
+    [
+     0.0,
+     129.9
+    ],
+    [
+     10.5,
+     133.0
+    ],
+    [
+     10.5,
+     146.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     129.9
+    ],
+    [
+     0.0,
+     121.0
+    ],
+    [
+     10.5,
+     124.7
+    ],
+    [
+     10.5,
+     133.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     121.0
+    ],
+    [
+     0.0,
+     106.3
+    ],
+    [
+     10.5,
+     110.8
+    ],
+    [
+     10.5,
+     124.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     106.3
+    ],
+    [
+     0.0,
+     97.5
+    ],
+    [
+     10.5,
+     102.5
+    ],
+    [
+     10.5,
+     110.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     97.5
+    ],
+    [
+     0.0,
+     82.8
+    ],
+    [
+     10.5,
+     88.6
+    ],
+    [
+     10.5,
+     102.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     82.8
+    ],
+    [
+     0.0,
+     74.0
+    ],
+    [
+     10.5,
+     80.3
+    ],
+    [
+     10.5,
+     88.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     74.0
+    ],
+    [
+     0.0,
+     59.3
+    ],
+    [
+     10.5,
+     66.4
+    ],
+    [
+     10.5,
+     80.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     59.3
+    ],
+    [
+     0.0,
+     50.5
+    ],
+    [
+     10.5,
+     58.1
+    ],
+    [
+     10.5,
+     66.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     50.5
+    ],
+    [
+     0.0,
+     35.8
+    ],
+    [
+     10.5,
+     44.2
+    ],
+    [
+     10.5,
+     58.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     35.8
+    ],
+    [
+     0.0,
+     26.9
+    ],
+    [
+     10.5,
+     35.9
+    ],
+    [
+     10.5,
+     44.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     26.9
+    ],
+    [
+     0.0,
+     12.2
+    ],
+    [
+     10.5,
+     22.0
+    ],
+    [
+     10.5,
+     35.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     12.2
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     10.5,
+     13.7
+    ],
+    [
+     10.5,
+     22.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     11.8,
+     0.0
+    ],
+    [
+     20.7,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     13.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.8,
+     0.0
+    ],
+    [
+     20.9,
+     0.0
+    ],
+    [
+     28.7,
+     10.5
+    ],
+    [
+     20.7,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.9,
+     0.0
+    ],
+    [
+     36.2,
+     0.0
+    ],
+    [
+     41.9,
+     10.5
+    ],
+    [
+     28.7,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     36.2,
+     0.0
+    ],
+    [
+     45.4,
+     0.0
+    ],
+    [
+     49.9,
+     10.5
+    ],
+    [
+     41.9,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.4,
+     0.0
+    ],
+    [
+     60.7,
+     0.0
+    ],
+    [
+     63.2,
+     10.5
+    ],
+    [
+     49.9,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     60.7,
+     0.0
+    ],
+    [
+     69.9,
+     0.0
+    ],
+    [
+     71.2,
+     10.5
+    ],
+    [
+     63.2,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     69.9,
+     0.0
+    ],
+    [
+     85.2,
+     0.0
+    ],
+    [
+     84.4,
+     10.5
+    ],
+    [
+     71.2,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     85.2,
+     0.0
+    ],
+    [
+     94.3,
+     0.0
+    ],
+    [
+     92.4,
+     10.5
+    ],
+    [
+     84.4,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.3,
+     0.0
+    ],
+    [
+     109.6,
+     0.0
+    ],
+    [
+     105.7,
+     10.5
+    ],
+    [
+     92.4,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     109.6,
+     0.0
+    ],
+    [
+     118.8,
+     0.0
+    ],
+    [
+     113.6,
+     10.5
+    ],
+    [
+     105.7,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     118.8,
+     0.0
+    ],
+    [
+     134.1,
+     0.0
+    ],
+    [
+     126.9,
+     10.5
+    ],
+    [
+     113.6,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.1,
+     0.0
+    ],
+    [
+     143.3,
+     0.0
+    ],
+    [
+     134.9,
+     10.5
+    ],
+    [
+     126.9,
+     10.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.3,
+     0.0
+    ],
+    [
+     146.2,
+     0.0
+    ],
+    [
+     148.4,
+     11.9
+    ],
+    [
+     139.4,
+     21.3
+    ],
+    [
+     137.4,
+     10.5
+    ],
+    [
+     134.9,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.4,
+     11.9
+    ],
+    [
+     150.0,
+     20.8
+    ],
+    [
+     140.8,
+     29.3
+    ],
+    [
+     139.4,
+     21.3
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.0,
+     20.8
+    ],
+    [
+     152.7,
+     35.6
+    ],
+    [
+     143.3,
+     42.6
+    ],
+    [
+     140.8,
+     29.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.7,
+     35.6
+    ],
+    [
+     154.3,
+     44.4
+    ],
+    [
+     144.7,
+     50.6
+    ],
+    [
+     143.3,
+     42.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.3,
+     44.4
+    ],
+    [
+     157.0,
+     59.2
+    ],
+    [
+     147.1,
+     64.0
+    ],
+    [
+     144.7,
+     50.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     157.0,
+     59.2
+    ],
+    [
+     158.6,
+     68.1
+    ],
+    [
+     148.6,
+     72.0
+    ],
+    [
+     147.1,
+     64.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     158.6,
+     68.1
+    ],
+    [
+     161.2,
+     82.9
+    ],
+    [
+     151.0,
+     85.3
+    ],
+    [
+     148.6,
+     72.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.2,
+     82.9
+    ],
+    [
+     162.9,
+     91.7
+    ],
+    [
+     152.5,
+     93.3
+    ],
+    [
+     151.0,
+     85.3
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.9,
+     91.7
+    ],
+    [
+     163.0,
+     92.5
+    ],
+    [
+     164.5,
+     106.0
+    ],
+    [
+     154.1,
+     107.4
+    ],
+    [
+     152.6,
+     94.0
+    ],
+    [
+     152.5,
+     93.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.5,
+     106.0
+    ],
+    [
+     165.5,
+     114.6
+    ],
+    [
+     155.1,
+     115.8
+    ],
+    [
+     154.1,
+     107.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.5,
+     114.6
+    ],
+    [
+     167.1,
+     128.9
+    ],
+    [
+     156.6,
+     129.9
+    ],
+    [
+     155.1,
+     115.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     167.1,
+     128.9
+    ],
+    [
+     168.1,
+     137.5
+    ],
+    [
+     157.6,
+     138.3
+    ],
+    [
+     156.6,
+     129.9
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.1,
+     137.5
+    ],
+    [
+     168.2,
+     138.7
+    ],
+    [
+     168.7,
+     151.9
+    ],
+    [
+     158.2,
+     152.5
+    ],
+    [
+     157.7,
+     139.5
+    ],
+    [
+     157.6,
+     138.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.7,
+     151.9
+    ],
+    [
+     169.0,
+     160.6
+    ],
+    [
+     158.6,
+     161.0
+    ],
+    [
+     158.2,
+     152.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.0,
+     160.6
+    ],
+    [
+     169.6,
+     175.0
+    ],
+    [
+     159.1,
+     175.1
+    ],
+    [
+     158.6,
+     161.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.6,
+     175.0
+    ],
+    [
+     169.9,
+     183.6
+    ],
+    [
+     159.4,
+     183.6
+    ],
+    [
+     159.1,
+     175.1
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.9,
+     183.6
+    ],
+    [
+     170.0,
+     185.0
+    ],
+    [
+     169.5,
+     198.0
+    ],
+    [
+     159.0,
+     197.8
+    ],
+    [
+     159.5,
+     185.0
+    ],
+    [
+     159.4,
+     183.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.5,
+     198.0
+    ],
+    [
+     169.2,
+     206.6
+    ],
+    [
+     158.7,
+     206.3
+    ],
+    [
+     159.0,
+     197.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.2,
+     206.6
+    ],
+    [
+     168.6,
+     221.0
+    ],
+    [
+     158.1,
+     220.4
+    ],
+    [
+     158.7,
+     206.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.6,
+     221.0
+    ],
+    [
+     168.3,
+     229.7
+    ],
+    [
+     157.8,
+     228.9
+    ],
+    [
+     158.1,
+     220.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.3,
+     229.7
+    ],
+    [
+     168.2,
+     231.2
+    ],
+    [
+     166.8,
+     244.0
+    ],
+    [
+     156.3,
+     243.0
+    ],
+    [
+     157.7,
+     230.4
+    ],
+    [
+     157.8,
+     228.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.8,
+     244.0
+    ],
+    [
+     165.8,
+     252.6
+    ],
+    [
+     155.4,
+     251.4
+    ],
+    [
+     156.3,
+     243.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.8,
+     252.6
+    ],
+    [
+     164.2,
+     266.9
+    ],
+    [
+     153.8,
+     265.5
+    ],
+    [
+     155.4,
+     251.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     164.2,
+     266.9
+    ],
+    [
+     163.2,
+     275.5
+    ],
+    [
+     152.8,
+     274.0
+    ],
+    [
+     153.8,
+     265.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     163.2,
+     275.5
+    ],
+    [
+     163.0,
+     277.5
+    ],
+    [
+     160.7,
+     290.2
+    ],
+    [
+     150.5,
+     287.4
+    ],
+    [
+     152.6,
+     276.0
+    ],
+    [
+     152.8,
+     274.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.7,
+     290.2
+    ],
+    [
+     159.1,
+     299.0
+    ],
+    [
+     149.1,
+     295.4
+    ],
+    [
+     150.5,
+     287.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.1,
+     299.0
+    ],
+    [
+     156.4,
+     313.8
+    ],
+    [
+     146.6,
+     308.8
+    ],
+    [
+     149.1,
+     295.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.4,
+     313.8
+    ],
+    [
+     154.8,
+     322.7
+    ],
+    [
+     145.2,
+     316.8
+    ],
+    [
+     146.6,
+     308.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.8,
+     322.7
+    ],
+    [
+     152.1,
+     337.5
+    ],
+    [
+     142.8,
+     330.1
+    ],
+    [
+     145.2,
+     316.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.1,
+     337.5
+    ],
+    [
+     150.5,
+     346.3
+    ],
+    [
+     141.3,
+     338.1
+    ],
+    [
+     142.8,
+     330.1
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.5,
+     346.3
+    ],
+    [
+     147.8,
+     361.1
+    ],
+    [
+     138.9,
+     351.5
+    ],
+    [
+     141.3,
+     338.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     147.8,
+     361.1
+    ],
+    [
+     146.2,
+     370.0
+    ],
+    [
+     137.4,
+     359.5
+    ],
+    [
+     138.9,
+     351.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     146.2,
+     370.0
+    ],
+    [
+     131.0,
+     370.0
+    ],
+    [
+     124.2,
+     359.5
+    ],
+    [
+     137.4,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.0,
+     370.0
+    ],
+    [
+     121.8,
+     370.0
+    ],
+    [
+     116.2,
+     359.5
+    ],
+    [
+     124.2,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.8,
+     370.0
+    ],
+    [
+     106.5,
+     370.0
+    ],
+    [
+     103.0,
+     359.5
+    ],
+    [
+     116.2,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     106.5,
+     370.0
+    ],
+    [
+     97.3,
+     370.0
+    ],
+    [
+     95.0,
+     359.5
+    ],
+    [
+     103.0,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     97.3,
+     370.0
+    ],
+    [
+     82.0,
+     370.0
+    ],
+    [
+     81.7,
+     359.5
+    ],
+    [
+     95.0,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.0,
+     370.0
+    ],
+    [
+     72.8,
+     370.0
+    ],
+    [
+     73.7,
+     359.5
+    ],
+    [
+     81.7,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.8,
+     370.0
+    ],
+    [
+     57.5,
+     370.0
+    ],
+    [
+     60.5,
+     359.5
+    ],
+    [
+     73.7,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     57.5,
+     370.0
+    ],
+    [
+     48.4,
+     370.0
+    ],
+    [
+     52.5,
+     359.5
+    ],
+    [
+     60.5,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.4,
+     370.0
+    ],
+    [
+     33.1,
+     370.0
+    ],
+    [
+     39.2,
+     359.5
+    ],
+    [
+     52.5,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     33.1,
+     370.0
+    ],
+    [
+     23.9,
+     370.0
+    ],
+    [
+     31.3,
+     359.5
+    ],
+    [
+     39.2,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.9,
+     370.0
+    ],
+    [
+     8.6,
+     370.0
+    ],
+    [
+     18.0,
+     359.5
+    ],
+    [
+     31.3,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.6,
+     370.0
+    ],
+    [
+     0.0,
+     370.0
+    ],
+    [
+     10.5,
+     359.5
+    ],
+    [
+     18.0,
+     359.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     356.5
+    ],
+    [
+     13.5,
+     341.8
+    ],
+    [
+     24.0,
+     332.2
+    ],
+    [
+     24.0,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     341.8
+    ],
+    [
+     13.5,
+     332.9
+    ],
+    [
+     24.0,
+     323.9
+    ],
+    [
+     24.0,
+     332.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     332.9
+    ],
+    [
+     13.5,
+     325.2
+    ],
+    [
+     24.0,
+     316.7
+    ],
+    [
+     24.0,
+     323.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     317.0
+    ],
+    [
+     13.5,
+     308.2
+    ],
+    [
+     24.0,
+     300.6
+    ],
+    [
+     24.0,
+     308.9
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     308.2
+    ],
+    [
+     13.5,
+     293.4
+    ],
+    [
+     24.0,
+     286.8
+    ],
+    [
+     24.0,
+     300.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     293.4
+    ],
+    [
+     13.5,
+     284.6
+    ],
+    [
+     24.0,
+     278.5
+    ],
+    [
+     24.0,
+     286.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     284.6
+    ],
+    [
+     13.5,
+     269.8
+    ],
+    [
+     24.0,
+     264.6
+    ],
+    [
+     24.0,
+     278.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     269.8
+    ],
+    [
+     13.5,
+     254.5
+    ],
+    [
+     24.0,
+     250.2
+    ],
+    [
+     24.0,
+     264.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     246.2
+    ],
+    [
+     13.5,
+     231.5
+    ],
+    [
+     24.0,
+     228.6
+    ],
+    [
+     24.0,
+     242.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     231.5
+    ],
+    [
+     13.5,
+     222.7
+    ],
+    [
+     24.0,
+     220.3
+    ],
+    [
+     24.0,
+     228.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     222.7
+    ],
+    [
+     13.5,
+     207.9
+    ],
+    [
+     24.0,
+     206.5
+    ],
+    [
+     24.0,
+     220.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     207.9
+    ],
+    [
+     13.5,
+     199.1
+    ],
+    [
+     24.0,
+     198.2
+    ],
+    [
+     24.0,
+     206.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     199.1
+    ],
+    [
+     13.5,
+     183.7
+    ],
+    [
+     24.0,
+     183.8
+    ],
+    [
+     24.0,
+     198.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     175.5
+    ],
+    [
+     13.5,
+     166.6
+    ],
+    [
+     24.0,
+     167.8
+    ],
+    [
+     24.0,
+     176.1
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     166.6
+    ],
+    [
+     13.5,
+     151.9
+    ],
+    [
+     24.0,
+     153.9
+    ],
+    [
+     24.0,
+     167.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     151.9
+    ],
+    [
+     13.5,
+     143.0
+    ],
+    [
+     24.0,
+     145.6
+    ],
+    [
+     24.0,
+     153.9
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     143.0
+    ],
+    [
+     13.5,
+     128.3
+    ],
+    [
+     24.0,
+     131.8
+    ],
+    [
+     24.0,
+     145.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     128.3
+    ],
+    [
+     13.5,
+     113.0
+    ],
+    [
+     24.0,
+     117.4
+    ],
+    [
+     24.0,
+     131.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     104.7
+    ],
+    [
+     13.5,
+     90.0
+    ],
+    [
+     24.0,
+     95.8
+    ],
+    [
+     24.0,
+     109.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     90.0
+    ],
+    [
+     13.5,
+     81.1
+    ],
+    [
+     24.0,
+     87.5
+    ],
+    [
+     24.0,
+     95.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     81.1
+    ],
+    [
+     13.5,
+     66.4
+    ],
+    [
+     24.0,
+     73.7
+    ],
+    [
+     24.0,
+     87.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     66.4
+    ],
+    [
+     13.5,
+     57.6
+    ],
+    [
+     24.0,
+     65.4
+    ],
+    [
+     24.0,
+     73.7
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     57.6
+    ],
+    [
+     13.5,
+     42.2
+    ],
+    [
+     24.0,
+     50.9
+    ],
+    [
+     24.0,
+     65.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     33.9
+    ],
+    [
+     13.5,
+     25.1
+    ],
+    [
+     24.0,
+     34.9
+    ],
+    [
+     24.0,
+     43.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.5,
+     25.1
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     16.8,
+     13.5
+    ],
+    [
+     26.8,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     34.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     16.8,
+     13.5
+    ],
+    [
+     26.1,
+     13.5
+    ],
+    [
+     34.6,
+     24.0
+    ],
+    [
+     26.8,
+     24.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     26.1,
+     13.5
+    ],
+    [
+     41.6,
+     13.5
+    ],
+    [
+     47.7,
+     24.0
+    ],
+    [
+     34.6,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.6,
+     13.5
+    ],
+    [
+     57.8,
+     13.5
+    ],
+    [
+     61.3,
+     24.0
+    ],
+    [
+     47.7,
+     24.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     66.5,
+     13.5
+    ],
+    [
+     82.0,
+     13.5
+    ],
+    [
+     81.6,
+     24.0
+    ],
+    [
+     68.6,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.0,
+     13.5
+    ],
+    [
+     91.3,
+     13.5
+    ],
+    [
+     89.5,
+     24.0
+    ],
+    [
+     81.6,
+     24.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     91.3,
+     13.5
+    ],
+    [
+     106.8,
+     13.5
+    ],
+    [
+     102.5,
+     24.0
+    ],
+    [
+     89.5,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     106.8,
+     13.5
+    ],
+    [
+     116.1,
+     13.5
+    ],
+    [
+     110.3,
+     24.0
+    ],
+    [
+     102.5,
+     24.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     116.1,
+     13.5
+    ],
+    [
+     132.3,
+     13.5
+    ],
+    [
+     123.9,
+     24.0
+    ],
+    [
+     110.3,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     136.0,
+     19.3
+    ],
+    [
+     137.6,
+     28.2
+    ],
+    [
+     128.5,
+     37.1
+    ],
+    [
+     127.1,
+     29.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     137.6,
+     28.2
+    ],
+    [
+     140.3,
+     43.1
+    ],
+    [
+     130.9,
+     50.3
+    ],
+    [
+     128.5,
+     37.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     140.3,
+     43.1
+    ],
+    [
+     141.9,
+     52.0
+    ],
+    [
+     132.4,
+     58.3
+    ],
+    [
+     130.9,
+     50.3
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.9,
+     52.0
+    ],
+    [
+     144.6,
+     66.9
+    ],
+    [
+     134.8,
+     71.5
+    ],
+    [
+     132.4,
+     58.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     144.6,
+     66.9
+    ],
+    [
+     147.4,
+     82.4
+    ],
+    [
+     137.3,
+     85.3
+    ],
+    [
+     134.8,
+     71.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     149.0,
+     90.8
+    ],
+    [
+     149.6,
+     94.5
+    ],
+    [
+     150.8,
+     105.2
+    ],
+    [
+     140.4,
+     106.6
+    ],
+    [
+     139.2,
+     96.0
+    ],
+    [
+     138.6,
+     92.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.8,
+     105.2
+    ],
+    [
+     151.8,
+     113.8
+    ],
+    [
+     141.4,
+     115.0
+    ],
+    [
+     140.4,
+     106.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.8,
+     113.8
+    ],
+    [
+     153.4,
+     128.1
+    ],
+    [
+     143.0,
+     129.1
+    ],
+    [
+     141.4,
+     115.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.4,
+     128.1
+    ],
+    [
+     154.4,
+     136.7
+    ],
+    [
+     143.9,
+     137.5
+    ],
+    [
+     143.0,
+     129.1
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.4,
+     136.7
+    ],
+    [
+     154.7,
+     139.7
+    ],
+    [
+     155.2,
+     151.7
+    ],
+    [
+     144.7,
+     152.3
+    ],
+    [
+     144.3,
+     140.5
+    ],
+    [
+     143.9,
+     137.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     155.5,
+     159.7
+    ],
+    [
+     155.8,
+     168.4
+    ],
+    [
+     145.3,
+     168.7
+    ],
+    [
+     145.0,
+     160.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     155.8,
+     168.4
+    ],
+    [
+     156.4,
+     182.8
+    ],
+    [
+     145.9,
+     182.8
+    ],
+    [
+     145.3,
+     168.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.4,
+     182.8
+    ],
+    [
+     156.5,
+     185.0
+    ],
+    [
+     156.2,
+     191.4
+    ],
+    [
+     145.7,
+     191.3
+    ],
+    [
+     146.0,
+     185.0
+    ],
+    [
+     145.9,
+     182.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     156.2,
+     191.4
+    ],
+    [
+     155.7,
+     205.8
+    ],
+    [
+     145.2,
+     205.5
+    ],
+    [
+     145.7,
+     191.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     155.7,
+     205.8
+    ],
+    [
+     155.1,
+     220.8
+    ],
+    [
+     144.6,
+     220.2
+    ],
+    [
+     145.2,
+     205.5
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     154.8,
+     228.9
+    ],
+    [
+     154.7,
+     230.2
+    ],
+    [
+     153.3,
+     243.2
+    ],
+    [
+     142.8,
+     242.2
+    ],
+    [
+     144.3,
+     229.4
+    ],
+    [
+     144.3,
+     228.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     153.3,
+     243.2
+    ],
+    [
+     152.3,
+     251.8
+    ],
+    [
+     141.9,
+     250.7
+    ],
+    [
+     142.8,
+     242.2
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.3,
+     251.8
+    ],
+    [
+     150.7,
+     266.1
+    ],
+    [
+     140.3,
+     264.7
+    ],
+    [
+     141.9,
+     250.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     150.7,
+     266.1
+    ],
+    [
+     149.7,
+     274.7
+    ],
+    [
+     139.3,
+     273.2
+    ],
+    [
+     140.3,
+     264.7
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     149.7,
+     274.7
+    ],
+    [
+     149.6,
+     275.5
+    ],
+    [
+     147.0,
+     290.2
+    ],
+    [
+     136.9,
+     287.0
+    ],
+    [
+     139.2,
+     274.0
+    ],
+    [
+     139.3,
+     273.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.5,
+     298.5
+    ],
+    [
+     143.8,
+     307.4
+    ],
+    [
+     134.1,
+     302.4
+    ],
+    [
+     135.5,
+     294.4
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.8,
+     307.4
+    ],
+    [
+     141.1,
+     322.3
+    ],
+    [
+     131.7,
+     315.6
+    ],
+    [
+     134.1,
+     302.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.1,
+     322.3
+    ],
+    [
+     139.5,
+     331.2
+    ],
+    [
+     130.2,
+     323.5
+    ],
+    [
+     131.7,
+     315.6
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.5,
+     331.2
+    ],
+    [
+     136.8,
+     346.1
+    ],
+    [
+     127.8,
+     336.8
+    ],
+    [
+     130.2,
+     323.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     136.8,
+     346.1
+    ],
+    [
+     134.9,
+     356.5
+    ],
+    [
+     129.6,
+     356.5
+    ],
+    [
+     121.7,
+     346.0
+    ],
+    [
+     126.2,
+     346.0
+    ],
+    [
+     127.8,
+     336.8
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.9,
+     356.5
+    ],
+    [
+     105.4,
+     356.5
+    ],
+    [
+     101.3,
+     346.0
+    ],
+    [
+     114.4,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     105.4,
+     356.5
+    ],
+    [
+     96.1,
+     356.5
+    ],
+    [
+     93.5,
+     346.0
+    ],
+    [
+     101.3,
+     346.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     96.1,
+     356.5
+    ],
+    [
+     80.6,
+     356.5
+    ],
+    [
+     80.4,
+     346.0
+    ],
+    [
+     93.5,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     80.6,
+     356.5
+    ],
+    [
+     71.3,
+     356.5
+    ],
+    [
+     72.6,
+     346.0
+    ],
+    [
+     80.4,
+     346.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     71.3,
+     356.5
+    ],
+    [
+     55.1,
+     356.5
+    ],
+    [
+     59.0,
+     346.0
+    ],
+    [
+     72.6,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.4,
+     356.5
+    ],
+    [
+     37.1,
+     356.5
+    ],
+    [
+     43.9,
+     346.0
+    ],
+    [
+     51.7,
+     346.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "room",
+   "name": "Staff office",
+   "level": "L1",
+   "outline_m": [
+    [
+     37.1,
+     356.5
+    ],
+    [
+     21.6,
+     356.5
+    ],
+    [
+     30.8,
+     346.0
+    ],
+    [
+     43.9,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "room",
+   "name": "Meeting room",
+   "level": "L1",
+   "outline_m": [
+    [
+     21.6,
+     356.5
+    ],
+    [
+     13.5,
+     356.5
+    ],
+    [
+     24.0,
+     346.0
+    ],
+    [
+     30.8,
+     346.0
+    ]
+   ],
+   "about": "Small meeting room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     359.5
+    ],
+    [
+     10.5,
+     238.5
+    ],
+    [
+     13.5,
+     237.5
+    ],
+    [
+     13.5,
+     356.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     238.5
+    ],
+    [
+     10.5,
+     117.4
+    ],
+    [
+     13.5,
+     118.6
+    ],
+    [
+     13.5,
+     237.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     10.5,
+     117.4
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     24.8,
+     10.5
+    ],
+    [
+     27.2,
+     13.5
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     13.5,
+     118.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     24.8,
+     10.5
+    ],
+    [
+     137.4,
+     10.5
+    ],
+    [
+     139.2,
+     20.3
+    ],
+    [
+     136.7,
+     23.0
+    ],
+    [
+     134.9,
+     13.5
+    ],
+    [
+     27.2,
+     13.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     139.2,
+     20.3
+    ],
+    [
+     152.6,
+     94.0
+    ],
+    [
+     157.7,
+     139.5
+    ],
+    [
+     157.7,
+     140.1
+    ],
+    [
+     154.8,
+     140.3
+    ],
+    [
+     154.7,
+     139.7
+    ],
+    [
+     149.6,
+     94.5
+    ],
+    [
+     136.7,
+     23.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     157.7,
+     140.1
+    ],
+    [
+     159.5,
+     185.0
+    ],
+    [
+     157.7,
+     230.4
+    ],
+    [
+     154.4,
+     260.1
+    ],
+    [
+     151.4,
+     259.7
+    ],
+    [
+     154.7,
+     230.2
+    ],
+    [
+     156.5,
+     185.0
+    ],
+    [
+     154.8,
+     140.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     154.4,
+     260.1
+    ],
+    [
+     152.6,
+     276.0
+    ],
+    [
+     137.4,
+     359.5
+    ],
+    [
+     116.5,
+     359.5
+    ],
+    [
+     114.9,
+     356.5
+    ],
+    [
+     134.9,
+     356.5
+    ],
+    [
+     149.6,
+     275.5
+    ],
+    [
+     151.4,
+     259.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "zone",
+   "name": "Corridor",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     116.5,
+     359.5
+    ],
+    [
+     10.5,
+     359.5
+    ],
+    [
+     13.5,
+     356.5
+    ],
+    [
+     114.9,
+     356.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Tea point",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     370.0
+    ],
+    [
+     0.0,
+     366.2
+    ],
+    [
+     10.5,
+     355.9
+    ],
+    [
+     10.5,
+     359.5
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     366.2
+    ],
+    [
+     0.0,
+     359.4
+    ],
+    [
+     10.5,
+     349.5
+    ],
+    [
+     10.5,
+     355.9
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     359.4
+    ],
+    [
+     0.0,
+     344.7
+    ],
+    [
+     10.5,
+     335.6
+    ],
+    [
+     10.5,
+     349.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     344.7
+    ],
+    [
+     0.0,
+     332.9
+    ],
+    [
+     10.5,
+     324.5
+    ],
+    [
+     10.5,
+     335.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     332.9
+    ],
+    [
+     0.0,
+     318.2
+    ],
+    [
+     10.5,
+     310.6
+    ],
+    [
+     10.5,
+     324.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     318.2
+    ],
+    [
+     0.0,
+     306.4
+    ],
+    [
+     10.5,
+     299.5
+    ],
+    [
+     10.5,
+     310.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     306.4
+    ],
+    [
+     0.0,
+     291.7
+    ],
+    [
+     10.5,
+     285.7
+    ],
+    [
+     10.5,
+     299.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     291.7
+    ],
+    [
+     0.0,
+     280.0
+    ],
+    [
+     10.5,
+     274.6
+    ],
+    [
+     10.5,
+     285.7
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     280.0
+    ],
+    [
+     0.0,
+     265.3
+    ],
+    [
+     10.5,
+     260.7
+    ],
+    [
+     10.5,
+     274.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     265.3
+    ],
+    [
+     0.0,
+     253.5
+    ],
+    [
+     10.5,
+     249.6
+    ],
+    [
+     10.5,
+     260.7
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     253.5
+    ],
+    [
+     0.0,
+     238.8
+    ],
+    [
+     10.5,
+     235.7
+    ],
+    [
+     10.5,
+     249.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     238.8
+    ],
+    [
+     0.0,
+     227.0
+    ],
+    [
+     10.5,
+     224.6
+    ],
+    [
+     10.5,
+     235.7
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     227.0
+    ],
+    [
+     0.0,
+     212.3
+    ],
+    [
+     10.5,
+     210.8
+    ],
+    [
+     10.5,
+     224.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     212.3
+    ],
+    [
+     0.0,
+     200.6
+    ],
+    [
+     10.5,
+     199.7
+    ],
+    [
+     10.5,
+     210.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     200.6
+    ],
+    [
+     0.0,
+     185.9
+    ],
+    [
+     10.5,
+     185.8
+    ],
+    [
+     10.5,
+     199.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     185.9
+    ],
+    [
+     0.0,
+     174.1
+    ],
+    [
+     10.5,
+     174.7
+    ],
+    [
+     10.5,
+     185.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     174.1
+    ],
+    [
+     0.0,
+     159.4
+    ],
+    [
+     10.5,
+     160.8
+    ],
+    [
+     10.5,
+     174.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     159.4
+    ],
+    [
+     0.0,
+     147.6
+    ],
+    [
+     10.5,
+     149.8
+    ],
+    [
+     10.5,
+     160.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     147.6
+    ],
+    [
+     0.0,
+     132.9
+    ],
+    [
+     10.5,
+     135.9
+    ],
+    [
+     10.5,
+     149.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     132.9
+    ],
+    [
+     0.0,
+     121.2
+    ],
+    [
+     10.5,
+     124.8
+    ],
+    [
+     10.5,
+     135.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     121.2
+    ],
+    [
+     0.0,
+     106.5
+    ],
+    [
+     10.5,
+     110.9
+    ],
+    [
+     10.5,
+     124.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     106.5
+    ],
+    [
+     0.0,
+     94.7
+    ],
+    [
+     10.5,
+     99.8
+    ],
+    [
+     10.5,
+     110.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     94.7
+    ],
+    [
+     0.0,
+     80.0
+    ],
+    [
+     10.5,
+     86.0
+    ],
+    [
+     10.5,
+     99.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     80.0
+    ],
+    [
+     0.0,
+     68.2
+    ],
+    [
+     10.5,
+     74.9
+    ],
+    [
+     10.5,
+     86.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     68.2
+    ],
+    [
+     0.0,
+     53.5
+    ],
+    [
+     10.5,
+     61.0
+    ],
+    [
+     10.5,
+     74.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     53.5
+    ],
+    [
+     0.0,
+     41.8
+    ],
+    [
+     10.5,
+     49.9
+    ],
+    [
+     10.5,
+     61.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     41.8
+    ],
+    [
+     0.0,
+     27.1
+    ],
+    [
+     10.5,
+     36.0
+    ],
+    [
+     10.5,
+     49.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     27.1
+    ],
+    [
+     0.0,
+     15.3
+    ],
+    [
+     10.5,
+     24.9
+    ],
+    [
+     10.5,
+     36.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     15.3
+    ],
+    [
+     0.0,
+     0.6
+    ],
+    [
+     10.5,
+     11.1
+    ],
+    [
+     10.5,
+     24.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     0.6
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     11.6,
+     0.0
+    ],
+    [
+     20.6,
+     10.5
+    ],
+    [
+     10.5,
+     10.5
+    ],
+    [
+     10.5,
+     11.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     11.6,
+     0.0
+    ],
+    [
+     26.9,
+     0.0
+    ],
+    [
+     33.9,
+     10.5
+    ],
+    [
+     20.6,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     26.9,
+     0.0
+    ],
+    [
+     39.1,
+     0.0
+    ],
+    [
+     44.5,
+     10.5
+    ],
+    [
+     33.9,
+     10.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     39.1,
+     0.0
+    ],
+    [
+     54.4,
+     0.0
+    ],
+    [
+     57.8,
+     10.5
+    ],
+    [
+     44.5,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     54.4,
+     0.0
+    ],
+    [
+     66.7,
+     0.0
+    ],
+    [
+     68.4,
+     10.5
+    ],
+    [
+     57.8,
+     10.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     66.7,
+     0.0
+    ],
+    [
+     82.0,
+     0.0
+    ],
+    [
+     81.7,
+     10.5
+    ],
+    [
+     68.4,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     82.0,
+     0.0
+    ],
+    [
+     94.2,
+     0.0
+    ],
+    [
+     92.3,
+     10.5
+    ],
+    [
+     81.7,
+     10.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     94.2,
+     0.0
+    ],
+    [
+     109.5,
+     0.0
+    ],
+    [
+     105.6,
+     10.5
+    ],
+    [
+     92.3,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     109.5,
+     0.0
+    ],
+    [
+     121.7,
+     0.0
+    ],
+    [
+     116.2,
+     10.5
+    ],
+    [
+     105.6,
+     10.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     121.7,
+     0.0
+    ],
+    [
+     137.0,
+     0.0
+    ],
+    [
+     129.5,
+     10.5
+    ],
+    [
+     116.2,
+     10.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     137.0,
+     0.0
+    ],
+    [
+     146.2,
+     0.0
+    ],
+    [
+     146.7,
+     2.9
+    ],
+    [
+     137.9,
+     13.2
+    ],
+    [
+     137.4,
+     10.5
+    ],
+    [
+     129.5,
+     10.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     146.7,
+     2.9
+    ],
+    [
+     149.4,
+     17.7
+    ],
+    [
+     140.3,
+     26.5
+    ],
+    [
+     137.9,
+     13.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     149.4,
+     17.7
+    ],
+    [
+     151.6,
+     29.5
+    ],
+    [
+     142.3,
+     37.2
+    ],
+    [
+     140.3,
+     26.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     151.6,
+     29.5
+    ],
+    [
+     154.2,
+     44.3
+    ],
+    [
+     144.7,
+     50.5
+    ],
+    [
+     142.3,
+     37.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     154.2,
+     44.3
+    ],
+    [
+     156.4,
+     56.1
+    ],
+    [
+     146.6,
+     61.2
+    ],
+    [
+     144.7,
+     50.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     156.4,
+     56.1
+    ],
+    [
+     159.1,
+     70.9
+    ],
+    [
+     149.1,
+     74.5
+    ],
+    [
+     146.6,
+     61.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     159.1,
+     70.9
+    ],
+    [
+     161.2,
+     82.7
+    ],
+    [
+     151.0,
+     85.2
+    ],
+    [
+     149.1,
+     74.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     161.2,
+     82.7
+    ],
+    [
+     163.0,
+     92.5
+    ],
+    [
+     163.5,
+     97.3
+    ],
+    [
+     153.1,
+     98.8
+    ],
+    [
+     152.6,
+     94.0
+    ],
+    [
+     151.0,
+     85.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     163.5,
+     97.3
+    ],
+    [
+     164.8,
+     108.8
+    ],
+    [
+     154.4,
+     110.0
+    ],
+    [
+     153.1,
+     98.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     164.8,
+     108.8
+    ],
+    [
+     166.4,
+     123.1
+    ],
+    [
+     156.0,
+     124.1
+    ],
+    [
+     154.4,
+     110.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     166.4,
+     123.1
+    ],
+    [
+     167.7,
+     134.5
+    ],
+    [
+     157.3,
+     135.4
+    ],
+    [
+     156.0,
+     124.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     167.7,
+     134.5
+    ],
+    [
+     168.2,
+     138.7
+    ],
+    [
+     168.6,
+     148.9
+    ],
+    [
+     158.1,
+     149.5
+    ],
+    [
+     157.7,
+     139.5
+    ],
+    [
+     157.3,
+     135.4
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.6,
+     148.9
+    ],
+    [
+     169.0,
+     160.4
+    ],
+    [
+     158.6,
+     160.8
+    ],
+    [
+     158.1,
+     149.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     169.0,
+     160.4
+    ],
+    [
+     169.6,
+     174.8
+    ],
+    [
+     159.1,
+     175.0
+    ],
+    [
+     158.6,
+     160.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     169.6,
+     174.8
+    ],
+    [
+     170.0,
+     185.0
+    ],
+    [
+     169.9,
+     186.3
+    ],
+    [
+     159.4,
+     186.3
+    ],
+    [
+     159.5,
+     185.0
+    ],
+    [
+     159.1,
+     175.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     169.9,
+     186.3
+    ],
+    [
+     169.4,
+     200.7
+    ],
+    [
+     158.9,
+     200.5
+    ],
+    [
+     159.4,
+     186.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     169.4,
+     200.7
+    ],
+    [
+     168.9,
+     212.3
+    ],
+    [
+     158.4,
+     211.8
+    ],
+    [
+     158.9,
+     200.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.9,
+     212.3
+    ],
+    [
+     168.4,
+     226.7
+    ],
+    [
+     157.9,
+     225.9
+    ],
+    [
+     158.4,
+     211.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     168.4,
+     226.7
+    ],
+    [
+     168.2,
+     231.2
+    ],
+    [
+     167.4,
+     238.1
+    ],
+    [
+     157.0,
+     237.2
+    ],
+    [
+     157.7,
+     230.4
+    ],
+    [
+     157.9,
+     225.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     167.4,
+     238.1
+    ],
+    [
+     165.8,
+     252.4
+    ],
+    [
+     155.4,
+     251.3
+    ],
+    [
+     157.0,
+     237.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     165.8,
+     252.4
+    ],
+    [
+     164.5,
+     263.9
+    ],
+    [
+     154.1,
+     262.6
+    ],
+    [
+     155.4,
+     251.3
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     164.5,
+     263.9
+    ],
+    [
+     163.0,
+     277.5
+    ],
+    [
+     162.9,
+     278.2
+    ],
+    [
+     152.5,
+     276.6
+    ],
+    [
+     152.6,
+     276.0
+    ],
+    [
+     154.1,
+     262.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     162.9,
+     278.2
+    ],
+    [
+     160.7,
+     290.0
+    ],
+    [
+     150.5,
+     287.3
+    ],
+    [
+     152.5,
+     276.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     160.7,
+     290.0
+    ],
+    [
+     158.0,
+     304.8
+    ],
+    [
+     148.1,
+     300.6
+    ],
+    [
+     150.5,
+     287.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     158.0,
+     304.8
+    ],
+    [
+     155.9,
+     316.6
+    ],
+    [
+     146.2,
+     311.3
+    ],
+    [
+     148.1,
+     300.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.9,
+     316.6
+    ],
+    [
+     153.2,
+     331.4
+    ],
+    [
+     143.8,
+     324.6
+    ],
+    [
+     146.2,
+     311.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     153.2,
+     331.4
+    ],
+    [
+     151.1,
+     343.2
+    ],
+    [
+     141.8,
+     335.3
+    ],
+    [
+     143.8,
+     324.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     151.1,
+     343.2
+    ],
+    [
+     148.4,
+     358.0
+    ],
+    [
+     139.4,
+     348.7
+    ],
+    [
+     141.8,
+     335.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     148.4,
+     358.0
+    ],
+    [
+     146.2,
+     369.8
+    ],
+    [
+     137.5,
+     359.3
+    ],
+    [
+     139.4,
+     348.7
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     146.2,
+     369.8
+    ],
+    [
+     146.2,
+     370.0
+    ],
+    [
+     131.1,
+     370.0
+    ],
+    [
+     124.3,
+     359.5
+    ],
+    [
+     137.4,
+     359.5
+    ],
+    [
+     137.5,
+     359.3
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     131.1,
+     370.0
+    ],
+    [
+     118.9,
+     370.0
+    ],
+    [
+     113.7,
+     359.5
+    ],
+    [
+     124.3,
+     359.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     118.9,
+     370.0
+    ],
+    [
+     103.6,
+     370.0
+    ],
+    [
+     100.4,
+     359.5
+    ],
+    [
+     113.7,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     103.6,
+     370.0
+    ],
+    [
+     91.3,
+     370.0
+    ],
+    [
+     89.8,
+     359.5
+    ],
+    [
+     100.4,
+     359.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     91.3,
+     370.0
+    ],
+    [
+     76.0,
+     370.0
+    ],
+    [
+     76.5,
+     359.5
+    ],
+    [
+     89.8,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     76.0,
+     370.0
+    ],
+    [
+     63.8,
+     370.0
+    ],
+    [
+     65.9,
+     359.5
+    ],
+    [
+     76.5,
+     359.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     63.8,
+     370.0
+    ],
+    [
+     48.5,
+     370.0
+    ],
+    [
+     52.6,
+     359.5
+    ],
+    [
+     65.9,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     48.5,
+     370.0
+    ],
+    [
+     36.3,
+     370.0
+    ],
+    [
+     42.0,
+     359.5
+    ],
+    [
+     52.6,
+     359.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     36.3,
+     370.0
+    ],
+    [
+     21.0,
+     370.0
+    ],
+    [
+     28.7,
+     359.5
+    ],
+    [
+     42.0,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     21.0,
+     370.0
+    ],
+    [
+     8.8,
+     370.0
+    ],
+    [
+     18.1,
+     359.5
+    ],
+    [
+     28.7,
+     359.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     8.8,
+     370.0
+    ],
+    [
+     0.0,
+     370.0
+    ],
+    [
+     10.5,
+     359.5
+    ],
+    [
+     18.1,
+     359.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     356.5
+    ],
+    [
+     13.5,
+     344.7
+    ],
+    [
+     24.0,
+     334.9
+    ],
+    [
+     24.0,
+     346.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     344.7
+    ],
+    [
+     13.5,
+     325.2
+    ],
+    [
+     24.0,
+     316.7
+    ],
+    [
+     24.0,
+     334.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     317.0
+    ],
+    [
+     13.5,
+     305.2
+    ],
+    [
+     24.0,
+     297.8
+    ],
+    [
+     24.0,
+     308.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     305.2
+    ],
+    [
+     13.5,
+     290.5
+    ],
+    [
+     24.0,
+     284.0
+    ],
+    [
+     24.0,
+     297.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     290.5
+    ],
+    [
+     13.5,
+     278.7
+    ],
+    [
+     24.0,
+     272.9
+    ],
+    [
+     24.0,
+     284.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     278.7
+    ],
+    [
+     13.5,
+     263.9
+    ],
+    [
+     24.0,
+     259.1
+    ],
+    [
+     24.0,
+     272.9
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     263.9
+    ],
+    [
+     13.5,
+     254.5
+    ],
+    [
+     24.0,
+     250.2
+    ],
+    [
+     24.0,
+     259.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     246.2
+    ],
+    [
+     13.5,
+     231.5
+    ],
+    [
+     24.0,
+     228.6
+    ],
+    [
+     24.0,
+     242.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     231.5
+    ],
+    [
+     13.5,
+     219.7
+    ],
+    [
+     24.0,
+     217.6
+    ],
+    [
+     24.0,
+     228.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     219.7
+    ],
+    [
+     13.5,
+     205.0
+    ],
+    [
+     24.0,
+     203.7
+    ],
+    [
+     24.0,
+     217.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     205.0
+    ],
+    [
+     13.5,
+     193.2
+    ],
+    [
+     24.0,
+     192.7
+    ],
+    [
+     24.0,
+     203.7
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     193.2
+    ],
+    [
+     13.5,
+     183.7
+    ],
+    [
+     24.0,
+     183.8
+    ],
+    [
+     24.0,
+     192.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     175.5
+    ],
+    [
+     13.5,
+     163.7
+    ],
+    [
+     24.0,
+     165.0
+    ],
+    [
+     24.0,
+     176.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     163.7
+    ],
+    [
+     13.5,
+     148.9
+    ],
+    [
+     24.0,
+     151.2
+    ],
+    [
+     24.0,
+     165.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     148.9
+    ],
+    [
+     13.5,
+     137.2
+    ],
+    [
+     24.0,
+     140.1
+    ],
+    [
+     24.0,
+     151.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     137.2
+    ],
+    [
+     13.5,
+     122.4
+    ],
+    [
+     24.0,
+     126.2
+    ],
+    [
+     24.0,
+     140.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     122.4
+    ],
+    [
+     13.5,
+     113.0
+    ],
+    [
+     24.0,
+     117.4
+    ],
+    [
+     24.0,
+     126.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     104.7
+    ],
+    [
+     13.5,
+     90.0
+    ],
+    [
+     24.0,
+     95.8
+    ],
+    [
+     24.0,
+     109.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     90.0
+    ],
+    [
+     13.5,
+     78.2
+    ],
+    [
+     24.0,
+     84.7
+    ],
+    [
+     24.0,
+     95.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     78.2
+    ],
+    [
+     13.5,
+     63.4
+    ],
+    [
+     24.0,
+     70.9
+    ],
+    [
+     24.0,
+     84.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     63.4
+    ],
+    [
+     13.5,
+     51.7
+    ],
+    [
+     24.0,
+     59.8
+    ],
+    [
+     24.0,
+     70.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     51.7
+    ],
+    [
+     13.5,
+     42.2
+    ],
+    [
+     24.0,
+     50.9
+    ],
+    [
+     24.0,
+     59.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     33.9
+    ],
+    [
+     13.5,
+     22.2
+    ],
+    [
+     24.0,
+     32.1
+    ],
+    [
+     24.0,
+     43.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     13.5,
+     22.2
+    ],
+    [
+     13.5,
+     13.5
+    ],
+    [
+     19.9,
+     13.5
+    ],
+    [
+     29.4,
+     24.0
+    ],
+    [
+     24.0,
+     24.0
+    ],
+    [
+     24.0,
+     32.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     19.9,
+     13.5
+    ],
+    [
+     32.3,
+     13.5
+    ],
+    [
+     39.8,
+     24.0
+    ],
+    [
+     29.4,
+     24.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     32.3,
+     13.5
+    ],
+    [
+     47.8,
+     13.5
+    ],
+    [
+     52.9,
+     24.0
+    ],
+    [
+     39.8,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     47.8,
+     13.5
+    ],
+    [
+     57.8,
+     13.5
+    ],
+    [
+     61.3,
+     24.0
+    ],
+    [
+     52.9,
+     24.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     66.5,
+     13.5
+    ],
+    [
+     82.0,
+     13.5
+    ],
+    [
+     81.6,
+     24.0
+    ],
+    [
+     68.6,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     82.0,
+     13.5
+    ],
+    [
+     94.4,
+     13.5
+    ],
+    [
+     92.1,
+     24.0
+    ],
+    [
+     81.6,
+     24.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     94.4,
+     13.5
+    ],
+    [
+     109.9,
+     13.5
+    ],
+    [
+     105.1,
+     24.0
+    ],
+    [
+     92.1,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     109.9,
+     13.5
+    ],
+    [
+     122.3,
+     13.5
+    ],
+    [
+     115.6,
+     24.0
+    ],
+    [
+     105.1,
+     24.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     122.3,
+     13.5
+    ],
+    [
+     132.3,
+     13.5
+    ],
+    [
+     123.9,
+     24.0
+    ],
+    [
+     115.6,
+     24.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     136.0,
+     19.3
+    ],
+    [
+     138.1,
+     31.2
+    ],
+    [
+     129.0,
+     39.7
+    ],
+    [
+     127.1,
+     29.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E297",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     138.1,
+     31.2
+    ],
+    [
+     140.8,
+     46.1
+    ],
+    [
+     131.4,
+     53.0
+    ],
+    [
+     129.0,
+     39.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E298",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     140.8,
+     46.1
+    ],
+    [
+     143.0,
+     58.0
+    ],
+    [
+     133.4,
+     63.6
+    ],
+    [
+     131.4,
+     53.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E299",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     143.0,
+     58.0
+    ],
+    [
+     145.7,
+     72.9
+    ],
+    [
+     135.8,
+     76.8
+    ],
+    [
+     133.4,
+     63.6
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E300",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     145.7,
+     72.9
+    ],
+    [
+     147.4,
+     82.4
+    ],
+    [
+     137.3,
+     85.3
+    ],
+    [
+     135.8,
+     76.8
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E301",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     149.0,
+     90.8
+    ],
+    [
+     149.6,
+     94.5
+    ],
+    [
+     150.8,
+     105.2
+    ],
+    [
+     140.4,
+     106.6
+    ],
+    [
+     139.2,
+     96.0
+    ],
+    [
+     138.6,
+     92.7
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E302",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     150.8,
+     105.2
+    ],
+    [
+     152.1,
+     116.7
+    ],
+    [
+     141.7,
+     117.8
+    ],
+    [
+     140.4,
+     106.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E303",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     152.1,
+     116.7
+    ],
+    [
+     153.7,
+     131.0
+    ],
+    [
+     143.3,
+     131.9
+    ],
+    [
+     141.7,
+     117.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E304",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     153.7,
+     131.0
+    ],
+    [
+     154.7,
+     139.7
+    ],
+    [
+     154.8,
+     142.4
+    ],
+    [
+     144.4,
+     143.2
+    ],
+    [
+     144.3,
+     140.5
+    ],
+    [
+     143.3,
+     131.9
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E305",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     154.8,
+     142.4
+    ],
+    [
+     155.2,
+     151.7
+    ],
+    [
+     144.7,
+     152.3
+    ],
+    [
+     144.4,
+     143.2
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E306",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.5,
+     159.7
+    ],
+    [
+     156.0,
+     171.3
+    ],
+    [
+     145.5,
+     171.5
+    ],
+    [
+     145.0,
+     160.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E307",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     156.0,
+     171.3
+    ],
+    [
+     156.5,
+     185.0
+    ],
+    [
+     156.5,
+     185.7
+    ],
+    [
+     146.0,
+     185.6
+    ],
+    [
+     146.0,
+     185.0
+    ],
+    [
+     145.5,
+     171.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E308",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     156.5,
+     185.7
+    ],
+    [
+     156.0,
+     197.2
+    ],
+    [
+     145.5,
+     197.0
+    ],
+    [
+     146.0,
+     185.6
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E309",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     156.0,
+     197.2
+    ],
+    [
+     155.5,
+     211.6
+    ],
+    [
+     145.0,
+     211.1
+    ],
+    [
+     145.5,
+     197.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E310",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     155.5,
+     211.6
+    ],
+    [
+     155.1,
+     220.8
+    ],
+    [
+     144.6,
+     220.2
+    ],
+    [
+     145.0,
+     211.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E311",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     154.8,
+     228.9
+    ],
+    [
+     154.7,
+     230.2
+    ],
+    [
+     153.3,
+     243.2
+    ],
+    [
+     142.8,
+     242.2
+    ],
+    [
+     144.3,
+     229.4
+    ],
+    [
+     144.3,
+     228.1
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E312",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     153.3,
+     243.2
+    ],
+    [
+     152.0,
+     254.7
+    ],
+    [
+     141.5,
+     253.5
+    ],
+    [
+     142.8,
+     242.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E313",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     152.0,
+     254.7
+    ],
+    [
+     150.4,
+     269.0
+    ],
+    [
+     140.0,
+     267.5
+    ],
+    [
+     141.5,
+     253.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E314",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     150.4,
+     269.0
+    ],
+    [
+     149.6,
+     275.5
+    ],
+    [
+     148.7,
+     280.6
+    ],
+    [
+     138.4,
+     278.5
+    ],
+    [
+     139.2,
+     274.0
+    ],
+    [
+     140.0,
+     267.5
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E315",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     148.7,
+     280.6
+    ],
+    [
+     147.0,
+     290.2
+    ],
+    [
+     136.9,
+     287.0
+    ],
+    [
+     138.4,
+     278.5
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E316",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     145.5,
+     298.5
+    ],
+    [
+     143.3,
+     310.4
+    ],
+    [
+     133.6,
+     305.0
+    ],
+    [
+     135.5,
+     294.4
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E317",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     143.3,
+     310.4
+    ],
+    [
+     140.6,
+     325.3
+    ],
+    [
+     131.2,
+     318.2
+    ],
+    [
+     133.6,
+     305.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E318",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     140.6,
+     325.3
+    ],
+    [
+     138.4,
+     337.2
+    ],
+    [
+     129.3,
+     328.8
+    ],
+    [
+     131.2,
+     318.2
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E319",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     138.4,
+     337.2
+    ],
+    [
+     135.7,
+     352.1
+    ],
+    [
+     126.9,
+     342.1
+    ],
+    [
+     129.3,
+     328.8
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E320",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     135.7,
+     352.1
+    ],
+    [
+     134.9,
+     356.5
+    ],
+    [
+     129.6,
+     356.5
+    ],
+    [
+     121.7,
+     346.0
+    ],
+    [
+     126.2,
+     346.0
+    ],
+    [
+     126.9,
+     342.1
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E321",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     120.9,
+     356.5
+    ],
+    [
+     105.4,
+     356.5
+    ],
+    [
+     101.3,
+     346.0
+    ],
+    [
+     114.4,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E322",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     105.4,
+     356.5
+    ],
+    [
+     93.0,
+     356.5
+    ],
+    [
+     90.9,
+     346.0
+    ],
+    [
+     101.3,
+     346.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E323",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     93.0,
+     356.5
+    ],
+    [
+     77.5,
+     356.5
+    ],
+    [
+     77.8,
+     346.0
+    ],
+    [
+     90.9,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E324",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     77.5,
+     356.5
+    ],
+    [
+     65.1,
+     356.5
+    ],
+    [
+     67.4,
+     346.0
+    ],
+    [
+     77.8,
+     346.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E325",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     65.1,
+     356.5
+    ],
+    [
+     55.1,
+     356.5
+    ],
+    [
+     59.0,
+     346.0
+    ],
+    [
+     67.4,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E326",
+   "type": "room",
+   "name": "Records room",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     46.4,
+     356.5
+    ],
+    [
+     34.0,
+     356.5
+    ],
+    [
+     41.2,
+     346.0
+    ],
+    [
+     51.7,
+     346.0
+    ]
+   ],
+   "about": "Files for crews and cruisers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E327",
+   "type": "room",
+   "name": "Staff office",
+   "levels": [
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "outline_m": [
+    [
+     34.0,
+     356.5
+    ],
+    [
+     13.5,
+     356.5
+    ],
+    [
+     24.0,
+     346.0
+    ],
+    [
+     41.2,
+     346.0
+    ]
+   ],
+   "about": "Desks for the fleet's shore staff.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

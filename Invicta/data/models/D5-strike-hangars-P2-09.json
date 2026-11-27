@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P2-09",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  399.1,
+  837.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Firing line",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     399.1,
+     0.0
+    ],
+    [
+     399.1,
+     94.1
+    ],
+    [
+     0.0,
+     94.1
+    ]
+   ],
+   "about": "Where weapons are mounted and fired.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Range control bunker",
+   "level": "L1",
+   "outline_m": [
+    [
+     208.3,
+     53.4
+    ],
+    [
+     221.6,
+     53.4
+    ],
+    [
+     221.6,
+     63.4
+    ],
+    [
+     208.3,
+     63.4
+    ]
+   ],
+   "about": "Controls firing; armoured glass.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Weapon prep room",
+   "level": "L1",
+   "outline_m": [
+    [
+     221.6,
+     53.4
+    ],
+    [
+     228.3,
+     53.4
+    ],
+    [
+     228.3,
+     63.4
+    ],
+    [
+     221.6,
+     63.4
+    ]
+   ],
+   "about": "Weapons are made ready.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Range",
+   "level": "L1",
+   "outline_m": [
+    [
+     399.1,
+     94.1
+    ],
+    [
+     399.1,
+     564.8
+    ],
+    [
+     0.0,
+     564.8
+    ],
+    [
+     0.0,
+     94.1
+    ]
+   ],
+   "about": "A sealed, baffled range where weapons are fired into a backstop.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Baffles",
+   "level": "L1",
+   "outline_m": [
+    [
+     399.1,
+     564.8
+    ],
+    [
+     399.1,
+     658.9
+    ],
+    [
+     0.0,
+     658.9
+    ],
+    [
+     0.0,
+     564.8
+    ]
+   ],
+   "about": "Armoured baffles that catch stray rounds.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Backstop berm",
+   "level": "L1",
+   "outline_m": [
+    [
+     399.1,
+     658.9
+    ],
+    [
+     399.1,
+     837.2
+    ],
+    [
+     0.0,
+     668.9
+    ],
+    [
+     0.0,
+     658.9
+    ]
+   ],
+   "about": "An armoured earth backstop.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

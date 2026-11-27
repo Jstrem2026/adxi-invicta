@@ -1,0 +1,185 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P2-12",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  425.0,
+  440.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Empties",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     48.9
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     425.0,
+     0.0
+    ],
+    [
+     425.0,
+     48.9
+    ]
+   ],
+   "about": "Empty containers waiting to go back.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     281.9,
+     34.5
+    ],
+    [
+     293.9,
+     34.5
+    ],
+    [
+     293.9,
+     42.5
+    ],
+    [
+     281.9,
+     42.5
+    ]
+   ],
+   "about": "The yard checker's hut.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Container rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     146.7
+    ],
+    [
+     0.0,
+     48.9
+    ],
+    [
+     425.0,
+     48.9
+    ],
+    [
+     425.0,
+     146.7
+    ]
+   ],
+   "about": "Containers of mixed stores.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Pallet stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     293.3
+    ],
+    [
+     0.0,
+     146.7
+    ],
+    [
+     425.0,
+     146.7
+    ],
+    [
+     425.0,
+     293.3
+    ]
+   ],
+   "about": "Pallets of tinned and dried food in long rows.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Spares crates",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     391.1
+    ],
+    [
+     0.0,
+     293.3
+    ],
+    [
+     425.0,
+     293.3
+    ],
+    [
+     425.0,
+     391.1
+    ]
+   ],
+   "about": "Crates of general spares.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Forklift lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     440.0
+    ],
+    [
+     0.0,
+     391.1
+    ],
+    [
+     425.0,
+     391.1
+    ],
+    [
+     425.0,
+     440.0
+    ]
+   ],
+   "about": "A lane for forklifts and haulers.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

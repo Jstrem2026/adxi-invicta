@@ -1,0 +1,264 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-pilots-quarter-P5-02",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  425.0,
+  531.3
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Square",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.1,
+     353.6
+    ],
+    [
+     0.4,
+     34.3
+    ],
+    [
+     3.6,
+     23.4
+    ],
+    [
+     9.8,
+     13.8
+    ],
+    [
+     18.4,
+     6.3
+    ],
+    [
+     28.7,
+     1.6
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     390.7,
+     0.4
+    ],
+    [
+     401.6,
+     3.6
+    ],
+    [
+     411.2,
+     9.8
+    ],
+    [
+     418.7,
+     18.4
+    ],
+    [
+     423.4,
+     28.7
+    ],
+    [
+     425.0,
+     40.0
+    ],
+    [
+     424.7,
+     353.6
+    ]
+   ],
+   "about": "The square in front of the station where residents meet and set off into the Quarter.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Coffee kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     287.1,
+     160.4
+    ],
+    [
+     297.7,
+     160.4
+    ],
+    [
+     297.7,
+     170.4
+    ],
+    [
+     287.1,
+     170.4
+    ]
+   ],
+   "about": "Coffee for commuters.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     297.7,
+     160.4
+    ],
+    [
+     303.1,
+     160.4
+    ],
+    [
+     303.1,
+     170.4
+    ],
+    [
+     297.7,
+     170.4
+    ]
+   ],
+   "about": "Public toilets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "fixture",
+   "name": "Departures board",
+   "level": "L1",
+   "outline_m": [
+    [
+     191.3,
+     17.7
+    ],
+    [
+     233.8,
+     17.7
+    ],
+    [
+     233.8,
+     35.4
+    ],
+    [
+     191.3,
+     35.4
+    ]
+   ],
+   "about": "A board with the next trains and pods.",
+   "parent": "E001",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Bike park",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     441.5
+    ],
+    [
+     0.1,
+     353.6
+    ],
+    [
+     424.7,
+     353.6
+    ],
+    [
+     424.6,
+     441.5
+    ]
+   ],
+   "about": "Racks for residents' bikes.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Tree terrace",
+   "level": "L1",
+   "outline_m": [
+    [
+     34.3,
+     530.8
+    ],
+    [
+     23.4,
+     527.6
+    ],
+    [
+     13.8,
+     521.5
+    ],
+    [
+     6.3,
+     512.9
+    ],
+    [
+     1.6,
+     502.5
+    ],
+    [
+     0.0,
+     491.3
+    ],
+    [
+     0.0,
+     441.5
+    ],
+    [
+     424.6,
+     441.5
+    ],
+    [
+     424.6,
+     496.9
+    ],
+    [
+     421.4,
+     507.9
+    ],
+    [
+     415.2,
+     517.4
+    ],
+    [
+     406.6,
+     524.9
+    ],
+    [
+     396.3,
+     529.6
+    ],
+    [
+     385.0,
+     531.3
+    ]
+   ],
+   "about": "Trees and benches.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,238 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P3-18",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  243.9,
+  262.4
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Shield modules",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     0.0
+    ],
+    [
+     243.9,
+     47.7
+    ],
+    [
+     0.0,
+     47.7
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "about": "Shield emitters waiting for the lab, covered against dust.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard office",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.5,
+     15.7
+    ],
+    [
+     126.8,
+     15.7
+    ],
+    [
+     126.8,
+     23.7
+    ],
+    [
+     117.5,
+     23.7
+    ]
+   ],
+   "about": "Tracks every module in the yard.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Riggers' hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.8,
+     15.7
+    ],
+    [
+     131.5,
+     15.7
+    ],
+    [
+     131.5,
+     23.7
+    ],
+    [
+     126.8,
+     23.7
+    ]
+   ],
+   "about": "Riggers' kit and shelter.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Turret mounts",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     47.7
+    ],
+    [
+     243.9,
+     95.4
+    ],
+    [
+     0.0,
+     95.4
+    ],
+    [
+     0.0,
+     47.7
+    ]
+   ],
+   "about": "Turrets waiting to go into the turret shop.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Scrap bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     95.4
+    ],
+    [
+     243.9,
+     119.3
+    ],
+    [
+     0.0,
+     119.3
+    ],
+    [
+     0.0,
+     95.4
+    ]
+   ],
+   "about": "Parts beyond repair, waiting to go back to Ferrum for melting.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Repaired modules",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     119.3
+    ],
+    [
+     243.9,
+     167.0
+    ],
+    [
+     0.0,
+     167.0
+    ],
+    [
+     0.0,
+     119.3
+    ]
+   ],
+   "about": "Repaired modules waiting to go back to their cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Engine modules",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     167.0
+    ],
+    [
+     243.9,
+     238.5
+    ],
+    [
+     0.0,
+     238.5
+    ],
+    [
+     0.0,
+     167.0
+    ]
+   ],
+   "about": "Engine modules on cradles, waiting for a bay in the repair hall.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Transporter lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     243.9,
+     238.5
+    ],
+    [
+     243.9,
+     262.4
+    ],
+    [
+     0.0,
+     262.4
+    ],
+    [
+     0.0,
+     238.5
+    ]
+   ],
+   "about": "The lane for the heavy transporters that carry modules.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

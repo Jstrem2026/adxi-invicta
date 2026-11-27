@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P7-08",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  860.0,
+  675.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Wreck rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     675.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     430.0,
+     0.0
+    ],
+    [
+     430.0,
+     675.0
+    ]
+   ],
+   "about": "Wrecked craft waiting to be stripped.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Salvage office",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.1,
+     341.6
+    ],
+    [
+     52.8,
+     341.6
+    ],
+    [
+     52.8,
+     351.6
+    ],
+    [
+     42.1,
+     351.6
+    ]
+   ],
+   "about": "Records what is saved.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Strip-down shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     52.8,
+     341.6
+    ],
+    [
+     58.1,
+     341.6
+    ],
+    [
+     58.1,
+     351.6
+    ],
+    [
+     52.8,
+     351.6
+    ]
+   ],
+   "about": "Shelter for workers.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Parts piles",
+   "level": "L1",
+   "outline_m": [
+    [
+     430.0,
+     0.0
+    ],
+    [
+     645.0,
+     0.0
+    ],
+    [
+     645.0,
+     675.0
+    ],
+    [
+     430.0,
+     675.0
+    ]
+   ],
+   "about": "Saved parts sorted for checking.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Scrap bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     645.0,
+     0.0
+    ],
+    [
+     752.5,
+     0.0
+    ],
+    [
+     752.5,
+     675.0
+    ],
+    [
+     645.0,
+     675.0
+    ]
+   ],
+   "about": "Scrap going to Ferrum.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Crane lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     752.5,
+     0.0
+    ],
+    [
+     860.0,
+     0.0
+    ],
+    [
+     860.0,
+     675.0
+    ],
+    [
+     752.5,
+     675.0
+    ]
+   ],
+   "about": "Crane lane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

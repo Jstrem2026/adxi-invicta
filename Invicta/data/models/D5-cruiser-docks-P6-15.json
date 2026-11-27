@@ -1,0 +1,4381 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P6-15",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  160.2,
+  222.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Shop floor",
+   "z_m": 0.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper floor",
+   "z_m": 5.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Light court",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.0,
+     202.2
+    ],
+    [
+     20.0,
+     20.0
+    ],
+    [
+     140.2,
+     20.0
+    ],
+    [
+     140.2,
+     202.2
+    ]
+   ],
+   "about": "An open court in the middle of the block that brings light and air to the inner rooms.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.5,
+     213.7
+    ],
+    [
+     8.5,
+     91.9
+    ],
+    [
+     11.5,
+     92.5
+    ],
+    [
+     11.5,
+     210.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     8.5,
+     91.9
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     47.1,
+     8.5
+    ],
+    [
+     48.5,
+     11.5
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     11.5,
+     92.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     47.1,
+     8.5
+    ],
+    [
+     151.7,
+     8.5
+    ],
+    [
+     151.7,
+     26.4
+    ],
+    [
+     148.7,
+     28.8
+    ],
+    [
+     148.7,
+     11.5
+    ],
+    [
+     48.5,
+     11.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.7,
+     26.4
+    ],
+    [
+     151.7,
+     148.1
+    ],
+    [
+     148.7,
+     147.1
+    ],
+    [
+     148.7,
+     28.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     151.7,
+     148.1
+    ],
+    [
+     151.7,
+     213.7
+    ],
+    [
+     95.1,
+     213.7
+    ],
+    [
+     94.5,
+     210.7
+    ],
+    [
+     148.7,
+     210.7
+    ],
+    [
+     148.7,
+     147.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.1,
+     213.7
+    ],
+    [
+     8.5,
+     213.7
+    ],
+    [
+     11.5,
+     210.7
+    ],
+    [
+     94.5,
+     210.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     11.5,
+     177.8
+    ],
+    [
+     11.5,
+     169.5
+    ],
+    [
+     20.0,
+     164.5
+    ],
+    [
+     20.0,
+     172.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     11.5,
+     103.7
+    ],
+    [
+     11.5,
+     95.3
+    ],
+    [
+     20.0,
+     96.7
+    ],
+    [
+     20.0,
+     104.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     11.5,
+     29.5
+    ],
+    [
+     11.5,
+     21.2
+    ],
+    [
+     20.0,
+     28.8
+    ],
+    [
+     20.0,
+     36.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     68.8,
+     11.5
+    ],
+    [
+     77.3,
+     11.5
+    ],
+    [
+     77.6,
+     20.0
+    ],
+    [
+     70.2,
+     20.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     144.4,
+     11.5
+    ],
+    [
+     148.7,
+     11.5
+    ],
+    [
+     148.7,
+     15.7
+    ],
+    [
+     140.2,
+     23.8
+    ],
+    [
+     140.2,
+     20.0
+    ],
+    [
+     136.5,
+     20.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     148.7,
+     81.5
+    ],
+    [
+     148.7,
+     89.8
+    ],
+    [
+     140.2,
+     91.6
+    ],
+    [
+     140.2,
+     84.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     148.7,
+     155.6
+    ],
+    [
+     148.7,
+     164.0
+    ],
+    [
+     140.2,
+     159.4
+    ],
+    [
+     140.2,
+     151.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     129.3,
+     210.7
+    ],
+    [
+     120.7,
+     210.7
+    ],
+    [
+     115.7,
+     202.2
+    ],
+    [
+     123.2,
+     202.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     53.6,
+     210.7
+    ],
+    [
+     45.1,
+     210.7
+    ],
+    [
+     49.4,
+     202.2
+    ],
+    [
+     56.9,
+     202.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     222.2
+    ],
+    [
+     0.0,
+     214.9
+    ],
+    [
+     8.5,
+     206.9
+    ],
+    [
+     8.5,
+     213.7
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Pawn shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     214.9
+    ],
+    [
+     0.0,
+     207.5
+    ],
+    [
+     8.5,
+     200.1
+    ],
+    [
+     8.5,
+     206.9
+    ]
+   ],
+   "about": "Buys and sells.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Café",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     207.5
+    ],
+    [
+     0.0,
+     192.8
+    ],
+    [
+     8.5,
+     186.6
+    ],
+    [
+     8.5,
+     200.1
+    ]
+   ],
+   "about": "Coffee and food.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Chandler",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     192.8
+    ],
+    [
+     0.0,
+     174.5
+    ],
+    [
+     8.5,
+     169.6
+    ],
+    [
+     8.5,
+     186.6
+    ]
+   ],
+   "about": "Kit and clothing for ship crews.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Pharmacy",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     174.5
+    ],
+    [
+     0.0,
+     164.7
+    ],
+    [
+     8.5,
+     160.6
+    ],
+    [
+     8.5,
+     169.6
+    ]
+   ],
+   "about": "Medicines.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     164.7
+    ],
+    [
+     0.0,
+     139.0
+    ],
+    [
+     8.5,
+     136.9
+    ],
+    [
+     8.5,
+     160.6
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     139.0
+    ],
+    [
+     0.0,
+     113.3
+    ],
+    [
+     8.5,
+     113.2
+    ],
+    [
+     8.5,
+     136.9
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     113.3
+    ],
+    [
+     0.0,
+     87.6
+    ],
+    [
+     8.5,
+     89.4
+    ],
+    [
+     8.5,
+     113.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     87.6
+    ],
+    [
+     0.0,
+     62.0
+    ],
+    [
+     8.5,
+     65.7
+    ],
+    [
+     8.5,
+     89.4
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     62.0
+    ],
+    [
+     0.0,
+     36.3
+    ],
+    [
+     8.5,
+     42.0
+    ],
+    [
+     8.5,
+     65.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     36.3
+    ],
+    [
+     0.0,
+     10.6
+    ],
+    [
+     8.5,
+     18.3
+    ],
+    [
+     8.5,
+     42.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     10.6
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     15.3,
+     0.0
+    ],
+    [
+     22.2,
+     8.5
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     8.5,
+     18.3
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.3,
+     0.0
+    ],
+    [
+     41.4,
+     0.0
+    ],
+    [
+     45.5,
+     8.5
+    ],
+    [
+     22.2,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     41.4,
+     0.0
+    ],
+    [
+     67.5,
+     0.0
+    ],
+    [
+     68.9,
+     8.5
+    ],
+    [
+     45.5,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.5,
+     0.0
+    ],
+    [
+     93.6,
+     0.0
+    ],
+    [
+     92.2,
+     8.5
+    ],
+    [
+     68.9,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     93.6,
+     0.0
+    ],
+    [
+     119.7,
+     0.0
+    ],
+    [
+     115.5,
+     8.5
+    ],
+    [
+     92.2,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     119.7,
+     0.0
+    ],
+    [
+     145.8,
+     0.0
+    ],
+    [
+     138.8,
+     8.5
+    ],
+    [
+     115.5,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     145.8,
+     0.0
+    ],
+    [
+     160.2,
+     0.0
+    ],
+    [
+     160.2,
+     11.5
+    ],
+    [
+     151.7,
+     19.1
+    ],
+    [
+     151.7,
+     8.5
+    ],
+    [
+     138.8,
+     8.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     11.5
+    ],
+    [
+     160.2,
+     37.2
+    ],
+    [
+     151.7,
+     42.9
+    ],
+    [
+     151.7,
+     19.1
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     37.2
+    ],
+    [
+     160.2,
+     62.9
+    ],
+    [
+     151.7,
+     66.6
+    ],
+    [
+     151.7,
+     42.9
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     62.9
+    ],
+    [
+     160.2,
+     88.6
+    ],
+    [
+     151.7,
+     90.3
+    ],
+    [
+     151.7,
+     66.6
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     88.6
+    ],
+    [
+     160.2,
+     114.3
+    ],
+    [
+     151.7,
+     114.0
+    ],
+    [
+     151.7,
+     90.3
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     114.3
+    ],
+    [
+     160.2,
+     140.0
+    ],
+    [
+     151.7,
+     137.7
+    ],
+    [
+     151.7,
+     114.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     140.0
+    ],
+    [
+     160.2,
+     165.6
+    ],
+    [
+     151.7,
+     161.5
+    ],
+    [
+     151.7,
+     137.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     165.6
+    ],
+    [
+     160.2,
+     191.3
+    ],
+    [
+     151.7,
+     185.2
+    ],
+    [
+     151.7,
+     161.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     191.3
+    ],
+    [
+     160.2,
+     217.0
+    ],
+    [
+     151.7,
+     208.9
+    ],
+    [
+     151.7,
+     185.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     160.2,
+     217.0
+    ],
+    [
+     160.2,
+     222.2
+    ],
+    [
+     139.4,
+     222.2
+    ],
+    [
+     133.1,
+     213.7
+    ],
+    [
+     151.7,
+     213.7
+    ],
+    [
+     151.7,
+     208.9
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.4,
+     222.2
+    ],
+    [
+     113.3,
+     222.2
+    ],
+    [
+     109.8,
+     213.7
+    ],
+    [
+     133.1,
+     213.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     113.3,
+     222.2
+    ],
+    [
+     87.2,
+     222.2
+    ],
+    [
+     86.4,
+     213.7
+    ],
+    [
+     109.8,
+     213.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     87.2,
+     222.2
+    ],
+    [
+     61.1,
+     222.2
+    ],
+    [
+     63.1,
+     213.7
+    ],
+    [
+     86.4,
+     213.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     61.1,
+     222.2
+    ],
+    [
+     35.0,
+     222.2
+    ],
+    [
+     39.8,
+     213.7
+    ],
+    [
+     63.1,
+     213.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.0,
+     222.2
+    ],
+    [
+     0.0,
+     222.2
+    ],
+    [
+     8.5,
+     213.7
+    ],
+    [
+     39.8,
+     213.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     210.7
+    ],
+    [
+     11.5,
+     177.8
+    ],
+    [
+     20.0,
+     172.1
+    ],
+    [
+     20.0,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     169.5
+    ],
+    [
+     11.5,
+     143.6
+    ],
+    [
+     20.0,
+     140.9
+    ],
+    [
+     20.0,
+     164.5
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     143.6
+    ],
+    [
+     11.5,
+     117.8
+    ],
+    [
+     20.0,
+     117.3
+    ],
+    [
+     20.0,
+     140.9
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     117.8
+    ],
+    [
+     11.5,
+     103.7
+    ],
+    [
+     20.0,
+     104.3
+    ],
+    [
+     20.0,
+     117.3
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     95.3
+    ],
+    [
+     11.5,
+     69.5
+    ],
+    [
+     20.0,
+     73.1
+    ],
+    [
+     20.0,
+     96.7
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     69.5
+    ],
+    [
+     11.5,
+     43.7
+    ],
+    [
+     20.0,
+     49.4
+    ],
+    [
+     20.0,
+     73.1
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     43.7
+    ],
+    [
+     11.5,
+     29.5
+    ],
+    [
+     20.0,
+     36.5
+    ],
+    [
+     20.0,
+     49.4
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     11.5,
+     21.2
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     28.0,
+     11.5
+    ],
+    [
+     34.4,
+     20.0
+    ],
+    [
+     20.0,
+     20.0
+    ],
+    [
+     20.0,
+     28.8
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.0,
+     11.5
+    ],
+    [
+     54.3,
+     11.5
+    ],
+    [
+     57.5,
+     20.0
+    ],
+    [
+     34.4,
+     20.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.3,
+     11.5
+    ],
+    [
+     68.8,
+     11.5
+    ],
+    [
+     70.2,
+     20.0
+    ],
+    [
+     57.5,
+     20.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     77.3,
+     11.5
+    ],
+    [
+     103.6,
+     11.5
+    ],
+    [
+     100.7,
+     20.0
+    ],
+    [
+     77.6,
+     20.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     103.6,
+     11.5
+    ],
+    [
+     130.0,
+     11.5
+    ],
+    [
+     123.8,
+     20.0
+    ],
+    [
+     100.7,
+     20.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.0,
+     11.5
+    ],
+    [
+     144.4,
+     11.5
+    ],
+    [
+     136.5,
+     20.0
+    ],
+    [
+     123.8,
+     20.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     15.7
+    ],
+    [
+     148.7,
+     41.5
+    ],
+    [
+     140.2,
+     47.4
+    ],
+    [
+     140.2,
+     23.8
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     41.5
+    ],
+    [
+     148.7,
+     67.3
+    ],
+    [
+     140.2,
+     71.0
+    ],
+    [
+     140.2,
+     47.4
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     67.3
+    ],
+    [
+     148.7,
+     81.5
+    ],
+    [
+     140.2,
+     84.0
+    ],
+    [
+     140.2,
+     71.0
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     89.8
+    ],
+    [
+     148.7,
+     115.6
+    ],
+    [
+     140.2,
+     115.2
+    ],
+    [
+     140.2,
+     91.6
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     115.6
+    ],
+    [
+     148.7,
+     141.4
+    ],
+    [
+     140.2,
+     138.8
+    ],
+    [
+     140.2,
+     115.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     141.4
+    ],
+    [
+     148.7,
+     155.6
+    ],
+    [
+     140.2,
+     151.8
+    ],
+    [
+     140.2,
+     138.8
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     164.0
+    ],
+    [
+     148.7,
+     189.8
+    ],
+    [
+     140.2,
+     183.1
+    ],
+    [
+     140.2,
+     159.4
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.7,
+     189.8
+    ],
+    [
+     148.7,
+     210.7
+    ],
+    [
+     143.7,
+     210.7
+    ],
+    [
+     135.8,
+     202.2
+    ],
+    [
+     140.2,
+     202.2
+    ],
+    [
+     140.2,
+     183.1
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.7,
+     210.7
+    ],
+    [
+     129.3,
+     210.7
+    ],
+    [
+     123.2,
+     202.2
+    ],
+    [
+     135.8,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Takeaway",
+   "level": "L1",
+   "outline_m": [
+    [
+     120.7,
+     210.7
+    ],
+    [
+     94.4,
+     210.7
+    ],
+    [
+     92.6,
+     202.2
+    ],
+    [
+     115.7,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Bakery",
+   "level": "L1",
+   "outline_m": [
+    [
+     94.4,
+     210.7
+    ],
+    [
+     68.1,
+     210.7
+    ],
+    [
+     69.6,
+     202.2
+    ],
+    [
+     92.6,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Repair shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.1,
+     210.7
+    ],
+    [
+     53.6,
+     210.7
+    ],
+    [
+     56.9,
+     202.2
+    ],
+    [
+     69.6,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Shop",
+   "level": "L1",
+   "outline_m": [
+    [
+     45.1,
+     210.7
+    ],
+    [
+     11.5,
+     210.7
+    ],
+    [
+     20.0,
+     202.2
+    ],
+    [
+     49.4,
+     202.2
+    ]
+   ],
+   "about": "A small shop.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     8.5,
+     213.7
+    ],
+    [
+     8.5,
+     91.9
+    ],
+    [
+     11.5,
+     92.5
+    ],
+    [
+     11.5,
+     210.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     8.5,
+     91.9
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     47.1,
+     8.5
+    ],
+    [
+     48.5,
+     11.5
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     11.5,
+     92.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     47.1,
+     8.5
+    ],
+    [
+     151.7,
+     8.5
+    ],
+    [
+     151.7,
+     26.4
+    ],
+    [
+     148.7,
+     28.8
+    ],
+    [
+     148.7,
+     11.5
+    ],
+    [
+     48.5,
+     11.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.7,
+     26.4
+    ],
+    [
+     151.7,
+     148.1
+    ],
+    [
+     148.7,
+     147.1
+    ],
+    [
+     148.7,
+     28.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     151.7,
+     148.1
+    ],
+    [
+     151.7,
+     213.7
+    ],
+    [
+     95.1,
+     213.7
+    ],
+    [
+     94.5,
+     210.7
+    ],
+    [
+     148.7,
+     210.7
+    ],
+    [
+     148.7,
+     147.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     95.1,
+     213.7
+    ],
+    [
+     8.5,
+     213.7
+    ],
+    [
+     11.5,
+     210.7
+    ],
+    [
+     94.5,
+     210.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Tea point",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     222.2
+    ],
+    [
+     0.0,
+     219.1
+    ],
+    [
+     8.5,
+     210.8
+    ],
+    [
+     8.5,
+     213.7
+    ]
+   ],
+   "about": "A small kitchen with a sink, fridge and drinks machine for staff on this floor.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     219.1
+    ],
+    [
+     0.0,
+     200.7
+    ],
+    [
+     8.5,
+     193.9
+    ],
+    [
+     8.5,
+     210.8
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     200.7
+    ],
+    [
+     0.0,
+     182.4
+    ],
+    [
+     8.5,
+     176.9
+    ],
+    [
+     8.5,
+     193.9
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     182.4
+    ],
+    [
+     0.0,
+     167.7
+    ],
+    [
+     8.5,
+     163.4
+    ],
+    [
+     8.5,
+     176.9
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     167.7
+    ],
+    [
+     0.0,
+     149.4
+    ],
+    [
+     8.5,
+     146.4
+    ],
+    [
+     8.5,
+     163.4
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     149.4
+    ],
+    [
+     0.0,
+     131.0
+    ],
+    [
+     8.5,
+     129.5
+    ],
+    [
+     8.5,
+     146.4
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     131.0
+    ],
+    [
+     0.0,
+     116.3
+    ],
+    [
+     8.5,
+     115.9
+    ],
+    [
+     8.5,
+     129.5
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     116.3
+    ],
+    [
+     0.0,
+     98.0
+    ],
+    [
+     8.5,
+     99.0
+    ],
+    [
+     8.5,
+     115.9
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     98.0
+    ],
+    [
+     0.0,
+     79.6
+    ],
+    [
+     8.5,
+     82.0
+    ],
+    [
+     8.5,
+     99.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     79.6
+    ],
+    [
+     0.0,
+     64.9
+    ],
+    [
+     8.5,
+     68.5
+    ],
+    [
+     8.5,
+     82.0
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     64.9
+    ],
+    [
+     0.0,
+     46.6
+    ],
+    [
+     8.5,
+     51.5
+    ],
+    [
+     8.5,
+     68.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     46.6
+    ],
+    [
+     0.0,
+     28.3
+    ],
+    [
+     8.5,
+     34.6
+    ],
+    [
+     8.5,
+     51.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     28.3
+    ],
+    [
+     0.0,
+     13.6
+    ],
+    [
+     8.5,
+     21.0
+    ],
+    [
+     8.5,
+     34.6
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     13.6
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     4.9,
+     0.0
+    ],
+    [
+     12.8,
+     8.5
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     8.5,
+     21.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.9,
+     0.0
+    ],
+    [
+     23.5,
+     0.0
+    ],
+    [
+     29.5,
+     8.5
+    ],
+    [
+     12.8,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.5,
+     0.0
+    ],
+    [
+     38.4,
+     0.0
+    ],
+    [
+     42.8,
+     8.5
+    ],
+    [
+     29.5,
+     8.5
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.4,
+     0.0
+    ],
+    [
+     57.0,
+     0.0
+    ],
+    [
+     59.5,
+     8.5
+    ],
+    [
+     42.8,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     57.0,
+     0.0
+    ],
+    [
+     75.7,
+     0.0
+    ],
+    [
+     76.1,
+     8.5
+    ],
+    [
+     59.5,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     75.7,
+     0.0
+    ],
+    [
+     90.6,
+     0.0
+    ],
+    [
+     89.5,
+     8.5
+    ],
+    [
+     76.1,
+     8.5
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     90.6,
+     0.0
+    ],
+    [
+     109.2,
+     0.0
+    ],
+    [
+     106.1,
+     8.5
+    ],
+    [
+     89.5,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     109.2,
+     0.0
+    ],
+    [
+     127.8,
+     0.0
+    ],
+    [
+     122.8,
+     8.5
+    ],
+    [
+     106.1,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     127.8,
+     0.0
+    ],
+    [
+     142.8,
+     0.0
+    ],
+    [
+     136.1,
+     8.5
+    ],
+    [
+     122.8,
+     8.5
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     142.8,
+     0.0
+    ],
+    [
+     160.2,
+     0.0
+    ],
+    [
+     160.2,
+     1.2
+    ],
+    [
+     151.7,
+     9.6
+    ],
+    [
+     151.7,
+     8.5
+    ],
+    [
+     136.1,
+     8.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     1.2
+    ],
+    [
+     160.2,
+     19.5
+    ],
+    [
+     151.7,
+     26.5
+    ],
+    [
+     151.7,
+     9.6
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     19.5
+    ],
+    [
+     160.2,
+     34.2
+    ],
+    [
+     151.7,
+     40.1
+    ],
+    [
+     151.7,
+     26.5
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     34.2
+    ],
+    [
+     160.2,
+     52.6
+    ],
+    [
+     151.7,
+     57.0
+    ],
+    [
+     151.7,
+     40.1
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     52.6
+    ],
+    [
+     160.2,
+     70.9
+    ],
+    [
+     151.7,
+     74.0
+    ],
+    [
+     151.7,
+     57.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     70.9
+    ],
+    [
+     160.2,
+     85.6
+    ],
+    [
+     151.7,
+     87.5
+    ],
+    [
+     151.7,
+     74.0
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     85.6
+    ],
+    [
+     160.2,
+     103.9
+    ],
+    [
+     151.7,
+     104.5
+    ],
+    [
+     151.7,
+     87.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     103.9
+    ],
+    [
+     160.2,
+     122.3
+    ],
+    [
+     151.7,
+     121.4
+    ],
+    [
+     151.7,
+     104.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     122.3
+    ],
+    [
+     160.2,
+     137.0
+    ],
+    [
+     151.7,
+     135.0
+    ],
+    [
+     151.7,
+     121.4
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     137.0
+    ],
+    [
+     160.2,
+     155.3
+    ],
+    [
+     151.7,
+     151.9
+    ],
+    [
+     151.7,
+     135.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     155.3
+    ],
+    [
+     160.2,
+     173.7
+    ],
+    [
+     151.7,
+     168.9
+    ],
+    [
+     151.7,
+     151.9
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     173.7
+    ],
+    [
+     160.2,
+     188.3
+    ],
+    [
+     151.7,
+     182.4
+    ],
+    [
+     151.7,
+     168.9
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     188.3
+    ],
+    [
+     160.2,
+     206.7
+    ],
+    [
+     151.7,
+     199.4
+    ],
+    [
+     151.7,
+     182.4
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     160.2,
+     206.7
+    ],
+    [
+     160.2,
+     222.2
+    ],
+    [
+     157.3,
+     222.2
+    ],
+    [
+     149.1,
+     213.7
+    ],
+    [
+     151.7,
+     213.7
+    ],
+    [
+     151.7,
+     199.4
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     157.3,
+     222.2
+    ],
+    [
+     142.4,
+     222.2
+    ],
+    [
+     135.8,
+     213.7
+    ],
+    [
+     149.1,
+     213.7
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     142.4,
+     222.2
+    ],
+    [
+     123.8,
+     222.2
+    ],
+    [
+     119.1,
+     213.7
+    ],
+    [
+     135.8,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     123.8,
+     222.2
+    ],
+    [
+     105.1,
+     222.2
+    ],
+    [
+     102.5,
+     213.7
+    ],
+    [
+     119.1,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.1,
+     222.2
+    ],
+    [
+     90.2,
+     222.2
+    ],
+    [
+     89.2,
+     213.7
+    ],
+    [
+     102.5,
+     213.7
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     90.2,
+     222.2
+    ],
+    [
+     71.6,
+     222.2
+    ],
+    [
+     72.5,
+     213.7
+    ],
+    [
+     89.2,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     71.6,
+     222.2
+    ],
+    [
+     53.0,
+     222.2
+    ],
+    [
+     55.8,
+     213.7
+    ],
+    [
+     72.5,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     53.0,
+     222.2
+    ],
+    [
+     38.1,
+     222.2
+    ],
+    [
+     42.5,
+     213.7
+    ],
+    [
+     55.8,
+     213.7
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     38.1,
+     222.2
+    ],
+    [
+     19.4,
+     222.2
+    ],
+    [
+     25.9,
+     213.7
+    ],
+    [
+     42.5,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.4,
+     222.2
+    ],
+    [
+     0.0,
+     222.2
+    ],
+    [
+     8.5,
+     213.7
+    ],
+    [
+     25.9,
+     213.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     210.7
+    ],
+    [
+     11.5,
+     196.0
+    ],
+    [
+     20.0,
+     188.7
+    ],
+    [
+     20.0,
+     202.2
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     196.0
+    ],
+    [
+     11.5,
+     177.8
+    ],
+    [
+     20.0,
+     172.1
+    ],
+    [
+     20.0,
+     188.7
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     169.5
+    ],
+    [
+     11.5,
+     151.0
+    ],
+    [
+     20.0,
+     147.6
+    ],
+    [
+     20.0,
+     164.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     151.0
+    ],
+    [
+     11.5,
+     136.3
+    ],
+    [
+     20.0,
+     134.1
+    ],
+    [
+     20.0,
+     147.6
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     136.3
+    ],
+    [
+     11.5,
+     117.8
+    ],
+    [
+     20.0,
+     117.3
+    ],
+    [
+     20.0,
+     134.1
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     117.8
+    ],
+    [
+     11.5,
+     103.7
+    ],
+    [
+     20.0,
+     104.3
+    ],
+    [
+     20.0,
+     117.3
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     95.3
+    ],
+    [
+     11.5,
+     80.6
+    ],
+    [
+     20.0,
+     83.2
+    ],
+    [
+     20.0,
+     96.7
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     80.6
+    ],
+    [
+     11.5,
+     62.1
+    ],
+    [
+     20.0,
+     66.3
+    ],
+    [
+     20.0,
+     83.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     62.1
+    ],
+    [
+     11.5,
+     43.7
+    ],
+    [
+     20.0,
+     49.4
+    ],
+    [
+     20.0,
+     66.3
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     43.7
+    ],
+    [
+     11.5,
+     29.5
+    ],
+    [
+     20.0,
+     36.5
+    ],
+    [
+     20.0,
+     49.4
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     11.5,
+     21.2
+    ],
+    [
+     11.5,
+     11.5
+    ],
+    [
+     20.4,
+     11.5
+    ],
+    [
+     27.8,
+     20.0
+    ],
+    [
+     20.0,
+     20.0
+    ],
+    [
+     20.0,
+     28.8
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     20.4,
+     11.5
+    ],
+    [
+     39.3,
+     11.5
+    ],
+    [
+     44.3,
+     20.0
+    ],
+    [
+     27.8,
+     20.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.3,
+     11.5
+    ],
+    [
+     54.3,
+     11.5
+    ],
+    [
+     57.5,
+     20.0
+    ],
+    [
+     44.3,
+     20.0
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     54.3,
+     11.5
+    ],
+    [
+     68.8,
+     11.5
+    ],
+    [
+     70.2,
+     20.0
+    ],
+    [
+     57.5,
+     20.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     77.3,
+     11.5
+    ],
+    [
+     96.1,
+     11.5
+    ],
+    [
+     94.1,
+     20.0
+    ],
+    [
+     77.6,
+     20.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     96.1,
+     11.5
+    ],
+    [
+     111.2,
+     11.5
+    ],
+    [
+     107.3,
+     20.0
+    ],
+    [
+     94.1,
+     20.0
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     111.2,
+     11.5
+    ],
+    [
+     130.0,
+     11.5
+    ],
+    [
+     123.8,
+     20.0
+    ],
+    [
+     107.3,
+     20.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     130.0,
+     11.5
+    ],
+    [
+     144.4,
+     11.5
+    ],
+    [
+     136.5,
+     20.0
+    ],
+    [
+     123.8,
+     20.0
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     15.7
+    ],
+    [
+     148.7,
+     30.4
+    ],
+    [
+     140.2,
+     37.3
+    ],
+    [
+     140.2,
+     23.8
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     30.4
+    ],
+    [
+     148.7,
+     48.9
+    ],
+    [
+     140.2,
+     54.2
+    ],
+    [
+     140.2,
+     37.3
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     48.9
+    ],
+    [
+     148.7,
+     67.3
+    ],
+    [
+     140.2,
+     71.0
+    ],
+    [
+     140.2,
+     54.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     67.3
+    ],
+    [
+     148.7,
+     81.5
+    ],
+    [
+     140.2,
+     84.0
+    ],
+    [
+     140.2,
+     71.0
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     89.8
+    ],
+    [
+     148.7,
+     108.3
+    ],
+    [
+     140.2,
+     108.5
+    ],
+    [
+     140.2,
+     91.6
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     108.3
+    ],
+    [
+     148.7,
+     126.7
+    ],
+    [
+     140.2,
+     125.4
+    ],
+    [
+     140.2,
+     108.5
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     126.7
+    ],
+    [
+     148.7,
+     141.4
+    ],
+    [
+     140.2,
+     138.8
+    ],
+    [
+     140.2,
+     125.4
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     141.4
+    ],
+    [
+     148.7,
+     155.6
+    ],
+    [
+     140.2,
+     151.8
+    ],
+    [
+     140.2,
+     138.8
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     164.0
+    ],
+    [
+     148.7,
+     182.4
+    ],
+    [
+     140.2,
+     176.3
+    ],
+    [
+     140.2,
+     159.4
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     182.4
+    ],
+    [
+     148.7,
+     197.1
+    ],
+    [
+     140.2,
+     189.8
+    ],
+    [
+     140.2,
+     176.3
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.7,
+     197.1
+    ],
+    [
+     148.7,
+     210.7
+    ],
+    [
+     143.7,
+     210.7
+    ],
+    [
+     135.8,
+     202.2
+    ],
+    [
+     140.2,
+     202.2
+    ],
+    [
+     140.2,
+     189.8
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     143.7,
+     210.7
+    ],
+    [
+     129.3,
+     210.7
+    ],
+    [
+     123.2,
+     202.2
+    ],
+    [
+     135.8,
+     202.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     120.7,
+     210.7
+    ],
+    [
+     105.7,
+     210.7
+    ],
+    [
+     102.5,
+     202.2
+    ],
+    [
+     115.7,
+     202.2
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.7,
+     210.7
+    ],
+    [
+     86.9,
+     210.7
+    ],
+    [
+     86.0,
+     202.2
+    ],
+    [
+     102.5,
+     202.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     86.9,
+     210.7
+    ],
+    [
+     68.1,
+     210.7
+    ],
+    [
+     69.6,
+     202.2
+    ],
+    [
+     86.0,
+     202.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Store room",
+   "level": "L2",
+   "outline_m": [
+    [
+     68.1,
+     210.7
+    ],
+    [
+     53.6,
+     210.7
+    ],
+    [
+     56.9,
+     202.2
+    ],
+    [
+     69.6,
+     202.2
+    ]
+   ],
+   "about": "Stock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     45.1,
+     210.7
+    ],
+    [
+     26.3,
+     210.7
+    ],
+    [
+     32.9,
+     202.2
+    ],
+    [
+     49.4,
+     202.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Studio flat",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.3,
+     210.7
+    ],
+    [
+     11.5,
+     210.7
+    ],
+    [
+     20.0,
+     202.2
+    ],
+    [
+     32.9,
+     202.2
+    ]
+   ],
+   "about": "A small flat above the shops.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

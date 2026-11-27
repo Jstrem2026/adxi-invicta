@@ -89,15 +89,16 @@ function scatter(ring, n, R, holes) {
 }
 
 const KW = {
-  green: /lawn|garden|grass|green|field|park|grove|wood|tree|hedge|parterre|flower|herb|planted|meadow|orchard|pitch|sports/i,
-  trees: /grove|wood|tree|garden|park|orchard|avenue|shade|rim|walk|quiet/i,
+  green: /lawn|garden|grass|green|field|park(?!ing)|grove|wood|tree|hedge|parterre|flower|herb|planted|meadow|orchard|pitch|sports/i,
+  trees: /grove|wood|tree|garden|park(?!ing)|orchard|avenue|shade|rim|walk|quiet/i,
   water: /lake|pool|water|rill|fountain|pond|reflect|splash/i,
-  container: /container|stack|crate|module yard|stores yard|cargo/i,
+  container: /container|stack|crate|module yard|stores yard|cargo|pallet|loading lane|marshalling|modules|turret mounts|parts|empties|returns|inspection hold/i,
   mast: /antenna|mast|sensor|aerial|beacon|radar/i,
   craft: /apron|bay|launch|taxi|flight line|pad|ramp|queue|recovery|arming|line-up|parking/i,
   crane: /crane|quay|gantry|hoist/i,
   tank: /tank|fuel|propellant|cell farm/i,
   berm: /berm|bund|blast|wall/i,
+  berth: /^berth \d/i,
 };
 
 export async function renderScene(S) {
@@ -159,7 +160,7 @@ export async function renderScene(S) {
 
   const rings = S.rings, holes = S.holes || [];
   const ringHoles = (ring) => holes.filter((h) => inPoly(h[0], ring));
-  const open = ["park", "plaza", "yard"].includes(S.kind);
+  const open = S.open !== undefined ? S.open : ["park", "plaza", "yard"].includes(S.kind);
   const levels = (S.levels && S.levels.length) ? S.levels : [{ z: 0, h: S.height || 8 }];
 
   // ---------- neighbours (context)
@@ -229,10 +230,24 @@ export async function renderScene(S) {
     for (const e of S.els || []) {
       if (e.t === "zone") {
         const n = e.n;
-        const isW = KW.water.test(n), isG = KW.green.test(n);
+        const isW = KW.water.test(n) && !KW.tank.test(n), isG = KW.green.test(n);
         scene.add(prism(e.p, [], 0.3, 0.12, isW ? waterMat : isG ? parkMat : pavMat));
         const [x0, x1, y0, y1] = bbox(e.p), A = Math.abs((x1 - x0) * (y1 - y0));
-        if (KW.trees.test(n) && !isW) {
+        if (KW.berth.test(n)) {
+          // a docked escort cruiser (canon 2,000 x 420 m), lying along the berth
+          const along = x1 - x0 > y1 - y0, Lz = Math.min(2000, (along ? x1 - x0 : y1 - y0) * 0.92), Wz = Math.min(420, (along ? y1 - y0 : x1 - x0) * 0.8);
+          const hullMat = new THREE.MeshStandardMaterial({ color: 0x5b6470, roughness: 0.5, metalness: 0.7 });
+          const g = new THREE.CylinderGeometry(Wz * 0.5, Wz * 0.5, Lz, 8, 1); g.scale(1, 1, 0.45);
+          const hull = new THREE.Mesh(g, hullMat); hull.position.set((x0 + x1) / 2, Wz * 0.25, (y0 + y1) / 2);
+          if (along) hull.rotation.z = Math.PI / 2; else hull.rotation.x = Math.PI / 2;
+          scene.add(hull);
+          const tower = new THREE.Mesh(new THREE.BoxGeometry(along ? Lz * 0.12 : Wz * 0.3, Wz * 0.18, along ? Wz * 0.3 : Lz * 0.12), hullMat);
+          tower.position.set((x0 + x1) / 2, Wz * 0.5, (y0 + y1) / 2); scene.add(tower);
+          for (const sd of [-1, 1]) {   // a line of running lights down each flank
+            const lt = new THREE.Mesh(new THREE.BoxGeometry(along ? Lz * 0.9 : 1.5, 1.5, along ? 1.5 : Lz * 0.9), BAND[1]);
+            lt.position.set((x0 + x1) / 2 + (along ? 0 : sd * Wz * 0.505), Wz * 0.25, (y0 + y1) / 2 + (along ? sd * Wz * 0.505 : 0)); scene.add(lt);
+          }
+        } else if (KW.trees.test(n) && !isW) {
           for (const [x, y] of scatter(e.p, Math.min(220, A / 260), R)) {
             const h = 6 + R() * 9;
             const t = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.5, h * 0.45, 5), trunk); t.position.set(x, h * 0.22, y); scene.add(t);
@@ -261,7 +276,7 @@ export async function renderScene(S) {
           for (const [x, y] of scatter(e.p, Math.min(24, A / 2500), R)) {
             const r = 6 + R() * 8, h = 8 + R() * 10;
             const t = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 20), new THREE.MeshStandardMaterial({ color: 0xb9c0c8, roughness: 0.5, metalness: 0.6 })); t.position.set(x, h / 2, y); scene.add(t);
-            scene.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(r + 0.1, r + 0.1, 0.5, 20), accMat), { position: new THREE.Vector3(x, h * 0.8, y) }));
+            { const band = new THREE.Mesh(new THREE.CylinderGeometry(r + 0.1, r + 0.1, 0.5, 20), accMat); band.position.set(x, h * 0.8, y); scene.add(band); }
           }
         } else if (KW.crane.test(n)) {
           const [cx, cy] = [(x0 + x1) / 2, (y0 + y1) / 2], L = Math.max(x1 - x0, y1 - y0) * 0.6, along = x1 - x0 > y1 - y0;

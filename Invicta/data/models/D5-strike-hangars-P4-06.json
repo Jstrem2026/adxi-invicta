@@ -1,0 +1,157 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P4-06",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  260.0,
+  830.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Recovery lanes",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     260.0,
+     0.0
+    ],
+    [
+     260.0,
+     553.3
+    ],
+    [
+     0.0,
+     553.3
+    ]
+   ],
+   "about": "Returning craft drop out of the shafts here and are stopped by arrestor gear.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Recovery control",
+   "level": "L1",
+   "outline_m": [
+    [
+     189.1,
+     301.0
+    ],
+    [
+     199.8,
+     301.0
+    ],
+    [
+     199.8,
+     311.0
+    ],
+    [
+     189.1,
+     311.0
+    ]
+   ],
+   "about": "Controls landings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Crash crew shelter",
+   "level": "L1",
+   "outline_m": [
+    [
+     199.8,
+     301.0
+    ],
+    [
+     205.1,
+     301.0
+    ],
+    [
+     205.1,
+     311.0
+    ],
+    [
+     199.8,
+     311.0
+    ]
+   ],
+   "about": "Crash crews on standby.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Safing area",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.0,
+     553.3
+    ],
+    [
+     260.0,
+     691.7
+    ],
+    [
+     0.0,
+     691.7
+    ],
+    [
+     0.0,
+     553.3
+    ]
+   ],
+   "about": "Weapons are made safe.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Taxi-off lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.0,
+     691.7
+    ],
+    [
+     260.0,
+     830.0
+    ],
+    [
+     0.0,
+     830.0
+    ],
+    [
+     0.0,
+     691.7
+    ]
+   ],
+   "about": "Craft taxi to their rack hall.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

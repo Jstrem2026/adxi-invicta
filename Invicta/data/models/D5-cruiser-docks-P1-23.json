@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P1-23",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  159.9,
+  354.8
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Pallet rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.9,
+     0.0
+    ],
+    [
+     159.9,
+     101.4
+    ],
+    [
+     0.0,
+     101.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "about": "Pallets of food, water and spares in long rows.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard office",
+   "level": "L1",
+   "outline_m": [
+    [
+     126.2,
+     25.6
+    ],
+    [
+     135.6,
+     25.6
+    ],
+    [
+     135.6,
+     33.6
+    ],
+    [
+     126.2,
+     33.6
+    ]
+   ],
+   "about": "The yard foreman tracks every load in the yard.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Checkers' hut",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.6,
+     25.6
+    ],
+    [
+     140.2,
+     25.6
+    ],
+    [
+     140.2,
+     33.6
+    ],
+    [
+     135.6,
+     33.6
+    ]
+   ],
+   "about": "Checkers scan each load in and out.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Bulk tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.9,
+     101.4
+    ],
+    [
+     159.9,
+     152.1
+    ],
+    [
+     0.0,
+     152.1
+    ],
+    [
+     0.0,
+     101.4
+    ]
+   ],
+   "about": "Small tanks of oils and coolants for the cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Container stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.9,
+     152.1
+    ],
+    [
+     159.9,
+     304.1
+    ],
+    [
+     0.0,
+     304.1
+    ],
+    [
+     0.0,
+     152.1
+    ]
+   ],
+   "about": "Containers of stores stacked three high, waiting to go aboard.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Haul lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     159.9,
+     304.1
+    ],
+    [
+     159.9,
+     354.8
+    ],
+    [
+     0.0,
+     354.8
+    ],
+    [
+     0.0,
+     304.1
+    ]
+   ],
+   "about": "The lane the haulers use through the yard.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

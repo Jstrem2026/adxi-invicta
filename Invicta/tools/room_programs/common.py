@@ -275,3 +275,44 @@ def garden(kind, focus, style=0, pavilion=True):
         "services": "Irrigation, path lighting, drinking fountains, waste bins.",
         "m2_per_person": 40,
     }
+
+
+# ------------------------------------------------------------------ shared building shapes
+
+LIGHT_COURT = {"name": "Light court", "outdoor": True,
+               "about": "An open court in the middle of the block that brings light and air to the inner rooms."}
+
+
+def shed(hall, hall_about, bay, bay_about, bay_w, support, upper, looks, h=16.0, support_w=24, extra_halls=(), **kw):
+    """A hall-mode industrial building: one big hall in bays, a support wing, an upper gallery floor."""
+    p = {
+        "mode": "hall",
+        "floors": [("Hall floor", h, 1), ("Gallery floor", 4.5, 1)],
+        "support": support_w,
+        "halls": [{"name": hall, "span": 2, "about": hall_about,
+                   "bays": {"name": bay, "width": bay_w, "max": 14, "about": bay_about}}] + list(extra_halls),
+        "rooms": [support, upper],
+        "look": looks,
+        "m2_per_person": 300,
+    }
+    p.update(kw)
+    return p
+
+
+def offices(rooms0, rooms1, looks, floors=(1, 3), **kw):
+    p = {
+        "mode": "ring",
+        "floors": [("Ground floor", 4.8, 1), ("Office floor", 4.2, floors)],
+        "wing": 24,
+        "court": LIGHT_COURT,
+        "hall_max_m2": 12000,
+        "rooms": [rooms0, rooms1],
+        "structure": "Concrete frame on a 26 ft (8 m) grid.",
+        "look": looks,
+        "entrances": "Main entrance from the street; staff and delivery door at the back.",
+        "capacity": "About {people} staff.",
+        "services": "Heating, cooling and data on every floor.",
+        "m2_per_person": 12,
+    }
+    p.update(kw)
+    return p

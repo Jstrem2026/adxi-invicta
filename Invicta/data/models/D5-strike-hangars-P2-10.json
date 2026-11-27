@@ -1,0 +1,131 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P2-10",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  505.9,
+  301.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Disposal pit",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     301.2
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     252.9,
+     0.0
+    ],
+    [
+     252.9,
+     301.2
+    ]
+   ],
+   "about": "A deep armoured pit where faulty rounds are destroyed safely.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Control bunker",
+   "level": "L1",
+   "outline_m": [
+    [
+     228.2,
+     175.3
+    ],
+    [
+     244.2,
+     175.3
+    ],
+    [
+     244.2,
+     185.3
+    ],
+    [
+     228.2,
+     185.3
+    ]
+   ],
+   "about": "Controls each disposal from behind armour.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Holding pad",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.9,
+     0.0
+    ],
+    [
+     379.4,
+     0.0
+    ],
+    [
+     379.4,
+     301.2
+    ],
+    [
+     252.9,
+     301.2
+    ]
+   ],
+   "about": "Rounds waiting for disposal.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Blast berm",
+   "level": "L1",
+   "outline_m": [
+    [
+     379.4,
+     0.0
+    ],
+    [
+     505.9,
+     0.0
+    ],
+    [
+     505.9,
+     301.2
+    ],
+    [
+     379.4,
+     301.2
+    ]
+   ],
+   "about": "An earth berm round the pit.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

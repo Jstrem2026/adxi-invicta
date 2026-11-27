@@ -1,0 +1,161 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P7-03",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  440.0,
+  675.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Test stands",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     420.3
+    ],
+    [
+     0.0,
+     85.5
+    ],
+    [
+     394.9,
+     0.0
+    ],
+    [
+     440.0,
+     0.0
+    ],
+    [
+     440.0,
+     420.3
+    ]
+   ],
+   "about": "Engines are run up on stands behind blast fences.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Test control bunker",
+   "level": "L1",
+   "outline_m": [
+    [
+     234.2,
+     85.8
+    ],
+    [
+     244.8,
+     85.8
+    ],
+    [
+     244.8,
+     95.8
+    ],
+    [
+     234.2,
+     95.8
+    ]
+   ],
+   "about": "Runs each test.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Instrument room",
+   "level": "L1",
+   "outline_m": [
+    [
+     244.8,
+     85.8
+    ],
+    [
+     250.2,
+     85.8
+    ],
+    [
+     250.2,
+     95.8
+    ],
+    [
+     244.8,
+     95.8
+    ]
+   ],
+   "about": "Records results.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Blast fence",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     547.7
+    ],
+    [
+     0.0,
+     420.3
+    ],
+    [
+     440.0,
+     420.3
+    ],
+    [
+     440.0,
+     547.7
+    ]
+   ],
+   "about": "Tall fences that deflect the exhaust.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Engine transport lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     440.0,
+     675.0
+    ],
+    [
+     0.0,
+     675.0
+    ],
+    [
+     0.0,
+     547.7
+    ],
+    [
+     440.0,
+     547.7
+    ]
+   ],
+   "about": "Lane for engine carts.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

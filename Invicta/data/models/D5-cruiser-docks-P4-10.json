@@ -1,0 +1,157 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P4-10",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  425.0,
+  570.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Tank floor",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Water tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     285.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     425.0,
+     0.0
+    ],
+    [
+     425.0,
+     285.0
+    ]
+   ],
+   "about": "Big tanks of drinking water for resupplying the cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Pump house",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.5,
+     216.2
+    ],
+    [
+     121.8,
+     216.2
+    ],
+    [
+     121.8,
+     226.2
+    ],
+    [
+     108.5,
+     226.2
+    ]
+   ],
+   "about": "Pumps water and air to the berths.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.8,
+     216.2
+    ],
+    [
+     128.5,
+     216.2
+    ],
+    [
+     128.5,
+     226.2
+    ],
+    [
+     121.8,
+     226.2
+    ]
+   ],
+   "about": "Watches tank levels.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Air tanks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     475.0
+    ],
+    [
+     0.0,
+     285.0
+    ],
+    [
+     425.0,
+     285.0
+    ],
+    [
+     425.0,
+     475.0
+    ]
+   ],
+   "about": "Pressure tanks of breathing air for the cruisers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Pipe rack",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     570.0
+    ],
+    [
+     0.0,
+     475.0
+    ],
+    [
+     425.0,
+     475.0
+    ],
+    [
+     425.0,
+     570.0
+    ]
+   ],
+   "about": "Pipes to the berths.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -47,10 +47,18 @@ def scene(data, p, b, did):
         out["levels"] = [{"z": l["z_m"], "h": l["height_m"]} for l in model["levels"] if l["z_m"] >= 0]
         lvz = {l["id"]: l for l in model["levels"]}
         els = []
+        sh = lambda P: abs(sum(P[i][0] * P[(i + 1) % len(P)][1] - P[(i + 1) % len(P)][0] * P[i][1] for i in range(len(P)))) / 2
+        lot = sum(sh(km_ring(o, ox, oy)) for o in (b.get("outline_km") or [rect_ring(r)]))
+        outdoor = sum(sh(e["outline_m"]) for e in model["elements"] if e.get("outdoor") and not e.get("parent"))
+        # an open lot (yard, tank farm): one level, no stair cores, mostly open-air zones
+        single = len([l for l in model["levels"] if l["z_m"] >= 0]) <= 1
+        cores = any(e["type"] == "core" for e in model["elements"])
+        opn = b["kind"] in ("park", "yard", "plaza", "bays") or (single and not cores and outdoor > 0.6 * lot)
+        out["open"] = opn
         for e in model["elements"]:
             if e["type"] == "core":
                 els.append({"t": "core", "p": loc(e["outline_m"])})
-            elif e.get("outdoor") or e["type"] == "fixture" or (e["type"] == "room" and b["kind"] in ("park", "yard", "plaza")):
+            elif e.get("outdoor") or e["type"] == "fixture" or (e["type"] == "room" and opn):
                 ls = [lvz[i] for i in (e.get("levels") or [e.get("level")]) if i in lvz]
                 top = max((l["z_m"] + l["height_m"] for l in ls), default=4)
                 els.append({"t": "zone" if e.get("outdoor") else ("fix" if e["type"] == "fixture" else "room"),

@@ -1,0 +1,132 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P6-28",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  425.0,
+  520.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Ground",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Holding bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     86.7
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     425.0,
+     0.0
+    ],
+    [
+     425.0,
+     86.7
+    ]
+   ],
+   "about": "Craft wait.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Taxi lanes",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     346.7
+    ],
+    [
+     0.0,
+     86.7
+    ],
+    [
+     425.0,
+     86.7
+    ],
+    [
+     425.0,
+     346.7
+    ]
+   ],
+   "about": "Craft taxi between the halls and the launch roads.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Tug parking",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     433.3
+    ],
+    [
+     0.0,
+     346.7
+    ],
+    [
+     425.0,
+     346.7
+    ],
+    [
+     425.0,
+     433.3
+    ]
+   ],
+   "about": "Tugs.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Edge lane",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     520.0
+    ],
+    [
+     0.0,
+     433.3
+    ],
+    [
+     425.0,
+     433.3
+    ],
+    [
+     425.0,
+     520.0
+    ]
+   ],
+   "about": "Service lane.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

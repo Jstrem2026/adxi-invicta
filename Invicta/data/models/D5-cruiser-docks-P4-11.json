@@ -1,0 +1,4417 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P4-11",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  262.6,
+  192.4
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Appliance floor",
+   "z_m": 0.0,
+   "height_m": 7.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Crew floor",
+   "z_m": 7.0,
+   "height_m": 4.2,
+   "status": "proposed"
+  },
+  {
+   "id": "L3",
+   "name": "Level 3 · Training floor",
+   "z_m": 11.2,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Fire engine",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     53.7
+    ],
+    [
+     0.0,
+     26.0
+    ],
+    [
+     131.3,
+     26.0
+    ],
+    [
+     131.3,
+     53.7
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Hazmat unit",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     81.5
+    ],
+    [
+     0.0,
+     53.7
+    ],
+    [
+     131.3,
+     53.7
+    ],
+    [
+     131.3,
+     81.5
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Rescue unit",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     109.2
+    ],
+    [
+     0.0,
+     81.5
+    ],
+    [
+     131.3,
+     81.5
+    ],
+    [
+     131.3,
+     109.2
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Fire engine",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     136.9
+    ],
+    [
+     0.0,
+     109.2
+    ],
+    [
+     131.3,
+     109.2
+    ],
+    [
+     131.3,
+     136.9
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "room",
+   "name": "Hazmat unit",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     164.7
+    ],
+    [
+     0.0,
+     136.9
+    ],
+    [
+     131.3,
+     136.9
+    ],
+    [
+     131.3,
+     164.7
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Rescue unit",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     192.4
+    ],
+    [
+     0.0,
+     164.7
+    ],
+    [
+     131.3,
+     164.7
+    ],
+    [
+     131.3,
+     192.4
+    ]
+   ],
+   "about": "One appliance bay with a hose reel, charging lead and exhaust extractor over the engine.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Drill yard",
+   "level": "L1",
+   "outline_m": [
+    [
+     131.3,
+     26.0
+    ],
+    [
+     262.6,
+     26.0
+    ],
+    [
+     262.6,
+     192.4
+    ],
+    [
+     131.3,
+     192.4
+    ]
+   ],
+   "about": "Open yard where crews practise ladders, hoses and rescues.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     14.8,
+     0.0
+    ],
+    [
+     23.2,
+     0.0
+    ],
+    [
+     32.1,
+     10.8
+    ],
+    [
+     24.4,
+     10.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     84.4,
+     0.0
+    ],
+    [
+     92.8,
+     0.0
+    ],
+    [
+     95.9,
+     10.8
+    ],
+    [
+     88.3,
+     10.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     154.0,
+     0.0
+    ],
+    [
+     162.4,
+     0.0
+    ],
+    [
+     159.8,
+     10.8
+    ],
+    [
+     152.1,
+     10.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     223.6,
+     0.0
+    ],
+    [
+     232.0,
+     0.0
+    ],
+    [
+     223.7,
+     10.8
+    ],
+    [
+     216.0,
+     10.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     247.8,
+     26.0
+    ],
+    [
+     239.4,
+     26.0
+    ],
+    [
+     230.5,
+     15.2
+    ],
+    [
+     238.2,
+     15.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     178.2,
+     26.0
+    ],
+    [
+     169.8,
+     26.0
+    ],
+    [
+     166.7,
+     15.2
+    ],
+    [
+     174.3,
+     15.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     108.6,
+     26.0
+    ],
+    [
+     100.2,
+     26.0
+    ],
+    [
+     102.8,
+     15.2
+    ],
+    [
+     110.5,
+     15.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2",
+    "L3"
+   ],
+   "outline_m": [
+    [
+     39.0,
+     26.0
+    ],
+    [
+     30.6,
+     26.0
+    ],
+    [
+     38.9,
+     15.2
+    ],
+    [
+     46.6,
+     15.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     10.8,
+     15.2
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     12.3,
+     13.7
+    ],
+    [
+     250.3,
+     13.7
+    ],
+    [
+     250.3,
+     12.3
+    ],
+    [
+     12.3,
+     12.3
+    ],
+    [
+     12.3,
+     13.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "room",
+   "name": "Watch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     26.0
+    ],
+    [
+     0.0,
+     16.5
+    ],
+    [
+     10.8,
+     13.6
+    ],
+    [
+     10.8,
+     15.2
+    ]
+   ],
+   "about": "The duty officer takes emergency calls here and sends crews out; the station's nerve centre.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Breathing apparatus room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     16.5
+    ],
+    [
+     0.0,
+     3.8
+    ],
+    [
+     10.8,
+     11.5
+    ],
+    [
+     10.8,
+     13.6
+    ]
+   ],
+   "about": "Air cylinders are refilled and masks cleaned and tested after every call.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Decontamination room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     3.8
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     3.4,
+     0.0
+    ],
+    [
+     14.0,
+     10.8
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     10.8,
+     11.5
+    ]
+   ],
+   "about": "Crews wash smoke and chemicals off themselves and their kit before going any further into the station.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Turnout gear room",
+   "level": "L1",
+   "outline_m": [
+    [
+     3.4,
+     0.0
+    ],
+    [
+     14.8,
+     0.0
+    ],
+    [
+     24.4,
+     10.8
+    ],
+    [
+     14.0,
+     10.8
+    ]
+   ],
+   "about": "Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Hazmat kit room",
+   "level": "L1",
+   "outline_m": [
+    [
+     23.2,
+     0.0
+    ],
+    [
+     28.9,
+     0.0
+    ],
+    [
+     37.4,
+     10.8
+    ],
+    [
+     32.1,
+     10.8
+    ]
+   ],
+   "about": "Suits and kit for chemical leaks from cargo.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Hose store",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.9,
+     0.0
+    ],
+    [
+     35.7,
+     0.0
+    ],
+    [
+     43.6,
+     10.8
+    ],
+    [
+     37.4,
+     10.8
+    ]
+   ],
+   "about": "Spare hoses, branches and couplings, and a rack for drying wet hoses.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L1",
+   "outline_m": [
+    [
+     35.7,
+     0.0
+    ],
+    [
+     42.4,
+     0.0
+    ],
+    [
+     49.7,
+     10.8
+    ],
+    [
+     43.6,
+     10.8
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.4,
+     0.0
+    ],
+    [
+     59.7,
+     0.0
+    ],
+    [
+     65.6,
+     10.8
+    ],
+    [
+     49.7,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.7,
+     0.0
+    ],
+    [
+     84.4,
+     0.0
+    ],
+    [
+     88.3,
+     10.8
+    ],
+    [
+     65.6,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     92.8,
+     0.0
+    ],
+    [
+     110.1,
+     0.0
+    ],
+    [
+     111.8,
+     10.8
+    ],
+    [
+     95.9,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     110.1,
+     0.0
+    ],
+    [
+     127.4,
+     0.0
+    ],
+    [
+     127.7,
+     10.8
+    ],
+    [
+     111.8,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.4,
+     0.0
+    ],
+    [
+     144.7,
+     0.0
+    ],
+    [
+     143.6,
+     10.8
+    ],
+    [
+     127.7,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     144.7,
+     0.0
+    ],
+    [
+     154.0,
+     0.0
+    ],
+    [
+     152.1,
+     10.8
+    ],
+    [
+     143.6,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     162.4,
+     0.0
+    ],
+    [
+     179.7,
+     0.0
+    ],
+    [
+     175.7,
+     10.8
+    ],
+    [
+     159.8,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     179.7,
+     0.0
+    ],
+    [
+     197.0,
+     0.0
+    ],
+    [
+     191.6,
+     10.8
+    ],
+    [
+     175.7,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.0,
+     0.0
+    ],
+    [
+     214.3,
+     0.0
+    ],
+    [
+     207.5,
+     10.8
+    ],
+    [
+     191.6,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     214.3,
+     0.0
+    ],
+    [
+     223.6,
+     0.0
+    ],
+    [
+     216.0,
+     10.8
+    ],
+    [
+     207.5,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     232.0,
+     0.0
+    ],
+    [
+     249.3,
+     0.0
+    ],
+    [
+     239.6,
+     10.8
+    ],
+    [
+     223.7,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     249.3,
+     0.0
+    ],
+    [
+     262.6,
+     0.0
+    ],
+    [
+     262.6,
+     6.6
+    ],
+    [
+     251.8,
+     11.9
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     239.6,
+     10.8
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     262.6,
+     6.6
+    ],
+    [
+     262.6,
+     26.0
+    ],
+    [
+     257.1,
+     26.0
+    ],
+    [
+     246.7,
+     15.2
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     251.8,
+     11.9
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     257.1,
+     26.0
+    ],
+    [
+     247.8,
+     26.0
+    ],
+    [
+     238.2,
+     15.2
+    ],
+    [
+     246.7,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     239.4,
+     26.0
+    ],
+    [
+     222.1,
+     26.0
+    ],
+    [
+     214.6,
+     15.2
+    ],
+    [
+     230.5,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     222.1,
+     26.0
+    ],
+    [
+     204.8,
+     26.0
+    ],
+    [
+     198.7,
+     15.2
+    ],
+    [
+     214.6,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     204.8,
+     26.0
+    ],
+    [
+     187.5,
+     26.0
+    ],
+    [
+     182.8,
+     15.2
+    ],
+    [
+     198.7,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     187.5,
+     26.0
+    ],
+    [
+     178.2,
+     26.0
+    ],
+    [
+     174.3,
+     15.2
+    ],
+    [
+     182.8,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     169.8,
+     26.0
+    ],
+    [
+     152.5,
+     26.0
+    ],
+    [
+     150.8,
+     15.2
+    ],
+    [
+     166.7,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.5,
+     26.0
+    ],
+    [
+     135.2,
+     26.0
+    ],
+    [
+     134.9,
+     15.2
+    ],
+    [
+     150.8,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     135.2,
+     26.0
+    ],
+    [
+     117.9,
+     26.0
+    ],
+    [
+     119.0,
+     15.2
+    ],
+    [
+     134.9,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     117.9,
+     26.0
+    ],
+    [
+     108.6,
+     26.0
+    ],
+    [
+     110.5,
+     15.2
+    ],
+    [
+     119.0,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     100.2,
+     26.0
+    ],
+    [
+     82.9,
+     26.0
+    ],
+    [
+     86.9,
+     15.2
+    ],
+    [
+     102.8,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.9,
+     26.0
+    ],
+    [
+     65.6,
+     26.0
+    ],
+    [
+     71.0,
+     15.2
+    ],
+    [
+     86.9,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     65.6,
+     26.0
+    ],
+    [
+     48.3,
+     26.0
+    ],
+    [
+     55.1,
+     15.2
+    ],
+    [
+     71.0,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.3,
+     26.0
+    ],
+    [
+     39.0,
+     26.0
+    ],
+    [
+     46.6,
+     15.2
+    ],
+    [
+     55.1,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.6,
+     26.0
+    ],
+    [
+     13.3,
+     26.0
+    ],
+    [
+     23.0,
+     15.2
+    ],
+    [
+     38.9,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Equipment store",
+   "level": "L1",
+   "outline_m": [
+    [
+     13.3,
+     26.0
+    ],
+    [
+     0.0,
+     26.0
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     23.0,
+     15.2
+    ]
+   ],
+   "about": "Rescue tools, ladders, cutting gear and spare kit.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.8,
+     15.2
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     12.3,
+     13.7
+    ],
+    [
+     250.3,
+     13.7
+    ],
+    [
+     250.3,
+     12.3
+    ],
+    [
+     12.3,
+     12.3
+    ],
+    [
+     12.3,
+     13.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     26.0
+    ],
+    [
+     0.0,
+     19.5
+    ],
+    [
+     10.8,
+     14.1
+    ],
+    [
+     10.8,
+     15.2
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     19.5
+    ],
+    [
+     0.0,
+     13.0
+    ],
+    [
+     10.8,
+     13.0
+    ],
+    [
+     10.8,
+     14.1
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     13.0
+    ],
+    [
+     0.0,
+     6.5
+    ],
+    [
+     10.8,
+     11.9
+    ],
+    [
+     10.8,
+     13.0
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     6.5
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     10.8,
+     11.9
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     4.0,
+     0.0
+    ],
+    [
+     14.5,
+     10.8
+    ],
+    [
+     10.8,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     4.0,
+     0.0
+    ],
+    [
+     7.9,
+     0.0
+    ],
+    [
+     18.1,
+     10.8
+    ],
+    [
+     14.5,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     7.9,
+     0.0
+    ],
+    [
+     14.8,
+     0.0
+    ],
+    [
+     24.4,
+     10.8
+    ],
+    [
+     18.1,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     23.2,
+     0.0
+    ],
+    [
+     27.1,
+     0.0
+    ],
+    [
+     35.7,
+     10.8
+    ],
+    [
+     32.1,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     27.1,
+     0.0
+    ],
+    [
+     31.1,
+     0.0
+    ],
+    [
+     39.3,
+     10.8
+    ],
+    [
+     35.7,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     31.1,
+     0.0
+    ],
+    [
+     35.0,
+     0.0
+    ],
+    [
+     43.0,
+     10.8
+    ],
+    [
+     39.3,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     35.0,
+     0.0
+    ],
+    [
+     39.0,
+     0.0
+    ],
+    [
+     46.6,
+     10.8
+    ],
+    [
+     43.0,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Bunk rooms",
+   "level": "L2",
+   "outline_m": [
+    [
+     39.0,
+     0.0
+    ],
+    [
+     42.9,
+     0.0
+    ],
+    [
+     50.2,
+     10.8
+    ],
+    [
+     46.6,
+     10.8
+    ]
+   ],
+   "about": "A small bedroom for a firefighter on a night watch.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Kitchen",
+   "level": "L2",
+   "outline_m": [
+    [
+     42.9,
+     0.0
+    ],
+    [
+     47.8,
+     0.0
+    ],
+    [
+     54.6,
+     10.8
+    ],
+    [
+     50.2,
+     10.8
+    ]
+   ],
+   "about": "The station kitchen, where the watch cooks its meals together.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Mess room",
+   "level": "L2",
+   "outline_m": [
+    [
+     47.8,
+     0.0
+    ],
+    [
+     56.4,
+     0.0
+    ],
+    [
+     62.6,
+     10.8
+    ],
+    [
+     54.6,
+     10.8
+    ]
+   ],
+   "about": "The crew's dining and sitting room, with a television and the call speaker.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Gym",
+   "level": "L2",
+   "outline_m": [
+    [
+     56.4,
+     0.0
+    ],
+    [
+     65.1,
+     0.0
+    ],
+    [
+     70.5,
+     10.8
+    ],
+    [
+     62.6,
+     10.8
+    ]
+   ],
+   "about": "Weights and rowing machines; firefighters must stay fit to carry kit up stairs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Laundry",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.1,
+     0.0
+    ],
+    [
+     69.0,
+     0.0
+    ],
+    [
+     74.2,
+     10.8
+    ],
+    [
+     70.5,
+     10.8
+    ]
+   ],
+   "about": "Washing machines for uniforms and bedding.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     69.0,
+     0.0
+    ],
+    [
+     84.4,
+     0.0
+    ],
+    [
+     88.3,
+     10.8
+    ],
+    [
+     74.2,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.8,
+     0.0
+    ],
+    [
+     104.3,
+     0.0
+    ],
+    [
+     106.5,
+     10.8
+    ],
+    [
+     95.9,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.3,
+     0.0
+    ],
+    [
+     115.9,
+     0.0
+    ],
+    [
+     117.1,
+     10.8
+    ],
+    [
+     106.5,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     115.9,
+     0.0
+    ],
+    [
+     127.4,
+     0.0
+    ],
+    [
+     127.7,
+     10.8
+    ],
+    [
+     117.1,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     127.4,
+     0.0
+    ],
+    [
+     139.0,
+     0.0
+    ],
+    [
+     138.3,
+     10.8
+    ],
+    [
+     127.7,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     139.0,
+     0.0
+    ],
+    [
+     154.0,
+     0.0
+    ],
+    [
+     152.1,
+     10.8
+    ],
+    [
+     138.3,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     162.4,
+     0.0
+    ],
+    [
+     173.9,
+     0.0
+    ],
+    [
+     170.4,
+     10.8
+    ],
+    [
+     159.8,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     173.9,
+     0.0
+    ],
+    [
+     185.5,
+     0.0
+    ],
+    [
+     181.0,
+     10.8
+    ],
+    [
+     170.4,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     185.5,
+     0.0
+    ],
+    [
+     197.0,
+     0.0
+    ],
+    [
+     191.6,
+     10.8
+    ],
+    [
+     181.0,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.0,
+     0.0
+    ],
+    [
+     208.6,
+     0.0
+    ],
+    [
+     202.2,
+     10.8
+    ],
+    [
+     191.6,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     208.6,
+     0.0
+    ],
+    [
+     223.6,
+     0.0
+    ],
+    [
+     216.0,
+     10.8
+    ],
+    [
+     202.2,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     232.0,
+     0.0
+    ],
+    [
+     243.5,
+     0.0
+    ],
+    [
+     234.3,
+     10.8
+    ],
+    [
+     223.7,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     243.5,
+     0.0
+    ],
+    [
+     255.1,
+     0.0
+    ],
+    [
+     244.9,
+     10.8
+    ],
+    [
+     234.3,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     255.1,
+     0.0
+    ],
+    [
+     262.6,
+     0.0
+    ],
+    [
+     262.6,
+     6.6
+    ],
+    [
+     251.8,
+     11.9
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     244.9,
+     10.8
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     262.6,
+     6.6
+    ],
+    [
+     262.6,
+     25.6
+    ],
+    [
+     251.8,
+     15.1
+    ],
+    [
+     251.8,
+     11.9
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     262.6,
+     25.6
+    ],
+    [
+     262.6,
+     26.0
+    ],
+    [
+     247.8,
+     26.0
+    ],
+    [
+     238.2,
+     15.2
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     251.8,
+     15.1
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     239.4,
+     26.0
+    ],
+    [
+     227.9,
+     26.0
+    ],
+    [
+     219.9,
+     15.2
+    ],
+    [
+     230.5,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     227.9,
+     26.0
+    ],
+    [
+     216.3,
+     26.0
+    ],
+    [
+     209.3,
+     15.2
+    ],
+    [
+     219.9,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     216.3,
+     26.0
+    ],
+    [
+     204.8,
+     26.0
+    ],
+    [
+     198.7,
+     15.2
+    ],
+    [
+     209.3,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     204.8,
+     26.0
+    ],
+    [
+     193.2,
+     26.0
+    ],
+    [
+     188.1,
+     15.2
+    ],
+    [
+     198.7,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     193.2,
+     26.0
+    ],
+    [
+     178.2,
+     26.0
+    ],
+    [
+     174.3,
+     15.2
+    ],
+    [
+     188.1,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     169.8,
+     26.0
+    ],
+    [
+     158.3,
+     26.0
+    ],
+    [
+     156.1,
+     15.2
+    ],
+    [
+     166.7,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     158.3,
+     26.0
+    ],
+    [
+     146.7,
+     26.0
+    ],
+    [
+     145.5,
+     15.2
+    ],
+    [
+     156.1,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     146.7,
+     26.0
+    ],
+    [
+     135.2,
+     26.0
+    ],
+    [
+     134.9,
+     15.2
+    ],
+    [
+     145.5,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     135.2,
+     26.0
+    ],
+    [
+     123.6,
+     26.0
+    ],
+    [
+     124.3,
+     15.2
+    ],
+    [
+     134.9,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     123.6,
+     26.0
+    ],
+    [
+     108.6,
+     26.0
+    ],
+    [
+     110.5,
+     15.2
+    ],
+    [
+     124.3,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     100.2,
+     26.0
+    ],
+    [
+     88.7,
+     26.0
+    ],
+    [
+     92.2,
+     15.2
+    ],
+    [
+     102.8,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     88.7,
+     26.0
+    ],
+    [
+     77.1,
+     26.0
+    ],
+    [
+     81.6,
+     15.2
+    ],
+    [
+     92.2,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     77.1,
+     26.0
+    ],
+    [
+     65.6,
+     26.0
+    ],
+    [
+     71.0,
+     15.2
+    ],
+    [
+     81.6,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.6,
+     26.0
+    ],
+    [
+     54.0,
+     26.0
+    ],
+    [
+     60.4,
+     15.2
+    ],
+    [
+     71.0,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     54.0,
+     26.0
+    ],
+    [
+     39.0,
+     26.0
+    ],
+    [
+     46.6,
+     15.2
+    ],
+    [
+     60.4,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.6,
+     26.0
+    ],
+    [
+     19.1,
+     26.0
+    ],
+    [
+     28.3,
+     15.2
+    ],
+    [
+     38.9,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     19.1,
+     26.0
+    ],
+    [
+     7.5,
+     26.0
+    ],
+    [
+     17.7,
+     15.2
+    ],
+    [
+     28.3,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Crew room",
+   "level": "L2",
+   "outline_m": [
+    [
+     7.5,
+     26.0
+    ],
+    [
+     0.0,
+     26.0
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     17.7,
+     15.2
+    ]
+   ],
+   "about": "Quiet rooms for reading, study and rest between calls.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L3",
+   "outline_m": [
+    [
+     10.8,
+     15.2
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     12.3,
+     13.7
+    ],
+    [
+     250.3,
+     13.7
+    ],
+    [
+     250.3,
+     12.3
+    ],
+    [
+     12.3,
+     12.3
+    ],
+    [
+     12.3,
+     13.7
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Station commander's office",
+   "level": "L3",
+   "outline_m": [
+    [
+     0.0,
+     26.0
+    ],
+    [
+     0.0,
+     19.5
+    ],
+    [
+     10.8,
+     14.1
+    ],
+    [
+     10.8,
+     15.2
+    ]
+   ],
+   "about": "The station commander plans the watches and keeps the station's records.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Training room",
+   "level": "L3",
+   "outline_m": [
+    [
+     0.0,
+     19.5
+    ],
+    [
+     0.0,
+     3.7
+    ],
+    [
+     10.8,
+     11.4
+    ],
+    [
+     10.8,
+     14.1
+    ]
+   ],
+   "about": "Classroom for lessons on new equipment, first aid and fire safety.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Fire safety office",
+   "level": "L3",
+   "outline_m": [
+    [
+     0.0,
+     3.7
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.7,
+     0.0
+    ],
+    [
+     12.4,
+     10.8
+    ],
+    [
+     10.8,
+     10.8
+    ],
+    [
+     10.8,
+     11.4
+    ]
+   ],
+   "about": "Inspectors who check buildings in Dock Freight for fire risks work from here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Records room",
+   "level": "L3",
+   "outline_m": [
+    [
+     1.7,
+     0.0
+    ],
+    [
+     5.7,
+     0.0
+    ],
+    [
+     16.0,
+     10.8
+    ],
+    [
+     12.4,
+     10.8
+    ]
+   ],
+   "about": "Incident reports, inspection files and maintenance logs.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     5.7,
+     0.0
+    ],
+    [
+     14.3,
+     0.0
+    ],
+    [
+     24.0,
+     10.8
+    ],
+    [
+     16.0,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     23.2,
+     0.0
+    ],
+    [
+     31.8,
+     0.0
+    ],
+    [
+     40.0,
+     10.8
+    ],
+    [
+     32.1,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     31.8,
+     0.0
+    ],
+    [
+     40.5,
+     0.0
+    ],
+    [
+     48.0,
+     10.8
+    ],
+    [
+     40.0,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     40.5,
+     0.0
+    ],
+    [
+     49.1,
+     0.0
+    ],
+    [
+     55.9,
+     10.8
+    ],
+    [
+     48.0,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     49.1,
+     0.0
+    ],
+    [
+     57.8,
+     0.0
+    ],
+    [
+     63.9,
+     10.8
+    ],
+    [
+     55.9,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     57.8,
+     0.0
+    ],
+    [
+     66.5,
+     0.0
+    ],
+    [
+     71.8,
+     10.8
+    ],
+    [
+     63.9,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     66.5,
+     0.0
+    ],
+    [
+     75.1,
+     0.0
+    ],
+    [
+     79.8,
+     10.8
+    ],
+    [
+     71.8,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     75.1,
+     0.0
+    ],
+    [
+     84.4,
+     0.0
+    ],
+    [
+     88.3,
+     10.8
+    ],
+    [
+     79.8,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     92.8,
+     0.0
+    ],
+    [
+     101.4,
+     0.0
+    ],
+    [
+     103.9,
+     10.8
+    ],
+    [
+     95.9,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     101.4,
+     0.0
+    ],
+    [
+     110.1,
+     0.0
+    ],
+    [
+     111.8,
+     10.8
+    ],
+    [
+     103.9,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     110.1,
+     0.0
+    ],
+    [
+     118.7,
+     0.0
+    ],
+    [
+     119.8,
+     10.8
+    ],
+    [
+     111.8,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     118.7,
+     0.0
+    ],
+    [
+     127.4,
+     0.0
+    ],
+    [
+     127.7,
+     10.8
+    ],
+    [
+     119.8,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     127.4,
+     0.0
+    ],
+    [
+     136.1,
+     0.0
+    ],
+    [
+     135.7,
+     10.8
+    ],
+    [
+     127.7,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     136.1,
+     0.0
+    ],
+    [
+     144.7,
+     0.0
+    ],
+    [
+     143.6,
+     10.8
+    ],
+    [
+     135.7,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     144.7,
+     0.0
+    ],
+    [
+     154.0,
+     0.0
+    ],
+    [
+     152.1,
+     10.8
+    ],
+    [
+     143.6,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     162.4,
+     0.0
+    ],
+    [
+     171.0,
+     0.0
+    ],
+    [
+     167.7,
+     10.8
+    ],
+    [
+     159.8,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     171.0,
+     0.0
+    ],
+    [
+     179.7,
+     0.0
+    ],
+    [
+     175.7,
+     10.8
+    ],
+    [
+     167.7,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     179.7,
+     0.0
+    ],
+    [
+     188.4,
+     0.0
+    ],
+    [
+     183.6,
+     10.8
+    ],
+    [
+     175.7,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     188.4,
+     0.0
+    ],
+    [
+     197.0,
+     0.0
+    ],
+    [
+     191.6,
+     10.8
+    ],
+    [
+     183.6,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     197.0,
+     0.0
+    ],
+    [
+     205.7,
+     0.0
+    ],
+    [
+     199.5,
+     10.8
+    ],
+    [
+     191.6,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     205.7,
+     0.0
+    ],
+    [
+     214.3,
+     0.0
+    ],
+    [
+     207.5,
+     10.8
+    ],
+    [
+     199.5,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     214.3,
+     0.0
+    ],
+    [
+     223.6,
+     0.0
+    ],
+    [
+     216.0,
+     10.8
+    ],
+    [
+     207.5,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     232.0,
+     0.0
+    ],
+    [
+     240.6,
+     0.0
+    ],
+    [
+     231.6,
+     10.8
+    ],
+    [
+     223.7,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     240.6,
+     0.0
+    ],
+    [
+     249.3,
+     0.0
+    ],
+    [
+     239.6,
+     10.8
+    ],
+    [
+     231.6,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     249.3,
+     0.0
+    ],
+    [
+     258.0,
+     0.0
+    ],
+    [
+     247.5,
+     10.8
+    ],
+    [
+     239.6,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     258.0,
+     0.0
+    ],
+    [
+     262.6,
+     0.0
+    ],
+    [
+     262.6,
+     6.6
+    ],
+    [
+     251.8,
+     11.9
+    ],
+    [
+     251.8,
+     10.8
+    ],
+    [
+     247.5,
+     10.8
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     262.6,
+     6.6
+    ],
+    [
+     262.6,
+     20.8
+    ],
+    [
+     251.8,
+     14.3
+    ],
+    [
+     251.8,
+     11.9
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     262.6,
+     20.8
+    ],
+    [
+     262.6,
+     26.0
+    ],
+    [
+     257.1,
+     26.0
+    ],
+    [
+     246.7,
+     15.2
+    ],
+    [
+     251.8,
+     15.2
+    ],
+    [
+     251.8,
+     14.3
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     257.1,
+     26.0
+    ],
+    [
+     247.8,
+     26.0
+    ],
+    [
+     238.2,
+     15.2
+    ],
+    [
+     246.7,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     239.4,
+     26.0
+    ],
+    [
+     230.8,
+     26.0
+    ],
+    [
+     222.6,
+     15.2
+    ],
+    [
+     230.5,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     230.8,
+     26.0
+    ],
+    [
+     222.1,
+     26.0
+    ],
+    [
+     214.6,
+     15.2
+    ],
+    [
+     222.6,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     222.1,
+     26.0
+    ],
+    [
+     213.5,
+     26.0
+    ],
+    [
+     206.7,
+     15.2
+    ],
+    [
+     214.6,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     213.5,
+     26.0
+    ],
+    [
+     204.8,
+     26.0
+    ],
+    [
+     198.7,
+     15.2
+    ],
+    [
+     206.7,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     204.8,
+     26.0
+    ],
+    [
+     196.1,
+     26.0
+    ],
+    [
+     190.8,
+     15.2
+    ],
+    [
+     198.7,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     196.1,
+     26.0
+    ],
+    [
+     187.5,
+     26.0
+    ],
+    [
+     182.8,
+     15.2
+    ],
+    [
+     190.8,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     187.5,
+     26.0
+    ],
+    [
+     178.2,
+     26.0
+    ],
+    [
+     174.3,
+     15.2
+    ],
+    [
+     182.8,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     169.8,
+     26.0
+    ],
+    [
+     161.2,
+     26.0
+    ],
+    [
+     158.7,
+     15.2
+    ],
+    [
+     166.7,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     161.2,
+     26.0
+    ],
+    [
+     152.5,
+     26.0
+    ],
+    [
+     150.8,
+     15.2
+    ],
+    [
+     158.7,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     152.5,
+     26.0
+    ],
+    [
+     143.9,
+     26.0
+    ],
+    [
+     142.8,
+     15.2
+    ],
+    [
+     150.8,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     143.9,
+     26.0
+    ],
+    [
+     135.2,
+     26.0
+    ],
+    [
+     134.9,
+     15.2
+    ],
+    [
+     142.8,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     135.2,
+     26.0
+    ],
+    [
+     126.5,
+     26.0
+    ],
+    [
+     126.9,
+     15.2
+    ],
+    [
+     134.9,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     126.5,
+     26.0
+    ],
+    [
+     117.9,
+     26.0
+    ],
+    [
+     119.0,
+     15.2
+    ],
+    [
+     126.9,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     117.9,
+     26.0
+    ],
+    [
+     108.6,
+     26.0
+    ],
+    [
+     110.5,
+     15.2
+    ],
+    [
+     119.0,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     100.2,
+     26.0
+    ],
+    [
+     91.6,
+     26.0
+    ],
+    [
+     94.9,
+     15.2
+    ],
+    [
+     102.8,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     91.6,
+     26.0
+    ],
+    [
+     82.9,
+     26.0
+    ],
+    [
+     86.9,
+     15.2
+    ],
+    [
+     94.9,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     82.9,
+     26.0
+    ],
+    [
+     74.2,
+     26.0
+    ],
+    [
+     79.0,
+     15.2
+    ],
+    [
+     86.9,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     74.2,
+     26.0
+    ],
+    [
+     65.6,
+     26.0
+    ],
+    [
+     71.0,
+     15.2
+    ],
+    [
+     79.0,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     65.6,
+     26.0
+    ],
+    [
+     56.9,
+     26.0
+    ],
+    [
+     63.1,
+     15.2
+    ],
+    [
+     71.0,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     56.9,
+     26.0
+    ],
+    [
+     48.3,
+     26.0
+    ],
+    [
+     55.1,
+     15.2
+    ],
+    [
+     63.1,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     48.3,
+     26.0
+    ],
+    [
+     39.0,
+     26.0
+    ],
+    [
+     46.6,
+     15.2
+    ],
+    [
+     55.1,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     30.6,
+     26.0
+    ],
+    [
+     22.0,
+     26.0
+    ],
+    [
+     31.0,
+     15.2
+    ],
+    [
+     38.9,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     22.0,
+     26.0
+    ],
+    [
+     13.3,
+     26.0
+    ],
+    [
+     23.0,
+     15.2
+    ],
+    [
+     31.0,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     13.3,
+     26.0
+    ],
+    [
+     4.6,
+     26.0
+    ],
+    [
+     15.1,
+     15.2
+    ],
+    [
+     23.0,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Offices",
+   "level": "L3",
+   "outline_m": [
+    [
+     4.6,
+     26.0
+    ],
+    [
+     0.0,
+     26.0
+    ],
+    [
+     10.8,
+     15.2
+    ],
+    [
+     15.1,
+     15.2
+    ]
+   ],
+   "about": "Offices for the station's officers and fire safety staff.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

@@ -1,0 +1,1888 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-flight-control-P1-06",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  300.7,
+  142.2
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "LB1",
+   "name": "Level B1 · Pipe and cable basement",
+   "z_m": -5.0,
+   "height_m": 5.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L1",
+   "name": "Level 1 · Plant floor",
+   "z_m": 0.0,
+   "height_m": 8.0,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper plant deck",
+   "z_m": 8.0,
+   "height_m": 6.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Transformer bay 1",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     38.7
+    ],
+    [
+     0.0,
+     18.0
+    ],
+    [
+     100.2,
+     18.0
+    ],
+    [
+     100.2,
+     38.7
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Transformer bay 2",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     59.4
+    ],
+    [
+     0.0,
+     38.7
+    ],
+    [
+     100.2,
+     38.7
+    ],
+    [
+     100.2,
+     59.4
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Transformer bay 3",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     80.1
+    ],
+    [
+     0.0,
+     59.4
+    ],
+    [
+     100.2,
+     59.4
+    ],
+    [
+     100.2,
+     80.1
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "room",
+   "name": "Transformer bay 4",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     100.8
+    ],
+    [
+     0.0,
+     80.1
+    ],
+    [
+     100.2,
+     80.1
+    ],
+    [
+     100.2,
+     100.8
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "room",
+   "name": "Transformer bay 5",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     0.0,
+     121.5
+    ],
+    [
+     0.0,
+     100.8
+    ],
+    [
+     100.2,
+     100.8
+    ],
+    [
+     100.2,
+     121.5
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "room",
+   "name": "Transformer bay 6",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     100.2,
+     142.2
+    ],
+    [
+     0.0,
+     142.2
+    ],
+    [
+     0.0,
+     121.5
+    ],
+    [
+     100.2,
+     121.5
+    ]
+   ],
+   "about": "One transformer in a fire-walled bay, with its own oil catch pit and cooling fans.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "room",
+   "name": "Chiller hall",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     200.5,
+     142.2
+    ],
+    [
+     100.2,
+     142.2
+    ],
+    [
+     100.2,
+     18.0
+    ],
+    [
+     200.5,
+     18.0
+    ]
+   ],
+   "about": "Chillers and pumps that make the cold water used to cool the air in every the port hull antennas building.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "room",
+   "name": "Air handling hall",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     300.7,
+     142.2
+    ],
+    [
+     200.5,
+     142.2
+    ],
+    [
+     200.5,
+     18.0
+    ],
+    [
+     300.7,
+     18.0
+    ]
+   ],
+   "about": "Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back.",
+   "full_height": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     20.6,
+     0.0
+    ],
+    [
+     28.9,
+     0.0
+    ],
+    [
+     35.8,
+     8.5
+    ],
+    [
+     28.0,
+     8.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     89.6,
+     0.0
+    ],
+    [
+     97.9,
+     0.0
+    ],
+    [
+     100.8,
+     8.5
+    ],
+    [
+     93.1,
+     8.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     158.6,
+     0.0
+    ],
+    [
+     166.8,
+     0.0
+    ],
+    [
+     165.9,
+     8.5
+    ],
+    [
+     158.1,
+     8.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     227.6,
+     0.0
+    ],
+    [
+     235.8,
+     0.0
+    ],
+    [
+     231.0,
+     8.5
+    ],
+    [
+     223.2,
+     8.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     296.6,
+     0.0
+    ],
+    [
+     300.7,
+     0.0
+    ],
+    [
+     300.7,
+     7.6
+    ],
+    [
+     292.2,
+     8.9
+    ],
+    [
+     292.2,
+     8.5
+    ],
+    [
+     288.3,
+     8.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     245.6,
+     18.0
+    ],
+    [
+     237.3,
+     18.0
+    ],
+    [
+     232.4,
+     9.5
+    ],
+    [
+     240.2,
+     9.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     176.6,
+     18.0
+    ],
+    [
+     168.3,
+     18.0
+    ],
+    [
+     167.3,
+     9.5
+    ],
+    [
+     175.1,
+     9.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     107.6,
+     18.0
+    ],
+    [
+     99.4,
+     18.0
+    ],
+    [
+     102.3,
+     9.5
+    ],
+    [
+     110.0,
+     9.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "LB1",
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     38.6,
+     18.0
+    ],
+    [
+     30.4,
+     18.0
+    ],
+    [
+     37.2,
+     9.5
+    ],
+    [
+     45.0,
+     9.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "room",
+   "name": "Control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     18.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     4.7,
+     0.0
+    ],
+    [
+     13.0,
+     8.5
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     8.5,
+     9.5
+    ]
+   ],
+   "about": "Plant operators watch power, air and water for the whole precinct on screens here, round the clock.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "room",
+   "name": "Switch room",
+   "level": "L1",
+   "outline_m": [
+    [
+     4.7,
+     0.0
+    ],
+    [
+     20.6,
+     0.0
+    ],
+    [
+     28.0,
+     8.5
+    ],
+    [
+     13.0,
+     8.5
+    ]
+   ],
+   "about": "Rows of switchgear that route power to each street and building, and cut it off when there is a fault.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "room",
+   "name": "Battery room",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.9,
+     0.0
+    ],
+    [
+     48.2,
+     0.0
+    ],
+    [
+     54.0,
+     8.5
+    ],
+    [
+     35.8,
+     8.5
+    ]
+   ],
+   "about": "Banks of batteries that keep the precinct's lights and controls on for hours if the power fails.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "room",
+   "name": "Water pump room",
+   "level": "L1",
+   "outline_m": [
+    [
+     48.2,
+     0.0
+    ],
+    [
+     72.3,
+     0.0
+    ],
+    [
+     76.7,
+     8.5
+    ],
+    [
+     54.0,
+     8.5
+    ]
+   ],
+   "about": "Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "room",
+   "name": "Water treatment room",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.3,
+     0.0
+    ],
+    [
+     89.6,
+     0.0
+    ],
+    [
+     93.1,
+     8.5
+    ],
+    [
+     76.7,
+     8.5
+    ]
+   ],
+   "about": "Filters and UV lamps that clean recycled water before it goes back into the pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "room",
+   "name": "Workshop",
+   "level": "L1",
+   "outline_m": [
+    [
+     97.9,
+     0.0
+    ],
+    [
+     114.7,
+     0.0
+    ],
+    [
+     116.8,
+     8.5
+    ],
+    [
+     100.8,
+     8.5
+    ]
+   ],
+   "about": "Benches and tools where the plant crew repair pumps, valves and fans.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Antenna power room",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.7,
+     0.0
+    ],
+    [
+     132.8,
+     0.0
+    ],
+    [
+     133.8,
+     8.5
+    ],
+    [
+     116.8,
+     8.5
+    ]
+   ],
+   "about": "Power supplies for the antennas on the hull above.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Locker room",
+   "level": "L1",
+   "outline_m": [
+    [
+     132.8,
+     0.0
+    ],
+    [
+     143.6,
+     0.0
+    ],
+    [
+     144.0,
+     8.5
+    ],
+    [
+     133.8,
+     8.5
+    ]
+   ],
+   "about": "Lockers and changing benches for staff arriving for their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L1",
+   "outline_m": [
+    [
+     143.6,
+     0.0
+    ],
+    [
+     158.6,
+     0.0
+    ],
+    [
+     158.1,
+     8.5
+    ],
+    [
+     144.0,
+     8.5
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     166.8,
+     0.0
+    ],
+    [
+     191.2,
+     0.0
+    ],
+    [
+     188.8,
+     8.5
+    ],
+    [
+     165.9,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     191.2,
+     0.0
+    ],
+    [
+     215.5,
+     0.0
+    ],
+    [
+     211.8,
+     8.5
+    ],
+    [
+     188.8,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     215.5,
+     0.0
+    ],
+    [
+     227.6,
+     0.0
+    ],
+    [
+     223.2,
+     8.5
+    ],
+    [
+     211.8,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     235.8,
+     0.0
+    ],
+    [
+     260.1,
+     0.0
+    ],
+    [
+     253.9,
+     8.5
+    ],
+    [
+     231.0,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     260.1,
+     0.0
+    ],
+    [
+     284.4,
+     0.0
+    ],
+    [
+     276.8,
+     8.5
+    ],
+    [
+     253.9,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     284.4,
+     0.0
+    ],
+    [
+     296.6,
+     0.0
+    ],
+    [
+     288.3,
+     8.5
+    ],
+    [
+     276.8,
+     8.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     300.7,
+     7.6
+    ],
+    [
+     300.7,
+     18.0
+    ],
+    [
+     282.0,
+     18.0
+    ],
+    [
+     274.5,
+     9.5
+    ],
+    [
+     292.2,
+     9.5
+    ],
+    [
+     292.2,
+     8.9
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     282.0,
+     18.0
+    ],
+    [
+     257.7,
+     18.0
+    ],
+    [
+     251.6,
+     9.5
+    ],
+    [
+     274.5,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     257.7,
+     18.0
+    ],
+    [
+     245.6,
+     18.0
+    ],
+    [
+     240.2,
+     9.5
+    ],
+    [
+     251.6,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     237.3,
+     18.0
+    ],
+    [
+     213.0,
+     18.0
+    ],
+    [
+     209.5,
+     9.5
+    ],
+    [
+     232.4,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     213.0,
+     18.0
+    ],
+    [
+     188.7,
+     18.0
+    ],
+    [
+     186.5,
+     9.5
+    ],
+    [
+     209.5,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     188.7,
+     18.0
+    ],
+    [
+     176.6,
+     18.0
+    ],
+    [
+     175.1,
+     9.5
+    ],
+    [
+     186.5,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     168.3,
+     18.0
+    ],
+    [
+     144.0,
+     18.0
+    ],
+    [
+     144.4,
+     9.5
+    ],
+    [
+     167.3,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     144.0,
+     18.0
+    ],
+    [
+     119.7,
+     18.0
+    ],
+    [
+     121.5,
+     9.5
+    ],
+    [
+     144.4,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     119.7,
+     18.0
+    ],
+    [
+     107.6,
+     18.0
+    ],
+    [
+     110.0,
+     9.5
+    ],
+    [
+     121.5,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.4,
+     18.0
+    ],
+    [
+     75.1,
+     18.0
+    ],
+    [
+     79.3,
+     9.5
+    ],
+    [
+     102.3,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     75.1,
+     18.0
+    ],
+    [
+     50.7,
+     18.0
+    ],
+    [
+     56.4,
+     9.5
+    ],
+    [
+     79.3,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     50.7,
+     18.0
+    ],
+    [
+     38.6,
+     18.0
+    ],
+    [
+     45.0,
+     9.5
+    ],
+    [
+     56.4,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Spares store",
+   "level": "L1",
+   "outline_m": [
+    [
+     30.4,
+     18.0
+    ],
+    [
+     0.0,
+     18.0
+    ],
+    [
+     8.5,
+     9.5
+    ],
+    [
+     37.2,
+     9.5
+    ]
+   ],
+   "about": "Racked spare pumps, valves, filters and fuses, so repairs never wait for parts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Filter bank room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     18.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     9.5,
+     0.0
+    ],
+    [
+     17.5,
+     8.5
+    ],
+    [
+     8.5,
+     8.5
+    ],
+    [
+     8.5,
+     9.5
+    ]
+   ],
+   "about": "Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Ductwork gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     0.0
+    ],
+    [
+     20.6,
+     0.0
+    ],
+    [
+     28.0,
+     8.5
+    ],
+    [
+     17.5,
+     8.5
+    ]
+   ],
+   "about": "Where the main air ducts leave the plant and turn toward the streets.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Crew rest room",
+   "level": "L2",
+   "outline_m": [
+    [
+     28.9,
+     0.0
+    ],
+    [
+     33.7,
+     0.0
+    ],
+    [
+     40.3,
+     8.5
+    ],
+    [
+     35.8,
+     8.5
+    ]
+   ],
+   "about": "A small room with a kettle and chairs for the plant crew on long shifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     33.7,
+     0.0
+    ],
+    [
+     64.9,
+     0.0
+    ],
+    [
+     69.7,
+     8.5
+    ],
+    [
+     40.3,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.9,
+     0.0
+    ],
+    [
+     89.6,
+     0.0
+    ],
+    [
+     93.1,
+     8.5
+    ],
+    [
+     69.7,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     97.9,
+     0.0
+    ],
+    [
+     129.0,
+     0.0
+    ],
+    [
+     130.2,
+     8.5
+    ],
+    [
+     100.8,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     129.0,
+     0.0
+    ],
+    [
+     158.6,
+     0.0
+    ],
+    [
+     158.1,
+     8.5
+    ],
+    [
+     130.2,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     166.8,
+     0.0
+    ],
+    [
+     198.0,
+     0.0
+    ],
+    [
+     195.3,
+     8.5
+    ],
+    [
+     165.9,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     198.0,
+     0.0
+    ],
+    [
+     227.6,
+     0.0
+    ],
+    [
+     223.2,
+     8.5
+    ],
+    [
+     195.3,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     235.8,
+     0.0
+    ],
+    [
+     267.0,
+     0.0
+    ],
+    [
+     260.4,
+     8.5
+    ],
+    [
+     231.0,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     267.0,
+     0.0
+    ],
+    [
+     296.6,
+     0.0
+    ],
+    [
+     288.3,
+     8.5
+    ],
+    [
+     260.4,
+     8.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     300.7,
+     7.6
+    ],
+    [
+     300.7,
+     18.0
+    ],
+    [
+     275.2,
+     18.0
+    ],
+    [
+     268.1,
+     9.5
+    ],
+    [
+     292.2,
+     9.5
+    ],
+    [
+     292.2,
+     8.9
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     275.2,
+     18.0
+    ],
+    [
+     245.6,
+     18.0
+    ],
+    [
+     240.2,
+     9.5
+    ],
+    [
+     268.1,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     237.3,
+     18.0
+    ],
+    [
+     206.2,
+     18.0
+    ],
+    [
+     203.0,
+     9.5
+    ],
+    [
+     232.4,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.2,
+     18.0
+    ],
+    [
+     176.6,
+     18.0
+    ],
+    [
+     175.1,
+     9.5
+    ],
+    [
+     203.0,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     168.3,
+     18.0
+    ],
+    [
+     137.2,
+     18.0
+    ],
+    [
+     137.9,
+     9.5
+    ],
+    [
+     167.3,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.2,
+     18.0
+    ],
+    [
+     107.6,
+     18.0
+    ],
+    [
+     110.0,
+     9.5
+    ],
+    [
+     137.9,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     99.4,
+     18.0
+    ],
+    [
+     68.2,
+     18.0
+    ],
+    [
+     72.9,
+     9.5
+    ],
+    [
+     102.3,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     68.2,
+     18.0
+    ],
+    [
+     38.6,
+     18.0
+    ],
+    [
+     45.0,
+     9.5
+    ],
+    [
+     72.9,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Upper plant gallery",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.4,
+     18.0
+    ],
+    [
+     0.0,
+     18.0
+    ],
+    [
+     8.5,
+     9.5
+    ],
+    [
+     37.2,
+     9.5
+    ]
+   ],
+   "about": "Walkways and platforms for reaching the tops of the fans, chillers and pipes.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Cable vault",
+   "level": "LB1",
+   "outline_m": [
+    [
+     150.3,
+     142.2
+    ],
+    [
+     0.0,
+     142.2
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     150.3,
+     0.0
+    ]
+   ],
+   "about": "Where the power cables come up from the service layer and are fanned out to the switchgear.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Pipe gallery",
+   "level": "LB1",
+   "outline_m": [
+    [
+     300.7,
+     142.2
+    ],
+    [
+     150.3,
+     142.2
+    ],
+    [
+     150.3,
+     0.0
+    ],
+    [
+     300.7,
+     0.0
+    ]
+   ],
+   "about": "The main water, cooling and drain pipes, with valves crew can reach from catwalks.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

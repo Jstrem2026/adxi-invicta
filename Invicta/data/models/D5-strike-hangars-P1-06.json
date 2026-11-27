@@ -1,0 +1,7895 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-strike-hangars-P1-06",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  206.9,
+  316.6
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Dining floor",
+   "z_m": 0.0,
+   "height_m": 5.4,
+   "status": "proposed"
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 · Upper dining and staff floor",
+   "z_m": 5.4,
+   "height_m": 4.2,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "room",
+   "name": "Dining hall",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.9,
+     22.0
+    ],
+    [
+     184.9,
+     192.4
+    ],
+    [
+     22.0,
+     192.4
+    ],
+    [
+     22.0,
+     22.0
+    ]
+   ],
+   "about": "The main dining hall, with long tables, booths and a counter where crews coming on and off shift collect their meals.",
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "zone",
+   "name": "Terrace court",
+   "level": "L1",
+   "outline_m": [
+    [
+     184.9,
+     192.4
+    ],
+    [
+     184.9,
+     294.6
+    ],
+    [
+     22.0,
+     294.6
+    ],
+    [
+     22.0,
+     192.4
+    ]
+   ],
+   "about": "An open court with tables for eating outside.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.4,
+     9.5
+    ],
+    [
+     197.4,
+     130.7
+    ],
+    [
+     194.4,
+     131.3
+    ],
+    [
+     194.4,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.4,
+     130.7
+    ],
+    [
+     197.4,
+     251.9
+    ],
+    [
+     194.4,
+     250.1
+    ],
+    [
+     194.4,
+     131.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     197.4,
+     251.9
+    ],
+    [
+     197.4,
+     307.1
+    ],
+    [
+     130.9,
+     307.1
+    ],
+    [
+     130.1,
+     304.1
+    ],
+    [
+     194.4,
+     304.1
+    ],
+    [
+     194.4,
+     250.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     130.9,
+     307.1
+    ],
+    [
+     9.5,
+     307.1
+    ],
+    [
+     9.5,
+     306.6
+    ],
+    [
+     12.5,
+     303.6
+    ],
+    [
+     12.5,
+     304.1
+    ],
+    [
+     130.1,
+     304.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E007",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     306.6
+    ],
+    [
+     9.5,
+     185.4
+    ],
+    [
+     12.5,
+     184.8
+    ],
+    [
+     12.5,
+     303.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E008",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     185.4
+    ],
+    [
+     9.5,
+     64.2
+    ],
+    [
+     12.5,
+     66.0
+    ],
+    [
+     12.5,
+     184.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E009",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     9.5,
+     64.2
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     76.5,
+     9.5
+    ],
+    [
+     77.3,
+     12.5
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     12.5,
+     66.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E010",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L1",
+   "outline_m": [
+    [
+     76.5,
+     9.5
+    ],
+    [
+     197.4,
+     9.5
+    ],
+    [
+     194.4,
+     12.5
+    ],
+    [
+     77.3,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E011",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     194.4,
+     44.5
+    ],
+    [
+     194.4,
+     52.8
+    ],
+    [
+     184.9,
+     59.6
+    ],
+    [
+     184.9,
+     51.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E012",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     194.4,
+     116.8
+    ],
+    [
+     194.4,
+     125.1
+    ],
+    [
+     184.9,
+     127.2
+    ],
+    [
+     184.9,
+     119.5
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E013",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     194.4,
+     189.1
+    ],
+    [
+     194.4,
+     197.3
+    ],
+    [
+     184.9,
+     194.8
+    ],
+    [
+     184.9,
+     187.1
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E014",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     194.4,
+     261.3
+    ],
+    [
+     194.4,
+     269.6
+    ],
+    [
+     184.9,
+     262.4
+    ],
+    [
+     184.9,
+     254.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E015",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     164.3,
+     304.1
+    ],
+    [
+     155.8,
+     304.1
+    ],
+    [
+     150.4,
+     294.6
+    ],
+    [
+     157.9,
+     294.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E016",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     90.5,
+     304.1
+    ],
+    [
+     82.1,
+     304.1
+    ],
+    [
+     84.3,
+     294.6
+    ],
+    [
+     91.8,
+     294.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E017",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     16.7,
+     304.1
+    ],
+    [
+     12.5,
+     304.1
+    ],
+    [
+     12.5,
+     300.0
+    ],
+    [
+     22.0,
+     290.7
+    ],
+    [
+     22.0,
+     294.6
+    ],
+    [
+     25.8,
+     294.6
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E018",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     236.0
+    ],
+    [
+     12.5,
+     227.7
+    ],
+    [
+     22.0,
+     223.2
+    ],
+    [
+     22.0,
+     230.9
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E019",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     163.7
+    ],
+    [
+     12.5,
+     155.4
+    ],
+    [
+     22.0,
+     155.6
+    ],
+    [
+     22.0,
+     163.3
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E020",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     91.4
+    ],
+    [
+     12.5,
+     83.1
+    ],
+    [
+     22.0,
+     88.0
+    ],
+    [
+     22.0,
+     95.8
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E021",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     12.5,
+     19.1
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     14.2,
+     12.5
+    ],
+    [
+     23.5,
+     22.0
+    ],
+    [
+     22.0,
+     22.0
+    ],
+    [
+     22.0,
+     28.2
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E022",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     79.5,
+     12.5
+    ],
+    [
+     88.0,
+     12.5
+    ],
+    [
+     89.6,
+     22.0
+    ],
+    [
+     82.0,
+     22.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E023",
+   "type": "core",
+   "name": "Stairs and lifts",
+   "levels": [
+    "L1",
+    "L2"
+   ],
+   "outline_m": [
+    [
+     153.3,
+     12.5
+    ],
+    [
+     161.7,
+     12.5
+    ],
+    [
+     155.6,
+     22.0
+    ],
+    [
+     148.1,
+     22.0
+    ]
+   ],
+   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire.",
+   "status": "proposed"
+  },
+  {
+   "id": "E024",
+   "type": "room",
+   "name": "Serving counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     0.0
+    ],
+    [
+     206.9,
+     13.0
+    ],
+    [
+     197.4,
+     21.7
+    ],
+    [
+     197.4,
+     9.5
+    ]
+   ],
+   "about": "Hot meals, salads and drinks are served here in a fast-moving line.",
+   "status": "proposed"
+  },
+  {
+   "id": "E025",
+   "type": "room",
+   "name": "Main kitchen",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     13.0
+    ],
+    [
+     206.9,
+     45.6
+    ],
+    [
+     197.4,
+     52.3
+    ],
+    [
+     197.4,
+     21.7
+    ]
+   ],
+   "about": "Cooks prepare thousands of meals a day here on big ranges, ovens and kettles.",
+   "status": "proposed"
+  },
+  {
+   "id": "E026",
+   "type": "room",
+   "name": "Cold room",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     45.6
+    ],
+    [
+     206.9,
+     52.1
+    ],
+    [
+     197.4,
+     58.5
+    ],
+    [
+     197.4,
+     52.3
+    ]
+   ],
+   "about": "A walk-in fridge for fresh meat, vegetables and dairy.",
+   "status": "proposed"
+  },
+  {
+   "id": "E027",
+   "type": "room",
+   "name": "Freezer room",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     52.1
+    ],
+    [
+     206.9,
+     56.4
+    ],
+    [
+     197.4,
+     62.5
+    ],
+    [
+     197.4,
+     58.5
+    ]
+   ],
+   "about": "A walk-in freezer for frozen stores.",
+   "status": "proposed"
+  },
+  {
+   "id": "E028",
+   "type": "room",
+   "name": "Dry store",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     56.4
+    ],
+    [
+     206.9,
+     65.1
+    ],
+    [
+     197.4,
+     70.7
+    ],
+    [
+     197.4,
+     62.5
+    ]
+   ],
+   "about": "Shelves of flour, rice, tins and other dry food.",
+   "status": "proposed"
+  },
+  {
+   "id": "E029",
+   "type": "room",
+   "name": "Dishwash room",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     65.1
+    ],
+    [
+     206.9,
+     73.8
+    ],
+    [
+     197.4,
+     78.9
+    ],
+    [
+     197.4,
+     70.7
+    ]
+   ],
+   "about": "Conveyor dishwashers clean trays, plates and cutlery.",
+   "status": "proposed"
+  },
+  {
+   "id": "E030",
+   "type": "room",
+   "name": "Goods-in bay",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     73.8
+    ],
+    [
+     206.9,
+     80.3
+    ],
+    [
+     197.4,
+     85.0
+    ],
+    [
+     197.4,
+     78.9
+    ]
+   ],
+   "about": "Food deliveries arrive and are checked here.",
+   "status": "proposed"
+  },
+  {
+   "id": "E031",
+   "type": "room",
+   "name": "Waste and recycling room",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     80.3
+    ],
+    [
+     206.9,
+     83.7
+    ],
+    [
+     197.4,
+     88.2
+    ],
+    [
+     197.4,
+     85.0
+    ]
+   ],
+   "about": "Food waste goes to the digester; packaging is sorted for recycling.",
+   "status": "proposed"
+  },
+  {
+   "id": "E032",
+   "type": "room",
+   "name": "All-night counter",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     83.7
+    ],
+    [
+     206.9,
+     90.2
+    ],
+    [
+     197.4,
+     94.3
+    ],
+    [
+     197.4,
+     88.2
+    ]
+   ],
+   "about": "Hot food at any hour.",
+   "status": "proposed"
+  },
+  {
+   "id": "E033",
+   "type": "room",
+   "name": "Toilets",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     90.2
+    ],
+    [
+     206.9,
+     96.8
+    ],
+    [
+     197.4,
+     100.4
+    ],
+    [
+     197.4,
+     94.3
+    ]
+   ],
+   "about": "Public toilets, with an accessible toilet and baby-changing room.",
+   "status": "proposed"
+  },
+  {
+   "id": "E034",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     96.8
+    ],
+    [
+     206.9,
+     109.8
+    ],
+    [
+     197.4,
+     112.7
+    ],
+    [
+     197.4,
+     100.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E035",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     109.8
+    ],
+    [
+     206.9,
+     122.8
+    ],
+    [
+     197.4,
+     124.9
+    ],
+    [
+     197.4,
+     112.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E036",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     122.8
+    ],
+    [
+     206.9,
+     135.8
+    ],
+    [
+     197.4,
+     137.2
+    ],
+    [
+     197.4,
+     124.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E037",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     135.8
+    ],
+    [
+     206.9,
+     148.8
+    ],
+    [
+     197.4,
+     149.4
+    ],
+    [
+     197.4,
+     137.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E038",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     148.8
+    ],
+    [
+     206.9,
+     161.9
+    ],
+    [
+     197.4,
+     161.7
+    ],
+    [
+     197.4,
+     149.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E039",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     161.9
+    ],
+    [
+     206.9,
+     174.9
+    ],
+    [
+     197.4,
+     173.9
+    ],
+    [
+     197.4,
+     161.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E040",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     174.9
+    ],
+    [
+     206.9,
+     187.9
+    ],
+    [
+     197.4,
+     186.1
+    ],
+    [
+     197.4,
+     173.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E041",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     187.9
+    ],
+    [
+     206.9,
+     200.9
+    ],
+    [
+     197.4,
+     198.4
+    ],
+    [
+     197.4,
+     186.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E042",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     200.9
+    ],
+    [
+     206.9,
+     214.0
+    ],
+    [
+     197.4,
+     210.6
+    ],
+    [
+     197.4,
+     198.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E043",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     214.0
+    ],
+    [
+     206.9,
+     227.0
+    ],
+    [
+     197.4,
+     222.9
+    ],
+    [
+     197.4,
+     210.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E044",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     227.0
+    ],
+    [
+     206.9,
+     240.0
+    ],
+    [
+     197.4,
+     235.1
+    ],
+    [
+     197.4,
+     222.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E045",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     240.0
+    ],
+    [
+     206.9,
+     253.0
+    ],
+    [
+     197.4,
+     247.3
+    ],
+    [
+     197.4,
+     235.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E046",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     253.0
+    ],
+    [
+     206.9,
+     266.0
+    ],
+    [
+     197.4,
+     259.6
+    ],
+    [
+     197.4,
+     247.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E047",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     266.0
+    ],
+    [
+     206.9,
+     279.1
+    ],
+    [
+     197.4,
+     271.8
+    ],
+    [
+     197.4,
+     259.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E048",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     279.1
+    ],
+    [
+     206.9,
+     292.1
+    ],
+    [
+     197.4,
+     284.1
+    ],
+    [
+     197.4,
+     271.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E049",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     292.1
+    ],
+    [
+     206.9,
+     305.1
+    ],
+    [
+     197.4,
+     296.3
+    ],
+    [
+     197.4,
+     284.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E050",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     206.9,
+     305.1
+    ],
+    [
+     206.9,
+     316.6
+    ],
+    [
+     205.3,
+     316.6
+    ],
+    [
+     196.0,
+     307.1
+    ],
+    [
+     197.4,
+     307.1
+    ],
+    [
+     197.4,
+     296.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E051",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     205.3,
+     316.6
+    ],
+    [
+     192.1,
+     316.6
+    ],
+    [
+     184.0,
+     307.1
+    ],
+    [
+     196.0,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E052",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     192.1,
+     316.6
+    ],
+    [
+     178.9,
+     316.6
+    ],
+    [
+     171.9,
+     307.1
+    ],
+    [
+     184.0,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E053",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     178.9,
+     316.6
+    ],
+    [
+     165.6,
+     316.6
+    ],
+    [
+     159.9,
+     307.1
+    ],
+    [
+     171.9,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E054",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     165.6,
+     316.6
+    ],
+    [
+     152.4,
+     316.6
+    ],
+    [
+     147.9,
+     307.1
+    ],
+    [
+     159.9,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E055",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     152.4,
+     316.6
+    ],
+    [
+     139.1,
+     316.6
+    ],
+    [
+     135.9,
+     307.1
+    ],
+    [
+     147.9,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E056",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     139.1,
+     316.6
+    ],
+    [
+     125.9,
+     316.6
+    ],
+    [
+     123.8,
+     307.1
+    ],
+    [
+     135.9,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E057",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     125.9,
+     316.6
+    ],
+    [
+     112.7,
+     316.6
+    ],
+    [
+     111.8,
+     307.1
+    ],
+    [
+     123.8,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E058",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     112.7,
+     316.6
+    ],
+    [
+     99.4,
+     316.6
+    ],
+    [
+     99.8,
+     307.1
+    ],
+    [
+     111.8,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E059",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     99.4,
+     316.6
+    ],
+    [
+     86.2,
+     316.6
+    ],
+    [
+     87.8,
+     307.1
+    ],
+    [
+     99.8,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E060",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     86.2,
+     316.6
+    ],
+    [
+     72.9,
+     316.6
+    ],
+    [
+     75.7,
+     307.1
+    ],
+    [
+     87.8,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E061",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     72.9,
+     316.6
+    ],
+    [
+     59.7,
+     316.6
+    ],
+    [
+     63.7,
+     307.1
+    ],
+    [
+     75.7,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E062",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     59.7,
+     316.6
+    ],
+    [
+     46.5,
+     316.6
+    ],
+    [
+     51.7,
+     307.1
+    ],
+    [
+     63.7,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E063",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     46.5,
+     316.6
+    ],
+    [
+     33.2,
+     316.6
+    ],
+    [
+     39.7,
+     307.1
+    ],
+    [
+     51.7,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E064",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     33.2,
+     316.6
+    ],
+    [
+     20.0,
+     316.6
+    ],
+    [
+     27.7,
+     307.1
+    ],
+    [
+     39.7,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E065",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     20.0,
+     316.6
+    ],
+    [
+     6.7,
+     316.6
+    ],
+    [
+     15.6,
+     307.1
+    ],
+    [
+     27.7,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E066",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     6.7,
+     316.6
+    ],
+    [
+     0.0,
+     316.6
+    ],
+    [
+     0.0,
+     310.2
+    ],
+    [
+     9.5,
+     301.1
+    ],
+    [
+     9.5,
+     307.1
+    ],
+    [
+     15.6,
+     307.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E067",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     310.2
+    ],
+    [
+     0.0,
+     297.2
+    ],
+    [
+     9.5,
+     288.9
+    ],
+    [
+     9.5,
+     301.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E068",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     297.2
+    ],
+    [
+     0.0,
+     284.2
+    ],
+    [
+     9.5,
+     276.6
+    ],
+    [
+     9.5,
+     288.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E069",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     284.2
+    ],
+    [
+     0.0,
+     271.1
+    ],
+    [
+     9.5,
+     264.4
+    ],
+    [
+     9.5,
+     276.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E070",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     271.1
+    ],
+    [
+     0.0,
+     258.1
+    ],
+    [
+     9.5,
+     252.1
+    ],
+    [
+     9.5,
+     264.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E071",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     258.1
+    ],
+    [
+     0.0,
+     245.1
+    ],
+    [
+     9.5,
+     239.9
+    ],
+    [
+     9.5,
+     252.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E072",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     245.1
+    ],
+    [
+     0.0,
+     232.1
+    ],
+    [
+     9.5,
+     227.7
+    ],
+    [
+     9.5,
+     239.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E073",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     232.1
+    ],
+    [
+     0.0,
+     219.1
+    ],
+    [
+     9.5,
+     215.4
+    ],
+    [
+     9.5,
+     227.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E074",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     219.1
+    ],
+    [
+     0.0,
+     206.0
+    ],
+    [
+     9.5,
+     203.2
+    ],
+    [
+     9.5,
+     215.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E075",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     206.0
+    ],
+    [
+     0.0,
+     193.0
+    ],
+    [
+     9.5,
+     190.9
+    ],
+    [
+     9.5,
+     203.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E076",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     193.0
+    ],
+    [
+     0.0,
+     180.0
+    ],
+    [
+     9.5,
+     178.7
+    ],
+    [
+     9.5,
+     190.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E077",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     180.0
+    ],
+    [
+     0.0,
+     167.0
+    ],
+    [
+     9.5,
+     166.4
+    ],
+    [
+     9.5,
+     178.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E078",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     167.0
+    ],
+    [
+     0.0,
+     153.9
+    ],
+    [
+     9.5,
+     154.2
+    ],
+    [
+     9.5,
+     166.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E079",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     153.9
+    ],
+    [
+     0.0,
+     140.9
+    ],
+    [
+     9.5,
+     142.0
+    ],
+    [
+     9.5,
+     154.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E080",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     140.9
+    ],
+    [
+     0.0,
+     127.9
+    ],
+    [
+     9.5,
+     129.7
+    ],
+    [
+     9.5,
+     142.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E081",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     127.9
+    ],
+    [
+     0.0,
+     114.9
+    ],
+    [
+     9.5,
+     117.5
+    ],
+    [
+     9.5,
+     129.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E082",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     114.9
+    ],
+    [
+     0.0,
+     101.9
+    ],
+    [
+     9.5,
+     105.2
+    ],
+    [
+     9.5,
+     117.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E083",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     101.9
+    ],
+    [
+     0.0,
+     88.8
+    ],
+    [
+     9.5,
+     93.0
+    ],
+    [
+     9.5,
+     105.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E084",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     88.8
+    ],
+    [
+     0.0,
+     75.8
+    ],
+    [
+     9.5,
+     80.8
+    ],
+    [
+     9.5,
+     93.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E085",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     75.8
+    ],
+    [
+     0.0,
+     62.8
+    ],
+    [
+     9.5,
+     68.5
+    ],
+    [
+     9.5,
+     80.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E086",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     62.8
+    ],
+    [
+     0.0,
+     49.8
+    ],
+    [
+     9.5,
+     56.3
+    ],
+    [
+     9.5,
+     68.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E087",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     49.8
+    ],
+    [
+     0.0,
+     36.7
+    ],
+    [
+     9.5,
+     44.0
+    ],
+    [
+     9.5,
+     56.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E088",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     36.7
+    ],
+    [
+     0.0,
+     23.7
+    ],
+    [
+     9.5,
+     31.8
+    ],
+    [
+     9.5,
+     44.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E089",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     23.7
+    ],
+    [
+     0.0,
+     10.7
+    ],
+    [
+     9.5,
+     19.6
+    ],
+    [
+     9.5,
+     31.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E090",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     10.7
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     2.4,
+     0.0
+    ],
+    [
+     11.6,
+     9.5
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     9.5,
+     19.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E091",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     2.4,
+     0.0
+    ],
+    [
+     15.6,
+     0.0
+    ],
+    [
+     23.7,
+     9.5
+    ],
+    [
+     11.6,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E092",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     15.6,
+     0.0
+    ],
+    [
+     28.8,
+     0.0
+    ],
+    [
+     35.7,
+     9.5
+    ],
+    [
+     23.7,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E093",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.8,
+     0.0
+    ],
+    [
+     42.1,
+     0.0
+    ],
+    [
+     47.7,
+     9.5
+    ],
+    [
+     35.7,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E094",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.1,
+     0.0
+    ],
+    [
+     55.3,
+     0.0
+    ],
+    [
+     59.7,
+     9.5
+    ],
+    [
+     47.7,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E095",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.3,
+     0.0
+    ],
+    [
+     68.6,
+     0.0
+    ],
+    [
+     71.8,
+     9.5
+    ],
+    [
+     59.7,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E096",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.6,
+     0.0
+    ],
+    [
+     81.8,
+     0.0
+    ],
+    [
+     83.8,
+     9.5
+    ],
+    [
+     71.8,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E097",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     81.8,
+     0.0
+    ],
+    [
+     95.0,
+     0.0
+    ],
+    [
+     95.8,
+     9.5
+    ],
+    [
+     83.8,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E098",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     95.0,
+     0.0
+    ],
+    [
+     108.3,
+     0.0
+    ],
+    [
+     107.8,
+     9.5
+    ],
+    [
+     95.8,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E099",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     108.3,
+     0.0
+    ],
+    [
+     121.5,
+     0.0
+    ],
+    [
+     119.9,
+     9.5
+    ],
+    [
+     107.8,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E100",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     121.5,
+     0.0
+    ],
+    [
+     134.8,
+     0.0
+    ],
+    [
+     131.9,
+     9.5
+    ],
+    [
+     119.9,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E101",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     134.8,
+     0.0
+    ],
+    [
+     148.0,
+     0.0
+    ],
+    [
+     143.9,
+     9.5
+    ],
+    [
+     131.9,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E102",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     148.0,
+     0.0
+    ],
+    [
+     161.2,
+     0.0
+    ],
+    [
+     155.9,
+     9.5
+    ],
+    [
+     143.9,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E103",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.2,
+     0.0
+    ],
+    [
+     174.5,
+     0.0
+    ],
+    [
+     168.0,
+     9.5
+    ],
+    [
+     155.9,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E104",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     174.5,
+     0.0
+    ],
+    [
+     187.7,
+     0.0
+    ],
+    [
+     180.0,
+     9.5
+    ],
+    [
+     168.0,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E105",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     187.7,
+     0.0
+    ],
+    [
+     206.9,
+     0.0
+    ],
+    [
+     197.4,
+     9.5
+    ],
+    [
+     180.0,
+     9.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E106",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     12.5
+    ],
+    [
+     194.4,
+     25.6
+    ],
+    [
+     184.9,
+     34.2
+    ],
+    [
+     184.9,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E107",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     25.6
+    ],
+    [
+     194.4,
+     38.6
+    ],
+    [
+     184.9,
+     46.4
+    ],
+    [
+     184.9,
+     34.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E108",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     38.6
+    ],
+    [
+     194.4,
+     44.5
+    ],
+    [
+     184.9,
+     51.9
+    ],
+    [
+     184.9,
+     46.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E109",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     52.8
+    ],
+    [
+     194.4,
+     65.8
+    ],
+    [
+     184.9,
+     71.9
+    ],
+    [
+     184.9,
+     59.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E110",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     65.8
+    ],
+    [
+     194.4,
+     78.9
+    ],
+    [
+     184.9,
+     84.1
+    ],
+    [
+     184.9,
+     71.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E111",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     78.9
+    ],
+    [
+     194.4,
+     91.9
+    ],
+    [
+     184.9,
+     96.3
+    ],
+    [
+     184.9,
+     84.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E112",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     91.9
+    ],
+    [
+     194.4,
+     105.0
+    ],
+    [
+     184.9,
+     108.5
+    ],
+    [
+     184.9,
+     96.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E113",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     105.0
+    ],
+    [
+     194.4,
+     116.8
+    ],
+    [
+     184.9,
+     119.5
+    ],
+    [
+     184.9,
+     108.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E114",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     125.1
+    ],
+    [
+     194.4,
+     138.1
+    ],
+    [
+     184.9,
+     139.4
+    ],
+    [
+     184.9,
+     127.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E115",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     138.1
+    ],
+    [
+     194.4,
+     151.2
+    ],
+    [
+     184.9,
+     151.6
+    ],
+    [
+     184.9,
+     139.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E116",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     151.2
+    ],
+    [
+     194.4,
+     164.2
+    ],
+    [
+     184.9,
+     163.8
+    ],
+    [
+     184.9,
+     151.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E117",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     164.2
+    ],
+    [
+     194.4,
+     177.3
+    ],
+    [
+     184.9,
+     176.0
+    ],
+    [
+     184.9,
+     163.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E118",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     177.3
+    ],
+    [
+     194.4,
+     189.1
+    ],
+    [
+     184.9,
+     187.1
+    ],
+    [
+     184.9,
+     176.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E119",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     197.3
+    ],
+    [
+     194.4,
+     210.4
+    ],
+    [
+     184.9,
+     207.0
+    ],
+    [
+     184.9,
+     194.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E120",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     210.4
+    ],
+    [
+     194.4,
+     223.4
+    ],
+    [
+     184.9,
+     219.2
+    ],
+    [
+     184.9,
+     207.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E121",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     223.4
+    ],
+    [
+     194.4,
+     236.5
+    ],
+    [
+     184.9,
+     231.4
+    ],
+    [
+     184.9,
+     219.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E122",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     236.5
+    ],
+    [
+     194.4,
+     249.6
+    ],
+    [
+     184.9,
+     243.6
+    ],
+    [
+     184.9,
+     231.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E123",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     249.6
+    ],
+    [
+     194.4,
+     261.3
+    ],
+    [
+     184.9,
+     254.6
+    ],
+    [
+     184.9,
+     243.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E124",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     269.6
+    ],
+    [
+     194.4,
+     282.7
+    ],
+    [
+     184.9,
+     274.6
+    ],
+    [
+     184.9,
+     262.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E125",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     282.7
+    ],
+    [
+     194.4,
+     295.7
+    ],
+    [
+     184.9,
+     286.8
+    ],
+    [
+     184.9,
+     274.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E126",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     194.4,
+     295.7
+    ],
+    [
+     194.4,
+     304.1
+    ],
+    [
+     189.6,
+     304.1
+    ],
+    [
+     180.6,
+     294.6
+    ],
+    [
+     184.9,
+     294.6
+    ],
+    [
+     184.9,
+     286.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E127",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     189.6,
+     304.1
+    ],
+    [
+     176.3,
+     304.1
+    ],
+    [
+     168.7,
+     294.6
+    ],
+    [
+     180.6,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E128",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     176.3,
+     304.1
+    ],
+    [
+     164.3,
+     304.1
+    ],
+    [
+     157.9,
+     294.6
+    ],
+    [
+     168.7,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E129",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     155.8,
+     304.1
+    ],
+    [
+     142.5,
+     304.1
+    ],
+    [
+     138.4,
+     294.6
+    ],
+    [
+     150.4,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E130",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     142.5,
+     304.1
+    ],
+    [
+     129.2,
+     304.1
+    ],
+    [
+     126.5,
+     294.6
+    ],
+    [
+     138.4,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E131",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     129.2,
+     304.1
+    ],
+    [
+     115.8,
+     304.1
+    ],
+    [
+     114.6,
+     294.6
+    ],
+    [
+     126.5,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E132",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     115.8,
+     304.1
+    ],
+    [
+     102.5,
+     304.1
+    ],
+    [
+     102.6,
+     294.6
+    ],
+    [
+     114.6,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E133",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     102.5,
+     304.1
+    ],
+    [
+     90.5,
+     304.1
+    ],
+    [
+     91.8,
+     294.6
+    ],
+    [
+     102.6,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E134",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     82.1,
+     304.1
+    ],
+    [
+     68.7,
+     304.1
+    ],
+    [
+     72.4,
+     294.6
+    ],
+    [
+     84.3,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E135",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     68.7,
+     304.1
+    ],
+    [
+     55.4,
+     304.1
+    ],
+    [
+     60.4,
+     294.6
+    ],
+    [
+     72.4,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E136",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     55.4,
+     304.1
+    ],
+    [
+     42.1,
+     304.1
+    ],
+    [
+     48.5,
+     294.6
+    ],
+    [
+     60.4,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E137",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     42.1,
+     304.1
+    ],
+    [
+     28.7,
+     304.1
+    ],
+    [
+     36.5,
+     294.6
+    ],
+    [
+     48.5,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E138",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     28.7,
+     304.1
+    ],
+    [
+     16.7,
+     304.1
+    ],
+    [
+     25.8,
+     294.6
+    ],
+    [
+     36.5,
+     294.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E139",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     300.0
+    ],
+    [
+     12.5,
+     286.9
+    ],
+    [
+     22.0,
+     278.5
+    ],
+    [
+     22.0,
+     290.7
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E140",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     286.9
+    ],
+    [
+     12.5,
+     273.9
+    ],
+    [
+     22.0,
+     266.3
+    ],
+    [
+     22.0,
+     278.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E141",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     273.9
+    ],
+    [
+     12.5,
+     260.8
+    ],
+    [
+     22.0,
+     254.1
+    ],
+    [
+     22.0,
+     266.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E142",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     260.8
+    ],
+    [
+     12.5,
+     247.7
+    ],
+    [
+     22.0,
+     241.9
+    ],
+    [
+     22.0,
+     254.1
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E143",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     247.7
+    ],
+    [
+     12.5,
+     236.0
+    ],
+    [
+     22.0,
+     230.9
+    ],
+    [
+     22.0,
+     241.9
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E144",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     227.7
+    ],
+    [
+     12.5,
+     214.6
+    ],
+    [
+     22.0,
+     211.0
+    ],
+    [
+     22.0,
+     223.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E145",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     214.6
+    ],
+    [
+     12.5,
+     201.6
+    ],
+    [
+     22.0,
+     198.8
+    ],
+    [
+     22.0,
+     211.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E146",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     201.6
+    ],
+    [
+     12.5,
+     188.5
+    ],
+    [
+     22.0,
+     186.5
+    ],
+    [
+     22.0,
+     198.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E147",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     188.5
+    ],
+    [
+     12.5,
+     175.5
+    ],
+    [
+     22.0,
+     174.3
+    ],
+    [
+     22.0,
+     186.5
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E148",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     175.5
+    ],
+    [
+     12.5,
+     163.7
+    ],
+    [
+     22.0,
+     163.3
+    ],
+    [
+     22.0,
+     174.3
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E149",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     155.4
+    ],
+    [
+     12.5,
+     142.4
+    ],
+    [
+     22.0,
+     143.4
+    ],
+    [
+     22.0,
+     155.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E150",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     142.4
+    ],
+    [
+     12.5,
+     129.3
+    ],
+    [
+     22.0,
+     131.2
+    ],
+    [
+     22.0,
+     143.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E151",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     129.3
+    ],
+    [
+     12.5,
+     116.2
+    ],
+    [
+     22.0,
+     119.0
+    ],
+    [
+     22.0,
+     131.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E152",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     116.2
+    ],
+    [
+     12.5,
+     103.2
+    ],
+    [
+     22.0,
+     106.8
+    ],
+    [
+     22.0,
+     119.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E153",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     103.2
+    ],
+    [
+     12.5,
+     91.4
+    ],
+    [
+     22.0,
+     95.8
+    ],
+    [
+     22.0,
+     106.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E154",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     83.1
+    ],
+    [
+     12.5,
+     70.1
+    ],
+    [
+     22.0,
+     75.8
+    ],
+    [
+     22.0,
+     88.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E155",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     70.1
+    ],
+    [
+     12.5,
+     57.0
+    ],
+    [
+     22.0,
+     63.6
+    ],
+    [
+     22.0,
+     75.8
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E156",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     57.0
+    ],
+    [
+     12.5,
+     44.0
+    ],
+    [
+     22.0,
+     51.4
+    ],
+    [
+     22.0,
+     63.6
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E157",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     44.0
+    ],
+    [
+     12.5,
+     30.9
+    ],
+    [
+     22.0,
+     39.2
+    ],
+    [
+     22.0,
+     51.4
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E158",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     12.5,
+     30.9
+    ],
+    [
+     12.5,
+     19.1
+    ],
+    [
+     22.0,
+     28.2
+    ],
+    [
+     22.0,
+     39.2
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E159",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     14.2,
+     12.5
+    ],
+    [
+     27.5,
+     12.5
+    ],
+    [
+     35.4,
+     22.0
+    ],
+    [
+     23.5,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E160",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     27.5,
+     12.5
+    ],
+    [
+     40.8,
+     12.5
+    ],
+    [
+     47.4,
+     22.0
+    ],
+    [
+     35.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E161",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     40.8,
+     12.5
+    ],
+    [
+     54.2,
+     12.5
+    ],
+    [
+     59.3,
+     22.0
+    ],
+    [
+     47.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E162",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     54.2,
+     12.5
+    ],
+    [
+     67.5,
+     12.5
+    ],
+    [
+     71.2,
+     22.0
+    ],
+    [
+     59.3,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E163",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     67.5,
+     12.5
+    ],
+    [
+     79.5,
+     12.5
+    ],
+    [
+     82.0,
+     22.0
+    ],
+    [
+     71.2,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E164",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     88.0,
+     12.5
+    ],
+    [
+     101.3,
+     12.5
+    ],
+    [
+     101.5,
+     22.0
+    ],
+    [
+     89.6,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E165",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     101.3,
+     12.5
+    ],
+    [
+     114.6,
+     12.5
+    ],
+    [
+     113.4,
+     22.0
+    ],
+    [
+     101.5,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E166",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     114.6,
+     12.5
+    ],
+    [
+     127.9,
+     12.5
+    ],
+    [
+     125.4,
+     22.0
+    ],
+    [
+     113.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E167",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     127.9,
+     12.5
+    ],
+    [
+     141.3,
+     12.5
+    ],
+    [
+     137.3,
+     22.0
+    ],
+    [
+     125.4,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E168",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     141.3,
+     12.5
+    ],
+    [
+     153.3,
+     12.5
+    ],
+    [
+     148.1,
+     22.0
+    ],
+    [
+     137.3,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E169",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     161.7,
+     12.5
+    ],
+    [
+     175.1,
+     12.5
+    ],
+    [
+     167.6,
+     22.0
+    ],
+    [
+     155.6,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E170",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     175.1,
+     12.5
+    ],
+    [
+     188.4,
+     12.5
+    ],
+    [
+     179.5,
+     22.0
+    ],
+    [
+     167.6,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E171",
+   "type": "room",
+   "name": "Grab-and-go kiosk",
+   "level": "L1",
+   "outline_m": [
+    [
+     188.4,
+     12.5
+    ],
+    [
+     194.4,
+     12.5
+    ],
+    [
+     184.9,
+     22.0
+    ],
+    [
+     179.5,
+     22.0
+    ]
+   ],
+   "about": "Sandwiches, snacks and coffee for people in a hurry.",
+   "status": "proposed"
+  },
+  {
+   "id": "E172",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.4,
+     9.5
+    ],
+    [
+     197.4,
+     130.7
+    ],
+    [
+     194.4,
+     131.3
+    ],
+    [
+     194.4,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E173",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.4,
+     130.7
+    ],
+    [
+     197.4,
+     251.9
+    ],
+    [
+     194.4,
+     250.1
+    ],
+    [
+     194.4,
+     131.3
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E174",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.4,
+     251.9
+    ],
+    [
+     197.4,
+     307.1
+    ],
+    [
+     130.9,
+     307.1
+    ],
+    [
+     130.1,
+     304.1
+    ],
+    [
+     194.4,
+     304.1
+    ],
+    [
+     194.4,
+     250.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E175",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     130.9,
+     307.1
+    ],
+    [
+     9.5,
+     307.1
+    ],
+    [
+     9.5,
+     306.6
+    ],
+    [
+     12.5,
+     303.6
+    ],
+    [
+     12.5,
+     304.1
+    ],
+    [
+     130.1,
+     304.1
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E176",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     306.6
+    ],
+    [
+     9.5,
+     185.4
+    ],
+    [
+     12.5,
+     184.8
+    ],
+    [
+     12.5,
+     303.6
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E177",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     185.4
+    ],
+    [
+     9.5,
+     64.2
+    ],
+    [
+     12.5,
+     66.0
+    ],
+    [
+     12.5,
+     184.8
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E178",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     9.5,
+     64.2
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     76.5,
+     9.5
+    ],
+    [
+     77.3,
+     12.5
+    ],
+    [
+     12.5,
+     12.5
+    ],
+    [
+     12.5,
+     66.0
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E179",
+   "type": "zone",
+   "name": "Corridor",
+   "level": "L2",
+   "outline_m": [
+    [
+     76.5,
+     9.5
+    ],
+    [
+     197.4,
+     9.5
+    ],
+    [
+     194.4,
+     12.5
+    ],
+    [
+     77.3,
+     12.5
+    ]
+   ],
+   "about": "The corridor linking the rooms on this floor to the stairs and lifts.",
+   "status": "proposed"
+  },
+  {
+   "id": "E180",
+   "type": "room",
+   "name": "Upper dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     0.0
+    ],
+    [
+     206.9,
+     32.6
+    ],
+    [
+     197.4,
+     40.1
+    ],
+    [
+     197.4,
+     9.5
+    ]
+   ],
+   "about": "A quieter dining room with tables for groups.",
+   "status": "proposed"
+  },
+  {
+   "id": "E181",
+   "type": "room",
+   "name": "Kitchen staff changing room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     32.6
+    ],
+    [
+     206.9,
+     38.0
+    ],
+    [
+     197.4,
+     45.2
+    ],
+    [
+     197.4,
+     40.1
+    ]
+   ],
+   "about": "Kitchen crews change into whites and wash before their shift.",
+   "status": "proposed"
+  },
+  {
+   "id": "E182",
+   "type": "room",
+   "name": "Catering manager's office",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     38.0
+    ],
+    [
+     206.9,
+     41.4
+    ],
+    [
+     197.4,
+     48.4
+    ],
+    [
+     197.4,
+     45.2
+    ]
+   ],
+   "about": "Where menus are planned and food is ordered.",
+   "status": "proposed"
+  },
+  {
+   "id": "E183",
+   "type": "room",
+   "name": "Staff toilets and showers",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     41.4
+    ],
+    [
+     206.9,
+     49.0
+    ],
+    [
+     197.4,
+     55.6
+    ],
+    [
+     197.4,
+     48.4
+    ]
+   ],
+   "about": "Toilets, showers and changing space for the staff.",
+   "status": "proposed"
+  },
+  {
+   "id": "E184",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     49.0
+    ],
+    [
+     206.9,
+     65.3
+    ],
+    [
+     197.4,
+     70.9
+    ],
+    [
+     197.4,
+     55.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E185",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     65.3
+    ],
+    [
+     206.9,
+     81.6
+    ],
+    [
+     197.4,
+     86.2
+    ],
+    [
+     197.4,
+     70.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E186",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     81.6
+    ],
+    [
+     206.9,
+     97.8
+    ],
+    [
+     197.4,
+     101.5
+    ],
+    [
+     197.4,
+     86.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E187",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     97.8
+    ],
+    [
+     206.9,
+     114.1
+    ],
+    [
+     197.4,
+     116.8
+    ],
+    [
+     197.4,
+     101.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E188",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     114.1
+    ],
+    [
+     206.9,
+     130.4
+    ],
+    [
+     197.4,
+     132.1
+    ],
+    [
+     197.4,
+     116.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E189",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     130.4
+    ],
+    [
+     206.9,
+     146.7
+    ],
+    [
+     197.4,
+     147.4
+    ],
+    [
+     197.4,
+     132.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E190",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     146.7
+    ],
+    [
+     206.9,
+     163.0
+    ],
+    [
+     197.4,
+     162.7
+    ],
+    [
+     197.4,
+     147.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E191",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     163.0
+    ],
+    [
+     206.9,
+     179.2
+    ],
+    [
+     197.4,
+     178.0
+    ],
+    [
+     197.4,
+     162.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E192",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     179.2
+    ],
+    [
+     206.9,
+     195.5
+    ],
+    [
+     197.4,
+     193.3
+    ],
+    [
+     197.4,
+     178.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E193",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     195.5
+    ],
+    [
+     206.9,
+     211.8
+    ],
+    [
+     197.4,
+     208.6
+    ],
+    [
+     197.4,
+     193.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E194",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     211.8
+    ],
+    [
+     206.9,
+     228.1
+    ],
+    [
+     197.4,
+     223.9
+    ],
+    [
+     197.4,
+     208.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E195",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     228.1
+    ],
+    [
+     206.9,
+     244.3
+    ],
+    [
+     197.4,
+     239.2
+    ],
+    [
+     197.4,
+     223.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E196",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     244.3
+    ],
+    [
+     206.9,
+     260.6
+    ],
+    [
+     197.4,
+     254.5
+    ],
+    [
+     197.4,
+     239.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E197",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     260.6
+    ],
+    [
+     206.9,
+     276.9
+    ],
+    [
+     197.4,
+     269.8
+    ],
+    [
+     197.4,
+     254.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E198",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     276.9
+    ],
+    [
+     206.9,
+     293.2
+    ],
+    [
+     197.4,
+     285.1
+    ],
+    [
+     197.4,
+     269.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E199",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     293.2
+    ],
+    [
+     206.9,
+     309.5
+    ],
+    [
+     197.4,
+     300.4
+    ],
+    [
+     197.4,
+     285.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E200",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     206.9,
+     309.5
+    ],
+    [
+     206.9,
+     316.6
+    ],
+    [
+     197.6,
+     316.6
+    ],
+    [
+     189.0,
+     307.1
+    ],
+    [
+     197.4,
+     307.1
+    ],
+    [
+     197.4,
+     300.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E201",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     197.6,
+     316.6
+    ],
+    [
+     181.1,
+     316.6
+    ],
+    [
+     173.9,
+     307.1
+    ],
+    [
+     189.0,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E202",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     181.1,
+     316.6
+    ],
+    [
+     164.5,
+     316.6
+    ],
+    [
+     158.9,
+     307.1
+    ],
+    [
+     173.9,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E203",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     164.5,
+     316.6
+    ],
+    [
+     148.0,
+     316.6
+    ],
+    [
+     143.9,
+     307.1
+    ],
+    [
+     158.9,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E204",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     148.0,
+     316.6
+    ],
+    [
+     131.4,
+     316.6
+    ],
+    [
+     128.9,
+     307.1
+    ],
+    [
+     143.9,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E205",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     131.4,
+     316.6
+    ],
+    [
+     114.9,
+     316.6
+    ],
+    [
+     113.8,
+     307.1
+    ],
+    [
+     128.9,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E206",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     114.9,
+     316.6
+    ],
+    [
+     98.3,
+     316.6
+    ],
+    [
+     98.8,
+     307.1
+    ],
+    [
+     113.8,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E207",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     98.3,
+     316.6
+    ],
+    [
+     81.8,
+     316.6
+    ],
+    [
+     83.8,
+     307.1
+    ],
+    [
+     98.8,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E208",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     81.8,
+     316.6
+    ],
+    [
+     65.2,
+     316.6
+    ],
+    [
+     68.7,
+     307.1
+    ],
+    [
+     83.8,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E209",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.2,
+     316.6
+    ],
+    [
+     48.7,
+     316.6
+    ],
+    [
+     53.7,
+     307.1
+    ],
+    [
+     68.7,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E210",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     48.7,
+     316.6
+    ],
+    [
+     32.1,
+     316.6
+    ],
+    [
+     38.7,
+     307.1
+    ],
+    [
+     53.7,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E211",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     32.1,
+     316.6
+    ],
+    [
+     15.6,
+     316.6
+    ],
+    [
+     23.6,
+     307.1
+    ],
+    [
+     38.7,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E212",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     15.6,
+     316.6
+    ],
+    [
+     0.0,
+     316.6
+    ],
+    [
+     0.0,
+     315.6
+    ],
+    [
+     9.5,
+     306.2
+    ],
+    [
+     9.5,
+     307.1
+    ],
+    [
+     23.6,
+     307.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E213",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     315.6
+    ],
+    [
+     0.0,
+     299.4
+    ],
+    [
+     9.5,
+     290.9
+    ],
+    [
+     9.5,
+     306.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E214",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     299.4
+    ],
+    [
+     0.0,
+     283.1
+    ],
+    [
+     9.5,
+     275.6
+    ],
+    [
+     9.5,
+     290.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E215",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     283.1
+    ],
+    [
+     0.0,
+     266.8
+    ],
+    [
+     9.5,
+     260.3
+    ],
+    [
+     9.5,
+     275.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E216",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     266.8
+    ],
+    [
+     0.0,
+     250.5
+    ],
+    [
+     9.5,
+     245.0
+    ],
+    [
+     9.5,
+     260.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E217",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     250.5
+    ],
+    [
+     0.0,
+     234.3
+    ],
+    [
+     9.5,
+     229.7
+    ],
+    [
+     9.5,
+     245.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E218",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     234.3
+    ],
+    [
+     0.0,
+     218.0
+    ],
+    [
+     9.5,
+     214.4
+    ],
+    [
+     9.5,
+     229.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E219",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     218.0
+    ],
+    [
+     0.0,
+     201.7
+    ],
+    [
+     9.5,
+     199.1
+    ],
+    [
+     9.5,
+     214.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E220",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     201.7
+    ],
+    [
+     0.0,
+     185.4
+    ],
+    [
+     9.5,
+     183.8
+    ],
+    [
+     9.5,
+     199.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E221",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     185.4
+    ],
+    [
+     0.0,
+     169.1
+    ],
+    [
+     9.5,
+     168.5
+    ],
+    [
+     9.5,
+     183.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E222",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     169.1
+    ],
+    [
+     0.0,
+     152.9
+    ],
+    [
+     9.5,
+     153.2
+    ],
+    [
+     9.5,
+     168.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E223",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     152.9
+    ],
+    [
+     0.0,
+     136.6
+    ],
+    [
+     9.5,
+     137.9
+    ],
+    [
+     9.5,
+     153.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E224",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     136.6
+    ],
+    [
+     0.0,
+     120.3
+    ],
+    [
+     9.5,
+     122.6
+    ],
+    [
+     9.5,
+     137.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E225",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     120.3
+    ],
+    [
+     0.0,
+     104.0
+    ],
+    [
+     9.5,
+     107.3
+    ],
+    [
+     9.5,
+     122.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E226",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     104.0
+    ],
+    [
+     0.0,
+     87.8
+    ],
+    [
+     9.5,
+     92.0
+    ],
+    [
+     9.5,
+     107.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E227",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     87.8
+    ],
+    [
+     0.0,
+     71.5
+    ],
+    [
+     9.5,
+     76.7
+    ],
+    [
+     9.5,
+     92.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E228",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     71.5
+    ],
+    [
+     0.0,
+     55.2
+    ],
+    [
+     9.5,
+     61.4
+    ],
+    [
+     9.5,
+     76.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E229",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     55.2
+    ],
+    [
+     0.0,
+     38.9
+    ],
+    [
+     9.5,
+     46.1
+    ],
+    [
+     9.5,
+     61.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E230",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     38.9
+    ],
+    [
+     0.0,
+     22.6
+    ],
+    [
+     9.5,
+     30.8
+    ],
+    [
+     9.5,
+     46.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E231",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     22.6
+    ],
+    [
+     0.0,
+     6.4
+    ],
+    [
+     9.5,
+     15.5
+    ],
+    [
+     9.5,
+     30.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E232",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     0.0,
+     6.4
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.1,
+     0.0
+    ],
+    [
+     18.7,
+     9.5
+    ],
+    [
+     9.5,
+     9.5
+    ],
+    [
+     9.5,
+     15.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E233",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     10.1,
+     0.0
+    ],
+    [
+     26.6,
+     0.0
+    ],
+    [
+     33.7,
+     9.5
+    ],
+    [
+     18.7,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E234",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     26.6,
+     0.0
+    ],
+    [
+     43.2,
+     0.0
+    ],
+    [
+     48.7,
+     9.5
+    ],
+    [
+     33.7,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E235",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     43.2,
+     0.0
+    ],
+    [
+     59.7,
+     0.0
+    ],
+    [
+     63.7,
+     9.5
+    ],
+    [
+     48.7,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E236",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     59.7,
+     0.0
+    ],
+    [
+     76.3,
+     0.0
+    ],
+    [
+     78.8,
+     9.5
+    ],
+    [
+     63.7,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E237",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     76.3,
+     0.0
+    ],
+    [
+     92.8,
+     0.0
+    ],
+    [
+     93.8,
+     9.5
+    ],
+    [
+     78.8,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E238",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     92.8,
+     0.0
+    ],
+    [
+     109.4,
+     0.0
+    ],
+    [
+     108.8,
+     9.5
+    ],
+    [
+     93.8,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E239",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     109.4,
+     0.0
+    ],
+    [
+     125.9,
+     0.0
+    ],
+    [
+     123.9,
+     9.5
+    ],
+    [
+     108.8,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E240",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     125.9,
+     0.0
+    ],
+    [
+     142.5,
+     0.0
+    ],
+    [
+     138.9,
+     9.5
+    ],
+    [
+     123.9,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E241",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     142.5,
+     0.0
+    ],
+    [
+     159.0,
+     0.0
+    ],
+    [
+     153.9,
+     9.5
+    ],
+    [
+     138.9,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E242",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     159.0,
+     0.0
+    ],
+    [
+     175.6,
+     0.0
+    ],
+    [
+     169.0,
+     9.5
+    ],
+    [
+     153.9,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E243",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     175.6,
+     0.0
+    ],
+    [
+     192.1,
+     0.0
+    ],
+    [
+     184.0,
+     9.5
+    ],
+    [
+     169.0,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E244",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     192.1,
+     0.0
+    ],
+    [
+     206.9,
+     0.0
+    ],
+    [
+     197.4,
+     9.5
+    ],
+    [
+     184.0,
+     9.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E245",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     12.5
+    ],
+    [
+     194.4,
+     28.8
+    ],
+    [
+     184.9,
+     37.3
+    ],
+    [
+     184.9,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E246",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     28.8
+    ],
+    [
+     194.4,
+     44.5
+    ],
+    [
+     184.9,
+     51.9
+    ],
+    [
+     184.9,
+     37.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E247",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     52.8
+    ],
+    [
+     194.4,
+     69.1
+    ],
+    [
+     184.9,
+     74.9
+    ],
+    [
+     184.9,
+     59.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E248",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     69.1
+    ],
+    [
+     194.4,
+     85.4
+    ],
+    [
+     184.9,
+     90.2
+    ],
+    [
+     184.9,
+     74.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E249",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     85.4
+    ],
+    [
+     194.4,
+     101.7
+    ],
+    [
+     184.9,
+     105.4
+    ],
+    [
+     184.9,
+     90.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E250",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     101.7
+    ],
+    [
+     194.4,
+     116.8
+    ],
+    [
+     184.9,
+     119.5
+    ],
+    [
+     184.9,
+     105.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E251",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     125.1
+    ],
+    [
+     194.4,
+     141.4
+    ],
+    [
+     184.9,
+     142.5
+    ],
+    [
+     184.9,
+     127.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E252",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     141.4
+    ],
+    [
+     194.4,
+     157.7
+    ],
+    [
+     184.9,
+     157.7
+    ],
+    [
+     184.9,
+     142.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E253",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     157.7
+    ],
+    [
+     194.4,
+     174.0
+    ],
+    [
+     184.9,
+     173.0
+    ],
+    [
+     184.9,
+     157.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E254",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     174.0
+    ],
+    [
+     194.4,
+     189.1
+    ],
+    [
+     184.9,
+     187.1
+    ],
+    [
+     184.9,
+     173.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E255",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     197.3
+    ],
+    [
+     194.4,
+     213.7
+    ],
+    [
+     184.9,
+     210.0
+    ],
+    [
+     184.9,
+     194.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E256",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     213.7
+    ],
+    [
+     194.4,
+     230.0
+    ],
+    [
+     184.9,
+     225.3
+    ],
+    [
+     184.9,
+     210.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E257",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     230.0
+    ],
+    [
+     194.4,
+     246.3
+    ],
+    [
+     184.9,
+     240.6
+    ],
+    [
+     184.9,
+     225.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E258",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     246.3
+    ],
+    [
+     194.4,
+     261.3
+    ],
+    [
+     184.9,
+     254.6
+    ],
+    [
+     184.9,
+     240.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E259",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     269.6
+    ],
+    [
+     194.4,
+     285.9
+    ],
+    [
+     184.9,
+     277.6
+    ],
+    [
+     184.9,
+     262.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E260",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     285.9
+    ],
+    [
+     194.4,
+     302.2
+    ],
+    [
+     184.9,
+     292.9
+    ],
+    [
+     184.9,
+     277.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E261",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     194.4,
+     302.2
+    ],
+    [
+     194.4,
+     304.1
+    ],
+    [
+     179.6,
+     304.1
+    ],
+    [
+     171.7,
+     294.6
+    ],
+    [
+     184.9,
+     294.6
+    ],
+    [
+     184.9,
+     292.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E262",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     179.6,
+     304.1
+    ],
+    [
+     164.3,
+     304.1
+    ],
+    [
+     157.9,
+     294.6
+    ],
+    [
+     171.7,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E263",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     155.8,
+     304.1
+    ],
+    [
+     139.2,
+     304.1
+    ],
+    [
+     135.4,
+     294.6
+    ],
+    [
+     150.4,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E264",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     139.2,
+     304.1
+    ],
+    [
+     122.5,
+     304.1
+    ],
+    [
+     120.5,
+     294.6
+    ],
+    [
+     135.4,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E265",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     122.5,
+     304.1
+    ],
+    [
+     105.9,
+     304.1
+    ],
+    [
+     105.6,
+     294.6
+    ],
+    [
+     120.5,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E266",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     105.9,
+     304.1
+    ],
+    [
+     90.5,
+     304.1
+    ],
+    [
+     91.8,
+     294.6
+    ],
+    [
+     105.6,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E267",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     82.1,
+     304.1
+    ],
+    [
+     65.4,
+     304.1
+    ],
+    [
+     69.4,
+     294.6
+    ],
+    [
+     84.3,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E268",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     65.4,
+     304.1
+    ],
+    [
+     48.7,
+     304.1
+    ],
+    [
+     54.5,
+     294.6
+    ],
+    [
+     69.4,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E269",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     48.7,
+     304.1
+    ],
+    [
+     32.1,
+     304.1
+    ],
+    [
+     39.5,
+     294.6
+    ],
+    [
+     54.5,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E270",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     32.1,
+     304.1
+    ],
+    [
+     16.7,
+     304.1
+    ],
+    [
+     25.8,
+     294.6
+    ],
+    [
+     39.5,
+     294.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E271",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     300.0
+    ],
+    [
+     12.5,
+     283.6
+    ],
+    [
+     22.0,
+     275.5
+    ],
+    [
+     22.0,
+     290.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E272",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     283.6
+    ],
+    [
+     12.5,
+     267.3
+    ],
+    [
+     22.0,
+     260.2
+    ],
+    [
+     22.0,
+     275.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E273",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     267.3
+    ],
+    [
+     12.5,
+     251.0
+    ],
+    [
+     22.0,
+     245.0
+    ],
+    [
+     22.0,
+     260.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E274",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     251.0
+    ],
+    [
+     12.5,
+     236.0
+    ],
+    [
+     22.0,
+     230.9
+    ],
+    [
+     22.0,
+     245.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E275",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     227.7
+    ],
+    [
+     12.5,
+     211.4
+    ],
+    [
+     22.0,
+     207.9
+    ],
+    [
+     22.0,
+     223.2
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E276",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     211.4
+    ],
+    [
+     12.5,
+     195.0
+    ],
+    [
+     22.0,
+     192.7
+    ],
+    [
+     22.0,
+     207.9
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E277",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     195.0
+    ],
+    [
+     12.5,
+     178.7
+    ],
+    [
+     22.0,
+     177.4
+    ],
+    [
+     22.0,
+     192.7
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E278",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     178.7
+    ],
+    [
+     12.5,
+     163.7
+    ],
+    [
+     22.0,
+     163.3
+    ],
+    [
+     22.0,
+     177.4
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E279",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     155.4
+    ],
+    [
+     12.5,
+     139.1
+    ],
+    [
+     22.0,
+     140.3
+    ],
+    [
+     22.0,
+     155.6
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E280",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     139.1
+    ],
+    [
+     12.5,
+     122.8
+    ],
+    [
+     22.0,
+     125.1
+    ],
+    [
+     22.0,
+     140.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E281",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     122.8
+    ],
+    [
+     12.5,
+     106.4
+    ],
+    [
+     22.0,
+     109.8
+    ],
+    [
+     22.0,
+     125.1
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E282",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     106.4
+    ],
+    [
+     12.5,
+     91.4
+    ],
+    [
+     22.0,
+     95.8
+    ],
+    [
+     22.0,
+     109.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E283",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     83.1
+    ],
+    [
+     12.5,
+     66.8
+    ],
+    [
+     22.0,
+     72.8
+    ],
+    [
+     22.0,
+     88.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E284",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     66.8
+    ],
+    [
+     12.5,
+     50.5
+    ],
+    [
+     22.0,
+     57.5
+    ],
+    [
+     22.0,
+     72.8
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E285",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     50.5
+    ],
+    [
+     12.5,
+     34.2
+    ],
+    [
+     22.0,
+     42.3
+    ],
+    [
+     22.0,
+     57.5
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E286",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     12.5,
+     34.2
+    ],
+    [
+     12.5,
+     19.1
+    ],
+    [
+     22.0,
+     28.2
+    ],
+    [
+     22.0,
+     42.3
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E287",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     14.2,
+     12.5
+    ],
+    [
+     30.8,
+     12.5
+    ],
+    [
+     38.4,
+     22.0
+    ],
+    [
+     23.5,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E288",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     30.8,
+     12.5
+    ],
+    [
+     47.5,
+     12.5
+    ],
+    [
+     53.3,
+     22.0
+    ],
+    [
+     38.4,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E289",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     47.5,
+     12.5
+    ],
+    [
+     64.2,
+     12.5
+    ],
+    [
+     68.3,
+     22.0
+    ],
+    [
+     53.3,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E290",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     64.2,
+     12.5
+    ],
+    [
+     79.5,
+     12.5
+    ],
+    [
+     82.0,
+     22.0
+    ],
+    [
+     68.3,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E291",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     88.0,
+     12.5
+    ],
+    [
+     104.6,
+     12.5
+    ],
+    [
+     104.5,
+     22.0
+    ],
+    [
+     89.6,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E292",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     104.6,
+     12.5
+    ],
+    [
+     121.3,
+     12.5
+    ],
+    [
+     119.4,
+     22.0
+    ],
+    [
+     104.5,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E293",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     121.3,
+     12.5
+    ],
+    [
+     137.9,
+     12.5
+    ],
+    [
+     134.3,
+     22.0
+    ],
+    [
+     119.4,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E294",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     137.9,
+     12.5
+    ],
+    [
+     153.3,
+     12.5
+    ],
+    [
+     148.1,
+     22.0
+    ],
+    [
+     134.3,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E295",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     161.7,
+     12.5
+    ],
+    [
+     178.4,
+     12.5
+    ],
+    [
+     170.6,
+     22.0
+    ],
+    [
+     155.6,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  },
+  {
+   "id": "E296",
+   "type": "room",
+   "name": "Meeting and dining room",
+   "level": "L2",
+   "outline_m": [
+    [
+     178.4,
+     12.5
+    ],
+    [
+     194.4,
+     12.5
+    ],
+    [
+     184.9,
+     22.0
+    ],
+    [
+     170.6,
+     22.0
+    ]
+   ],
+   "about": "A small room that can be booked for working lunches.",
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}

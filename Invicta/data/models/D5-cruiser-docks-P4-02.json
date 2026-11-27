@@ -1,0 +1,184 @@
+{
+ "schema": "invicta-atlas/model@1",
+ "building_uid": "D5-cruiser-docks-P4-02",
+ "units": "m",
+ "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+ "footprint_m": [
+  910.0,
+  940.0
+ ],
+ "grid_m": 10,
+ "source": "Designed room by room for this building from its outline and its program in tools/room_programs, laid out with tools/design_rooms.py, 2026-11-27. All proposed.",
+ "levels": [
+  {
+   "id": "L1",
+   "name": "Level 1 · Yard",
+   "z_m": 0.0,
+   "height_m": 4.0,
+   "status": "proposed"
+  }
+ ],
+ "elements": [
+  {
+   "id": "E001",
+   "type": "zone",
+   "name": "Container stacks",
+   "level": "L1",
+   "outline_m": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     910.0,
+     0.0
+    ],
+    [
+     910.0,
+     522.2
+    ],
+    [
+     0.0,
+     522.2
+    ]
+   ],
+   "about": "Rows of containers stacked five high, sorted by which cruiser they are going to.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E002",
+   "type": "room",
+   "name": "Yard control room",
+   "level": "L1",
+   "outline_m": [
+    [
+     252.6,
+     64.6
+    ],
+    [
+     268.6,
+     64.6
+    ],
+    [
+     268.6,
+     76.6
+    ],
+    [
+     252.6,
+     76.6
+    ]
+   ],
+   "about": "Plans where every container goes in the stacks.",
+   "status": "proposed"
+  },
+  {
+   "id": "E003",
+   "type": "room",
+   "name": "Drivers' room",
+   "level": "L1",
+   "outline_m": [
+    [
+     268.6,
+     64.6
+    ],
+    [
+     276.6,
+     64.6
+    ],
+    [
+     276.6,
+     76.6
+    ],
+    [
+     268.6,
+     76.6
+    ]
+   ],
+   "about": "Straddle carrier drivers wait between moves.",
+   "status": "proposed"
+  },
+  {
+   "id": "E004",
+   "type": "zone",
+   "name": "Straddle carrier lanes",
+   "level": "L1",
+   "outline_m": [
+    [
+     910.0,
+     522.2
+    ],
+    [
+     910.0,
+     731.1
+    ],
+    [
+     0.0,
+     731.1
+    ],
+    [
+     0.0,
+     522.2
+    ]
+   ],
+   "about": "Lanes for the straddle carriers that lift and move containers.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E005",
+   "type": "zone",
+   "name": "Refrigerated rows",
+   "level": "L1",
+   "outline_m": [
+    [
+     910.0,
+     731.1
+    ],
+    [
+     910.0,
+     835.6
+    ],
+    [
+     0.0,
+     835.6
+    ],
+    [
+     0.0,
+     731.1
+    ]
+   ],
+   "about": "Plug-in points for refrigerated containers of fresh food.",
+   "outdoor": true,
+   "status": "proposed"
+  },
+  {
+   "id": "E006",
+   "type": "zone",
+   "name": "Train transfer area",
+   "level": "L1",
+   "outline_m": [
+    [
+     910.0,
+     835.6
+    ],
+    [
+     910.0,
+     940.0
+    ],
+    [
+     0.0,
+     940.0
+    ],
+    [
+     0.0,
+     835.6
+    ]
+   ],
+   "about": "Where containers come off the freight trains from the Keelway Freight Siding.",
+   "outdoor": true,
+   "status": "proposed"
+  }
+ ],
+ "updated": "2026-11-27"
+}
