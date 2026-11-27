@@ -364,7 +364,8 @@
     const d = document.createElement("div");
     d.className = "desig-legend";
     d.title = "How designations are written";
-    d.innerHTML = "<b>D5F1P1B1A1L2R1</b> · D deck · F district · P precinct · B block · A building · L level (LB below deck) · R room";
+    d.innerHTML = '<button type="button" class="dl-btn" title="What the codes mean">Codes ?</button><div class="dl-box"><b>D5F1P1B1A1L2R1</b><br>D · Deck<br>F · District<br>P · Precinct<br>B · Block<br>A · Building<br>L · Level (LB below deck)<br>R · Room</div>';
+    d.querySelector(".dl-btn").onclick = () => d.classList.toggle("open");
     wrap.append(d);
   }
 
