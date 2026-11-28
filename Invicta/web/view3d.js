@@ -126,6 +126,7 @@
       for (let j = 0; j < n; j++, i++) {
         const up = j < per;                       // first flight runs along u, the second comes back
         const k = up ? j : j - per;
+        if (k === (up ? per : n - per) - 1) continue;   // a flight of N risers has N-1 treads: its top step is the landing, drawn below
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
         // a solid concrete step: tread on top, riser in front, and a 10 in (0.25 m) waist under it down to the
@@ -195,7 +196,7 @@
       const els = (model.elements || []).filter(on);
       if (fab) {
         // A building with its fabric: floors, walls, doors, window panes and stairs instead of room volumes.
-        const wallIt = [], frameIt = [], entIt = [], paneIt = [], treadIt = [];
+        const wallIt = [], frameIt = [], entIt = [], paneIt = [], treadIt = [], railIt = [];
         const fl = l.z_m + 0.3, c = cut[l.id] || { walls: [], gaps: [] };
         for (const s of c.walls) wallIt.push({ a: [s.ax, s.ay], b: [s.bx, s.by], z: fl, h: Math.max((s.h || l.height_m) - 0.3, 0.1), t: s.t });
         for (const gp of c.gaps) {
@@ -240,7 +241,7 @@
               if (!inDoorway(pa, pb)) paneIt.push({ a: pa, b: pb, z: l.z_m + 0.3 + e.sill_m, h: e.head_m - e.sill_m, t: 0.36 });
             }
           }
-          else if (e.type === "stair") treadIt.push(...stairTreads(e, l.z_m + 0.3));
+          else if (e.type === "stair") for (const it of stairTreads(e, l.z_m + 0.3)) (it.rail ? railIt : treadIt).push(it);
           else if (e.type === "lift" && e.levels && e.levels[0] === l.id) {
             const ls = e.levels.map((id) => byId[id]).filter(Boolean), top = ls[ls.length - 1];
             lg.add(prism(e.outline_m, l.z_m, top.z_m + top.height_m - l.z_m, matLift, edge));   // see-through shaft
@@ -248,7 +249,7 @@
           else if (e.outdoor) lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
           else if (e.type === "fixture" && e.outline_m) lg.add(prism(e.outline_m, l.z_m + 0.3, Math.min(e.height_m || 1.1, l.height_m), matFix, edge));
         }
-        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore)]) if (m) lg.add(m);
+        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore), boxes(railIt, new THREE.MeshStandardMaterial({ color: 0x2b323a, roughness: 0.4, metalness: 0.6 }))]) if (m) lg.add(m);
         g.add(lg);
         info.levels.push(lg);
         continue;
@@ -325,16 +326,16 @@
     const ov = document.createElement("div");
     ov.className = "v3d";
     ov.innerHTML = `<div class="v3d-bar"><b>3D · ${esc(sc.title)}</b>
-      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="Walk as a person: W A S D or arrow keys to move, Shift to run, drag to look. Use the stairs, or stand in a lift and press E (up) or Q (down)">Walk</button></span>
+      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="Walk as a person: W A S D or arrow keys to move, Shift to run, keys 1 / 5 / 0 for 1×, 5× or 10× speed, drag to look. Use the stairs, or stand in a lift and press E (up) or Q (down)">Walk</button></span>
       <label class="v3d-cut" hidden>Show up to <select></select></label>
       <button class="v3d-x" title="Close the 3D view">✕</button></div>
       <div class="v3d-stage"><div class="v3d-msg">Loading 3D…</div></div>
       <div class="v3d-key"></div>
       <div class="v3d-hud" hidden></div>
-      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
+      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-s="1" class="v3d-run on" title="Normal pace (1)">1×</button><button data-s="5" class="v3d-run" title="5 times faster (5)">5×</button><button data-s="10" class="v3d-run" title="10 times faster (0)">10×</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
     document.body.append(ov);
     ov.querySelector(".v3d-x").onclick = close;
-    state = { ov, keys: {}, stop: false };
+    state = { ov, keys: {}, stop: false, speed: 1 };
     try { await lib(); } catch (e) { ov.querySelector(".v3d-msg").textContent = "Couldn't load the 3D library. Check the connection and try again."; return; }
     if (!state || state.ov !== ov) return;
     ov.querySelector(".v3d-msg").remove();
@@ -459,16 +460,20 @@
       drag = [e.clientX, e.clientY];
     });
     const lift = (d) => { if (walker && !walker.lift(d)) liftNote = performance.now(); };
+    const setSpeed = (s) => { state.speed = s; ov.querySelectorAll(".v3d-walkpad button[data-s]").forEach((x) => x.classList.toggle("on", +x.dataset.s === s)); };
+    ov.querySelectorAll(".v3d-walkpad button[data-s]").forEach((bt) => (bt.onclick = () => setSpeed(+bt.dataset.s)));
     state.onKey = (e, down) => {
       if (e.key === "Escape" && down) return close();
       if (e.key === "Shift") state.keys.shift = down;
       const k = { w: "f", arrowup: "f", s: "b", arrowdown: "b", a: "l", arrowleft: "l", d: "r", arrowright: "r" }[e.key.toLowerCase()];
       if (k) { state.keys[k] = down; e.preventDefault(); }
+      if (down && !e.repeat && mode === "walk" && { "1": 1, "5": 5, "0": 10 }[e.key]) setSpeed({ "1": 1, "5": 5, "0": 10 }[e.key]);
       if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "e") lift(1);
       if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "q") lift(-1);
     };
     ov.querySelectorAll(".v3d-walkpad button").forEach((bt) => {
       const k = bt.dataset.k;
+      if (!k) return;
       if (k === "u" || k === "d") { bt.onclick = () => lift(k === "u" ? 1 : -1); return; }
       if (k === "run") { bt.onclick = () => { state.runLock = !state.runLock; bt.classList.toggle("on", state.runLock); }; return; }
       bt.onpointerdown = () => (state.keys[k] = true);
@@ -491,7 +496,7 @@
       if (!state || state.ov !== ov) { renderer.dispose(); return; }
       const dt = Math.min(0.1, (now - last) / 1000); last = now;
       if (mode === "walk" && walker) {
-        const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock });
+        const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock, speed: state.speed });
         camera.position.set(me.x, walker.eye(), me.z);
         camera.lookAt(me.x + Math.sin(me.yaw) * Math.cos(me.pitch), walker.eye() + Math.sin(me.pitch), me.z + Math.cos(me.yaw) * Math.cos(me.pitch));
         showHud(now);

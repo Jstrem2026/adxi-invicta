@@ -107,6 +107,13 @@ code { background: #0c2038; padding: 1px 5px; border-radius: 4px; font-size: 12p
   .kv { grid-template-columns: 105px 1fr; }
   .cards { grid-template-columns: 1fr 1fr; }
   table { display: block; overflow-x: auto; max-width: 100%; }
+  /* map buttons get their own strip above the map so they never overlap */
+  .mapwrap { padding-top: 104px; }
+  .desig-legend { left: 8px; top: 8px; }
+  .map-legend { left: 8px; top: 56px; }
+  .desig-legend .dl-btn, .map-legend .dl-btn { font-size: 13px; padding: 6px 12px; min-width: 78px; }
+  .maptools { left: 104px; right: 8px; top: 8px; justify-content: flex-end; gap: 6px; }
+  .maptools button { white-space: nowrap; }
 }
 
 /* Concept art on building pages */

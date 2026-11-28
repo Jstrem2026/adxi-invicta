@@ -123,8 +123,9 @@
     const out = [];
     for (let k = 0, done = 0; k < turns && done < st.risers; k++) {
       const m = Math.min(n, st.risers - done), up = Math.ceil(m / 2), base = st.z0 + done * r;
-      if (t < Lv / 2) out.push(base + Math.max(0, Math.min(up, (s - land) / tr)) * r);                    // flight up
-      else out.push(base + (up + Math.max(0, Math.min(m - up, (Lu - land - s) / tr))) * r);              // flight back
+      // treads match the drawing: a flight of N risers has N-1 treads and its top step is the landing
+      if (t < Lv / 2) out.push(base + (s < land ? 0 : Math.min(up, Math.floor((s - land) / tr) + 1)) * r);                         // flight up
+      else out.push(base + (up + (s > Lu - land ? 0 : Math.min(m - up, Math.floor((Lu - land - s) / tr) + 1))) * r);              // flight back
       done += m;
     }
     return out;
@@ -305,7 +306,7 @@
         this.place(fallback[0], fallback[1], fallback[2]);
         return null;
       },
-      // One frame. keys: {f, b, l, r, run}. Moves in small steps so nobody slips through a wall.
+      // One frame. keys: {f, b, l, r, run, speed} (speed: 1, 5 or 10 times the pace). Moves in small steps so nobody slips through a wall.
       step(dt, keys) {
         dt = Math.min(dt, 0.1);
         const fx = Math.sin(me.yaw), fz = Math.cos(me.yaw);
@@ -316,7 +317,7 @@
         if (keys.r) { mx -= fz; mz += fx; }
         const m = Math.hypot(mx, mz);
         if (m > 0) {
-          const dist = (keys.run ? RUN : WALK) * dt, n = Math.max(1, Math.ceil(dist / 0.08));
+          const dist = (keys.run ? RUN : WALK) * (keys.speed || 1) * dt, n = Math.max(1, Math.ceil(dist / 0.08));
           for (let i = 0; i < n; i++) {
             let X = me.x + (mx / m) * (dist / n), Z = me.z + (mz / m) * (dist / n);
             [X, Z] = collide(X, Z, me.feet);

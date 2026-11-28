@@ -27,6 +27,8 @@ standards, IBC and ADA):
   narrower than 10 ft (3 m) between rooms or a closed-in corner smaller than 1,076 sq ft (100 m²).
   A long building gets one entrance per 394 ft (120 m) of street front (at most 12), through the
   street-side room beside a corridor farthest from the others, which also opens onto that corridor.
+- No door opens into a full-height hall or shaft above its bottom floor (Jordan, 28 Nov 2026): there is no floor there,
+  only the drop. Such a hall gets doors on its bottom floor only; upper floors reach it by its stairs or lift core.
 - Windows: along outside walls of rooms and zones above ground, except stores, vaults,
   plant, server and wash rooms. Panes 3 ft 11 in (1.2 m) wide every 5 ft 11 in (1.8 m),
   sill 3 ft (0.91 m), head 7 ft (2.13 m), in line with the tops of doors.
@@ -338,9 +340,18 @@ def build(m):
     def partner(space, w):
         return next((x for x in w[0] if x != space), None)
 
+    def drop(space, L):
+        """True for an upper floor of a full-height hall or shaft: open air down to its bottom floor, no floor to stand on."""
+        if not space or not by_id[space].get("full_height"):
+            return False
+        cl = [x for x in order if x in _levels(by_id[space])]
+        return bool(cl) and L != cl[0]
+
     def rank(space, w):
         o = partner(space, w)
         pri = {"zone": 0, "core": 1, "room": 2}[by_id[o]["type"]] if o else 9
+        if o and drop(o, w[4]):
+            pri = 8   # last choice: a door into an open drop
         return (pri, -math.dist(w[1], w[2]))
 
     def door_size(space):
@@ -501,7 +512,10 @@ def build(m):
                 if k in seen:
                     continue
                 x, L = k
-                opts = [w for w in walls_at.get(k, []) if None not in w[0] and (partner(x, w), L) in seen]
+                if drop(x, L):
+                    continue
+                opts = [w for w in walls_at.get(k, []) if None not in w[0] and (partner(x, w), L) in seen
+                        and not drop(partner(x, w), L)]
                 for w in sorted(opts, key=lambda w: rank(x, w)):
                     wd, ht = door_size(x)
                     if add_door(x, w, wd, ht, "Door"):
@@ -533,8 +547,8 @@ def build(m):
     # a room still without a door (cut off, for example a floor with no stairs) gets its best one anyway
     for k in nodes:
         x, L = k
-        if by_id[x]["type"] == "room" and k not in doored:
-            for w in sorted((w for w in walls_at.get(k, []) if None not in w[0]), key=lambda w: rank(x, w)):
+        if by_id[x]["type"] == "room" and k not in doored and not drop(x, L):
+            for w in sorted((w for w in walls_at.get(k, []) if None not in w[0] and not drop(partner(x, w), L)), key=lambda w: rank(x, w)):
                 wd, ht = door_size(x)
                 if add_door(x, w, wd, ht, "Door"):
                     break
@@ -568,8 +582,90 @@ def build(m):
                         "head_m": _r(min(WIN_HEAD, max(WIN_SILL + 0.6, h - 0.4))), "space": x,
                         "status": "proposed", "derived": True})
 
-    # ---- stairs and lifts in every core (worked out above, before the doors)
-    out.extend(core_parts)
+    # ---- stairs and lifts in every core
+    holes = {}
+    for e in spaces:
+        if e["type"] != "core":
+            continue
+        cl = [L for L in order if L in _levels(e)]
+        env = shapely.oriented_envelope(polys[e["id"]])
+        if env.geom_type != "Polygon":
+            continue
+        c = np.asarray(env.exterior.coords)[:4]
+        e1, e2 = c[1] - c[0], c[3] - c[0]
+        if np.hypot(*e1) < np.hypot(*e2):
+            e1, e2 = e2, e1
+        lenL, lenD = float(np.hypot(*e1)), float(np.hypot(*e2))
+        u, v = e1 / lenL, e2 / lenD
+
+        def rect(x0, x1, y0, y1, fu=False, fv=False, lenL=lenL, lenD=lenD, c=c, u=u, v=v):
+            # fu / fv mirror the rectangle to the other end / side of the core
+            if fu:
+                x0, x1 = lenL - x1, lenL - x0
+            if fv:
+                y0, y1 = lenD - y1, lenD - y0
+            return [_pt(c[0] + u * x0 + v * y0), _pt(c[0] + u * x1 + v * y0),
+                    _pt(c[0] + u * x1 + v * y1), _pt(c[0] + u * x0 + v * y1)]
+
+        stair_len = 0.0
+        flip = (False, False)
+        stair_polys = []
+        core_doors = [d for d in out if d["type"] in ("door", "opening") and e["id"] in d.get("between", [])]
+        for a_, b_ in zip(cl, cl[1:]):
+            h = lv_by[b_]["z_m"] - lv_by[a_]["z_m"]
+            if h <= 0:
+                continue
+            risers = math.ceil(h / RISER_MAX - 1e-9)
+            # flights 3 ft 11 in (1.2 m) wide, or down to 3 ft 8 in (1.12 m, the narrowest a building code allows) in a tight core
+            fw = FLIGHT_W if lenD >= 2 * FLIGHT_W + 0.1 else max(FLIGHT_W_MIN, (lenD - 0.1) / 2)
+            width = 2 * fw + 0.1
+            # more half-turns per floor make a shorter stair, keeping at least 3 risers in every flight
+            # and enough half-turns that no flight climbs more than 12 ft (3.66 m) between landings
+            t0 = max(1, math.ceil(h / (2 * FLIGHT_RISE_MAX) - 1e-9))
+            for turns in range(t0, max(t0, min(MAX_TURNS, risers // (2 * MIN_FLIGHT_RISERS))) + 1):
+                per = math.ceil(risers / (2 * turns))
+                length = (per - 1) * TREAD + 2 * LANDING
+                fits = length <= lenL + 1e-6 and width <= lenD + 1e-6
+                if fits or width > lenD + 1e-6:
+                    break
+            stair_len = max(stair_len, min(length, lenL))
+            # put the stair where no door of this core opens onto it: try the kept corner first, then the others
+            dl = [LineString(d["line_m"]) for d in core_doors if d["level"] in (a_, b_)]
+            best = None
+            for f in [flip] + [q for q in ((False, False), (False, True), (True, False), (True, True)) if q != flip]:
+                oo = rect(0, min(length, lenL), 0, min(width, lenD), *f)
+                gap = min((Polygon(oo).distance(q) for q in dl), default=99.0)
+                if best is None or gap > best[2]:
+                    best = (f, oo, gap)
+                if gap >= 1.0:
+                    break
+            flip, o = best[0], best[1]
+            stair_polys.append(Polygon(o))
+            out.append({"id": nid("S"), "type": "stair", "name": "Stairs", "level": a_, "to_level": b_, "outline_m": o,
+                        "risers": risers, "riser_m": _r(h / risers), "tread_m": TREAD, "flights": 2 * turns, "turns": turns,
+                        "flight_width_m": _r(fw), "landing_m": LANDING, "fits": fits, "core": e["id"],
+                        "status": "proposed", "derived": True})
+            holes.setdefault(b_, []).append(Polygon(o))
+            if not fits:
+                report["stairs_not_fitting"].append("%s %s, %s to %s: needs %.1f × %.1f m, the core is %.1f × %.1f m" % (
+                    e["id"], e.get("name", ""), a_, b_, length, width, lenL, lenD))
+        if len(cl) > 1 and lenL - stair_len >= LIFT + 0.2 and lenD >= LIFT:
+            o = None
+            dl_all = [LineString(d["line_m"]) for d in core_doors]
+            for fu in (not flip[0], flip[0]):
+                for fv in (flip[1], not flip[1]):
+                    q = rect(lenL - LIFT, lenL, 0, LIFT, fu, fv)
+                    qp = Polygon(q)
+                    if not any(qp.intersects(sp) for sp in stair_polys) and all(qp.distance(x) >= 0.8 for x in dl_all):
+                        o = q
+                        break
+                if o:
+                    break
+            if o:
+                out.append({"id": nid("L"), "type": "lift", "name": "Lift", "levels": cl, "outline_m": o, "core": e["id"],
+                            "status": "proposed", "derived": True})
+                for L in cl[1:]:
+                    holes.setdefault(L, []).append(Polygon(o))
 
     # ---- floor slabs
     for L in order:

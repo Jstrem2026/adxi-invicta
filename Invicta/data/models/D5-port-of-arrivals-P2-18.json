@@ -1,1562 +1,1622 @@
 {
- "schema": "invicta-atlas/model@1",
- "building_uid": "D5-port-of-arrivals-P2-18",
- "units": "m",
- "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
- "footprint_m": [
-  420.0,
-  270.0
- ],
- "grid_m": 10,
- "source": "Designed for this building (data/designs), built with tools/build_designs.py, 2026-11-27. All proposed.",
- "levels": [
-  {
-   "id": "L1",
-   "name": "Level 1 · Ground floor",
-   "z_m": 0,
-   "height_m": 5,
-   "status": "proposed"
-  },
-  {
-   "id": "L2",
-   "name": "Level 2 · Level 2",
-   "z_m": 5,
-   "height_m": 4,
-   "status": "proposed"
-  },
-  {
-   "id": "L3",
-   "name": "Level 3 · Level 3",
-   "z_m": 9,
-   "height_m": 4,
-   "status": "proposed"
-  }
- ],
- "elements": [
-  {
-   "id": "E001",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     40.0,
-     48.5
-    ],
-    [
-     40.0,
-     30.0
-    ],
-    [
-     50.0,
-     30.0
-    ],
-    [
-     50.0,
-     48.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
-  },
-  {
-   "id": "E002",
-   "type": "core",
-   "name": "Stairs and lifts",
-   "levels": [
-    "L1",
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     370.0,
-     48.5
-    ],
-    [
-     370.0,
-     30.0
-    ],
-    [
-     380.0,
-     30.0
-    ],
-    [
-     380.0,
-     48.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
-  },
-  {
-   "id": "E003",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     40.0,
-     51.5
-    ],
-    [
-     40.0,
-     48.5
-    ],
-    [
-     380.0,
-     48.5
-    ],
-    [
-     380.0,
-     51.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E004",
-   "type": "room",
-   "name": "Staff entrance and security",
-   "level": "L1",
-   "outline_m": [
-    [
-     50.0,
-     48.5
-    ],
-    [
-     50.0,
-     30.0
-    ],
-    [
-     91.7,
-     30.0
-    ],
-    [
-     91.7,
-     48.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "Staff entrance with security checks."
-  },
-  {
-   "id": "E005",
-   "type": "room",
-   "name": "Canteen",
-   "level": "L1",
-   "outline_m": [
-    [
-     91.7,
-     48.5
-    ],
-    [
-     91.7,
-     30.0
-    ],
-    [
-     370.0,
-     30.0
-    ],
-    [
-     370.0,
-     48.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "A canteen serving hot meals to staff."
-  },
-  {
-   "id": "E006",
-   "type": "room",
-   "name": "Kitchen",
-   "level": "L1",
-   "outline_m": [
-    [
-     40.0,
-     70.0
-    ],
-    [
-     40.0,
-     51.5
-    ],
-    [
-     104.9,
-     51.5
-    ],
-    [
-     104.9,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Where meals are cooked."
-  },
-  {
-   "id": "E007",
-   "type": "room",
-   "name": "Shop",
-   "level": "L1",
-   "outline_m": [
-    [
-     104.9,
-     70.0
-    ],
-    [
-     104.9,
-     51.5
-    ],
-    [
-     126.5,
-     51.5
-    ],
-    [
-     126.5,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "A small shop."
-  },
-  {
-   "id": "E008",
-   "type": "room",
-   "name": "Toilets",
-   "level": "L1",
-   "outline_m": [
-    [
-     126.5,
-     70.0
-    ],
-    [
-     126.5,
-     51.5
-    ],
-    [
-     380.0,
-     51.5
-    ],
-    [
-     380.0,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Toilets, with an accessible toilet."
-  },
-  {
-   "id": "E009",
-   "type": "zone",
-   "name": "Corridor",
-   "levels": [
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     40.0,
-     51.5
-    ],
-    [
-     40.0,
-     48.5
-    ],
-    [
-     380.0,
-     48.5
-    ],
-    [
-     380.0,
-     51.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E010",
-   "type": "room",
-   "name": "Training centre",
-   "levels": [
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     50.0,
-     48.5
-    ],
-    [
-     50.0,
-     30.0
-    ],
-    [
-     370.0,
-     30.0
-    ],
-    [
-     370.0,
-     48.5
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms for staff training."
-  },
-  {
-   "id": "E011",
-   "type": "room",
-   "name": "HR and payroll",
-   "levels": [
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     40.0,
-     70.0
-    ],
-    [
-     40.0,
-     51.5
-    ],
-    [
-     104.9,
-     51.5
-    ],
-    [
-     104.9,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Staff records and pay."
-  },
-  {
-   "id": "E012",
-   "type": "room",
-   "name": "Union and welfare rooms",
-   "levels": [
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     104.9,
-     70.0
-    ],
-    [
-     104.9,
-     51.5
-    ],
-    [
-     137.3,
-     51.5
-    ],
-    [
-     137.3,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Union reps and welfare officers."
-  },
-  {
-   "id": "E013",
-   "type": "room",
-   "name": "Offices",
-   "levels": [
-    "L2",
-    "L3"
-   ],
-   "outline_m": [
-    [
-     137.3,
-     70.0
-    ],
-    [
-     137.3,
-     51.5
-    ],
-    [
-     380.0,
-     51.5
-    ],
-    [
-     380.0,
-     70.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Desks for the people who work in the building."
-  },
-  {
-   "id": "E014",
-   "type": "zone",
-   "name": "Corridor",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     58.5,
-     240.0
-    ],
-    [
-     58.5,
-     70.0
-    ],
-    [
-     61.5,
-     70.0
-    ],
-    [
-     61.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E015",
-   "type": "room",
-   "name": "Lockers and showers",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     40.0,
-     155.0
-    ],
-    [
-     40.0,
-     70.0
-    ],
-    [
-     58.5,
-     70.0
-    ],
-    [
-     58.5,
-     155.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Lockers, changing benches and showers for staff."
-  },
-  {
-   "id": "E016",
-   "type": "room",
-   "name": "Lockers and showers",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     40.0,
-     240.0
-    ],
-    [
-     40.0,
-     155.0
-    ],
-    [
-     58.5,
-     155.0
-    ],
-    [
-     58.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Lockers, changing benches and showers for staff."
-  },
-  {
-   "id": "E017",
-   "type": "room",
-   "name": "Lockers and showers",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     61.5,
-     134.9
-    ],
-    [
-     61.5,
-     70.0
-    ],
-    [
-     80.0,
-     70.0
-    ],
-    [
-     80.0,
-     134.9
-    ]
-   ],
-   "status": "proposed",
-   "about": "Lockers, changing benches and showers for staff."
-  },
-  {
-   "id": "E018",
-   "type": "room",
-   "name": "Lockers and showers",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     61.5,
-     199.7
-    ],
-    [
-     61.5,
-     134.9
-    ],
-    [
-     80.0,
-     134.9
-    ],
-    [
-     80.0,
-     199.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Lockers, changing benches and showers for staff."
-  },
-  {
-   "id": "E019",
-   "type": "room",
-   "name": "Uniform store",
-   "levels": [
-    "L1",
-    "L2"
-   ],
-   "outline_m": [
-    [
-     61.5,
-     240.0
-    ],
-    [
-     61.5,
-     199.7
-    ],
-    [
-     80.0,
-     199.7
-    ],
-    [
-     80.0,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Uniforms issued to staff."
-  },
-  {
-   "id": "E020",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L1",
-   "outline_m": [
-    [
-     358.5,
-     240.0
-    ],
-    [
-     358.5,
-     70.0
-    ],
-    [
-     361.5,
-     70.0
-    ],
-    [
-     361.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E021",
-   "type": "room",
-   "name": "Quiet room",
-   "level": "L1",
-   "outline_m": [
-    [
-     340.0,
-     204.2
-    ],
-    [
-     340.0,
-     70.0
-    ],
-    [
-     358.5,
-     70.0
-    ],
-    [
-     358.5,
-     204.2
-    ]
-   ],
-   "status": "proposed",
-   "about": "A quiet room for rest or a private moment."
-  },
-  {
-   "id": "E022",
-   "type": "room",
-   "name": "Prayer rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     340.0,
-     222.1
-    ],
-    [
-     340.0,
-     204.2
-    ],
-    [
-     358.5,
-     204.2
-    ],
-    [
-     358.5,
-     222.1
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms for prayer."
-  },
-  {
-   "id": "E023",
-   "type": "room",
-   "name": "Prayer rooms",
-   "level": "L1",
-   "outline_m": [
-    [
-     340.0,
-     240.0
-    ],
-    [
-     340.0,
-     222.1
-    ],
-    [
-     358.5,
-     222.1
-    ],
-    [
-     358.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms for prayer."
-  },
-  {
-   "id": "E024",
-   "type": "room",
-   "name": "Nap pods",
-   "level": "L1",
-   "outline_m": [
-    [
-     361.5,
-     124.1
-    ],
-    [
-     361.5,
-     70.0
-    ],
-    [
-     380.0,
-     70.0
-    ],
-    [
-     380.0,
-     124.1
-    ]
-   ],
-   "status": "proposed",
-   "about": "Pods for a short nap between shifts."
-  },
-  {
-   "id": "E025",
-   "type": "room",
-   "name": "Gym",
-   "level": "L1",
-   "outline_m": [
-    [
-     361.5,
-     240.0
-    ],
-    [
-     361.5,
-     124.1
-    ],
-    [
-     380.0,
-     124.1
-    ],
-    [
-     380.0,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Exercise equipment to keep the crew fit."
-  },
-  {
-   "id": "E026",
-   "type": "zone",
-   "name": "Corridor",
-   "level": "L2",
-   "outline_m": [
-    [
-     358.5,
-     240.0
-    ],
-    [
-     358.5,
-     70.0
-    ],
-    [
-     361.5,
-     70.0
-    ],
-    [
-     361.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "The corridor linking the rooms on this floor to the stairs and lifts."
-  },
-  {
-   "id": "E027",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     81.3
-    ],
-    [
-     340.0,
-     70.0
-    ],
-    [
-     358.5,
-     70.0
-    ],
-    [
-     358.5,
-     81.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E028",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     92.7
-    ],
-    [
-     340.0,
-     81.3
-    ],
-    [
-     358.5,
-     81.3
-    ],
-    [
-     358.5,
-     92.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E029",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     104.0
-    ],
-    [
-     340.0,
-     92.7
-    ],
-    [
-     358.5,
-     92.7
-    ],
-    [
-     358.5,
-     104.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E030",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     115.3
-    ],
-    [
-     340.0,
-     104.0
-    ],
-    [
-     358.5,
-     104.0
-    ],
-    [
-     358.5,
-     115.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E031",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     126.7
-    ],
-    [
-     340.0,
-     115.3
-    ],
-    [
-     358.5,
-     115.3
-    ],
-    [
-     358.5,
-     126.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E032",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     138.0
-    ],
-    [
-     340.0,
-     126.7
-    ],
-    [
-     358.5,
-     126.7
-    ],
-    [
-     358.5,
-     138.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E033",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     149.3
-    ],
-    [
-     340.0,
-     138.0
-    ],
-    [
-     358.5,
-     138.0
-    ],
-    [
-     358.5,
-     149.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E034",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     160.7
-    ],
-    [
-     340.0,
-     149.3
-    ],
-    [
-     358.5,
-     149.3
-    ],
-    [
-     358.5,
-     160.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E035",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     172.0
-    ],
-    [
-     340.0,
-     160.7
-    ],
-    [
-     358.5,
-     160.7
-    ],
-    [
-     358.5,
-     172.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E036",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     183.3
-    ],
-    [
-     340.0,
-     172.0
-    ],
-    [
-     358.5,
-     172.0
-    ],
-    [
-     358.5,
-     183.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E037",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     194.7
-    ],
-    [
-     340.0,
-     183.3
-    ],
-    [
-     358.5,
-     183.3
-    ],
-    [
-     358.5,
-     194.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E038",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     206.0
-    ],
-    [
-     340.0,
-     194.7
-    ],
-    [
-     358.5,
-     194.7
-    ],
-    [
-     358.5,
-     206.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E039",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     217.3
-    ],
-    [
-     340.0,
-     206.0
-    ],
-    [
-     358.5,
-     206.0
-    ],
-    [
-     358.5,
-     217.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E040",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     228.7
-    ],
-    [
-     340.0,
-     217.3
-    ],
-    [
-     358.5,
-     217.3
-    ],
-    [
-     358.5,
-     228.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E041",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     340.0,
-     240.0
-    ],
-    [
-     340.0,
-     228.7
-    ],
-    [
-     358.5,
-     228.7
-    ],
-    [
-     358.5,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E042",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     81.3
-    ],
-    [
-     361.5,
-     70.0
-    ],
-    [
-     380.0,
-     70.0
-    ],
-    [
-     380.0,
-     81.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E043",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     92.7
-    ],
-    [
-     361.5,
-     81.3
-    ],
-    [
-     380.0,
-     81.3
-    ],
-    [
-     380.0,
-     92.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E044",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     104.0
-    ],
-    [
-     361.5,
-     92.7
-    ],
-    [
-     380.0,
-     92.7
-    ],
-    [
-     380.0,
-     104.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E045",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     115.3
-    ],
-    [
-     361.5,
-     104.0
-    ],
-    [
-     380.0,
-     104.0
-    ],
-    [
-     380.0,
-     115.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E046",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     126.7
-    ],
-    [
-     361.5,
-     115.3
-    ],
-    [
-     380.0,
-     115.3
-    ],
-    [
-     380.0,
-     126.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E047",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     138.0
-    ],
-    [
-     361.5,
-     126.7
-    ],
-    [
-     380.0,
-     126.7
-    ],
-    [
-     380.0,
-     138.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E048",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     149.3
-    ],
-    [
-     361.5,
-     138.0
-    ],
-    [
-     380.0,
-     138.0
-    ],
-    [
-     380.0,
-     149.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E049",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     160.7
-    ],
-    [
-     361.5,
-     149.3
-    ],
-    [
-     380.0,
-     149.3
-    ],
-    [
-     380.0,
-     160.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E050",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     172.0
-    ],
-    [
-     361.5,
-     160.7
-    ],
-    [
-     380.0,
-     160.7
-    ],
-    [
-     380.0,
-     172.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E051",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     183.3
-    ],
-    [
-     361.5,
-     172.0
-    ],
-    [
-     380.0,
-     172.0
-    ],
-    [
-     380.0,
-     183.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E052",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     194.7
-    ],
-    [
-     361.5,
-     183.3
-    ],
-    [
-     380.0,
-     183.3
-    ],
-    [
-     380.0,
-     194.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E053",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     206.0
-    ],
-    [
-     361.5,
-     194.7
-    ],
-    [
-     380.0,
-     194.7
-    ],
-    [
-     380.0,
-     206.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E054",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     217.3
-    ],
-    [
-     361.5,
-     206.0
-    ],
-    [
-     380.0,
-     206.0
-    ],
-    [
-     380.0,
-     217.3
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E055",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     228.7
-    ],
-    [
-     361.5,
-     217.3
-    ],
-    [
-     380.0,
-     217.3
-    ],
-    [
-     380.0,
-     228.7
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E056",
-   "type": "room",
-   "name": "Rest rooms",
-   "level": "L2",
-   "outline_m": [
-    [
-     361.5,
-     240.0
-    ],
-    [
-     361.5,
-     228.7
-    ],
-    [
-     380.0,
-     228.7
-    ],
-    [
-     380.0,
-     240.0
-    ]
-   ],
-   "status": "proposed",
-   "about": "Rooms to rest between shifts."
-  },
-  {
-   "id": "E057",
-   "type": "zone",
-   "name": "Staff garden",
-   "level": "L1",
-   "outline_m": [
-    [
-     80.0,
-     80.0
-    ],
-    [
-     340.0,
-     80.0
-    ],
-    [
-     340.0,
-     240.0
-    ],
-    [
-     80.0,
-     240.0
-    ]
-   ],
-   "outdoor": true,
-   "status": "proposed",
-   "about": "A garden for staff breaks."
-  }
- ],
- "updated": "2026-11-27"
+  "schema": "invicta-atlas/model@1",
+  "building_uid": "D5-port-of-arrivals-P2-18",
+  "units": "m",
+  "frame": "Metres from the lot's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+  "footprint_m": [
+    420,
+    270
+  ],
+  "grid_m": 10,
+  "source": "Designed for this building (data/designs), built with tools/build_designs.py, 2026-11-27. All proposed.",
+  "levels": [
+    {
+      "id": "L1",
+      "name": "Level 1 · Ground floor",
+      "z_m": 0,
+      "height_m": 5,
+      "status": "proposed"
+    },
+    {
+      "id": "L2",
+      "name": "Level 2 · Level 2",
+      "z_m": 5,
+      "height_m": 4,
+      "status": "proposed"
+    },
+    {
+      "id": "L3",
+      "name": "Level 3 · Level 3",
+      "z_m": 9,
+      "height_m": 4,
+      "status": "proposed"
+    }
+  ],
+  "elements": [
+    {
+      "id": "E001",
+      "type": "core",
+      "name": "Stairs and lifts",
+      "levels": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          40,
+          48.5
+        ],
+        [
+          40,
+          30
+        ],
+        [
+          50,
+          30
+        ],
+        [
+          50,
+          48.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+    },
+    {
+      "id": "E002",
+      "type": "core",
+      "name": "Stairs and lifts",
+      "levels": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          370,
+          48.5
+        ],
+        [
+          370,
+          30
+        ],
+        [
+          380,
+          30
+        ],
+        [
+          380,
+          48.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "Stairs, lifts and service risers serving every floor; also the protected escape route in a fire."
+    },
+    {
+      "id": "E003",
+      "type": "zone",
+      "name": "Corridor",
+      "level": "L1",
+      "outline_m": [
+        [
+          40,
+          51.5
+        ],
+        [
+          40,
+          48.5
+        ],
+        [
+          380,
+          48.5
+        ],
+        [
+          380,
+          51.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "The corridor linking the rooms on this floor to the stairs and lifts."
+    },
+    {
+      "id": "E004",
+      "type": "room",
+      "name": "Staff entrance and security",
+      "level": "L1",
+      "outline_m": [
+        [
+          50,
+          48.5
+        ],
+        [
+          50,
+          30
+        ],
+        [
+          91.7,
+          30
+        ],
+        [
+          91.7,
+          48.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "Staff entrance with security checks."
+    },
+    {
+      "id": "E005",
+      "type": "room",
+      "name": "Canteen",
+      "level": "L1",
+      "outline_m": [
+        [
+          91.7,
+          48.5
+        ],
+        [
+          91.7,
+          30
+        ],
+        [
+          370,
+          30
+        ],
+        [
+          370,
+          48.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "A canteen serving hot meals to staff."
+    },
+    {
+      "id": "E006",
+      "type": "room",
+      "name": "Kitchen",
+      "level": "L1",
+      "outline_m": [
+        [
+          40,
+          70
+        ],
+        [
+          40,
+          51.5
+        ],
+        [
+          104.9,
+          51.5
+        ],
+        [
+          104.9,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "Where meals are cooked."
+    },
+    {
+      "id": "E007",
+      "type": "room",
+      "name": "Shop",
+      "level": "L1",
+      "outline_m": [
+        [
+          104.9,
+          70
+        ],
+        [
+          104.9,
+          51.5
+        ],
+        [
+          126.5,
+          51.5
+        ],
+        [
+          126.5,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "A small shop."
+    },
+    {
+      "id": "E008",
+      "type": "room",
+      "name": "Toilets",
+      "level": "L1",
+      "outline_m": [
+        [
+          126.5,
+          70
+        ],
+        [
+          126.5,
+          51.5
+        ],
+        [
+          380,
+          51.5
+        ],
+        [
+          380,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "Toilets, with an accessible toilet."
+    },
+    {
+      "id": "E009",
+      "type": "zone",
+      "name": "Corridor",
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          40,
+          51.5
+        ],
+        [
+          40,
+          48.5
+        ],
+        [
+          380,
+          48.5
+        ],
+        [
+          380,
+          51.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "The corridor linking the rooms on this floor to the stairs and lifts."
+    },
+    {
+      "id": "E010",
+      "type": "room",
+      "name": "Training centre",
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          50,
+          48.5
+        ],
+        [
+          50,
+          30
+        ],
+        [
+          370,
+          30
+        ],
+        [
+          370,
+          48.5
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms for staff training."
+    },
+    {
+      "id": "E011",
+      "type": "room",
+      "name": "HR and payroll",
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          40,
+          70
+        ],
+        [
+          40,
+          51.5
+        ],
+        [
+          104.9,
+          51.5
+        ],
+        [
+          104.9,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "Staff records and pay."
+    },
+    {
+      "id": "E012",
+      "type": "room",
+      "name": "Union and welfare rooms",
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          104.9,
+          70
+        ],
+        [
+          104.9,
+          51.5
+        ],
+        [
+          137.3,
+          51.5
+        ],
+        [
+          137.3,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "Union reps and welfare officers."
+    },
+    {
+      "id": "E013",
+      "type": "room",
+      "name": "Offices",
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "outline_m": [
+        [
+          137.3,
+          70
+        ],
+        [
+          137.3,
+          51.5
+        ],
+        [
+          380,
+          51.5
+        ],
+        [
+          380,
+          70
+        ]
+      ],
+      "status": "proposed",
+      "about": "Desks for the people who work in the building."
+    },
+    {
+      "id": "E014",
+      "type": "zone",
+      "name": "Corridor",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          58.5,
+          240
+        ],
+        [
+          58.5,
+          70
+        ],
+        [
+          61.5,
+          70
+        ],
+        [
+          61.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "The corridor linking the rooms on this floor to the stairs and lifts."
+    },
+    {
+      "id": "E015",
+      "type": "room",
+      "name": "Lockers and showers",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          40,
+          155
+        ],
+        [
+          40,
+          70
+        ],
+        [
+          58.5,
+          70
+        ],
+        [
+          58.5,
+          155
+        ]
+      ],
+      "status": "proposed",
+      "about": "Lockers, changing benches and showers for staff."
+    },
+    {
+      "id": "E016",
+      "type": "room",
+      "name": "Lockers and showers",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          40,
+          240
+        ],
+        [
+          40,
+          155
+        ],
+        [
+          58.5,
+          155
+        ],
+        [
+          58.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Lockers, changing benches and showers for staff."
+    },
+    {
+      "id": "E017",
+      "type": "room",
+      "name": "Lockers and showers",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          61.5,
+          134.9
+        ],
+        [
+          61.5,
+          70
+        ],
+        [
+          80,
+          70
+        ],
+        [
+          80,
+          134.9
+        ]
+      ],
+      "status": "proposed",
+      "about": "Lockers, changing benches and showers for staff."
+    },
+    {
+      "id": "E018",
+      "type": "room",
+      "name": "Lockers and showers",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          61.5,
+          199.7
+        ],
+        [
+          61.5,
+          134.9
+        ],
+        [
+          80,
+          134.9
+        ],
+        [
+          80,
+          199.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Lockers, changing benches and showers for staff."
+    },
+    {
+      "id": "E019",
+      "type": "room",
+      "name": "Uniform store",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "outline_m": [
+        [
+          61.5,
+          240
+        ],
+        [
+          61.5,
+          199.7
+        ],
+        [
+          80,
+          199.7
+        ],
+        [
+          80,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Uniforms issued to staff."
+    },
+    {
+      "id": "E020",
+      "type": "zone",
+      "name": "Corridor",
+      "level": "L1",
+      "outline_m": [
+        [
+          358.5,
+          240
+        ],
+        [
+          358.5,
+          70
+        ],
+        [
+          361.5,
+          70
+        ],
+        [
+          361.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "The corridor linking the rooms on this floor to the stairs and lifts."
+    },
+    {
+      "id": "E021",
+      "type": "room",
+      "name": "Quiet room",
+      "level": "L1",
+      "outline_m": [
+        [
+          340,
+          204.2
+        ],
+        [
+          340,
+          70
+        ],
+        [
+          358.5,
+          70
+        ],
+        [
+          358.5,
+          204.2
+        ]
+      ],
+      "status": "proposed",
+      "about": "A quiet room for rest or a private moment."
+    },
+    {
+      "id": "E022",
+      "type": "room",
+      "name": "Prayer rooms",
+      "level": "L1",
+      "outline_m": [
+        [
+          340,
+          222.1
+        ],
+        [
+          340,
+          204.2
+        ],
+        [
+          358.5,
+          204.2
+        ],
+        [
+          358.5,
+          222.1
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms for prayer."
+    },
+    {
+      "id": "E023",
+      "type": "room",
+      "name": "Prayer rooms",
+      "level": "L1",
+      "outline_m": [
+        [
+          340,
+          240
+        ],
+        [
+          340,
+          222.1
+        ],
+        [
+          358.5,
+          222.1
+        ],
+        [
+          358.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms for prayer."
+    },
+    {
+      "id": "E024",
+      "type": "room",
+      "name": "Nap pods",
+      "level": "L1",
+      "outline_m": [
+        [
+          361.5,
+          124.1
+        ],
+        [
+          361.5,
+          70
+        ],
+        [
+          380,
+          70
+        ],
+        [
+          380,
+          124.1
+        ]
+      ],
+      "status": "proposed",
+      "about": "Pods for a short nap between shifts."
+    },
+    {
+      "id": "E025",
+      "type": "room",
+      "name": "Gym",
+      "level": "L1",
+      "outline_m": [
+        [
+          361.5,
+          240
+        ],
+        [
+          361.5,
+          124.1
+        ],
+        [
+          380,
+          124.1
+        ],
+        [
+          380,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Exercise equipment to keep the crew fit."
+    },
+    {
+      "id": "E026",
+      "type": "zone",
+      "name": "Corridor",
+      "level": "L2",
+      "outline_m": [
+        [
+          358.5,
+          240
+        ],
+        [
+          358.5,
+          70
+        ],
+        [
+          361.5,
+          70
+        ],
+        [
+          361.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "The corridor linking the rooms on this floor to the stairs and lifts."
+    },
+    {
+      "id": "E027",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          81.3
+        ],
+        [
+          340,
+          70
+        ],
+        [
+          358.5,
+          70
+        ],
+        [
+          358.5,
+          81.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E028",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          92.7
+        ],
+        [
+          340,
+          81.3
+        ],
+        [
+          358.5,
+          81.3
+        ],
+        [
+          358.5,
+          92.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E029",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          104
+        ],
+        [
+          340,
+          92.7
+        ],
+        [
+          358.5,
+          92.7
+        ],
+        [
+          358.5,
+          104
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E030",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          115.3
+        ],
+        [
+          340,
+          104
+        ],
+        [
+          358.5,
+          104
+        ],
+        [
+          358.5,
+          115.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E031",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          126.7
+        ],
+        [
+          340,
+          115.3
+        ],
+        [
+          358.5,
+          115.3
+        ],
+        [
+          358.5,
+          126.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E032",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          138
+        ],
+        [
+          340,
+          126.7
+        ],
+        [
+          358.5,
+          126.7
+        ],
+        [
+          358.5,
+          138
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E033",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          149.3
+        ],
+        [
+          340,
+          138
+        ],
+        [
+          358.5,
+          138
+        ],
+        [
+          358.5,
+          149.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E034",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          160.7
+        ],
+        [
+          340,
+          149.3
+        ],
+        [
+          358.5,
+          149.3
+        ],
+        [
+          358.5,
+          160.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E035",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          172
+        ],
+        [
+          340,
+          160.7
+        ],
+        [
+          358.5,
+          160.7
+        ],
+        [
+          358.5,
+          172
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E036",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          183.3
+        ],
+        [
+          340,
+          172
+        ],
+        [
+          358.5,
+          172
+        ],
+        [
+          358.5,
+          183.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E037",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          194.7
+        ],
+        [
+          340,
+          183.3
+        ],
+        [
+          358.5,
+          183.3
+        ],
+        [
+          358.5,
+          194.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E038",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          206
+        ],
+        [
+          340,
+          194.7
+        ],
+        [
+          358.5,
+          194.7
+        ],
+        [
+          358.5,
+          206
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E039",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          217.3
+        ],
+        [
+          340,
+          206
+        ],
+        [
+          358.5,
+          206
+        ],
+        [
+          358.5,
+          217.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E040",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          228.7
+        ],
+        [
+          340,
+          217.3
+        ],
+        [
+          358.5,
+          217.3
+        ],
+        [
+          358.5,
+          228.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E041",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          340,
+          240
+        ],
+        [
+          340,
+          228.7
+        ],
+        [
+          358.5,
+          228.7
+        ],
+        [
+          358.5,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E042",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          81.3
+        ],
+        [
+          361.5,
+          70
+        ],
+        [
+          380,
+          70
+        ],
+        [
+          380,
+          81.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E043",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          92.7
+        ],
+        [
+          361.5,
+          81.3
+        ],
+        [
+          380,
+          81.3
+        ],
+        [
+          380,
+          92.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E044",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          104
+        ],
+        [
+          361.5,
+          92.7
+        ],
+        [
+          380,
+          92.7
+        ],
+        [
+          380,
+          104
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E045",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          115.3
+        ],
+        [
+          361.5,
+          104
+        ],
+        [
+          380,
+          104
+        ],
+        [
+          380,
+          115.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E046",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          126.7
+        ],
+        [
+          361.5,
+          115.3
+        ],
+        [
+          380,
+          115.3
+        ],
+        [
+          380,
+          126.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E047",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          138
+        ],
+        [
+          361.5,
+          126.7
+        ],
+        [
+          380,
+          126.7
+        ],
+        [
+          380,
+          138
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E048",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          149.3
+        ],
+        [
+          361.5,
+          138
+        ],
+        [
+          380,
+          138
+        ],
+        [
+          380,
+          149.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E049",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          160.7
+        ],
+        [
+          361.5,
+          149.3
+        ],
+        [
+          380,
+          149.3
+        ],
+        [
+          380,
+          160.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E050",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          172
+        ],
+        [
+          361.5,
+          160.7
+        ],
+        [
+          380,
+          160.7
+        ],
+        [
+          380,
+          172
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E051",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          183.3
+        ],
+        [
+          361.5,
+          172
+        ],
+        [
+          380,
+          172
+        ],
+        [
+          380,
+          183.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E052",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          194.7
+        ],
+        [
+          361.5,
+          183.3
+        ],
+        [
+          380,
+          183.3
+        ],
+        [
+          380,
+          194.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E053",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          206
+        ],
+        [
+          361.5,
+          194.7
+        ],
+        [
+          380,
+          194.7
+        ],
+        [
+          380,
+          206
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E054",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          217.3
+        ],
+        [
+          361.5,
+          206
+        ],
+        [
+          380,
+          206
+        ],
+        [
+          380,
+          217.3
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E055",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          228.7
+        ],
+        [
+          361.5,
+          217.3
+        ],
+        [
+          380,
+          217.3
+        ],
+        [
+          380,
+          228.7
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E056",
+      "type": "room",
+      "name": "Rest rooms",
+      "level": "L2",
+      "outline_m": [
+        [
+          361.5,
+          240
+        ],
+        [
+          361.5,
+          228.7
+        ],
+        [
+          380,
+          228.7
+        ],
+        [
+          380,
+          240
+        ]
+      ],
+      "status": "proposed",
+      "about": "Rooms to rest between shifts."
+    },
+    {
+      "id": "E057",
+      "type": "zone",
+      "name": "Staff garden",
+      "level": "L1",
+      "outline_m": [
+        [
+          80,
+          80
+        ],
+        [
+          340,
+          80
+        ],
+        [
+          340,
+          240
+        ],
+        [
+          80,
+          240
+        ]
+      ],
+      "outdoor": true,
+      "status": "proposed",
+      "about": "A garden for staff breaks."
+    },
+    {
+      "id": "E058",
+      "type": "door",
+      "level": "L1",
+      "name": "Entrance",
+      "line_m": [
+        [
+          67,
+          30
+        ],
+        [
+          68.83,
+          30
+        ]
+      ],
+      "width_m": 1.83,
+      "height_m": 2.44,
+      "status": "proposed",
+      "about": "Staff entrance into the security lobby, on the front wall."
+    },
+    {
+      "id": "E059",
+      "type": "door",
+      "level": "L1",
+      "name": "Outside door",
+      "line_m": [
+        [
+          59.1,
+          240
+        ],
+        [
+          60,
+          240
+        ]
+      ],
+      "width_m": 0.91,
+      "height_m": 2.03,
+      "status": "proposed",
+      "about": "Ground-floor fire exit at the end of the locker wing corridor."
+    },
+    {
+      "id": "E060",
+      "type": "door",
+      "level": "L1",
+      "name": "Outside door",
+      "line_m": [
+        [
+          359.1,
+          240
+        ],
+        [
+          360,
+          240
+        ]
+      ],
+      "width_m": 0.91,
+      "height_m": 2.03,
+      "status": "proposed",
+      "about": "Ground-floor fire exit at the end of the rest wing corridor."
+    }
+  ],
+  "updated": "2026-11-28"
 }
