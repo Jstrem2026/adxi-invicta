@@ -1,0 +1,57 @@
+name: Post to Discord
+# Posts into the #updates channel of the ADXI: Invicta Discord server:
+#   - the site went live after a merge (or the publish failed)
+#   - the scan found problems on a pull request
+#   - a pull request is waiting for Jordan's review
+# Needs the DISCORD_WEBHOOK_URL repo secret (Settings > Secrets and variables > Actions).
+# Skips quietly until it exists.
+on:
+  workflow_run:
+    workflows: ["Scan and publish the site"]
+    types: [completed]
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    env:
+      WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      # Untrusted text (titles, branch names) goes through env and jq, never straight into the shell.
+      EVENT: ${{ github.event_name }}
+      RUN_EVENT: ${{ github.event.workflow_run.event }}
+      RUN_RESULT: ${{ github.event.workflow_run.conclusion }}
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      RUN_TITLE: ${{ github.event.workflow_run.display_title }}
+      RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
+      PR_TITLE: ${{ github.event.pull_request.title }}
+      PR_URL: ${{ github.event.pull_request.html_url }}
+      PR_NUM: ${{ github.event.pull_request.number }}
+      PR_DRAFT: ${{ github.event.pull_request.draft }}
+      PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+    steps:
+      - name: Build and send the message
+        run: |
+          if [ -z "$WEBHOOK" ]; then
+            echo "DISCORD_WEBHOOK_URL is not set yet, so nothing was posted." >> "$GITHUB_STEP_SUMMARY"; exit 0
+          fi
+          msg=""
+          if [ "$EVENT" = "workflow_run" ]; then
+            if [ "$RUN_EVENT" = "push" ] && [ "$RUN_BRANCH" = "main" ]; then
+              if [ "$RUN_RESULT" = "success" ]; then
+                msg=$(printf '🚀 **Live on invicta.arcanedrift.net**\n%s\nhttps://invicta.arcanedrift.net' "$RUN_TITLE")
+              elif [ "$RUN_RESULT" = "failure" ]; then
+                msg=$(printf '⚠️ **The site did not publish.** The scan or the build failed after this merge:\n%s\n<%s>' "$RUN_TITLE" "$RUN_URL")
+              fi
+            elif [ "$RUN_EVENT" = "pull_request" ] && [ "$RUN_RESULT" = "failure" ]; then
+              msg=$(printf '🔍 **Scan problems** on pull request "%s". See the report:\n<%s>' "$RUN_TITLE" "$RUN_URL")
+            fi
+          elif [ "$EVENT" = "pull_request" ] && [ "$PR_DRAFT" != "true" ]; then
+            msg=$(printf '📝 **Waiting for review:** #%s %s (by %s)\n<%s>' "$PR_NUM" "$PR_TITLE" "$PR_AUTHOR" "$PR_URL")
+          fi
+          if [ -z "$msg" ]; then echo "Nothing to post for this event."; exit 0; fi
+          # allowed_mentions stops any @everyone or @name in a title from pinging people.
+          jq -n --arg c "$msg" '{username: "Invicta Updates", content: $c, allowed_mentions: {parse: []}}' \
+            | curl -sS -f -X POST -H "Content-Type: application/json" --data @- "$WEBHOOK" > /dev/null
+          echo "Posted to Discord." >> "$GITHUB_STEP_SUMMARY"
