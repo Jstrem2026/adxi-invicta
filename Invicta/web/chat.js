@@ -347,10 +347,36 @@
     send.disabled = true;
     input.value = "";
     bubble("user", imgs.map((b) => `<img class="chat-img" src="data:image/jpeg;base64,${b}" alt="">`).join("") + docs.map((d) => `<div class="chat-docline">📄 ${esc(d.name)}</div>`).join("") + esc(text).replace(/\n/g, "<br>"));
-    const out = bubble("assistant", '<span class="chat-typing">Thinking…</span>');
-    let acc = "";
+    const out = bubble("assistant", "");
+    let acc = "", statusText = "Thinking", gotDone = false, gotError = false, lastByte = Date.now();
+    const t0 = Date.now();
+    // Show what Claude is doing and for how long, so a long change never looks frozen.
+    const draw = () => {
+      const secs = Math.floor((Date.now() - t0) / 1000);
+      const clock = secs >= 5 ? ` · ${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, "0")}` : "";
+      const hint = secs >= 45 ? " · big changes can take a few minutes; keep this page open" : "";
+      out.innerHTML = md(acc) + (statusText ? `<span class="chat-typing">${esc(statusText)}…${clock}${hint}</span>` : "");
+    };
+    draw();
+    const ctrl = new AbortController();
+    let stalled = false, reader = null;
+    const ticker = setInterval(() => {
+      if (statusText) draw();
+      // The server sends a small signal every 10 seconds. Nothing for 75 seconds means the connection is gone.
+      if (Date.now() - lastByte > 75000) { stalled = true; ctrl.abort(); }
+    }, 1000);
+    // If this message doesn't finish, keep it in the conversation anyway, so "try again" or
+    // "run the previous instruction" still knows what was asked.
+    const keepUnfinished = (why) => {
+      history = history.concat([
+        { role: "user", content: [{ type: "text", text }] },
+        { role: "assistant", content: [{ type: "text", text: `(${why})` }] },
+      ]);
+      save();
+    };
     try {
       const r = await fetch("/api/chat", {
+        signal: ctrl.signal,
         method: "POST",
         headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" },
         body: JSON.stringify({ messages: history, text, images: imgs, docs, units: localStorage.getItem("adxi.units") === "metric" ? "metric" : "us", name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
@@ -362,12 +388,13 @@
         out.classList.add("msg-error");
         return;
       }
-      const reader = r.body.getReader();
+      reader = r.body.getReader();
       const dec = new TextDecoder();
       let buf = "";
       for (;;) {
         const { value, done } = await reader.read();
         if (done) break;
+        lastByte = Date.now();
         buf += dec.decode(value, { stream: true });
         let i;
         while ((i = buf.indexOf("\n\n")) >= 0) {
@@ -379,13 +406,20 @@
           const data = JSON.parse(dataLine);
           if (ev === "text") {
             acc += data.delta;
-            out.innerHTML = md(acc);
+            statusText = "";
+            draw();
             log.scrollTop = log.scrollHeight;
+          } else if (ev === "status") {
+            statusText = data.text;
+            draw();
           } else if (ev === "reset") {  // switching to the design model: start the answer again
             acc = "";
-            out.innerHTML = '<span class="chat-typing">Working on the change…</span>';
+            statusText = "Working on the change";
+            draw();
           } else if (ev === "tool") {
             log.insertBefore(el("div", "chat-note", data.label + "…"), out);
+            statusText = "Working";
+            draw();
           } else if (ev === "proposal") {
             const card = el("a", "chat-proposal");
             card.href = data.url;
@@ -395,19 +429,35 @@
             if (data.merged) watchPublish(card);
             log.insertBefore(card, out);
           } else if (ev === "done") {
+            gotDone = true;
             history = data.messages;
             save();
           } else if (ev === "error") {
+            gotError = true;
+            statusText = "";
             out.innerHTML = md((acc ? acc + "\n\n" : "") + data.error);
             out.classList.add("msg-error");
+            keepUnfinished("This request stopped with an error before it finished.");
           }
         }
       }
-      if (!acc.trim() && !out.classList.contains("msg-error")) out.remove();
+      statusText = "";
+      if (!gotDone && !gotError) {
+        // The connection closed before Claude finished (page asleep, network drop, server stopped).
+        out.innerHTML = md((acc ? acc + "\n\n" : "") + "**The connection closed before I finished.** Any change already saved is shown above as a card; if there is no card, nothing was changed. Say *try again* to carry on.");
+        out.classList.add("msg-error");
+        keepUnfinished("The connection closed before this request finished. Nothing after the last saved change was done.");
+      } else if (!acc.trim() && !out.classList.contains("msg-error")) out.remove();
     } catch (err) {
-      out.innerHTML = md("I couldn't reach the chat. Check your connection and try again.");
+      statusText = "";
+      const started = stalled || reader;  // the request had begun, so part of it may have run
+      out.innerHTML = md((acc ? acc + "\n\n" : "") + (started
+        ? `**I lost the connection${stalled ? " (nothing arrived for over a minute)" : ""} before I finished.** Any change already saved is shown above as a card; if there is no card, nothing was changed. Say *try again* to carry on.`
+        : "I couldn't reach the chat. Check your connection and try again."));
       out.classList.add("msg-error");
+      keepUnfinished("The connection was lost before this request finished.");
     } finally {
+      clearInterval(ticker);
       busy = false;
       send.disabled = false;
       log.scrollTop = log.scrollHeight;
