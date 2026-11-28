@@ -20,3 +20,4 @@ picture in `Invicta/web/npc/`. Avalon's picture also becomes the bot's own pictu
 | Mira | City assistant, Meridian (Deck 3) | 28 Nov 2026 |
 | Sentinel | City assistant, Bastion (Deck 4) | 28 Nov 2026 |
 | Vector | City assistant, Aerion (Deck 5) | 28 Nov 2026 |
+| Tessera | City assistant, Machina (Deck 6) | 28 Nov 2026 |
