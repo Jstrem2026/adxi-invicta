@@ -23,6 +23,7 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | 28 Nov 2026 | C10 | **Cut the decks back** to fit the concept hull (Jordan's six-view sheet); change nothing else. Add a **Bridge Level** (like Deck 1 but smaller) on top of Deck 1 for the bridge, where the front windows are. |
 | 28 Nov 2026 | C9 | **The concept hull, deck outlines and districts are canon.** |
 | 28 Nov 2026 | C11 | **The Bridge cannot separate.** It is part of the ship. |
+| 28 Nov 2026 | A8 | **The NPCs are not Governors.** They are digital assistants that manage their cities until real people move into the career positions they are hired to do. |
 
 ## 1. Command and government
 
@@ -37,6 +38,8 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | A4 | Ranks | 22 player positions (all 23 minus Captain). Grades E1–E9, O1 Ensign … O6 Fleet Admiral. Squadron Leader (≥O2), Cruiser Captain (≥O4). | ✅ |
 | A6 | Council rooms | Hall of Keys (Deck 1) = Grand Council ceremonial seat. Council Chamber (Bridge L7) = secure room. Assembly meets in the Chancery. | ✅ |
 | A7 | Bodies | Captain (Max) commands · Grand Council (8 NPC Governors) administers · Assembly (elected players) legislates within the Charter; City Councils run city budgets. | ✅ (G1) |
+| A8 | The deck NPCs | **Not Governors.** Aurelia (D1), Lyra (D2), Mira (D3), Sentinel (D4), Vector (D5), Tessera (D6), Vesper (D7) and Orin (D8) are **digital assistants**, not Governors. They can manage and run systems on their own, without human interaction, and they manage their cities until real people move into the career positions they are hired to do (such as the player Deck Chief beside each one). Avalon is the lead digital assistant and runs the whole ship. The title "Governor" is retired: on Sheets S1 to S8 the "Governor" line reads **City assistant**, Sheet S1's "The eight Governors" and A7's "8 NPC Governors" read "the eight city assistants". Decided by Jordan, 28 Nov 2026: "They are digital assistants that manage their cities until REAL people move into career positions they are hired to do." and "They can manage and run systems without human interaction." | ✅ |
+| A9 | Names that came from the old title | Each deck's plaza has a **Governor's Hall** and its staff are listed as "Governor's staff" (Sheets S1 to S8). Sheet S1 has the eight meet as the **Grand Council** in the Hall of Keys (A6, A7). These names stay as they are until Jordan renames them. | ⏳ |
 
 ## 2. Physics and figures
 
@@ -112,3 +115,4 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | **G2** | When Jordan is offline, who acts for the Captain? | The XO (a player Max appoints) handles routine orders; Lance and war stay Max-only. Avalon runs the ship (canon). |
 | **G3** | Who opens empty districts and fills empty shops without Settlers? | Players and drones. Districts open only as fast as players move in; drone crews keep sealed districts maintained and lit. Shops are player-run or NPC/drone-run kiosks (vending, automated stores). |
 | **G4** | Does "Only the NPCs for now" leave room for simulated people later? | Keep the technology option open (no design depends on it). Revisit after Early Access. |
+| **G5** | With the NPCs as city assistants (A8), what are "Governor's Hall", "Governor's staff" and the "Grand Council" called? | Jordan to name them (A9). Until then they keep their canon names. |
