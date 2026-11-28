@@ -24,6 +24,13 @@ from .sources import FIXED, GAME_DOCS, MIRROR_DOCS
 SEV_ORDER = {"error": 0, "warning": 1, "decision": 2, "gap": 3}
 
 
+def _target(x):
+    """A district's current area: Revision C (errata C10), else Revision B, else the canon sheet."""
+    if x.get("revC"):
+        return x["revC"]["area_km2"]
+    return x["revB"]["area_km2"] if x.get("revB") else x["area_km2"]
+
+
 class Scan:
     def __init__(self, model, root):
         self.m = model
@@ -196,12 +203,14 @@ class Scan:
                 total_calc += d["net_area_calc"]
             na = d.get("net_area_stated")
             if na and d.get("net_area_calc") and not self.area_close(d["net_area_calc"], na):
-                rb = d["outline_source"].endswith("_revB.csv")
-                self.add("decision" if rb else "warning", "geometry",
-                         "Deck floor area changed in Revision B" if rb else "Deck outline area differs from its sheet",
-                         "Deck %d %s: sheet S%d says %s km²; %s outline measures %s km²." % (
-                             n, d["name"], n, _f(na), "the Rev B" if rb else "the", _f(d["net_area_calc"])),
-                         d["id"], d["outline_source"])
+                rb = d["outline_source"].endswith(("_revB.csv", "_revC.csv"))
+                rc = d["outline_source"].endswith("_revC.csv")
+                if not rc:   # Revision C (errata C10) was decided by Jordan on 28 Nov 2026; its areas are listed there
+                    self.add("decision" if rb else "warning", "geometry",
+                             "Deck floor area changed in Revision B" if rb else "Deck outline area differs from its sheet",
+                             "Deck %d %s: sheet S%d says %s km²; %s outline measures %s km²." % (
+                                 n, d["name"], n, _f(na), "the Rev B" if rb else "the", _f(d["net_area_calc"])),
+                             d["id"], d["outline_source"])
             elif na and d.get("net_area_calc") and abs(d["net_area_calc"] - na) > 0.05 and d["outline_source"].endswith("_revB.csv"):
                 self.add("decision", "continuity", "Deck sheet still shows the Revision A floor area",
                          "Deck %d %s: sheet S%d says %s km², Rev B outline measures %s km² (errata C1). The canon sheet is read-only; the game uses Rev B." % (
@@ -216,7 +225,7 @@ class Scan:
                          "Deck %d: stack %s m, clear %s m." % (n, _f(stack), _f(d["clear_m"])), d["id"], sheet)
             fr = P.nums(d["key"].get("Frames", ""))
             go = d.get("outline_gross")
-            if len(fr) >= 2 and go:
+            if len(fr) >= 2 and go and not d["outline_source"].endswith("_revC.csv"):   # Rev C moves the deck ends (errata C10)
                 gx0, gx1 = min(p[0] for p in go), max(p[0] for p in go)
                 if abs(gx0 - fr[0] * 0.5) > 0.3 or abs(gx1 - fr[1] * 0.5) > 0.3:
                     self.add("warning", "geometry", "Deck frame range differs from its outline",
@@ -229,7 +238,14 @@ class Scan:
                          "Deck %d: districts hold %s people, the sheet's design population is %s." % (n, _f(people), _f(d["population"])), d["id"], sheet)
         revb_total = P.num(re.search(r"Total net city floor: ([\d,.]+)", self.m["_docs"].get("revB_readme") or "") and
                            re.search(r"Total net city floor: ([\d,.]+)", self.m["_docs"].get("revB_readme") or "").group(1))
-        if revb_total and abs(total_calc - revb_total) > 0.3:
+        revc = any(d["outline_source"].endswith("_revC.csv") for d in self.m["decks"])
+        revc_total = P.num(re.search(r"Total net city floor: ([\d,.]+)", self.m["_docs"].get("revC_readme") or "") and
+                           re.search(r"Total net city floor: ([\d,.]+)", self.m["_docs"].get("revC_readme") or "").group(1))
+        if revc:
+            if revc_total is None or abs(total_calc - revc_total) > 0.3:
+                self.add("warning", "geometry", "Total city floor differs from the Rev C notes",
+                         "The eight outlines measure %.1f km²; geometry_revC/README.txt says %s km²." % (total_calc, _f(revc_total)), "ship", FIXED["revC_readme_game"])
+        elif revb_total and abs(total_calc - revb_total) > 0.3:
             self.add("warning", "geometry", "Total city floor differs from the Rev B notes",
                      "The eight outlines measure %.1f km²; geometry_revB/README.txt says %.1f km²." % (total_calc, revb_total), "ship", FIXED["revB_readme"])
 
@@ -258,9 +274,10 @@ class Scan:
                     if abs(dens - x["per_km2"]) > 1.5:
                         self.add("warning", "continuity", "District density is wrong",
                                  "%s: %s people on %s km² is %.0f per km², the schedule says %s." % (x["name"], _f(x["people"]), _f(x["area_km2"]), dens, _f(x["per_km2"])), x["id"], sheet)
-                if x.get("area_calc") is not None and not self.area_close(x["area_calc"], x["area_km2"]):
+                want = x["revC"]["area_km2"] if x.get("revC") else x["area_km2"]
+                if x.get("area_calc") is not None and not self.area_close(x["area_calc"], want):
                     self.add("warning", "geometry", "District shape on the plan does not match its area",
-                             "%s: the schedule says %s km², the drawn shape measures %s km²." % (x["name"], _f(x["area_km2"]), _f(x["area_calc"])), x["id"], sheet)
+                             "%s: the schedule says %s km², the drawn shape measures %s km²." % (x["name"], _f(want), _f(x["area_calc"])), x["id"], sheet)
                 if x.get("plan_note") == "label drawn inside another district's shape":
                     self.add("warning", "continuity", "District label drawn in the wrong place",
                              "Sheet S%d's plan prints the %s label inside a neighbouring district's shape. The app matched %s to the shape whose area fits (%s km²)." % (
@@ -292,8 +309,13 @@ class Scan:
             sheet = d["paths"]["sheet"]
             go = d.get("outline_gross")
             bow = min(p[0] for p in go) if go else None
+            stern = max(p[0] for p in go) if go else None
             for st in d.get("keelway", []):
                 f = P.num(st["frame"])
+                if f is not None and bow is not None and not (bow <= f * 0.5 <= stern):
+                    self.add("error", "geometry", "Keelway stop is outside its deck",
+                             "Deck %d %s stop at F%d (%.1f km) is outside the deck, which runs %.2f to %.2f km." % (n, st["stop"], f, f * 0.5, bow, stern),
+                             d["id"], sheet)
                 fb = P.num(st["from_bow"])
                 if f is None or fb is None or bow is None:
                     continue
@@ -307,6 +329,11 @@ class Scan:
                     self.add("warning", "continuity", "Keelway stop address does not match its frame",
                              "Deck %d %s: frame %s, address %s." % (n, st["stop"], st["frame"], st["address"]), d["id"], sheet)
             for st in d.get("crossline", []):
+                f = P.num(st["frame"])
+                if f is not None and bow is not None and not (bow <= f * 0.5 <= stern):
+                    self.add("error", "geometry", "Cross-line stop is outside its deck",
+                             "Deck %d %s stop at F%d (%.1f km) is outside the deck, which runs %.2f to %.2f km." % (n, st["stop"], f, f * 0.5, bow, stern),
+                             d["id"], sheet)
                 off = P.num(st["offset"])
                 m = re.match(r"D\d-F\d+-([A-Y])", st["address"])
                 if off is not None and m and G.lane_at(off) != m.group(1):
@@ -327,7 +354,7 @@ class Scan:
                          "zone_reservations_km.csv: '%s' on Deck %d." % (z["name"], n), deck["id"], FIXED["zones_csv"])
                 continue
             a = P.num(z.get("net_area_km2"))
-            target = x["revB"]["area_km2"] if x.get("revB") else x["area_km2"]
+            target = _target(x)
             if a is not None and abs(a - target) > 0.05:
                 self.add("warning", "continuity", "Zone CSV area differs from the current value",
                          "zone_reservations_km.csv gives %s %s km²; the current value is %s km²." % (z["name"], _f(a), _f(target)), x["id"], FIXED["zones_csv"])
@@ -359,7 +386,13 @@ class Scan:
         stops = g.get("AERION_KEELWAY_STOPS") or {}
         d5 = self.deck(5)
         if d5 and stops:
-            sheet = {s["stop"]: int(P.num(s["frame"])) for s in d5.get("keelway", [])}
+            sheet = {s["stop"]: int(P.num(s.get("frame_canon") or s["frame"])) for s in d5.get("keelway", [])}
+            for s_ in d5.get("keelway", []):
+                if s_.get("frame_canon") and s_["stop"] in stops and stops[s_["stop"]] != int(P.num(s_["frame"])):
+                    self.add("decision", "continuity", "Game Keelway stop must move with the deck cut",
+                             "Aerion %s: errata C10 moves the stop from %s to %s because the deck now starts at %.2f km. "
+                             "The game file still says F%d; it changes only when Jordan asks." % (
+                                 s_["stop"], s_["frame_canon"], s_["frame"], min(p[0] for p in d5["outline_gross"]), stops[s_["stop"]]), "D5", path)
             for nm, f in stops.items():
                 if nm not in sheet:
                     self.add("warning", "continuity", "Game has a Keelway stop the sheet does not", "Aerion: '%s' at F%d." % (nm, f), "D5", path)
@@ -379,7 +412,7 @@ class Scan:
             dist = next((x for x in deck["districts"] if x["id"] == did), None) if deck else None
             if not dist:
                 continue
-            target = dist["revB"]["area_km2"] if dist.get("revB") else dist["area_km2"]
+            target = _target(dist)
             stated = sum(p.get("area_km2_stated") or 0 for p in ps["precincts"])
             calc = sum(p.get("area_calc") or 0 for p in ps["precincts"])
             if stated and abs(stated - target) > 0.15:
@@ -592,7 +625,7 @@ class Scan:
                     x = next((d for d in d5["districts"] if d["name"] == nm), None) if d5 else None
                     am = re.search(r"\(([\d.]+) km²", r[1])
                     if x and am:
-                        want = x["revB"]["area_km2"] if x.get("revB") else x["area_km2"]
+                        want = _target(x)
                         if abs(float(am.group(1)) - want) > 0.05:
                             self.add("warning", "docs", "Ship Reference district area differs",
                                      "%s: reference %s km², current %s km²." % (nm, am.group(1), _f(want)), x["id"], path)

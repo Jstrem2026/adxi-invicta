@@ -1,6 +1,6 @@
 # Strike Hangars — Precinct Plans (✅ canon, approved by Jordan)
 
-Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Strike Hangars is the bow district of Deck 5 (Aerion), from the prow tip to F34, the full width of the deck. Canon (Sheet S5, errata C2 and C4): 42.1 sq mi (109.1 km², Rev B), racks for 3,600 craft and 32 launch shafts up to the Forward Grids, 60,000 people (pilots, deck crews, mechanics, armorers, launch controllers), centre address D5-F19-M, Keelway stop Strike Hangars at F3. The launch shafts are 197 × 131 ft (60 × 40 m) each, at F16–F28 in lanes D–F (port) and T–V (starboard). The precincts fill the district on the Rev B outline, which measures 42.23 sq mi (109.37 km²) forward of F34; errata C2's 109.1 km² is a rounded figure (flagged for Jordan). Jordan approved this plan as canon. Plans are true top views: **bow right, port up**.
+Laid out 27 Nov 2026 following the Port of Arrivals pattern (`Port_of_Arrivals_Precincts.md`). Strike Hangars is the bow district of Deck 5 (Aerion), from the deck's bow end to F34, the full width of the deck. Canon (Sheet S5, errata C2 and C4): 41.2 sq mi (106.8 km², Rev C: 109.1 km² in Rev B, less 2.3 km² cut at the bow by errata C10), racks for 3,600 craft and 32 launch shafts up to the Forward Grids, 60,000 people (pilots, deck crews, mechanics, armorers, launch controllers), centre address D5-F19-M, Keelway stop Strike Hangars at F7 (canon F3; moved by errata C10). The launch shafts are 197 × 131 ft (60 × 40 m) each, at F16–F28 in lanes D–F (port) and T–V (starboard). The precincts fill the district on the Rev B outline, which measures 42.23 sq mi (109.37 km²) forward of F34; errata C2's 109.1 km² is a rounded figure (flagged for Jordan). Jordan approved this plan as canon. Plans are true top views: **bow right, port up**.
 
 Layout rule: the bow end is the crews' way in (Keelway Gate), then the magazines (Ordnance Yards) kept away from everything else, then the four strike wings' rack halls either side of the Keelway with the launch shafts along both hull shoulders, and the repair yards and Wing Command at the stern end next to the Port of Arrivals and the Cruiser Docks. The craft mix in each rack hall (interceptors, strike, heavy strike, scouts) is an assumption: canon only gives the 3,600 total, here 4 wings × 6 squadrons × 150 racks.
 
@@ -12,7 +12,7 @@ Building shapes (Jordan, 27 Nov 2026): buildings follow their blocks. Each block
 
 | # | Precinct | Frames | Lanes | Size | Area | What is there |
 |---|---|---|---|---|---|---|
-| P1 | Keelway Gate | F1–F8 | K–O | 11,217 × 10,283 ft (3.42 × 3.13 km) | 2.23 sq mi (5.79 km²) | Strike Hangars Keelway station (F3), crew check-in, lifts, clinic |
+| P1 | Keelway Gate | F5–F8 | K–O | 4,642 × 10,283 ft (1.42 × 3.13 km) | 1.39 sq mi (3.59 km²) | Strike Hangars Keelway station (F7), crew check-in, lifts, clinic |
 | P2 | Ordnance Yards | F8–F16 | G–S | 13,123 × 21,351 ft (4.00 × 6.51 km) | 7.45 sq mi (19.28 km²) | Magazines, armorers, weapons assembly, fuel, drone racks |
 | P3 | Port Launch Wing | F16–F28 | A–F | 19,685 × 6,262 ft (6.00 × 1.91 km) | 2.57 sq mi (6.66 km²) | Launch shafts 1–16 to the port Forward Grid, launch control, arming aprons |
 | P4 | Starboard Launch Wing | F16–F28 | T–Y | 19,685 × 6,262 ft (6.00 × 1.91 km) | 2.57 sq mi (6.66 km²) | Launch shafts 17–32 to the starboard Forward Grid, recovery apron, damage triage |
@@ -22,43 +22,30 @@ Building shapes (Jordan, 27 Nov 2026): buildings follow their blocks. Each block
 | P8 | Wing Command | F28–F34 | G–S | 9,580 × 21,325 ft (2.92 × 6.50 km) | 7.33 sq mi (18.98 km²) | Strike wing headquarters, operations, briefings, duty lodges, mess, medical |
 | P9 | Starboard Repair Yards | F28–F34 | T–Y | 9,580 × 8,336 ft (2.92 × 2.54 km) | 2.51 sq mi (6.50 km²) | Battle-damage rebuilds, weapons fit, shields, drone repairs |
 
-Total 42.23 sq mi (109.37 km²).
+Total 41.38 sq mi (107.17 km²).
 
-## P1 · Keelway Gate — F1 to F8, lanes K–O
+## P1 · Keelway Gate — F5 to F8, lanes K–O
 
-11,217 × 10,283 ft (3.42 × 3.13 km), 2.23 sq mi (5.79 km²). Where the 60,000 hangar crews arrive for their shifts. The Strike Hangars Keelway stop (canon, F3) sits beside the Keelway. Status: canon.
+4,642 × 10,283 ft (1.42 × 3.13 km), 1.39 sq mi (3.59 km²). Where the 60,000 hangar crews arrive for their shifts. The Strike Hangars Keelway stop (F7, moved from canon F3 by errata C10) sits beside the Keelway. Cut back 28 Nov 2026 (errata C10): the deck now starts at 1.61 mi (2.59 km) from the prow, so the seven buildings that stood in the cut moved into the space left, with the same shapes and rooms, and 13 filler yards and gardens were taken out to make room. Status: canon.
 
-Streets: Keelway, 197 ft (60 m); F4 Street, 98 ft (30 m); F6 Street, 98 ft (30 m).
+Streets: Keelway, 197 ft (60 m); F6 Street, 98 ft (30 m).
 
 | Item | Size | Notes | Code |
 |---|---|---|---|
-| Strike Hangars Station | 1,640 × 427 ft (500 × 130 m) | **Canon** · Keelway stop Strike Hangars, F3 (canon) · two platforms, crew turnstiles | D5F2P1B3A1 |
-| Crew Gate Hall | 1,394 × 2,008 ft (425 × 612 m) | **Canon** · duty check-in for every shift · alert boards · kit issue | D5F2P1B4A1 |
-| Deck Lift Hall | 2,818 × 1,339 ft (859 × 408 m) | **Canon** · lifts to the decks above for crews who live elsewhere | D5F2P1B1A1 |
-| Shift Lodge | 640 × 2,008 ft (195 × 612 m) | **Canon** · rest rooms for crews between shifts · 1,200 bunks | D5F2P1B3A2 |
-| Duty Rosters Office | 1,932 × 817 ft (589 × 249 m) | **Canon** · shift planning for 60,000 crew · shape: courtyard | D5F2P1B5A1 |
-| Gate Canteen | 679 × 1,040 ft (207 × 317 m) | **Canon** · hot food round the clock | D5F2P1B6A1 |
-| Strike Hangars Clinic | 856 × 1,201 ft (261 × 366 m) | **Canon** · first aid, flight medicine, fitness checks | D5F2P1B7A1 |
-| Prow Fire Station | 1,394 × 1,358 ft (425 × 414 m) | **Canon** · crash and fire crews for the bow end | D5F2P1B9A1 |
-| Gate Pod Stop | 853 × 361 ft (260 × 110 m) | **Canon** · pods to every rack hall | D5F2P1B11A1 |
-| Prow Garden | 1,394 × 2,165 ft (425 × 660 m) | **Canon** · small park at the deck's bow tip · shape: rounded corners | D5F2P1B12A1 |
-| Gate Utility Plant | 1,444 × 463 ft (440 × 141 m) | **Canon** · substation · air · water | D5F2P1B14A1 |
-| Gate Service Shaft | 659 × 505 ft (201 × 154 m) | **Canon** · access to the 60 m service layer | D5F2P1B15A1 |
-| Crew Garden 1 | 679 × 1,060 ft (207 × 323 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B6A2 |
-| Gate Yard 1 | 856 × 899 ft (261 × 274 m) | **Canon** · parking for crew pods and tugs | D5F2P1B7A2 |
-| Crew Garden 2 | 1,923 × 965 ft (586 × 294 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B8A1 |
-| Gate Yard 2 | 1,394 × 1,742 ft (425 × 531 m) | **Canon** · parking for crew pods and tugs | D5F2P1B10A1 |
-| Crew Garden 3 | 1,175 × 853 ft (358 × 260 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B11A2 |
-| Gate Yard 3 | 1,444 × 2,434 ft (440 × 742 m) | **Canon** · parking for crew pods and tugs | D5F2P1B13A1 |
-| Crew Garden 4 | 719 × 505 ft (219 × 154 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B15A2 |
-| Gate Yard 4 | 1,444 × 2,434 ft (440 × 742 m) | **Canon** · parking for crew pods and tugs | D5F2P1B16A1 |
-| Crew Garden 5 | 443 × 997 ft (135 × 304 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B5A2 |
-| Gate Yard 5 | 2,241 × 2,165 ft (683 × 660 m) | **Canon** · parking for crew pods and tugs | D5F2P1B6A3 |
-| Crew Garden 6 | 2,064 × 2,165 ft (629 × 660 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B7A3 |
-| Gate Yard 6 | 1,394 × 318 ft (425 × 97 m) | **Canon** · parking for crew pods and tugs | D5F2P1B9A2 |
-| Crew Garden 7 | 154 × 853 ft (47 × 260 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B11A3 |
-| Gate Yard 7 | 1,444 × 1,637 ft (440 × 499 m) | **Canon** · parking for crew pods and tugs | D5F2P1B14A2 |
-| Crew Garden 8 | 1,444 × 1,594 ft (440 × 486 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B15A3 |
+| Strike Hangars Station | 1,640 × 427 ft (500 × 130 m) | **Canon** · Keelway stop Strike Hangars, F7 (moved from F3, errata C10) · two platforms, crew turnstiles | D5F2P1B4A1 |
+| Crew Gate Hall | 1,394 × 2,008 ft (425 × 612 m) | **Canon** · duty check-in for every shift · alert boards · kit issue | D5F2P1B4A2 |
+| Deck Lift Hall | 2,818 × 1,339 ft (859 × 408 m) | **Canon** · lifts to the decks above for crews who live elsewhere | D5F2P1B5A1 |
+| Shift Lodge | 640 × 2,008 ft (195 × 612 m) | **Canon** · rest rooms for crews between shifts · 1,200 bunks | D5F2P1B2A1 |
+| Duty Rosters Office | 1,932 × 817 ft (589 × 249 m) | **Canon** · shift planning for 60,000 crew · shape: courtyard | D5F2P1B4A3 |
+| Gate Canteen | 679 × 1,040 ft (207 × 317 m) | **Canon** · hot food round the clock | D5F2P1B1A1 |
+| Strike Hangars Clinic | 856 × 1,201 ft (261 × 366 m) | **Canon** · first aid, flight medicine, fitness checks | D5F2P1B1A2 |
+| Prow Fire Station | 1,394 × 1,358 ft (425 × 414 m) | **Canon** · crash and fire crews for the bow end | D5F2P1B4A4 |
+| Gate Pod Stop | 853 × 361 ft (260 × 110 m) | **Canon** · pods to every rack hall | D5F2P1B4A5 |
+| Prow Garden | 1,394 × 2,165 ft (425 × 660 m) | **Canon** · small park at the deck's bow tip · shape: rounded corners | D5F2P1B5A2 |
+| Gate Utility Plant | 1,444 × 463 ft (440 × 141 m) | **Canon** · substation · air · water | D5F2P1B4A6 |
+| Gate Service Shaft | 659 × 505 ft (201 × 154 m) | **Canon** · access to the 60 m service layer | D5F2P1B5A3 |
+| Crew Garden 4 | 719 × 505 ft (219 × 154 m) | **Canon** · small park for crews between shifts · shape: rounded corners | D5F2P1B5A4 |
+| Gate Yard 6 | 1,394 × 318 ft (425 × 97 m) | **Canon** · parking for crew pods and tugs | D5F2P1B4A7 |
 
 ## P2 · Ordnance Yards — F8 to F16, lanes G–S
 
@@ -448,21 +435,8 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-10 Prow Garden**: A small park at the very bow tip of the deck, a green spot for crews near the gate.
 - **P1-11 Gate Utility Plant**: The utility plant for the Keelway Gate precinct, supplying power, air and water.
 - **P1-12 Gate Service Shaft**: The Keelway Gate's shaft down to the service layer, used for maintenance and deliveries.
-- **P1-13 Crew Garden 1**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-14 Gate Yard 1**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-15 Crew Garden 2**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-16 Gate Yard 2**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-17 Crew Garden 3**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-18 Gate Yard 3**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
 - **P1-19 Crew Garden 4**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-20 Gate Yard 4**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-21 Crew Garden 5**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-22 Gate Yard 5**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-23 Crew Garden 6**: A small garden in the Keelway Gate where crews relax between shifts.
 - **P1-24 Gate Yard 6**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-25 Crew Garden 7**: A small garden in the Keelway Gate where crews relax between shifts.
-- **P1-26 Gate Yard 7**: A yard in the Keelway Gate where crew pods and tugs are parked between trips.
-- **P1-27 Crew Garden 8**: A small garden in the Keelway Gate where crews relax between shifts.
 
 ### P2 Ordnance Yards
 

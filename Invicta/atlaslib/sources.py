@@ -21,6 +21,7 @@ FIXED = {
     "hull_side_csv": CANON + "/architecture/hull_side_profile_km.csv",
     "hull_side_revB_csv": GAME_DOCS + "/geometry_revB/hull_side_profile_km_revB.csv",
     "revB_readme": GAME_DOCS + "/geometry_revB/README.txt",
+    "revC_readme_game": GAME_DOCS + "/geometry_revC/README.txt",
     "hull_plan_revC_csv": GAME_DOCS + "/geometry_revC/hull_plan_km_revC.csv",
     "hull_side_revC_csv": GAME_DOCS + "/geometry_revC/hull_side_profile_km_revC.csv",
     "crown_revC_json": GAME_DOCS + "/geometry_revC/crown_revC.json",
@@ -43,6 +44,8 @@ def deck_paths(n):
         "gross_canon": "%s/architecture/deck%d_%s_gross_km.csv" % (CANON, n, name),
         "net_revB": "%s/geometry_revB/deck%d_%s_net_km_revB.csv" % (GAME_DOCS, n, name),
         "gross_revB": "%s/geometry_revB/deck%d_%s_gross_km_revB.csv" % (GAME_DOCS, n, name),
+        "net_revC": "%s/geometry_revC/deck%d_%s_net_km_revC.csv" % (GAME_DOCS, n, name),
+        "gross_revC": "%s/geometry_revC/deck%d_%s_gross_km_revC.csv" % (GAME_DOCS, n, name),
         "render": "%s/assets/renders-and-art/Luxuria-Invicta-%02d-%s.png" % (CANON, n, name),
         "emblem": "%s/blueprints/emblems/d%d.png" % (CANON, n),
     }

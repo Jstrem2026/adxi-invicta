@@ -124,11 +124,15 @@ class Loader:
              "systems": [], "drones": "", "key": {}}
         t = self.text(dp["sheet"], "Canon deck data sheet S%d" % n)
         net_rb = self.outline(dp["net_revB"], "Rev B net city floor outline, deck %d" % n)
-        d["outline_net"] = net_rb or self.outline(dp["net_canon"], "Canon net outline, deck %d" % n)
-        d["outline_gross"] = self.outline(dp["gross_revB"], "Rev B gross outline, deck %d" % n, required=False) or \
+        # Revision C (errata C10, Jordan 28 Nov 2026): the decks cut back to fit the concept hull.
+        net_rc = self.outline(dp["net_revC"], "Rev C net city floor outline, deck %d" % n, required=False)
+        d["outline_net"] = net_rc or net_rb or self.outline(dp["net_canon"], "Canon net outline, deck %d" % n)
+        d["outline_gross"] = (net_rc and self.outline(dp["gross_revC"], "Rev C gross outline, deck %d" % n, required=False)) or \
+            self.outline(dp["gross_revB"], "Rev B gross outline, deck %d" % n, required=False) or \
             self.outline(dp["gross_canon"], "Canon gross outline, deck %d" % n)
         d["outline_net_canon"] = self.outline(dp["net_canon"], "Canon net outline, deck %d" % n)
-        d["outline_source"] = dp["net_revB"] if net_rb else dp["net_canon"]
+        d["outline_net_revB"] = net_rb
+        d["outline_source"] = dp["net_revC"] if net_rc else (dp["net_revB"] if net_rb else dp["net_canon"])
         d["net_area_calc"] = round(G.polygon_area(d["outline_net"]), 2) if d["outline_net"] else None
         for k in ("render", "emblem", "sheet_pdf"):
             self.used[dp[k]] = "Deck %d %s" % (n, k)
@@ -230,11 +234,63 @@ class Loader:
             ov = rules.get("revB_overrides", {}).get(dist["id"])
             if ov:
                 dist["revB"] = ov
+        # Revision C (errata C10): a district shape that reaches past the trimmed deck is cut back with it,
+        # and its area shrinks by what was cut. Nothing else about the district changes.
+        if net_rc:
+            self.revc_trim(d, rules)
+        for dist in d["districts"]:
             ps = precinct_sets.get(dist["id"])
             dist["precinct_set"] = ps["file"] if ps else None
             dist["design_status"] = ps["status"] if ps else ("canon (plaza)" if dist["is_plaza"] else "not designed yet")
         # zone reservation CSV (Rev A placement)
         return d
+
+    def revc_trim(self, d, rules):
+        from shapely.geometry import Point, Polygon
+        x0 = min(p[0] for p in d["outline_net"])
+        x1 = max(p[0] for p in d["outline_net"])
+        keep = Polygon([(x0, -8), (x1, -8), (x1, 8), (x0, 8)])
+        for dist in d["districts"]:
+            if dist["is_plaza"] or not dist.get("polygon_km"):
+                continue
+            poly = Polygon(dist["polygon_km"]).buffer(0)
+            cut = poly.area - poly.intersection(keep).area
+            if cut <= 0.05:   # under 0.05 km² is drawing noise at the rounded ends, not a cut
+                continue
+            new = poly.intersection(keep)
+            if new.geom_type != "Polygon":
+                new = max(new.geoms, key=lambda g: g.area)
+            dist["polygon_km_canon"] = dist["polygon_km"]
+            dist["polygon_km"] = [list(p) for p in list(new.exterior.coords)[:-1]]
+            dist["area_calc"] = round((dist["area_calc"] or 0) - cut, 2)
+            base = dist["revB"]["area_km2"] if dist.get("revB") else dist["area_km2"]
+            dist["revC"] = {"area_km2": round(base - cut, 2), "cut_km2": round(cut, 2),
+                            "source": "02_Canon_Errata.md C10, decided by Jordan 28 Nov 2026 (decks cut back to the concept hull)"}
+        # Keelway stops that the cut left outside the deck move back to the first frame 1.0 km inside the
+        # new deck bow (the C8 rule), listed in rules.json "revC_keelway".
+            m = re.match(r"D(\d)-F(\d+)-([A-Y])$", dist.get("centre") or "")
+            if m and not new.buffer(0.25).contains(Point(int(m.group(2)) * 0.5, G.lane_centre_km(m.group(3)))):
+                rp = new.representative_point()
+                dist["centre_canon"] = dist["centre"]
+                dist["centre"] = "D%d-F%d-%s" % (d["n"], round(rp.x / 0.5), G.lane_at(rp.y))
+                dist["revC"]["centre"] = "moved from %s" % dist["centre_canon"]
+        bow = min(p[0] for p in d["outline_gross"])
+        moves = rules.get("revC_keelway", {}).get(str(d["n"]), {})
+        for st in d["keelway"]:
+            f = moves.get(st["stop"])
+            if f is None:
+                # The stop stays at its frame (C8: the frame is right); only its distance from the new deck bow changes.
+                fr = re.match(r"F(\d+)", st["frame"] or "")
+                if fr:
+                    st["from_bow_canon"] = st["from_bow"]
+                    st["from_bow"] = "%.1f km" % (int(fr.group(1)) * 0.5 - bow)
+                continue
+            old = st["frame"]
+            st["frame_canon"], st["address_canon"], st["from_bow_canon"] = old, st["address"], st["from_bow"]
+            st["frame"] = "F%d" % f
+            st["address"] = re.sub(r"^(D\d-)F\d+", lambda m: m.group(1) + "F%d" % f, st["address"])
+            st["from_bow"] = "%.1f km" % (f * 0.5 - bow)
+            st["revC"] = "moved from %s (errata C10)" % old
 
     # -------------------------------------------------------------- crown bridge
     def crown(self):
@@ -353,6 +409,7 @@ class Loader:
                                                "reference_md": "Invicta ship reference (game)",
                                                "precincts_md": "Port of Arrivals precinct plans (game)"}[key])
         docs["revB_readme"] = self.text(FIXED["revB_readme"], "Rev B geometry notes")
+        docs["revC_readme"] = self.text(FIXED["revC_readme_game"], "Rev C geometry notes", required=False)
         errata = errata_summary(docs.get("errata_md") or "")
         model = {
             "generated": time.strftime("%Y-%m-%d %H:%M:%S"),

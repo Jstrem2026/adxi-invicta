@@ -1,20 +1,40 @@
 {
- "status": "assumption",
+ "status": "proposed",
  "x_front_km": 10.7,
  "x_back_km": 18.7,
  "half_width_km": 2.6,
  "nose_km": 1.3,
  "z_base_km": 4.1,
- "z_top_km": 5.35,
- "window_slope_km": 0.8,
- "back_slope_km": 0.5,
+ "z_top_km": 4.54,
+ "terraces_km": [
+  [
+   0.0,
+   4.24
+  ],
+  [
+   0.15,
+   4.39
+  ],
+  [
+   0.3,
+   4.54
+  ]
+ ],
+ "back_slope_km": 0.3,
+ "bridge_level": {
+  "name": "Bridge Level",
+  "floor_m": 3980,
+  "ceiling_m": 4360,
+  "inset_km": 0.12,
+  "note": "Like Deck 1 but smaller: 380 m clear, on a 60 m service layer above Deck 1's ceiling (3,920 m)."
+ },
  "bridge": {
   "length_km": 1.2,
   "beam_km": 0.48,
   "height_km": 0.15,
-  "x_front_km": 11.5
+  "x_front_km": 10.95
  },
- "note": "Crown and Crown Bridge outlines (Rev C, proposed 28 Nov 2026). Axes as the hull files. Place from Jordan; heights are an assumption.",
+ "note": "The Crown, its Bridge Level and the Crown Bridge (Rev C, proposed 28 Nov 2026). Axes as the hull files. Place and level from Jordan; the terrace steps are an assumption.",
  "crown_plan_km": [
   [
    18.7,
@@ -115,52 +135,181 @@
    4.1
   ],
   [
-   11.5,
-   5.35
+   10.7,
+   4.24
   ],
   [
-   18.2,
-   5.35
+   10.85,
+   4.24
+  ],
+  [
+   10.85,
+   4.39
+  ],
+  [
+   11.0,
+   4.39
+  ],
+  [
+   11.0,
+   4.54
+  ],
+  [
+   18.4,
+   4.54
   ],
   [
    18.7,
    4.1
   ]
  ],
+ "level_plan_km": [
+  [
+   18.58,
+   -2.25
+  ],
+  [
+   18.35,
+   -2.48
+  ],
+  [
+   12.01,
+   -2.48
+  ],
+  [
+   11.814,
+   -2.446
+  ],
+  [
+   11.626,
+   -2.345
+  ],
+  [
+   11.441,
+   -2.172
+  ],
+  [
+   11.268,
+   -1.93
+  ],
+  [
+   11.115,
+   -1.624
+  ],
+  [
+   10.99,
+   -1.266
+  ],
+  [
+   10.897,
+   -0.868
+  ],
+  [
+   10.839,
+   -0.441
+  ],
+  [
+   10.82,
+   0.0
+  ],
+  [
+   10.839,
+   0.441
+  ],
+  [
+   10.897,
+   0.868
+  ],
+  [
+   10.99,
+   1.266
+  ],
+  [
+   11.115,
+   1.624
+  ],
+  [
+   11.268,
+   1.93
+  ],
+  [
+   11.441,
+   2.172
+  ],
+  [
+   11.626,
+   2.345
+  ],
+  [
+   11.814,
+   2.446
+  ],
+  [
+   12.01,
+   2.48
+  ],
+  [
+   18.35,
+   2.48
+  ],
+  [
+   18.58,
+   2.25
+  ]
+ ],
+ "level_side_km": [
+  [
+   10.82,
+   3.98
+  ],
+  [
+   10.82,
+   4.36
+  ],
+  [
+   18.58,
+   4.36
+  ],
+  [
+   18.58,
+   3.98
+  ]
+ ],
+ "level_area_km2": 37.13,
  "bridge_plan_km": [
   [
-   11.5,
+   10.95,
    -0.24
   ],
   [
-   12.7,
+   12.15,
    -0.24
   ],
   [
-   12.7,
+   12.15,
    0.24
   ],
   [
-   11.5,
+   10.95,
    0.24
   ]
  ],
  "bridge_side_km": [
   [
-   11.5,
-   5.35
+   10.95,
+   3.98
   ],
   [
-   11.6,
-   5.5
+   10.95,
+   4.13
   ],
   [
-   12.7,
-   5.5
+   12.15,
+   4.13
   ],
   [
-   12.7,
-   5.35
+   12.15,
+   3.98
   ]
  ]
 }
