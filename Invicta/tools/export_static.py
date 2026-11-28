@@ -15,7 +15,7 @@ It runs the same build and scan as the local app, then writes:
     _headers                 Cloudflare Pages headers
 
 Exit code 1 when the scan finds errors, so a CI build can stop on them.
-Needs Python 3.8+ and nothing else.
+Needs Python 3.8+ and Shapely (pip install -r Invicta/requirements.txt).
 """
 
 import argparse
@@ -31,6 +31,7 @@ sys.path.insert(0, APP)
 from atlaslib.sources import find_root  # noqa: E402
 from atlaslib.server import build, SERVE_EXT, WEB  # noqa: E402
 from atlaslib.report import report_md  # noqa: E402
+from atlaslib import fabric as FB  # noqa: E402
 
 # Only files under these folders may be published. Everything else the model
 # mentions (for example Game/Tools/...) is listed in the app but not copied.
@@ -98,6 +99,17 @@ def allowed(rel):
     return any(rel == a or (a.endswith("/") and rel.startswith(a)) for a in ALLOWED)
 
 
+def _publish_model(job):
+    """One plan -> api/models/<uid>.json with its fabric. Returns (uid, [levels, elements]) for the index."""
+    src, out_dir = job
+    with open(src, encoding="utf-8") as f:
+        m = json.load(f)
+    uid = m.get("building_uid") or os.path.basename(src)[:-5]
+    with open(os.path.join(out_dir, uid + ".json"), "w", encoding="utf-8") as f:
+        json.dump(FB.with_fabric(m), f, ensure_ascii=False, separators=(",", ":"))
+    return uid, [len(m.get("levels", [])), len(m.get("elements", []))]
+
+
 def main():
     ap = argparse.ArgumentParser(description="Export the static web copy")
     ap.add_argument("--out", default=os.path.join(APP, "site"))
@@ -128,15 +140,17 @@ def main():
     md = os.path.join(APP, "data", "models")
     os.makedirs(os.path.join(out, "api", "models"), exist_ok=True)
     if os.path.isdir(md):
-        data["model_index"] = {}
-        for n in sorted(os.listdir(md)):
-            if n.endswith(".json"):
-                with open(os.path.join(md, n), encoding="utf-8") as f:
-                    m = json.load(f)
-                uid = m.get("building_uid") or n[:-5]
-                data["model_index"][uid] = [len(m.get("levels", [])), len(m.get("elements", []))]
-                with open(os.path.join(out, "api", "models", uid + ".json"), "w", encoding="utf-8") as f:
-                    json.dump(m, f, ensure_ascii=False, separators=(",", ":"))
+        names = sorted(n for n in os.listdir(md) if n.endswith(".json"))
+        jobs = [(os.path.join(md, n), os.path.join(out, "api", "models")) for n in names]
+        # Published with its fabric (walls, doors, windows, stairs, slabs) worked out from the rooms
+        # (atlaslib/fabric.py, plan step 3); the plan file itself is unchanged. Side by side on every processor.
+        try:
+            from concurrent.futures import ProcessPoolExecutor
+            with ProcessPoolExecutor() as ex:
+                done = list(ex.map(_publish_model, jobs, chunksize=8))
+        except Exception:  # noqa: BLE001  (no helper processes here: one by one)
+            done = [_publish_model(j) for j in jobs]
+        data["model_index"] = {uid: idx for uid, idx in done}
     data["model"]["root"] = "(web copy)"  # never publish a local disk path
     data["static_export"] = True
 

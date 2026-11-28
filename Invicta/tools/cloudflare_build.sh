@@ -4,4 +4,6 @@
 # Fails (and keeps the last good site live) when the scan finds errors.
 set -euo pipefail
 cd "$(dirname "$0")/../.."
+python3 -m pip install -q -r Invicta/requirements.txt
 python3 Invicta/tools/export_static.py --out Invicta/site
+python3 Invicta/tools/gen_docs.py --out Invicta/site/docs

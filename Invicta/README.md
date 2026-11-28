@@ -6,10 +6,13 @@ Blueprint explorer, progress dashboard and consistency scanner for the Luxuria I
 
 ## Run it
 
-Needs Python 3.8 or newer. Nothing to install.
+Needs Python 3.8 or newer and Shapely, the geometry library the scan uses.
+The easy way: double-click **Start ADXI Invicta.bat** in this folder. The first time, it installs
+Shapely for you. By hand:
 
 ```
-cd C:\Studio\ArcaneDrift\Invicta
+cd C:\Studio\ArcaneDrift\Invicta\Invicta
+python -m pip install -r requirements.txt     (once)
 python atlas.py
 ```
 
@@ -21,7 +24,15 @@ python atlas.py --scan
 ```
 
 runs only the scanner, prints a summary and writes `reports/scan_report.md`.
-It exits with code 1 when it finds errors.
+It exits with code 1 when it finds errors. The scan checks everything from the ship down to each
+room in every building plan, with exact geometry. Room-plan results are kept in
+`reports/room_check_cache.json` so a rescan only re-checks the plans that changed.
+
+```
+python -m unittest discover -s tests -t .
+```
+
+runs the tests for the geometry and the room checks.
 
 Other options: `--port 9000`, `--no-browser`, `--root <ArcaneDrift folder>`.
 
@@ -43,10 +54,14 @@ Canon datasheets and geometry in `Docs/1_Canon_Source/Invicta`, the design docs 
 ## Folders
 
 - `atlas.py`: start here.
-- `atlaslib/`: loader, geometry, scanner, progress, server.
+- `atlaslib/`: loader, geometry (exact, with Shapely), scanner, room-plan checks (`rooms.py`), walls/doors/windows/stairs worked out from the rooms (`fabric.py`), progress, server.
+- `tests/`: tests for the geometry and the room checks.
 - `web/`: the browser app.
 - `data/`: precinct and building data, and scanner rules. See `data/README.md`.
 - `tools/`: one-time import scripts (precinct SVG reader, Port of Arrivals seed).
 - `reports/`: scan reports (generated).
+- `docs/`: readable docs for every district, precinct and building plan, generated from the data by
+  `python tools/gen_docs.py` (a few seconds). Not kept in git; the published copy is at
+  invicta.arcanedrift.net/docs/README.md.
 
 Rules for Claude design sessions are in `CLAUDE.md`.

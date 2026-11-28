@@ -7,9 +7,11 @@ and every open issue the scanner finds.
 
 ## Run it on your own computer
 
-Needs Python 3.8 or newer. Nothing to install.
+Needs Python 3.8 or newer and Shapely (the geometry library the scan uses). On Windows,
+double-click `Invicta/Start ADXI Invicta.bat`: it installs Shapely the first time. By hand:
 
 ```
+python -m pip install -r Invicta/requirements.txt    once
 python Invicta/atlas.py           opens the app in your browser
 python Invicta/atlas.py --scan    runs the scanner and writes Invicta/reports/scan_report.md
 ```

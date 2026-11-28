@@ -5,7 +5,9 @@ for the Luxuria Invicta (Arcane Drift game data only, not the EX101).
     python atlas.py --scan     run the scanner only, print the summary, write reports/scan_report.md
                                (exit code 1 if it finds errors)
 
-Needs Python 3.8+ and nothing else.
+Needs Python 3.8+ and Shapely, the geometry library the scan uses. Install it once with
+    python -m pip install -r requirements.txt
+("Start ADXI Invicta.bat" does this for you on the first run.)
 """
 
 import argparse
@@ -14,6 +16,13 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+
+try:
+    import shapely  # noqa: F401
+except ImportError:
+    sys.exit("ADXI: Invicta needs Shapely, the geometry library its scan uses. Install it once with:\n"
+             "    python -m pip install -r \"%s\"\n"
+             "then run this again." % os.path.join(HERE, "requirements.txt"))
 
 from atlaslib.sources import find_root  # noqa: E402
 

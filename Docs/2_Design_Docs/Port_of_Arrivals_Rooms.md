@@ -2,7 +2,7 @@
 
 Deck 5 · Port of Arrivals. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**117 buildings, 10,120 rooms.**
+**117 buildings, 10,084 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -14,7 +14,7 @@ Hall of Arrivals, arrival hangar, shuttle pads
 
 **What it is for:** The front door of the Invicta. Every shuttle passenger steps off into this great hall, is greeted, and is sent on to customs, the terminals or the Keelway. It is the landmark of Deck 5 and the first room most visitors ever see aboard.
 
-98 ft (30 m) tall, 5 above deck, 2,044,800 sq ft (189,970 m²) of rooms. Room plan proposed.
+98 ft (30 m) tall, 5 above deck, 2,090,500 sq ft (194,210 m²) of rooms. Room plan proposed.
 
 **Look:** A vast hall of polished dark stone with amber light lines every 20 ft (6 m) storey and bronze trim, its whole hull side a 1,969 ft (600 m) Skyglass wall onto space (canon look).
 
@@ -25,23 +25,23 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Great Hall | 1 | 1,033,300 sq ft (96,000 m²) | The great hall itself, 98 ft (30 m) high and open to the roof, lit through the Skyglass wall that looks out on Haven's Reach. Every arriving passenger walks through it. Inside: In-processing circle, Seating island (bow), Seating island (stern), Arrivals boards, Door to the arrival hangar. |
-| Main entrance hall | 1 | 5,940 sq ft (552 m²) | Inside the 98 ft (30 m) wide main entrance (placeholder size), where people leave for the Arrivals Forecourt. |
-| Information desk | 1 | 1,300 sq ft (121 m²) | Staff answer questions and hand out ship maps in every language. |
+| Main entrance hall | 1 | 5,340 sq ft (496 m²) | Inside the 98 ft (30 m) wide main entrance (placeholder size), where people leave for the Arrivals Forecourt. |
+| Information desk | 1 | 1,290 sq ft (120 m²) | Staff answer questions and hand out ship maps in every language. |
 | Greeters' office | 1 | 1,610 sq ft (150 m²) | Base for the greeters who welcome each shuttle load of new arrivals. |
-| Guides' room | 1 | 1,300 sq ft (121 m²) | Guides wait here to walk newcomers to customs, the terminals or the Keelway. |
+| Guides' room | 1 | 1,290 sq ft (120 m²) | Guides wait here to walk newcomers to customs, the terminals or the Keelway. |
 | Porters' station | 1 | 2,150 sq ft (200 m²) | Porters and their luggage trolleys, ready to carry bags for arrivals. |
-| Arrivals clerks' office | 1 | 2,160 sq ft (200 m²) | Clerks log every arrival and issue first passes and papers. |
-| Customs officers' post | 1 | 1,940 sq ft (180 m²) | Customs officers watch the hall and send travellers on to customs and health screening. |
-| Assisted travel desk | 1 | 1,450 sq ft (135 m²) | Help for travellers who need a wheelchair, a guide or extra time. |
-| Lost and found | 1 | 1,150 sq ft (107 m²) | Things left in the hall are handed in and claimed here. |
-| Family room | 1 | 1,160 sq ft (108 m²) | A quiet room with changing tables and play space for families after a long flight. |
-| Security desk | 1 | 1,150 sq ft (107 m²) | Guards watch the cameras and the doors from here. |
-| First-aid room | 1 | 1,150 sq ft (107 m²) | A couch, first-aid kit and defibrillator for anyone taken ill. |
-| Toilets | 2 | 1,150 sq ft (107 m²) each | Public toilets, with an accessible toilet and baby-changing room. |
-| Locker room | 1 | 1,150 sq ft (107 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Cleaners' room | 1 | 3,840 sq ft (357 m²) | Cleaning machines, supplies and a sink for the building's cleaning crew. |
-| Waiting lounge | 22 | 5,700 sq ft (530 m²) each | Seats along the hall for people waiting for a connection or a friend. |
-| Kiosk | 21 | 2,240 sq ft (208 m²) each | Coffee, water and snacks for new arrivals. |
+| Arrivals clerks' office | 1 | 2,150 sq ft (200 m²) | Clerks log every arrival and issue first passes and papers. |
+| Customs officers' post | 1 | 1,950 sq ft (181 m²) | Customs officers watch the hall and send travellers on to customs and health screening. |
+| Assisted travel desk | 1 | 1,290 sq ft (120 m²) | Help for travellers who need a wheelchair, a guide or extra time. |
+| Lost and found | 1 | 780 sq ft (72 m²) | Things left in the hall are handed in and claimed here. |
+| Family room | 1 | 1,290 sq ft (120 m²) | A quiet room with changing tables and play space for families after a long flight. |
+| Security desk | 1 | 1,290 sq ft (120 m²) | Guards watch the cameras and the doors from here. |
+| First-aid room | 1 | 1,270 sq ft (118 m²) | A couch, first-aid kit and defibrillator for anyone taken ill. |
+| Toilets | 2 | 1,290 sq ft (120 m²) each | Public toilets, with an accessible toilet and baby-changing room. |
+| Locker room | 1 | 1,270 sq ft (118 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Cleaners' room | 1 | 1,290 sq ft (120 m²) | Cleaning machines, supplies and a sink for the building's cleaning crew. |
+| Waiting lounge | 30 | 4,910 sq ft (456 m²) each | Seats along the hall for people waiting for a connection or a friend. |
+| Kiosk | 29 | 1,290 sq ft (119 m²) each | Coffee, water and snacks for new arrivals. |
 
 #### Level 2 to Level 5 · Gallery floor (4 identical floors)
 
@@ -50,25 +50,25 @@ Floor at 20 ft (6 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Great Hall | 1 | 1,033,300 sq ft (96,000 m²) | The great hall itself, 98 ft (30 m) high and open to the roof, lit through the Skyglass wall that looks out on Haven's Reach. Every arriving passenger walks through it. Inside: In-processing circle, Seating island (bow), Seating island (stern), Arrivals boards, Door to the arrival hangar. |
-| Gallery café | 1 | 5,940 sq ft (552 m²) | A café on the gallery with views down into the great hall and out through the Skyglass wall. |
-| Viewing gallery | 1 | 6,460 sq ft (600 m²) | An open gallery where visitors watch the hall and the shuttles outside. |
-| Hall control room | 1 | 1,630 sq ft (151 m²) | Staff run the hall's lights, screens, doors and crowd flow. |
-| Arrivals management office | 1 | 2,160 sq ft (200 m²) | The managers who run the Hall of Arrivals day to day. |
-| Customs supervisors' office | 1 | 1,660 sq ft (154 m²) | Senior customs officers who oversee the hall's posts. |
-| Translation service | 1 | 1,150 sq ft (107 m²) | Interpreters who help arrivals who don't speak the ship's languages. |
-| Tea point | 1 | 1,160 sq ft (108 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 1,150 sq ft (107 m²) | Toilets, showers and changing space for the staff. |
+| Gallery café | 1 | 5,340 sq ft (496 m²) | A café on the gallery with views down into the great hall and out through the Skyglass wall. |
+| Viewing gallery | 1 | 6,470 sq ft (601 m²) | An open gallery where visitors watch the hall and the shuttles outside. |
+| Hall control room | 1 | 1,610 sq ft (150 m²) | Staff run the hall's lights, screens, doors and crowd flow. |
+| Arrivals management office | 1 | 2,150 sq ft (200 m²) | The managers who run the Hall of Arrivals day to day. |
+| Customs supervisors' office | 1 | 1,290 sq ft (120 m²) | Senior customs officers who oversee the hall's posts. |
+| Translation service | 1 | 1,000 sq ft (92 m²) | Interpreters who help arrivals who don't speak the ship's languages. |
+| Tea point | 1 | 1,290 sq ft (120 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 1,290 sq ft (120 m²) | Toilets, showers and changing space for the staff. |
 | Plant room | 1 | 1,290 sq ft (120 m²) | Air handling units, pumps and electrical boards that keep this floor running. |
-| Comms room | 1 | 1,160 sq ft (108 m²) | Network switches and the building's data and radio links. |
-| Quiet room | 1 | 1,150 sq ft (107 m²) | A small quiet room for prayer, rest or a private moment. |
-| Staff office | 68 | 1,310 sq ft (122 m²) each | Desks for the hall's greeters, guides and clerks. |
-| Meeting room | 67 | 1,320 sq ft (122 m²) each | A room for staff meetings and private talks with travellers. |
+| Comms room | 1 | 1,270 sq ft (118 m²) | Network switches and the building's data and radio links. |
+| Quiet room | 1 | 1,290 sq ft (120 m²) | A small quiet room for prayer, rest or a private moment. |
+| Staff office | 76 | 1,190 sq ft (111 m²) each | Desks for the hall's greeters, guides and clerks. |
+| Meeting room | 75 | 1,290 sq ft (120 m²) each | A room for staff meetings and private talks with travellers. |
 
 ### P2-02 · Arrival hangar
 
 **What it is for:** A single covered bay on the bow side of the Hall where an arriving shuttle can be parked indoors, unloaded under cover and turned around without blocking the open gates.
 
-49 ft (15 m) tall, 3 above deck, 73,630 sq ft (6,840 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 3 above deck, 74,570 sq ft (6,928 m²) of rooms. Room plan proposed.
 
 **Look:** A gunmetal hangar against the hull beside the Hall, with an orange-lit dock door and a marked pad inside. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
@@ -83,8 +83,8 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Baggage transfer room | 1 | 860 sq ft (80 m²) | Bags come off the shuttle and are loaded onto carts for the Hall. |
 | Ground crew room | 1 | 650 sq ft (60 m²) | The hangar's ground crew wait here between arrivals. |
 | Tool room | 1 | 430 sq ft (40 m²) | Tools and spares for turning the shuttle round. |
-| Staff toilets and showers | 1 | 610 sq ft (57 m²) | Toilets, showers and changing space for the staff. |
-| Offices | 7 | 1,280 sq ft (119 m²) each | Offices for the people who work in the building. |
+| Staff toilets and showers | 1 | 730 sq ft (68 m²) | Toilets, showers and changing space for the staff. |
+| Offices | 7 | 1,300 sq ft (121 m²) each | Offices for the people who work in the building. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
 
@@ -94,16 +94,16 @@ Floor at 16 ft (5 m) above the deck; 16 ft (5 m) floor to floor.
 |---|---|---|---|
 | Arrival hangar bay | 1 | 37,890 sq ft (3,520 m²) | One covered bay where an arriving shuttle comes in through the hull dock door, lands on the pad and is unloaded under cover. Inside: Shuttle pad, Dock door. |
 | Hangar control room | 1 | 540 sq ft (50 m²) | Opens and closes the dock door and guides the shuttle onto the pad. |
-| Crew rest room | 1 | 540 sq ft (51 m²) | Shuttle crews rest here while their craft is turned round. |
+| Crew rest room | 1 | 530 sq ft (50 m²) | Shuttle crews rest here while their craft is turned round. |
 | Plant room | 1 | 1,290 sq ft (120 m²) | Air handling units, pumps and electrical boards that keep this floor running. |
-| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Offices | 7 | 1,280 sq ft (119 m²) each | Offices for the people who work in the building. |
+| Tea point | 1 | 730 sq ft (68 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Offices | 7 | 1,300 sq ft (121 m²) each | Offices for the people who work in the building. |
 
 ### P2-03 · Shuttle gates G1–G16
 
 **What it is for:** Sixteen gates along the hull where passenger shuttles dock. Each gate has its own door to the apron, so a shuttle can open up, let its passengers walk into the concourse and leave again while the next one waits.
 
-49 ft (15 m) tall, 1 (single high bay each), 826,700 sq ft (76,800 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 1 (single high bay each), 600,600 sq ft (55,800 m²) of rooms. Room plan proposed.
 
 **Look:** Gunmetal sheds with full-width bay doors and a light strip over each door. Port of Arrivals style: graphite and gunmetal metal cladding, white exterior light lines.
 
@@ -113,22 +113,22 @@ Floor at deck level; 49 ft (15 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Gate G1 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G2 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G3 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G4 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G5 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G6 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G7 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G8 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G9 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G10 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G11 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G12 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G13 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G14 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G15 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
-| Gate G16 | 1 | 51,670 sq ft (4,800 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G1 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G2 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G3 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G4 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G5 | 1 | 25,830 sq ft (2,400 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G6 | 1 | 32,290 sq ft (3,000 m²) | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G7 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G8 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G9 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G10 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G11 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G12 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G13 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G14 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G15 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
+| Gate G16 | 2 | 19,380 sq ft (1,800 m²) each | A covered gate where one passenger shuttle docks; its passengers step off and walk to the Hall of Arrivals. Inside: Craft door, Tool room, Staff door. |
 | Row end (open air) | 4 | 22,600 sq ft (2,100 m²) each | Open ground at the end of the row, kept clear for walkways and fire access. |
 | Gate gap (open air) | 14 | 12,920 sq ft (1,200 m²) each | A 66 ft (20 m) gap between two gate sheds, kept clear for walkways, fire access and service cables. |
 
@@ -189,7 +189,7 @@ Floor at 16 ft (5 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Wards | 3 | 18,620 sq ft (1,730 m²) each | Rooms with beds for patients who need to stay. |
-| Consulting rooms | 10 | 270 sq ft (25 m²) each | A doctor's room for seeing patients. |
+| Consulting rooms | 4 | 670 sq ft (62 m²) each | A doctor's room for seeing patients. |
 | Staff rooms | 1 | 29,610 sq ft (2,751 m²) | Rooms for staff to rest and change. |
 | Quarantine suites | 18 | 3,640 sq ft (338 m²) each | Rooms where people stay while in quarantine. |
 | Family rooms | 4 | 5,650 sq ft (525 m²) each | Rooms where families can stay together. |
@@ -257,8 +257,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Inbound bag tunnel | 1 | 230,200 sq ft (21,390 m²) | The tunnel bringing bags from the gates. |
-| Belt feed room | 1 | 230,200 sq ft (21,390 m²) | Where bags are loaded onto the reclaim belts. |
+| Inbound bag tunnel | 1 | 228,500 sq ft (21,220 m²) | The tunnel bringing bags from the gates. |
+| Belt feed room | 1 | 228,500 sq ft (21,220 m²) | Where bags are loaded onto the reclaim belts. |
 
 #### Level 1 · Reclaim hall
 
@@ -318,7 +318,7 @@ Floor at 20 ft (6 m) above the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Welcome hall | 1 | 33,580 sq ft (3,120 m²) | The hall where newcomers are welcomed to the ship. |
+| Welcome hall | 2 | 16,360 sq ft (1,520 m²) each | The hall where newcomers are welcomed to the ship. |
 | Invicta exhibition | 1 | 126,600 sq ft (11,760 m²) | An exhibition on the ship's history and how it works. |
 | Cinema | 1 | 16,140 sq ft (1,499 m²) | A cinema. |
 | Group rooms | 4 | 1,290 sq ft (120 m²) each | Rooms for tour groups. |
@@ -330,7 +330,7 @@ Floor at 36 ft (11 m) above the deck; 13 ft (4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Roof viewing deck | 1 | 75,350 sq ft (7,000 m²) | A rooftop deck with views over the port. |
+| Roof viewing deck | 2 | 37,240 sq ft (3,460 m²) each | A rooftop deck with views over the port. |
 
 ### P2-16 · Arrivals Police Post
 
@@ -348,7 +348,7 @@ Floor at deck level; 14 ft (4.2 m) floor to floor.
 |---|---|---|---|
 | Front desk | 2 | 12,940 sq ft (1,202 m²) each | Where visitors are greeted and helped. |
 | Interview rooms | 3 | 330 sq ft (30 m²) each | Rooms where suspects and witnesses are interviewed and recorded. |
-| Holding rooms | 6 | 130 sq ft (12 m²) each | Locked rooms where people are held for a short time. |
+| Holding rooms | 1 | 780 sq ft (72 m²) | Locked rooms where people are held for a short time. |
 | Duty office | 1 | 26,130 sq ft (2,427 m²) | The office of the officer in charge of the shift. |
 | Vehicle garage | 1 | 15,930 sq ft (1,480 m²) | Garage for patrol vehicles. |
 | Evidence store | 1 | 15,930 sq ft (1,480 m²) | A locked store for evidence. |
@@ -489,16 +489,17 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Industrial laundry & linen | 1 | 124,000 sq ft (11,520 m²) | Washes the lodge's linen. |
-| Mechanical plant & HVAC | 1 | 124,000 sq ft (11,520 m²) | Heating, cooling and air plant. |
+| Industrial laundry & linen | 2 | 60,450 sq ft (5,616 m²) each | Washes the lodge's linen. |
+| Mechanical plant & HVAC | 2 | 60,450 sq ft (5,616 m²) each | Heating, cooling and air plant. |
 | Electrical rooms | 1 | 37,200 sq ft (3,456 m²) | Electrical switchgear and boards. |
 | Water treatment | 1 | 37,200 sq ft (3,456 m²) | Cleans and treats water. |
 | Maintenance workshop | 1 | 93,000 sq ft (8,640 m²) | Repairs for the building. |
-| Stores & crew equipment | 1 | 93,000 sq ft (8,640 m²) | Stores of crew equipment. |
+| Stores & crew equipment | 2 | 45,920 sq ft (4,266 m²) each | Stores of crew equipment. |
 | Building automation | 1 | 55,800 sq ft (5,184 m²) | Computers that run the building's systems. |
-| Receiving & waste sorting | 1 | 74,400 sq ft (6,912 m²) | Deliveries come in and waste is sorted. |
+| Receiving & waste sorting | 2 | 35,650 sq ft (3,312 m²) each | Deliveries come in and waste is sorted. |
 | Cleaning supplies | 1 | 37,200 sq ft (3,456 m²) | Cleaning supplies. |
 | Service corridor | 1 | 62,000 sq ft (5,760 m²) | A back corridor for staff and deliveries. |
+| Walkways | 10 | 51,200 sq ft (4,757 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 1 · Arrivals & Commons
 
@@ -514,15 +515,16 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Operations & duty offices | 1 | 46,500 sq ft (4,320 m²) | Offices of the lodge's managers. |
 | Security desk | 1 | 13,950 sq ft (1,296 m²) | Guards watch the doors and cameras. |
 | Medical station | 1 | 32,550 sq ft (3,024 m²) | A nurse and first aid for crews. |
-| Dining hall & cafeteria | 1 | 124,000 sq ft (11,520 m²) | A dining hall serving meals. |
+| Dining hall & cafeteria | 2 | 60,450 sq ft (5,616 m²) each | A dining hall serving meals. |
 | Kitchen & food stores | 1 | 74,400 sq ft (6,912 m²) | Where meals are cooked and food is stored. |
 | Coffee bar & grab-and-go | 1 | 24,800 sq ft (2,304 m²) | Coffee and food to take away. |
-| Central lounge | 1 | 99,200 sq ft (9,216 m²) | A big lounge in the middle of the lodge. |
-| Quiet lounge & reading | 1 | 62,000 sq ft (5,760 m²) | A quiet lounge for reading. |
+| Central lounge | 2 | 48,830 sq ft (4,536 m²) each | A big lounge in the middle of the lodge. |
+| Quiet lounge & reading | 2 | 30,230 sq ft (2,808 m²) each | A quiet lounge for reading. |
 | Recreation room | 1 | 49,600 sq ft (4,608 m²) | Games and recreation. |
 | Crew supplies shop | 1 | 24,800 sq ft (2,304 m²) | A shop for crew essentials. |
 | Restrooms | 1 | 18,600 sq ft (1,728 m²) | Toilets. |
 | Housekeeping & storage | 1 | 62,000 sq ft (5,760 m²) | Cleaning staff and their stores. |
+| Walkways | 9 | 37,130 sq ft (3,449 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 2 · Residential & Recreation
 
@@ -531,17 +533,18 @@ Floor at 26 ft (8 m) above the deck; 26 ft (8 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium (open to Level 3) | 1 | 74,400 sq ft (6,912 m²) | A tall open atrium at the heart of the lodge, rising to Level 3. |
-| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 3 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 4 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
+| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 3 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
+| Cabin wing 4 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
 | Housekeeping & linen | 1 | 46,500 sq ft (4,320 m²) | Cleaning staff and clean linen. |
 | Fitness centre & walking track | 1 | 99,200 sq ft (9,216 m²) | A gym and an indoor walking track. |
 | Movie theatre | 1 | 23,250 sq ft (2,160 m²) | A small cinema for crews. |
 | Gaming & entertainment | 1 | 23,250 sq ft (2,160 m²) | Games and entertainment. |
 | Wellness & recovery rooms | 1 | 62,000 sq ft (5,760 m²) | Massage and recovery rooms. |
-| Communal kitchen & social lounge | 1 | 62,000 sq ft (5,760 m²) | A shared kitchen and lounge. |
-| Study rooms & workstations | 1 | 38,750 sq ft (3,600 m²) | Desks for study and work. |
+| Communal kitchen & social lounge | 2 | 30,230 sq ft (2,808 m²) each | A shared kitchen and lounge. |
+| Study rooms & workstations | 2 | 18,600 sq ft (1,728 m²) each | Desks for study and work. |
+| Walkways | 14 | 46,790 sq ft (4,347 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 3 · Crew Residential
 
@@ -550,13 +553,14 @@ Floor at 52 ft (16 m) above the deck; 26 ft (8 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium (open to Level 3) | 1 | 74,400 sq ft (6,912 m²) | A tall open atrium at the heart of the lodge, rising to Level 3. |
-| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 3 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 4 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
+| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 3 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
+| Cabin wing 4 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
 | Housekeeping & linen | 1 | 46,500 sq ft (4,320 m²) | Cleaning staff and clean linen. |
 | Quiet lounges | 1 | 99,200 sq ft (9,216 m²) | Quiet lounges. |
 | Long-stay sitting areas | 1 | 62,000 sq ft (5,760 m²) | Seating for crews staying several days. |
+| Walkways | 15 | 53,280 sq ft (4,950 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 4 to Level 5 · Tower Quarters (2 identical floors)
 
@@ -601,7 +605,7 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Transformer bays | 6 | 16,360 sq ft (1,520 m²) each | Transformers that step the ship's power down for the precinct. |
+| Transformer bays | 6 | 14,320 sq ft (1,330 m²) each | Transformers that step the ship's power down for the precinct. |
 | Switch room | 1 | 26,930 sq ft (2,502 m²) | Electrical switchgear for the pumps. |
 | Water pumps | 1 | 21,470 sq ft (1,995 m²) | Pumps that keep water flowing to the precinct. |
 | Control room | 1 | 49,760 sq ft (4,623 m²) | Operators watch and control the building's systems. |
@@ -615,7 +619,7 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Air handling | 1 | 98,170 sq ft (9,120 m²) | Fans and filters that supply fresh air. |
+| Air handling | 1 | 85,900 sq ft (7,980 m²) | Fans and filters that supply fresh air. |
 | Stores | 1 | 98,170 sq ft (9,120 m²) | Lockable stores for supplies, spares and equipment. |
 
 ### P2-21 · Service Shaft 1
@@ -632,7 +636,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 75,350 sq ft (7,000 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 37,240 sq ft (3,460 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 75,350 sq ft (7,000 m²) | Lifts for goods going down to and up from the service layer. |
 
 #### Level 1 · Ground floor
@@ -641,9 +645,9 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 10,170 sq ft (945 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 2 | 4,360 sq ft (405 m²) each | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 10,170 sq ft (945 m²) | A room where the crew rest and take breaks. |
-| Vehicle lift | 1 | 75,350 sq ft (7,000 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 37,240 sq ft (3,460 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 75,350 sq ft (7,000 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle queue (open air) | 1 | 120,600 sq ft (11,200 m²) | A lane where vehicles wait for the lift. |
 
@@ -653,7 +657,7 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 75,350 sq ft (7,000 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 37,240 sq ft (3,460 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 75,350 sq ft (7,000 m²) | Lifts for goods going down to and up from the service layer. |
 
 ### P2-23 · Service Shaft 2
@@ -670,7 +674,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift 1 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift 1 | 2 | 59,850 sq ft (5,560 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 120,600 sq ft (11,200 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -680,10 +684,10 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 20,340 sq ft (1,890 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 17,440 sq ft (1,620 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 4,300 sq ft (400 m²) | A room where the crew rest and take breaks. |
 | Stores | 1 | 16,040 sq ft (1,490 m²) | Lockable stores for supplies, spares and equipment. |
-| Vehicle lift 1 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift 1 | 2 | 59,850 sq ft (5,560 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 120,600 sq ft (11,200 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
 | Vehicle ramp and queue (open air) | 1 | 256,200 sq ft (23,800 m²) | A ramp and waiting lane for vehicles. |
@@ -694,9 +698,9 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 20,340 sq ft (1,890 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 17,440 sq ft (1,620 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 20,340 sq ft (1,890 m²) | Lockable stores for supplies, spares and equipment. |
-| Vehicle lift 1 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift 1 | 2 | 59,850 sq ft (5,560 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 120,600 sq ft (11,200 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 120,600 sq ft (11,200 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -717,11 +721,11 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 | Kiosk | 2 | 1,030 sq ft (96 m²) each | Sells drinks, ice cream and snacks. |
 | Toilets | 2 | 1,030 sq ft (96 m²) each | Public toilets for garden visitors. |
 | Gardeners' store | 2 | 1,030 sq ft (96 m²) each | Tools and mowers for the garden crew. |
-| Lawn (open air) | 2 | 726,000 sq ft (67,450 m²) each | Open grass for sitting, picnics and games. |
-| Welcome lawn (open air) | 2 | 484,100 sq ft (44,980 m²) each | A lawn where travellers sit after their flight and wait for friends. |
-| Tree grove (open air) | 2 | 483,900 sq ft (44,960 m²) each | Shady trees with benches underneath. |
-| Flower borders (open air) | 2 | 242,100 sq ft (22,490 m²) each | Long beds of flowers along the boulevard. |
-| Paths and benches (open air) | 2 | 241,900 sq ft (22,470 m²) each | Paved paths with benches and lamps that lead through the forecourt garden. |
+| Lawn (open air) | 2 | 817,200 sq ft (75,920 m²) each | Open grass for sitting, picnics and games. |
+| Welcome lawn (open air) | 2 | 544,800 sq ft (50,610 m²) each | A lawn where travellers sit after their flight and wait for friends. |
+| Tree grove (open air) | 1 | 542,400 sq ft (50,390 m²) | Shady trees with benches underneath. |
+| Flower borders (open air) | 2 | 272,700 sq ft (25,330 m²) each | Long beds of flowers along the boulevard. |
+| Paths and benches (open air) | 2 | 272,300 sq ft (25,300 m²) each | Paved paths with benches and lamps that lead through the forecourt garden. |
 
 ## P5 · Terminals
 
@@ -741,7 +745,7 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deck lift lobby | 1 | 322,900 sq ft (30,000 m²) | Lifts to the other decks. |
+| Deck lift lobby | 2 | 161,000 sq ft (14,960 m²) each | Lifts to the other decks. |
 | Baggage transfer belts | 1 | 322,900 sq ft (30,000 m²) | Belts carrying bags between areas. |
 | Service road | 1 | 322,900 sq ft (30,000 m²) | A road for service vehicles. |
 
@@ -751,7 +755,7 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Great transfer hall (domed) | 1 | 968,800 sq ft (90,000 m²) | A great domed hall where travellers change between shuttles and the rest of the ship. |
+| Great transfer hall (domed) | 2 | 483,900 sq ft (44,960 m²) each | A great domed hall where travellers change between shuttles and the rest of the ship. |
 | Arm concourse | 2 | 41,330 sq ft (3,840 m²) each | A concourse along one arm of the hall. |
 | Deck transfer desks | 1 | 67,170 sq ft (6,240 m²) | Desks where travellers book onward travel to other decks. |
 | Ticketing | 1 | 55,970 sq ft (5,200 m²) | Ticket sales. |
@@ -774,7 +778,7 @@ Floor at 26 ft (8 m) above the deck; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Great transfer hall (domed) | 1 | 968,800 sq ft (90,000 m²) | A great domed hall where travellers change between shuttles and the rest of the ship. |
+| Great transfer hall (domed) | 2 | 483,900 sq ft (44,960 m²) each | A great domed hall where travellers change between shuttles and the rest of the ship. |
 | Arm concourse | 2 | 41,330 sq ft (3,840 m²) each | A concourse along one arm of the hall. |
 | Food court | 1 | 123,100 sq ft (11,440 m²) | Food counters and seating. |
 | Quiet lounge | 1 | 32,300 sq ft (3,000 m²) | A quiet lounge away from the crowds. |
@@ -791,7 +795,7 @@ Floor at 49 ft (15 m) above the deck; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Great transfer hall (domed) | 1 | 968,800 sq ft (90,000 m²) | A great domed hall where travellers change between shuttles and the rest of the ship. |
+| Great transfer hall (domed) | 2 | 483,900 sq ft (44,960 m²) each | A great domed hall where travellers change between shuttles and the rest of the ship. |
 
 ### P5-02 · Arrivals Terminal
 
@@ -807,7 +811,7 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Bag feed belts | 1 | 736,300 sq ft (68,400 m²) | Belts feeding bags to the reclaim belts. |
+| Bag feed belts | 2 | 367,700 sq ft (34,160 m²) each | Belts feeding bags to the reclaim belts. |
 | Baggage tunnel (from P4) | 1 | 736,300 sq ft (68,400 m²) | The tunnel bringing bags from Baggage Logistics. |
 
 #### Level 1 · Ground floor
@@ -820,7 +824,7 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Passport control (visitors) | 1 | 347,700 sq ft (32,300 m²) | Passport desks for visitors. |
 | Automated gates | 1 | 347,700 sq ft (32,300 m²) | Gates that scan passports automatically. |
 | Secondary checks | 1 | 347,700 sq ft (32,300 m²) | Further checks for travellers who need them. |
-| Reclaim belts 1–4 | 1 | 294,500 sq ft (27,360 m²) | Belts where arriving passengers collect their bags. |
+| Reclaim belts 1–4 | 2 | 146,800 sq ft (13,640 m²) each | Belts where arriving passengers collect their bags. |
 | Reclaim belts 5–8 | 1 | 294,500 sq ft (27,360 m²) | Belts where arriving passengers collect their bags. |
 | Oversize and lost luggage | 1 | 294,500 sq ft (27,360 m²) | Large bags, and help for lost bags. |
 | Customs green channel | 1 | 294,500 sq ft (27,360 m²) | For arrivals with nothing to declare. |
@@ -866,8 +870,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Bag make-up hall | 1 | 1,308,900 sq ft (121,600 m²) | Bags are loaded into carts for each flight. |
-| Baggage tunnel (to P4) | 1 | 1,308,900 sq ft (121,600 m²) | The tunnel taking bags to Baggage Logistics. |
+| Bag make-up hall | 1 | 1,301,900 sq ft (120,950 m²) | Bags are loaded into carts for each flight. |
+| Baggage tunnel (to P4) | 1 | 1,301,900 sq ft (120,950 m²) | The tunnel taking bags to Baggage Logistics. |
 
 #### Level 1 · Ground floor
 
@@ -1178,8 +1182,8 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 |---|---|---|---|
 | Service hall | 1 | 58,560 sq ft (5,440 m²) | The hall where people are served. |
 | Ticket and queue area | 1 | 179,100 sq ft (16,640 m²) | Take a ticket and wait to be called. |
-| Service counters | 30 | 430 sq ft (40 m²) each | Counters where staff help people. |
-| Interview rooms | 10 | 210 sq ft (20 m²) each | Rooms where suspects and witnesses are interviewed and recorded. |
+| Service counters | 9 | 1,440 sq ft (133 m²) each | Counters where staff help people. |
+| Interview rooms | 1 | 2,130 sq ft (198 m²) | Rooms where suspects and witnesses are interviewed and recorded. |
 | Cashier | 1 | 4,310 sq ft (400 m²) | Pay fees. |
 | Toilets | 1 | 170,900 sq ft (15,880 m²) | Toilets, with an accessible toilet. |
 | Flight permits office | 1 | 87,620 sq ft (8,140 m²) | Issues flight permits. |
@@ -1213,7 +1217,7 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium | 1 | 34,440 sq ft (3,200 m²) | A tall open hall at the heart of the building. |
-| Port authority reception | 1 | 177,600 sq ft (16,500 m²) | Reception for the port authority. |
+| Port authority reception | 3 | 57,550 sq ft (5,347 m²) each | Reception for the port authority. |
 | Exhibition hall | 1 | 43,040 sq ft (3,998 m²) | Exhibitions about the port. |
 | Café | 1 | 16,160 sq ft (1,502 m²) | A café serving coffee, snacks and light meals. |
 | Mail room | 1 | 8,580 sq ft (798 m²) | Sorts letters and parcels. |
@@ -1227,7 +1231,7 @@ Floor at 20 ft (6 m) above the deck; 16 ft (5 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium | 1 | 34,440 sq ft (3,200 m²) | A tall open hall at the heart of the building. |
-| Conference hall | 1 | 177,600 sq ft (16,500 m²) | A hall for conferences. |
+| Conference hall | 3 | 57,550 sq ft (5,347 m²) each | A hall for conferences. |
 | Meeting rooms | 8 | 1,300 sq ft (120 m²) each | Rooms for meetings with staff, ship operators and visitors. |
 | Offices | 1 | 179,100 sq ft (16,640 m²) | Desks for the people who work in the building. |
 
@@ -1263,7 +1267,7 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Transformer bays | 6 | 22,100 sq ft (2,053 m²) each | Transformers that step the ship's power down for the precinct. |
+| Transformer bays | 6 | 19,340 sq ft (1,797 m²) each | Transformers that step the ship's power down for the precinct. |
 | Switch room | 1 | 32,320 sq ft (3,003 m²) | Electrical switchgear for the pumps. |
 | Control room | 1 | 100,290 sq ft (9,317 m²) | Operators watch and control the building's systems. |
 | Chiller hall | 1 | 94,720 sq ft (8,800 m²) | Chillers that make cold water for air conditioning. |
@@ -1275,7 +1279,7 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Air handling | 1 | 132,600 sq ft (12,320 m²) | Fans and filters that supply fresh air. |
+| Air handling | 1 | 116,000 sq ft (10,780 m²) | Fans and filters that supply fresh air. |
 | Stores | 1 | 132,600 sq ft (12,320 m²) | Lockable stores for supplies, spares and equipment. |
 | Chiller hall | 1 | 94,720 sq ft (8,800 m²) | Chillers that make cold water for air conditioning. |
 | Water pumps | 1 | 94,720 sq ft (8,800 m²) | Pumps that keep water flowing to the precinct. |
@@ -1294,7 +1298,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 93,320 sq ft (8,670 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 46,240 sq ft (4,295 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 93,220 sq ft (8,660 m²) | Lifts for goods going down to and up from the service layer. |
 | Baggage lift | 1 | 93,320 sq ft (8,670 m²) | A lift that carries baggage carts to the service layer. |
 
@@ -1304,9 +1308,9 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 14,530 sq ft (1,350 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 11,630 sq ft (1,080 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 14,530 sq ft (1,350 m²) | A room where the crew rest and take breaks. |
-| Vehicle lift | 1 | 93,320 sq ft (8,670 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 46,240 sq ft (4,295 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 93,220 sq ft (8,660 m²) | Lifts for goods going down to and up from the service layer. |
 | Baggage lift | 1 | 93,320 sq ft (8,670 m²) | A lift that carries baggage carts to the service layer. |
 | Vehicle queue (open air) | 1 | 247,600 sq ft (23,000 m²) | A lane where vehicles wait for the lift. |
@@ -1317,7 +1321,7 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 93,320 sq ft (8,670 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 46,240 sq ft (4,295 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 93,220 sq ft (8,660 m²) | Lifts for goods going down to and up from the service layer. |
 | Baggage lift | 1 | 93,320 sq ft (8,670 m²) | A lift that carries baggage carts to the service layer. |
 
@@ -1335,9 +1339,9 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Central stores | 1 | 129,200 sq ft (12,000 m²) | Medical supplies. |
+| Central stores | 2 | 60,930 sq ft (5,661 m²) each | Medical supplies. |
 | Plant rooms | 1 | 129,200 sq ft (12,000 m²) | Heating, cooling and air plant. |
-| Morgue | 1 | 129,200 sq ft (12,000 m²) | Holds the dead with care until they are collected. |
+| Morgue | 2 | 60,930 sq ft (5,661 m²) each | Holds the dead with care until they are collected. |
 
 #### Level 1 · Ground floor
 
@@ -1345,7 +1349,7 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Emergency department | 1 | 174,800 sq ft (16,240 m²) | Treats emergencies. |
+| Emergency department | 3 | 57,570 sq ft (5,348 m²) each | Treats emergencies. |
 | First aid | 1 | 16,170 sq ft (1,502 m²) | First aid. |
 | Imaging | 1 | 32,280 sq ft (2,999 m²) | X-ray and scanning rooms. |
 | Pharmacy | 1 | 8,620 sq ft (800 m²) | Dispenses medicines. |
@@ -1360,9 +1364,9 @@ Floor at 16 ft (5 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Operating theatres | 4 | 22,550 sq ft (2,095 m²) each | Rooms for surgery. |
-| Recovery | 1 | 84,590 sq ft (7,859 m²) | Patients recover after surgery. |
-| Outpatient clinics | 20 | 430 sq ft (40 m²) each | Clinics for patients who go home the same day. |
+| Operating theatres | 5 | 17,830 sq ft (1,657 m²) each | Rooms for surgery. |
+| Recovery | 2 | 41,770 sq ft (3,880 m²) each | Patients recover after surgery. |
+| Outpatient clinics | 5 | 1,720 sq ft (160 m²) each | Clinics for patients who go home the same day. |
 | Lab | 1 | 12,920 sq ft (1,201 m²) | Tests samples. |
 | Staff | 1 | 165,800 sq ft (15,400 m²) | Staff room. |
 
@@ -1633,7 +1637,7 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Walk-in clinic | 1 | 78,360 sq ft (7,280 m²) | See a doctor without an appointment. |
-| Vaccination rooms | 10 | 320 sq ft (30 m²) each | Vaccinations for travellers. |
+| Vaccination rooms | 4 | 810 sq ft (75 m²) each | Vaccinations for travellers. |
 | Pharmacy | 1 | 8,620 sq ft (801 m²) | Dispenses medicines. |
 | Waiting | 1 | 16,150 sq ft (1,501 m²) | Seats for patients waiting. |
 | Toilets | 1 | 56,390 sq ft (5,239 m²) | Toilets, with an accessible toilet. |
@@ -1734,9 +1738,9 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Grand gallery | 1 | 129,200 sq ft (12,000 m²) | The hotel's grand gallery. |
-| Grand lobby | 2 | 276,100 sq ft (25,650 m²) each | The hotel lobby. |
+| Grand lobby | 5 | 109,500 sq ft (10,180 m²) each | The hotel lobby. |
 | Reception | 1 | 68,980 sq ft (6,408 m²) | The front desk. |
-| Restaurants | 4 | 48,950 sq ft (4,548 m²) each | Restaurants. |
+| Restaurants | 5 | 38,860 sq ft (3,610 m²) each | Restaurants. |
 | Bar | 1 | 21,570 sq ft (2,004 m²) | A bar. |
 | Shops | 10 | 3,230 sq ft (300 m²) each | Shops. |
 | Kitchens | 1 | 64,580 sq ft (6,000 m²) | Restaurant kitchens. |
@@ -1751,7 +1755,7 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Grand gallery | 1 | 129,200 sq ft (12,000 m²) | The hotel's grand gallery. |
-| Ballroom | 2 | 329,600 sq ft (30,620 m²) each | A ballroom for balls, banquets and events. |
+| Ballroom | 6 | 108,900 sq ft (10,110 m²) each | A ballroom for balls, banquets and events. |
 | Meeting rooms | 12 | 7,310 sq ft (679 m²) each | Rooms for meetings with staff, ship operators and visitors. |
 | Spa and pool | 1 | 107,700 sq ft (10,010 m²) | Spa and swimming pool. |
 | Gym | 1 | 32,290 sq ft (3,000 m²) | Exercise equipment to keep the crew fit. |
@@ -1945,7 +1949,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 112,000 sq ft (10,400 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 55,570 sq ft (5,162 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 111,900 sq ft (10,390 m²) | Lifts for goods going down to and up from the service layer. |
 | Hotel supplies lift | 1 | 112,000 sq ft (10,400 m²) | A lift for food, linen and supplies for the hotels. |
 
@@ -1955,9 +1959,9 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 17,440 sq ft (1,620 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 14,530 sq ft (1,350 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 17,440 sq ft (1,620 m²) | A room where the crew rest and take breaks. |
-| Vehicle lift | 1 | 112,000 sq ft (10,400 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 55,570 sq ft (5,162 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 111,900 sq ft (10,390 m²) | Lifts for goods going down to and up from the service layer. |
 | Hotel supplies lift | 1 | 112,000 sq ft (10,400 m²) | A lift for food, linen and supplies for the hotels. |
 | Vehicle queue (open air) | 1 | 310,000 sq ft (28,800 m²) | A lane where vehicles wait for the lift. |
@@ -1968,9 +1972,9 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 17,440 sq ft (1,620 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 14,530 sq ft (1,350 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 17,440 sq ft (1,620 m²) | Lockable stores for supplies, spares and equipment. |
-| Vehicle lift | 1 | 112,000 sq ft (10,400 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 55,570 sq ft (5,162 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 111,900 sq ft (10,390 m²) | Lifts for goods going down to and up from the service layer. |
 | Hotel supplies lift | 1 | 112,000 sq ft (10,400 m²) | A lift for food, linen and supplies for the hotels. |
 
@@ -2171,7 +2175,7 @@ Floor at 16 ft (5 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Consulting rooms | 16 | 5,440 sq ft (505 m²) each | A doctor's room for seeing patients. |
+| Consulting rooms | 11 | 7,910 sq ft (735 m²) each | A doctor's room for seeing patients. |
 | Staff | 1 | 87,820 sq ft (8,159 m²) | Staff room. |
 
 ### P7-05 · Station Offices
@@ -2308,7 +2312,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Vehicle lift | 2 | 140,600 sq ft (13,060 m²) each | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 140,700 sq ft (13,080 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 69,940 sq ft (6,498 m²) each | Lifts for goods going down to and up from the service layer. |
 
 #### Level 1 · Ground floor
 
@@ -2316,10 +2320,10 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 40,690 sq ft (3,780 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 37,780 sq ft (3,510 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 40,690 sq ft (3,780 m²) | A room where the crew rest and take breaks. |
 | Vehicle lift | 2 | 140,600 sq ft (13,060 m²) each | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 140,700 sq ft (13,080 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 69,940 sq ft (6,498 m²) each | Lifts for goods going down to and up from the service layer. |
 | Vehicle queue (open air) | 1 | 180,800 sq ft (16,800 m²) | A lane where vehicles wait for the lift. |
 
 #### Level 2 · Lift machine level
@@ -2328,10 +2332,10 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 40,690 sq ft (3,780 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 37,780 sq ft (3,510 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 40,690 sq ft (3,780 m²) | Lockable stores for supplies, spares and equipment. |
 | Vehicle lift | 2 | 140,600 sq ft (13,060 m²) each | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 140,700 sq ft (13,080 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 69,940 sq ft (6,498 m²) each | Lifts for goods going down to and up from the service layer. |
 
 ### P7-11 · Keelway Square
 
@@ -2369,9 +2373,9 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Platform access halls | 2 | 2,222,700 sq ft (206,500 m²) each | Halls leading to the platforms. |
-| Lift and escalator halls | 1 | 2,222,700 sq ft (206,500 m²) | Lifts and escalators to the platforms. |
-| Staff and plant | 1 | 2,222,700 sq ft (206,500 m²) | Staff rooms and plant. |
+| Platform access halls | 2 | 2,215,400 sq ft (205,820 m²) each | Halls leading to the platforms. |
+| Lift and escalator halls | 1 | 2,219,100 sq ft (206,160 m²) | Lifts and escalators to the platforms. |
+| Staff and plant | 1 | 2,219,100 sq ft (206,160 m²) | Staff rooms and plant. |
 
 #### Level 1 · Concourse
 
@@ -2648,7 +2652,7 @@ Floor at deck level; 14 ft (4.2 m) floor to floor.
 | Front desk and waiting | 1 | 52,750 sq ft (4,901 m²) | Where the public come to report a crime or ask for help. |
 | Customs search rooms | 4 | 1,080 sq ft (100 m²) each | Private rooms where people and luggage are searched. |
 | Interview rooms | 4 | 320 sq ft (30 m²) each | Rooms where suspects and witnesses are interviewed and recorded. |
-| Detained crew rooms | 8 | 150 sq ft (14 m²) each | Locked rooms where crew members are held while their case is dealt with. |
+| Detained crew rooms | 2 | 600 sq ft (56 m²) each | Locked rooms where crew members are held while their case is dealt with. |
 | Duty office | 1 | 4,300 sq ft (400 m²) | The office of the officer in charge of the shift. |
 | Toilets | 1 | 51,650 sq ft (4,799 m²) | Toilets, with an accessible toilet. |
 | Evidence store | 1 | 20,670 sq ft (1,921 m²) | A locked store for evidence. |
@@ -2808,7 +2812,7 @@ Floor at 15 ft (4.5 m) above the deck; 11 ft (3.4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Rest room | 70 | 2,150 sq ft (199 m²) each | A room with beds for resting between shifts. |
+| Rest room | 45 | 3,340 sq ft (310 m²) each | A room with beds for resting between shifts. |
 | Roof lounge | 1 | 139,200 sq ft (12,930 m²) | A lounge on the roof with a view over the docks. |
 
 ### P1-08 · Bow Docks Utility Plant
@@ -2825,7 +2829,7 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Transformer bays | 4 | 11,950 sq ft (1,110 m²) each | Transformers that step the ship's power down for the precinct. |
+| Transformer bays | 4 | 9,960 sq ft (925 m²) each | Transformers that step the ship's power down for the precinct. |
 | Switch room | 1 | 16,130 sq ft (1,498 m²) | Electrical switchgear for the pumps. |
 | Water pumps | 1 | 12,940 sq ft (1,202 m²) | Pumps that keep water flowing to the precinct. |
 | Control room | 1 | 18,720 sq ft (1,739 m²) | Operators watch and control the building's systems. |
@@ -2838,7 +2842,7 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Air handling | 1 | 47,790 sq ft (4,440 m²) | Fans and filters that supply fresh air. |
+| Air handling | 1 | 39,830 sq ft (3,700 m²) | Fans and filters that supply fresh air. |
 | Stores | 1 | 47,790 sq ft (4,440 m²) | Lockable stores for supplies, spares and equipment. |
 | Cooling tower 1 | 1 | 21,800 sq ft (2,025 m²) | Towers that throw off heat from the cooling water. |
 | Cooling tower 2 | 1 | 21,800 sq ft (2,025 m²) | Towers that throw off heat from the cooling water. |
@@ -2857,7 +2861,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 53,280 sq ft (4,950 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 26,210 sq ft (2,435 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 53,280 sq ft (4,950 m²) | Lifts for goods going down to and up from the service layer. |
 
 #### Level 1 · Ground floor
@@ -2866,9 +2870,9 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 12,110 sq ft (1,125 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 9,420 sq ft (875 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 12,110 sq ft (1,125 m²) | A room where the crew rest and take breaks. |
-| Vehicle lift | 1 | 53,280 sq ft (4,950 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 26,210 sq ft (2,435 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 53,280 sq ft (4,950 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle queue (open air) | 1 | 25,190 sq ft (2,340 m²) | A lane where vehicles wait for the lift. |
 
@@ -2878,7 +2882,7 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Vehicle lift | 1 | 53,280 sq ft (4,950 m²) | A lift big enough to carry vehicles down to the service layer. |
+| Vehicle lift | 2 | 26,210 sq ft (2,435 m²) each | A lift big enough to carry vehicles down to the service layer. |
 | Goods lift hall | 1 | 53,280 sq ft (4,950 m²) | Lifts for goods going down to and up from the service layer. |
 
 ### P1-10 · Marina Park
@@ -3075,7 +3079,7 @@ Floor at deck level; 14 ft (4.2 m) floor to floor.
 | Front desk and waiting | 1 | 47,360 sq ft (4,400 m²) | Where the public come to report a crime or ask for help. |
 | Customs search rooms | 6 | 430 sq ft (40 m²) each | Private rooms where people and luggage are searched. |
 | Interview rooms | 4 | 320 sq ft (30 m²) each | Rooms where suspects and witnesses are interviewed and recorded. |
-| Holding rooms | 10 | 150 sq ft (14 m²) each | Locked rooms where people are held for a short time. |
+| Holding rooms | 2 | 750 sq ft (70 m²) each | Locked rooms where people are held for a short time. |
 | Toilets | 1 | 46,280 sq ft (4,300 m²) | Toilets, with an accessible toilet. |
 | Patrol launch bay | 2 | 43,060 sq ft (4,000 m²) each | Bay for the small patrol craft. |
 | Drone hangar | 1 | 43,060 sq ft (4,000 m²) | Hangar for the surveillance drones. |
@@ -3395,7 +3399,7 @@ Floor at 16 ft (5 m) above the deck; 13 ft (4 m) floor to floor.
 | Offices | 2 | 68,130 sq ft (6,330 m²) each | Desks for the people who work in the building. |
 | Tower lobby | 2 | 2,710 sq ft (252 m²) each | The lobby at the foot of the control tower, with lifts up to the control cab. |
 | Stores | 1 | 7,750 sq ft (720 m²) | Lockable stores for supplies, spares and equipment. |
-| Rest rooms | 16 | 2,660 sq ft (248 m²) each | Rooms to rest between shifts. |
+| Rest rooms | 11 | 3,880 sq ft (360 m²) each | Rooms to rest between shifts. |
 
 #### Level 3 · Level 3
 
@@ -3496,7 +3500,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Heavy vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift strong enough for heavy vehicles and loads. |
+| Heavy vehicle lift | 2 | 49,830 sq ft (4,629 m²) each | A lift strong enough for heavy vehicles and loads. |
 | Goods lift hall | 1 | 100,360 sq ft (9,324 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -3506,10 +3510,10 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 20,340 sq ft (1,890 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 17,440 sq ft (1,620 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 4,300 sq ft (400 m²) | A room where the crew rest and take breaks. |
 | Stores | 1 | 16,040 sq ft (1,490 m²) | Lockable stores for supplies, spares and equipment. |
-| Heavy vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift strong enough for heavy vehicles and loads. |
+| Heavy vehicle lift | 2 | 49,830 sq ft (4,629 m²) each | A lift strong enough for heavy vehicles and loads. |
 | Goods lift hall | 1 | 100,360 sq ft (9,324 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift big enough to carry vehicles down to the service layer. |
 | Vehicle ramp and queue (open air) | 1 | 165,800 sq ft (15,400 m²) | A ramp and waiting lane for vehicles. |
@@ -3520,9 +3524,9 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 20,340 sq ft (1,890 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 17,440 sq ft (1,620 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 20,340 sq ft (1,890 m²) | Lockable stores for supplies, spares and equipment. |
-| Heavy vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift strong enough for heavy vehicles and loads. |
+| Heavy vehicle lift | 2 | 49,830 sq ft (4,629 m²) each | A lift strong enough for heavy vehicles and loads. |
 | Goods lift hall | 1 | 100,360 sq ft (9,324 m²) | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift | 1 | 100,510 sq ft (9,338 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -4087,7 +4091,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Heavy freight lift | 1 | 140,000 sq ft (13,000 m²) | A lift for heavy freight. |
+| Heavy freight lift | 2 | 69,560 sq ft (6,462 m²) each | A lift for heavy freight. |
 | Container lift | 1 | 139,800 sq ft (12,990 m²) | A lift big enough for a shipping container. |
 | Vehicle lift | 1 | 140,000 sq ft (13,000 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -4097,10 +4101,10 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 21,800 sq ft (2,025 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 18,890 sq ft (1,755 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 5,380 sq ft (500 m²) | A room where the crew rest and take breaks. |
 | Stores | 1 | 16,420 sq ft (1,526 m²) | Lockable stores for supplies, spares and equipment. |
-| Heavy freight lift | 1 | 140,000 sq ft (13,000 m²) | A lift for heavy freight. |
+| Heavy freight lift | 2 | 69,560 sq ft (6,462 m²) each | A lift for heavy freight. |
 | Container lift | 1 | 139,800 sq ft (12,990 m²) | A lift big enough for a shipping container. |
 | Vehicle lift | 1 | 140,000 sq ft (13,000 m²) | A lift big enough to carry vehicles down to the service layer. |
 | Truck queue (open air) | 1 | 355,200 sq ft (33,000 m²) | A lane where trucks wait their turn. |
@@ -4111,9 +4115,9 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 21,800 sq ft (2,025 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 18,890 sq ft (1,755 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 21,800 sq ft (2,025 m²) | Lockable stores for supplies, spares and equipment. |
-| Heavy freight lift | 1 | 140,000 sq ft (13,000 m²) | A lift for heavy freight. |
+| Heavy freight lift | 2 | 69,560 sq ft (6,462 m²) each | A lift for heavy freight. |
 | Container lift | 1 | 139,800 sq ft (12,990 m²) | A lift big enough for a shipping container. |
 | Vehicle lift | 1 | 140,000 sq ft (13,000 m²) | A lift big enough to carry vehicles down to the service layer. |
 
@@ -4131,7 +4135,7 @@ Floor at 39 ft (12 m) below the deck; 39 ft (12 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Water pump station | 1 | 1,377,800 sq ft (128,000 m²) | Pumps water. |
+| Water pump station | 2 | 688,500 sq ft (63,960 m²) each | Pumps water. |
 
 #### Level 1 · Ground floor
 
@@ -4146,7 +4150,7 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Filtration hall | 1 | 602,800 sq ft (56,000 m²) | Filters that clean water. |
 | Treatment tanks | 1 | 602,800 sq ft (56,000 m²) | Tanks where water is treated. |
 | Clean water reservoir | 1 | 602,800 sq ft (56,000 m²) | Stores clean water. |
-| Water pump station | 1 | 1,377,800 sq ft (128,000 m²) | Pumps water. |
+| Water pump station | 2 | 688,500 sq ft (63,960 m²) each | Pumps water. |
 | Plant control room | 1 | 125,400 sq ft (11,650 m²) | Controls the plant. |
 | Water lab | 1 | 62,710 sq ft (5,826 m²) | Tests water quality. |
 | Workshop | 1 | 43,050 sq ft (4,000 m²) | A workshop for repairs to equipment and vehicles. |
@@ -4166,7 +4170,7 @@ Floor at 26 ft (8 m) above the deck; 26 ft (8 m) floor to floor.
 | Filtration hall | 1 | 602,800 sq ft (56,000 m²) | Filters that clean water. |
 | Treatment tanks | 1 | 602,800 sq ft (56,000 m²) | Tanks where water is treated. |
 | Clean water reservoir | 1 | 602,800 sq ft (56,000 m²) | Stores clean water. |
-| Water pump station | 1 | 1,377,800 sq ft (128,000 m²) | Pumps water. |
+| Water pump station | 2 | 688,500 sq ft (63,960 m²) each | Pumps water. |
 | Engineering offices | 1 | 188,200 sq ft (17,480 m²) | Engineers' offices. |
 | Stores | 1 | 193,100 sq ft (17,940 m²) | Lockable stores for supplies, spares and equipment. |
 
@@ -4962,7 +4966,7 @@ Floor at deck level; 14 ft (4.2 m) floor to floor.
 |---|---|---|---|
 | Front desk and waiting | 1 | 32,580 sq ft (3,027 m²) | Where the public come to report a crime or ask for help. |
 | Interview rooms | 4 | 980 sq ft (91 m²) each | Rooms where suspects and witnesses are interviewed and recorded. |
-| Holding cells | 8 | 130 sq ft (12 m²) each | Cells for people under arrest. |
+| Holding cells | 2 | 520 sq ft (48 m²) each | Cells for people under arrest. |
 | Custody desk | 1 | 2,150 sq ft (200 m²) | Where people under arrest are booked in. |
 | Duty office | 1 | 4,320 sq ft (401 m²) | The office of the officer in charge of the shift. |
 | Toilets | 1 | 31,680 sq ft (2,943 m²) | Toilets, with an accessible toilet. |
@@ -5227,7 +5231,7 @@ Floor at 33 ft (10 m) below the deck; 33 ft (10 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Vehicle lift 1 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 57,480 sq ft (5,340 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 28,310 sq ft (2,630 m²) each | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
 
 #### Level 1 · Ground floor
@@ -5236,11 +5240,11 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft control room | 1 | 14,530 sq ft (1,350 m²) | Controls the lifts and doors of the service shaft. |
+| Shaft control room | 1 | 11,630 sq ft (1,080 m²) | Controls the lifts and doors of the service shaft. |
 | Crew room | 1 | 3,230 sq ft (300 m²) | A room where the crew rest and take breaks. |
 | Stores | 1 | 11,310 sq ft (1,050 m²) | Lockable stores for supplies, spares and equipment. |
 | Vehicle lift 1 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 57,480 sq ft (5,340 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 28,310 sq ft (2,630 m²) each | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
 | Vehicle ramp and queue (open air) | 1 | 150,700 sq ft (14,000 m²) | A ramp and waiting lane for vehicles. |
 
@@ -5250,10 +5254,10 @@ Floor at 23 ft (7 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ventilation fans | 1 | 14,530 sq ft (1,350 m²) | Big fans that move air through the shaft. |
+| Ventilation fans | 1 | 11,630 sq ft (1,080 m²) | Big fans that move air through the shaft. |
 | Stores | 1 | 14,530 sq ft (1,350 m²) | Lockable stores for supplies, spares and equipment. |
 | Vehicle lift 1 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
-| Goods lift hall | 1 | 57,480 sq ft (5,340 m²) | Lifts for goods going down to and up from the service layer. |
+| Goods lift hall | 2 | 28,310 sq ft (2,630 m²) each | Lifts for goods going down to and up from the service layer. |
 | Vehicle lift 2 | 1 | 57,370 sq ft (5,330 m²) | A lift big enough to carry vehicles down to the service layer. |
 
 ### P8-12 · Shuttle Yards Crew Rest
@@ -5287,7 +5291,7 @@ Floor at 15 ft (4.5 m) above the deck; 11 ft (3.4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Rest room | 60 | 1,380 sq ft (128 m²) each | A room with beds for resting between shifts. |
+| Rest room | 42 | 1,970 sq ft (183 m²) each | A room with beds for resting between shifts. |
 | Housekeeping | 1 | 890 sq ft (82 m²) | Cleaning staff and supplies. |
 | Quiet lounge | 1 | 73,200 sq ft (6,801 m²) | A quiet lounge away from the crowds. |
 | Rest room (two beds) | 180 | 1,130 sq ft (105 m²) each | A room with two beds for resting. |

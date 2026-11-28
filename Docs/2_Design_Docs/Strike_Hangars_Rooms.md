@@ -2,7 +2,7 @@
 
 Deck 5 · Strike Hangars. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**318 buildings, 107,834 rooms.**
+**318 buildings, 107,417 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -14,7 +14,7 @@ Strike Hangars Keelway station (F3), crew check-in, lifts, clinic
 
 **What it is for:** Where every strike crew member checks in for duty. Crews collect their kit here and read the alert boards before heading to the rack halls.
 
-51 ft (15.4 m) tall, 3 above deck, 1,302,800 sq ft (121,030 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 1,299,800 sq ft (120,760 m²) of rooms. Room plan proposed.
 
 **Look:** A vast concourse with a glowing wall of alert boards, crowds streaming through rows of duty barriers.
 
@@ -24,13 +24,13 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crew concourse | 1 | 129,100 sq ft (12,000 m²) | The great hall every strike crew member crosses at the start and end of a shift. |
-| Duty check-in barriers | 1 | 4,310 sq ft (400 m²) | Every strike crew member badges in and out of duty here. |
-| Alert boards | 1 | 2,150 sq ft (200 m²) | Giant boards showing which squadrons are on alert, flying or stood down. |
+| Crew concourse | 1 | 129,100 sq ft (11,990 m²) | The great hall every strike crew member crosses at the start and end of a shift. |
+| Duty check-in barriers | 1 | 4,310 sq ft (401 m²) | Every strike crew member badges in and out of duty here. |
+| Alert boards | 1 | 2,160 sq ft (201 m²) | Giant boards showing which squadrons are on alert, flying or stood down. |
 | Kit issue counters | 1 | 3,230 sq ft (300 m²) | Crews collect flight suits, helmets and survival vests for their shift. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | First-aid room | 1 | 420 sq ft (39 m²) | A couch, first-aid kit and defibrillator for anyone taken ill. |
-| Squadron muster point | 102 | 3,730 sq ft (347 m²) each | A marked area where one squadron's crews gather before heading to their rack hall. |
+| Squadron muster point | 102 | 3,720 sq ft (346 m²) each | A marked area where one squadron's crews gather before heading to their rack hall. |
 | Light court (open air) | 1 | 1,788,200 sq ft (166,130 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
@@ -39,17 +39,17 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shift managers' room | 1 | 860 sq ft (80 m²) | Managers watch arrivals and call in reserves. |
+| Shift managers' room | 1 | 880 sq ft (81 m²) | Managers watch arrivals and call in reserves. |
 | Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Briefing room | 85 | 2,030 sq ft (189 m²) each | Short shift briefings. |
-| Kit store | 85 | 2,550 sq ft (237 m²) each | Spare flight kit. |
+| Kit store | 85 | 2,530 sq ft (235 m²) each | Spare flight kit. |
 
 ### P1-03 · Deck Lift Hall
 
 **What it is for:** A hall of lifts carrying strike crews who live on other decks up and down to the Strike Hangars.
 
-48 ft (14.5 m) tall, 2 above deck, 2,206,300 sq ft (204,970 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 2,225,200 sq ft (206,730 m²) of rooms. Room plan proposed.
 
 **Look:** A long hall of lit lift doors with the deck numbers glowing above each bank.
 
@@ -59,13 +59,13 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Lift bank 1 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
+| Lift bank 1 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 2 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 3 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 4 | 1 | 132,200 sq ft (12,280 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 5 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 6 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
-| Lift bank 7 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
+| Lift bank 7 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 8 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 9 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 10 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
@@ -74,9 +74,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Lift bank 13 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 14 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift control room | 1 | 860 sq ft (80 m²) | Controls the lifts and sends more at shift change. |
-| Waiting hall | 1 | 2,400 sq ft (223 m²) | Seats for crews waiting for a lift. |
+| Waiting hall | 1 | 2,600 sq ft (241 m²) | Seats for crews waiting for a lift. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Lift machine room | 80 | 2,160 sq ft (200 m²) each | Motors and brakes for one bank of lifts. |
+| Lift machine room | 105 | 1,730 sq ft (161 m²) each | Motors and brakes for one bank of lifts. |
 
 #### Level 2 · Gallery floor
 
@@ -84,13 +84,13 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Lift bank 1 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
+| Lift bank 1 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 2 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 3 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 4 | 1 | 132,200 sq ft (12,280 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 5 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 6 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
-| Lift bank 7 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
+| Lift bank 7 | 1 | 132,400 sq ft (12,300 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 8 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 9 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 10 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
@@ -98,14 +98,14 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Lift bank 12 | 1 | 132,500 sq ft (12,310 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 13 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
 | Lift bank 14 | 1 | 132,300 sq ft (12,290 m²) | A bank of crew lifts to the decks above, with a waiting area in front. |
-| Tea point | 1 | 360 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Lift engineers' room | 108 | 1,630 sq ft (151 m²) each | Engineers who keep the lifts running. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Lift engineers' room | 108 | 1,720 sq ft (160 m²) each | Engineers who keep the lifts running. |
 
 ### P1-04 · Shift Lodge
 
 **What it is for:** A lodge of bunks where crews rest between shifts without leaving the strike decks.
 
-46 ft (14.1 m) tall, 4 above deck, 1,237,600 sq ft (114,980 m²) of rooms. Room plan proposed.
+46 ft (14.1 m) tall, 4 above deck, 1,234,700 sq ft (114,710 m²) of rooms. Room plan proposed.
 
 **Look:** A plain lodge with rows of small dark windows and a lit wake-up board in the lobby.
 
@@ -115,11 +115,11 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Front desk | 1 | 640 sq ft (60 m²) | Assigns bunks and wakes crews for their next shift. |
-| Mess | 1 | 3,230 sq ft (300 m²) | Hot food any hour. |
+| Front desk | 1 | 660 sq ft (61 m²) | Assigns bunks and wakes crews for their next shift. |
+| Mess | 1 | 3,220 sq ft (299 m²) | Hot food any hour. |
 | Showers | 2 | 1,080 sq ft (100 m²) each | Showers. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Quiet lounge | 122 | 2,480 sq ft (231 m²) each | Dim lounge for resting. |
+| Quiet lounge | 122 | 2,480 sq ft (230 m²) each | Dim lounge for resting. |
 | Light court (open air) | 1 | 824,400 sq ft (76,590 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 to Level 4 · Bunk floor (3 identical floors)
@@ -128,14 +128,14 @@ Floor at 15 ft (4.5 m) above the deck; 10 ft (3.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Washroom | 2 | 430 sq ft (40 m²) each | Toilets and basins. |
-| Bunk room | 588 | 520 sq ft (49 m²) each | A dark, quiet room with two bunks for crews between shifts. |
+| Washroom | 2 | 440 sq ft (41 m²) each | Toilets and basins. |
+| Bunk room | 589 | 520 sq ft (49 m²) each | A dark, quiet room with two bunks for crews between shifts. |
 
 ### P1-05 · Duty Rosters Office
 
 **What it is for:** The office that plans duty shifts for the Strike Hangars' 60,000 crew, so every hall and squadron is staffed around the clock.
 
-43 ft (13.2 m) tall, 3 above deck, 1,236,500 sq ft (114,870 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 977,400 sq ft (90,810 m²) of rooms. Room plan proposed.
 
 **Look:** A purple-trimmed office block with a giant roster screen in its lobby.
 
@@ -145,10 +145,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Roster planning hall | 1 | 4,310 sq ft (401 m²) | Planners build shifts for 60,000 crew. |
-| Reception | 1 | 1,720 sq ft (159 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 1,050 sq ft (98 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Planners' office | 212 | 1,910 sq ft (178 m²) each | Shift planners. |
+| Roster planning hall | 1 | 3,750 sq ft (348 m²) | Planners build shifts for 60,000 crew. |
+| Reception | 1 | 850 sq ft (79 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 870 sq ft (81 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Planners' office | 158 | 2,030 sq ft (188 m²) each | Shift planners. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -156,18 +156,18 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Leave office | 1 | 1,050 sq ft (98 m²) | Books crews' leave. |
-| Tea point | 1 | 1,050 sq ft (98 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 1,040 sq ft (97 m²) | Toilets, showers and changing space for the staff. |
-| Planners' office | 91 | 1,950 sq ft (181 m²) each | Shift planners. |
-| Squadron liaison desk | 91 | 1,290 sq ft (120 m²) each | Each squadron's roster contact. |
-| Meeting room | 90 | 1,270 sq ft (118 m²) each | Meetings with squadrons. |
+| Leave office | 1 | 870 sq ft (81 m²) | Books crews' leave. |
+| Tea point | 1 | 870 sq ft (81 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 870 sq ft (81 m²) | Toilets, showers and changing space for the staff. |
+| Planners' office | 74 | 1,830 sq ft (170 m²) each | Shift planners. |
+| Squadron liaison desk | 74 | 1,260 sq ft (117 m²) each | Each squadron's roster contact. |
+| Meeting room | 74 | 1,280 sq ft (119 m²) each | Meetings with squadrons. |
 
 ### P1-06 · Gate Canteen
 
 **What it is for:** A canteen serving hot food round the clock to crews coming on and off shift.
 
-31 ft (9.6 m) tall, 2 above deck, 669,800 sq ft (62,220 m²) of rooms. Room plan proposed.
+31 ft (9.6 m) tall, 2 above deck, 668,300 sq ft (62,090 m²) of rooms. Room plan proposed.
 
 **Look:** A glass-fronted dining hall with a deep canopy, warm light spilling out and a lit menu wall inside.
 
@@ -180,14 +180,14 @@ Floor at deck level; 18 ft (5.4 m) floor to floor.
 | Dining hall | 1 | 298,800 sq ft (27,760 m²) | The main dining hall, with long tables, booths and a counter where crews coming on and off shift collect their meals. |
 | Serving counter | 1 | 1,290 sq ft (120 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
 | Main kitchen | 1 | 3,230 sq ft (300 m²) | Cooks prepare thousands of meals a day here on big ranges, ovens and kettles. |
-| Cold room | 1 | 650 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
-| Freezer room | 1 | 420 sq ft (39 m²) | A walk-in freezer for frozen stores. |
+| Cold room | 1 | 640 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
+| Freezer room | 1 | 430 sq ft (40 m²) | A walk-in freezer for frozen stores. |
 | Dry store | 1 | 860 sq ft (80 m²) | Shelves of flour, rice, tins and other dry food. |
 | Dishwash room | 1 | 860 sq ft (80 m²) | Conveyor dishwashers clean trays, plates and cutlery. |
 | Goods-in bay | 1 | 640 sq ft (60 m²) | Food deliveries arrive and are checked here. |
-| Waste and recycling room | 1 | 340 sq ft (31 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
+| Waste and recycling room | 1 | 350 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
 | All-night counter | 1 | 640 sq ft (60 m²) | Hot food at any hour. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Grab-and-go kiosk | 138 | 1,270 sq ft (118 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
 | Terrace court (open air) | 1 | 179,200 sq ft (16,650 m²) | An open court with tables for eating outside. |
 
@@ -197,17 +197,17 @@ Floor at 18 ft (5.4 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Upper dining room | 1 | 3,230 sq ft (300 m²) | A quieter dining room with tables for groups. |
+| Upper dining room | 1 | 2,970 sq ft (276 m²) | A quieter dining room with tables for groups. |
 | Kitchen staff changing room | 1 | 540 sq ft (50 m²) | Kitchen crews change into whites and wash before their shift. |
 | Catering manager's office | 1 | 340 sq ft (31 m²) | Where menus are planned and food is ordered. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Meeting and dining room | 113 | 1,600 sq ft (149 m²) each | A small room that can be booked for working lunches. |
+| Meeting and dining room | 113 | 1,590 sq ft (148 m²) each | A small room that can be booked for working lunches. |
 
 ### P1-07 · Strike Hangars Clinic
 
 **What it is for:** The clinic at the crew gate, giving first aid, flight medicine and fitness checks to strike crews.
 
-57 ft (17.4 m) tall, 4 above deck, 1,075,000 sq ft (99,870 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 1,072,200 sq ft (99,620 m²) of rooms. Room plan proposed.
 
 **Look:** A low white building with deep window reveals, a covered ambulance bay and a red stripe at the eaves.
 
@@ -217,20 +217,20 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Entrance and reception | 1 | 1,290 sq ft (120 m²) | Patients check in at the front desk and are directed to the right room. |
+| Entrance and reception | 1 | 1,300 sq ft (121 m²) | Patients check in at the front desk and are directed to the right room. |
 | Waiting area | 1 | 1,610 sq ft (150 m²) | Seats, water and a children's corner for patients waiting to be seen. |
 | Triage room | 2 | 500 sq ft (47 m²) each | A nurse checks each patient first and decides how urgently they need treatment. |
-| Treatment room | 106 | 960 sq ft (89 m²) each | A room with a couch, lights and supplies for treating injuries and illnesses. |
-| Resuscitation bay | 1 | 500 sq ft (47 m²) | A fully equipped bay for patients in a life-threatening state. |
+| Treatment room | 106 | 950 sq ft (88 m²) each | A room with a couch, lights and supplies for treating injuries and illnesses. |
+| Resuscitation bay | 1 | 500 sq ft (46 m²) | A fully equipped bay for patients in a life-threatening state. |
 | Pharmacy | 1 | 640 sq ft (60 m²) | Medicines are dispensed to patients after their visit. |
-| Ambulance bay | 1 | 860 sq ft (80 m²) | A covered bay where ambulances drop off and pick up patients. |
+| Ambulance bay | 1 | 870 sq ft (80 m²) | A covered bay where ambulances drop off and pick up patients. |
 | Flight medicine room | 3 | 500 sq ft (46 m²) each | Checks crews are fit to fly. |
-| Hearing test booth | 2 | 500 sq ft (46 m²) each | Engine noise checks. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Clean utility | 1 | 500 sq ft (47 m²) | Sterile supplies and dressings ready for use. |
+| Hearing test booth | 2 | 500 sq ft (47 m²) each | Engine noise checks. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Clean utility | 1 | 500 sq ft (46 m²) | Sterile supplies and dressings ready for use. |
 | Dirty utility | 1 | 500 sq ft (46 m²) | Where used equipment is cleaned and clinical waste is sealed for removal. |
 | Consulting room | 103 | 580 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
-| Eye test room | 102 | 960 sq ft (89 m²) each | Pilots' eyesight checks. |
+| Eye test room | 102 | 950 sq ft (88 m²) each | Pilots' eyesight checks. |
 | Healing garden (open air) | 1 | 441,400 sq ft (41,000 m²) | A planted courtyard where patients wait in quiet and recover in fresh air. |
 | Light court (open air) | 1 | 264,700 sq ft (24,590 m²) | A planted court that brings light into the middle of the clinic. |
 
@@ -240,11 +240,11 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Observation ward | 1 | 1,290 sq ft (120 m²) | A few beds where patients are watched for some hours before going home or to hospital. |
+| Observation ward | 1 | 940 sq ft (87 m²) | A few beds where patients are watched for some hours before going home or to hospital. |
 | Nurses' station | 1 | 500 sq ft (46 m²) | The nurses' desk, with views of the ward beds. |
-| X-ray room | 1 | 500 sq ft (47 m²) | Takes X-ray images of broken bones and chests. |
-| Staff room | 1 | 500 sq ft (46 m²) | Where clinic staff take their breaks. |
-| Clinic manager's office | 1 | 500 sq ft (47 m²) | The clinic manager runs rotas, supplies and records from here. |
+| X-ray room | 1 | 500 sq ft (46 m²) | Takes X-ray images of broken bones and chests. |
+| Staff room | 1 | 510 sq ft (47 m²) | Where clinic staff take their breaks. |
+| Clinic manager's office | 1 | 500 sq ft (46 m²) | The clinic manager runs rotas, supplies and records from here. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
 | Consulting room | 457 | 580 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
 
@@ -252,7 +252,7 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 **What it is for:** The fire and crash rescue station at the bow tip of the deck, covering the front of the Strike Hangars.
 
-51 ft (15.4 m) tall, 3 above deck, 930,300 sq ft (86,430 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 943,400 sq ft (87,640 m²) of rooms. Room plan proposed.
 
 **Look:** A long low hall of red-framed glass bay doors under a dark crew block, with a slim drill tower lit red at the top.
 
@@ -262,17 +262,17 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crash tender | 4 | 85,790 sq ft (7,970 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Crash tender | 4 | 85,780 sq ft (7,969 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 85,860 sq ft (7,977 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 85,860 sq ft (7,977 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 660 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
-| Decontamination room | 1 | 660 sq ft (61 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,230 sq ft (114 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Crash rescue kit room | 1 | 860 sq ft (80 m²) | Cutting gear for crashed craft. |
-| Hose store | 1 | 750 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 44 | 1,720 sq ft (159 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
+| Turnout gear room | 1 | 970 sq ft (90 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Crash rescue kit room | 1 | 450 sq ft (42 m²) | Cutting gear for crashed craft. |
+| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 45 | 1,790 sq ft (166 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 686,300 sq ft (63,760 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -281,15 +281,15 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crash tender | 4 | 85,790 sq ft (7,970 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Crash tender | 4 | 85,780 sq ft (7,969 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 85,860 sq ft (7,977 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 85,860 sq ft (7,977 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 12 | 370 sq ft (35 m²) each | A small bedroom for a firefighter on a night watch. |
+| Bunk rooms | 12 | 440 sq ft (41 m²) each | A small bedroom for a firefighter on a night watch. |
 | Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
-| Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
+| Mess room | 1 | 960 sq ft (89 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 370 sq ft (35 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 55 | 1,340 sq ft (125 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 420 sq ft (39 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 65 | 1,190 sq ft (111 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -297,11 +297,11 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 370 sq ft (34 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
-| Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the bow end of the Strike Hangars for fire risks work from here. |
-| Records room | 1 | 370 sq ft (34 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 82 | 960 sq ft (90 m²) each | Offices for the station's officers and fire safety staff. |
+| Station commander's office | 1 | 420 sq ft (39 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 730 sq ft (68 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Fire safety office | 1 | 690 sq ft (64 m²) | Inspectors who check buildings in the bow end of the Strike Hangars for fire risks work from here. |
+| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 82 | 1,020 sq ft (94 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P1-10 · Prow Garden
 
@@ -329,7 +329,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The utility plant for the Keelway Gate precinct, supplying power, air and water.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 1,389,800 sq ft (129,120 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 1,387,200 sq ft (128,880 m²) of rooms. Room plan proposed.
 
 **Look:** A plain louvred box in graphite panels, with yellow service doors and a steam-white plume from its cooling stacks.
 
@@ -339,8 +339,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 333,200 sq ft (30,950 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 333,200 sq ft (30,950 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 4 | 82,130 sq ft (7,630 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 4 | 81,930 sq ft (7,611 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -357,15 +357,15 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 7 | 1 | 27,740 sq ft (2,577 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 193,600 sq ft (17,990 m²) | Chillers and pumps that make the cold water used to cool the air in every Gate building. |
 | Air handling hall | 1 | 193,800 sq ft (18,000 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,450 sq ft (135 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
-| Battery room | 1 | 1,720 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,140 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,620 sq ft (150 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,590 sq ft (148 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
+| Water pump room | 1 | 2,160 sq ft (201 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 1,900 sq ft (176 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,510 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 22 | 2,720 sq ft (252 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 22 | 2,860 sq ft (266 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -383,15 +383,15 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Chiller hall | 1 | 193,600 sq ft (17,990 m²) | Chillers and pumps that make the cold water used to cool the air in every Gate building. |
 | Air handling hall | 1 | 193,800 sq ft (18,000 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
 | Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,020 sq ft (95 m²) | Where the main air ducts leave the plant and turn toward the streets. |
-| Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 13 | 5,230 sq ft (486 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Ductwork gallery | 1 | 1,160 sq ft (108 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Crew rest room | 1 | 440 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
+| Upper plant gallery | 24 | 2,980 sq ft (277 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P1-12 · Gate Service Shaft
 
 **What it is for:** The Keelway Gate's shaft down to the service layer, used for maintenance and deliveries.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 686,000 sq ft (63,730 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 684,900 sq ft (63,630 m²) of rooms. Room plan proposed.
 
 **Look:** A square tower of ribbed grey panels with a big goods lift door on each side and pipe ducts climbing its walls.
 
@@ -401,8 +401,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 166,400 sq ft (15,460 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 166,400 sq ft (15,460 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 164,600 sq ft (15,290 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 164,600 sq ft (15,290 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -411,12 +411,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 302,500 sq ft (28,110 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Lift control room | 1 | 650 sq ft (60 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
 | Loading bay | 1 | 1,570 sq ft (146 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
-| Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 16 | 1,320 sq ft (123 m²) each | Short-term storage for goods waiting for the lift. |
+| Tool store | 1 | 870 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 16 | 1,390 sq ft (129 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -425,9 +425,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 302,500 sq ft (28,110 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 2,110 sq ft (196 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,290 sq ft (119 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 16 | 1,370 sq ft (127 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 1,480 sq ft (138 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 610 sq ft (57 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 17 | 1,440 sq ft (134 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P1-13 · Crew Garden 1
 
@@ -750,7 +750,7 @@ Magazines, armorers, weapons assembly, fuel, drone racks
 
 **What it is for:** The magazine that stores missiles for the strike wings, buried in blast berms so an accident cannot spread.
 
-33 ft (10 m) tall, 1 above deck, 1 below, 8,948,400 sq ft (831,340 m²) of rooms. Room plan proposed.
+33 ft (10 m) tall, 1 above deck, 1 below, 8,933,900 sq ft (829,990 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low concrete magazine half-buried in grassed berms, with red lights over its blast doors.
 
@@ -760,8 +760,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,253,500 sq ft (209,350 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,253,000 sq ft (209,310 m²) | Extra vaults below. |
+| Deep vault | 4 | 559,700 sq ft (52,000 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 1,121,500 sq ft (104,190 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -785,20 +785,20 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Missile vault 14 | 1 | 266,500 sq ft (24,760 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Missile vault 15 | 1 | 266,500 sq ft (24,760 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Missile vault 16 | 1 | 266,400 sq ft (24,750 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (149 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 830 sq ft (77 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,020 sq ft (95 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 26 | 3,370 sq ft (313 m²) each | Checks and repairs rounds. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 26 | 3,750 sq ft (348 m²) each | Checks and repairs rounds. |
 | Inspection bay | 26 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-02 · Torpedo Magazine
 
 **What it is for:** The magazine for heavy torpedoes used by the heavy strike squadrons.
 
-39 ft (12 m) tall, 1 above deck, 1 below, 8,434,600 sq ft (783,600 m²) of rooms. Room plan proposed.
+39 ft (12 m) tall, 1 above deck, 1 below, 8,420,100 sq ft (782,260 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low concrete magazine half-buried in grassed berms, with red lights over its blast doors.
 
@@ -808,8 +808,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,124,800 sq ft (197,400 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,124,800 sq ft (197,400 m²) | Extra vaults below. |
+| Deep vault | 4 | 528,000 sq ft (49,060 m²) each | The deepest vaults. |
+| Overflow vault | 3 | 704,300 sq ft (65,430 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -833,20 +833,20 @@ Floor at deck level; 39 ft (12 m) floor to floor.
 | Torpedo vault 14 | 1 | 250,200 sq ft (23,250 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Torpedo vault 15 | 1 | 250,600 sq ft (23,280 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Torpedo vault 16 | 1 | 250,200 sq ft (23,250 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (149 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 830 sq ft (77 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,020 sq ft (95 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 26 | 3,370 sq ft (313 m²) each | Checks and repairs rounds. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 26 | 3,750 sq ft (348 m²) each | Checks and repairs rounds. |
 | Inspection bay | 26 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-03 · Cannon Round Store
 
 **What it is for:** The store for cannon shells, kept belted and boxed ready to load into craft.
 
-26 ft (8 m) tall, 1 above deck, 1 below, 2,866,100 sq ft (266,270 m²) of rooms. Room plan proposed.
+26 ft (8 m) tall, 1 above deck, 1 below, 2,855,800 sq ft (265,310 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low concrete magazine half-buried in grassed berms, with red lights over its blast doors.
 
@@ -856,8 +856,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 727,800 sq ft (67,620 m²) | The deepest vaults. |
-| Overflow vault | 1 | 727,800 sq ft (67,620 m²) | Extra vaults below. |
+| Deep vault | 4 | 179,900 sq ft (16,710 m²) each | The deepest vaults. |
+| Overflow vault | 5 | 143,800 sq ft (13,360 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -881,20 +881,20 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Shell vault 14 | 1 | 80,220 sq ft (7,453 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Shell vault 15 | 1 | 80,420 sq ft (7,471 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Shell vault 16 | 1 | 80,220 sq ft (7,453 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 820 sq ft (76 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 18 | 3,360 sq ft (312 m²) each | Checks and repairs rounds. |
-| Inspection bay | 18 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,010 sq ft (93 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 18 | 3,740 sq ft (348 m²) each | Checks and repairs rounds. |
+| Inspection bay | 18 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-04 · Countermeasure Store
 
 **What it is for:** The store for flares, chaff and decoy drones that craft use to fool enemy weapons.
 
-26 ft (8 m) tall, 1 above deck, 1 below, 2,116,700 sq ft (196,650 m²) of rooms. Room plan proposed.
+26 ft (8 m) tall, 1 above deck, 1 below, 2,109,900 sq ft (196,010 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low concrete magazine half-buried in grassed berms, with red lights over its blast doors.
 
@@ -904,8 +904,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 535,500 sq ft (49,750 m²) | The deepest vaults. |
-| Overflow vault | 1 | 535,500 sq ft (49,750 m²) | Extra vaults below. |
+| Deep vault | 2 | 266,000 sq ft (24,710 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 264,400 sq ft (24,570 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -921,21 +921,21 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Countermeasure vault 6 | 1 | 108,500 sq ft (10,080 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Countermeasure vault 7 | 1 | 108,100 sq ft (10,050 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Countermeasure vault 8 | 1 | 108,200 sq ft (10,050 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Countermeasure vault 9 | 1 | 108,300 sq ft (10,060 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 780 sq ft (72 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 10 | 3,270 sq ft (304 m²) each | Checks and repairs rounds. |
-| Inspection bay | 10 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
+| Countermeasure vault 9 | 1 | 108,200 sq ft (10,060 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 960 sq ft (89 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 10 | 3,630 sq ft (338 m²) each | Checks and repairs rounds. |
+| Inspection bay | 10 | 3,190 sq ft (297 m²) each | Rounds are checked before issue. |
 
 ### P2-05 · Bomb Store
 
 **What it is for:** The store for free-fall and guided bombs.
 
-33 ft (10 m) tall, 1 above deck, 1 below, 6,894,100 sq ft (640,490 m²) of rooms. Room plan proposed.
+33 ft (10 m) tall, 1 above deck, 1 below, 6,882,500 sq ft (639,410 m²) of rooms. Room plan proposed.
 
 **Look:** A long, low concrete magazine half-buried in grassed berms, with red lights over its blast doors.
 
@@ -945,8 +945,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 1,736,500 sq ft (161,320 m²) | The deepest vaults. |
-| Overflow vault | 1 | 1,736,900 sq ft (161,360 m²) | Extra vaults below. |
+| Deep vault | 2 | 863,300 sq ft (80,200 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 863,500 sq ft (80,220 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -970,20 +970,20 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Bomb vault 14 | 1 | 205,000 sq ft (19,050 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bomb vault 15 | 1 | 204,600 sq ft (19,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bomb vault 16 | 1 | 204,600 sq ft (19,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 840 sq ft (78 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,030 sq ft (96 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 21 | 3,390 sq ft (315 m²) each | Checks and repairs rounds. |
-| Inspection bay | 21 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 21 | 3,780 sq ft (351 m²) each | Checks and repairs rounds. |
+| Inspection bay | 21 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-06 · Magazine Control
 
 **What it is for:** The control office that tracks every round in the magazines and issues ordnance to the rack halls.
 
-30 ft (9 m) tall, 2 above deck, 371,800 sq ft (34,540 m²) of rooms. Room plan proposed.
+30 ft (9 m) tall, 2 above deck, 370,200 sq ft (34,390 m²) of rooms. Room plan proposed.
 
 **Look:** A small hardened block with a wall of status screens glowing through narrow windows.
 
@@ -993,11 +993,11 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Ordnance control room | 1 | 2,150 sq ft (200 m²) | Tracks every round in every magazine, and sends rounds to the rack halls. |
+| Ordnance control room | 1 | 1,850 sq ft (171 m²) | Tracks every round in every magazine, and sends rounds to the rack halls. |
 | Issue desk | 1 | 860 sq ft (80 m²) | Approves each issue. |
-| Security desk | 1 | 440 sq ft (40 m²) | Guards watch the cameras and the doors from here. |
+| Security desk | 1 | 430 sq ft (40 m²) | Guards watch the cameras and the doors from here. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Controllers' office | 139 | 1,310 sq ft (121 m²) each | Ordnance controllers. |
+| Controllers' office | 139 | 1,300 sq ft (121 m²) each | Ordnance controllers. |
 | Light court (open air) | 1 | 375,900 sq ft (34,920 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -1006,16 +1006,16 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Records room | 65 | 1,580 sq ft (146 m²) each | Records of every round. |
-| Controllers' office | 65 | 1,270 sq ft (118 m²) each | Ordnance controllers. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Records room | 65 | 1,570 sq ft (146 m²) each | Records of every round. |
+| Controllers' office | 65 | 1,260 sq ft (117 m²) each | Ordnance controllers. |
 
 ### P2-07 · Weapons Assembly Shop
 
 **What it is for:** The workshop where armorers fit fuzes, mate warheads and test missiles before they go to the racks.
 
-54 ft (16.5 m) tall, 2 above deck, 3,892,000 sq ft (361,580 m²) of rooms. Room plan proposed.
+54 ft (16.5 m) tall, 2 above deck, 3,906,200 sq ft (362,900 m²) of rooms. Room plan proposed.
 
 **Look:** A long blast-walled hall with red warning lights and earth berms along both sides.
 
@@ -1034,17 +1034,17 @@ Floor at deck level; 39 ft (12 m) floor to floor.
 | Assembly cell 7 | 1 | 259,500 sq ft (24,100 m²) | A blast-walled cell where one missile or bomb is assembled. |
 | Assembly cell 8 | 1 | 260,100 sq ft (24,170 m²) | A blast-walled cell where one missile or bomb is assembled. |
 | Assembly cell 9 | 1 | 259,600 sq ft (24,120 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 10 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 11 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 12 | 1 | 259,500 sq ft (24,110 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 13 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 14 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Fuze room | 1 | 1,080 sq ft (100 m²) | Fuzes are fitted here, one at a time. |
-| Test bay | 1 | 2,280 sq ft (212 m²) | Missiles' electronics are tested. |
-| Blast shelter | 1 | 650 sq ft (60 m²) | Armorers shelter here if an alarm sounds. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Assembly cell 10 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 11 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 12 | 2 | 129,700 sq ft (12,050 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 13 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 14 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Fuze room | 1 | 1,090 sq ft (101 m²) | Fuzes are fitted here, one at a time. |
+| Test bay | 1 | 2,480 sq ft (230 m²) | Missiles' electronics are tested. |
+| Blast shelter | 1 | 640 sq ft (60 m²) | Armorers shelter here if an alarm sounds. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armorers' bench room | 72 | 1,690 sq ft (157 m²) each | Bench work. |
+| Armorers' bench room | 72 | 1,790 sq ft (166 m²) each | Bench work. |
 
 #### Level 2 · Gallery floor
 
@@ -1061,20 +1061,20 @@ Floor at 39 ft (12 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Assembly cell 7 | 1 | 259,500 sq ft (24,100 m²) | A blast-walled cell where one missile or bomb is assembled. |
 | Assembly cell 8 | 1 | 260,100 sq ft (24,170 m²) | A blast-walled cell where one missile or bomb is assembled. |
 | Assembly cell 9 | 1 | 259,600 sq ft (24,120 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 10 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 11 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 12 | 1 | 259,500 sq ft (24,110 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 13 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Assembly cell 14 | 1 | 259,900 sq ft (24,140 m²) | A blast-walled cell where one missile or bomb is assembled. |
-| Engineers' office | 1 | 860 sq ft (80 m²) | Plans assembly work. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Records room | 95 | 1,330 sq ft (124 m²) each | Assembly records. |
+| Assembly cell 10 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 11 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 12 | 2 | 129,700 sq ft (12,050 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 13 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Assembly cell 14 | 2 | 129,900 sq ft (12,070 m²) each | A blast-walled cell where one missile or bomb is assembled. |
+| Engineers' office | 1 | 870 sq ft (81 m²) | Plans assembly work. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Records room | 113 | 1,180 sq ft (110 m²) each | Assembly records. |
 
 ### P2-08 · Armorers' Hall
 
 **What it is for:** The armorers' base, with workshops, tool cribs and a training bay.
 
-33 ft (10.2 m) tall, 2 above deck, 3,548,000 sq ft (329,620 m²) of rooms. Room plan proposed.
+33 ft (10.2 m) tall, 2 above deck, 3,259,400 sq ft (302,810 m²) of rooms. Room plan proposed.
 
 **Look:** A sturdy workshop block with the armorers' crossed-shell badge over the door.
 
@@ -1084,12 +1084,12 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tool crib | 1 | 2,160 sq ft (201 m²) | Tools signed out to armorers. |
-| Training bay | 1 | 4,310 sq ft (400 m²) | A mock rack with dummy rounds for training new armorers. |
+| Tool crib | 1 | 2,170 sq ft (201 m²) | Tools signed out to armorers. |
+| Training bay | 1 | 4,330 sq ft (402 m²) | A mock rack with dummy rounds for training new armorers. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Toilets | 1 | 650 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Armorers' workshop | 246 | 3,230 sq ft (300 m²) each | Workshop for one armorer team. |
-| Gun shop | 245 | 3,960 sq ft (368 m²) each | Repairs cannons. |
+| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Armorers' workshop | 247 | 2,930 sq ft (273 m²) each | Workshop for one armorer team. |
+| Gun shop | 246 | 3,640 sq ft (339 m²) each | Repairs cannons. |
 
 #### Level 2 · Upper floor
 
@@ -1097,11 +1097,11 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 520 sq ft (48 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Tea point | 1 | 270 sq ft (26 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Classroom | 321 | 1,950 sq ft (181 m²) each | Armorer classes. |
-| Team room | 320 | 1,640 sq ft (152 m²) each | A team's office. |
-| Weapons manual library | 320 | 1,950 sq ft (181 m²) each | Manuals for every weapon. |
+| Classroom | 301 | 2,010 sq ft (187 m²) each | Armorer classes. |
+| Team room | 301 | 1,680 sq ft (156 m²) each | A team's office. |
+| Weapons manual library | 300 | 1,720 sq ft (160 m²) each | Manuals for every weapon. |
 
 ### P2-09 · Ordnance Test Range
 
@@ -1147,7 +1147,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The depot for the hauler drones that carry rounds from the magazines to the racks.
 
-48 ft (14.5 m) tall, 2 above deck, 2,509,800 sq ft (233,170 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 2,523,700 sq ft (234,460 m²) of rooms. Room plan proposed.
 
 **Look:** A long shed with rows of glowing charging pads and drones taking off from its roof.
 
@@ -1171,12 +1171,12 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Drone bay 12 | 1 | 161,200 sq ft (14,980 m²) | Charging pads for a group of hauler drones. |
 | Drone bay 13 | 1 | 161,600 sq ft (15,010 m²) | Charging pads for a group of hauler drones. |
 | Drone bay 14 | 1 | 161,200 sq ft (14,980 m²) | Charging pads for a group of hauler drones. |
-| Drone control room | 1 | 1,610 sq ft (150 m²) | Routes every hauler drone. |
-| Drone workshop | 1 | 1,680 sq ft (156 m²) | Repairs drones. |
-| Battery room | 1 | 2,160 sq ft (200 m²) | Charges batteries. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Drone control room | 1 | 1,850 sq ft (172 m²) | Routes every hauler drone. |
+| Drone workshop | 1 | 1,640 sq ft (152 m²) | Repairs drones. |
+| Battery room | 1 | 2,160 sq ft (201 m²) | Charges batteries. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Parts store | 53 | 2,230 sq ft (207 m²) each | Drone parts. |
+| Parts store | 53 | 2,360 sq ft (219 m²) each | Drone parts. |
 
 #### Level 2 · Gallery floor
 
@@ -1198,8 +1198,8 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Drone bay 12 | 1 | 161,200 sq ft (14,980 m²) | Charging pads for a group of hauler drones. |
 | Drone bay 13 | 1 | 161,600 sq ft (15,010 m²) | Charging pads for a group of hauler drones. |
 | Drone bay 14 | 1 | 161,200 sq ft (14,980 m²) | Charging pads for a group of hauler drones. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Offices | 132 | 950 sq ft (88 m²) each | Offices. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Offices | 134 | 980 sq ft (91 m²) each | Offices. |
 
 ### P2-13 · Propellant Tank Farm
 
@@ -1245,7 +1245,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The control room for the pumps and valves on the fuel lines to the rack halls.
 
-30 ft (9.2 m) tall, 2 above deck, 385,600 sq ft (35,830 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 407,100 sq ft (37,820 m²) of rooms. Room plan proposed.
 
 **Look:** A yellow-trimmed control block with pipe racks running into it.
 
@@ -1255,11 +1255,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Fuel control room | 1 | 2,160 sq ft (201 m²) | Controls the pumps and valves on the fuel lines to the rack halls. |
+| Fuel control room | 1 | 1,850 sq ft (172 m²) | Controls the pumps and valves on the fuel lines to the rack halls. |
 | Pump room | 1 | 3,230 sq ft (300 m²) | Booster pumps. |
-| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Operators' room | 143 | 1,310 sq ft (121 m²) each | Operators. |
-| Light court (open air) | 1 | 224,600 sq ft (20,860 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
+| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Operators' room | 151 | 1,310 sq ft (122 m²) each | Operators. |
+| Light court (open air) | 1 | 244,000 sq ft (22,670 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
 
@@ -1268,8 +1268,8 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Engineers' office | 147 | 1,300 sq ft (121 m²) each | Engineers. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Engineers' office | 155 | 1,310 sq ft (121 m²) each | Engineers. |
 
 ### P2-16 · Berm Park
 
@@ -1294,7 +1294,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Rest rooms for armorers on shift, close to the magazines.
 
-46 ft (14.1 m) tall, 4 above deck, 4,071,300 sq ft (378,240 m²) of rooms. Room plan proposed.
+46 ft (14.1 m) tall, 4 above deck, 3,729,000 sq ft (346,440 m²) of rooms. Room plan proposed.
 
 **Look:** A plain lodge with rows of small dark windows and a lit wake-up board in the lobby.
 
@@ -1304,11 +1304,11 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Front desk | 1 | 640 sq ft (60 m²) | Assigns bunks and wakes crews for their next shift. |
-| Mess | 1 | 3,240 sq ft (301 m²) | Hot food any hour. |
+| Front desk | 1 | 650 sq ft (60 m²) | Assigns bunks and wakes crews for their next shift. |
+| Mess | 1 | 3,250 sq ft (302 m²) | Hot food any hour. |
 | Showers | 2 | 1,080 sq ft (100 m²) each | Showers. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Quiet lounge | 393 | 2,570 sq ft (239 m²) each | Dim lounge for resting. |
+| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Quiet lounge | 357 | 2,590 sq ft (241 m²) each | Dim lounge for resting. |
 
 #### Level 2 to Level 4 · Bunk floor (3 identical floors)
 
@@ -1316,14 +1316,14 @@ Floor at 15 ft (4.5 m) above the deck; 10 ft (3.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Washroom | 2 | 520 sq ft (49 m²) each | Toilets and basins. |
-| Bunk room | 1928 | 530 sq ft (49 m²) each | A dark, quiet room with two bunks for crews between shifts. |
+| Washroom | 2 | 430 sq ft (40 m²) each | Toilets and basins. |
+| Bunk room | 1834 | 510 sq ft (47 m²) each | A dark, quiet room with two bunks for crews between shifts. |
 
 ### P2-18 · Intercept Drone Racks
 
 **What it is for:** Ready racks holding intercept drones that can be launched quickly to defend the ship.
 
-113 ft (34.5 m) tall, 2 above deck, 4,565,600 sq ft (424,160 m²) of rooms. Room plan proposed.
+113 ft (34.5 m) tall, 2 above deck, 4,585,800 sq ft (426,030 m²) of rooms. Room plan proposed.
 
 **Look:** A tall rack hall with tiers of drones glowing through its high windows.
 
@@ -1347,11 +1347,11 @@ Floor at deck level; 98 ft (30 m) floor to floor.
 | Drone rack row 12 | 1 | 300,500 sq ft (27,910 m²) | A row of tiered racks of drones. |
 | Drone rack row 13 | 1 | 300,900 sq ft (27,960 m²) | A row of tiered racks of drones. |
 | Drone rack row 14 | 1 | 300,500 sq ft (27,910 m²) | A row of tiered racks of drones. |
-| Drone launch control | 1 | 1,610 sq ft (150 m²) | Launches drones when they are called. |
-| Drone workshop | 1 | 1,680 sq ft (156 m²) | Repairs drones. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Drone launch control | 1 | 1,850 sq ft (172 m²) | Launches drones when they are called. |
+| Drone workshop | 1 | 1,650 sq ft (153 m²) | Repairs drones. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Charging room | 78 | 2,220 sq ft (206 m²) each | Drone batteries. |
+| Charging room | 78 | 2,350 sq ft (218 m²) each | Drone batteries. |
 
 #### Level 2 · Gallery floor
 
@@ -1373,14 +1373,14 @@ Floor at 98 ft (30 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Drone rack row 12 | 1 | 300,500 sq ft (27,910 m²) | A row of tiered racks of drones. |
 | Drone rack row 13 | 1 | 300,900 sq ft (27,960 m²) | A row of tiered racks of drones. |
 | Drone rack row 14 | 1 | 300,500 sq ft (27,910 m²) | A row of tiered racks of drones. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Offices | 188 | 950 sq ft (88 m²) each | Offices. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Offices | 190 | 990 sq ft (92 m²) each | Offices. |
 
 ### P2-19 · Strike Drone Racks
 
 **What it is for:** Ready racks holding strike drones for attack missions.
 
-113 ft (34.5 m) tall, 2 above deck, 3,662,200 sq ft (340,230 m²) of rooms. Room plan proposed.
+113 ft (34.5 m) tall, 2 above deck, 3,682,200 sq ft (342,080 m²) of rooms. Room plan proposed.
 
 **Look:** A tall rack hall with tiers of drones glowing through its high windows.
 
@@ -1404,11 +1404,11 @@ Floor at deck level; 98 ft (30 m) floor to floor.
 | Drone rack row 12 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
 | Drone rack row 13 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
 | Drone rack row 14 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
-| Drone launch control | 1 | 1,610 sq ft (150 m²) | Launches drones when they are called. |
-| Drone workshop | 1 | 1,740 sq ft (162 m²) | Repairs drones. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Drone launch control | 1 | 1,850 sq ft (172 m²) | Launches drones when they are called. |
+| Drone workshop | 1 | 1,710 sq ft (159 m²) | Repairs drones. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Charging room | 75 | 2,260 sq ft (210 m²) each | Drone batteries. |
+| Charging room | 75 | 2,390 sq ft (222 m²) each | Drone batteries. |
 
 #### Level 2 · Gallery floor
 
@@ -1430,14 +1430,14 @@ Floor at 98 ft (30 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Drone rack row 12 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
 | Drone rack row 13 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
 | Drone rack row 14 | 1 | 236,600 sq ft (21,980 m²) | A row of tiered racks of drones. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Offices | 182 | 960 sq ft (89 m²) each | Offices. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Offices | 182 | 1,010 sq ft (94 m²) each | Offices. |
 
 ### P2-20 · Ordnance Fire Station
 
 **What it is for:** The fire station for the Ordnance Yards, with crews trained for fires and blasts.
 
-51 ft (15.4 m) tall, 3 above deck, 637,000 sq ft (59,180 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 647,800 sq ft (60,180 m²) of rooms. Room plan proposed.
 
 **Look:** An L of glass-fronted appliance bays and a crew wing in dark panels with red trim, around a drill yard.
 
@@ -1451,15 +1451,15 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Foam tender | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Bomb disposal unit | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 660 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
 | Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,280 sq ft (119 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Blast suit room | 1 | 640 sq ft (60 m²) | Blast suits for bomb disposal. |
-| Bomb disposal kit | 1 | 870 sq ft (81 m²) | Robots and kit. |
-| Hose store | 1 | 750 sq ft (69 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Turnout gear room | 1 | 970 sq ft (90 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Blast suit room | 1 | 510 sq ft (47 m²) | Blast suits for bomb disposal. |
+| Bomb disposal kit | 1 | 860 sq ft (80 m²) | Robots and kit. |
+| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 36 | 1,730 sq ft (161 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Equipment store | 37 | 1,790 sq ft (167 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 430,700 sq ft (40,020 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -1472,12 +1472,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Foam tender | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Bomb disposal unit | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 53,820 sq ft (5,000 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 16 | 380 sq ft (35 m²) each | A small bedroom for a firefighter on a night watch. |
-| Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
+| Bunk rooms | 16 | 440 sq ft (40 m²) each | A small bedroom for a firefighter on a night watch. |
+| Kitchen | 1 | 530 sq ft (49 m²) | The station kitchen, where the watch cooks its meals together. |
 | Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
-| Gym | 1 | 960 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 370 sq ft (35 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 44 | 1,360 sq ft (126 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
+| Laundry | 1 | 420 sq ft (39 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 52 | 1,200 sq ft (112 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -1485,17 +1485,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 370 sq ft (35 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
-| Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the Ordnance Yards for fire risks work from here. |
-| Records room | 1 | 370 sq ft (35 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 68 | 980 sq ft (91 m²) each | Offices for the station's officers and fire safety staff. |
+| Station commander's office | 1 | 420 sq ft (39 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 980 sq ft (91 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Fire safety office | 1 | 440 sq ft (41 m²) | Inspectors who check buildings in the Ordnance Yards for fire risks work from here. |
+| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 77 | 910 sq ft (85 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P2-21 · Ordnance Clinic
 
 **What it is for:** A clinic specialising in blast and burn injuries for the ordnance workers.
 
-30 ft (9 m) tall, 2 above deck, 319,700 sq ft (29,700 m²) of rooms. Room plan proposed.
+30 ft (9 m) tall, 2 above deck, 317,700 sq ft (29,520 m²) of rooms. Room plan proposed.
 
 **Look:** A white clinic with a red edge to its roof and a lit red cross over a glass entrance.
 
@@ -1505,15 +1505,15 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Entrance and reception | 1 | 1,290 sq ft (120 m²) | Patients check in at the front desk and are directed to the right room. |
-| Waiting area | 1 | 1,620 sq ft (150 m²) | Seats, water and a children's corner for patients waiting to be seen. |
-| Triage room | 2 | 500 sq ft (46 m²) each | A nurse checks each patient first and decides how urgently they need treatment. |
-| Treatment room | 101 | 930 sq ft (87 m²) each | A room with a couch, lights and supplies for treating injuries and illnesses. |
+| Entrance and reception | 1 | 930 sq ft (87 m²) | Patients check in at the front desk and are directed to the right room. |
+| Waiting area | 1 | 1,610 sq ft (150 m²) | Seats, water and a children's corner for patients waiting to be seen. |
+| Triage room | 2 | 500 sq ft (47 m²) each | A nurse checks each patient first and decides how urgently they need treatment. |
+| Treatment room | 101 | 930 sq ft (86 m²) each | A room with a couch, lights and supplies for treating injuries and illnesses. |
 | Resuscitation bay | 1 | 500 sq ft (46 m²) | A fully equipped bay for patients in a life-threatening state. |
-| Pharmacy | 1 | 650 sq ft (60 m²) | Medicines are dispensed to patients after their visit. |
-| Ambulance bay | 1 | 860 sq ft (80 m²) | A covered bay where ambulances drop off and pick up patients. |
-| Burns room | 2 | 500 sq ft (46 m²) each | Burn treatment. |
-| Decontamination room | 1 | 500 sq ft (47 m²) | Washes chemicals off. |
+| Pharmacy | 1 | 640 sq ft (60 m²) | Medicines are dispensed to patients after their visit. |
+| Ambulance bay | 1 | 870 sq ft (80 m²) | A covered bay where ambulances drop off and pick up patients. |
+| Burns room | 2 | 500 sq ft (47 m²) each | Burn treatment. |
+| Decontamination room | 1 | 500 sq ft (46 m²) | Washes chemicals off. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Clean utility | 1 | 500 sq ft (46 m²) | Sterile supplies and dressings ready for use. |
 | Dirty utility | 1 | 500 sq ft (46 m²) | Where used equipment is cleaned and clinical waste is sealed for removal. |
@@ -1527,19 +1527,19 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Observation ward | 1 | 1,290 sq ft (120 m²) | A few beds where patients are watched for some hours before going home or to hospital. |
+| Observation ward | 1 | 930 sq ft (87 m²) | A few beds where patients are watched for some hours before going home or to hospital. |
 | Nurses' station | 1 | 500 sq ft (46 m²) | The nurses' desk, with views of the ward beds. |
 | X-ray room | 1 | 500 sq ft (46 m²) | Takes X-ray images of broken bones and chests. |
 | Staff room | 1 | 510 sq ft (47 m²) | Where clinic staff take their breaks. |
 | Clinic manager's office | 1 | 500 sq ft (46 m²) | The clinic manager runs rotas, supplies and records from here. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Consulting room | 266 | 590 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
+| Consulting room | 266 | 580 sq ft (54 m²) each | A doctor's room for appointments and check-ups. |
 
 ### P2-22 · Ordnance Utility Plant
 
 **What it is for:** The utility plant for the Ordnance Yards, supplying power, air and water.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 2,620,300 sq ft (243,430 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 2,618,200 sq ft (243,240 m²) of rooms. Room plan proposed.
 
 **Look:** A low ribbed shed with yellow-striped roller doors, a bank of grey transformers behind a mesh fence and pipe bridges running to the street.
 
@@ -1549,8 +1549,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 641,300 sq ft (59,580 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 641,300 sq ft (59,580 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 2 | 318,300 sq ft (29,570 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 2 | 318,300 sq ft (29,570 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -1568,16 +1568,16 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 50,030 sq ft (4,648 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 400,400 sq ft (37,200 m²) | Chillers and pumps that make the cold water used to cool the air in every Ordnance building. |
 | Air handling hall | 1 | 400,400 sq ft (37,200 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,560 sq ft (145 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,710 sq ft (158 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
 | Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,140 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,830 sq ft (170 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Water pump room | 1 | 2,150 sq ft (200 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,130 sq ft (198 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
 | Workshop | 1 | 1,510 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
 | Magazine cooling room | 1 | 1,610 sq ft (149 m²) | Keeps the magazines cool. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 1,610 sq ft (150 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 19 | 2,840 sq ft (264 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 1,910 sq ft (177 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 19 | 2,990 sq ft (278 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -1596,15 +1596,15 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Chiller hall | 1 | 400,400 sq ft (37,200 m²) | Chillers and pumps that make the cold water used to cool the air in every Ordnance building. |
 | Air handling hall | 1 | 400,400 sq ft (37,200 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
 | Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,130 sq ft (105 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Ductwork gallery | 1 | 1,280 sq ft (119 m²) | Where the main air ducts leave the plant and turn toward the streets. |
 | Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 22 | 2,950 sq ft (274 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Upper plant gallery | 22 | 3,110 sq ft (289 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P2-23 · Ordnance Service Shaft
 
 **What it is for:** The Ordnance Yards' shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 1,101,500 sq ft (102,340 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 1,100,300 sq ft (102,220 m²) of rooms. Room plan proposed.
 
 **Look:** A low hangar-like headhouse over the shaft, with a yellow-and-black striped lift gate and a loading bay for trucks.
 
@@ -1614,8 +1614,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 269,600 sq ft (25,040 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 269,800 sq ft (25,070 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 267,200 sq ft (24,820 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 268,000 sq ft (24,900 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -1624,12 +1624,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 504,900 sq ft (46,910 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,510 sq ft (140 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
-| Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
+| Lift control room | 1 | 530 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,620 sq ft (151 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Crew check-in | 1 | 440 sq ft (41 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 17 | 1,440 sq ft (134 m²) each | Short-term storage for goods waiting for the lift. |
+| Holding store | 18 | 1,440 sq ft (134 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -1638,9 +1638,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 504,900 sq ft (46,910 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 2,040 sq ft (190 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,280 sq ft (119 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 18 | 1,400 sq ft (130 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 2,150 sq ft (200 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 1,300 sq ft (120 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 18 | 1,480 sq ft (137 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P2-24 · Blast Berm 1
 
@@ -1664,7 +1664,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 1,868,700 sq ft (173,600 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 1,862,200 sq ft (173,000 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -1674,8 +1674,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 474,200 sq ft (44,050 m²) | The deepest vaults. |
-| Overflow vault | 1 | 474,400 sq ft (44,070 m²) | Extra vaults below. |
+| Deep vault | 3 | 156,300 sq ft (14,520 m²) each | The deepest vaults. |
+| Overflow vault | 3 | 156,300 sq ft (14,520 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -1694,13 +1694,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 9 | 1 | 76,370 sq ft (7,095 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 10 | 1 | 76,170 sq ft (7,076 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 11 | 1 | 76,370 sq ft (7,095 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,090 sq ft (101 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 11 | 3,510 sq ft (326 m²) each | Checks and repairs rounds. |
+| Armourers' workshop | 11 | 3,900 sq ft (362 m²) each | Checks and repairs rounds. |
 | Inspection bay | 11 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
 
 ### P2-26 · Blast Berm 2
@@ -1725,7 +1725,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 13,078,800 sq ft (1,215,060 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 13,064,200 sq ft (1,213,700 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -1735,8 +1735,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 3,285,700 sq ft (305,250 m²) | The deepest vaults. |
-| Overflow vault | 1 | 3,285,700 sq ft (305,250 m²) | Extra vaults below. |
+| Deep vault | 2 | 1,636,500 sq ft (152,040 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 1,636,900 sq ft (152,070 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -1760,13 +1760,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 395,700 sq ft (36,760 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 395,700 sq ft (36,760 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 395,700 sq ft (36,760 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (149 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 770 sq ft (71 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 950 sq ft (88 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 26 | 3,250 sq ft (302 m²) each | Checks and repairs rounds. |
+| Armourers' workshop | 26 | 3,630 sq ft (337 m²) each | Checks and repairs rounds. |
 | Inspection bay | 26 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-28 · Blast Berm 3
@@ -1791,7 +1791,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 1,858,200 sq ft (172,630 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 1,851,200 sq ft (171,980 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -1801,8 +1801,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 472,300 sq ft (43,880 m²) | The deepest vaults. |
-| Overflow vault | 1 | 472,400 sq ft (43,890 m²) | Extra vaults below. |
+| Deep vault | 5 | 93,070 sq ft (8,646 m²) each | The deepest vaults. |
+| Overflow vault | 4 | 116,900 sq ft (10,860 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -1810,9 +1810,9 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Bunker vault 1 | 1 | 75,090 sq ft (6,976 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 2 | 1 | 74,980 sq ft (6,966 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 3 | 1 | 75,190 sq ft (6,985 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 1 | 1 | 75,070 sq ft (6,974 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 2 | 1 | 74,960 sq ft (6,964 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 3 | 1 | 75,170 sq ft (6,984 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 4 | 1 | 75,010 sq ft (6,969 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 5 | 1 | 74,920 sq ft (6,960 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 6 | 1 | 75,190 sq ft (6,985 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
@@ -1821,13 +1821,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 9 | 1 | 75,030 sq ft (6,971 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 10 | 1 | 74,920 sq ft (6,960 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 11 | 1 | 75,160 sq ft (6,983 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
 | Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Magazine control room | 1 | 1,100 sq ft (102 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 12 | 3,540 sq ft (329 m²) each | Checks and repairs rounds. |
+| Armourers' workshop | 12 | 3,920 sq ft (365 m²) each | Checks and repairs rounds. |
 | Inspection bay | 12 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
 
 ### P2-30 · Blast Berm 4
@@ -1852,7 +1852,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 8,299,600 sq ft (771,060 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 8,285,000 sq ft (769,700 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -1862,8 +1862,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,090,900 sq ft (194,250 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,090,900 sq ft (194,250 m²) | Extra vaults below. |
+| Deep vault | 4 | 519,600 sq ft (48,270 m²) each | The deepest vaults. |
+| Overflow vault | 3 | 693,000 sq ft (64,380 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -1887,13 +1887,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 246,400 sq ft (22,890 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 246,400 sq ft (22,890 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 246,400 sq ft (22,890 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (149 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 770 sq ft (71 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 950 sq ft (88 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 26 | 3,250 sq ft (302 m²) each | Checks and repairs rounds. |
+| Armourers' workshop | 26 | 3,630 sq ft (337 m²) each | Checks and repairs rounds. |
 | Inspection bay | 26 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-32 · Blast Berm 5
@@ -1918,7 +1918,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 4,594,300 sq ft (426,830 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 4,578,200 sq ft (425,330 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -1928,8 +1928,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 1,166,200 sq ft (108,340 m²) | The deepest vaults. |
-| Overflow vault | 1 | 1,166,100 sq ft (108,330 m²) | Extra vaults below. |
+| Deep vault | 17 | 67,530 sq ft (6,274 m²) each | The deepest vaults. |
+| Overflow vault | 6 | 192,900 sq ft (17,930 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -1937,30 +1937,30 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Bunker vault 1 | 1 | 129,300 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 1 | 1 | 129,200 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 2 | 1 | 129,200 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 3 | 1 | 129,300 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 4 | 1 | 129,400 sq ft (12,030 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 4 | 1 | 129,400 sq ft (12,020 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 5 | 1 | 129,200 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 6 | 1 | 129,200 sq ft (12,000 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 7 | 1 | 129,200 sq ft (12,000 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 8 | 1 | 129,300 sq ft (12,020 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 8 | 1 | 129,300 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 9 | 1 | 129,500 sq ft (12,030 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 10 | 1 | 129,200 sq ft (12,000 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 11 | 1 | 129,200 sq ft (12,000 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 12 | 1 | 129,300 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 13 | 1 | 129,500 sq ft (12,030 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 14 | 1 | 129,000 sq ft (11,980 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 15 | 1 | 129,600 sq ft (12,040 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Bunker vault 16 | 1 | 129,300 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 15 | 1 | 129,500 sq ft (12,030 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
+| Bunker vault 16 | 1 | 129,200 sq ft (12,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (149 m²) | Deluge and gas systems. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,060 sq ft (98 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 28 | 3,440 sq ft (319 m²) each | Checks and repairs rounds. |
-| Inspection bay | 28 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
+| Armourers' workshop | 28 | 3,820 sq ft (355 m²) each | Checks and repairs rounds. |
+| Inspection bay | 28 | 3,220 sq ft (299 m²) each | Rounds are checked before issue. |
 
 ### P2-34 · Blast Berm 6
 
@@ -1984,7 +1984,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 1,480,500 sq ft (137,540 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 1,476,000 sq ft (137,130 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -1994,8 +1994,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 374,800 sq ft (34,820 m²) | The deepest vaults. |
-| Overflow vault | 1 | 374,800 sq ft (34,820 m²) | Extra vaults below. |
+| Deep vault | 2 | 185,600 sq ft (17,240 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 185,600 sq ft (17,240 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2010,14 +2010,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 5 | 1 | 96,620 sq ft (8,977 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 6 | 1 | 96,860 sq ft (8,999 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 7 | 1 | 96,620 sq ft (8,977 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,090 sq ft (101 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 7 | 3,510 sq ft (326 m²) each | Checks and repairs rounds. |
-| Inspection bay | 7 | 3,250 sq ft (302 m²) each | Rounds are checked before issue. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 7 | 3,890 sq ft (361 m²) each | Checks and repairs rounds. |
+| Inspection bay | 7 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
 
 ### P2-36 · Blast Berm 7
 
@@ -2041,7 +2041,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 8,434,600 sq ft (783,600 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 8,420,100 sq ft (782,260 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2051,8 +2051,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,124,800 sq ft (197,400 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,124,800 sq ft (197,400 m²) | Extra vaults below. |
+| Deep vault | 4 | 528,000 sq ft (49,060 m²) each | The deepest vaults. |
+| Overflow vault | 4 | 528,200 sq ft (49,070 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2076,13 +2076,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 250,200 sq ft (23,250 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 250,600 sq ft (23,280 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 250,200 sq ft (23,250 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (149 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 830 sq ft (77 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,020 sq ft (95 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 26 | 3,370 sq ft (313 m²) each | Checks and repairs rounds. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 26 | 3,750 sq ft (348 m²) each | Checks and repairs rounds. |
 | Inspection bay | 26 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-38 · Blast Berm 8
@@ -2107,7 +2107,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 971,900 sq ft (90,290 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 967,400 sq ft (89,870 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -2117,8 +2117,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 246,700 sq ft (22,920 m²) | The deepest vaults. |
-| Overflow vault | 1 | 246,900 sq ft (22,940 m²) | Extra vaults below. |
+| Deep vault | 2 | 121,500 sq ft (11,290 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 122,000 sq ft (11,340 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2132,14 +2132,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 4 | 1 | 72,470 sq ft (6,732 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 5 | 1 | 72,470 sq ft (6,732 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 6 | 1 | 72,470 sq ft (6,732 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 630 sq ft (59 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 800 sq ft (75 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 9 | 2,170 sq ft (201 m²) each | Checks and repairs rounds. |
-| Inspection bay | 8 | 2,210 sq ft (205 m²) each | Rounds are checked before issue. |
+| Armourers' workshop | 9 | 2,260 sq ft (210 m²) each | Checks and repairs rounds. |
+| Inspection bay | 8 | 2,320 sq ft (216 m²) each | Rounds are checked before issue. |
 
 ### P2-40 · Blast Berm 9
 
@@ -2163,7 +2163,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 10,111,000 sq ft (939,350 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 10,099,500 sq ft (938,270 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2173,8 +2173,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,539,700 sq ft (235,950 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,540,500 sq ft (236,020 m²) | Extra vaults below. |
+| Deep vault | 2 | 1,265,400 sq ft (117,560 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 1,265,200 sq ft (117,540 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2198,14 +2198,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 306,000 sq ft (28,430 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 306,000 sq ft (28,430 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 306,000 sq ft (28,430 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 750 sq ft (69 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 930 sq ft (86 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 20 | 3,210 sq ft (298 m²) each | Checks and repairs rounds. |
-| Inspection bay | 20 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
+| Armourers' workshop | 20 | 3,580 sq ft (333 m²) each | Checks and repairs rounds. |
+| Inspection bay | 20 | 3,220 sq ft (299 m²) each | Rounds are checked before issue. |
 
 ### P2-42 · Blast Berm 10
 
@@ -2229,7 +2229,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 5,391,600 sq ft (500,900 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 5,382,900 sq ft (500,090 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2239,8 +2239,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 1,357,300 sq ft (126,100 m²) | The deepest vaults. |
-| Overflow vault | 1 | 1,357,200 sq ft (126,080 m²) | Extra vaults below. |
+| Deep vault | 2 | 675,000 sq ft (62,710 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 675,000 sq ft (62,710 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2263,14 +2263,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 13 | 1 | 171,400 sq ft (15,920 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 14 | 1 | 171,400 sq ft (15,920 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 171,400 sq ft (15,920 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,050 sq ft (98 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 15 | 3,450 sq ft (321 m²) each | Checks and repairs rounds. |
-| Inspection bay | 15 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 15 | 3,830 sq ft (355 m²) each | Checks and repairs rounds. |
+| Inspection bay | 15 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-44 · Blast Berm 11
 
@@ -2294,7 +2294,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 3,288,100 sq ft (305,480 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 3,277,800 sq ft (304,510 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2304,8 +2304,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 833,300 sq ft (77,420 m²) | The deepest vaults. |
-| Overflow vault | 1 | 833,300 sq ft (77,420 m²) | Extra vaults below. |
+| Deep vault | 4 | 206,100 sq ft (19,140 m²) each | The deepest vaults. |
+| Overflow vault | 4 | 206,300 sq ft (19,160 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2329,14 +2329,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 93,400 sq ft (8,677 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 93,620 sq ft (8,698 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 93,400 sq ft (8,677 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 820 sq ft (76 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 18 | 3,360 sq ft (312 m²) each | Checks and repairs rounds. |
-| Inspection bay | 18 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,010 sq ft (93 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 18 | 3,740 sq ft (348 m²) each | Checks and repairs rounds. |
+| Inspection bay | 18 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-46 · Blast Berm 12
 
@@ -2360,7 +2360,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 7,954,200 sq ft (738,970 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 7,943,800 sq ft (738,000 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2370,8 +2370,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 1,999,800 sq ft (185,790 m²) | The deepest vaults. |
-| Overflow vault | 1 | 1,999,800 sq ft (185,790 m²) | Extra vaults below. |
+| Deep vault | 2 | 995,400 sq ft (92,480 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 995,800 sq ft (92,510 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2395,14 +2395,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 239,000 sq ft (22,210 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 239,600 sq ft (22,260 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 239,000 sq ft (22,210 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 820 sq ft (76 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 18 | 3,360 sq ft (312 m²) each | Checks and repairs rounds. |
-| Inspection bay | 18 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,010 sq ft (93 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 18 | 3,740 sq ft (348 m²) each | Checks and repairs rounds. |
+| Inspection bay | 18 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-48 · Blast Berm 13
 
@@ -2426,7 +2426,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 11,058,000 sq ft (1,027,320 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 11,044,500 sq ft (1,026,070 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2436,8 +2436,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,780,200 sq ft (258,290 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,780,200 sq ft (258,290 m²) | Extra vaults below. |
+| Deep vault | 2 | 1,384,200 sq ft (128,600 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 1,384,200 sq ft (128,600 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2461,13 +2461,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 332,700 sq ft (30,910 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 332,700 sq ft (30,910 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 332,700 sq ft (30,910 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
-| Suppression plant | 1 | 1,610 sq ft (150 m²) | Deluge and gas systems. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,070 sq ft (100 m²) | Watches temperature, smoke and doors. |
+| Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 25 | 3,490 sq ft (324 m²) each | Checks and repairs rounds. |
+| Armourers' workshop | 25 | 3,880 sq ft (361 m²) each | Checks and repairs rounds. |
 | Inspection bay | 25 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
 
 ### P2-50 · Blast Berm 14
@@ -2492,7 +2492,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 10,544,400 sq ft (979,610 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 10,533,300 sq ft (978,570 m²) of rooms. Room plan proposed.
 
 **Look:** A grass-roofed bunker with a red light over its door.
 
@@ -2502,8 +2502,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 2,648,400 sq ft (246,050 m²) | The deepest vaults. |
-| Overflow vault | 1 | 2,649,100 sq ft (246,110 m²) | Extra vaults below. |
+| Deep vault | 2 | 1,319,700 sq ft (122,600 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 1,319,500 sq ft (122,590 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2527,14 +2527,14 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 319,000 sq ft (29,640 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 319,000 sq ft (29,640 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 319,000 sq ft (29,640 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 860 sq ft (80 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 1,100 sq ft (102 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 20 | 3,520 sq ft (327 m²) each | Checks and repairs rounds. |
-| Inspection bay | 20 | 3,240 sq ft (301 m²) each | Rounds are checked before issue. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 20 | 3,910 sq ft (364 m²) each | Checks and repairs rounds. |
+| Inspection bay | 20 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ### P2-52 · Blast Berm 15
 
@@ -2558,7 +2558,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A spare magazine bunker set inside a blast berm in the Ordnance Yards, holding extra munitions.
 
-20 ft (6 m) tall, 1 above deck, 1 below, 6,502,600 sq ft (604,110 m²) of rooms. Room plan proposed.
+20 ft (6 m) tall, 1 above deck, 1 below, 6,491,900 sq ft (603,120 m²) of rooms. Room plan proposed.
 
 **Look:** A small concrete bunker buried in an earth berm, with a single blast door.
 
@@ -2568,8 +2568,8 @@ Floor at 26 ft (8 m) below the deck; 26 ft (8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Deep vault | 1 | 1,637,300 sq ft (152,110 m²) | The deepest vaults. |
-| Overflow vault | 1 | 1,637,700 sq ft (152,150 m²) | Extra vaults below. |
+| Deep vault | 2 | 814,100 sq ft (75,630 m²) each | The deepest vaults. |
+| Overflow vault | 2 | 814,400 sq ft (75,660 m²) each | Extra vaults below. |
 
 #### Level 1 · Magazine floor
 
@@ -2593,13 +2593,13 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Bunker vault 14 | 1 | 193,900 sq ft (18,010 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 15 | 1 | 193,400 sq ft (17,970 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
 | Bunker vault 16 | 1 | 193,400 sq ft (17,970 m²) | One armoured vault with racks, its own fire suppression and a blast door. |
-| Armoured entrance | 1 | 860 sq ft (80 m²) | Two checks and a blast door. |
-| Issue room | 1 | 1,610 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
-| Magazine control room | 1 | 800 sq ft (74 m²) | Watches temperature, smoke and doors. |
+| Armoured entrance | 1 | 870 sq ft (81 m²) | Two checks and a blast door. |
+| Issue room | 1 | 1,620 sq ft (150 m²) | Rounds are signed out to the hauler drones. |
+| Magazine control room | 1 | 990 sq ft (92 m²) | Watches temperature, smoke and doors. |
 | Suppression plant | 1 | 1,620 sq ft (150 m²) | Deluge and gas systems. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Armourers' workshop | 19 | 3,320 sq ft (309 m²) each | Checks and repairs rounds. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Armourers' workshop | 19 | 3,710 sq ft (344 m²) each | Checks and repairs rounds. |
 | Inspection bay | 19 | 3,230 sq ft (300 m²) each | Rounds are checked before issue. |
 
 ## P3 · Port Launch Wing
@@ -2690,7 +2690,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The control room for launch shafts 1 to 16, with windows over the shaft heads, where launch controllers send each craft up.
 
-36 ft (11 m) tall, 2 above deck, 387,000 sq ft (35,950 m²) of rooms. Room plan proposed.
+36 ft (11 m) tall, 2 above deck, 385,800 sq ft (35,840 m²) of rooms. Room plan proposed.
 
 **Look:** A glass-fronted control block on stilts looking down over the shaft heads, its windows lit blue.
 
@@ -2700,10 +2700,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Equipment room | 1 | 2,150 sq ft (200 m²) | Computers for launch control. |
+| Equipment room | 1 | 1,850 sq ft (172 m²) | Computers for launch control. |
 | Battery room | 1 | 1,070 sq ft (100 m²) | Back-up power. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
 | Engineers' room | 112 | 1,680 sq ft (156 m²) each | Shaft engineers on call. |
 | Light court (open air) | 1 | 386,500 sq ft (35,900 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -2713,10 +2713,10 @@ Floor at 16 ft (5 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Launch control room | 1 | 3,230 sq ft (300 m²) | Controllers at windows over the shaft heads clear each craft to launch. |
+| Launch control room | 1 | 2,920 sq ft (272 m²) | Controllers at windows over the shaft heads clear each craft to launch. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Shaft desk room | 152 | 1,240 sq ft (116 m²) each | A desk for one group of shafts. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Shaft desk room | 152 | 1,240 sq ft (115 m²) each | A desk for one group of shafts. |
 
 ### P3-06 · Launch Queue Apron
 
@@ -2759,7 +2759,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Ready rooms where crews on alert wait to be called to their craft.
 
-28 ft (8.5 m) tall, 2 above deck, 327,300 sq ft (30,410 m²) of rooms. Room plan proposed.
+28 ft (8.5 m) tall, 2 above deck, 325,100 sq ft (30,200 m²) of rooms. Room plan proposed.
 
 **Look:** A low block with a red alert lamp over every door and slides down to the apron.
 
@@ -2769,10 +2769,10 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Alert board room | 1 | 860 sq ft (80 m²) | Shows which crews are on alert and how fast they must launch. |
-| Kit room | 1 | 1,080 sq ft (100 m²) | Flight kit ready to grab. |
+| Alert board room | 1 | 880 sq ft (81 m²) | Shows which crews are on alert and how fast they must launch. |
+| Kit room | 1 | 1,070 sq ft (100 m²) | Flight kit ready to grab. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Ready room | 96 | 1,680 sq ft (156 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
+| Ready room | 96 | 1,670 sq ft (155 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
 | Light court (open air) | 1 | 239,600 sq ft (22,260 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -2782,14 +2782,14 @@ Floor at 15 ft (4.5 m) above the deck; 13 ft (4 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Rest room | 6 | 420 sq ft (39 m²) each | Bunks for crews on long alerts. |
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Ready room | 96 | 1,670 sq ft (156 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Ready room | 96 | 1,660 sq ft (154 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
 
 ### P3-09 · Shaft Maintenance Shop
 
 **What it is for:** The workshop that repairs lift cradles and shaft doors for the port launch shafts.
 
-67 ft (20.5 m) tall, 2 above deck, 783,100 sq ft (72,750 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 790,500 sq ft (73,440 m²) of rooms. Room plan proposed.
 
 **Look:** A tall yellow-striped workshop with a cradle on its floor.
 
@@ -2808,11 +2808,11 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 | Cradle bay 7 | 1 | 71,030 sq ft (6,599 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 8 | 1 | 70,860 sq ft (6,583 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 9 | 1 | 70,860 sq ft (6,583 m²) | A bay holding one launch cradle under repair. |
-| Rail shop | 1 | 2,160 sq ft (200 m²) | Repairs the cradle rails. |
-| Door seal shop | 1 | 1,140 sq ft (106 m²) | Repairs the shaft door seals. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Rail shop | 1 | 2,160 sq ft (201 m²) | Repairs the cradle rails. |
+| Door seal shop | 1 | 1,330 sq ft (124 m²) | Repairs the shaft door seals. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Parts store | 30 | 2,250 sq ft (209 m²) each | Spares. |
+| Parts store | 30 | 2,370 sq ft (220 m²) each | Spares. |
 
 #### Level 2 · Gallery floor
 
@@ -2829,14 +2829,14 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Cradle bay 7 | 1 | 71,030 sq ft (6,599 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 8 | 1 | 70,860 sq ft (6,583 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 9 | 1 | 70,860 sq ft (6,583 m²) | A bay holding one launch cradle under repair. |
-| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 55 | 1,310 sq ft (122 m²) each | Engineers. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 55 | 1,380 sq ft (128 m²) each | Engineers. |
 
 ### P3-10 · Port Catapult Plant
 
 **What it is for:** The plant that powers the launch rails in the port shafts.
 
-54 ft (16.5 m) tall, 2 above deck, 1,768,400 sq ft (164,290 m²) of rooms. Room plan proposed.
+54 ft (16.5 m) tall, 2 above deck, 1,776,300 sq ft (165,030 m²) of rooms. Room plan proposed.
 
 **Look:** A blank yellow-trimmed plant hall humming with power.
 
@@ -2860,11 +2860,11 @@ Floor at deck level; 39 ft (12 m) floor to floor.
 | Capacitor bank 12 | 1 | 114,600 sq ft (10,650 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 13 | 1 | 114,800 sq ft (10,660 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 14 | 1 | 114,400 sq ft (10,630 m²) | One bank of capacitors and switchgear for a group of shafts. |
-| Plant control room | 1 | 1,290 sq ft (120 m²) | Watches every bank. |
-| Cooling plant | 1 | 1,880 sq ft (174 m²) | Cools the capacitors. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Plant control room | 1 | 1,300 sq ft (121 m²) | Watches every bank. |
+| Cooling plant | 1 | 2,060 sq ft (192 m²) | Cools the capacitors. |
+| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Switch room | 37 | 2,100 sq ft (195 m²) each | Switchgear. |
+| Switch room | 49 | 1,660 sq ft (154 m²) each | Switchgear. |
 
 #### Level 2 · Gallery floor
 
@@ -2886,13 +2886,13 @@ Floor at 39 ft (12 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Capacitor bank 12 | 1 | 114,600 sq ft (10,650 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 13 | 1 | 114,800 sq ft (10,660 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 14 | 1 | 114,400 sq ft (10,630 m²) | One bank of capacitors and switchgear for a group of shafts. |
-| Cable gallery | 40 | 2,060 sq ft (191 m²) each | Cables to the shafts. |
+| Cable gallery | 52 | 1,660 sq ft (154 m²) each | Cables to the shafts. |
 
 ### P3-11 · Port Wing Fire Station
 
 **What it is for:** The fire and crash rescue station for the port launch wing.
 
-51 ft (15.4 m) tall, 3 above deck, 472,100 sq ft (43,860 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 484,600 sq ft (45,020 m²) of rooms. Room plan proposed.
 
 **Look:** A graphite station with tall red roller doors, a lit red stripe along the crew floor and a training tower behind.
 
@@ -2903,17 +2903,17 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Crash tender | 2 | 26,890 sq ft (2,498 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Aerial ladder | 2 | 26,830 sq ft (2,492 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Foam tender | 2 | 26,870 sq ft (2,497 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Rescue unit | 2 | 26,900 sq ft (2,499 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 650 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
-| Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
-| Decontamination room | 1 | 650 sq ft (61 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,150 sq ft (107 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Rack rescue kit room | 1 | 860 sq ft (80 m²) | Kit for fires high in the racks. |
-| Hose store | 1 | 750 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 37 | 2,160 sq ft (201 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Aerial ladder | 2 | 26,820 sq ft (2,492 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Foam tender | 2 | 26,870 sq ft (2,496 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Rescue unit | 2 | 26,890 sq ft (2,498 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Watch room | 1 | 660 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Breathing apparatus room | 1 | 670 sq ft (62 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
+| Decontamination room | 1 | 840 sq ft (78 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
+| Turnout gear room | 1 | 1,320 sq ft (123 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Rack rescue kit room | 1 | 870 sq ft (81 m²) | Kit for fires high in the racks. |
+| Hose store | 1 | 750 sq ft (69 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 48 | 1,750 sq ft (163 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 214,900 sq ft (19,970 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -2923,15 +2923,15 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Crash tender | 2 | 26,890 sq ft (2,498 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Aerial ladder | 2 | 26,830 sq ft (2,492 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Foam tender | 2 | 26,870 sq ft (2,497 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Rescue unit | 2 | 26,900 sq ft (2,499 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 14 | 370 sq ft (34 m²) each | A small bedroom for a firefighter on a night watch. |
-| Kitchen | 1 | 540 sq ft (51 m²) | The station kitchen, where the watch cooks its meals together. |
-| Mess room | 1 | 960 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
+| Aerial ladder | 2 | 26,820 sq ft (2,492 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Foam tender | 2 | 26,870 sq ft (2,496 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Rescue unit | 2 | 26,890 sq ft (2,498 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Bunk rooms | 14 | 430 sq ft (40 m²) each | A small bedroom for a firefighter on a night watch. |
+| Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
+| Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 360 sq ft (34 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 60 | 1,300 sq ft (120 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 410 sq ft (39 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 59 | 1,370 sq ft (128 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -2939,17 +2939,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 370 sq ft (34 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
-| Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the port launch wing rack halls for fire risks work from here. |
-| Records room | 1 | 360 sq ft (34 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 88 | 950 sq ft (88 m²) each | Offices for the station's officers and fire safety staff. |
+| Station commander's office | 1 | 420 sq ft (39 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 750 sq ft (70 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Fire safety office | 1 | 610 sq ft (57 m²) | Inspectors who check buildings in the port launch wing rack halls for fire risks work from here. |
+| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 90 | 970 sq ft (91 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P3-12 · Port Launch Service Shaft
 
 **What it is for:** The port launch wing's shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 592,500 sq ft (55,040 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 590,500 sq ft (54,860 m²) of rooms. Room plan proposed.
 
 **Look:** A squat concrete drum with a ring of yellow hazard lights round the lift doors and a steel gantry crane on its roof.
 
@@ -2959,8 +2959,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 140,300 sq ft (13,030 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 140,400 sq ft (13,040 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 2 | 68,340 sq ft (6,349 m²) each | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 2 | 69,280 sq ft (6,437 m²) each | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -2968,13 +2968,13 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft and lift landing | 1 | 234,900 sq ft (21,820 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Crew lift and stair. |
-| Lift control room | 1 | 530 sq ft (49 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,600 sq ft (148 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Shaft and lift landing | 1 | 234,800 sq ft (21,810 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Crew lift and stair. |
+| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,700 sq ft (158 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 16 | 2,140 sq ft (199 m²) each | Short-term storage for goods waiting for the lift. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 16 | 2,250 sq ft (209 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -2982,10 +2982,10 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Shaft and lift landing | 1 | 234,900 sq ft (21,820 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Crew lift and stair. |
-| Winding machinery | 1 | 2,130 sq ft (198 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,290 sq ft (120 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 16 | 2,190 sq ft (203 m²) each | Walkways around the lift machinery for inspection. |
+| Shaft and lift landing | 1 | 234,800 sq ft (21,810 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Crew lift and stair. |
+| Winding machinery | 1 | 1,610 sq ft (150 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 630 sq ft (58 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 17 | 2,240 sq ft (208 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P3-13 · Launch Apron 1
 
@@ -3277,7 +3277,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The control room for launch shafts 17 to 32.
 
-36 ft (11 m) tall, 2 above deck, 421,400 sq ft (39,150 m²) of rooms. Room plan proposed.
+36 ft (11 m) tall, 2 above deck, 419,900 sq ft (39,010 m²) of rooms. Room plan proposed.
 
 **Look:** A glass-fronted control block on stilts looking down over the shaft heads, its windows lit blue.
 
@@ -3287,11 +3287,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Equipment room | 1 | 2,150 sq ft (200 m²) | Computers for launch control. |
-| Battery room | 1 | 1,080 sq ft (100 m²) | Back-up power. |
+| Equipment room | 1 | 1,850 sq ft (172 m²) | Computers for launch control. |
+| Battery room | 1 | 1,070 sq ft (100 m²) | Back-up power. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Engineers' room | 122 | 1,690 sq ft (157 m²) each | Shaft engineers on call. |
+| Engineers' room | 122 | 1,680 sq ft (156 m²) each | Shaft engineers on call. |
 | Light court (open air) | 1 | 461,600 sq ft (42,880 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Control floor
@@ -3300,8 +3300,8 @@ Floor at 16 ft (5 m) above the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Launch control room | 1 | 3,230 sq ft (300 m²) | Controllers at windows over the shaft heads clear each craft to launch. |
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Launch control room | 1 | 2,920 sq ft (272 m²) | Controllers at windows over the shaft heads clear each craft to launch. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
 | Shaft desk room | 165 | 1,250 sq ft (116 m²) each | A desk for one group of shafts. |
 
@@ -3348,7 +3348,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The bay where craft that come back damaged get a first inspection to decide what repairs they need.
 
-61 ft (18.5 m) tall, 2 above deck, 1,046,500 sq ft (97,220 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 1,055,000 sq ft (98,020 m²) of rooms. Room plan proposed.
 
 **Look:** A wide open-fronted bay with floodlit inspection stands.
 
@@ -3368,11 +3368,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Triage stand 8 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
 | Triage stand 9 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
 | Triage stand 10 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
-| Inspection office | 1 | 860 sq ft (80 m²) | Inspectors decide each craft's repairs. |
-| Scanner room | 1 | 1,080 sq ft (100 m²) | Scans hulls for hidden damage. |
+| Inspection office | 1 | 870 sq ft (81 m²) | Inspectors decide each craft's repairs. |
+| Scanner room | 1 | 1,070 sq ft (100 m²) | Scans hulls for hidden damage. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 430 sq ft (40 m²) | Toilets, showers and changing space for the staff. |
-| Inspectors' room | 58 | 1,320 sq ft (123 m²) each | Inspectors. |
+| Staff toilets and showers | 1 | 620 sq ft (58 m²) | Toilets, showers and changing space for the staff. |
+| Inspectors' room | 69 | 1,170 sq ft (109 m²) each | Inspectors. |
 
 #### Level 2 · Gallery floor
 
@@ -3390,14 +3390,14 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Triage stand 8 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
 | Triage stand 9 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
 | Triage stand 10 | 1 | 88,610 sq ft (8,232 m²) | A stand where one damaged craft is inspected. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Records room | 60 | 1,330 sq ft (124 m²) each | Damage records. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Records room | 71 | 1,180 sq ft (110 m²) each | Damage records. |
 
 ### P4-09 · Shaft Door Workshop
 
 **What it is for:** The workshop for shaft doors and seals on the starboard shafts.
 
-67 ft (20.5 m) tall, 2 above deck, 629,900 sq ft (58,520 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 635,600 sq ft (59,050 m²) of rooms. Room plan proposed.
 
 **Look:** A tall yellow-striped workshop with a cradle on its floor.
 
@@ -3414,11 +3414,11 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 | Cradle bay 5 | 1 | 73,970 sq ft (6,872 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 6 | 1 | 74,150 sq ft (6,889 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 7 | 1 | 73,970 sq ft (6,872 m²) | A bay holding one launch cradle under repair. |
-| Rail shop | 1 | 2,150 sq ft (200 m²) | Repairs the cradle rails. |
-| Door seal shop | 1 | 1,340 sq ft (124 m²) | Repairs the shaft door seals. |
+| Rail shop | 1 | 2,160 sq ft (201 m²) | Repairs the cradle rails. |
+| Door seal shop | 1 | 1,540 sq ft (143 m²) | Repairs the shaft door seals. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Parts store | 21 | 2,410 sq ft (224 m²) each | Spares. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Parts store | 21 | 2,540 sq ft (236 m²) each | Spares. |
 
 #### Level 2 · Gallery floor
 
@@ -3433,14 +3433,14 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Cradle bay 5 | 1 | 73,970 sq ft (6,872 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 6 | 1 | 74,150 sq ft (6,889 m²) | A bay holding one launch cradle under repair. |
 | Cradle bay 7 | 1 | 73,970 sq ft (6,872 m²) | A bay holding one launch cradle under repair. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 40 | 1,390 sq ft (129 m²) each | Engineers. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 48 | 1,210 sq ft (113 m²) each | Engineers. |
 
 ### P4-10 · Starboard Launch Ready Rooms
 
 **What it is for:** Ready rooms where starboard crews on alert wait to be called.
 
-28 ft (8.5 m) tall, 2 above deck, 506,100 sq ft (47,020 m²) of rooms. Room plan proposed.
+28 ft (8.5 m) tall, 2 above deck, 504,300 sq ft (46,850 m²) of rooms. Room plan proposed.
 
 **Look:** A low block with a red alert lamp over every door and slides down to the apron.
 
@@ -3450,10 +3450,10 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Alert board room | 1 | 860 sq ft (80 m²) | Shows which crews are on alert and how fast they must launch. |
-| Kit room | 1 | 1,080 sq ft (100 m²) | Flight kit ready to grab. |
+| Alert board room | 1 | 880 sq ft (81 m²) | Shows which crews are on alert and how fast they must launch. |
+| Kit room | 1 | 1,070 sq ft (100 m²) | Flight kit ready to grab. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Ready room | 149 | 1,680 sq ft (156 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
+| Ready room | 149 | 1,670 sq ft (156 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
 | Light court (open air) | 1 | 728,100 sq ft (67,640 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -3463,14 +3463,14 @@ Floor at 15 ft (4.5 m) above the deck; 13 ft (4 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Rest room | 6 | 420 sq ft (39 m²) each | Bunks for crews on long alerts. |
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Ready room | 149 | 1,680 sq ft (156 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Ready room | 149 | 1,670 sq ft (155 m²) each | A crew waits here on alert, in flight kit, with a screen and recliners. |
 
 ### P4-11 · Starboard Catapult Plant
 
 **What it is for:** The plant that powers the launch rails in the starboard shafts.
 
-54 ft (16.5 m) tall, 2 above deck, 1,190,000 sq ft (110,550 m²) of rooms. Room plan proposed.
+54 ft (16.5 m) tall, 2 above deck, 1,198,700 sq ft (111,360 m²) of rooms. Room plan proposed.
 
 **Look:** A blank yellow-trimmed plant hall humming with power.
 
@@ -3494,11 +3494,11 @@ Floor at deck level; 39 ft (12 m) floor to floor.
 | Capacitor bank 12 | 1 | 73,490 sq ft (6,828 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 13 | 1 | 73,250 sq ft (6,805 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 14 | 1 | 73,490 sq ft (6,828 m²) | One bank of capacitors and switchgear for a group of shafts. |
-| Plant control room | 1 | 1,290 sq ft (120 m²) | Watches every bank. |
-| Cooling plant | 1 | 2,090 sq ft (195 m²) | Cools the capacitors. |
+| Plant control room | 1 | 1,300 sq ft (121 m²) | Watches every bank. |
+| Cooling plant | 1 | 2,280 sq ft (212 m²) | Cools the capacitors. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Switch room | 45 | 1,690 sq ft (157 m²) each | Switchgear. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Switch room | 45 | 1,780 sq ft (166 m²) each | Switchgear. |
 
 #### Level 2 · Gallery floor
 
@@ -3520,13 +3520,13 @@ Floor at 39 ft (12 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Capacitor bank 12 | 1 | 73,490 sq ft (6,828 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 13 | 1 | 73,250 sq ft (6,805 m²) | One bank of capacitors and switchgear for a group of shafts. |
 | Capacitor bank 14 | 1 | 73,490 sq ft (6,828 m²) | One bank of capacitors and switchgear for a group of shafts. |
-| Cable gallery | 48 | 1,690 sq ft (157 m²) each | Cables to the shafts. |
+| Cable gallery | 48 | 1,780 sq ft (166 m²) each | Cables to the shafts. |
 
 ### P4-12 · Starboard Wing Fire Station
 
 **What it is for:** The fire and crash rescue station for the starboard launch wing.
 
-51 ft (15.4 m) tall, 3 above deck, 390,300 sq ft (36,260 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 376,700 sq ft (35,000 m²) of rooms. Room plan proposed.
 
 **Look:** A compact red-and-graphite station whose bay doors fold up like wings, with the crew floor glazed above.
 
@@ -3540,14 +3540,14 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Aerial ladder | 2 | 28,770 sq ft (2,673 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 28,630 sq ft (2,660 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 28,770 sq ft (2,673 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 650 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
 | Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,200 sq ft (112 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Turnout gear room | 1 | 930 sq ft (86 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
 | Rack rescue kit room | 1 | 860 sq ft (80 m²) | Kit for fires high in the racks. |
-| Hose store | 1 | 740 sq ft (69 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 28 | 1,710 sq ft (159 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 22 | 1,980 sq ft (184 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 229,600 sq ft (21,330 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -3560,12 +3560,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Aerial ladder | 2 | 28,770 sq ft (2,673 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 28,630 sq ft (2,660 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 28,770 sq ft (2,673 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 13 | 420 sq ft (39 m²) each | A small bedroom for a firefighter on a night watch. |
+| Bunk rooms | 13 | 340 sq ft (31 m²) each | A small bedroom for a firefighter on a night watch. |
 | Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
-| Mess room | 1 | 960 sq ft (89 m²) | The crew's dining and sitting room, with a television and the call speaker. |
+| Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 410 sq ft (38 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 34 | 1,330 sq ft (124 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 340 sq ft (31 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 34 | 1,230 sq ft (114 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -3573,17 +3573,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 410 sq ft (38 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,070 sq ft (99 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Station commander's office | 1 | 350 sq ft (32 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 1,000 sq ft (93 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
 | Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the starboard launch wing rack halls for fire risks work from here. |
-| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 54 | 950 sq ft (88 m²) each | Offices for the station's officers and fire safety staff. |
+| Records room | 1 | 340 sq ft (31 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 46 | 1,020 sq ft (95 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P4-13 · Starboard Launch Service Shaft
 
 **What it is for:** The starboard launch wing's shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 561,100 sq ft (52,120 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 560,300 sq ft (52,060 m²) of rooms. Room plan proposed.
 
 **Look:** A squat concrete drum with a ring of yellow hazard lights round the lift doors and a steel gantry crane on its roof.
 
@@ -3593,8 +3593,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 135,600 sq ft (12,600 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 135,600 sq ft (12,600 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 133,800 sq ft (12,430 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 134,400 sq ft (12,490 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -3603,12 +3603,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 244,100 sq ft (22,680 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,750 sq ft (162 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Lift control room | 1 | 650 sq ft (60 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,760 sq ft (164 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
-| Tool store | 1 | 850 sq ft (79 m²) | Tools, harnesses and lamps for work in the service layer. |
+| Tool store | 1 | 870 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 16 | 1,160 sq ft (108 m²) each | Short-term storage for goods waiting for the lift. |
+| Holding store | 16 | 1,220 sq ft (113 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -3617,9 +3617,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 244,100 sq ft (22,680 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 1,610 sq ft (149 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 680 sq ft (63 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 18 | 1,140 sq ft (106 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 1,480 sq ft (138 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 800 sq ft (74 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 18 | 1,210 sq ft (112 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P4-14 · Launch Apron 1
 
@@ -3794,7 +3794,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Home of 1st Wing, Squadron 1: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 2,348,500 sq ft (218,180 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,374,800 sq ft (220,630 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -3818,14 +3818,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 135,000 sq ft (12,540 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 135,200 sq ft (12,560 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 135,000 sq ft (12,540 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,240 sq ft (394 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,210 sq ft (298 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,290 sq ft (212 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (179 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,800 sq ft (167 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,810 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -3847,16 +3847,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 135,000 sq ft (12,540 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 135,200 sq ft (12,560 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 135,000 sq ft (12,540 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 68 | 1,940 sq ft (180 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,420 sq ft (132 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 81 | 1,920 sq ft (179 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,050 sq ft (98 m²) each | Squadron staff. |
 
 ### P5-02 · Rack Hall 2
 
 **What it is for:** Home of 1st Wing, Squadron 2: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,284,400 sq ft (305,130 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,300,000 sq ft (306,580 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -3880,14 +3880,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,290 sq ft (399 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,210 sq ft (298 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Rack lift landing | 1 | 4,120 sq ft (383 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,630 sq ft (151 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 37 | 1,760 sq ft (163 m²) each | A ground crew team's room. |
-| Spares cage | 36 | 1,750 sq ft (163 m²) each | Quick-change spares. |
+| Ground crew room | 37 | 1,870 sq ft (174 m²) each | A ground crew team's room. |
+| Spares cage | 36 | 1,850 sq ft (172 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -3909,16 +3909,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 214,700 sq ft (19,940 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 47 | 1,660 sq ft (154 m²) each | A walkway along the racks for checks. |
-| Squadron office | 47 | 1,270 sq ft (118 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 48 | 1,900 sq ft (177 m²) each | A walkway along the racks for checks. |
+| Squadron office | 47 | 1,150 sq ft (107 m²) each | Squadron staff. |
 
 ### P5-03 · Rack Hall 3
 
 **What it is for:** Home of 1st Wing, Squadron 3: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,711,000 sq ft (344,760 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,734,100 sq ft (346,910 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -3942,14 +3942,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 236,700 sq ft (21,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 236,300 sq ft (21,960 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 236,700 sq ft (21,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (386 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 3,910 sq ft (363 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,190 sq ft (204 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,760 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -3971,16 +3971,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 236,700 sq ft (21,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 236,300 sq ft (21,960 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 236,700 sq ft (21,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 59 | 1,400 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 71 | 1,660 sq ft (154 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,290 sq ft (119 m²) each | Squadron staff. |
 
 ### P5-04 · 1st Wing Ready Hall
 
 **What it is for:** Ready rooms and briefing rooms for the 1st Strike Wing's crews.
 
-44 ft (13.4 m) tall, 3 above deck, 3,301,200 sq ft (306,690 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 3,033,800 sq ft (281,850 m²) of rooms. Room plan proposed.
 
 **Look:** A long ready hall with the wing's badge over its doors and red alert lamps along its front.
 
@@ -3990,11 +3990,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing briefing theatre | 1 | 4,310 sq ft (401 m²) | The whole wing's crews are briefed together. |
+| Wing briefing theatre | 1 | 4,080 sq ft (379 m²) | The whole wing's crews are briefed together. |
 | Alert board hall | 1 | 1,620 sq ft (150 m²) | Shows every squadron's state. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 245 | 2,580 sq ft (240 m²) each | A squadron's crews wait here on alert. |
-| Briefing room | 245 | 1,880 sq ft (175 m²) each | A crew's briefing. |
+| Squadron ready room | 232 | 2,410 sq ft (224 m²) each | A squadron's crews wait here on alert. |
+| Briefing room | 231 | 1,930 sq ft (179 m²) each | A crew's briefing. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
 
@@ -4003,16 +4003,16 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Wing commander's office | 1 | 650 sq ft (60 m²) | The wing commander. |
-| Tea point | 1 | 570 sq ft (53 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 282 | 2,600 sq ft (242 m²) each | A squadron's crews wait here on alert. |
-| Debrief room | 281 | 1,300 sq ft (120 m²) each | Debriefs. |
+| Tea point | 1 | 300 sq ft (28 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron ready room | 263 | 2,460 sq ft (228 m²) each | A squadron's crews wait here on alert. |
+| Debrief room | 262 | 1,390 sq ft (129 m²) each | Debriefs. |
 
 ### P5-05 · Rack Hall 4
 
 **What it is for:** Home of 1st Wing, Squadron 4: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,460,100 sq ft (321,460 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,485,900 sq ft (323,850 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4036,14 +4036,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 215,200 sq ft (19,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 214,800 sq ft (19,960 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 215,200 sq ft (19,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (179 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4065,16 +4065,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 215,200 sq ft (19,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 214,800 sq ft (19,960 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 215,200 sq ft (19,990 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,080 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (119 m²) each | Squadron staff. |
 
 ### P5-06 · Rack Hall 5
 
 **What it is for:** Home of 1st Wing, Squadron 5: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 7,524,200 sq ft (699,020 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 7,548,000 sq ft (701,230 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -4098,14 +4098,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 507,700 sq ft (47,160 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,250 sq ft (395 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,290 sq ft (213 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,810 sq ft (168 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,800 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4127,16 +4127,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 507,700 sq ft (47,160 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,960 sq ft (182 m²) each | A walkway along the racks for checks. |
-| Squadron office | 60 | 1,410 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 72 | 1,920 sq ft (179 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,060 sq ft (99 m²) each | Squadron staff. |
 
 ### P5-07 · Rack Hall 6
 
 **What it is for:** Home of 1st Wing, Squadron 6: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 2,314,300 sq ft (215,000 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,332,100 sq ft (216,660 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4160,14 +4160,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,300 sq ft (399 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,120 sq ft (383 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 42 | 1,750 sq ft (163 m²) each | A ground crew team's room. |
-| Spares cage | 41 | 1,740 sq ft (162 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 42 | 1,870 sq ft (173 m²) each | A ground crew team's room. |
+| Spares cage | 41 | 1,850 sq ft (172 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4189,16 +4189,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 142,900 sq ft (13,280 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 53 | 1,650 sq ft (153 m²) each | A walkway along the racks for checks. |
-| Squadron office | 53 | 1,280 sq ft (119 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 54 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 53 | 1,130 sq ft (105 m²) each | Squadron staff. |
 
 ### P5-08 · Port Rack Lift Control
 
 **What it is for:** The control room for the rack lifts that bring craft down to the floor in the port rack halls.
 
-33 ft (10 m) tall, 2 above deck, 398,500 sq ft (37,020 m²) of rooms. Room plan proposed.
+33 ft (10 m) tall, 2 above deck, 396,600 sq ft (36,850 m²) of rooms. Room plan proposed.
 
 **Look:** A small control block with screens showing every rack.
 
@@ -4208,10 +4208,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Equipment room | 1 | 2,150 sq ft (200 m²) | Computers for the rack lifts. |
+| Equipment room | 1 | 1,860 sq ft (172 m²) | Computers for the rack lifts. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Engineers' room | 119 | 1,640 sq ft (153 m²) each | Lift engineers. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Engineers' room | 119 | 1,640 sq ft (152 m²) each | Lift engineers. |
 | Light court (open air) | 1 | 315,800 sq ft (29,340 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Control floor
@@ -4220,7 +4220,7 @@ Floor at 16 ft (5 m) above the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Rack lift control room | 1 | 3,230 sq ft (300 m²) | Operators bring craft down from the racks in every hall. |
+| Rack lift control room | 1 | 2,930 sq ft (272 m²) | Operators bring craft down from the racks in every hall. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Desk room | 150 | 1,300 sq ft (121 m²) each | One hall's desk. |
 
@@ -4247,7 +4247,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Home of 2nd Wing, Squadron 1: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,722,400 sq ft (345,830 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,745,600 sq ft (347,980 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4271,14 +4271,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 237,500 sq ft (22,070 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 237,100 sq ft (22,030 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 237,500 sq ft (22,070 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (386 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 3,910 sq ft (363 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,190 sq ft (204 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,760 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4300,16 +4300,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 237,500 sq ft (22,070 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 237,100 sq ft (22,030 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 237,500 sq ft (22,070 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 59 | 1,400 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 71 | 1,660 sq ft (154 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,290 sq ft (119 m²) each | Squadron staff. |
 
 ### P5-11 · Rack Hall 8
 
 **What it is for:** Home of 2nd Wing, Squadron 2: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,988,100 sq ft (370,510 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 4,010,700 sq ft (372,600 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4333,14 +4333,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 256,800 sq ft (23,860 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,310 sq ft (400 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
+| Rack lift landing | 1 | 4,080 sq ft (379 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,630 sq ft (151 m²) | The squadron's crews wait here. |
 | Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 54 | 1,730 sq ft (161 m²) each | A ground crew team's room. |
-| Spares cage | 54 | 1,730 sq ft (161 m²) each | Quick-change spares. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 54 | 1,840 sq ft (171 m²) each | A ground crew team's room. |
+| Spares cage | 54 | 1,840 sq ft (171 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4362,16 +4362,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 256,800 sq ft (23,860 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 68 | 1,620 sq ft (150 m²) each | A walkway along the racks for checks. |
-| Squadron office | 68 | 1,280 sq ft (119 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 69 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 68 | 1,110 sq ft (103 m²) each | Squadron staff. |
 
 ### P5-12 · Rack Hall 9
 
 **What it is for:** Home of 2nd Wing, Squadron 3: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 4,839,100 sq ft (449,570 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 4,864,900 sq ft (451,960 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -4395,14 +4395,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 313,700 sq ft (29,140 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 313,200 sq ft (29,100 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 313,700 sq ft (29,140 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (179 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4424,16 +4424,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 313,700 sq ft (29,140 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 313,200 sq ft (29,100 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 313,700 sq ft (29,140 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,080 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (119 m²) each | Squadron staff. |
 
 ### P5-13 · 2nd Wing Ready Hall
 
 **What it is for:** Ready rooms and briefing rooms for the 2nd Strike Wing's crews.
 
-44 ft (13.4 m) tall, 3 above deck, 3,352,700 sq ft (311,480 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 3,253,900 sq ft (302,300 m²) of rooms. Room plan proposed.
 
 **Look:** A long ready hall with the wing's badge over its doors and red alert lamps along its front.
 
@@ -4443,11 +4443,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing briefing theatre | 1 | 4,310 sq ft (400 m²) | The whole wing's crews are briefed together. |
-| Alert board hall | 1 | 1,620 sq ft (150 m²) | Shows every squadron's state. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 244 | 2,590 sq ft (240 m²) each | A squadron's crews wait here on alert. |
-| Briefing room | 243 | 1,970 sq ft (183 m²) each | A crew's briefing. |
+| Wing briefing theatre | 1 | 3,490 sq ft (324 m²) | The whole wing's crews are briefed together. |
+| Alert board hall | 1 | 1,630 sq ft (151 m²) | Shows every squadron's state. |
+| Toilets | 1 | 1,110 sq ft (103 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron ready room | 242 | 2,400 sq ft (223 m²) each | A squadron's crews wait here on alert. |
+| Briefing room | 243 | 2,050 sq ft (191 m²) each | A crew's briefing. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
 
@@ -4455,17 +4455,17 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing commander's office | 1 | 650 sq ft (60 m²) | The wing commander. |
-| Tea point | 1 | 460 sq ft (42 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 290 | 2,560 sq ft (238 m²) each | A squadron's crews wait here on alert. |
-| Debrief room | 289 | 1,300 sq ft (120 m²) each | Debriefs. |
+| Wing commander's office | 1 | 1,120 sq ft (104 m²) | The wing commander. |
+| Tea point | 1 | 1,130 sq ft (105 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Toilets | 1 | 1,110 sq ft (103 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron ready room | 288 | 2,380 sq ft (221 m²) each | A squadron's crews wait here on alert. |
+| Debrief room | 286 | 1,390 sq ft (129 m²) each | Debriefs. |
 
 ### P5-14 · Rack Hall 10
 
 **What it is for:** Home of 2nd Wing, Squadron 4: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 5,328,000 sq ft (494,990 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 5,353,800 sq ft (497,380 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4489,14 +4489,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 348,100 sq ft (32,340 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4518,16 +4518,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 348,100 sq ft (32,340 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (118 m²) each | Squadron staff. |
 
 ### P5-15 · Rack Hall 11
 
 **What it is for:** Home of 2nd Wing, Squadron 5: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 6,522,800 sq ft (605,990 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 6,548,600 sq ft (608,380 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4551,14 +4551,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 434,000 sq ft (40,320 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 433,400 sq ft (40,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 434,000 sq ft (40,320 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (179 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4580,16 +4580,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 434,000 sq ft (40,320 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 433,400 sq ft (40,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 434,000 sq ft (40,320 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,080 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (119 m²) each | Squadron staff. |
 
 ### P5-16 · Rack Hall 12
 
 **What it is for:** Home of 2nd Wing, Squadron 6: a hangar hall in the Port Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,131,800 sq ft (290,960 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,149,600 sq ft (292,610 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -4613,14 +4613,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,240 sq ft (394 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 36 | 2,280 sq ft (212 m²) each | A ground crew team's room. |
-| Spares cage | 35 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 700 sq ft (65 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 44 | 1,800 sq ft (167 m²) each | A ground crew team's room. |
+| Spares cage | 44 | 1,810 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -4642,16 +4642,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 48 | 1,930 sq ft (180 m²) each | A walkway along the racks for checks. |
-| Squadron office | 47 | 1,420 sq ft (132 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 57 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 56 | 1,060 sq ft (98 m²) each | Squadron staff. |
 
 ### P5-17 · Port Hangar Canteen
 
 **What it is for:** The canteen for the port rack hall crews.
 
-18 ft (5.4 m) tall, 1 above deck, 723,400 sq ft (67,210 m²) of rooms. Room plan proposed.
+18 ft (5.4 m) tall, 1 above deck, 722,800 sq ft (67,160 m²) of rooms. Room plan proposed.
 
 **Look:** A glass-fronted dining hall with a deep canopy, warm light spilling out and a lit menu wall inside.
 
@@ -4662,15 +4662,15 @@ Floor at deck level; 18 ft (5.4 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Dining hall | 1 | 485,900 sq ft (45,140 m²) | The main dining hall, with long tables, booths and a counter where rack hall crews collect their meals. |
-| Serving counter | 1 | 1,290 sq ft (120 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
+| Serving counter | 1 | 1,050 sq ft (98 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
 | Main kitchen | 1 | 3,230 sq ft (300 m²) | Cooks prepare thousands of meals a day here on big ranges, ovens and kettles. |
-| Cold room | 1 | 650 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
+| Cold room | 1 | 640 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
 | Freezer room | 1 | 430 sq ft (40 m²) | A walk-in freezer for frozen stores. |
 | Dry store | 1 | 860 sq ft (80 m²) | Shelves of flour, rice, tins and other dry food. |
 | Dishwash room | 1 | 860 sq ft (80 m²) | Conveyor dishwashers clean trays, plates and cutlery. |
-| Goods-in bay | 1 | 650 sq ft (60 m²) | Food deliveries arrive and are checked here. |
-| Waste and recycling room | 1 | 340 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
-| Flight meals counter | 1 | 540 sq ft (50 m²) | Meals packed for crews on alert. |
+| Goods-in bay | 1 | 640 sq ft (60 m²) | Food deliveries arrive and are checked here. |
+| Waste and recycling room | 1 | 350 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
+| Flight meals counter | 1 | 530 sq ft (49 m²) | Meals packed for crews on alert. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Grab-and-go kiosk | 178 | 1,280 sq ft (119 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
 | Terrace court (open air) | 1 | 291,600 sq ft (27,090 m²) | An open court with tables for eating outside. |
@@ -4679,7 +4679,7 @@ Floor at deck level; 18 ft (5.4 m) floor to floor.
 
 **What it is for:** The spare parts store for 1st and 2nd Wing craft.
 
-61 ft (18.5 m) tall, 2 above deck, 2,077,400 sq ft (193,000 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 2,095,100 sq ft (194,640 m²) of rooms. Room plan proposed.
 
 **Look:** A long grey parts store with loading docks.
 
@@ -4703,11 +4703,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Parts aisle 12 | 1 | 126,300 sq ft (11,730 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 126,100 sq ft (11,710 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 126,300 sq ft (11,730 m²) | An aisle of racks. |
-| Goods in | 1 | 3,230 sq ft (300 m²) | Parts arrive. |
-| Issue counter | 1 | 1,080 sq ft (100 m²) | Crews collect parts. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 70 | 2,130 sq ft (198 m²) each | Small parts. |
+| Goods in | 1 | 3,120 sq ft (290 m²) | Parts arrive. |
+| Issue counter | 1 | 1,090 sq ft (101 m²) | Crews collect parts. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 92 | 1,720 sq ft (160 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -4729,14 +4729,14 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Parts aisle 12 | 1 | 126,300 sq ft (11,730 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 126,100 sq ft (11,710 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 126,300 sq ft (11,730 m²) | An aisle of racks. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Robot control | 96 | 1,610 sq ft (150 m²) each | Controls the robots. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Robot control | 96 | 1,700 sq ft (158 m²) each | Controls the robots. |
 
 ### P5-19 · Port Crew Lockers
 
 **What it is for:** Lockers and showers for the port rack crews.
 
-28 ft (8.5 m) tall, 2 above deck, 1,173,600 sq ft (109,030 m²) of rooms. Room plan proposed.
+28 ft (8.5 m) tall, 2 above deck, 1,139,500 sq ft (105,860 m²) of rooms. Room plan proposed.
 
 **Look:** A plain locker block with steam from its laundry vents.
 
@@ -4746,11 +4746,11 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Entrance | 1 | 640 sq ft (60 m²) | Crews badge in. |
-| Laundry | 1 | 2,150 sq ft (200 m²) | Washes flight suits. |
-| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Locker room | 152 | 2,860 sq ft (266 m²) each | Lockers, benches and showers. |
-| Drying room | 151 | 980 sq ft (91 m²) each | Dries wet kit. |
+| Entrance | 1 | 1,010 sq ft (94 m²) | Crews badge in. |
+| Laundry | 1 | 2,160 sq ft (200 m²) | Washes flight suits. |
+| Toilets | 1 | 1,020 sq ft (95 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Locker room | 150 | 2,630 sq ft (244 m²) each | Lockers, benches and showers. |
+| Drying room | 149 | 1,150 sq ft (107 m²) each | Dries wet kit. |
 
 #### Level 2 · Upper floor
 
@@ -4758,14 +4758,14 @@ Floor at 15 ft (4.5 m) above the deck; 13 ft (4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Locker room | 142 | 2,840 sq ft (263 m²) each | Lockers, benches and showers. |
-| Rest room | 141 | 1,310 sq ft (121 m²) each | Rest between shifts. |
+| Locker room | 145 | 2,420 sq ft (225 m²) each | Lockers, benches and showers. |
+| Rest room | 145 | 1,510 sq ft (140 m²) each | Rest between shifts. |
 
 ### P5-20 · Port Racks Fire Station
 
 **What it is for:** The fire and crash rescue station for the port rack halls.
 
-51 ft (15.4 m) tall, 3 above deck, 714,400 sq ft (66,370 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 727,500 sq ft (67,580 m²) of rooms. Room plan proposed.
 
 **Look:** A long low hall of red-framed glass bay doors under a dark crew block, with a slim drill tower lit red at the top.
 
@@ -4779,14 +4779,14 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Aerial ladder | 2 | 57,960 sq ft (5,384 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 57,960 sq ft (5,384 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 57,960 sq ft (5,385 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 660 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
 | Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,070 sq ft (99 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Rack rescue kit room | 1 | 860 sq ft (80 m²) | Kit for fires high in the racks. |
-| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 37 | 2,110 sq ft (196 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Turnout gear room | 1 | 1,240 sq ft (116 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Rack rescue kit room | 1 | 870 sq ft (81 m²) | Kit for fires high in the racks. |
+| Hose store | 1 | 750 sq ft (69 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 48 | 1,710 sq ft (159 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 463,700 sq ft (43,080 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -4799,12 +4799,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Aerial ladder | 2 | 57,960 sq ft (5,384 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 57,960 sq ft (5,384 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 57,960 sq ft (5,385 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 15 | 390 sq ft (36 m²) each | A small bedroom for a firefighter on a night watch. |
+| Bunk rooms | 15 | 420 sq ft (39 m²) each | A small bedroom for a firefighter on a night watch. |
 | Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
 | Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
-| Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 370 sq ft (35 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 59 | 1,270 sq ft (118 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Gym | 1 | 960 sq ft (89 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
+| Laundry | 1 | 420 sq ft (39 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 59 | 1,340 sq ft (124 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -4812,17 +4812,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 370 sq ft (34 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
-| Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the port rack halls for fire risks work from here. |
-| Records room | 1 | 370 sq ft (35 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 88 | 920 sq ft (86 m²) each | Offices for the station's officers and fire safety staff. |
+| Station commander's office | 1 | 420 sq ft (39 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 980 sq ft (91 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Fire safety office | 1 | 440 sq ft (41 m²) | Inspectors who check buildings in the port rack halls for fire risks work from here. |
+| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 90 | 950 sq ft (88 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P5-22 · Port Racks Utility Plant
 
 **What it is for:** The utility plant for the port rack halls.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 3,008,700 sq ft (279,520 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 3,006,100 sq ft (279,280 m²) of rooms. Room plan proposed.
 
 **Look:** A windowless plant hall clad in dark corrugated metal, with a row of round air intakes along the top and a lit yellow plant number at each door.
 
@@ -4832,8 +4832,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 735,200 sq ft (68,300 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 735,200 sq ft (68,300 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 2 | 364,900 sq ft (33,900 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 2 | 364,500 sq ft (33,860 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -4851,16 +4851,16 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 57,080 sq ft (5,303 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 456,700 sq ft (42,430 m²) | Chillers and pumps that make the cold water used to cool the air in every Port Racks building. |
 | Air handling hall | 1 | 456,500 sq ft (42,410 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,520 sq ft (142 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,680 sq ft (156 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
 | Battery room | 1 | 1,710 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,150 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,770 sq ft (164 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
-| Rack power room | 1 | 2,150 sq ft (199 m²) | Power for the rack lifts. |
+| Water pump room | 1 | 2,160 sq ft (201 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,060 sq ft (192 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,510 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Rack power room | 1 | 2,150 sq ft (200 m²) | Power for the rack lifts. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 1,020 sq ft (94 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 25 | 2,810 sq ft (261 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 1,310 sq ft (121 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 25 | 2,960 sq ft (275 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -4879,15 +4879,15 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Chiller hall | 1 | 456,700 sq ft (42,430 m²) | Chillers and pumps that make the cold water used to cool the air in every Port Racks building. |
 | Air handling hall | 1 | 456,500 sq ft (42,410 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
 | Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,100 sq ft (102 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Ductwork gallery | 1 | 1,250 sq ft (116 m²) | Where the main air ducts leave the plant and turn toward the streets. |
 | Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 28 | 2,900 sq ft (269 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Upper plant gallery | 28 | 3,050 sq ft (284 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P5-23 · Port Racks Service Shaft
 
 **What it is for:** The port rack halls' shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 1,014,900 sq ft (94,280 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 1,013,900 sq ft (94,200 m²) of rooms. Room plan proposed.
 
 **Look:** A square tower of ribbed grey panels with a big goods lift door on each side and pipe ducts climbing its walls.
 
@@ -4897,8 +4897,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 246,300 sq ft (22,880 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 246,500 sq ft (22,900 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 243,900 sq ft (22,660 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 244,100 sq ft (22,670 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -4907,12 +4907,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 449,600 sq ft (41,770 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,730 sq ft (161 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Lift control room | 1 | 530 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,860 sq ft (173 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
-| Tool store | 1 | 850 sq ft (79 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 14 | 2,280 sq ft (212 m²) each | Short-term storage for goods waiting for the lift. |
+| Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 14 | 2,410 sq ft (224 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -4921,9 +4921,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 449,600 sq ft (41,770 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 1,610 sq ft (149 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 660 sq ft (61 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 15 | 2,270 sq ft (210 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 1,610 sq ft (150 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 780 sq ft (73 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 15 | 2,390 sq ft (222 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P5-24 · Open Bay 1
 
@@ -5487,7 +5487,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Home of 3rd Wing, Squadron 1: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 2,802,700 sq ft (260,380 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,820,600 sq ft (262,040 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -5511,14 +5511,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,300 sq ft (399 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,120 sq ft (383 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 42 | 1,750 sq ft (163 m²) each | A ground crew team's room. |
-| Spares cage | 41 | 1,740 sq ft (162 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 42 | 1,870 sq ft (173 m²) each | A ground crew team's room. |
+| Spares cage | 41 | 1,850 sq ft (172 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5540,16 +5540,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 177,800 sq ft (16,520 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 53 | 1,650 sq ft (153 m²) each | A walkway along the racks for checks. |
-| Squadron office | 53 | 1,280 sq ft (119 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 54 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 53 | 1,130 sq ft (105 m²) each | Squadron staff. |
 
 ### P6-02 · Rack Hall 14
 
 **What it is for:** Home of 3rd Wing, Squadron 2: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 2,470,000 sq ft (229,470 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,493,200 sq ft (231,620 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -5573,14 +5573,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 148,000 sq ft (13,750 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 147,800 sq ft (13,730 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 148,000 sq ft (13,750 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (386 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 3,910 sq ft (363 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,190 sq ft (204 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,760 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5602,16 +5602,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 148,000 sq ft (13,750 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 147,800 sq ft (13,730 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 148,000 sq ft (13,750 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 59 | 1,400 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 71 | 1,660 sq ft (154 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,290 sq ft (119 m²) each | Squadron staff. |
 
 ### P6-03 · Rack Hall 15
 
 **What it is for:** Home of 3rd Wing, Squadron 3: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 5,415,300 sq ft (503,090 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 5,441,600 sq ft (505,540 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -5635,14 +5635,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 353,900 sq ft (32,880 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 354,400 sq ft (32,930 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 353,900 sq ft (32,880 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,240 sq ft (394 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,210 sq ft (298 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,290 sq ft (212 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (179 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,800 sq ft (167 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,810 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5664,16 +5664,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 353,900 sq ft (32,880 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 354,400 sq ft (32,930 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 353,900 sq ft (32,880 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 68 | 1,940 sq ft (180 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,420 sq ft (132 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 81 | 1,920 sq ft (179 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,050 sq ft (98 m²) each | Squadron staff. |
 
 ### P6-04 · 3rd Wing Ready Hall
 
 **What it is for:** Ready rooms and briefing rooms for the 3rd Strike Wing's crews.
 
-44 ft (13.4 m) tall, 3 above deck, 1,128,300 sq ft (104,830 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 1,126,600 sq ft (104,670 m²) of rooms. Room plan proposed.
 
 **Look:** A long ready hall with the wing's badge over its doors and red alert lamps along its front.
 
@@ -5683,10 +5683,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing briefing theatre | 1 | 4,300 sq ft (400 m²) | The whole wing's crews are briefed together. |
-| Alert board hall | 1 | 1,620 sq ft (151 m²) | Shows every squadron's state. |
+| Wing briefing theatre | 1 | 4,000 sq ft (372 m²) | The whole wing's crews are briefed together. |
+| Alert board hall | 1 | 1,620 sq ft (150 m²) | Shows every squadron's state. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 81 | 2,570 sq ft (239 m²) each | A squadron's crews wait here on alert. |
+| Squadron ready room | 81 | 2,570 sq ft (238 m²) each | A squadron's crews wait here on alert. |
 | Briefing room | 80 | 2,010 sq ft (187 m²) each | A crew's briefing. |
 | Light court (open air) | 1 | 760,800 sq ft (70,680 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -5696,17 +5696,17 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing commander's office | 1 | 640 sq ft (60 m²) | The wing commander. |
-| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 101 | 2,430 sq ft (226 m²) each | A squadron's crews wait here on alert. |
+| Wing commander's office | 1 | 660 sq ft (61 m²) | The wing commander. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron ready room | 101 | 2,420 sq ft (225 m²) each | A squadron's crews wait here on alert. |
 | Debrief room | 100 | 1,290 sq ft (120 m²) each | Debriefs. |
 
 ### P6-05 · Rack Hall 16
 
 **What it is for:** Home of 3rd Wing, Squadron 4: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 4,621,000 sq ft (429,300 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 4,638,800 sq ft (430,960 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -5730,14 +5730,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,200 sq ft (390 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 36 | 2,240 sq ft (208 m²) each | A ground crew team's room. |
-| Spares cage | 35 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 3,960 sq ft (368 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 740 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 44 | 1,790 sq ft (166 m²) each | A ground crew team's room. |
+| Spares cage | 44 | 1,790 sq ft (166 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5759,16 +5759,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 48 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 47 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 56 | 1,700 sq ft (158 m²) each | A walkway along the racks for checks. |
+| Squadron office | 56 | 1,270 sq ft (118 m²) each | Squadron staff. |
 
 ### P6-06 · Rack Hall 17
 
 **What it is for:** Home of 3rd Wing, Squadron 5: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 7,524,200 sq ft (699,020 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 7,548,000 sq ft (701,230 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -5792,14 +5792,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 507,700 sq ft (47,160 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,250 sq ft (395 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,290 sq ft (213 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,810 sq ft (168 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,800 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5821,16 +5821,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 507,700 sq ft (47,160 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 508,500 sq ft (47,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,960 sq ft (182 m²) each | A walkway along the racks for checks. |
-| Squadron office | 60 | 1,410 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 72 | 1,920 sq ft (179 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,060 sq ft (99 m²) each | Squadron staff. |
 
 ### P6-07 · Rack Hall 18
 
 **What it is for:** Home of 3rd Wing, Squadron 6: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 1,994,500 sq ft (185,300 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,020,300 sq ft (187,690 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -5854,14 +5854,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 110,400 sq ft (10,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 110,300 sq ft (10,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 110,400 sq ft (10,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5883,16 +5883,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 110,400 sq ft (10,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 110,300 sq ft (10,240 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 110,400 sq ft (10,260 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (118 m²) each | Squadron staff. |
 
 ### P6-08 · Starboard Rack Lift Control
 
 **What it is for:** The control room for the rack lifts in the starboard rack halls.
 
-33 ft (10 m) tall, 2 above deck, 424,300 sq ft (39,420 m²) of rooms. Room plan proposed.
+33 ft (10 m) tall, 2 above deck, 422,600 sq ft (39,260 m²) of rooms. Room plan proposed.
 
 **Look:** A small control block with screens showing every rack.
 
@@ -5902,9 +5902,9 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Equipment room | 1 | 2,150 sq ft (200 m²) | Computers for the rack lifts. |
+| Equipment room | 1 | 1,860 sq ft (172 m²) | Computers for the rack lifts. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
 | Engineers' room | 135 | 1,540 sq ft (143 m²) each | Lift engineers. |
 | Light court (open air) | 1 | 366,800 sq ft (34,080 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -5914,7 +5914,7 @@ Floor at 16 ft (5 m) above the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Rack lift control room | 1 | 3,230 sq ft (300 m²) | Operators bring craft down from the racks in every hall. |
+| Rack lift control room | 1 | 2,930 sq ft (272 m²) | Operators bring craft down from the racks in every hall. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Desk room | 167 | 1,250 sq ft (116 m²) each | One hall's desk. |
 
@@ -5941,7 +5941,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Home of 4th Wing, Squadron 1: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 2,487,600 sq ft (231,110 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 2,510,800 sq ft (233,260 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -5965,14 +5965,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 149,300 sq ft (13,870 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 149,000 sq ft (13,850 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 149,300 sq ft (13,870 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (386 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 3,910 sq ft (363 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 46 | 2,190 sq ft (204 m²) each | A ground crew team's room. |
-| Spares cage | 45 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 57 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 56 | 1,760 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -5994,16 +5994,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 149,300 sq ft (13,870 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 149,000 sq ft (13,850 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 149,300 sq ft (13,870 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 60 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 59 | 1,400 sq ft (131 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 71 | 1,660 sq ft (154 m²) each | A walkway along the racks for checks. |
+| Squadron office | 71 | 1,290 sq ft (119 m²) each | Squadron staff. |
 
 ### P6-11 · Rack Hall 20
 
 **What it is for:** Home of 4th Wing, Squadron 2: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,988,100 sq ft (370,510 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 4,010,700 sq ft (372,600 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -6027,14 +6027,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 256,800 sq ft (23,860 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,290 sq ft (399 m²) | Craft come down from the racks here onto the floor. |
+| Rack lift landing | 1 | 4,090 sq ft (380 m²) | Craft come down from the racks here onto the floor. |
 | Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 600 sq ft (56 m²) | Runs the hall's ground crew. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 54 | 1,730 sq ft (161 m²) each | A ground crew team's room. |
-| Spares cage | 54 | 1,730 sq ft (161 m²) each | Quick-change spares. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 54 | 1,840 sq ft (171 m²) each | A ground crew team's room. |
+| Spares cage | 54 | 1,840 sq ft (171 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -6056,16 +6056,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 256,800 sq ft (23,860 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 256,400 sq ft (23,820 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,080 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 600 sq ft (56 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 68 | 1,620 sq ft (150 m²) each | A walkway along the racks for checks. |
-| Squadron office | 68 | 1,280 sq ft (119 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 69 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 68 | 1,120 sq ft (104 m²) each | Squadron staff. |
 
 ### P6-12 · Rack Hall 21
 
 **What it is for:** Home of 4th Wing, Squadron 3: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 4,621,000 sq ft (429,300 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 4,638,800 sq ft (430,960 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -6089,14 +6089,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,200 sq ft (390 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 36 | 2,240 sq ft (208 m²) each | A ground crew team's room. |
-| Spares cage | 35 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 3,960 sq ft (368 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 740 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 44 | 1,790 sq ft (166 m²) each | A ground crew team's room. |
+| Spares cage | 44 | 1,790 sq ft (166 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -6118,16 +6118,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 307,300 sq ft (28,550 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 48 | 1,910 sq ft (178 m²) each | A walkway along the racks for checks. |
-| Squadron office | 47 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 56 | 1,700 sq ft (158 m²) each | A walkway along the racks for checks. |
+| Squadron office | 56 | 1,270 sq ft (118 m²) each | Squadron staff. |
 
 ### P6-13 · 4th Wing Ready Hall
 
 **What it is for:** Ready rooms and briefing rooms for the 4th Strike Wing's crews.
 
-44 ft (13.4 m) tall, 3 above deck, 3,081,300 sq ft (286,260 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 2,934,400 sq ft (272,620 m²) of rooms. Room plan proposed.
 
 **Look:** A long ready hall with the wing's badge over its doors and red alert lamps along its front.
 
@@ -6137,11 +6137,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing briefing theatre | 1 | 4,320 sq ft (401 m²) | The whole wing's crews are briefed together. |
-| Alert board hall | 1 | 1,620 sq ft (150 m²) | Shows every squadron's state. |
+| Wing briefing theatre | 1 | 4,330 sq ft (402 m²) | The whole wing's crews are briefed together. |
+| Alert board hall | 1 | 1,630 sq ft (151 m²) | Shows every squadron's state. |
 | Toilets | 1 | 650 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 228 | 2,560 sq ft (237 m²) each | A squadron's crews wait here on alert. |
-| Briefing room | 227 | 1,930 sq ft (179 m²) each | A crew's briefing. |
+| Squadron ready room | 221 | 2,460 sq ft (229 m²) each | A squadron's crews wait here on alert. |
+| Briefing room | 221 | 1,930 sq ft (180 m²) each | A crew's briefing. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
 
@@ -6149,17 +6149,17 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wing commander's office | 1 | 640 sq ft (60 m²) | The wing commander. |
-| Tea point | 1 | 340 sq ft (32 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron ready room | 264 | 2,570 sq ft (239 m²) each | A squadron's crews wait here on alert. |
-| Debrief room | 263 | 1,320 sq ft (123 m²) each | Debriefs. |
+| Wing commander's office | 1 | 650 sq ft (61 m²) | The wing commander. |
+| Tea point | 1 | 340 sq ft (31 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron ready room | 267 | 2,350 sq ft (219 m²) each | A squadron's crews wait here on alert. |
+| Debrief room | 266 | 1,310 sq ft (122 m²) each | Debriefs. |
 
 ### P6-14 · Rack Hall 22
 
 **What it is for:** Home of 4th Wing, Squadron 4: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 5,328,000 sq ft (494,990 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 5,353,800 sq ft (497,380 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -6183,14 +6183,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 348,100 sq ft (32,340 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -6212,16 +6212,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 348,100 sq ft (32,340 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 348,600 sq ft (32,390 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (118 m²) each | Squadron staff. |
 
 ### P6-15 · Rack Hall 23
 
 **What it is for:** Home of 4th Wing, Squadron 5: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 6,928,000 sq ft (643,630 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 6,953,800 sq ft (646,030 m²) of rooms. Room plan proposed.
 
 **Look:** A colossal rack hall, its glass end wall showing tier upon tier of craft in their racks, lit by blue rack lights.
 
@@ -6245,14 +6245,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 463,000 sq ft (43,010 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 462,300 sq ft (42,950 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 463,000 sq ft (43,010 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,160 sq ft (387 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 610 sq ft (57 m²) | Runs the hall's ground crew. |
+| Rack lift landing | 1 | 3,920 sq ft (364 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,240 sq ft (301 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 680 sq ft (63 m²) | Runs the hall's ground crew. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 52 | 2,210 sq ft (205 m²) each | A ground crew team's room. |
-| Spares cage | 51 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 64 | 1,770 sq ft (164 m²) each | A ground crew team's room. |
+| Spares cage | 64 | 1,770 sq ft (164 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -6274,16 +6274,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 463,000 sq ft (43,010 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 462,300 sq ft (42,950 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 463,000 sq ft (43,010 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 67 | 1,930 sq ft (179 m²) each | A walkway along the racks for checks. |
-| Squadron office | 67 | 1,400 sq ft (130 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 80 | 1,670 sq ft (155 m²) each | A walkway along the racks for checks. |
+| Squadron office | 80 | 1,280 sq ft (118 m²) each | Squadron staff. |
 
 ### P6-16 · Rack Hall 24
 
 **What it is for:** Home of 4th Wing, Squadron 6: a hangar hall in the Starboard Rack Halls where the squadron's strike craft are stored in tiered racks and brought down by lift for each sortie.
 
-212 ft (64.5 m) tall, 2 above deck, 3,131,800 sq ft (290,960 m²) of rooms. Room plan proposed.
+212 ft (64.5 m) tall, 2 above deck, 3,149,600 sq ft (292,610 m²) of rooms. Room plan proposed.
 
 **Look:** A towering steel hall with a wide door at floor level and rows of lit rack numbers up its side.
 
@@ -6307,14 +6307,14 @@ Floor at deck level; 197 ft (60 m) floor to floor.
 | Rack tier column 12 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack lift landing | 1 | 4,240 sq ft (394 m²) | Craft come down from the racks here onto the floor. |
-| Squadron ready room | 1 | 1,610 sq ft (149 m²) | The squadron's crews wait here. |
-| Line maintenance shop | 1 | 3,220 sq ft (299 m²) | Quick repairs between sorties. |
-| Crew chief's office | 1 | 620 sq ft (57 m²) | Runs the hall's ground crew. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Ground crew room | 36 | 2,280 sq ft (212 m²) each | A ground crew team's room. |
-| Spares cage | 35 | 1,930 sq ft (180 m²) each | Quick-change spares. |
+| Rack lift landing | 1 | 4,010 sq ft (372 m²) | Craft come down from the racks here onto the floor. |
+| Squadron ready room | 1 | 1,610 sq ft (150 m²) | The squadron's crews wait here. |
+| Line maintenance shop | 1 | 3,230 sq ft (300 m²) | Quick repairs between sorties. |
+| Crew chief's office | 1 | 700 sq ft (65 m²) | Runs the hall's ground crew. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Ground crew room | 44 | 1,800 sq ft (167 m²) each | A ground crew team's room. |
+| Spares cage | 44 | 1,810 sq ft (168 m²) each | Quick-change spares. |
 
 #### Level 2 · Gallery floor
 
@@ -6336,16 +6336,16 @@ Floor at 197 ft (60 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack tier column 12 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 13 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
 | Rack tier column 14 | 1 | 200,700 sq ft (18,640 m²) | A column of racks, stacked in tiers to the roof, each holding one craft with its fuel, power and data plugged in. |
-| Rack control room | 1 | 1,070 sq ft (100 m²) | Operators run the rack lifts and track every craft's place. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Rack gallery | 48 | 1,930 sq ft (180 m²) each | A walkway along the racks for checks. |
-| Squadron office | 47 | 1,420 sq ft (132 m²) each | Squadron staff. |
+| Rack control room | 1 | 1,090 sq ft (101 m²) | Operators run the rack lifts and track every craft's place. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Rack gallery | 57 | 1,920 sq ft (178 m²) each | A walkway along the racks for checks. |
+| Squadron office | 56 | 1,060 sq ft (98 m²) each | Squadron staff. |
 
 ### P6-17 · Craft Wash Hall
 
 **What it is for:** A wash hall where every craft is decontaminated after a sortie.
 
-61 ft (18.5 m) tall, 2 above deck, 2,017,300 sq ft (187,410 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 1,918,000 sq ft (178,190 m²) of rooms. Room plan proposed.
 
 **Look:** A long steamy hall with spray arches over each bay.
 
@@ -6364,16 +6364,15 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Wash bay 7 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
 | Wash bay 8 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
 | Wash bay 9 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
-| Wash bay 10 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 11 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 12 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 13 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 14 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Water treatment room | 1 | 3,230 sq ft (300 m²) | Cleans and recycles wash water. |
-| Chemical store | 1 | 1,080 sq ft (100 m²) | Cleaning chemicals. |
+| Wash bay 11 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 12 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 13 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 14 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Water treatment room | 1 | 3,440 sq ft (319 m²) | Cleans and recycles wash water. |
+| Chemical store | 1 | 1,070 sq ft (100 m²) | Cleaning chemicals. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Plant room | 77 | 2,190 sq ft (204 m²) each | Pumps. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Plant room | 78 | 2,290 sq ft (213 m²) each | Pumps. |
 
 #### Level 2 · Gallery floor
 
@@ -6390,18 +6389,17 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Wash bay 7 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
 | Wash bay 8 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
 | Wash bay 9 | 1 | 119,100 sq ft (11,070 m²) | A wash bay with sprays and drains. |
-| Wash bay 10 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 11 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 12 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 13 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Wash bay 14 | 1 | 119,100 sq ft (11,060 m²) | A wash bay with sprays and drains. |
-| Control gallery | 82 | 2,130 sq ft (198 m²) each | Controls the washes. |
+| Wash bay 11 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 12 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 13 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Wash bay 14 | 2 | 59,540 sq ft (5,532 m²) each | A wash bay with sprays and drains. |
+| Control gallery | 108 | 1,710 sq ft (159 m²) each | Controls the washes. |
 
 ### P6-18 · Starboard Hangar Canteen
 
 **What it is for:** The canteen for the starboard rack hall crews.
 
-18 ft (5.4 m) tall, 1 above deck, 605,400 sq ft (56,240 m²) of rooms. Room plan proposed.
+18 ft (5.4 m) tall, 1 above deck, 604,700 sq ft (56,180 m²) of rooms. Room plan proposed.
 
 **Look:** A glass-fronted dining hall with a deep canopy, warm light spilling out and a lit menu wall inside.
 
@@ -6412,24 +6410,24 @@ Floor at deck level; 18 ft (5.4 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Dining hall | 1 | 396,700 sq ft (36,850 m²) | The main dining hall, with long tables, booths and a counter where rack hall crews collect their meals. |
-| Serving counter | 1 | 1,290 sq ft (120 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
+| Serving counter | 1 | 1,300 sq ft (121 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
 | Main kitchen | 1 | 3,230 sq ft (300 m²) | Cooks prepare thousands of meals a day here on big ranges, ovens and kettles. |
-| Cold room | 1 | 650 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
+| Cold room | 1 | 640 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
 | Freezer room | 1 | 430 sq ft (40 m²) | A walk-in freezer for frozen stores. |
 | Dry store | 1 | 860 sq ft (80 m²) | Shelves of flour, rice, tins and other dry food. |
 | Dishwash room | 1 | 860 sq ft (80 m²) | Conveyor dishwashers clean trays, plates and cutlery. |
-| Goods-in bay | 1 | 650 sq ft (60 m²) | Food deliveries arrive and are checked here. |
-| Waste and recycling room | 1 | 340 sq ft (31 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
-| Flight meals counter | 1 | 540 sq ft (50 m²) | Meals packed for crews on alert. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Grab-and-go kiosk | 156 | 1,280 sq ft (119 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
+| Goods-in bay | 1 | 640 sq ft (60 m²) | Food deliveries arrive and are checked here. |
+| Waste and recycling room | 1 | 350 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
+| Flight meals counter | 1 | 530 sq ft (49 m²) | Meals packed for crews on alert. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Grab-and-go kiosk | 156 | 1,270 sq ft (118 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
 | Terrace court (open air) | 1 | 238,200 sq ft (22,130 m²) | An open court with tables for eating outside. |
 
 ### P6-19 · Starboard Parts Store
 
 **What it is for:** The spare parts store for 3rd and 4th Wing craft.
 
-61 ft (18.5 m) tall, 2 above deck, 2,442,400 sq ft (226,900 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 2,453,000 sq ft (227,890 m²) of rooms. Room plan proposed.
 
 **Look:** A long grey parts store with loading docks.
 
@@ -6453,11 +6451,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Parts aisle 12 | 1 | 160,100 sq ft (14,880 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 160,600 sq ft (14,920 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 160,100 sq ft (14,880 m²) | An aisle of racks. |
-| Goods in | 1 | 3,290 sq ft (306 m²) | Parts arrive. |
-| Issue counter | 1 | 1,080 sq ft (100 m²) | Crews collect parts. |
+| Goods in | 1 | 3,190 sq ft (296 m²) | Parts arrive. |
+| Issue counter | 1 | 1,070 sq ft (100 m²) | Crews collect parts. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 43 | 2,160 sq ft (201 m²) each | Small parts. |
+| Small parts cage | 56 | 1,750 sq ft (163 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -6479,14 +6477,14 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Parts aisle 12 | 1 | 160,100 sq ft (14,880 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 160,600 sq ft (14,920 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 160,100 sq ft (14,880 m²) | An aisle of racks. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Robot control | 60 | 1,640 sq ft (153 m²) each | Controls the robots. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Robot control | 60 | 1,730 sq ft (161 m²) each | Controls the robots. |
 
 ### P6-20 · Starboard Crew Lockers
 
 **What it is for:** Lockers and showers for the starboard rack crews.
 
-28 ft (8.5 m) tall, 2 above deck, 500,700 sq ft (46,510 m²) of rooms. Room plan proposed.
+28 ft (8.5 m) tall, 2 above deck, 499,100 sq ft (46,370 m²) of rooms. Room plan proposed.
 
 **Look:** A plain locker block with steam from its laundry vents.
 
@@ -6496,10 +6494,10 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Entrance | 1 | 650 sq ft (60 m²) | Crews badge in. |
+| Entrance | 1 | 660 sq ft (61 m²) | Crews badge in. |
 | Laundry | 1 | 2,150 sq ft (200 m²) | Washes flight suits. |
-| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Locker room | 67 | 2,730 sq ft (254 m²) each | Lockers, benches and showers. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Locker room | 67 | 2,720 sq ft (253 m²) each | Lockers, benches and showers. |
 | Drying room | 66 | 970 sq ft (90 m²) each | Dries wet kit. |
 | Light court (open air) | 1 | 684,300 sq ft (63,570 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -6509,14 +6507,14 @@ Floor at 15 ft (4.5 m) above the deck; 13 ft (4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Locker room | 65 | 2,590 sq ft (241 m²) each | Lockers, benches and showers. |
-| Rest room | 64 | 1,280 sq ft (119 m²) each | Rest between shifts. |
+| Locker room | 65 | 2,580 sq ft (240 m²) each | Lockers, benches and showers. |
+| Rest room | 64 | 1,270 sq ft (118 m²) each | Rest between shifts. |
 
 ### P6-21 · Starboard Racks Fire Station
 
 **What it is for:** The fire and crash rescue station for the starboard rack halls.
 
-51 ft (15.4 m) tall, 3 above deck, 584,100 sq ft (54,260 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 594,000 sq ft (55,190 m²) of rooms. Room plan proposed.
 
 **Look:** An L of glass-fronted appliance bays and a crew wing in dark panels with red trim, around a drill yard.
 
@@ -6530,14 +6528,14 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Aerial ladder | 2 | 48,620 sq ft (4,517 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 48,620 sq ft (4,517 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 48,710 sq ft (4,525 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 650 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
-| Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
-| Decontamination room | 1 | 650 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 960 sq ft (90 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Rack rescue kit room | 1 | 490 sq ft (46 m²) | Kit for fires high in the racks. |
+| Watch room | 1 | 660 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Breathing apparatus room | 1 | 850 sq ft (79 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
+| Decontamination room | 1 | 820 sq ft (77 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
+| Turnout gear room | 1 | 800 sq ft (74 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Rack rescue kit room | 1 | 690 sq ft (64 m²) | Kit for fires high in the racks. |
 | Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 33 | 1,810 sq ft (169 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 33 | 1,910 sq ft (177 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 389,200 sq ft (36,150 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -6550,12 +6548,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Aerial ladder | 2 | 48,620 sq ft (4,517 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 48,620 sq ft (4,517 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 48,710 sq ft (4,525 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 12 | 450 sq ft (42 m²) each | A small bedroom for a firefighter on a night watch. |
-| Kitchen | 1 | 530 sq ft (49 m²) | The station kitchen, where the watch cooks its meals together. |
-| Mess room | 1 | 960 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
-| Gym | 1 | 960 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 450 sq ft (42 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 47 | 1,210 sq ft (112 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Bunk rooms | 12 | 530 sq ft (49 m²) each | A small bedroom for a firefighter on a night watch. |
+| Kitchen | 1 | 540 sq ft (51 m²) | The station kitchen, where the watch cooks its meals together. |
+| Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
+| Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
+| Laundry | 1 | 510 sq ft (47 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 47 | 1,260 sq ft (117 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -6563,17 +6561,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 440 sq ft (41 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
-| Fire safety office | 1 | 440 sq ft (41 m²) | Inspectors who check buildings in the starboard rack halls for fire risks work from here. |
-| Records room | 1 | 440 sq ft (41 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 69 | 910 sq ft (84 m²) each | Offices for the station's officers and fire safety staff. |
+| Station commander's office | 1 | 510 sq ft (47 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 730 sq ft (68 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Fire safety office | 1 | 740 sq ft (69 m²) | Inspectors who check buildings in the starboard rack halls for fire risks work from here. |
+| Records room | 1 | 500 sq ft (46 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 69 | 950 sq ft (89 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P6-23 · Starboard Racks Utility Plant
 
 **What it is for:** The utility plant for the starboard rack halls.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 3,081,200 sq ft (286,250 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 3,078,600 sq ft (286,020 m²) of rooms. Room plan proposed.
 
 **Look:** A two-storey block of perforated metal screens, lit from inside at night so the pumps and pipes show through.
 
@@ -6583,8 +6581,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 754,600 sq ft (70,110 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 754,600 sq ft (70,110 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 2 | 374,600 sq ft (34,800 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 2 | 374,600 sq ft (34,800 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -6602,16 +6600,16 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 59,110 sq ft (5,491 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 471,900 sq ft (43,840 m²) | Chillers and pumps that make the cold water used to cool the air in every Starboard Racks building. |
 | Air handling hall | 1 | 472,200 sq ft (43,870 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,500 sq ft (139 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
-| Battery room | 1 | 1,720 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,140 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,710 sq ft (159 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
-| Rack power room | 1 | 2,140 sq ft (199 m²) | Power for the rack lifts. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,640 sq ft (152 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
+| Water pump room | 1 | 2,150 sq ft (200 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,000 sq ft (185 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,510 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Rack power room | 1 | 2,150 sq ft (200 m²) | Power for the rack lifts. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 950 sq ft (88 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 23 | 2,780 sq ft (258 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 1,240 sq ft (115 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 23 | 2,930 sq ft (272 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -6629,16 +6627,16 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Transformer bay 8 | 1 | 59,110 sq ft (5,491 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 471,900 sq ft (43,840 m²) | Chillers and pumps that make the cold water used to cool the air in every Starboard Racks building. |
 | Air handling hall | 1 | 472,200 sq ft (43,870 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Filter bank room | 1 | 1,720 sq ft (159 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,070 sq ft (99 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
+| Ductwork gallery | 1 | 1,210 sq ft (112 m²) | Where the main air ducts leave the plant and turn toward the streets. |
 | Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 14 | 5,330 sq ft (495 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Upper plant gallery | 26 | 3,020 sq ft (281 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P6-24 · Starboard Racks Service Shaft
 
 **What it is for:** The starboard rack halls' shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 1,086,500 sq ft (100,940 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 1,085,400 sq ft (100,840 m²) of rooms. Room plan proposed.
 
 **Look:** A low hangar-like headhouse over the shaft, with a yellow-and-black striped lift gate and a loading bay for trucks.
 
@@ -6648,8 +6646,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 265,700 sq ft (24,690 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 265,700 sq ft (24,690 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 263,900 sq ft (24,520 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 263,300 sq ft (24,460 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -6658,12 +6656,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 496,000 sq ft (46,080 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,570 sq ft (146 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Lift control room | 1 | 650 sq ft (60 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,580 sq ft (147 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 18 | 1,410 sq ft (131 m²) each | Short-term storage for goods waiting for the lift. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 18 | 1,490 sq ft (138 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -6672,9 +6670,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 496,000 sq ft (46,080 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 2,110 sq ft (196 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,280 sq ft (119 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 18 | 1,450 sq ft (135 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 1,610 sq ft (150 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 620 sq ft (57 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 19 | 1,520 sq ft (141 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P6-25 · Open Bay 1
 
@@ -7299,7 +7297,7 @@ Heavy repairs, engines, airframes, coatings, salvage
 
 **What it is for:** The hangar for full strip-downs, where up to six craft at a time are taken apart and rebuilt.
 
-113 ft (34.5 m) tall, 2 above deck, 6,871,300 sq ft (638,360 m²) of rooms. Room plan proposed.
+113 ft (34.5 m) tall, 2 above deck, 6,897,000 sq ft (640,760 m²) of rooms. Room plan proposed.
 
 **Look:** A vast repair hangar with orange crane girders and craft on stands inside.
 
@@ -7323,14 +7321,14 @@ Floor at deck level; 98 ft (30 m) floor to floor.
 | Strip-down bay 12 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Strip-down bay 13 | 1 | 458,200 sq ft (42,570 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Strip-down bay 14 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
-| Strip-down area | 1 | 4,160 sq ft (387 m²) | Parts are removed and labelled. |
-| Inspection lab | 1 | 2,150 sq ft (199 m²) | Checks for cracks and damage. |
-| Tool crib | 1 | 1,280 sq ft (119 m²) | Tools. |
+| Strip-down area | 1 | 4,420 sq ft (410 m²) | Parts are removed and labelled. |
+| Inspection lab | 1 | 2,150 sq ft (200 m²) | Checks for cracks and damage. |
+| Tool crib | 1 | 1,290 sq ft (120 m²) | Tools. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff break room | 1 | 860 sq ft (80 m²) | A kitchen and tables where staff eat and take their breaks. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Fitters' workshop | 39 | 3,220 sq ft (299 m²) each | Benches. |
-| Parts kitting room | 38 | 2,340 sq ft (217 m²) each | Parts for each job. |
+| Staff break room | 1 | 870 sq ft (81 m²) | A kitchen and tables where staff eat and take their breaks. |
+| Staff toilets and showers | 1 | 740 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Fitters' workshop | 39 | 3,380 sq ft (314 m²) each | Benches. |
+| Parts kitting room | 38 | 2,510 sq ft (233 m²) each | Parts for each job. |
 
 #### Level 2 · Gallery floor
 
@@ -7352,16 +7350,16 @@ Floor at 98 ft (30 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Strip-down bay 12 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Strip-down bay 13 | 1 | 458,200 sq ft (42,570 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Strip-down bay 14 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
-| Engineering office | 1 | 1,610 sq ft (149 m²) | Plans each rebuild. |
-| Tea point | 1 | 620 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Planning office | 67 | 1,550 sq ft (144 m²) each | Planners. |
-| Crane gallery | 66 | 1,790 sq ft (167 m²) each | Crane access. |
+| Engineering office | 1 | 1,630 sq ft (151 m²) | Plans each rebuild. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Planning office | 67 | 1,650 sq ft (153 m²) each | Planners. |
+| Crane gallery | 66 | 1,890 sq ft (176 m²) each | Crane access. |
 
 ### P7-02 · Engine Shop
 
 **What it is for:** The shop where craft engines are overhauled and tested.
 
-67 ft (20.5 m) tall, 2 above deck, 2,640,300 sq ft (245,290 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 2,654,500 sq ft (246,610 m²) of rooms. Room plan proposed.
 
 **Look:** A long engine shop with exhaust stacks on its roof.
 
@@ -7386,11 +7384,11 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 | Engine bay 13 | 1 | 141,900 sq ft (13,190 m²) | A bay with an engine on a stand. |
 | Engine bay 14 | 1 | 141,900 sq ft (13,190 m²) | A bay with an engine on a stand. |
 | Engine test cell | 1 | 397,200 sq ft (36,900 m²) | A soundproof cell where engines are run up. |
-| Test cell control | 1 | 1,080 sq ft (100 m²) | Runs engines on test. |
-| Clean room | 1 | 1,610 sq ft (150 m²) | Precision parts. |
-| Locker room | 1 | 690 sq ft (64 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Test cell control | 1 | 1,090 sq ft (101 m²) | Runs engines on test. |
+| Clean room | 1 | 1,620 sq ft (150 m²) | Precision parts. |
+| Locker room | 1 | 880 sq ft (82 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Fitters' workshop | 37 | 3,360 sq ft (312 m²) each | Benches. |
+| Fitters' workshop | 37 | 3,550 sq ft (330 m²) each | Benches. |
 
 #### Level 2 · Gallery floor
 
@@ -7412,9 +7410,9 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Engine bay 12 | 1 | 141,500 sq ft (13,150 m²) | A bay with an engine on a stand. |
 | Engine bay 13 | 1 | 141,900 sq ft (13,190 m²) | A bay with an engine on a stand. |
 | Engine bay 14 | 1 | 141,900 sq ft (13,190 m²) | A bay with an engine on a stand. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 48 | 1,340 sq ft (124 m²) each | Engineers. |
-| Records room | 47 | 1,360 sq ft (126 m²) each | Engine logbooks. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 57 | 1,280 sq ft (119 m²) each | Engineers. |
+| Records room | 56 | 1,110 sq ft (103 m²) each | Engine logbooks. |
 
 ### P7-03 · Engine Test Stand
 
@@ -7440,7 +7438,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The shop that repairs craft frames, skins and landing gear.
 
-80 ft (24.5 m) tall, 2 above deck, 3,208,300 sq ft (298,060 m²) of rooms. Room plan proposed.
+80 ft (24.5 m) tall, 2 above deck, 3,071,600 sq ft (285,360 m²) of rooms. Room plan proposed.
 
 **Look:** A tall shop with craft frames on jigs visible inside.
 
@@ -7450,15 +7448,19 @@ Floor at deck level; 66 ft (20 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Airframe bay 1 | 1 | 48,730 sq ft (4,527 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 2 | 1 | 48,780 sq ft (4,532 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 3 | 1 | 48,870 sq ft (4,540 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 4 | 1 | 48,740 sq ft (4,528 m²) | A bay with a craft frame on a jig. |
-| Sheet metal shop | 1 | 3,230 sq ft (300 m²) | Makes skin panels. |
-| Landing gear shop | 1 | 2,160 sq ft (200 m²) | Overhauls landing gear. |
+| Airframe bay 1 | 1 | 11,350 sq ft (1,055 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 2 | 1 | 23,810 sq ft (2,212 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 3 | 1 | 20,510 sq ft (1,906 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 4 | 1 | 20,460 sq ft (1,901 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 5 | 1 | 20,550 sq ft (1,909 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 6 | 1 | 20,510 sq ft (1,905 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 7 | 1 | 20,520 sq ft (1,906 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 8 | 1 | 16,420 sq ft (1,525 m²) | A bay with a craft frame on a jig. |
+| Sheet metal shop | 1 | 3,240 sq ft (301 m²) | Makes skin panels. |
+| Landing gear shop | 1 | 2,160 sq ft (201 m²) | Overhauls landing gear. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Fitters' workshop | 465 | 3,220 sq ft (300 m²) each | Benches. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Fitters' workshop | 449 | 3,230 sq ft (300 m²) each | Benches. |
 
 #### Level 2 · Gallery floor
 
@@ -7466,20 +7468,24 @@ Floor at 66 ft (20 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Airframe bay 1 | 1 | 48,730 sq ft (4,527 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 2 | 1 | 48,780 sq ft (4,532 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 3 | 1 | 48,870 sq ft (4,540 m²) | A bay with a craft frame on a jig. |
-| Airframe bay 4 | 1 | 48,740 sq ft (4,528 m²) | A bay with a craft frame on a jig. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 272 | 1,290 sq ft (120 m²) each | Engineers. |
-| Planning office | 271 | 1,680 sq ft (156 m²) each | Plans each frame repair. |
-| Composite repair room | 271 | 2,580 sq ft (239 m²) each | Repairs composite skin panels. |
+| Airframe bay 1 | 1 | 11,350 sq ft (1,055 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 2 | 1 | 23,810 sq ft (2,212 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 3 | 1 | 20,510 sq ft (1,906 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 4 | 1 | 20,460 sq ft (1,901 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 5 | 1 | 20,550 sq ft (1,909 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 6 | 1 | 20,510 sq ft (1,905 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 7 | 1 | 20,520 sq ft (1,906 m²) | A bay with a craft frame on a jig. |
+| Airframe bay 8 | 1 | 16,420 sq ft (1,525 m²) | A bay with a craft frame on a jig. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 258 | 1,420 sq ft (132 m²) each | Engineers. |
+| Planning office | 257 | 1,690 sq ft (157 m²) each | Plans each frame repair. |
+| Composite repair room | 257 | 2,560 sq ft (238 m²) each | Repairs composite skin panels. |
 
 ### P7-05 · Avionics Lab
 
 **What it is for:** The lab that repairs and tests sensors, radios and flight computers.
 
-30 ft (9.2 m) tall, 2 above deck, 698,100 sq ft (64,850 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 696,400 sq ft (64,700 m²) of rooms. Room plan proposed.
 
 **Look:** A clean white lab block with blue-lit windows.
 
@@ -7489,11 +7495,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Sensor lab | 1 | 2,150 sq ft (200 m²) | Repairs craft sensors. |
-| Radio lab | 1 | 1,610 sq ft (150 m²) | Repairs radios. |
-| Flight computer lab | 1 | 1,620 sq ft (151 m²) | Tests flight computers. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Sensor lab | 1 | 1,850 sq ft (172 m²) | Repairs craft sensors. |
+| Radio lab | 1 | 1,620 sq ft (150 m²) | Repairs radios. |
+| Flight computer lab | 1 | 1,620 sq ft (150 m²) | Tests flight computers. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Electronics bench room | 206 | 1,660 sq ft (154 m²) each | Benches. |
 | Light court (open air) | 1 | 358,300 sq ft (33,290 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -7503,8 +7509,8 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Clean room | 1 | 1,620 sq ft (150 m²) | Dust-free assembly. |
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Clean room | 1 | 1,310 sq ft (122 m²) | Dust-free assembly. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Engineers' office | 262 | 1,320 sq ft (123 m²) each | Engineers. |
 
@@ -7512,7 +7518,7 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 **What it is for:** The hall where craft get their armour and low-signature coatings.
 
-67 ft (20.5 m) tall, 2 above deck, 2,812,100 sq ft (261,250 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 2,608,200 sq ft (242,310 m²) of rooms. Room plan proposed.
 
 **Look:** A long sealed hall with fume stacks along its roof.
 
@@ -7522,18 +7528,22 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Spray booth 1 | 1 | 33,440 sq ft (3,107 m²) | A sealed spray booth for one craft. |
-| Spray booth 2 | 1 | 33,530 sq ft (3,115 m²) | A sealed spray booth for one craft. |
-| Spray booth 3 | 1 | 33,510 sq ft (3,113 m²) | A sealed spray booth for one craft. |
-| Spray booth 4 | 1 | 33,430 sq ft (3,106 m²) | A sealed spray booth for one craft. |
-| Spray booth 5 | 1 | 33,490 sq ft (3,111 m²) | A sealed spray booth for one craft. |
-| Mixing room | 1 | 1,070 sq ft (100 m²) | Coatings are mixed. |
-| Curing oven | 1 | 3,240 sq ft (301 m²) | Bakes coatings hard. |
-| Locker room | 1 | 970 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Store | 206 | 1,930 sq ft (180 m²) each | Coatings store. |
-| Masking room | 205 | 2,540 sq ft (236 m²) each | Craft are masked before spraying. |
-| Inspection booth | 205 | 1,940 sq ft (180 m²) each | Coatings are checked for thickness. |
+| Spray booth 1 | 1 | 9,410 sq ft (874 m²) | A sealed spray booth for one craft. |
+| Spray booth 2 | 1 | 15,170 sq ft (1,409 m²) | A sealed spray booth for one craft. |
+| Spray booth 3 | 1 | 15,400 sq ft (1,431 m²) | A sealed spray booth for one craft. |
+| Spray booth 4 | 1 | 15,370 sq ft (1,428 m²) | A sealed spray booth for one craft. |
+| Spray booth 5 | 1 | 15,410 sq ft (1,431 m²) | A sealed spray booth for one craft. |
+| Spray booth 6 | 1 | 15,410 sq ft (1,432 m²) | A sealed spray booth for one craft. |
+| Spray booth 7 | 1 | 15,490 sq ft (1,439 m²) | A sealed spray booth for one craft. |
+| Spray booth 8 | 1 | 15,340 sq ft (1,425 m²) | A sealed spray booth for one craft. |
+| Spray booth 9 | 1 | 12,270 sq ft (1,140 m²) | A sealed spray booth for one craft. |
+| Mixing room | 1 | 1,080 sq ft (101 m²) | Coatings are mixed. |
+| Curing oven | 1 | 3,230 sq ft (300 m²) | Bakes coatings hard. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Store | 194 | 1,980 sq ft (184 m²) each | Coatings store. |
+| Masking room | 195 | 2,370 sq ft (220 m²) each | Craft are masked before spraying. |
+| Inspection booth | 193 | 2,000 sq ft (186 m²) each | Coatings are checked for thickness. |
 
 #### Level 2 · Gallery floor
 
@@ -7541,19 +7551,23 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Spray booth 1 | 1 | 33,440 sq ft (3,107 m²) | A sealed spray booth for one craft. |
-| Spray booth 2 | 1 | 33,530 sq ft (3,115 m²) | A sealed spray booth for one craft. |
-| Spray booth 3 | 1 | 33,510 sq ft (3,113 m²) | A sealed spray booth for one craft. |
-| Spray booth 4 | 1 | 33,430 sq ft (3,106 m²) | A sealed spray booth for one craft. |
-| Spray booth 5 | 1 | 33,490 sq ft (3,111 m²) | A sealed spray booth for one craft. |
-| Extraction gallery | 339 | 1,940 sq ft (181 m²) each | Fume extraction fans. |
-| Filter room | 339 | 1,960 sq ft (182 m²) each | Filters for the spray booths. |
+| Spray booth 1 | 1 | 9,410 sq ft (874 m²) | A sealed spray booth for one craft. |
+| Spray booth 2 | 1 | 15,170 sq ft (1,409 m²) | A sealed spray booth for one craft. |
+| Spray booth 3 | 1 | 15,400 sq ft (1,431 m²) | A sealed spray booth for one craft. |
+| Spray booth 4 | 1 | 15,370 sq ft (1,428 m²) | A sealed spray booth for one craft. |
+| Spray booth 5 | 1 | 15,410 sq ft (1,431 m²) | A sealed spray booth for one craft. |
+| Spray booth 6 | 1 | 15,410 sq ft (1,432 m²) | A sealed spray booth for one craft. |
+| Spray booth 7 | 1 | 15,490 sq ft (1,439 m²) | A sealed spray booth for one craft. |
+| Spray booth 8 | 1 | 15,340 sq ft (1,425 m²) | A sealed spray booth for one craft. |
+| Spray booth 9 | 1 | 12,270 sq ft (1,140 m²) | A sealed spray booth for one craft. |
+| Extraction gallery | 318 | 1,980 sq ft (184 m²) each | Fume extraction fans. |
+| Filter room | 318 | 1,920 sq ft (179 m²) each | Filters for the spray booths. |
 
 ### P7-07 · Port Repair Parts Warehouse
 
 **What it is for:** The parts warehouse for the port repair yards.
 
-61 ft (18.5 m) tall, 2 above deck, 3,170,700 sq ft (294,560 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 3,184,900 sq ft (295,880 m²) of rooms. Room plan proposed.
 
 **Look:** A long grey parts store with loading docks.
 
@@ -7577,11 +7591,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Parts aisle 12 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
-| Goods in | 1 | 3,380 sq ft (314 m²) | Parts arrive. |
-| Issue counter | 1 | 1,080 sq ft (100 m²) | Crews collect parts. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 72 | 1,700 sq ft (158 m²) each | Small parts. |
+| Goods in | 1 | 3,280 sq ft (305 m²) | Parts arrive. |
+| Issue counter | 1 | 1,090 sq ft (101 m²) | Crews collect parts. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 72 | 1,800 sq ft (167 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -7603,8 +7617,8 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Parts aisle 12 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Robot control | 76 | 1,690 sq ft (157 m²) each | Controls the robots. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Robot control | 76 | 1,780 sq ft (165 m²) each | Controls the robots. |
 
 ### P7-08 · Salvage Yard
 
@@ -7631,7 +7645,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** The mechanics' hall, with lockers, a canteen and rest rooms.
 
-30 ft (9.2 m) tall, 2 above deck, 1,564,000 sq ft (145,300 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 1,449,100 sq ft (134,630 m²) of rooms. Room plan proposed.
 
 **Look:** A sturdy mechanics' hall with steam from its kitchen vents.
 
@@ -7641,10 +7655,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Canteen | 1 | 6,470 sq ft (601 m²) | Hot food for mechanics. |
+| Canteen | 1 | 5,990 sq ft (557 m²) | Hot food for mechanics. |
 | Kitchen | 1 | 2,160 sq ft (201 m²) | Cooks. |
-| Toilets | 1 | 670 sq ft (62 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Locker room | 265 | 2,920 sq ft (271 m²) each | Lockers and showers. |
+| Toilets | 1 | 680 sq ft (63 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Locker room | 251 | 2,850 sq ft (265 m²) each | Lockers and showers. |
 
 #### Level 2 · Upper floor
 
@@ -7652,16 +7666,16 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 670 sq ft (62 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Tea point | 1 | 660 sq ft (62 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Toilets | 1 | 680 sq ft (63 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Rest room | 245 | 1,250 sq ft (116 m²) each | Rest between shifts. |
-| Training room | 245 | 1,940 sq ft (180 m²) each | Courses. |
+| Rest room | 240 | 1,320 sq ft (122 m²) each | Rest between shifts. |
+| Training room | 238 | 1,710 sq ft (159 m²) each | Courses. |
 
 ### P7-10 · Port Yards Fire Station
 
 **What it is for:** The fire station for the port repair yards.
 
-51 ft (15.4 m) tall, 3 above deck, 708,100 sq ft (65,790 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 687,400 sq ft (63,860 m²) of rooms. Room plan proposed.
 
 **Look:** A graphite station with tall red roller doors, a lit red stripe along the crew floor and a training tower behind.
 
@@ -7671,18 +7685,18 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crash tender | 2 | 60,420 sq ft (5,613 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Crash tender | 2 | 60,400 sq ft (5,612 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Aerial ladder | 2 | 60,470 sq ft (5,618 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 60,480 sq ft (5,619 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 60,540 sq ft (5,624 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
 | Decontamination room | 1 | 650 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,250 sq ft (116 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Turnout gear room | 1 | 960 sq ft (89 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
 | Rack rescue kit room | 1 | 860 sq ft (80 m²) | Kit for fires high in the racks. |
-| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Hose store | 1 | 750 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 40 | 1,730 sq ft (160 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Equipment store | 31 | 2,010 sq ft (187 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 483,800 sq ft (44,950 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -7691,16 +7705,16 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crash tender | 2 | 60,420 sq ft (5,613 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
+| Crash tender | 2 | 60,400 sq ft (5,612 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Aerial ladder | 2 | 60,470 sq ft (5,618 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 60,480 sq ft (5,619 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 60,540 sq ft (5,624 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 12 | 420 sq ft (39 m²) each | A small bedroom for a firefighter on a night watch. |
-| Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
+| Bunk rooms | 12 | 340 sq ft (32 m²) each | A small bedroom for a firefighter on a night watch. |
+| Kitchen | 1 | 530 sq ft (49 m²) | The station kitchen, where the watch cooks its meals together. |
 | Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 970 sq ft (90 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 410 sq ft (38 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 50 | 1,340 sq ft (124 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 340 sq ft (32 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 49 | 1,240 sq ft (116 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -7708,17 +7722,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 410 sq ft (38 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,080 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Station commander's office | 1 | 340 sq ft (31 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 950 sq ft (88 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
 | Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the port repair yards rack halls for fire risks work from here. |
-| Records room | 1 | 400 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 75 | 960 sq ft (90 m²) each | Offices for the station's officers and fire safety staff. |
+| Records room | 1 | 330 sq ft (31 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 64 | 1,030 sq ft (96 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P7-11 · Port Yards Utility Plant
 
 **What it is for:** The utility plant for the port repair yards.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 1,966,900 sq ft (182,740 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 1,964,700 sq ft (182,530 m²) of rooms. Room plan proposed.
 
 **Look:** A plain louvred box in graphite panels, with yellow service doors and a steam-white plume from its cooling stacks.
 
@@ -7728,8 +7742,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 476,500 sq ft (44,270 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 476,500 sq ft (44,270 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 3 | 157,000 sq ft (14,590 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 3 | 157,300 sq ft (14,610 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -7747,15 +7761,15 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 35,920 sq ft (3,337 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 287,900 sq ft (26,750 m²) | Chillers and pumps that make the cold water used to cool the air in every Port Yards building. |
 | Air handling hall | 1 | 287,900 sq ft (26,750 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,600 sq ft (149 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
-| Battery room | 1 | 1,720 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,140 sq ft (198 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,920 sq ft (179 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,750 sq ft (163 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
+| Water pump room | 1 | 2,150 sq ft (200 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,230 sq ft (207 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,500 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 22 | 2,870 sq ft (267 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 22 | 3,030 sq ft (282 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -7773,16 +7787,16 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Transformer bay 8 | 1 | 35,920 sq ft (3,337 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 287,900 sq ft (26,750 m²) | Chillers and pumps that make the cold water used to cool the air in every Port Yards building. |
 | Air handling hall | 1 | 287,900 sq ft (26,750 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Filter bank room | 1 | 1,720 sq ft (159 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,180 sq ft (109 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
+| Ductwork gallery | 1 | 1,330 sq ft (123 m²) | Where the main air ducts leave the plant and turn toward the streets. |
 | Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 24 | 2,990 sq ft (278 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Upper plant gallery | 25 | 3,020 sq ft (281 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P7-12 · Port Yards Service Shaft
 
 **What it is for:** The port repair yards' shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 819,000 sq ft (76,090 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 817,800 sq ft (75,980 m²) of rooms. Room plan proposed.
 
 **Look:** A squat concrete drum with a ring of yellow hazard lights round the lift doors and a steel gantry crane on its roof.
 
@@ -7792,8 +7806,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 199,900 sq ft (18,580 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 199,900 sq ft (18,580 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 198,100 sq ft (18,410 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 198,100 sq ft (18,410 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -7802,12 +7816,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 370,700 sq ft (34,440 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,480 sq ft (138 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Lift control room | 1 | 530 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,600 sq ft (148 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 16 | 1,260 sq ft (117 m²) each | Short-term storage for goods waiting for the lift. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 16 | 1,330 sq ft (123 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -7816,9 +7830,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 370,700 sq ft (34,440 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 2,020 sq ft (187 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,290 sq ft (119 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 16 | 1,310 sq ft (121 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 2,000 sq ft (186 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 1,290 sq ft (120 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 16 | 1,380 sq ft (128 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P7-13 · Work Yard 1
 
@@ -7845,7 +7859,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Port Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 1,097,300 sq ft (101,950 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 1,105,200 sq ft (102,680 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -7857,21 +7871,21 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 |---|---|---|---|
 | Rack bay 1 | 1 | 66,590 sq ft (6,186 m²) | A bay of racks. |
 | Rack bay 2 | 1 | 66,630 sq ft (6,190 m²) | A bay of racks. |
-| Rack bay 3 | 1 | 66,580 sq ft (6,186 m²) | A bay of racks. |
-| Rack bay 4 | 1 | 66,560 sq ft (6,184 m²) | A bay of racks. |
+| Rack bay 3 | 1 | 66,580 sq ft (6,185 m²) | A bay of racks. |
+| Rack bay 4 | 1 | 66,550 sq ft (6,183 m²) | A bay of racks. |
 | Rack bay 5 | 1 | 66,630 sq ft (6,190 m²) | A bay of racks. |
 | Rack bay 6 | 1 | 66,650 sq ft (6,192 m²) | A bay of racks. |
-| Rack bay 7 | 1 | 66,660 sq ft (6,193 m²) | A bay of racks. |
-| Rack bay 8 | 1 | 66,680 sq ft (6,195 m²) | A bay of racks. |
+| Rack bay 7 | 1 | 66,650 sq ft (6,192 m²) | A bay of racks. |
+| Rack bay 8 | 1 | 66,670 sq ft (6,194 m²) | A bay of racks. |
 | Rack bay 9 | 1 | 66,510 sq ft (6,179 m²) | A bay of racks. |
-| Rack bay 10 | 1 | 66,670 sq ft (6,193 m²) | A bay of racks. |
-| Rack bay 11 | 1 | 66,440 sq ft (6,172 m²) | A bay of racks. |
+| Rack bay 10 | 1 | 66,660 sq ft (6,193 m²) | A bay of racks. |
+| Rack bay 11 | 1 | 66,430 sq ft (6,171 m²) | A bay of racks. |
 | Rack bay 12 | 1 | 66,820 sq ft (6,208 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 66,590 sq ft (6,186 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 66,490 sq ft (6,178 m²) | A bay of racks. |
-| Issue counter | 1 | 650 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 51 | 1,590 sq ft (148 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 51 | 1,670 sq ft (155 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -7881,19 +7895,19 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 |---|---|---|---|
 | Rack bay 1 | 1 | 66,590 sq ft (6,186 m²) | A bay of racks. |
 | Rack bay 2 | 1 | 66,630 sq ft (6,190 m²) | A bay of racks. |
-| Rack bay 3 | 1 | 66,580 sq ft (6,186 m²) | A bay of racks. |
-| Rack bay 4 | 1 | 66,560 sq ft (6,184 m²) | A bay of racks. |
+| Rack bay 3 | 1 | 66,580 sq ft (6,185 m²) | A bay of racks. |
+| Rack bay 4 | 1 | 66,550 sq ft (6,183 m²) | A bay of racks. |
 | Rack bay 5 | 1 | 66,630 sq ft (6,190 m²) | A bay of racks. |
 | Rack bay 6 | 1 | 66,650 sq ft (6,192 m²) | A bay of racks. |
-| Rack bay 7 | 1 | 66,660 sq ft (6,193 m²) | A bay of racks. |
-| Rack bay 8 | 1 | 66,680 sq ft (6,195 m²) | A bay of racks. |
+| Rack bay 7 | 1 | 66,650 sq ft (6,192 m²) | A bay of racks. |
+| Rack bay 8 | 1 | 66,670 sq ft (6,194 m²) | A bay of racks. |
 | Rack bay 9 | 1 | 66,510 sq ft (6,179 m²) | A bay of racks. |
-| Rack bay 10 | 1 | 66,670 sq ft (6,193 m²) | A bay of racks. |
-| Rack bay 11 | 1 | 66,440 sq ft (6,172 m²) | A bay of racks. |
+| Rack bay 10 | 1 | 66,660 sq ft (6,193 m²) | A bay of racks. |
+| Rack bay 11 | 1 | 66,430 sq ft (6,171 m²) | A bay of racks. |
 | Rack bay 12 | 1 | 66,820 sq ft (6,208 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 66,590 sq ft (6,186 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 66,490 sq ft (6,178 m²) | A bay of racks. |
-| Mezzanine store | 40 | 2,060 sq ft (191 m²) each | Light parts. |
+| Mezzanine store | 52 | 1,660 sq ft (154 m²) each | Light parts. |
 
 ### P7-15 · Work Yard 2
 
@@ -7919,7 +7933,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Port Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 4,175,400 sq ft (387,910 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 4,195,000 sq ft (389,730 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -7943,9 +7957,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 274,900 sq ft (25,540 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 275,400 sq ft (25,580 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 274,900 sq ft (25,540 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 99 | 1,620 sq ft (150 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 99 | 1,720 sq ft (160 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -7967,7 +7981,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 274,900 sq ft (25,540 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 275,400 sq ft (25,580 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 274,900 sq ft (25,540 m²) | A bay of racks. |
-| Mezzanine store | 76 | 2,140 sq ft (199 m²) each | Light parts. |
+| Mezzanine store | 100 | 1,720 sq ft (160 m²) each | Light parts. |
 
 ### P7-17 · Work Yard 3
 
@@ -7994,7 +8008,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Port Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 3,395,100 sq ft (315,420 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 3,410,100 sq ft (316,810 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -8018,9 +8032,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 223,900 sq ft (20,800 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 223,400 sq ft (20,760 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 223,400 sq ft (20,760 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 79 | 1,660 sq ft (155 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 79 | 1,760 sq ft (163 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -8042,7 +8056,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 223,900 sq ft (20,800 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 223,400 sq ft (20,760 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 223,400 sq ft (20,760 m²) | A bay of racks. |
-| Mezzanine store | 61 | 2,180 sq ft (202 m²) each | Light parts. |
+| Mezzanine store | 80 | 1,750 sq ft (163 m²) each | Light parts. |
 
 ### P7-19 · Work Yard 4
 
@@ -8069,7 +8083,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Port Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 4,791,600 sq ft (445,160 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 4,805,800 sq ft (446,480 m²) of rooms. Room plan proposed.
 
 **Look:** A plain grey shed.
 
@@ -8093,9 +8107,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
-| Issue counter | 1 | 650 sq ft (60 m²) | Parts are signed out. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
 | Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 75 | 1,700 sq ft (158 m²) each | Small parts. |
+| Small parts cage | 75 | 1,790 sq ft (166 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -8117,7 +8131,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 323,800 sq ft (30,080 m²) | A bay of racks. |
-| Mezzanine store | 76 | 1,690 sq ft (157 m²) each | Light parts. |
+| Mezzanine store | 76 | 1,790 sq ft (166 m²) each | Light parts. |
 
 ## P8 · Wing Command
 
@@ -8127,7 +8141,7 @@ Strike wing headquarters, operations, briefings, duty lodges, mess, medical
 
 **What it is for:** The headquarters of the strike wings, with Vector's flight operations desk and the senior commanders' offices.
 
-79 ft (24.2 m) tall, 5 above deck, 10,047,500 sq ft (933,450 m²) of rooms. Room plan proposed.
+79 ft (24.2 m) tall, 5 above deck, 9,612,000 sq ft (892,980 m²) of rooms. Room plan proposed.
 
 **Look:** A grand headquarters in dark stone with the four wings' badges over its doors and a lit command floor on top.
 
@@ -8137,11 +8151,11 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Guarded entrance | 1 | 1,080 sq ft (100 m²) | Visitors are checked and escorted. |
-| Hall of the Wings | 1 | 4,320 sq ft (401 m²) | Hung with the badges of all 24 squadrons. |
+| Guarded entrance | 1 | 1,090 sq ft (101 m²) | Visitors are checked and escorted. |
+| Hall of the Wings | 1 | 4,330 sq ft (402 m²) | Hung with the badges of all 24 squadrons. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 620 | 1,940 sq ft (180 m²) each | Wing staff. |
-| Meeting room | 620 | 1,290 sq ft (120 m²) each | Meetings. |
+| Staff office | 601 | 1,840 sq ft (171 m²) each | Wing staff. |
+| Meeting room | 601 | 1,350 sq ft (126 m²) each | Meetings. |
 
 #### Level 2 to Level 4 · Staff floor (3 identical floors)
 
@@ -8150,11 +8164,11 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.4 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Personnel office | 1 | 1,620 sq ft (150 m²) | Postings and records. |
-| Logistics office | 1 | 1,620 sq ft (150 m²) | Plans supplies. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Logistics office | 1 | 1,630 sq ft (151 m²) | Plans supplies. |
+| Tea point | 1 | 360 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 446 | 1,940 sq ft (180 m²) each | Wing staff. |
-| Planning room | 446 | 2,560 sq ft (238 m²) each | Plans. |
+| Staff office | 435 | 2,090 sq ft (194 m²) each | Wing staff. |
+| Planning room | 434 | 2,330 sq ft (216 m²) each | Plans. |
 
 #### Level 5 · Command floor
 
@@ -8162,19 +8176,19 @@ Floor at 63 ft (19.2 m) above the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Flight operations desk | 1 | 2,160 sq ft (200 m²) | Vector's flight operations desk, which runs the strike wings' flying. |
+| Flight operations desk | 1 | 2,160 sq ft (201 m²) | Vector's flight operations desk, which runs the strike wings' flying. |
 | Commander's office | 1 | 1,300 sq ft (121 m²) | The commander of the strike wings. |
-| Conference room | 1 | 1,610 sq ft (150 m²) | Senior officers meet. |
+| Conference room | 1 | 1,620 sq ft (150 m²) | Senior officers meet. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Senior officer's office | 326 | 1,610 sq ft (150 m²) each | Senior officers. |
-| Planning room | 325 | 2,610 sq ft (243 m²) each | Senior staff planning. |
-| Briefing room | 325 | 1,930 sq ft (180 m²) each | Briefings for senior officers. |
+| Senior officer's office | 313 | 1,660 sq ft (155 m²) each | Senior officers. |
+| Planning room | 313 | 2,360 sq ft (219 m²) each | Senior staff planning. |
+| Briefing room | 312 | 2,100 sq ft (196 m²) each | Briefings for senior officers. |
 
 ### P8-02 · Strike Operations Centre
 
 **What it is for:** The operations centre showing a live picture of every strike craft in flight.
 
-56 ft (17.2 m) tall, 3 above deck, 1,642,700 sq ft (152,610 m²) of rooms. Room plan proposed.
+56 ft (17.2 m) tall, 3 above deck, 1,640,900 sq ft (152,440 m²) of rooms. Room plan proposed.
 
 **Look:** A hardened block with a single long band of blue light.
 
@@ -8185,11 +8199,11 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Strike operations room | 1 | 129,100 sq ft (12,000 m²) | A live picture of every strike craft in flight on a wall of screens. |
-| Computer hall | 1 | 4,310 sq ft (400 m²) | Computers that track every craft. |
-| Power room | 1 | 2,150 sq ft (200 m²) | Back-up power. |
+| Computer hall | 1 | 4,000 sq ft (371 m²) | Computers that track every craft. |
+| Power room | 1 | 2,160 sq ft (201 m²) | Back-up power. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment room | 89 | 5,580 sq ft (518 m²) each | Equipment. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Equipment room | 89 | 5,570 sq ft (518 m²) each | Equipment. |
 | Light court (open air) | 1 | 1,419,900 sq ft (131,910 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Operations floor
@@ -8199,10 +8213,10 @@ Floor at 16 ft (5 m) above the deck; 26 ft (8 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Strike operations room | 1 | 129,100 sq ft (12,000 m²) | A live picture of every strike craft in flight on a wall of screens. |
-| Wing desks | 1 | 3,230 sq ft (300 m²) | Each wing's controllers. |
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Wing desks | 1 | 2,930 sq ft (272 m²) | Each wing's controllers. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Analysts' room | 271 | 1,850 sq ft (171 m²) each | Analysts. |
+| Analysts' room | 271 | 1,840 sq ft (171 m²) each | Analysts. |
 
 #### Level 3 · Support floor
 
@@ -8218,7 +8232,7 @@ Floor at 43 ft (13 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 **What it is for:** The hall where crews get threat briefings before every sortie.
 
-33 ft (10.2 m) tall, 2 above deck, 1,009,900 sq ft (93,820 m²) of rooms. Room plan proposed.
+33 ft (10.2 m) tall, 2 above deck, 1,008,300 sq ft (93,680 m²) of rooms. Room plan proposed.
 
 **Look:** A dark secure block with narrow windows and a guarded door.
 
@@ -8229,9 +8243,9 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Main briefing theatre | 1 | 129,100 sq ft (12,000 m²) | A theatre where whole wings get threat briefings. |
-| Secure entrance | 1 | 860 sq ft (80 m²) | Cleared crews only. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Threat briefing room | 178 | 2,470 sq ft (229 m²) each | Crews are briefed on enemy threats before a sortie. |
+| Secure entrance | 1 | 870 sq ft (81 m²) | Cleared crews only. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Threat briefing room | 178 | 2,460 sq ft (229 m²) each | Crews are briefed on enemy threats before a sortie. |
 | Light court (open air) | 1 | 1,611,000 sq ft (149,670 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -8241,16 +8255,16 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Main briefing theatre | 1 | 129,100 sq ft (12,000 m²) | A theatre where whole wings get threat briefings. |
-| Intelligence office | 1 | 2,150 sq ft (200 m²) | Analysts prepare threat briefings. |
+| Intelligence office | 1 | 1,850 sq ft (172 m²) | Analysts prepare threat briefings. |
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
 | Analysts' office | 262 | 1,670 sq ft (155 m²) each | Analysts. |
 
 ### P8-04 · Squadron Leaders' Hall
 
 **What it is for:** The offices and wardroom of the 24 squadron leaders.
 
-44 ft (13.4 m) tall, 3 above deck, 3,047,300 sq ft (283,110 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 2,957,700 sq ft (274,780 m²) of rooms. Room plan proposed.
 
 **Look:** A dignified hall with 24 squadron flags along its front.
 
@@ -8260,10 +8274,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Wardroom | 1 | 4,300 sq ft (400 m²) | The squadron leaders' mess and lounge. |
-| Kitchen | 1 | 1,610 sq ft (150 m²) | Cooks. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron leader's office | 528 | 1,910 sq ft (178 m²) each | One of the 24 squadron leaders' offices. |
+| Wardroom | 1 | 3,690 sq ft (343 m²) | The squadron leaders' mess and lounge. |
+| Kitchen | 1 | 1,620 sq ft (150 m²) | Cooks. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron leader's office | 531 | 1,840 sq ft (171 m²) each | One of the 24 squadron leaders' offices. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -8271,16 +8285,16 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Squadron leader's office | 311 | 1,940 sq ft (180 m²) each | One of the 24 squadron leaders' offices. |
-| Meeting room | 311 | 1,320 sq ft (123 m²) each | Meetings. |
+| Tea point | 1 | 1,020 sq ft (95 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Toilets | 1 | 1,030 sq ft (96 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Squadron leader's office | 318 | 1,720 sq ft (160 m²) each | One of the 24 squadron leaders' offices. |
+| Meeting room | 317 | 1,370 sq ft (128 m²) each | Meetings. |
 
 ### P8-05 · Mission Planning Rooms
 
 **What it is for:** Rooms where mission routes, targets and timings are planned.
 
-44 ft (13.4 m) tall, 3 above deck, 981,500 sq ft (91,190 m²) of rooms. Room plan proposed.
+44 ft (13.4 m) tall, 3 above deck, 979,400 sq ft (90,980 m²) of rooms. Room plan proposed.
 
 **Look:** A secure office block with screened windows.
 
@@ -8290,9 +8304,9 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Secure entrance | 1 | 650 sq ft (60 m²) | Checks. |
-| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Mission planning room | 131 | 2,490 sq ft (231 m²) each | A crew plans routes, targets and timings on a big table screen. |
+| Secure entrance | 1 | 660 sq ft (61 m²) | Checks. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Mission planning room | 131 | 2,480 sq ft (231 m²) each | A crew plans routes, targets and timings on a big table screen. |
 | Light court (open air) | 1 | 931,700 sq ft (86,560 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 to Level 3 · Upper floor (2 identical floors)
@@ -8303,14 +8317,14 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 |---|---|---|---|
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Mission planning room | 85 | 2,240 sq ft (208 m²) each | A crew plans routes, targets and timings on a big table screen. |
-| Target study room | 84 | 1,610 sq ft (150 m²) each | Crews study images of targets. |
+| Mission planning room | 85 | 2,220 sq ft (207 m²) each | A crew plans routes, targets and timings on a big table screen. |
+| Target study room | 84 | 1,620 sq ft (151 m²) each | Crews study images of targets. |
 
 ### P8-06 · Debrief Hall
 
 **What it is for:** The hall where every flight is debriefed after landing.
 
-30 ft (9.2 m) tall, 2 above deck, 747,500 sq ft (69,440 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 745,900 sq ft (69,300 m²) of rooms. Room plan proposed.
 
 **Look:** A low block with a lit arrival desk visible through its glass front.
 
@@ -8320,9 +8334,9 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Arrival desk | 1 | 860 sq ft (80 m²) | Crews report in straight after landing. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Debrief room | 151 | 1,290 sq ft (119 m²) each | A crew replays its flight and reports. |
+| Arrival desk | 1 | 560 sq ft (52 m²) | Crews report in straight after landing. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Debrief room | 151 | 1,280 sq ft (119 m²) each | A crew replays its flight and reports. |
 | Intelligence debrief room | 150 | 1,190 sq ft (110 m²) each | Intelligence officers question crews about what they saw. |
 | Light court (open air) | 1 | 543,400 sq ft (50,480 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -8332,17 +8346,17 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Gun camera review room | 1 | 1,080 sq ft (100 m²) | Reviews footage. |
+| Gun camera review room | 1 | 1,090 sq ft (101 m²) | Reviews footage. |
 | Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Debrief room | 150 | 1,190 sq ft (110 m²) each | A crew replays its flight and reports. |
-| Report writing room | 150 | 1,290 sq ft (120 m²) each | Crews write up their flight reports. |
+| Report writing room | 150 | 1,290 sq ft (119 m²) each | Crews write up their flight reports. |
 
 ### P8-07 · Space Conditions Office
 
 **What it is for:** The office forecasting space weather, debris and radiation for flight crews.
 
-30 ft (9 m) tall, 2 above deck, 311,400 sq ft (28,930 m²) of rooms. Room plan proposed.
+30 ft (9 m) tall, 2 above deck, 310,200 sq ft (28,820 m²) of rooms. Room plan proposed.
 
 **Look:** A small office with a white radome on its roof.
 
@@ -8363,9 +8377,9 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Forecasters' office | 119 | 1,300 sq ft (121 m²) each | Forecasters. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
+| Forecasters' office | 119 | 1,290 sq ft (120 m²) each | Forecasters. |
 
 ### P8-08 · Command Plaza
 
@@ -8391,7 +8405,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A lodge of bunks in the Wing Command for crews on 24-hour duty, so they can rest close to their craft.
 
-46 ft (14.1 m) tall, 4 above deck, 1,846,200 sq ft (171,520 m²) of rooms. Room plan proposed.
+46 ft (14.1 m) tall, 4 above deck, 1,843,800 sq ft (171,300 m²) of rooms. Room plan proposed.
 
 **Look:** A long lodge with small dark windows.
 
@@ -8401,10 +8415,10 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Front desk | 1 | 640 sq ft (60 m²) | Assigns bunks. |
-| Mess | 1 | 3,230 sq ft (300 m²) | Food. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Quiet lounge | 184 | 2,480 sq ft (231 m²) each | Rest. |
+| Front desk | 1 | 660 sq ft (61 m²) | Assigns bunks. |
+| Mess | 1 | 3,220 sq ft (299 m²) | Food. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Quiet lounge | 184 | 2,480 sq ft (230 m²) each | Rest. |
 | Light court (open air) | 1 | 1,238,100 sq ft (115,020 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 to Level 4 · Bunk floor (3 identical floors)
@@ -8413,14 +8427,14 @@ Floor at 15 ft (4.5 m) above the deck; 10 ft (3.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Washroom | 2 | 430 sq ft (40 m²) each | Toilets and showers. |
+| Washroom | 2 | 440 sq ft (41 m²) each | Toilets and showers. |
 | Bunk room | 874 | 530 sq ft (49 m²) each | Two bunks for crews on 24-hour duty, close to their craft. |
 
 ### P8-10 · Duty Crew Lodge 2
 
 **What it is for:** A lodge of bunks in the Wing Command for crews on 24-hour duty, so they can rest close to their craft.
 
-57 ft (17.3 m) tall, 5 above deck, 2,072,500 sq ft (192,550 m²) of rooms. Room plan proposed.
+57 ft (17.3 m) tall, 5 above deck, 2,069,000 sq ft (192,220 m²) of rooms. Room plan proposed.
 
 **Look:** A plain lodge with an alert lamp over the door.
 
@@ -8430,8 +8444,8 @@ Floor at deck level; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Front desk | 1 | 650 sq ft (60 m²) | Assigns bunks. |
-| Mess | 1 | 3,230 sq ft (300 m²) | Food. |
+| Front desk | 1 | 660 sq ft (61 m²) | Assigns bunks. |
+| Mess | 1 | 3,220 sq ft (299 m²) | Food. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Quiet lounge | 166 | 2,470 sq ft (229 m²) each | Rest. |
 | Light court (open air) | 1 | 1,045,800 sq ft (97,160 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
@@ -8442,14 +8456,14 @@ Floor at 15 ft (4.5 m) above the deck; 10 ft (3.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Washroom | 2 | 430 sq ft (40 m²) each | Toilets and showers. |
-| Bunk room | 787 | 530 sq ft (49 m²) each | Two bunks for crews on 24-hour duty, close to their craft. |
+| Washroom | 2 | 440 sq ft (41 m²) each | Toilets and showers. |
+| Bunk room | 788 | 520 sq ft (49 m²) each | Two bunks for crews on 24-hour duty, close to their craft. |
 
 ### P8-11 · Hangar Mess Hall
 
 **What it is for:** The mess hall serving meals to thousands of hangar crews each shift.
 
-31 ft (9.6 m) tall, 2 above deck, 1,865,400 sq ft (173,300 m²) of rooms. Room plan proposed.
+31 ft (9.6 m) tall, 2 above deck, 1,864,300 sq ft (173,200 m²) of rooms. Room plan proposed.
 
 **Look:** A long low canteen in orange-trimmed dark panels, with big windows onto a terrace of tables.
 
@@ -8462,15 +8476,15 @@ Floor at deck level; 18 ft (5.4 m) floor to floor.
 | Dining hall | 1 | 1,018,800 sq ft (94,650 m²) | The main dining hall, with long tables, booths and a counter where hangar crews, 8,000 a shift collect their meals. |
 | Serving counter | 1 | 1,290 sq ft (120 m²) | Hot meals, salads and drinks are served here in a fast-moving line. |
 | Main kitchen | 1 | 3,230 sq ft (300 m²) | Cooks prepare thousands of meals a day here on big ranges, ovens and kettles. |
-| Cold room | 1 | 650 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
+| Cold room | 1 | 640 sq ft (60 m²) | A walk-in fridge for fresh meat, vegetables and dairy. |
 | Freezer room | 1 | 430 sq ft (40 m²) | A walk-in freezer for frozen stores. |
 | Dry store | 1 | 860 sq ft (80 m²) | Shelves of flour, rice, tins and other dry food. |
 | Dishwash room | 1 | 860 sq ft (80 m²) | Conveyor dishwashers clean trays, plates and cutlery. |
 | Goods-in bay | 1 | 640 sq ft (60 m²) | Food deliveries arrive and are checked here. |
-| Waste and recycling room | 1 | 340 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
+| Waste and recycling room | 1 | 350 sq ft (32 m²) | Food waste goes to the digester; packaging is sorted for recycling. |
 | Second dining hall | 1 | 16,150 sq ft (1,500 m²) | Extra seats at peak times. |
-| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Grab-and-go kiosk | 312 | 1,280 sq ft (119 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Grab-and-go kiosk | 312 | 1,270 sq ft (118 m²) each | Sandwiches, snacks and coffee for people in a hurry. |
 | Terrace court (open air) | 1 | 611,300 sq ft (56,800 m²) | An open court with tables for eating outside. |
 
 #### Level 2 · Upper dining and staff floor
@@ -8479,17 +8493,17 @@ Floor at 18 ft (5.4 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Upper dining room | 1 | 3,230 sq ft (300 m²) | A quieter dining room with tables for groups. |
+| Upper dining room | 1 | 2,980 sq ft (277 m²) | A quieter dining room with tables for groups. |
 | Kitchen staff changing room | 1 | 540 sq ft (50 m²) | Kitchen crews change into whites and wash before their shift. |
-| Catering manager's office | 1 | 340 sq ft (32 m²) | Where menus are planned and food is ordered. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Catering manager's office | 1 | 340 sq ft (31 m²) | Where menus are planned and food is ordered. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
 | Meeting and dining room | 263 | 1,590 sq ft (148 m²) each | A small room that can be booked for working lunches. |
 
 ### P8-12 · Hangar Medical Centre
 
 **What it is for:** The strike decks' medical centre, with flight surgeons, crash trauma care and hospital beds.
 
-59 ft (18 m) tall, 4 above deck, 2,247,600 sq ft (208,810 m²) of rooms. Room plan proposed.
+59 ft (18 m) tall, 4 above deck, 2,243,800 sq ft (208,460 m²) of rooms. Room plan proposed.
 
 **Look:** A white medical centre with a red-edged roof and a lit trauma entrance.
 
@@ -8499,10 +8513,10 @@ Floor at deck level; 18 ft (5.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Crash trauma unit | 1 | 16,150 sq ft (1,500 m²) | Treats crash and blast injuries. |
+| Crash trauma unit | 1 | 15,850 sq ft (1,472 m²) | Treats crash and blast injuries. |
 | Flight surgeons' clinic | 1 | 4,310 sq ft (400 m²) | Flight surgeons check pilots. |
-| Imaging | 1 | 6,460 sq ft (600 m²) | Scanners. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Imaging | 1 | 6,450 sq ft (600 m²) | Scanners. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Treatment room | 545 | 980 sq ft (91 m²) each | Treatment. |
 | Light court (open air) | 1 | 3,619,700 sq ft (336,280 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -8513,8 +8527,8 @@ Floor at 18 ft (5.5 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Operating theatre | 6 | 650 sq ft (60 m²) each | Surgery. |
-| Intensive care | 1 | 6,460 sq ft (600 m²) | Critical care. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Intensive care | 1 | 6,460 sq ft (601 m²) | Critical care. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
 | Lab | 299 | 1,840 sq ft (171 m²) each | Tests. |
 
 #### Level 3 to Level 4 · Ward floor (2 identical floors)
@@ -8523,8 +8537,8 @@ Floor at 33 ft (10 m) above the deck; 13 ft (4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Nurses' station | 2 | 430 sq ft (40 m²) each | Nurses. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Nurses' station | 2 | 440 sq ft (41 m²) each | Nurses. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Ward bay | 286 | 1,280 sq ft (119 m²) each | Four beds. |
 | Single room | 285 | 680 sq ft (63 m²) each | A single room. |
 
@@ -8532,7 +8546,7 @@ Floor at 33 ft (10 m) above the deck; 13 ft (4 m) floor to floor.
 
 **What it is for:** A fitness hall with g-force training, a gym and a pool.
 
-43 ft (13.2 m) tall, 2 above deck, 916,200 sq ft (85,120 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 2 above deck, 915,000 sq ft (85,010 m²) of rooms. Room plan proposed.
 
 **Look:** A big fitness hall with a glass wall onto its pool.
 
@@ -8543,10 +8557,10 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Pool hall | 1 | 129,300 sq ft (12,010 m²) | A 50 m pool. |
-| Reception | 1 | 640 sq ft (60 m²) | Book. |
-| Changing rooms | 2 | 1,610 sq ft (150 m²) each | Changing. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Gym room | 59 | 6,590 sq ft (612 m²) each | Weights and machines. |
+| Reception | 1 | 650 sq ft (60 m²) | Book. |
+| Changing rooms | 2 | 1,610 sq ft (149 m²) each | Changing. |
+| Toilets | 1 | 670 sq ft (62 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Gym room | 59 | 6,580 sq ft (612 m²) each | Weights and machines. |
 | Light court (open air) | 1 | 1,982,700 sq ft (184,200 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -8556,9 +8570,9 @@ Floor at 30 ft (9 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Pool hall | 1 | 129,300 sq ft (12,010 m²) | A 50 m pool. |
-| G-force trainer room | 1 | 2,150 sq ft (200 m²) | A small centrifuge and g-suit trainer. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Studio | 106 | 3,690 sq ft (342 m²) each | Classes. |
+| G-force trainer room | 1 | 2,140 sq ft (199 m²) | A small centrifuge and g-suit trainer. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Studio | 106 | 3,680 sq ft (342 m²) each | Classes. |
 
 ### P8-14 · Wing Memorial Garden
 
@@ -8587,7 +8601,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A shop for crews' daily needs.
 
-16 ft (5 m) tall, 1 above deck, 291,100 sq ft (27,040 m²) of rooms. Room plan proposed.
+16 ft (5 m) tall, 1 above deck, 290,400 sq ft (26,980 m²) of rooms. Room plan proposed.
 
 **Look:** A big plain shop with a lit sign.
 
@@ -8599,17 +8613,17 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 |---|---|---|---|
 | Checkouts | 1 | 1,080 sq ft (100 m²) | Checkouts. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Grocery aisle | 14 | 5,230 sq ft (486 m²) each | Shelves of daily needs. |
+| Grocery aisle | 14 | 5,190 sq ft (482 m²) each | Shelves of daily needs. |
 | Toiletries aisle | 13 | 5,370 sq ft (498 m²) each | Shelves of daily needs. |
-| Snacks aisle | 13 | 5,630 sq ft (523 m²) each | Shelves of daily needs. |
-| Clothing aisle | 13 | 5,630 sq ft (523 m²) each | Shelves of daily needs. |
+| Snacks aisle | 13 | 5,620 sq ft (523 m²) each | Shelves of daily needs. |
+| Clothing aisle | 13 | 5,620 sq ft (523 m²) each | Shelves of daily needs. |
 | Light court (open air) | 1 | 1,042,500 sq ft (96,850 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 ### P8-16 · Uniform and Kit Store
 
 **What it is for:** The store that issues flight suits, helmets and kit.
 
-30 ft (9.2 m) tall, 2 above deck, 484,000 sq ft (44,970 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 482,600 sq ft (44,830 m²) of rooms. Room plan proposed.
 
 **Look:** A grey store with a long issue counter.
 
@@ -8619,10 +8633,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Issue counter | 1 | 1,610 sq ft (150 m²) | Crews collect new kit. |
+| Issue counter | 1 | 1,620 sq ft (151 m²) | Crews collect new kit. |
 | Fitting room | 4 | 650 sq ft (60 m²) each | Helmets and suits are fitted. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Kit store | 70 | 3,390 sq ft (315 m²) each | Racks of kit. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Kit store | 70 | 3,380 sq ft (314 m²) each | Racks of kit. |
 | Light court (open air) | 1 | 569,300 sq ft (52,890 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -8631,13 +8645,13 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Kit store | 72 | 3,360 sq ft (312 m²) each | Racks of kit. |
+| Kit store | 72 | 3,350 sq ft (311 m²) each | Racks of kit. |
 
 ### P8-17 · Hangar Police Post
 
 **What it is for:** The police and security post for the strike decks.
 
-30 ft (9 m) tall, 2 above deck, 385,200 sq ft (35,780 m²) of rooms. Room plan proposed.
+30 ft (9 m) tall, 2 above deck, 384,000 sq ft (35,680 m²) of rooms. Room plan proposed.
 
 **Look:** A blue-trimmed security post with a lit sign.
 
@@ -8647,12 +8661,12 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Front counter | 1 | 640 sq ft (60 m²) | Reports. |
-| Custody suite | 1 | 1,620 sq ft (150 m²) | Cells. |
-| Control room | 1 | 860 sq ft (80 m²) | Cameras. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Patrol room | 112 | 1,680 sq ft (156 m²) each | Patrols. |
+| Front counter | 1 | 660 sq ft (61 m²) | Reports. |
+| Custody suite | 1 | 1,600 sq ft (149 m²) | Cells. |
+| Control room | 1 | 870 sq ft (81 m²) | Cameras. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Patrol room | 112 | 1,670 sq ft (155 m²) each | Patrols. |
 | Vehicle yard (open air) | 1 | 356,000 sq ft (33,070 m²) | Patrol cars. |
 
 #### Level 2 · Upper floor
@@ -8661,16 +8675,16 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Security office | 1 | 1,080 sq ft (100 m²) | Strike deck security. |
+| Security office | 1 | 780 sq ft (73 m²) | Strike deck security. |
 | Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
 | Offices | 194 | 980 sq ft (91 m²) each | Offices. |
 
 ### P8-18 · Command Fire Station
 
 **What it is for:** The fire station for Wing Command.
 
-51 ft (15.4 m) tall, 3 above deck, 672,100 sq ft (62,440 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 655,100 sq ft (60,860 m²) of rooms. Room plan proposed.
 
 **Look:** A compact red-and-graphite station whose bay doors fold up like wings, with the crew floor glazed above.
 
@@ -8682,13 +8696,13 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 |---|---|---|---|
 | Fire engine | 2 | 117,600 sq ft (10,920 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 117,700 sq ft (10,930 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 650 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
-| Decontamination room | 1 | 650 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 1,210 sq ft (113 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 740 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 37 | 1,690 sq ft (157 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
+| Turnout gear room | 1 | 940 sq ft (87 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Hose store | 1 | 750 sq ft (69 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 28 | 2,030 sq ft (189 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 470,400 sq ft (43,710 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -8699,12 +8713,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 |---|---|---|---|
 | Fire engine | 2 | 117,600 sq ft (10,920 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 117,700 sq ft (10,930 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 11 | 420 sq ft (39 m²) each | A small bedroom for a firefighter on a night watch. |
+| Bunk rooms | 11 | 340 sq ft (32 m²) each | A small bedroom for a firefighter on a night watch. |
 | Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
 | Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 960 sq ft (89 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 410 sq ft (38 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 45 | 1,330 sq ft (123 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 350 sq ft (32 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 44 | 1,250 sq ft (116 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -8712,17 +8726,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 410 sq ft (38 m²) | The station commander plans the watches and keeps the station's records. |
+| Station commander's office | 1 | 350 sq ft (32 m²) | The station commander plans the watches and keeps the station's records. |
 | Training room | 1 | 1,070 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
 | Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in Wing Command for fire risks work from here. |
-| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 68 | 950 sq ft (89 m²) each | Offices for the station's officers and fire safety staff. |
+| Records room | 1 | 340 sq ft (31 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 58 | 1,020 sq ft (95 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P8-20 · Wing Command Utility Plant
 
 **What it is for:** The utility plant for Wing Command.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 3,012,000 sq ft (279,820 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 3,009,500 sq ft (279,590 m²) of rooms. Room plan proposed.
 
 **Look:** A low ribbed shed with yellow-striped roller doors, a bank of grey transformers behind a mesh fence and pipe bridges running to the street.
 
@@ -8732,8 +8746,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 731,900 sq ft (68,000 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 731,900 sq ft (68,000 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 5 | 145,000 sq ft (13,470 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 4 | 181,200 sq ft (16,840 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -8751,15 +8765,15 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 55,900 sq ft (5,193 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 446,800 sq ft (41,510 m²) | Chillers and pumps that make the cold water used to cool the air in every Wing Command building. |
 | Air handling hall | 1 | 446,600 sq ft (41,490 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,600 sq ft (149 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
-| Battery room | 1 | 1,710 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,150 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,920 sq ft (179 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,750 sq ft (163 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
+| Water pump room | 1 | 2,160 sq ft (201 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,240 sq ft (208 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,500 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 32 | 2,880 sq ft (268 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 32 | 3,040 sq ft (283 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -8778,15 +8792,15 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Chiller hall | 1 | 446,800 sq ft (41,510 m²) | Chillers and pumps that make the cold water used to cool the air in every Wing Command building. |
 | Air handling hall | 1 | 446,600 sq ft (41,490 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
 | Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,180 sq ft (109 m²) | Where the main air ducts leave the plant and turn toward the streets. |
-| Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 34 | 2,960 sq ft (275 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Ductwork gallery | 1 | 1,330 sq ft (123 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Crew rest room | 1 | 440 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
+| Upper plant gallery | 35 | 3,040 sq ft (282 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P8-21 · Wing Command Service Shaft
 
 **What it is for:** Wing Command's shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 1,150,500 sq ft (106,880 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 1,149,100 sq ft (106,760 m²) of rooms. Room plan proposed.
 
 **Look:** A squat concrete drum with a ring of yellow hazard lights round the lift doors and a steel gantry crane on its roof.
 
@@ -8796,8 +8810,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 280,900 sq ft (26,100 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 281,100 sq ft (26,120 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 278,500 sq ft (25,870 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 278,700 sq ft (25,890 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -8806,12 +8820,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 522,100 sq ft (48,510 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Lift control room | 1 | 650 sq ft (60 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
 | Loading bay | 1 | 1,540 sq ft (143 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
-| Crew check-in | 1 | 420 sq ft (39 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
+| Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
-| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 14 | 2,070 sq ft (193 m²) each | Short-term storage for goods waiting for the lift. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Holding store | 14 | 2,190 sq ft (204 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -8820,9 +8834,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 522,100 sq ft (48,510 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 2,080 sq ft (193 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 1,280 sq ft (119 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 15 | 1,990 sq ft (184 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 2,190 sq ft (204 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 1,290 sq ft (120 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 15 | 2,090 sq ft (195 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P8-22 · Command Garden 1
 
@@ -8849,7 +8863,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 5,181,100 sq ft (481,340 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 4,949,900 sq ft (459,860 m²) of rooms. Room plan proposed.
 
 **Look:** A slim office block with purple trim.
 
@@ -8859,10 +8873,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 666 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 666 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,470 sq ft (136 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 646 | 1,510 sq ft (140 m²) each | Wing staff. |
+| Meeting room | 646 | 1,040 sq ft (97 m²) each | Meetings. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -8870,10 +8884,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 588 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Records room | 588 | 1,320 sq ft (123 m²) each | Records. |
+| Staff office | 563 | 1,610 sq ft (150 m²) each | Wing staff. |
+| Records room | 562 | 1,320 sq ft (122 m²) each | Records. |
 
 ### P8-24 · Command Garden 2
 
@@ -8901,7 +8915,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 539,100 sq ft (50,090 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 536,600 sq ft (49,850 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -8911,9 +8925,9 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,420 sq ft (132 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 71 | 1,530 sq ft (142 m²) each | Wing staff. |
+| Staff office | 71 | 1,520 sq ft (141 m²) each | Wing staff. |
 | Meeting room | 71 | 970 sq ft (90 m²) each | Meetings. |
 | Light court (open air) | 1 | 340,900 sq ft (31,670 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -8924,9 +8938,9 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 61 | 1,600 sq ft (148 m²) each | Wing staff. |
-| Records room | 61 | 1,330 sq ft (124 m²) each | Records. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 61 | 1,590 sq ft (148 m²) each | Wing staff. |
+| Records room | 61 | 1,320 sq ft (123 m²) each | Records. |
 
 ### P8-26 · Command Garden 3
 
@@ -8954,7 +8968,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 3,257,800 sq ft (302,660 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 3,255,300 sq ft (302,430 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -8964,7 +8978,7 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,420 sq ft (132 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Staff office | 330 | 1,490 sq ft (139 m²) each | Wing staff. |
 | Meeting room | 330 | 970 sq ft (90 m²) each | Meetings. |
@@ -8976,8 +8990,8 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
 | Staff office | 285 | 1,570 sq ft (146 m²) each | Wing staff. |
 | Records room | 285 | 1,280 sq ft (119 m²) each | Records. |
 
@@ -9006,7 +9020,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 5,941,400 sq ft (551,980 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 5,679,700 sq ft (527,660 m²) of rooms. Room plan proposed.
 
 **Look:** An office block with a glass stair tower.
 
@@ -9016,10 +9030,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,630 sq ft (151 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 574 | 1,610 sq ft (149 m²) each | Wing staff. |
-| Meeting room | 574 | 970 sq ft (91 m²) each | Meetings. |
+| Staff office | 553 | 1,510 sq ft (140 m²) each | Wing staff. |
+| Meeting room | 555 | 1,050 sq ft (98 m²) each | Meetings. |
 
 #### Level 2 to Level 4 · Office floor (3 identical floors)
 
@@ -9027,10 +9041,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 506 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Records room | 506 | 1,320 sq ft (123 m²) each | Records. |
+| Staff office | 505 | 1,510 sq ft (140 m²) each | Wing staff. |
+| Records room | 504 | 1,300 sq ft (121 m²) each | Records. |
 
 ### P8-30 · Command Garden 5
 
@@ -9057,7 +9071,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 1,201,000 sq ft (111,580 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 1,197,800 sq ft (111,280 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -9067,9 +9081,9 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,430 sq ft (133 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 120 | 1,520 sq ft (141 m²) each | Wing staff. |
+| Staff office | 120 | 1,510 sq ft (140 m²) each | Wing staff. |
 | Meeting room | 120 | 970 sq ft (90 m²) each | Meetings. |
 | Light court (open air) | 1 | 348,100 sq ft (32,340 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -9080,8 +9094,8 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 104 | 1,580 sq ft (147 m²) each | Wing staff. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 104 | 1,580 sq ft (146 m²) each | Wing staff. |
 | Records room | 104 | 1,290 sq ft (120 m²) each | Records. |
 
 ### P8-32 · Command Garden 6
@@ -9109,7 +9123,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 9,703,500 sq ft (901,480 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 9,294,200 sq ft (863,460 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -9119,10 +9133,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 938 | 1,610 sq ft (149 m²) each | Wing staff. |
-| Meeting room | 938 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,690 sq ft (157 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 911 | 1,510 sq ft (141 m²) each | Wing staff. |
+| Meeting room | 911 | 1,030 sq ft (96 m²) each | Meetings. |
 
 #### Level 2 to Level 4 · Office floor (3 identical floors)
 
@@ -9130,10 +9144,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 826 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Records room | 826 | 1,320 sq ft (123 m²) each | Records. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 794 | 1,590 sq ft (148 m²) each | Wing staff. |
+| Records room | 793 | 1,330 sq ft (124 m²) each | Records. |
 
 ### P8-34 · Command Garden 7
 
@@ -9161,7 +9175,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 2,574,200 sq ft (239,150 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 2,571,900 sq ft (238,940 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -9171,8 +9185,8 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Reception | 1 | 1,420 sq ft (132 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Staff office | 348 | 1,490 sq ft (138 m²) each | Wing staff. |
 | Meeting room | 348 | 970 sq ft (90 m²) each | Meetings. |
 | Light court (open air) | 1 | 4,662,700 sq ft (433,180 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
@@ -9183,10 +9197,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
 | Staff office | 300 | 1,570 sq ft (146 m²) each | Wing staff. |
-| Records room | 300 | 1,280 sq ft (119 m²) each | Records. |
+| Records room | 300 | 1,290 sq ft (119 m²) each | Records. |
 
 ### P8-36 · Command Garden 8
 
@@ -9214,7 +9228,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 3,721,600 sq ft (345,740 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 3,717,800 sq ft (345,390 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -9224,9 +9238,9 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 378 | 1,490 sq ft (138 m²) each | Wing staff. |
+| Reception | 1 | 1,420 sq ft (132 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 378 | 1,480 sq ft (138 m²) each | Wing staff. |
 | Meeting room | 378 | 970 sq ft (90 m²) each | Meetings. |
 | Light court (open air) | 1 | 5,833,900 sq ft (541,980 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -9236,8 +9250,8 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
 | Staff office | 326 | 1,570 sq ft (146 m²) each | Wing staff. |
 | Records room | 326 | 1,280 sq ft (119 m²) each | Records. |
 
@@ -9266,7 +9280,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 730,100 sq ft (67,820 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 727,000 sq ft (67,540 m²) of rooms. Room plan proposed.
 
 **Look:** A slim office block with purple trim.
 
@@ -9276,9 +9290,9 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,420 sq ft (132 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 96 | 1,540 sq ft (143 m²) each | Wing staff. |
+| Staff office | 96 | 1,530 sq ft (142 m²) each | Wing staff. |
 | Meeting room | 96 | 970 sq ft (91 m²) each | Meetings. |
 | Light court (open air) | 1 | 332,700 sq ft (30,910 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
@@ -9288,10 +9302,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 83 | 1,600 sq ft (149 m²) each | Wing staff. |
-| Records room | 83 | 1,320 sq ft (122 m²) each | Records. |
+| Tea point | 1 | 410 sq ft (38 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 83 | 1,590 sq ft (148 m²) each | Wing staff. |
+| Records room | 83 | 1,310 sq ft (122 m²) each | Records. |
 
 ### P8-40 · Command Garden 10
 
@@ -9318,7 +9332,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 7,513,400 sq ft (698,020 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 7,213,000 sq ft (670,110 m²) of rooms. Room plan proposed.
 
 **Look:** An office block with a glass stair tower.
 
@@ -9328,10 +9342,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 725 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 724 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,740 sq ft (161 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 702 | 1,490 sq ft (139 m²) each | Wing staff. |
+| Meeting room | 702 | 1,070 sq ft (99 m²) each | Meetings. |
 
 #### Level 2 to Level 4 · Office floor (3 identical floors)
 
@@ -9339,10 +9353,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 651 | 1,600 sq ft (149 m²) each | Wing staff. |
-| Records room | 650 | 1,280 sq ft (119 m²) each | Records. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 642 | 1,490 sq ft (138 m²) each | Wing staff. |
+| Records room | 642 | 1,320 sq ft (122 m²) each | Records. |
 
 ### P8-42 · Command Garden 11
 
@@ -9370,7 +9384,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 6,261,200 sq ft (581,690 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 6,003,800 sq ft (557,780 m²) of rooms. Room plan proposed.
 
 **Look:** A plain office block in dark panels.
 
@@ -9380,10 +9394,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,470 sq ft (136 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 805 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 805 | 980 sq ft (91 m²) each | Meetings. |
+| Staff office | 783 | 1,480 sq ft (138 m²) each | Wing staff. |
+| Meeting room | 783 | 1,070 sq ft (100 m²) each | Meetings. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -9391,10 +9405,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 726 | 1,590 sq ft (148 m²) each | Wing staff. |
-| Records room | 725 | 1,280 sq ft (119 m²) each | Records. |
+| Staff office | 714 | 1,470 sq ft (137 m²) each | Wing staff. |
+| Records room | 714 | 1,330 sq ft (123 m²) each | Records. |
 
 ### P8-44 · Command Garden 12
 
@@ -9422,7 +9436,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 2,360,300 sq ft (219,280 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 2,289,100 sq ft (212,660 m²) of rooms. Room plan proposed.
 
 **Look:** An office block with a glass stair tower.
 
@@ -9432,10 +9446,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 303 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 303 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,010 sq ft (94 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 990 sq ft (92 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 291 | 1,560 sq ft (145 m²) each | Wing staff. |
+| Meeting room | 291 | 1,050 sq ft (98 m²) each | Meetings. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -9443,10 +9457,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 400 sq ft (37 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 273 | 1,600 sq ft (148 m²) each | Wing staff. |
-| Records room | 272 | 1,290 sq ft (120 m²) each | Records. |
+| Tea point | 1 | 1,000 sq ft (93 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 1,000 sq ft (93 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 276 | 1,430 sq ft (133 m²) each | Wing staff. |
+| Records room | 274 | 1,340 sq ft (124 m²) each | Records. |
 
 ### P8-46 · Command Garden 13
 
@@ -9473,7 +9487,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-57 ft (17.4 m) tall, 4 above deck, 9,616,100 sq ft (893,360 m²) of rooms. Room plan proposed.
+57 ft (17.4 m) tall, 4 above deck, 9,201,800 sq ft (854,880 m²) of rooms. Room plan proposed.
 
 **Look:** An office block with a glass stair tower.
 
@@ -9483,10 +9497,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (161 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Reception | 1 | 1,540 sq ft (143 m²) | The front desk where visitors sign in, get a pass and are met. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 927 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 927 | 980 sq ft (91 m²) each | Meetings. |
+| Staff office | 903 | 1,500 sq ft (140 m²) each | Wing staff. |
+| Meeting room | 902 | 1,040 sq ft (97 m²) each | Meetings. |
 
 #### Level 2 to Level 4 · Office floor (3 identical floors)
 
@@ -9494,10 +9508,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 834 | 1,600 sq ft (148 m²) each | Wing staff. |
-| Records room | 834 | 1,280 sq ft (119 m²) each | Records. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 825 | 1,470 sq ft (137 m²) each | Wing staff. |
+| Records room | 824 | 1,320 sq ft (122 m²) each | Records. |
 
 ### P8-48 · Command Garden 14
 
@@ -9524,7 +9538,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 1,436,000 sq ft (133,410 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 1,336,700 sq ft (124,180 m²) of rooms. Room plan proposed.
 
 **Look:** An office block with a glass stair tower.
 
@@ -9534,10 +9548,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,720 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 184 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 183 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,310 sq ft (122 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 650 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 171 | 1,440 sq ft (134 m²) each | Wing staff. |
+| Meeting room | 172 | 1,150 sq ft (107 m²) each | Meetings. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -9545,10 +9559,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 580 sq ft (54 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 167 | 1,570 sq ft (146 m²) each | Wing staff. |
-| Records room | 167 | 1,290 sq ft (120 m²) each | Records. |
+| Tea point | 1 | 570 sq ft (53 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (71 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 161 | 1,460 sq ft (135 m²) each | Wing staff. |
+| Records room | 161 | 1,300 sq ft (121 m²) each | Records. |
 
 ### P8-50 · Command Garden 15
 
@@ -9575,7 +9589,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** Offices in the Wing Command for the strike wings' administrative staff.
 
-43 ft (13.2 m) tall, 3 above deck, 5,194,200 sq ft (482,560 m²) of rooms. Room plan proposed.
+43 ft (13.2 m) tall, 3 above deck, 4,960,400 sq ft (460,840 m²) of rooms. Room plan proposed.
 
 **Look:** A slim office block with purple trim.
 
@@ -9585,10 +9599,10 @@ Floor at deck level; 16 ft (4.8 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Reception | 1 | 1,730 sq ft (160 m²) | The front desk where visitors sign in, get a pass and are met. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Staff office | 668 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Meeting room | 668 | 980 sq ft (91 m²) each | Meetings. |
+| Reception | 1 | 1,650 sq ft (153 m²) | The front desk where visitors sign in, get a pass and are met. |
+| Toilets | 1 | 640 sq ft (59 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Staff office | 647 | 1,530 sq ft (143 m²) each | Wing staff. |
+| Meeting room | 647 | 1,020 sq ft (95 m²) each | Meetings. |
 
 #### Level 2 to Level 3 · Office floor (2 identical floors)
 
@@ -9596,10 +9610,10 @@ Floor at 16 ft (4.8 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Staff office | 590 | 1,610 sq ft (150 m²) each | Wing staff. |
-| Records room | 590 | 1,320 sq ft (123 m²) each | Records. |
+| Tea point | 1 | 370 sq ft (35 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Staff office | 591 | 1,480 sq ft (137 m²) each | Wing staff. |
+| Records room | 591 | 1,320 sq ft (122 m²) each | Records. |
 
 ## P9 · Starboard Repair Yards
 
@@ -9609,7 +9623,7 @@ Battle-damage rebuilds, weapons fit, shields, drone repairs
 
 **What it is for:** The hangar where craft with battle damage are rebuilt.
 
-113 ft (34.5 m) tall, 2 above deck, 6,871,300 sq ft (638,360 m²) of rooms. Room plan proposed.
+113 ft (34.5 m) tall, 2 above deck, 6,897,000 sq ft (640,760 m²) of rooms. Room plan proposed.
 
 **Look:** A vast repair hangar with orange crane girders and craft on stands inside.
 
@@ -9633,15 +9647,15 @@ Floor at deck level; 98 ft (30 m) floor to floor.
 | Rebuild bay 12 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Rebuild bay 13 | 1 | 458,200 sq ft (42,570 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Rebuild bay 14 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
-| Strip-down area | 1 | 4,160 sq ft (387 m²) | Parts are removed and labelled. |
-| Inspection lab | 1 | 2,150 sq ft (199 m²) | Checks for cracks and damage. |
-| Tool crib | 1 | 1,280 sq ft (119 m²) | Tools. |
-| Locker room | 1 | 960 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Strip-down area | 1 | 3,920 sq ft (364 m²) | Parts are removed and labelled. |
+| Inspection lab | 1 | 2,150 sq ft (200 m²) | Checks for cracks and damage. |
+| Tool crib | 1 | 1,290 sq ft (120 m²) | Tools. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Staff break room | 1 | 860 sq ft (80 m²) | A kitchen and tables where staff eat and take their breaks. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Battle damage survey room | 1 | 2,310 sq ft (215 m²) | Maps each craft's damage. |
-| Fitters' workshop | 38 | 3,180 sq ft (296 m²) each | Benches. |
-| Parts kitting room | 38 | 2,400 sq ft (223 m²) each | Parts for each job. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Battle damage survey room | 1 | 2,790 sq ft (259 m²) | Maps each craft's damage. |
+| Fitters' workshop | 39 | 3,320 sq ft (308 m²) each | Benches. |
+| Parts kitting room | 38 | 2,510 sq ft (233 m²) each | Parts for each job. |
 
 #### Level 2 · Gallery floor
 
@@ -9663,16 +9677,16 @@ Floor at 98 ft (30 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rebuild bay 12 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Rebuild bay 13 | 1 | 458,200 sq ft (42,570 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
 | Rebuild bay 14 | 1 | 458,900 sq ft (42,630 m²) | A bay where one craft is taken apart on stands, with an overhead crane. |
-| Engineering office | 1 | 1,610 sq ft (150 m²) | Plans each rebuild. |
-| Tea point | 1 | 610 sq ft (57 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Planning office | 67 | 1,550 sq ft (144 m²) each | Planners. |
-| Crane gallery | 66 | 1,790 sq ft (167 m²) each | Crane access. |
+| Engineering office | 1 | 1,630 sq ft (151 m²) | Plans each rebuild. |
+| Tea point | 1 | 680 sq ft (63 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Planning office | 67 | 1,650 sq ft (153 m²) each | Planners. |
+| Crane gallery | 66 | 1,890 sq ft (176 m²) each | Crane access. |
 
 ### P9-02 · Weapons Fit Shop
 
 **What it is for:** The shop where guns and weapon pylons are fitted and tested.
 
-67 ft (20.5 m) tall, 2 above deck, 2,640,300 sq ft (245,290 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 2,654,500 sq ft (246,610 m²) of rooms. Room plan proposed.
 
 **Look:** A blast-walled hall with a test butt at one end.
 
@@ -9696,11 +9710,11 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 | Fit bay 12 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
 | Fit bay 13 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
 | Fit bay 14 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
-| Gun shop | 1 | 2,150 sq ft (200 m²) | Repairs cannons. |
-| Pylon shop | 1 | 1,230 sq ft (114 m²) | Repairs pylons. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Bench room | 73 | 1,690 sq ft (157 m²) each | Benches. |
+| Gun shop | 1 | 1,860 sq ft (172 m²) | Repairs cannons. |
+| Pylon shop | 1 | 1,420 sq ft (132 m²) | Repairs pylons. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Bench room | 73 | 1,790 sq ft (166 m²) each | Benches. |
 
 #### Level 2 · Gallery floor
 
@@ -9722,14 +9736,14 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Fit bay 12 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
 | Fit bay 13 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
 | Fit bay 14 | 1 | 170,200 sq ft (15,810 m²) | A bay with a craft on stands. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 95 | 1,350 sq ft (125 m²) each | Engineers. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 113 | 1,200 sq ft (111 m²) each | Engineers. |
 
 ### P9-03 · Shield Calibration Hall
 
 **What it is for:** A screened hall where craft shields are tuned.
 
-67 ft (20.5 m) tall, 2 above deck, 2,703,600 sq ft (251,170 m²) of rooms. Room plan proposed.
+67 ft (20.5 m) tall, 2 above deck, 2,511,300 sq ft (233,300 m²) of rooms. Room plan proposed.
 
 **Look:** A smooth white hall with a faint blue glow.
 
@@ -9739,17 +9753,19 @@ Floor at deck level; 52 ft (16 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Calibration bay 1 | 1 | 26,840 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 2 | 1 | 26,930 sq ft (2,502 m²) | A screened bay for one craft. |
-| Calibration bay 3 | 1 | 26,840 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 4 | 1 | 26,930 sq ft (2,502 m²) | A screened bay for one craft. |
-| Calibration bay 5 | 1 | 26,850 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 6 | 1 | 26,890 sq ft (2,498 m²) | A screened bay for one craft. |
-| Tuning control room | 1 | 1,290 sq ft (120 m²) | Tunes each shield. |
-| Emitter workshop | 1 | 1,610 sq ft (149 m²) | Repairs emitters. |
+| Calibration bay 1 | 1 | 19,910 sq ft (1,849 m²) | A screened bay for one craft. |
+| Calibration bay 2 | 1 | 17,930 sq ft (1,665 m²) | A screened bay for one craft. |
+| Calibration bay 3 | 1 | 18,750 sq ft (1,742 m²) | A screened bay for one craft. |
+| Calibration bay 4 | 1 | 16,730 sq ft (1,554 m²) | A screened bay for one craft. |
+| Calibration bay 5 | 1 | 16,750 sq ft (1,556 m²) | A screened bay for one craft. |
+| Calibration bay 6 | 1 | 16,740 sq ft (1,556 m²) | A screened bay for one craft. |
+| Calibration bay 7 | 1 | 16,660 sq ft (1,548 m²) | A screened bay for one craft. |
+| Calibration bay 8 | 1 | 10,490 sq ft (975 m²) | A screened bay for one craft. |
+| Tuning control room | 1 | 1,300 sq ft (121 m²) | Tunes each shield. |
+| Emitter workshop | 1 | 1,620 sq ft (150 m²) | Repairs emitters. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Lab | 649 | 1,950 sq ft (181 m²) each | Lab. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Lab | 612 | 1,930 sq ft (180 m²) each | Lab. |
 
 #### Level 2 · Gallery floor
 
@@ -9757,22 +9773,24 @@ Floor at 52 ft (16 m) above the deck; 15 ft (4.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Calibration bay 1 | 1 | 26,840 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 2 | 1 | 26,930 sq ft (2,502 m²) | A screened bay for one craft. |
-| Calibration bay 3 | 1 | 26,840 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 4 | 1 | 26,930 sq ft (2,502 m²) | A screened bay for one craft. |
-| Calibration bay 5 | 1 | 26,850 sq ft (2,494 m²) | A screened bay for one craft. |
-| Calibration bay 6 | 1 | 26,890 sq ft (2,498 m²) | A screened bay for one craft. |
-| Tea point | 1 | 560 sq ft (52 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 262 | 1,290 sq ft (120 m²) each | Engineers. |
-| Test data room | 262 | 1,620 sq ft (151 m²) each | Stores shield test results. |
-| Training room | 262 | 1,930 sq ft (179 m²) each | Technicians learn shield tuning. |
+| Calibration bay 1 | 1 | 19,910 sq ft (1,849 m²) | A screened bay for one craft. |
+| Calibration bay 2 | 1 | 17,930 sq ft (1,665 m²) | A screened bay for one craft. |
+| Calibration bay 3 | 1 | 18,750 sq ft (1,742 m²) | A screened bay for one craft. |
+| Calibration bay 4 | 1 | 16,730 sq ft (1,554 m²) | A screened bay for one craft. |
+| Calibration bay 5 | 1 | 16,750 sq ft (1,556 m²) | A screened bay for one craft. |
+| Calibration bay 6 | 1 | 16,740 sq ft (1,556 m²) | A screened bay for one craft. |
+| Calibration bay 7 | 1 | 16,660 sq ft (1,548 m²) | A screened bay for one craft. |
+| Calibration bay 8 | 1 | 10,490 sq ft (975 m²) | A screened bay for one craft. |
+| Tea point | 1 | 290 sq ft (27 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 252 | 1,310 sq ft (122 m²) each | Engineers. |
+| Test data room | 252 | 1,630 sq ft (152 m²) each | Stores shield test results. |
+| Training room | 251 | 1,780 sq ft (165 m²) each | Technicians learn shield tuning. |
 
 ### P9-04 · Canopy and Seat Shop
 
 **What it is for:** The shop for canopies, ejection seats and cockpit fittings.
 
-33 ft (10.2 m) tall, 2 above deck, 468,500 sq ft (43,520 m²) of rooms. Room plan proposed.
+33 ft (10.2 m) tall, 2 above deck, 467,000 sq ft (43,390 m²) of rooms. Room plan proposed.
 
 **Look:** A workshop with canopies gleaming on racks inside.
 
@@ -9782,9 +9800,9 @@ Floor at deck level; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Canopy shop | 1 | 3,230 sq ft (300 m²) | Repairs and polishes canopies. |
+| Canopy shop | 1 | 2,920 sq ft (272 m²) | Repairs and polishes canopies. |
 | Ejection seat shop | 1 | 3,230 sq ft (300 m²) | Overhauls ejection seats; explosive parts are kept separate. |
-| Cockpit fit room | 1 | 2,160 sq ft (201 m²) | Fits cockpit panels. |
+| Cockpit fit room | 1 | 2,150 sq ft (200 m²) | Fits cockpit panels. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Bench room | 134 | 1,670 sq ft (155 m²) each | Benches. |
@@ -9797,14 +9815,14 @@ Floor at 20 ft (6 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
 | Engineers' office | 176 | 1,320 sq ft (123 m²) each | Engineers. |
 
 ### P9-05 · Fuel Cell Shop
 
 **What it is for:** The shop where craft power cells are tested and recharged.
 
-48 ft (14.5 m) tall, 2 above deck, 1,829,900 sq ft (170,000 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 1,840,600 sq ft (170,990 m²) of rooms. Room plan proposed.
 
 **Look:** A yellow-trimmed shed with cooling stacks.
 
@@ -9828,11 +9846,11 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Cell test bay 12 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
 | Cell test bay 13 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
 | Cell test bay 14 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
-| Charging hall | 1 | 3,300 sq ft (306 m²) | Recharges cells. |
-| Fire-safe store | 1 | 1,610 sq ft (150 m²) | Damaged cells kept apart. |
+| Charging hall | 1 | 3,190 sq ft (296 m²) | Recharges cells. |
+| Fire-safe store | 1 | 1,620 sq ft (150 m²) | Damaged cells kept apart. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Bench room | 56 | 1,650 sq ft (153 m²) each | Benches. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Bench room | 56 | 1,750 sq ft (162 m²) each | Benches. |
 
 #### Level 2 · Gallery floor
 
@@ -9854,13 +9872,13 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Cell test bay 12 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
 | Cell test bay 13 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
 | Cell test bay 14 | 1 | 116,600 sq ft (10,830 m²) | A bay of test rigs. |
-| Cooling gallery | 46 | 2,150 sq ft (200 m²) each | Cooling. |
+| Cooling gallery | 60 | 1,740 sq ft (162 m²) each | Cooling. |
 
 ### P9-06 · Drone Repair Bay
 
 **What it is for:** The repair bay for strike and intercept drones.
 
-61 ft (18.5 m) tall, 2 above deck, 2,875,700 sq ft (267,160 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 2,889,900 sq ft (268,480 m²) of rooms. Room plan proposed.
 
 **Look:** A hall with a netted test cage on its roof.
 
@@ -9884,11 +9902,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Repair bay 12 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
 | Repair bay 13 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
 | Repair bay 14 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
-| Electronics shop | 1 | 1,610 sq ft (150 m²) | Repairs drone electronics. |
-| Test flight cage | 1 | 1,770 sq ft (164 m²) | Repaired drones fly in a net cage. |
-| Locker room | 1 | 980 sq ft (91 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Bench room | 73 | 1,690 sq ft (157 m²) each | Benches. |
+| Electronics shop | 1 | 1,850 sq ft (172 m²) | Repairs drone electronics. |
+| Test flight cage | 1 | 1,730 sq ft (161 m²) | Repaired drones fly in a net cage. |
+| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Bench room | 73 | 1,790 sq ft (166 m²) each | Benches. |
 
 #### Level 2 · Gallery floor
 
@@ -9910,14 +9928,14 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Repair bay 12 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
 | Repair bay 13 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
 | Repair bay 14 | 1 | 187,000 sq ft (17,370 m²) | A bay with a drone on a stand. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Engineers' office | 95 | 1,350 sq ft (125 m²) each | Engineers. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Engineers' office | 113 | 1,200 sq ft (111 m²) each | Engineers. |
 
 ### P9-07 · Tool and Gauge Store
 
 **What it is for:** The store of calibrated tools and gauges for the repair yards.
 
-30 ft (9.2 m) tall, 2 above deck, 520,500 sq ft (48,360 m²) of rooms. Room plan proposed.
+30 ft (9.2 m) tall, 2 above deck, 519,000 sq ft (48,220 m²) of rooms. Room plan proposed.
 
 **Look:** A tidy store with a long issue counter behind glass.
 
@@ -9927,10 +9945,10 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Issue counter | 1 | 1,080 sq ft (100 m²) | Tools and gauges signed out. |
+| Issue counter | 1 | 1,090 sq ft (101 m²) | Tools and gauges signed out. |
 | Calibration lab | 1 | 2,150 sq ft (200 m²) | Checks every tool is accurate. |
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Tool store | 104 | 2,470 sq ft (229 m²) each | Racks of tools. |
+| Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Tool store | 104 | 2,460 sq ft (228 m²) each | Racks of tools. |
 | Light court (open air) | 1 | 729,600 sq ft (67,780 m²) | An open court in the middle of the block that brings light and air to the inner rooms. |
 
 #### Level 2 · Upper floor
@@ -9939,15 +9957,15 @@ Floor at 16 ft (5 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Toilets | 1 | 650 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
-| Gauge store | 75 | 1,870 sq ft (174 m²) each | Gauges. |
-| Calibration room | 74 | 1,610 sq ft (150 m²) each | Calibration. |
+| Toilets | 1 | 660 sq ft (61 m²) | Public toilets, with an accessible toilet and baby-changing room. |
+| Gauge store | 75 | 1,860 sq ft (172 m²) each | Gauges. |
+| Calibration room | 74 | 1,620 sq ft (150 m²) each | Calibration. |
 
 ### P9-08 · Starboard Repair Parts Warehouse
 
 **What it is for:** The parts warehouse for the starboard repair yards.
 
-61 ft (18.5 m) tall, 2 above deck, 3,170,700 sq ft (294,560 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 3,184,900 sq ft (295,880 m²) of rooms. Room plan proposed.
 
 **Look:** A long grey parts store with loading docks.
 
@@ -9971,11 +9989,11 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Parts aisle 12 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
-| Goods in | 1 | 3,380 sq ft (314 m²) | Parts arrive. |
-| Issue counter | 1 | 1,080 sq ft (100 m²) | Crews collect parts. |
-| Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 72 | 1,700 sq ft (158 m²) each | Small parts. |
+| Goods in | 1 | 3,280 sq ft (305 m²) | Parts arrive. |
+| Issue counter | 1 | 1,090 sq ft (101 m²) | Crews collect parts. |
+| Locker room | 1 | 960 sq ft (89 m²) | Lockers and changing benches for staff arriving for their shift. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 72 | 1,800 sq ft (167 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -9997,14 +10015,14 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Parts aisle 12 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 13 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
 | Parts aisle 14 | 1 | 208,000 sq ft (19,330 m²) | An aisle of racks. |
-| Tea point | 1 | 370 sq ft (34 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
-| Robot control | 76 | 1,690 sq ft (157 m²) each | Controls the robots. |
+| Tea point | 1 | 420 sq ft (39 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
+| Robot control | 76 | 1,780 sq ft (165 m²) each | Controls the robots. |
 
 ### P9-09 · Craft Paint Hall
 
 **What it is for:** The hall where craft get squadron markings and paint touch-ups.
 
-61 ft (18.5 m) tall, 2 above deck, 2,553,100 sq ft (237,190 m²) of rooms. Room plan proposed.
+61 ft (18.5 m) tall, 2 above deck, 2,567,300 sq ft (238,510 m²) of rooms. Room plan proposed.
 
 **Look:** A paint hall with colourful squadron stripes on its doors.
 
@@ -10028,12 +10046,12 @@ Floor at deck level; 46 ft (14 m) floor to floor.
 | Paint booth 12 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
 | Paint booth 13 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
 | Paint booth 14 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
-| Stencil room | 1 | 860 sq ft (80 m²) | Squadron markings cut here. |
-| Paint store | 1 | 1,080 sq ft (100 m²) | Paints. |
+| Stencil room | 1 | 870 sq ft (81 m²) | Squadron markings cut here. |
+| Paint store | 1 | 1,070 sq ft (100 m²) | Paints. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 470 sq ft (44 m²) | Toilets, showers and changing space for the staff. |
-| Mixing room | 37 | 1,290 sq ft (120 m²) each | Mixing. |
-| Masking room | 37 | 2,090 sq ft (194 m²) each | Craft are masked before painting. |
+| Staff toilets and showers | 1 | 670 sq ft (62 m²) | Toilets, showers and changing space for the staff. |
+| Mixing room | 38 | 1,590 sq ft (148 m²) each | Mixing. |
+| Masking room | 37 | 1,940 sq ft (180 m²) each | Craft are masked before painting. |
 
 #### Level 2 · Gallery floor
 
@@ -10055,13 +10073,13 @@ Floor at 46 ft (14 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Paint booth 12 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
 | Paint booth 13 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
 | Paint booth 14 | 1 | 164,000 sq ft (15,240 m²) | A booth for one craft. |
-| Extraction gallery | 76 | 1,690 sq ft (157 m²) each | Fans. |
+| Extraction gallery | 76 | 1,790 sq ft (166 m²) each | Fans. |
 
 ### P9-10 · Starboard Yards Fire Station
 
 **What it is for:** The fire station for the starboard repair yards.
 
-51 ft (15.4 m) tall, 3 above deck, 446,900 sq ft (41,520 m²) of rooms. Room plan proposed.
+51 ft (15.4 m) tall, 3 above deck, 434,200 sq ft (40,340 m²) of rooms. Room plan proposed.
 
 **Look:** A long low hall of red-framed glass bay doors under a dark crew block, with a slim drill tower lit red at the top.
 
@@ -10075,14 +10093,14 @@ Floor at deck level; 23 ft (7 m) floor to floor.
 | Aerial ladder | 2 | 37,350 sq ft (3,470 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 37,350 sq ft (3,470 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 37,420 sq ft (3,477 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Watch room | 1 | 640 sq ft (60 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
+| Watch room | 1 | 650 sq ft (61 m²) | The duty officer takes emergency calls here and sends crews out; the station's nerve centre. |
 | Breathing apparatus room | 1 | 860 sq ft (80 m²) | Air cylinders are refilled and masks cleaned and tested after every call. |
 | Decontamination room | 1 | 640 sq ft (60 m²) | Crews wash smoke and chemicals off themselves and their kit before going any further into the station. |
-| Turnout gear room | 1 | 960 sq ft (89 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
-| Rack rescue kit room | 1 | 420 sq ft (39 m²) | Kit for fires high in the racks. |
-| Hose store | 1 | 750 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Equipment store | 25 | 1,770 sq ft (165 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
+| Turnout gear room | 1 | 1,090 sq ft (102 m²) | Each firefighter's helmet, coat, boots and gloves hang ready by the engine doors. |
+| Rack rescue kit room | 1 | 860 sq ft (80 m²) | Kit for fires high in the racks. |
+| Hose store | 1 | 760 sq ft (70 m²) | Spare hoses, branches and couplings, and a rack for drying wet hoses. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Equipment store | 19 | 2,080 sq ft (193 m²) each | Rescue tools, ladders, cutting gear and spare kit. |
 | Drill yard (open air) | 1 | 299,200 sq ft (27,800 m²) | Open yard where crews practise ladders, hoses and rescues. |
 
 #### Level 2 · Crew floor
@@ -10095,12 +10113,12 @@ Floor at 23 ft (7 m) above the deck; 14 ft (4.2 m) floor to floor.
 | Aerial ladder | 2 | 37,350 sq ft (3,470 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Foam tender | 2 | 37,350 sq ft (3,470 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
 | Rescue unit | 2 | 37,420 sq ft (3,477 m²) each | One appliance bay with a hose reel, charging lead and exhaust extractor over the engine. |
-| Bunk rooms | 11 | 430 sq ft (40 m²) each | A small bedroom for a firefighter on a night watch. |
+| Bunk rooms | 11 | 360 sq ft (33 m²) each | A small bedroom for a firefighter on a night watch. |
 | Kitchen | 1 | 540 sq ft (50 m²) | The station kitchen, where the watch cooks its meals together. |
-| Mess room | 1 | 960 sq ft (89 m²) | The crew's dining and sitting room, with a television and the call speaker. |
+| Mess room | 1 | 970 sq ft (90 m²) | The crew's dining and sitting room, with a television and the call speaker. |
 | Gym | 1 | 960 sq ft (89 m²) | Weights and rowing machines; firefighters must stay fit to carry kit up stairs. |
-| Laundry | 1 | 410 sq ft (38 m²) | Washing machines for uniforms and bedding. |
-| Crew room | 35 | 1,190 sq ft (111 m²) each | Quiet rooms for reading, study and rest between calls. |
+| Laundry | 1 | 350 sq ft (32 m²) | Washing machines for uniforms and bedding. |
+| Crew room | 30 | 1,280 sq ft (118 m²) each | Quiet rooms for reading, study and rest between calls. |
 
 #### Level 3 · Training floor
 
@@ -10108,17 +10126,17 @@ Floor at 37 ft (11.2 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Station commander's office | 1 | 410 sq ft (38 m²) | The station commander plans the watches and keeps the station's records. |
-| Training room | 1 | 1,070 sq ft (99 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
+| Station commander's office | 1 | 350 sq ft (32 m²) | The station commander plans the watches and keeps the station's records. |
+| Training room | 1 | 1,070 sq ft (100 m²) | Classroom for lessons on new equipment, first aid and fire safety. |
 | Fire safety office | 1 | 430 sq ft (40 m²) | Inspectors who check buildings in the starboard repair yards rack halls for fire risks work from here. |
-| Records room | 1 | 410 sq ft (38 m²) | Incident reports, inspection files and maintenance logs. |
-| Offices | 47 | 1,000 sq ft (93 m²) each | Offices for the station's officers and fire safety staff. |
+| Records room | 1 | 340 sq ft (31 m²) | Incident reports, inspection files and maintenance logs. |
+| Offices | 46 | 930 sq ft (87 m²) each | Offices for the station's officers and fire safety staff. |
 
 ### P9-11 · Starboard Yards Utility Plant
 
 **What it is for:** The utility plant for the starboard repair yards.
 
-46 ft (14 m) tall, 2 above deck, 1 below, 2,080,700 sq ft (193,310 m²) of rooms. Room plan proposed.
+46 ft (14 m) tall, 2 above deck, 1 below, 2,078,600 sq ft (193,100 m²) of rooms. Room plan proposed.
 
 **Look:** A windowless plant hall clad in dark corrugated metal, with a row of round air intakes along the top and a lit yellow plant number at each door.
 
@@ -10128,8 +10146,8 @@ Floor at 16 ft (5 m) below the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Cable vault | 1 | 507,600 sq ft (47,160 m²) | Where the power cables come up from the service layer and are fanned out to the switchgear. |
-| Pipe gallery | 1 | 507,600 sq ft (47,160 m²) | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
+| Cable vault | 2 | 251,900 sq ft (23,400 m²) each | Where the power cables come up from the service layer and are fanned out to the switchgear. |
+| Pipe gallery | 2 | 251,500 sq ft (23,360 m²) each | The main water, cooling and drain pipes, with valves crew can reach from catwalks. |
 
 #### Level 1 · Plant floor
 
@@ -10147,15 +10165,15 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Transformer bay 8 | 1 | 39,280 sq ft (3,649 m²) | One transformer in a fire-walled bay, with its own oil catch pit and cooling fans. |
 | Chiller hall | 1 | 313,700 sq ft (29,140 m²) | Chillers and pumps that make the cold water used to cool the air in every Starboard Yards building. |
 | Air handling hall | 1 | 313,700 sq ft (29,140 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
-| Control room | 1 | 1,290 sq ft (120 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
-| Switch room | 1 | 1,540 sq ft (143 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
-| Battery room | 1 | 1,720 sq ft (159 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
-| Water pump room | 1 | 2,140 sq ft (199 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
-| Water treatment room | 1 | 1,800 sq ft (167 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
-| Workshop | 1 | 1,500 sq ft (139 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
+| Control room | 1 | 1,300 sq ft (121 m²) | Plant operators watch power, air and water for the whole precinct on screens here, round the clock. |
+| Switch room | 1 | 1,690 sq ft (157 m²) | Rows of switchgear that route power to each street and building, and cut it off when there is a fault. |
+| Battery room | 1 | 1,720 sq ft (160 m²) | Banks of batteries that keep the precinct's lights and controls on for hours if the power fails. |
+| Water pump room | 1 | 2,150 sq ft (200 m²) | Pumps that keep the precinct's fresh water at pressure and push waste water down to the service layer. |
+| Water treatment room | 1 | 2,090 sq ft (194 m²) | Filters and UV lamps that clean recycled water before it goes back into the pipes. |
+| Workshop | 1 | 1,510 sq ft (140 m²) | Benches and tools where the plant crew repair pumps, valves and fans. |
 | Locker room | 1 | 970 sq ft (90 m²) | Lockers and changing benches for staff arriving for their shift. |
-| Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Spares store | 18 | 2,800 sq ft (261 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
+| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
+| Spares store | 18 | 2,960 sq ft (275 m²) each | Racked spare pumps, valves, filters and fuses, so repairs never wait for parts. |
 
 #### Level 2 · Upper plant deck
 
@@ -10174,15 +10192,15 @@ Floor at 26 ft (8 m) above the deck; 20 ft (6 m) floor to floor.
 | Chiller hall | 1 | 313,700 sq ft (29,140 m²) | Chillers and pumps that make the cold water used to cool the air in every Starboard Yards building. |
 | Air handling hall | 1 | 313,700 sq ft (29,140 m²) | Big fans and filters that draw stale air from the precinct's ducts, clean it and send fresh air back. |
 | Filter bank room | 1 | 1,720 sq ft (160 m²) | Racks of air filters that catch dust, fibres and smells before the air goes back into the buildings. |
-| Ductwork gallery | 1 | 1,110 sq ft (103 m²) | Where the main air ducts leave the plant and turn toward the streets. |
+| Ductwork gallery | 1 | 1,260 sq ft (117 m²) | Where the main air ducts leave the plant and turn toward the streets. |
 | Crew rest room | 1 | 430 sq ft (40 m²) | A small room with a kettle and chairs for the plant crew on long shifts. |
-| Upper plant gallery | 20 | 2,950 sq ft (274 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
+| Upper plant gallery | 20 | 3,100 sq ft (288 m²) each | Walkways and platforms for reaching the tops of the fans, chillers and pipes. |
 
 ### P9-12 · Starboard Yards Service Shaft
 
 **What it is for:** The starboard repair yards' shaft down to the service layer.
 
-49 ft (15 m) tall, 2 above deck, 1 below, 830,700 sq ft (77,180 m²) of rooms. Room plan proposed.
+49 ft (15 m) tall, 2 above deck, 1 below, 829,800 sq ft (77,090 m²) of rooms. Room plan proposed.
 
 **Look:** A square tower of ribbed grey panels with a big goods lift door on each side and pipe ducts climbing its walls.
 
@@ -10192,8 +10210,8 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Service layer landing | 1 | 201,400 sq ft (18,710 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
-| Tunnel portal | 1 | 201,400 sq ft (18,710 m²) | Where the service tunnels meet the shaft. |
+| Service layer landing | 1 | 198,900 sq ft (18,480 m²) | The foot of the shaft in the service layer, where tunnels lead off to the precinct's pipes, cables and plant. |
+| Tunnel portal | 1 | 199,500 sq ft (18,540 m²) | Where the service tunnels meet the shaft. |
 
 #### Level 1 · Lift landing
 
@@ -10202,12 +10220,12 @@ Floor at deck level; 30 ft (9 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 365,400 sq ft (33,950 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Lift control room | 1 | 540 sq ft (50 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
-| Loading bay | 1 | 1,700 sq ft (158 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
+| Lift control room | 1 | 650 sq ft (60 m²) | Operators run the goods lifts and watch the shaft cameras from here. |
+| Loading bay | 1 | 1,720 sq ft (160 m²) | Trucks back in here to load and unload goods going to or from the service layer. |
 | Crew check-in | 1 | 430 sq ft (40 m²) | Crews going down sign out, pick up radios and gas detectors and sign back in when they return. |
 | Tool store | 1 | 860 sq ft (80 m²) | Tools, harnesses and lamps for work in the service layer. |
 | Staff toilets and showers | 1 | 750 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Holding store | 18 | 1,500 sq ft (140 m²) each | Short-term storage for goods waiting for the lift. |
+| Holding store | 18 | 1,590 sq ft (147 m²) each | Short-term storage for goods waiting for the lift. |
 
 #### Level 2 · Winding room
 
@@ -10216,9 +10234,9 @@ Floor at 30 ft (9 m) above the deck; 20 ft (6 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Shaft and lift landing | 1 | 365,400 sq ft (33,950 m²) | The top of the shaft that drops 197 ft (60 m) to the service layer: goods lifts, a crew lift and a stair land here. Inside: Goods lift cage, Crew lift and stair. |
-| Winding machinery | 1 | 1,610 sq ft (149 m²) | The motors, brakes and cables that drive the shaft lifts. |
-| Shaft ventilation fans | 1 | 640 sq ft (59 m²) | Fans that push fresh air down the shaft and the service tunnels. |
-| Machine gallery | 19 | 1,530 sq ft (142 m²) each | Walkways around the lift machinery for inspection. |
+| Winding machinery | 1 | 1,610 sq ft (150 m²) | The motors, brakes and cables that drive the shaft lifts. |
+| Shaft ventilation fans | 1 | 750 sq ft (70 m²) | Fans that push fresh air down the shaft and the service tunnels. |
+| Machine gallery | 19 | 1,610 sq ft (150 m²) each | Walkways around the lift machinery for inspection. |
 
 ### P9-13 · Work Yard 1
 
@@ -10245,7 +10263,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 573,000 sq ft (53,240 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 579,300 sq ft (53,820 m²) of rooms. Room plan proposed.
 
 **Look:** A plain grey shed.
 
@@ -10266,9 +10284,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 9 | 1 | 40,600 sq ft (3,772 m²) | A bay of racks. |
 | Rack bay 10 | 1 | 40,740 sq ft (3,785 m²) | A bay of racks. |
 | Rack bay 11 | 1 | 40,600 sq ft (3,772 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 35 | 1,760 sq ft (163 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 43 | 1,500 sq ft (140 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10287,7 +10305,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 9 | 1 | 40,600 sq ft (3,772 m²) | A bay of racks. |
 | Rack bay 10 | 1 | 40,740 sq ft (3,785 m²) | A bay of racks. |
 | Rack bay 11 | 1 | 40,600 sq ft (3,772 m²) | A bay of racks. |
-| Mezzanine store | 36 | 1,750 sq ft (162 m²) each | Light parts. |
+| Mezzanine store | 36 | 1,840 sq ft (171 m²) each | Light parts. |
 
 ### P9-15 · Work Yard 2
 
@@ -10314,7 +10332,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 491,700 sq ft (45,680 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 496,200 sq ft (46,100 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -10332,9 +10350,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 6 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
 | Rack bay 7 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
 | Rack bay 8 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 27 | 1,710 sq ft (159 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 27 | 1,790 sq ft (167 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10350,7 +10368,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 6 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
 | Rack bay 7 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
 | Rack bay 8 | 1 | 49,590 sq ft (4,607 m²) | A bay of racks. |
-| Mezzanine store | 28 | 1,700 sq ft (158 m²) each | Light parts. |
+| Mezzanine store | 28 | 1,780 sq ft (165 m²) each | Light parts. |
 
 ### P9-17 · Work Yard 3
 
@@ -10377,7 +10395,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 712,300 sq ft (66,180 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 720,600 sq ft (66,950 m²) of rooms. Room plan proposed.
 
 **Look:** A steel shed with roller doors.
 
@@ -10401,9 +10419,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 47 | 1,620 sq ft (150 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 47 | 1,710 sq ft (159 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10425,7 +10443,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 39,810 sq ft (3,699 m²) | A bay of racks. |
-| Mezzanine store | 37 | 2,090 sq ft (195 m²) each | Light parts. |
+| Mezzanine store | 48 | 1,700 sq ft (158 m²) each | Light parts. |
 
 ### P9-19 · Work Yard 4
 
@@ -10452,7 +10470,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 2,806,800 sq ft (260,760 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 2,818,800 sq ft (261,870 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -10476,9 +10494,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 184,500 sq ft (17,140 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 184,900 sq ft (17,180 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 184,900 sq ft (17,180 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 67 | 1,610 sq ft (150 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 67 | 1,700 sq ft (158 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10500,7 +10518,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 184,500 sq ft (17,140 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 184,900 sq ft (17,180 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 184,900 sq ft (17,180 m²) | A bay of racks. |
-| Mezzanine store | 52 | 2,110 sq ft (196 m²) each | Light parts. |
+| Mezzanine store | 68 | 1,700 sq ft (158 m²) each | Light parts. |
 
 ### P9-21 · Work Yard 5
 
@@ -10527,7 +10545,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 2,880,400 sq ft (267,600 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 2,892,700 sq ft (268,740 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -10551,9 +10569,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 189,400 sq ft (17,600 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 189,900 sq ft (17,640 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 189,400 sq ft (17,600 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 67 | 1,660 sq ft (154 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 67 | 1,750 sq ft (163 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10575,7 +10593,7 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 189,400 sq ft (17,600 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 189,900 sq ft (17,640 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 189,400 sq ft (17,600 m²) | A bay of racks. |
-| Mezzanine store | 52 | 2,170 sq ft (201 m²) each | Light parts. |
+| Mezzanine store | 68 | 1,750 sq ft (162 m²) each | Light parts. |
 
 ### P9-23 · Work Yard 6
 
@@ -10601,7 +10619,7 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 **What it is for:** A covered store in the Starboard Repair Yards for parts close to where the repairs happen.
 
-48 ft (14.5 m) tall, 2 above deck, 5,088,600 sq ft (472,750 m²) of rooms. Room plan proposed.
+48 ft (14.5 m) tall, 2 above deck, 5,103,400 sq ft (474,120 m²) of rooms. Room plan proposed.
 
 **Look:** A shed with a yellow dock edge.
 
@@ -10625,9 +10643,9 @@ Floor at deck level; 33 ft (10 m) floor to floor.
 | Rack bay 12 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
-| Issue counter | 1 | 640 sq ft (60 m²) | Parts are signed out. |
-| Staff toilets and showers | 1 | 760 sq ft (70 m²) | Toilets, showers and changing space for the staff. |
-| Small parts cage | 79 | 1,640 sq ft (152 m²) each | Small parts. |
+| Issue counter | 1 | 660 sq ft (61 m²) | Parts are signed out. |
+| Staff toilets and showers | 1 | 750 sq ft (69 m²) | Toilets, showers and changing space for the staff. |
+| Small parts cage | 79 | 1,730 sq ft (161 m²) each | Small parts. |
 
 #### Level 2 · Gallery floor
 
@@ -10649,4 +10667,4 @@ Floor at 33 ft (10 m) above the deck; 15 ft (4.5 m) floor to floor.
 | Rack bay 12 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
 | Rack bay 13 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
 | Rack bay 14 | 1 | 344,800 sq ft (32,030 m²) | A bay of racks. |
-| Mezzanine store | 61 | 2,140 sq ft (199 m²) each | Light parts. |
+| Mezzanine store | 80 | 1,730 sq ft (160 m²) each | Light parts. |

@@ -21,6 +21,7 @@ A design file holds one entry per building, each written for that building (not 
 Rooms are packed in order along both sides of the corridor and stretched to fill each side exactly, so no room
 crosses a part's edge. Parts never leave the lot. Everything is written as status "proposed".
 """
+import importlib
 import json
 import os
 import re
@@ -30,6 +31,14 @@ APP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(APP, "data")
 sys.path.insert(0, os.path.join(APP, "tools"))
 import auto_design  # noqa: E402  (doc writer)
+import add_room_about  # noqa: E402  ("What it does" sentences)
+sys.path.insert(0, APP)
+from atlaslib import plan_repair  # noqa: E402
+import shapely  # noqa: E402
+from shapely.geometry import Polygon  # noqa: E402
+
+ROOM_MIN_W = 2.4   # 8 ft: the narrowest a small room can be and still hold a bed or a desk
+SLIVER_W = 1.5     # 5 ft: rooms packed narrower than this are merged with their same-named neighbours
 
 TODAY = "2026-11-27"
 
@@ -60,7 +69,26 @@ def pack_side(rooms, length, depth):
         fixed = [(n, l if l is not None else left / len(rest)) for n, l in fixed]
     tot = sum(l for _, l in fixed)
     k = length / tot
-    return [(n, l * k) for n, l in fixed]
+    return merge_slivers([(n, l * k) for n, l in fixed])
+
+
+def merge_slivers(rooms):
+    """A run of same-named rooms squeezed narrower than 5 ft (1.5 m) becomes fewer rooms at least 8 ft (2.4 m)
+    wide: a side too short for all of them can't hold them, and a room nobody can stand in is not a room."""
+    out, i = [], 0
+    while i < len(rooms):
+        j = i
+        while j + 1 < len(rooms) and rooms[j + 1][0] == rooms[i][0]:
+            j += 1
+        run = rooms[i:j + 1]
+        if min(l for _, l in run) < SLIVER_W:
+            tot = sum(l for _, l in run)
+            n = max(1, min(len(run), int(tot // ROOM_MIN_W)))
+            out += [(run[0][0], tot / n)] * n
+        else:
+            out += run
+        i = j + 1
+    return out
 
 
 def build_part(p, add, lot):
@@ -160,6 +188,79 @@ def build_part(p, add, lot):
                     u += ln
 
 
+def dry_levels(els, order):
+    """Floors people stand on (not the upper levels of a full-height hall) that no stair core reaches,
+    when the building has more than one such floor."""
+    standing, served = set(), set()
+    for e in els:
+        lv = e.get("levels") or [e.get("level")]
+        if e["type"] == "core":
+            served.update(lv)
+        if e["type"] in ("room", "zone", "core") and not e.get("outdoor"):
+            lv = [L for L in order if L in lv]
+            standing.update(lv[:1] if e.get("full_height") else lv)
+    return standing - served if len(standing) > 1 else set()
+
+
+def connect_floors(els, order):
+    """Plan step 4: every floor people stand on is reached by stairs from the ground.
+    1. A stair core carries on down to the ground floor (a tower's stairs reach the street), and on into the
+       basement where the basement has rooms under it.
+    2. A floor still without stairs gets a core of its own, 33 x 26 ft (10 x 8 m), in its biggest space,
+       running to the nearest floor that has stairs."""
+    def lv(e):
+        return e.get("levels") or [e.get("level")]
+
+    def under(L):
+        return shapely.union_all([Polygon(e["outline_m"]) for e in els
+                                  if e["type"] in ("room", "zone") and not e.get("outdoor") and L in lv(e)
+                                  and not (e.get("full_height") and lv(e)[0] != L)] or [Polygon()])
+    floor = {L: under(L) for L in order}
+    for e in els:
+        if e["type"] != "core":
+            continue
+        g = Polygon(e["outline_m"])
+        have = [L for L in order if L in lv(e)]
+        i = order.index(have[0])
+        # down to the ground floor always (a tower on legs still has stairs to the street), and into a
+        # basement where the basement has rooms under it
+        while i > 0 and (not order[i - 1].startswith("LB") or floor[order[i - 1]].intersection(g).area >= 0.9 * g.area):
+            i -= 1
+        j = order.index(have[-1])
+        new = order[i:j + 1]
+        if new != have:
+            e.pop("level", None)
+            e["levels"] = new
+    for L in sorted(dry_levels(els, order), key=order.index):
+        if L not in dry_levels(els, order):
+            continue
+        spaces = [e for e in els if e["type"] in ("room", "zone") and not e.get("outdoor") and L in lv(e)]
+        if not spaces:
+            continue
+        host = max(spaces, key=lambda e: Polygon(e["outline_m"]).area)
+        hp = Polygon(host["outline_m"])
+        c = shapely.maximum_inscribed_circle(hp, 0.1)
+        cx, cy = c.coords[0]
+        if c.length < 4.0:   # too narrow to hold a core
+            continue
+        served = {x for e in els if e["type"] == "core" for x in lv(e)}
+        k = order.index(L)
+        near = sorted((x for x in served), key=lambda x: abs(order.index(x) - k))
+        if near:
+            m = order.index(near[0])
+            span = order[min(k, m):max(k, m) + 1]
+        else:
+            span = [x for x in order if x in dry_levels(els, order)]
+        els.append({"id": "E%03d" % (len(els) + 1), "type": "core", "name": "Stairs and lifts",
+                    "levels": span if len(span) > 1 else None, "level": span[0] if len(span) == 1 else None,
+                    "outline_m": [[r1(cx - 5), r1(cy - 4)], [r1(cx + 5), r1(cy - 4)], [r1(cx + 5), r1(cy + 4)], [r1(cx - 5), r1(cy + 4)]],
+                    "status": "proposed"})
+        e = els[-1]
+        for kk in ("levels", "level"):
+            if e[kk] is None:
+                del e[kk]
+
+
 def segments(L, core_pos, core_len):
     if not core_pos:
         return [(0.0, L)]
@@ -204,8 +305,19 @@ def build(entry, b, did):
         e["status"] = "proposed"
         els.append(e)
 
-    for p in entry["parts"]:
+    parts = entry["parts"]
+    for p in parts:
         build_part(p, add, lot)
+    dry = dry_levels(els, [l["id"] for l in levels])
+    if dry:
+        # floors people stand on with no stairs: give each corridor wing on those floors its own stairs and lift
+        # (plan step 4; the design file is not changed, so this is redone the same way every time)
+        parts = [dict(p, cores=1 if max(p["w"], p["d"]) < 80 else 2)
+                 if p.get("layout", "corridor") == "corridor" and not p.get("cores") and set(p.get("levels", ["L1"])) & dry
+                 else p for p in parts]
+        els.clear()
+        for p in parts:
+            build_part(p, add, lot)
     for dr in entry.get("doors", []):
         els.append({"id": "E%03d" % (len(els) + 1), "type": "door", "name": dr[0], "level": dr[3] if len(dr) > 3 else "L1",
                     "line_m": [dr[1], dr[2]], "width_m": r1(abs(dr[1][0] - dr[2][0]) + abs(dr[1][1] - dr[2][1])), "status": "proposed"})
@@ -215,6 +327,8 @@ def build(entry, b, did):
              "footprint_m": [r1(lot[0]), r1(lot[1])], "grid_m": entry.get("grid_m", 10),
              "source": "Designed for this building (data/designs), built with tools/build_designs.py, %s. All proposed." % TODAY,
              "levels": levels, "elements": els, "updated": TODAY}
+    connect_floors(els, [l["id"] for l in sorted(levels, key=lambda l: l["z_m"])])
+    plan_repair.repair(model, b)   # trim overlaps and anything past the walls with exact maths (plan step 4)
     above = [l for l in levels if l["z_m"] >= 0]
     below = [l for l in levels if l["z_m"] < 0]
     fields = {"height_m": r1(entry.get("height_m", top)),
@@ -257,11 +371,21 @@ def main():
     pr = [p for p in data["precincts"] if p["id"] == pid][0]
     byid = {b["id"]: b for b in pr["buildings"]}
     built, renames = [], {}
+    try:
+        about = importlib.import_module("room_programs." + os.path.basename(file).replace("-", "_") + "_about").ABOUT
+    except ImportError:
+        about = None
     for entry in spec["buildings"]:
         b = byid[entry["id"]]
         if entry.get("name") and entry["name"] != b["name"]:
             renames[b["name"]] = entry["name"]
         fields, model = build(entry, b, did)
+        if about:   # "What it does" for every room, from tools/room_programs/<district>_about.py
+            for e in model["elements"]:
+                if e["type"] in ("room", "zone", "fixture", "core") and not e.get("about"):
+                    a = add_room_about.lookup(about, e.get("name", ""))
+                    if a:
+                        e["about"] = a
         for k, v in fields.items():
             if v is not None:
                 b[k] = v

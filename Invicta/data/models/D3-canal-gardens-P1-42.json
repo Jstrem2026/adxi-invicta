@@ -1,0 +1,107 @@
+{
+  "schema": "invicta-atlas/model@1",
+  "building_uid": "D3-canal-gardens-P1-42",
+  "units": "m",
+  "frame": "Metres from the building's bow-port corner: x toward the stern, y toward starboard, z above the deck.",
+  "footprint_m": [
+    180,
+    1000
+  ],
+  "levels": [
+    {
+      "id": "G",
+      "name": "Ground",
+      "z_m": 0,
+      "height_m": 0,
+      "status": "proposed"
+    }
+  ],
+  "elements": [
+    {
+      "id": "canal-outline",
+      "type": "room",
+      "level": "G",
+      "name": "Grand Canal (CC-01)",
+      "status": "proposed",
+      "about": "The canal: 100 m wide at both block edges, widening to the 180 m basin in the middle.",
+      "outline_m": [
+        [
+          40,
+          0
+        ],
+        [
+          140,
+          0
+        ],
+        [
+          140,
+          250
+        ],
+        [
+          180,
+          300
+        ],
+        [
+          180,
+          700
+        ],
+        [
+          140,
+          750
+        ],
+        [
+          140,
+          1000
+        ],
+        [
+          40,
+          1000
+        ],
+        [
+          40,
+          750
+        ],
+        [
+          0,
+          700
+        ],
+        [
+          0,
+          300
+        ],
+        [
+          40,
+          250
+        ]
+      ]
+    },
+    {
+      "id": "basin-zone",
+      "type": "zone",
+      "parent": "canal-outline",
+      "level": "G",
+      "name": "Central Canal Basin",
+      "status": "proposed",
+      "about": "The 180 m wide, 400 m long basin where boats turn and gather.",
+      "outline_m": [
+        [
+          0,
+          300
+        ],
+        [
+          180,
+          300
+        ],
+        [
+          180,
+          700
+        ],
+        [
+          0,
+          700
+        ]
+      ]
+    }
+  ],
+  "updated": "2026-11-28"
+}

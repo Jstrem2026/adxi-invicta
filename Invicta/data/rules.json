@@ -35,7 +35,7 @@
     }
   ],
   "tolerances": {
-    "area_pct": 2.0,
+    "area_pct": 2,
     "area_abs_km2": 0.15,
     "length_m": 15,
     "conversion_pct": 1.5
@@ -167,6 +167,14 @@
     {
       "match": "drawn from 26.00 to 27.79 km",
       "reason": "Known 27 Nov 2026: the Atrium Plaza circle (canon, radius 1.785 km) ends at 27.79 km (F55.6), between frames. The stern quarters run from the cross-line at F52 to its edge."
+    },
+    {
+      "match": "Walls, doors, windows and stairs are proposed",
+      "reason": "Approved by Jordan 27 Nov 2026 (scan item 074bd9bd6e): the rules in atlaslib/fabric.py for walls, doors, openings, windows, stairs, lifts and floor slabs stand as they are. They are worked out from the rooms and never written into the plan files. Changes to the rules need Jordan."
+    },
+    {
+      "match": "d6887249b0",
+      "reason": "Known, accepted by Kylee (date not given; scan session of 27 Nov 2026 or later): the Grand Canal (PG-01) room in P1-01 reaches about 1,435 m² past the building's outline at the canal widenings. The canal is a water channel, not a roofed building, so the room stays as drawn. Any new room outside the outline makes this a new issue."
     }
   ]
 }

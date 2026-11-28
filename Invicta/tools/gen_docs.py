@@ -1,11 +1,15 @@
 """Write readable docs for every designed area from the data, into Invicta/docs/.
 
-    python tools/gen_docs.py
+    python tools/gen_docs.py                       writes Invicta/docs (not kept in git)
+    python tools/gen_docs.py --out site/docs       writes them somewhere else
 
 One page per district with a precinct plan, one per precinct (every building with its exact
 numbers), and one per building that has a plan (levels, rooms, walls, doors, cores, with
-dimensions and areas, plus an SVG drawing per level). Run on every approved change by the
-GitHub workflow, so the repo always matches the site. Feet first, metric alongside.
+dimensions and areas, plus an SVG drawing per level). Feet first, metric alongside.
+
+Jordan, 27 Nov 2026: the generated docs are no longer committed to git (they were 178 MB and
+re-saved on every merge). They are built from the data each time the site publishes and served at
+invicta.arcanedrift.net/docs/README.md. Run this tool to get a local copy; it takes seconds.
 """
 
 import json
@@ -80,6 +84,11 @@ def plan_svg(model, level):
 
 
 def main():
+    global OUT
+    import argparse
+    ap = argparse.ArgumentParser(description="Write the generated design docs")
+    ap.add_argument("--out", default=OUT)
+    OUT = os.path.abspath(ap.parse_args().out)
     root = find_root(APP)
     data = build(root)
     models = {}
@@ -146,13 +155,19 @@ def main():
                         if me["z_m"] < 0:
                             return "LB%d" % (sorted([l for l in lvls if l["z_m"] < 0], key=lambda l: -l["z_m"]).index(me) + 1)
                         return "L%d" % (sorted([l for l in lvls if l["z_m"] >= 0], key=lambda l: l["z_m"]).index(me) + 1)
+                    # Room numbers per level (R1, R2 ... in file order), worked out once per building
+                    # instead of once per room: the same numbers, much faster on big plans.
+                    rnum = {}
+                    for x in m.get("elements", []):
+                        if x["type"] in ("room", "zone", "core"):
+                            for lid in (x.get("levels") or [x.get("level")]):
+                                n_on = rnum.setdefault(lid, {})
+                                n_on.setdefault(id(x), len(n_on) + 1)
+                    tags = {lid: ltag(lid) for lid in rnum}
+
                     def dz_for(e):
-                        out = []
-                        for lid in (e.get("levels") or [e.get("level")]):
-                            on = [x for x in m.get("elements", []) if x["type"] in ("room", "zone", "core") and lid in (x.get("levels") or [x.get("level")])]
-                            if e in on:
-                                out.append(f"{desig}{ltag(lid)}R{on.index(e) + 1}")
-                        return ", ".join(out)
+                        return ", ".join(f"{desig}{tags[lid]}R{rnum[lid][id(e)]}"
+                                         for lid in (e.get("levels") or [e.get("level")]) if id(e) in rnum.get(lid, {}))
                     for e in m.get("elements", []):
                         if e.get("outline_m"):
                             xs = [q[0] for q in e["outline_m"]]; ys = [q[1] for q in e["outline_m"]]

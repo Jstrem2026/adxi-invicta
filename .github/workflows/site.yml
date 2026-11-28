@@ -17,6 +17,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install Shapely
+        run: python -m pip install -r Invicta/requirements.txt
+      - name: Reuse saved room-check results
+        # The room checks keep their results per plan file (keyed on the file's content), so a scan only re-checks
+        # plans that changed. Saving them between runs keeps the scan quick here and in the publish build.
+        uses: actions/cache@v4
+        with:
+          path: Invicta/reports/room_check_cache.json
+          key: room-checks-${{ hashFiles('Invicta/atlaslib/**/*.py', 'Invicta/data/models/**', 'Invicta/data/decks/**') }}
+          restore-keys: room-checks-
+      - name: Test the geometry and room checks
+        run: python -m unittest discover -s Invicta/tests -t Invicta -v
       - name: Scan
         run: python Invicta/atlas.py --scan
       - name: Report
@@ -46,34 +58,25 @@ jobs:
           node-version: "22"
       - run: npm ci
         if: env.HAS_TOKEN == 'true'
+      - run: python -m pip install -r Invicta/requirements.txt
+        if: env.HAS_TOKEN == 'true'
+      - name: Reuse saved room-check results
+        if: env.HAS_TOKEN == 'true'
+        # The room checks keep their results per plan file (keyed on the file's content), so a scan only re-checks
+        # plans that changed. Saving them between runs keeps the scan quick here and in the publish build.
+        uses: actions/cache@v4
+        with:
+          path: Invicta/reports/room_check_cache.json
+          key: room-checks-${{ hashFiles('Invicta/atlaslib/**/*.py', 'Invicta/data/models/**', 'Invicta/data/decks/**') }}
+          restore-keys: room-checks-
       - name: Build the site
         if: env.HAS_TOKEN == 'true'
-        run: python Invicta/tools/export_static.py --out Invicta/site
+        run: |
+          python Invicta/tools/export_static.py --out Invicta/site
+          python Invicta/tools/gen_docs.py --out Invicta/site/docs
       - name: Publish to Cloudflare Pages
         if: env.HAS_TOKEN == 'true'
         run: npx wrangler@4 pages deploy --branch main --commit-hash "$GITHUB_SHA"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ac6e9f7ba848384ed2b7db74449312da
-  docs:
-    # Regenerate the design docs (Invicta/docs) from the data after every change to main.
-    needs: scan
-    if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Generate docs
-        run: python Invicta/tools/gen_docs.py
-      - name: Commit if changed
-        run: |
-          git add -A Invicta/docs
-          if git diff --cached --quiet; then echo "Docs already up to date"; exit 0; fi
-          git config user.name "adxi-invicta-docs"
-          git config user.email "actions@users.noreply.github.com"
-          git commit -m "Update generated design docs"
-          git push

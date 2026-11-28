@@ -168,12 +168,15 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 .v3d-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #9fb4c8; }
 .v3d-key { padding: 6px 12px; font-size: 12.5px; color: #b9cadb; background: #0f2237; border-top: 1px solid #23415f; }
 .v3d-key .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin: 0 4px -1px 6px; }
-.v3d-key .sw.core { background: #e0a24a; } .v3d-key .sw.door { background: #5fd39a; } .v3d-key .sw.none { background: #6b7480; border: 1px dashed #b8c2cc; }
+.v3d-key .sw.core { background: #e0a24a; } .v3d-key .sw.door { background: #3fbf7f; } .v3d-key .sw.entrance { background: #3dff9a; box-shadow: 0 0 5px #3dff9a; } .v3d-key .sw.none { background: #6b7480; border: 1px dashed #b8c2cc; }
 .v3d-walkpad { position: absolute; right: 14px; bottom: 54px; display: grid; grid-template-columns: repeat(3, 44px); gap: 4px; }
 .v3d-walkpad button { height: 40px; background: rgba(23,50,77,.85); color: #e8f1fb; border: 1px solid #2f5a80; border-radius: 6px; font-size: 15px; }
 .v3d-walkpad [data-k=f] { grid-column: 2; } .v3d-walkpad [data-k=l] { grid-column: 1; grid-row: 2; } .v3d-walkpad [data-k=b] { grid-column: 2; grid-row: 2; } .v3d-walkpad [data-k=r] { grid-column: 3; grid-row: 2; }
 .v3d-walkpad [data-k=u] { grid-column: 3; grid-row: 1; font-size: 12px; } .v3d-walkpad [data-k=d] { grid-column: 1; grid-row: 1; font-size: 12px; }
-.v3d-walkpad[hidden], .v3d-cut[hidden] { display: none; }
+.v3d-walkpad [data-k=run] { grid-column: 1 / span 3; grid-row: 3; font-size: 13px; } .v3d-walkpad .on { background: #2d7d55; border-color: #3dff9a; }
+.v3d-walkpad button { touch-action: none; user-select: none; -webkit-user-select: none; }
+.v3d-hud { position: absolute; left: 12px; top: 58px; max-width: min(560px, calc(100% - 24px)); padding: 6px 10px; font-size: 13px; color: #e8f1fb; background: rgba(11,26,44,.82); border: 1px solid #2f5a80; border-radius: 6px; pointer-events: none; }
+.v3d-walkpad[hidden], .v3d-cut[hidden], .v3d-hud[hidden] { display: none; }
 .known-list { margin-top: 10px; } .known-list > summary { cursor: pointer; color: var(--muted); font-size: 13px; padding: 4px 0; }
 
 /* Map rule: text on the map never takes clicks or hovers; only the next level down is clickable. */

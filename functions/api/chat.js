@@ -20,12 +20,15 @@ import Anthropic from "@anthropic-ai/sdk";
 import { announce } from "../_lib/announce.js";
 import { trustedFrom } from "../_lib/trusted.js";
 import { UID_RE, addConcept, imageExt } from "../_lib/concepts.js";
+import { activityStart, activityUpdate, placeLabel } from "../_lib/activity.js";
 
 const MAX_TURNS = 12;               // tool-use rounds per message
 const MAX_PROPOSALS_PER_MESSAGE = 2;
 const MAX_HISTORY_CHARS = 200_000;  // what a browser may send back
 const MAX_FILE_CHARS = 60_000;      // per read_file result
 const MAX_PROPOSAL_CHARS = 300_000;
+const SOFT_DEADLINE_MS = 9 * 60_000; // stop starting new steps after this, and say so
+const HEARTBEAT_MS = 10_000;         // keep the connection alive while Claude thinks or writes silently
 
 // Where proposals may write. Everything else is refused.
 const WRITABLE = [
@@ -276,6 +279,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const gh = github(env);
   const system = await systemPrompt(gh);
   const inView = await viewDetails(gh, view);
+  // Read every file at one fixed commit, and build each change on top of that same commit. Then, if
+  // someone else changes the same lines while Claude works, GitHub refuses to merge instead of
+  // silently overwriting their work.
+  try { gh.ref = (await gh.get("git/ref/heads/main")).object.sha; } catch (e) { /* fall back to main */ }
   const nameNote = trusted ? ` (recognised as ${trusted}: make their changes immediately, no confirmation, no review)`
     : /jordan|kylee/i.test(name) ? " (NOT recognised: their changes will go to review. Tell them once, in one line: click Name in the chat and paste your owner or helper key so your changes go live.)" : "";
   const messages = [
@@ -293,10 +300,33 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const { readable, writable } = new TransformStream();
   const writer = writable.getWriter();
   const enc = new TextEncoder();
-  const send = (event, data) => writer.write(enc.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`));
+  // Writes fail once the browser has gone; that must never stop the work or crash the function.
+  const put = (s) => writer.write(enc.encode(s)).catch(() => {});
+  // Team activity (Jordan and Kylee can see each other's requests): follow what is sent to the browser.
+  let actId = null, actReply = "", actLast = 0, actState = null;
+  const actLinks = [];
+  const track = (event, data) => {
+    if (!actId) return;
+    if (event === "text") { actReply += data.delta; return; }
+    if (event === "reset") { actReply = ""; return; }
+    if (event === "proposal") { actLinks.push({ url: data.url, title: data.title, merged: !!data.merged }); activityUpdate(env, actId, { links: actLinks }); return; }
+    if (event === "error") { actState = "error"; actReply += (actReply ? "\n\n" : "") + data.error; return; }
+    if (event === "done") { actState = "done"; return; }
+    if ((event === "status" || event === "tool") && Date.now() - actLast > 5000) {  // at most one write every 5 s
+      actLast = Date.now();
+      activityUpdate(env, actId, { progress: data.label || data.text, reply: actReply || null });
+    }
+  };
+  const send = (event, data) => { track(event, data); return put(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`); };
+  const status = (text) => send("status", { text });
+  // Claude can think or write a big change for minutes without any visible text. A comment line every
+  // few seconds keeps phones, proxies and Cloudflare from treating the quiet connection as dead.
+  const beat = setInterval(() => put(": ping\n\n"), HEARTBEAT_MS);
+  const started = Date.now();
 
   const work = (async () => {
     let proposals = 0;
+    actId = await activityStart(env, trusted, text + (images.length || docs.length ? ` [${images.length + docs.length} attachment(s)]` : ""), placeLabel(view));
     try {
       // Earlier thinking blocks are bound to the exact system prompt and history that produced them.
       // The site's system prompt changes when the project files change, so old blocks can stop
@@ -305,8 +335,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
       const QUESTION_MODEL = env.QUESTION_MODEL || "claude-haiku-5-5";
       const DESIGN_MODEL = env.DESIGN_MODEL || "claude-sonnet-5-5";
       const WRITE_TOOLS = new Set(["copy_files", "edit_files", "update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
-      let model = QUESTION_MODEL;
-      const ask = (msgs, streamText) => {
+      // A change request from Jordan or Kylee goes straight to the design model. The quick model sometimes
+      // says "I'll check the data before making the changes" and then stops without doing anything.
+      const CHANGE_WORDS = /\b(create|add|make|build|change|update|edit|fix|move|remove|delete|rename|lay ?out|draw|design|place|set|resize|extend|split|merge|run|redo|carry on|continue|go ahead|confirm|proceed|apply|do it|yes)\b/i;
+      let model = trusted && CHANGE_WORDS.test(text) ? DESIGN_MODEL : QUESTION_MODEL;
+      // Returns the finished message, or null when the question model started a change (handed to the design model).
+      const ask = async (msgs) => {
         const design = model === DESIGN_MODEL;
         const s = client.beta.messages.stream({
           model,
@@ -322,13 +356,38 @@ export async function onRequestPost({ request, env, waitUntil }) {
           tools: TOOLS,
           messages: msgs,
         });
-        if (streamText) s.on("text", (delta) => send("text", { delta }));
-        return s.finalMessage();
+        let handoff = false, written = 0, lastStatus = 0;
+        s.on("text", (delta) => send("text", { delta }));
+        s.on("streamEvent", (ev) => {
+          if (ev.type === "content_block_start") {
+            const b = ev.content_block || {};
+            // Stop the question model as soon as it starts writing a change, instead of letting it write
+            // the whole change only to throw it away. The design model then does the change.
+            if (!design && b.type === "tool_use" && WRITE_TOOLS.has(b.name)) { handoff = true; s.abort(); return; }
+            if (b.type === "thinking" || b.type === "redacted_thinking") status("Thinking it through");
+            if (b.type === "tool_use") { written = 0; status(WRITE_TOOLS.has(b.name) ? "Writing the change" : "Choosing what to read"); }
+          } else if (ev.type === "content_block_delta" && ev.delta && ev.delta.type === "input_json_delta") {
+            written += ev.delta.partial_json.length;
+            if (written > 2000 && Date.now() - lastStatus > 3000) {
+              lastStatus = Date.now();
+              status(`Writing the change (${Math.round(written / 1024)} KB so far)`);
+            }
+          }
+        });
+        try {
+          return await s.finalMessage();
+        } catch (err) {
+          if (handoff) return null;
+          throw err;
+        }
       };
-      for (let turn = 0; turn < MAX_TURNS; turn++) {
+      let stoppedEarly = "";
+      for (let turn = 0; ; turn++) {
+        if (turn >= MAX_TURNS) { stoppedEarly = `I stopped after ${MAX_TURNS} steps so this doesn't run forever.`; break; }
+        if (turn > 0 && Date.now() - started > SOFT_DEADLINE_MS) { stoppedEarly = "I stopped here because this has taken over 9 minutes."; break; }
         let message;
         try {
-          message = await ask(messages, true);
+          message = await ask(messages);
         } catch (err) {
           // One repair attempt for a bad request: remove every thinking block from the history and retry.
           if (!(err instanceof Anthropic.BadRequestError)) throw err;
@@ -336,14 +395,25 @@ export async function onRequestPost({ request, env, waitUntil }) {
           for (const m of messages) {
             if (m.role === "assistant" && Array.isArray(m.content)) m.content = m.content.filter((c) => c.type !== "thinking" && c.type !== "redacted_thinking");
           }
-          message = await ask(messages, true);
+          message = await ask(messages);
         }
         // A question model that wants to change the design hands the turn to the design model.
-        if (model === QUESTION_MODEL && message.content.some((c) => c.type === "tool_use" && WRITE_TOOLS.has(c.name))) {
+        if (model === QUESTION_MODEL && (!message || message.content.some((c) => c.type === "tool_use" && WRITE_TOOLS.has(c.name)))) {
           model = DESIGN_MODEL;
           send("reset", {});
           turn--;
           continue;
+        }
+        // The quick model promised to act ("I'll check ... then make the change") but stopped without a tool:
+        // let the design model actually do it.
+        if (model === QUESTION_MODEL && trusted && message.stop_reason === "end_turn" && !message.content.some((c) => c.type === "tool_use")) {
+          const said = message.content.filter((c) => c.type === "text").map((c) => c.text).join(" ");
+          if (said.length < 600 && /\b(I'll|I will|let me|I'm going to|I am going to|first I|before making)\b/i.test(said)) {
+            model = DESIGN_MODEL;
+            send("reset", {});
+            turn--;
+            continue;
+          }
         }
         messages.push({ role: "assistant", content: message.content });
 
@@ -355,14 +425,18 @@ export async function onRequestPost({ request, env, waitUntil }) {
         const uses = message.content.filter((b) => b.type === "tool_use");
         if (uses.length === 0) break;
         if (message.stop_reason === "max_tokens") {
-          send("text", { delta: "\n\n(That change was too large to finish in one go. Try a smaller step.)" });
+          // The change was cut off mid-way, so nothing was saved. Keep the history valid and say so.
+          const t = "(That change was too large to finish in one go, so nothing was saved. Ask for it in smaller steps, for example one street or a few plots at a time.)";
+          send("text", { delta: "\n\n" + t });
           messages.pop();
+          messages.push({ role: "assistant", content: [{ type: "text", text: t }] });
           break;
         }
 
         const results = [];
         for (const use of uses) {
           send("tool", { name: use.name, label: toolLabel(use) });
+          if (WRITE_TOOLS.has(use.name)) status("Saving to GitHub");
           let out;
           try {
             if (use.name === "save_image_as_concept") {
@@ -399,6 +473,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
         }
         messages.push({ role: "user", content: results });
       }
+      if (stoppedEarly) {
+        // The last message is tool results; end on a short reply so the next message continues cleanly.
+        const t = `${stoppedEarly} Any change already saved is shown above as a card. Say "carry on" to continue.`;
+        send("text", { delta: "\n\n" + t });
+        messages.push({ role: "assistant", content: [{ type: "text", text: t }] });
+      }
       // The browser keeps the conversation and sends it back with the next message.
       // Images are not sent back: the browser keeps a short note instead, to keep the history small.
       send("done", { messages: messages.map((m) => Array.isArray(m.content) && m.content.some((c) => c.type === "image" || c.type === "document")
@@ -413,7 +493,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
           : "Something went wrong: " + String(err.message || err);
       send("error", { error: msg });
     } finally {
-      writer.close();
+      clearInterval(beat);
+      await activityUpdate(env, actId, { state: actState || "error", progress: actState === "done" ? "Finished" : "Stopped", reply: actReply || null, links: actLinks });
+      writer.close().catch(() => {});
     }
   })();
   // Keep running after the response starts streaming.
@@ -433,13 +515,13 @@ export function onRequestGet() {
 async function runTool(gh, name, input, request) {
   if (name === "list_files") {
     const path = cleanPath(input.path || "", true);
-    const items = await gh.get(`contents/${encodePath(path)}?ref=main`);
+    const items = await gh.get(`contents/${encodePath(path)}?ref=${gh.ref}`);
     if (!Array.isArray(items)) return "That is a file, not a folder. Use read_file.";
     return items.map((i) => (i.type === "dir" ? i.name + "/" : `${i.name} (${i.size} bytes)`)).join("\n") || "(empty)";
   }
   if (name === "read_file") {
     const path = cleanPath(input.path);
-    const f = await gh.get(`contents/${encodePath(path)}?ref=main`);
+    const f = await gh.get(`contents/${encodePath(path)}?ref=${gh.ref}`);
     if (Array.isArray(f)) return "That is a folder. Use list_files.";
     if (f.size > 2_000_000) return `This file is ${f.size} bytes, too large to read here.`;
     const raw = f.content ? b64decode(f.content) : await gh.raw(path);
@@ -489,8 +571,8 @@ async function proposeChange(gh, input, name, trusted) {
   }
   if (total > MAX_PROPOSAL_CHARS) throw new Error("This proposal is too large.");
 
-  const main = await gh.get("git/ref/heads/main");
-  const baseSha = main.object.sha;
+  // Build on the commit the files were read at (see gh.ref), so GitHub's merge protects newer work.
+  const baseSha = /^[0-9a-f]{40}$/.test(gh.ref) ? gh.ref : (await gh.get("git/ref/heads/main")).object.sha;
   const baseCommit = await gh.get(`git/commits/${baseSha}`);
   const tree = await gh.post("git/trees", {
     base_tree: baseCommit.tree.sha,
@@ -513,8 +595,17 @@ async function proposeChange(gh, input, name, trusted) {
       (trusted ? `${who} is a trusted helper, so this was merged automatically.` : "The scan runs on this pull request. Nothing changes on the site until Jordan merges it."),
   });
   if (trusted) {
-    const m = await gh.put(`pulls/${pr.number}/merge`, { merge_method: "squash", commit_title: `${title} (#${pr.number})` });
+    let m = {};
+    try {
+      m = await gh.put(`pulls/${pr.number}/merge`, { merge_method: "squash", commit_title: `${title} (#${pr.number})` });
+    } catch (e) {
+      // 405/409: the same lines changed on the site while Claude was working. Never overwrite; leave it for review.
+      return { url: pr.html_url, number: pr.number, files: [...writes.keys()], merged: false,
+        note: "Not published: someone changed the same part of these files while I was working, so nothing was overwritten. " +
+          "It waits as a proposal for Jordan. Read the files again and redo the change if it is still wanted." };
+    }
     if (m.merged) {
+      if (m.sha) gh.ref = m.sha;  // later reads and changes in this message see this change
       try { await gh.del(`git/refs/heads/${branch}`); } catch (e) { /* fine */ }
       return { url: pr.html_url, number: pr.number, files: [...writes.keys()], merged: true,
         note: "Merged. The site republishes within a few minutes." };
@@ -536,23 +627,25 @@ function github(env) {
     "User-Agent": "adxi-invicta-site",
   };
   async function call(method, path, body) {
-    const r = await fetch(base + path, { method, headers, body: body ? JSON.stringify(body) : undefined });
+    const r = await fetch(base + path, { method, headers, body: body ? JSON.stringify(body) : undefined, signal: AbortSignal.timeout(30_000) });
     if (r.status === 404) throw new Error("Not found in the repo.");
     if (!r.ok) throw new Error(`GitHub said ${r.status}.`);
     if (r.status === 204) return {};
     return r.json();
   }
-  return {
+  const api = {
+    ref: "main",  // the commit this request reads at; set once per message, moved forward after each merge
     get: (p) => call("GET", p),
     post: (p, b) => call("POST", p, b),
     put: (p, b) => call("PUT", p, b),
     del: (p) => call("DELETE", p),
     raw: async (path) => {
-      const r = await fetch(base + `contents/${encodePath(path)}?ref=main`, { headers: { ...headers, Accept: "application/vnd.github.raw+json" } });
+      const r = await fetch(base + `contents/${encodePath(path)}?ref=${api.ref}`, { headers: { ...headers, Accept: "application/vnd.github.raw+json" }, signal: AbortSignal.timeout(30_000) });
       if (!r.ok) throw new Error(`GitHub said ${r.status}.`);
       return r.text();
     },
   };
+  return api;
 }
 
 let cachedSystem = null, cachedAt = 0;
@@ -755,7 +848,7 @@ async function copyPatch(gh, input) {
   for (const c of input.copies || []) {
     const from = cleanPath(c.from), to = cleanPath(c.to);
     if (to.startsWith("Docs/1_Canon_Source")) throw new Error("Canon is read-only.");
-    const meta = await gh.get(`contents/${encodePath(from)}?ref=main`);
+    const meta = await gh.get(`contents/${encodePath(from)}?ref=${gh.ref}`);
     if (!meta || !meta.sha || meta.type !== "file") throw new Error(`${from} is not a file in the repo.`);
     files.push({ path: to, sha: meta.sha });
   }

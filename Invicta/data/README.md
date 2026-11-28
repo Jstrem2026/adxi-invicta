@@ -70,6 +70,45 @@ room panel and in the district's `Game/Docs/<District>_Rooms.md`. Buildings are 
 `tools/design_rooms.py` from programs written per district in `tools/room_programs/`; `bash tools/design_district.sh D5/<district>`
 redoes a whole district (plans, doc, renders).
 
+Plan step 4 (Jordan, 27 Nov 2026: "go"): both room designers (`tools/design_rooms.py` and `tools/build_designs.py`) end
+with `atlaslib/plan_repair.py`, which makes every plan buildable with exact maths: no two spaces share floor (stair
+cores first, then corridors, then the smaller room), nothing reaches past the walls or into a courtyard, no outline
+crosses itself, and slivers narrower than 5 ft (1.5 m) join their neighbour. A space cut in two keeps its id on the
+bigger piece; the other piece is a new element with the same name and `about`, and `"piece_of": "<id>"`. Outlines
+are stored to the centimetre. `tools/build_designs.py` also carries every stair core down to the ground floor and
+gives any floor people stand on without stairs a core of its own.
+
+### Walls, doors, windows, stairs and floors (model@2)
+
+Jordan, 27 Nov 2026 (plan step 3): the plan files hold the rooms, zones and stair cores, plus any door that was
+drawn by hand. The walls, the other doors, the windows, the stairs, the lifts and the floor slabs are **worked out
+from them by fixed rules** (`atlaslib/fabric.py`), the same way every time, and never written back into the plan
+file. So nothing already designed is changed, and a change to a room moves its walls and doors with it. A door
+drawn in the plan always wins over the rules. Everything worked out is `"derived": true` and `proposed`.
+
+The website and the exports get the plan with its fabric added (`"schema": "invicta-atlas/model@2"`, from
+`/api/model?uid=<uid>` locally or `api/models/<uid>.json` on the site). Extra element types:
+
+| Type | Fields |
+|---|---|
+| `walls` | one per floor and kind: `kind` (`exterior` 1 ft (0.30 m), `core` 10 in (0.25 m), `interior` 4-7/8 in (0.12 m)), `thickness_m`, `height_m`, `lines_m` = `[[x1, y1, x2, y2], ...]` (centre lines) |
+| `door`, `opening` | `line_m` (where it sits in its wall), `width_m`, `height_m`, `name` (`Door`, `Stair door`, `Entrance`, `Outside door`, `Opening`). Doors 3 ft x 6 ft 8 in (0.91 x 2.03 m), 7 ft (2.13 m) under 9 ft ceilings; double doors 6 x 7 ft (1.83 x 2.13 m); entrances 6 x 8 ft (1.83 x 2.44 m), facing the street |
+| `windows` | one per floor: `sill_m`, `head_m`, `pane_width_m`, `spacing_m`, `lines_m` = `[[x1, y1, x2, y2, panes], ...]` |
+| `stair` | `level` to `to_level`, `outline_m`, `risers`, `riser_m` (at most 7 in (0.178 m)), `tread_m` 11 in (0.279 m), no flight climbing more than 12 ft (3.66 m), `turns` (half-turns within the floor: 1 normally, more for a tall floor), `flights` (2 per turn, at least 3 risers each), `flight_width_m` (3 ft 11 in (1.2 m), down to 44 in (1.12 m) in a tight core), `landing_m`, `fits`, `core` |
+| `lift` | `levels`, `outline_m` (8 ft 6 in (2.6 m) square), `core` |
+| `slab` | `level`, `z_m`, `outline_m`, `holes_m` (stairs and lifts), `thickness_m` 1 ft (0.30 m) |
+
+Sizes come from `data/standards.json` (Jordan, 28 Nov 2026: US building standards from the IBC, ADA and AASHTO,
+US units with metric alongside). Change a size there, not in the code. Its street, block, street furniture, civil
+and drafting sections are recorded for later steps and not applied yet. Its `decks` section is canon: no stairs
+between decks; people and vehicles go deck to deck by fast elevators and teleport pads in the Spine Atrium.
+
+The 3D view's Walk mode (`web/walk.js`) walks these plans as a person: walls and windows stop you, doors and
+openings let you through, gravity keeps you on the floor, stairs carry you up and down, and lifts change floors.
+
+The plan also gets `fabric`: how many elements were worked out, the entrances, and how many spaces can't be
+reached or stairs don't fit (the scan lists those by building).
+
 Architecture fields, left out until designed (the app shows "not designed yet"):
 `height_m`, `floors`, `structure`, `entrances`, `look`, `capacity`, `services`, `interior`.
 

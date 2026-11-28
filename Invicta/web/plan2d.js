@@ -41,8 +41,9 @@
     if (uid in cache) return cache[uid];
     if (window.ADXI_STATIC && !(D_ && D_.model_index && D_.model_index[uid])) return null;
     try {
+      // The plan with its fabric (walls, doors, windows, stairs) worked out from the rooms (atlaslib/fabric.py).
       const u = window.ADXI_STATIC ? `api/models/${encodeURIComponent(uid)}.json`
-        : "/file?path=" + encodeURIComponent(`Invicta/data/models/${uid}.json`);
+        : "/api/model?uid=" + encodeURIComponent(uid);
       const r = await fetch(u, { cache: window.ADXI_STATIC ? "default" : "no-store" });
       cache[uid] = r.ok ? await r.json() : null;
     } catch (e) { cache[uid] = null; }
@@ -105,9 +106,25 @@
       const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
       g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#e8f1fb", "stroke-width": Math.max((e.thickness_m || 0.3), fs / 6), "stroke-linecap": "square" }));
     }
+    // Fabric worked out from the rooms (plan step 3): walls and windows come grouped, four numbers a line.
+    const path = (lines) => lines.map((q) => { const a = toS([q[0], q[1]]), c = toS([q[2], q[3]]); return `M${a[0]} ${a[1]}L${c[0]} ${c[1]}`; }).join("");
+    for (const e of els.filter((x) => x.type === "walls")) {
+      g.append(el("path", { d: path(e.lines_m), fill: "none", stroke: e.kind === "exterior" ? "#ffffff" : e.kind === "core" ? "#ffb84d" : "#cfd8e3",
+        "stroke-width": Math.max(e.thickness_m * 2, fs / (e.kind === "interior" ? 90 : 50)), "stroke-linecap": "square" }));
+    }
+    for (const e of els.filter((x) => x.type === "windows")) {
+      g.append(el("path", { d: path(e.lines_m), fill: "none", stroke: "#6fd0ff", "stroke-width": Math.max(0.6, fs / 45) }));
+    }
+    for (const e of els.filter((x) => x.type === "stair" || x.type === "lift")) {
+      const o = e.outline_m.map(toS);
+      g.append(el("polygon", { points: o.map((q) => q.join(",")).join(" "), fill: "rgba(255,184,77,.25)", stroke: e.fits === false ? "#ff6b6b" : "#ffb84d", "stroke-width": fs / 60 }));
+      const d = e.type === "lift" ? `M${o[0]}L${o[2]}M${o[1]}L${o[3]}` : `M${o[0]}L${o[1]}M${o[3]}L${o[2]}M${(o[0][0] + o[3][0]) / 2} ${(o[0][1] + o[3][1]) / 2}L${(o[1][0] + o[2][0]) / 2} ${(o[1][1] + o[2][1]) / 2}`;
+      g.append(el("path", { d, fill: "none", stroke: "#ffb84d", "stroke-width": fs / 90 }));
+    }
     for (const e of els.filter((x) => x.type === "door" || x.type === "opening")) {
       const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
-      g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: "#5fd39a", "stroke-width": fs / 4 }));
+      g.append(el("line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1], stroke: e.type === "opening" ? "#9be7c4" : "#5fd39a",
+        "stroke-width": e.derived ? Math.max(0.8, fs / 30) : fs / 4 }));
     }
   }
 
@@ -305,7 +322,7 @@
       if (!anyShown) put(gr.box, gr.label, gr.sub, "#e8f1fb");
     }
     for (const e of pl.els.filter((x) => x.type === "core")) put(bbox(e), "Stairs & lifts", null, "#ffb84d");
-    for (const e of pl.els.filter((x) => x.type === "door" || x.type === "opening")) {
+    for (const e of pl.els.filter((x) => (x.type === "door" || x.type === "opening") && !x.derived)) {
       const [a, c] = [toS(e.line_m[0]), toS(e.line_m[e.line_m.length - 1])];
       textAt(g, (a[0] + c[0]) / 2, (a[1] + c[1]) / 2 - F * 1.1, `${e.name || (e.type === "door" ? "Door" : "Opening")}${e.width_m ? " · " + one(e.width_m) : ""}`, F * 0.9, { fill: "#5fd39a" });
     }

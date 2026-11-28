@@ -42,7 +42,10 @@
   const btnName = el("button", "chat-btn", "Name / password");
   const btnClose = el("button", "chat-btn chat-x", "×");
   btnClose.title = "Hide chat";
-  head.append(title, btnName, btnNew, btnClose);
+  const btnTeam = el("button", "chat-btn", "Team");
+  btnTeam.title = "See what Jordan and Kylee have asked Claude, how it went and what changed";
+  btnTeam.hidden = true;
+  head.append(title, btnTeam, btnName, btnNew, btnClose);
   const log = el("div", "chat-log");
   const form = el("form", "chat-form");
   const input = el("textarea", "chat-input");
@@ -194,6 +197,7 @@
       const d = await r.json();
       who.textContent = d.name ? `✓ Recognised as ${d.name}: your changes go live right away` : "For the design team only: Jordan or Kylee, click Name / password to sign in.";
       input.disabled = send.disabled = attach.disabled = !d.name;
+      btnTeam.hidden = !d.name;
       input.placeholder = d.name ? "Ask about a deck or building, or suggest a change…" : "The Claude chat is for the design team. You can still browse and use the Helpers chat.";
       if (d.name && !localStorage.getItem("adxi.unitsChosen")) {  // Kylee works in metric (Western Australia); Jordan in feet
         localStorage.setItem("adxi.units", /kylee/i.test(d.name) ? "metric" : "us");
@@ -225,6 +229,52 @@
       setTimeout(tick, 8000);
     };
     setTimeout(tick, 8000);
+  }
+
+  // ---------- team activity (Jordan and Kylee see each other's requests) ----------
+  const team = el("div", "chat-team");
+  team.hidden = true;
+  panel.insertBefore(team, here);
+  let teamTimer = null;
+  const keys = () => ({ "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" });
+  const when = (ms) => new Date(ms).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+  const STATE = { working: "Working", done: "Done", error: "Stopped with an error", stopped: "Stopped (page closed or connection lost)" };
+  async function drawTeam() {
+    try {
+      const r = await fetch("/api/activity", { headers: keys(), cache: "no-store" });
+      const d = await r.json();
+      if (!r.ok) { team.innerHTML = `<p class="chat-note">${esc(d.error || "Not available.")}</p>`; return; }
+      const open = new Set([...team.querySelectorAll("details[open]")].map((x) => x.dataset.id));
+      team.innerHTML = '<div class="team-head"><strong>Team activity</strong><span>What Jordan and Kylee asked Claude. Updates by itself.</span><button type="button" class="chat-btn">Back to chat</button></div>' +
+        (d.items.length ? "" : '<p class="chat-note">Nothing yet. Requests appear here as soon as they are sent.</p>') +
+        d.items.map((x) => `<div class="team-item team-${esc(x.state)}">
+          <div class="team-meta"><strong>${esc(x.who)}</strong> · ${esc(when(x.ts))}${x.place ? ` · ${esc(x.place)}` : ""}</div>
+          <div class="team-ask">${esc(x.ask).replace(/\n/g, "<br>")}</div>
+          <div class="team-state">${esc(STATE[x.state] || x.state)}${x.state === "working" && x.progress ? `: ${esc(x.progress)}…` : ""}</div>
+          ${x.links.map((l) => `<a class="chat-proposal" href="${esc(l.url)}" target="_blank" rel="noopener"><strong>${l.merged ? "Published" : "Waiting for review"}</strong><span>${esc(l.title)}</span></a>`).join("")}
+          ${x.reply ? `<details data-id="${x.id}"${open.has(String(x.id)) ? " open" : ""}><summary>Claude's answer</summary><div class="msg msg-assistant">${md(x.reply)}</div></details>` : ""}
+        </div>`).join("");
+      team.querySelector(".team-head button").onclick = () => showTeam(false);
+    } catch (e) { team.innerHTML = '<p class="chat-note">Couldn\'t load the team activity. Check your connection.</p>'; }
+  }
+  function showTeam(on) {
+    team.hidden = !on;
+    log.hidden = on;
+    btnTeam.textContent = on ? "Chat" : "Team";
+    clearInterval(teamTimer);
+    if (on) { team.innerHTML = '<p class="chat-note">Loading…</p>'; drawTeam(); teamTimer = setInterval(drawTeam, 10000); }
+  }
+  btnTeam.onclick = () => showTeam(team.hidden);
+
+  // A tab left open keeps running the old chat code after the site updates. Check before each message.
+  const myVer = ((document.querySelector('script[src*="chat.js"]') || {}).src || "").split("v=")[1] || "";
+  async function siteUpdated() {
+    if (!myVer) return false;
+    try {
+      const html = await (await fetch("/", { cache: "no-store" })).text();
+      const v = (html.match(/static\/chat\.js\?v=([\w]+)/) || [])[1];
+      return !!v && v !== myVer;
+    } catch (e) { return false; }
   }
 
   // ---------- what the person is looking at ----------
@@ -343,14 +393,50 @@
     const imgs = pending.slice(), docs = pendingDocs.slice();
     pending = []; pendingDocs = []; drawTray();
     if (!localStorage.getItem(KEY_ASKED)) await askName();
+    if (await siteUpdated()) {
+      const n = note("The site was updated since you opened this page. Reload it to get the latest version (your chat is kept), then send again. ", "msg-error");
+      const b = el("button", "chat-btn", "Reload now");
+      b.type = "button";
+      b.onclick = () => location.reload();
+      n.append(b);
+      input.value = text;
+      return;
+    }
+    showTeam(false);
     busy = true;
     send.disabled = true;
     input.value = "";
     bubble("user", imgs.map((b) => `<img class="chat-img" src="data:image/jpeg;base64,${b}" alt="">`).join("") + docs.map((d) => `<div class="chat-docline">📄 ${esc(d.name)}</div>`).join("") + esc(text).replace(/\n/g, "<br>"));
-    const out = bubble("assistant", '<span class="chat-typing">Thinking…</span>');
-    let acc = "";
+    const out = bubble("assistant", "");
+    let acc = "", statusText = "Thinking", gotDone = false, gotError = false, lastByte = Date.now();
+    const t0 = Date.now();
+    // Show what Claude is doing and for how long, so a long change never looks frozen.
+    const draw = () => {
+      const secs = Math.floor((Date.now() - t0) / 1000);
+      const clock = secs >= 5 ? ` · ${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, "0")}` : "";
+      const hint = secs >= 45 ? " · big changes can take a few minutes; keep this page open" : "";
+      out.innerHTML = md(acc) + (statusText ? `<span class="chat-typing">${esc(statusText)}…${clock}${hint}</span>` : "");
+    };
+    draw();
+    const ctrl = new AbortController();
+    let stalled = false, reader = null;
+    const ticker = setInterval(() => {
+      if (statusText) draw();
+      // The server sends a small signal every 10 seconds. Nothing for 75 seconds means the connection is gone.
+      if (Date.now() - lastByte > 75000) { stalled = true; ctrl.abort(); }
+    }, 1000);
+    // If this message doesn't finish, keep it in the conversation anyway, so "try again" or
+    // "run the previous instruction" still knows what was asked.
+    const keepUnfinished = (why) => {
+      history = history.concat([
+        { role: "user", content: [{ type: "text", text }] },
+        { role: "assistant", content: [{ type: "text", text: `(${why})` }] },
+      ]);
+      save();
+    };
     try {
       const r = await fetch("/api/chat", {
+        signal: ctrl.signal,
         method: "POST",
         headers: { "Content-Type": "application/json", "X-Helper-Key": localStorage.getItem("adxi.helperKey") || "", "X-Admin-Key": localStorage.getItem("adxi.adminKey") || "" },
         body: JSON.stringify({ messages: history, text, images: imgs, docs, units: localStorage.getItem("adxi.units") === "metric" ? "metric" : "us", name: localStorage.getItem(KEY_NAME) || "", view: viewContext() }),
@@ -362,12 +448,13 @@
         out.classList.add("msg-error");
         return;
       }
-      const reader = r.body.getReader();
+      reader = r.body.getReader();
       const dec = new TextDecoder();
       let buf = "";
       for (;;) {
         const { value, done } = await reader.read();
         if (done) break;
+        lastByte = Date.now();
         buf += dec.decode(value, { stream: true });
         let i;
         while ((i = buf.indexOf("\n\n")) >= 0) {
@@ -379,13 +466,20 @@
           const data = JSON.parse(dataLine);
           if (ev === "text") {
             acc += data.delta;
-            out.innerHTML = md(acc);
+            statusText = "";
+            draw();
             log.scrollTop = log.scrollHeight;
+          } else if (ev === "status") {
+            statusText = data.text;
+            draw();
           } else if (ev === "reset") {  // switching to the design model: start the answer again
             acc = "";
-            out.innerHTML = '<span class="chat-typing">Working on the change…</span>';
+            statusText = "Working on the change";
+            draw();
           } else if (ev === "tool") {
             log.insertBefore(el("div", "chat-note", data.label + "…"), out);
+            statusText = "Working";
+            draw();
           } else if (ev === "proposal") {
             const card = el("a", "chat-proposal");
             card.href = data.url;
@@ -395,19 +489,35 @@
             if (data.merged) watchPublish(card);
             log.insertBefore(card, out);
           } else if (ev === "done") {
+            gotDone = true;
             history = data.messages;
             save();
           } else if (ev === "error") {
+            gotError = true;
+            statusText = "";
             out.innerHTML = md((acc ? acc + "\n\n" : "") + data.error);
             out.classList.add("msg-error");
+            keepUnfinished("This request stopped with an error before it finished.");
           }
         }
       }
-      if (!acc.trim() && !out.classList.contains("msg-error")) out.remove();
+      statusText = "";
+      if (!gotDone && !gotError) {
+        // The connection closed before Claude finished (page asleep, network drop, server stopped).
+        out.innerHTML = md((acc ? acc + "\n\n" : "") + "**The connection closed before I finished.** Any change already saved is shown above as a card; if there is no card, nothing was changed. Say *try again* to carry on.");
+        out.classList.add("msg-error");
+        keepUnfinished("The connection closed before this request finished. Nothing after the last saved change was done.");
+      } else if (!acc.trim() && !out.classList.contains("msg-error")) out.remove();
     } catch (err) {
-      out.innerHTML = md("I couldn't reach the chat. Check your connection and try again.");
+      statusText = "";
+      const started = stalled || reader;  // the request had begun, so part of it may have run
+      out.innerHTML = md((acc ? acc + "\n\n" : "") + (started
+        ? `**I lost the connection${stalled ? " (nothing arrived for over a minute)" : ""} before I finished.** Any change already saved is shown above as a card; if there is no card, nothing was changed. Say *try again* to carry on.`
+        : "I couldn't reach the chat. Check your connection and try again."));
       out.classList.add("msg-error");
+      keepUnfinished("The connection was lost before this request finished.");
     } finally {
+      clearInterval(ticker);
       busy = false;
       send.disabled = false;
       log.scrollTop = log.scrollHeight;

@@ -148,7 +148,11 @@ async function load() {
   pill.textContent = open || "";
   pill.classList.toggle("warn", !errs);  // red only when there are real errors, yellow for warnings
   pill.title = errs ? `${errs} errors` : `${open} warnings, no errors`;
-  document.getElementById("scan-time").textContent = `Read ${D.model.generated} · ${D.scan_ms} ms`;
+  // How long the scan of every file took when this copy was made (on the publish build for the website), not page load time.
+  const took = D.scan_ms >= 10000 ? `${Math.round(D.scan_ms / 1000)} s` : D.scan_ms >= 1000 ? `${(D.scan_ms / 1000).toFixed(1)} s` : `${D.scan_ms} ms`;
+  const st = document.getElementById("scan-time");
+  st.textContent = `Scanned ${D.model.generated} in ${took}`;
+  st.title = "When the design files were last scanned, and how long that scan took. The page itself loads separately.";
   route();
 }
 function index() {

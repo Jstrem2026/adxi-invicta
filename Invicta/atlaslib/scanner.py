@@ -15,6 +15,8 @@ import fnmatch
 from . import geometry as G
 from . import footprints as FP
 from . import purposes as PU
+from . import rooms as RM
+from .loader import DATA_DIR
 from .categories import KEYS as CATEGORY_KEYS
 from . import parsers as P
 from .sources import FIXED, GAME_DOCS, MIRROR_DOCS
@@ -53,7 +55,7 @@ class Scan:
         checks = [self.ship_checks, self.deck_checks, self.district_checks, self.transit_checks,
                   self.zone_checks, self.game_checks, self.precinct_checks, self.building_checks,
                   self.docs_vs_data, self.reference_checks, self.unit_checks, self.mirror_checks,
-                  self.link_checks, self.term_checks, self.decision_checks, self.block_checks, self.gap_checks]
+                  self.link_checks, self.term_checks, self.decision_checks, self.block_checks, self.room_checks, self.gap_checks]
         for c in checks:
             try:
                 c()
@@ -366,7 +368,7 @@ class Scan:
                     a, b = ps_list[i], ps_list[j]
                     if len(a["shape_km"]) < 3 or len(b["shape_km"]) < 3:
                         continue
-                    ov = G.polygon_area(G.clip(a["shape_km"], b["polygon_km"] if b.get("polygon_km") else G.rect_poly(b["bounds_km"])))
+                    ov = G.overlap_area(a["shape_km"], b["polygon_km"] if b.get("polygon_km") else G.rect_poly(b["bounds_km"]))
                     if ov > 0.01:
                         self.add("error", "geometry", "Precincts overlap",
                                  "%s %s and %s %s share %.2f km²." % (a["id"], a["name"], b["id"], b["name"], ov), a["uid"], ps["file"])
@@ -376,7 +378,9 @@ class Scan:
         for did, ps in self.m["precinct_sets"].items():
             deck = self.deck(ps["deck"])
             hull = deck.get("outline_net") if deck else None
+            hull_shape = G.shape(hull) if hull else None
             for p in ps["precincts"]:
+                p_shape = G.shape(p["shape_km"])
                 for c in p.get("exclude_circles_km", []):  # no block may cover a reserved plaza
                     for blk in p.get("blocks") or []:
                         pts = blk.get("part_km") or []
@@ -407,28 +411,23 @@ class Scan:
                                 self.add("warning", "geometry", "Courtyard outside its building",
                                          "%s: a courtyard (holes_km) is not inside the building's outline." % who, b["uid"], ps["file"])
                                 break
-                    shapes = b.get("bays_km") or [r]
-                    for s in shapes:
-                        pts = G.rect_poly(s)
-                        inset = 0.002
-                        corners = [(s[0] + inset, s[2] + inset), (s[1] - inset, s[2] + inset), (s[1] - inset, s[3] - inset), (s[0] + inset, s[3] - inset)]
-                        if b.get("outline_km") and not b.get("bays_km"):
-                            # a shaped building is checked by its own outline, not its box (curved edges, courtyards)
-                            corners = [_toward(q, G.centroid(o), inset) for o in b["outline_km"] for q in o]
-                        if hull and not all(G.point_in_poly(x, y, hull) for x, y in corners):
-                            self.add("error", "geometry", "Building pokes through the hull",
-                                     "%s reaches outside the Deck %d city floor (Rev B outline)." % (who, deck["n"]), b["uid"], ps["file"])
+                    # Exact checks on the building's true footprint (bays, or outline minus courtyards).
+                    # A 2 m (6.6 ft) inset forgives a shared edge, as before; edge roads may run 60 m over.
+                    true = G.building_shape(b)
+                    inner = true.buffer(-0.002) if true.area > 1e-5 else true
+                    if hull_shape is not None and not inner.is_empty and not hull_shape.covers(inner):
+                        out_m2 = inner.difference(hull_shape).area * 1e6
+                        self.add("error", "geometry", "Building pokes through the hull",
+                                 "%s reaches %s outside the Deck %d city floor (Rev B outline)." % (who, G.fmt_area_km2(out_m2 / 1e6), deck["n"]), b["uid"], ps["file"])
+                    edge_tol = 0.06 if b["kind"] == "transport" else 1e-6
+                    if not inner.is_empty and not p_shape.buffer(edge_tol).covers(inner):
+                        self.add("warning", "geometry", "Building reaches outside its precinct",
+                                 "%s sticks out of %s %s." % (who, p["id"], p["name"]), b["uid"], ps["file"])
+                    for c in p.get("exclude_circles_km", []):
+                        if not inner.is_empty and inner.intersects(G.circle(*c)):
+                            self.add("error", "geometry", "Building sits on a canon plaza",
+                                     "%s reaches into the excluded circle (%s)." % (who, p.get("exclude_note", "")), b["uid"], ps["file"])
                             break
-                        edge_tol = 0.06 if b["kind"] == "transport" else 0.0  # edge roads are shared with the neighbour
-                        if not all(_near_poly(x, y, p["shape_km"], edge_tol) for x, y in corners):
-                            self.add("warning", "geometry", "Building reaches outside its precinct",
-                                     "%s sticks out of %s %s." % (who, p["id"], p["name"]), b["uid"], ps["file"])
-                            break
-                        for c in p.get("exclude_circles_km", []):
-                            if any((x - c[0]) ** 2 + (y - c[1]) ** 2 < c[2] ** 2 for x, y in corners):
-                                self.add("error", "geometry", "Building sits on a canon plaza",
-                                         "%s reaches into the excluded circle (%s)." % (who, p.get("exclude_note", "")), b["uid"], ps["file"])
-                                break
                     sz = b.get("size_m")
                     if sz and len(sz) >= 2:
                         if b.get("bays_km"):
@@ -452,7 +451,7 @@ class Scan:
                 for i in range(len(solid)):
                     for j in range(i + 1, len(solid)):
                         a, c = solid[i], solid[j]
-                        ov = sum(G.rect_overlap(s1, s2) for s1 in (a.get("bays_km") or [a["rect_km"]]) for s2 in (c.get("bays_km") or [c["rect_km"]]))
+                        ov = G.overlap_area(G.building_shape(a), G.building_shape(c))
                         if ov > 2e-5:  # 20 m²
                             self.add("warning", "geometry", "Buildings overlap",
                                      "%s %s and %s %s overlap by %s." % (a["id"], a["name"], c["id"], c["name"], G.fmt_area_km2(ov)), a["uid"], ps["file"])
@@ -460,7 +459,7 @@ class Scan:
                     if b["kind"] in ("plaza", "park"):
                         continue  # squares and parks are meant to sit on the boulevards
                     for st in p.get("streets", []):
-                        ov = sum(G.rect_overlap(s, st["rect_km"]) for s in (b.get("bays_km") or [b["rect_km"]]))
+                        ov = G.overlap_area(G.building_shape(b), G.box_shape(st["rect_km"]))
                         if ov > 2e-5:
                             self.add("warning", "geometry", "Building sits on a street",
                                      "%s %s overlaps %s by %s." % (b["id"], b["name"], st["name"], G.fmt_area_km2(ov)), b["uid"], ps["file"])
@@ -733,6 +732,11 @@ class Scan:
                                      b["uid"], ps["file"], fix="Move or resize the building so it clears the block edge, or move the street that bounds the block.")
                             break
 
+    def room_checks(self):
+        """Inside every building: the room plans in data/models (see atlaslib/rooms.py)."""
+        RM.scan_plans(self.m, os.path.join(DATA_DIR, "models"), self.add,
+                      os.path.join(os.path.dirname(DATA_DIR), "reports", "room_check_cache.json"))
+
     def gap_checks(self):
         for d in self.m["decks"]:
             undesigned = [x for x in d["districts"] if x["design_status"] == "not designed yet"]
@@ -767,13 +771,6 @@ def _norm(s):
     return re.sub(r"[^a-z0-9]+", " ", s.replace("**", "").lower()).strip()
 
 
-def _toward(q, c, d):
-    """Point q moved d km toward c (so a point exactly on an edge tests as inside)."""
-    dx, dy = c[0] - q[0], c[1] - q[1]
-    L = math.hypot(dx, dy)
-    return (q[0], q[1]) if L < 1e-12 else (q[0] + dx / L * min(d, L), q[1] + dy / L * min(d, L))
-
-
 def _near_poly(x, y, pts, tol):
     if G.point_in_poly(x, y, pts):
         return True
@@ -792,22 +789,14 @@ def _near_poly(x, y, pts, tol):
     return False
 
 
-def _fraction_inside(shape, poly, step=0.05):
+def _fraction_inside(shape, poly, tol=0.03):
+    """Share of `shape`'s area within `tol` km of `poly` (exact)."""
     if len(shape) < 3:
         return None
-    bx = G.bbox(shape)
-    tot = ins = 0
-    y = bx[2] + step / 2
-    while y < bx[3]:
-        x = bx[0] + step / 2
-        while x < bx[1]:
-            if G.point_in_poly(x, y, shape):
-                tot += 1
-                if _near_poly(x, y, poly, 0.03):
-                    ins += 1
-            x += step
-        y += step
-    return ins / tot if tot else None
+    a = G.shape(shape)
+    if a.area <= 0:
+        return None
+    return a.intersection(G.shape(poly).buffer(tol)).area / a.area
 
 
 def _invicta_docs(root):

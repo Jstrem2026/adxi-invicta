@@ -67,6 +67,23 @@ to keep in sync and no build step.
   Deck 5 buildings are designed with `tools/design_rooms.py` from hand-written programs in `tools/room_programs/`
   (change the program, then `bash tools/design_district.sh D5/<district> --redo`); the district's `<District>_Rooms.md`
   doc lists every building, floor and room. Each building has a concept render from its 3D plan (`concept_render`).
+- Room checks (Jordan, 27 Nov 2026: "Yes, use Shapely"): the scan checks every room plan in `data/models`
+  with exact geometry (`atlaslib/rooms.py`): overlaps, shapes that cross themselves, rooms outside the
+  building or in its courtyard, rooms under 5 ft (1.5 m) wide, floors with no stairs or lift, floors that
+  don't stack. Plan step 4 (27 Nov 2026) reworked both room designers to make clean plans (exact wall bands that
+  follow curves and courtyards, then `atlaslib/plan_repair.py`), so a new or changed plan must not add any. The
+  old plans are kept in git history and in the project files (`step4-backup/room-plans-before-step4-2026-11-27.zip`). Install Shapely once:
+  `python -m pip install -r requirements.txt`. Tests: `python -m unittest discover -s tests -t .`
+- Walls, doors, windows and stairs (Jordan, 27 Nov 2026, plan step 3): never write them into a plan file. They are
+  worked out from the rooms by `atlaslib/fabric.py` and added when a plan is shown or exported (model@2, see
+  `data/README.md`). To change them for one building, draw the door in the plan (it wins), or change a room; to
+  change them everywhere, change the rules in `fabric.py` (Jordan approves). The scan lists spaces with no way in
+  and stairs too big for their core.
+- Standards (Jordan, 28 Nov 2026): door, window, wall and stair sizes come from `data/standards.json` (US building
+  standards: doors 3 ft x 6 ft 8 in, entrances 6 x 8 ft, stairs 7 in rise and 11 in tread). Change sizes there. Its
+  street and block sections are not applied yet; no deck layout changes from them without Jordan's OK.
+- No stairs between decks (Jordan, 28 Nov 2026, canon): decks are joined only by fast elevators and teleport pads, in
+  the Spine Atrium at the centre of every deck. Stairs are only inside buildings.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.
