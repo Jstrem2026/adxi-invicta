@@ -507,11 +507,19 @@ def build(m):
         lenL, lenD = float(np.hypot(*e1)), float(np.hypot(*e2))
         u, v = e1 / lenL, e2 / lenD
 
-        def rect(x0, x1, y0, y1):
+        def rect(x0, x1, y0, y1, fu=False, fv=False, lenL=lenL, lenD=lenD, c=c, u=u, v=v):
+            # fu / fv mirror the rectangle to the other end / side of the core
+            if fu:
+                x0, x1 = lenL - x1, lenL - x0
+            if fv:
+                y0, y1 = lenD - y1, lenD - y0
             return [_pt(c[0] + u * x0 + v * y0), _pt(c[0] + u * x1 + v * y0),
                     _pt(c[0] + u * x1 + v * y1), _pt(c[0] + u * x0 + v * y1)]
 
         stair_len = 0.0
+        flip = (False, False)
+        stair_polys = []
+        core_doors = [d for d in out if d["type"] in ("door", "opening") and e["id"] in d.get("between", [])]
         for a_, b_ in zip(cl, cl[1:]):
             h = lv_by[b_]["z_m"] - lv_by[a_]["z_m"]
             if h <= 0:
@@ -530,7 +538,18 @@ def build(m):
                 if fits or width > lenD + 1e-6:
                     break
             stair_len = max(stair_len, min(length, lenL))
-            o = rect(0, min(length, lenL), 0, min(width, lenD))
+            # put the stair where no door of this core opens onto it: try the kept corner first, then the others
+            dl = [LineString(d["line_m"]) for d in core_doors if d["level"] in (a_, b_)]
+            best = None
+            for f in [flip] + [q for q in ((False, False), (False, True), (True, False), (True, True)) if q != flip]:
+                oo = rect(0, min(length, lenL), 0, min(width, lenD), *f)
+                gap = min((Polygon(oo).distance(q) for q in dl), default=99.0)
+                if best is None or gap > best[2]:
+                    best = (f, oo, gap)
+                if gap >= 1.0:
+                    break
+            flip, o = best[0], best[1]
+            stair_polys.append(Polygon(o))
             out.append({"id": nid("S"), "type": "stair", "name": "Stairs", "level": a_, "to_level": b_, "outline_m": o,
                         "risers": risers, "riser_m": _r(h / risers), "tread_m": TREAD, "flights": 2 * turns, "turns": turns,
                         "flight_width_m": _r(fw), "landing_m": LANDING, "fits": fits, "core": e["id"],
@@ -540,11 +559,22 @@ def build(m):
                 report["stairs_not_fitting"].append("%s %s, %s to %s: needs %.1f × %.1f m, the core is %.1f × %.1f m" % (
                     e["id"], e.get("name", ""), a_, b_, length, width, lenL, lenD))
         if len(cl) > 1 and lenL - stair_len >= LIFT + 0.2 and lenD >= LIFT:
-            o = rect(lenL - LIFT, lenL, 0, LIFT)
-            out.append({"id": nid("L"), "type": "lift", "name": "Lift", "levels": cl, "outline_m": o, "core": e["id"],
-                        "status": "proposed", "derived": True})
-            for L in cl[1:]:
-                holes.setdefault(L, []).append(Polygon(o))
+            o = None
+            dl_all = [LineString(d["line_m"]) for d in core_doors]
+            for fu in (not flip[0], flip[0]):
+                for fv in (flip[1], not flip[1]):
+                    q = rect(lenL - LIFT, lenL, 0, LIFT, fu, fv)
+                    qp = Polygon(q)
+                    if not any(qp.intersects(sp) for sp in stair_polys) and all(qp.distance(x) >= 0.8 for x in dl_all):
+                        o = q
+                        break
+                if o:
+                    break
+            if o:
+                out.append({"id": nid("L"), "type": "lift", "name": "Lift", "levels": cl, "outline_m": o, "core": e["id"],
+                            "status": "proposed", "derived": True})
+                for L in cl[1:]:
+                    holes.setdefault(L, []).append(Polygon(o))
 
     # ---- floor slabs
     for L in order:
