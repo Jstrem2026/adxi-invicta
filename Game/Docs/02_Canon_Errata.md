@@ -19,6 +19,7 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | 20 Nov 2026 | C2 | Aerion's extra **0.9 km² is taken from the Strike Hangars** (110 → 109.1 km²). |
 | 27 Nov 2026 | C8 | **The Keelway stop frames are right.** Where a sheet's "from deck bow" distance differs, the frame wins. |
 | 27 Nov 2026 | A1, A3, A4, A6, B2–B5, B7–B9, C3–C7, D1–D4, D6–D8, D11, E1–E3, F3–F8 | **All remaining proposed errata approved as written.** |
+| 28 Nov 2026 | D12 | **No stairs between decks.** People, vehicles and ships move deck to deck only through the Spine Atrium at the centre of every deck, by teleporter or fast elevator. |
 
 ## 1. Command and government
 
@@ -74,6 +75,7 @@ Legend: ✅ decided by Jordan · ⏳ proposed, awaiting answer
 | D7 | Directions | Bow Lock / Stern Lock; Starboard Gate | ✅ |
 | D8 | Renames | Lyceum; Cybernetics Works; Works Quay; Lumen Dome | ✅ |
 | D11 | Pod stops | One per 500 × 500 m block pair | ✅ |
+| D12 | Moving between decks | **No stairs between decks** (at 1,444 ft (440 m) or more per deck they would be far too big). Every deck has its Atrium Plaza with the Spine Atrium at its centre; the Spine Atrium is where people, vehicles and ships move deck to deck, by **teleporter** or **fast elevator** (the 24 Lift Rings and larger lifts). Stairs exist only inside buildings, within one deck. Sizes and number of the teleporters and ship and vehicle lifts are not designed yet. Adds teleporters to the Bible's Spine Atrium section. | ✅ |
 
 ## 5. Lore
 
