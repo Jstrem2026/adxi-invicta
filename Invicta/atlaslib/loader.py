@@ -89,6 +89,12 @@ class Loader:
         out["hull_plan_concept"] = self.outline(FIXED["hull_plan_revC_csv"], "Rev C concept hull plan (top view)", required=False)
         out["hull_side_concept"] = self.outline(FIXED["hull_side_revC_csv"], "Rev C concept hull side profile", required=False)
         out["concept_sheet"] = FIXED["concept_sheet"]
+        ct = self.text(FIXED["crown_revC_json"], "Rev C Crown and Crown Bridge outlines", required=False)
+        if ct:
+            try:
+                out["crown_concept"] = json.loads(ct)
+            except ValueError as e:
+                self.fail("error", "Bad Crown outline file", str(e), FIXED["crown_revC_json"])
         out["revC_readme"] = FIXED["revC_readme"]
         ft = self.text(FIXED["frames_csv"], "Canon frame table F0-F68")
         if ft:

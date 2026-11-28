@@ -12,8 +12,15 @@ Files
   with the four engine nozzles. 21.13 mi (34.0 km) long, 7.70 mi (12.39 km) beam, as canon.
   Plan area 132.1 sq mi (342.2 km2); canon 121.7 sq mi (315.3 km2).
 - hull_side_profile_km_revC.csv: side view. Hull 2.55 mi (4.1 km) keel to dorsal plating, as canon,
-  with raised dorsal fins toward the stern reaching 3.20 mi (5.16 km) above the keel
-  (canon: about 3.42 mi / 5.5 km with the Crown and stern fins).
+  dorsal plating only. The raised block the sheet draws toward the stern is left out: Jordan (28 Nov 2026)
+  said the raised part on top is the bridge, where the front windows are.
+- crown_revC.json: the Crown on the dorsal hull, with the Crown Bridge on its front edge.
+  Place (from Jordan): over the windowed module of the concept's TOP view. It runs from 6.65 mi (10.7 km)
+  to 11.62 mi (18.7 km) from the prow, so 4.97 mi (8 km) long as canon says, and 3.23 mi (5.2 km) wide.
+  Its rounded front holds the forward windows. The Crown Bridge (canon 1.2 x 0.48 x 0.15 km) sits at its
+  front, behind those windows, looking out over the bow.
+  Heights are an ASSUMPTION: the Crown rises from the dorsal plating at 2.55 mi (4.1 km) to 3.32 mi
+  (5.35 km), and the Crown Bridge tops out at 3.42 mi (5.5 km), the canon height with the Crown.
 
 What did NOT change
 - Every deck, district, precinct, block, building and room stays exactly where it is.

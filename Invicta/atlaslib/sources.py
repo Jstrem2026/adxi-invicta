@@ -23,6 +23,7 @@ FIXED = {
     "revB_readme": GAME_DOCS + "/geometry_revB/README.txt",
     "hull_plan_revC_csv": GAME_DOCS + "/geometry_revC/hull_plan_km_revC.csv",
     "hull_side_revC_csv": GAME_DOCS + "/geometry_revC/hull_side_profile_km_revC.csv",
+    "crown_revC_json": GAME_DOCS + "/geometry_revC/crown_revC.json",
     # links on the ship page use the mirror copies, which the web copy publishes
     "concept_sheet": MIRROR_DOCS + "/art/concept/invicta-concept-six-views.png",
     "revC_readme": MIRROR_DOCS + "/geometry_revC/README.txt",

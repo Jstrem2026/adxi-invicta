@@ -160,9 +160,17 @@ class Scan:
             if want and abs(got - want) > 0.05:
                 self.add("warning", "geometry", "Concept hull size differs from Sheet S0",
                          "%s: Sheet S0 says %.1f km; the Rev C concept hull measures %.2f km." % (item, want, got), "ship", src)
+        cr = s.get("crown_concept") or {}
+        if cr.get("bridge_side_km"):
+            H = max(H, max(p[1] for p in cr["bridge_side_km"] + cr.get("crown_side_km", [])))
+        if cr.get("crown_plan_km"):
+            from shapely.geometry import Polygon as _Poly
+            if not _Poly(plan).buffer(1e-4).contains(_Poly(cr["crown_plan_km"]).buffer(0)):
+                self.add("error", "geometry", "The Crown sticks out of the concept hull",
+                         "The Crown outline in crown_revC.json is not wholly on top of the hull plan.", "ship", FIXED["crown_revC_json"])
         if H > 5.6:
             self.add("warning", "geometry", "Concept hull is taller than canon allows",
-                     "The Rev C side profile is %.2f km tall; Sheet S0 allows about 5.5 km with the Crown and stern fins." % H, "ship", src_s)
+                     "The Rev C hull with its Crown is %.2f km tall; Sheet S0 allows about 5.5 km with the Crown and stern fins." % H, "ship", src_s)
         hp, hs = Polygon(plan).buffer(0), Polygon(side).buffer(0)
         for d in self.m["decks"]:
             go = d.get("outline_gross")
