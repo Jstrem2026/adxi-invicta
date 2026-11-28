@@ -1,4 +1,4 @@
-"""Concept hull, Revision C (proposed 28 Nov 2026).
+"""Concept hull, Revision C (canon: errata C9, approved by Jordan 28 Nov 2026).
 
 Jordan's six-view concept sheet (Game/Docs/art/concept/invicta-concept-six-views.png) shows the Invicta
 with a pointed bow, wide armoured flanks, a blunt stern with four big engine nozzles, and raised dorsal
@@ -64,7 +64,7 @@ SIDE_BOTTOM = [  # bow to stern
 # The windows step down to the hull in three terraces, as the concept draws them. Heights follow the deck stack;
 # the terrace steps are an assumption.
 CROWN = {
-    "status": "proposed",
+    "status": "canon",
     "x_front_km": 10.7, "x_back_km": 18.7, "half_width_km": 2.6, "nose_km": 1.3,
     "z_base_km": 4.1, "z_top_km": 4.54, "terraces_km": [[0.0, 4.24], [0.15, 4.39], [0.3, 4.54]], "back_slope_km": 0.3,
     "bridge_level": {"name": "Bridge Level", "floor_m": 3980, "ceiling_m": 4360, "inset_km": 0.12,
@@ -186,7 +186,7 @@ def main():
     plan, side = build()
     write("hull_plan_km_revC.csv", "x_km_from_prow,y_km_port_neg", plan)
     write("hull_side_profile_km_revC.csv", "x_km_from_prow,z_km_above_keel", side)
-    crown = dict(CROWN, note="The Crown, its Bridge Level and the Crown Bridge (Rev C, proposed 28 Nov 2026). "
+    crown = dict(CROWN, note="The Crown, its Bridge Level and the Crown Bridge (Rev C, canon 28 Nov 2026, errata C9; the Bridge is part of the ship and cannot separate, errata C11). "
                  "Axes as the hull files. Place and level from Jordan; the terrace steps are an assumption.", **crown_shapes())
     for d in OUT_DIRS:
         with open(os.path.join(ROOT, *d.split("/"), "crown_revC.json"), "w", encoding="utf-8", newline="\n") as f:

@@ -153,7 +153,7 @@ class Scan:
 
     # ------------------------------------------------------------------ decks
     def concept_hull_checks(self, s, dims):
-        """Rev C concept hull (proposed 28 Nov 2026): same size as canon, and every deck still fits inside."""
+        """Rev C concept hull (canon, errata C9, 28 Nov 2026): same size as canon, and every deck still fits inside."""
         plan, side = s.get("hull_plan_concept"), s.get("hull_side_concept")
         if not plan or not side:
             return

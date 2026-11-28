@@ -7,7 +7,7 @@ Where it comes from
 - The TOP and LEFT views were traced by hand and scaled to the canon size. The points, the scaling and the
   deck cut live in Invicta/tools/concept_hull.py; run "python Invicta/tools/concept_hull.py" to rebuild.
 
-Hull (C9, proposed)
+Hull (C9, canon: approved by Jordan 28 Nov 2026)
 - hull_plan_km_revC.csv: top view. Pointed bow, wider forward flanks, armoured side pods, blunt stern with
   the four engine nozzles, joined with the canon top view so the decks keep their full width.
   21.13 mi (34.0 km) long, 7.70 mi (12.39 km) beam, as canon. Plan area 132.1 sq mi (342.2 km2).
