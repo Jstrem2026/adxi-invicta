@@ -76,6 +76,47 @@ class Doors(unittest.TestCase):
         self.assertEqual(rep["unreachable"], [])
         self.assertEqual(rep["entrances"], 2)
 
+    def test_door_heights_follow_us_standards(self):
+        # Jordan, 28 Nov 2026: 6 ft 8 in doors, 7 ft under 9 ft ceilings, 8 ft entrances
+        extra, _ = FB.build(SIMPLE)                                           # 4 m floor: 3.7 m clear, a tall ceiling
+        doors = of(extra, "door")
+        self.assertTrue(all(d["height_m"] == FB.TALL_DOOR_H for d in doors if d["name"] == "Door"))
+        self.assertEqual([d["height_m"] for d in doors if d["name"] == "Entrance"], [FB.ENTRANCE_H])
+        low = copy.deepcopy(SIMPLE)
+        low["levels"][0]["height_m"] = 2.9                                    # 2.6 m clear: a standard ceiling
+        extra, _ = FB.build(low)
+        self.assertTrue(all(d["height_m"] == FB.DOOR_H for d in of(extra, "door") if d["name"] == "Door"))
+
+    def test_the_entrance_faces_the_street_not_a_gap_between_rooms(self):
+        # Rooms ring a corridor; a small gap is left between the corridor and room R2. The corridor touches the street
+        # only at its west end. The entrance must open to the street there, not into the gap.
+        m = plan([sp("C", 0, 8, 30, 12, "zone", name="Corridor"),
+                  sp("R1", 0, 0, 30, 8), sp("R2", 6, 15, 30, 20), sp("R3", 0, 12, 6, 20)])
+        m["footprint_m"] = [30, 20]
+        extra, rep = FB.build(m)
+        ent = [d for d in of(extra, "door") if d["name"] == "Entrance"]
+        self.assertEqual(len(ent), 1)
+        (x0, y0), (x1, y1) = ent[0]["line_m"]
+        self.assertTrue(x0 == x1 == 0 or x0 == x1 == 30, ent[0]["line_m"])   # on the west or east street wall
+        self.assertEqual(rep["unreachable"], [])
+
+    def test_a_long_building_gets_an_entrance_along_each_stretch_of_street(self):
+        # a 400 m terrace: rooms on both sides of a corridor that only reaches the street at its ends
+        els = [sp("C", 0, 10, 400, 14, "zone", name="Corridor")]
+        for i in range(40):
+            els += [sp("N%d" % i, i * 10, 0, i * 10 + 10, 10), sp("S%d" % i, i * 10, 14, i * 10 + 10, 24)]
+        extra, rep = FB.build(plan(els))
+        ent = [d for d in of(extra, "door") if d["name"] == "Entrance"]
+        self.assertGreaterEqual(len(ent), 4)
+        xs = sorted((d["line_m"][0][0] + d["line_m"][1][0]) / 2 for d in ent)
+        self.assertTrue(all(b - a >= FB.ENTRANCE_EVERY_M / 2 - 1 for a, b in zip(xs, xs[1:])), xs)
+        doors = of(extra, "door")
+        for d in ent:   # each entrance room opens onto the corridor, so the way in leads somewhere
+            r = d["between"][0]
+            if r != "C":
+                self.assertTrue(any(sorted(x["between"]) == sorted([r, "C"]) for x in doors), r)
+        self.assertEqual(rep["unreachable"], [])
+
 
 class Stairs(unittest.TestCase):
     TWO = [{"id": "L1", "z_m": 0, "height_m": 4}, {"id": "L2", "z_m": 4, "height_m": 4}]
@@ -94,6 +135,15 @@ class Stairs(unittest.TestCase):
         self.assertTrue(s["fits"])
         self.assertEqual(rep["unreachable"], [])                # upstairs is reached by the stairs
         self.assertTrue(of(extra, "lift"))
+
+    def test_no_flight_climbs_more_than_12_ft(self):
+        # an 8 m (26 ft) floor in a long core: one half-turn would climb 4 m per flight, so it turns twice
+        tall = [{"id": "L1", "z_m": 0, "height_m": 8}, {"id": "L2", "z_m": 8, "height_m": 4}]
+        m = plan([sp("C", 0, 0, 30, 4, "zone", levels=["L1", "L2"], level=None),
+                  sp("S", 0, 4, 30, 10, "core", levels=["L1", "L2"], level=None)], tall)
+        s = of(FB.build(m)[0], "stair")[0]
+        self.assertLessEqual(8.0 / s["flights"], FB.FLIGHT_RISE_MAX)
+        self.assertFalse(FB.STANDARDS["decks"]["stairs_between_decks"])   # canon: decks are joined by lifts and teleport pads
 
     def test_a_stair_that_does_not_fit_is_reported(self):
         m = plan([sp("C", 0, 0, 20, 4, "zone", levels=["L1", "L2"], level=None),

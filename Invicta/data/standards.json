@@ -1,0 +1,393 @@
+{
+  "_about": "Building and city standards for Invicta (Jordan, 28 Nov 2026), from US practice: the International Building Code, ADA accessibility guidelines and AASHTO street design. Values are metres (the data files store metric); 'us' keys give the same size in US units for people. atlaslib/fabric.py reads the doors, windows, walls and stairs under 'building'. 'decks' is canon. 'streets', 'blocks', 'street_furniture', 'civil', 'materials' and 'drafting' are recorded for later steps: nothing reads them yet, and no deck layout changes from them without Jordan's OK.",
+  "source": [
+    "Jordan, 28 Nov 2026: door heights (6 ft 8 in standard, 7 ft under 9-10 ft ceilings, 8 ft grand entrances).",
+    "Jordan, 28 Nov 2026: modern city standards (streets, building heights, doors, windows, stairs, blocks, street furniture, materials).",
+    "Jordan, 28 Nov 2026: real-world blueprint standards (IBC, ADA, AASHTO): drafting, wall assemblies, door and window schedules, millwork, stairs, rails, ramps, street rights-of-way, utilities.",
+    "Jordan, 28 Nov 2026: no stairs between decks; only fast elevators and teleport pads, for people and vehicles.",
+    "Jordan, 28 Nov 2026: every deck has the Atrium and the Spine Atrium at its centre; deck-to-deck transport for people and ships (teleporters and elevators) is there."
+  ],
+  "building": {
+    "floor_to_floor": {
+      "ground_commercial_m": [
+        4.2,
+        5.5
+      ],
+      "us_ground": "14-18 ft (retail, storefronts)",
+      "upper_residential_m": [
+        3.0,
+        3.3
+      ],
+      "us_upper_residential": "10-11 ft",
+      "upper_office_m": [
+        3.6,
+        4.0
+      ],
+      "us_upper_office": "12-13 ft"
+    },
+    "doors": {
+      "single_width_m": 0.914,
+      "us_single_width": "3 ft 0 in (36 in), the ADA minimum for a commercial door (32 in clear when open)",
+      "double_width_m": 1.829,
+      "us_double_width": "6 ft 0 in commercial double doors",
+      "height_m": 2.032,
+      "us_height": "6 ft 8 in (80 in), the US standard door",
+      "tall_height_m": 2.134,
+      "us_tall_height": "7 ft 0 in, under ceilings of 9 ft or more",
+      "tall_ceiling_m": 2.74,
+      "us_tall_ceiling": "9 ft clear ceiling",
+      "entrance_width_m": 1.829,
+      "us_entrance_width": "6 ft 0 in double doors",
+      "entrance_height_m": 2.438,
+      "us_entrance_height": "8 ft 0 in, grand commercial entrances (also openings between corridors)",
+      "double_height_m": 2.134,
+      "us_double_height": "7 ft 0 in commercial double doors",
+      "residential_interior_width_m": [
+        0.762,
+        0.813
+      ],
+      "us_residential_interior_width": "2 ft 6 in to 2 ft 8 in (homes; not used yet)",
+      "slab_thickness_m": {
+        "residential": 0.035,
+        "commercial": 0.044
+      },
+      "us_slab_thickness": "1-3/8 in homes, 1-3/4 in commercial",
+      "rough_opening_add_m": {
+        "width": 0.05,
+        "height": 0.064
+      },
+      "us_rough_opening_add": "2 in wider and 2-1/2 in taller than the door, for jambs and shims"
+    },
+    "windows": {
+      "sill_m": 0.914,
+      "us_sill": "3 ft 0 in above the floor (standard 30-36 in)",
+      "head_m": 2.134,
+      "us_head": "7 ft 0 in above the floor, in line with the tops of doors",
+      "pane_width_m": 1.2,
+      "us_pane_width": "3 ft 11 in",
+      "pane_step_m": 1.8,
+      "us_pane_step": "5 ft 11 in centre to centre",
+      "curtain_wall_grid_m": 1.5,
+      "us_curtain_wall_grid": "5 ft (high-rise glass walls; not used yet)",
+      "egress_sill_max_m": 1.118,
+      "us_egress_sill_max": "44 in highest sill for a bedroom escape window",
+      "egress_open_min_m2": 0.53,
+      "us_egress_open_min": "5.7 sq ft clear opening for a bedroom escape window"
+    },
+    "stairs": {
+      "riser_max_m": 0.178,
+      "us_riser_max": "7 in (all risers in a flight within 3/8 in of each other)",
+      "tread_m": 0.279,
+      "us_tread": "11 in, nosing to nosing",
+      "flight_width_m": 1.2,
+      "us_flight_width": "3 ft 11 in",
+      "flight_width_min_m": 1.118,
+      "us_flight_width_min": "44 in, the commercial egress minimum (36 in in homes, 60 in for big crowds)",
+      "landing_m": 1.5,
+      "us_landing": "4 ft 11 in",
+      "riser_min_m": 0.102,
+      "us_riser_min": "4 in",
+      "flight_rise_max_m": 3.658,
+      "us_flight_rise_max": "12 ft highest climb between landings",
+      "headroom_m": 2.032,
+      "us_headroom": "6 ft 8 in clear above the stair nosings",
+      "handrail_height_m": [
+        0.864,
+        0.965
+      ],
+      "us_handrail_height": "34-38 in above the nosings, running 12 in past the top and bottom (not built yet)",
+      "guardrail_height_m": 1.067,
+      "us_guardrail_height": "42 in on commercial landings, balconies and roofs (36 in in homes), gaps under 4 in (not built yet)"
+    },
+    "parapet_m": [
+      0.9,
+      1.2
+    ],
+    "us_parapet": "3-4 ft wall round a flat roof (not built yet)",
+    "plinth_m": [
+      0.15,
+      0.3
+    ],
+    "us_plinth": "6-12 in concrete or stone base where walls meet the ground (not built yet)",
+    "downspout_spacing_m": [
+      12,
+      15
+    ],
+    "us_downspout_spacing": "40-50 ft (not built yet)",
+    "walls": {
+      "partition_m": 0.124,
+      "us_partition": "4-7/8 in (2x4 studs and two layers of 5/8 in drywall)",
+      "partition_rated_m": 0.171,
+      "us_partition_rated": "6-3/4 in for sound or fire walls (not used yet)",
+      "exterior_m": 0.305,
+      "us_exterior": "12 in (range 6-3/4 to 12 in with insulation and cladding)",
+      "core_m": 0.25,
+      "us_core": "10 in stair and lift core walls (concrete)",
+      "stud_spacing_m": [
+        0.406,
+        0.61
+      ],
+      "us_stud_spacing": "16 or 24 in on centre"
+    },
+    "structure": {
+      "column_grid_m": [
+        [
+          6.0,
+          6.0
+        ],
+        [
+          9.0,
+          12.0
+        ]
+      ],
+      "us_column_grid": "20 x 20 ft to 30 x 40 ft steel grid (not used yet)",
+      "slab_on_grade_m": [
+        0.1,
+        0.15
+      ],
+      "us_slab_on_grade": "4-6 in on 4 in of gravel",
+      "elevated_floor_depth_m": [
+        0.45,
+        0.915
+      ],
+      "us_elevated_floor_depth": "18-36 in total: concrete on metal deck, steel joists and the services space"
+    },
+    "ramps": {
+      "slope_max": 0.08333333333333333,
+      "us_slope_max": "1 in 12 (8.33%)",
+      "rise_per_run_max_m": 0.762,
+      "us_rise_per_run_max": "30 in, then a level 5 x 5 ft (1.52 x 1.52 m) landing"
+    },
+    "millwork": {
+      "base_cabinet_m": {
+        "depth": 0.61,
+        "height": 0.876
+      },
+      "counter_height_m": 0.914,
+      "us_counter": "24 in deep base cabinets, 36 in counters",
+      "wall_cabinet_m": {
+        "depth": 0.305,
+        "bottom_above_floor": 1.372
+      },
+      "us_wall_cabinet": "12 in deep, 18 in above the counter (54 in above the floor)"
+    }
+  },
+  "streets": {
+    "traffic_lane_m": [
+      3.5,
+      3.7
+    ],
+    "us_traffic_lane": "11.5-12 ft (10 ft on tight residential streets)",
+    "parking_lane_m": [
+      2.4,
+      2.7
+    ],
+    "us_parking_lane": "8-9 ft",
+    "bike_lane_m": [
+      1.5,
+      1.8
+    ],
+    "us_bike_lane": "5-6 ft, plus a 2 ft (0.6 m) buffer beside traffic",
+    "sidewalk_residential_m": [
+      1.5,
+      2.0
+    ],
+    "us_sidewalk_residential": "5-6.5 ft",
+    "sidewalk_commercial_m": [
+      3.0,
+      6.0
+    ],
+    "us_sidewalk_commercial": "10-20 ft",
+    "curb_height_m": 0.15,
+    "us_curb_height": "6 in, flush at crosswalk ramps",
+    "crosswalk_width_m": [
+      3.0,
+      4.5
+    ],
+    "us_crosswalk_width": "10-15 ft, set back 4 ft (1.2 m) from the stop line",
+    "corner_radius_m": [
+      4.5,
+      9.0
+    ],
+    "us_corner_radius": "15-30 ft",
+    "crown_grade": 0.02,
+    "us_crown_grade": "2% fall from the centre line to the curbs",
+    "storm_drain_spacing_m": [
+      30,
+      50
+    ],
+    "us_storm_drain_spacing": "100-160 ft"
+  },
+  "blocks": {
+    "width_m": [
+      80,
+      120
+    ],
+    "us_width": "260-400 ft",
+    "length_m": [
+      150,
+      250
+    ],
+    "us_length": "500-800 ft",
+    "alley_width_m": [
+      4.5,
+      6.0
+    ],
+    "us_alley_width": "15-20 ft, through commercial blocks",
+    "tower_step_back_m": [
+      3,
+      6
+    ],
+    "us_tower_step_back": "10-20 ft above a 3-5 storey podium",
+    "zero_lot_line": "downtown shops sit right at the back of the sidewalk"
+  },
+  "street_furniture": {
+    "curb_zone_m": [
+      0.6,
+      1.2
+    ],
+    "us_curb_zone": "2-4 ft strip by the street",
+    "streetlight_spacing_m": [
+      25,
+      35
+    ],
+    "us_streetlight_spacing": "80-115 ft",
+    "streetlight_height_m": [
+      7.5,
+      9.0
+    ],
+    "us_streetlight_height": "25-30 ft on avenues; 12-15 ft (3.5-4.5 m) for walkways",
+    "traffic_signal_clearance_m": [
+      5.2,
+      5.8
+    ],
+    "us_traffic_signal_clearance": "17-19 ft",
+    "hydrant_setback_m": 0.6,
+    "us_hydrant_setback": "2 ft back from the curb",
+    "hydrant_spacing_m": [
+      90,
+      150
+    ],
+    "us_hydrant_spacing": "300-500 ft, and near crossings",
+    "manhole_diameter_m": [
+      0.6,
+      0.8
+    ],
+    "us_manhole_diameter": "24-30 in, never across a curb",
+    "bollard_height_m": [
+      0.9,
+      1.1
+    ],
+    "us_bollard_height": "3-3.5 ft",
+    "bollard_spacing_m": [
+      1.2,
+      1.5
+    ],
+    "us_bollard_spacing": "4-5 ft apart"
+  },
+  "materials": {
+    "load_bearing": "heavy materials (stone, brick, concrete) at the base, lighter (glass, metal panels, stucco) higher up; a visible lintel, beam or column over every opening",
+    "facade_grid_m": [
+      3.0,
+      4.5
+    ],
+    "us_facade_grid": "10 or 15 ft modules, so walls and windows meet cleanly"
+  },
+  "decks": {
+    "between_decks": "No stairs between decks: they would be far too big. People and vehicles go deck to deck only by fast elevators and teleport pads. Stairs are only inside buildings, between a building's own floors.",
+    "stairs_between_decks": false,
+    "ways_between_decks": [
+      "fast elevators",
+      "teleport pads"
+    ],
+    "spine_atrium": "Every deck has an Atrium and the Spine Atrium at its centre (the open shaft through the decks). Deck-to-deck transport for people and ships, by teleporter or elevator, is in the Spine Atrium.",
+    "deck_to_deck_transport_in": "Spine Atrium"
+  },
+  "civil": {
+    "right_of_way_m": {
+      "local": [
+        15.2,
+        18.3
+      ],
+      "collector": [
+        24.4,
+        30.5
+      ],
+      "arterial": [
+        36.6,
+        45.7
+      ]
+    },
+    "us_right_of_way": "local streets 50-60 ft (two 10-11 ft lanes, 8 ft parking, 5 ft sidewalks); avenues 80-100 ft (four 11-12 ft lanes, centre turn lane or median, bike lanes, 8-12 ft sidewalks); boulevards 120-150 ft (six 12 ft lanes, 16-24 ft median, loading, 12-20 ft plazas)",
+    "sidewalk_cross_slope_max": 0.02,
+    "us_sidewalk_cross_slope_max": "2% (1:48) toward the street",
+    "gutter_pan_m": [
+      0.457,
+      0.61
+    ],
+    "us_gutter_pan": "18-24 in",
+    "curb_return_radius_m": {
+      "residential": [
+        4.6,
+        6.1
+      ],
+      "truck_bus": [
+        7.6,
+        10.7
+      ]
+    },
+    "us_curb_return_radius": "15-20 ft at homes, 25-35 ft on truck and bus routes",
+    "catch_basin_spacing_m": [
+      45,
+      90
+    ],
+    "us_catch_basin_spacing": "150-300 ft",
+    "utility_depth_m": {
+      "sanitary_sewer": [
+        1.8,
+        3.7
+      ],
+      "storm_drain": [
+        1.2,
+        2.4
+      ],
+      "water_main": [
+        0.9,
+        1.5
+      ],
+      "power_telecom": [
+        0.61,
+        0.914
+      ]
+    },
+    "us_utility_depth": "sewer 6-12 ft (0.5-1% fall), storm drain 4-8 ft, water 3-5 ft, power and telecom ducts 24-36 in"
+  },
+  "drafting": {
+    "scales": {
+      "site": "1 in = 20 or 40 ft (1:200, 1:500)",
+      "plans": "1/4 in = 1 ft (1:50), large buildings 1/8 in = 1 ft (1:100)",
+      "sections_stairs": "1/2 or 3/4 in = 1 ft (1:20)",
+      "joinery": "1-1/2 or 3 in = 1 ft (1:10, 1:5)"
+    },
+    "sheets": {
+      "ARCH_D_mm": [
+        610,
+        914
+      ],
+      "ARCH_E1_mm": [
+        762,
+        1067
+      ]
+    },
+    "sheet_order": [
+      "G general",
+      "C civil",
+      "A architectural",
+      "S structural",
+      "M mechanical",
+      "E electrical",
+      "P plumbing"
+    ],
+    "note": "Dimension to structural grid lines and rough openings, not paint."
+  }
+}

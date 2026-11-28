@@ -31,6 +31,10 @@ Revision B (C1) reshaped only the prow and stern side profile; the overall 34.0 
 | 7 Claustra | 1,247 ft (380 m) | 2,231 ft (680 m) | 3,478 ft (1,060 m) |
 | 8 Ferrum | 1,247 ft (380 m) | 787 ft (240 m) | 2,034 ft (620 m) |
 
+No stairs between decks (Jordan, 28 Nov 2026): they would be far too big. People and vehicles go from deck to deck only by fast elevators and teleport pads. Stairs are only inside buildings, between a building's own floors.
+
+Every deck has an Atrium and the Spine Atrium at its centre (Jordan, 28 Nov 2026). Deck-to-deck transport for people and ships, by teleporter or elevator, is in the Spine Atrium.
+
 Elevations are above the keel. A 197 ft (60 m) crew-only service layer sits under each deck, so each deck takes 1,444 ft (440 m) of hull height (Aerion 2,165 ft / 660 m). Sources: `Tools/InvictaGraybox/invicta_geometry.py` (`DECKS`), `05_World_and_Content.md` (service layers), Sheet S0.
 
 ## 3. Deck 5 — Aerion
