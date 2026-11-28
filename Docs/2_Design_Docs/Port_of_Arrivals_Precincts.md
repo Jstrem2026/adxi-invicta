@@ -39,6 +39,8 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Service Shaft 1 | 328 × 1,476 ft (100 × 450 m) | Access to the 60 m service layer (bow shaft) | D5F3P2B2A3 |
 | Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) | D5F3P2B5A3 |
 | Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks | D5F3P2B3A6 |
+| Arrivals Crew Airlocks | 5 airlocks, each 33 × 26 ft (10 × 8 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: one per pressure zone; outer door 6 x 7 ft (1.83 x 2.13 m), the standard double door | D5F3P2B1A6 |
+| Port Security Command | 820 × 656 ft (250 × 200 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: one command room for every hull door of the port | D5F3P2B5A4 |
 
 **Crew Lodge (P2-19) architecture, proposed 26 Nov 2026, canon 28 Nov 2026:** height 125 ft (38 m) at the tower tops and 79 ft (24 m) for the main block. Floors: Level −1 below deck, Levels 1–3 in the main block, Levels 4–5 in the towers. Capacity: 640 cabins (480 standard + 160 tower quarters), rated for 1,280 crew on rotating shifts. Entrances: Prow Entrance; Starboard Service Access; none on the stern side. Structure: steel frame on a 39 × 39 ft (12 × 12 m) grid, composite slabs, bearing on the deck plating. Main block (Levels 1–3) covers the full footprint at 26 ft (8 m) floor to floor. Four corner towers, each about 262 × 197 ft (80 × 60 m), add Levels 4–5 at 23 ft (7 m) to 125 ft (38 m). Stair and lift cores about every 328 ft (100 m), plus one core per tower from Level −1 to the roof. Level −1, the Crew Undercroft, is 20 ft (6 m) deep in the top of the 197 ft (60 m) service layer, clear of the gravity plates, with plant, laundry, stores and a crew-only tunnel door into the service-layer tunnels. Sits wholly within one pressure zone (F45–F46). Look, services and interior are not designed yet.
 
@@ -190,22 +192,31 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 ![P1 Bow Docks](art/blueprints/precincts/p1-bow-docks.png)
 
-11,743 × 4,341 ft (3.58 × 1.32 km). Flank berths for civilian and private ships (04 §7.3). Medium berths M1–M15 along the straight hull; a 25-bay skiff marina steps along the hull where it tapers forward of F36.
+11,743 × 4,341 ft (3.58 × 1.32 km). Flank berths for civilian and private ships (04 §7.3). Medium berths M1–M15 along the straight hull; at the bow end (F34 to F36), the Freight Gate's three cargo berths step along the tapering hull, and a 25-slip skiff marina sits inland behind its own Skiff Lock (proposed, Jordan, 28 Nov 2026).
 
 | Item | Size | Notes | Code |
 |---|---|---|---|
-| Harbourmaster | 1,476 × 1,148 ft (450 × 350 m) | berth assignment · dock control | D5F3P1B4A1 |
-| Bow Docks Fire Station | 1,312 × 984 ft (400 × 300 m) | crash-fire-rescue | D5F3P1B4A2 |
-| Bow Docks Chandlery | 1,476 × 1,148 ft (450 × 350 m) | ship parts · supplies | D5F3P1B5A1 |
-| Bow Docks Police Post | 1,312 × 820 ft (400 × 250 m) | dock security | D5F3P1B5A2 |
-| Repair Yard | 2,953 × 1,837 ft (900 × 560 m) | dry bays for small ship repairs | D5F3P1B5A3 |
-| Bow Docks Fuel Depot | 2,953 × 1,083 ft (900 × 330 m) | bunkering for berths | D5F3P1B4A3 |
-| Pilot Lounge | 1,804 × 591 ft (550 × 180 m) | crew rest · canteen | D5F3P1B4A4 |
-| Bow Docks Utility Plant | 492 × 591 ft (150 × 180 m) |  | D5F3P1B4A5 |
-| Bow Docks Service Shaft | 394 × 591 ft (120 × 180 m) |  | D5F3P1B4A6 |
-| Marina Park | 3,445 × 1,575 ft (1050 × 480 m) | pocket park · 125 acres | D5F3P1B2A1 |
-| Medium Berths | 15 bays, each 394 × 262 ft (120 × 80 m) |  | D5F3P1B1A1 |
-| Skiff Marina | 25 bays, each 131 × 131 ft (40 × 40 m) |  | D5F3P1B1A2 |
+| Harbourmaster | 1,476 × 1,148 ft (450 × 350 m) | berth assignment · dock control | D5F3P1B6A1 |
+| Bow Docks Fire Station | 1,312 × 984 ft (400 × 300 m) | crash-fire-rescue | D5F3P1B6A2 |
+| Bow Docks Chandlery | 1,476 × 1,148 ft (450 × 350 m) | ship parts · supplies | D5F3P1B8A1 |
+| Bow Docks Police Post | 1,312 × 820 ft (400 × 250 m) | dock security | D5F3P1B12A1 |
+| Repair Yard | 2,953 × 1,837 ft (900 × 560 m) | dry bays for small ship repairs | D5F3P1B10A1 |
+| Bow Docks Fuel Depot | 2,953 × 1,083 ft (900 × 330 m) | bunkering for berths | D5F3P1B7A1 |
+| Pilot Lounge | 1,804 × 591 ft (550 × 180 m) | crew rest · canteen | D5F3P1B7A2 |
+| Bow Docks Utility Plant | 492 × 591 ft (150 × 180 m) |  | D5F3P1B7A3 |
+| Bow Docks Service Shaft | 394 × 591 ft (120 × 180 m) |  | D5F3P1B7A4 |
+| Marina Park | 3,445 × 1,575 ft (1050 × 480 m) | pocket park · 125 acres | D5F3P1B3A1 |
+| Medium Berths | 15 bays, each 394 × 262 ft (120 × 80 m) |  | D5F3P1B4A1 |
+| Skiff Marina | 25 slips, each 131 × 131 ft (40 × 40 m) | **Proposed** · moved inland 28 Nov 2026 (Jordan chose an inland basin behind the Skiff Lock) to make room for the Freight Gate | D5F3P1B4A2 |
+| Bow Guard Berth | 1 bay, 394 × 262 ft (120 × 80 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: military and government door at the bow end of the port's hull front | D5F3P1B9A2 |
+| Port Guard Station | 820 × 656 ft (250 × 200 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: beside the Bow Guard Berth | D5F3P1B4A3 |
+| Bow Docks Crew Airlocks | 5 airlocks, each 33 × 26 ft (10 × 8 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: one per pressure zone; outer door 6 x 7 ft (1.83 x 2.13 m), the standard double door | D5F3P1B4A4 |
+| Bow Docks Border Post | 984 × 656 ft (300 × 200 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: border clearance for 11 hull doors more than 1.24 mi (2.00 km) from one | D5F3P1B3A3 |
+| Bow Docks First Aid Post | 492 × 328 ft (150 × 100 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: 3 hull doors were more than 1.55 mi (2.50 km) from medical | D5F3P1B3A4 |
+| Freight Gate | 3 berths, each 1,312 × 492 ft (400 × 150 m) | **Proposed** · Jordan, 28 Nov 2026: the Port's freight gate at F34 to F36, 919 ft (280 m) hull doors; cargo goes on to Deck 8 by the Cargo Teleport Hall (P4) | D5F3P1B1A1 |
+| Freight Apron | 3 aprons behind the cargo berths | **Proposed** · where freight is unloaded and staged | D5F3P1B1A2 |
+| Freight Road | 131 ft (40 m) wide | **Proposed** · trucks between the Freight Apron and the Freight precinct | D5F3P1B3A2 |
+| Skiff Lock | 131 ft (40 m) wide | **Proposed** · one lock in the hull beside Medium Berth 1; skiffs taxi up its channel to the Skiff Marina basin | D5F3P1B4A7 |
 
 <!-- designs P1 start -->
 
@@ -249,6 +260,8 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Frigate Berths | 5 bays, each 1,312 × 492 ft (400 × 150 m) |  | D5F3P3B6A2 |
 | Yard Locks | 1,969 × 492 ft (600 × 150 m) |  | D5F3P3B1A2 |
 | Yard Taxiway | 853 × 3,675 ft (260 × 1120 m) |  | D5F3P3 |
+| Stern Guard Berth | 1 bay, 394 × 262 ft (120 × 80 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: military and government door at the stern end of the port's hull front | D5F3P3B14A2 |
+| Stern Docks Crew Airlocks | 10 airlocks, each 33 × 26 ft (10 × 8 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: one per pressure zone; outer door 6 x 7 ft (1.83 x 2.13 m), the standard double door | D5F3P3B1A3 |
 
 <!-- designs P3 start -->
 
@@ -262,7 +275,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 - **Stern Docks Fuel Depot** (D5F3P3B5A1): 59 ft (18 m) tall, 2 above deck. Nine welded steel tanks on ring foundations in a concrete spill wall; blast-rated pump and control house. A three-by-three grid of bunker tanks inside a spill wall, with the pump and control house and truck bay on the stern side. Capacity 9 tanks of about 15,000 m³: 135,000 m³ (about 36 million US gallons) of ship fuel..
 - **Frigate Service Yard** (D5F3P3B7A1): 138 ft (42 m) tall, 6 above deck. One clear-span steel shed, 42 m (138 ft) high and 300 m (984 ft) deep, with two 200-tonne gantry cranes running out over the crane yard. A single frigate dock under one great shed, an open crane yard beside it, and a heavy-shops row with engine overhaul, hull plate, armour and shield, and pipe and power shops, with canteen, drawing office and training rooms above. Capacity 1 frigate under cover and 1 in the crane yard; about 1,200 workers per shift..
 - **Company Berth Offices** (D5F3P3B8A1): 141 ft (43 m) tall, 10 above deck. Concrete podium with three steel-framed office towers stepping down from 10 to 6 storeys. A two-storey podium with a central arcade: shared reception, berth leasing hall, bank, insurers and brokers, restaurants and shops, and a conference centre, members' club and gym upstairs. Three office towers above for the shipping companies that lease the frigate berths. Capacity About 2,400 office staff for about 40 shipping companies..
-- **Stern Harbourmaster** (D5F3P3B12A1): 167 ft (51 m) tall, 12 above deck. Concrete frame on an 8 m grid; a slipformed concrete tower with a steel and glass cab. A long building along the docks with entrance hall, booking counters, frigate berth office and pilot assignment on the ground floor, the berth control room, traffic planning and Yard Locks control on level 2, and offices on top; a pilots' wing with ready room, mess and rest rooms; the stern tower with radar floors and the control cab. Capacity About 600 staff; the control cab holds 12 berth and lock controllers..
+- **Stern Harbourmaster** (D5F3P3B12A1): 167 ft (51 m) tall, 12 above deck. Concrete frame on an 8 m grid; a slipformed concrete tower with a steel and glass cab. A long building along the docks with entrance hall, booking counters, frigate berth office and pilot assignment on the ground floor, the berth control room, traffic planning and Yard Locks control on level 2, and offices on top; a pilots' wing with ready room, mess and rest rooms; the stern tower with radar floors and the control cab. Capacity About 600 staff; the control cab holds 12 berth and lock controllers.. **Proposed addition (city planner, 28 Nov 2026, Jordan chose "put them in existing buildings"):** at the stern end, beside the tower, a fire appliance bay with two bays and a two-storey crew block, and a border post with passport desks, customs counters, a health check room, interview rooms and a holding room, so every far berth is within 1 mile (1.6 km) of fire and rescue and 1.24 mi (2 km) of border clearance.
 - **Stern Docks Utility Plant** (D5F3P3B15A1): 46 ft (14 m) tall, 2 above deck. Concrete plant floors with blast walls between transformers; steel roof over the plant hall. A substation with six transformer bays, a three-bay plant hall for chillers, air handling and water pumps, and a water tank behind. Capacity Power, cooling and water for the Stern Docks; about 30 staff per shift..
 - **Stern Docks Service Shaft** (D5F3P3B15A2): 43 ft (13 m) tall, 2 above deck, 1 below. Concrete shaft walls down to the 60 m (197 ft) service layer; steel head house with crane rails. A control house with shaft control and fans, and a shaft hall with a heavy vehicle lift, a goods lift and a vehicle lift down to the service layer. Capacity Two vehicle lifts (one for heavy loads) and one goods lift..
 - **Stern Docks Crew Rest** (D5F3P3B15A3): 71 ft (21.5 m) tall, 6 above deck. Cross-laminated timber on a concrete ground floor, six storeys. A ring of four wings round a courtyard garden. Ground floor: reception, canteen, lounge, gym, laundry and kitchen in the long wings and rest rooms in the short ones; rest rooms on every floor above. Capacity About 2,200 beds in two-bed rest rooms for corvette and frigate crews..
@@ -293,6 +306,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Forwarders | 2,953 × 1,476 ft (900 × 450 m) | freight offices | D5F3P4B8A1 |
 | Vehicle Workshop | 2,953 × 2,297 ft (900 × 700 m) | maintenance | D5F3P4B8A2 |
 | Container Yard | 2,953 × 2,559 ft (900 × 780 m) | on the Keelway siding | D5F3P4B8A3 |
+| Cargo Teleport Hall | 984 × 656 ft (300 × 200 m) | **Proposed** · Jordan, 28 Nov 2026: cargo-only teleport pads straight to Deck 8 (an exception to deck-to-deck travel only in the Spine Atrium); no people | D5F3P4B6A4 |
 
 <!-- designs P4 start -->
 
@@ -345,6 +359,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Shuttle Yards Training Centre | 919 × 1,640 ft (280 × 500 m) | pilot and ground-crew training · simulators | D5F3P8B3A1 |
 | Engine Test Hall | 919 × 2,526 ft (280 × 770 m) | engine runs and test cells | D5F3P8B4A1 |
 | Yard Stores | 919 × 2,067 ft (280 × 630 m) | spares and consumables for the yards | D5F3P8B5A1 |
+| Stern Docks First Aid Post | 492 × 328 ft (150 × 100 m) | **Proposed** by the city planner · Planner, 28 Nov 2026: 7 hull doors were more than 1.55 mi (2.50 km) from medical | D5F3P8B15A4 |
 
 <!-- designs P8 start -->
 
@@ -399,6 +414,8 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P2-21 Service Shaft 1**: A lift shaft down to the service layer under the deck at the bow end of the precinct. Maintenance crews and goods move up and down here without using the streets.
 - **P2-23 Service Shaft 2**: The stern-end shaft to the service layer under the precinct. Its vehicle and goods lifts let crews bring heavy equipment up to Arrivals and take waste down.
 - **P2-22 Bow Garden / Stern Garden**: Two parks either side of the boulevard where travellers can sit in green space after their flight, wait for friends, or take a first walk before heading on.
+- **P2-24 Arrivals Crew Airlocks**: Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
+- **P2-25 Port Security Command**: The one room that watches every hull door of the port. It sees every gate, berth, lock and airlock, can lock them all down at once, runs the port guard and works with Customs & Border Hq, the harbourmasters and Gate Operations.
 
 ### P5 Terminals
 
@@ -464,7 +481,16 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-09 Bow Docks Service Shaft**: The bow docks' shaft down to the service layer, used for vehicles and goods.
 - **P1-10 Marina Park**: A small park beside the bow docks where dock workers and visiting crews can take a break outdoors.
 - **P1-11 Medium Berths**: Berths for medium-sized civilian and private ships along the bow flank of the port.
-- **P1-12 Skiff Marina**: A marina for small skiffs and private craft at the bow docks.
+- **P1-12 Skiff Marina**: A marina for small skiffs and private craft at the bow docks, in a basin just inland of the hull. Skiffs come in through the Skiff Lock and taxi up its channel to their slips.
+- **P1-13 Bow Guard Berth**: A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
+- **P1-14 Port Guard Station**: Home of the port guard, the armed security force for the hull doors. Guard crews for the cutters, a ready room, an armoury and a holding area sit beside the guard berths, so the guard can close and hold any door in minutes.
+- **P1-15 Bow Docks Crew Airlocks**: Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
+- **P1-16 Freight Gate**: The port's gate for cargo ships. Freighters berth here with their own doors in the hull, unload onto the freight apron, and their cargo goes by the Freight Road to Cargo Customs, the bonded warehouses and the Cargo Teleport Hall for Deck 8.
+- **P1-17 Freight Apron**: Open apron behind the cargo berths where containers and loads come off the freighters onto trucks and tugs.
+- **P1-18 Freight Road**: The road from the freight apron to Dock Road, so cargo trucks reach Freight and Cargo Customs without crossing the docks.
+- **P1-19 Skiff Lock**: The skiffs' own way in and out of the ship: a 131 ft (40 m) lock in the hull and a short channel up to the Skiff Marina basin, between the Freight Gate and the Medium Berths.
+- **P1-20 Bow Docks Border Post**: A border post beside the docks. Crews and passengers of ships berthed here show their passports, declare goods and are health-checked before they walk into the port, and departing crews are checked out here.
+- **P1-21 Bow Docks First Aid Post**: A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
 
 ### P3 Stern Docks
 
@@ -486,6 +512,8 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P3-16 Frigate Berths**: Berths for frigates, the largest civilian ships the stern docks take.
 - **P3-17 Yard Locks**: Locks where ships pass between the berths and the repair yards.
 - **P3-18 Yard Taxiway**: The taxiway that ships use to move between the berths and the yards.
+- **P3-19 Stern Guard Berth**: A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
+- **P3-20 Stern Docks Crew Airlocks**: Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
 
 ### P4 Freight
 
@@ -505,6 +533,7 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P4-14 Forwarders**: Offices for freight forwarding firms that book and arrange cargo shipments through the port.
 - **P4-15 Vehicle Workshop**: A workshop where the port's trucks, pods and service vehicles are maintained and repaired.
 - **P4-16 Container Yard**: A container yard beside the Keelway freight siding, where containers are stacked and loaded on and off trains.
+- **P4-17 Cargo Teleport Hall**: Cargo teleport pads that send freight straight down to Deck 8, landing near the Deep Holds, and bring ore, parts and stores back up. Cargo only, never people. Loads arrive from the Freight Gate, bonded warehouses and Cargo Customs.
 
 ### P8 Shuttle Yards
 
@@ -528,5 +557,6 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P8-18 Shuttle Yards Training Centre**: A training centre for shuttle pilots and ground crews, with simulators and classrooms.
 - **P8-19 Engine Test Hall**: A hall with test cells where repaired engines are run and checked before going back into a craft.
 - **P8-20 Yard Stores**: The stores building that keeps the yards supplied with spares and consumables.
+- **P8-21 Stern Docks First Aid Post**: A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
 
 <!-- purposes:end -->

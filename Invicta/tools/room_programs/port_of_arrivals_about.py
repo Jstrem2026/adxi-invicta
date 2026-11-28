@@ -858,4 +858,12 @@ ABOUT = {
     "Tower stairs & lifts": "Stairs and lifts up the tower; also the protected escape route in a fire.",
     "Quiet lounge": "A quiet lounge away from the crowds.",
     "Showers and lockers": "Showers and lockers for staff.",
+    # ---- P3 Stern Harbourmaster: fire post and border post (city planner, 28 Nov 2026)
+    "Fire appliance bay": "A drive-through bay for a crash-fire-rescue appliance, ready to roll out onto the docks.",
+    "Crew room and kitchen": "Where the fire crew on watch eat, rest and wait for a call.",
+    "Fire post office": "The office of the officer in charge of the fire post.",
+    "Passport desks": "Officers check the passports of crews and passengers from the far berths here.",
+    "Customs counters": "Crews and passengers declare goods and pay duties here.",
+    "Health check room": "A quick health check for arrivals before they walk into the port.",
+    "Holding room": "A secure room where a person can be held until the border police arrive.",
 }

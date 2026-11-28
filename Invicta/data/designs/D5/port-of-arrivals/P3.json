@@ -1585,6 +1585,100 @@
           }
         },
         {
+          "name": "Fire bay",
+          "x": 685,
+          "y": 50,
+          "w": 60,
+          "d": 40,
+          "levels": [
+            "L1"
+          ],
+          "layout": "bays",
+          "bays": 2,
+          "bay_name": "Fire appliance bay"
+        },
+        {
+          "name": "Fire crew block",
+          "x": 685,
+          "y": 95,
+          "w": 60,
+          "d": 40,
+          "levels": [
+            "L1",
+            "L2"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Watch room",
+                150
+              ],
+              [
+                "Crew room and kitchen",
+                400
+              ],
+              [
+                "Lockers and showers",
+                "rest"
+              ]
+            ],
+            "L2": [
+              [
+                "Bunk rooms",
+                20,
+                8
+              ],
+              [
+                "Fire post office",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Border post",
+          "x": 685,
+          "y": 145,
+          "w": 60,
+          "d": 110,
+          "levels": [
+            "L1"
+          ],
+          "corridor": 4,
+          "cores": 1,
+          "rooms": {
+            "L1": [
+              [
+                "Passport desks",
+                1500
+              ],
+              [
+                "Customs counters",
+                800
+              ],
+              [
+                "Health check room",
+                300
+              ],
+              [
+                "Interview rooms",
+                40,
+                3
+              ],
+              [
+                "Holding room",
+                60
+              ],
+              [
+                "Toilets",
+                "rest"
+              ]
+            ]
+          }
+        },
+        {
           "name": "Pilots' wing",
           "x": 60,
           "y": 98,
@@ -1658,8 +1752,8 @@
       "look": "A long, low three-storey building of pale stone and dark glass running along the docks, ending in a 167 ft (51 m) tower at the stern end with a ringed glass cab; it mirrors the Bow Docks harbourmaster from the other end of the port.",
       "entrances": "Main entrance from the dockside promenade; staff entrance from the parking.",
       "capacity": "About 600 staff; the control cab holds 12 berth and lock controllers.",
-      "services": "5 stair and lift cores plus the tower core; berth radar and comms; backup power.",
-      "interior": "A long building along the docks with entrance hall, booking counters, frigate berth office and pilot assignment on the ground floor, the berth control room, traffic planning and Yard Locks control on level 2, and offices on top; a pilots' wing with ready room, mess and rest rooms; the stern tower with radar floors and the control cab."
+      "services": "5 stair and lift cores plus the tower core; berth radar and comms; backup power; a two-bay fire appliance bay with a crew on watch, and a border post with passport desks and customs counters for crews and passengers of the far berths (planner, 28 Nov 2026).",
+      "interior": "A long building along the docks with entrance hall, booking counters, frigate berth office and pilot assignment on the ground floor, the berth control room, traffic planning and Yard Locks control on level 2, and offices on top; a pilots' wing with ready room, mess and rest rooms; the stern tower with radar floors and the control cab. At the stern end, beside the tower: a fire appliance bay with two bays and a two-storey crew block, and a border post with passport desks, customs counters, a health check room, interview rooms and a holding room (added 28 Nov 2026 so every far berth is within reach of fire and border clearance)."
     },
     {
       "id": "P3-12",

@@ -122,6 +122,28 @@ Street A) when it has no real name yet.
 
 `{"name": "Terminal Road", "width_m": 40.0, "rect_km": [x0, x1, y0, y1]}`
 
+## `city_programs.json`: what each district needs (city planner)
+
+Jordan, 28 Nov 2026: every deck is a working city built around its purpose, and every building has a purpose and a
+place. `decks` holds each deck's purpose. `districts` holds a program per district (only the Port of Arrivals so far):
+
+| Field | Meaning |
+|---|---|
+| `purpose`, `source` | what the district is for, in Jordan's words |
+| `hull_precincts` | precincts on the hull front, where the hull doors are |
+| `door_classes` | kinds of hull door (`match` finds the items that carry them by name, `doors_km` are the doors), who opens them (`control`), and how many are needed (`min`; 0 = left for Jordan). Crew airlocks are checked one per 500 m frame (pressure zone) |
+| `response` | fire, police and medical: every hull door within `within_km` of a building of that `category` |
+| `clearance` | every hull door within `within_km` of a passport or immigration point |
+| `must_have` | things the district needs somewhere (matched in names, purposes and services) |
+| `per_precinct` | things every precinct needs (a utility plant, a service shaft) |
+| `fixes` | what the planner adds for each gap: names, sizes, categories and purposes |
+
+`python tools/city_planner.py D5-port-of-arrivals` prints the check; `--report` writes `Game/Docs/<District>_Planner.md` and its
+mirror; `--apply` adds the proposals to the district file and its design doc as `proposed` (each new item also gets
+`"planner": "city planner, 28 Nov 2026"`), after copying both to `Invicta/backups/`. It never moves, resizes or removes an
+existing item, never crosses a frame or lane line, keeps 100 ft (30 m) from buildings and streets, and never places an item
+where it would change how a precinct is cut into blocks, so existing block names and codes stay the same.
+
 ## `rules.json`: scanner rules
 
 - `revB_overrides`: district values changed by decided errata.

@@ -183,18 +183,27 @@ def berths(label, bay, n, what, h_extra=0.0):
 
 
 def skiff_marina():
-    slips = [("Slip %d" % (i + 1), "A 131 ft (40 m) square slip for one skiff or private craft.",
-              (i * 50 / 1240, 0.0, 40 / 1240, 1.0)) for i in range(25)]
+    """Moved inland 28 Nov 2026 (Jordan chose an inland basin behind a skiff lock): a 820 x 1,050 ft (250 x 320 m)
+    basin of five rows of five slips, reached from the Skiff Lock's channel."""
+    def row(first):
+        return [("Slip %d" % (first + i), "A 131 ft (40 m) square slip for one skiff or private craft.",
+                 ((5 + i * 50) / 250, 0.01, 40 / 250, 0.98)) for i in range(5)]
     office = [{"size": (30, 12), "rooms": [("Marina office", 2, "Books slips and welcomes visiting skiffs."),
                                            ("Skiff fuel point", 1, "Fuel for small craft.")]}]
+    lane = "The lane skiffs taxi along between their slips and the Skiff Lock channel."
     return {"mode": "yard", "floors": [("Marina floor", 4.0, 1)], "height_extra": 0.0, "split": "across",
-            "zones": [("Skiff slips", 40, "The row of 25 slips where skiffs and private craft tie up.", [], slips),
-                      ("Taxi lane", 40, "The lane skiffs taxi along between the slips and the dock doors."),
-                      ("Skiff apron", 160, "Open apron where skiffs wait, are washed and are serviced."),
-                      ("Marina walk", 60, "A walkway along the marina, with the marina office and fuel point.", office)],
+            "zones": [("Skiff slips", 40, "A row of five slips where skiffs and private craft tie up.", [], row(1)),
+                      ("Taxi lane", 30, lane),
+                      ("Skiff slips", 40, "A row of five slips where skiffs and private craft tie up.", [], row(6)),
+                      ("Skiff slips", 40, "A row of five slips where skiffs and private craft tie up.", [], row(11)),
+                      ("Taxi lane", 30, lane),
+                      ("Skiff slips", 40, "A row of five slips where skiffs and private craft tie up.", [], row(16)),
+                      ("Skiff slips", 40, "A row of five slips where skiffs and private craft tie up.", [], row(21)),
+                      ("Taxi lane", 30, lane),
+                      ("Marina walk", 30, "A walkway along the marina, with the marina office and fuel point.", office)],
             "floors_text": "Open marina; one small office", "structure": "Reinforced deck with tie-down points.",
-            "look": "A floodlit marina of small craft in neat numbered slips, with a little lit office at the back.",
-            "entrances": "From space through the bow dock doors; walkway from the street.",
+            "look": "A floodlit basin of small craft in neat numbered slips, with a little lit office at the back.",
+            "entrances": "From space through the Skiff Lock and its channel; walkway from the street.",
             "capacity": "25 skiffs.", "services": "Power and water at every slip; a fuel point.", "m2_per_person": 4000}
 
 # ------------------------------------------------------------------ squares and parks
