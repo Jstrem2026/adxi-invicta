@@ -84,6 +84,12 @@ class Loader:
         side = self.outline(FIXED["hull_side_revB_csv"], "Rev B hull side profile")
         out["hull_side"] = side
         self.outline(FIXED["hull_side_csv"], "Canon hull side profile (Rev A)")
+        # Rev C concept hull (proposed 28 Nov 2026): traced from Jordan's six-view concept sheet,
+        # never smaller than the hull above, so the decks are unchanged.
+        out["hull_plan_concept"] = self.outline(FIXED["hull_plan_revC_csv"], "Rev C concept hull plan (top view)", required=False)
+        out["hull_side_concept"] = self.outline(FIXED["hull_side_revC_csv"], "Rev C concept hull side profile", required=False)
+        out["concept_sheet"] = FIXED["concept_sheet"]
+        out["revC_readme"] = FIXED["revC_readme"]
         ft = self.text(FIXED["frames_csv"], "Canon frame table F0-F68")
         if ft:
             try:

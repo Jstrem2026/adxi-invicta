@@ -18,6 +18,8 @@ The **Invicta is not the EX101.** The EX101 (4,000 × 1,504 × 708 m) is the web
 
 Revision B (C1) reshaped only the prow and stern side profile; the overall 34.0 × 12.4 × 4.1 km is unchanged.
 
+**Concept hull (Rev C, ⏳ proposed 28 Nov 2026, errata C9).** Jordan's six-view concept sheet (`art/concept/invicta-concept-six-views.png`) is traced into a new hull outline (`geometry_revC/`): pointed bow, armoured side pods, blunt stern with four engine nozzles, and dorsal fins toward the stern up to 3.20 mi (5.16 km) above the keel. Length, beam and hull height stay 21.13 × 7.71 × 2.55 mi (34.0 × 12.4 × 4.1 km). It is never smaller than the old hull, so every deck stays where it is.
+
 ## 2. Deck heights
 
 | Deck | Floor to ceiling (clear) | Floor | Ceiling |

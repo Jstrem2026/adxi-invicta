@@ -214,3 +214,8 @@ details.sect:not([open]) > summary h3::before { content: "▸ "; }
 .map-legend .lg-item:has(input:not(:checked)) { opacity: .5; }
 .list li > span:last-child { white-space: nowrap; text-align: right; flex: none; }
 .list li > span:first-child { min-width: 0; }
+
+/* ship page: hull shape picker and concept sheet (28 Nov 2026) */
+.hull-pick { display: flex; gap: 6px; margin: 4px 0 6px; flex-wrap: wrap; }
+.hull-pick button { padding: 5px 10px; font-size: 13px; }
+img.hull-concept { display: block; width: 100%; height: auto; margin: 8px 0 4px; border-radius: 6px; border: 1px solid #2b4563; }

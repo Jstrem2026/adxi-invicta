@@ -88,6 +88,7 @@ class Scan:
             if Hs and abs(H - Hs) > 0.05:
                 self.add("warning", "geometry", "Hull height differs from the side profile",
                          "Sheet S0 says %.1f km; the Rev B side profile is %.2f km tall." % (Hs, H), "ship", FIXED["hull_side_revB_csv"])
+        self.concept_hull_checks(s, dims)
         fr = s.get("frames")
         if fr is not None:
             if len(fr) != 69:
@@ -144,6 +145,38 @@ class Scan:
         return next((d for d in self.m["decks"] if d["n"] == n), None)
 
     # ------------------------------------------------------------------ decks
+    def concept_hull_checks(self, s, dims):
+        """Rev C concept hull (proposed 28 Nov 2026): same size as canon, and every deck still fits inside."""
+        plan, side = s.get("hull_plan_concept"), s.get("hull_side_concept")
+        if not plan or not side:
+            return
+        from shapely.geometry import Polygon, box
+        src_p, src_s = FIXED["hull_plan_revC_csv"], FIXED["hull_side_revC_csv"]
+        L = max(p[0] for p in plan) - min(p[0] for p in plan)
+        W = 2 * max(abs(p[1]) for p in plan)
+        H = max(p[1] for p in side) - min(p[1] for p in side)
+        for item, got, src in (("Length overall", L, src_p), ("Beam, maximum", W, src_p)):
+            want = P.num(dims.get(item))
+            if want and abs(got - want) > 0.05:
+                self.add("warning", "geometry", "Concept hull size differs from Sheet S0",
+                         "%s: Sheet S0 says %.1f km; the Rev C concept hull measures %.2f km." % (item, want, got), "ship", src)
+        if H > 5.6:
+            self.add("warning", "geometry", "Concept hull is taller than canon allows",
+                     "The Rev C side profile is %.2f km tall; Sheet S0 allows about 5.5 km with the Crown and stern fins." % H, "ship", src_s)
+        hp, hs = Polygon(plan).buffer(0), Polygon(side).buffer(0)
+        for d in self.m["decks"]:
+            go = d.get("outline_gross")
+            if go and not hp.buffer(1e-4).contains(Polygon(go).buffer(0)):
+                self.add("error", "geometry", "Deck sticks out of the concept hull (top view)",
+                         "Deck %d's outline is not wholly inside the Rev C concept hull plan." % d["n"], d["id"], src_p)
+            if go and d.get("floor_m") is not None and d.get("ceiling_m") is not None:
+                xs = [p[0] for p in go]
+                slab = box(min(xs), d["floor_m"] / 1000.0, max(xs), d["ceiling_m"] / 1000.0)
+                if not hs.buffer(1e-4).contains(slab):
+                    self.add("error", "geometry", "Deck sticks out of the concept hull (side view)",
+                             "Deck %d (%.2f to %.2f km above the keel) is not wholly inside the Rev C side profile." % (
+                                 d["n"], d["floor_m"] / 1000.0, d["ceiling_m"] / 1000.0), d["id"], src_s)
+
     def deck_checks(self):
         total_calc = 0
         for d in self.m["decks"]:

@@ -700,11 +700,21 @@ function layout(cr, map, panel) {
 const deckCrumb = d => [`Deck ${d.n} · ${d.name}`, `#/deck/${d.n}`];
 
 // ---- ship
+// Hull shape (Jordan, 28 Nov 2026): the ship page draws the Rev C concept hull traced from Jordan's six-view
+// concept sheet. It is never smaller than the canon hull, so the decks do not move. "Canon" shows the old shape.
+function shipHullMode() { try { return localStorage.getItem("adxi.hull") === "canon" ? "canon" : "concept"; } catch (e) { return "concept"; } }
+function setShipHull(m) { try { localStorage.setItem("adxi.hull", m); } catch (e) {} render(); }
 function shipView() {
   const s = D.model.ship, ex = 2.5;
-  const side = s.hull_side || [];
+  const hasConcept = !!(s.hull_plan_concept && s.hull_side_concept);
+  const useConcept = hasConcept && shipHullMode() === "concept";
+  const side = (useConcept ? s.hull_side_concept : s.hull_side) || [];
+  const otherSide = hasConcept ? (useConcept ? s.hull_side : s.hull_side_concept) : null;
+  const topZ = Math.max(4.1, ...side.map(p => p[1]));
   const SY = z => -z * 1000 * ex;
-  let g = `<path d="M${side.map(p => `${X(p[0])},${SY(p[1])}`).join("L")}Z" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>`;
+  const sidePath = pts => `M${pts.map(p => `${X(p[0])},${SY(p[1])}`).join("L")}Z`;
+  let g = `<path d="${sidePath(side)}" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>`;
+  if (otherSide) g += `<path pointer-events="none" d="${sidePath(otherSide)}" fill="none" stroke="#ffc266" stroke-opacity=".8" stroke-width="45" stroke-dasharray="320 220"/>`;
   for (const d of D.model.decks) {
     if (d.floor_m == null || !d.outline_gross) continue;
     const xs = d.outline_gross.map(p => p[0]);
@@ -714,15 +724,20 @@ function shipView() {
       <text x="${X((x0 + x1) / 2)}" y="${SY((d.floor_m + d.ceiling_m) / 2000)}" font-size="${Math.min(520, (d.ceiling_m - d.floor_m) * ex * 0.55)}" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-weight="700">${d.n} · ${esc(d.name.toUpperCase())}</text></g>`;
   }
   // top plan underneath
-  const plan = s.hull_plan || [];
+  const plan = (useConcept ? s.hull_plan_concept : s.hull_plan) || [];
+  const otherPlan = hasConcept ? (useConcept ? s.hull_plan : s.hull_plan_concept) : null;
   const off = 8200;
-  g += `<g transform="translate(0,${off})"><path d="${pathOf(plan)}" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>${D.model.decks.map(d => d.outline_net ? `<path class="hit" onclick="go('#/deck/${d.n}')" d="${pathOf(d.outline_net)}" fill="none" stroke="#6fd0ff" stroke-opacity=".35" stroke-width="18"/>` : "").join("")}
+  g += `<g transform="translate(0,${off})"><path d="${pathOf(plan)}" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>${otherPlan ? `<path pointer-events="none" d="${pathOf(otherPlan)}" fill="none" stroke="#ffc266" stroke-opacity=".8" stroke-width="45" stroke-dasharray="320 220"/>` : ""}${D.model.decks.map(d => d.outline_net ? `<path class="hit" onclick="go('#/deck/${d.n}')" d="${pathOf(d.outline_net)}" fill="none" stroke="#6fd0ff" stroke-opacity=".35" stroke-width="18"/>` : "").join("")}
     <text x="${X(17)}" y="${Y(-7.2)}" font-size="520" fill="#7fb0de" text-anchor="middle">TOP VIEW · hull plan with the 8 deck outlines</text></g>`;
-  g += `<text x="${X(17)}" y="${SY(4.1) - 700}" font-size="520" fill="#7fb0de" text-anchor="middle">SIDE VIEW · vertical scale ×${ex} · click a deck</text>`;
-  const vb = [-1000, SY(4.1) - 1500, 36000, 4100 * ex + 1500 + off + 7000];
+  g += `<text x="${X(17)}" y="${SY(topZ) - 700}" font-size="520" fill="#7fb0de" text-anchor="middle">SIDE VIEW · vertical scale ×${ex} · click a deck</text>`;
+  const vb = [-1000, SY(topZ) - 1500, 36000, topZ * 1000 * ex + 1500 + off + 7000];
   const dims = (s.dimensions || []).slice(0, 10).map(r => `<div>${esc(r.item)}</div><div>${usText(r.value)}</div>`).join("");
   const decks = D.model.decks.map(d => `<li onclick="go('#/deck/${d.n}')"><span>${d.emblem_web ? `<img class="emblem-sm" src="${staticSrc(d.emblem_web)}" alt="">` : ""}<b>${d.n} ${esc(d.name)}</b> <span class="muted small">${esc(d.role)}</span></span><span class="small">${area(d.net_area_calc)}</span></li>`).join("");
   const panel = `<h1>${esc(s.name)}</h1><div class="small muted">${esc((s.meta || {}).title || "")} · ${fileLink(s.sheet, "Sheet S0")}</div>
+    ${hasConcept ? `<h3>Hull shape</h3><div class="hull-pick"><button class="${useConcept ? "on" : ""}" onclick="setShipHull('concept')">Concept (proposed)</button><button class="${useConcept ? "" : "on"}" onclick="setShipHull('canon')">Canon (old)</button></div>
+    <div class="small muted">${useConcept ? "Traced from the concept sheet below: pointed bow, wide armoured flanks, blunt stern with four engines, raised dorsal fins. Same length, beam and hull height as canon. The bow and stern stay full enough to hold every deck, so no deck moves. The dashed orange line is the old canon hull." : "The canon hull from the original drawings. The dashed orange line is the proposed concept hull."} ${fileLink(s.revC_readme, "Rev C notes")}</div>
+    <a href="${staticSrc("ship/invicta-concept-six-views.webp")}" target="_blank" rel="noopener"><img class="hull-concept" src="${staticSrc("ship/invicta-concept-six-views.webp")}" alt="Invicta concept sheet: top, bottom, left, right, front and back views" loading="lazy"></a>
+    <div class="small muted">Concept sheet (Jordan, 28 Nov 2026) · ${fileLink(s.concept_sheet, "full size")}</div>` : ""}
     <h3>Key dimensions (canon)</h3><div class="kv">${dims}</div>
     <h3>Deck cities</h3><ul class="list">${decks}<li onclick="go('#/crown')"><span>${D.model.crown && D.model.crown.emblem_web ? `<img class="emblem-sm" src="${staticSrc(D.model.crown.emblem_web)}" alt="">` : ""}<b>Crown Bridge</b> <span class="muted small">detachable command ship</span></span><span class="small">14 levels</span></li></ul>
     <h3>Structure</h3><div class="kv">${(s.structure || []).map(r => `<div>${esc(r.item)}</div><div>${esc(r.value)}</div>`).join("")}</div>
