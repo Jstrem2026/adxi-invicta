@@ -94,8 +94,8 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Waterfront Recreation Park | 175.5 × 180 m, north-west corner cut for the promenade; 30,169.2 m² | CC-11. X 353.5–529, Y 700–880. Corner cut (393.5,710.52) to (353.5,760.52). Plot only | D3F6P1B4A11 |
 | Public Boat Landing | 175.5 × 120 m; 21,060 m² | CC-12. X 353.5–529, Y 880–1,000. Plot only | D3F6P1B4A12 |
 | Promenades (B4) | 30 m clear width each side along the canal and basin; 61,683.2 m² | CC-13. X 193.5–223.5 and X 323.5–353.5 along the 100 m channel, X 153.5–183.5 and X 363.5–393.5 around the basin, 30 m wide square to the edge along the four diagonals. Carry on from B3 and run on into B5 | D3F6P1B4A13 |
-| Access Road A (B4) | 18 × 1,000 m | CC-14A. X 0–18, Y 0–1,000, bow edge. Proposed infrastructure | D3F6P1 |
-| Access Road B (B4) | 18 × 1,000 m | CC-14B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
+| Access Road A (B4) | 18 × 1,000 m; 18,000 m² | CC-14A. X 0–18, Y 0–1,000, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B4) | 18 × 1,000 m; 18,000 m² | CC-14B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
 | Gallery Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 175–191. Each end overlaps its plot by 10 m (CC-03; CC-07 and CC-08) | D3F6P1B4A14 |
 | Central Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 805–825. Each end overlaps its plot by 10 m (CC-05, CC-11) | D3F6P1B4A15 |
 | Grand Canal (B5) | 100 × 500 m; 50,000 m² | CC2-01. X 223.5–323.5, Y 0–500. Straight 100 m channel; carries on from B4 and runs on into B6 | D3F6P1B5A1 |
@@ -108,8 +108,8 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Serenity Square | 175.5 × 85 m; 14,917.5 m² | CC2-08. X 353.5–529, Y 305–390. Plot only | D3F6P1B5A8 |
 | Garden Gateway Park | 175.5 × 110 m; 19,305 m² | CC2-09. X 353.5–529, Y 390–500. Plot only | D3F6P1B5A9 |
 | Promenades (B5) | 30 × 500 m each side; 30,000 m² | CC2-10A X 193.5–223.5 and CC2-10B X 323.5–353.5, both Y 0–500. Carry on from B4 and run on into B6 | D3F6P1B5A10 |
-| Access Road A (B5) | 18 × 500 m | CC2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
-| Access Road B (B5) | 18 × 500 m | CC2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
+| Access Road A (B5) | 18 × 500 m; 9,000 m² | CC2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B5) | 18 × 500 m; 9,000 m² | CC2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
 | Serenity Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 340–356. Each end overlaps its plot by 10 m (CC2-04, CC2-08) | D3F6P1B5A11 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
