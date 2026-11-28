@@ -20,3 +20,7 @@ picture in `Invicta/web/npc/`. Avalon's picture also becomes the bot's own pictu
 | Mira | City assistant, Meridian (Deck 3) | 28 Nov 2026 |
 | Sentinel | City assistant, Bastion (Deck 4) | 28 Nov 2026 |
 | Vector | City assistant, Aerion (Deck 5) | 28 Nov 2026 |
+| Tessera | City assistant, Machina (Deck 6) | 28 Nov 2026 |
+| Vesper | City assistant, Claustra (Deck 7) | 28 Nov 2026 |
+| Orin | City assistant, Ferrum (Deck 8) | 28 Nov 2026 |
+| Max | Captain of the Invicta, Jordan's own character. Not an assistant: no Discord voice or picture. Sheet is `Max_Ref.jpg`. | 28 Nov 2026 |
