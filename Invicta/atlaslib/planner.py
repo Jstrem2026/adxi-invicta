@@ -33,6 +33,12 @@ def load_program(app_dir, district_id):
     prog = progs["districts"].get(district_id)
     if not prog:
         raise KeyError("No city program for %s in data/city_programs.json" % district_id)
+    # buildings of neighbouring districts that also answer calls here (a fire station just over the line)
+    prog["_near"] = []
+    for rel in prog.get("response_neighbours", []):
+        with open(os.path.join(app_dir, *rel.split("/")), encoding="utf-8") as fh:
+            nd = json.load(fh)
+        prog["_near"] += [dict(b, _district=nd["district"]) for p in nd["precincts"] for b in p["buildings"] if not b.get("bays_km")]
     return progs, prog
 
 
@@ -214,7 +220,7 @@ def check(d, prog):
     real = [dr for dr in res["doors"] if dr["cls"] != "crew"]
     for rule in prog.get("response", []):
         also = re.compile(rule["also_text"], re.I) if rule.get("also_text") else None
-        cands = [b for p in d["precincts"] for b in p["buildings"]
+        cands = [b for b in [b for p in d["precincts"] for b in p["buildings"]] + prog.get("_near", [])
                  if b.get("category") == rule["category"] or (also and also.search(_text(b)))]
         far = []
         for dr in real:

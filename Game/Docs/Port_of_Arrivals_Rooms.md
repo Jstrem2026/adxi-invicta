@@ -2,7 +2,7 @@
 
 Deck 5 · Port of Arrivals. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**128 buildings, 10,103 rooms.**
+**129 buildings, 10,103 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -2953,9 +2953,9 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 ### P1-12 · Skiff Marina
 
-**What it is for:** A marina for small skiffs and private craft at the bow docks.
+**What it is for:** A marina for small skiffs and private craft at the bow docks, in a basin just inland of the hull. Skiffs come in through the Skiff Lock and taxi up its channel to their slips.
 
-13 ft (4 m) tall, open marina; one small office, 3,880 sq ft (360 m²) of rooms. Room plan proposed.
+13 ft (4 m) tall, open marina; one small office, 1,400 sq ft (130 m²) of rooms. Room plan proposed.
 
 **Look:** A floodlit marina of small craft in neat numbered slips, with a little lit office at the back.
 
@@ -2965,12 +2965,11 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Marina office | 1 | 2,580 sq ft (240 m²) | Books slips and welcomes visiting skiffs. |
-| Skiff fuel point | 1 | 1,290 sq ft (120 m²) | Fuel for small craft. |
-| Skiff slips (open air) | 1 | 533,900 sq ft (49,600 m²) | The row of 25 slips where skiffs and private craft tie up. Inside: Slip 1, Slip 2, Slip 3, Slip 4, Slip 5, Slip 6, Slip 7, Slip 8, Slip 9, Slip 10, Slip 11, Slip 12, Slip 13, Slip 14, Slip 15, Slip 16, Slip 17, Slip 18, Slip 19, Slip 20, Slip 21, Slip 22, Slip 23, Slip 24, Slip 25. |
-| Taxi lane (open air) | 1 | 532,600 sq ft (49,480 m²) | The lane skiffs taxi along between the slips and the dock doors. |
-| Skiff apron (open air) | 1 | 2,134,200 sq ft (198,280 m²) | Open apron where skiffs wait, are washed and are serviced. |
-| Marina walk (open air) | 1 | 799,500 sq ft (74,280 m²) | A walkway along the marina, with the marina office and fuel point. |
+| Marina office | 1 | 930 sq ft (86 m²) | Books slips and welcomes visiting skiffs. |
+| Skiff fuel point | 1 | 470 sq ft (43 m²) | Fuel for small craft. |
+| Skiff slips (open air) | 5 | 107,600 sq ft (9,997 m²) each | A row of five slips where skiffs and private craft tie up. Inside: Slip 1, Slip 2, Slip 3, Slip 4, Slip 5, Slip 6, Slip 7, Slip 8, Slip 9, Slip 10, Slip 11, Slip 12, Slip 13, Slip 14, Slip 15, Slip 16, Slip 17, Slip 18, Slip 19, Slip 20, Slip 21, Slip 22, Slip 23, Slip 24, Slip 25. |
+| Taxi lane (open air) | 3 | 80,830 sq ft (7,509 m²) each | The lane skiffs taxi along between their slips and the Skiff Lock channel. |
+| Marina walk (open air) | 1 | 80,600 sq ft (7,488 m²) | A walkway along the marina, with the marina office and fuel point. |
 
 ### P1-13 · Bow Guard Berth
 
@@ -2990,19 +2989,19 @@ _No room plan yet._
 
 _No room plan yet._
 
-### P1-16 · Bow Docks Border Post
+### P1-16 · Freight Gate
+
+**What it is for:** The port's gate for cargo ships. Freighters berth here with their own doors in the hull, unload onto the freight apron, and their cargo goes by the Freight Road to Cargo Customs, the bonded warehouses and the Cargo Teleport Hall for Deck 8.
+
+_No room plan yet._
+
+### P1-20 · Bow Docks Border Post
 
 **What it is for:** A border post beside the docks. Crews and passengers of ships berthed here show their passports, declare goods and are health-checked before they walk into the port, and departing crews are checked out here.
 
 _No room plan yet._
 
-### P1-17 · Bow Docks Fire Post
-
-**What it is for:** A small crash-fire-rescue post close to the far berths, with two rescue appliances and a crew on watch, so a fire or accident at any hull door is reached within about three minutes.
-
-_No room plan yet._
-
-### P1-18 · Bow Docks First Aid Post
+### P1-21 · Bow Docks First Aid Post
 
 **What it is for:** A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
 
@@ -4449,6 +4448,12 @@ Floor at 43 ft (13 m) above the deck; 39 ft (12 m) floor to floor.
 |---|---|---|---|
 | Rail gantry crane 1 | 1 | 45,210 sq ft (4,200 m²) | A gantry crane that lifts containers on and off trains. |
 | Rail gantry crane 2 | 1 | 45,210 sq ft (4,200 m²) | A gantry crane that lifts containers on and off trains. |
+
+### P4-17 · Cargo Teleport Hall
+
+**What it is for:** Cargo teleport pads that send freight straight down to Deck 8, landing near the Deep Holds, and bring ore, parts and stores back up. Cargo only, never people. Loads arrive from the Freight Gate, bonded warehouses and Cargo Customs.
+
+_No room plan yet._
 
 ## P8 · Shuttle Yards
 

@@ -11,30 +11,32 @@ Made by `Invicta/tools/city_planner.py` on 2026-11-28 from the program in `Invic
 | Passenger shuttle gates | commercial | 17 | 131 ft (40 m), see note | Gate Operations | ✅ |
 | Ship berths (civilian and private ships) | commercial | 28 | 262 ft (80 m), 367 ft (112 m), 919 ft (280 m) | Harbourmaster, Stern Harbourmaster | ✅ |
 | Yard lock (ships to the repair yards) | commercial | 1 | 1,640 ft (500 m) | Harbourmaster, Stern Harbourmaster | ✅ |
-| Small craft locks (skiffs and private runabouts) | community | 0 | none | Harbourmaster, Stern Harbourmaster | ⚠️ Skiff Marina has no door to space. |
-| Guard and government berths (security, military and official craft) | military | 0 | none | nobody yet | ⚠️ Needs at least 2. |
-| Crew airlocks (small walk-through doors for crews, inspectors and suited work) | crew | 0 | none | nobody yet | ⚠️ Needs at least 1. |
-| Freight gate (cargo ships) | commercial | 0 | none | nobody yet | ℹ️ left for Jordan |
+| Small craft locks (skiffs and private runabouts) | community | 1 | 131 ft (40 m) | Harbourmaster, Stern Harbourmaster | ✅ |
+| Guard and government berths (security, military and official craft) | military | 2 | 262 ft (80 m) | Port Guard Station | ✅ |
+| Crew airlocks (small walk-through doors for crews, inspectors and suited work) | crew | 20 | 6 ft (1.8 m) | Port Security Command | ✅ |
+| Freight gate (cargo ships) | commercial | 3 | 919 ft (280 m) | Harbourmaster, Stern Harbourmaster | ✅ |
 
-Pressure zones: the hull front has 20 zones (one per 1,640 ft (500 m) frame). 0 of them have a crew airlock.
+Pressure zones: the hull front has 20 zones (one per 1,640 ft (500 m) frame). 20 of them have a crew airlock.
 
 - **Guard and government berths (security, military and official craft):** Jordan: doors for military as well as commercial and community traffic. The big warships use the Cruiser Docks; the Port needs its own berths for patrol cutters, military transports and official arrivals, one at each end of the hull front.
 - **Crew airlocks (small walk-through doors for crews, inspectors and suited work):** Every 1,640 ft (500 m) frame of hull is its own sealable pressure zone (Ship Reference 5), so each needs a small door that does not need a ship-sized door to open.
-- **Freight gate (cargo ships):** Cargo now comes in through the berths and goes by Dock Road to Cargo Customs. A gate of its own beside Freight (P4) would need hull frontage that is all in use. Left for Jordan.
+- **Freight gate (cargo ships):** Jordan, 28 Nov 2026: a freight gate of its own at the Port's bow end (F34 to F36), in front of Freight, with cargo teleport pads to Deck 8.
 
 ## 2. Help within reach of every door
 
 | Service | Must be within | Doors out of reach | Furthest |
 |---|---|---|---|
-| Fire and rescue | 0.99 mi (1.60 km) | ⚠️ 8 of 46 | 1.77 mi (2.85 km) |
-| Police and port security | 0.99 mi (1.60 km) | ⚠️ 6 of 46 | 1.97 mi (3.18 km) |
-| Medical | 1.55 mi (2.50 km) | ⚠️ 6 of 46 | 2.43 mi (3.90 km) |
-| Border clearance (passport, customs and health checks) | 1.24 mi (2.00 km) | ⚠️ 12 of 46 | 2.33 mi (3.76 km) |
+| Fire and rescue | 0.99 mi (1.60 km) | ✅ 0 of 52 | - |
+| Police and port security | 0.99 mi (1.60 km) | ✅ 0 of 52 | - |
+| Medical | 1.55 mi (2.50 km) | ✅ 0 of 52 | - |
+| Border clearance (passport, customs and health checks) | 1.24 mi (2.00 km) | ✅ 0 of 52 | - |
 
 - **Fire and rescue:** Airport fire rules: crash rescue reaches any point of a runway in 3 minutes, about 1 mile (1.6 km).
 - **Police and port security:** Every hull door is a way into the ship; a police post within about a mile can reach it in minutes.
 - **Medical:** Injured crew or sick arrivals reach a clinic within about 1.5 miles (2.5 km).
 - **Border clearance (passport, customs and health checks):** Everyone who comes through a hull door is checked before they reach the public side of the port. Each door needs a clearance point close by, so no one walks a long way unchecked.
+
+Fire, police and medical buildings just over the district line count too (Flight Control, Strike Hangars).
 
 Distances are straight lines from the middle of each door to the nearest wall of the building. All are planner assumptions for Jordan to confirm.
 
@@ -44,42 +46,29 @@ Distances are straight lines from the middle of each door to the nearest wall of
 |---|---|---|
 | Health screening and quarantine | Port Health | ✅ |
 | Departure security screening | Departures Terminal | ✅ |
-| Cargo inspection | Cargo Customs, Customs & Border Hq | ✅ |
-| Custody suite (holding cells) | Arrivals Police Post, Customs & Border Hq, Concourse Police Post, Bow Docks Police Post, Stern Docks Police Post | ✅ |
-| One command room for every hull door | nothing yet | ⚠️ |
+| Cargo inspection | Cargo Customs, Customs & Border Hq, Cargo Teleport Hall | ✅ |
+| Custody suite (holding cells) | Arrivals Police Post, Customs & Border Hq, Concourse Police Post, Bow Docks Police Post, Port Guard Station | ✅ |
+| One command room for every hull door | Port Security Command | ✅ |
+| Cargo transfer to Deck 8 (cargo teleport pads) | Cargo Teleport Hall | ✅ |
 
 Every precinct has its own utility plant and service shaft.
 
 ## 4. What the planner adds (proposed)
 
-- **P1-13 Bow Guard Berth** in P1, 1 bay, 394 × 262 ft (120 × 80 m), at D5-F41-A. A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
-- **P3-19 Stern Guard Berth** in P3, 1 bay, 394 × 262 ft (120 × 80 m), at D5-F55-A. A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
-- **P1-14 Port Guard Station** in P1, 820 × 656 ft (250 × 200 m), at D5-F37-B. Home of the port guard, the armed security force for the hull doors. Guard crews for the cutters, a ready room, an armoury and a holding area sit beside the guard berths, so the guard can close and hold any door in minutes.
-- **P1-12 Skiff Marina**: 2 new doors in the hull (Planner, 28 Nov 2026: two skiff locks in the hull, 131 ft (40 m) wide, at the thirds of the marina).
-- **P2-24 Arrivals Crew Airlocks** in P2, 5 airlocks, each 33 × 26 ft (10 × 8 m), at D5-F44-A. Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
-- **P1-15 Bow Docks Crew Airlocks** in P1, 5 airlocks, each 33 × 26 ft (10 × 8 m), at D5-F39-A. Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
-- **P3-20 Stern Docks Crew Airlocks** in P3, 10 airlocks, each 33 × 26 ft (10 × 8 m), at D5-F51-A. Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
-- **P1-16 Bow Docks Border Post** in P1, 984 × 656 ft (300 × 200 m), at D5-F36-B. A border post beside the docks. Crews and passengers of ships berthed here show their passports, declare goods and are health-checked before they walk into the port, and departing crews are checked out here.
-- **P2-25 Port Security Command** in P2, 820 × 656 ft (250 × 200 m), at D5-F45-C. The one room that watches every hull door of the port. It sees every gate, berth, lock and airlock, can lock them all down at once, runs the port guard and works with Customs & Border Hq, the harbourmasters and Gate Operations.
-- **P8-21 Stern Docks First Aid Post** in P8, 492 × 328 ft (150 × 100 m), at D5-F53-E. A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
-- **P1-17 Bow Docks Fire Post** in P1, 656 × 492 ft (200 × 150 m), at D5-F35-B. A small crash-fire-rescue post close to the far berths, with two rescue appliances and a crew on watch, so a fire or accident at any hull door is reached within about three minutes.
-- **P1-18 Bow Docks First Aid Post** in P1, 492 × 328 ft (150 × 100 m), at D5-F35-B. A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
+Nothing: the district meets its program.
 
 ### After the additions
 
-Still missing: Fire and rescue (9 doors out of reach); Border clearance (6 doors out of reach).
-
-The planner found no free land for these (every lot near those doors is taken):
-
-- P3: no free land within 0.99 mi (1.60 km) of 5 hull doors for a Stern Docks Fire Post.
-- P3: no free land within 1.24 mi (2.00 km) of 5 hull doors for a Stern Docks Border Post.
+✅ Every check passes.
 
 ## 5. Left for Jordan
 
-- Freight gate (cargo ships): Cargo now comes in through the berths and goes by Dock Road to Cargo Customs. A gate of its own beside Freight (P4) would need hull frontage that is all in use. Left for Jordan.
 - Escape craft and lifeboats are not designed anywhere on the ship yet, so the planner does not place any.
 - Room plans, heights and looks of the new items are not designed yet.
 
-## 6. Decided since (28 Nov 2026)
+## 6. Decided by Jordan
 
-- **Stern Docks fire post and passport check.** Jordan chose to put them in existing buildings. The Stern Harbourmaster (P3-10) is the only building near enough to every far berth, so it got both at its stern end, beside the tower. There is a two-bay fire appliance bay with a two-storey crew block. There is also a border post with passport desks, customs counters, a health check room, interview rooms and a holding room. After this change every hull door is within reach of fire, police, medical and border clearance, and the planner has nothing left to add.
+- 28 Nov 2026: the Stern Docks had no free land near their far berths, so the Stern Harbourmaster (P3-10) got a two-bay fire appliance bay and a border post at its stern end.
+- 28 Nov 2026: the freight gate goes at the Port's bow end, F34 to F36, on the hull above Deck 8's Foundry Line and near its Deep Holds. P1-16 Freight Gate has 3 cargo berths, each 1,312 × 492 ft (400 × 150 m), with 919 ft (280 m) hull doors, plus a Freight Apron and a Freight Road.
+- 28 Nov 2026: cargo goes on to Deck 8 by cargo-only teleport pads in the P4-17 Cargo Teleport Hall, 984 × 656 ft (300 × 200 m). No people use them. This is an exception to deck-to-deck travel happening only in the Spine Atrium.
+- 28 Nov 2026: the Skiff Marina moved inland to a basin, 820 × 1,050 ft (250 × 320 m), with 25 slips, behind one Skiff Lock in the hull beside Medium Berth 1. The two planner skiff locks were removed.

@@ -42,6 +42,10 @@
         "P2",
         "P3"
       ],
+      "response_neighbours": [
+        "data/decks/D5/strike-hangars.json",
+        "data/decks/D5/flight-control.json"
+      ],
       "door_classes": [
         {
           "id": "shuttle",
@@ -74,7 +78,7 @@
           "id": "small_craft",
           "name": "Small craft locks (skiffs and private runabouts)",
           "use": "community",
-          "match": "^(Skiff Marina|Skiff Locks)",
+          "match": "^Skiff Lock",
           "control": "Harbourmaster",
           "min": 1
         },
@@ -102,9 +106,10 @@
           "id": "cargo",
           "name": "Freight gate (cargo ships)",
           "use": "commercial",
-          "match": "Freight Gate",
-          "min": 0,
-          "why": "Cargo now comes in through the berths and goes by Dock Road to Cargo Customs. A gate of its own beside Freight (P4) would need hull frontage that is all in use. Left for Jordan."
+          "match": "^Freight Gate",
+          "min": 1,
+          "why": "Jordan, 28 Nov 2026: a freight gate of its own at the Port's bow end (F34 to F36), in front of Freight, with cargo teleport pads to Deck 8.",
+          "control": "Harbourmaster"
         }
       ],
       "response": [
@@ -173,6 +178,13 @@
           "min": 1,
           "status": "assumption",
           "why": "Today three offices each open their own doors (Gate Operations, the Harbourmaster and the Stern Harbourmaster). The main way into the ship needs one room that sees every hull door, can lock them all down, and runs the guard."
+        },
+        {
+          "id": "deck8_transfer",
+          "name": "Cargo transfer to Deck 8 (cargo teleport pads)",
+          "match_text": "teleport pads to Deck 8",
+          "min": 1,
+          "why": "Jordan, 28 Nov 2026: cargo goes straight to Deck 8's holds by cargo-only teleport pads in Freight."
         }
       ],
       "per_precinct": [
@@ -191,6 +203,12 @@
           "match": "Service Shaft",
           "min": 1
         }
+      ],
+      "decisions": [
+        "28 Nov 2026: the Stern Docks had no free land near their far berths, so the Stern Harbourmaster (P3-10) got a two-bay fire appliance bay and a border post at its stern end.",
+        "28 Nov 2026: the freight gate goes at the Port's bow end, F34 to F36, on the hull above Deck 8's Foundry Line and near its Deep Holds. P1-16 Freight Gate has 3 cargo berths, each 1,312 × 492 ft (400 × 150 m), with 919 ft (280 m) hull doors, plus a Freight Apron and a Freight Road.",
+        "28 Nov 2026: cargo goes on to Deck 8 by cargo-only teleport pads in the P4-17 Cargo Teleport Hall, 984 × 656 ft (300 × 200 m). No people use them. This is an exception to deck-to-deck travel happening only in the Spine Atrium.",
+        "28 Nov 2026: the Skiff Marina moved inland to a basin, 820 × 1,050 ft (250 × 320 m), with 25 slips, behind one Skiff Lock in the hull beside Medium Berth 1. The two planner skiff locks were removed."
       ],
       "fixes": {
         "military": {

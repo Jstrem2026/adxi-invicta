@@ -87,6 +87,9 @@ def report(d, prog, res, props, after=None, gaps=()):
         o.append("| %s | %s | %s %d of %d | %s |" % (cl["rule"]["name"], L(cl["rule"]["within_km"]), TICK if not cl["far"] else GAP,
                                                     len(cl["far"]), cl["count"], L(worst) if cl["far"] else "-"))
     o += [""] + ["- **%s:** %s" % (r["name"], r["why"]) for r in prog.get("response", []) + ([cl["rule"]] if cl else [])]
+    if prog.get("response_neighbours"):
+        o += ["", "Fire, police and medical buildings just over the district line count too (%s)." %
+              ", ".join(sorted({b["_district"] for b in prog.get("_near", [])}))]
     o += ["", "Distances are straight lines from the middle of each door to the nearest wall of the building. All are planner assumptions for Jordan to confirm.", "",
           "## 3. Security and services the port must have", "", "| Need | Found in | Check |", "|---|---|---|"]
     for m in res["must_have"]:
@@ -122,6 +125,8 @@ def report(d, prog, res, props, after=None, gaps=()):
     o += ["- %s: %s" % (c["name"], c["why"]) for c in prog["door_classes"] if c.get("min", 1) == 0 and c.get("why")]
     o += ["- Escape craft and lifeboats are not designed anywhere on the ship yet, so the planner does not place any.",
           "- Room plans, heights and looks of the new items are not designed yet."]
+    if prog.get("decisions"):
+        o += ["", "## 6. Decided by Jordan", ""] + ["- %s" % x for x in prog["decisions"]]
     return "\n".join(o) + "\n"
 
 
