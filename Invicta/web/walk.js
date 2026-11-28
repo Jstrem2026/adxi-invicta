@@ -306,7 +306,7 @@
         this.place(fallback[0], fallback[1], fallback[2]);
         return null;
       },
-      // One frame. keys: {f, b, l, r, run}. Moves in small steps so nobody slips through a wall.
+      // One frame. keys: {f, b, l, r, run, speed} (speed: 1, 5 or 10 times the pace). Moves in small steps so nobody slips through a wall.
       step(dt, keys) {
         dt = Math.min(dt, 0.1);
         const fx = Math.sin(me.yaw), fz = Math.cos(me.yaw);
@@ -317,7 +317,7 @@
         if (keys.r) { mx -= fz; mz += fx; }
         const m = Math.hypot(mx, mz);
         if (m > 0) {
-          const dist = (keys.run ? RUN : WALK) * dt, n = Math.max(1, Math.ceil(dist / 0.08));
+          const dist = (keys.run ? RUN : WALK) * (keys.speed || 1) * dt, n = Math.max(1, Math.ceil(dist / 0.08));
           for (let i = 0; i < n; i++) {
             let X = me.x + (mx / m) * (dist / n), Z = me.z + (mz / m) * (dist / n);
             [X, Z] = collide(X, Z, me.feet);

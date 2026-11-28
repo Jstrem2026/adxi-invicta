@@ -329,16 +329,16 @@
     const ov = document.createElement("div");
     ov.className = "v3d";
     ov.innerHTML = `<div class="v3d-bar"><b>3D · ${esc(sc.title)}</b>
-      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="Walk as a person: W A S D or arrow keys to move, Shift to run, drag to look. Use the stairs, or stand in a lift and press E (up) or Q (down)">Walk</button></span>
+      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="Walk as a person: W A S D or arrow keys to move, Shift to run, keys 1 / 5 / 0 for 1×, 5× or 10× speed, drag to look. Use the stairs, or stand in a lift and press E (up) or Q (down)">Walk</button></span>
       <label class="v3d-cut" hidden>Show up to <select></select></label>
       <button class="v3d-x" title="Close the 3D view">✕</button></div>
       <div class="v3d-stage"><div class="v3d-msg">Loading 3D…</div></div>
       <div class="v3d-key"></div>
       <div class="v3d-hud" hidden></div>
-      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
+      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-s="1" class="v3d-run on" title="Normal pace (1)">1×</button><button data-s="5" class="v3d-run" title="5 times faster (5)">5×</button><button data-s="10" class="v3d-run" title="10 times faster (0)">10×</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
     document.body.append(ov);
     ov.querySelector(".v3d-x").onclick = close;
-    state = { ov, keys: {}, stop: false };
+    state = { ov, keys: {}, stop: false, speed: 1 };
     try { await lib(); } catch (e) { ov.querySelector(".v3d-msg").textContent = "Couldn't load the 3D library. Check the connection and try again."; return; }
     if (!state || state.ov !== ov) return;
     ov.querySelector(".v3d-msg").remove();
@@ -463,16 +463,20 @@
       drag = [e.clientX, e.clientY];
     });
     const lift = (d) => { if (walker && !walker.lift(d)) liftNote = performance.now(); };
+    const setSpeed = (s) => { state.speed = s; ov.querySelectorAll(".v3d-walkpad button[data-s]").forEach((x) => x.classList.toggle("on", +x.dataset.s === s)); };
+    ov.querySelectorAll(".v3d-walkpad button[data-s]").forEach((bt) => (bt.onclick = () => setSpeed(+bt.dataset.s)));
     state.onKey = (e, down) => {
       if (e.key === "Escape" && down) return close();
       if (e.key === "Shift") state.keys.shift = down;
       const k = { w: "f", arrowup: "f", s: "b", arrowdown: "b", a: "l", arrowleft: "l", d: "r", arrowright: "r" }[e.key.toLowerCase()];
       if (k) { state.keys[k] = down; e.preventDefault(); }
+      if (down && !e.repeat && mode === "walk" && { "1": 1, "5": 5, "0": 10 }[e.key]) setSpeed({ "1": 1, "5": 5, "0": 10 }[e.key]);
       if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "e") lift(1);
       if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "q") lift(-1);
     };
     ov.querySelectorAll(".v3d-walkpad button").forEach((bt) => {
       const k = bt.dataset.k;
+      if (!k) return;
       if (k === "u" || k === "d") { bt.onclick = () => lift(k === "u" ? 1 : -1); return; }
       if (k === "run") { bt.onclick = () => { state.runLock = !state.runLock; bt.classList.toggle("on", state.runLock); }; return; }
       bt.onpointerdown = () => (state.keys[k] = true);
@@ -495,7 +499,7 @@
       if (!state || state.ov !== ov) { renderer.dispose(); return; }
       const dt = Math.min(0.1, (now - last) / 1000); last = now;
       if (mode === "walk" && walker) {
-        const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock });
+        const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock, speed: state.speed });
         camera.position.set(me.x, walker.eye(), me.z);
         camera.lookAt(me.x + Math.sin(me.yaw) * Math.cos(me.pitch), walker.eye() + Math.sin(me.pitch), me.z + Math.cos(me.yaw) * Math.cos(me.pitch));
         showHud(now);
