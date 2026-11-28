@@ -210,73 +210,6 @@ def build(m):
                         "height_m": _r(h), "kind": kind, "between": [x for x in pair if x],
                         "status": "proposed", "derived": True})
 
-    # ---- stairs and lifts in every core, worked out before the doors so a core's door opens onto clear floor
-    # (the landing at the foot of the stair, or the floor past it), never beside a flight (Jordan, 28 Nov 2026:
-    # stairs ran straight through a door frame).
-    core_parts = []
-    clear = {}   # (core id, level) -> the core's floor that is not stair or lift
-    holes = {}
-    for e in spaces:
-        if e["type"] != "core":
-            continue
-        cl = [L for L in order if L in _levels(e)]
-        env = shapely.oriented_envelope(polys[e["id"]])
-        if env.geom_type != "Polygon":
-            continue
-        c = np.asarray(env.exterior.coords)[:4]
-        e1, e2 = c[1] - c[0], c[3] - c[0]
-        if np.hypot(*e1) < np.hypot(*e2):
-            e1, e2 = e2, e1
-        lenL, lenD = float(np.hypot(*e1)), float(np.hypot(*e2))
-        u, v = e1 / lenL, e2 / lenD
-
-        def rect(x0, x1, y0, y1):
-            return [_pt(c[0] + u * x0 + v * y0), _pt(c[0] + u * x1 + v * y0),
-                    _pt(c[0] + u * x1 + v * y1), _pt(c[0] + u * x0 + v * y1)]
-
-        stair_len = 0.0
-        taken = {}
-        for a_, b_ in zip(cl, cl[1:]):
-            h = lv_by[b_]["z_m"] - lv_by[a_]["z_m"]
-            if h <= 0:
-                continue
-            risers = math.ceil(h / RISER_MAX - 1e-9)
-            # flights 3 ft 11 in (1.2 m) wide, or down to 3 ft 8 in (1.12 m, the narrowest a building code allows) in a tight core
-            fw = FLIGHT_W if lenD >= 2 * FLIGHT_W + 0.1 else max(FLIGHT_W_MIN, (lenD - 0.1) / 2)
-            width = 2 * fw + 0.1
-            # more half-turns per floor make a shorter stair, keeping at least 3 risers in every flight
-            # and enough half-turns that no flight climbs more than 12 ft (3.66 m) between landings
-            t0 = max(1, math.ceil(h / (2 * FLIGHT_RISE_MAX) - 1e-9))
-            for turns in range(t0, max(t0, min(MAX_TURNS, risers // (2 * MIN_FLIGHT_RISERS))) + 1):
-                per = math.ceil(risers / (2 * turns))
-                length = (per - 1) * TREAD + 2 * LANDING
-                fits = length <= lenL + 1e-6 and width <= lenD + 1e-6
-                if fits or width > lenD + 1e-6:
-                    break
-            stair_len = max(stair_len, min(length, lenL))
-            o = rect(0, min(length, lenL), 0, min(width, lenD))
-            core_parts.append({"id": nid("S"), "type": "stair", "name": "Stairs", "level": a_, "to_level": b_, "outline_m": o,
-                        "risers": risers, "riser_m": _r(h / risers), "tread_m": TREAD, "flights": 2 * turns, "turns": turns,
-                        "flight_width_m": _r(fw), "landing_m": LANDING, "fits": fits, "core": e["id"],
-                        "status": "proposed", "derived": True})
-            # the floor above keeps the landing at the stair's foot: the second flight arrives onto it
-            holes.setdefault(b_, []).append(Polygon(rect(min(LANDING, lenL), min(length, lenL), 0, min(width, lenD))))
-            for L in (a_, b_):
-                taken.setdefault(L, []).append(Polygon(rect(min(LANDING, lenL), min(length, lenL), 0, min(width, lenD))))
-            if not fits:
-                report["stairs_not_fitting"].append("%s %s, %s to %s: needs %.1f × %.1f m, the core is %.1f × %.1f m" % (
-                    e["id"], e.get("name", ""), a_, b_, length, width, lenL, lenD))
-        if len(cl) > 1 and lenL - stair_len >= LIFT + 0.2 and lenD >= LIFT:
-            o = rect(lenL - LIFT, lenL, 0, LIFT)
-            core_parts.append({"id": nid("L"), "type": "lift", "name": "Lift", "levels": cl, "outline_m": o, "core": e["id"],
-                        "status": "proposed", "derived": True})
-            for L in cl[1:]:
-                holes.setdefault(L, []).append(Polygon(o))
-            for L in cl:
-                taken.setdefault(L, []).append(Polygon(o))
-        for L in cl:
-            clear[(e["id"], L)] = polys[e["id"]].difference(shapely.union_all(taken[L])) if taken.get(L) else polys[e["id"]]
-
     # ---- the walking graph: doors, openings and stairs join (space, level) nodes
     graph = {}
 
@@ -288,7 +221,7 @@ def build(m):
     junctions = {}  # level -> wall end points, where walls meet
     entrances = set()
 
-    def add_door(space, w, width, height, name, kind="door", strict=True):
+    def add_door(space, w, width, height, name, kind="door"):
         pair, a, b, _, L = w
         length = math.dist(a, b)
         width = min(width, length - 0.3)
@@ -307,20 +240,11 @@ def build(m):
             along = (q[0] - a[0]) * ux + (q[1] - a[1]) * uy
             if 0.05 < along < length - 0.05 and abs((q[0] - a[0]) * uy - (q[1] - a[1]) * ux) < 0.2:
                 blocked.append((along - 0.3, along + 0.3))
-        # a door into a stair core opens onto the core's clear floor (the landing), not beside a flight
-        room = [clear[(x, L)].buffer(0.05) for x in pair if x and (x, L) in clear] if strict else []
-
-        def onto_floor(c):
-            seg = LineString([(a[0] + ux * c, a[1] + uy * c), (a[0] + ux * (c + width), a[1] + uy * (c + width))])
-            return all(r.covers(seg) for r in room)
-
         c0 = length / 2 - width / 2
-        if blocked or (room and not onto_floor(c0)):
+        if blocked:
             spots = sorted((k * 0.05 for k in range(int((length - width) / 0.05) + 1)), key=lambda c: abs(c - c0))
             spots = [c for c in spots if 0.15 <= c <= length - width - 0.15
                      and all(c + width <= lo or c >= hi for lo, hi in blocked)]
-            if room:
-                spots = [c for c in spots if onto_floor(c)]
             if not spots:
                 return False
             c0 = spots[0]
@@ -390,10 +314,9 @@ def build(m):
         for L in cl:
             if (e["id"], L) in doored:
                 continue
-            ws = sorted((w for w in walls_at.get((e["id"], L), []) if None not in w[0]), key=lambda w: rank(e["id"], w))
-            # onto the landing if any wall allows it, else as before (a core too small for a clear landing)
-            if not any(add_door(e["id"], w, DOOR_W, DOOR_H, "Stair door") for w in ws):
-                any(add_door(e["id"], w, DOOR_W, DOOR_H, "Stair door", strict=False) for w in ws)
+            for w in sorted((w for w in walls_at.get((e["id"], L), []) if None not in w[0]), key=lambda w: rank(e["id"], w)):
+                if add_door(e["id"], w, DOOR_W, DOOR_H, "Stair door"):
+                    break
 
     # neighbouring zones (corridors, lobbies, yards) open into each other
     for (x, L), ws in walls_at.items():
@@ -666,6 +589,54 @@ def build(m):
                             "status": "proposed", "derived": True})
                 for L in cl[1:]:
                     holes.setdefault(L, []).append(Polygon(o))
+
+        # A door into the core opens onto clear floor, never beside a flight (Jordan, 28 Nov 2026: a stair ran straight
+        # past a door frame). Where a door still meets a flight, slide it along its wall to the landing at the stair's
+        # foot or the floor past the stair. The landing is the first LANDING of the stair from its first corner.
+        def flights_at(L):
+            zs = []
+            for st in out:
+                if st["type"] != "stair" or st.get("core") != e["id"] or L not in (st["level"], st["to_level"]):
+                    continue
+                q = np.asarray(st["outline_m"], dtype=float)
+                du = q[1] - q[0]
+                lu = float(np.hypot(*du)) or 1.0
+                f = q[0] + du / lu * min(LANDING, lu)
+                zs.append(Polygon([f, q[1], q[2], f + (q[3] - q[0])]))
+            return zs
+        for d in core_doors:
+            if d["type"] != "door":
+                continue
+            fl = flights_at(d["level"])
+            seg = LineString(d["line_m"])
+            if not fl or not any(seg.buffer(0.1).intersects(z) for z in fl):
+                continue
+            wall = next((w for w in out if w["type"] == "wall" and w["level"] == d["level"]
+                         and LineString(w["line_m"]).distance(Point(d["line_m"][0])) < 0.05
+                         and LineString(w["line_m"]).distance(Point(d["line_m"][1])) < 0.05), None)
+            if not wall:
+                continue
+            a, b = np.asarray(wall["line_m"][0], dtype=float), np.asarray(wall["line_m"][1], dtype=float)
+            length = float(np.hypot(*(b - a)))
+            uu = (b - a) / length
+            width = d["width_m"]
+            ends = [np.asarray(q, dtype=float) - a for w in out if w["type"] == "wall" and w["level"] == d["level"] for q in w["line_m"]]
+            blocked = [float(q @ uu) for q in ends
+                       if 0.05 < float(q @ uu) < length - 0.05 and abs(float(uu[0] * q[1] - uu[1] * q[0])) < 0.2]
+            lifts = [Polygon(x["outline_m"]) for x in out if x["type"] == "lift" and x.get("core") == e["id"]]
+            now = float((np.asarray(d["line_m"][0], dtype=float) - a) @ uu)
+            best = None
+            for k in range(int((length - width) / 0.05) + 1):
+                c0 = k * 0.05
+                if not (0.15 <= c0 <= length - width - 0.15) or any(c0 - 0.3 < q < c0 + width + 0.3 for q in blocked):
+                    continue
+                sg = LineString([a + uu * c0, a + uu * (c0 + width)])
+                if any(sg.buffer(0.1).intersects(z) for z in fl) or any(sg.distance(x) < 0.3 for x in lifts):
+                    continue
+                if best is None or abs(c0 - now) < abs(best - now):
+                    best = c0
+            if best is not None:
+                d["line_m"] = [_pt(a + uu * best), _pt(a + uu * (best + width))]
 
     # ---- floor slabs
     for L in order:

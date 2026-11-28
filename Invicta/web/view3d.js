@@ -129,14 +129,21 @@
         if (k === (up ? per : n - per) - 1) continue;   // a flight of N risers has N-1 treads: its top step is the landing, drawn below
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
-        // a solid concrete step: tread on top, riser in front, and a 10 in (0.25 m) waist under it down to the
-        // start of its flight, so each flight is one sloping slab and never floats as loose blocks
+        // a solid concrete step: tread on top, riser in front, and a 10 in (0.25 m) waist under it down to the start of
+        // its flight, so each flight is one sloping slab and never floats as loose blocks (Jordan, 28 Nov 2026)
         const top = z0 + (i + 1) * e.riser_m, base = z0 + (up ? i - j : i - k) * e.riser_m, bot = Math.max(base, top - e.riser_m - WAIST);
         out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: bot, h: top - bot, t: w });
+        // guard rails on the left and right of the flight: a post at every tread and a handrail on top
+        const zt = z0 + i * e.riser_m + e.riser_m, sa = Math.max(0, s0), sb = Math.min(Lu, s0 + e.tread_m);
+        for (const side of [-1, 1]) {
+          const tt = t0 + side * (w / 2 - 0.03);
+          out.push({ a: at(sa, tt), b: at(Math.min(Lu, sa + 0.05), tt), z: zt, h: 0.9, t: 0.05, rail: true });
+          out.push({ a: at(sa, tt), b: at(sb, tt), z: zt + 0.9, h: 0.05, t: 0.06, rail: true });
+        }
       }
       const zl = z0 + (i - n + per) * e.riser_m;
       out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl - WAIST, h: WAIST, t: Lv });  // half landing, as thick as the flights
-      if (tn < turns - 1) out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - WAIST, h: WAIST, t: Lv });  // landing between turns
+      out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - WAIST, h: WAIST, t: Lv });  // landing at the end of the turn (the upper floor, on the last one)
     }
     return out;
   }
