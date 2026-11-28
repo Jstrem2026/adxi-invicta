@@ -24,7 +24,7 @@ Floor at deck level; 25 ft (7.5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Hall of Petitions | 1 | 54,820 sq ft (5,093 m²) | The great public hall of Aerion's government. Residents queue at the petition desks to bring requests and complaints to the Governor's clerks, and the Governor holds open audiences here once a week. Inside: Petition desks, Audience dais. |
+| Hall of Petitions | 1 | 54,370 sq ft (5,051 m²) | The great public hall of Aerion's government. Residents queue at the petition desks to bring requests and complaints to the Governor's clerks, and the Governor holds open audiences here once a week. Inside: Petition desks, Audience dais. |
 | State reception room | 1 | 51,250 sq ft (4,761 m²) | A formal room for receiving ship officials, captains and visiting delegations, and for signing agreements. |
 | Grand entrance | 1 | 6,050 sq ft (562 m²) | The ceremonial entrance from the Atrium Plaza, under the Aerion crest, with guards at the doors. |
 | Security screening | 1 | 2,160 sq ft (200 m²) | Visitors pass through scanners and bag checks before entering the hall. |
@@ -45,7 +45,7 @@ Floor at 25 ft (7.5 m) above the deck; 16 ft (5 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Hall of Petitions | 1 | 54,820 sq ft (5,093 m²) | The great public hall of Aerion's government. Residents queue at the petition desks to bring requests and complaints to the Governor's clerks, and the Governor holds open audiences here once a week. Inside: Petition desks, Audience dais. |
+| Hall of Petitions | 1 | 54,370 sq ft (5,051 m²) | The great public hall of Aerion's government. Residents queue at the petition desks to bring requests and complaints to the Governor's clerks, and the Governor holds open audiences here once a week. Inside: Petition desks, Audience dais. |
 | State reception room | 1 | 51,250 sq ft (4,761 m²) | A formal room for receiving ship officials, captains and visiting delegations, and for signing agreements. |
 | Governor's office | 1 | 1,300 sq ft (121 m²) | Governor Vector's own office, overlooking the Atrium Plaza. |
 | Governor's private study | 1 | 540 sq ft (50 m²) | A small private room beside the Governor's office. |

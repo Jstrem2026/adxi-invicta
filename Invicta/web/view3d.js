@@ -144,6 +144,10 @@
       const zl = z0 + (i - n + per) * e.riser_m;
       out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl - WAIST, h: WAIST, t: Lv });  // half landing, as thick as the flights
       out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - WAIST, h: WAIST, t: Lv });  // landing at the end of the turn (the upper floor, on the last one)
+      // an odd number of risers gives the return flight one step fewer: carry the landing out to meet its top step,
+      // so there is no gap between the last step and the landing (Jordan, 28 Nov 2026: "why the gap?")
+      const reach = Lu - land - (n - per - 1) * e.tread_m;
+      if (reach > land + 0.01) out.push({ a: at(land, Lv - w / 2), b: at(Math.min(Lu, reach), Lv - w / 2), z: z0 + i * e.riser_m - WAIST, h: WAIST, t: w });
     }
     return out;
   }
