@@ -21,6 +21,11 @@ FIXED = {
     "hull_side_csv": CANON + "/architecture/hull_side_profile_km.csv",
     "hull_side_revB_csv": GAME_DOCS + "/geometry_revB/hull_side_profile_km_revB.csv",
     "revB_readme": GAME_DOCS + "/geometry_revB/README.txt",
+    "hull_plan_revC_csv": GAME_DOCS + "/geometry_revC/hull_plan_km_revC.csv",
+    "hull_side_revC_csv": GAME_DOCS + "/geometry_revC/hull_side_profile_km_revC.csv",
+    # links on the ship page use the mirror copies, which the web copy publishes
+    "concept_sheet": MIRROR_DOCS + "/art/concept/invicta-concept-six-views.png",
+    "revC_readme": MIRROR_DOCS + "/geometry_revC/README.txt",
     "errata_md": GAME_DOCS + "/02_Canon_Errata.md",
     "reference_md": GAME_DOCS + "/Invicta_Ship_Reference.md",
     "precincts_md": GAME_DOCS + "/Port_of_Arrivals_Precincts.md",
