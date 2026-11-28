@@ -1,0 +1,28 @@
+name: Register Discord commands
+# Tells Discord about the bot's slash commands (/ask, /submit) in the ADXI: Invicta server.
+# Runs when the command list or the bot's IDs change, or by hand (Actions > Register Discord commands > Run workflow).
+# Needs the DISCORD_BOT_TOKEN repo secret. The app and server IDs come from wrangler.toml [vars].
+on:
+  push:
+    branches: [main]
+    paths: [".github/discord/commands.json", ".github/workflows/discord-commands.yml", "wrangler.toml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Register
+        run: |
+          app=$(sed -n 's/^DISCORD_APP_ID *= *"\([0-9]*\)".*/\1/p' wrangler.toml)
+          guild=$(sed -n 's/^DISCORD_GUILD_ID *= *"\([0-9]*\)".*/\1/p' wrangler.toml)
+          if [ -z "$TOKEN" ] || [ -z "$app" ] || [ -z "$guild" ]; then
+            echo "Waiting for DISCORD_BOT_TOKEN, DISCORD_APP_ID or DISCORD_GUILD_ID, so nothing was registered." >> "$GITHUB_STEP_SUMMARY"; exit 0
+          fi
+          curl -sS -f -X PUT -H "Authorization: Bot $TOKEN" -H "Content-Type: application/json" \
+            --data @.github/discord/commands.json \
+            "https://discord.com/api/v10/applications/$app/guilds/$guild/commands" | jq -r '.[].name' | sed 's/^/Registered \//' >> "$GITHUB_STEP_SUMMARY"
