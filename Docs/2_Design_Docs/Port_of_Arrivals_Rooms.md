@@ -2,7 +2,7 @@
 
 Deck 5 · Port of Arrivals. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**117 buildings, 10,084 rooms.**
+**128 buildings, 10,103 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -726,6 +726,18 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 | Tree grove (open air) | 1 | 542,400 sq ft (50,390 m²) | Shady trees with benches underneath. |
 | Flower borders (open air) | 2 | 272,700 sq ft (25,330 m²) each | Long beds of flowers along the boulevard. |
 | Paths and benches (open air) | 2 | 272,300 sq ft (25,300 m²) each | Paved paths with benches and lamps that lead through the forecourt garden. |
+
+### P2-24 · Arrivals Crew Airlocks
+
+**What it is for:** Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
+
+_No room plan yet._
+
+### P2-25 · Port Security Command
+
+**What it is for:** The one room that watches every hull door of the port. It sees every gate, berth, lock and airlock, can lock them all down at once, runs the port guard and works with Customs & Border Hq, the harbourmasters and Gate Operations.
+
+_No room plan yet._
 
 ## P5 · Terminals
 
@@ -2960,6 +2972,42 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 | Skiff apron (open air) | 1 | 2,134,200 sq ft (198,280 m²) | Open apron where skiffs wait, are washed and are serviced. |
 | Marina walk (open air) | 1 | 799,500 sq ft (74,280 m²) | A walkway along the marina, with the marina office and fuel point. |
 
+### P1-13 · Bow Guard Berth
+
+**What it is for:** A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
+
+_No room plan yet._
+
+### P1-14 · Port Guard Station
+
+**What it is for:** Home of the port guard, the armed security force for the hull doors. Guard crews for the cutters, a ready room, an armoury and a holding area sit beside the guard berths, so the guard can close and hold any door in minutes.
+
+_No room plan yet._
+
+### P1-15 · Bow Docks Crew Airlocks
+
+**What it is for:** Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
+
+_No room plan yet._
+
+### P1-16 · Bow Docks Border Post
+
+**What it is for:** A border post beside the docks. Crews and passengers of ships berthed here show their passports, declare goods and are health-checked before they walk into the port, and departing crews are checked out here.
+
+_No room plan yet._
+
+### P1-17 · Bow Docks Fire Post
+
+**What it is for:** A small crash-fire-rescue post close to the far berths, with two rescue appliances and a crew on watch, so a fire or accident at any hull door is reached within about three minutes.
+
+_No room plan yet._
+
+### P1-18 · Bow Docks First Aid Post
+
+**What it is for:** A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
+
+_No room plan yet._
+
 ## P3 · Stern Docks
 
 Flank berths for civilian and private ships; cross-line Flight Control stop
@@ -3377,9 +3425,19 @@ Floor at deck level; 16 ft (5 m) floor to floor.
 | Pilot assignment | 1 | 8,620 sq ft (801 m²) | Assigns harbour pilots to ships. |
 | Customs liaison | 1 | 8,620 sq ft (801 m²) | Customs officers who are told of every arriving ship and decide which to inspect. |
 | Café | 1 | 9,690 sq ft (900 m²) | A café serving coffee, snacks and light meals. |
-| Toilets | 1 | 92,780 sq ft (8,620 m²) | Toilets, with an accessible toilet. |
+| Toilets | 2 | 56,080 sq ft (5,210 m²) each | Toilets, with an accessible toilet. |
 | Tower lobby | 2 | 2,710 sq ft (252 m²) each | The lobby at the foot of the control tower, with lifts up to the control cab. |
 | Stores | 1 | 7,750 sq ft (720 m²) | Lockable stores for supplies, spares and equipment. |
+| Fire appliance bay 1 | 1 | 12,920 sq ft (1,200 m²) | A drive-through bay for a crash-fire-rescue appliance, ready to roll out onto the docks. |
+| Fire appliance bay 2 | 1 | 12,920 sq ft (1,200 m²) | A drive-through bay for a crash-fire-rescue appliance, ready to roll out onto the docks. |
+| Watch room | 2 | 4,840 sq ft (450 m²) each | Takes the emergency calls and sends the crews out. |
+| Crew room and kitchen | 1 | 4,300 sq ft (400 m²) | Where the fire crew on watch eat, rest and wait for a call. |
+| Lockers and showers | 1 | 7,320 sq ft (680 m²) | Lockers, changing benches and showers for staff. |
+| Passport desks | 2 | 15,070 sq ft (1,400 m²) each | Officers check the passports of crews and passengers from the far berths here. |
+| Customs counters | 1 | 8,620 sq ft (801 m²) | Crews and passengers declare goods and pay duties here. |
+| Health check room | 1 | 3,220 sq ft (300 m²) | A quick health check for arrivals before they walk into the port. |
+| Interview rooms | 1 | 1,300 sq ft (120 m²) | Rooms where suspects and witnesses are interviewed and recorded. |
+| Holding room | 1 | 630 sq ft (59 m²) | A secure room where a person can be held until the border police arrive. |
 | Pilots' ready room | 2 | 20,450 sq ft (1,900 m²) each | Harbour pilots wait here until they are called to bring a ship in. |
 | Kitchen and mess | 1 | 16,150 sq ft (1,500 m²) | A kitchen and dining room for the staff. |
 | Lockers | 1 | 26,910 sq ft (2,500 m²) | Lockers for staff belongings. |
@@ -3399,6 +3457,8 @@ Floor at 16 ft (5 m) above the deck; 13 ft (4 m) floor to floor.
 | Offices | 2 | 68,130 sq ft (6,330 m²) each | Desks for the people who work in the building. |
 | Tower lobby | 2 | 2,710 sq ft (252 m²) each | The lobby at the foot of the control tower, with lifts up to the control cab. |
 | Stores | 1 | 7,750 sq ft (720 m²) | Lockable stores for supplies, spares and equipment. |
+| Bunk rooms | 5 | 2,110 sq ft (196 m²) each | Bunks where crews on long shifts sleep between calls. |
+| Fire post office | 1 | 10,770 sq ft (1,001 m²) | The office of the officer in charge of the fire post. |
 | Rest rooms | 11 | 3,880 sq ft (360 m²) each | Rooms to rest between shifts. |
 
 #### Level 3 · Level 3
@@ -3608,6 +3668,18 @@ Floor at deck level; 13 ft (4 m) floor to floor.
 | Frigate berth 3 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
 | Frigate berth 4 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
 | Frigate berth 5 (open air) | 1 | 645,800 sq ft (60,000 m²) | An open berth for one frigate, with mooring arms and shore connections. Inside: Mooring arms, Mooring arms (far side), Shore connection post. |
+
+### P3-19 · Stern Guard Berth
+
+**What it is for:** A secure berth in the hull for the port guard's patrol cutters, military transports and official arrivals. Ships here are met by the guard and cleared on the spot, away from the passenger gates.
+
+_No room plan yet._
+
+### P3-20 · Stern Docks Crew Airlocks
+
+**What it is for:** Small airlocks in the hull, one in each pressure zone, so crews, inspectors and suited workers can step outside or come in without opening a ship-sized door. Each is a chamber with a door at each end.
+
+_No room plan yet._
 
 ## P4 · Freight
 
@@ -5699,3 +5771,9 @@ Floor at 39 ft (12 m) above the deck; 20 ft (6 m) floor to floor.
 | Rack block 4 | 1 | 142,100 sq ft (13,200 m²) | A block of storage racks. |
 | Rack block 5 | 1 | 142,100 sq ft (13,200 m²) | A block of storage racks. |
 | Rack block 6 | 1 | 142,100 sq ft (13,200 m²) | A block of storage racks. |
+
+### P8-21 · Stern Docks First Aid Post
+
+**What it is for:** A first aid post close to the far berths, with paramedics, a treatment room and an ambulance bay, for injured crews and sick arrivals before they go on to a clinic.
+
+_No room plan yet._

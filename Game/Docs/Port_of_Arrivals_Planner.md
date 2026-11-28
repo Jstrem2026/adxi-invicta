@@ -79,3 +79,7 @@ The planner found no free land for these (every lot near those doors is taken):
 - Freight gate (cargo ships): Cargo now comes in through the berths and goes by Dock Road to Cargo Customs. A gate of its own beside Freight (P4) would need hull frontage that is all in use. Left for Jordan.
 - Escape craft and lifeboats are not designed anywhere on the ship yet, so the planner does not place any.
 - Room plans, heights and looks of the new items are not designed yet.
+
+## 6. Decided since (28 Nov 2026)
+
+- **Stern Docks fire post and passport check.** Jordan chose to put them in existing buildings. The Stern Harbourmaster (P3-10) is the only building near enough to every far berth, so it got both at its stern end, beside the tower. There is a two-bay fire appliance bay with a two-storey crew block. There is also a border post with passport desks, customs counters, a health check room, interview rooms and a holding room. After this change every hull door is within reach of fire, police, medical and border clearance, and the planner has nothing left to add.

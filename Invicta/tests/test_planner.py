@@ -112,14 +112,12 @@ class PortOfArrivalsTest(unittest.TestCase):
         res = PL.check(d, prog)
         self.assertTrue(all(c["ok"] for c in res["classes"]), [c["cls"]["id"] for c in res["classes"] if not c["ok"]])
         self.assertTrue(all(z["airlocks"] for z in res["zones"]))
-        # fire and border clearance are still out of reach only at the Stern Docks (P3), where every lot is taken
-        for r in res["response"]:
-            self.assertTrue(all(dr["precinct"] == "P3" for dr, b, dist in r["far"]), r["rule"]["id"])
-        self.assertTrue(all(dr["precinct"] == "P3" for dr, b, dist in res["clearance"]["far"]))
+        self.assertFalse([r["rule"]["id"] for r in res["response"] if r["far"]])
+        self.assertFalse(res["clearance"]["far"])
         self.assertTrue(all(m["ok"] for m in res["must_have"]))
         gaps = []
         self.assertFalse(PL.propose(d, prog, res, gaps))   # nothing more fits
-        self.assertTrue(all("P3" in g for g in gaps))      # only the full Stern Docks is left for Jordan
+        self.assertFalse(gaps)
 
 
 if __name__ == "__main__":

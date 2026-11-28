@@ -213,7 +213,9 @@ def check(d, prog):
                 f += 1
     real = [dr for dr in res["doors"] if dr["cls"] != "crew"]
     for rule in prog.get("response", []):
-        cands = [b for p in d["precincts"] for b in p["buildings"] if b.get("category") == rule["category"]]
+        also = re.compile(rule["also_text"], re.I) if rule.get("also_text") else None
+        cands = [b for p in d["precincts"] for b in p["buildings"]
+                 if b.get("category") == rule["category"] or (also and also.search(_text(b)))]
         far = []
         for dr in real:
             best = min(cands, key=lambda b: _dist_to(dr["point"], b)) if cands else None
