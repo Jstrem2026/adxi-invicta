@@ -129,6 +129,13 @@
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
         out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + i * e.riser_m, h: e.riser_m, t: w });   // a solid step: tread on top, riser in front
+        // guard rails on the left and right of the flight: a post at every tread and a handrail on top
+        const zt = z0 + i * e.riser_m + e.riser_m, sa = Math.max(0, s0), sb = Math.min(Lu, s0 + e.tread_m);
+        for (const side of [-1, 1]) {
+          const tt = t0 + side * (w / 2 - 0.03);
+          out.push({ a: at(sa, tt), b: at(Math.min(Lu, sa + 0.05), tt), z: zt, h: 0.9, t: 0.05, rail: true });
+          out.push({ a: at(sa, tt), b: at(sb, tt), z: zt + 0.9, h: 0.05, t: 0.06, rail: true });
+        }
       }
       const zl = z0 + (i - n + per) * e.riser_m - 0.05;
       out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl, h: 0.05, t: Lv });  // half landing
@@ -192,7 +199,7 @@
       const els = (model.elements || []).filter(on);
       if (fab) {
         // A building with its fabric: floors, walls, doors, window panes and stairs instead of room volumes.
-        const wallIt = [], frameIt = [], entIt = [], paneIt = [], treadIt = [];
+        const wallIt = [], frameIt = [], entIt = [], paneIt = [], treadIt = [], railIt = [];
         const fl = l.z_m + 0.3, c = cut[l.id] || { walls: [], gaps: [] };
         for (const s of c.walls) wallIt.push({ a: [s.ax, s.ay], b: [s.bx, s.by], z: fl, h: Math.max((s.h || l.height_m) - 0.3, 0.1), t: s.t });
         for (const gp of c.gaps) {
@@ -237,7 +244,7 @@
               if (!inDoorway(pa, pb)) paneIt.push({ a: pa, b: pb, z: l.z_m + 0.3 + e.sill_m, h: e.head_m - e.sill_m, t: 0.36 });
             }
           }
-          else if (e.type === "stair") treadIt.push(...stairTreads(e, l.z_m + 0.3));
+          else if (e.type === "stair") for (const it of stairTreads(e, l.z_m + 0.3)) (it.rail ? railIt : treadIt).push(it);
           else if (e.type === "lift" && e.levels && e.levels[0] === l.id) {
             const ls = e.levels.map((id) => byId[id]).filter(Boolean), top = ls[ls.length - 1];
             lg.add(prism(e.outline_m, l.z_m, top.z_m + top.height_m - l.z_m, matLift, edge));   // see-through shaft
@@ -245,7 +252,7 @@
           else if (e.outdoor) lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
           else if (e.type === "fixture" && e.outline_m) lg.add(prism(e.outline_m, l.z_m + 0.3, Math.min(e.height_m || 1.1, l.height_m), matFix, edge));
         }
-        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore)]) if (m) lg.add(m);
+        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore), boxes(railIt, new THREE.MeshStandardMaterial({ color: 0x2b323a, roughness: 0.4, metalness: 0.6 }))]) if (m) lg.add(m);
         g.add(lg);
         info.levels.push(lg);
         continue;
