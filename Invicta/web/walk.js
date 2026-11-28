@@ -123,8 +123,9 @@
     const out = [];
     for (let k = 0, done = 0; k < turns && done < st.risers; k++) {
       const m = Math.min(n, st.risers - done), up = Math.ceil(m / 2), base = st.z0 + done * r;
-      if (t < Lv / 2) out.push(base + Math.max(0, Math.min(up, (s - land) / tr)) * r);                    // flight up
-      else out.push(base + (up + Math.max(0, Math.min(m - up, (Lu - land - s) / tr))) * r);              // flight back
+      // treads match the drawing: a flight of N risers has N-1 treads and its top step is the landing
+      if (t < Lv / 2) out.push(base + (s < land ? 0 : Math.min(up, Math.floor((s - land) / tr) + 1)) * r);                         // flight up
+      else out.push(base + (up + (s > Lu - land ? 0 : Math.min(m - up, Math.floor((Lu - land - s) / tr) + 1))) * r);              // flight back
       done += m;
     }
     return out;
