@@ -84,6 +84,9 @@ to keep in sync and no build step.
   street and block sections are not applied yet; no deck layout changes from them without Jordan's OK.
 - No stairs between decks (Jordan, 28 Nov 2026, canon): decks are joined only by fast elevators and teleport pads, in
   the Spine Atrium at the centre of every deck. Stairs are only inside buildings.
+- 3D look (Jordan, 28 Nov 2026): how the 3D view is drawn (textures, light, shadows, haze, glow) lives in `web/look3d.js`, with a
+  "Look" picker: Realistic (laptops), Balanced (phones and tablets start here), Simple (the old flat look). Textures are drawn in
+  code, so no image files or licences. It never changes shapes or Walk mode; finishes still come only from the "look" text.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.

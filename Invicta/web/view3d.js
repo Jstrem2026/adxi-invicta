@@ -13,6 +13,8 @@
   const isMetric = () => localStorage.getItem("adxi.units") === "metric";
   const len = (m) => isMetric() ? `${Math.round(m * 10) / 10} m` : `${Math.round(m * FT).toLocaleString()} ft (${Math.round(m)} m)`;
   let THREE = null, Orbit = null;
+  let T = null;   // the look in use (web/look3d.js): Realistic, Balanced or Simple
+  const LOOK = () => window.adxiLook;
 
   async function lib() {
     if (THREE) return;
@@ -22,6 +24,7 @@
 
   // ---- Finishes from the building's "look" text. Only words that are actually written there are used.
   const FINISH = [
+    [/\bvoid ore/i, "void ore", 0x2b3442],
     [/\bglass|glazed|glazing|curtain wall/i, "glass", 0xa9d6ee],
     [/\bsandstone/i, "sandstone", 0xd9c39a],
     [/\blimestone|travertine/i, "limestone", 0xe5dccb],
@@ -181,7 +184,7 @@
     const byId = Object.fromEntries(lv.map((l) => [l.id, l]));
     const matWall = new THREE.MeshStandardMaterial({ color: f.wall, roughness: 0.75, metalness: 0.05, side: THREE.DoubleSide });
     const matRoom = new THREE.MeshStandardMaterial({ color: f.wall, roughness: 0.8, transparent: true, opacity: 0.55, side: THREE.DoubleSide });
-    const matGlass = new THREE.MeshStandardMaterial({ color: 0xa9d6ee, roughness: 0.1, metalness: 0.4, transparent: true, opacity: 0.35, side: THREE.DoubleSide });
+    const matGlass = (LOOK() && LOOK().glassMaterial(THREE, T)) || new THREE.MeshStandardMaterial({ color: 0xa9d6ee, roughness: 0.1, metalness: 0.4, transparent: true, opacity: 0.35, side: THREE.DoubleSide });
     const matCore = new THREE.MeshStandardMaterial({ color: 0xe0a24a, roughness: 0.7 });
     const matSlab = new THREE.MeshStandardMaterial({ color: 0x8d949c, roughness: 0.9 });
     const matDoor = new THREE.MeshStandardMaterial({ color: 0x5fd39a, roughness: 0.6, transparent: true, opacity: 0.35, depthWrite: false });
@@ -194,7 +197,11 @@
     const matYard = new THREE.MeshStandardMaterial({ color: 0x3e4955, roughness: 1 });
     const matGreen = new THREE.MeshStandardMaterial({ color: 0x4f7a45, roughness: 1 });
     const edge = new THREE.LineBasicMaterial({ color: 0x1b2633, transparent: true, opacity: 0.45 });
+    const matRail = new THREE.MeshStandardMaterial({ color: 0x2b323a, roughness: 0.4, metalness: 0.6 });
     matRoom.opacity = 0.85;
+    // Realistic and Balanced looks: textured, physically based versions of the same materials (web/look3d.js)
+    if (LOOK()) LOOK().dress(THREE, { wall: matWall, room: matRoom, glass: matGlass, core: matCore, slab: matSlab, frame: matFrame, entrance: matEntrance,
+      lift: matLift, fix: matFix, roof: matRoof, yard: matYard, green: matGreen, rail: matRail }, f, T);
     const roomMat = matRoom, massMat = f.glass ? matGlass : matRoom;
     const fab = !!model.fabric;  // walls, doors, windows, stairs and slabs worked out from the rooms
     // Walls with their doorways cut out (the same walls Walk mode bumps into, web/walk.js).
@@ -260,7 +267,7 @@
           else if (e.outdoor) lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
           else if (e.type === "fixture" && e.outline_m) lg.add(prism(e.outline_m, l.z_m + 0.3, Math.min(e.height_m || 1.1, l.height_m), matFix, edge));
         }
-        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore), boxes(railIt, new THREE.MeshStandardMaterial({ color: 0x2b323a, roughness: 0.4, metalness: 0.6 }))]) if (m) lg.add(m);
+        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore), boxes(railIt, matRail)]) if (m) lg.add(m);
         g.add(lg);
         info.levels.push(lg);
         continue;
@@ -312,6 +319,12 @@
       for (const e of list) rg.add(prism(e.outline_m, l.z_m + l.height_m, 0.4, matRoof, null));
       info.levels.find((x) => x.userData.id === id).add(rg);
     }
+    // Lights the look text names (the Harbourmaster's "green and red navigation lights"), on the top level so the
+    // level cut hides them with it.
+    if (LOOK() && info.levels.length) {
+      const topL = info.levels[info.levels.length - 1];
+      info.navLights = LOOK().navLights(THREE, topL, model, b.look, T);
+    }
     return { group: g, info };
   }
 
@@ -346,8 +359,11 @@
       <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-s="1" class="v3d-run on" title="Normal pace (1)">1×</button><button data-s="5" class="v3d-run" title="5 times faster (5)">5×</button><button data-s="10" class="v3d-run" title="10 times faster (0)">10×</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
     document.body.append(ov);
     ov.querySelector(".v3d-x").onclick = close;
+    T = LOOK() ? LOOK().tier(LOOK().current()) : { simple: true };
+    if (LOOK()) ov.querySelector(".v3d-x").before(LOOK().picker(() => open()));   // a new look rebuilds the view
     state = { ov, keys: {}, stop: false, speed: 1 };
     try { await lib(); } catch (e) { ov.querySelector(".v3d-msg").textContent = "Couldn't load the 3D library. Check the connection and try again."; return; }
+    if (!T.simple) try { await LOOK().lib(); } catch (e) { T = { simple: true }; }   // no effects library: fall back to the Simple look
     if (!state || state.ov !== ov) return;
     ov.querySelector(".v3d-msg").remove();
     const stage = ov.querySelector(".v3d-stage");
@@ -356,10 +372,12 @@
     renderer.setSize(stage.clientWidth, stage.clientHeight);
     stage.append(renderer.domElement);
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x0b1a2c);
-    scene.add(new THREE.HemisphereLight(0xdfefff, 0x2a3440, 1.1));
-    scene.add(new THREE.AmbientLight(0xffffff, 0.45));   // so ceilings, stair undersides and rooms indoors aren't black
-    const sun = new THREE.DirectionalLight(0xffffff, 1.6); sun.position.set(-400, 800, -300); scene.add(sun);
+    if (T.simple) {   // the Simple look: flat light (Realistic and Balanced light the scene in web/look3d.js)
+      scene.background = new THREE.Color(0x0b1a2c);
+      scene.add(new THREE.HemisphereLight(0xdfefff, 0x2a3440, 1.1));
+      scene.add(new THREE.AmbientLight(0xffffff, 0.45));   // so ceilings, stair undersides and rooms indoors aren't black
+      const sun = new THREE.DirectionalLight(0xffffff, 1.6); sun.position.set(-400, 800, -300); scene.add(sun);
+    }
 
     // Origin: the bow-port corner of the area (or of the building).
     const rects = sc.buildings.filter((b) => b.rect_km).map((b) => b.rect_km);
@@ -370,12 +388,13 @@
 
     // Ground: the precinct or block area, and streets at their stored widths.
     const pad = sc.kind === "building" ? Math.max(Lm, Wm) * 0.25 : 0;
-    const ground = new THREE.Mesh(new THREE.PlaneGeometry(Lm + pad * 2, Wm + pad * 2), new THREE.MeshStandardMaterial({ color: 0x24303c, roughness: 1 }));
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(Lm + pad * 2, Wm + pad * 2), T.simple ? new THREE.MeshStandardMaterial({ color: 0x24303c, roughness: 1 })
+      : LOOK().surface(THREE, new THREE.MeshStandardMaterial({ color: 0x5f6164 }), "paving", T));
     ground.rotation.x = -Math.PI / 2; ground.position.set(Lm / 2, -0.05, Wm / 2); scene.add(ground);
     const p = sc.precinct;
     if (p && p.shape_km && sc.kind !== "building") {
       const pts = p.shape_km.map((q) => [(q[0] - origin[0]) * 1000, (q[1] - origin[1]) * 1000]);
-      scene.add(prism(pts, -0.04, 0.02, new THREE.MeshStandardMaterial({ color: 0x2c3a47, roughness: 1 }), new THREE.LineBasicMaterial({ color: 0x6fd0ff })));
+      scene.add(prism(pts, -0.04, 0.02, T.simple ? new THREE.MeshStandardMaterial({ color: 0x2c3a47, roughness: 1 }) : LOOK().surface(THREE, new THREE.MeshStandardMaterial({ color: 0x84858a }), "paving", T), new THREE.LineBasicMaterial({ color: 0x6fd0ff })));
     }
     for (const st of (p && p.streets) || []) {
       if (!st.rect_km) continue;
@@ -383,7 +402,8 @@
       const x0 = Math.max(q[0], -pad), x1 = Math.min(q[1], Lm + pad), y0 = Math.max(q[2], -pad), y1 = Math.min(q[3], Wm + pad);
       if (x1 <= x0 || y1 <= y0) continue;
       const sc2 = window.adxiStreetCat ? window.adxiStreetCat(st) : null;
-      scene.add(prism([[x0, y0], [x1, y0], [x1, y1], [x0, y1]], -0.02, 0.03, new THREE.MeshStandardMaterial({ color: sc2 ? new THREE.Color(sc2.fill) : 0x3b4450, roughness: 1 }), null));
+      const stMat = new THREE.MeshStandardMaterial({ color: sc2 ? new THREE.Color(sc2.fill) : 0x3b4450, roughness: 1 });
+      scene.add(prism([[x0, y0], [x1, y0], [x1, y1], [x0, y1]], -0.02, 0.03, T.simple ? stMat : LOOK().surface(THREE, stMat, "asphalt", T), null));
     }
 
     // Buildings.
@@ -429,7 +449,7 @@
     const f = built[0] ? built[0].info.finishes : null;
     ov.querySelector(".v3d-key").innerHTML = [
       sc.kind === "building" && f ? (f.fromLook ? `Finishes from the Architecture "look": ${esc(f.names.join(", "))}.` : `No finishes in the Architecture "look" yet, so walls are plain grey.`) : "",
-      designed.length ? `<span class="sw core"></span>stairs and lifts <span class="sw door"></span>doors${built.some((x) => x.info.entrances) ? ` <span class="sw entrance"></span>entrances (${built.reduce((n, x) => n + (x.info.entrances || 0), 0)})` : ""}` : "",
+      designed.length ? `${T.simple ? `<span class="sw core"></span>stairs and lifts` : `<span class="sw core"></span>lifts (stairs are concrete)`} <span class="sw door"></span>doors${built.some((x) => x.info.entrances) ? ` <span class="sw entrance"></span>entrances (${built.reduce((n, x) => n + (x.info.entrances || 0), 0)})` : ""}` : "",
       notDesigned.length ? `Footprints are coloured by use, as on the map legend. <span class="sw none"></span>${notDesigned.length === built.length && sc.kind === "building" ? "No plan yet: footprint only" : `${notDesigned.length} of ${built.length} buildings have no plan yet (footprint only)`}${notDesigned.some((x) => x.info.placeholderHeight) ? ", flat where no height is set" : ""}.` : "",
     ].filter(Boolean).join(" · ");
 
@@ -441,10 +461,14 @@
     orbit.target.set(Lm / 2, 0, Wm / 2);
     orbit.maxPolarAngle = Math.PI * 0.495;
     orbit.update();
+    // Realistic and Balanced: the deck's light, shadows, haze and finish (web/look3d.js)
+    const look = T.simple ? null : LOOK().stage({ THREE, renderer, scene, camera, sc, area: [Lm, Wm], size, t: T, stage });
+    if (look) look.shadows();
     // Walk: a person on the floor (web/walk.js): walls and windows stop you, doors let you through, gravity holds
     // you down, stairs carry you up and down, lifts change floors. Orbit stays the free camera.
     let mode = "orbit", walker = null, liftNote = 0;
     state.walker = () => walker;
+    state.scene = scene; state.camera = camera;   // for tests and screenshots
     const hud = ov.querySelector(".v3d-hud");
     const startWalk = () => {
       if (!walker && window.adxiWalk) walker = window.adxiWalk.make(built.map((x) => ({ b: x.b, model: x.model, gx: x.group.position.x, gz: x.group.position.z })));
@@ -500,11 +524,14 @@
       const html = `<b>${where}</b> · ${tip}`;
       if (hud.innerHTML !== html) hud.innerHTML = html;
     };
-    state.resize = () => { renderer.setSize(stage.clientWidth, stage.clientHeight); camera.aspect = stage.clientWidth / stage.clientHeight; camera.updateProjectionMatrix(); };
+    // the walk tip sits just under the bar, which wraps to more rows on a phone
+    const placeHud = () => { hud.style.top = ov.querySelector(".v3d-bar").offsetHeight + 12 + "px"; };
+    placeHud();
+    state.resize = () => { placeHud(); renderer.setSize(stage.clientWidth, stage.clientHeight); camera.aspect = stage.clientWidth / stage.clientHeight; camera.updateProjectionMatrix(); if (look) look.resize(); };
     addEventListener("resize", state.resize);
     let last = performance.now();
     const tick = (now) => {
-      if (!state || state.ov !== ov) { renderer.dispose(); return; }
+      if (!state || state.ov !== ov) { if (look) look.dispose(); renderer.dispose(); return; }
       const dt = Math.min(0.1, (now - last) / 1000); last = now;
       if (mode === "walk" && walker) {
         const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock, speed: state.speed });
@@ -518,7 +545,8 @@
         pin.scale.set(k, k * 2.2, k);
         pin.position.y = pin.userData.base + k * 1.3;
       }
-      renderer.render(scene, camera);
+      if (look) { look.follow(camera.position.x, camera.position.z, mode === "walk" && !!walker); look.render(); }   // shadows follow you in Walk
+      else renderer.render(scene, camera);
       requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
@@ -547,5 +575,5 @@
     tools.prepend(bt);
   }
   new MutationObserver(addButton).observe(document.documentElement, { childList: true, subtree: true });
-  window.adxi3D = { open, close, walker: () => state && state.walker && state.walker() };
+  window.adxi3D = { open, close, walker: () => state && state.walker && state.walker(), scene: () => state && state.scene, camera: () => state && state.camera };
 })();
