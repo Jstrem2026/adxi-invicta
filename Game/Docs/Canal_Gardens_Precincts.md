@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II and B4 Central Canal I are laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I and B5 Central Canal II are laid out (proposed); the other blocks are not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -98,6 +98,19 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Access Road B (B4) | 18 × 1,000 m | CC-14B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
 | Gallery Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 175–191. Each end overlaps its plot by 10 m (CC-03; CC-07 and CC-08) | D3F6P1B4A14 |
 | Central Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 805–825. Each end overlaps its plot by 10 m (CC-05, CC-11) | D3F6P1B4A15 |
+| Grand Canal (B5) | 100 × 500 m; 50,000 m² | CC2-01. X 223.5–323.5, Y 0–500. Straight 100 m channel; carries on from B4 and runs on into B6 | D3F6P1B5A1 |
+| Waterfront Tea Gardens | 175.5 × 120 m; 21,060 m² | CC2-02. X 18–193.5, Y 0–120. Plot only | D3F6P1B5A2 |
+| Wellness & Spa Quarter | 175.5 × 150 m; 26,325 m² | CC2-03. X 18–193.5, Y 120–270. Plot only | D3F6P1B5A3 |
+| Water Lily Gardens | 175.5 × 160 m; 28,080 m² | CC2-04. X 18–193.5, Y 270–430. Plot only | D3F6P1B5A4 |
+| Public Boat Stop (B5) | 175.5 × 70 m; 12,285 m² | CC2-05. X 18–193.5, Y 430–500. Plot only | D3F6P1B5A5 |
+| Ornamental Water Gardens | 175.5 × 175 m; 30,712.5 m² | CC2-06. X 353.5–529, Y 0–175. Plot only | D3F6P1B5A6 |
+| Fine Dining Terraces | 175.5 × 130 m; 22,815 m² | CC2-07. X 353.5–529, Y 175–305. Plot only | D3F6P1B5A7 |
+| Serenity Square | 175.5 × 85 m; 14,917.5 m² | CC2-08. X 353.5–529, Y 305–390. Plot only | D3F6P1B5A8 |
+| Garden Gateway Park | 175.5 × 110 m; 19,305 m² | CC2-09. X 353.5–529, Y 390–500. Plot only | D3F6P1B5A9 |
+| Promenades (B5) | 30 × 500 m each side; 30,000 m² | CC2-10A X 193.5–223.5 and CC2-10B X 323.5–353.5, both Y 0–500. Carry on from B4 and run on into B6 | D3F6P1B5A10 |
+| Access Road A (B5) | 18 × 500 m | CC2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B5) | 18 × 500 m | CC2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
+| Serenity Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 340–356. Each end overlaps its plot by 10 m (CC2-04, CC2-08) | D3F6P1B5A11 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -125,7 +138,13 @@ Area check (m²): plots 313,316.8 (west 156,658.4 = 26,325 + 24,904.2 + 54,200 +
 
 How the app shows it: as in B1 to B3, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 1,000 m, 0.511 km²) as the block, still addressed D3-F56-Q. The canal, promenades and boundary roads meet B3 at Y 0 and B5 at Y 1,000 with the same widths.
 
-Not designed yet: what the other four blocks and the other precincts hold, streets other than the access roads of B1 to B4, bridges other than B1's two, the Social Bridge, the Heritage Bridge, the Gallery Bridge and the Central Bridge, where the canal water comes from and goes, individual buildings.
+B5 Central Canal II (D3-F56-S) layout, proposed. The block is 547 × 500 m (273,500 m²), Y 2,750 to 3,250 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 2.75 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and the bridge only; no individual buildings are designed.
+
+Area check (m²): plots 175,500 (west 87,750 = 175.5 × (120 + 150 + 160 + 70), east 87,750 = 175.5 × (175 + 130 + 85 + 110)), canal 50,000, promenades 30,000, access roads 18,000. Total 273,500, which is the whole block. The Serenity Bridge sits over the canal and plots and is not counted again.
+
+How the app shows it: as in B1 to B4, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-S. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B4 at Y 0 and B6 at Y 500 with the same widths, so each runs unbroken from B4 through B5 into B6.
+
+Not designed yet: what the other three blocks and the other precincts hold, streets other than the access roads of B1 to B5, bridges other than B1's two, the Social, Heritage, Gallery, Central and Serenity Bridges, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -212,5 +231,18 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-56 Access Road B (B4)**: The service road along the stern edge of the Central Canal block.
 - **P1-57 Gallery Bridge**: A footbridge over the canal linking the Waterfront Gallery Quarter with the gardens and pavilions on the far bank.
 - **P1-58 Central Bridge**: A footbridge over the canal at the south end of the basin, linking the Central Dining Quarter and the Waterfront Recreation Park.
+- **P1-59 Grand Canal (B5)**: The fifth stretch of the Grand Canal, carrying boats on from the Central Canal Basin through the garden waterfront towards Garden Reach.
+- **P1-60 Waterfront Tea Gardens**: Tea gardens and small tea houses on the port bank, where people sit by the water.
+- **P1-61 Wellness & Spa Quarter**: A quarter for spas, baths and wellness, where people come to rest and relax beside the canal.
+- **P1-62 Water Lily Gardens**: Quiet gardens with lily ponds for walking and sitting, with the Serenity Bridge arriving at the canal side.
+- **P1-63 Public Boat Stop (B5)**: A public boat stop on the port bank where people get on and off the canal boats.
+- **P1-64 Ornamental Water Gardens**: Formal gardens of pools and fountains on the stern bank.
+- **P1-65 Fine Dining Terraces**: Fine restaurants on terraces facing the canal.
+- **P1-66 Serenity Square**: A calm public square on the stern bank, with the Serenity Bridge arriving at its canal side.
+- **P1-67 Garden Gateway Park**: A park at the gateway to Garden Reach, welcoming people on towards the next block.
+- **P1-68 Promenades (B5)**: Walkways along both banks of the fifth stretch of the canal.
+- **P1-69 Access Road A (B5)**: The service road along the bow edge of the Central Canal II block.
+- **P1-70 Access Road B (B5)**: The service road along the stern edge of the Central Canal II block.
+- **P1-71 Serenity Bridge**: A footbridge over the canal linking the Water Lily Gardens and Serenity Square.
 
 <!-- purposes:end -->
