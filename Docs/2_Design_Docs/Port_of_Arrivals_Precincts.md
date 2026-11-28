@@ -40,13 +40,13 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 | Service Shaft 2 | 591 × 1,640 ft (180 × 500 m) | Access to the 60 m service layer (stern shaft) | D5F3P2B5A3 |
 | Bow Garden / Stern Garden | 56 and 44 acres | Forecourt parks | D5F3P2B3A6 |
 
-**Crew Lodge (P2-19) architecture, proposed 26 Nov 2026:** height 125 ft (38 m) at the tower tops and 79 ft (24 m) for the main block. Floors: Level −1 below deck, Levels 1–3 in the main block, Levels 4–5 in the towers. Capacity: 640 cabins (480 standard + 160 tower quarters), rated for 1,280 crew on rotating shifts. Entrances: Prow Entrance; Starboard Service Access; none on the stern side. Structure: steel frame on a 39 × 39 ft (12 × 12 m) grid, composite slabs, bearing on the deck plating. Main block (Levels 1–3) covers the full footprint at 26 ft (8 m) floor to floor. Four corner towers, each about 262 × 197 ft (80 × 60 m), add Levels 4–5 at 23 ft (7 m) to 125 ft (38 m). Stair and lift cores about every 328 ft (100 m), plus one core per tower from Level −1 to the roof. Level −1, the Crew Undercroft, is 20 ft (6 m) deep in the top of the 197 ft (60 m) service layer, clear of the gravity plates, with plant, laundry, stores and a crew-only tunnel door into the service-layer tunnels. Sits wholly within one pressure zone (F45–F46). Look, services and interior are not designed yet.
+**Crew Lodge (P2-19) architecture, proposed 26 Nov 2026, canon 28 Nov 2026:** height 125 ft (38 m) at the tower tops and 79 ft (24 m) for the main block. Floors: Level −1 below deck, Levels 1–3 in the main block, Levels 4–5 in the towers. Capacity: 640 cabins (480 standard + 160 tower quarters), rated for 1,280 crew on rotating shifts. Entrances: Prow Entrance; Starboard Service Access; none on the stern side. Structure: steel frame on a 39 × 39 ft (12 × 12 m) grid, composite slabs, bearing on the deck plating. Main block (Levels 1–3) covers the full footprint at 26 ft (8 m) floor to floor. Four corner towers, each about 262 × 197 ft (80 × 60 m), add Levels 4–5 at 23 ft (7 m) to 125 ft (38 m). Stair and lift cores about every 328 ft (100 m), plus one core per tower from Level −1 to the roof. Level −1, the Crew Undercroft, is 20 ft (6 m) deep in the top of the 197 ft (60 m) service layer, clear of the gravity plates, with plant, laundry, stores and a crew-only tunnel door into the service-layer tunnels. Sits wholly within one pressure zone (F45–F46). Look, services and interior are not designed yet.
 
-**Crew Lodge (P2-19) layout, proposed 27 Nov 2026** (from Jordan's review spec; full plan in `Invicta/data/models/D5-port-of-arrivals-P2-19.json`): look: graphite, titanium, smart glass, ice-blue exterior lighting, warm interiors. Level −1 laundry, plant, workshop, stores, receiving and crew tunnel; Level 1 Prow Entrance, reception, dining, lounges, medical, atrium and courtyard garden; Levels 2–3 eight cabin wings of 60 cabins (6 × 9 m each, 480 in total) with recreation on Level 2 and quiet lounges on Level 3; Levels 4–5 four 80 × 60 m towers with 20 quarters each per level (160). Eight stair and lift cores about every 100 m, plus one per tower.
+**Crew Lodge (P2-19) layout, proposed 27 Nov 2026, canon 28 Nov 2026** (from Jordan's review spec; full plan in `Invicta/data/models/D5-port-of-arrivals-P2-19.json`): look: graphite, titanium, smart glass, ice-blue exterior lighting, warm interiors. Level −1 laundry, plant, workshop, stores, receiving and crew tunnel; Level 1 Prow Entrance, reception, dining, lounges, medical, atrium and courtyard garden; Levels 2–3 eight cabin wings of 60 cabins (6 × 9 m each, 480 in total) with recreation on Level 2 and quiet lounges on Level 3; Levels 4–5 four 80 × 60 m towers with 20 quarters each per level (160). Eight stair and lift cores about every 100 m, plus one per tower.
 
 <!-- designs P2 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Port Health** (D5F3P2B2A1): 46 ft (14 m) tall, 3 above deck, 1 below. Concrete frame on a 9 m grid; the quarantine wing is sealed with its own air supply. A screening hall with booths and scan gates along the gates side; a clinic wing with treatment rooms, imaging, lab and wards; a sealed quarantine wing with negative-pressure rooms and quarantine suites; a healing garden between them. Capacity About 3,000 arrivals screened an hour; 60 ward beds and 46 quarantine suites..
 - **Arrivals Fire Station** (D5F3P2B2A2): 43 ft (13 m) tall, 3 above deck. Steel appliance hall, 9 m (30 ft) clear; three-storey concrete crew block. A six-bay appliance hall, a crew block with watch room and medical store, bunk rooms and mess, and offices on top, and a drill yard behind. Capacity 6 appliances; 18 crew on watch..
@@ -86,7 +86,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P5 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Transfer Hall** (D5F3P5B1A1): 105 ft (32 m) tall, 4 above deck, 1 below. A steel lattice dome, 32 m (105 ft) high and 300 m (984 ft) across, on a concrete ring; concrete arms around it. A domed great hall at the crossing of four arms: deck transfer desks, ticketing and lounges in the bow arm, shuttle booking and baggage transfer in the stern arm, the link to the gates on the port side and the kerb hall on the landside. Food court and business lounges upstairs; deck lifts and baggage belts below. Capacity About 12,000 transfer travellers an hour..
 - **Arrivals Terminal** (D5F3P5B3A1): 49 ft (15 m) tall, 2 above deck, 1 below. Steel roof on tree columns on a 36 m grid, 15 m (49 ft) clear, over a concrete baggage level. Three halls in sequence from the gates to the kerb: immigration (passport control, automated gates, secondary checks), reclaim and customs, and the arrivals meeting hall with welcome desks, pod and taxi desks, shops and cafés, and an arrivals lounge upstairs. Capacity About 6,000 arrivals an hour; 8 reclaim belts..
@@ -130,7 +130,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P6 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Greeters' Hall** (D5F3P6B1A1): 69 ft (21 m) tall, 3 above deck. Steel space-frame roof, 21 m (69 ft) high, on eight tree columns; concrete service wing. One great greeting hall where people meet arriving travellers, with welcome desks, gift shops, cafés, lost and found and a family room in the service wing and a gallery lounge above, and a waiting garden behind. Capacity About 5,000 people waiting at a time..
 - **Shop Arcade** (D5F3P6B1A2): 51 ft (15.5 m) tall, 3 above deck. Steel frame on a 10 m grid with glass barrel roofs over the two arcades. Two shop bars, each with its own glass-roofed arcade: duty-free, travel goods, pharmacy, grocery, books and banking on the ground floor, fashion and electronics above, restaurants, a food court and a cinema on top. Capacity About 90 shops; about 8,000 visitors at a time..
@@ -172,7 +172,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P7 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Porters' Hall** (D5F3P7B1A1): 49 ft (15 m) tall, 3 above deck. Concrete frame with a steel automated luggage store. Porter booking desks, luggage storage, lost and found and the trolley store along a trolley street, porters' lockers, canteen and offices upstairs, an automated luggage tower behind, and a cart yard and drop-off. Capacity About 40,000 bags stored; 600 porters..
 - **Station Shops** (D5F3P7B1A2): 31 ft (9.5 m) tall, 2 above deck. Steel frame on a 10 m grid with a rooflit shop street. A shop street with a supermarket, pharmacy, bakery, newsagent and small shops below, and a food court, post office, bank and shops above; a service yard and a shop square. Capacity About 30 shops and a supermarket; 4,000 shoppers at a time..
@@ -209,7 +209,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P1 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Harbourmaster** (D5F3P1B4A1): 154 ft (47 m) tall, 11 above deck. Concrete frame on an 8 m grid for the horseshoe; a slipformed concrete tower core with a steel and glass cab. A horseshoe of three wings round a harbour garden. Front wing: entrance hall, berth booking counters, pilot assignment and customs liaison on the ground floor, the berth control room on level 2, offices above. Side wings: dock operations, records, pilots' ready room and mess. The tower has radar and comms floors and the harbour control cab at the top. Capacity About 450 staff; the control cab holds 10 berth controllers..
 - **Bow Docks Fire Station** (D5F3P1B4A2): 64 ft (19.5 m) tall, 4 above deck. Steel portal frame over the appliance hall, 9 m (30 ft) clear; three-storey concrete crew wing. A six-bay appliance hall facing the dock, and a crew wing with watch room, breathing apparatus, foam store and dive store on the ground floor, bunk rooms, mess and gym above, offices and training on top. Drill tower and yard behind. Capacity 6 appliances; 20 crew on watch..
@@ -252,7 +252,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P3 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Stern Docks Private Flights Lounge** (D5F3P3B2A1): 34 ft (10.5 m) tall, 2 above deck. A long-span steel roof on slender columns over a glass-walled pavilion. A glass gallery runs the length of the pavilion: owners' check-in and private customs at the front, a main lounge, dining room, private suites and spa along it, a roof bar and meeting suites on top, and a water garden behind. Capacity About 250 guests at a time; 80 staff..
 - **Stern Docks Fire Station** (D5F3P3B2A2): 69 ft (21 m) tall, 5 above deck. Steel portal frame appliance hall, 9 m (30 ft) clear; a five-storey concrete crew tower. An eight-bay appliance hall on the road, a crew tower with watch room and breathing apparatus at ground level, bunk rooms and mess above and fire academy classrooms on top, and a training ground with a mock-corvette fire rig. Capacity 8 appliances; 30 crew on watch; the fire academy trains 120 a day..
@@ -296,7 +296,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P4 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Bonded Warehouse A** (D5F3P4B1A1): 59 ft (18 m) tall, 3 above deck. Steel portal frames, 18 m (59 ft) clear, on a 30 m grid; customs block in concrete. A customs inspection block with inspection hall, X-ray tunnel, sample lab and seized goods store, then a 900 m bonded shed split into six halls with docks all along the street side. Capacity About 60,000 pallets held in bond; about 200 staff per shift..
 - **Bonded Warehouse B** (D5F3P4B1A2): 52 ft (16 m) tall, 2 above deck. Post-tensioned concrete two-deck warehouse; trucks drive up a ramp to the upper deck. Two decks of bonded bays either side of a 24 m truck aisle, reached by a truck ramp, with a customs and tenant office at the end. Capacity 36 bonded bays on two decks for different importers; about 150 staff..
@@ -348,7 +348,7 @@ Build order (walking order of a new arrival): P2 Arrivals › P5 Terminals › P
 
 <!-- designs P8 start -->
 
-**Building designs (proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
+**Building designs (canon 28 Nov 2026, approved by Jordan; proposed 27 Nov 2026; full room plans in `Invicta/data/models/`):**
 
 - **Maintenance Shops** (D5F3P8B8A1): 79 ft (24 m) tall, 4 above deck. Four steel barrel-vault halls, 24 m (79 ft) clear inside, each spanning 260 m (853 ft) with no columns; a two-storey concrete workshop spine behind them. Four halls side by side, each split into two craft bays. Behind them the workshop spine: engine, avionics, composites and wheel shops, test lab, tool cribs and parts cage on the ground floor; planning office, records, training rooms and canteen upstairs, all opening onto a 6 m workshop street. Capacity 4 halls, 8 craft bays; about 900 technicians per shift..
 - **Shuttle Ops** (D5F3P8B15A1): 139 ft (42.5 m) tall, 9 above deck. Concrete frame on a 9 m grid for the courtyard ring; a slipformed concrete tower core with a steel-framed glass control cab on top. Four wings round a garden courtyard. Ground floor: lobby and café on the entrance side, crew check-in and lounge on the bow side, weather and flight planning on the stern side, briefing rooms and the crew gate on the airside. Upstairs: the dispatch floor, scheduling, training and offices. The tower holds planning floors and the yard control cab at the top. Capacity About 600 staff across three shifts; the control cab holds 12 controllers..
