@@ -83,7 +83,7 @@ svg text { font-family: "Segoe UI", system-ui, sans-serif; pointer-events: none;
 .hit { cursor: pointer; }
 .hit:hover { filter: brightness(1.35); }
 /* clickable areas: clear outline above the coloured detail, bold red ring on hover and on the one you are on */
-#map.has-rings > :not(#rings):not(defs) { opacity: .82; }
+#map.has-rings > :not(#rings):not(defs):not(#plan2d) { opacity: .82; }
 #rings .ring { cursor: pointer; }
 #rings .ring > * { stroke: #e8f1fb; stroke-opacity: .9; stroke-width: 1.6px; vector-effect: non-scaling-stroke; }
 #rings .ring:hover > *, #rings .ring.sel > * { stroke: #ff2d2d; stroke-opacity: 1; stroke-width: 4px; }

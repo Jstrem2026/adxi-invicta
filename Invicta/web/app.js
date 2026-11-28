@@ -334,6 +334,7 @@ function helpPage() {
   <li><b>District</b>: click a precinct.</li>
   <li><b>Precinct</b>: in <i>Blocks</i> mode, click a block (the land between streets); in <i>Buildings</i> mode, click a building directly.</li>
   <li><b>Block</b>: click a building to see everything known about it. Unknown details say <i>not designed yet</i>.</li>
+  <li><b>Building</b>: click a room on the plan. Zoom out to click a neighbouring building or a street and go straight to it.</li>
   <li>Scroll to zoom, drag to move, <i>Fit</i> to reset.</li></ul>
   <h2>Conventions</h2><ul>
   <li>Every plan is a true top view: <b>bow right, port up</b>, matching the Unreal level. The canon sheets draw bow left (a mirror); the app flips them.</li>
@@ -1080,7 +1081,7 @@ function streetView(puid, i) {
   const x = IX.districts[p.district_id], d = IX.decks[p.deck], r = st.rect_km;
   const vb = vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.4));
   const fs = vb[2] / 45;
-  const g = drawPrecinct(p, fs, { selectedStreet: i, blocks: { selected: null } });
+  const g = drawPrecinct(p, fs, { selectedStreet: i, blocks: { selected: null }, clickBuildings: () => true, streetsClickable: true });
   const L = Math.max(r[1] - r[0], r[3] - r[2]) * 1000, Wd = Math.min(r[1] - r[0], r[3] - r[2]) * 1000;
   const panel = `<h1>${esc(st.name)}</h1><div class="small muted">Street · ${p.id} ${esc(p.name)} · ${esc(x.name)} · Deck ${d.n} ${esc(d.name)}</div>
     <div class="kv" style="margin-top:8px">
@@ -1090,7 +1091,7 @@ function streetView(puid, i) {
       <div>Blocks</div><div>${(st.blocks || []).map(k => `<a href="#/block/${p.uid}/${k}">${esc(k)}</a>`).join(", ") || ND}</div>
       <div>Position</div><div>${nd(r[0], 2)}–${nd(r[1], 2)} km from the prow, ${nd(r[2], 2)} to ${nd(r[3], 2)} km across</div></div>`;
   return layout([["Invicta", "#/ship"], deckCrumb(d), [x.name, `#/district/${x.id}`], [`${p.id} ${p.name}`, `#/precinct/${p.uid}`], [st.name, ""]],
-    mapShell(g, vb, "", "", "Click any building, block or street"), panel);
+    mapShell(g, vb, "", "", "Click any building or street"), panel);
 }
 // Designation (Jordan, 27 Nov 2026): D<deck> F<district> P<precinct> B<block> A<building> L<level> R<room>, no dashes,
 // e.g. D5F1P1B1A1L2R1. District = its place in the deck's canon list; precinct = its P number; block = its Block
@@ -1148,7 +1149,10 @@ function buildingView(uid) {
   const r = b.rect_km;
   const vb = r ? vbFor(r, Math.max(0.15, Math.max(r[1] - r[0], r[3] - r[2]) * 0.6)) : vbFor(p.bbox_km);
   const fs = vb[2] / 45;
-  let g = drawPrecinct(p, fs, { selected: uid, blocks: { selected: null } });
+  // Zoomed out, the neighbours can be clicked to go to them (Jordan, 28 Nov 2026: "If I zoom out, I should be able
+  // to click things"): the other buildings and the streets of this precinct. This building's own rooms stay the
+  // next level down, drawn on top, so they still win the click inside its outline.
+  let g = drawPrecinct(p, fs, { selected: uid, blocks: { selected: null }, clickBuildings: q => q.uid !== uid, streetsClickable: true });
   g += blocksLayer(p, fs, false);
   const w = r ? (r[1] - r[0]) * 1000 : null, h = r ? (r[3] - r[2]) * 1000 : null;
   const sz = b.size_m;
