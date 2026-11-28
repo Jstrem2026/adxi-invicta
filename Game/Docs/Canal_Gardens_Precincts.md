@@ -237,6 +237,16 @@ Blocks (proposed, 500 m lane lines and the F55 frame line, none over 1 km): B1 A
 
 Functional areas (proposed, area only, no streets or buildings yet), one per block except Crescent Gardens: P4-01 Atrium Gardens, P4-02 Grand Garden Square, P4-03 and P4-04 Crescent Gardens (one continuous garden across D3-F53-O and D3-F53-P, drawn as two abutting parts because a plot may not cross a block line), P4-05 Arts & Culture Square, P4-06 Garden Dining Square, P4-07 Lakeside Gateway Gardens.
 
+| Item | Size | Notes | Code |
+|---|---|---|---|
+| Atrium Gardens | 589 × 750 m box; 268,310 m² net of the Atrium Plaza | Functional area on block D3-F55-M. Area only, nothing designed on it yet. Edge follows the Atrium Plaza arc. | P4-01 |
+| Grand Garden Square | 589 × 500 m box; 280,600 m² net of the Atrium Plaza | Functional area on block D3-F55-O. Area only, nothing designed on it yet. Corner follows the Atrium Plaza arc. | P4-02 |
+| Crescent Gardens | Part of Crescent Gardens (305,071 m² in all); this part 29,594 m² net | Functional area on block D3-F53-O. One garden with P4-04 (block D3-F53-P), no physical separation; drawn as two parts only because a plot may not cross a block line. Area only, nothing designed on it yet. | P4-03 |
+| Crescent Gardens | Part of Crescent Gardens (305,071 m² in all); this part 275,477 m² net | Functional area on block D3-F53-P. One garden with P4-03 (block D3-F53-O), no physical separation. Area only, nothing designed on it yet. Edge follows the Atrium Plaza arc. | P4-04 |
+| Arts & Culture Square | 589 × 500 m; 294,500 m² | Functional area on block D3-F55-P. Area only, nothing designed on it yet. | P4-05 |
+| Garden Dining Square | 589 × 595 m; 350,455 m² | Functional area on block D3-F55-Q. Area only, nothing designed on it yet. | P4-06 |
+| Lakeside Gateway Gardens | 842 × 595 m; 500,990 m² | Functional area on block D3-F53-Q. Area only, nothing designed on it yet. Its starboard edge meets Lakeside Retreat (P5). | P4-07 |
+
 ## P5 · Lakeside Retreat — F53 to F56, lanes R–U
 
 4,695 × 5,725 ft (1,431 × 1,745 m), 0.97 sq mi (2.5 km²). Bow band, middle (x 26.658 to 28.089 km). Status: canon. What it holds is not designed yet.
@@ -370,5 +380,15 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-116 Village Bridge**: A footbridge over the canal linking the Local Produce Market and the Village Dining Quarter.
 - **P1-117 Canal Operations Marine Access**: A covered boat channel under the Terminal Promenade that joins the Canal Operations dock to the turning basin, so service boats can come and go without crossing the public walkway above.
 - **P1-118 Emergency Services Marine Access**: A covered boat channel under the Terminal Promenade that joins the Emergency Services dock to the turning basin, so rescue boats can launch and return without crossing the public walkway above.
+
+### P4 Garden Squares
+
+- **P4-01 Atrium Gardens**: The gardens beside the Atrium Plaza, the first green space people meet when they step out of the Atrium into Garden Squares.
+- **P4-02 Grand Garden Square**: The main public square of Garden Squares, a large open garden square for gathering, walking and events.
+- **P4-03 Crescent Gardens**: The north end of Crescent Gardens, the long garden that curves around the Atrium Plaza. It is one garden with the part on block F53-P.
+- **P4-04 Crescent Gardens**: The main part of Crescent Gardens, a long curved garden wrapped around the Atrium Plaza, continuous with the part on block F53-O.
+- **P4-05 Arts & Culture Square**: A square for galleries, performances and cultural events in Garden Squares.
+- **P4-06 Garden Dining Square**: A square for restaurants, cafés and outdoor dining among the gardens.
+- **P4-07 Lakeside Gateway Gardens**: Gardens at the gateway to Lakeside Retreat, where people pass between Garden Squares and the lake precinct.
 
 <!-- purposes:end -->
