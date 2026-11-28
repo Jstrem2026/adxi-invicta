@@ -1,11 +1,12 @@
 name: Register Discord commands
 # Tells Discord about the bot's slash commands (/ask, /submit) in the ADXI: Invicta server.
-# Runs when the command list or the bot's IDs change, or by hand (Actions > Register Discord commands > Run workflow).
+# Runs when the command list, the bot's IDs or Avalon's picture change, or by hand (Actions > Register Discord commands > Run workflow).
+# Also sets the bot's own picture to Avalon's (Invicta/web/npc/avalon.png), since Avalon speaks as the bot itself.
 # Needs the DISCORD_BOT_TOKEN repo secret. The app and server IDs come from wrangler.toml [vars].
 on:
   push:
     branches: [main]
-    paths: [".github/discord/commands.json", ".github/workflows/discord-commands.yml", "wrangler.toml"]
+    paths: [".github/discord/commands.json", ".github/workflows/discord-commands.yml", "wrangler.toml", "Invicta/web/npc/avalon.png"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -26,3 +27,13 @@ jobs:
           curl -sS -f -X PUT -H "Authorization: Bot $TOKEN" -H "Content-Type: application/json" \
             --data @.github/discord/commands.json \
             "https://discord.com/api/v10/applications/$app/guilds/$guild/commands" | jq -r '.[].name' | sed 's/^/Registered \//' >> "$GITHUB_STEP_SUMMARY"
+      - name: Set Avalon's picture on the bot
+        run: |
+          pic=Invicta/web/npc/avalon.png
+          if [ -z "$TOKEN" ] || [ ! -f "$pic" ]; then echo "No token or no picture, so the bot picture was left as it is." >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          base64 -w0 "$pic" > avatar.b64
+          jq -n --rawfile b avatar.b64 '{avatar: ("data:image/png;base64," + $b)}' > avatar.json
+          curl -sS -f -X PATCH -H "Authorization: Bot $TOKEN" -H "Content-Type: application/json" \
+            --data @avatar.json "https://discord.com/api/v10/users/@me" > /dev/null \
+            && echo "Set the bot's picture to Avalon's." >> "$GITHUB_STEP_SUMMARY" \
+            || echo "Discord did not take the picture (it allows only a few changes an hour). Run this workflow again later." >> "$GITHUB_STEP_SUMMARY"
