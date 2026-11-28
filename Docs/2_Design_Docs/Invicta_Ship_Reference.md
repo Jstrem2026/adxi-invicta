@@ -113,7 +113,7 @@ Detailed plans of each precinct: `Port_of_Arrivals_Precincts.md`.
 
 - **Plan orientation.** The canon sheets (S0, S5 and the rest) draw plans bow left, port up. Seen from above that is a mirror image: it is the ship viewed from below. The game is right (`invicta_geometry.py`: facing the bow, port is on your left; the arrival hangar is on the bow side of the Hall). All blueprints on this page are true top views: **bow right, port up**, matching the Unreal top view. Fixed 26 Nov 2026 after Jordan spotted the hangar on the wrong side.
 
-- Sheet S5's plan draws the Strike Hangars Keelway stop at about 1.7 km from the prow ("1.2 km from deck bow"), while F3 is at 1.5 km. The game code uses F3. Not changed; worth settling.
+- Sheet S5's plan draws the Strike Hangars Keelway stop at about 1.7 km from the prow ("1.2 km from deck bow"), while F3 is at 1.5 km. The game code used F3. Settled 28 Nov 2026: errata C10 moved the stop to F7 and the game code now says F7.
 - `Data/Canon/zone_reservations_km.csv` is still Revision A (Strike Hangars 110 km²); its README already says so.
 
 ## 7. Canal Gardens precincts, Deck 3 (⏳ proposed, 27 Nov 2026, Kylee)
