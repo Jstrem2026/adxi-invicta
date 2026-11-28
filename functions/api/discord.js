@@ -15,6 +15,7 @@
 // Commands are registered by .github/workflows/discord-commands.yml from .github/discord/commands.json.
 
 import Anthropic from "@anthropic-ai/sdk";
+import AVATARS from "../../Invicta/web/npc/avatars.json";
 
 const BUDGET_MS = 25_000;          // Cloudflare keeps work going about 30 s after the reply to Discord
 const MAX_ROUNDS = 6;
@@ -306,6 +307,11 @@ async function deckOf(env, channel) {
   return m ? m[1] : null;
 }
 
+// Character pictures: Invicta/web/npc/<name>.png, listed in avatars.json (add one with
+// Invicta/tools/add_character_art.py). Shown beside the character's messages.
+const AVATAR_BASE = "https://invicta.arcanedrift.net/static/npc/";
+const avatarOf = (speaker) => (AVATARS.includes(speaker.name.toLowerCase()) ? `${AVATAR_BASE}${speaker.name.toLowerCase()}.png` : undefined);
+
 // Posts as the speaker through the "Invicta Voices" webhook of the channel (or of the forum, for a post in it).
 const hooks = new Map();
 async function speakAs(env, channel, speaker, text) {
@@ -319,7 +325,7 @@ async function speakAs(env, channel, speaker, text) {
       hooks.set(home, hook);
     }
     const r = await fetch(`https://discord.com/api/v10/webhooks/${hook.id}/${hook.token}${inThread ? `?thread_id=${channel.id}` : ""}`, {
-      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...msg(text), username: speaker.name }),
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...msg(text), username: speaker.name, avatar_url: avatarOf(speaker) }),
     });
     if (!r.ok) { hooks.delete(home); return false; }
     return true;
