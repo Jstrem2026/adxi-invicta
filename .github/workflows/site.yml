@@ -33,7 +33,9 @@ jobs:
         run: python Invicta/atlas.py --scan
       - name: Report
         if: always()
-        run: cat Invicta/reports/scan_report.md >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          if [ -f Invicta/reports/scan_report.md ]; then cat Invicta/reports/scan_report.md >> "$GITHUB_STEP_SUMMARY"
+          else echo "No scan report, because an earlier step failed." >> "$GITHUB_STEP_SUMMARY"; fi
   publish:
     # Every merge to main rebuilds invicta.arcanedrift.net.
     # Skips quietly until the CLOUDFLARE_API_TOKEN repo secret exists.

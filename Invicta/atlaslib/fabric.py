@@ -22,7 +22,7 @@ standards, IBC and ADA):
   6 x 7 ft (1.83 x 2.13 m) for rooms over 1,615 sq ft (150 m²). Entrances are 6 x 8 ft
   (1.83 x 2.44 m) double doors; openings between corridors are 8 ft (2.44 m) high. A door is
   kept clear of any wall that meets its wall part way along. Every stair core gets a door on each
-  floor. The ground floor gets an entrance in each corridor or zone with an outside wall (at least
+  floor, opening onto the landing at the foot of the stair or the floor past it, never beside a flight. The ground floor gets an entrance in each corridor or zone with an outside wall (at least
   one per building). Entrances face the street where they can, else a courtyard, never a gap
   narrower than 10 ft (3 m) between rooms or a closed-in corner smaller than 1,076 sq ft (100 m²).
   A long building gets one entrance per 394 ft (120 m) of street front (at most 12), through the
@@ -589,6 +589,54 @@ def build(m):
                             "status": "proposed", "derived": True})
                 for L in cl[1:]:
                     holes.setdefault(L, []).append(Polygon(o))
+
+        # A door into the core opens onto clear floor, never beside a flight (Jordan, 28 Nov 2026: a stair ran straight
+        # past a door frame). Where a door still meets a flight, slide it along its wall to the landing at the stair's
+        # foot or the floor past the stair. The landing is the first LANDING of the stair from its first corner.
+        def flights_at(L):
+            zs = []
+            for st in out:
+                if st["type"] != "stair" or st.get("core") != e["id"] or L not in (st["level"], st["to_level"]):
+                    continue
+                q = np.asarray(st["outline_m"], dtype=float)
+                du = q[1] - q[0]
+                lu = float(np.hypot(*du)) or 1.0
+                f = q[0] + du / lu * min(LANDING, lu)
+                zs.append(Polygon([f, q[1], q[2], f + (q[3] - q[0])]))
+            return zs
+        for d in core_doors:
+            if d["type"] != "door":
+                continue
+            fl = flights_at(d["level"])
+            seg = LineString(d["line_m"])
+            if not fl or not any(seg.buffer(0.1).intersects(z) for z in fl):
+                continue
+            wall = next((w for w in out if w["type"] == "wall" and w["level"] == d["level"]
+                         and LineString(w["line_m"]).distance(Point(d["line_m"][0])) < 0.05
+                         and LineString(w["line_m"]).distance(Point(d["line_m"][1])) < 0.05), None)
+            if not wall:
+                continue
+            a, b = np.asarray(wall["line_m"][0], dtype=float), np.asarray(wall["line_m"][1], dtype=float)
+            length = float(np.hypot(*(b - a)))
+            uu = (b - a) / length
+            width = d["width_m"]
+            ends = [np.asarray(q, dtype=float) - a for w in out if w["type"] == "wall" and w["level"] == d["level"] for q in w["line_m"]]
+            blocked = [float(q @ uu) for q in ends
+                       if 0.05 < float(q @ uu) < length - 0.05 and abs(float(uu[0] * q[1] - uu[1] * q[0])) < 0.2]
+            lifts = [Polygon(x["outline_m"]) for x in out if x["type"] == "lift" and x.get("core") == e["id"]]
+            now = float((np.asarray(d["line_m"][0], dtype=float) - a) @ uu)
+            best = None
+            for k in range(int((length - width) / 0.05) + 1):
+                c0 = k * 0.05
+                if not (0.15 <= c0 <= length - width - 0.15) or any(c0 - 0.3 < q < c0 + width + 0.3 for q in blocked):
+                    continue
+                sg = LineString([a + uu * c0, a + uu * (c0 + width)])
+                if any(sg.buffer(0.1).intersects(z) for z in fl) or any(sg.distance(x) < 0.3 for x in lifts):
+                    continue
+                if best is None or abs(c0 - now) < abs(best - now):
+                    best = c0
+            if best is not None:
+                d["line_m"] = [_pt(a + uu * best), _pt(a + uu * (best + width))]
 
     # ---- floor slabs
     for L in order:
