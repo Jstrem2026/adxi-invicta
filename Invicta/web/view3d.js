@@ -125,13 +125,14 @@
       for (let j = 0; j < n; j++, i++) {
         const up = j < per;                       // first flight runs along u, the second comes back
         const k = up ? j : j - per;
+        if (k === (up ? per : n - per) - 1) continue;   // a flight of N risers has N-1 treads: its top step is the landing, drawn below
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
         out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + i * e.riser_m, h: e.riser_m, t: w });   // a solid step: tread on top, riser in front
       }
       const zl = z0 + (i - n + per) * e.riser_m - 0.05;
       out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl, h: 0.05, t: Lv });  // half landing
-      if (tn < turns - 1) out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - 0.05, h: 0.05, t: Lv });  // landing between turns
+      out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - 0.05, h: 0.05, t: Lv });  // landing at the end of the turn (the upper floor, on the last one)
     }
     return out;
   }
