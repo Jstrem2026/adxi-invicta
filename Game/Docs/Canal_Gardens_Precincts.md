@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I, B5 Central Canal II and B6 Garden Reach I are laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I, B5 Central Canal II, B6 Garden Reach I and B7 Garden Reach II are laid out (proposed); the last block is not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -127,6 +127,20 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Access Road B (B6) | 18 × 1,000 m; 18,000 m² | GR-13B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
 | Woodland Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 350–366. Each end overlaps its plot by 10 m (GR-03, GR-08) | D3F6P1B6A13 |
 | Blossom Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 690–710. Each end overlaps its plot by 10 m (GR-04, GR-10) | D3F6P1B6A14 |
+| Grand Canal (B7) | 100 × 500 m; 50,000 m² | GR2-01. X 223.5–323.5, Y 0–500. Straight 100 m channel; carries on from B6 and runs on into B8 | D3F6P1B7A1 |
+| Sensory Gardens | 175.5 × 130 m; 22,815 m² | GR2-02. X 18–193.5, Y 0–130. Plot only | D3F6P1B7A2 |
+| Nature Discovery Quarter | 175.5 × 145 m; 25,447.5 m² | GR2-03. X 18–193.5, Y 130–275. Plot only | D3F6P1B7A3 |
+| Community Gardens | 175.5 × 150 m; 26,325 m² | GR2-04. X 18–193.5, Y 275–425. Plot only | D3F6P1B7A4 |
+| Garden Café | 175.5 × 75 m; 13,162.5 m² | GR2-05. X 18–193.5, Y 425–500. Plot only | D3F6P1B7A5 |
+| Family Adventure Park | 175.5 × 185 m; 32,467.5 m² | GR2-06. X 353.5–529, Y 0–185. Plot only | D3F6P1B7A6 |
+| Enchanted Garden Maze | 175.5 × 135 m; 23,692.5 m² | GR2-07. X 353.5–529, Y 185–320. Plot only | D3F6P1B7A7 |
+| Community Orchard | 175.5 × 115 m; 20,182.5 m² | GR2-08. X 353.5–529, Y 320–435. Plot only | D3F6P1B7A8 |
+| Village Garden Square | 175.5 × 65 m; 11,407.5 m² | GR2-09. X 353.5–529, Y 435–500. Plot only | D3F6P1B7A9 |
+| Promenades (B7) | 30 × 500 m each side; 30,000 m² | GR2-10A X 193.5–223.5 and GR2-10B X 323.5–353.5, both Y 0–500. Carry on from B6 and run on into B8 | D3F6P1B7A10 |
+| Access Road A (B7) | 18 × 500 m; 9,000 m² | GR2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B7) | 18 × 500 m; 9,000 m² | GR2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
+| Discovery Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 160–176. Each end overlaps its plot by 10 m (GR2-03, GR2-06) | D3F6P1B7A11 |
+| Orchard Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 380–396. Each end overlaps its plot by 10 m (GR2-04, GR2-08) | D3F6P1B7A12 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -168,7 +182,13 @@ Area check (m²): plots 351,000 (west 175,500 = 175.5 × (200 + 300 + 250 + 150 
 
 How the app shows it: as in B1 to B5, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 1,000 m, 0.511 km²) as the block, still addressed D3-F56-T. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B5 at Y 0 and B7 at Y 1,000 with the same widths, so each runs unbroken from B5 through B6 into B7.
 
-Not designed yet: what the other two blocks and the other precincts hold, streets other than the access roads of B1 to B6, bridges other than B1's two, the Social, Heritage, Gallery, Central, Serenity, Woodland and Blossom Bridges, the ponds and lake of B6, where the canal water comes from and goes, individual buildings.
+B7 Garden Reach II (D3-F56-V) layout, proposed. The block is 547 × 500 m (273,500 m²), Y 4,250 to 4,750 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 4.25 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
+
+Area check (m²): plots 175,500 (west 87,750 = 175.5 × (130 + 145 + 150 + 75), east 87,750 = 175.5 × (185 + 135 + 115 + 65)), canal 50,000, promenades 30,000, access roads 18,000. Total 273,500, which is the whole block. The Discovery and Orchard Bridges sit over the canal and plots and are not counted again.
+
+How the app shows it: as in B1 to B6, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-V. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B6 at Y 0 and B8 at Y 500 with the same widths, so each runs unbroken from B6 through B7 into B8.
+
+Not designed yet: what the last block and the other precincts hold, streets other than the access roads of B1 to B7, bridges other than B1's two, the Social, Heritage, Gallery, Central, Serenity, Woodland, Blossom, Discovery and Orchard Bridges, the ponds and lake of B6, the maze and orchard layouts of B7, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -284,5 +304,19 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-85 Access Road B (B6)**: The service road along the stern edge of the Garden Reach I block.
 - **P1-86 Woodland Bridge**: A footbridge over the canal linking the Woodland Sanctuary and the Ornamental Lake Gardens.
 - **P1-87 Blossom Bridge**: A footbridge over the canal linking the Water Garden Reserve and the Butterfly & Pollinator Gardens.
+- **P1-88 Grand Canal (B7)**: The seventh stretch of the Grand Canal, carrying boats on through the community gardens of Garden Reach towards the village end of the canal.
+- **P1-89 Sensory Gardens**: Gardens planted to be touched, smelled and listened to, for visitors to explore with all their senses.
+- **P1-90 Nature Discovery Quarter**: A place where families and school groups learn about plants, insects and gardening, with the Discovery Bridge arriving at its canal side.
+- **P1-91 Community Gardens**: Shared garden plots where residents grow flowers and vegetables together, with the Orchard Bridge arriving at its canal side.
+- **P1-92 Garden Café**: A café beside the community gardens, where gardeners and visitors stop for a drink and something to eat.
+- **P1-93 Family Adventure Park**: A big outdoor play park for families, with the Discovery Bridge arriving at its canal side.
+- **P1-94 Enchanted Garden Maze**: A hedge maze for visitors to wander and get lost in, a game for children and adults alike.
+- **P1-95 Community Orchard**: An orchard of fruit trees tended by the community, where people pick fruit in season, with the Orchard Bridge arriving at its canal side.
+- **P1-96 Village Garden Square**: A small public square at the village end of Garden Reach, a meeting place before the Village Gateway.
+- **P1-97 Promenades (B7)**: Walkways along both banks of the seventh stretch of the canal, linking the gardens, orchard and square.
+- **P1-98 Access Road A (B7)**: The service road along the bow edge of the Garden Reach II block.
+- **P1-99 Access Road B (B7)**: The service road along the stern edge of the Garden Reach II block.
+- **P1-100 Discovery Bridge**: A footbridge over the canal linking the Nature Discovery Quarter and the Family Adventure Park.
+- **P1-101 Orchard Bridge**: A footbridge over the canal linking the Community Gardens and the Community Orchard.
 
 <!-- purposes:end -->
