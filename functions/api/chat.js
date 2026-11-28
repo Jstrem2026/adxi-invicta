@@ -20,6 +20,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { announce } from "../_lib/announce.js";
 import { trustedFrom } from "../_lib/trusted.js";
 import { UID_RE, addConcept, imageExt } from "../_lib/concepts.js";
+import { activityStart, activityUpdate, placeLabel } from "../_lib/activity.js";
 
 const MAX_TURNS = 12;               // tool-use rounds per message
 const MAX_PROPOSALS_PER_MESSAGE = 2;
@@ -301,7 +302,22 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const enc = new TextEncoder();
   // Writes fail once the browser has gone; that must never stop the work or crash the function.
   const put = (s) => writer.write(enc.encode(s)).catch(() => {});
-  const send = (event, data) => put(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+  // Team activity (Jordan and Kylee can see each other's requests): follow what is sent to the browser.
+  let actId = null, actReply = "", actLast = 0, actState = null;
+  const actLinks = [];
+  const track = (event, data) => {
+    if (!actId) return;
+    if (event === "text") { actReply += data.delta; return; }
+    if (event === "reset") { actReply = ""; return; }
+    if (event === "proposal") { actLinks.push({ url: data.url, title: data.title, merged: !!data.merged }); activityUpdate(env, actId, { links: actLinks }); return; }
+    if (event === "error") { actState = "error"; actReply += (actReply ? "\n\n" : "") + data.error; return; }
+    if (event === "done") { actState = "done"; return; }
+    if ((event === "status" || event === "tool") && Date.now() - actLast > 5000) {  // at most one write every 5 s
+      actLast = Date.now();
+      activityUpdate(env, actId, { progress: data.label || data.text, reply: actReply || null });
+    }
+  };
+  const send = (event, data) => { track(event, data); return put(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`); };
   const status = (text) => send("status", { text });
   // Claude can think or write a big change for minutes without any visible text. A comment line every
   // few seconds keeps phones, proxies and Cloudflare from treating the quiet connection as dead.
@@ -310,6 +326,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
 
   const work = (async () => {
     let proposals = 0;
+    actId = await activityStart(env, trusted, text + (images.length || docs.length ? ` [${images.length + docs.length} attachment(s)]` : ""), placeLabel(view));
     try {
       // Earlier thinking blocks are bound to the exact system prompt and history that produced them.
       // The site's system prompt changes when the project files change, so old blocks can stop
@@ -318,7 +335,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
       const QUESTION_MODEL = env.QUESTION_MODEL || "claude-haiku-5-5";
       const DESIGN_MODEL = env.DESIGN_MODEL || "claude-sonnet-5-5";
       const WRITE_TOOLS = new Set(["copy_files", "edit_files", "update_building", "edit_plan", "propose_change", "save_image_as_concept"]);
-      let model = QUESTION_MODEL;
+      // A change request from Jordan or Kylee goes straight to the design model. The quick model sometimes
+      // says "I'll check the data before making the changes" and then stops without doing anything.
+      const CHANGE_WORDS = /\b(create|add|make|build|change|update|edit|fix|move|remove|delete|rename|lay ?out|draw|design|place|set|resize|extend|split|merge|run|redo|carry on|continue|go ahead|confirm|proceed|apply|do it|yes)\b/i;
+      let model = trusted && CHANGE_WORDS.test(text) ? DESIGN_MODEL : QUESTION_MODEL;
       // Returns the finished message, or null when the question model started a change (handed to the design model).
       const ask = async (msgs) => {
         const design = model === DESIGN_MODEL;
@@ -383,6 +403,17 @@ export async function onRequestPost({ request, env, waitUntil }) {
           send("reset", {});
           turn--;
           continue;
+        }
+        // The quick model promised to act ("I'll check ... then make the change") but stopped without a tool:
+        // let the design model actually do it.
+        if (model === QUESTION_MODEL && trusted && message.stop_reason === "end_turn" && !message.content.some((c) => c.type === "tool_use")) {
+          const said = message.content.filter((c) => c.type === "text").map((c) => c.text).join(" ");
+          if (said.length < 600 && /\b(I'll|I will|let me|I'm going to|I am going to|first I|before making)\b/i.test(said)) {
+            model = DESIGN_MODEL;
+            send("reset", {});
+            turn--;
+            continue;
+          }
         }
         messages.push({ role: "assistant", content: message.content });
 
@@ -463,6 +494,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       send("error", { error: msg });
     } finally {
       clearInterval(beat);
+      await activityUpdate(env, actId, { state: actState || "error", progress: actState === "done" ? "Finished" : "Stopped", reply: actReply || null, links: actLinks });
       writer.close().catch(() => {});
     }
   })();

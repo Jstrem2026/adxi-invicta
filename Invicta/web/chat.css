@@ -83,3 +83,20 @@ body.chat-open .chat-tab { display: none; }
 .chat-who { color: var(--ok, #5fd39a); font-size: 12px; }
 .chat-doc span { display: inline-block; max-width: 180px; padding: 6px 22px 6px 8px; border: 1px solid var(--line, #234a75); border-radius: 6px; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chat-docline { font-size: 12px; margin-bottom: 4px; }
+/* Team activity (Jordan and Kylee) */
+.chat-team { flex: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.chat-team[hidden], .chat-log[hidden] { display: none; }
+.team-head { display: flex; flex-direction: column; gap: 4px; }
+.team-head span { color: var(--muted, #8b98a8); font-size: 12px; }
+.team-head button { align-self: flex-start; }
+.team-item { display: flex; flex-direction: column; gap: 6px; padding: 9px 11px; border-radius: 10px; border: 1px solid var(--line, #2a3442); background: rgba(255,255,255,.03); }
+.team-meta { font-size: 12px; color: var(--muted, #8b98a8); }
+.team-meta strong { color: var(--ink, #e6edf3); }
+.team-ask { line-height: 1.45; overflow-wrap: anywhere; }
+.team-state { font-size: 12px; color: var(--muted, #8b98a8); }
+.team-working .team-state { color: var(--accent, #d4a64a); }
+.team-error, .team-stopped { border-color: #c0504d; }
+.team-item details summary { cursor: pointer; font-size: 12px; color: var(--accent, #d4a64a); }
+.team-item details .msg { margin-top: 6px; max-width: 100%; }
+.chat-head { flex-wrap: wrap; }
+.chat-title { flex: 1 1 100%; }
