@@ -235,6 +235,8 @@ Not designed yet: what the other precincts hold, streets other than the access r
 
 Blocks (proposed, 500 m lane lines and the F55 frame line, none over 1 km): B1 Atrium Gardens (D3-F55-M, 268,310 m²), B2 Grand Garden Square (D3-F55-O, 280,600 m²), B3 and B5 joined as Crescent Gardens (D3-F53-O 29,594 m² + D3-F53-P 275,477 m² = 305,071 m², one connected garden with no physical separation, both addresses kept), B4 Arts & Culture Square (D3-F55-P, 294,500 m²), B6 Garden Dining Square (D3-F55-Q, 350,455 m²), B7 Lakeside Gateway Gardens (D3-F53-Q, 500,990 m²). Areas are net of the Atrium Plaza.
 
+Functional areas (proposed, area only, no streets or buildings yet), one per block except Crescent Gardens: P4-01 Atrium Gardens, P4-02 Grand Garden Square, P4-03 and P4-04 Crescent Gardens (one continuous garden across D3-F53-O and D3-F53-P, drawn as two abutting parts because a plot may not cross a block line), P4-05 Arts & Culture Square, P4-06 Garden Dining Square, P4-07 Lakeside Gateway Gardens.
+
 ## P5 · Lakeside Retreat — F53 to F56, lanes R–U
 
 4,695 × 5,725 ft (1,431 × 1,745 m), 0.97 sq mi (2.5 km²). Bow band, middle (x 26.658 to 28.089 km). Status: canon. What it holds is not designed yet.
