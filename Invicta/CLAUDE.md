@@ -87,6 +87,11 @@ to keep in sync and no build step.
 - 3D look (Jordan, 28 Nov 2026): how the 3D view is drawn (textures, light, shadows, haze, glow) lives in `web/look3d.js`, with a
   "Look" picker: Realistic (laptops), Balanced (phones and tablets start here), Simple (the old flat look). Textures are drawn in
   code, so no image files or licences. It never changes shapes or Walk mode; finishes still come only from the "look" text.
+- City planner (Jordan, 28 Nov 2026: every deck is a working city built around its purpose): a district's program is in
+  `data/city_programs.json`; `python tools/city_planner.py <deck-district> --apply` checks it and adds what is missing as
+  `proposed` (additive only, backups in `backups/`). Then run `tools/purposes.py`, `tools/doc_codes.py` and the scan.
+  The Port of Arrivals program: hull doors for military, commercial and community traffic, crew airlocks per pressure zone,
+  fire, police, medical and border clearance within reach of every hull door, one command room for every hull door.
 - Label everything. Anything without its own name gets a generic one: Street A, Warehouse 3,
   Berth 2. Real names always win.
 - Keep game data separate from website data.
