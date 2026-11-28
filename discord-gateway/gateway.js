@@ -1,6 +1,6 @@
 // Avalon's always-on ear for the ADXI: Invicta Discord server.
 // One Durable Object holds the Discord gateway connection. For each new message in the team's server that
-// might be talking to the cast (names Avalon, Sentinel or a Governor, @mentions the bot, or replies to one of
+// might be talking to the cast (names Avalon, Sentinel or a city assistant, @mentions the bot, or replies to one of
 // them), it sends the message to the site, signed with an HMAC of the bot token. The site decides who answers.
 // A cron trigger pokes it every minute, so it reconnects by itself after Cloudflare restarts it.
 

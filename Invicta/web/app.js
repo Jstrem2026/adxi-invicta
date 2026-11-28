@@ -828,7 +828,7 @@ function deckView(n) {
   const legend = `<span><i style="background:#2273b8"></i>has a precinct plan</span><span><i style="background:#2b4563"></i>not designed yet</span><span><i style="background:#4a3513;border-color:#ffc266"></i>central plaza (canon)</span><span><b style="color:#6fd0ff">━</b> Keelway and stops</span>` + (Object.values(IX.psets).some(ps => ps.deck == n) ? catLegend() : "");
   const k = d.key || {};
   const keyRows = ["Gross outline", "Net floor area", "Floor / ceiling elevation", "Clear height", "Floor-to-floor stack height", "Design population", "Frames", "Atrium", "Governor", "Deck Chief"]
-    .filter(r => k[r]).map(r => `<div>${esc(r)}</div><div>${usText(k[r])}</div>`).join("");
+    .filter(r => k[r]).map(r => `<div>${esc(r === "Governor" ? "City assistant" : r)}</div><div>${usText(k[r])}</div>`).join("");
   const dl = d.districts.map(x => `<li onclick="go('#/district/${x.id}')"><span><b>${esc(x.name)}</b> ${x.is_plaza ? '<span class="small muted">plaza</span>' : ""}<br><span class="small muted">${esc(x.what)}</span></span><span class="small" style="text-align:right">${area(x.revB ? x.revB.area_km2 : x.area_km2)}<br>${badge(x.design_status)}</span></li>`).join("");
   const stopsT = (d.keelway || []).map(s => `<div>${esc(s.stop)}</div><div>${esc(s.frame)} · ${esc(s.address)} · ${usText(s.from_bow)} from deck bow</div>`).join("");
   const panel = `<div class="emblem-head">${emblem(d, 84)}<h1>${esc(d.title || ("Deck " + n))}</h1></div><div class="small muted">${esc(d.role)} · landmark: ${esc(d.landmark)}</div>

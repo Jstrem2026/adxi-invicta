@@ -1,16 +1,16 @@
 // Avalon, the ADXI: Invicta bot for the team's Discord server. A Cloudflare Pages Function at /api/discord.
 //
 // Discord sends each slash command here (the "Interactions Endpoint URL" in the Discord developer page):
-//   /ask question       in a deck forum, that deck's Governor answers about that deck; anywhere else, Avalon
+//   /ask question       in a deck forum, that deck's city assistant answers about that deck; anywhere else, Avalon
 //   /sentinel question  Sentinel answers, from any channel, about the whole ship
 //   naming them         "Mira, ...", "..., Avalon?", @Avalon, or a reply to one of them: they answer (needs the
 //                       always-on gateway in discord-gateway/, which passes messages here signed with the bot token)
 //   /submit file note   puts the file in Invicta/inbox/ on a new branch and opens a pull request for Jordan
 // Answers come from the repo files and the scan (read only). Nothing here changes ship data directly.
-// The Governors and Sentinel post under their own names through a channel webhook the bot makes ("Invicta Voices").
+// The city assistants and Sentinel post under their own names through a channel webhook the bot makes ("Invicta Voices").
 //
 // Settings: DISCORD_PUBLIC_KEY, DISCORD_APP_ID and DISCORD_GUILD_ID in wrangler.toml [vars] (none are secret).
-// Secret DISCORD_BOT_TOKEN (Cloudflare Pages) lets it find a forum's deck and post as a Governor; without it
+// Secret DISCORD_BOT_TOKEN (Cloudflare Pages) lets it find a forum's deck and post as a city assistant; without it
 // every answer comes from Avalon. Reuses the chat's ANTHROPIC_API_KEY, GITHUB_TOKEN and GITHUB_REPO.
 // Commands are registered by .github/workflows/discord-commands.yml from .github/discord/commands.json.
 
@@ -102,7 +102,7 @@ async function relayed(env, request, body) {
 
   const channel = await discord(env, "GET", `channels/${m.channel_id}`);
   const deck = await deckOf(env, channel);
-  // Governors answer only in their own deck's forum. Avalon and Sentinel answer anywhere.
+  // City assistants answer only in their own deck's forum. Avalon and Sentinel answer anywhere.
   if (speaker !== CAST.avalon && speaker !== CAST.sentinel) {
     if (String(speaker.deck) !== String(deck)) {
       const where = Object.entries(DECKS).find(([, d]) => d[1] === speaker.name);
@@ -140,10 +140,11 @@ async function hmacOk(secret, body, sigHex) {
 // ---------- /ask ----------
 
 // The cast, from canon (Docs/1_Canon_Source/Invicta/datasheets): Avalon is the Lead NPC on the Crown Bridge;
-// each deck city has a Governor NPC who runs it. Only names, decks and roles: personalities aren't designed yet.
+// each deck city has a digital assistant NPC who manages it until real people are hired into its career positions
+// (Jordan, 28 Nov 2026: they are not Governors). Only names, decks and roles: personalities aren't designed yet.
 const CAST = {
-  avalon: { name: "Avalon", deck: null, who: "Avalon, the Lead NPC of the Luxuria Invicta, who runs the ship from the Crown Bridge (canon)" },
-  sentinel: { name: "Sentinel", deck: null, who: "Sentinel, Governor of Bastion (Deck 4), the security and military city, second after Avalon in the ship's succession (canon). Like Avalon, you answer about any deck" },
+  avalon: { name: "Avalon", deck: null, who: "Avalon, the lead digital assistant of the Luxuria Invicta, who runs the ship from the Crown Bridge (canon)" },
+  sentinel: { name: "Sentinel", deck: null, who: "Sentinel, the digital assistant who manages Bastion (Deck 4), the security and military city, until real people are hired into its career positions; second after Avalon in the ship's succession (canon). Like Avalon, you answer about any deck" },
 };
 const DECKS = {
   1: ["Solenne", "Aurelia", "Where the ship is governed"],
@@ -156,9 +157,9 @@ const DECKS = {
   8: ["Ferrum", "Orin", "Makes and stores everything the ship needs, from refined ore to finished escort cruisers"],
 };
 const GOVERNORS = Object.fromEntries(Object.entries(DECKS).map(([n, [city, gov, tag]]) => [n, n === "4" ? { ...CAST.sentinel, deck: 4 } :
-  { name: gov, deck: Number(n), who: `${gov}, Governor of ${city} (Deck ${n}): ${tag} (canon). You answer only about Deck ${n}, ${city}; for another deck, point them to that deck's forum and Governor, or to Avalon` }]));
+  { name: gov, deck: Number(n), who: `${gov}, the digital assistant who manages ${city} (Deck ${n}) until real people are hired into its career positions. ${city}: ${tag} (canon). You answer only about Deck ${n}, ${city}; for another deck, point them to that deck's forum and its assistant, or to Avalon` }]));
 
-const ASK_RULES = `You answer in the ADXI: Invicta Discord server, used by Jordan (owner and lead designer) and Kylee (designer). ADXI: Invicta is their design workspace for the Luxuria Invicta, the ship city of the Arcane Drift world. Deck Governors: ${Object.entries(DECKS).map(([n, d]) => `Deck ${n} ${d[0]}: ${d[1]}`).join("; ")}. Avalon runs the whole ship.
+const ASK_RULES = `You answer in the ADXI: Invicta Discord server, used by Jordan (owner and lead designer) and Kylee (designer). ADXI: Invicta is their design workspace for the Luxuria Invicta, the ship city of the Arcane Drift world. Each deck city is managed by a digital assistant NPC until real people are hired into its career positions; they are not Governors, so never call them that. City assistants: ${Object.entries(DECKS).map(([n, d]) => `Deck ${n} ${d[0]}: ${d[1]}`).join("; ")}. Avalon runs the whole ship.
 Speak as your character, lightly: a line of voice is fine, but the facts matter most, because Jordan and Kylee are designing the ship. Don't invent backstory or personality; it isn't designed yet.
 Answer questions about the ship from the repo files and the scan, using the tools. Be plain and brief: a short answer under 1,500 characters, Discord markdown, no tables.
 Never invent anything that hasn't been designed: if the files don't say, say it isn't designed yet. Say whether something is canon or proposed when it matters.
@@ -287,7 +288,7 @@ async function submit(env, file, note, who) {
   return `📥 Got **${name}** from ${who}. ${checks.join(" ")}\nIt's waiting for Jordan as pull request #${pr.number}: <${pr.html_url}>`;
 }
 
-// ---------- speaking as a Governor ----------
+// ---------- speaking as a city assistant ----------
 
 // Which deck a channel belongs to: a forum named "1-solenne" or "deck-1-solenne", or a post inside one.
 const channelNames = new Map();
