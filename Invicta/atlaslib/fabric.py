@@ -27,6 +27,8 @@ standards, IBC and ADA):
   narrower than 10 ft (3 m) between rooms or a closed-in corner smaller than 1,076 sq ft (100 m²).
   A long building gets one entrance per 394 ft (120 m) of street front (at most 12), through the
   street-side room beside a corridor farthest from the others, which also opens onto that corridor.
+- No door opens into a full-height hall or shaft above its bottom floor (Jordan, 28 Nov 2026): there is no floor there,
+  only the drop. Such a hall gets doors on its bottom floor only; upper floors reach it by its stairs or lift core.
 - Windows: along outside walls of rooms and zones above ground, except stores, vaults,
   plant, server and wash rooms. Panes 3 ft 11 in (1.2 m) wide every 5 ft 11 in (1.8 m),
   sill 3 ft (0.91 m), head 7 ft (2.13 m), in line with the tops of doors.
@@ -262,9 +264,18 @@ def build(m):
     def partner(space, w):
         return next((x for x in w[0] if x != space), None)
 
+    def drop(space, L):
+        """True for an upper floor of a full-height hall or shaft: open air down to its bottom floor, no floor to stand on."""
+        if not space or not by_id[space].get("full_height"):
+            return False
+        cl = [x for x in order if x in _levels(by_id[space])]
+        return bool(cl) and L != cl[0]
+
     def rank(space, w):
         o = partner(space, w)
         pri = {"zone": 0, "core": 1, "room": 2}[by_id[o]["type"]] if o else 9
+        if o and drop(o, w[4]):
+            pri = 8   # last choice: a door into an open drop
         return (pri, -math.dist(w[1], w[2]))
 
     def door_size(space):
@@ -424,7 +435,10 @@ def build(m):
                 if k in seen:
                     continue
                 x, L = k
-                opts = [w for w in walls_at.get(k, []) if None not in w[0] and (partner(x, w), L) in seen]
+                if drop(x, L):
+                    continue
+                opts = [w for w in walls_at.get(k, []) if None not in w[0] and (partner(x, w), L) in seen
+                        and not drop(partner(x, w), L)]
                 for w in sorted(opts, key=lambda w: rank(x, w)):
                     wd, ht = door_size(x)
                     if add_door(x, w, wd, ht, "Door"):
@@ -456,8 +470,8 @@ def build(m):
     # a room still without a door (cut off, for example a floor with no stairs) gets its best one anyway
     for k in nodes:
         x, L = k
-        if by_id[x]["type"] == "room" and k not in doored:
-            for w in sorted((w for w in walls_at.get(k, []) if None not in w[0]), key=lambda w: rank(x, w)):
+        if by_id[x]["type"] == "room" and k not in doored and not drop(x, L):
+            for w in sorted((w for w in walls_at.get(k, []) if None not in w[0] and not drop(partner(x, w), L)), key=lambda w: rank(x, w)):
                 wd, ht = door_size(x)
                 if add_door(x, w, wd, ht, "Door"):
                     break
