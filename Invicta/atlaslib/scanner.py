@@ -386,7 +386,7 @@ class Scan:
         stops = g.get("AERION_KEELWAY_STOPS") or {}
         d5 = self.deck(5)
         if d5 and stops:
-            sheet = {s["stop"]: int(P.num(s.get("frame_canon") or s["frame"])) for s in d5.get("keelway", [])}
+            sheet = {s["stop"]: int(P.num(s["frame"])) for s in d5.get("keelway", [])}
             for s_ in d5.get("keelway", []):
                 if s_.get("frame_canon") and s_["stop"] in stops and stops[s_["stop"]] != int(P.num(s_["frame"])):
                     self.add("decision", "continuity", "Game Keelway stop must move with the deck cut",

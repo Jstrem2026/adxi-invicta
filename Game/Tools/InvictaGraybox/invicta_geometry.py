@@ -33,8 +33,9 @@ DECKS = {
 }
 
 # Keelway stops on Deck 5 (data sheet S5): name -> frame number (frames are 500 m apart).
+# Strike Hangars moved F3 -> F7 by errata C10 (deck cut back to the concept hull; Jordan, 28 Nov 2026).
 AERION_KEELWAY_STOPS = {
-    "Strike Hangars": 3,
+    "Strike Hangars": 7,
     "Port": 46,
     "Atrium Central": 52,
     "Pilots' Quarter": 65,

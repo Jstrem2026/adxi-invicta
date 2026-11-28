@@ -49,5 +49,5 @@ The Crown and the Bridge Level (crown_revC.json)
 What did NOT change
 - The canon files (Docs/1_Canon_Source) and Revision B stay as they were. The ship page can still show the
   old canon hull ("Canon (old)" button).
-- The game geometry file (Game/Tools/InvictaGraybox/invicta_geometry.py) is unchanged. It still puts the
-  Strike Hangars Keelway stop at F3; the scan lists that for Jordan.
+- The game geometry file (Game/Tools/InvictaGraybox/invicta_geometry.py) now puts the Strike Hangars
+  Keelway stop at F7 to match (Jordan, 28 Nov 2026). Nothing else in it changed.
