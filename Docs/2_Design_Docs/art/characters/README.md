@@ -23,3 +23,4 @@ picture in `Invicta/web/npc/`. Avalon's picture also becomes the bot's own pictu
 | Tessera | City assistant, Machina (Deck 6) | 28 Nov 2026 |
 | Vesper | City assistant, Claustra (Deck 7) | 28 Nov 2026 |
 | Orin | City assistant, Ferrum (Deck 8) | 28 Nov 2026 |
+| Max | Captain of the Invicta, Jordan's own character. Not an assistant: no Discord voice or picture. Sheet is `Max_Ref.jpg`. | 28 Nov 2026 |
