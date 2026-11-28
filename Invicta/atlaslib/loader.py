@@ -309,7 +309,23 @@ class Loader:
                 out["key"] = P.kv(tb)
             elif tb[0][0] == "Level":
                 out["levels"] = [dict(zip(["level", "name", "function", "footprint", "area", "height"], r)) for r in tb[1:]]
+        self.crown_c11(out)
         return out
+
+    @staticmethod
+    def crown_c11(out):
+        """Errata C11 (Jordan, 28 Nov 2026): the Bridge is part of the ship and cannot separate.
+        The canon sheet stays as it is; only the separation lines are replaced when shown."""
+        key = out.get("key") or {}
+        if "detachable" in key.get("Name", "").lower():
+            key["Name"] = "Crown Bridge, command ship, part of the ship (errata C11: it cannot separate)"
+        key.pop("Separation time", None)
+        for lv in out.get("levels") or []:
+            fn = lv.get("function") or ""
+            if "Separation Collar" in fn:
+                lv["function"] = fn.replace(", Separation Collar", "").replace("Separation Collar", "").strip(", ")
+        out["errata_note"] = ("Errata C11 (Jordan, 28 Nov 2026): the Bridge is part of the ship and cannot separate. "
+                              "The sheet's \"detachable command ship\", separation time and Separation Collar no longer apply.")
 
     # -------------------------------------------------------------- precinct sets (app data)
     def precinct_sets(self):
