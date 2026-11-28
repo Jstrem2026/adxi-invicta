@@ -4574,8 +4574,8 @@ Floor at deck level; 39 ft (12 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Damage control rig | 3 | 38,630 sq ft (3,589 m²) each | A full-size mock-up of a cruiser's decks that can be flooded, filled with smoke or set on fire, so crews practise saving their ship. |
-| Boarding drill hall | 3 | 34,010 sq ft (3,160 m²) each | Mock corridors and hatches where crews practise boarding and repelling boarders. |
+| Damage control rig | 3 | 38,410 sq ft (3,569 m²) each | A full-size mock-up of a cruiser's decks that can be flooded, filled with smoke or set on fire, so crews practise saving their ship. |
+| Boarding drill hall | 3 | 33,860 sq ft (3,146 m²) each | Mock corridors and hatches where crews practise boarding and repelling boarders. |
 | Fire training control | 1 | 1,070 sq ft (100 m²) | Instructors control the fires and floods from here. |
 | Breathing set room | 1 | 1,620 sq ft (151 m²) | Breathing sets for trainees. |
 | Kit room | 1 | 1,620 sq ft (151 m²) | Fire suits, hoses and repair kit. |
@@ -4592,8 +4592,8 @@ Floor at 39 ft (12 m) above the deck; 14 ft (4.2 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Damage control rig | 3 | 38,630 sq ft (3,589 m²) each | A full-size mock-up of a cruiser's decks that can be flooded, filled with smoke or set on fire, so crews practise saving their ship. |
-| Boarding drill hall | 3 | 34,010 sq ft (3,160 m²) each | Mock corridors and hatches where crews practise boarding and repelling boarders. |
+| Damage control rig | 3 | 38,410 sq ft (3,569 m²) each | A full-size mock-up of a cruiser's decks that can be flooded, filled with smoke or set on fire, so crews practise saving their ship. |
+| Boarding drill hall | 3 | 33,860 sq ft (3,146 m²) each | Mock corridors and hatches where crews practise boarding and repelling boarders. |
 | Lecture room | 1 | 1,040 sq ft (97 m²) | Lessons on damage control and boarding. |
 | Tea point | 1 | 350 sq ft (33 m²) | A small kitchen with a sink, fridge and drinks machine for staff on this floor. |
 | Toilets | 1 | 640 sq ft (60 m²) | Public toilets, with an accessible toilet and baby-changing room. |
