@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I and B3 Waterfront Reach II are laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II and B4 Central Canal I are laid out (proposed); the other blocks are not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -81,6 +81,23 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Access Road A (B3) | 59 × 1,640 ft (18 × 500 m) | WR2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
 | Access Road B (B3) | 59 × 1,640 ft (18 × 500 m) | WR2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
 | Heritage Bridge | 591 × 52 ft (180 × 16 m) | Pedestrian bridge. X 183.5–363.5, Y 220–236. Each end overlaps its plot by 10 m (WR2-03, WR2-07) | D3F6P1B3A11 |
+| Grand Canal (B4) | 100 m wide, 1,000 m long, widening to 180 m over a 400 m basin; 136,000 m² | CC-01. X 223.5–323.5, Y 0–1,000. Carries on from B3 at 100 m wide, widens along 50 m diagonals (Y 250–300) to the 180 m Central Canal Basin (X 183.5–363.5, Y 300–700), narrows again (Y 700–750) and leaves for B5 at 100 m wide. Outline (X,Y): (223.5,0) (323.5,0) (323.5,250) (363.5,300) (363.5,700) (323.5,750) (323.5,1000) (223.5,1000) (223.5,750) (183.5,700) (183.5,300) (223.5,250) | D3F6P1B4A1 |
+| Canal View Gardens | 175.5 × 150 m; 26,325 m² | CC-02. X 18–193.5, Y 0–150. Plot only | D3F6P1B4A2 |
+| Waterfront Gallery Quarter | 175.5 × 150 m, south-east corner cut for the promenade; 24,904.2 m² | CC-03. X 18–193.5, Y 150–300. Corner cut (193.5,239.48) to (153.5,289.48), then down to (153.5,300). Plot only | D3F6P1B4A3 |
+| Grand Canal Plaza | 135.5 × 400 m; 54,200 m² | CC-04. X 18–153.5, Y 300–700. Plot only | D3F6P1B4A4 |
+| Central Dining Quarter | 175.5 × 180 m, north-east corner cut for the promenade; 30,169.2 m² | CC-05. X 18–193.5, Y 700–880. Corner cut (153.5,710.52) to (193.5,760.52). Plot only | D3F6P1B4A5 |
+| Canal Transit Landing | 175.5 × 120 m; 21,060 m² | CC-06. X 18–193.5, Y 880–1,000. Plot only | D3F6P1B4A6 |
+| Ornamental Gardens | 175.5 × 180 m; 31,590 m² | CC-07. X 353.5–529, Y 0–180. Plot only | D3F6P1B4A7 |
+| Waterfront Pavilion Quarter | 175.5 × 120 m, south-west corner cut for the promenade; 19,639.2 m² | CC-08. X 353.5–529, Y 180–300. Corner cut (353.5,239.48) to (393.5,289.48), then along Y 300 to X 393.5. Plot only | D3F6P1B4A8 |
+| Grand Fountain Gardens | 135.5 × 220 m; 29,810 m² | CC-09. X 393.5–529, Y 300–520. Plot only | D3F6P1B4A9 |
+| Festival Terraces | 135.5 × 180 m; 24,390 m² | CC-10. X 393.5–529, Y 520–700. Plot only | D3F6P1B4A10 |
+| Waterfront Recreation Park | 175.5 × 180 m, north-west corner cut for the promenade; 30,169.2 m² | CC-11. X 353.5–529, Y 700–880. Corner cut (393.5,710.52) to (353.5,760.52). Plot only | D3F6P1B4A11 |
+| Public Boat Landing | 175.5 × 120 m; 21,060 m² | CC-12. X 353.5–529, Y 880–1,000. Plot only | D3F6P1B4A12 |
+| Promenades (B4) | 30 m clear width each side along the canal and basin; 61,683.2 m² | CC-13. X 193.5–223.5 and X 323.5–353.5 along the 100 m channel, X 153.5–183.5 and X 363.5–393.5 around the basin, 30 m wide square to the edge along the four diagonals. Carry on from B3 and run on into B5 | D3F6P1B4A13 |
+| Access Road A (B4) | 18 × 1,000 m | CC-14A. X 0–18, Y 0–1,000, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B4) | 18 × 1,000 m | CC-14B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
+| Gallery Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 175–191. Each end overlaps its plot by 10 m (CC-03; CC-07 and CC-08) | D3F6P1B4A14 |
+| Central Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 805–825. Each end overlaps its plot by 10 m (CC-05, CC-11) | D3F6P1B4A15 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -100,7 +117,15 @@ Area check (m²): plots 175,500 (nine plots: west 87,750 = 175.5 × (140 + 105 +
 
 How the app shows it: as in B1 and B2, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-P. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B2 at Y 0 and B4 at Y 500 with the same widths, so each runs unbroken from B2 through B3 into B4.
 
-Not designed yet: what the other five blocks and the other precincts hold, streets other than the access roads of B1, B2 and B3, bridges other than B1's two, the Social Bridge and the Heritage Bridge, where the canal water comes from and goes, individual buildings.
+B4 Central Canal I (D3-F56-Q) layout, proposed. The block is 547 × 1,000 m (547,000 m²), Y 1,750 to 2,750 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 1.75 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
+
+The canal is 100 m wide at both block edges (X 223.5–323.5), so it runs unbroken from B3 and on into B5, and it widens to the 180 m, 400 m long Central Canal Basin in the middle. The promenade is 30 m clear all round the canal. At the four basin transitions the plot corners of CC-03, CC-05, CC-08 and CC-11 are cut parallel to the canal diagonal, 38.42 m apart measured along X, which is 30 m square to the edge. The cuts run from X 193.5 (or 353.5) to X 153.5 (or 393.5), each 50 m along Y. The other plots keep the sizes given.
+
+Area check (m²): plots 313,316.8 (west 156,658.4 = 26,325 + 24,904.2 + 54,200 + 30,169.2 + 21,060; east 156,658.4 = 31,590 + 19,639.2 + 29,810 + 24,390 + 30,169.2 + 21,060), canal 136,000, promenades 61,683.2, access roads 36,000. Total 547,000, which is the whole block. The two bridges sit over the canal and plots and are not counted again. The Gallery Bridge spans the plot line between CC-07 and CC-08 at Y 180.
+
+How the app shows it: as in B1 to B3, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 1,000 m, 0.511 km²) as the block, still addressed D3-F56-Q. The canal, promenades and boundary roads meet B3 at Y 0 and B5 at Y 1,000 with the same widths.
+
+Not designed yet: what the other four blocks and the other precincts hold, streets other than the access roads of B1 to B4, bridges other than B1's two, the Social Bridge, the Heritage Bridge, the Gallery Bridge and the Central Bridge, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -170,5 +195,22 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-39 Access Road A (B3)**: The service road along the bow edge of the waterfront stretch.
 - **P1-40 Access Road B (B3)**: The service road along the stern edge of the waterfront stretch.
 - **P1-41 Heritage Bridge**: A footbridge over the canal linking the Cultural Courtyard and the Reflection Gardens.
+- **P1-42 Grand Canal (B4)**: The Central Canal, the widest stretch of the Grand Canal. It opens into a 180 m basin for boats to turn and gather, with plazas, dining and gardens all round it.
+- **P1-43 Canal View Gardens**: Gardens on the port bank where B3 meets the Central Canal, looking along the water.
+- **P1-44 Waterfront Gallery Quarter**: A quarter for galleries and cultural spaces beside the canal, with the Gallery Bridge arriving at its canal side.
+- **P1-45 Grand Canal Plaza**: The great public plaza on the port side of the basin, for crowds, events and views across the water.
+- **P1-46 Central Dining Quarter**: Restaurants and cafés at the south end of the basin on the port bank, where people eat looking over the water.
+- **P1-47 Canal Transit Landing**: The port-bank landing where people join and leave the canal boats and change to other transport.
+- **P1-48 Ornamental Gardens**: Formal ornamental gardens on the stern bank where B3 meets the Central Canal.
+- **P1-49 Waterfront Pavilion Quarter**: Dining pavilions and small eateries on the stern bank of the canal.
+- **P1-50 Grand Fountain Gardens**: Large gardens with fountains on the stern side of the basin.
+- **P1-51 Festival Terraces**: Stepped terraces on the stern side of the basin where crowds gather for festivals and events.
+- **P1-52 Waterfront Recreation Park**: A park for play and recreation at the south end of the basin on the stern bank.
+- **P1-53 Public Boat Landing**: The stern-bank landing where people get on and off the canal boats.
+- **P1-54 Promenades (B4)**: Walkways along both banks of the Central Canal and around the basin, where people stroll between the plazas, gardens and landings.
+- **P1-55 Access Road A (B4)**: The service road along the bow edge of the Central Canal block.
+- **P1-56 Access Road B (B4)**: The service road along the stern edge of the Central Canal block.
+- **P1-57 Gallery Bridge**: A footbridge over the canal linking the Waterfront Gallery Quarter with the gardens and pavilions on the far bank.
+- **P1-58 Central Bridge**: A footbridge over the canal at the south end of the basin, linking the Central Dining Quarter and the Waterfront Recreation Park.
 
 <!-- purposes:end -->
