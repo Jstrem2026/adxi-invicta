@@ -2,7 +2,7 @@
 
 Deck 5 · Port of Arrivals. Every building in the district, floor by floor, with every room and what it does (Jordan, 27 Nov 2026: "I want to know what each room does").
 
-**117 buildings, 10,071 rooms.**
+**117 buildings, 10,084 rooms.**
 
 This doc is written from the data by `Invicta/tools/rooms_doc.py`; change the building's room program (`Invicta/tools/room_programs/`) or its plan (`Invicta/data/models/`), then re-run it. Rooms with the same name on a floor are counted together; floors that are exactly alike are shown once. Room plans are **proposed** unless a building says otherwise. Sizes are US first, metric in brackets.
 
@@ -489,16 +489,17 @@ Floor at 20 ft (6 m) below the deck; 20 ft (6 m) floor to floor.
 
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
-| Industrial laundry & linen | 1 | 124,000 sq ft (11,520 m²) | Washes the lodge's linen. |
-| Mechanical plant & HVAC | 1 | 124,000 sq ft (11,520 m²) | Heating, cooling and air plant. |
+| Industrial laundry & linen | 2 | 60,450 sq ft (5,616 m²) each | Washes the lodge's linen. |
+| Mechanical plant & HVAC | 2 | 60,450 sq ft (5,616 m²) each | Heating, cooling and air plant. |
 | Electrical rooms | 1 | 37,200 sq ft (3,456 m²) | Electrical switchgear and boards. |
 | Water treatment | 1 | 37,200 sq ft (3,456 m²) | Cleans and treats water. |
 | Maintenance workshop | 1 | 93,000 sq ft (8,640 m²) | Repairs for the building. |
-| Stores & crew equipment | 1 | 93,000 sq ft (8,640 m²) | Stores of crew equipment. |
+| Stores & crew equipment | 2 | 45,920 sq ft (4,266 m²) each | Stores of crew equipment. |
 | Building automation | 1 | 55,800 sq ft (5,184 m²) | Computers that run the building's systems. |
-| Receiving & waste sorting | 1 | 74,400 sq ft (6,912 m²) | Deliveries come in and waste is sorted. |
+| Receiving & waste sorting | 2 | 35,650 sq ft (3,312 m²) each | Deliveries come in and waste is sorted. |
 | Cleaning supplies | 1 | 37,200 sq ft (3,456 m²) | Cleaning supplies. |
 | Service corridor | 1 | 62,000 sq ft (5,760 m²) | A back corridor for staff and deliveries. |
+| Walkways | 10 | 51,200 sq ft (4,757 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 1 · Arrivals & Commons
 
@@ -514,15 +515,16 @@ Floor at deck level; 26 ft (8 m) floor to floor.
 | Operations & duty offices | 1 | 46,500 sq ft (4,320 m²) | Offices of the lodge's managers. |
 | Security desk | 1 | 13,950 sq ft (1,296 m²) | Guards watch the doors and cameras. |
 | Medical station | 1 | 32,550 sq ft (3,024 m²) | A nurse and first aid for crews. |
-| Dining hall & cafeteria | 1 | 124,000 sq ft (11,520 m²) | A dining hall serving meals. |
+| Dining hall & cafeteria | 2 | 60,450 sq ft (5,616 m²) each | A dining hall serving meals. |
 | Kitchen & food stores | 1 | 74,400 sq ft (6,912 m²) | Where meals are cooked and food is stored. |
 | Coffee bar & grab-and-go | 1 | 24,800 sq ft (2,304 m²) | Coffee and food to take away. |
-| Central lounge | 1 | 99,200 sq ft (9,216 m²) | A big lounge in the middle of the lodge. |
-| Quiet lounge & reading | 1 | 62,000 sq ft (5,760 m²) | A quiet lounge for reading. |
+| Central lounge | 2 | 48,830 sq ft (4,536 m²) each | A big lounge in the middle of the lodge. |
+| Quiet lounge & reading | 2 | 30,230 sq ft (2,808 m²) each | A quiet lounge for reading. |
 | Recreation room | 1 | 49,600 sq ft (4,608 m²) | Games and recreation. |
 | Crew supplies shop | 1 | 24,800 sq ft (2,304 m²) | A shop for crew essentials. |
 | Restrooms | 1 | 18,600 sq ft (1,728 m²) | Toilets. |
 | Housekeeping & storage | 1 | 62,000 sq ft (5,760 m²) | Cleaning staff and their stores. |
+| Walkways | 9 | 37,130 sq ft (3,449 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 2 · Residential & Recreation
 
@@ -531,17 +533,18 @@ Floor at 26 ft (8 m) above the deck; 26 ft (8 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium (open to Level 3) | 1 | 74,400 sq ft (6,912 m²) | A tall open atrium at the heart of the lodge, rising to Level 3. |
-| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 3 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 4 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
+| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 3 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
+| Cabin wing 4 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
 | Housekeeping & linen | 1 | 46,500 sq ft (4,320 m²) | Cleaning staff and clean linen. |
 | Fitness centre & walking track | 1 | 99,200 sq ft (9,216 m²) | A gym and an indoor walking track. |
 | Movie theatre | 1 | 23,250 sq ft (2,160 m²) | A small cinema for crews. |
 | Gaming & entertainment | 1 | 23,250 sq ft (2,160 m²) | Games and entertainment. |
 | Wellness & recovery rooms | 1 | 62,000 sq ft (5,760 m²) | Massage and recovery rooms. |
-| Communal kitchen & social lounge | 1 | 62,000 sq ft (5,760 m²) | A shared kitchen and lounge. |
-| Study rooms & workstations | 1 | 38,750 sq ft (3,600 m²) | Desks for study and work. |
+| Communal kitchen & social lounge | 2 | 30,230 sq ft (2,808 m²) each | A shared kitchen and lounge. |
+| Study rooms & workstations | 2 | 18,600 sq ft (1,728 m²) each | Desks for study and work. |
+| Walkways | 14 | 46,790 sq ft (4,347 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 3 · Crew Residential
 
@@ -550,13 +553,14 @@ Floor at 52 ft (16 m) above the deck; 26 ft (8 m) floor to floor.
 | Room | How many | Floor area | What it does |
 |---|---|---|---|
 | Atrium (open to Level 3) | 1 | 74,400 sq ft (6,912 m²) | A tall open atrium at the heart of the lodge, rising to Level 3. |
-| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 3 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
-| Cabin wing 4 (60 cabins, 6 × 9 m each) | 1 | 40,690 sq ft (3,780 m²) | A wing of sixty crew cabins. |
+| Cabin wing 1 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 2 (60 cabins, 6 × 9 m each) | 1 | 39,910 sq ft (3,708 m²) | A wing of sixty crew cabins. |
+| Cabin wing 3 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
+| Cabin wing 4 (60 cabins, 6 × 9 m each) | 2 | 19,570 sq ft (1,818 m²) each | A wing of sixty crew cabins. |
 | Housekeeping & linen | 1 | 46,500 sq ft (4,320 m²) | Cleaning staff and clean linen. |
 | Quiet lounges | 1 | 99,200 sq ft (9,216 m²) | Quiet lounges. |
 | Long-stay sitting areas | 1 | 62,000 sq ft (5,760 m²) | Seating for crews staying several days. |
+| Walkways | 15 | 53,280 sq ft (4,950 m²) each | Open walkways and lobby floor between the rooms, so every room and stair core has a way in. |
 
 #### Level 4 to Level 5 · Tower Quarters (2 identical floors)
 

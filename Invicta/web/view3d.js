@@ -127,7 +127,7 @@
         const k = up ? j : j - per;
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
-        out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + (i + 1) * e.riser_m - 0.05, h: 0.05, t: w });
+        out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + i * e.riser_m, h: e.riser_m, t: w });   // a solid step: tread on top, riser in front
       }
       const zl = z0 + (i - n + per) * e.riser_m - 0.05;
       out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl, h: 0.05, t: Lv });  // half landing
@@ -169,6 +169,10 @@
     const matCore = new THREE.MeshStandardMaterial({ color: 0xe0a24a, roughness: 0.7 });
     const matSlab = new THREE.MeshStandardMaterial({ color: 0x8d949c, roughness: 0.9 });
     const matDoor = new THREE.MeshStandardMaterial({ color: 0x5fd39a, roughness: 0.6, transparent: true, opacity: 0.35, depthWrite: false });
+    // Door frames, in the legend's door green; entrances brighter and lit, with a sign band over them, so they read from the street.
+    const matFrame = new THREE.MeshStandardMaterial({ color: 0x3fbf7f, roughness: 0.6 });
+    const matEntrance = new THREE.MeshStandardMaterial({ color: 0x3dff9a, emissive: 0x1d9c5a, emissiveIntensity: 0.9, roughness: 0.4 });
+    const matLift = new THREE.MeshStandardMaterial({ color: 0xe0a24a, roughness: 0.4, transparent: true, opacity: 0.28, depthWrite: false, side: THREE.DoubleSide });
     const matFix = new THREE.MeshStandardMaterial({ color: 0xc8d2dc, roughness: 0.9 });
     const matRoof = new THREE.MeshStandardMaterial({ color: f.greenRoof ? new THREE.Color(0x5f8f4e) : new THREE.Color(f.wall).multiplyScalar(0.82), roughness: 0.95 });
     const matYard = new THREE.MeshStandardMaterial({ color: 0x3e4955, roughness: 1 });
@@ -177,6 +181,9 @@
     matRoom.opacity = 0.85;
     const roomMat = matRoom, massMat = f.glass ? matGlass : matRoom;
     const fab = !!model.fabric;  // walls, doors, windows, stairs and slabs worked out from the rooms
+    // Walls with their doorways cut out (the same walls Walk mode bumps into, web/walk.js).
+    const cut = fab && window.adxiWalk ? window.adxiWalk.cutWalls(model) : {};
+    info.entrances = 0;
     for (const l of lv) {
       const lg = new THREE.Group();
       lg.userData = { id: l.id, name: l.name, z: l.z_m, h: l.height_m };
@@ -184,11 +191,32 @@
       const els = (model.elements || []).filter(on);
       if (fab) {
         // A building with its fabric: floors, walls, doors, window panes and stairs instead of room volumes.
-        const wallIt = [], doorIt = [], paneIt = [], treadIt = [];
+        const wallIt = [], frameIt = [], entIt = [], paneIt = [], treadIt = [];
+        const fl = l.z_m + 0.3, c = cut[l.id] || { walls: [], gaps: [] };
+        for (const s of c.walls) wallIt.push({ a: [s.ax, s.ay], b: [s.bx, s.by], z: fl, h: Math.max((s.h || l.height_m) - 0.3, 0.1), t: s.t });
+        for (const gp of c.gaps) {
+          const d = gp.door, wallTop = Math.max((gp.wallH || l.height_m) - 0.3, 0.1), dh = Math.min(d.h, wallTop);
+          const A = [gp.ax, gp.ay], B = [gp.bx, gp.by], L = Math.hypot(B[0] - A[0], B[1] - A[1]) || 1;
+          const ux = (B[0] - A[0]) / L, uy = (B[1] - A[1]) / L, at = (u) => [A[0] + ux * u, A[1] + uy * u];
+          if (wallTop - dh > 0.05) wallIt.push({ a: A, b: B, z: fl + dh, h: wallTop - dh, t: gp.t });   // wall over the doorway
+          if (d.kind !== "door") continue;                                                              // an opening: just the gap
+          const ent = /entrance|outside/i.test(d.name), list = ent ? entIt : frameIt, fw = ent ? 0.15 : 0.08, depth = gp.t + 0.06;
+          list.push({ a: A, b: at(fw), z: fl, h: dh, t: depth }, { a: at(L - fw), b: B, z: fl, h: dh, t: depth });   // jambs
+          list.push({ a: A, b: B, z: fl + dh - fw, h: fw, t: depth });                                               // head
+          if (ent) {
+            entIt.push({ a: at(-0.3), b: at(L + 0.3), z: fl + dh + 0.1, h: Math.min(0.5, Math.max(wallTop - dh - 0.15, 0.1)), t: gp.t + 0.2 });  // lit sign band
+            entIt.push({ a: A, b: B, z: fl - 0.28, h: 0.3, t: gp.t + 1.2 });                                   // threshold step
+            // a canopy over the street side, 10 ft (3 m) deep, so the way in shows from the street and from above
+            const mx = (A[0] + B[0]) / 2, my = (A[1] + B[1]) / 2, slabs = els.filter((e) => e.type === "slab");
+            const indoors = (x, y) => slabs.some((e) => inPoly([x, y], e.outline_m) && !(e.holes_m || []).some((h) => inPoly([x, y], h)));
+            const sg = indoors(mx - uy * 1.5, my + ux * 1.5) ? -1 : 1, nx = -uy * sg, ny = ux * sg;
+            entIt.push({ a: [A[0] - ux * 0.6 + nx * 1.6, A[1] - uy * 0.6 + ny * 1.6], b: [B[0] + ux * 0.6 + nx * 1.6, B[1] + uy * 0.6 + ny * 1.6], z: fl + dh + 0.15, h: 0.15, t: 3 });
+            info.entrances++;
+            (info.entranceAt = info.entranceAt || []).push([mx + nx * 1.6, my + ny * 1.6]);
+          }
+        }
         for (const e of els) {
           if (e.type === "slab") lg.add(prism(e.outline_m, l.z_m, e.thickness_m || 0.3, matSlab, null, e.holes_m || []));
-          else if (e.type === "walls") for (const q of e.lines_m) wallIt.push({ a: [q[0], q[1]], b: [q[2], q[3]], z: l.z_m + 0.3, h: Math.max((e.height_m || l.height_m) - 0.3, 0.1), t: e.thickness_m });
-          else if ((e.type === "door" || e.type === "opening") && e.line_m && e.type === "door") doorIt.push({ a: e.line_m[0], b: e.line_m[e.line_m.length - 1], z: l.z_m + 0.3, h: Math.min(e.height_m || 2.1, l.height_m), t: 0.35 });
           else if (e.type === "windows") for (const q of e.lines_m) {
             const A = [q[0], q[1]], B = [q[2], q[3]], n = q[4], L = Math.hypot(B[0] - A[0], B[1] - A[1]);
             for (let i = 0; i < n; i++) {
@@ -199,12 +227,12 @@
           else if (e.type === "stair") treadIt.push(...stairTreads(e, l.z_m + 0.3));
           else if (e.type === "lift" && e.levels && e.levels[0] === l.id) {
             const ls = e.levels.map((id) => byId[id]).filter(Boolean), top = ls[ls.length - 1];
-            lg.add(prism(e.outline_m, l.z_m, top.z_m + top.height_m - l.z_m, matCore, edge));
+            lg.add(prism(e.outline_m, l.z_m, top.z_m + top.height_m - l.z_m, matLift, edge));   // see-through shaft
           }
           else if (e.outdoor) lg.add(prism(e.outline_m, l.z_m - 0.02, 0.12, /garden|park|courtyard|green/i.test(e.name) ? matGreen : matYard, null));
           else if (e.type === "fixture" && e.outline_m) lg.add(prism(e.outline_m, l.z_m + 0.3, Math.min(e.height_m || 1.1, l.height_m), matFix, edge));
         }
-        for (const m of [boxes(wallIt, matWall), boxes(doorIt, matDoor), boxes(paneIt, matGlass), boxes(treadIt, matCore)]) if (m) lg.add(m);
+        for (const m of [boxes(wallIt, matWall), boxes(frameIt, matFrame), boxes(entIt, matEntrance), boxes(paneIt, matGlass), boxes(treadIt, matCore)]) if (m) lg.add(m);
         g.add(lg);
         info.levels.push(lg);
         continue;
@@ -281,12 +309,13 @@
     const ov = document.createElement("div");
     ov.className = "v3d";
     ov.innerHTML = `<div class="v3d-bar"><b>3D · ${esc(sc.title)}</b>
-      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="W A S D or arrow keys to move, drag to look, Q and E to go down or up a level">Walk</button></span>
+      <span class="v3d-modes"><button data-m="orbit" class="on" title="Drag to turn, scroll or pinch to zoom, right-drag to pan">Orbit</button><button data-m="walk" title="Walk as a person: W A S D or arrow keys to move, Shift to run, drag to look. Use the stairs, or stand in a lift and press E (up) or Q (down)">Walk</button></span>
       <label class="v3d-cut" hidden>Show up to <select></select></label>
       <button class="v3d-x" title="Close the 3D view">✕</button></div>
       <div class="v3d-stage"><div class="v3d-msg">Loading 3D…</div></div>
       <div class="v3d-key"></div>
-      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="u">E ↑</button><button data-k="d">Q ↓</button></div>`;
+      <div class="v3d-hud" hidden></div>
+      <div class="v3d-walkpad" hidden><button data-k="f">▲</button><button data-k="l">◀</button><button data-k="b">▼</button><button data-k="r">▶</button><button data-k="run" class="v3d-run" title="Run (Shift)">Run</button><button data-k="u" title="In a lift: up a floor (E)">Lift ↑</button><button data-k="d" title="In a lift: down a floor (Q)">Lift ↓</button></div>`;
     document.body.append(ov);
     ov.querySelector(".v3d-x").onclick = close;
     state = { ov, keys: {}, stop: false };
@@ -301,6 +330,7 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x0b1a2c);
     scene.add(new THREE.HemisphereLight(0xdfefff, 0x2a3440, 1.1));
+    scene.add(new THREE.AmbientLight(0xffffff, 0.45));   // so ceilings, stair undersides and rooms indoors aren't black
     const sun = new THREE.DirectionalLight(0xffffff, 1.6); sun.position.set(-400, 800, -300); scene.add(sun);
 
     // Origin: the bow-port corner of the area (or of the building).
@@ -336,8 +366,23 @@
       if (!state || state.ov !== ov) return;
       const r = buildBuilding(b, model, origin);
       scene.add(r.group);
-      built.push({ b, ...r });
+      built.push({ b, model, ...r });
     }
+
+    // Entrance markers for Orbit: a green pin over every way in, big enough to find from far off (hidden in Walk).
+    const pins = new THREE.Group();
+    const pinMat = new THREE.MeshBasicMaterial({ color: 0x3dff9a });
+    for (const x of built) {
+      const top = x.info.levels.reduce((h, l) => Math.max(h, l.userData.z + l.userData.h), 0);
+      for (const [px, py] of x.info.entranceAt || []) {
+        const pin = new THREE.Mesh(new THREE.ConeGeometry(1, 1, 12), pinMat);
+        pin.rotation.x = Math.PI;   // point down at the door
+        pin.position.set(x.group.position.x + px, top + 1, x.group.position.z + py);
+        pin.userData.base = top;
+        pins.add(pin);
+      }
+    }
+    scene.add(pins);
 
     // Level cut (one building with levels): hide the levels above the chosen one to look inside.
     const one = sc.kind === "building" && built[0] && built[0].info.levels.length ? built[0] : null;
@@ -356,7 +401,7 @@
     const f = built[0] ? built[0].info.finishes : null;
     ov.querySelector(".v3d-key").innerHTML = [
       sc.kind === "building" && f ? (f.fromLook ? `Finishes from the Architecture "look": ${esc(f.names.join(", "))}.` : `No finishes in the Architecture "look" yet, so walls are plain grey.`) : "",
-      designed.length ? `<span class="sw core"></span>stairs and lifts <span class="sw door"></span>doors` : "",
+      designed.length ? `<span class="sw core"></span>stairs and lifts <span class="sw door"></span>doors${built.some((x) => x.info.entrances) ? ` <span class="sw entrance"></span>entrances (${built.reduce((n, x) => n + (x.info.entrances || 0), 0)})` : ""}` : "",
       notDesigned.length ? `Footprints are coloured by use, as on the map legend. <span class="sw none"></span>${notDesigned.length === built.length && sc.kind === "building" ? "No plan yet: footprint only" : `${notDesigned.length} of ${built.length} buildings have no plan yet (footprint only)`}${notDesigned.some((x) => x.info.placeholderHeight) ? ", flat where no height is set" : ""}.` : "",
     ].filter(Boolean).join(" · ");
 
@@ -368,57 +413,79 @@
     orbit.target.set(Lm / 2, 0, Wm / 2);
     orbit.maxPolarAngle = Math.PI * 0.495;
     orbit.update();
-    let mode = "orbit", yaw = 0, pitch = 0, floorIdx = 0;
-    const floors = one ? one.info.levels.map((l) => l.userData.z) : [0];
+    // Walk: a person on the floor (web/walk.js): walls and windows stop you, doors let you through, gravity holds
+    // you down, stairs carry you up and down, lifts change floors. Orbit stays the free camera.
+    let mode = "orbit", walker = null, liftNote = 0;
+    state.walker = () => walker;
+    const hud = ov.querySelector(".v3d-hud");
     const startWalk = () => {
-      floorIdx = Math.max(0, floors.findIndex((z) => z >= 0));
-      camera.position.set(-8, floors[floorIdx] + 1.7, Wm / 2);
-      yaw = Math.PI / 2; pitch = 0;
+      if (!walker && window.adxiWalk) walker = window.adxiWalk.make(built.map((x) => ({ b: x.b, model: x.model, gx: x.group.position.x, gz: x.group.position.z })));
+      if (!walker) return;
+      walker.start([-8, Wm / 2, Math.PI / 2]);
+      camera.near = 0.05; camera.updateProjectionMatrix();   // close up to a wall without seeing through it
     };
     ov.querySelectorAll(".v3d-modes button").forEach((bt) => bt.onclick = () => {
       mode = bt.dataset.m;
       ov.querySelectorAll(".v3d-modes button").forEach((x) => x.classList.toggle("on", x === bt));
       orbit.enabled = mode === "orbit";
-      ov.querySelector(".v3d-walkpad").hidden = mode !== "walk";
-      if (mode === "walk") startWalk(); else { camera.position.set(-size * 0.55, size * 0.6, Wm + size * 0.55); orbit.update(); }
+      ov.querySelector(".v3d-walkpad").hidden = hud.hidden = mode !== "walk";
+      if (mode === "walk") startWalk();
+      else { camera.near = 0.3; camera.updateProjectionMatrix(); camera.position.set(-size * 0.55, size * 0.6, Wm + size * 0.55); orbit.update(); }
     });
     // Walk: drag to look.
     let drag = null;
     renderer.domElement.addEventListener("pointerdown", (e) => { if (mode === "walk") drag = [e.clientX, e.clientY]; });
     addEventListener("pointerup", () => (drag = null));
     renderer.domElement.addEventListener("pointermove", (e) => {
-      if (mode !== "walk" || !drag) return;
-      yaw -= (e.clientX - drag[0]) * 0.005; pitch = Math.max(-1.4, Math.min(1.4, pitch - (e.clientY - drag[1]) * 0.005));
+      if (mode !== "walk" || !drag || !walker) return;
+      const me = walker.me;
+      me.yaw -= (e.clientX - drag[0]) * 0.005; me.pitch = Math.max(-1.4, Math.min(1.4, me.pitch - (e.clientY - drag[1]) * 0.005));
       drag = [e.clientX, e.clientY];
     });
-    const level = (d) => { floorIdx = Math.max(0, Math.min(floors.length - 1, floorIdx + d)); camera.position.y = floors[floorIdx] + 1.7; };
+    const lift = (d) => { if (walker && !walker.lift(d)) liftNote = performance.now(); };
     state.onKey = (e, down) => {
       if (e.key === "Escape" && down) return close();
+      if (e.key === "Shift") state.keys.shift = down;
       const k = { w: "f", arrowup: "f", s: "b", arrowdown: "b", a: "l", arrowleft: "l", d: "r", arrowright: "r" }[e.key.toLowerCase()];
       if (k) { state.keys[k] = down; e.preventDefault(); }
-      if (down && mode === "walk" && e.key.toLowerCase() === "e") level(1);
-      if (down && mode === "walk" && e.key.toLowerCase() === "q") level(-1);
+      if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "e") lift(1);
+      if (down && !e.repeat && mode === "walk" && e.key.toLowerCase() === "q") lift(-1);
     };
     ov.querySelectorAll(".v3d-walkpad button").forEach((bt) => {
       const k = bt.dataset.k;
-      if (k === "u" || k === "d") { bt.onclick = () => level(k === "u" ? 1 : -1); return; }
+      if (k === "u" || k === "d") { bt.onclick = () => lift(k === "u" ? 1 : -1); return; }
+      if (k === "run") { bt.onclick = () => { state.runLock = !state.runLock; bt.classList.toggle("on", state.runLock); }; return; }
       bt.onpointerdown = () => (state.keys[k] = true);
-      bt.onpointerup = bt.onpointerleave = () => (state.keys[k] = false);
+      bt.onpointerup = bt.onpointerleave = bt.onpointercancel = () => (state.keys[k] = false);
     });
+    const showHud = (now) => {
+      const L = walker.where(), inLift = walker.inLift();
+      const where = L ? esc(String(L.name).split("·")[0].trim()) : "Outside";
+      const tip = inLift ? "In a lift: E (or Lift ↑) goes up a floor, Q (or Lift ↓) down"
+        : now - liftNote < 2500 ? "Stand in a lift to use it (the see-through orange shafts), or walk up the stairs"
+        : L ? "Walls and windows stop you. Walk through doors (green frames); take the stairs or a lift to change floors"
+        : "Walk to a bright green entrance to go in";
+      const html = `<b>${where}</b> · ${tip}`;
+      if (hud.innerHTML !== html) hud.innerHTML = html;
+    };
     state.resize = () => { renderer.setSize(stage.clientWidth, stage.clientHeight); camera.aspect = stage.clientWidth / stage.clientHeight; camera.updateProjectionMatrix(); };
     addEventListener("resize", state.resize);
     let last = performance.now();
     const tick = (now) => {
       if (!state || state.ov !== ov) { renderer.dispose(); return; }
       const dt = Math.min(0.1, (now - last) / 1000); last = now;
-      if (mode === "walk") {
-        const sp = 6 * dt * (state.keys.shift ? 3 : 1), fx = Math.sin(yaw), fz = Math.cos(yaw);
-        if (state.keys.f) { camera.position.x += fx * sp; camera.position.z += fz * sp; }
-        if (state.keys.b) { camera.position.x -= fx * sp; camera.position.z -= fz * sp; }
-        if (state.keys.l) { camera.position.x += fz * sp; camera.position.z -= fx * sp; }
-        if (state.keys.r) { camera.position.x -= fz * sp; camera.position.z += fx * sp; }
-        camera.lookAt(camera.position.x + Math.sin(yaw) * Math.cos(pitch), camera.position.y + Math.sin(pitch), camera.position.z + Math.cos(yaw) * Math.cos(pitch));
+      if (mode === "walk" && walker) {
+        const k = state.keys, me = walker.step(dt, { f: k.f, b: k.b, l: k.l, r: k.r, run: k.shift || state.runLock });
+        camera.position.set(me.x, walker.eye(), me.z);
+        camera.lookAt(me.x + Math.sin(me.yaw) * Math.cos(me.pitch), walker.eye() + Math.sin(me.pitch), me.z + Math.cos(me.yaw) * Math.cos(me.pitch));
+        showHud(now);
       } else orbit.update();
+      pins.visible = mode !== "walk";
+      if (pins.visible) for (const pin of pins.children) {
+        const k = Math.max(1.5, camera.position.distanceTo(pin.position) / 45);   // about the same size on screen at any zoom
+        pin.scale.set(k, k * 2.2, k);
+        pin.position.y = pin.userData.base + k * 1.3;
+      }
       renderer.render(scene, camera);
       requestAnimationFrame(tick);
     };
@@ -448,5 +515,5 @@
     tools.prepend(bt);
   }
   new MutationObserver(addButton).observe(document.documentElement, { childList: true, subtree: true });
-  window.adxi3D = { open, close };
+  window.adxi3D = { open, close, walker: () => state && state.walker && state.walker() };
 })();

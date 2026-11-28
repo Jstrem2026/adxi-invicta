@@ -181,7 +181,7 @@ def _version():
     """Saved results are redone when CHECK_VERSION or the code of the checks or the fabric rules changes."""
     h = hashlib.sha1(str(CHECK_VERSION).encode())
     here = os.path.dirname(os.path.abspath(__file__))
-    for name in ("rooms.py", "fabric.py", "geometry.py"):
+    for name in ("rooms.py", "fabric.py", "geometry.py", os.path.join("..", "data", "standards.json")):
         with open(os.path.join(here, name), "rb") as f:
             h.update(f.read().replace(b"\r\n", b"\n"))
     return h.hexdigest()

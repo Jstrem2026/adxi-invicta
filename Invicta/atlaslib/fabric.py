@@ -12,24 +12,32 @@ Every element made here has "derived": true and status "proposed". Positions are
 to the millimetre, in the plan frame (from the lot's bow-port corner, x toward the stern,
 y toward starboard, z above the deck).
 
-Rules (US first, metric alongside):
+Rules (US first, metric alongside). The sizes come from data/standards.json (Jordan, 28 Nov 2026: US building
+standards, IBC and ADA):
 - Walls on every edge between spaces: outside walls 1 ft (0.30 m) thick, stair and lift
-  core walls 10 in (0.25 m), partitions 6 in (0.15 m). Full floor height.
+  core walls 10 in (0.25 m), partitions 4-7/8 in (0.12 m). Full floor height.
 - Doors: every room gets a door, to a corridor or other open zone first, then to a stair
-  core, then to a neighbouring room that is already reachable. Single doors 3 ft (0.9 m)
-  wide and 6 ft 11 in (2.1 m) high; double doors 5 ft 11 in (1.8 m) for rooms over
-  1,615 sq ft (150 m²). Every stair core gets a door on each floor. The ground floor gets
-  an entrance in each corridor or zone with an outside wall (at least one per building).
+  core, then to a neighbouring room that is already reachable. Single doors 3 ft x 6 ft 8 in
+  (0.91 x 2.03 m), 7 ft (2.13 m) high under ceilings of 9 ft (2.74 m) or more; double doors
+  6 x 7 ft (1.83 x 2.13 m) for rooms over 1,615 sq ft (150 m²). Entrances are 6 x 8 ft
+  (1.83 x 2.44 m) double doors; openings between corridors are 8 ft (2.44 m) high. A door is
+  kept clear of any wall that meets its wall part way along. Every stair core gets a door on each
+  floor. The ground floor gets an entrance in each corridor or zone with an outside wall (at least
+  one per building). Entrances face the street where they can, else a courtyard, never a gap
+  narrower than 10 ft (3 m) between rooms or a closed-in corner smaller than 1,076 sq ft (100 m²).
+  A long building gets one entrance per 394 ft (120 m) of street front (at most 12), through the
+  street-side room beside a corridor farthest from the others, which also opens onto that corridor.
 - Windows: along outside walls of rooms and zones above ground, except stores, vaults,
   plant, server and wash rooms. Panes 3 ft 11 in (1.2 m) wide every 5 ft 11 in (1.8 m),
-  sill 2 ft 11 in (0.9 m).
-- Stairs: in every core, between each floor and the next. Risers at most 7 in (0.18 m),
-  treads 11 in (0.28 m), two flights 3 ft 11 in (1.2 m) wide with landings 4 ft 11 in
-  (1.5 m) deep (a half-turn stair). A tall floor whose stair is too long for its core
-  turns back on itself more times on the way up (as many half-turns as it needs, "turns"), the way
-  real stairs climb tall halls. If it still can't fit in the core, it is marked
-  "fits": false and the scan says so. A lift shaft 8 ft 6 in (2.6 m) square goes beside it where there
-  is room.
+  sill 3 ft (0.91 m), head 7 ft (2.13 m), in line with the tops of doors.
+- Stairs: in every core, between each floor of the building and the next (never between decks:
+  decks are joined only by fast elevators and teleport pads). Risers at most 7 in (0.178 m),
+  treads 11 in (0.279 m), two flights 3 ft 11 in (1.2 m) wide (at least 44 in, 1.12 m) with landings
+  4 ft 11 in (1.5 m) deep (a half-turn stair), no flight climbing more than 12 ft (3.66 m). A tall
+  floor whose stair is too long for its core turns back on itself more times on the way up (as many
+  half-turns as it needs, "turns"), the way real stairs climb tall halls. If it still can't fit in
+  the core, it is marked "fits": false and the scan says so. A lift shaft 8 ft 6 in (2.6 m) square
+  goes beside it where there is room.
 - Floor slabs 1 ft (0.30 m) thick under every floor's rooms, with holes for stairs and lifts.
 """
 
@@ -40,17 +48,36 @@ import shapely
 from shapely.geometry import LineString, Point, Polygon
 from shapely.strtree import STRtree
 
-T_OUTSIDE, T_CORE, T_PARTITION = 0.30, 0.25, 0.15
-DOOR_W, DOOR_H, DOUBLE_W, DOUBLE_H, BIG_ROOM_M2 = 0.9, 2.1, 1.8, 2.4, 150.0
-ENTRANCE_W = 1.8
-WIN_W, WIN_STEP, WIN_SILL, WIN_HEAD = 1.2, 1.8, 0.9, 2.4
-RISER_MAX, TREAD, FLIGHT_W, LANDING = 0.18, 0.28, 1.2, 1.5
-FLIGHT_W_MIN = 1.12
+import json
+import os
+
+# Door, window and stair sizes come from data/standards.json (Jordan, 28 Nov 2026: US building standards).
+STANDARDS_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "standards.json")
+with open(STANDARDS_FILE, encoding="utf-8") as _f:
+    STANDARDS = json.load(_f)
+_D, _W, _S = (STANDARDS["building"][k] for k in ("doors", "windows", "stairs"))
+
+_WL = STANDARDS["building"]["walls"]
+T_OUTSIDE, T_CORE, T_PARTITION = _WL["exterior_m"], _WL["core_m"], _WL["partition_m"]
+# Doors 3 ft x 6 ft 8 in (0.91 x 2.03 m), 7 ft (2.13 m) on floors with ceilings 9 ft (2.74 m) or more; double doors
+# 6 x 7 ft (1.83 x 2.13 m); street entrances and openings between corridors 6 x 8 ft (1.83 x 2.44 m).
+DOOR_W, DOOR_H, DOUBLE_W, BIG_ROOM_M2 = _D["single_width_m"], _D["height_m"], _D["double_width_m"], 150.0
+DOUBLE_H = _D["double_height_m"]
+TALL_DOOR_H, TALL_CEILING_M, ENTRANCE_H = _D["tall_height_m"], _D["tall_ceiling_m"], _D["entrance_height_m"]
+ENTRANCE_W = _D["entrance_width_m"]
+WIN_W, WIN_STEP, WIN_SILL, WIN_HEAD = _W["pane_width_m"], _W["pane_step_m"], _W["sill_m"], _W["head_m"]
+RISER_MAX, TREAD, FLIGHT_W, LANDING = _S["riser_max_m"], _S["tread_m"], _S["flight_width_m"], _S["landing_m"]
+FLIGHT_W_MIN = _S["flight_width_min_m"]
+FLIGHT_RISE_MAX = _S["flight_rise_max_m"]  # 12 ft: the most a flight may climb between landings
 MIN_FLIGHT_RISERS = 3
 LIFT = 2.6
 OUTSIDE_DOORS_MAX = 400  # a row of hangar bays can need one each
 MAX_TURNS = 40  # half-turns a stair may make within one floor (a stair tower in a tall hall makes many)
 SLAB_T = 0.30
+OPEN_AIR_M = 3.0  # 10 ft: a gap between rooms narrower than this is not open air, so no entrance faces it
+ENTRANCE_EVERY_M = 120.0  # 394 ft of street front per entrance, for long buildings
+ENTRANCES_MAX = 12
+COURTYARD_MIN_M2 = 100.0  # 1,076 sq ft: an enclosed gap smaller than this is a leftover corner, not a courtyard
 NO_WINDOWS = ("vault", "store", "storage", "plant", "server", "magazine", "strongroom", "riser",
               "toilet", "wc", "washroom", "shower", "changing", "cold room", "freezer")
 SPACES = ("room", "zone", "core")
@@ -189,6 +216,7 @@ def build(m):
         graph.setdefault(b, set()).add(a)
 
     doored = set()  # (space, level) that already have a door or opening
+    junctions = {}  # level -> wall end points, where walls meet
     entrances = set()
 
     def add_door(space, w, width, height, name, kind="door"):
@@ -198,8 +226,26 @@ def build(m):
         if width < DOOR_W - 1e-9:
             return False
         h = lv_by[L].get("height_m") or height
+        if height == DOOR_H and h - SLAB_T >= TALL_CEILING_M:
+            height = TALL_DOOR_H   # a taller door under a taller ceiling
         ux, uy = (b[0] - a[0]) / length, (b[1] - a[1]) / length
+        # keep the doorway clear of any wall that meets this one part way along (a corner of a core, a partition):
+        # the door goes as near the middle as it can with no wall end inside it
+        if L not in junctions:
+            junctions[L] = [tuple(q) for e in out if e["type"] == "wall" and e["level"] == L for q in e["line_m"]]
+        blocked = []
+        for q in junctions[L]:
+            along = (q[0] - a[0]) * ux + (q[1] - a[1]) * uy
+            if 0.05 < along < length - 0.05 and abs((q[0] - a[0]) * uy - (q[1] - a[1]) * ux) < 0.2:
+                blocked.append((along - 0.3, along + 0.3))
         c0 = length / 2 - width / 2
+        if blocked:
+            spots = sorted((k * 0.05 for k in range(int((length - width) / 0.05) + 1)), key=lambda c: abs(c - c0))
+            spots = [c for c in spots if 0.15 <= c <= length - width - 0.15
+                     and all(c + width <= lo or c >= hi for lo, hi in blocked)]
+            if not spots:
+                return False
+            c0 = spots[0]
         p1 = (a[0] + ux * c0, a[1] + uy * c0)
         p2 = (a[0] + ux * (c0 + width), a[1] + uy * (c0 + width))
         out.append({"id": nid("D"), "type": kind, "name": name, "level": L, "line_m": [_pt(p1), _pt(p2)],
@@ -268,20 +314,92 @@ def build(m):
         for w in ws:
             o = partner(x, w)
             if o and by_id[o]["type"] == "zone" and (o, L) not in graph.get((x, L), ()):
-                add_door(x, w, DOUBLE_W, DOUBLE_H, "Opening", "opening")
+                add_door(x, w, DOUBLE_W, ENTRANCE_H, "Opening", "opening")
 
-    # entrances on the ground floor: each corridor or zone with an outside wall, else the biggest room
+    # entrances on the ground floor: each corridor or zone with an outside wall, else the biggest room.
+    # An outside wall here is one that opens to the air: the street first, then a courtyard. A wall that only
+    # faces a gap left between rooms (narrower than OPEN_AIR_M) is not a way in (Jordan, 27 Nov 2026: "WHERE IS
+    # THE DOOR?" - entrances were opening into gaps inside the building, out of sight of the street).
+    air = {}
+    if ground in on_level and on_level[ground]:
+        floor = _union(np.array([polys[e["id"]] for e in on_level[ground]], dtype=object))
+        closed = floor.buffer(OPEN_AIR_M / 2, join_style="mitre").buffer(-OPEN_AIR_M / 2, join_style="mitre").union(floor)
+        # a small enclosed gap (a leftover corner between corridors) is not a courtyard either
+        gaps = [Polygon(r) for q in shapely.get_parts(closed) if q.geom_type == "Polygon" for r in q.interiors]
+        gaps = [g for g in gaps if g.area < COURTYARD_MIN_M2]
+        if gaps:
+            closed = closed.union(shapely.union_all(gaps))
+        street = shapely.union_all([Polygon(q.exterior) for q in shapely.get_parts(closed) if q.geom_type == "Polygon"])
+        shapely.prepare(closed)
+        shapely.prepare(street)
+
+        def facing(x, w):
+            """0 when the wall faces the street, 1 a courtyard, None when it faces neither (a gap inside)."""
+            if (x, w[1], w[2]) in air:
+                return air[(x, w[1], w[2])]
+            a, b = w[1], w[2]
+            L = math.dist(a, b) or 1.0
+            mx, my, nx, ny = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2, -(b[1] - a[1]) / L, (b[0] - a[0]) / L
+            out = None
+            for sg in (1, -1):
+                q = Point(mx + nx * 0.6 * sg, my + ny * 0.6 * sg)
+                if polys[x].covers(q):
+                    continue
+                if not street.covers(q):
+                    out = 0
+                elif not closed.covers(q):
+                    out = 1 if out is None else out
+            air[(x, w[1], w[2])] = out
+            return out
+    else:
+        def facing(x, w):
+            return 0
+
     if ground in on_level:
         def outside_walls(x):
-            return sorted((w for w in walls_at.get((x, ground), []) if None in w[0]), key=lambda w: -math.dist(w[1], w[2]))
+            ws = [w for w in walls_at.get((x, ground), []) if None in w[0] and facing(x, w) is not None]
+            return sorted(ws, key=lambda w: (facing(x, w), -math.dist(w[1], w[2])))
         cands = [e["id"] for e in on_level[ground] if e["type"] == "zone" and outside_walls(e["id"])]
         if not cands:  # corridors all inside: the biggest room on an outside wall is the entrance hall
             cands = sorted((e["id"] for e in on_level[ground] if e["type"] == "room" and outside_walls(e["id"])),
                            key=lambda x: -polys[x].area)[:1]
+        ent_at = []
         for x in cands:
             for w in outside_walls(x)[:1]:
-                if add_door(x, w, ENTRANCE_W, DOUBLE_H, "Entrance"):
+                if add_door(x, w, ENTRANCE_W, ENTRANCE_H, "Entrance"):
                     entrances.add((x, ground))
+                    ent_at.append(((w[1][0] + w[2][0]) / 2, (w[1][1] + w[2][1]) / 2))
+                    report["entrances"] += 1
+        # a long building gets more ways in: one per ENTRANCE_EVERY_M of street front, each through the street-side
+        # room beside a corridor that is farthest from the entrances so far (its door to the corridor follows below)
+        if air and ent_at:
+            front = sum(math.dist(w[1], w[2]) for (x, L), ws in walls_at.items() if L == ground
+                        for w in ws if None in w[0] and facing(x, w) == 0)
+            want = min(ENTRANCES_MAX, max(1, round(front / ENTRANCE_EVERY_M)))
+            lobby = []
+            for e in on_level[ground]:
+                if e["type"] != "room":
+                    continue
+                st = [w for w in walls_at.get((e["id"], ground), []) if None in w[0] and facing(e["id"], w) == 0
+                      and math.dist(w[1], w[2]) >= ENTRANCE_W + 0.3]
+                by_zone = any(partner(e["id"], w) and by_id[partner(e["id"], w)]["type"] == "zone"
+                              for w in walls_at.get((e["id"], ground), []))
+                if st and by_zone:
+                    w = max(st, key=lambda w: math.dist(w[1], w[2]))
+                    lobby.append((e["id"], w, ((w[1][0] + w[2][0]) / 2, (w[1][1] + w[2][1]) / 2)))
+            while len(ent_at) < want and lobby:
+                k = max(range(len(lobby)), key=lambda i: min(math.dist(lobby[i][2], p) for p in ent_at))
+                x, w, p = lobby.pop(k)
+                if min(math.dist(p, q) for q in ent_at) < ENTRANCE_EVERY_M / 2:
+                    break
+                # the entrance room opens onto its corridor first, so the way in leads somewhere
+                zw = sorted((zw for zw in walls_at.get((x, ground), []) if partner(x, zw) and by_id[partner(x, zw)]["type"] == "zone"),
+                            key=lambda zw: -math.dist(zw[1], zw[2]))
+                if not any(add_door(x, zw, DOUBLE_W, DOOR_H, "Door") for zw in zw):
+                    continue
+                if add_door(x, w, ENTRANCE_W, ENTRANCE_H, "Entrance"):
+                    entrances.add((x, ground))
+                    ent_at.append(p)
                     report["entrances"] += 1
 
     def reach():
@@ -320,12 +438,14 @@ def build(m):
     # a ground-floor part still cut off (a kiosk in a park, a wing with its own way in) gets its own
     # outside door, biggest space first, until everything on the ground floor that can have one does
     for _ in range(OUTSIDE_DOORS_MAX):
-        cut = [x for x, L in nodes if L == ground and (x, L) not in seen and by_id[x]["type"] != "core"
+        # (a stair core standing on its own, outside the rest of the building, gets its own street door too)
+        cut = [x for x, L in nodes if L == ground and (x, L) not in seen
+               and (by_id[x]["type"] != "core" or all(partner(x, w) is None for w in walls_at.get((x, L), [])))
                and any(None in w[0] for w in walls_at.get((x, L), []))]
         if not cut:
             break
         x = max(cut, key=lambda i: polys[i].area)
-        ext = sorted((w for w in walls_at[(x, ground)] if None in w[0]), key=lambda w: -math.dist(w[1], w[2]))
+        ext = outside_walls(x) or sorted((w for w in walls_at[(x, ground)] if None in w[0]), key=lambda w: -math.dist(w[1], w[2]))
         wd, ht = door_size(x)
         if not any(add_door(x, w, max(wd, DOOR_W), ht, "Outside door") for w in ext[:1]):
             walls_at[(x, ground)] = [w for w in walls_at[(x, ground)] if None not in w[0]]  # too short: skip it
@@ -401,7 +521,9 @@ def build(m):
             fw = FLIGHT_W if lenD >= 2 * FLIGHT_W + 0.1 else max(FLIGHT_W_MIN, (lenD - 0.1) / 2)
             width = 2 * fw + 0.1
             # more half-turns per floor make a shorter stair, keeping at least 3 risers in every flight
-            for turns in range(1, max(1, min(MAX_TURNS, risers // (2 * MIN_FLIGHT_RISERS))) + 1):
+            # and enough half-turns that no flight climbs more than 12 ft (3.66 m) between landings
+            t0 = max(1, math.ceil(h / (2 * FLIGHT_RISE_MAX) - 1e-9))
+            for turns in range(t0, max(t0, min(MAX_TURNS, risers // (2 * MIN_FLIGHT_RISERS))) + 1):
                 per = math.ceil(risers / (2 * turns))
                 length = (per - 1) * TREAD + 2 * LANDING
                 fits = length <= lenL + 1e-6 and width <= lenD + 1e-6
