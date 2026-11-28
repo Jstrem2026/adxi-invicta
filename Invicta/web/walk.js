@@ -361,7 +361,7 @@
     };
   }
 
-  const api = { make, building, surfaces, stairHeights, cutDoors, cutWalls, inPoly, EYE, RADIUS, WALK, RUN };
+  const api = { make, building, surfaces, stairHeights, cutDoors, cutWalls, inPoly, holeWidth, EYE, RADIUS, WALK, RUN };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.adxiWalk = api;
 })(typeof window !== "undefined" ? window : globalThis);

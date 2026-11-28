@@ -201,8 +201,9 @@
           if (wallTop - dh > 0.05) wallIt.push({ a: A, b: B, z: fl + dh, h: wallTop - dh, t: gp.t });   // wall over the doorway
           if (d.kind !== "door") continue;                                                              // an opening: just the gap
           const ent = /entrance|outside/i.test(d.name), list = ent ? entIt : frameIt, fw = ent ? 0.15 : 0.08, depth = gp.t + 0.06;
-          list.push({ a: A, b: at(fw), z: fl, h: dh, t: depth }, { a: at(L - fw), b: B, z: fl, h: dh, t: depth });   // jambs
-          list.push({ a: A, b: B, z: fl + dh - fw, h: fw, t: depth });                                               // head
+          // the frame sits round the opening, on the wall, so the doorway keeps its full width and height
+          list.push({ a: at(-fw), b: A, z: fl, h: dh, t: depth }, { a: B, b: at(L + fw), z: fl, h: dh, t: depth });   // jambs
+          list.push({ a: at(-fw), b: at(L + fw), z: fl + dh, h: Math.min(fw, Math.max(wallTop - dh, 0.01)), t: depth });  // head
           if (ent) {
             entIt.push({ a: at(-0.3), b: at(L + 0.3), z: fl + dh + 0.1, h: Math.min(0.5, Math.max(wallTop - dh - 0.15, 0.1)), t: gp.t + 0.2 });  // lit sign band
             entIt.push({ a: A, b: B, z: fl - 0.28, h: 0.3, t: gp.t + 1.2 });                                   // threshold step
@@ -215,13 +216,24 @@
             (info.entranceAt = info.entranceAt || []).push([mx + nx * 1.6, my + ny * 1.6]);
           }
         }
+        // no window pane across a doorway: a pane whose middle is within its half-width (plus 4 in) of a door gap is left out
+        const inDoorway = (pa, pb) => {
+          const mx = (pa[0] + pb[0]) / 2, my = (pa[1] + pb[1]) / 2, half = Math.hypot(pb[0] - pa[0], pb[1] - pa[1]) / 2 + 0.1;
+          return c.gaps.some((gp) => {
+            const dx = gp.bx - gp.ax, dy = gp.by - gp.ay, l2 = dx * dx + dy * dy || 1;
+            const f = Math.max(0, Math.min(1, ((mx - gp.ax) * dx + (my - gp.ay) * dy) / l2));
+            return Math.hypot(mx - gp.ax - dx * f, my - gp.ay - dy * f) < half;
+          });
+        };
         for (const e of els) {
-          if (e.type === "slab") lg.add(prism(e.outline_m, l.z_m, e.thickness_m || 0.3, matSlab, null, e.holes_m || []));
+          // stairwells, lift shafts and courtyards are holes; a sliver where two rooms almost meet is floor, not a seam
+          if (e.type === "slab") lg.add(prism(e.outline_m, l.z_m, e.thickness_m || 0.3, matSlab, null, (e.holes_m || []).filter((h) => !window.adxiWalk || window.adxiWalk.holeWidth(h) >= 0.5)));
           else if (e.type === "windows") for (const q of e.lines_m) {
             const A = [q[0], q[1]], B = [q[2], q[3]], n = q[4], L = Math.hypot(B[0] - A[0], B[1] - A[1]);
             for (let i = 0; i < n; i++) {
               const s0 = n > 1 ? i * (L - e.pane_width_m) / (n - 1) : (L - e.pane_width_m) / 2, f0 = s0 / L, f1 = (s0 + e.pane_width_m) / L;
-              paneIt.push({ a: [A[0] + (B[0] - A[0]) * f0, A[1] + (B[1] - A[1]) * f0], b: [A[0] + (B[0] - A[0]) * f1, A[1] + (B[1] - A[1]) * f1], z: l.z_m + 0.3 + e.sill_m, h: e.head_m - e.sill_m, t: 0.36 });
+              const pa = [A[0] + (B[0] - A[0]) * f0, A[1] + (B[1] - A[1]) * f0], pb = [A[0] + (B[0] - A[0]) * f1, A[1] + (B[1] - A[1]) * f1];
+              if (!inDoorway(pa, pb)) paneIt.push({ a: pa, b: pb, z: l.z_m + 0.3 + e.sill_m, h: e.head_m - e.sill_m, t: 0.36 });
             }
           }
           else if (e.type === "stair") treadIt.push(...stairTreads(e, l.z_m + 0.3));
