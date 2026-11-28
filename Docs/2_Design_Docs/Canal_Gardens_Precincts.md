@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I, B5 Central Canal II, B6 Garden Reach I and B7 Garden Reach II are laid out (proposed); the last block is not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I, B5 Central Canal II, B6 Garden Reach I, B7 Garden Reach II and B8 Village Gateway are laid out (proposed); all eight blocks are now laid out.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -141,6 +141,21 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Access Road B (B7) | 18 × 500 m; 9,000 m² | GR2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
 | Discovery Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 160–176. Each end overlaps its plot by 10 m (GR2-03, GR2-06) | D3F6P1B7A11 |
 | Orchard Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 380–396. Each end overlaps its plot by 10 m (GR2-04, GR2-08) | D3F6P1B7A12 |
+| Grand Canal (B8) | 100 m wide, 700 m long, widening to a 200 m turning basin; 94,166.7 m² | VG-01. Path (X,Y): M223.5 0 H323.5 V400 L373.5 450 V600 Q373.5 700 273.5 700 Q173.5 700 173.5 600 V450 L223.5 400 Z. Carries on from B7 at 100 m wide and ends at Y 700 | D3F6P1B8A1 |
+| Village Welcome Gardens | 175.5 × 130 m; 22,815 m² | VG-02. X 18–193.5, Y 0–130. Plot only | D3F6P1B8A2 |
+| Local Produce Market | 175.5 × 150 m; 26,325 m² | VG-03. X 18–193.5, Y 130–280. Plot only | D3F6P1B8A3 |
+| Community Quarter | 175.5 × 120 m, south-east corner cut for the promenade; 20,982.8 m² | VG-04. X 18–193.5, Y 280–400. Corner cut (193.5,387.57) to (181.07,400). Plot only | D3F6P1B8A4 |
+| Village Passenger Terminal | 125.5 × 220 m; 27,610 m² | VG-05. X 18–143.5, Y 400–620. Plot only | D3F6P1B8A5 |
+| Canal Operations (B8) | 125.5 × 118 m; 14,809 m² | VG-06. X 18–143.5, Y 620–738. Plot only | D3F6P1B8A6 |
+| Neighbourhood Gardens | 175.5 × 160 m; 28,080 m² | VG-07. X 353.5–529, Y 0–160. Plot only | D3F6P1B8A7 |
+| Village Dining Quarter | 175.5 × 140 m; 24,570 m² | VG-08. X 353.5–529, Y 160–300. Plot only | D3F6P1B8A8 |
+| Community Plaza | 175.5 × 100 m, south-west corner cut for the promenade; 17,472.8 m² | VG-09. X 353.5–529, Y 300–400. Corner cut (353.5,387.57) to (365.93,400). Plot only | D3F6P1B8A9 |
+| Harbourfront Park | 125.5 × 230 m; 28,865 m² | VG-10. X 403.5–529, Y 400–630. Plot only | D3F6P1B8A10 |
+| Emergency Services (B8) | 125.5 × 108 m; 13,554 m² | VG-11. X 403.5–529, Y 630–738. Plot only | D3F6P1B8A11 |
+| Promenades (B8) | At least 30 m clear round the canal and basin; 57,867.7 m² | VG-12. Remaining public land: X 193.5–223.5 and X 323.5–353.5 (Y 0–400), X 143.5–173.5 and X 373.5–403.5 beside the basin, 30 m square to the edge along the diagonals, and the Terminal Promenade round the curved end. Carry on from B7 | D3F6P1B8A12 |
+| Access Road A (B8) | 18 × 738 m; 13,284 m² | VG-13A. X 0–18, Y 0–738, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B8) | 18 × 738 m; 13,284 m² | VG-13B. X 529–547, Y 0–738, stern edge. Proposed infrastructure | D3F6P1 |
+| Village Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 245–265. Each end overlaps its plot by 10 m (VG-03, VG-08) | D3F6P1B8A13 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -188,7 +203,19 @@ Area check (m²): plots 175,500 (west 87,750 = 175.5 × (130 + 145 + 150 + 75), 
 
 How the app shows it: as in B1 to B6, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-V. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B6 at Y 0 and B8 at Y 500 with the same widths, so each runs unbroken from B6 through B7 into B8.
 
-Not designed yet: what the last block and the other precincts hold, streets other than the access roads of B1 to B7, bridges other than B1's two, the Social, Heritage, Gallery, Central, Serenity, Woodland, Blossom, Discovery and Orchard Bridges, the ponds and lake of B6, the maze and orchard layouts of B7, where the canal water comes from and goes, individual buildings.
+B8 Village Gateway (D3-F56-W) layout, proposed. The block is 547 × 738 m (403,686 m²), Y 4,750 to 5,488 m from the district's port edge, ending at the starboard edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 4.75 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and the bridge only; no individual buildings are designed.
+
+The canal enters from B7 at 100 m wide (X 223.5–323.5), runs to Y 400, widens along 50 m diagonals to the 200 m Village Turning Basin (X 173.5–373.5, Y 450–600), and ends in a curved waterfront at Y 700 (two quadratic curves, each 100 m across and 100 m deep). The canal ends there; nothing continues beyond it. Its end is 38 m from the block edge (Y 738), so the promenade runs round the end at 30 m or more.
+
+Geometry check: the west plots stop at X 143.5 and the east plots start at X 403.5, 30 m from the 200 m basin (X 173.5 and 373.5). Along the 100 m channel the plots are 30 m clear (X 193.5 and 353.5). At the basin diagonals the square corners of VG-04 and VG-09 (193.5,400) and (353.5,400) were only 21.2 m from the canal, so each is cut by a small triangle (legs 12.43 m, 77.2 m²) parallel to the diagonal, keeping the promenade 30 m clear. No other corner is closer than 30 m. The Village Bridge at Y 245–265 crosses the 100 m channel and its ends land 10 m on VG-03 and VG-08.
+
+Area check (m²): plots 225,083.6 (west 112,619 less the 77.2 cut: 175.5 × (130 + 150 + 120) + 125.5 × (220 + 118); east 112,619 less the 77.2 cut: 175.5 × (160 + 140 + 100) + 125.5 × (230 + 108)), canal 94,166.7 (40,000 + 7,500 + 30,000 + 16,666.7), promenades 57,867.7, access roads 26,568. Total 403,686.0, which is the whole block. The Village Bridge is not counted again.
+
+How the app shows it: as in B1 to B7, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 738 m, 0.3771 km²) as the block, still addressed D3-F56-W. The canal, promenades and boundary roads meet B7 at Y 0 with the same widths. The map draws the plots as rectangles (VG-04 and VG-09 with their cuts), and the canal outline with the curved end from its plan points.
+
+Still to settle before this is final: whether the canal ends at the basin for good. If a canal connection is ever needed beyond Y 700, the 38 m strip to the block edge is too narrow for it.
+
+Not designed yet: what the other precincts hold, streets other than the access roads of B1 to B8, bridges other than B1's two, the Social, Heritage, Gallery, Central, Serenity, Woodland, Blossom, Discovery, Orchard and Village Bridges, the ponds and lake of B6, the maze and orchard layouts of B7, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -318,5 +345,20 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-99 Access Road B (B7)**: The service road along the stern edge of the Garden Reach II block.
 - **P1-100 Discovery Bridge**: A footbridge over the canal linking the Nature Discovery Quarter and the Family Adventure Park.
 - **P1-101 Orchard Bridge**: A footbridge over the canal linking the Community Gardens and the Community Orchard.
+- **P1-102 Grand Canal (B8)**: The last stretch of the Grand Canal. It brings boats in from Garden Reach and ends in the Village Turning Basin, where boats turn round and unload at the Village Passenger Terminal.
+- **P1-103 Village Welcome Gardens**: Gardens that welcome people arriving at the village end of Canal Gardens.
+- **P1-104 Local Produce Market**: A market where villagers and visitors buy fresh local produce, with the Village Bridge arriving at its canal side.
+- **P1-105 Community Quarter**: Community rooms and services for village residents: meetings, classes and local events.
+- **P1-106 Village Passenger Terminal**: The passenger terminal at the end of the canal, where people join and leave the canal boats and change to other transport.
+- **P1-107 Canal Operations (B8)**: The operations office for the end of the canal: boat berths, the turning basin and the Village Bridge.
+- **P1-108 Neighbourhood Gardens**: Everyday gardens for the village neighbourhood on the stern bank, for walking, sitting and gathering.
+- **P1-109 Village Dining Quarter**: Restaurants and cafés for the village, with the Village Bridge arriving at its canal side.
+- **P1-110 Community Plaza**: An open public plaza for village gatherings, markets and events.
+- **P1-111 Harbourfront Park**: A park on the stern side of the turning basin, for sitting and watching the boats.
+- **P1-112 Emergency Services (B8)**: The emergency services post for the village end of Canal Gardens, covering fire, rescue and first aid.
+- **P1-113 Promenades (B8)**: Walkways along both banks of the canal and all round the turning basin, linking the gardens, market, terminal and park.
+- **P1-114 Access Road A (B8)**: The service road along the bow edge of the Village Gateway block.
+- **P1-115 Access Road B (B8)**: The service road along the stern edge of the Village Gateway block.
+- **P1-116 Village Bridge**: A footbridge over the canal linking the Local Produce Market and the Village Dining Quarter.
 
 <!-- purposes:end -->
