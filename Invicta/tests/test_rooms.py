@@ -41,6 +41,19 @@ class RoomChecks(unittest.TestCase):
         m = plan([room("A", rect(0, 0, 20, 10)), room("B", rect(2, 2, 6, 6))])
         self.assertIn("Rooms overlap", titles(m))
 
+    def test_zone_inside_its_parent_room_is_part_of_it(self):
+        m = plan([room("A", rect(0, 0, 20, 10)), room("Z", rect(2, 2, 6, 6), kind="zone", parent="A")])
+        self.assertNotIn("Rooms overlap", titles(m))
+
+    def test_zone_with_parent_still_overlaps_other_rooms(self):
+        m = plan([room("A", rect(0, 0, 10, 10)), room("B", rect(10, 0, 20, 10)),
+                  room("Z", rect(8, 2, 12, 6), kind="zone", parent="A")])
+        self.assertIn("Rooms overlap", titles(m))
+
+    def test_zone_reaching_past_its_parent_overlaps(self):
+        m = plan([room("A", rect(0, 0, 10, 10)), room("Z", rect(5, 2, 15, 6), kind="zone", parent="A")])
+        self.assertIn("Rooms overlap", titles(m))
+
     def test_different_floors_do_not_overlap(self):
         lv = [{"id": "L1", "z_m": 0, "height_m": 4}, {"id": "L2", "z_m": 4, "height_m": 4}]
         m = plan([room("A", rect(0, 0, 20, 10)), room("B", rect(0, 0, 20, 10), level="L2"),

@@ -51,6 +51,16 @@ def _polygons(outlines):
     return out
 
 
+def _part_of(e1, e2, p1, p2):
+    """A zone that names a room as its `parent` and lies inside it is a labelled part of
+    that room (a basin in a canal, a stage in a hall), not a second claim on the floor."""
+    for z, r, pz, pr in ((e1, e2, p1, p2), (e2, e1, p2, p1)):
+        if z["type"] == "zone" and z.get("parent") and z["parent"] == r.get("id"):
+            if pz.difference(pr).area <= MIN_OVERLAP_M2:
+                return True
+    return False
+
+
 def check_plan(m, b=None):
     """Problems in one plan. Returns a list of (title, detail-without-building-name, fix)."""
     out = []
@@ -150,7 +160,7 @@ def check_plan(m, b=None):
             continue
         areas = shapely.area(shapely.intersection(g[a], g[c]))
         for ia, ic, ar in zip(a, c, areas):
-            if ar > MIN_OVERLAP_M2:
+            if ar > MIN_OVERLAP_M2 and not _part_of(els[idx[ia]], els[idx[ic]], g[ia], g[ic]):
                 over.append("%s and %s on %s (%s)" % (els[idx[ia]]["name"], els[idx[ic]]["name"], L, G.fmt_area_m2(ar)))
     if over:
         out.append(("Rooms overlap", "%d overlap(s) between rooms, corridors or stair cores on the same floor: %s." % (len(over), _examples(over)),
