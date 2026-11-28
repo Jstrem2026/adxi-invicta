@@ -23,7 +23,7 @@ Lines (ship km): bow band x 26.658 to 28.089, Grand Canal 28.089 to 28.636, ster
 
 ## P1 · Grand Canal — F56 to F57, lanes M–X
 
-1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I and B5 Central Canal II are laid out (proposed); the other blocks are not designed yet.
+1,795 × 18,005 ft (547 × 5,488 m), 1.16 sq mi (3.0 km²). Runs the full width of the district, from the Keelway side to the starboard edge, between the bow and stern bands (x 28.089 to 28.636 km). Status: canon. Blocks B1 Port Gateway, B2 Waterfront Reach I, B3 Waterfront Reach II, B4 Central Canal I, B5 Central Canal II and B6 Garden Reach I are laid out (proposed); the other blocks are not designed yet.
 
 Eight blocks, B1 to B8, port to starboard, cut on the lane lines so none is over 1 km (status proposed):
 
@@ -111,6 +111,22 @@ Everything laid out so far in P1, in one list (the names with "(B2)" or "(B3)" a
 | Access Road A (B5) | 18 × 500 m; 9,000 m² | CC2-11A. X 0–18, Y 0–500, bow edge. Proposed infrastructure | D3F6P1 |
 | Access Road B (B5) | 18 × 500 m; 9,000 m² | CC2-11B. X 529–547, Y 0–500, stern edge. Proposed infrastructure | D3F6P1 |
 | Serenity Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 340–356. Each end overlaps its plot by 10 m (CC2-04, CC2-08) | D3F6P1B5A11 |
+| Grand Canal (B6) | 100 × 1,000 m; 100,000 m² | GR-01. X 223.5–323.5, Y 0–1,000. Straight 100 m channel; carries on from B5 and runs on into B7 | D3F6P1B6A1 |
+| Grand Floral Gardens | 175.5 × 200 m; 35,100 m² | GR-02. X 18–193.5, Y 0–200. Plot only | D3F6P1B6A2 |
+| Woodland Sanctuary | 175.5 × 300 m; 52,650 m² | GR-03. X 18–193.5, Y 200–500. Plot only | D3F6P1B6A3 |
+| Water Garden Reserve | 175.5 × 250 m; 43,875 m² | GR-04. X 18–193.5, Y 500–750. Plot only; space reserved for ornamental ponds, geometry not designed yet | D3F6P1B6A4 |
+| Botanical Café Terraces | 175.5 × 150 m; 26,325 m² | GR-05. X 18–193.5, Y 750–900. Plot only | D3F6P1B6A5 |
+| Garden Boat Stop | 175.5 × 100 m; 17,550 m² | GR-06. X 18–193.5, Y 900–1,000. Plot only | D3F6P1B6A6 |
+| Seasonal Flower Gardens | 175.5 × 150 m; 26,325 m² | GR-07. X 353.5–529, Y 0–150. Plot only | D3F6P1B6A7 |
+| Ornamental Lake Gardens | 175.5 × 320 m; 56,160 m² | GR-08. X 353.5–529, Y 150–470. Plot only; space reserved for an ornamental lake, geometry not designed yet | D3F6P1B6A8 |
+| Garden Pavilion Quarter | 175.5 × 150 m; 26,325 m² | GR-09. X 353.5–529, Y 470–620. Plot only | D3F6P1B6A9 |
+| Butterfly & Pollinator Gardens | 175.5 × 230 m; 40,365 m² | GR-10. X 353.5–529, Y 620–850. Plot only | D3F6P1B6A10 |
+| Garden Recreation Lawns | 175.5 × 150 m; 26,325 m² | GR-11. X 353.5–529, Y 850–1,000. Plot only | D3F6P1B6A11 |
+| Promenades (B6) | 30 × 1,000 m each side; 60,000 m² | GR-12A X 193.5–223.5 and GR-12B X 323.5–353.5, both Y 0–1,000. Carry on from B5 and run on into B7 | D3F6P1B6A12 |
+| Access Road A (B6) | 18 × 1,000 m; 18,000 m² | GR-13A. X 0–18, Y 0–1,000, bow edge. Proposed infrastructure | D3F6P1 |
+| Access Road B (B6) | 18 × 1,000 m; 18,000 m² | GR-13B. X 529–547, Y 0–1,000, stern edge. Proposed infrastructure | D3F6P1 |
+| Woodland Bridge | 180 × 16 m | Pedestrian bridge. X 183.5–363.5, Y 350–366. Each end overlaps its plot by 10 m (GR-03, GR-08) | D3F6P1B6A13 |
+| Blossom Bridge | 180 × 20 m | Pedestrian bridge. X 183.5–363.5, Y 690–710. Each end overlaps its plot by 10 m (GR-04, GR-10) | D3F6P1B6A14 |
 
 B1 Port Gateway (D3-F56-M) layout, proposed. The block is 547 × 750 m (410,250 m²). Local coordinates start at the block's bow-port corner (x 28.089 km, y 0): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
 
@@ -144,7 +160,15 @@ Area check (m²): plots 175,500 (west 87,750 = 175.5 × (120 + 150 + 160 + 70), 
 
 How the app shows it: as in B1 to B4, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 500 m, 0.2555 km²) as the block, still addressed D3-F56-S. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B4 at Y 0 and B6 at Y 500 with the same widths, so each runs unbroken from B4 through B5 into B6.
 
-Not designed yet: what the other three blocks and the other precincts hold, streets other than the access roads of B1 to B5, bridges other than B1's two, the Social, Heritage, Gallery, Central and Serenity Bridges, where the canal water comes from and goes, individual buildings.
+B6 Garden Reach I (D3-F56-T) layout, proposed. The block is 547 × 1,000 m (547,000 m²), Y 3,250 to 4,250 m from the district's port edge. Local coordinates start at the block's bow-port corner (x 28.089 km, y 3.25 km): X runs toward the stern, Y toward starboard, in metres. Plots, access roads and bridges only; no individual buildings are designed.
+
+Space is reserved for ornamental ponds inside GR-04 Water Garden Reserve and for an ornamental lake inside GR-08 Ornamental Lake Gardens. Their shape and position are not designed yet.
+
+Area check (m²): plots 351,000 (west 175,500 = 175.5 × (200 + 300 + 250 + 150 + 100), east 175,500 = 175.5 × (150 + 320 + 150 + 230 + 150)), canal 100,000, promenades 60,000, access roads 36,000. Total 547,000, which is the whole block. The Woodland and Blossom Bridges sit over the canal and plots and are not counted again.
+
+How the app shows it: as in B1 to B5, the two access roads are streets on the block edges, so the app cuts them off and shows the land between them (511 × 1,000 m, 0.511 km²) as the block, still addressed D3-F56-T. The canal (x 28.3125 to 28.4125 km), promenades (30 m each side) and boundary roads (18 m) meet B5 at Y 0 and B7 at Y 1,000 with the same widths, so each runs unbroken from B5 through B6 into B7.
+
+Not designed yet: what the other two blocks and the other precincts hold, streets other than the access roads of B1 to B6, bridges other than B1's two, the Social, Heritage, Gallery, Central, Serenity, Woodland and Blossom Bridges, the ponds and lake of B6, where the canal water comes from and goes, individual buildings.
 
 ## P2 · Waterfront Quarter — F57 to F59, lanes M–R
 
@@ -244,5 +268,21 @@ Each building's purpose (Jordan asked for one for every building, 27 Nov 2026). 
 - **P1-69 Access Road A (B5)**: The service road along the bow edge of the Central Canal II block.
 - **P1-70 Access Road B (B5)**: The service road along the stern edge of the Central Canal II block.
 - **P1-71 Serenity Bridge**: A footbridge over the canal linking the Water Lily Gardens and Serenity Square.
+- **P1-72 Grand Canal (B6)**: The sixth stretch of the Grand Canal, carrying boats on through the gardens of Garden Reach towards the village end of the canal.
+- **P1-73 Grand Floral Gardens**: Large formal flower gardens on the port bank at the start of Garden Reach, laid out for walking and looking.
+- **P1-74 Woodland Sanctuary**: A wooded park on the port bank, a shaded and quiet place to walk away from the crowds, with the Woodland Bridge arriving at its canal side.
+- **P1-75 Water Garden Reserve**: Water gardens on the port bank with ornamental ponds (to be designed), for quiet walks beside the water, with the Blossom Bridge arriving at its canal side.
+- **P1-76 Botanical Café Terraces**: Cafés and dining terraces set among the plantings, where people stop to eat and drink in the gardens.
+- **P1-77 Garden Boat Stop**: The boat stop for Garden Reach on the port bank, where people get on and off the canal boats.
+- **P1-78 Seasonal Flower Gardens**: Flower gardens on the stern bank whose planting changes with the seasons.
+- **P1-79 Ornamental Lake Gardens**: Lakeside gardens on the stern bank built around an ornamental lake (to be designed), with the Woodland Bridge arriving at its canal side.
+- **P1-80 Garden Pavilion Quarter**: Garden pavilions for dining and gatherings on the stern bank, between the lake and the butterfly gardens.
+- **P1-81 Butterfly & Pollinator Gardens**: Gardens planted for butterflies, bees and other pollinators, where people can walk and watch them, with the Blossom Bridge arriving at its canal side.
+- **P1-82 Garden Recreation Lawns**: Open lawns on the stern bank for play, sport and relaxing.
+- **P1-83 Promenades (B6)**: Walkways along both banks of the sixth stretch of the canal, linking the gardens, café terraces and boat stop.
+- **P1-84 Access Road A (B6)**: The service road along the bow edge of the Garden Reach I block.
+- **P1-85 Access Road B (B6)**: The service road along the stern edge of the Garden Reach I block.
+- **P1-86 Woodland Bridge**: A footbridge over the canal linking the Woodland Sanctuary and the Ornamental Lake Gardens.
+- **P1-87 Blossom Bridge**: A footbridge over the canal linking the Water Garden Reserve and the Butterfly & Pollinator Gardens.
 
 <!-- purposes:end -->
