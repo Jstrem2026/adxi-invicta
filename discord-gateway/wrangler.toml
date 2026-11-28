@@ -1,0 +1,23 @@
+# Avalon's always-on ear: a small Cloudflare Worker that stays connected to Discord and passes on
+# any message that names Avalon, Sentinel or a Governor to the site (functions/api/discord.js), which answers.
+# Arcane Drift Cloudflare account only (ac6e9f7ba848384ed2b7db74449312da). Deployed by .github/workflows/discord-gateway.yml.
+# Secret (set by that workflow from the GitHub secret): DISCORD_BOT_TOKEN.
+name = "invicta-avalon-gateway"
+main = "gateway.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[vars]
+DISCORD_GUILD_ID = "1576276524976574624"
+SITE_URL = "https://invicta.arcanedrift.net/api/discord"
+
+[triggers]
+crons = ["* * * * *"]   # every minute: make sure the connection is up
+
+[[durable_objects.bindings]]
+name = "GATEWAY"
+class_name = "Gateway"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Gateway"]

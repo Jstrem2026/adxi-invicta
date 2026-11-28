@@ -3,6 +3,8 @@
 // Discord sends each slash command here (the "Interactions Endpoint URL" in the Discord developer page):
 //   /ask question       in a deck forum, that deck's Governor answers about that deck; anywhere else, Avalon
 //   /sentinel question  Sentinel answers, from any channel, about the whole ship
+//   naming them         "Mira, ...", "..., Avalon?", @Avalon, or a reply to one of them: they answer (needs the
+//                       always-on gateway in discord-gateway/, which passes messages here signed with the bot token)
 //   /submit file note   puts the file in Invicta/inbox/ on a new branch and opens a pull request for Jordan
 // Answers come from the repo files and the scan (read only). Nothing here changes ship data directly.
 // The Governors and Sentinel post under their own names through a channel webhook the bot makes ("Invicta Voices").
@@ -22,6 +24,8 @@ const SUBMIT_TYPES = /\.(json|md|txt|csv)$/i;
 
 export async function onRequestPost({ request, env, waitUntil }) {
   const body = await request.text();
+  // A message passed on by the always-on gateway (discord-gateway/), signed with the bot token.
+  if (request.headers.get("X-Avalon-Relay")) return relayed(env, request, body);
   if (!env.DISCORD_PUBLIC_KEY || !(await verify(env.DISCORD_PUBLIC_KEY, request, body))) {
     return new Response("Bad signature.", { status: 401 });
   }
@@ -71,6 +75,68 @@ export function onRequestGet() {
   return json({ ok: true });
 }
 
+// ---------- answering when named (from the gateway) ----------
+
+// Someone is talking to the cast when a message starts with a name ("Mira, ..." / "hey @Vector ..."),
+// ends with one ("..., Avalon?"), @mentions the bot (Avalon), or replies to one of their messages.
+function addressed(content, cast) {
+  const names = cast.map((c) => c.name).join("|");
+  const start = new RegExp(`^\\s*(?:(?:hey|hi|hello|ok|okay|yo|dear)[\\s,]+)?@?(${names})\\b`, "i").exec(content);
+  if (start) return start[1];
+  const end = new RegExp(`,\\s*@?(${names})\\s*[?.!]*\\s*$`, "i").exec(content);
+  return end ? end[1] : null;
+}
+
+async function relayed(env, request, body) {
+  if (!env.DISCORD_BOT_TOKEN || !(await hmacOk(env.DISCORD_BOT_TOKEN, body, request.headers.get("X-Avalon-Relay")))) {
+    return new Response("Bad signature.", { status: 401 });
+  }
+  const m = JSON.parse(body);
+  if (m.guild_id !== String(env.DISCORD_GUILD_ID)) return new Response("Not our server.", { status: 403 });
+  const everyone = [CAST.avalon, CAST.sentinel, ...Object.values(GOVERNORS).filter((g) => g.name !== "Sentinel")];
+  const byName = (n) => everyone.find((c) => c.name.toLowerCase() === String(n || "").toLowerCase());
+  let speaker = byName(addressed(String(m.content || ""), everyone));
+  if (!speaker && m.reply_to?.cast) speaker = byName(m.reply_to.name) || CAST.avalon;  // replying to one of them
+  if (!speaker && m.mentioned_bot) speaker = CAST.avalon;
+  if (!speaker) return new Response(null, { status: 204 });
+
+  const channel = await discord(env, "GET", `channels/${m.channel_id}`);
+  const deck = await deckOf(env, channel);
+  // Governors answer only in their own deck's forum. Avalon and Sentinel answer anywhere.
+  if (speaker !== CAST.avalon && speaker !== CAST.sentinel) {
+    if (String(speaker.deck) !== String(deck)) {
+      const where = Object.entries(DECKS).find(([, d]) => d[1] === speaker.name);
+      await discord(env, "POST", `channels/${m.channel_id}/messages`, { ...msg(`${speaker.name} answers in the ${where[0]}-${where[1][0].toLowerCase()} forum. Ask there, or ask me or Sentinel here.`), message_reference: { message_id: m.message_id } }).catch(() => {});
+      return new Response(null, { status: 204 });
+    }
+  }
+  if (speaker === CAST.sentinel && deck === "4") speaker = GOVERNORS[4];
+  if (!env.ANTHROPIC_API_KEY || !env.GITHUB_TOKEN) return new Response("Not set up.", { status: 503 });
+
+  await discord(env, "POST", `channels/${m.channel_id}/typing`).catch(() => {});
+  const who = String(m.author || "someone").replace(/[\u0000-\u001f@]/g, "").slice(0, 40);
+  const said = String(m.content || "").slice(0, 1500);
+  const context = m.reply_to ? `[Replying to ${m.reply_to.name}: "${String(m.reply_to.content || "").slice(0, 800)}"]\n` : "";
+  let answer;
+  try {
+    answer = await ask(env, request, context + said, who, speaker, 55_000);
+  } catch (e) {
+    answer = `Sorry, I couldn't answer that just now (${e.message}).`;
+  }
+  if (speaker === CAST.avalon || !(await speakAs(env, channel, speaker, answer))) {
+    await discord(env, "POST", `channels/${m.channel_id}/messages`, {
+      ...msg(speaker === CAST.avalon ? answer : `**${speaker.name}:** ${answer}`), message_reference: { message_id: m.message_id, fail_if_not_exists: false },
+    });
+  }
+  return new Response("answered");
+}
+
+async function hmacOk(secret, body, sigHex) {
+  if (!/^[0-9a-f]{64}$/i.test(sigHex || "")) return false;
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["verify"]);
+  return crypto.subtle.verify("HMAC", key, hex(sigHex), new TextEncoder().encode(body));
+}
+
 // ---------- /ask ----------
 
 // The cast, from canon (Docs/1_Canon_Source/Invicta/datasheets): Avalon is the Lead NPC on the Crown Bridge;
@@ -109,7 +175,7 @@ const ASK_TOOLS = [
     input_schema: { type: "object", properties: {}, additionalProperties: false } },
 ];
 
-async function ask(env, request, question, who, speaker) {
+async function ask(env, request, question, who, speaker, budget = BUDGET_MS) {
   if (!question) return "Ask me something about the ship.";
   const start = Date.now();
   const gh = github(env);
@@ -117,14 +183,14 @@ async function ask(env, request, question, who, speaker) {
   const system = [{ type: "text", text: ASK_RULES + (await guide(gh)) }, { type: "text", text: `\n\nYou are ${speaker.who}.` }];
   const messages = [{ role: "user", content: `[From ${who}]\n\n${question}` }];
   for (let round = 0; round < MAX_ROUNDS; round++) {
-    const late = Date.now() - start > BUDGET_MS - 8_000;
+    const late = Date.now() - start > budget - 8_000;
     const m = await client.messages.create({
       model: env.QUESTION_MODEL || "claude-haiku-5-5",
       max_tokens: 1200,
       system,
       tools: late ? undefined : ASK_TOOLS,
       messages,
-    }, { timeout: Math.max(4_000, BUDGET_MS - (Date.now() - start)) });
+    }, { timeout: Math.max(4_000, budget - (Date.now() - start)) });
     const uses = m.content.filter((c) => c.type === "tool_use");
     const text = m.content.filter((c) => c.type === "text").map((c) => c.text).join("\n").trim();
     if (!uses.length || late) return text || "I couldn't find an answer in time. Try asking more narrowly.";
