@@ -110,6 +110,7 @@
   }
   // The treads of a half-turn stair (plan step 3): two flights side by side in the stair's outline. A tall floor's
   // stair makes several half-turns ("turns") on the way up, one above the other.
+  const WAIST = 0.25;   // the stair slab's thickness under the steps and landings
   function stairTreads(e, z0) {
     const o = e.outline_m, out = [];
     const u = [o[1][0] - o[0][0], o[1][1] - o[0][1]], v = [o[3][0] - o[0][0], o[3][1] - o[0][1]];
@@ -127,11 +128,14 @@
         const k = up ? j : j - per;
         const s0 = up ? land + k * e.tread_m : Lu - land - (k + 1) * e.tread_m;
         const t0 = up ? w / 2 : Lv - w / 2;
-        out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: z0 + i * e.riser_m, h: e.riser_m, t: w });   // a solid step: tread on top, riser in front
+        // a solid concrete step: tread on top, riser in front, and a 10 in (0.25 m) waist under it down to the
+        // start of its flight, so each flight is one sloping slab and never floats as loose blocks
+        const top = z0 + (i + 1) * e.riser_m, base = z0 + (up ? i - j : i - k) * e.riser_m, bot = Math.max(base, top - e.riser_m - WAIST);
+        out.push({ a: at(Math.max(0, s0), t0), b: at(Math.min(Lu, s0 + e.tread_m), t0), z: bot, h: top - bot, t: w });
       }
-      const zl = z0 + (i - n + per) * e.riser_m - 0.05;
-      out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl, h: 0.05, t: Lv });  // half landing
-      if (tn < turns - 1) out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - 0.05, h: 0.05, t: Lv });  // landing between turns
+      const zl = z0 + (i - n + per) * e.riser_m;
+      out.push({ a: at(Lu - land, Lv / 2), b: at(Lu, Lv / 2), z: zl - WAIST, h: WAIST, t: Lv });  // half landing, as thick as the flights
+      if (tn < turns - 1) out.push({ a: at(0, Lv / 2), b: at(land, Lv / 2), z: z0 + i * e.riser_m - WAIST, h: WAIST, t: Lv });  // landing between turns
     }
     return out;
   }
