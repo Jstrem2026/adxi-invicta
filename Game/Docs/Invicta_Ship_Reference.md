@@ -14,11 +14,11 @@ The **Invicta is not the EX101.** The EX101 (4,000 × 1,504 × 708 m) is the web
 | Height with Crown and stern fins | about 3.42 mi (18,045 ft) | about 5.5 km | Sheet S0; errata B9 (⏳ proposed) |
 | Interior volume | — | 950 km³ | Sheet S0 |
 | Mass | about 584 billion US tons | about 530 billion tonnes | Sheet S0; errata B3 (⏳ proposed) |
-| Net city floor, all 8 decks | 752.6 sq mi | 1,949.1 km² (Rev B; canon 1,950) | `geometry_revB/README.txt` |
+| Net city floor, all 8 decks | 704.4 sq mi | 1,824.4 km² (Rev C, errata C10; Rev B 1,949.1; canon 1,950) | `geometry_revC/README.txt` |
 
 Revision B (C1) reshaped only the prow and stern side profile; the overall 34.0 × 12.4 × 4.1 km is unchanged.
 
-**Concept hull (Rev C, ⏳ proposed 28 Nov 2026, errata C9).** Jordan's six-view concept sheet (`art/concept/invicta-concept-six-views.png`) is traced into a new hull outline (`geometry_revC/`): pointed bow, armoured side pods, blunt stern with four engine nozzles, and dorsal fins toward the stern up to 3.20 mi (5.16 km) above the keel. Length, beam and hull height stay 21.13 × 7.71 × 2.55 mi (34.0 × 12.4 × 4.1 km). It is never smaller than the old hull, so every deck stays where it is.
+**Concept hull (Rev C, ⏳ proposed 28 Nov 2026, errata C9) and trimmed decks (✅ errata C10).** Jordan's six-view concept sheet (`art/concept/invicta-concept-six-views.png`) is traced into a new hull outline (`geometry_revC/`): pointed bow, armoured side pods, a blunt stern with four engine nozzles, and the art's long thin nose and narrower stern. Length, beam and hull height stay 21.13 × 7.71 × 2.55 mi (34.0 × 12.4 × 4.1 km). The decks are cut back square across where the nose and stern can no longer hold them (C10). The Crown sits on top over the concept's windowed module, 6.65 to 11.62 mi (10.7 to 18.7 km) from the prow, and holds the Bridge Level: like Deck 1 but smaller, 1,247 ft (380 m) clear, floor 13,058 ft (3,980 m), 14.3 sq mi (37.1 km²), with the Crown Bridge at its front behind the windows.
 
 ## 2. Deck heights
 
@@ -44,20 +44,20 @@ Elevations are above the keel. A 197 ft (60 m) crew-only service layer sits unde
 ![Deck 5 Aerion blueprint](art/blueprints/deck5-aerion-blueprint.png)
 
 - Gross length 20.5 mi (108,268 ft; 33.0 km, F1 to F67). Maximum width 7.55 mi (39,849 ft; 12.15 km).
-- Net floor 117.4 sq mi (304.1 km², Rev B).
+- Net floor 116.6 sq mi (301.9 km², Rev C errata C10; Rev B 304.1). Since C10 the deck starts 1.61 mi (2.59 km) from the prow, at F5.
 
 **Districts: 5, plus the Atrium Plaza** (bow to stern):
 
 | District | Area | What is there | Centre address |
 |---|---|---|---|
-| Strike Hangars | 42.1 sq mi (109.1 km², Rev B C2; Sheet S5 says 110) | Racks for 3,600 craft, 32 launch shafts to the Forward Grids | D5-F19-M |
+| Strike Hangars | 41.2 sq mi (106.78 km², Rev C C10; Rev B C2 109.1; Sheet S5 says 110) | Racks for 3,600 craft, 32 launch shafts to the Forward Grids | D5-F19-M |
 | Port of Arrivals (port side) | 23.2 sq mi (60.0 km²) | **Where the game begins.** Hall of Arrivals, passenger docks, customs | D5-F43-F |
 | Cruiser Docks (starboard side) | 23.2 sq mi (60.0 km²) | Berths for the six 2 km escort cruisers | D5-F43-T |
 | Flight Control | 7.7 sq mi (20.0 km²) | The Beacon tower, traffic control, briefing halls | D5-F57-M |
 | Pilots' Quarter | 17.4 sq mi (45.0 km²) | Housing, simulators, flight school | D5-F63-M |
 | Atrium Plaza (plaza) | 3.9 sq mi (10.0 km²) | Governor's Hall, pilots' guild, Atrium Central station | D5-F52-M |
 
-Keelway stops: Strike Hangars F3, Port F46, Atrium Central F52, Pilots' Quarter F65. Cross-line at F52: Flight Control (3.2 mi / 5.1 km to port), Atrium Central, Dockside (3.2 mi / 5.1 km to starboard).
+Keelway stops: Strike Hangars F7 (F3 until errata C10), Port F46, Atrium Central F52, Pilots' Quarter F65. Cross-line at F52: Flight Control (3.2 mi / 5.1 km to port), Atrium Central, Dockside (3.2 mi / 5.1 km to starboard).
 
 Blueprint sources: outline from `geometry_revB/deck5_Aerion_net_km_revB.csv` and `_gross_km_revB.csv`; district boundaries, plaza, Keelway and drone depot from the Sheet S5 plan (`1_Canon_Source/Invicta/datasheets/05-Deck-5-Aerion.html`), clipped to the Rev B outline.
 

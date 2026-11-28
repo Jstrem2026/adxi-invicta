@@ -710,7 +710,8 @@ function shipView() {
   const useConcept = hasConcept && shipHullMode() === "concept";
   const side = (useConcept ? s.hull_side_concept : s.hull_side) || [];
   const otherSide = hasConcept ? (useConcept ? s.hull_side : s.hull_side_concept) : null;
-  const topZ = Math.max(4.1, ...side.map(p => p[1]));
+  const cr = useConcept ? s.crown_concept : null;   // the Crown and Crown Bridge on the dorsal hull (Rev C)
+  const topZ = Math.max(4.1, ...side.map(p => p[1]), ...(cr ? cr.crown_side_km.map(p => p[1]) : []));
   const SY = z => -z * 1000 * ex;
   const sidePath = pts => `M${pts.map(p => `${X(p[0])},${SY(p[1])}`).join("L")}Z`;
   let g = `<path d="${sidePath(side)}" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>`;
@@ -723,11 +724,19 @@ function shipView() {
     g += `<g class="hit" onclick="go('#/deck/${d.n}')"><rect x="${X(x1)}" y="${SY(d.ceiling_m / 1000)}" width="${(x1 - x0) * 1000}" height="${(d.ceiling_m - d.floor_m) * ex}" fill="${planned ? "#2273b8" : "#1b5c9c"}" stroke="#cfe3f7" stroke-width="12"/>
       <text x="${X((x0 + x1) / 2)}" y="${SY((d.floor_m + d.ceiling_m) / 2000)}" font-size="${Math.min(520, (d.ceiling_m - d.floor_m) * ex * 0.55)}" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-weight="700">${d.n} · ${esc(d.name.toUpperCase())}</text></g>`;
   }
+  if (cr) {   // the Crown (gold) with the Bridge Level inside it and the Crown Bridge at its front, behind the windows
+    const lv = cr.bridge_level, lx = cr.level_side_km.map(p => p[0]);
+    g += `<g class="hit" onclick="go('#/crown')"><title>The Crown: the ${esc(lv.name)} (like Deck 1, smaller) with the Crown Bridge at its front, behind the windows</title><path d="${sidePath(cr.crown_side_km)}" fill="#3a2e12" stroke="#ffc266" stroke-width="18"/>
+      <rect x="${X(Math.max(...lx))}" y="${SY(lv.ceiling_m / 1000)}" width="${(Math.max(...lx) - Math.min(...lx)) * 1000}" height="${(lv.ceiling_m - lv.floor_m) * ex}" fill="#8a6a26" stroke="#ffe2a8" stroke-width="12"/>
+      <path d="${sidePath(cr.bridge_side_km)}" fill="#ffc266" stroke="#ffe2a8" stroke-width="10"/>
+      <text x="${X((Math.max(...lx) + Math.min(...lx)) / 2)}" y="${SY((lv.floor_m + lv.ceiling_m) / 2000)}" font-size="${Math.min(520, (lv.ceiling_m - lv.floor_m) * ex * 0.55)}" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-weight="700">${esc(lv.name.toUpperCase())}</text></g>`;
+  }
   // top plan underneath
   const plan = (useConcept ? s.hull_plan_concept : s.hull_plan) || [];
   const otherPlan = hasConcept ? (useConcept ? s.hull_plan : s.hull_plan_concept) : null;
   const off = 8200;
   g += `<g transform="translate(0,${off})"><path d="${pathOf(plan)}" fill="#0f3a6b" stroke="#cfe3f7" stroke-width="20"/>${otherPlan ? `<path pointer-events="none" d="${pathOf(otherPlan)}" fill="none" stroke="#ffc266" stroke-opacity=".8" stroke-width="45" stroke-dasharray="320 220"/>` : ""}${D.model.decks.map(d => d.outline_net ? `<path class="hit" onclick="go('#/deck/${d.n}')" d="${pathOf(d.outline_net)}" fill="none" stroke="#6fd0ff" stroke-opacity=".35" stroke-width="18"/>` : "").join("")}
+    ${cr ? `<g class="hit" onclick="go('#/crown')"><title>The Crown, with the Crown Bridge at its front</title><path d="${pathOf(cr.crown_plan_km)}" fill="#3a2e12" fill-opacity=".85" stroke="#ffc266" stroke-width="22"/><path d="${pathOf(cr.level_plan_km)}" fill="none" stroke="#ffe2a8" stroke-width="14" stroke-dasharray="200 140"/><path d="${pathOf(cr.bridge_plan_km)}" fill="#ffc266" stroke="#ffe2a8" stroke-width="12"/>${label((cr.x_front_km + cr.x_back_km) / 2 + 0.6, 0, "CROWN · " + cr.bridge_level.name.toUpperCase(), 380, { fill: "#ffe2a8", weight: 700 })}</g>` : ""}
     <text x="${X(17)}" y="${Y(-7.2)}" font-size="520" fill="#7fb0de" text-anchor="middle">TOP VIEW · hull plan with the 8 deck outlines</text></g>`;
   g += `<text x="${X(17)}" y="${SY(topZ) - 700}" font-size="520" fill="#7fb0de" text-anchor="middle">SIDE VIEW · vertical scale ×${ex} · click a deck</text>`;
   const vb = [-1000, SY(topZ) - 1500, 36000, topZ * 1000 * ex + 1500 + off + 7000];
@@ -735,7 +744,7 @@ function shipView() {
   const decks = D.model.decks.map(d => `<li onclick="go('#/deck/${d.n}')"><span>${d.emblem_web ? `<img class="emblem-sm" src="${staticSrc(d.emblem_web)}" alt="">` : ""}<b>${d.n} ${esc(d.name)}</b> <span class="muted small">${esc(d.role)}</span></span><span class="small">${area(d.net_area_calc)}</span></li>`).join("");
   const panel = `<h1>${esc(s.name)}</h1><div class="small muted">${esc((s.meta || {}).title || "")} · ${fileLink(s.sheet, "Sheet S0")}</div>
     ${hasConcept ? `<h3>Hull shape</h3><div class="hull-pick"><button class="${useConcept ? "on" : ""}" onclick="setShipHull('concept')">Concept (proposed)</button><button class="${useConcept ? "" : "on"}" onclick="setShipHull('canon')">Canon (old)</button></div>
-    <div class="small muted">${useConcept ? "Traced from the concept sheet below: pointed bow, wide armoured flanks, blunt stern with four engines, raised dorsal fins. Same length, beam and hull height as canon. The bow and stern stay full enough to hold every deck, so no deck moves. The dashed orange line is the old canon hull." : "The canon hull from the original drawings. The dashed orange line is the proposed concept hull."} ${fileLink(s.revC_readme, "Rev C notes")}</div>
+    <div class="small muted">${useConcept ? "Traced from the concept sheet below: pointed bow, wide armoured flanks, blunt stern with four engines. The raised part on top is the Crown (gold): it holds the Bridge Level, a level like Deck 1 but smaller, with the Crown Bridge at its front behind the stepped forward windows; click it to open the bridge. Same length, beam and hull height as canon. The decks are cut back where the art's nose and tail are too thin to hold them (errata C10). The dashed orange line is the old canon hull." : "The canon hull from the original drawings. The dashed orange line is the proposed concept hull."} ${fileLink(s.revC_readme, "Rev C notes")}</div>
     <a href="${staticSrc("ship/invicta-concept-six-views.webp")}" target="_blank" rel="noopener"><img class="hull-concept" src="${staticSrc("ship/invicta-concept-six-views.webp")}" alt="Invicta concept sheet: top, bottom, left, right, front and back views" loading="lazy"></a>
     <div class="small muted">Concept sheet (Jordan, 28 Nov 2026) · ${fileLink(s.concept_sheet, "full size")}</div>` : ""}
     <h3>Key dimensions (canon)</h3><div class="kv">${dims}</div>
